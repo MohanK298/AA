@@ -1,0 +1,467 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<repository
+id="8056debe-6b9a-42b9-b512-a4ceeb0afa46"
+name="Note"
+rxversion="9.0">
+	<codegen
+	classname="Note"
+	namespace="SmokeTest.Repositories">
+	</codegen>
+	<rootfolder
+	capname="unknown"
+	id="de38a076-8e47-4455-9a53-8e9f6218336a"
+	isrooted="True"
+	name="Root"
+	searchtimeout="0ms"
+	usecache="True">
+		<appfolder
+		addcaps="form,control,nativewindow"
+		capname="form"
+		id="23762e79-ae30-4042-a701-23ee08bc77d2"
+		isrooted="True"
+		name="MainForm"
+		refpath="/form[@controlname='MainForm']"
+		searchtimeout="30000ms"
+		usecache="True">
+			<item
+			addcaps="button,accessible"
+			capname="button"
+			id="ac425c30-405d-4fac-9c3a-1bb0462df3e3"
+			name="btnNotes"
+			refimgid="0a2eb246-5a83-4752-a43d-a248ab5bc397"
+			refpath="/form[@controlname='MainForm']/container[@controlname='pLeft']/container[@caption='' and @controltypename='Panel' and @instance='1']/element[@controlname='_ultraExplorerBar']/tree[@accessiblerole='Outline']/button[@accessiblename='Notes']"
+			searchtimeout="30000ms">
+				/form[@controlname='MainForm']/container[@controlname='pLeft']//tree[@accessiblerole='Outline']/button[@accessiblename='Notes']
+			</item>
+			<item
+			addcaps="button,accessible"
+			capname="button"
+			id="ab21e8d1-614f-4c13-a0d1-8d4413c296aa"
+			name="btnNewSticky"
+			refimgid="8b038493-3855-4e1f-94c5-41841e7a00f5"
+			refpath="/form[@controlname='MainForm']/element[@controltypename='MdiClient']/form[@controlname='NotesIndexForm']/container[@controlname='menubar_Fill_Panel']/element[@controlname='_BaseForm_Fill_Panel_Toolbars_Dock_Area_Top']/container[@accessiblename='DockTop']/toolbar[@accessiblename='Toolbar']/button[@accessiblename='Sticky']"
+			searchtimeout="30000ms">
+				/form[@controlname='MainForm']/?/?/form[@controlname='NotesIndexForm']/container[@controlname='menubar_Fill_Panel']//toolbar[@accessiblename='Toolbar']/button[@accessiblename='Sticky']
+			</item>
+			<item
+			addcaps="cell,accessible"
+			capname="cell"
+			id="efa081ba-2fb6-47e3-af0b-ec5f5dbae3c4"
+			name="listNoteOne"
+			refimgid="baeac980-b506-4d12-bf1f-d6c9474db840"
+			refpath="/form[@controlname='MainForm']/element[@controltypename='MdiClient']/form[@controlname='NotesIndexForm']/container[@controlname='pnlBase']/element[@controlname='angIndex']/table[@accessiblerole='Table']/row[1]/cell[@accessiblename='Author']"
+			searchtimeout="30000ms">
+				/form[@controlname='MainForm']/?/?/form[@controlname='NotesIndexForm']/container[@controlname='pnlBase']/?/?/table/row[1]/cell[@accessiblename='Author']
+			</item>
+			<item
+			addcaps="text,accessible"
+			capname="text"
+			id="b1f6da12-b83c-42a6-b95d-7f7100959747"
+			name="selectToday"
+			refimgid="07d24a9c-6e9f-45fd-9a6c-780a33c6952f"
+			refpath="/form[@controlname='MainForm']/container[@controlname='pLeft']/container[@caption='' and @controltypename='Panel' and @instance='1']/element[@controlname='_ultraExplorerBar']/container[@caption='' and @controltypename='UltraExplorerBarContainerControl' and @instance='0']/container[@controlname='controlPanelWrapper']/container[@controlname='NotesIndexControlPanelControl']/container[@controlname='panel3']/container[@controlname='atcUnassociatedOrToday']/container[@caption='' and @controltypename='AmicusTab' and @instance='1']/element[@controltypename='AmicusLabel']/text[@accessiblename='Today']"
+			searchtimeout="30000ms">
+				/form[@controlname='MainForm']/container[@controlname='pLeft']//container[@controltypename='UltraExplorerBarContainerControl' and @instance='0']/?/?/container[@controlname='NotesIndexControlPanelControl']/container[@controlname='panel3']/container[@controlname='atcUnassociatedOrToday']//text[@accessiblename='Today']
+			</item>
+			<item
+			addcaps="button,accessible"
+			capname="button"
+			id="299830ba-e506-40a2-bb3e-b0d076b5784e"
+			name="btnNotes1"
+			refimgid="68f66249-ddce-4768-89ab-8389d8bff9c9"
+			refpath="/form[@controlname='MainForm']/element[@controlname='_ultraExplorerBar']/tree[@accessiblerole='Outline']/button[@accessiblename='Notes']"
+			searchtimeout="5000ms">
+				/form[@controlname='MainForm']/?/?/tree[@accessiblerole='Outline']/button[@accessiblename='Notes']
+			</item>
+			<basepath>
+				/form[@controlname='MainForm']
+			</basepath>
+			<icon>
+				iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACx
+jwv8YQUAAAAJcEhZcwAADsQAAA7EAZUrDhsAAAJoSURBVDhPtZJZSJRRGIb/+Z0yy43E1CibUIKC
+IFqoi6KNlou6MGmxiyBQKAhNsc2BSSuJhHCpRJMySSPLkMaK1MgoW8Y0Nclxi2jIJIlGhgyd+c/7
+dpz50yBvgnrg4xw43/vyLUf5L2CgZ7+oPPwVuauJozMo0gLBoj3NJE3yWfVlTY4BDRc0OF56RPsl
+sHo5teJgiuIpQK6qMU0h7p4s13P/hFYzMTwIeEaBLy10XdzA/n0mCusqsmoBcWU6cNZvFLdS62W6
+n0+lg/vZvei6o8H1ERQeYqiL9mWxbDaq5LtUonEXWbOCKA0GzAY3XN/WStlEO6g6BLScAdtOkZ+q
+yWEr38ZE8ZUsDEMVRHcW+TyBrF5MFPqBpxcO6VLFyAH7OjxM8bBhL/kkjsJu4Y+mfMLdxiZpMHg5
+g/hcRnakk3UbZRUhQLICXa9MRWd9EW5vGeVYr427ib4c9sWtkQbvaZMGrSGBxEgd2ZVJPt5Glkdw
+bKC6XjGi59l25Id7WBlDPI0nBvPYOjeCjpQEtkdHetugVkt2mslHW4myMCB1ooIxgpCuANdCgdr1
+FG9SONJ8Tq79BTVnHV9LA2dpEoUtkby3kijxBzJC3brWB49HEQUGiJuxdMRHk/3HyN5s8nsRbarC
+9vAAOZ/NRMUcIEd1o7cxScrGV2kAMBMH5cQLVdoXTeOHTbPk6nbQsTOW3UvD2L0kiK6scIgCFcyc
+P97/7xjodJp4QKHIUzVcDQRuzCYr51Fcj4QoCQDOGzy0mCYV/8L7MVCWaGOyHNwJGRYZR2Sk+xMd
+D8zerL8gSEaw7+rFqJ//CkX5CWkHqyZHVzU6AAAAAElFTkSuQmCC
+			</icon>
+		</appfolder>
+		<appfolder
+		addcaps="form,control,nativewindow"
+		capname="form"
+		id="b1f4cf85-db15-43b9-8e57-af6ede980ec3"
+		isrooted="True"
+		name="PeopleSelectForm"
+		refpath="/form[@controlname='PeopleSelectForm']"
+		searchtimeout="30000ms"
+		usecache="True">
+			<item
+			addcaps="text,accessible"
+			capname="text"
+			id="e2b51411-ba38-4b1b-93de-4b2d4aa1fba7"
+			name="txtName"
+			refimgid="1a041643-e3a7-45fd-a406-95e074787e0b"
+			refpath="/form[@controlname='PeopleSelectForm']/container[@controlname='pnlBase']/container[@controlname='pnlControls']/container[@controlname='peopleSelectHeader']/container[@controlname='panel']/element[@controlname='uteSearch']/text[@accessiblerole='Text']/text[@accessiblerole='Text']"
+			searchtimeout="30000ms">
+				/form[@controlname='PeopleSelectForm']/container[@controlname='pnlBase']//container[@controlname='panel']/element[@controlname='uteSearch']/?/?/text[@accessiblerole='Text']
+			</item>
+			<item
+			addcaps="button,accessible"
+			capname="button"
+			id="308fb4fb-edd9-4492-a7ac-9e8bcc7c62b1"
+			name="btnAddToRight"
+			refimgid="00121006-5417-4139-b57e-bec5a9597b91"
+			refpath="/form[@controlname='PeopleSelectForm']/container[@controlname='panel1']/element[@controlname='ubtnAdd']/button[@accessiblename='>']"
+			searchtimeout="30000ms">
+				/form[@controlname='PeopleSelectForm']/container[@controlname='panel1']/?/?/button[@accessiblename='&gt;']
+			</item>
+			<item
+			addcaps="button,accessible"
+			capname="button"
+			id="3813598d-42f5-4ae2-b41e-95efcf98c79f"
+			name="btnOK"
+			refimgid="ffe97732-f34e-4054-87b6-966a076d0701"
+			refpath="/form[@controlname='PeopleSelectForm']/element[@controlname='_BaseForm_Toolbars_Dock_Area_Bottom']/container[@accessiblename='DockBottom']/toolbar[@accessiblename='Toolbar']/button[@accessiblename='OK']"
+			searchtimeout="30000ms">
+				/form[@controlname='PeopleSelectForm']//toolbar[@accessiblename='Toolbar']/button[@accessiblename='OK']
+			</item>
+			<item
+			addcaps="cell,accessible"
+			capname="cell"
+			id="ba1dcbfa-a709-4daa-80e9-13da200c8d00"
+			name="listNameOne"
+			refimgid="c53feed8-f0f7-46fe-8149-1e24a1ad5cb8"
+			refpath="/form[@controlname='PeopleSelectForm']/container[@controlname='panel1']/element[@controlname='apgSelector']/table[@accessiblerole='Table']/row[@accessiblename='Band 0 row 1']/cell[@accessiblename='Name']"
+			searchtimeout="30000ms">
+				/form[@controlname='PeopleSelectForm']/container[@controlname='panel1']//row[@accessiblename='Band 0 row 1']/cell[@accessiblename='Name']
+			</item>
+			<basepath>
+				/form[@controlname='PeopleSelectForm']
+			</basepath>
+			<icon>
+				iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACx
+jwv8YQUAAAAJcEhZcwAADsQAAA7EAZUrDhsAAAJoSURBVDhPtZJZSJRRGIb/+Z0yy43E1CibUIKC
+IFqoi6KNlou6MGmxiyBQKAhNsc2BSSuJhHCpRJMySSPLkMaK1MgoW8Y0Nclxi2jIJIlGhgyd+c/7
+dpz50yBvgnrg4xw43/vyLUf5L2CgZ7+oPPwVuauJozMo0gLBoj3NJE3yWfVlTY4BDRc0OF56RPsl
+sHo5teJgiuIpQK6qMU0h7p4s13P/hFYzMTwIeEaBLy10XdzA/n0mCusqsmoBcWU6cNZvFLdS62W6
+n0+lg/vZvei6o8H1ERQeYqiL9mWxbDaq5LtUonEXWbOCKA0GzAY3XN/WStlEO6g6BLScAdtOkZ+q
+yWEr38ZE8ZUsDEMVRHcW+TyBrF5MFPqBpxcO6VLFyAH7OjxM8bBhL/kkjsJu4Y+mfMLdxiZpMHg5
+g/hcRnakk3UbZRUhQLICXa9MRWd9EW5vGeVYr427ib4c9sWtkQbvaZMGrSGBxEgd2ZVJPt5Glkdw
+bKC6XjGi59l25Id7WBlDPI0nBvPYOjeCjpQEtkdHetugVkt2mslHW4myMCB1ooIxgpCuANdCgdr1
+FG9SONJ8Tq79BTVnHV9LA2dpEoUtkby3kijxBzJC3brWB49HEQUGiJuxdMRHk/3HyN5s8nsRbarC
+9vAAOZ/NRMUcIEd1o7cxScrGV2kAMBMH5cQLVdoXTeOHTbPk6nbQsTOW3UvD2L0kiK6scIgCFcyc
+P97/7xjodJp4QKHIUzVcDQRuzCYr51Fcj4QoCQDOGzy0mCYV/8L7MVCWaGOyHNwJGRYZR2Sk+xMd
+D8zerL8gSEaw7+rFqJ//CkX5CWkHqyZHVzU6AAAAAElFTkSuQmCC
+			</icon>
+		</appfolder>
+		<appfolder
+		addcaps="form,control,nativewindow"
+		capname="form"
+		id="07c60877-cbb9-44e9-be99-6ca1a0f4f5c4"
+		isrooted="True"
+		name="StickyDetails"
+		refpath="/form[@controlname='StickyDetails']"
+		searchtimeout="30000ms"
+		usecache="True">
+			<item
+			addcaps="button,accessible"
+			capname="button"
+			id="b45e18a3-5bc6-4639-aaeb-aaf8384a41b7"
+			name="btnAddFile"
+			refimgid="1d983969-e458-4f47-9abf-0ff62028831f"
+			refpath="/form[@controlname='StickyDetails']/container[@controlname='StickyDetails_Fill_Panel']/container[@controlname='scFiles']/element[@controlname='ubtnIcon']/button[@accessiblerole='PushButton']"
+			searchtimeout="30000ms">
+				/form[@controlname='StickyDetails']/container[@controlname='StickyDetails_Fill_Panel']//button[@accessiblerole='PushButton']
+			</item>
+			<item
+			addcaps="text,accessible"
+			capname="text"
+			id="f5d7c246-dc66-4469-94d9-aec2222e94d5"
+			name="txtNoteBox"
+			refimgid="7ab0c1a5-4f5d-4f64-a9e1-464c82d120ad"
+			refpath="/form[@controlname='StickyDetails']/container[@controlname='StickyDetails_Fill_Panel']/element[@controlname='uteStickyMessage']/text[@controltypename='EmbeddableTextBoxWithUIPermissions']/text[@accessiblerole='Text']"
+			searchtimeout="30000ms">
+				/form[@controlname='StickyDetails']/container[@controlname='StickyDetails_Fill_Panel']/element[@controlname='uteStickyMessage']/text[@controltypename='EmbeddableTextBoxWithUIPermissions']/text[@accessiblerole='Text']
+			</item>
+			<item
+			addcaps="button,accessible"
+			capname="button"
+			id="d4bdb645-bc3a-4fd0-806f-9f28dca21c4c"
+			name="btnSend"
+			refimgid="7145ce1b-5369-4bf4-9dec-ad620f5e3e24"
+			refpath="/form[@controlname='StickyDetails']/element[@controlname='_StickyDetails_Toolbars_Dock_Area_Bottom']/container[@accessiblename='DockBottom']/toolbar[@accessiblename='Toolbar']/button[@accessiblename='Send ']"
+			searchtimeout="30000ms">
+				/form[@controlname='StickyDetails']//toolbar[@accessiblename='Toolbar']/button[@accessiblename='Send ']
+			</item>
+			<item
+			addcaps="button,accessible"
+			capname="button"
+			id="c6686988-a147-4cf9-8f12-40e2da978d8f"
+			name="btnCancel"
+			refimgid="d0160ffc-5c88-4db4-8d67-7d364f02a9f9"
+			refpath="/form[@controlname='StickyDetails']/element[@controlname='_StickyDetails_Toolbars_Dock_Area_Bottom']/container[@accessiblename='DockBottom']/toolbar[@accessiblename='Toolbar']/button[@accessiblename='Cancel']"
+			searchtimeout="30000ms">
+				/form[@controlname='StickyDetails']//toolbar[@accessiblename='Toolbar']/button[@accessiblename='Cancel']
+			</item>
+			<item
+			addcaps="button,accessible"
+			capname="button"
+			id="b30f9104-7ff2-447b-b600-ae39c897490c"
+			name="btnClose"
+			refimgid="405854ec-e900-49c7-853a-8da5a64a4d11"
+			refpath="/form[@controlname='StickyDetails']/element[@controlname='_StickyDetails_Toolbars_Dock_Area_Bottom']/container[@accessiblename='DockBottom']/toolbar[@accessiblename='Toolbar']/button[@accessiblename='Close']"
+			searchtimeout="5000ms">
+				/form[@controlname='StickyDetails']//toolbar[@accessiblename='Toolbar']/button[@accessiblename='Close']
+			</item>
+			<basepath>
+				/form[@controlname='StickyDetails']
+			</basepath>
+			<icon>
+				iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACx
+jwv8YQUAAAAJcEhZcwAADsQAAA7EAZUrDhsAAAG0SURBVDhPjZJbKENxHMcXHueVNy9WLoU3pGXl
+gVJSmktuu7AXD+JBedmrRE5Jw1jK3ZNpJJfmMpdhx5is2SQzl2EllwjD1znbTqxzZr716X/69/9+
+fp3+fx5XTrfKEPj0JYq/gnShGVF8Q9B+yNxZq+F11fgOZ2ZpodV5oKizg+g6h1RxFF7yeV4LXCrw
+cdsLtdqO0fFrJKWZ0KmiBHLib8GNpRJfF34Brhpw59KBNHlgsz1jb98Zfvr7WY2/HIBcaEeOaAOx
+Masoyu/GAFEUWnJlLv+ZTmHQKqFsNiI+3kKVlhAZMQd5WT9OjFXckjenPGh6X1sHJBIHVCo34uLW
+qZIeuaIRGKcVbIFjrSSoTGNbbYJGZcDkpAcCwSai+XNoaSbQ2ypkC15OZCwBzetpPdxWAskJs7Cv
+NcK9V8Euu0zlnOXfJAq0vnVmKC9YwNx5OGjBw5GEPZ1+dVwFLg6XxGwBncWJfDwdSzlLDF7qfQSO
+h87hshjML3mdMnjIQtzsFOD+QIxbc3F4AZ0e6oqeHFI8WkuxO5aC7cEkH1M9mf8TMNEPZ4McS4Vp
+NBXzmowQZR7vGyr5sN+VWd0UAAAAAElFTkSuQmCC
+			</icon>
+		</appfolder>
+		<appfolder
+		addcaps="form,control,nativewindow"
+		capname="form"
+		id="9c1043e8-ccb4-4e0b-9ae1-ffdf053c6795"
+		isrooted="True"
+		name="FindFilesForm"
+		refpath="/form[@controlname='FindFilesForm']"
+		searchtimeout="30000ms"
+		usecache="True">
+			<item
+			addcaps="text,accessible"
+			capname="text"
+			id="1b6ffcb0-2d71-4b3b-b8bd-ede40ae97191"
+			name="txtFindFile"
+			refimgid="a24b365d-35c6-4d6c-9c85-f60333e53f83"
+			searchtimeout="30000ms">
+				/form[@controlname='FindFilesForm']/container[@controlname='pnlBase']//text[@automationid='atxtSearch_EmbeddableTextBox']
+			</item>
+			<item
+			addcaps="button,accessible"
+			capname="button"
+			id="252322fc-06e2-4b0d-a7e2-fc771cd58c60"
+			name="btnOK"
+			refimgid="3ad5f436-d727-427d-85e8-7d7f1f36ea49"
+			refpath="/form[@controlname='FindFilesForm']/element[@controlname='_BaseForm_Toolbars_Dock_Area_Bottom']/container[@accessiblename='DockBottom']/toolbar[@accessiblename='Toolbar']/button[@accessiblename='OK']"
+			searchtimeout="30000ms">
+				/form[@controlname='FindFilesForm']//toolbar[@accessiblename='Toolbar']/button[@accessiblename='OK']
+			</item>
+			<basepath>
+				/form[@controlname='FindFilesForm']
+			</basepath>
+			<icon>
+				iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACx
+jwv8YQUAAAAJcEhZcwAADsQAAA7EAZUrDhsAAAJoSURBVDhPtZJZSJRRGIb/+Z0yy43E1CibUIKC
+IFqoi6KNlou6MGmxiyBQKAhNsc2BSSuJhHCpRJMySSPLkMaK1MgoW8Y0Nclxi2jIJIlGhgyd+c/7
+dpz50yBvgnrg4xw43/vyLUf5L2CgZ7+oPPwVuauJozMo0gLBoj3NJE3yWfVlTY4BDRc0OF56RPsl
+sHo5teJgiuIpQK6qMU0h7p4s13P/hFYzMTwIeEaBLy10XdzA/n0mCusqsmoBcWU6cNZvFLdS62W6
+n0+lg/vZvei6o8H1ERQeYqiL9mWxbDaq5LtUonEXWbOCKA0GzAY3XN/WStlEO6g6BLScAdtOkZ+q
+yWEr38ZE8ZUsDEMVRHcW+TyBrF5MFPqBpxcO6VLFyAH7OjxM8bBhL/kkjsJu4Y+mfMLdxiZpMHg5
+g/hcRnakk3UbZRUhQLICXa9MRWd9EW5vGeVYr427ib4c9sWtkQbvaZMGrSGBxEgd2ZVJPt5Glkdw
+bKC6XjGi59l25Id7WBlDPI0nBvPYOjeCjpQEtkdHetugVkt2mslHW4myMCB1ooIxgpCuANdCgdr1
+FG9SONJ8Tq79BTVnHV9LA2dpEoUtkby3kijxBzJC3brWB49HEQUGiJuxdMRHk/3HyN5s8nsRbarC
+9vAAOZ/NRMUcIEd1o7cxScrGV2kAMBMH5cQLVdoXTeOHTbPk6nbQsTOW3UvD2L0kiK6scIgCFcyc
+P97/7xjodJp4QKHIUzVcDQRuzCYr51Fcj4QoCQDOGzy0mCYV/8L7MVCWaGOyHNwJGRYZR2Sk+xMd
+D8zerL8gSEaw7+rFqJ//CkX5CWkHqyZHVzU6AAAAAElFTkSuQmCC
+			</icon>
+		</appfolder>
+		<appfolder
+		addcaps="form,control,nativewindow"
+		capname="form"
+		id="d2b12fce-5506-4dc1-b058-8f628f54b120"
+		isrooted="True"
+		name="FileSelectForm"
+		refpath="/form[@controlname='FileSelectForm']"
+		searchtimeout="30000ms"
+		usecache="True">
+			<item
+			addcaps="cell,accessible"
+			capname="cell"
+			id="e7fb53b7-5a9a-4e55-80dc-2fd8fa9ecaee"
+			name="fileListItemOne"
+			refimgid="4bf5b1e4-7ea2-4cc0-ae6a-cff16036fd3c"
+			refpath="/form[@controlname='FileSelectForm']/container[@controlname='panel1']/element[@controlname='ufgSelector']/table[@accessiblerole='Table']/row[@accessiblename='Band 0 row 1']/cell[@accessiblename='File']"
+			searchtimeout="30000ms">
+				/form[@controlname='FileSelectForm']/container[@controlname='panel1']//row[@accessiblename='Band 0 row 1']/cell[@accessiblename='File']
+			</item>
+			<item
+			addcaps="button,accessible"
+			capname="button"
+			id="2a856528-dd0f-4460-8153-22f9af1f4867"
+			name="btnQuickFind"
+			refimgid="576f940d-acdc-4712-9ad9-3a48363cf7f9"
+			refpath="/form[@controlname='FileSelectForm']/element[@controlname='_BaseForm_Toolbars_Dock_Area_Bottom']/container[@accessiblename='DockBottom']/toolbar[@accessiblename='Toolbar']/button[@accessiblename='QuickFind']"
+			searchtimeout="30000ms">
+				/form[@controlname='FileSelectForm']//toolbar[@accessiblename='Toolbar']/button[@accessiblename='QuickFind']
+			</item>
+			<item
+			addcaps="button,accessible"
+			capname="button"
+			id="9fc53555-2474-4cd2-887e-74ec5fcdf282"
+			name="btnOK"
+			refimgid="ae6fdc6a-c88d-45b1-934a-8a325f1d563f"
+			refpath="/form[@controlname='FileSelectForm']/element[@controlname='_BaseForm_Toolbars_Dock_Area_Bottom']/container[@accessiblename='DockBottom']/toolbar[@accessiblename='Toolbar']/button[@accessiblename='OK']"
+			searchtimeout="30000ms">
+				/form[@controlname='FileSelectForm']//toolbar[@accessiblename='Toolbar']/button[@accessiblename='OK']
+			</item>
+			<basepath>
+				/form[@controlname='FileSelectForm']
+			</basepath>
+			<icon>
+				iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACx
+jwv8YQUAAAAJcEhZcwAADsQAAA7EAZUrDhsAAAJoSURBVDhPtZJZSJRRGIb/+Z0yy43E1CibUIKC
+IFqoi6KNlou6MGmxiyBQKAhNsc2BSSuJhHCpRJMySSPLkMaK1MgoW8Y0Nclxi2jIJIlGhgyd+c/7
+dpz50yBvgnrg4xw43/vyLUf5L2CgZ7+oPPwVuauJozMo0gLBoj3NJE3yWfVlTY4BDRc0OF56RPsl
+sHo5teJgiuIpQK6qMU0h7p4s13P/hFYzMTwIeEaBLy10XdzA/n0mCusqsmoBcWU6cNZvFLdS62W6
+n0+lg/vZvei6o8H1ERQeYqiL9mWxbDaq5LtUonEXWbOCKA0GzAY3XN/WStlEO6g6BLScAdtOkZ+q
+yWEr38ZE8ZUsDEMVRHcW+TyBrF5MFPqBpxcO6VLFyAH7OjxM8bBhL/kkjsJu4Y+mfMLdxiZpMHg5
+g/hcRnakk3UbZRUhQLICXa9MRWd9EW5vGeVYr427ib4c9sWtkQbvaZMGrSGBxEgd2ZVJPt5Glkdw
+bKC6XjGi59l25Id7WBlDPI0nBvPYOjeCjpQEtkdHetugVkt2mslHW4myMCB1ooIxgpCuANdCgdr1
+FG9SONJ8Tq79BTVnHV9LA2dpEoUtkby3kijxBzJC3brWB49HEQUGiJuxdMRHk/3HyN5s8nsRbarC
+9vAAOZ/NRMUcIEd1o7cxScrGV2kAMBMH5cQLVdoXTeOHTbPk6nbQsTOW3UvD2L0kiK6scIgCFcyc
+P97/7xjodJp4QKHIUzVcDQRuzCYr51Fcj4QoCQDOGzy0mCYV/8L7MVCWaGOyHNwJGRYZR2Sk+xMd
+D8zerL8gSEaw7+rFqJ//CkX5CWkHqyZHVzU6AAAAAElFTkSuQmCC
+			</icon>
+		</appfolder>
+		<appfolder
+		addcaps="form,control,nativewindow"
+		capname="form"
+		id="01b7c8aa-6d22-4050-b6b8-bdc0607327c4"
+		isrooted="True"
+		name="NoteDetail"
+		refpath="/form[@controlname='NoteDetail']"
+		searchtimeout="30000ms"
+		usecache="True">
+			<folder
+			addcaps="container,control,nativewindow"
+			capname="container"
+			id="70fd598f-8922-4c70-aa85-1e64445fd365"
+			isrooted="True"
+			name="MenubarFillPanel"
+			refpath="/form[@controlname='NoteDetail']/container[@controlname='menubar_Fill_Panel']"
+			searchtimeout="30000ms"
+			usecache="False">
+				<item
+				addcaps="button,accessible"
+				capname="button"
+				id="5b0e9486-f8e8-4814-ae23-40c3bea4e0b8"
+				name="btnDelete"
+				refimgid="d369d0b2-4b43-4635-80f1-a6ed1358a8d7"
+				refpath="/form[@controlname='NoteDetail']/container[@controlname='menubar_Fill_Panel']/element[@controlname='_menubar_Fill_Panel_Toolbars_Dock_Area_Bottom']/container[@accessiblename='DockBottom']/toolbar[@accessiblename='Toolbar']/button[@accessiblename='Delete']"
+				searchtimeout="30000ms">
+					/form[@controlname='NoteDetail']/container[@controlname='menubar_Fill_Panel']//toolbar[@accessiblename='Toolbar']/button[@accessiblename='Delete']
+				</item>
+				<item
+				addcaps="button,accessible"
+				capname="button"
+				id="141b0bb0-b074-4844-9f1f-db03c7ee34ec"
+				name="btnOK"
+				refimgid="6a7a96f9-5f09-42c7-b160-2c258d7176b4"
+				refpath="/form[@controlname='NoteDetail']/container[@controlname='menubar_Fill_Panel']/element[@controlname='_menubar_Fill_Panel_Toolbars_Dock_Area_Bottom']/container[@accessiblename='DockBottom']/toolbar[@accessiblename='Toolbar']/button[@accessiblename='OK']"
+				searchtimeout="30000ms">
+					/form[@controlname='NoteDetail']/container[@controlname='menubar_Fill_Panel']//toolbar[@accessiblename='Toolbar']/button[@accessiblename='OK']
+				</item>
+				<item
+				addcaps="text,accessible"
+				capname="text"
+				id="eb5a9a15-69d5-4869-8532-9f7bdb46d0f9"
+				name="txtNoteBoxEdit"
+				refimgid="e491abbc-45a0-4ee0-8c9d-758c9a51c643"
+				refpath="/form[@controlname='NoteDetail']/container[@controlname='menubar_Fill_Panel']/container[@controlname='pnlBase']/container[@controlname='pnlControls']/container[@controlname='panelNoteDetail']/element[@controlname='uteNoteText']/text[@controltypename='EmbeddableTextBoxWithUIPermissions']/text[@accessiblerole='Text']"
+				searchtimeout="30000ms">
+					/form[@controlname='NoteDetail']/container[@controlname='menubar_Fill_Panel']/container[@controlname='pnlBase']/?/?/container[@controlname='panelNoteDetail']/?/?/text[@controltypename='EmbeddableTextBoxWithUIPermissions']/text[@accessiblerole='Text']
+				</item>
+				<item
+				addcaps="button,accessible"
+				capname="button"
+				id="c11d766d-eb24-41b7-aa77-fbddc3f8c0d0"
+				name="btnCancel"
+				refimgid="019a58a5-3533-479c-b7fa-8391673913a2"
+				refpath="/form[@controlname='NoteDetail']/container[@controlname='menubar_Fill_Panel']/element[@controlname='_menubar_Fill_Panel_Toolbars_Dock_Area_Bottom']/container[@accessiblename='DockBottom']/toolbar[@accessiblename='Toolbar']/button[@accessiblename='Cancel']"
+				searchtimeout="30000ms">
+					/form[@controlname='NoteDetail']/container[@controlname='menubar_Fill_Panel']//toolbar[@accessiblename='Toolbar']/button[@accessiblename='Cancel']
+				</item>
+				<basepath>
+					/form[@controlname='NoteDetail']/container[@controlname='menubar_Fill_Panel']
+				</basepath>
+			</folder>
+			<basepath>
+				/form[@controlname='NoteDetail']
+			</basepath>
+			<icon>
+				iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACx
+jwv8YQUAAAAJcEhZcwAADsQAAA7EAZUrDhsAAAJoSURBVDhPtZJZSJRRGIb/+Z0yy43E1CibUIKC
+IFqoi6KNlou6MGmxiyBQKAhNsc2BSSuJhHCpRJMySSPLkMaK1MgoW8Y0Nclxi2jIJIlGhgyd+c/7
+dpz50yBvgnrg4xw43/vyLUf5L2CgZ7+oPPwVuauJozMo0gLBoj3NJE3yWfVlTY4BDRc0OF56RPsl
+sHo5teJgiuIpQK6qMU0h7p4s13P/hFYzMTwIeEaBLy10XdzA/n0mCusqsmoBcWU6cNZvFLdS62W6
+n0+lg/vZvei6o8H1ERQeYqiL9mWxbDaq5LtUonEXWbOCKA0GzAY3XN/WStlEO6g6BLScAdtOkZ+q
+yWEr38ZE8ZUsDEMVRHcW+TyBrF5MFPqBpxcO6VLFyAH7OjxM8bBhL/kkjsJu4Y+mfMLdxiZpMHg5
+g/hcRnakk3UbZRUhQLICXa9MRWd9EW5vGeVYr427ib4c9sWtkQbvaZMGrSGBxEgd2ZVJPt5Glkdw
+bKC6XjGi59l25Id7WBlDPI0nBvPYOjeCjpQEtkdHetugVkt2mslHW4myMCB1ooIxgpCuANdCgdr1
+FG9SONJ8Tq79BTVnHV9LA2dpEoUtkby3kijxBzJC3brWB49HEQUGiJuxdMRHk/3HyN5s8nsRbarC
+9vAAOZ/NRMUcIEd1o7cxScrGV2kAMBMH5cQLVdoXTeOHTbPk6nbQsTOW3UvD2L0kiK6scIgCFcyc
+P97/7xjodJp4QKHIUzVcDQRuzCYr51Fcj4QoCQDOGzy0mCYV/8L7MVCWaGOyHNwJGRYZR2Sk+xMd
+D8zerL8gSEaw7+rFqJ//CkX5CWkHqyZHVzU6AAAAAElFTkSuQmCC
+			</icon>
+		</appfolder>
+		<appfolder
+		addcaps="form,control,nativewindow"
+		capname="form"
+		id="87c7bfbf-a3c5-4b39-a16a-b3b081bebf61"
+		isrooted="True"
+		name="PromptForm"
+		refpath="/form[@controlname='PromptForm']"
+		searchtimeout="30000ms"
+		usecache="True">
+			<item
+			addcaps="button,accessible"
+			capname="button"
+			id="a1e8cfff-a196-4b6e-ab0a-6a81668a6175"
+			name="btnOK"
+			refimgid="2e24d2ad-8463-43ff-bc34-69359d476fbd"
+			refpath="/form[@controlname='PromptForm']/element[@controlname='_BaseForm_Toolbars_Dock_Area_Bottom']/container[@accessiblename='DockBottom']/toolbar[@accessiblename='Toolbar']/button[@accessiblename='OK']"
+			searchtimeout="30000ms">
+				/form[@controlname='PromptForm']//toolbar[@accessiblename='Toolbar']/button[@accessiblename='OK']
+			</item>
+			<basepath>
+				/form[@controlname='PromptForm']
+			</basepath>
+			<icon>
+				iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACx
+jwv8YQUAAAAJcEhZcwAADsQAAA7EAZUrDhsAAAJoSURBVDhPtZJZSJRRGIb/+Z0yy43E1CibUIKC
+IFqoi6KNlou6MGmxiyBQKAhNsc2BSSuJhHCpRJMySSPLkMaK1MgoW8Y0Nclxi2jIJIlGhgyd+c/7
+dpz50yBvgnrg4xw43/vyLUf5L2CgZ7+oPPwVuauJozMo0gLBoj3NJE3yWfVlTY4BDRc0OF56RPsl
+sHo5teJgiuIpQK6qMU0h7p4s13P/hFYzMTwIeEaBLy10XdzA/n0mCusqsmoBcWU6cNZvFLdS62W6
+n0+lg/vZvei6o8H1ERQeYqiL9mWxbDaq5LtUonEXWbOCKA0GzAY3XN/WStlEO6g6BLScAdtOkZ+q
+yWEr38ZE8ZUsDEMVRHcW+TyBrF5MFPqBpxcO6VLFyAH7OjxM8bBhL/kkjsJu4Y+mfMLdxiZpMHg5
+g/hcRnakk3UbZRUhQLICXa9MRWd9EW5vGeVYr427ib4c9sWtkQbvaZMGrSGBxEgd2ZVJPt5Glkdw
+bKC6XjGi59l25Id7WBlDPI0nBvPYOjeCjpQEtkdHetugVkt2mslHW4myMCB1ooIxgpCuANdCgdr1
+FG9SONJ8Tq79BTVnHV9LA2dpEoUtkby3kijxBzJC3brWB49HEQUGiJuxdMRHk/3HyN5s8nsRbarC
+9vAAOZ/NRMUcIEd1o7cxScrGV2kAMBMH5cQLVdoXTeOHTbPk6nbQsTOW3UvD2L0kiK6scIgCFcyc
+P97/7xjodJp4QKHIUzVcDQRuzCYr51Fcj4QoCQDOGzy0mCYV/8L7MVCWaGOyHNwJGRYZR2Sk+xMd
+D8zerL8gSEaw7+rFqJ//CkX5CWkHqyZHVzU6AAAAAElFTkSuQmCC
+			</icon>
+		</appfolder>
+		<basepath>
+		</basepath>
+	</rootfolder>
+	<variables>
+	</variables>
+</repository>

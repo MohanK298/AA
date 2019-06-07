@@ -1,0 +1,367 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<repository
+id="358d9fa2-d73c-4905-9bfd-1fb7897837d2"
+name="FirmSettings"
+rxversion="9.0">
+	<codegen
+	classname="FirmSettings"
+	namespace="SmokeTest.Repositories">
+	</codegen>
+	<rootfolder
+	capname="unknown"
+	id="20ef10cc-1191-4e93-8064-357088ca2971"
+	isrooted="True"
+	name="Root"
+	searchtimeout="0ms"
+	usecache="True">
+		<appfolder
+		addcaps="form,control,nativewindow"
+		capname="form"
+		id="862f27fe-fbae-4488-a56b-e27e18c6482d"
+		isrooted="True"
+		name="LoginForm"
+		refpath="/form[@controlname='LoginForm']"
+		searchtimeout="30000ms"
+		usecache="True">
+			<item
+			addcaps="button,accessible"
+			capname="button"
+			id="97c15ff1-e056-4469-b215-858c620f4b4b"
+			name="Login"
+			refimgid="b1a9d68f-4021-49a7-a347-9924295a95e1"
+			refpath="/form[@controlname='LoginForm']/container/element[@controlname='btnLogin']/button[@accessiblename='Login']"
+			searchtimeout="30000ms">
+				/form[@controlname='LoginForm']/?/?/element[@controlname='btnLogin']/button[@accessiblename='Login']
+			</item>
+			<basepath>
+				/form[@controlname='LoginForm']
+			</basepath>
+			<icon>
+				iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACx
+jwv8YQUAAAAJcEhZcwAADsQAAA7EAZUrDhsAAAFlSURBVDhPY6AJeOJjOvORg9p/FOyo/v9xoKUT
+VAlugKERDT921nwLVQoBb3Kj+Z5FOf9/FuP2/1msO3EYpBaIH7vr/Qcb8Oft6//kgFclif/Brnjo
+qPYZKvb/z8tn/z+tWfD/bWspWMHLwrj/r8pT/7/rrfv/dffG//++fwOr+3Hu+P8nPsYTwAY8CbRM
+fGSvCnbev29fwQpwgd9PH/1/N6ERHB5gzSDwyFX3IkjgeZLv/0+rF/z/snPD/4fWCmAND60V/3+Y
+1fP//cxuYABqgcUe2SqBDXge5qoDMcBN9w3MgDdNhf/fTWr+/xCoCKb4XU/t/7fd1Shi4BgJtPSG
+GqBzjhwDnkbaa4ANAIZBBDkGgDXDAMkGAFMmVCsEPHLTO0uKAU+jnYygWhHgeZIPUQY8dFS/BdWC
+Cd405uM14N+/f+egSnGDjyvnxjyyVQYbANL0FmjAm/aKH4+9zVWhSqCAgQEAq9YXqsYCPO8AAAAA
+SUVORK5CYII=
+			</icon>
+		</appfolder>
+		<appfolder
+		addcaps="form,control,nativewindow"
+		capname="form"
+		id="858fa071-5d4f-4a86-a4bc-8627d2d3a5fa"
+		isrooted="True"
+		name="MainForm"
+		refpath="/form[@controlname='MainForm']"
+		searchtimeout="30000ms"
+		usecache="True">
+			<item
+			addcaps="text,accessible"
+			capname="text"
+			id="910739be-87a1-483a-95a2-26dd966926db"
+			name="FirmSettings"
+			refimgid="f1443d61-2ce2-4cf8-b097-d67e10cbce41"
+			refpath="/form[@controlname='MainForm']/container/container[@caption='' and @controltypename='Panel' and @instance='1']/element/container[@caption='' and @controltypename='UltraExplorerBarContainerControl' and @instance='0']/container/container/container/container/container[@caption='' and @controltypename='Panel' and @instance='10']/element/text[@accessiblename='Firm Settings']"
+			searchtimeout="30000ms">
+				/form[@controlname='MainForm']/container[@controlname='pLeft']//container[@controltypename='UltraExplorerBarContainerControl' and @instance='0']/?/?/container[@controlname='OfficeControlPanel']/?/?/container[@controlname='panelParent']/container[@controltypename='Panel' and @instance='10']/?/?/text[@accessiblename='Firm Settings']
+			</item>
+			<item
+			addcaps="text,accessible"
+			capname="container"
+			id="cf89fd98-8bd1-4aa9-98f4-9608b43450e1"
+			name="Office"
+			refimgid="1503f128-3b07-4c98-b851-3998796189ea"
+			searchtimeout="30000ms">
+				/form[@controlname='MainForm']/container[@controlname='pLeft']//container[@automationid='[Group] 0']
+			</item>
+			<item
+			addcaps="text,accessible"
+			capname="text"
+			id="9f1de6c7-6881-4dc0-8c7b-0499e37e5b62"
+			name="StaticText"
+			refimgid="2ee45282-a954-4b05-bcec-c8fc80e182df"
+			refpath="/form[@controlname='MainForm']/element[@controltypename='MdiClient']/form/container[@controlname='roundedPanelControl']/container/element[@controlname='amlblDocumentLocations']/text[@accessiblerole='StaticText']"
+			searchtimeout="30000ms">
+				/form[@controlname='MainForm']/?/?/form[@controlname='FirmSettingsForm']//element[@controlname='amlblDocumentLocations']/text[@accessiblerole='StaticText']
+			</item>
+			<folder
+			capname="form"
+			id="641b911d-6951-411a-95f1-f7673e06af0a"
+			isrooted="True"
+			name="FirmSettingsForm"
+			searchtimeout="30000ms"
+			usecache="False">
+				<item
+				capname="text"
+				id="fac46982-6d05-4490-8aaf-2df1be8a4de5"
+				name="Management"
+				refimgid="e9af3ae7-7ebe-4879-9836-369c7a02c0c3"
+				searchtimeout="30000ms">
+					/form[@controlname='MainForm']/?/?/form[@controlname='FirmSettingsForm']//element[@controlname='amlblDocumentLocations']/text[@accessiblerole='StaticText']
+				</item>
+				<basepath>
+					/form[@controlname='MainForm']/?/?/form[@controlname='FirmSettingsForm']
+				</basepath>
+			</folder>
+			<basepath>
+				/form[@controlname='MainForm']
+			</basepath>
+			<icon>
+				iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACx
+jwv8YQUAAAAJcEhZcwAADsQAAA7EAZUrDhsAAAFlSURBVDhPY6AJeOJjOvORg9p/FOyo/v9xoKUT
+VAlugKERDT921nwLVQoBb3Kj+Z5FOf9/FuP2/1msO3EYpBaIH7vr/Qcb8Oft6//kgFclif/Brnjo
+qPYZKvb/z8tn/z+tWfD/bWspWMHLwrj/r8pT/7/rrfv/dffG//++fwOr+3Hu+P8nPsYTwAY8CbRM
+fGSvCnbev29fwQpwgd9PH/1/N6ERHB5gzSDwyFX3IkjgeZLv/0+rF/z/snPD/4fWCmAND60V/3+Y
+1fP//cxuYABqgcUe2SqBDXge5qoDMcBN9w3MgDdNhf/fTWr+/xCoCKb4XU/t/7fd1Shi4BgJtPSG
+GqBzjhwDnkbaa4ANAIZBBDkGgDXDAMkGAFMmVCsEPHLTO0uKAU+jnYygWhHgeZIPUQY8dFS/BdWC
+Cd405uM14N+/f+egSnGDjyvnxjyyVQYbANL0FmjAm/aKH4+9zVWhSqCAgQEAq9YXqsYCPO8AAAAA
+SUVORK5CYII=
+			</icon>
+		</appfolder>
+		<appfolder
+		addcaps="form,control,nativewindow"
+		capname="form"
+		id="ca27910a-bd04-4380-8ce4-c7f4e00d6004"
+		isrooted="True"
+		name="DocumentFirmSettingsForm"
+		refpath="/form[@controlname='DocumentFirmSettingsForm']"
+		searchtimeout="30000ms"
+		usecache="True">
+			<item
+			addcaps="button,accessible"
+			capname="button"
+			id="08c81288-1f34-40e1-acbc-c767a482a8d9"
+			name="Configure"
+			refimgid="0c9d9d57-e6b3-4c35-8f26-bc54ba4b9066"
+			refpath="/form[@controlname='DocumentFirmSettingsForm']/container[@controlname='pnlBase']/container/container/container/container[@controlname='panelDocumentLocation']/element[@controlname='abtnConfigure']/button[@accessiblename='Configure']"
+			searchtimeout="30000ms">
+				/form[@controlname='DocumentFirmSettingsForm']/container[@controlname='pnlBase']//container[@controlname='panelBase']/?/?/element[@controlname='abtnConfigure']/button[@accessiblename='Configure']
+			</item>
+			<item
+			addcaps="text,uiautomation,uiautomationvalue"
+			capname="text"
+			id="2c84a076-5440-4bb0-abe2-96a1353ac952"
+			name="TextEditorEditArea"
+			refimgid="23d77161-6f4b-4ccd-85b7-a29b4811701f"
+			refpath="/form[@controlname='DocumentFirmSettingsForm']/container[@controlname='pnlBase']/container[@controlname='pnlControls']/container[@controlname='panelTitleBase']/container[@controlname='panelBase']/container[@controlname='panelDocumentLocation']/element[@controlname='acobDocumentManagedType']/text[@automationid='[Editor] Edit Area']"
+			searchtimeout="30000ms">
+				/form[@controlname='DocumentFirmSettingsForm']/container[@controlname='pnlBase']//container[@controlname='panelBase']/?/?/element[@controlname='acobDocumentManagedType']/text[@automationid='[Editor] Edit Area']
+			</item>
+			<item
+			addcaps="button,uiautomation,uiautomationinvoke"
+			capname="button"
+			id="c5c86473-f74e-46ff-903a-3577c9c78a4e"
+			name="OK"
+			refimgid="f3e6e31e-8f0c-4be9-91ef-e127529b8973"
+			refpath="/form[@controlname='DocumentFirmSettingsForm']/element[@controlname='_BaseForm_Toolbars_Dock_Area_Bottom']/toolbar/button[@automationid='[Toolbar : toolbarBaseDesigner Tools] Tool : TOOLBAR_BUTTON_OK - Index : 5 ']"
+			searchtimeout="30000ms">
+				/form[@controlname='DocumentFirmSettingsForm']/?/?/toolbar[@automationid='Toolbar : toolbarBaseDesigner']/button[@automationid='[Toolbar : toolbarBaseDesigner Tools] Tool : TOOLBAR_BUTTON_OK - Index : 5 ']
+			</item>
+			<basepath>
+				/form[@controlname='DocumentFirmSettingsForm']
+			</basepath>
+			<icon>
+				iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACx
+jwv8YQUAAAAJcEhZcwAADsQAAA7EAZUrDhsAAAFlSURBVDhPY6AJeOJjOvORg9p/FOyo/v9xoKUT
+VAlugKERDT921nwLVQoBb3Kj+Z5FOf9/FuP2/1msO3EYpBaIH7vr/Qcb8Oft6//kgFclif/Brnjo
+qPYZKvb/z8tn/z+tWfD/bWspWMHLwrj/r8pT/7/rrfv/dffG//++fwOr+3Hu+P8nPsYTwAY8CbRM
+fGSvCnbev29fwQpwgd9PH/1/N6ERHB5gzSDwyFX3IkjgeZLv/0+rF/z/snPD/4fWCmAND60V/3+Y
+1fP//cxuYABqgcUe2SqBDXge5qoDMcBN9w3MgDdNhf/fTWr+/xCoCKb4XU/t/7fd1Shi4BgJtPSG
+GqBzjhwDnkbaa4ANAIZBBDkGgDXDAMkGAFMmVCsEPHLTO0uKAU+jnYygWhHgeZIPUQY8dFS/BdWC
+Cd405uM14N+/f+egSnGDjyvnxjyyVQYbANL0FmjAm/aKH4+9zVWhSqCAgQEAq9YXqsYCPO8AAAAA
+SUVORK5CYII=
+			</icon>
+		</appfolder>
+		<appfolder
+		addcaps="form,control,nativewindow"
+		capname="form"
+		id="8fe9fc07-f023-422e-88fa-359106f6317b"
+		isrooted="True"
+		name="DocumentManagementWizForm"
+		refpath="/form[@controlname='DocumentManagementWizForm']"
+		searchtimeout="30000ms"
+		usecache="True">
+			<item
+			addcaps="radiobutton,control,nativewindow"
+			capname="radiobutton"
+			id="fe4f22fb-b5fe-4241-87f1-06ea6c17ed61"
+			name="RadioAmicusManaged"
+			refimgid="928142e8-574e-44f3-a33c-7a5134afd3de"
+			refpath="/form[@controlname='DocumentManagementWizForm']/container[@controlname='pnlControls']/container/container[@controlname='panel1']/radiobutton[@controlname='radioAmicusManaged']"
+			searchtimeout="30000ms">
+				/form[@controlname='DocumentManagementWizForm']/container[@controlname='pnlControls']//radiobutton[@controlname='radioAmicusManaged']
+			</item>
+			<item
+			addcaps="radiobutton,control,nativewindow"
+			capname="checkbox"
+			id="044b5a33-c55d-44c5-ad9e-16011ed14ae3"
+			name="Indexing"
+			refimgid="04933109-ae57-438d-8275-aa18d93e30e8"
+			searchtimeout="30000ms">
+				/form[@controlname='DocumentManagementWizForm']/container[@controlname='pnlControls']//checkbox[@controlname='checkBox21']
+			</item>
+			<item
+			addcaps="button,uiautomation,uiautomationinvoke"
+			capname="button"
+			id="7173c811-20dc-4387-9c21-cd1ae91dcaa6"
+			name="Next"
+			refimgid="cae38511-9633-4040-9429-f55e751bd7e5"
+			refpath="/form[@controlname='DocumentManagementWizForm']/element[@controlname='_BaseDialogForm_Toolbars_Dock_Area_Bottom']/toolbar/button[@automationid='[Toolbar : WIZARD Tools] Tool : NEXT - Index : 2 ']"
+			searchtimeout="30000ms">
+				/form[@controlname='DocumentManagementWizForm']/?/?/toolbar[@automationid='Toolbar : WIZARD']/button[@automationid='[Toolbar : WIZARD Tools] Tool : NEXT - Index : 2 ']
+			</item>
+			<item
+			addcaps="button,uiautomation,uiautomationinvoke"
+			capname="button"
+			id="b2f3e712-3ffa-4056-8f66-2558aa9a87d2"
+			name="Dropdown"
+			refimgid="d09c411d-cffa-42d8-a92d-cf7a7ba436d6"
+			searchtimeout="30000ms">
+				/form[@controlname='DocumentManagementWizForm']/container[@controlname='pnlControls']/container[@controlname='pnlBody']//button[@automationid='[Editor] dropdown button']
+			</item>
+			<item
+			addcaps="button,uiautomation,uiautomationinvoke"
+			capname="listitem"
+			id="24b2157d-fa07-4c56-9ae4-c7d5b1811318"
+			name="SelectCopy"
+			refimgid="0d3f69d2-c994-43da-8404-56b56a118589"
+			searchtimeout="30000ms">
+				/form[@controlname='DocumentManagementWizForm']/container[@controlname='pnlControls']/container[@controlname='pnlBody']//listitem[@automationid='[Editor] [valuelist] ValueListItem 1']
+			</item>
+			<item
+			addcaps="button,uiautomation,uiautomationinvoke"
+			capname="button"
+			id="42c7a49e-aaff-4cd2-b966-738f53dd3f12"
+			name="Finish"
+			refimgid="452f479f-3c1c-4047-8813-72bbade129fa"
+			refpath="/form[@controlname='DocumentManagementWizForm']/element[@controlname='_BaseDialogForm_Toolbars_Dock_Area_Bottom']/toolbar/button[@automationid='[Toolbar : WIZARD Tools] Tool : FINISH - Index : 3 ']"
+			searchtimeout="30000ms">
+				/form[@controlname='DocumentManagementWizForm']/?/?/toolbar[@automationid='Toolbar : WIZARD']/button[@automationid='[Toolbar : WIZARD Tools] Tool : FINISH - Index : 3 ']
+			</item>
+			<basepath>
+				/form[@controlname='DocumentManagementWizForm']
+			</basepath>
+			<icon>
+				iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACx
+jwv8YQUAAAAJcEhZcwAADsQAAA7EAZUrDhsAAALVSURBVDhPlZNrSFNhHMZPF6m++K2gCwXl8lYq
+eSWX002HNENzSSJMU+xipBUtM43VqNSpqZC3oRLqJG9YH5SUNFkqmgYZ0pcI8pydbW1nl7Oza2T9
+O+dsFZUSPfDA4f8+z4/3fXkP8qcAQTbqTnG3o8Kw0xpB6B1UECzHhBE5KyeP7aTXNvhivwRZWZum
+EGQz4w8p+3dg/BDZSiLHjPI4TiyB42aM8gKcaCLHiglC7qHJgbt+5JkuohdFxhikhbmm0rN5utzj
+fbiYS+KZ8aATc38zM8PF8TZ9buqQ8XpBAVFxUaIRhSciuCiq3jE2rHFPP9c4J0bstME5uY6ZNTrj
+Uo/j7plJDSY8PIBo06OLHaODnq8UCauEATxvF8Gz8BLci9O0Z8BDm/2mZ56lBVg16oHJOtRjXzSp
+YXcRNOPoAcNVyTv7E5W38Gbeawa09Iot/fym5wzIPjIAhmtncG1aZBDykbdvq0YYuqzPTwNqqAtc
+6jFwz6vB8WwY3LMT4BgfZrfvnpkA1+wk2J+q4NP5TMBSDpnYS2QAKD+QwEVHgOxqArL9AVD9nWCp
+LQeqrwOsjXKwNleC7dFDsHU3szM8PRZQ3sFVUCr9ECxuzzYsKYjE06KA7GwEk/wKXagCorQASGUt
+mG4XszNLTTlrqlcJeEYcYEmBwALepwZsQfnByyygo4EulIC1qfIvgFlxEyzVZUCp2lgAyg8yAtAP
+6/W5SD8a0PxfAPoImCB40PsSaQqaFCrET0Rbyfb6fwN6WkGTEeegL17MAhiZYgL8tVkJj8n2BjdT
+WBegKAOyu/WzNps/Sh/d31f3yiDNi7D1KtWGiguUpany29+AcjDdl9qpgc45oqwoes0fyzn3IlZf
+kqOytFTpjNJ80tpW4yBklxyE/LLNXHfLQFQU9bump7i++NrCROG7zS3V2cYbhQprq6LHJCvuoXdQ
+R9TKJFpJ8l5fzCcE+Q6ozFZt5OrldwAAAABJRU5ErkJggg==
+			</icon>
+		</appfolder>
+		<appfolder
+		addcaps="form,control,nativewindow"
+		capname="form"
+		id="38473f0f-8f3c-4e7c-8333-de983bb57e93"
+		isrooted="True"
+		name="PromptForm"
+		refpath="/form[@controlname='PromptForm']"
+		searchtimeout="30000ms"
+		usecache="True">
+			<item
+			addcaps="button,uiautomation,uiautomationinvoke"
+			capname="button"
+			id="c9ea5325-0467-446e-9e47-09c9c58a26cf"
+			name="Yes"
+			refimgid="039d6c51-02fa-42ff-809b-4315e748d77f"
+			refpath="/form[@controlname='PromptForm']/element[@controlname='_BaseForm_Toolbars_Dock_Area_Bottom']/toolbar/button[@automationid='[Toolbar : toolbarBaseDesigner Tools] Tool : TOOLBAR_BUTTON_OK - Index : 1 ']"
+			searchtimeout="30000ms">
+				/form[@controlname='PromptForm']/?/?/toolbar[@automationid='Toolbar : toolbarBaseDesigner']/button[@automationid='[Toolbar : toolbarBaseDesigner Tools] Tool : TOOLBAR_BUTTON_OK - Index : 1 ']
+			</item>
+			<basepath>
+				/form[@controlname='PromptForm']
+			</basepath>
+			<icon>
+				iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACx
+jwv8YQUAAAAJcEhZcwAADsQAAA7EAZUrDhsAAAFlSURBVDhPY6AJeOJjOvORg9p/FOyo/v9xoKUT
+VAlugKERDT921nwLVQoBb3Kj+Z5FOf9/FuP2/1msO3EYpBaIH7vr/Qcb8Oft6//kgFclif/Brnjo
+qPYZKvb/z8tn/z+tWfD/bWspWMHLwrj/r8pT/7/rrfv/dffG//++fwOr+3Hu+P8nPsYTwAY8CbRM
+fGSvCnbev29fwQpwgd9PH/1/N6ERHB5gzSDwyFX3IkjgeZLv/0+rF/z/snPD/4fWCmAND60V/3+Y
+1fP//cxuYABqgcUe2SqBDXge5qoDMcBN9w3MgDdNhf/fTWr+/xCoCKb4XU/t/7fd1Shi4BgJtPSG
+GqBzjhwDnkbaa4ANAIZBBDkGgDXDAMkGAFMmVCsEPHLTO0uKAU+jnYygWhHgeZIPUQY8dFS/BdWC
+Cd405uM14N+/f+egSnGDjyvnxjyyVQYbANL0FmjAm/aKH4+9zVWhSqCAgQEAq9YXqsYCPO8AAAAA
+SUVORK5CYII=
+			</icon>
+		</appfolder>
+		<appfolder
+		addcaps="form,control,nativewindow"
+		capname="form"
+		id="85b05c81-83b5-4443-a109-96ace35e6661"
+		isrooted="True"
+		name="ProgressForm"
+		searchtimeout="30000ms"
+		usecache="True">
+			<item
+			addcaps="button,uiautomation,uiautomationinvoke"
+			capname="button"
+			id="211548b9-6e50-454d-8fbc-89e9c5768bed"
+			name="ButtonToolbarToolbarBaseDesignerToo"
+			refimgid="82e59a63-f226-447c-b04c-2e44a49d285d"
+			searchtimeout="30000ms">
+				/form[@controlname='ProgressForm']/?/?/toolbar[@automationid='Toolbar : toolbarBaseDesigner']/button[@automationid='[Toolbar : toolbarBaseDesigner Tools] Tool : TOOLBAR_BUTTON_CANCEL - Index : 7 ']
+			</item>
+			<basepath>
+				/form[@controlname='ProgressForm']
+			</basepath>
+			<icon>
+				iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACx
+jwv8YQUAAAAJcEhZcwAADsQAAA7EAZUrDhsAAAFlSURBVDhPY6AJeOJjOvORg9p/FOyo/v9xoKUT
+VAlugKERDT921nwLVQoBb3Kj+Z5FOf9/FuP2/1msO3EYpBaIH7vr/Qcb8Oft6//kgFclif/Brnjo
+qPYZKvb/z8tn/z+tWfD/bWspWMHLwrj/r8pT/7/rrfv/dffG//++fwOr+3Hu+P8nPsYTwAY8CbRM
+fGSvCnbev29fwQpwgd9PH/1/N6ERHB5gzSDwyFX3IkjgeZLv/0+rF/z/snPD/4fWCmAND60V/3+Y
+1fP//cxuYABqgcUe2SqBDXge5qoDMcBN9w3MgDdNhf/fTWr+/xCoCKb4XU/t/7fd1Shi4BgJtPSG
+GqBzjhwDnkbaa4ANAIZBBDkGgDXDAMkGAFMmVCsEPHLTO0uKAU+jnYygWhHgeZIPUQY8dFS/BdWC
+Cd405uM14N+/f+egSnGDjyvnxjyyVQYbANL0FmjAm/aKH4+9zVWhSqCAgQEAq9YXqsYCPO8AAAAA
+SUVORK5CYII=
+			</icon>
+		</appfolder>
+		<appfolder
+		addcaps="form,control,nativewindow"
+		capname="form"
+		id="1d46828e-c1c3-4d43-9e68-3fa65b727bac"
+		isrooted="True"
+		name="DocumentUnconverted"
+		searchtimeout="30000ms"
+		usecache="True">
+			<item
+			addcaps="button,uiautomation,uiautomationinvoke"
+			capname="button"
+			id="cf6bd043-562b-4e0e-8009-de9294881afa"
+			name="UnconvertedClose"
+			refimgid="f1611b0f-dea4-4c8c-8c80-918d779c58c0"
+			searchtimeout="30000ms">
+				/form[@controlname='DocumentsUnconvertedFirmSettingsForm']/?/?/toolbar[@automationid='Toolbar : toolbarBaseDesigner']/button[@automationid='[Toolbar : toolbarBaseDesigner Tools] Tool : TOOLBAR_BUTTON_CANCEL - Index : 7 ']
+			</item>
+			<basepath>
+				/form[@controlname='DocumentsUnconvertedFirmSettingsForm']
+			</basepath>
+			<icon>
+				iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACx
+jwv8YQUAAAAJcEhZcwAADsQAAA7EAZUrDhsAAAFlSURBVDhPY6AJeOJjOvORg9p/FOyo/v9xoKUT
+VAlugKERDT921nwLVQoBb3Kj+Z5FOf9/FuP2/1msO3EYpBaIH7vr/Qcb8Oft6//kgFclif/Brnjo
+qPYZKvb/z8tn/z+tWfD/bWspWMHLwrj/r8pT/7/rrfv/dffG//++fwOr+3Hu+P8nPsYTwAY8CbRM
+fGSvCnbev29fwQpwgd9PH/1/N6ERHB5gzSDwyFX3IkjgeZLv/0+rF/z/snPD/4fWCmAND60V/3+Y
+1fP//cxuYABqgcUe2SqBDXge5qoDMcBN9w3MgDdNhf/fTWr+/xCoCKb4XU/t/7fd1Shi4BgJtPSG
+GqBzjhwDnkbaa4ANAIZBBDkGgDXDAMkGAFMmVCsEPHLTO0uKAU+jnYygWhHgeZIPUQY8dFS/BdWC
+Cd405uM14N+/f+egSnGDjyvnxjyyVQYbANL0FmjAm/aKH4+9zVWhSqCAgQEAq9YXqsYCPO8AAAAA
+SUVORK5CYII=
+			</icon>
+		</appfolder>
+		<basepath>
+		</basepath>
+	</rootfolder>
+	<variables>
+	</variables>
+</repository>

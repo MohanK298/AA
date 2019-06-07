@@ -1,0 +1,638 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<repository
+id="209359d6-6243-44a3-a93f-8e5f2276d683"
+name="Calendar2018"
+rxversion="9.0">
+	<codegen
+	classname="Calendar2018"
+	namespace="SmokeTest.Repositories">
+	</codegen>
+	<rootfolder
+	capname="unknown"
+	id="471faeea-0684-4d1f-a983-6596693422bd"
+	isrooted="True"
+	name="Root"
+	searchtimeout="0ms"
+	usecache="True">
+		<appfolder
+		addcaps="form,control,nativewindow"
+		capname="form"
+		id="2f8e3caf-049f-4c28-b603-c10a7eaaab14"
+		isrooted="True"
+		name="MainForm"
+		refimgid="762e243c-3371-4a6f-af9c-61d4f23366bd"
+		refpath="/form[@controlname='MainForm']"
+		searchtimeout="30000ms"
+		usecache="True">
+			<item
+			addcaps="container,uiautomation"
+			capname="container"
+			id="5e34eadc-d632-4306-90a3-c3ae2e91bdc9"
+			name="calendarMenuBtn"
+			refimgid="e8944d20-8deb-4278-8e13-3eed3c4a85a1"
+			searchtimeout="30000ms">
+				/form[@controlname='MainForm']/container[@controlname='pLeft']//container[@name='Calendar']
+			</item>
+			<item
+			addcaps="text,accessible"
+			capname="text"
+			id="1f82a5e4-137d-4573-bf7b-139c019328bd"
+			name="calendarViewTitle"
+			refimgid="5b80e843-d11c-4a6a-b440-d95429996a88"
+			searchtimeout="30000ms">
+				/form[@controlname='MainForm']/container[@controlname='pLeft']//container[@controltypename='UltraExplorerBarContainerControl' and @instance='0']/container[@controlname='controlPanelWrapper']/?/?/text[@accessiblename='Calendar']
+			</item>
+			<item
+			addcaps="button,uiautomation,uiautomationinvoke"
+			capname="button"
+			id="19242c5b-dd94-4859-8f48-ab1ab01b2739"
+			name="newEventBtn"
+			refimgid="37f068e2-5305-4a42-9751-4078cbeebac8"
+			searchtimeout="30000ms">
+				/form[@controlname='MainForm']/?/?/form[@controlname='CalendarIndexForm']//toolbar[@automationid='Toolbar : toolbar']/button[@name='New']
+			</item>
+			<item
+			addcaps="unknown,control,nativewindow"
+			capname="unknown"
+			id="57366bec-9b2d-4bee-8e21-85ab61afe93a"
+			name="mainContent"
+			refimgid="2247ce09-6bd1-4a6b-be04-a54ff4b80401"
+			refpath="/form[@controlname='MainForm']/element[@controltypename='MdiClient']"
+			searchtimeout="30000ms">
+				/form[@controlname='MainForm']/element[@controltypename='MdiClient']
+			</item>
+			<folder
+			addcaps="container,control,nativewindow"
+			capname="container"
+			id="3a8f5936-0271-4306-923c-e7e29b718b13"
+			isrooted="True"
+			name="CalendarIndexFormBottomPanel"
+			refimgid="23e85e24-2cd9-439d-a7ee-443f06f877d8"
+			refpath="/form[@controlname='MainForm']/element[@controltypename='MdiClient']/form[@controlname='CalendarIndexForm']/container[@controlname='CalendarIndexForm_BottomPanel']"
+			searchtimeout="30000ms"
+			usecache="False">
+				<item
+				addcaps="container,accessible"
+				capname="container"
+				id="3646f037-3191-44f1-b09b-9a5a5c1a12a0"
+				name="DockTop"
+				refimgid="f491c1a0-f123-4459-ab77-e01f25f2d30e"
+				refpath="/form[@controlname='MainForm']/element[@controltypename='MdiClient']/form[@controlname='CalendarIndexForm']/container[@controlname='CalendarIndexForm_BottomPanel']/container[@controlname='centreObject']/element[@controltypename='UltraToolbarsDockArea' and @instance='0']/container[@accessiblename='DockTop']"
+				searchtimeout="30000ms">
+					/form[@controlname='MainForm']/?/?/form[@controlname='CalendarIndexForm']/container[@controlname='CalendarIndexForm_BottomPanel']//container[@accessiblename='DockTop']
+				</item>
+				<item
+				addcaps="button,accessible"
+				capname="button"
+				id="b6836433-6fac-42a8-bdab-d74ea131cc1d"
+				name="ButtonDay"
+				refimgid="b0684bfd-316f-4b2c-b5f0-8419f5621717"
+				refpath="/form[@controlname='MainForm']/element[@controltypename='MdiClient']/form[@controlname='CalendarIndexForm']/container[@controlname='CalendarIndexForm_BottomPanel']/container[@controlname='centreObject']/element[@controltypename='UltraToolbarsDockArea' and @instance='0']/container[@accessiblename='DockTop']/toolbar[@accessiblename='Toolbar']/button[@accessiblename='Day']"
+				searchtimeout="30000ms">
+					/form[@controlname='MainForm']/?/?/form[@controlname='CalendarIndexForm']/container[@controlname='CalendarIndexForm_BottomPanel']//toolbar[@accessiblename='Toolbar']/button[@accessiblename='Day']
+				</item>
+				<item
+				addcaps="button,accessible"
+				capname="button"
+				id="b346a719-9a3e-4708-9764-7f88271c679f"
+				name="Month"
+				refimgid="f1e3cdbd-1192-4cba-b511-b527c70d9310"
+				refpath="/form[@controlname='MainForm']/element[@controltypename='MdiClient']/form[@controlname='CalendarIndexForm']/container[@controlname='CalendarIndexForm_BottomPanel']/container[@controlname='centreObject']/element[@controltypename='UltraToolbarsDockArea' and @instance='0']/container[@accessiblename='DockTop']/toolbar[@accessiblename='Toolbar']/button[@accessiblename='Month']"
+				searchtimeout="30000ms">
+					/form[@controlname='MainForm']/?/?/form[@controlname='CalendarIndexForm']/container[@controlname='CalendarIndexForm_BottomPanel']//toolbar[@accessiblename='Toolbar']/button[@accessiblename='Month']
+				</item>
+				<item
+				addcaps="button,accessible"
+				capname="button"
+				id="f8f17bd9-9fb1-4f3c-b473-b703617bc1a1"
+				name="Range"
+				refimgid="d146486e-05e8-42ac-a954-0de485505b74"
+				refpath="/form[@controlname='MainForm']/element[@controltypename='MdiClient']/form[@controlname='CalendarIndexForm']/container[@controlname='CalendarIndexForm_BottomPanel']/container[@controlname='centreObject']/element[@controltypename='UltraToolbarsDockArea' and @instance='0']/container[@accessiblename='DockTop']/toolbar[@accessiblename='Toolbar']/button[@accessiblename='Range']"
+				searchtimeout="30000ms">
+					/form[@controlname='MainForm']/?/?/form[@controlname='CalendarIndexForm']/container[@controlname='CalendarIndexForm_BottomPanel']//toolbar[@accessiblename='Toolbar']/button[@accessiblename='Range']
+				</item>
+				<item
+				addcaps="button,accessible"
+				capname="button"
+				id="906bc825-d54e-483c-b9a5-4a1ef51849f4"
+				name="Today"
+				refimgid="bb746aec-163b-49fe-b3b4-560519a93953"
+				refpath="/form[@controlname='MainForm']/element[@controltypename='MdiClient']/form[@controlname='CalendarIndexForm']/container[@controlname='CalendarIndexForm_BottomPanel']/container[@controlname='centreObject']/element[@controltypename='UltraToolbarsDockArea' and @instance='0']/container[@accessiblename='DockTop']/toolbar[@accessiblename='Toolbar']/button[@accessiblename='Today']"
+				searchtimeout="30000ms">
+					/form[@controlname='MainForm']/?/?/form[@controlname='CalendarIndexForm']/container[@controlname='CalendarIndexForm_BottomPanel']//toolbar[@accessiblename='Toolbar']/button[@accessiblename='Today']
+				</item>
+				<item
+				addcaps="button,accessible"
+				capname="button"
+				id="8134758c-835f-4d29-9a1e-1e07728da4a2"
+				name="Week"
+				refimgid="6b33958c-b36a-4573-835f-07e85334de38"
+				refpath="/form[@controlname='MainForm']/element[@controltypename='MdiClient']/form[@controlname='CalendarIndexForm']/container[@controlname='CalendarIndexForm_BottomPanel']/container[@controlname='centreObject']/element[@controltypename='UltraToolbarsDockArea' and @instance='0']/container[@accessiblename='DockTop']/toolbar[@accessiblename='Toolbar']/button[@accessiblename='Week']"
+				searchtimeout="30000ms">
+					/form[@controlname='MainForm']/?/?/form[@controlname='CalendarIndexForm']/container[@controlname='CalendarIndexForm_BottomPanel']//toolbar[@accessiblename='Toolbar']/button[@accessiblename='Week']
+				</item>
+				<item
+				addcaps="button,accessible"
+				capname="button"
+				id="a134ea0b-b73e-4ef6-af64-e4e158c6c11b"
+				name="Year"
+				refimgid="997133dc-c646-487c-9fc8-1dc9b4f2326f"
+				refpath="/form[@controlname='MainForm']/element[@controltypename='MdiClient']/form[@controlname='CalendarIndexForm']/container[@controlname='CalendarIndexForm_BottomPanel']/container[@controlname='centreObject']/element[@controltypename='UltraToolbarsDockArea' and @instance='0']/container[@accessiblename='DockTop']/toolbar[@accessiblename='Toolbar']/button[@accessiblename='Year']"
+				searchtimeout="30000ms">
+					/form[@controlname='MainForm']/?/?/form[@controlname='CalendarIndexForm']/container[@controlname='CalendarIndexForm_BottomPanel']//toolbar[@accessiblename='Toolbar']/button[@accessiblename='Year']
+				</item>
+				<item
+				addcaps="menuitem,accessible"
+				capname="menuitem"
+				id="8c5546f1-bc62-49c1-9f7c-3b52bd460258"
+				name="Lists"
+				refimgid="97d2fa84-91c8-4433-9186-d0598602a52e"
+				refpath="/form[@controlname='MainForm']/element[@controltypename='MdiClient']/form[@controlname='CalendarIndexForm']/container[@controlname='CalendarIndexForm_BottomPanel']/container[@controlname='centreObject']/element[@controltypename='UltraToolbarsDockArea' and @instance='0']/container[@accessiblename='DockTop']/toolbar[@accessiblename='Toolbar']/menuitem[@accessiblename='Lists']"
+				searchtimeout="30000ms">
+					/form[@controlname='MainForm']/?/?/form[@controlname='CalendarIndexForm']/container[@controlname='CalendarIndexForm_BottomPanel']//toolbar[@accessiblename='Toolbar']/menuitem[@accessiblename='Lists']
+				</item>
+				<item
+				addcaps="menuitem,accessible"
+				capname="menuitem"
+				id="2aaf11c8-aa48-45cb-a843-c182a85fcb15"
+				name="AllMyEvents"
+				refimgid="f2261588-a738-46ef-a4e0-72cdfb673b3b"
+				refpath="/form[@controlname='MainForm']/element[@controltypename='MdiClient']/form[@controlname='CalendarIndexForm']/container[@controlname='CalendarIndexForm_BottomPanel']/container[@controlname='centreObject']/element[@controltypename='UltraToolbarsDockArea' and @instance='0']/container[@accessiblename='DockTop']/toolbar[@accessiblename='Toolbar']/menuitem[@accessiblename='Lists']/menuitem[@accessiblename='All My Events']"
+				searchtimeout="30000ms">
+					/form[@controlname='MainForm']/?/?/form[@controlname='CalendarIndexForm']/container[@controlname='CalendarIndexForm_BottomPanel']//toolbar[@accessiblename='Toolbar']/menuitem[@accessiblename='Lists']/menuitem[@accessiblename='All My Events']
+				</item>
+				<item
+				addcaps="menuitem,accessible"
+				capname="menuitem"
+				id="7a335a1d-04f8-4806-9c85-7d1c2f6f6ff0"
+				name="CurrentProfile"
+				refimgid="dbee792a-1b31-42ce-97cf-d20f2089aa3d"
+				refpath="/form[@controlname='MainForm']/element[@controltypename='MdiClient']/form[@controlname='CalendarIndexForm']/container[@controlname='CalendarIndexForm_BottomPanel']/container[@controlname='centreObject']/element[@controltypename='UltraToolbarsDockArea' and @instance='0']/container[@accessiblename='DockTop']/toolbar[@accessiblename='Toolbar']/menuitem[@accessiblename='Lists']/menuitem[@accessiblename='Current Profile']"
+				searchtimeout="30000ms">
+					/form[@controlname='MainForm']/?/?/form[@controlname='CalendarIndexForm']/container[@controlname='CalendarIndexForm_BottomPanel']//toolbar[@accessiblename='Toolbar']/menuitem[@accessiblename='Lists']/menuitem[@accessiblename='Current Profile']
+				</item>
+				<item
+				addcaps="menuitem,accessible"
+				capname="menuitem"
+				id="da79914e-a6c9-4af7-a097-c86d27982674"
+				name="Holidays"
+				refimgid="36ace5cd-4678-4bd2-9dd0-41ec8243044b"
+				refpath="/form[@controlname='MainForm']/element[@controltypename='MdiClient']/form[@controlname='CalendarIndexForm']/container[@controlname='CalendarIndexForm_BottomPanel']/container[@controlname='centreObject']/element[@controltypename='UltraToolbarsDockArea' and @instance='0']/container[@accessiblename='DockTop']/toolbar[@accessiblename='Toolbar']/menuitem[@accessiblename='Lists']/menuitem[@accessiblename='Holidays']"
+				searchtimeout="30000ms">
+					/form[@controlname='MainForm']/?/?/form[@controlname='CalendarIndexForm']/container[@controlname='CalendarIndexForm_BottomPanel']//toolbar[@accessiblename='Toolbar']/menuitem[@accessiblename='Lists']/menuitem[@accessiblename='Holidays']
+				</item>
+				<item
+				addcaps="menuitem,accessible"
+				capname="menuitem"
+				id="675161ae-5204-4d7e-b0d0-0dc4177528ce"
+				name="MyDoSomedayEvents"
+				refimgid="842c3441-db57-4df9-b53a-feb901f60b6f"
+				refpath="/form[@controlname='MainForm']/element[@controltypename='MdiClient']/form[@controlname='CalendarIndexForm']/container[@controlname='CalendarIndexForm_BottomPanel']/container[@controlname='centreObject']/element[@controltypename='UltraToolbarsDockArea' and @instance='0']/container[@accessiblename='DockTop']/toolbar[@accessiblename='Toolbar']/menuitem[@accessiblename='Lists']/menuitem[@accessiblename='My Do Someday Events']"
+				searchtimeout="30000ms">
+					/form[@controlname='MainForm']/?/?/form[@controlname='CalendarIndexForm']/container[@controlname='CalendarIndexForm_BottomPanel']//toolbar[@accessiblename='Toolbar']/menuitem[@accessiblename='Lists']/menuitem[@accessiblename='My Do Someday Events']
+				</item>
+				<item
+				addcaps="menuitem,accessible"
+				capname="menuitem"
+				id="980e272d-6a7c-4654-8fcc-2fdcea677b34"
+				name="MyDoneToDos"
+				refimgid="07c2af8c-8a62-496a-833a-9241d6faa195"
+				refpath="/form[@controlname='MainForm']/element[@controltypename='MdiClient']/form[@controlname='CalendarIndexForm']/container[@controlname='CalendarIndexForm_BottomPanel']/container[@controlname='centreObject']/element[@controltypename='UltraToolbarsDockArea' and @instance='0']/container[@accessiblename='DockTop']/toolbar[@accessiblename='Toolbar']/menuitem[@accessiblename='Lists']/menuitem[@accessiblename='My Done To Do''s']"
+				searchtimeout="30000ms">
+					/form[@controlname='MainForm']/?/?/form[@controlname='CalendarIndexForm']/container[@controlname='CalendarIndexForm_BottomPanel']//toolbar[@accessiblename='Toolbar']/menuitem[@accessiblename='Lists']/menuitem[@accessiblename='My Done To Do''s']
+				</item>
+				<item
+				addcaps="menuitem,accessible"
+				capname="menuitem"
+				id="fe54b777-adfd-40f4-abe1-8723de6d9d56"
+				name="MyFutureAppointments"
+				refimgid="760c6996-2025-4b09-ac5e-b124d8e1964a"
+				refpath="/form[@controlname='MainForm']/element[@controltypename='MdiClient']/form[@controlname='CalendarIndexForm']/container[@controlname='CalendarIndexForm_BottomPanel']/container[@controlname='centreObject']/element[@controltypename='UltraToolbarsDockArea' and @instance='0']/container[@accessiblename='DockTop']/toolbar[@accessiblename='Toolbar']/menuitem[@accessiblename='Lists']/menuitem[@accessiblename='My Future Appointments']"
+				searchtimeout="30000ms">
+					/form[@controlname='MainForm']/?/?/form[@controlname='CalendarIndexForm']/container[@controlname='CalendarIndexForm_BottomPanel']//toolbar[@accessiblename='Toolbar']/menuitem[@accessiblename='Lists']/menuitem[@accessiblename='My Future Appointments']
+				</item>
+				<item
+				addcaps="menuitem,accessible"
+				capname="menuitem"
+				id="97233e8b-8214-48c3-b45f-58038de95b7c"
+				name="MyFutureToDos"
+				refimgid="2fb4e0b5-068b-40f2-a67f-8a5aaef4ae8a"
+				refpath="/form[@controlname='MainForm']/element[@controltypename='MdiClient']/form[@controlname='CalendarIndexForm']/container[@controlname='CalendarIndexForm_BottomPanel']/container[@controlname='centreObject']/element[@controltypename='UltraToolbarsDockArea' and @instance='0']/container[@accessiblename='DockTop']/toolbar[@accessiblename='Toolbar']/menuitem[@accessiblename='Lists']/menuitem[@accessiblename='My Future To Do''s']"
+				searchtimeout="30000ms">
+					/form[@controlname='MainForm']/?/?/form[@controlname='CalendarIndexForm']/container[@controlname='CalendarIndexForm_BottomPanel']//toolbar[@accessiblename='Toolbar']/menuitem[@accessiblename='Lists']/menuitem[@accessiblename='My Future To Do''s']
+				</item>
+				<item
+				addcaps="menuitem,accessible"
+				capname="menuitem"
+				id="fba4d39c-f3da-4da1-8f9a-7959a677f449"
+				name="MyMilestoneEvents"
+				refimgid="061c11a9-7a66-490d-8410-53472ac4212e"
+				refpath="/form[@controlname='MainForm']/element[@controltypename='MdiClient']/form[@controlname='CalendarIndexForm']/container[@controlname='CalendarIndexForm_BottomPanel']/container[@controlname='centreObject']/element[@controltypename='UltraToolbarsDockArea' and @instance='0']/container[@accessiblename='DockTop']/toolbar[@accessiblename='Toolbar']/menuitem[@accessiblename='Lists']/menuitem[@accessiblename='My Milestone Events']"
+				searchtimeout="30000ms">
+					/form[@controlname='MainForm']/?/?/form[@controlname='CalendarIndexForm']/container[@controlname='CalendarIndexForm_BottomPanel']//toolbar[@accessiblename='Toolbar']/menuitem[@accessiblename='Lists']/menuitem[@accessiblename='My Milestone Events']
+				</item>
+				<item
+				addcaps="menuitem,accessible"
+				capname="menuitem"
+				id="f1f62cc7-06d8-4809-b1f4-de5236453192"
+				name="MyPastAppointments"
+				refimgid="a9f92fe4-a07f-4646-acfc-9a348877e4e7"
+				refpath="/form[@controlname='MainForm']/element[@controltypename='MdiClient']/form[@controlname='CalendarIndexForm']/container[@controlname='CalendarIndexForm_BottomPanel']/container[@controlname='centreObject']/element[@controltypename='UltraToolbarsDockArea' and @instance='0']/container[@accessiblename='DockTop']/toolbar[@accessiblename='Toolbar']/menuitem[@accessiblename='Lists']/menuitem[@accessiblename='My Past Appointments']"
+				searchtimeout="30000ms">
+					/form[@controlname='MainForm']/?/?/form[@controlname='CalendarIndexForm']/container[@controlname='CalendarIndexForm_BottomPanel']//toolbar[@accessiblename='Toolbar']/menuitem[@accessiblename='Lists']/menuitem[@accessiblename='My Past Appointments']
+				</item>
+				<item
+				addcaps="menuitem,accessible"
+				capname="menuitem"
+				id="20871c8d-c8c2-4352-ad4c-dd83bc060961"
+				name="MyRepeatingEvents"
+				refimgid="627b1341-2280-4989-9adb-9d885548dcaf"
+				refpath="/form[@controlname='MainForm']/element[@controltypename='MdiClient']/form[@controlname='CalendarIndexForm']/container[@controlname='CalendarIndexForm_BottomPanel']/container[@controlname='centreObject']/element[@controltypename='UltraToolbarsDockArea' and @instance='0']/container[@accessiblename='DockTop']/toolbar[@accessiblename='Toolbar']/menuitem[@accessiblename='Lists']/menuitem[@accessiblename='My Repeating Events']"
+				searchtimeout="30000ms">
+					/form[@controlname='MainForm']/?/?/form[@controlname='CalendarIndexForm']/container[@controlname='CalendarIndexForm_BottomPanel']//toolbar[@accessiblename='Toolbar']/menuitem[@accessiblename='Lists']/menuitem[@accessiblename='My Repeating Events']
+				</item>
+				<item
+				addcaps="toolbar,accessible"
+				capname="toolbar"
+				id="5713aa9f-8305-4d87-83fb-a5fe52ef7a84"
+				name="Toolbar"
+				refimgid="db8b55ae-2389-4a17-acd9-831d6e1f4ed3"
+				refpath="/form[@controlname='MainForm']/element[@controltypename='MdiClient']/form[@controlname='CalendarIndexForm']/container[@controlname='CalendarIndexForm_BottomPanel']/container[@controlname='centreObject']/element[@controltypename='UltraToolbarsDockArea' and @instance='0']/container[@accessiblename='DockTop']/toolbar[@accessiblename='Toolbar']"
+				searchtimeout="30000ms">
+					/form[@controlname='MainForm']/?/?/form[@controlname='CalendarIndexForm']/container[@controlname='CalendarIndexForm_BottomPanel']/container[@controlname='centreObject']//toolbar[@accessiblename='Toolbar']
+				</item>
+				<basepath>
+					/form[@controlname='MainForm']/?/?/form[@controlname='CalendarIndexForm']/container[@controlname='CalendarIndexForm_BottomPanel']
+				</basepath>
+			</folder>
+			<folder
+			capname="unknown"
+			id="44cae0c1-37ec-4aa7-8dbc-9704779e89f1"
+			isrooted="False"
+			name="DayView"
+			searchtimeout="0ms">
+				<item
+				addcaps="table,accessible"
+				capname="table"
+				id="136d73c9-08d8-4f6a-a4a5-84b122320aa1"
+				name="leftPanel"
+				refimgid="e1990a7c-98d2-4d65-9970-f2e9a5301c2f"
+				refpath="/form[@controlname='MainForm']/element[@controltypename='MdiClient']/form[@controlname='CalendarIndexForm']/container[@controlname='pnlBase']/container[@controlname='pnlToolbar']/container[@controlname='pnlViewsBase']/container[@controlname='pnlViews']/container[@controlname='pnlDayView']/container[@controlname='pnlDayViewControl']/element[@controlname='udvDay']/table[@accessiblename='udvDay']"
+				searchtimeout="30000ms">
+					/form[@controlname='MainForm']/?/?/form[@controlname='CalendarIndexForm']/container[@controlname='pnlBase']//container[@controlname='pnlDayView']/container[@controlname='pnlDayViewControl']/?/?/table[@accessiblename='udvDay']
+				</item>
+				<item
+				addcaps="container,control,nativewindow"
+				capname="container"
+				id="5256710a-4c1a-4bee-a51e-d970c1cfbc54"
+				name="rightList"
+				refimgid="d52faa4c-b657-4cb0-85eb-484a55947d42"
+				refpath="/form[@controlname='MainForm']/element[@controltypename='MdiClient']/form[@controlname='CalendarIndexForm']/container[@controlname='pnlBase']/container[@controlname='pnlToolbar']/container[@controlname='pnlViewsBase']/container[@controlname='pnlLists']"
+				searchtimeout="30000ms">
+					/form[@controlname='MainForm']/?/?/form[@controlname='CalendarIndexForm']/container[@controlname='pnlBase']//container[@controlname='pnlLists']
+				</item>
+				<item
+				addcaps="cell,accessible"
+				capname="cell"
+				id="294c9748-13e9-4198-9652-cc21c7ee2869"
+				name="eventTableCellGeneric"
+				refimgid="e7a58b59-8278-46cd-a290-885b08954cc7"
+				searchtimeout="30000ms">
+					/form[@controlname='MainForm']/?/?/form[@controlname='CalendarIndexForm']/container[@controlname='pnlBase']//table[@accessiblename='Band 0']/row/cell
+				</item>
+				<item
+				addcaps="table,accessible"
+				capname="table"
+				id="dfe6e425-915d-434a-ad44-1772373beb6a"
+				name="eventTable"
+				refimgid="c5cf8db9-4fa3-4c9e-b11d-347475e2e6f0"
+				searchtimeout="30000ms">
+					/form[@controlname='MainForm']/?/?/form[@controlname='CalendarIndexForm']/container[@controlname='pnlBase']//container[@controlname='pnlLists']/?/?/table[@accessiblename='Band 0']
+				</item>
+				<item
+				addcaps="button,accessible"
+				capname="button"
+				id="1f2cc61c-9129-4c1b-9747-ad4d52d1af94"
+				name="ToDos"
+				refimgid="87611792-bbb2-4186-a78a-5dcfe264f701"
+				searchtimeout="30000ms">
+					/form[@controlname='MainForm']/?/?/form[@controlname='CalendarIndexForm']/container[@controlname='pnlBase']//container[@controlname='pnlDayViewToDoHeader']/element[@controlname='ubtnDayView']/button/button
+				</item>
+			</folder>
+			<item
+			capname="menuitem"
+			id="606b9b55-6c81-4e64-9229-474cd9c3d0ec"
+			name="appoinmentMenuItem"
+			searchtimeout="30000ms">
+				/form[@controlname='MainForm']/form[@processname='AmicusAttorney.XWin' and @controltypename='DropDownForm']/?/?/?/menuitem[@automationid='[To Do''s Items] Menu Item :  - Index : 1 ']
+			</item>
+			<basepath>
+				/form[@controlname='MainForm']
+			</basepath>
+			<icon>
+				iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACx
+jwv8YQUAAAAJcEhZcwAADsQAAA7EAZUrDhsAAAFlSURBVDhPY6AJeOJjOvORg9p/FOyo/v9xoKUT
+VAlugKERDT921nwLVQoBb3Kj+Z5FOf9/FuP2/1msO3EYpBaIH7vr/Qcb8Oft6//kgFclif/Brnjo
+qPYZKvb/z8tn/z+tWfD/bWspWMHLwrj/r8pT/7/rrfv/dffG//++fwOr+3Hu+P8nPsYTwAY8CbRM
+fGSvCnbev29fwQpwgd9PH/1/N6ERHB5gzSDwyFX3IkjgeZLv/0+rF/z/snPD/4fWCmAND60V/3+Y
+1fP//cxuYABqgcUe2SqBDXge5qoDMcBN9w3MgDdNhf/fTWr+/xCoCKb4XU/t/7fd1Shi4BgJtPSG
+GqBzjhwDnkbaa4ANAIZBBDkGgDXDAMkGAFMmVCsEPHLTO0uKAU+jnYygWhHgeZIPUQY8dFS/BdWC
+Cd405uM14N+/f+egSnGDjyvnxjyyVQYbANL0FmjAm/aKH4+9zVWhSqCAgQEAq9YXqsYCPO8AAAAA
+SUVORK5CYII=
+			</icon>
+		</appfolder>
+		<appfolder
+		addcaps="form,control,nativewindow"
+		capname="form"
+		id="6a2b8c66-2786-4908-82de-1250f20f0672"
+		isrooted="True"
+		name="EventDetailForm"
+		refimgid="cfb24360-024a-4133-b562-91a5e246805d"
+		searchtimeout="30000ms"
+		usecache="True">
+			<item
+			addcaps="text,control,nativewindow"
+			capname="text"
+			id="b40afdc0-86a3-414f-8213-aa51a2ad7872"
+			name="titleText"
+			refimgid="4961d7de-5b5f-4c0f-a897-ea91bfe8daa9"
+			searchtimeout="30000ms">
+				/form[@controlname='EventDetailForm']/container[@controlname='menubar_Fill_Panel']/container[@controlname='pnlBase']//text[@controlname='txtTitle_EmbeddableTextBox']
+			</item>
+			<item
+			addcaps="combobox,control,nativewindow"
+			capname="combobox"
+			id="0a53865a-ba05-4329-bc39-22c56abf89fd"
+			name="eventTypeDropdown"
+			refimgid="f3b07562-3af8-4bc9-ba30-b9a0a6effb70"
+			searchtimeout="30000ms">
+				/form[@controlname='EventDetailForm']/container[@controlname='menubar_Fill_Panel']/container[@controlname='pnlBase']//combobox[@controlname='cmbEventType']
+			</item>
+			<item
+			addcaps="list,accessible"
+			capname="list"
+			id="824a8333-2813-47aa-a913-9f06a856b162"
+			name="eventTypeDropdownList"
+			refimgid="9e070dd9-3f06-4cbf-bd27-6fbce6193e7a"
+			refpath="/form[@controlname='EventDetailForm']/container[@controlname='menubar_Fill_Panel']/container[@controlname='pnlBase']/container[@controlname='pnlControls']/container[@controlname='pnlTitle']/combobox[@controlname='cmbEventType']/list[@accessiblerole='List']"
+			searchtimeout="30000ms">
+				/form[@controlname='EventDetailForm']/?/?/container[@controlname='pnlBase']//combobox[@controlname='cmbEventType']/list[@accessiblerole='List']
+			</item>
+			<folder
+			addcaps="container,control,nativewindow"
+			capname="container"
+			id="7d042605-86ef-45ca-9cbd-45c2b1e02b5b"
+			isrooted="True"
+			name="eventTypeDropdownOptions"
+			refpath="/form[@controlname='EventDetailForm']/container[@controlname='menubar_Fill_Panel']/container[@controlname='pnlBase']"
+			searchtimeout="30000ms"
+			usecache="False">
+				<item
+				addcaps="listitem,accessible"
+				capname="listitem"
+				id="ffb71c6c-3d60-40e4-abad-331b17dda698"
+				name="Appointment"
+				refpath="/form[@controlname='EventDetailForm']/container[@controlname='menubar_Fill_Panel']/container[@controlname='pnlBase']/container[@controlname='pnlControls']/container[@controlname='pnlTitle']/combobox[@controlname='cmbEventType']/list[@accessiblerole='List']/listitem[@accessiblename='Appointment']"
+				searchtimeout="30000ms">
+					/form[@controlname='EventDetailForm']/container[@controlname='menubar_Fill_Panel']/container[@controlname='pnlBase']//combobox[@controlname='cmbEventType']/?/?/listitem[@accessiblename='Appointment']
+				</item>
+				<item
+				addcaps="listitem,accessible"
+				capname="listitem"
+				id="f4715754-c6f7-43ca-b359-c9d0983663c1"
+				name="RedLetterDay"
+				refpath="/form[@controlname='EventDetailForm']/container[@controlname='menubar_Fill_Panel']/container[@controlname='pnlBase']/container[@controlname='pnlControls']/container[@controlname='pnlTitle']/combobox[@controlname='cmbEventType']/list[@accessiblerole='List']/listitem[@accessiblename='Red Letter Day']"
+				searchtimeout="30000ms">
+					/form[@controlname='EventDetailForm']/container[@controlname='menubar_Fill_Panel']/container[@controlname='pnlBase']//combobox[@controlname='cmbEventType']/?/?/listitem[@accessiblename='Red Letter Day']
+				</item>
+				<item
+				addcaps="listitem,accessible"
+				capname="listitem"
+				id="4882bf0a-d6e1-44bb-b49e-3eb83e592bc4"
+				name="ToDo"
+				refpath="/form[@controlname='EventDetailForm']/container[@controlname='menubar_Fill_Panel']/container[@controlname='pnlBase']/container[@controlname='pnlControls']/container[@controlname='pnlTitle']/combobox[@controlname='cmbEventType']/list[@accessiblerole='List']/listitem[@accessiblename='To Do']"
+				searchtimeout="30000ms">
+					/form[@controlname='EventDetailForm']/container[@controlname='menubar_Fill_Panel']/container[@controlname='pnlBase']//combobox[@controlname='cmbEventType']/?/?/listitem[@accessiblename='To Do']
+				</item>
+				<basepath>
+					/form[@controlname='EventDetailForm']/container[@controlname='menubar_Fill_Panel']/container[@controlname='pnlBase']
+				</basepath>
+			</folder>
+			<item
+			addcaps="text,nativewindow"
+			capname="text"
+			id="4287b0df-5b5c-4cc2-b901-d306a61de806"
+			name="startTimeText"
+			refimgid="df51ef6e-d2b1-46e5-ab35-7ab4e28f1419"
+			searchtimeout="30000ms">
+				/form[@controlname='EventDetailForm']/container[@controlname='menubar_Fill_Panel']/container[@controlname='pnlBase']//container[@controlname='pnlDurationLeft']/container[@name='tmrStartTime']/combobox[@controlname='cmbTime']/text
+			</item>
+			<item
+			addcaps="text,nativewindow"
+			capname="text"
+			id="940ede33-bdd0-4376-a202-7306098a2cd1"
+			name="endTimeText"
+			refimgid="eb69c752-3540-414a-b602-cad58e5248f0"
+			searchtimeout="30000ms">
+				/form[@controlname='EventDetailForm']/container[@controlname='menubar_Fill_Panel']/container[@controlname='pnlBase']//container[@controlname='pnlDurationLeft']/container[@name='tmrEndTime']/combobox[@controlname='cmbTime']/text
+			</item>
+			<item
+			addcaps="text,control,nativewindow"
+			capname="unknown"
+			id="563b3933-d690-43b3-bf2f-026ec443c97b"
+			name="locationText"
+			refimgid="f943c8bd-7ffd-4b97-9305-f22d4b94b28a"
+			searchtimeout="30000ms">
+				/form[@controlname='EventDetailForm']/container[@controlname='menubar_Fill_Panel']/container[@controlname='pnlBase']//container[@controlname='pnlLocation']/element[@controlname='txtLocation']
+			</item>
+			<item
+			addcaps="button,uiautomation,uiautomationinvoke"
+			capname="button"
+			id="56333134-6b6b-43c6-94ab-8ecfc2bf1a4b"
+			name="okBtn"
+			refimgid="12f0a9ff-051a-4bf3-856f-1cf19dac6b69"
+			searchtimeout="30000ms">
+				/form[@controlname='EventDetailForm']//toolbar[@automationid='Toolbar : toolbarBaseDesigner']/button[@name='OK']
+			</item>
+			<item
+			addcaps="button,uiautomation,uiautomationinvoke"
+			capname="button"
+			id="fbd134cf-0873-43f8-baba-ec9209acd58f"
+			name="deleteBtn"
+			refimgid="3b56e813-f09e-4919-8f97-22d50330900b"
+			searchtimeout="30000ms">
+				/form[@controlname='EventDetailForm']//toolbar[@automationid='Toolbar : toolbarBaseDesigner']/button[@name='Delete']
+			</item>
+			<basepath>
+				/form[@controlname='EventDetailForm']
+			</basepath>
+			<icon>
+				iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACx
+jwv8YQUAAAAJcEhZcwAADsQAAA7EAZUrDhsAAAFlSURBVDhPY6AJeOJjOvORg9p/FOyo/v9xoKUT
+VAlugKERDT921nwLVQoBb3Kj+Z5FOf9/FuP2/1msO3EYpBaIH7vr/Qcb8Oft6//kgFclif/Brnjo
+qPYZKvb/z8tn/z+tWfD/bWspWMHLwrj/r8pT/7/rrfv/dffG//++fwOr+3Hu+P8nPsYTwAY8CbRM
+fGSvCnbev29fwQpwgd9PH/1/N6ERHB5gzSDwyFX3IkjgeZLv/0+rF/z/snPD/4fWCmAND60V/3+Y
+1fP//cxuYABqgcUe2SqBDXge5qoDMcBN9w3MgDdNhf/fTWr+/xCoCKb4XU/t/7fd1Shi4BgJtPSG
+GqBzjhwDnkbaa4ANAIZBBDkGgDXDAMkGAFMmVCsEPHLTO0uKAU+jnYygWhHgeZIPUQY8dFS/BdWC
+Cd405uM14N+/f+egSnGDjyvnxjyyVQYbANL0FmjAm/aKH4+9zVWhSqCAgQEAq9YXqsYCPO8AAAAA
+SUVORK5CYII=
+			</icon>
+		</appfolder>
+		<appfolder
+		addcaps="form,control,nativewindow"
+		capname="form"
+		id="af8c3c91-da6e-4d91-96d8-f8db0c6af3fd"
+		isrooted="True"
+		name="AppointmentOverlapDialog"
+		refimgid="87e4c0c0-988a-452b-a5e4-2065d9b13c09"
+		refpath="/form[@controlname='AppointmentOverlapDialog']"
+		searchtimeout="30000ms"
+		usecache="True">
+			<item
+			addcaps="radiobutton,control,nativewindow"
+			capname="radiobutton"
+			id="2ab8c7ad-0fb2-4ea0-a443-ed77c9a30b78"
+			name="itsOkRadioBtn"
+			refimgid="30600767-44fd-40ef-97f7-8fcb0f92d7b6"
+			refpath="/form[@controlname='AppointmentOverlapDialog']/container[@controlname='pnlBase']/container[@controlname='pnlControls']/radiobutton[@controlname='radioOK']"
+			searchtimeout="30000ms">
+				/form[@controlname='AppointmentOverlapDialog']/container[@controlname='pnlBase']/?/?/radiobutton[@controlname='radioOK']
+			</item>
+			<item
+			addcaps="button,uiautomation,uiautomationinvoke"
+			capname="button"
+			id="310c3fc1-d0bf-4bce-8c0b-74d8809ce7f3"
+			name="okBtn"
+			refimgid="a7cba101-a102-4fcf-8fd1-c6ef578e8585"
+			searchtimeout="30000ms">
+				/form[@controlname='AppointmentOverlapDialog']/?/?/?/button[@name='OK']
+			</item>
+			<basepath>
+				/form[@controlname='AppointmentOverlapDialog']
+			</basepath>
+			<icon>
+				iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACx
+jwv8YQUAAAAJcEhZcwAADsQAAA7EAZUrDhsAAAFlSURBVDhPY6AJeOJjOvORg9p/FOyo/v9xoKUT
+VAlugKERDT921nwLVQoBb3Kj+Z5FOf9/FuP2/1msO3EYpBaIH7vr/Qcb8Oft6//kgFclif/Brnjo
+qPYZKvb/z8tn/z+tWfD/bWspWMHLwrj/r8pT/7/rrfv/dffG//++fwOr+3Hu+P8nPsYTwAY8CbRM
+fGSvCnbev29fwQpwgd9PH/1/N6ERHB5gzSDwyFX3IkjgeZLv/0+rF/z/snPD/4fWCmAND60V/3+Y
+1fP//cxuYABqgcUe2SqBDXge5qoDMcBN9w3MgDdNhf/fTWr+/xCoCKb4XU/t/7fd1Shi4BgJtPSG
+GqBzjhwDnkbaa4ANAIZBBDkGgDXDAMkGAFMmVCsEPHLTO0uKAU+jnYygWhHgeZIPUQY8dFS/BdWC
+Cd405uM14N+/f+egSnGDjyvnxjyyVQYbANL0FmjAm/aKH4+9zVWhSqCAgQEAq9YXqsYCPO8AAAAA
+SUVORK5CYII=
+			</icon>
+		</appfolder>
+		<appfolder
+		addcaps="form,control,nativewindow"
+		capname="form"
+		id="e43697cd-0d03-4d16-950c-1b61c6d02ed8"
+		isrooted="True"
+		name="PromptForm"
+		refpath="/form[@controlname='PromptForm']"
+		searchtimeout="30000ms"
+		usecache="True">
+			<item
+			addcaps="button,uiautomation,uiautomationinvoke"
+			capname="button"
+			id="aa0262c7-8646-47cd-86ce-c3003143e808"
+			name="yesBtn"
+			refimgid="ae2c013a-060d-40b7-8397-e5149931c384"
+			searchtimeout="30000ms">
+				/form[@controlname='PromptForm']/?/?/toolbar[@automationid='Toolbar : toolbarBaseDesigner']/button[@name='Yes']
+			</item>
+			<basepath>
+				/form[@controlname='PromptForm']
+			</basepath>
+			<icon>
+				iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACx
+jwv8YQUAAAAJcEhZcwAADsQAAA7EAZUrDhsAAAFlSURBVDhPY6AJeOJjOvORg9p/FOyo/v9xoKUT
+VAlugKERDT921nwLVQoBb3Kj+Z5FOf9/FuP2/1msO3EYpBaIH7vr/Qcb8Oft6//kgFclif/Brnjo
+qPYZKvb/z8tn/z+tWfD/bWspWMHLwrj/r8pT/7/rrfv/dffG//++fwOr+3Hu+P8nPsYTwAY8CbRM
+fGSvCnbev29fwQpwgd9PH/1/N6ERHB5gzSDwyFX3IkjgeZLv/0+rF/z/snPD/4fWCmAND60V/3+Y
+1fP//cxuYABqgcUe2SqBDXge5qoDMcBN9w3MgDdNhf/fTWr+/xCoCKb4XU/t/7fd1Shi4BgJtPSG
+GqBzjhwDnkbaa4ANAIZBBDkGgDXDAMkGAFMmVCsEPHLTO0uKAU+jnYygWhHgeZIPUQY8dFS/BdWC
+Cd405uM14N+/f+egSnGDjyvnxjyyVQYbANL0FmjAm/aKH4+9zVWhSqCAgQEAq9YXqsYCPO8AAAAA
+SUVORK5CYII=
+			</icon>
+		</appfolder>
+		<appfolder
+		addcaps="form,control,nativewindow"
+		capname="form"
+		id="ff1c30d7-b832-47d5-8096-d4e839f2ef95"
+		isrooted="True"
+		name="AmicusAttorneyXWin"
+		refpath="/form[@title='' and @processname='AmicusAttorney.XWin' and @controltypename='DropDownForm']"
+		searchtimeout="30000ms"
+		usecache="True">
+			<item
+			addcaps="contextmenu,accessible"
+			capname="contextmenu"
+			id="63cf9a47-a0b0-4522-b869-e1d6d518a074"
+			name="MenuPopup"
+			refimgid="259ded1e-58d1-45af-9c2a-e08946d27154"
+			refpath="/form[@title='' and @processname='AmicusAttorney.XWin' and @controltypename='DropDownForm']/element/contextmenu[@accessiblerole='MenuPopup']"
+			searchtimeout="30000ms">
+				/form[@processname='AmicusAttorney.XWin' and @controltypename='DropDownForm']/?/?/contextmenu[@accessiblerole='MenuPopup']
+			</item>
+			<item
+			addcaps="menuitem,uiautomation,uiautomationinvoke"
+			capname="menuitem"
+			id="99b417df-efa6-4933-a769-ab673adf23c9"
+			name="MenuItemViewItemsMenuItemInde"
+			refimgid="475ddd8d-ba0c-40f5-a8ce-033ec7b60d3e"
+			refpath="/form[@title='&amp;View - 0']/element/container/menuitem[@automationid='[&amp;View Items] Menu Item :  - Index : 5 ']"
+			searchtimeout="30000ms">
+				/form[@processname='AmicusAttorney.XWin' and @controltypename='DropDownForm']/?/?/container[@automationid='&amp;View']/menuitem[@automationid='[&amp;View Items] Menu Item :  - Index : 5 ']
+			</item>
+			<item
+			addcaps="menuitem,uiautomation,uiautomationinvoke"
+			capname="menuitem"
+			id="77f3ba36-7e29-4c37-aa6f-10ba4daae3d1"
+			name="MenuItemNewItemsMenuItemIndex"
+			refimgid="139797fe-de1b-40b9-9391-c4e4da301292"
+			refpath="/form[@title='New - 0']/element/container/menuitem[@automationid='[New Items] Menu Item :  - Index : 0 ']"
+			searchtimeout="30000ms">
+				/form[@processname='AmicusAttorney.XWin' and @controltypename='DropDownForm']/?/?/container[@automationid='New']/menuitem[@automationid='[New Items] Menu Item :  - Index : 0 ']
+			</item>
+			<item
+			addcaps="unknown,control,nativewindow"
+			capname="unknown"
+			id="da4e5da1-dc4e-4cf9-93cb-020cbed948a0"
+			name="ComboDropDownControl"
+			refimgid="1b29fcc6-83bc-4ad2-93fc-f014ca8ea403"
+			refpath="/form[@title='' and @processname='AmicusAttorney.XWin']/element[@controlname='ComboDropDownControl']"
+			searchtimeout="30000ms">
+				/form[@processname='AmicusAttorney.XWin' and @controltypename='DropDownForm']/element[@controlname='ComboDropDownControl']
+			</item>
+			<item
+			addcaps="menuitem,uiautomation,uiautomationinvoke"
+			capname="menuitem"
+			id="0085a9bb-fe81-4921-9c3f-1b92e1569213"
+			name="appointmentMenuItem"
+			refimgid="8fd3f021-7cca-41a6-85c4-51ac967f8e7c"
+			searchtimeout="30000ms">
+				/form[@processname='AmicusAttorney.XWin' and @controltypename='DropDownForm']/?/?/container[@automationid='To Do''s']/menuitem[@name~'Appointments']
+			</item>
+			<basepath>
+				/form[@processname='AmicusAttorney.XWin' and @controltypename='DropDownForm']
+			</basepath>
+			<icon>
+				iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACx
+jwv8YQUAAAAJcEhZcwAADsQAAA7EAZUrDhsAAAH4SURBVDhPrdFdSJNhGMbxR1BzhTJzapnsJGgU
+RnQQEXYQhGkEgRIUihSzrKyEMM0ME00ENRY6WjPLmOasObKkHDTKmoSBERUZbNWsVdtys/nRKjr5
+9+F74AvBwLrggufk/l0Hj/gveTDoYD6VzmcB6SnLsDGZbxOdfPW2EnbXMDNawvTjPCaHNnKlOj4y
+MGRQEfY08cVVzsyzQqYeZTN5by2fB9R0VC6KDNxvTZqzmknIrmGiP4VxaxzGsoVyYGxNNM7VMTzP
+iGVkVRyOlQrsusVMDWcT+r1qUxPoS+DTtWh83QJ9qUIOTN/sJWQ2ETDq8Taexro8noEmJaE7GoL9
+yQR6Ffh7ovjYJfBcFuhK4uRA8KIBf3MDnqpy3hwoQq9O5EaDkuCv1XFLDD6z4INJ8K5D4G4XNO5f
+IAfenzqB+3AxzvwdvMjZTPWSFCy1CfivRuGVVscuCV63CZxGQX1RrBxwFe5idFsWTzPXMZKh4aAq
+7a9/P7fS+SxQkZrKEdVSipPS2J24jAJlOlV9b+l08Kftd+GsDequw7Fu2HrcJgekpyxlZhdGO5y5
+DTVWONoF+9qgoOUH67U9kYG9hiectECpCbTnIV/3ndz6ADmVr1iReyEykFc3yJ5zsLM5zPZaH1sq
+XrLp0EM2aG+RntUiB+ZT6fxfIsRPbYnQgbXhGFYAAAAASUVORK5CYII=
+			</icon>
+		</appfolder>
+		<basepath>
+		</basepath>
+	</rootfolder>
+	<variables>
+	</variables>
+</repository>

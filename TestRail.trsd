@@ -1,0 +1,214 @@
+{
+  "RanorexSuites": [
+    {
+      "Id": "c1935d58-308e-40c1-b5c3-1132400202e1/0f6a181f-a02a-3694-90ce-3eda17594221",
+      "Pid": "40bcda6e-258a-4b63-93fe-a9bf41a591bd/c1935d58-308e-40c1-b5c3-1132400202e1",
+      "Name": "SmokeTest"
+    }
+  ],
+  "CaseFields": [],
+  "ResultFields": [],
+  "TestRailProject": {
+    "Id": "P13",
+    "Pid": null,
+    "Name": "Software Engineering - Amicus Attorney",
+    "BaseUri": "https://abacusnext.testrail.com/",
+    "ProjectSuiteMode": 1,
+    "ProjectCustomizations": {
+      "TemplateId": 1,
+      "CaseTypeId": 3
+    }
+  },
+  "Projects": [
+    {
+      "Rx": {
+        "Id": "40bcda6e-258a-4b63-93fe-a9bf41a591bd/c1935d58-308e-40c1-b5c3-1132400202e1",
+        "Pid": "40bcda6e-258a-4b63-93fe-a9bf41a591bd/40bcda6e-258a-4b63-93fe-a9bf41a591bd",
+        "Name": "SmokeTest"
+      },
+      "Tr": null
+    }
+  ],
+  "TestSuites": [
+    {
+      "Rx": {
+        "Id": "c1935d58-308e-40c1-b5c3-1132400202e1/0f6a181f-a02a-3694-90ce-3eda17594221",
+        "Pid": "40bcda6e-258a-4b63-93fe-a9bf41a591bd/c1935d58-308e-40c1-b5c3-1132400202e1",
+        "Name": "SmokeTest"
+      },
+      "Tr": {
+        "Id": "S18",
+        "Pid": "P13",
+        "Name": "Master"
+      }
+    }
+  ],
+  "Sections": [
+    {
+      "Rx": {
+        "Id": "0f6a181f-a02a-3694-90ce-3eda17594221/96c98d30-371a-418c-b011-50bbeca9dbe8",
+        "Pid": "c1935d58-308e-40c1-b5c3-1132400202e1/0f6a181f-a02a-3694-90ce-3eda17594221",
+        "Name": "Document Management"
+      },
+      "Tr": {
+        "Id": "G295",
+        "Pid": "S18",
+        "Name": "Document Management"
+      }
+    },
+    {
+      "Rx": {
+        "Id": "0f6a181f-a02a-3694-90ce-3eda17594221/03b095d2-4f11-404f-ab62-f365a6276d2d",
+        "Pid": "c1935d58-308e-40c1-b5c3-1132400202e1/0f6a181f-a02a-3694-90ce-3eda17594221",
+        "Name": "Import Fees & Expenses"
+      },
+      "Tr": {
+        "Id": "G300",
+        "Pid": "S18",
+        "Name": "Import Fees & Expenses"
+      }
+    },
+    {
+      "Rx": null,
+      "Tr": {
+        "Id": "G444",
+        "Pid": "S18",
+        "Name": "Master"
+      }
+    }
+  ],
+  "Cases": [
+    {
+      "Rx": {
+        "Id": "0f6a181f-a02a-3694-90ce-3eda17594221/cb7d9a72-28d4-40e4-8ba0-8593b79bbc22",
+        "Pid": "c1935d58-308e-40c1-b5c3-1132400202e1/0f6a181f-a02a-3694-90ce-3eda17594221",
+        "Name": "Login"
+      },
+      "Tr": {
+        "Id": "C3218",
+        "Pid": "G444",
+        "Name": "Login"
+      }
+    },
+    {
+      "Rx": {
+        "Id": "0f6a181f-a02a-3694-90ce-3eda17594221/32442159-632a-43ca-aa2b-a7a41794639b",
+        "Pid": "c1935d58-308e-40c1-b5c3-1132400202e1/0f6a181f-a02a-3694-90ce-3eda17594221",
+        "Name": "Attorney"
+      },
+      "Tr": {
+        "Id": "C3219",
+        "Pid": "G444",
+        "Name": "Attorney"
+      }
+    },
+    {
+      "Rx": {
+        "Id": "0f6a181f-a02a-3694-90ce-3eda17594221/341f66fc-768f-4fad-b39c-5baa19ca4fbd",
+        "Pid": "c1935d58-308e-40c1-b5c3-1132400202e1/0f6a181f-a02a-3694-90ce-3eda17594221",
+        "Name": "Billing"
+      },
+      "Tr": {
+        "Id": "C3220",
+        "Pid": "G444",
+        "Name": "Billing"
+      }
+    },
+    {
+      "Rx": {
+        "Id": "0f6a181f-a02a-3694-90ce-3eda17594221/6f179f43-cac7-46b6-85e3-c764fb8e6fba",
+        "Pid": "c1935d58-308e-40c1-b5c3-1132400202e1/0f6a181f-a02a-3694-90ce-3eda17594221",
+        "Name": "PreferencesTest"
+      },
+      "Tr": {
+        "Id": "C3221",
+        "Pid": "G444",
+        "Name": "PreferencesTest"
+      }
+    },
+    {
+      "Rx": {
+        "Id": "0f6a181f-a02a-3694-90ce-3eda17594221/f999b233-305c-4e9e-a5e8-bd5b49a34123",
+        "Pid": "c1935d58-308e-40c1-b5c3-1132400202e1/0f6a181f-a02a-3694-90ce-3eda17594221",
+        "Name": "Logout"
+      },
+      "Tr": {
+        "Id": "C3222",
+        "Pid": "G444",
+        "Name": "Logout"
+      }
+    },
+    {
+      "Rx": {
+        "Id": "0f6a181f-a02a-3694-90ce-3eda17594221/7247446d-c83a-4e5b-b541-9873829122ab",
+        "Pid": "c1935d58-308e-40c1-b5c3-1132400202e1/0f6a181f-a02a-3694-90ce-3eda17594221",
+        "Name": "APX"
+      },
+      "Tr": {
+        "Id": "C3223",
+        "Pid": "G444",
+        "Name": "APX"
+      }
+    },
+    {
+      "Rx": {
+        "Id": "0f6a181f-a02a-3694-90ce-3eda17594221/cce75b9f-2a0a-4eea-879e-3e7540f86d4e",
+        "Pid": "c1935d58-308e-40c1-b5c3-1132400202e1/0f6a181f-a02a-3694-90ce-3eda17594221",
+        "Name": "BillingAPX"
+      },
+      "Tr": {
+        "Id": "C3224",
+        "Pid": "G444",
+        "Name": "BillingAPX"
+      }
+    },
+    {
+      "Rx": {
+        "Id": "0f6a181f-a02a-3694-90ce-3eda17594221/3354bb10-62fe-479e-9188-98414e24f959",
+        "Pid": "c1935d58-308e-40c1-b5c3-1132400202e1/0f6a181f-a02a-3694-90ce-3eda17594221",
+        "Name": "Attorney_FileDetails"
+      },
+      "Tr": {
+        "Id": "C3225",
+        "Pid": "G444",
+        "Name": "Attorney_FileDetails"
+      }
+    },
+    {
+      "Rx": {
+        "Id": "0f6a181f-a02a-3694-90ce-3eda17594221/1a61e0ba-1409-4fc7-b56d-8fef757916d1",
+        "Pid": "c1935d58-308e-40c1-b5c3-1132400202e1/0f6a181f-a02a-3694-90ce-3eda17594221",
+        "Name": "CreateManyRecords"
+      },
+      "Tr": {
+        "Id": "C3226",
+        "Pid": "G444",
+        "Name": "CreateManyRecords"
+      }
+    },
+    {
+      "Rx": {
+        "Id": "0f6a181f-a02a-3694-90ce-3eda17594221/a7497b82-903e-43dd-b66d-2ffcdc149f74",
+        "Pid": "c1935d58-308e-40c1-b5c3-1132400202e1/0f6a181f-a02a-3694-90ce-3eda17594221",
+        "Name": "ClientPortal"
+      },
+      "Tr": {
+        "Id": "C3227",
+        "Pid": "G444",
+        "Name": "ClientPortal"
+      }
+    },
+    {
+      "Rx": {
+        "Id": "0f6a181f-a02a-3694-90ce-3eda17594221/00d3555b-385f-4931-bdd5-da26a7bedc9f",
+        "Pid": "c1935d58-308e-40c1-b5c3-1132400202e1/0f6a181f-a02a-3694-90ce-3eda17594221",
+        "Name": "Attorney_Email"
+      },
+      "Tr": {
+        "Id": "C3228",
+        "Pid": "G444",
+        "Name": "Attorney_Email"
+      }
+    }
+  ]
+}

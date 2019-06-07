@@ -1,0 +1,505 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<repository
+id="505bce79-fb8c-419a-a704-c4cf408ffe1c"
+name="Preferences"
+rxversion="9.0">
+	<codegen
+	classname="Preferences"
+	namespace="SmokeTest.Repositories.Premium">
+	</codegen>
+	<rootfolder
+	capname="unknown"
+	id="1fe12d41-786a-4c53-98a2-c7ba0cd425e8"
+	isrooted="True"
+	name="Root"
+	searchtimeout="0ms"
+	usecache="True">
+		<appfolder
+		addcaps="form,control,nativewindow"
+		capname="form"
+		id="b9a82f60-19c0-4379-9e4c-c1c2e71f4bb6"
+		isrooted="True"
+		name="MainForm"
+		refimgid="f9534d55-4b80-4492-ac4e-1bc802341a26"
+		refpath="/form[@controlname='MainForm']"
+		searchtimeout="5000ms"
+		usecache="True">
+			<item
+			capname="container"
+			id="8d684eba-a662-47cc-8a75-81babbd90865"
+			name="PreferencesForm1"
+			searchtimeout="30000ms">
+				/form[@controlname='MainForm']/?/?/form[@controlname='PreferencesForm']/container[@controlname='roundedPanelControl']/container[@controlname='panelScroll']
+			</item>
+			<item
+			addcaps="text,accessible"
+			capname="text"
+			id="e8070780-ea94-40d3-b0f8-705ceb778f02"
+			name="Preferences"
+			refimgid="f3488597-65bd-4d33-9459-08a0017e2e19"
+			refpath="/form[@controlname='MainForm']/container[@controlname='pLeft']/container[@caption='' and @controltypename='Panel' and @instance='1']/element[@controlname='_ultraExplorerBar']/container[@caption='' and @controltypename='UltraExplorerBarContainerControl' and @instance='0']/container[@controlname='controlPanelWrapper']/container[@controlname='OfficeControlPanel']/container[@controlname='sSCMenu']/container[@controlname='panelParent']/container[@caption='' and @controltypename='Panel' and @instance='1']/element[@controltypename='AmicusLabel']/text[@accessiblename='Preferences']"
+			searchtimeout="5000ms">
+				/form[@controlname='MainForm']/container[@controlname='pLeft']//container[@controltypename='UltraExplorerBarContainerControl' and @instance='0']/?/?/container[@controlname='OfficeControlPanel']/?/?/container[@controlname='panelParent']/container[@controltypename='Panel' and @instance='1']/?/?/text[@accessiblename='Preferences']
+			</item>
+			<item
+			addcaps="text,accessible"
+			capname="text"
+			id="cbbae7a3-84c7-42bd-bc53-a5a606c50c26"
+			name="Email"
+			refimgid="0af2dcf5-5699-46d8-8479-cc6e4ecf6d23"
+			refpath="/form[@controlname='MainForm']/element[@controltypename='MdiClient']/form[@controlname='PreferencesForm']/container[@controlname='roundedPanelControl']/container[@controlname='panelScroll']/element[@controlname='amlblGeneralEmail']/text[@accessiblerole='StaticText']"
+			searchtimeout="5000ms">
+				/form[@controlname='MainForm']/?/?/form[@controlname='PreferencesForm']//element[@controlname='amlblGeneralEmail']/text[@accessiblerole='StaticText']
+			</item>
+			<item
+			addcaps="text,accessible"
+			capname="text"
+			id="f9a4d701-e8b7-468b-a742-e4a7f6bd6467"
+			name="CalendarContacts"
+			refimgid="396393fc-dd98-482b-9316-001a13bc42b2"
+			refpath="/form[@controlname='MainForm']/element[@controltypename='MdiClient']/form[@controlname='PreferencesForm']/container[@controlname='roundedPanelControl']/container[@controlname='panelScroll']/element[@controlname='amlblGeneralOutlookLink']/text[@accessiblerole='StaticText']"
+			searchtimeout="5000ms">
+				/form[@controlname='MainForm']/?/?/form[@controlname='PreferencesForm']//element[@controlname='amlblGeneralOutlookLink']/text[@accessiblerole='StaticText']
+			</item>
+			<folder
+			addcaps="form,control,nativewindow"
+			capname="form"
+			id="51a9509f-d199-47be-831d-9bcc53aa483d"
+			isrooted="True"
+			name="PreferencesForm"
+			refpath="/form[@controlname='MainForm']/element[@controltypename='MdiClient']/form[@controlname='PreferencesForm']"
+			searchtimeout="5000ms"
+			usecache="False">
+				<item
+				addcaps="text,accessible"
+				capname="text"
+				id="bdf654ef-5b45-4cb7-a675-e014d0a6ed76"
+				name="MyProfile"
+				refimgid="31bf286c-9673-492a-8ed9-91ae70de1054"
+				refpath="/form[@controlname='MainForm']/element[@controltypename='MdiClient']/form[@controlname='PreferencesForm']/container[@controlname='roundedPanelControl']/container[@controlname='panelScroll']/element[@controlname='amlblGeneralMyProfile']/text[@accessiblerole='StaticText']"
+				searchtimeout="5000ms">
+					/form[@controlname='MainForm']/?/?/form[@controlname='PreferencesForm']//element[@controlname='amlblGeneralMyProfile']/text[@accessiblerole='StaticText']
+				</item>
+				<item
+				addcaps="text,accessible"
+				capname="text"
+				id="8fbf422a-d071-4b96-b085-874206506cc6"
+				name="MyWorkgroup"
+				refimgid="9a293c23-754a-4561-82bf-350e28af5670"
+				refpath="/form[@controlname='MainForm']/element[@controltypename='MdiClient']/form[@controlname='PreferencesForm']/container[@controlname='roundedPanelControl']/container[@controlname='panelScroll']/element[@controlname='amlblGeneralMyWorkgroup']/text[@accessiblerole='StaticText']"
+				searchtimeout="5000ms">
+					/form[@controlname='MainForm']/?/?/form[@controlname='PreferencesForm']//element[@controlname='amlblGeneralMyWorkgroup']/text[@accessiblerole='StaticText']
+				</item>
+				<item
+				addcaps="text,accessible"
+				capname="text"
+				id="f8a82c45-71a0-447c-a11a-6d6c8b96280e"
+				name="DefaultsOnLogin"
+				refimgid="e7e5fe7d-0fe9-4d9f-b67e-400258122f4c"
+				refpath="/form[@controlname='MainForm']/element[@controltypename='MdiClient']/form[@controlname='PreferencesForm']/container[@controlname='roundedPanelControl']/container[@controlname='panelScroll']/element[@controlname='amlblMyAppDefaultsOnLogin']/text[@accessiblerole='StaticText']"
+				searchtimeout="5000ms">
+					/form[@controlname='MainForm']/?/?/form[@controlname='PreferencesForm']//element[@controlname='amlblMyAppDefaultsOnLogin']/text[@accessiblerole='StaticText']
+				</item>
+				<item
+				addcaps="text,accessible"
+				capname="text"
+				id="3da96d11-f3da-479b-b86d-e7e649980a55"
+				name="Toolbars"
+				refimgid="43e1f50d-ba12-4b08-b7b6-9d326e9fe8e0"
+				refpath="/form[@controlname='MainForm']/element[@controltypename='MdiClient']/form[@controlname='PreferencesForm']/container[@controlname='roundedPanelControl']/container[@controlname='panelScroll']/element[@controlname='amlblMyAppGraphics']/text[@accessiblerole='StaticText']"
+				searchtimeout="5000ms">
+					/form[@controlname='MainForm']/?/?/form[@controlname='PreferencesForm']//element[@controlname='amlblMyAppGraphics']/text[@accessiblerole='StaticText']
+				</item>
+				<item
+				addcaps="text,accessible"
+				capname="text"
+				id="01f79284-e8f9-427e-a9d6-0cc067dfe06e"
+				name="SpellCheck"
+				refimgid="038e4c2d-71d9-445d-b255-abea19e3ed61"
+				refpath="/form[@controlname='MainForm']/element[@controltypename='MdiClient']/form[@controlname='PreferencesForm']/container[@controlname='roundedPanelControl']/container[@controlname='panelScroll']/element[@controlname='amlblSpellCheck']/text[@accessiblerole='StaticText']"
+				searchtimeout="5000ms">
+					/form[@controlname='MainForm']/?/?/form[@controlname='PreferencesForm']//element[@controlname='amlblSpellCheck']/text[@accessiblerole='StaticText']
+				</item>
+				<item
+				addcaps="text,accessible"
+				capname="text"
+				id="7b54a7fb-bbfa-484d-bc7a-7d054c5512ec"
+				name="DailiesPages"
+				refimgid="74ff67c2-86c7-45ef-b3ef-958f2001243b"
+				refpath="/form[@controlname='MainForm']/element[@controltypename='MdiClient']/form[@controlname='PreferencesForm']/container[@controlname='roundedPanelControl']/container[@controlname='panelScroll']/element[@controlname='amlblDailiesPages']/text[@accessiblerole='StaticText']"
+				searchtimeout="5000ms">
+					/form[@controlname='MainForm']/?/?/form[@controlname='PreferencesForm']//element[@controlname='amlblDailiesPages']/text[@accessiblerole='StaticText']
+				</item>
+				<item
+				addcaps="text,accessible"
+				capname="text"
+				id="06845597-6890-4cb9-8460-e08a58cfa6eb"
+				name="TodaysPractice"
+				refimgid="6f4bc733-d3c3-4bd1-a4ba-5beb6b6fd715"
+				refpath="/form[@controlname='MainForm']/element[@controltypename='MdiClient']/form[@controlname='PreferencesForm']/container[@controlname='roundedPanelControl']/container[@controlname='panelScroll']/element[@controlname='amlblTodaysPractice']/text[@accessiblerole='StaticText']"
+				searchtimeout="5000ms">
+					/form[@controlname='MainForm']/?/?/form[@controlname='PreferencesForm']//element[@controlname='amlblTodaysPractice']/text[@accessiblerole='StaticText']
+				</item>
+				<item
+				addcaps="text,accessible"
+				capname="text"
+				id="3031251f-2c38-4ac0-af25-e226fe85d0f1"
+				name="FilesDisplay"
+				refimgid="427e24da-f7f1-497e-b8af-aee566438b92"
+				refpath="/form[@controlname='MainForm']/element[@controltypename='MdiClient']/form[@controlname='PreferencesForm']/container[@controlname='roundedPanelControl']/container[@controlname='panelScroll']/element[@controlname='amlblFilesDisplay']/text[@accessiblerole='StaticText']"
+				searchtimeout="5000ms">
+					/form[@controlname='MainForm']/?/?/form[@controlname='PreferencesForm']//element[@controlname='amlblFilesDisplay']/text[@accessiblerole='StaticText']
+				</item>
+				<item
+				addcaps="text,accessible"
+				capname="text"
+				id="73aff468-cd69-47d8-b5cc-ed6439c604ab"
+				name="FilesNewEntries"
+				refimgid="07c4363e-4cce-4eb7-b5f6-c64bcbbabad5"
+				refpath="/form[@controlname='MainForm']/element[@controltypename='MdiClient']/form[@controlname='PreferencesForm']/container[@controlname='roundedPanelControl']/container[@controlname='panelScroll']/element[@controlname='amlblFilesNewEntries']/text[@accessiblerole='StaticText']"
+				searchtimeout="5000ms">
+					/form[@controlname='MainForm']/?/?/form[@controlname='PreferencesForm']//element[@controlname='amlblFilesNewEntries']/text[@accessiblerole='StaticText']
+				</item>
+				<item
+				addcaps="text,accessible"
+				capname="text"
+				id="cd34b429-d223-4311-a3bb-6f96c65c1aef"
+				name="CalendarDisplay"
+				refimgid="9b4c30c2-2b85-4c7c-af02-f2b26a6eb31b"
+				refpath="/form[@controlname='MainForm']/element[@controltypename='MdiClient']/form[@controlname='PreferencesForm']/container[@controlname='roundedPanelControl']/container[@controlname='panelScroll']/element[@controlname='amlblCalendarDisplay']/text[@accessiblerole='StaticText']"
+				searchtimeout="5000ms">
+					/form[@controlname='MainForm']/?/?/form[@controlname='PreferencesForm']//element[@controlname='amlblCalendarDisplay']/text[@accessiblerole='StaticText']
+				</item>
+				<item
+				addcaps="text,accessible"
+				capname="text"
+				id="ab2cab22-e570-4116-9e38-223503984341"
+				name="CalendarNewEntries"
+				refimgid="8ffe9add-82fb-4d28-aef5-40f1b549ea8a"
+				refpath="/form[@controlname='MainForm']/element[@controltypename='MdiClient']/form[@controlname='PreferencesForm']/container[@controlname='roundedPanelControl']/container[@controlname='panelScroll']/element[@controlname='amlblCalendarNewEntries']/text[@accessiblerole='StaticText']"
+				searchtimeout="5000ms">
+					/form[@controlname='MainForm']/?/?/form[@controlname='PreferencesForm']//element[@controlname='amlblCalendarNewEntries']/text[@accessiblerole='StaticText']
+				</item>
+				<item
+				addcaps="text,accessible"
+				capname="text"
+				id="fde81265-6280-4857-af5f-93f5a527f9a4"
+				name="CalendarOther"
+				refimgid="034c6433-9164-4fb2-90d6-39b25cebf63c"
+				refpath="/form[@controlname='MainForm']/element[@controltypename='MdiClient']/form[@controlname='PreferencesForm']/container[@controlname='roundedPanelControl']/container[@controlname='panelScroll']/element[@controlname='amlblCalendarOther']/text[@accessiblerole='StaticText']"
+				searchtimeout="5000ms">
+					/form[@controlname='MainForm']/?/?/form[@controlname='PreferencesForm']//element[@controlname='amlblCalendarOther']/text[@accessiblerole='StaticText']
+				</item>
+				<item
+				addcaps="text,accessible"
+				capname="text"
+				id="78717a41-3037-43e4-a7e8-6dcc5dff0796"
+				name="PeopleDisplay"
+				refimgid="f20ebc4c-8a48-41c4-86f8-29af80e27a8e"
+				refpath="/form[@controlname='MainForm']/element[@controltypename='MdiClient']/form[@controlname='PreferencesForm']/container[@controlname='roundedPanelControl']/container[@controlname='panelScroll']/element[@controlname='amlblPeopleDisplay']/text[@accessiblerole='StaticText']"
+				searchtimeout="5000ms">
+					/form[@controlname='MainForm']/?/?/form[@controlname='PreferencesForm']//element[@controlname='amlblPeopleDisplay']/text[@accessiblerole='StaticText']
+				</item>
+				<item
+				addcaps="text,accessible"
+				capname="text"
+				id="621a0c44-3b7f-4dc9-b1e1-c9e4fa5d1a14"
+				name="PeopleNewEntries"
+				refimgid="4e53685c-8116-44ff-938c-eda419c95456"
+				refpath="/form[@controlname='MainForm']/element[@controltypename='MdiClient']/form[@controlname='PreferencesForm']/container[@controlname='roundedPanelControl']/container[@controlname='panelScroll']/element[@controlname='amlblPeopleNewEntries']/text[@accessiblerole='StaticText']"
+				searchtimeout="5000ms">
+					/form[@controlname='MainForm']/?/?/form[@controlname='PreferencesForm']//element[@controlname='amlblPeopleNewEntries']/text[@accessiblerole='StaticText']
+				</item>
+				<item
+				addcaps="text,accessible"
+				capname="text"
+				id="f8c8e163-3e6e-47cf-8bc9-f40933f2132f"
+				name="Management"
+				refimgid="69a3bc2c-2109-4fb9-8706-00821f6aa15f"
+				refpath="/form[@controlname='MainForm']/element[@controltypename='MdiClient']/form[@controlname='PreferencesForm']/container[@controlname='roundedPanelControl']/container[@controlname='panelScroll']/element[@controlname='amlblManagement']/text[@accessiblerole='StaticText']"
+				searchtimeout="5000ms">
+					/form[@controlname='MainForm']/?/?/form[@controlname='PreferencesForm']//element[@controlname='amlblManagement']/text[@accessiblerole='StaticText']
+				</item>
+				<item
+				addcaps="text,accessible"
+				capname="text"
+				id="e8cff8b4-3af0-4182-8276-3c7d3858ee1d"
+				name="DocumentAssembly"
+				refimgid="9b201610-0e3f-40ae-864b-b79473ed52a3"
+				refpath="/form[@controlname='MainForm']/element[@controltypename='MdiClient']/form[@controlname='PreferencesForm']/container[@controlname='roundedPanelControl']/container[@controlname='panelScroll']/element[@controlname='amlblDocumentAssembly']/text[@accessiblerole='StaticText']"
+				searchtimeout="5000ms">
+					/form[@controlname='MainForm']/?/?/form[@controlname='PreferencesForm']//element[@controlname='amlblDocumentAssembly']/text[@accessiblerole='StaticText']
+				</item>
+				<item
+				addcaps="text,accessible"
+				capname="text"
+				id="caf44723-297d-448d-ac7d-1aa266b644d8"
+				name="BillingRates"
+				refimgid="f9af7852-2c01-4ec4-8dd2-607394f52103"
+				refpath="/form[@controlname='MainForm']/element[@controltypename='MdiClient']/form[@controlname='PreferencesForm']/container[@controlname='roundedPanelControl']/container[@controlname='panelScroll']/element[@controlname='amlblTimeBillingRates']/text[@accessiblerole='StaticText']"
+				searchtimeout="5000ms">
+					/form[@controlname='MainForm']/?/?/form[@controlname='PreferencesForm']//element[@controlname='amlblTimeBillingRates']/text[@accessiblerole='StaticText']
+				</item>
+				<item
+				addcaps="text,accessible"
+				capname="text"
+				id="4b8de679-31ff-4a86-881c-9a88f4041c08"
+				name="TimeNewEntries"
+				refimgid="91b2f804-2d16-4b0c-894f-fa2c4b23ca11"
+				refpath="/form[@controlname='MainForm']/element[@controltypename='MdiClient']/form[@controlname='PreferencesForm']/container[@controlname='roundedPanelControl']/container[@controlname='panelScroll']/element[@controlname='amlblTimeNewEntries']/text[@accessiblerole='StaticText']"
+				searchtimeout="5000ms">
+					/form[@controlname='MainForm']/?/?/form[@controlname='PreferencesForm']//element[@controlname='amlblTimeNewEntries']/text[@accessiblerole='StaticText']
+				</item>
+				<item
+				addcaps="text,accessible"
+				capname="text"
+				id="b204d13a-872b-48d7-a802-f2924aa83f74"
+				name="Timer"
+				refimgid="6c7db012-004a-45e0-ac0c-afc20f6e3638"
+				refpath="/form[@controlname='MainForm']/element[@controltypename='MdiClient']/form[@controlname='PreferencesForm']/container[@controlname='roundedPanelControl']/container[@controlname='panelScroll']/element[@controlname='amlblTimeTimer']/text[@accessiblerole='StaticText']"
+				searchtimeout="5000ms">
+					/form[@controlname='MainForm']/?/?/form[@controlname='PreferencesForm']//element[@controlname='amlblTimeTimer']/text[@accessiblerole='StaticText']
+				</item>
+				<item
+				addcaps="text,accessible"
+				capname="text"
+				id="e9653e86-2c18-4982-bc85-c9e25c289a73"
+				name="Formatting"
+				refimgid="aa90f349-07d5-49f5-9643-2b559c9cdbf3"
+				refpath="/form[@controlname='MainForm']/element[@controltypename='MdiClient']/form[@controlname='PreferencesForm']/container[@controlname='roundedPanelControl']/container[@controlname='panelScroll']/element[@controlname='amlblTimeFormatting']/text[@accessiblerole='StaticText']"
+				searchtimeout="5000ms">
+					/form[@controlname='MainForm']/?/?/form[@controlname='PreferencesForm']//element[@controlname='amlblTimeFormatting']/text[@accessiblerole='StaticText']
+				</item>
+				<item
+				addcaps="text,accessible"
+				capname="text"
+				id="fce08a3f-7f7f-492c-bf66-07c14baec5fe"
+				name="ActivityCodes"
+				refimgid="399b5a79-c176-4e96-afc6-c740fe4d5b20"
+				refpath="/form[@controlname='MainForm']/element[@controltypename='MdiClient']/form[@controlname='PreferencesForm']/container[@controlname='roundedPanelControl']/container[@controlname='panelScroll']/element[@controlname='amlblTimeActivityCodes']/text[@accessiblerole='StaticText']"
+				searchtimeout="5000ms">
+					/form[@controlname='MainForm']/?/?/form[@controlname='PreferencesForm']//element[@controlname='amlblTimeActivityCodes']/text[@accessiblerole='StaticText']
+				</item>
+				<item
+				addcaps="text,accessible"
+				capname="text"
+				id="963b7afb-dd77-4606-afdb-3932f2f4c69c"
+				name="Fiscal"
+				refimgid="1848c5a2-4e27-4290-b474-61356595a643"
+				refpath="/form[@controlname='MainForm']/element[@controltypename='MdiClient']/form[@controlname='PreferencesForm']/container[@controlname='roundedPanelControl']/container[@controlname='panelScroll']/element[@controlname='amlblTimeStatistics']/text[@accessiblerole='StaticText']"
+				searchtimeout="5000ms">
+					/form[@controlname='MainForm']/?/?/form[@controlname='PreferencesForm']//element[@controlname='amlblTimeStatistics']/text[@accessiblerole='StaticText']
+				</item>
+				<item
+				addcaps="text,accessible"
+				capname="text"
+				id="535f0fa4-fd5f-482a-93da-915fcd16795a"
+				name="General"
+				refimgid="007444b9-aded-4cb5-b491-6f04fd861567"
+				refpath="/form[@controlname='MainForm']/element[@controltypename='MdiClient']/form[@controlname='PreferencesForm']/container[@controlname='roundedPanelControl']/container[@controlname='panelScroll']/element[@controlname='amlblGeneral']/text[@accessiblerole='StaticText']"
+				searchtimeout="5000ms">
+					/form[@controlname='MainForm']/?/?/form[@controlname='PreferencesForm']//element[@controlname='amlblGeneral']/text[@accessiblerole='StaticText']
+				</item>
+				<item
+				addcaps="text,accessible"
+				capname="text"
+				id="0773a48b-9809-43c9-9888-2c4e4987e390"
+				name="Messages"
+				refimgid="f842804b-c835-4506-8cc0-dbc2d4ffb763"
+				refpath="/form[@controlname='MainForm']/element[@controltypename='MdiClient']/form[@controlname='PreferencesForm']/container[@controlname='roundedPanelControl']/container[@controlname='panelScroll']/element[@controlname='amlblMessages']/text[@accessiblerole='StaticText']"
+				searchtimeout="5000ms">
+					/form[@controlname='MainForm']/?/?/form[@controlname='PreferencesForm']//element[@controlname='amlblMessages']/text[@accessiblerole='StaticText']
+				</item>
+				<item
+				addcaps="text,accessible"
+				capname="text"
+				id="49b0dc2b-240e-48be-88d9-abde2fedc3e0"
+				name="Defaults"
+				refimgid="0da09749-0c3f-4a30-8f3e-396f53f7da83"
+				refpath="/form[@controlname='MainForm']/element[@controltypename='MdiClient']/form[@controlname='PreferencesForm']/container[@controlname='roundedPanelControl']/container[@controlname='panelScroll']/element[@controlname='amlblDefaults']/text[@accessiblerole='StaticText']"
+				searchtimeout="5000ms">
+					/form[@controlname='MainForm']/?/?/form[@controlname='PreferencesForm']//element[@controlname='amlblDefaults']/text[@accessiblerole='StaticText']
+				</item>
+				<basepath>
+					/form[@controlname='MainForm']/?/?/form[@controlname='PreferencesForm']
+				</basepath>
+			</folder>
+			<item
+			addcaps="container,uiautomation"
+			capname="container"
+			id="d2a47121-362f-434c-8f1d-236b0154cfeb"
+			name="OfficeModule"
+			refimgid="45bed2df-2a4b-4b4a-9e43-48e195fd8256"
+			searchtimeout="30000ms">
+				/form[@controlname='MainForm']/container[@controlname='pLeft']//container[@name='Office']
+			</item>
+			<item
+			addcaps="text,accessible"
+			capname="text"
+			id="32e9d3c2-bb77-47c7-8c58-58006e26c75f"
+			name="OfficeModuleHeader"
+			refimgid="6eefcfc4-6ffc-4eee-9c29-cb58964666f4"
+			searchtimeout="30000ms">
+				/form[@controlname='MainForm']/container[@controlname='pLeft']//container[@controltypename='UltraExplorerBarContainerControl' and @instance='0']/container[@controlname='controlPanelWrapper']/?/?/text[@accessiblename='Office']
+			</item>
+			<basepath>
+				/form[@controlname='MainForm']
+			</basepath>
+			<icon>
+				iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACx
+jwv8YQUAAAAJcEhZcwAADsQAAA7EAZUrDhsAAAJoSURBVDhPtZJZSJRRGIb/+Z0yy43E1CibUIKC
+IFqoi6KNlou6MGmxiyBQKAhNsc2BSSuJhHCpRJMySSPLkMaK1MgoW8Y0Nclxi2jIJIlGhgyd+c/7
+dpz50yBvgnrg4xw43/vyLUf5L2CgZ7+oPPwVuauJozMo0gLBoj3NJE3yWfVlTY4BDRc0OF56RPsl
+sHo5teJgiuIpQK6qMU0h7p4s13P/hFYzMTwIeEaBLy10XdzA/n0mCusqsmoBcWU6cNZvFLdS62W6
+n0+lg/vZvei6o8H1ERQeYqiL9mWxbDaq5LtUonEXWbOCKA0GzAY3XN/WStlEO6g6BLScAdtOkZ+q
+yWEr38ZE8ZUsDEMVRHcW+TyBrF5MFPqBpxcO6VLFyAH7OjxM8bBhL/kkjsJu4Y+mfMLdxiZpMHg5
+g/hcRnakk3UbZRUhQLICXa9MRWd9EW5vGeVYr427ib4c9sWtkQbvaZMGrSGBxEgd2ZVJPt5Glkdw
+bKC6XjGi59l25Id7WBlDPI0nBvPYOjeCjpQEtkdHetugVkt2mslHW4myMCB1ooIxgpCuANdCgdr1
+FG9SONJ8Tq79BTVnHV9LA2dpEoUtkby3kijxBzJC3brWB49HEQUGiJuxdMRHk/3HyN5s8nsRbarC
+9vAAOZ/NRMUcIEd1o7cxScrGV2kAMBMH5cQLVdoXTeOHTbPk6nbQsTOW3UvD2L0kiK6scIgCFcyc
+P97/7xjodJp4QKHIUzVcDQRuzCYr51Fcj4QoCQDOGzy0mCYV/8L7MVCWaGOyHNwJGRYZR2Sk+xMd
+D8zerL8gSEaw7+rFqJ//CkX5CWkHqyZHVzU6AAAAAElFTkSuQmCC
+			</icon>
+		</appfolder>
+		<appfolder
+		addcaps="form,control,nativewindow"
+		capname="form"
+		id="bea9971f-6b2b-4fc3-a039-98b032aa9102"
+		isrooted="True"
+		name="GeneralPreferencesForm"
+		searchtimeout="5000ms"
+		usecache="True">
+			<item
+			addcaps="button,accessible"
+			capname="button"
+			id="737c9d4c-6593-4ccc-a43f-1ea3efc91e23"
+			name="ButtonOK"
+			refimgid="b2f93554-e567-4ad8-9759-f8fa6fe46cc9"
+			searchtimeout="5000ms">
+				/form[@controltext='Preferences']//toolbar[@accessiblename='Toolbar']/button[@accessiblename='OK' and @enabled='True' and @accessiblestate='Focusable']
+			</item>
+			<item
+			capname="form"
+			id="ce3dbf95-8bd2-4bb3-88b2-404d03acc97e"
+			name="GeneralPreferencesForm"
+			searchtimeout="30000ms">
+				/form[@controltext='Preferences']
+			</item>
+			<item
+			capname="titlebar"
+			id="f6a2b7f1-fa44-497c-9d5a-9b1ef0fbf09e"
+			name="TitleBar"
+			searchtimeout="30000ms">
+				/form[@controltext='Preferences']/titlebar[@accessiblerole='TitleBar']
+			</item>
+			<basepath>
+				/form[@controltext='Preferences']
+			</basepath>
+			<icon>
+				iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACx
+jwv8YQUAAAAJcEhZcwAADsQAAA7EAZUrDhsAAAJoSURBVDhPtZJZSJRRGIb/+Z0yy43E1CibUIKC
+IFqoi6KNlou6MGmxiyBQKAhNsc2BSSuJhHCpRJMySSPLkMaK1MgoW8Y0Nclxi2jIJIlGhgyd+c/7
+dpz50yBvgnrg4xw43/vyLUf5L2CgZ7+oPPwVuauJozMo0gLBoj3NJE3yWfVlTY4BDRc0OF56RPsl
+sHo5teJgiuIpQK6qMU0h7p4s13P/hFYzMTwIeEaBLy10XdzA/n0mCusqsmoBcWU6cNZvFLdS62W6
+n0+lg/vZvei6o8H1ERQeYqiL9mWxbDaq5LtUonEXWbOCKA0GzAY3XN/WStlEO6g6BLScAdtOkZ+q
+yWEr38ZE8ZUsDEMVRHcW+TyBrF5MFPqBpxcO6VLFyAH7OjxM8bBhL/kkjsJu4Y+mfMLdxiZpMHg5
+g/hcRnakk3UbZRUhQLICXa9MRWd9EW5vGeVYr427ib4c9sWtkQbvaZMGrSGBxEgd2ZVJPt5Glkdw
+bKC6XjGi59l25Id7WBlDPI0nBvPYOjeCjpQEtkdHetugVkt2mslHW4myMCB1ooIxgpCuANdCgdr1
+FG9SONJ8Tq79BTVnHV9LA2dpEoUtkby3kijxBzJC3brWB49HEQUGiJuxdMRHk/3HyN5s8nsRbarC
+9vAAOZ/NRMUcIEd1o7cxScrGV2kAMBMH5cQLVdoXTeOHTbPk6nbQsTOW3UvD2L0kiK6scIgCFcyc
+P97/7xjodJp4QKHIUzVcDQRuzCYr51Fcj4QoCQDOGzy0mCYV/8L7MVCWaGOyHNwJGRYZR2Sk+xMd
+D8zerL8gSEaw7+rFqJ//CkX5CWkHqyZHVzU6AAAAAElFTkSuQmCC
+			</icon>
+		</appfolder>
+		<appfolder
+		addcaps="form,control,nativewindow"
+		capname="form"
+		id="8f89f9d5-6bb3-4d24-9785-550bec029a33"
+		isrooted="True"
+		name="EmailPreferencesForm"
+		refimgid="d7c6da8e-05ae-469e-824a-0567769bf7de"
+		refpath="/form[@controlname='EmailPreferencesForm']"
+		searchtimeout="5000ms"
+		usecache="True">
+			<item
+			addcaps="button,accessible"
+			capname="button"
+			id="b9d64f5c-cd9c-41b2-9ca2-16db60e86ae3"
+			name="Close"
+			refimgid="6683203c-734d-401a-9451-7456ed04e05c"
+			refpath="/form[@controlname='EmailPreferencesForm']/element[@controlname='_BaseDialogForm_Toolbars_Dock_Area_Bottom']/container[@accessiblename='DockBottom']/toolbar[@accessiblename='Toolbar']/button[@accessiblename='Close ']"
+			searchtimeout="5000ms">
+				/form[@controlname='EmailPreferencesForm']//toolbar[@accessiblename='Toolbar']/button[@accessiblename='Close ']
+			</item>
+			<item
+			addcaps="button,uiautomation,uiautomationinvoke"
+			capname="button"
+			id="0ca01454-1e39-40d2-80df-5ff5d2c6dfae"
+			name="ButtonToolbarWIZARDToolsToolCL"
+			refimgid="4f068347-d0d6-4f69-9405-7fa9c69eff86"
+			searchtimeout="30000ms">
+				/form[@controlname='EmailPreferencesForm']/?/?/?/button[@name='Close ' and @controltype='Button']
+			</item>
+			<basepath>
+				/form[@controlname='EmailPreferencesForm']
+			</basepath>
+			<icon>
+				iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACx
+jwv8YQUAAAAJcEhZcwAADsQAAA7EAZUrDhsAAAJoSURBVDhPtZJZSJRRGIb/+Z0yy43E1CibUIKC
+IFqoi6KNlou6MGmxiyBQKAhNsc2BSSuJhHCpRJMySSPLkMaK1MgoW8Y0Nclxi2jIJIlGhgyd+c/7
+dpz50yBvgnrg4xw43/vyLUf5L2CgZ7+oPPwVuauJozMo0gLBoj3NJE3yWfVlTY4BDRc0OF56RPsl
+sHo5teJgiuIpQK6qMU0h7p4s13P/hFYzMTwIeEaBLy10XdzA/n0mCusqsmoBcWU6cNZvFLdS62W6
+n0+lg/vZvei6o8H1ERQeYqiL9mWxbDaq5LtUonEXWbOCKA0GzAY3XN/WStlEO6g6BLScAdtOkZ+q
+yWEr38ZE8ZUsDEMVRHcW+TyBrF5MFPqBpxcO6VLFyAH7OjxM8bBhL/kkjsJu4Y+mfMLdxiZpMHg5
+g/hcRnakk3UbZRUhQLICXa9MRWd9EW5vGeVYr427ib4c9sWtkQbvaZMGrSGBxEgd2ZVJPt5Glkdw
+bKC6XjGi59l25Id7WBlDPI0nBvPYOjeCjpQEtkdHetugVkt2mslHW4myMCB1ooIxgpCuANdCgdr1
+FG9SONJ8Tq79BTVnHV9LA2dpEoUtkby3kijxBzJC3brWB49HEQUGiJuxdMRHk/3HyN5s8nsRbarC
+9vAAOZ/NRMUcIEd1o7cxScrGV2kAMBMH5cQLVdoXTeOHTbPk6nbQsTOW3UvD2L0kiK6scIgCFcyc
+P97/7xjodJp4QKHIUzVcDQRuzCYr51Fcj4QoCQDOGzy0mCYV/8L7MVCWaGOyHNwJGRYZR2Sk+xMd
+D8zerL8gSEaw7+rFqJ//CkX5CWkHqyZHVzU6AAAAAElFTkSuQmCC
+			</icon>
+		</appfolder>
+		<appfolder
+		addcaps="form,control,nativewindow"
+		capname="form"
+		id="bc5b262c-9b08-4061-b61d-1a018c35ee93"
+		isrooted="True"
+		name="PromptForm"
+		refpath="/form[@controlname='PromptForm']"
+		searchtimeout="5000ms"
+		usecache="True">
+			<item
+			addcaps="button,accessible"
+			capname="button"
+			id="89367da5-0a25-43d8-9f9a-812cf5a935e7"
+			name="ButtonOK"
+			refimgid="eb243399-98ec-4b09-93ab-03d1b1a57b3f"
+			refpath="/form[@controlname='PromptForm']/element[@controlname='_BaseForm_Toolbars_Dock_Area_Bottom']/container[@accessiblename='DockBottom']/toolbar[@accessiblename='Toolbar']/button[@accessiblename='OK']"
+			searchtimeout="5000ms">
+				/form[@controlname='PromptForm']//toolbar[@accessiblename='Toolbar']/button[@accessiblename='OK']
+			</item>
+			<basepath>
+				/form[@controlname='PromptForm']
+			</basepath>
+			<icon>
+				iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACx
+jwv8YQUAAAAJcEhZcwAADsQAAA7EAZUrDhsAAAJoSURBVDhPtZJZSJRRGIb/+Z0yy43E1CibUIKC
+IFqoi6KNlou6MGmxiyBQKAhNsc2BSSuJhHCpRJMySSPLkMaK1MgoW8Y0Nclxi2jIJIlGhgyd+c/7
+dpz50yBvgnrg4xw43/vyLUf5L2CgZ7+oPPwVuauJozMo0gLBoj3NJE3yWfVlTY4BDRc0OF56RPsl
+sHo5teJgiuIpQK6qMU0h7p4s13P/hFYzMTwIeEaBLy10XdzA/n0mCusqsmoBcWU6cNZvFLdS62W6
+n0+lg/vZvei6o8H1ERQeYqiL9mWxbDaq5LtUonEXWbOCKA0GzAY3XN/WStlEO6g6BLScAdtOkZ+q
+yWEr38ZE8ZUsDEMVRHcW+TyBrF5MFPqBpxcO6VLFyAH7OjxM8bBhL/kkjsJu4Y+mfMLdxiZpMHg5
+g/hcRnakk3UbZRUhQLICXa9MRWd9EW5vGeVYr427ib4c9sWtkQbvaZMGrSGBxEgd2ZVJPt5Glkdw
+bKC6XjGi59l25Id7WBlDPI0nBvPYOjeCjpQEtkdHetugVkt2mslHW4myMCB1ooIxgpCuANdCgdr1
+FG9SONJ8Tq79BTVnHV9LA2dpEoUtkby3kijxBzJC3brWB49HEQUGiJuxdMRHk/3HyN5s8nsRbarC
+9vAAOZ/NRMUcIEd1o7cxScrGV2kAMBMH5cQLVdoXTeOHTbPk6nbQsTOW3UvD2L0kiK6scIgCFcyc
+P97/7xjodJp4QKHIUzVcDQRuzCYr51Fcj4QoCQDOGzy0mCYV/8L7MVCWaGOyHNwJGRYZR2Sk+xMd
+D8zerL8gSEaw7+rFqJ//CkX5CWkHqyZHVzU6AAAAAElFTkSuQmCC
+			</icon>
+		</appfolder>
+		<basepath>
+		</basepath>
+	</rootfolder>
+	<variables>
+	</variables>
+</repository>

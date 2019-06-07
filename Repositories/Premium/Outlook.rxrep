@@ -1,0 +1,84 @@
+﻿<repository
+id="35d89e68-3f72-4bfb-b698-3b4c1de5f0d5"
+name="Outlook"
+rxversion="9.0">
+	<codegen
+	classname="Outlook"
+	namespace="SmokeTest.Repositories.Premium">
+	</codegen>
+	<rootfolder
+	capname="unknown"
+	id="309d0689-6c3e-4f7e-ade7-40a6b4b6fd2a"
+	isrooted="True"
+	name="Root"
+	searchtimeout="0ms"
+	usecache="True">
+		<appfolder
+		capname="form"
+		id="392c5372-4374-4903-a1f7-d28d24c0a06b"
+		isrooted="True"
+		name="NewEmail"
+		refimgid="7d342adf-bc95-4943-8bd0-0c91fad01b07"
+		searchtimeout="30000ms"
+		usecache="True">
+			<item
+			addcaps="text,accessible"
+			capname="text"
+			id="8da7432b-277d-41a2-be66-61d64996bfa3"
+			name="TextTo"
+			refimgid="a3c0d05e-002d-4d0b-9d20-7b36d44da975"
+			searchtimeout="30000ms">
+				/form[@title~$AAUser]//text[@accessiblename='To' and @visible='True']
+			</item>
+			<item
+			capname="text"
+			id="9fa38485-5521-4fa0-b040-a17bdd9c0eb3"
+			name="Cc"
+			refimgid="1c0c0760-6f65-431e-b577-42f85269301d"
+			searchtimeout="30000ms">
+				/form[@title~$AAUser]//text[@accessiblename='Cc' and @visible='True']
+			</item>
+			<item
+			capname="text"
+			id="47c8d35f-81e9-4afb-8c53-9e4bc4b46054"
+			name="Subject"
+			refimgid="672842d6-af25-4d73-9205-9caf255d57ed"
+			searchtimeout="30000ms">
+				/form[@title~$AAUser]//text[@accessiblename='Subject' and @accessiblerole='Text' and @visible='True']
+			</item>
+			<item
+			capname="text"
+			id="35ee2c51-5be1-48fc-9032-51c03503d00a"
+			name="AttachmentText"
+			refimgid="9a9c79c2-7a36-4a79-9ed8-4f48695ec606"
+			searchtimeout="30000ms">
+				/form[@title~$AAUser]//button//text[@name~$AttachmentName and @visible='True']
+			</item>
+			<item
+			capname="button"
+			id="5d4a8624-e783-428d-ab39-61a93b689601"
+			name="Send"
+			refimgid="dbef1b0a-927a-48c6-8ef7-b2761afbc60e"
+			searchtimeout="30000ms">
+				/form[@title~$AAUser]//button[@text='&amp;Send']
+			</item>
+			<basepath>
+				/form[@title~$AAUser]
+			</basepath>
+		</appfolder>
+		<basepath>
+		</basepath>
+	</rootfolder>
+	<variables>
+		<var
+		id="db96935b-bd8d-4a60-8c7c-f1cf13c77a4f"
+		name="AAUser">
+			Ranorex Email
+		</var>
+		<var
+		id="2eda2d69-4052-49b4-bb62-75247c8d792a"
+		name="AttachmentName">
+			Ranorex
+		</var>
+	</variables>
+</repository>

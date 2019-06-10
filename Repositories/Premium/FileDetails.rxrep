@@ -1,0 +1,217 @@
+﻿<repository
+id="2d6b827d-c687-4ca9-a946-21086c086cad"
+name="FileDetails"
+rxversion="9.0">
+	<codegen
+	classname="FileDetails"
+	namespace="SmokeTest.Repositories.Premium">
+	</codegen>
+	<rootfolder
+	capname="unknown"
+	id="958100b6-b1f5-4da1-9cd7-3a81df36f7c4"
+	isrooted="True"
+	name="Root"
+	searchtimeout="0ms"
+	usecache="True">
+		<appfolder
+		addcaps="form,control,nativewindow"
+		capname="form"
+		id="9d53a73c-157d-420f-89f0-b2d1c7cbde86"
+		isrooted="True"
+		name="FileDetailForm"
+		refimgid="33d45016-b456-4331-8576-038db8f9f8c8"
+		refpath="/form[@controlname='FileDetailForm']"
+		searchtimeout="30000ms"
+		usecache="True">
+			<folder
+			capname="tree"
+			id="50ce4a27-95f5-4104-a6b2-82b8776a8178"
+			isrooted="True"
+			name="File_Facts"
+			refimgid="c2b5d24e-3ea9-494b-af74-eae47585d0f1"
+			searchtimeout="30000ms"
+			usecache="False">
+				<item
+				capname="treeitem"
+				id="4d4be7e6-64eb-440c-bc2f-f169c579d59d"
+				name="Summary"
+				refimgid="55d04b17-397e-43fa-adfb-b4f64a50b2e5"
+				searchtimeout="30000ms">
+					/form[@controlname='FileDetailForm']/container[@controlname='panelLeftBase']//tree[@accessiblerole='Outline']/treeitem[@text='Summary']
+				</item>
+				<item
+				capname="treeitem"
+				id="cfbd8691-4b9f-4f01-bc82-66a4627685a2"
+				name="Status_Report"
+				refimgid="4fb2c856-0294-4f7f-bac6-0775d6226df3"
+				searchtimeout="30000ms">
+					/form[@controlname='FileDetailForm']/container[@controlname='panelLeftBase']//tree[@accessiblerole='Outline']/treeitem[@text='Status Report']
+				</item>
+				<item
+				capname="treeitem"
+				id="48682dec-ade6-42a8-a0b8-af13606f34f2"
+				name="Notes"
+				refimgid="0fb371d4-8701-467b-b975-b82546b1edbb"
+				searchtimeout="30000ms">
+					/form[@controlname='FileDetailForm']/container[@controlname='panelLeftBase']//tree[@accessiblerole='Outline']/treeitem[@text='Notes']
+				</item>
+				<item
+				capname="treeitem"
+				id="730dec91-feb9-4d45-ae2b-b5d435ab173a"
+				name="Related_Files"
+				refimgid="297e5860-e1e1-4845-b7b1-1d19d6b1ac98"
+				searchtimeout="30000ms">
+					/form[@controlname='FileDetailForm']/container[@controlname='panelLeftBase']//tree[@accessiblerole='Outline']/treeitem[@text='Related Files']
+				</item>
+				<item
+				capname="treeitem"
+				id="732f442c-3ef2-45cd-9147-8b3188cc4524"
+				name="Events"
+				refimgid="cdad8aa9-a8dd-4c43-a00f-33f557f2c2ae"
+				searchtimeout="30000ms">
+					/form[@controlname='FileDetailForm']/container[@controlname='panelLeftBase']//tree[@accessiblerole='Outline']/treeitem[@text='Events']
+				</item>
+				<item
+				capname="treeitem"
+				id="0c1194f1-3b62-4cb4-955d-e18fe54712ee"
+				name="Time_Spent"
+				searchtimeout="30000ms">
+					/form[@controlname='FileDetailForm']/container[@controlname='panelLeftBase']//tree[@accessiblerole='Outline']/treeitem[@text='Time Spent']
+				</item>
+				<item
+				capname="treeitem"
+				id="027dd09d-a9bc-4526-8b0e-330087c6a1e1"
+				name="Communications"
+				refimgid="d5e8a1b0-db07-49d0-ad8d-5d0017331080"
+				searchtimeout="30000ms">
+					/form[@controlname='FileDetailForm']/container[@controlname='panelLeftBase']//tree[@accessiblerole='Outline']/treeitem[@text='Communications']
+				</item>
+				<item
+				capname="treeitem"
+				id="919b2ee5-d179-42d3-8213-8a6c5e002103"
+				name="Documents"
+				refimgid="acbabf6f-d0f0-4e6c-a64c-75b4d3c1b498"
+				searchtimeout="30000ms">
+					/form[@controlname='FileDetailForm']/container[@controlname='panelLeftBase']//tree[@accessiblerole='Outline']/treeitem[@text='Documents']
+				</item>
+				<item
+				capname="treeitem"
+				id="8fd345d9-86bb-49bd-a4af-1e4e358b154f"
+				name="Research"
+				refimgid="71e9b47c-87dc-4561-b82b-64a780acfd6b"
+				searchtimeout="30000ms">
+					/form[@controlname='FileDetailForm']/container[@controlname='panelLeftBase']//tree[@accessiblerole='Outline']/treeitem[@text='Research']
+				</item>
+				<item
+				capname="treeitem"
+				id="2bfd7eba-5f79-4939-a800-2edc48567420"
+				name="Chronology"
+				refimgid="77cc65f2-6b6c-457b-8189-38462b66518a"
+				searchtimeout="30000ms">
+					/form[@controlname='FileDetailForm']/container[@controlname='panelLeftBase']//tree[@accessiblerole='Outline']/treeitem[@text='Chronology']
+				</item>
+				<item
+				capname="treeitem"
+				id="5c8c872c-7505-43fb-ab69-c2763fd4fa60"
+				name="Custom_Pages"
+				refimgid="05b2966d-7a15-4dce-8dcb-89ff889c6d6c"
+				searchtimeout="30000ms">
+					/form[@controlname='FileDetailForm']/container[@controlname='panelLeftBase']//tree[@accessiblerole='Outline']/treeitem[@text='Custom Pages']
+				</item>
+				<item
+				capname="treeitem"
+				id="1cb833db-dc9c-4709-8d06-3473607f0d1d"
+				name="Custom_Records"
+				refimgid="2694e6e8-9080-42a4-8540-59bd4ce9e478"
+				searchtimeout="30000ms">
+					/form[@controlname='FileDetailForm']/container[@controlname='panelLeftBase']//tree[@accessiblerole='Outline']/treeitem[@text='Custom Records']
+				</item>
+				<item
+				capname="treeitem"
+				id="dfc090f0-29ba-41ae-96fb-1e974a297b53"
+				name="Shared_with_Clients"
+				refimgid="52a2481b-0341-4690-926b-30f03aaecd32"
+				searchtimeout="30000ms">
+					/form[@controlname='FileDetailForm']/container[@controlname='panelLeftBase']//tree[@accessiblerole='Outline']/treeitem[@text='Shared with Clients']
+				</item>
+				<item
+				capname="treeitem"
+				id="cb9214f7-4731-43f8-9a18-e7629b55f2f9"
+				name="Admin"
+				refimgid="096a6b7d-b581-4566-b937-2a04acbb1633"
+				searchtimeout="30000ms">
+					/form[@controlname='FileDetailForm']/container[@controlname='panelLeftBase']//tree[@accessiblerole='Outline']/treeitem[@text='Admin']
+				</item>
+				<basepath>
+					/form[@controlname='FileDetailForm']/container[@controlname='panelLeftBase']//tree[@accessiblerole='Outline']
+				</basepath>
+			</folder>
+			<folder
+			capname="container"
+			id="138abf1d-3336-4e2c-b375-73d4aa2b3d83"
+			isrooted="True"
+			name="PanelRight"
+			refimgid="317f7155-47c8-456c-905f-24a32a6d0299"
+			searchtimeout="30000ms"
+			usecache="False">
+				<item
+				capname="button"
+				id="f6d6207b-51e1-4ca3-825d-dd16a9f6fbdd"
+				name="NewBtn"
+				refimgid="1e339d3f-20dd-42e6-9994-30d8b199768c"
+				searchtimeout="30000ms">
+					/form[@controlname='FileDetailForm']//container[@controlname='panelRight']//button[@accessiblename='New']
+				</item>
+				<item
+				capname="text"
+				id="d4090e28-2f48-4301-a4d1-0e7429c3ab6a"
+				name="Text"
+				refimgid="aa7a34f5-7c6d-4b7e-8b68-434fc2c6be11"
+				searchtimeout="30000ms">
+					/form[@controlname='FileDetailForm']//container[@controlname='panelRight']//text[@accessiblerole='Text']
+				</item>
+				<basepath>
+					/form[@controlname='FileDetailForm']//container[@controlname='panelRight']
+				</basepath>
+			</folder>
+			<folder
+			capname="container"
+			id="fa35632d-e84f-478d-b12f-0e5912a8c140"
+			isrooted="True"
+			name="PanelDetails"
+			refimgid="4e8753b1-75a7-46e5-aa80-56fabb3a6190"
+			searchtimeout="30000ms"
+			usecache="False">
+				<basepath>
+					/form[@controlname='FileDetailForm']//container[@controlname='panelDetails']
+				</basepath>
+			</folder>
+			<item
+			capname="button"
+			id="512b38e7-8c24-49f5-ba14-5136d277c6f2"
+			name="SaveClose"
+			refimgid="72ca5f41-8bdc-4999-b5b5-227d13c5fb97"
+			searchtimeout="30000ms">
+				/form[@controlname='FileDetailForm']//button[@name='Save &amp; Close']
+			</item>
+			<basepath>
+				/form[@controlname='FileDetailForm']
+			</basepath>
+			<icon>
+				iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACx
+jwv8YQUAAAAJcEhZcwAADsQAAA7EAZUrDhsAAAFlSURBVDhPY6AJeOJjOvORg9p/FOyo/v9xoKUT
+VAlugKERDT921nwLVQoBb3Kj+Z5FOf9/FuP2/1msO3EYpBaIH7vr/Qcb8Oft6//kgFclif/Brnjo
+qPYZKvb/z8tn/z+tWfD/bWspWMHLwrj/r8pT/7/rrfv/dffG//++fwOr+3Hu+P8nPsYTwAY8CbRM
+fGSvCnbev29fwQpwgd9PH/1/N6ERHB5gzSDwyFX3IkjgeZLv/0+rF/z/snPD/4fWCmAND60V/3+Y
+1fP//cxuYABqgcUe2SqBDXge5qoDMcBN9w3MgDdNhf/fTWr+/xCoCKb4XU/t/7fd1Shi4BgJtPSG
+GqBzjhwDnkbaa4ANAIZBBDkGgDXDAMkGAFMmVCsEPHLTO0uKAU+jnYygWhHgeZIPUQY8dFS/BdWC
+Cd405uM14N+/f+egSnGDjyvnxjyyVQYbANL0FmjAm/aKH4+9zVWhSqCAgQEAq9YXqsYCPO8AAAAA
+SUVORK5CYII=
+			</icon>
+		</appfolder>
+		<basepath>
+		</basepath>
+	</rootfolder>
+	<variables>
+	</variables>
+</repository>

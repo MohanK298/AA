@@ -93,6 +93,18 @@ namespace SmokeTest.Repositories.Premium
             set { _DocumentName = value; }
         }
 
+        string _FileName = "File Ranorex";
+
+        /// <summary>
+        /// Gets or sets the value of variable FileName.
+        /// </summary>
+        [TestVariable("26da3bb1-d52b-42f8-aad8-7f8d7c239c9a")]
+        public string FileName
+        {
+            get { return _FileName; }
+            set { _FileName = value; }
+        }
+
 #endregion
 
         /// <summary>
@@ -222,6 +234,7 @@ namespace SmokeTest.Repositories.Premium
             CommunicationsFolders.LeftPanelFolder _leftpanel;
             CommunicationsFolders.AttorneyOrBillingFolder _attorneyorbilling;
             CommunicationsFolders.CommunicationsFolder _communications;
+            CommunicationsFolders.FilesModuleFolder _filesmodule;
 
             /// <summary>
             /// Creates a new MainForm  folder.
@@ -232,6 +245,7 @@ namespace SmokeTest.Repositories.Premium
                 _leftpanel = new CommunicationsFolders.LeftPanelFolder(this);
                 _attorneyorbilling = new CommunicationsFolders.AttorneyOrBillingFolder(this);
                 _communications = new CommunicationsFolders.CommunicationsFolder(this);
+                _filesmodule = new CommunicationsFolders.FilesModuleFolder(this);
             }
 
             /// <summary>
@@ -283,6 +297,15 @@ namespace SmokeTest.Repositories.Premium
             public virtual CommunicationsFolders.CommunicationsFolder Communications
             {
                 get { return _communications; }
+            }
+
+            /// <summary>
+            /// The FilesModule folder.
+            /// </summary>
+            [RepositoryFolder("f1dc6672-8cab-4bf9-bfc2-af267bb2a577")]
+            public virtual CommunicationsFolders.FilesModuleFolder FilesModule
+            {
+                get { return _filesmodule; }
             }
         }
 
@@ -768,6 +791,72 @@ namespace SmokeTest.Repositories.Premium
                 get
                 {
                     return _addnewInfo;
+                }
+            }
+        }
+
+        /// <summary>
+        /// The FilesModuleFolder folder.
+        /// </summary>
+        [RepositoryFolder("f1dc6672-8cab-4bf9-bfc2-af267bb2a577")]
+        public partial class FilesModuleFolder : RepoGenBaseFolder
+        {
+            RepoItemInfo _filebynameInfo;
+
+            /// <summary>
+            /// Creates a new FilesModule  folder.
+            /// </summary>
+            public FilesModuleFolder(RepoGenBaseFolder parentFolder) :
+                    base("FilesModule", "?/?/form[@controlname='FilesIndexForm']", parentFolder, 30000, null, false, "f1dc6672-8cab-4bf9-bfc2-af267bb2a577", "")
+            {
+                _filebynameInfo = new RepoItemInfo(this, "FileByName", ".//text[@uiautomationvaluevalue~$FileName]//parent::treeitem", 30000, null, "760b8ccc-7f70-4ee3-bc04-930ee64afb65");
+            }
+
+            /// <summary>
+            /// The Self item.
+            /// </summary>
+            [RepositoryItem("f1dc6672-8cab-4bf9-bfc2-af267bb2a577")]
+            public virtual Ranorex.Form Self
+            {
+                get
+                {
+                    return _selfInfo.CreateAdapter<Ranorex.Form>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Self item info.
+            /// </summary>
+            [RepositoryItemInfo("f1dc6672-8cab-4bf9-bfc2-af267bb2a577")]
+            public virtual RepoItemInfo SelfInfo
+            {
+                get
+                {
+                    return _selfInfo;
+                }
+            }
+
+            /// <summary>
+            /// The FileByName item.
+            /// </summary>
+            [RepositoryItem("760b8ccc-7f70-4ee3-bc04-930ee64afb65")]
+            public virtual Ranorex.TreeItem FileByName
+            {
+                get
+                {
+                    return _filebynameInfo.CreateAdapter<Ranorex.TreeItem>(true);
+                }
+            }
+
+            /// <summary>
+            /// The FileByName item info.
+            /// </summary>
+            [RepositoryItemInfo("760b8ccc-7f70-4ee3-bc04-930ee64afb65")]
+            public virtual RepoItemInfo FileByNameInfo
+            {
+                get
+                {
+                    return _filebynameInfo;
                 }
             }
         }

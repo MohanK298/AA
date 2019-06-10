@@ -168,6 +168,26 @@ rxversion="9.0">
 					/form[@title='Amicus Attorney']//menuitem[@name='New']
 				</item>
 			</folder>
+			<folder
+			capname="form"
+			id="f1dc6672-8cab-4bf9-bfc2-af267bb2a577"
+			isrooted="True"
+			name="FilesModule"
+			refimgid="cfe0dad3-915d-4ca3-87c1-f57a118ad4d3"
+			searchtimeout="30000ms"
+			usecache="False">
+				<item
+				capname="treeitem"
+				id="760b8ccc-7f70-4ee3-bc04-930ee64afb65"
+				name="FileByName"
+				refimgid="2b5abf55-9c3a-432b-bf15-c709ac6c61e0"
+				searchtimeout="30000ms">
+					/form[@title='Amicus Attorney']/?/?/form[@controlname='FilesIndexForm']//text[@uiautomationvaluevalue~$FileName]//parent::treeitem
+				</item>
+				<basepath>
+					/form[@title='Amicus Attorney']/?/?/form[@controlname='FilesIndexForm']
+				</basepath>
+			</folder>
 			<basepath>
 				/form[@title='Amicus Attorney']
 			</basepath>
@@ -799,6 +819,11 @@ SUVORK5CYII=
 		id="d011c03f-f542-4b34-844c-04e00d84822f"
 		name="DocumentName">
 			RanorexEmailDoc
+		</var>
+		<var
+		id="26da3bb1-d52b-42f8-aad8-7f8d7c239c9a"
+		name="FileName">
+			File Ranorex
 		</var>
 	</variables>
 </repository>

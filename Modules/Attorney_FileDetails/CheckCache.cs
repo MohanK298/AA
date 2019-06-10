@@ -17,6 +17,7 @@ using WinForms = System.Windows.Forms;
 using Ranorex;
 using Ranorex.Core;
 using Ranorex.Core.Testing;
+using SmokeTest.Repositories.Premium;
 
 namespace SmokeTest.Modules.Attorney_FileDetails
 {
@@ -26,6 +27,9 @@ namespace SmokeTest.Modules.Attorney_FileDetails
     [TestModule("CCAF2AA4-5385-4D93-BF01-8068B00A91B5", ModuleType.UserCode, 1)]
     public class CheckCache : ITestModule
     {
+    	FileDetails fd = FileDetails.Instance;
+    	Communications cm = Communications.Instance;
+    	
         /// <summary>
         /// Constructs a new instance.
         /// </summary>
@@ -45,6 +49,15 @@ namespace SmokeTest.Modules.Attorney_FileDetails
             Mouse.DefaultMoveTime = 300;
             Keyboard.DefaultKeyPressTime = 100;
             Delay.SpeedFactor = 1.0;
+            
+            cm.MainForm.AttorneyOrBilling.Attorney.Click();
+            cm.MainForm.LeftPanel.Files.Click();
+            
+        }
+        
+        private void AddSummary()
+        {
+        	
         }
     }
 }

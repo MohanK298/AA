@@ -692,6 +692,12 @@
       <RepositoryCode>true</RepositoryCode>
       <id>8ad91ae5-cc2c-4afc-a874-fc3862aebc78</id>
     </Compile>
+    <Compile Include="Repositories\Premium\EventDetails.cs">
+      <BoundTo>a89ae0dd-eb15-4910-bc34-1c9397532a75</BoundTo>
+      <DependentUpon>EventDetails.rxrep</DependentUpon>
+      <RepositoryCode>true</RepositoryCode>
+      <id>34cbedd6-4a7a-44d1-8c00-e9c0f0a2dfeb</id>
+    </Compile>
     <Compile Include="Repositories\Premium\FileDetails.cs">
       <BoundTo>cf8bb44a-1d8c-488d-ace1-1c61a73fd5a2</BoundTo>
       <DependentUpon>FileDetails.rxrep</DependentUpon>
@@ -1000,6 +1006,17 @@
       <id>c961f71d-9b65-468e-bacb-3220e4108855</id>
       <repoid>bedde888-32b0-40b1-97ae-c0243b84da61</repoid>
       <reporootid>bd310adc-cfb8-42ed-b5e1-cfcb8ee729ff</reporootid>
+    </None>
+    <None Include="Repositories\Premium\EventDetails.rximg">
+      <BoundTo>a89ae0dd-eb15-4910-bc34-1c9397532a75</BoundTo>
+      <DependentUpon>EventDetails.rxrep</DependentUpon>
+      <imageblob>true</imageblob>
+      <id>defbf1ee-28f2-4dee-8970-7a2a37854ba1</id>
+    </None>
+    <None Include="Repositories\Premium\EventDetails.rxrep">
+      <id>a89ae0dd-eb15-4910-bc34-1c9397532a75</id>
+      <repoid>e36af368-331b-4f11-ba5e-c39406d29eed</repoid>
+      <reporootid>ec074c12-60f6-407f-be31-b44f3c4ac001</reporootid>
     </None>
     <None Include="Repositories\Premium\FileDetails.rximg">
       <BoundTo>cf8bb44a-1d8c-488d-ace1-1c61a73fd5a2</BoundTo>

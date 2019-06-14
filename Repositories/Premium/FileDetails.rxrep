@@ -170,6 +170,29 @@ rxversion="9.0">
 				searchtimeout="30000ms">
 					/form[@controlname='FileDetailForm']//container[@controlname='panelRight']//text[@accessiblerole='Text']
 				</item>
+				<item
+				capname="text"
+				id="fad78093-c6a5-4fec-b12e-5d3c1668c5e6"
+				name="Title"
+				refimgid="47d2998c-372e-4bfb-a091-1310b53f862d"
+				searchtimeout="30000ms">
+					/form[@controlname='FileDetailForm']//container[@controlname='panelRight']//element[@controltypename='AmicusLabel']/text
+				</item>
+				<folder
+				capname="unknown"
+				id="490bc84d-fddf-417e-b7ce-0c27865e0468"
+				isrooted="False"
+				name="Events"
+				searchtimeout="0ms">
+					<item
+					capname="treeitem"
+					id="f2bb0fea-44fc-4c64-849a-863394b01f8a"
+					name="EventByTitle"
+					refimgid="a69141af-8c79-4aef-b8b7-cd7e460e6942"
+					searchtimeout="30000ms">
+						/form[@controlname='FileDetailForm']//container[@controlname='panelRight']//text[@uiautomationvaluevalue=$EventTitle]/parent::treeitem
+					</item>
+				</folder>
 				<basepath>
 					/form[@controlname='FileDetailForm']//container[@controlname='panelRight']
 				</basepath>
@@ -213,5 +236,10 @@ SUVORK5CYII=
 		</basepath>
 	</rootfolder>
 	<variables>
+		<var
+		id="2da3c8e0-3d65-452a-8db6-6243af472e84"
+		name="EventTitle">
+			AppointmentTime123454
+		</var>
 	</variables>
 </repository>

@@ -8,12 +8,12 @@
  */
 using System;
 using System.Collections.Generic;
+using System.Drawing.Text;
 using System.Text;
 using System.Text.RegularExpressions;
 using System.Drawing;
 using System.Threading;
 using WinForms = System.Windows.Forms;
-
 using Ranorex;
 using Ranorex.Core;
 using Ranorex.Core.Testing;
@@ -29,6 +29,8 @@ namespace SmokeTest.Modules.Attorney_FileDetails
     {
     	FileDetails fd = FileDetails.Instance;
     	Communications cm = Communications.Instance;
+    	EventDetails ed = EventDetails.Instance;
+    	string eventTitle = "Ranorex event " + System.DateTime.Now;
     	
         /// <summary>
         /// Constructs a new instance.
@@ -50,14 +52,61 @@ namespace SmokeTest.Modules.Attorney_FileDetails
             Keyboard.DefaultKeyPressTime = 100;
             Delay.SpeedFactor = 1.0;
             
+            Report.Log(ReportLevel.Info, eventTitle);
             cm.MainForm.AttorneyOrBilling.Attorney.Click();
             cm.MainForm.LeftPanel.Files.Click();
-            
+//            cm.FileName = "File Ranorex"; -- Name of the Matter that this script should run on, using default value when commented out
+            cm.MainForm.FilesModule.FileByName.DoubleClick();
+            AddSummary();
+            AddStatusReport();
+            AddMainNote();
+            CreateNewEvent();
+            fd.EventTitle = eventTitle;
+        	fd.FileDetailForm.Self.Activate();
+        	Validate.Exists(fd.FileDetailForm.PanelRight.Events.EventByTitleInfo);
+        	
+        	fd.FileDetailForm.File_Facts.Summary.Click();
+        	Validate.AttributeContains(fd.FileDetailForm.PanelRight.TextInfo, "Text", "Ranorex test file Summary text");
+        	fd.FileDetailForm.File_Facts.Status_Report.Click();
+        	Validate.AttributeContains(fd.FileDetailForm.PanelRight.TextInfo, "Text", "Ranorex test file Status text");
+        	fd.FileDetailForm.File_Facts.Notes.Click();
+        	Validate.AttributeContains(fd.FileDetailForm.PanelRight.TextInfo, "Text", "Ranorex test file Main Note text");
+        	
+        	fd.FileDetailForm.SaveClose.Click();
         }
         
         private void AddSummary()
         {
+        	fd.FileDetailForm.File_Facts.Summary.Click();
+            fd.FileDetailForm.PanelRight.TitleInfo.WaitForAttributeEqual(Utilities.Constants.customWaitTime, "Text", "Summary");
+            fd.FileDetailForm.PanelRight.Text.PressKeys("Ranorex test file Summary text" + eventTitle);
+        }
+        
+        private void AddStatusReport()
+        {
+        	fd.FileDetailForm.File_Facts.Status_Report.Click();
+            fd.FileDetailForm.PanelRight.TitleInfo.WaitForAttributeEqual(Utilities.Constants.customWaitTime, "Text", "Status Report");
+            fd.FileDetailForm.PanelRight.Text.PressKeys("Ranorex test file Status text" + eventTitle);
+        }
+        
+        private void AddMainNote()
+        {
+        	fd.FileDetailForm.File_Facts.Notes.Click();
+            fd.FileDetailForm.PanelRight.TitleInfo.WaitForAttributeEqual(Utilities.Constants.customWaitTime, "Text", "Main Note");
+            fd.FileDetailForm.PanelRight.Text.PressKeys("Ranorex test file Main Note text" + eventTitle);
+        }
+        
+        private void CreateNewEvent()
+        {
+        	fd.FileDetailForm.File_Facts.Events.Click();
+        	fd.FileDetailForm.PanelRight.NewBtn.Click();
+        	ed.EventDetailForm.Title.PressKeys(eventTitle);
+        	ed.EventDetailForm.OkBtn.Click();
         	
+        	if (ed.AppointmentOverlapDialog.SelfInfo.Exists()) {
+        		ed.AppointmentOverlapDialog.RadioOK.Click();
+        		ed.AppointmentOverlapDialog.OkBtn.Click();
+        	}
         }
     }
 }

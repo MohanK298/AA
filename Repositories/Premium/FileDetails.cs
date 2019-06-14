@@ -49,6 +49,18 @@ namespace SmokeTest.Repositories.Premium
 
 #region Variables
 
+        string _EventTitle = "AppointmentTime123454";
+
+        /// <summary>
+        /// Gets or sets the value of variable EventTitle.
+        /// </summary>
+        [TestVariable("2da3c8e0-3d65-452a-8db6-6243af472e84")]
+        public string EventTitle
+        {
+            get { return _EventTitle; }
+            set { _EventTitle = value; }
+        }
+
 #endregion
 
         /// <summary>
@@ -588,8 +600,10 @@ namespace SmokeTest.Repositories.Premium
         [RepositoryFolder("138abf1d-3336-4e2c-b375-73d4aa2b3d83")]
         public partial class PanelRightFolder : RepoGenBaseFolder
         {
+            FileDetailsFolders.EventsFolder _events;
             RepoItemInfo _newbtnInfo;
             RepoItemInfo _textInfo;
+            RepoItemInfo _titleInfo;
 
             /// <summary>
             /// Creates a new PanelRight  folder.
@@ -597,8 +611,10 @@ namespace SmokeTest.Repositories.Premium
             public PanelRightFolder(RepoGenBaseFolder parentFolder) :
                     base("PanelRight", ".//container[@controlname='panelRight']", parentFolder, 30000, null, false, "138abf1d-3336-4e2c-b375-73d4aa2b3d83", "")
             {
+                _events = new FileDetailsFolders.EventsFolder(this);
                 _newbtnInfo = new RepoItemInfo(this, "NewBtn", ".//button[@accessiblename='New']", 30000, null, "f6d6207b-51e1-4ca3-825d-dd16a9f6fbdd");
                 _textInfo = new RepoItemInfo(this, "Text", ".//text[@accessiblerole='Text']", 30000, null, "d4090e28-2f48-4301-a4d1-0e7429c3ab6a");
+                _titleInfo = new RepoItemInfo(this, "Title", ".//element[@controltypename='AmicusLabel']/text", 30000, null, "fad78093-c6a5-4fec-b12e-5d3c1668c5e6");
             }
 
             /// <summary>
@@ -670,6 +686,93 @@ namespace SmokeTest.Repositories.Premium
                 get
                 {
                     return _textInfo;
+                }
+            }
+
+            /// <summary>
+            /// The Title item.
+            /// </summary>
+            [RepositoryItem("fad78093-c6a5-4fec-b12e-5d3c1668c5e6")]
+            public virtual Ranorex.Text Title
+            {
+                get
+                {
+                    return _titleInfo.CreateAdapter<Ranorex.Text>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Title item info.
+            /// </summary>
+            [RepositoryItemInfo("fad78093-c6a5-4fec-b12e-5d3c1668c5e6")]
+            public virtual RepoItemInfo TitleInfo
+            {
+                get
+                {
+                    return _titleInfo;
+                }
+            }
+
+            /// <summary>
+            /// The Events folder.
+            /// </summary>
+            [RepositoryFolder("490bc84d-fddf-417e-b7ce-0c27865e0468")]
+            public virtual FileDetailsFolders.EventsFolder Events
+            {
+                get { return _events; }
+            }
+        }
+
+        /// <summary>
+        /// The EventsFolder folder.
+        /// </summary>
+        [RepositoryFolder("490bc84d-fddf-417e-b7ce-0c27865e0468")]
+        public partial class EventsFolder : RepoGenBaseFolder
+        {
+            RepoItemInfo _eventbytitleInfo;
+
+            /// <summary>
+            /// Creates a new Events  folder.
+            /// </summary>
+            public EventsFolder(RepoGenBaseFolder parentFolder) :
+                    base("Events", "", parentFolder, 0, null, false, "490bc84d-fddf-417e-b7ce-0c27865e0468", "")
+            {
+                _eventbytitleInfo = new RepoItemInfo(this, "EventByTitle", ".//text[@uiautomationvaluevalue=$EventTitle]/parent::treeitem", 30000, null, "f2bb0fea-44fc-4c64-849a-863394b01f8a");
+            }
+
+            /// <summary>
+            /// The Self item info.
+            /// </summary>
+            [RepositoryItemInfo("490bc84d-fddf-417e-b7ce-0c27865e0468")]
+            public virtual RepoItemInfo SelfInfo
+            {
+                get
+                {
+                    return _selfInfo;
+                }
+            }
+
+            /// <summary>
+            /// The EventByTitle item.
+            /// </summary>
+            [RepositoryItem("f2bb0fea-44fc-4c64-849a-863394b01f8a")]
+            public virtual Ranorex.TreeItem EventByTitle
+            {
+                get
+                {
+                    return _eventbytitleInfo.CreateAdapter<Ranorex.TreeItem>(true);
+                }
+            }
+
+            /// <summary>
+            /// The EventByTitle item info.
+            /// </summary>
+            [RepositoryItemInfo("f2bb0fea-44fc-4c64-849a-863394b01f8a")]
+            public virtual RepoItemInfo EventByTitleInfo
+            {
+                get
+                {
+                    return _eventbytitleInfo;
                 }
             }
         }

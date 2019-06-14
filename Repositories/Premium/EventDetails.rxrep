@@ -1,0 +1,102 @@
+﻿<repository
+id="e36af368-331b-4f11-ba5e-c39406d29eed"
+name="EventDetails"
+rxversion="9.0">
+	<codegen
+	classname="EventDetails"
+	namespace="SmokeTest.Repositories.Premium">
+	</codegen>
+	<rootfolder
+	capname="unknown"
+	id="ec074c12-60f6-407f-be31-b44f3c4ac001"
+	isrooted="True"
+	name="Root"
+	searchtimeout="0ms"
+	usecache="True">
+		<appfolder
+		addcaps="form,control,nativewindow"
+		capname="form"
+		id="88830301-b9f2-45ca-bb75-55a9bf7b3c82"
+		isrooted="True"
+		name="EventDetailForm"
+		refimgid="c6e63dfa-4078-4667-b5f8-67701edb85f9"
+		searchtimeout="30000ms"
+		usecache="True">
+			<item
+			capname="text"
+			id="d9ae15ed-83c2-4784-aae7-a70b1f8b2f0b"
+			name="Title"
+			refimgid="155fd84d-068e-4ff5-9f82-d7057154184a"
+			searchtimeout="30000ms">
+				/form[@controlname='EventDetailForm']//element[@controlname='txtTitle']/text
+			</item>
+			<item
+			capname="button"
+			id="1e2ac88f-5d58-4066-a59e-01e8e96808fc"
+			name="OkBtn"
+			refimgid="87d82ff9-4e07-4456-af5a-79189c0f3cfb"
+			searchtimeout="30000ms">
+				/form[@controlname='EventDetailForm']//button[@name='OK']
+			</item>
+			<basepath>
+				/form[@controlname='EventDetailForm']
+			</basepath>
+			<icon>
+				iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACx
+jwv8YQUAAAAJcEhZcwAADsQAAA7EAZUrDhsAAAFlSURBVDhPY6AJeOJjOvORg9p/FOyo/v9xoKUT
+VAlugKERDT921nwLVQoBb3Kj+Z5FOf9/FuP2/1msO3EYpBaIH7vr/Qcb8Oft6//kgFclif/Brnjo
+qPYZKvb/z8tn/z+tWfD/bWspWMHLwrj/r8pT/7/rrfv/dffG//++fwOr+3Hu+P8nPsYTwAY8CbRM
+fGSvCnbev29fwQpwgd9PH/1/N6ERHB5gzSDwyFX3IkjgeZLv/0+rF/z/snPD/4fWCmAND60V/3+Y
+1fP//cxuYABqgcUe2SqBDXge5qoDMcBN9w3MgDdNhf/fTWr+/xCoCKb4XU/t/7fd1Shi4BgJtPSG
+GqBzjhwDnkbaa4ANAIZBBDkGgDXDAMkGAFMmVCsEPHLTO0uKAU+jnYygWhHgeZIPUQY8dFS/BdWC
+Cd405uM14N+/f+egSnGDjyvnxjyyVQYbANL0FmjAm/aKH4+9zVWhSqCAgQEAq9YXqsYCPO8AAAAA
+SUVORK5CYII=
+			</icon>
+		</appfolder>
+		<appfolder
+		addcaps="form,control,nativewindow"
+		capname="form"
+		id="bc0ac824-ede8-4224-bb55-de9ac345f055"
+		isrooted="True"
+		name="AppointmentOverlapDialog"
+		refpath="/form[@controlname='AppointmentOverlapDialog']"
+		searchtimeout="30000ms"
+		usecache="True">
+			<item
+			addcaps="radiobutton,control,nativewindow"
+			capname="radiobutton"
+			id="19e5a5c3-905b-44ab-b575-1393e00f611c"
+			name="RadioOK"
+			refimgid="b0dd3efd-4564-4daf-8ea8-93ba814a0f07"
+			searchtimeout="30000ms">
+				/form[@controlname='AppointmentOverlapDialog']//radiobutton[@text='It''s OK']
+			</item>
+			<item
+			capname="button"
+			id="46e96077-f853-4975-a69d-562f6a0a6ad1"
+			name="OkBtn"
+			refimgid="90700214-8d8c-4ab1-a5b5-c5e8e0cef337"
+			searchtimeout="30000ms">
+				/form[@controlname='AppointmentOverlapDialog']//button[@name='OK']
+			</item>
+			<basepath>
+				/form[@controlname='AppointmentOverlapDialog']
+			</basepath>
+			<icon>
+				iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACx
+jwv8YQUAAAAJcEhZcwAADsQAAA7EAZUrDhsAAAFlSURBVDhPY6AJeOJjOvORg9p/FOyo/v9xoKUT
+VAlugKERDT921nwLVQoBb3Kj+Z5FOf9/FuP2/1msO3EYpBaIH7vr/Qcb8Oft6//kgFclif/Brnjo
+qPYZKvb/z8tn/z+tWfD/bWspWMHLwrj/r8pT/7/rrfv/dffG//++fwOr+3Hu+P8nPsYTwAY8CbRM
+fGSvCnbev29fwQpwgd9PH/1/N6ERHB5gzSDwyFX3IkjgeZLv/0+rF/z/snPD/4fWCmAND60V/3+Y
+1fP//cxuYABqgcUe2SqBDXge5qoDMcBN9w3MgDdNhf/fTWr+/xCoCKb4XU/t/7fd1Shi4BgJtPSG
+GqBzjhwDnkbaa4ANAIZBBDkGgDXDAMkGAFMmVCsEPHLTO0uKAU+jnYygWhHgeZIPUQY8dFS/BdWC
+Cd405uM14N+/f+egSnGDjyvnxjyyVQYbANL0FmjAm/aKH4+9zVWhSqCAgQEAq9YXqsYCPO8AAAAA
+SUVORK5CYII=
+			</icon>
+		</appfolder>
+		<basepath>
+		</basepath>
+	</rootfolder>
+	<variables>
+	</variables>
+</repository>

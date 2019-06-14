@@ -66,11 +66,11 @@ namespace SmokeTest.Modules.Attorney_FileDetails
         	Validate.Exists(fd.FileDetailForm.PanelRight.Events.EventByTitleInfo);
         	
         	fd.FileDetailForm.File_Facts.Summary.Click();
-        	Validate.AttributeContains(fd.FileDetailForm.PanelRight.TextInfo, "Text", "Ranorex test file Summary text");
+        	Validate.AttributeContains(fd.FileDetailForm.PanelRight.TextInfo, "Text", "Ranorex test file Summary text" + eventTitle);
         	fd.FileDetailForm.File_Facts.Status_Report.Click();
-        	Validate.AttributeContains(fd.FileDetailForm.PanelRight.TextInfo, "Text", "Ranorex test file Status text");
+        	Validate.AttributeContains(fd.FileDetailForm.PanelRight.TextInfo, "Text", "Ranorex test file Status text" + eventTitle);
         	fd.FileDetailForm.File_Facts.Notes.Click();
-        	Validate.AttributeContains(fd.FileDetailForm.PanelRight.TextInfo, "Text", "Ranorex test file Main Note text");
+        	Validate.AttributeContains(fd.FileDetailForm.PanelRight.TextInfo, "Text", "Ranorex test file Main Note text" + eventTitle);
         	
         	fd.FileDetailForm.SaveClose.Click();
         }

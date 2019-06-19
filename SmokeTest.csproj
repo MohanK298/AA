@@ -371,6 +371,9 @@
     <Compile Include="Modules\PreferenceTestII.cs">
       <id>81abd97e-5c5a-45b1-af92-201bd561458a</id>
     </Compile>
+    <Compile Include="Modules\Premium\OpenTutorial.cs">
+      <id>f6d0e306-a4c7-4889-b087-a3a010a229f5</id>
+    </Compile>
     <Compile Include="Modules\Premium\PreferencesTest.cs">
       <id>15816759-b59b-4885-ac1c-929fa0fccf36</id>
     </Compile>

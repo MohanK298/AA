@@ -235,6 +235,7 @@ namespace SmokeTest.Repositories.Premium
             CommunicationsFolders.AttorneyOrBillingFolder _attorneyorbilling;
             CommunicationsFolders.CommunicationsFolder _communications;
             CommunicationsFolders.FilesModuleFolder _filesmodule;
+            CommunicationsFolders.SCMenuFolder _scmenu;
 
             /// <summary>
             /// Creates a new MainForm  folder.
@@ -246,6 +247,7 @@ namespace SmokeTest.Repositories.Premium
                 _attorneyorbilling = new CommunicationsFolders.AttorneyOrBillingFolder(this);
                 _communications = new CommunicationsFolders.CommunicationsFolder(this);
                 _filesmodule = new CommunicationsFolders.FilesModuleFolder(this);
+                _scmenu = new CommunicationsFolders.SCMenuFolder(this);
             }
 
             /// <summary>
@@ -306,6 +308,15 @@ namespace SmokeTest.Repositories.Premium
             public virtual CommunicationsFolders.FilesModuleFolder FilesModule
             {
                 get { return _filesmodule; }
+            }
+
+            /// <summary>
+            /// The SCMenu folder.
+            /// </summary>
+            [RepositoryFolder("84f1dae4-dc77-47dd-9f7c-be39aacc5a77")]
+            public virtual CommunicationsFolders.SCMenuFolder SCMenu
+            {
+                get { return _scmenu; }
             }
         }
 
@@ -857,6 +868,410 @@ namespace SmokeTest.Repositories.Premium
                 get
                 {
                     return _filebynameInfo;
+                }
+            }
+        }
+
+        /// <summary>
+        /// The SCMenuFolder folder.
+        /// </summary>
+        [RepositoryFolder("84f1dae4-dc77-47dd-9f7c-be39aacc5a77")]
+        public partial class SCMenuFolder : RepoGenBaseFolder
+        {
+            RepoItemInfo _homeInfo;
+            RepoItemInfo _preferencesInfo;
+            RepoItemInfo _reportsInfo;
+            RepoItemInfo _merge_templatesInfo;
+            RepoItemInfo _help_centerInfo;
+            RepoItemInfo _open_another_officeInfo;
+            RepoItemInfo _open_tutorialInfo;
+            RepoItemInfo _user_managementInfo;
+            RepoItemInfo _firm_settingsInfo;
+            RepoItemInfo _security_profilesInfo;
+            RepoItemInfo _custom_pages_and_recordsInfo;
+            RepoItemInfo _new_file_intake_mgmtInfo;
+            RepoItemInfo _importInfo;
+            RepoItemInfo _firm_reportsInfo;
+
+            /// <summary>
+            /// Creates a new SCMenu  folder.
+            /// </summary>
+            public SCMenuFolder(RepoGenBaseFolder parentFolder) :
+                    base("SCMenu", "container[@controlname='pLeft']", parentFolder, 30000, null, false, "84f1dae4-dc77-47dd-9f7c-be39aacc5a77", "")
+            {
+                _homeInfo = new RepoItemInfo(this, "Home", ".//text[@name='Home']", 30000, null, "03393326-5ccd-4ffe-851c-0960769e9119");
+                _preferencesInfo = new RepoItemInfo(this, "Preferences", ".//text[@name='Preferences']", 30000, null, "0d41ec33-74e8-4680-af1f-8505e2a099b0");
+                _reportsInfo = new RepoItemInfo(this, "Reports", ".//text[@name='Reports']", 30000, null, "63b6002d-2337-41f7-b236-e817c29e7367");
+                _merge_templatesInfo = new RepoItemInfo(this, "Merge_Templates", ".//text[@name='Merge Templates']", 30000, null, "e976941e-c36b-4099-84ae-e9cc53046cb6");
+                _help_centerInfo = new RepoItemInfo(this, "Help_Center", ".//text[@name='Help Center']", 30000, null, "08e8c0a5-0878-452b-9599-b5704b7d9078");
+                _open_another_officeInfo = new RepoItemInfo(this, "Open_Another_Office", ".//text[@name='Open Another Office']", 30000, null, "cbd318e4-baed-4934-ab56-cab326cda442");
+                _open_tutorialInfo = new RepoItemInfo(this, "Open_Tutorial", ".//text[@name='Open Tutorial']", 30000, null, "011f8a2b-6ad1-4d55-9936-e751ff7521d8");
+                _user_managementInfo = new RepoItemInfo(this, "User_Management", ".//text[@name='User Management']", 30000, null, "7582de4d-5954-4c2a-9fdc-d83c72520c63");
+                _firm_settingsInfo = new RepoItemInfo(this, "Firm_Settings", ".//text[@name='Firm Settings']", 30000, null, "e07dd425-e6f8-4813-888c-ac1bee759419");
+                _security_profilesInfo = new RepoItemInfo(this, "Security_Profiles", ".//text[@name='Security Profiles']", 30000, null, "d2d1b217-2e81-41be-9583-f17fc40151bc");
+                _custom_pages_and_recordsInfo = new RepoItemInfo(this, "Custom_Pages_and_Records", ".//text[@name='Custom Pages and Records']", 30000, null, "b44f1968-e99e-4e19-a2e2-965efeefb84e");
+                _new_file_intake_mgmtInfo = new RepoItemInfo(this, "New_File_Intake_Mgmt", ".//text[@name='New File Intake Management']", 30000, null, "b658ad09-2525-4d6d-9a74-f1911b05aa25");
+                _importInfo = new RepoItemInfo(this, "Import", ".//text[@name='Import']", 30000, null, "21010557-ab3a-4a59-bc7f-475f2228475f");
+                _firm_reportsInfo = new RepoItemInfo(this, "Firm_Reports", ".//text[@name='Firm Reports']", 30000, null, "8afd7c22-f23a-476d-ab82-1a624f8b6ed3");
+            }
+
+            /// <summary>
+            /// The Self item.
+            /// </summary>
+            [RepositoryItem("84f1dae4-dc77-47dd-9f7c-be39aacc5a77")]
+            public virtual Ranorex.Container Self
+            {
+                get
+                {
+                    return _selfInfo.CreateAdapter<Ranorex.Container>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Self item info.
+            /// </summary>
+            [RepositoryItemInfo("84f1dae4-dc77-47dd-9f7c-be39aacc5a77")]
+            public virtual RepoItemInfo SelfInfo
+            {
+                get
+                {
+                    return _selfInfo;
+                }
+            }
+
+            /// <summary>
+            /// The Home item.
+            /// </summary>
+            [RepositoryItem("03393326-5ccd-4ffe-851c-0960769e9119")]
+            public virtual Ranorex.Text Home
+            {
+                get
+                {
+                    return _homeInfo.CreateAdapter<Ranorex.Text>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Home item info.
+            /// </summary>
+            [RepositoryItemInfo("03393326-5ccd-4ffe-851c-0960769e9119")]
+            public virtual RepoItemInfo HomeInfo
+            {
+                get
+                {
+                    return _homeInfo;
+                }
+            }
+
+            /// <summary>
+            /// The Preferences item.
+            /// </summary>
+            [RepositoryItem("0d41ec33-74e8-4680-af1f-8505e2a099b0")]
+            public virtual Ranorex.Text Preferences
+            {
+                get
+                {
+                    return _preferencesInfo.CreateAdapter<Ranorex.Text>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Preferences item info.
+            /// </summary>
+            [RepositoryItemInfo("0d41ec33-74e8-4680-af1f-8505e2a099b0")]
+            public virtual RepoItemInfo PreferencesInfo
+            {
+                get
+                {
+                    return _preferencesInfo;
+                }
+            }
+
+            /// <summary>
+            /// The Reports item.
+            /// </summary>
+            [RepositoryItem("63b6002d-2337-41f7-b236-e817c29e7367")]
+            public virtual Ranorex.Text Reports
+            {
+                get
+                {
+                    return _reportsInfo.CreateAdapter<Ranorex.Text>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Reports item info.
+            /// </summary>
+            [RepositoryItemInfo("63b6002d-2337-41f7-b236-e817c29e7367")]
+            public virtual RepoItemInfo ReportsInfo
+            {
+                get
+                {
+                    return _reportsInfo;
+                }
+            }
+
+            /// <summary>
+            /// The Merge_Templates item.
+            /// </summary>
+            [RepositoryItem("e976941e-c36b-4099-84ae-e9cc53046cb6")]
+            public virtual Ranorex.Text Merge_Templates
+            {
+                get
+                {
+                    return _merge_templatesInfo.CreateAdapter<Ranorex.Text>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Merge_Templates item info.
+            /// </summary>
+            [RepositoryItemInfo("e976941e-c36b-4099-84ae-e9cc53046cb6")]
+            public virtual RepoItemInfo Merge_TemplatesInfo
+            {
+                get
+                {
+                    return _merge_templatesInfo;
+                }
+            }
+
+            /// <summary>
+            /// The Help_Center item.
+            /// </summary>
+            [RepositoryItem("08e8c0a5-0878-452b-9599-b5704b7d9078")]
+            public virtual Ranorex.Text Help_Center
+            {
+                get
+                {
+                    return _help_centerInfo.CreateAdapter<Ranorex.Text>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Help_Center item info.
+            /// </summary>
+            [RepositoryItemInfo("08e8c0a5-0878-452b-9599-b5704b7d9078")]
+            public virtual RepoItemInfo Help_CenterInfo
+            {
+                get
+                {
+                    return _help_centerInfo;
+                }
+            }
+
+            /// <summary>
+            /// The Open_Another_Office item.
+            /// </summary>
+            [RepositoryItem("cbd318e4-baed-4934-ab56-cab326cda442")]
+            public virtual Ranorex.Text Open_Another_Office
+            {
+                get
+                {
+                    return _open_another_officeInfo.CreateAdapter<Ranorex.Text>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Open_Another_Office item info.
+            /// </summary>
+            [RepositoryItemInfo("cbd318e4-baed-4934-ab56-cab326cda442")]
+            public virtual RepoItemInfo Open_Another_OfficeInfo
+            {
+                get
+                {
+                    return _open_another_officeInfo;
+                }
+            }
+
+            /// <summary>
+            /// The Open_Tutorial item.
+            /// </summary>
+            [RepositoryItem("011f8a2b-6ad1-4d55-9936-e751ff7521d8")]
+            public virtual Ranorex.Text Open_Tutorial
+            {
+                get
+                {
+                    return _open_tutorialInfo.CreateAdapter<Ranorex.Text>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Open_Tutorial item info.
+            /// </summary>
+            [RepositoryItemInfo("011f8a2b-6ad1-4d55-9936-e751ff7521d8")]
+            public virtual RepoItemInfo Open_TutorialInfo
+            {
+                get
+                {
+                    return _open_tutorialInfo;
+                }
+            }
+
+            /// <summary>
+            /// The User_Management item.
+            /// </summary>
+            [RepositoryItem("7582de4d-5954-4c2a-9fdc-d83c72520c63")]
+            public virtual Ranorex.Text User_Management
+            {
+                get
+                {
+                    return _user_managementInfo.CreateAdapter<Ranorex.Text>(true);
+                }
+            }
+
+            /// <summary>
+            /// The User_Management item info.
+            /// </summary>
+            [RepositoryItemInfo("7582de4d-5954-4c2a-9fdc-d83c72520c63")]
+            public virtual RepoItemInfo User_ManagementInfo
+            {
+                get
+                {
+                    return _user_managementInfo;
+                }
+            }
+
+            /// <summary>
+            /// The Firm_Settings item.
+            /// </summary>
+            [RepositoryItem("e07dd425-e6f8-4813-888c-ac1bee759419")]
+            public virtual Ranorex.Text Firm_Settings
+            {
+                get
+                {
+                    return _firm_settingsInfo.CreateAdapter<Ranorex.Text>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Firm_Settings item info.
+            /// </summary>
+            [RepositoryItemInfo("e07dd425-e6f8-4813-888c-ac1bee759419")]
+            public virtual RepoItemInfo Firm_SettingsInfo
+            {
+                get
+                {
+                    return _firm_settingsInfo;
+                }
+            }
+
+            /// <summary>
+            /// The Security_Profiles item.
+            /// </summary>
+            [RepositoryItem("d2d1b217-2e81-41be-9583-f17fc40151bc")]
+            public virtual Ranorex.Text Security_Profiles
+            {
+                get
+                {
+                    return _security_profilesInfo.CreateAdapter<Ranorex.Text>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Security_Profiles item info.
+            /// </summary>
+            [RepositoryItemInfo("d2d1b217-2e81-41be-9583-f17fc40151bc")]
+            public virtual RepoItemInfo Security_ProfilesInfo
+            {
+                get
+                {
+                    return _security_profilesInfo;
+                }
+            }
+
+            /// <summary>
+            /// The Custom_Pages_and_Records item.
+            /// </summary>
+            [RepositoryItem("b44f1968-e99e-4e19-a2e2-965efeefb84e")]
+            public virtual Ranorex.Text Custom_Pages_and_Records
+            {
+                get
+                {
+                    return _custom_pages_and_recordsInfo.CreateAdapter<Ranorex.Text>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Custom_Pages_and_Records item info.
+            /// </summary>
+            [RepositoryItemInfo("b44f1968-e99e-4e19-a2e2-965efeefb84e")]
+            public virtual RepoItemInfo Custom_Pages_and_RecordsInfo
+            {
+                get
+                {
+                    return _custom_pages_and_recordsInfo;
+                }
+            }
+
+            /// <summary>
+            /// The New_File_Intake_Mgmt item.
+            /// </summary>
+            [RepositoryItem("b658ad09-2525-4d6d-9a74-f1911b05aa25")]
+            public virtual Ranorex.Text New_File_Intake_Mgmt
+            {
+                get
+                {
+                    return _new_file_intake_mgmtInfo.CreateAdapter<Ranorex.Text>(true);
+                }
+            }
+
+            /// <summary>
+            /// The New_File_Intake_Mgmt item info.
+            /// </summary>
+            [RepositoryItemInfo("b658ad09-2525-4d6d-9a74-f1911b05aa25")]
+            public virtual RepoItemInfo New_File_Intake_MgmtInfo
+            {
+                get
+                {
+                    return _new_file_intake_mgmtInfo;
+                }
+            }
+
+            /// <summary>
+            /// The Import item.
+            /// </summary>
+            [RepositoryItem("21010557-ab3a-4a59-bc7f-475f2228475f")]
+            public virtual Ranorex.Text Import
+            {
+                get
+                {
+                    return _importInfo.CreateAdapter<Ranorex.Text>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Import item info.
+            /// </summary>
+            [RepositoryItemInfo("21010557-ab3a-4a59-bc7f-475f2228475f")]
+            public virtual RepoItemInfo ImportInfo
+            {
+                get
+                {
+                    return _importInfo;
+                }
+            }
+
+            /// <summary>
+            /// The Firm_Reports item.
+            /// </summary>
+            [RepositoryItem("8afd7c22-f23a-476d-ab82-1a624f8b6ed3")]
+            public virtual Ranorex.Text Firm_Reports
+            {
+                get
+                {
+                    return _firm_reportsInfo.CreateAdapter<Ranorex.Text>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Firm_Reports item info.
+            /// </summary>
+            [RepositoryItemInfo("8afd7c22-f23a-476d-ab82-1a624f8b6ed3")]
+            public virtual RepoItemInfo Firm_ReportsInfo
+            {
+                get
+                {
+                    return _firm_reportsInfo;
                 }
             }
         }

@@ -638,6 +638,7 @@ D8zerL8gSEaw7+rFqJ//CkX5CWkHqyZHVzU6AAAAAElFTkSuQmCC
 		id="60294ab6-f04c-477e-a0f2-961cb2405642"
 		isrooted="True"
 		name="TrustDetailBaseForm"
+		refimgid="ea78aede-0fd4-4297-b93f-e433e1acb82c"
 		refpath="/form[@controlname='TrustDetailBaseForm']"
 		searchtimeout="30000ms"
 		usecache="True">
@@ -646,7 +647,7 @@ D8zerL8gSEaw7+rFqJ//CkX5CWkHqyZHVzU6AAAAAElFTkSuQmCC
 			capname="button"
 			id="c390baee-5d04-4c92-9235-fe1ba58db9e1"
 			name="btnSaveClose"
-			refimgid="af868e43-02dd-4ab7-ba88-23d7b4a54f1f"
+			refimgid="527327e9-bb97-4fba-aaa9-d8ac78ea23ab"
 			refpath="/form[@controlname='TrustDetailBaseForm']/container[@controlname='menubar_Fill_Panel']/element[@controlname='_menubar_Fill_Panel_Toolbars_Dock_Area_Bottom']/container[@accessiblename='DockBottom']/toolbar[@accessiblename='Toolbar']/button[@accessiblename='Save &amp; Close']"
 			searchtimeout="30000ms">
 				/form[@controlname='TrustDetailBaseForm']/container[@controlname='menubar_Fill_Panel']//toolbar[@accessiblename='Toolbar']/button[@accessiblename='Save &amp; Close']
@@ -657,6 +658,7 @@ D8zerL8gSEaw7+rFqJ//CkX5CWkHqyZHVzU6AAAAAElFTkSuQmCC
 			id="e7b34e89-1bde-440f-ac25-32457926163b"
 			isrooted="True"
 			name="PnlBase"
+			refimgid="f6e9a640-c137-42ef-8877-9551602d9e94"
 			refpath="/form[@controlname='TrustDetailBaseForm']/container[@controlname='menubar_Fill_Panel']/container[@controlname='pnlBase']"
 			searchtimeout="30000ms"
 			usecache="False">
@@ -675,7 +677,7 @@ D8zerL8gSEaw7+rFqJ//CkX5CWkHqyZHVzU6AAAAAElFTkSuQmCC
 				capname="text"
 				id="617a3bc0-1599-4782-9fe9-f64ad9474f22"
 				name="txtAmount"
-				refimgid="a0b32ca7-d6ff-4246-a335-ad54becb8502"
+				refimgid="b1e6b21e-f2cf-4515-824d-a4beedc44e4c"
 				searchtimeout="30000ms">
 					/form[@controlname='TrustDetailBaseForm']/?/?/container[@controlname='pnlBase']/?/?/element[@controlname='atxtAmount']/text[@automationid='[Editor] Edit Area']
 				</item>
@@ -684,7 +686,7 @@ D8zerL8gSEaw7+rFqJ//CkX5CWkHqyZHVzU6AAAAAElFTkSuQmCC
 				capname="text"
 				id="bca79400-ca77-4ce1-a48d-e7279c7121d7"
 				name="txtDescription"
-				refimgid="9624cc38-157b-4045-8ef6-900c37e96669"
+				refimgid="8ba3d1c3-0f7b-4178-99aa-607edb8fdddf"
 				searchtimeout="30000ms">
 					/form[@controlname='TrustDetailBaseForm']/?/?/container[@controlname='pnlBase']/?/?/element[@controlname='atxtDescription']/text[@automationid='[Editor] Edit Area']
 				</item>

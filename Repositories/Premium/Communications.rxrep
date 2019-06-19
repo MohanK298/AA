@@ -188,6 +188,130 @@ rxversion="9.0">
 					/form[@title='Amicus Attorney']/?/?/form[@controlname='FilesIndexForm']
 				</basepath>
 			</folder>
+			<folder
+			capname="container"
+			id="84f1dae4-dc77-47dd-9f7c-be39aacc5a77"
+			isrooted="True"
+			name="SCMenu"
+			refimgid="736d09c5-d983-4eb5-b800-d274e199e475"
+			searchtimeout="30000ms"
+			usecache="False">
+				<item
+				capname="text"
+				id="03393326-5ccd-4ffe-851c-0960769e9119"
+				name="Home"
+				refimgid="d466acb5-86be-431b-af71-3d39bd26523e"
+				searchtimeout="30000ms">
+					/form[@title='Amicus Attorney']/container[@controlname='pLeft']//text[@name='Home']
+				</item>
+				<item
+				capname="text"
+				id="0d41ec33-74e8-4680-af1f-8505e2a099b0"
+				name="Preferences"
+				refimgid="c55019a8-a56a-4e34-8ed5-75e72a76d3cf"
+				searchtimeout="30000ms">
+					/form[@title='Amicus Attorney']/container[@controlname='pLeft']//text[@name='Preferences']
+				</item>
+				<item
+				capname="text"
+				id="63b6002d-2337-41f7-b236-e817c29e7367"
+				name="Reports"
+				refimgid="7ec092d1-fa13-4145-bdb2-231249ce43aa"
+				searchtimeout="30000ms">
+					/form[@title='Amicus Attorney']/container[@controlname='pLeft']//text[@name='Reports']
+				</item>
+				<item
+				capname="text"
+				id="e976941e-c36b-4099-84ae-e9cc53046cb6"
+				name="Merge_Templates"
+				refimgid="4b4630c7-c3a3-4c02-8031-3dd756c61df4"
+				searchtimeout="30000ms">
+					/form[@title='Amicus Attorney']/container[@controlname='pLeft']//text[@name='Merge Templates']
+				</item>
+				<item
+				capname="text"
+				id="08e8c0a5-0878-452b-9599-b5704b7d9078"
+				name="Help_Center"
+				refimgid="0e6b7e6b-34ba-4a66-ac59-bd33a15b88ea"
+				searchtimeout="30000ms">
+					/form[@title='Amicus Attorney']/container[@controlname='pLeft']//text[@name='Help Center']
+				</item>
+				<item
+				capname="text"
+				id="cbd318e4-baed-4934-ab56-cab326cda442"
+				name="Open_Another_Office"
+				refimgid="16040b1f-1d1d-4d1c-8208-0304db7a64f0"
+				searchtimeout="30000ms">
+					/form[@title='Amicus Attorney']/container[@controlname='pLeft']//text[@name='Open Another Office']
+				</item>
+				<item
+				capname="text"
+				id="011f8a2b-6ad1-4d55-9936-e751ff7521d8"
+				name="Open_Tutorial"
+				refimgid="1832b208-7a3d-4ae1-a264-8680fcb63a30"
+				searchtimeout="30000ms">
+					/form[@title='Amicus Attorney']/container[@controlname='pLeft']//text[@name='Open Tutorial']
+				</item>
+				<item
+				capname="text"
+				id="7582de4d-5954-4c2a-9fdc-d83c72520c63"
+				name="User_Management"
+				refimgid="796a4c57-7c5c-4f5b-9115-7fde4833e6ce"
+				searchtimeout="30000ms">
+					/form[@title='Amicus Attorney']/container[@controlname='pLeft']//text[@name='User Management']
+				</item>
+				<item
+				capname="text"
+				id="e07dd425-e6f8-4813-888c-ac1bee759419"
+				name="Firm_Settings"
+				refimgid="2831fa50-3c31-4c97-9141-3a98c767a97e"
+				searchtimeout="30000ms">
+					/form[@title='Amicus Attorney']/container[@controlname='pLeft']//text[@name='Firm Settings']
+				</item>
+				<item
+				capname="text"
+				id="d2d1b217-2e81-41be-9583-f17fc40151bc"
+				name="Security_Profiles"
+				refimgid="a2551f50-5c53-4b61-87ef-1dd2dc32b750"
+				searchtimeout="30000ms">
+					/form[@title='Amicus Attorney']/container[@controlname='pLeft']//text[@name='Security Profiles']
+				</item>
+				<item
+				capname="text"
+				id="b44f1968-e99e-4e19-a2e2-965efeefb84e"
+				name="Custom_Pages_and_Records"
+				refimgid="926d4a86-8d65-4b92-9a4e-3322f5ca1449"
+				searchtimeout="30000ms">
+					/form[@title='Amicus Attorney']/container[@controlname='pLeft']//text[@name='Custom Pages and Records']
+				</item>
+				<item
+				capname="text"
+				id="b658ad09-2525-4d6d-9a74-f1911b05aa25"
+				name="New_File_Intake_Mgmt"
+				refimgid="ad5671e3-64b2-434c-829b-189d1a59fe4f"
+				searchtimeout="30000ms">
+					/form[@title='Amicus Attorney']/container[@controlname='pLeft']//text[@name='New File Intake Management']
+				</item>
+				<item
+				capname="text"
+				id="21010557-ab3a-4a59-bc7f-475f2228475f"
+				name="Import"
+				refimgid="ef28a7db-4bec-4170-a871-230213810271"
+				searchtimeout="30000ms">
+					/form[@title='Amicus Attorney']/container[@controlname='pLeft']//text[@name='Import']
+				</item>
+				<item
+				capname="text"
+				id="8afd7c22-f23a-476d-ab82-1a624f8b6ed3"
+				name="Firm_Reports"
+				refimgid="b6a82560-dbd8-49a7-b833-2b93703f014e"
+				searchtimeout="30000ms">
+					/form[@title='Amicus Attorney']/container[@controlname='pLeft']//text[@name='Firm Reports']
+				</item>
+				<basepath>
+					/form[@title='Amicus Attorney']/container[@controlname='pLeft']
+				</basepath>
+			</folder>
 			<basepath>
 				/form[@title='Amicus Attorney']
 			</basepath>

@@ -32,6 +32,14 @@ namespace SmokeTest.Modules.Attorney_FileDetails
     	EventDetails ed = EventDetails.Instance;
     	string eventTitle = "Ranorex event " + System.DateTime.Now;
     	
+    	string _MatterName = "File";
+    	[TestVariable("79645f53-9ae6-4e45-89b5-1d7dd640a9cb")]
+    	public string MatterName
+    	{
+    		get { return _MatterName; }
+    		set { _MatterName = value; }
+    	}
+    	
         /// <summary>
         /// Constructs a new instance.
         /// </summary>
@@ -55,7 +63,7 @@ namespace SmokeTest.Modules.Attorney_FileDetails
             Report.Log(ReportLevel.Info, eventTitle);
             cm.MainForm.AttorneyOrBilling.Attorney.Click();
             cm.MainForm.LeftPanel.Files.Click();
-//            cm.FileName = "File Ranorex"; -- Name of the Matter that this script should run on, using default value when commented out
+            cm.FileName = MatterName; //Name of the Matter that this script should run on, using default value when commented out
             cm.MainForm.FilesModule.FileByName.DoubleClick();
             AddSummary();
             AddStatusReport();

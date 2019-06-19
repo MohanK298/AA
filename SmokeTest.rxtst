@@ -158,8 +158,7 @@ Module]]>
 			reportenabled="True"
 			reportfilename="%S_%Y%M%D_%T.rxlog"
 			reporttemplatefolder=""
-			reportwriteinterval="30000ms"
-			showinvisiblechars="True">
+			reportwriteinterval="30000ms">
 			</testsuite>
 			<testmodule
 			id="12fdb4cf-af88-4da5-a4b2-f4653555c69e"
@@ -494,6 +493,14 @@ module]]>
 			name="CheckCache"
 			ref="ccaf2aa4-5385-4d93-bf01-8068b00a91b5"
 			type="UserCode">
+				<databinding>
+					<var
+					dataname="FileName"
+					datasourceid="7ec29f7a-2e6a-420d-ac3c-c8dc83e55b43"
+					variableid="79645f53-9ae6-4e45-89b5-1d7dd640a9cb"
+					variablename="MatterName">
+					</var>
+				</databinding>
 			</testmodule>
 			<testmodule
 			id="35e839ce-5da9-446a-a1a9-429958c1ea6e"
@@ -1465,7 +1472,6 @@ Validation)]]>
 			name="BillAPX">
 			</smartfoldernode>
 			<testmodule
-			enabled="False"
 			id="aab6010f-d456-4a01-a709-104e7b4ea766"
 			name="AfterFirstLogin"
 			ref="b3aad322-bf01-45cc-991b-d2c82d97c9eb"
@@ -1952,6 +1958,7 @@ Page]]>
 			name="SwitchUserManage">
 			</smartfoldernode>
 			<smartfoldernode
+			datasource="Precedent"
 			id="e60efaf3-ada5-47bf-9bc6-eb20dd9708b2"
 			name="BradTxt">
 			</smartfoldernode>
@@ -3688,6 +3695,9 @@ bill]]>
 			</testcontainer>
 			<testcontainer
 			id="ca29637c-c17a-4632-ae73-5f94259f87e4">
+			</testcontainer>
+			<testcontainer
+			id="cb7d9a72-28d4-40e4-8ba0-8593b79bbc22">
 			</testcontainer>
 			<testcontainer
 			id="cce75b9f-2a0a-4eea-879e-3e7540f86d4e">

@@ -4,9 +4,6 @@ embeddedrepository="False"
 id="0c5c95d9-7ead-49a3-bbdd-de1388006921"
 mode="Global"
 rxversion="9.0">
-	<name>
-		CalendarDayViewChangeEvent
-	</name>
 	<repeatcount>
 		1
 	</repeatcount>
@@ -680,7 +677,7 @@ FAH/2Q==
 	id="91cd7df6-4de5-4c6b-abf1-071917f7c6f7"
 	name="SmokeTestRepository"
 	relativepath="..\Repositories\SmokeTestRepository.rxrep"
-	rxversion="8.3">
+	rxversion="9.0">
 		<codegen
 		classname="SmokeTestRepository"
 		namespace="SmokeTest.Repositories">

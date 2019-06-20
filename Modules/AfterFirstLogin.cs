@@ -53,7 +53,7 @@ namespace SmokeTest.Modules
             Delay.SpeedFactor = 1.0;
             
             PopupWatcher ceipDialogWatcher = new PopupWatcher();
-            ceipDialogWatcher.WatchAndClick(str.CustomerExperienceProgramForm, str.CustomerExperienceProgramForm.AcceptInfo);
+            ceipDialogWatcher.WatchAndClick(str.CustomerExperienceProgramForm, str.CustomerExperienceProgramForm.DeclineInfo);
             ceipDialogWatcher.Start();
             CloseAnnoncementForm();
             CloseAllDetails();

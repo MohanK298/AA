@@ -4,9 +4,6 @@ embeddedrepository="False"
 id="9c07c516-d8f1-4bb6-aa58-7f5b86b4137c"
 mode="Global"
 rxversion="9.0">
-	<name>
-		Recording7
-	</name>
 	<repeatcount>
 		1
 	</repeatcount>
@@ -2079,7 +2076,7 @@ tjq7HGOmOeMe1SxRJDGEQEAepJP5mgQ+iiigYUUUUAFFFFAH/9k=
 	id="91cd7df6-4de5-4c6b-abf1-071917f7c6f7"
 	name="SmokeTestRepository"
 	relativepath="..\Repositories\SmokeTestRepository.rxrep"
-	rxversion="7.1">
+	rxversion="9.0">
 		<codegen
 		classname="SmokeTestRepository"
 		namespace="SmokeTest.Repositories">

@@ -5133,6 +5133,7 @@ namespace SmokeTest.Repositories
         public partial class CustomerExperienceProgramFormAppFolder : RepoGenBaseFolder
         {
             RepoItemInfo _acceptInfo;
+            RepoItemInfo _declineInfo;
 
             /// <summary>
             /// Creates a new CustomerExperienceProgramForm  folder.
@@ -5141,6 +5142,7 @@ namespace SmokeTest.Repositories
                     base("CustomerExperienceProgramForm", "/form[@controlname='CustomerExperienceProgramForm']", parentFolder, 30000, null, true, "5b4360c6-01f7-496a-bfc3-e317aa2b2f36", "")
             {
                 _acceptInfo = new RepoItemInfo(this, "Accept", "container[@controlname='pnlBase']//button[@accessiblename='Accept']", 30000, null, "fb5aa2c7-cc21-4b91-92b1-fb3d435fd376");
+                _declineInfo = new RepoItemInfo(this, "Decline", ".//button[@name='Decline']", 30000, null, "dd3f5840-31fa-4cae-87a6-c1560ff69f47");
             }
 
             /// <summary>
@@ -5188,6 +5190,30 @@ namespace SmokeTest.Repositories
                 get
                 {
                     return _acceptInfo;
+                }
+            }
+
+            /// <summary>
+            /// The Decline item.
+            /// </summary>
+            [RepositoryItem("dd3f5840-31fa-4cae-87a6-c1560ff69f47")]
+            public virtual Ranorex.Button Decline
+            {
+                get
+                {
+                    return _declineInfo.CreateAdapter<Ranorex.Button>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Decline item info.
+            /// </summary>
+            [RepositoryItemInfo("dd3f5840-31fa-4cae-87a6-c1560ff69f47")]
+            public virtual RepoItemInfo DeclineInfo
+            {
+                get
+                {
+                    return _declineInfo;
                 }
             }
         }

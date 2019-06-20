@@ -4,9 +4,6 @@ embeddedrepository="False"
 id="318fcd2b-5d99-4182-843b-a8fd9d335d55"
 mode="Global"
 rxversion="9.0">
-	<name>
-		EmailTest_QC
-	</name>
 	<repeatcount>
 		1
 	</repeatcount>
@@ -32,11 +29,11 @@ rxversion="9.0">
 		<userrecorditem
 		classname="EmailTest_QC"
 		enabled="True"
+		hasreturntype="False"
 		isexternaltestmethod="False"
 		methodname="Mouse_Click_ContainerGroup9"
 		namespace="SmokeTest.Recordings"
-		optional="False"
-		varname="">
+		optional="False">
 			<comment>
 			</comment>
 			<bindings>
@@ -5024,7 +5021,7 @@ FABRRRQAUUUUAFFFFAH/2Q==
 	id="91cd7df6-4de5-4c6b-abf1-071917f7c6f7"
 	name="SmokeTestRepository"
 	relativepath="..\Repositories\SmokeTestRepository.rxrep"
-	rxversion="8.3">
+	rxversion="9.0">
 		<codegen
 		classname="SmokeTestRepository"
 		namespace="SmokeTest.Repositories">

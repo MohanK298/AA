@@ -1,5 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
-<repository
+﻿<repository
 id="91cd7df6-4de5-4c6b-abf1-071917f7c6f7"
 name="SmokeTestRepository"
 rxversion="9.0">
@@ -3397,6 +3396,14 @@ SUVORK5CYII=
 			refpath="/form[@controlname='CustomerExperienceProgramForm']/container[@controlname='pnlBase']/container[@controlname='pnlControls']/element[@controlname='abtnAccept']/button[@accessiblename='Accept']"
 			searchtimeout="30000ms">
 				/form[@controlname='CustomerExperienceProgramForm']/container[@controlname='pnlBase']//button[@accessiblename='Accept']
+			</item>
+			<item
+			capname="button"
+			id="dd3f5840-31fa-4cae-87a6-c1560ff69f47"
+			name="Decline"
+			refimgid="fb494c99-fc56-430e-94c8-fe5cf9a4530b"
+			searchtimeout="30000ms">
+				/form[@controlname='CustomerExperienceProgramForm']//button[@name='Decline']
 			</item>
 			<basepath>
 				/form[@controlname='CustomerExperienceProgramForm']

@@ -4,9 +4,6 @@ embeddedrepository="False"
 id="2954430d-ecb5-4283-8ee0-dc74039ecbcb"
 mode="Desktop"
 rxversion="9.0">
-	<name>
-		JamesRecording1
-	</name>
 	<repeatcount>
 		1
 	</repeatcount>
@@ -56,7 +53,8 @@ rxversion="9.0">
 		optional="False"
 		searchpropertyid="9f1521ae-7c8e-414c-9a41-f5fe8f4d7efd"
 		sx="786"
-		sy="330">
+		sy="330"
+		warnoutofbounds="False">
 			<comment>
 			</comment>
 			<bindings>
@@ -406,7 +404,8 @@ ooAKSiigQUtFFAxKKKKACiiigAooooAWiiigQUUUUAFFFFABRRRQB//Z
 		optional="False"
 		searchpropertyid="88e14d7c-0e80-4409-a6df-f32c8fb3b520"
 		sx="1105"
-		sy="350">
+		sy="350"
+		warnoutofbounds="False">
 			<comment>
 			</comment>
 			<bindings>
@@ -429,7 +428,8 @@ ooAKSiigQUtFFAxKKKKACiiigAooooAWiiigQUUUUAFFFFABRRRQB//Z
 		optional="False"
 		searchpropertyid="86d29846-a016-4e6b-95a8-b42b51073fdb"
 		sx="870"
-		sy="543">
+		sy="543"
+		warnoutofbounds="False">
 			<comment>
 			</comment>
 			<bindings>
@@ -817,7 +817,8 @@ igAooooAKKKKACiiigAooooA/9k=
 		optional="False"
 		searchpropertyid="3ec0b31c-276c-4497-b734-ccc7cc65666e"
 		sx="879"
-		sy="573">
+		sy="573"
+		warnoutofbounds="False">
 			<comment>
 			</comment>
 			<bindings>
@@ -1187,7 +1188,8 @@ UUAf/9k=
 		optional="False"
 		searchpropertyid="65078cb6-77e3-46d3-bd4d-af5d5f504dd1"
 		sx="1101"
-		sy="663">
+		sy="663"
+		warnoutofbounds="False">
 			<comment>
 			</comment>
 			<bindings>
@@ -1395,7 +1397,7 @@ QAUUUUAf/9k=
 	id="91cd7df6-4de5-4c6b-abf1-071917f7c6f7"
 	name="SmokeTestRepository"
 	relativepath="..\Repositories\SmokeTestRepository.rxrep"
-	rxversion="6.2">
+	rxversion="9.0">
 		<codegen
 		classname="SmokeTestRepository"
 		namespace="SmokeTest.Repositories">

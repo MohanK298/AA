@@ -4,9 +4,6 @@ embeddedrepository="False"
 id="1d3db6ff-ee1a-4918-a1e6-5dd8da1a10eb"
 mode="Global"
 rxversion="9.0">
-	<name>
-		PreferenceTestII
-	</name>
 	<repeatcount>
 		1
 	</repeatcount>
@@ -508,10 +505,9 @@ Ar33SP8AH+lVaKKaEFFFFMD/2Q==
 					name="ErrorImage"
 					readonly="False"
 					type="System.Drawing.Image, System.Drawing, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-						iVBORw0KGgoAAAANSUhEUgAAAA4AAAAQCAIAAACp9tltAAAAAXNSR0IArs4c6QAAAARnQU1BAACx
-jwv8YQUAAAAJcEhZcwAADsQAAA7EAZUrDhsAAABFSURBVChTY2hpaiESgZT+JwSOHT7GAASDSykD
-AwhhsHGYClGBpA4IcDsAVR0QUGgqsgokNm4HYIBBpBTIIohASokFDAwAPQLsVqq82D0AAAAASUVO
-RK5CYII=
+						iVBORw0KGgoAAAANSUhEUgAAAA4AAAAQCAIAAACp9tltAAAABGdBTUEAALGPC/xhBQAAAAlwSFlz
+AAAOxAAADsQBlSsOGwAAAEVJREFUKFNjaGlqIRKBlP4nBI4dPsYABINLKQMDCGGwcZgKUYGkDghw
+OwBVHRBQaCqyCiQ2bgdggEGkFMgiiEBKiQUMDAA9AuxWqrzYPQAAAABJRU5ErkJggg==
 					</dynamicattribute>
 					<dynamicattribute
 					description="No description available."
@@ -712,10 +708,10 @@ eBxP4CmMwjMgoupFvIJXCdtovIExeBvj8HtMwPv4AB9hCj6BBHQ6ZtKXWZiD+ViIJViK5ViBVViL
 					name="InitialImage"
 					readonly="False"
 					type="System.Drawing.Image, System.Drawing, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-						iVBORw0KGgoAAAANSUhEUgAAAA4AAAAQCAIAAACp9tltAAAAAXNSR0IArs4c6QAAAARnQU1BAACx
-jwv8YQUAAAAJcEhZcwAADsQAAA7EAZUrDhsAAABpSURBVChTvZBBCsAgDAT37eLPCn7LJtnUkniI
-UOiwhzVODore+mFUnRXjGhCorlWGxiKrE2AEGot/VHMcTpisJnSzwQN8VnmsVTXsYdL1zpCe1cfz
-b+CQBDV62Q6qtg16wqtKK2O7hwA3vn51v2tg2VUAAAAASUVORK5CYII=
+						iVBORw0KGgoAAAANSUhEUgAAAA4AAAAQCAIAAACp9tltAAAABGdBTUEAALGPC/xhBQAAAAlwSFlz
+AAAOxAAADsQBlSsOGwAAAGlJREFUKFO9kEEKwCAMBPft4s8Kfssm2dSSeIhQ6LCHNU4Oit76YVSd
+FeMaEKiuVYbGIqsTYAQai39UcxxOmKwmdLPBA3xWeaxVNexh0vXOkJ7Vx/Nv4JAENXrZDqq2DXrC
+q0orY7uHADe+fnW/a2DZVQAAAABJRU5ErkJggg==
 					</dynamicattribute>
 					<dynamicattribute
 					description="No description available."
@@ -1562,10 +1558,9 @@ SShyD6nBH9ajFqgC7WYFVVVPGRjP+JoooAlRdqgZJ9yeTS0UUAf/2Q==
 					name="ErrorImage"
 					readonly="False"
 					type="System.Drawing.Image, System.Drawing, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-						iVBORw0KGgoAAAANSUhEUgAAAA4AAAAQCAIAAACp9tltAAAAAXNSR0IArs4c6QAAAARnQU1BAACx
-jwv8YQUAAAAJcEhZcwAADsQAAA7EAZUrDhsAAABFSURBVChTY2hpaiESgZT+JwSOHT7GAASDSykD
-AwhhsHGYClGBpA4IcDsAVR0QUGgqsgokNm4HYIBBpBTIIohASokFDAwAPQLsVqq82D0AAAAASUVO
-RK5CYII=
+						iVBORw0KGgoAAAANSUhEUgAAAA4AAAAQCAIAAACp9tltAAAABGdBTUEAALGPC/xhBQAAAAlwSFlz
+AAAOxAAADsQBlSsOGwAAAEVJREFUKFNjaGlqIRKBlP4nBI4dPsYABINLKQMDCGGwcZgKUYGkDghw
+OwBVHRBQaCqyCiQ2bgdggEGkFMgiiEBKiQUMDAA9AuxWqrzYPQAAAABJRU5ErkJggg==
 					</dynamicattribute>
 					<dynamicattribute
 					description="No description available."
@@ -1766,10 +1761,10 @@ eBxP4CmMwjMgoupFvIJXCdtovIExeBvj8HtMwPv4AB9hCj6BBHQ6ZtKXWZiD+ViIJViK5ViBVViL
 					name="InitialImage"
 					readonly="False"
 					type="System.Drawing.Image, System.Drawing, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-						iVBORw0KGgoAAAANSUhEUgAAAA4AAAAQCAIAAACp9tltAAAAAXNSR0IArs4c6QAAAARnQU1BAACx
-jwv8YQUAAAAJcEhZcwAADsQAAA7EAZUrDhsAAABpSURBVChTvZBBCsAgDAT37eLPCn7LJtnUkniI
-UOiwhzVODore+mFUnRXjGhCorlWGxiKrE2AEGot/VHMcTpisJnSzwQN8VnmsVTXsYdL1zpCe1cfz
-b+CQBDV62Q6qtg16wqtKK2O7hwA3vn51v2tg2VUAAAAASUVORK5CYII=
+						iVBORw0KGgoAAAANSUhEUgAAAA4AAAAQCAIAAACp9tltAAAABGdBTUEAALGPC/xhBQAAAAlwSFlz
+AAAOxAAADsQBlSsOGwAAAGlJREFUKFO9kEEKwCAMBPft4s8Kfssm2dSSeIhQ6LCHNU4Oit76YVSd
+FeMaEKiuVYbGIqsTYAQai39UcxxOmKwmdLPBA3xWeaxVNexh0vXOkJ7Vx/Nv4JAENXrZDqq2DXrC
+q0orY7uHADe+fnW/a2DZVQAAAABJRU5ErkJggg==
 					</dynamicattribute>
 					<dynamicattribute
 					description="No description available."
@@ -9586,7 +9581,7 @@ aXRlbXMFX3NpemUIX3ZlcnNpb24FAAAICAkCAAAAAAAAAAAAAAAQAgAAAAAAAAAL
 	id="91cd7df6-4de5-4c6b-abf1-071917f7c6f7"
 	name="SmokeTestRepository"
 	relativepath="..\Repositories\SmokeTestRepository.rxrep"
-	rxversion="8.3">
+	rxversion="9.0">
 		<codegen
 		classname="SmokeTestRepository"
 		namespace="SmokeTest.Repositories">

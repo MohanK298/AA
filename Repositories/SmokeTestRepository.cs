@@ -647,7 +647,7 @@ namespace SmokeTest.Repositories
                 _containergroup17Info = new RepoItemInfo(this, "ContainerGroup17", "container[@controlname='pLeft']//container[@automationid='[Group] 17']", 30000, null, "27067412-63fd-4e8d-b450-dca71db66f27");
                 _containergroup14Info = new RepoItemInfo(this, "ContainerGroup14", "container[@controlname='pLeft']//container[@automationid='[Group] 14']", 30000, null, "2d1cffbd-ed34-4aa0-a983-42973f4f56d7");
                 _texteditoreditarea3Info = new RepoItemInfo(this, "TextEditorEditArea3", "?/?/form[@controlname='FilesIndexForm']//treeitem[@automationid='3']/text[@automationid='17']/text[@automationid='[Editor] Edit Area']", 30000, null, "ef8edbea-bdc9-408a-9534-2276bfa817ef");
-                _menuitemfileInfo = new RepoItemInfo(this, "menuItemFile", "?/?/toolbar[@automationid='MainMenu : mainMenubar']/menuitem[@text='File']", 30000, null, "7ad9c343-ce0b-4887-b442-5412eebfbb61");
+                _menuitemfileInfo = new RepoItemInfo(this, "menuItemFile", ".//menuitem[@text='File']", 30000, null, "7ad9c343-ce0b-4887-b442-5412eebfbb61");
             }
 
             /// <summary>
@@ -1797,7 +1797,7 @@ namespace SmokeTest.Repositories
                 _menuitemnewitemsmenuitemindexInfo = new RepoItemInfo(this, "MenuItemNewItemsMenuItemIndex", "?/?/container[@automationid='New']/menuitem[@automationid='[New Items] Menu Item :  - Index : 0 ']", 30000, null, "77f3ba36-7e29-4c37-aa6f-10ba4daae3d1");
                 _combodropdowncontrolInfo = new RepoItemInfo(this, "ComboDropDownControl", "element[@controlname='ComboDropDownControl']", 30000, null, "da4e5da1-dc4e-4cf9-93cb-020cbed948a0");
                 _menuitemtodositemsmenuiteminInfo = new RepoItemInfo(this, "MenuItemToDosItemsMenuItemIn", "?/?/container[@automationid='To Do''s']/menuitem[@automationid='[To Do''s Items] Menu Item :  - Index : 1 ']", 30000, null, "0085a9bb-fe81-4921-9c3f-1b92e1569213");
-                _closealldetailsInfo = new RepoItemInfo(this, "CloseAllDetails", "?/?/container[@automationid='&File']/menuitem[@automationid='[&File Items] Menu Item :  - Index : 2 ']", 30000, null, "0842ec24-3132-4187-a841-b242971f4f74");
+                _closealldetailsInfo = new RepoItemInfo(this, "CloseAllDetails", "?/?/container[@automationid='&File']/menuitem[@text~'Close All Details']", 30000, null, "0842ec24-3132-4187-a841-b242971f4f74");
             }
 
             /// <summary>

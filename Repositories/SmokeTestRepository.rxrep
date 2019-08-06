@@ -656,9 +656,9 @@ AAAAADmCBQAAAJAjWAAAAAA5ggUAAAAQMwz/B/Pa+j2m8Yn1AAAAAElFTkSuQmCC
 			capname="menuitem"
 			id="7ad9c343-ce0b-4887-b442-5412eebfbb61"
 			name="menuItemFile"
-			refimgid="caac86ce-b15d-44d5-80a9-97c7ae0770c8"
+			refimgid="3a81afa7-e730-4448-bcb2-4758992312b0"
 			searchtimeout="30000ms">
-				/form[@controlname='MainForm']/?/?/toolbar[@automationid='MainMenu : mainMenubar']/menuitem[@text='File']
+				/form[@controlname='MainForm']//menuitem[@text='File']
 			</item>
 			<basepath>
 				/form[@controlname='MainForm']
@@ -744,9 +744,8 @@ D8zerL8gSEaw7+rFqJ//CkX5CWkHqyZHVzU6AAAAAElFTkSuQmCC
 			id="0842ec24-3132-4187-a841-b242971f4f74"
 			name="CloseAllDetails"
 			refimgid="f4c413f9-256b-4f83-8a87-6a2f9ccc0193"
-			refpath="/form[@title='&amp;File - 0']/element[@controlname='PopupControl']/container[@automationid='&amp;File']/menuitem[@automationid='[&amp;File Items] Menu Item :  - Index : 2 ']"
 			searchtimeout="30000ms">
-				/form[@processname='AmicusAttorney.XWin' and @controltypename='DropDownForm']/?/?/container[@automationid='&amp;File']/menuitem[@automationid='[&amp;File Items] Menu Item :  - Index : 2 ']
+				/form[@processname='AmicusAttorney.XWin' and @controltypename='DropDownForm']/?/?/container[@automationid='&amp;File']/menuitem[@text~'Close All Details']
 			</item>
 			<basepath>
 				/form[@processname='AmicusAttorney.XWin' and @controltypename='DropDownForm']

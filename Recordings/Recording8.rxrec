@@ -4,9 +4,6 @@ embeddedrepository="False"
 id="6ed65633-6e3a-4362-a969-12ca6f4cdbff"
 mode="Desktop"
 rxversion="9.0">
-	<name>
-		Recording8
-	</name>
 	<repeatcount>
 		1
 	</repeatcount>
@@ -3547,7 +3544,7 @@ UUUUAFFFFAH/2Q==
 	id="358d9fa2-d73c-4905-9bfd-1fb7897837d2"
 	name="FirmSettings"
 	relativepath="..\Repositories\FirmSettings.rxrep"
-	rxversion="7.2">
+	rxversion="9.0">
 		<codegen
 		classname="FirmSettings"
 		namespace="SmokeTest.Repositories">

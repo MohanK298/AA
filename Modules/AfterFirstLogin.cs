@@ -55,7 +55,9 @@ namespace SmokeTest.Modules
             PopupWatcher ceipDialogWatcher = new PopupWatcher();
             ceipDialogWatcher.WatchAndClick(str.CustomerExperienceProgramForm, str.CustomerExperienceProgramForm.DeclineInfo);
             ceipDialogWatcher.Start();
-            CloseAnnoncementForm();
+            if (str.AnnouncementForm.SelfInfo.Exists()) {
+            	CloseAnnoncementForm();
+            }
             CloseAllDetails();
             ceipDialogWatcher.Stop();
             

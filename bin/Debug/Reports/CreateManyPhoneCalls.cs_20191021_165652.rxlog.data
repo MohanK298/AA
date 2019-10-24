@@ -1,0 +1,88 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<report
+	progress="">
+	<activity
+		result="Failed"
+		duration="0ms"
+		durationms="0"
+		type="root"
+		rid="36bc140f6427446"
+		totalerrorcount="1"
+		totalwarningcount="1"
+		totalsuccesstestcasecount="0"
+		totalfailedtestcasecount="0"
+		totalblockedtestcasecount="0"
+		childsuccesscount="0"
+		childfailedcount="0"
+		childblockedcount="0"
+		totalsuccesscount="0"
+		totalfailedcount="0"
+		totalblockedcount="0"
+		totalmaintenancemodecount="0"
+		user="Kumar"
+		rxversion="9.1.2.0"
+		host="J4-MOHAN"
+		osversion="Windows 10 64bit"
+		runtimeversion="4.0.30319.42000"
+		procarch="32bit"
+		oslanguage="en-US"
+		dtnlanguage="en-CA"
+		screenresolution="1920x1080"
+		timestamp="2019-10-21 4:57:08 PM"
+		timestampiso="2019-10-21T20:57:08"
+		endtime="2019-10-21 5:12:33 PM"
+		timeoutfactor="1"
+		module="CreateManyPhoneCalls">
+		<detail>
+			CreateManyPhoneCalls
+		</detail>
+		<errormessage>
+			Failed to find item 'Communications.FileSelectForm.btnQuickFind'.
+		</errormessage>
+		<varbindings>
+		</varbindings>
+		<item
+			timeRelativeToTestSuiteStartTime="00:29.256"
+			timeRelativeToTestModuleStartTime="00:29.256"
+			timeWallClock="16:57:38"
+			time="00:29.256"
+			level="Warn"
+			category="Data"
+			errimg="images_CreateMa_ece3c5d9\CreateMa_ece3c5d9_ca347036_trace.jpg"
+			errthumb="images_CreateMa_ece3c5d9\CreateMa_ece3c5d9_ca347036_trace_thumb.jpg">
+			<message>
+				The following module variables are not bound to a data column:<br/>time, fileName, phoneCallNote
+			</message>
+			<metainfo
+				loglvl="Warn">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="15:23.899"
+			timeRelativeToTestModuleStartTime="15:23.899"
+			timeWallClock="17:12:32"
+			time="15:23.899"
+			level="Error"
+			category="Module"
+			errimg="images_CreateMa_ece3c5d9\CreateMa_ece3c5d9_f371ef52_trace.jpg"
+			errthumb="images_CreateMa_ece3c5d9\CreateMa_ece3c5d9_f371ef52_trace_thumb.jpg">
+			<message>
+				Failed to find item 'Communications.FileSelectForm.btnQuickFind'.<br/>No element found for path '/form[@controlname='FileSelectForm']//toolbar[@accessiblename='Toolbar']/button[@accessiblename='QuickFind']' at step 'form[@controlname='FileSelectForm']' after 145 attempts within 1m.
+			</message>
+			<metainfo
+				stacktrace="   at Ranorex.Core.Repository.RepoItemInfo.FindInternal[T](Boolean findSingle, Boolean throwException, Duration effectiveTimeoutOverride)&#13;&#10;   at Ranorex.Core.Repository.RepoItemInfo.&lt;>c__DisplayClass75_0`1.&lt;Find>b__0()&#13;&#10;   at Ranorex.Core.Testing.Services.NoMaintenanceModeService.HandleElementNotFound[T](Func`1 action, RepoItemInfo entry)&#13;&#10;   at Ranorex.Core.Repository.RepoItemInfo.Find[T](Boolean findSingle, Boolean throwException, Duration effectiveTimeoutOverride)&#13;&#10;   at Ranorex.Core.Repository.RepoItemInfo.CreateAdapter[T](Boolean throwException, Duration waitTimeout)&#13;&#10;   at Ranorex.Core.Repository.RepoItemInfo.CreateAdapter[T](Boolean throwException)&#13;&#10;   at SmokeTest.Repositories.CommunicationsFolders.FileSelectFormAppFolder.get_btnQuickFind() in c:\Users\Kumar\Downloads\RanorexAutomation\AA Enhanced\Repositories\Communications.cs:line 911&#13;&#10;   at SmokeTest.Modules.CreateManyPhoneCalls.CreateCall() in c:\Users\Kumar\Downloads\RanorexAutomation\AA Enhanced\Modules\CreateManyPhoneCalls.cs:line 84&#13;&#10;   at SmokeTest.Modules.CreateManyPhoneCalls.Ranorex.Core.Testing.ITestModule.Run() in c:\Users\Kumar\Downloads\RanorexAutomation\AA Enhanced\Modules\CreateManyPhoneCalls.cs:line 109&#13;&#10;   at Ranorex.Core.Testing.TestModuleLeaf.RunInternal(DataContext parentDataContext, Int32 iteration, Int32 iterationCount, Boolean skipIteration)"
+				codefile="c:\Users\Kumar\Downloads\RanorexAutomation\AA Enhanced\Modules\CreateManyPhoneCalls.cs"
+				codeline="84"
+				type="repoitem"
+				path="/form[@controlname='FileSelectForm']//toolbar[@accessiblename='Toolbar']/button[@accessiblename='QuickFind']"
+				itempath=".//toolbar[@accessiblename='Toolbar']/button[@accessiblename='QuickFind']"
+				fullname="Communications.FileSelectForm.btnQuickFind"
+				id="e25ba604e39a4a6ca706488a9fd48687"
+				timeout="60000"
+				failedStep="form[@controlname='FileSelectForm']"
+				bestPathPrefix=""
+				loglvl="Error">
+			</metainfo>
+		</item>
+	</activity>
+</report>

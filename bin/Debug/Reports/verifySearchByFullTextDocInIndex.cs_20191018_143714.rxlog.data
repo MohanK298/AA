@@ -1,0 +1,142 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<report
+	progress="">
+	<activity
+		result="Failed"
+		duration="0ms"
+		durationms="0"
+		type="root"
+		rid="27c76f66f8532d3f"
+		totalerrorcount="1"
+		totalwarningcount="0"
+		totalsuccesstestcasecount="0"
+		totalfailedtestcasecount="0"
+		totalblockedtestcasecount="0"
+		childsuccesscount="0"
+		childfailedcount="0"
+		childblockedcount="0"
+		totalsuccesscount="0"
+		totalfailedcount="0"
+		totalblockedcount="0"
+		totalmaintenancemodecount="0"
+		user="Kumar"
+		rxversion="9.1.2.0"
+		host="J4-MOHAN"
+		osversion="Windows 10 64bit"
+		runtimeversion="4.0.30319.42000"
+		procarch="32bit"
+		oslanguage="en-US"
+		dtnlanguage="en-CA"
+		screenresolution="1920x1080"
+		timestamp="2019-10-18 2:37:19 PM"
+		timestampiso="2019-10-18T18:37:19"
+		endtime="2019-10-18 2:39:32 PM"
+		timeoutfactor="1"
+		module="verifySearchByFullTextDocInIndex">
+		<detail>
+			verifySearchByFullTextDocInIndex
+		</detail>
+		<errormessage>
+			Failed to find item 'Documents.MainForm.DocumentsIndexForm.btnSearchMore'.
+		</errormessage>
+		<varbindings>
+		</varbindings>
+		<item
+			timeRelativeToTestSuiteStartTime="00:34.095"
+			timeRelativeToTestModuleStartTime="00:34.095"
+			timeWallClock="14:37:53"
+			time="00:34.095"
+			level="Success"
+			category="Validation">
+			<message>
+				Document File Setting Form Exists
+			</message>
+			<metainfo
+				type="repoitem"
+				path="/form[@controlname='DocumentFirmSettingsForm']"
+				itempath="/form[@controlname='DocumentFirmSettingsForm']"
+				fullname="FirmSettings.DocumentFirmSettingsForm.Self"
+				id="ca27910abd0443808ce4c7f4e00d6004"
+				timeout="30000"
+				codefile="c:\Users\Kumar\Downloads\RanorexAutomation\AA Enhanced\verifySearchByFullTextDocInIndex.cs"
+				codeline="55"
+				loglvl="Success">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:36.228"
+			timeRelativeToTestModuleStartTime="00:36.228"
+			timeWallClock="14:37:55"
+			time="00:36.228"
+			level="Success"
+			category="Validation"
+			errimg="images_verifySe_7f24af38\verifySe_7f24af38_fab76bb4_trace.jpg"
+			errthumb="images_verifySe_7f24af38\verifySe_7f24af38_fab76bb4_trace_thumb.jpg">
+			<message>
+				Document Index Checkbox is Checked
+			</message>
+			<metainfo
+				type="repoitem"
+				path="/form[@controlname='DocumentFirmSettingsForm']/container[@controlname='pnlBase']//container[@controlname='panelBase']/?/?/container[@controlname='panelAmicusManagedIndexing']/checkbox[@controlname='chkBxEnableManagedIndexing']"
+				itempath="container[@controlname='pnlBase']//container[@controlname='panelBase']/?/?/container[@controlname='panelAmicusManagedIndexing']/checkbox[@controlname='chkBxEnableManagedIndexing']"
+				fullname="FirmSettings.DocumentFirmSettingsForm.cbManageIndex"
+				id="fb2cdf0e0756453da8aca88a5a7d40f2"
+				timeout="60000"
+				codefile="c:\Users\Kumar\Downloads\RanorexAutomation\AA Enhanced\verifySearchByFullTextDocInIndex.cs"
+				codeline="56"
+				loglvl="Success">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:40.771"
+			timeRelativeToTestModuleStartTime="00:40.771"
+			timeWallClock="14:37:59"
+			time="00:40.771"
+			level="Success"
+			category="Validation"
+			errimg="images_verifySe_7f24af38\verifySe_7f24af38_a1185483_trace.jpg"
+			errthumb="images_verifySe_7f24af38\verifySe_7f24af38_a1185483_trace_thumb.jpg">
+			<message>
+				Document Detail Form Opened
+			</message>
+			<metainfo
+				type="repoitem"
+				path="/form[@controlname='DocumentDetail']"
+				itempath="/form[@controlname='DocumentDetail']"
+				fullname="Documents.DocumentDetail.Self"
+				id="99941e2d5c774e95a78800f265028bdc"
+				timeout="30000"
+				codefile="c:\Users\Kumar\Downloads\RanorexAutomation\AA Enhanced\verifySearchByFullTextDocInIndex.cs"
+				codeline="68"
+				loglvl="Success">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="02:12.716"
+			timeRelativeToTestModuleStartTime="02:12.716"
+			timeWallClock="14:39:31"
+			time="02:12.716"
+			level="Error"
+			category="Module"
+			errimg="images_verifySe_7f24af38\verifySe_7f24af38_2c7e6f66_trace.jpg"
+			errthumb="images_verifySe_7f24af38\verifySe_7f24af38_2c7e6f66_trace_thumb.jpg">
+			<message>
+				Failed to find item 'Documents.MainForm.DocumentsIndexForm.btnSearchMore'.<br/>No element found for path '?/?/form[@controlname='DocumentsIndexForm']/container[@controlname='menubar_Fill_Panel']//toolbar[@accessiblename='Toolbar']/button[@accessiblename='More']' at step 'button[@accessiblename='More']' after 43 attempts within 1m.
+			</message>
+			<metainfo
+				stacktrace="   at Ranorex.Core.Repository.RepoItemInfo.FindInternal[T](Boolean findSingle, Boolean throwException, Duration effectiveTimeoutOverride)&#13;&#10;   at Ranorex.Core.Repository.RepoItemInfo.&lt;>c__DisplayClass75_0`1.&lt;Find>b__0()&#13;&#10;   at Ranorex.Core.Testing.Services.NoMaintenanceModeService.HandleElementNotFound[T](Func`1 action, RepoItemInfo entry)&#13;&#10;   at Ranorex.Core.Repository.RepoItemInfo.Find[T](Boolean findSingle, Boolean throwException, Duration effectiveTimeoutOverride)&#13;&#10;   at Ranorex.Core.Repository.RepoItemInfo.CreateAdapter[T](Boolean throwException, Duration waitTimeout)&#13;&#10;   at Ranorex.Core.Repository.RepoItemInfo.CreateAdapter[T](Boolean throwException)&#13;&#10;   at SmokeTest.Repositories.DocumentsFolders.DocumentsIndexFormFolder.get_btnSearchMore() in c:\Users\Kumar\Downloads\RanorexAutomation\AA Enhanced\Repositories\Documents.cs:line 639&#13;&#10;   at SmokeTest.verifySearchByFullTextDocInIndex.ValidateFullTxtSearchUsingIndexing() in c:\Users\Kumar\Downloads\RanorexAutomation\AA Enhanced\verifySearchByFullTextDocInIndex.cs:line 90&#13;&#10;   at SmokeTest.verifySearchByFullTextDocInIndex.Ranorex.Core.Testing.ITestModule.Run() in c:\Users\Kumar\Downloads\RanorexAutomation\AA Enhanced\verifySearchByFullTextDocInIndex.cs:line 146&#13;&#10;   at Ranorex.Core.Testing.TestModuleLeaf.RunInternal(DataContext parentDataContext, Int32 iteration, Int32 iterationCount, Boolean skipIteration)"
+				codefile="c:\Users\Kumar\Downloads\RanorexAutomation\AA Enhanced\verifySearchByFullTextDocInIndex.cs"
+				codeline="90"
+				type="repoitem"
+				path="/form[@controlname='MainForm']/?/?/form[@controlname='DocumentsIndexForm']/container[@controlname='menubar_Fill_Panel']//toolbar[@accessiblename='Toolbar']/button[@accessiblename='More']"
+				itempath="container[@controlname='menubar_Fill_Panel']//toolbar[@accessiblename='Toolbar']/button[@accessiblename='More']"
+				fullname="Documents.MainForm.DocumentsIndexForm.btnSearchMore"
+				id="328ac8e68de14e028d0dc8097b29410d"
+				timeout="90000"
+				failedStep="button[@accessiblename='More']"
+				bestPathPrefix="?/?/form[@controlname='DocumentsIndexForm']/container[@controlname='menubar_Fill_Panel']/descendant-or-self::toolbar[@accessiblename='Toolbar']"
+				loglvl="Error">
+			</metainfo>
+		</item>
+	</activity>
+</report>

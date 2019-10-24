@@ -1,0 +1,78 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<report
+	progress="">
+	<activity
+		result="Failed"
+		duration="1.8m"
+		durationms="110437"
+		type="root"
+		rid="4c302c1ecfd9424"
+		totalerrorcount="1"
+		totalwarningcount="0"
+		totalsuccesstestcasecount="0"
+		totalfailedtestcasecount="0"
+		totalblockedtestcasecount="0"
+		childsuccesscount="0"
+		childfailedcount="0"
+		childblockedcount="0"
+		totalsuccesscount="0"
+		totalfailedcount="0"
+		totalblockedcount="0"
+		totalmaintenancemodecount="0"
+		user="Kumar"
+		rxversion="9.1.2.0"
+		host="J4-MOHAN"
+		osversion="Windows 10 64bit"
+		runtimeversion="4.0.30319.42000"
+		procarch="32bit"
+		oslanguage="en-US"
+		dtnlanguage="en-CA"
+		screenresolution="1920x1080"
+		timestamp="2019-10-23 2:55:21 PM"
+		timestampiso="2019-10-23T18:55:21"
+		endtime="2019-10-23 2:57:11 PM"
+		timeoutfactor="1"
+		module="createApptDocAttached">
+		<detail>
+			createApptDocAttached
+		</detail>
+		<varbindings>
+		</varbindings>
+		<item
+			timeRelativeToTestSuiteStartTime="00:50.381"
+			timeRelativeToTestModuleStartTime="00:50.381"
+			timeWallClock="14:56:11"
+			time="00:50.381"
+			level="Success"
+			category="Validation">
+			<message>
+				Document Detail Form Opened
+			</message>
+			<metainfo
+				type="repoitem"
+				path="/form[@controlname='DocumentDetail']"
+				itempath="/form[@controlname='DocumentDetail']"
+				fullname="Documents.DocumentDetail.Self"
+				id="99941e2d5c774e95a78800f265028bdc"
+				timeout="30000"
+				codefile="c:\Users\Kumar\Downloads\RanorexAutomation\AA Enhanced\createApptDocAttached.cs"
+				codeline="57"
+				loglvl="Success">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="01:50.439"
+			timeRelativeToTestModuleStartTime="01:50.439"
+			timeWallClock="14:57:11"
+			time="01:50.439"
+			level="Error"
+			category="Module">
+			<message>
+				The test run has been aborted by the user.
+			</message>
+			<metainfo
+				loglvl="Error">
+			</metainfo>
+		</item>
+	</activity>
+</report>

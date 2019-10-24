@@ -1,0 +1,58 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<report
+	progress="">
+	<activity
+		result="Success"
+		duration="0ms"
+		durationms="0"
+		type="root"
+		rid="2f3a8f22c5c1ac33"
+		totalerrorcount="0"
+		totalwarningcount="0"
+		totalsuccesstestcasecount="0"
+		totalfailedtestcasecount="0"
+		totalblockedtestcasecount="0"
+		childsuccesscount="0"
+		childfailedcount="0"
+		childblockedcount="0"
+		totalsuccesscount="0"
+		totalfailedcount="0"
+		totalblockedcount="0"
+		totalmaintenancemodecount="0"
+		user="qa"
+		rxversion="8.3.1.0"
+		host="ADS-5056"
+		osversion="Windows 10 64bit"
+		runtimeversion="4.0.30319.42000"
+		procarch="32bit"
+		oslanguage="en-US"
+		dtnlanguage="en-CA"
+		screenresolution="1920x1080"
+		timestamp="2019-03-18 3:31:33 PM"
+		timestampiso="2019-03-18T19:31:33"
+		endtime="2019-03-18 3:32:54 PM"
+		timeoutfactor="1"
+		module="AddDocumentAM">
+		<detail>
+			AddDocumentAM
+		</detail>
+		<varbindings>
+		</varbindings>
+		<item
+			timeRelativeToTestSuiteStartTime="01:16.700"
+			timeRelativeToTestModuleStartTime="01:16.701"
+			timeWallClock="15:32:50"
+			time="01:16.700"
+			level="Success"
+			category="Validation">
+			<message>
+				Element '{Text:[Editor] Edit Area}' does exist.
+			</message>
+			<metainfo
+				codefile="C:\Qiao\AA Enhanced\Modules\AddDocumentAM.cs"
+				codeline="60"
+				loglvl="Success">
+			</metainfo>
+		</item>
+	</activity>
+</report>

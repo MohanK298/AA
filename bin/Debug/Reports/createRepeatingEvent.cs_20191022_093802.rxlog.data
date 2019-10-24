@@ -1,0 +1,92 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<report
+	progress="">
+	<activity
+		result="Success"
+		duration="0ms"
+		durationms="0"
+		type="root"
+		rid="190fa8a08f4f4c31"
+		totalerrorcount="0"
+		totalwarningcount="1"
+		totalsuccesstestcasecount="0"
+		totalfailedtestcasecount="0"
+		totalblockedtestcasecount="0"
+		childsuccesscount="0"
+		childfailedcount="0"
+		childblockedcount="0"
+		totalsuccesscount="0"
+		totalfailedcount="0"
+		totalblockedcount="0"
+		totalmaintenancemodecount="0"
+		user="Kumar"
+		rxversion="9.1.2.0"
+		host="J4-MOHAN"
+		osversion="Windows 10 64bit"
+		runtimeversion="4.0.30319.42000"
+		procarch="32bit"
+		oslanguage="en-US"
+		dtnlanguage="en-CA"
+		screenresolution="1920x1080"
+		timestamp="2019-10-22 9:38:27 AM"
+		timestampiso="2019-10-22T13:38:27"
+		endtime="2019-10-22 9:42:30 AM"
+		timeoutfactor="1"
+		module="createRepeatingEvent">
+		<detail>
+			createRepeatingEvent
+		</detail>
+		<varbindings>
+		</varbindings>
+		<item
+			timeRelativeToTestSuiteStartTime="01:54.278"
+			timeRelativeToTestModuleStartTime="01:54.278"
+			timeWallClock="09:40:21"
+			time="01:54.278"
+			level="Warn"
+			category="WinForms">
+			<message>
+				The control was recognized as a WinForms .NET 1.1 control. If this application targets the .NET Framework v1.1, then please ignore this message. Otherwise, the object recognition is not correct, most probably due to an installation issue.<br/>Please, uninstall and reinstall Ranorex and try again.<br/>Process: 'AmicusAttorney.XWin' (pid 7428)<br/>(This message is only shown once per report.)
+			</message>
+			<metainfo
+				limitationName="WinFormsNet11"
+				showInProgressDialog="False"
+				codefile="c:\Users\Kumar\Downloads\RanorexAutomation\AA Enhanced\createRepeatingEvent.cs"
+				codeline="68"
+				loglvl="Warn">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="02:33.804"
+			timeRelativeToTestModuleStartTime="02:33.804"
+			timeWallClock="09:41:01"
+			time="02:33.804"
+			level="Success"
+			category="User">
+			<message>
+				Value &quot;Weekly&quot; Selected as expected in &quot;Repeat Dropdown&quot; dropdown
+			</message>
+			<metainfo
+				codefile="c:\Users\Kumar\Downloads\RanorexAutomation\AA Enhanced\Modules\Utilities\Common.cs"
+				codeline="228"
+				loglvl="Success">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="03:51.559"
+			timeRelativeToTestModuleStartTime="03:51.559"
+			timeWallClock="09:42:19"
+			time="03:51.559"
+			level="Success"
+			category="User">
+			<message>
+				Value &quot;Test Data Added 2019-10-22 9:38:33 AM&quot; Present as expected in &quot;Calendar List&quot;
+			</message>
+			<metainfo
+				codefile="c:\Users\Kumar\Downloads\RanorexAutomation\AA Enhanced\Modules\Utilities\Common.cs"
+				codeline="80"
+				loglvl="Success">
+			</metainfo>
+		</item>
+	</activity>
+</report>

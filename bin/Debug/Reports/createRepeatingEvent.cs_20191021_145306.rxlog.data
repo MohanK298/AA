@@ -1,0 +1,58 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<report
+	progress="">
+	<activity
+		result="Success"
+		duration="0ms"
+		durationms="0"
+		type="root"
+		rid="1e01db015bae9667"
+		totalerrorcount="0"
+		totalwarningcount="0"
+		totalsuccesstestcasecount="0"
+		totalfailedtestcasecount="0"
+		totalblockedtestcasecount="0"
+		childsuccesscount="0"
+		childfailedcount="0"
+		childblockedcount="0"
+		totalsuccesscount="0"
+		totalfailedcount="0"
+		totalblockedcount="0"
+		totalmaintenancemodecount="0"
+		user="Kumar"
+		rxversion="9.1.2.0"
+		host="J4-MOHAN"
+		osversion="Windows 10 64bit"
+		runtimeversion="4.0.30319.42000"
+		procarch="32bit"
+		oslanguage="en-US"
+		dtnlanguage="en-CA"
+		screenresolution="1920x1080"
+		timestamp="2019-10-21 2:53:21 PM"
+		timestampiso="2019-10-21T18:53:21"
+		endtime="2019-10-21 2:54:57 PM"
+		timeoutfactor="1"
+		module="createRepeatingEvent">
+		<detail>
+			createRepeatingEvent
+		</detail>
+		<varbindings>
+		</varbindings>
+		<item
+			timeRelativeToTestSuiteStartTime="01:34.571"
+			timeRelativeToTestModuleStartTime="01:34.571"
+			timeWallClock="14:54:55"
+			time="01:34.571"
+			level="Success"
+			category="User">
+			<message>
+				Value &quot;Test Data Added 2019-10-21 2:53:24 PM&quot; Present as expected in &quot;Calendar List&quot;
+			</message>
+			<metainfo
+				codefile="c:\Users\Kumar\Downloads\RanorexAutomation\AA Enhanced\Modules\Utilities\Common.cs"
+				codeline="80"
+				loglvl="Success">
+			</metainfo>
+		</item>
+	</activity>
+</report>

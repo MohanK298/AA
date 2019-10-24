@@ -1,0 +1,56 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<report
+	progress="">
+	<activity
+		result="Failed"
+		duration="53.52s"
+		durationms="53516"
+		type="root"
+		rid="1af49a1b526ceaa"
+		totalerrorcount="1"
+		totalwarningcount="0"
+		totalsuccesstestcasecount="0"
+		totalfailedtestcasecount="0"
+		totalblockedtestcasecount="0"
+		childsuccesscount="0"
+		childfailedcount="0"
+		childblockedcount="0"
+		totalsuccesscount="0"
+		totalfailedcount="0"
+		totalblockedcount="0"
+		totalmaintenancemodecount="0"
+		user="qa"
+		rxversion="8.3.1.0"
+		host="ADS-5056"
+		osversion="Windows 10 64bit"
+		runtimeversion="4.0.30319.42000"
+		procarch="32bit"
+		oslanguage="en-US"
+		dtnlanguage="en-CA"
+		screenresolution="3840x1080"
+		timestamp="2019-03-13 7:08:25 PM"
+		timestampiso="2019-03-13T23:08:25"
+		endtime="2019-03-13 7:09:18 PM"
+		timeoutfactor="1"
+		module="AddFolder2">
+		<detail>
+			AddFolder2
+		</detail>
+		<varbindings>
+		</varbindings>
+		<item
+			timeRelativeToTestSuiteStartTime="00:53.516"
+			timeRelativeToTestModuleStartTime="00:53.517"
+			timeWallClock="19:09:18"
+			time="00:53.516"
+			level="Error"
+			category="Module">
+			<message>
+				The test run has been aborted by the user.
+			</message>
+			<metainfo
+				loglvl="Error">
+			</metainfo>
+		</item>
+	</activity>
+</report>

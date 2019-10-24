@@ -1,0 +1,90 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<report
+	progress="">
+	<activity
+		result="Failed"
+		duration="0ms"
+		durationms="0"
+		type="root"
+		rid="72890690598928"
+		totalerrorcount="1"
+		totalwarningcount="0"
+		totalsuccesstestcasecount="0"
+		totalfailedtestcasecount="0"
+		totalblockedtestcasecount="0"
+		childsuccesscount="0"
+		childfailedcount="0"
+		childblockedcount="0"
+		totalsuccesscount="0"
+		totalfailedcount="0"
+		totalblockedcount="0"
+		totalmaintenancemodecount="0"
+		user="Kumar"
+		rxversion="9.1.2.0"
+		host="J4-MOHAN"
+		osversion="Windows 10 64bit"
+		runtimeversion="4.0.30319.42000"
+		procarch="32bit"
+		oslanguage="en-US"
+		dtnlanguage="en-CA"
+		screenresolution="1920x1080"
+		timestamp="2019-10-22 10:43:32 AM"
+		timestampiso="2019-10-22T14:43:32"
+		endtime="2019-10-22 10:46:37 AM"
+		timeoutfactor="1"
+		module="createRepeatingEvent">
+		<detail>
+			createRepeatingEvent
+		</detail>
+		<errormessage>
+			Failed to find item 'Calendar.EventDetailForm.PnlBase.cbWeekday'.
+		</errormessage>
+		<varbindings>
+		</varbindings>
+		<item
+			timeRelativeToTestSuiteStartTime="01:57.262"
+			timeRelativeToTestModuleStartTime="01:57.262"
+			timeWallClock="10:45:29"
+			time="01:57.262"
+			level="Success"
+			category="User"
+			errimg="images_createRe_fb87e81c\createRe_fb87e81c_35fc7be0_trace.jpg"
+			errthumb="images_createRe_fb87e81c\createRe_fb87e81c_35fc7be0_trace_thumb.jpg">
+			<message>
+				Value &quot;Weekly&quot; Selected as expected in &quot;Repeat Dropdown&quot; dropdown
+			</message>
+			<metainfo
+				codefile="c:\Users\Kumar\Downloads\RanorexAutomation\AA Enhanced\Modules\Utilities\Common.cs"
+				codeline="228"
+				loglvl="Success">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="03:03.626"
+			timeRelativeToTestModuleStartTime="03:03.626"
+			timeWallClock="10:46:36"
+			time="03:03.626"
+			level="Error"
+			category="Module"
+			errimg="images_createRe_fb87e81c\createRe_fb87e81c_e4b2c989_trace.jpg"
+			errthumb="images_createRe_fb87e81c\createRe_fb87e81c_e4b2c989_trace_thumb.jpg">
+			<message>
+				Failed to find item 'Calendar.EventDetailForm.PnlBase.cbWeekday'.<br/>No element found for path 'container[@controlname='menubar_Fill_Panel']/container[@controlname='pnlBase']/?/?/container[@controlname='pnlTabs']//container[@controlname='pnlRepeatInterval']/?/?/element[@controlname='chk'+'day2']/?/?/checkbox[@accessiblename='day2']' at step 'element[@controlname='chk'+'day2']' after 21 attempts within 1m.
+			</message>
+			<metainfo
+				stacktrace="   at Ranorex.Core.Repository.RepoItemInfo.FindInternal[T](Boolean findSingle, Boolean throwException, Duration effectiveTimeoutOverride)&#13;&#10;   at Ranorex.Core.Repository.RepoItemInfo.&lt;>c__DisplayClass75_0`1.&lt;Find>b__0()&#13;&#10;   at Ranorex.Core.Testing.Services.NoMaintenanceModeService.HandleElementNotFound[T](Func`1 action, RepoItemInfo entry)&#13;&#10;   at Ranorex.Core.Repository.RepoItemInfo.Find[T](Boolean findSingle, Boolean throwException, Duration effectiveTimeoutOverride)&#13;&#10;   at Ranorex.Core.Repository.RepoItemInfo.CreateAdapter[T](Boolean throwException, Duration waitTimeout)&#13;&#10;   at Ranorex.Core.Repository.RepoItemInfo.CreateAdapter[T](Boolean throwException)&#13;&#10;   at SmokeTest.Repositories.CalendarFolders.PnlBaseFolder.get_cbWeekday() in c:\Users\Kumar\Downloads\RanorexAutomation\AA Enhanced\Repositories\Calendar.cs:line 1536&#13;&#10;   at SmokeTest.createRepeatingEvent.CreateRepatedAppointment() in c:\Users\Kumar\Downloads\RanorexAutomation\AA Enhanced\createRepeatingEvent.cs:line 81&#13;&#10;   at SmokeTest.createRepeatingEvent.Ranorex.Core.Testing.ITestModule.Run() in c:\Users\Kumar\Downloads\RanorexAutomation\AA Enhanced\createRepeatingEvent.cs:line 143&#13;&#10;   at Ranorex.Core.Testing.TestModuleLeaf.RunInternal(DataContext parentDataContext, Int32 iteration, Int32 iterationCount, Boolean skipIteration)"
+				codefile="c:\Users\Kumar\Downloads\RanorexAutomation\AA Enhanced\createRepeatingEvent.cs"
+				codeline="81"
+				type="repoitem"
+				path="/form[@controlname='EventDetailForm']/container[@controlname='menubar_Fill_Panel']/container[@controlname='pnlBase']/?/?/container[@controlname='pnlTabs']//container[@controlname='pnlRepeatInterval']/?/?/element[@controlname='chk'+'day2']/?/?/checkbox[@accessiblename='day2']"
+				itempath="?/?/container[@controlname='pnlTabs']//container[@controlname='pnlRepeatInterval']/?/?/element[@controlname='chk'+$weekday]/?/?/checkbox[@accessiblename=$weekday]"
+				fullname="Calendar.EventDetailForm.PnlBase.cbWeekday"
+				id="44146afdd8d846d988d302b62949ae19"
+				timeout="90000"
+				failedStep="element[@controlname='chk'+$weekday]"
+				bestPathPrefix="container[@controlname='menubar_Fill_Panel']/container[@controlname='pnlBase']/?/?/container[@controlname='pnlTabs']/descendant-or-self::container[@controlname='pnlRepeatInterval']/?/?"
+				loglvl="Error">
+			</metainfo>
+		</item>
+	</activity>
+</report>

@@ -1,0 +1,104 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<report
+	progress="">
+	<activity
+		result="Failed"
+		duration="0ms"
+		durationms="0"
+		type="root"
+		rid="1d023dc3e2caf1f9"
+		totalerrorcount="1"
+		totalwarningcount="2"
+		totalsuccesstestcasecount="0"
+		totalfailedtestcasecount="0"
+		totalblockedtestcasecount="0"
+		childsuccesscount="0"
+		childfailedcount="0"
+		childblockedcount="0"
+		totalsuccesscount="0"
+		totalfailedcount="0"
+		totalblockedcount="0"
+		totalmaintenancemodecount="0"
+		user="Kumar"
+		rxversion="9.1.2.0"
+		host="J4-MOHAN"
+		osversion="Windows 10 64bit"
+		runtimeversion="4.0.30319.42000"
+		procarch="32bit"
+		oslanguage="en-US"
+		dtnlanguage="en-CA"
+		screenresolution="1920x1080"
+		timestamp="2019-10-18 9:55:16 AM"
+		timestampiso="2019-10-18T13:55:16"
+		endtime="2019-10-18 9:58:53 AM"
+		timeoutfactor="1"
+		module="CreateManyPhoneCalls">
+		<detail>
+			CreateManyPhoneCalls
+		</detail>
+		<errormessage>
+			Invocation did not finish within the timeout of '00:00:05'.
+		</errormessage>
+		<varbindings>
+		</varbindings>
+		<item
+			timeRelativeToTestSuiteStartTime="01:14.819"
+			timeRelativeToTestModuleStartTime="01:14.819"
+			timeWallClock="09:56:31"
+			time="01:14.819"
+			level="Warn"
+			category="Data"
+			errimg="images_CreateMa_86b43fc1\CreateMa_86b43fc1_8f0aa7f8_trace.jpg"
+			errthumb="images_CreateMa_86b43fc1\CreateMa_86b43fc1_8f0aa7f8_trace_thumb.jpg">
+			<message>
+				The following module variables are not bound to a data column:<br/>time, fileName, phoneCallNote
+			</message>
+			<metainfo
+				loglvl="Warn">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="02:14.081"
+			timeRelativeToTestModuleStartTime="02:14.081"
+			timeWallClock="09:57:30"
+			time="02:14.081"
+			level="Warn"
+			category="WPF"
+			errimg="images_CreateMa_86b43fc1\CreateMa_86b43fc1_a978974c_trace.jpg"
+			errthumb="images_CreateMa_86b43fc1\CreateMa_86b43fc1_a978974c_trace_thumb.jpg">
+			<message>
+				UI elements in your 'WPF'  AUT can&#8217;t be identified because it couldn&#8217;t be instrumented automatically. Restart all Ranorex tools and the AUT with the same privileges, preferably as an administrator.
+
+Could not set-up managed injection endpoint: Bootstrapping Ranorex Instrumentation failed. The injection timed out. Probably the AUT is blocking the UI thread.
+
+If your application is currently in startup state please try to add a delay action to your Ranorex test application before you execute actions on Ranorex elements to give Ranorex the possibility to load correctly into the AUT.<br/>Process: 'Timeline64' (pid 5352)<br/>(This message is only shown once per report.)
+			</message>
+			<metainfo
+				limitationName="WPF Instrumentation"
+				showInProgressDialog="False"
+				codefile="c:\Users\Kumar\Downloads\RanorexAutomation\AA Enhanced\Modules\CreateManyPhoneCalls.cs"
+				codeline="65"
+				loglvl="Warn">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="03:35.014"
+			timeRelativeToTestModuleStartTime="03:35.014"
+			timeWallClock="09:58:51"
+			time="03:35.014"
+			level="Error"
+			category="Module"
+			errimg="images_CreateMa_86b43fc1\CreateMa_86b43fc1_6c598909_trace.jpg"
+			errthumb="images_CreateMa_86b43fc1\CreateMa_86b43fc1_6c598909_trace_thumb.jpg">
+			<message>
+				Invocation did not finish within the timeout of '00:00:05'.
+			</message>
+			<metainfo
+				stacktrace="   at Ranorex.Core.FunctionExecuteWithTimeout.TryExecute[T](Func`1 func, TimeSpan timeout)&#13;&#10;   at Ranorex.Core.FunctionExecuteWithTimeout.WithTimeout[T](Func`1 func, Nullable`1 timeout)&#13;&#10;   at Ranorex.Plugin.WpfRootRule.TryAddWpfRootToElementEngine(WpfAutomationWrapper proxy, Win32FlavorElement candidate, GlueRuleExecutionState state)&#13;&#10;   at Ranorex.Plugin.WpfRootRule.AddWpfNative(GlueRuleExecutionState state)&#13;&#10;   at Ranorex.Plugin.WpfRootRule.Execute(GlueRuleExecutionState state)&#13;&#10;   at Ranorex.Core.ElementEngine.ApplyGlueRules(Element element, GlueRuleExecutionStateImpl state, Boolean includeRemotes)&#13;&#10;   at Ranorex.Core.ElementEngine.ApplyReplaceGlueRulesOnSingleRecentlyInsertedElement(Element parentElement, GlueRuleExecutionStateImpl state, GlueRuleExecutionStateImpl replaceState, Element recentlyInsertedElement)&#13;&#10;   at Ranorex.Core.ElementEngine.ApplyReplaceGlueRulesOnRecentlyInserted(Element element, GlueRuleExecutionStateImpl state)&#13;&#10;   at Ranorex.Core.ElementEngine.ApplyGlueRules(Element element, GlueRuleExecutionStateImpl state, Boolean includeRemotes)&#13;&#10;   at Ranorex.Core.ElementEngine.ApplyGlueRules(Element element, Boolean includeRemotes)&#13;&#10;   at Ranorex.Core.Element.GetChildren(CacheSession session)&#13;&#10;   at Ranorex.Core.Element.get_Children()&#13;&#10;   at Ranorex.Core.RxPath.collectAxis(LocationStep step, Axis optimizedAxis, Element self, IList`1 elements, Boolean quitOnFirstGoodNode)&#13;&#10;   at Ranorex.Core.RxPath.ApplyInternal(RxPath path, Element startElement, Duration timeout, Boolean findSingle, CacheSession&amp; usedCacheSession, PathDiagnostics&amp; pathDiagnostics)&#13;&#10;   at Ranorex.Core.RxPath.Apply(Element startElement, Duration timeout, Boolean findSingle, CacheSession&amp; usedCacheSession, PathDiagnostics&amp; pathDiagnostics)&#13;&#10;   at Ranorex.Core.Element.TryFindInternal(RxPath path, Duration timeout, Boolean findSingle, IList`1&amp; foundElements, CacheSession&amp; usedCacheSession, Duration&amp; elementSearchTime, Int32&amp; iterations)&#13;&#10;   at Ranorex.Core.Repository.RepoItemInfo.FindInternal[T](Boolean findSingle, Boolean throwException, Duration effectiveTimeoutOverride)&#13;&#10;   at Ranorex.Core.Repository.RepoItemInfo.&lt;>c__DisplayClass75_0`1.&lt;Find>b__0()&#13;&#10;   at Ranorex.Core.Testing.Services.NoMaintenanceModeService.HandleElementNotFound[T](Func`1 action, RepoItemInfo entry)&#13;&#10;   at Ranorex.Core.Repository.RepoItemInfo.Find[T](Boolean findSingle, Boolean throwException, Duration effectiveTimeoutOverride)&#13;&#10;   at Ranorex.Core.Repository.RepoItemInfo.CreateAdapter[T](Boolean throwException, Duration waitTimeout)&#13;&#10;   at Ranorex.Core.Repository.RepoItemInfo.CreateAdapter[T](Boolean throwException)&#13;&#10;   at SmokeTest.Repositories.CommunicationsFolders.FileSelectFormAppFolder.get_btnQuickFind() in c:\Users\Kumar\Downloads\RanorexAutomation\AA Enhanced\Repositories\Communications.cs:line 911&#13;&#10;   at SmokeTest.Modules.CreateManyPhoneCalls.CreateCall() in c:\Users\Kumar\Downloads\RanorexAutomation\AA Enhanced\Modules\CreateManyPhoneCalls.cs:line 84&#13;&#10;   at SmokeTest.Modules.CreateManyPhoneCalls.Ranorex.Core.Testing.ITestModule.Run() in c:\Users\Kumar\Downloads\RanorexAutomation\AA Enhanced\Modules\CreateManyPhoneCalls.cs:line 109&#13;&#10;   at Ranorex.Core.Testing.TestModuleLeaf.RunInternal(DataContext parentDataContext, Int32 iteration, Int32 iterationCount, Boolean skipIteration)"
+				codefile="c:\Users\Kumar\Downloads\RanorexAutomation\AA Enhanced\Repositories\Communications.cs"
+				codeline="911"
+				loglvl="Error">
+			</metainfo>
+		</item>
+	</activity>
+</report>

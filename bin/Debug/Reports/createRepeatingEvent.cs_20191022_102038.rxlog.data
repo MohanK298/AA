@@ -1,0 +1,74 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<report
+	progress="">
+	<activity
+		result="Success"
+		duration="0ms"
+		durationms="0"
+		type="root"
+		rid="91b6be095b82ae"
+		totalerrorcount="0"
+		totalwarningcount="0"
+		totalsuccesstestcasecount="0"
+		totalfailedtestcasecount="0"
+		totalblockedtestcasecount="0"
+		childsuccesscount="0"
+		childfailedcount="0"
+		childblockedcount="0"
+		totalsuccesscount="0"
+		totalfailedcount="0"
+		totalblockedcount="0"
+		totalmaintenancemodecount="0"
+		user="Kumar"
+		rxversion="9.1.2.0"
+		host="J4-MOHAN"
+		osversion="Windows 10 64bit"
+		runtimeversion="4.0.30319.42000"
+		procarch="32bit"
+		oslanguage="en-US"
+		dtnlanguage="en-CA"
+		screenresolution="1920x1080"
+		timestamp="2019-10-22 10:21:26 AM"
+		timestampiso="2019-10-22T14:21:26"
+		endtime="2019-10-22 10:24:33 AM"
+		timeoutfactor="1"
+		module="createRepeatingEvent">
+		<detail>
+			createRepeatingEvent
+		</detail>
+		<varbindings>
+		</varbindings>
+		<item
+			timeRelativeToTestSuiteStartTime="02:10.128"
+			timeRelativeToTestModuleStartTime="02:10.128"
+			timeWallClock="10:23:36"
+			time="02:10.128"
+			level="Success"
+			category="User">
+			<message>
+				Value &quot;Weekly&quot; Selected as expected in &quot;Repeat Dropdown&quot; dropdown
+			</message>
+			<metainfo
+				codefile="c:\Users\Kumar\Downloads\RanorexAutomation\AA Enhanced\Modules\Utilities\Common.cs"
+				codeline="228"
+				loglvl="Success">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="02:57.731"
+			timeRelativeToTestModuleStartTime="02:57.731"
+			timeWallClock="10:24:24"
+			time="02:57.731"
+			level="Success"
+			category="User">
+			<message>
+				Value &quot;Test Data Added 2019-10-22 10:21:34 AM&quot; Present as expected in &quot;Calendar List&quot;
+			</message>
+			<metainfo
+				codefile="c:\Users\Kumar\Downloads\RanorexAutomation\AA Enhanced\Modules\Utilities\Common.cs"
+				codeline="80"
+				loglvl="Success">
+			</metainfo>
+		</item>
+	</activity>
+</report>

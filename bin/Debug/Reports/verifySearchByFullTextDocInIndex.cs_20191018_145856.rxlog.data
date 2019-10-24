@@ -1,0 +1,270 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<report
+	progress="">
+	<activity
+		result="Success"
+		duration="0ms"
+		durationms="0"
+		type="root"
+		rid="38ffb53b0e656a0"
+		totalerrorcount="0"
+		totalwarningcount="0"
+		totalsuccesstestcasecount="0"
+		totalfailedtestcasecount="0"
+		totalblockedtestcasecount="0"
+		childsuccesscount="0"
+		childfailedcount="0"
+		childblockedcount="0"
+		totalsuccesscount="0"
+		totalfailedcount="0"
+		totalblockedcount="0"
+		totalmaintenancemodecount="0"
+		user="Kumar"
+		rxversion="9.1.2.0"
+		host="J4-MOHAN"
+		osversion="Windows 10 64bit"
+		runtimeversion="4.0.30319.42000"
+		procarch="32bit"
+		oslanguage="en-US"
+		dtnlanguage="en-CA"
+		screenresolution="1920x1080"
+		timestamp="2019-10-18 2:59:02 PM"
+		timestampiso="2019-10-18T18:59:02"
+		endtime="2019-10-18 3:01:22 PM"
+		timeoutfactor="1"
+		module="verifySearchByFullTextDocInIndex">
+		<detail>
+			verifySearchByFullTextDocInIndex
+		</detail>
+		<varbindings>
+		</varbindings>
+		<item
+			timeRelativeToTestSuiteStartTime="00:40.087"
+			timeRelativeToTestModuleStartTime="00:40.087"
+			timeWallClock="14:59:42"
+			time="00:40.087"
+			level="Success"
+			category="Validation">
+			<message>
+				Document File Setting Form Exists
+			</message>
+			<metainfo
+				type="repoitem"
+				path="/form[@controlname='DocumentFirmSettingsForm']"
+				itempath="/form[@controlname='DocumentFirmSettingsForm']"
+				fullname="FirmSettings.DocumentFirmSettingsForm.Self"
+				id="ca27910abd0443808ce4c7f4e00d6004"
+				timeout="30000"
+				codefile="c:\Users\Kumar\Downloads\RanorexAutomation\AA Enhanced\verifySearchByFullTextDocInIndex.cs"
+				codeline="55"
+				loglvl="Success">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:42.234"
+			timeRelativeToTestModuleStartTime="00:42.234"
+			timeWallClock="14:59:44"
+			time="00:42.234"
+			level="Success"
+			category="Validation">
+			<message>
+				Document Index Checkbox is Checked
+			</message>
+			<metainfo
+				type="repoitem"
+				path="/form[@controlname='DocumentFirmSettingsForm']/container[@controlname='pnlBase']//container[@controlname='panelBase']/?/?/container[@controlname='panelAmicusManagedIndexing']/checkbox[@controlname='chkBxEnableManagedIndexing']"
+				itempath="container[@controlname='pnlBase']//container[@controlname='panelBase']/?/?/container[@controlname='panelAmicusManagedIndexing']/checkbox[@controlname='chkBxEnableManagedIndexing']"
+				fullname="FirmSettings.DocumentFirmSettingsForm.cbManageIndex"
+				id="fb2cdf0e0756453da8aca88a5a7d40f2"
+				timeout="60000"
+				codefile="c:\Users\Kumar\Downloads\RanorexAutomation\AA Enhanced\verifySearchByFullTextDocInIndex.cs"
+				codeline="56"
+				loglvl="Success">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:47.329"
+			timeRelativeToTestModuleStartTime="00:47.329"
+			timeWallClock="14:59:49"
+			time="00:47.329"
+			level="Success"
+			category="Validation">
+			<message>
+				Document Detail Form Opened
+			</message>
+			<metainfo
+				type="repoitem"
+				path="/form[@controlname='DocumentDetail']"
+				itempath="/form[@controlname='DocumentDetail']"
+				fullname="Documents.DocumentDetail.Self"
+				id="99941e2d5c774e95a78800f265028bdc"
+				timeout="30000"
+				codefile="c:\Users\Kumar\Downloads\RanorexAutomation\AA Enhanced\verifySearchByFullTextDocInIndex.cs"
+				codeline="68"
+				loglvl="Success">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="01:23.752"
+			timeRelativeToTestModuleStartTime="01:23.752"
+			timeWallClock="15:00:26"
+			time="01:23.752"
+			level="Success"
+			category="User">
+			<message>
+				Value &quot;Perform full text search&quot; Selected as expected in &quot;Search Type&quot; dropdown
+			</message>
+			<metainfo
+				codefile="c:\Users\Kumar\Downloads\RanorexAutomation\AA Enhanced\Modules\Utilities\Common.cs"
+				codeline="228"
+				loglvl="Success">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="01:33.783"
+			timeRelativeToTestModuleStartTime="01:33.783"
+			timeWallClock="15:00:36"
+			time="01:33.783"
+			level="Success"
+			category="Validation">
+			<message>
+				No of Documents Count Label Exists
+			</message>
+			<metainfo
+				type="repoitem"
+				path="/form[@controlname='MainForm']/?/?/form[@controlname='DocumentsIndexForm']/container[@controlname='pnlBase']//text[@accessiblename&lt;'Documents']"
+				itempath="container[@controlname='pnlBase']//text[@accessiblename&lt;'Documents']"
+				fullname="Documents.MainForm.DocumentsIndexForm.txtDocumentsListCount"
+				id="0bb4be1d4a7e4dc49f25a36658f7b316"
+				timeout="90000"
+				codefile="c:\Users\Kumar\Downloads\RanorexAutomation\AA Enhanced\verifySearchByFullTextDocInIndex.cs"
+				codeline="97"
+				loglvl="Success">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="01:35.887"
+			timeRelativeToTestModuleStartTime="01:35.887"
+			timeWallClock="15:00:38"
+			time="01:35.887"
+			level="Success"
+			category="User">
+			<message>
+				The number of Documents retrieved based on the Search is 32 Documents
+			</message>
+			<metainfo
+				codefile="c:\Users\Kumar\Downloads\RanorexAutomation\AA Enhanced\verifySearchByFullTextDocInIndex.cs"
+				codeline="98"
+				loglvl="Success">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="01:48.474"
+			timeRelativeToTestModuleStartTime="01:48.474"
+			timeWallClock="15:00:50"
+			time="01:48.474"
+			level="Success"
+			category="User">
+			<message>
+				Value &quot;Perform full text search&quot; Selected as expected in &quot;Search Type&quot; dropdown
+			</message>
+			<metainfo
+				codefile="c:\Users\Kumar\Downloads\RanorexAutomation\AA Enhanced\Modules\Utilities\Common.cs"
+				codeline="228"
+				loglvl="Success">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="01:59.604"
+			timeRelativeToTestModuleStartTime="01:59.604"
+			timeWallClock="15:01:01"
+			time="01:59.604"
+			level="Success"
+			category="Validation">
+			<message>
+				No of Documents Count Label Exists
+			</message>
+			<metainfo
+				type="repoitem"
+				path="/form[@controlname='MainForm']/?/?/form[@controlname='DocumentsIndexForm']/container[@controlname='pnlBase']//text[@accessiblename&lt;'Documents']"
+				itempath="container[@controlname='pnlBase']//text[@accessiblename&lt;'Documents']"
+				fullname="Documents.MainForm.DocumentsIndexForm.txtDocumentsListCount"
+				id="0bb4be1d4a7e4dc49f25a36658f7b316"
+				timeout="90000"
+				codefile="c:\Users\Kumar\Downloads\RanorexAutomation\AA Enhanced\verifySearchByFullTextDocInIndex.cs"
+				codeline="114"
+				loglvl="Success">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="02:00.987"
+			timeRelativeToTestModuleStartTime="02:00.987"
+			timeWallClock="15:01:03"
+			time="02:00.987"
+			level="Success"
+			category="User">
+			<message>
+				The number of Documents retrieved based on the Search is 32 Documents
+			</message>
+			<metainfo
+				codefile="c:\Users\Kumar\Downloads\RanorexAutomation\AA Enhanced\verifySearchByFullTextDocInIndex.cs"
+				codeline="115"
+				loglvl="Success">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="02:08.322"
+			timeRelativeToTestModuleStartTime="02:08.322"
+			timeWallClock="15:01:10"
+			time="02:08.322"
+			level="Info"
+			category="User">
+			<message>
+				Entered data for refining is 2019-10-18 2:59:04 PM
+			</message>
+			<metainfo
+				codefile="c:\Users\Kumar\Downloads\RanorexAutomation\AA Enhanced\verifySearchByFullTextDocInIndex.cs"
+				codeline="132"
+				loglvl="Info">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="02:12.027"
+			timeRelativeToTestModuleStartTime="02:12.027"
+			timeWallClock="15:01:14"
+			time="02:12.027"
+			level="Success"
+			category="Validation">
+			<message>
+				No of Documents Count Label Exists
+			</message>
+			<metainfo
+				type="repoitem"
+				path="/form[@controlname='MainForm']/?/?/form[@controlname='DocumentsIndexForm']/container[@controlname='pnlBase']//text[@accessiblename&lt;'Documents']"
+				itempath="container[@controlname='pnlBase']//text[@accessiblename&lt;'Documents']"
+				fullname="Documents.MainForm.DocumentsIndexForm.txtDocumentsListCount"
+				id="0bb4be1d4a7e4dc49f25a36658f7b316"
+				timeout="90000"
+				codefile="c:\Users\Kumar\Downloads\RanorexAutomation\AA Enhanced\verifySearchByFullTextDocInIndex.cs"
+				codeline="134"
+				loglvl="Success">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="02:13.966"
+			timeRelativeToTestModuleStartTime="02:13.966"
+			timeWallClock="15:01:16"
+			time="02:13.966"
+			level="Success"
+			category="User">
+			<message>
+				The number of Documents retrieved based on the Search is 0 Documents
+			</message>
+			<metainfo
+				codefile="c:\Users\Kumar\Downloads\RanorexAutomation\AA Enhanced\verifySearchByFullTextDocInIndex.cs"
+				codeline="135"
+				loglvl="Success">
+			</metainfo>
+		</item>
+	</activity>
+</report>

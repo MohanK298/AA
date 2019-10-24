@@ -1,0 +1,72 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<report
+	progress="">
+	<activity
+		result="Failed"
+		duration="0ms"
+		durationms="0"
+		type="root"
+		rid="183549a315d2d421"
+		totalerrorcount="1"
+		totalwarningcount="0"
+		totalsuccesstestcasecount="0"
+		totalfailedtestcasecount="0"
+		totalblockedtestcasecount="0"
+		childsuccesscount="0"
+		childfailedcount="0"
+		childblockedcount="0"
+		totalsuccesscount="0"
+		totalfailedcount="0"
+		totalblockedcount="0"
+		totalmaintenancemodecount="0"
+		user="Kumar"
+		rxversion="9.1.2.0"
+		host="J4-MOHAN"
+		osversion="Windows 10 64bit"
+		runtimeversion="4.0.30319.42000"
+		procarch="32bit"
+		oslanguage="en-US"
+		dtnlanguage="en-CA"
+		screenresolution="1920x1080"
+		timestamp="2019-10-22 3:45:28 PM"
+		timestampiso="2019-10-22T19:45:28"
+		endtime="2019-10-22 3:46:22 PM"
+		timeoutfactor="1"
+		module="createRedLetterDay">
+		<detail>
+			createRedLetterDay
+		</detail>
+		<errormessage>
+			Failed to find item 'Calendar.MainForm.btnNewAppointment'.
+		</errormessage>
+		<varbindings>
+		</varbindings>
+		<item
+			timeRelativeToTestSuiteStartTime="00:53.456"
+			timeRelativeToTestModuleStartTime="00:53.456"
+			timeWallClock="15:46:21"
+			time="00:53.456"
+			level="Error"
+			category="Module"
+			errimg="images_createRe_dc446026\createRe_dc446026_072577c8_trace.jpg"
+			errthumb="images_createRe_dc446026\createRe_dc446026_072577c8_trace_thumb.jpg">
+			<message>
+				Failed to find item 'Calendar.MainForm.btnNewAppointment'.<br/>No element found for path '?/?/form[@controlname='CalendarIndexForm']/container[@controlname='menubar_Fill_Panel']//toolbar[@accessiblename='Toolbar']/button[@accessiblename='New']' at step 'form[@controlname='CalendarIndexForm']' after 34 attempts within 30s.
+			</message>
+			<metainfo
+				stacktrace="   at Ranorex.Core.Repository.RepoItemInfo.FindInternal[T](Boolean findSingle, Boolean throwException, Duration effectiveTimeoutOverride)&#13;&#10;   at Ranorex.Core.Repository.RepoItemInfo.&lt;>c__DisplayClass75_0`1.&lt;Find>b__0()&#13;&#10;   at Ranorex.Core.Testing.Services.NoMaintenanceModeService.HandleElementNotFound[T](Func`1 action, RepoItemInfo entry)&#13;&#10;   at Ranorex.Core.Repository.RepoItemInfo.Find[T](Boolean findSingle, Boolean throwException, Duration effectiveTimeoutOverride)&#13;&#10;   at Ranorex.Core.Repository.RepoItemInfo.CreateAdapter[T](Boolean throwException, Duration waitTimeout)&#13;&#10;   at Ranorex.Core.Repository.RepoItemInfo.CreateAdapter[T](Boolean throwException)&#13;&#10;   at SmokeTest.Repositories.CalendarFolders.MainFormAppFolder.get_btnNewAppointment() in c:\Users\Kumar\Downloads\RanorexAutomation\AA Enhanced\Repositories\Calendar.cs:line 317&#13;&#10;   at SmokeTest.createRedLetterDay.CreateRedLetterDay() in c:\Users\Kumar\Downloads\RanorexAutomation\AA Enhanced\createRedLetterDay.cs:line 56&#13;&#10;   at SmokeTest.createRedLetterDay.Ranorex.Core.Testing.ITestModule.Run() in c:\Users\Kumar\Downloads\RanorexAutomation\AA Enhanced\createRedLetterDay.cs:line 88&#13;&#10;   at Ranorex.Core.Testing.TestModuleLeaf.RunInternal(DataContext parentDataContext, Int32 iteration, Int32 iterationCount, Boolean skipIteration)"
+				codefile="c:\Users\Kumar\Downloads\RanorexAutomation\AA Enhanced\createRedLetterDay.cs"
+				codeline="56"
+				type="repoitem"
+				path="/form[@controlname='MainForm']/?/?/form[@controlname='CalendarIndexForm']/container[@controlname='menubar_Fill_Panel']//toolbar[@accessiblename='Toolbar']/button[@accessiblename='New']"
+				itempath="?/?/form[@controlname='CalendarIndexForm']/container[@controlname='menubar_Fill_Panel']//toolbar[@accessiblename='Toolbar']/button[@accessiblename='New']"
+				fullname="Calendar.MainForm.btnNewAppointment"
+				id="352b053df1d54375ad6a3cb831dbc887"
+				timeout="60000"
+				failedStep="form[@controlname='CalendarIndexForm']"
+				bestPathPrefix="?/?"
+				loglvl="Error">
+			</metainfo>
+		</item>
+	</activity>
+</report>

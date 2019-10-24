@@ -1,0 +1,94 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<report
+	progress="">
+	<activity
+		result="Failed"
+		duration="2.4m"
+		durationms="142391"
+		type="root"
+		rid="45e32a73d11b574"
+		totalerrorcount="1"
+		totalwarningcount="0"
+		totalsuccesstestcasecount="0"
+		totalfailedtestcasecount="0"
+		totalblockedtestcasecount="0"
+		childsuccesscount="0"
+		childfailedcount="0"
+		childblockedcount="0"
+		totalsuccesscount="0"
+		totalfailedcount="0"
+		totalblockedcount="0"
+		totalmaintenancemodecount="0"
+		user="Kumar"
+		rxversion="9.1.2.0"
+		host="J4-MOHAN"
+		osversion="Windows 10 64bit"
+		runtimeversion="4.0.30319.42000"
+		procarch="32bit"
+		oslanguage="en-US"
+		dtnlanguage="en-CA"
+		screenresolution="1920x1080"
+		timestamp="2019-10-23 4:48:54 PM"
+		timestampiso="2019-10-23T20:48:54"
+		endtime="2019-10-23 4:51:16 PM"
+		timeoutfactor="1"
+		module="createApptDocAttached">
+		<detail>
+			createApptDocAttached
+		</detail>
+		<varbindings>
+		</varbindings>
+		<item
+			timeRelativeToTestSuiteStartTime="00:47.918"
+			timeRelativeToTestModuleStartTime="00:47.918"
+			timeWallClock="16:49:42"
+			time="00:47.918"
+			level="Success"
+			category="Validation">
+			<message>
+				Document Detail Form Opened
+			</message>
+			<metainfo
+				type="repoitem"
+				path="/form[@controlname='DocumentDetail']"
+				itempath="/form[@controlname='DocumentDetail']"
+				fullname="Documents.DocumentDetail.Self"
+				id="99941e2d5c774e95a78800f265028bdc"
+				timeout="30000"
+				codefile="c:\Users\Kumar\Downloads\RanorexAutomation\AA Enhanced\createApptDocAttached.cs"
+				codeline="57"
+				loglvl="Success">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:58.864"
+			timeRelativeToTestModuleStartTime="00:58.864"
+			timeWallClock="16:49:53"
+			time="00:58.864"
+			level="Info"
+			category="User">
+			<message>
+				C:\Users\Kumar\Downloads\RanorexAutomation\AA Enhanced\DataFiles\RanorexTestFile2019-10-23 44026 PM.txt
+			</message>
+			<metainfo
+				codefile="c:\Users\Kumar\Downloads\RanorexAutomation\AA Enhanced\createApptDocAttached.cs"
+				codeline="69"
+				loglvl="Info">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="02:22.398"
+			timeRelativeToTestModuleStartTime="02:22.398"
+			timeWallClock="16:51:16"
+			time="02:22.398"
+			level="Error"
+			category="Module">
+			<message>
+				The test run has been aborted by the user.
+			</message>
+			<metainfo
+				loglvl="Error">
+			</metainfo>
+		</item>
+	</activity>
+</report>

@@ -1,0 +1,162 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<report
+	progress="">
+	<activity
+		result="Success"
+		duration="0ms"
+		durationms="0"
+		type="root"
+		rid="117ec226b056438"
+		totalerrorcount="0"
+		totalwarningcount="0"
+		totalsuccesstestcasecount="0"
+		totalfailedtestcasecount="0"
+		totalblockedtestcasecount="0"
+		childsuccesscount="0"
+		childfailedcount="0"
+		childblockedcount="0"
+		totalsuccesscount="0"
+		totalfailedcount="0"
+		totalblockedcount="0"
+		totalmaintenancemodecount="0"
+		user="Kumar"
+		rxversion="9.1.2.0"
+		host="J4-MOHAN"
+		osversion="Windows 10 64bit"
+		runtimeversion="4.0.30319.42000"
+		procarch="32bit"
+		oslanguage="en-US"
+		dtnlanguage="en-CA"
+		screenresolution="1920x1080"
+		timestamp="2019-10-18 1:34:22 PM"
+		timestampiso="2019-10-18T17:34:22"
+		endtime="2019-10-18 1:36:14 PM"
+		timeoutfactor="1"
+		module="verifySearchByTitleandSummaryFields">
+		<detail>
+			verifySearchByTitleandSummaryFields
+		</detail>
+		<varbindings>
+		</varbindings>
+		<item
+			timeRelativeToTestSuiteStartTime="00:45.362"
+			timeRelativeToTestModuleStartTime="00:45.362"
+			timeWallClock="13:35:08"
+			time="00:45.362"
+			level="Success"
+			category="Validation">
+			<message>
+				Document File Setting Form Exists
+			</message>
+			<metainfo
+				type="repoitem"
+				path="/form[@controlname='DocumentFirmSettingsForm']"
+				itempath="/form[@controlname='DocumentFirmSettingsForm']"
+				fullname="FirmSettings.DocumentFirmSettingsForm.Self"
+				id="ca27910abd0443808ce4c7f4e00d6004"
+				timeout="30000"
+				codefile="c:\Users\Kumar\Downloads\RanorexAutomation\AA Enhanced\verifySearchByTitleandSummaryFields.cs"
+				codeline="59"
+				loglvl="Success">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:48.657"
+			timeRelativeToTestModuleStartTime="00:48.657"
+			timeWallClock="13:35:11"
+			time="00:48.657"
+			level="Success"
+			category="Validation">
+			<message>
+				Document Index Checkbox is Checked
+			</message>
+			<metainfo
+				type="repoitem"
+				path="/form[@controlname='DocumentFirmSettingsForm']/container[@controlname='pnlBase']//container[@controlname='panelBase']/?/?/container[@controlname='panelAmicusManagedIndexing']/checkbox[@controlname='chkBxEnableManagedIndexing']"
+				itempath="container[@controlname='pnlBase']//container[@controlname='panelBase']/?/?/container[@controlname='panelAmicusManagedIndexing']/checkbox[@controlname='chkBxEnableManagedIndexing']"
+				fullname="FirmSettings.DocumentFirmSettingsForm.cbManageIndex"
+				id="fb2cdf0e0756453da8aca88a5a7d40f2"
+				timeout="60000"
+				codefile="c:\Users\Kumar\Downloads\RanorexAutomation\AA Enhanced\verifySearchByTitleandSummaryFields.cs"
+				codeline="60"
+				loglvl="Success">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:54.534"
+			timeRelativeToTestModuleStartTime="00:54.534"
+			timeWallClock="13:35:17"
+			time="00:54.534"
+			level="Success"
+			category="Validation">
+			<message>
+				Document Detail Form Opened
+			</message>
+			<metainfo
+				type="repoitem"
+				path="/form[@controlname='DocumentDetail']"
+				itempath="/form[@controlname='DocumentDetail']"
+				fullname="Documents.DocumentDetail.Self"
+				id="99941e2d5c774e95a78800f265028bdc"
+				timeout="30000"
+				codefile="c:\Users\Kumar\Downloads\RanorexAutomation\AA Enhanced\verifySearchByTitleandSummaryFields.cs"
+				codeline="68"
+				loglvl="Success">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="01:33.324"
+			timeRelativeToTestModuleStartTime="01:33.324"
+			timeWallClock="13:35:56"
+			time="01:33.324"
+			level="Success"
+			category="User">
+			<message>
+				Value &quot;Search Title and Summary Fields only&quot; Selected as expected in &quot;Search Type&quot; dropdown
+			</message>
+			<metainfo
+				codefile="c:\Users\Kumar\Downloads\RanorexAutomation\AA Enhanced\Modules\Utilities\Common.cs"
+				codeline="228"
+				loglvl="Success">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="01:44.359"
+			timeRelativeToTestModuleStartTime="01:44.359"
+			timeWallClock="13:36:07"
+			time="01:44.359"
+			level="Success"
+			category="Validation">
+			<message>
+				No of Documents Count Label Exists
+			</message>
+			<metainfo
+				type="repoitem"
+				path="/form[@controlname='MainForm']/?/?/form[@controlname='DocumentsIndexForm']/container[@controlname='pnlBase']//text[@accessiblename&lt;'Documents']"
+				itempath="container[@controlname='pnlBase']//text[@accessiblename&lt;'Documents']"
+				fullname="Documents.MainForm.DocumentsIndexForm.txtDocumentsListCount"
+				id="0bb4be1d4a7e4dc49f25a36658f7b316"
+				timeout="90000"
+				codefile="c:\Users\Kumar\Downloads\RanorexAutomation\AA Enhanced\verifySearchByTitleandSummaryFields.cs"
+				codeline="96"
+				loglvl="Success">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="01:45.765"
+			timeRelativeToTestModuleStartTime="01:45.765"
+			timeWallClock="13:36:08"
+			time="01:45.765"
+			level="Success"
+			category="User">
+			<message>
+				The number of Documents retrieved based on the Search is 1 Documents
+			</message>
+			<metainfo
+				codefile="c:\Users\Kumar\Downloads\RanorexAutomation\AA Enhanced\verifySearchByTitleandSummaryFields.cs"
+				codeline="97"
+				loglvl="Success">
+			</metainfo>
+		</item>
+	</activity>
+</report>

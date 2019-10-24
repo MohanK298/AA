@@ -1,0 +1,88 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<report
+	progress="">
+	<activity
+		result="Failed"
+		duration="1.5m"
+		durationms="91451"
+		type="root"
+		rid="1b392840963fbbe1"
+		totalerrorcount="1"
+		totalwarningcount="2"
+		totalsuccesstestcasecount="0"
+		totalfailedtestcasecount="0"
+		totalblockedtestcasecount="0"
+		childsuccesscount="0"
+		childfailedcount="0"
+		childblockedcount="0"
+		totalsuccesscount="0"
+		totalfailedcount="0"
+		totalblockedcount="0"
+		totalmaintenancemodecount="0"
+		user="Kumar"
+		rxversion="9.1.2.0"
+		host="J4-MOHAN"
+		osversion="Windows 10 64bit"
+		runtimeversion="4.0.30319.42000"
+		procarch="32bit"
+		oslanguage="en-US"
+		dtnlanguage="en-CA"
+		screenresolution="1920x1080"
+		timestamp="2019-10-03 10:46:16 AM"
+		timestampiso="2019-10-03T14:46:16"
+		endtime="2019-10-03 10:47:47 AM"
+		timeoutfactor="1"
+		module="CreateAppointment">
+		<detail>
+			CreateAppointment
+		</detail>
+		<varbindings>
+		</varbindings>
+		<item
+			timeRelativeToTestSuiteStartTime="00:15.587"
+			timeRelativeToTestModuleStartTime="00:15.587"
+			timeWallClock="10:46:31"
+			time="00:15.587"
+			level="Warn"
+			category="Data">
+			<message>
+				The following module variables are not bound to a data column:<br/>time, fileName, location, endTime, startTime, date, allDayListing, appointmentTitle
+			</message>
+			<metainfo
+				loglvl="Warn">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="01:19.322"
+			timeRelativeToTestModuleStartTime="01:19.322"
+			timeWallClock="10:47:35"
+			time="01:19.322"
+			level="Warn"
+			category="WinForms">
+			<message>
+				Something is limiting object recognition for WinForms. Missing privileges are a common cause of this. Try starting all Ranorex tools and the AUT with the same privileges, preferably as an administrator. <br/>Process: (pid 0)<br/>The following website provides more information on this technology limitation:<br/>https://www.ranorex.com/help/v9.1/interfaces-connectivity/technology-instrumentation/general-troubleshooting/#DotNetWinForms<br/>(This message is only shown once per report.)
+			</message>
+			<metainfo
+				limitationName="PotentiallyWinForms"
+				showInProgressDialog="False"
+				codefile="c:\Users\Kumar\Downloads\RanorexAutomation\AA Enhanced\Modules\CreateAppointment.cs"
+				codeline="161"
+				loglvl="Warn">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="01:31.451"
+			timeRelativeToTestModuleStartTime="01:31.451"
+			timeWallClock="10:47:47"
+			time="01:31.451"
+			level="Error"
+			category="Module">
+			<message>
+				The test run has been aborted by the user.
+			</message>
+			<metainfo
+				loglvl="Error">
+			</metainfo>
+		</item>
+	</activity>
+</report>

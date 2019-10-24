@@ -1,0 +1,106 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<report
+	progress="">
+	<activity
+		result="Success"
+		duration="0ms"
+		durationms="0"
+		type="root"
+		rid="898d8fbe4830419"
+		totalerrorcount="0"
+		totalwarningcount="0"
+		totalsuccesstestcasecount="0"
+		totalfailedtestcasecount="0"
+		totalblockedtestcasecount="0"
+		childsuccesscount="0"
+		childfailedcount="0"
+		childblockedcount="0"
+		totalsuccesscount="0"
+		totalfailedcount="0"
+		totalblockedcount="0"
+		totalmaintenancemodecount="0"
+		user="Kumar"
+		rxversion="9.1.2.0"
+		host="J4-MOHAN"
+		osversion="Windows 10 64bit"
+		runtimeversion="4.0.30319.42000"
+		procarch="32bit"
+		oslanguage="en-US"
+		dtnlanguage="en-CA"
+		screenresolution="1920x1080"
+		timestamp="2019-10-22 3:46:48 PM"
+		timestampiso="2019-10-22T19:46:48"
+		endtime="2019-10-22 3:47:55 PM"
+		timeoutfactor="1"
+		module="createRedLetterDay">
+		<detail>
+			createRedLetterDay
+		</detail>
+		<varbindings>
+		</varbindings>
+		<item
+			timeRelativeToTestSuiteStartTime="00:42.927"
+			timeRelativeToTestModuleStartTime="00:42.927"
+			timeWallClock="15:47:31"
+			time="00:42.927"
+			level="Success"
+			category="User">
+			<message>
+				Value &quot;Red Letter Day&quot; Selected as expected in &quot;Event Type Dropdown&quot; dropdown
+			</message>
+			<metainfo
+				codefile="c:\Users\Kumar\Downloads\RanorexAutomation\AA Enhanced\Modules\Utilities\Common.cs"
+				codeline="228"
+				loglvl="Success">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:55.881"
+			timeRelativeToTestModuleStartTime="00:55.881"
+			timeWallClock="15:47:43"
+			time="00:55.881"
+			level="Success"
+			category="User">
+			<message>
+				Value &quot;Test Red Letter Day Added 2019-10-22 3:46:48 PM&quot; Present as expected in &quot;Calendar List&quot;
+			</message>
+			<metainfo
+				codefile="c:\Users\Kumar\Downloads\RanorexAutomation\AA Enhanced\Modules\Utilities\Common.cs"
+				codeline="80"
+				loglvl="Success">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="01:05.817"
+			timeRelativeToTestModuleStartTime="01:05.817"
+			timeWallClock="15:47:53"
+			time="01:05.817"
+			level="Info"
+			category="User">
+			<message>
+				Drag from {Text:Appointment: Test Red Letter Day Added 2019-10-22 3:46:48 PMFrom 12:00 AM to 12:30 AM}
+			</message>
+			<metainfo
+				codefile="c:\Users\Kumar\Downloads\RanorexAutomation\AA Enhanced\RanorexAutomationHelpers\UserCodeCollections\DragNDropLibrary.cs"
+				codeline="24"
+				loglvl="Info">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="01:06.603"
+			timeRelativeToTestModuleStartTime="01:06.603"
+			timeWallClock="15:47:54"
+			time="01:06.603"
+			level="Info"
+			category="User">
+			<message>
+				Drop at {Container:October 23, 2019}
+			</message>
+			<metainfo
+				codefile="c:\Users\Kumar\Downloads\RanorexAutomation\AA Enhanced\RanorexAutomationHelpers\UserCodeCollections\DragNDropLibrary.cs"
+				codeline="34"
+				loglvl="Info">
+			</metainfo>
+		</item>
+	</activity>
+</report>

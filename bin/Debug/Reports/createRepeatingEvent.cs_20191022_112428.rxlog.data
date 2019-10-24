@@ -1,0 +1,184 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<report
+	progress="">
+	<activity
+		result="Success"
+		duration="0ms"
+		durationms="0"
+		type="root"
+		rid="12cc18abd622fa00"
+		totalerrorcount="0"
+		totalwarningcount="0"
+		totalsuccesstestcasecount="0"
+		totalfailedtestcasecount="0"
+		totalblockedtestcasecount="0"
+		childsuccesscount="0"
+		childfailedcount="0"
+		childblockedcount="0"
+		totalsuccesscount="0"
+		totalfailedcount="0"
+		totalblockedcount="0"
+		totalmaintenancemodecount="0"
+		user="Kumar"
+		rxversion="9.1.2.0"
+		host="J4-MOHAN"
+		osversion="Windows 10 64bit"
+		runtimeversion="4.0.30319.42000"
+		procarch="32bit"
+		oslanguage="en-US"
+		dtnlanguage="en-CA"
+		screenresolution="1920x1080"
+		timestamp="2019-10-22 11:24:34 AM"
+		timestampiso="2019-10-22T15:24:34"
+		endtime="2019-10-22 11:28:11 AM"
+		timeoutfactor="1"
+		module="createRepeatingEvent">
+		<detail>
+			createRepeatingEvent
+		</detail>
+		<varbindings>
+		</varbindings>
+		<item
+			timeRelativeToTestSuiteStartTime="00:49.874"
+			timeRelativeToTestModuleStartTime="00:49.874"
+			timeWallClock="11:25:24"
+			time="00:49.874"
+			level="Success"
+			category="User">
+			<message>
+				Value &quot;Weekly&quot; Selected as expected in &quot;Repeat Dropdown&quot; dropdown
+			</message>
+			<metainfo
+				codefile="c:\Users\Kumar\Downloads\RanorexAutomation\AA Enhanced\Modules\Utilities\Common.cs"
+				codeline="228"
+				loglvl="Success">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="01:53.286"
+			timeRelativeToTestModuleStartTime="01:53.286"
+			timeWallClock="11:26:28"
+			time="01:53.286"
+			level="Success"
+			category="User">
+			<message>
+				Value &quot;Test Data Added 2019-10-22 11:24:35 AM&quot; Present as expected in &quot;Calendar List&quot;
+			</message>
+			<metainfo
+				codefile="c:\Users\Kumar\Downloads\RanorexAutomation\AA Enhanced\Modules\Utilities\Common.cs"
+				codeline="80"
+				loglvl="Success">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="02:12.085"
+			timeRelativeToTestModuleStartTime="02:12.085"
+			timeWallClock="11:26:46"
+			time="02:12.085"
+			level="Success"
+			category="Validation">
+			<message>
+				Repeating Event Exception Dialog is seen
+			</message>
+			<metainfo
+				type="repoitem"
+				path="/form[@controlname='RepeatingEventDialogForm']"
+				itempath="/form[@controlname='RepeatingEventDialogForm']"
+				fullname="Calendar.RepeatingEventDialogForm.Self"
+				id="80b6e908a8b1493f88947095923e28db"
+				timeout="30000"
+				codefile="c:\Users\Kumar\Downloads\RanorexAutomation\AA Enhanced\createRepeatingEvent.cs"
+				codeline="117"
+				loglvl="Success">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="02:48.823"
+			timeRelativeToTestModuleStartTime="02:48.823"
+			timeWallClock="11:27:23"
+			time="02:48.823"
+			level="Success"
+			category="Validation">
+			<message>
+				Location updated for Appointment booked on October 22, 2019
+			</message>
+			<metainfo
+				type="repoitem"
+				path="/form[@controlname='EventDetailForm']/container[@controlname='menubar_Fill_Panel']/container[@controlname='pnlBase']//container[@controlname='pnlLocation']/?/?/text[@automationid='[Editor] Edit Area']"
+				itempath=".//container[@controlname='pnlLocation']/?/?/text[@automationid='[Editor] Edit Area']"
+				fullname="Calendar.EventDetailForm.PnlBase.txtLocation"
+				id="2d8e2d47e4284cd199b8bce7c7625e21"
+				timeout="90000"
+				codefile="c:\Users\Kumar\Downloads\RanorexAutomation\AA Enhanced\createRepeatingEvent.cs"
+				codeline="122"
+				loglvl="Success">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="03:09.616"
+			timeRelativeToTestModuleStartTime="03:09.616"
+			timeWallClock="11:27:44"
+			time="03:09.616"
+			level="Success"
+			category="Validation">
+			<message>
+				Repeating Event Exception Dialog is seen
+			</message>
+			<metainfo
+				type="repoitem"
+				path="/form[@controlname='RepeatingEventDialogForm']"
+				itempath="/form[@controlname='RepeatingEventDialogForm']"
+				fullname="Calendar.RepeatingEventDialogForm.Self"
+				id="80b6e908a8b1493f88947095923e28db"
+				timeout="30000"
+				codefile="c:\Users\Kumar\Downloads\RanorexAutomation\AA Enhanced\createRepeatingEvent.cs"
+				codeline="132"
+				loglvl="Success">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="03:20.454"
+			timeRelativeToTestModuleStartTime="03:20.454"
+			timeWallClock="11:27:55"
+			time="03:20.454"
+			level="Success"
+			category="Validation">
+			<message>
+				Location updated for Appointment booked on October 23, 2019
+			</message>
+			<metainfo
+				type="repoitem"
+				path="/form[@controlname='EventDetailForm']/container[@controlname='menubar_Fill_Panel']/container[@controlname='pnlBase']//container[@controlname='pnlLocation']/?/?/text[@automationid='[Editor] Edit Area']"
+				itempath=".//container[@controlname='pnlLocation']/?/?/text[@automationid='[Editor] Edit Area']"
+				fullname="Calendar.EventDetailForm.PnlBase.txtLocation"
+				id="2d8e2d47e4284cd199b8bce7c7625e21"
+				timeout="90000"
+				codefile="c:\Users\Kumar\Downloads\RanorexAutomation\AA Enhanced\createRepeatingEvent.cs"
+				codeline="136"
+				loglvl="Success">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="03:34.620"
+			timeRelativeToTestModuleStartTime="03:34.620"
+			timeWallClock="11:28:09"
+			time="03:34.620"
+			level="Success"
+			category="Validation">
+			<message>
+				Location value empty for Appointment booked on October 24, 2019
+			</message>
+			<metainfo
+				type="repoitem"
+				path="/form[@controlname='EventDetailForm']/container[@controlname='menubar_Fill_Panel']/container[@controlname='pnlBase']//container[@controlname='pnlLocation']/?/?/text[@automationid='[Editor] Edit Area']"
+				itempath=".//container[@controlname='pnlLocation']/?/?/text[@automationid='[Editor] Edit Area']"
+				fullname="Calendar.EventDetailForm.PnlBase.txtLocation"
+				id="2d8e2d47e4284cd199b8bce7c7625e21"
+				timeout="90000"
+				codefile="c:\Users\Kumar\Downloads\RanorexAutomation\AA Enhanced\createRepeatingEvent.cs"
+				codeline="142"
+				loglvl="Success">
+			</metainfo>
+		</item>
+	</activity>
+</report>

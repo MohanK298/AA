@@ -1,0 +1,90 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<report
+	progress="">
+	<activity
+		result="Failed"
+		duration="0ms"
+		durationms="0"
+		type="root"
+		rid="d3e0a9e84ce0a25"
+		totalerrorcount="1"
+		totalwarningcount="0"
+		totalsuccesstestcasecount="0"
+		totalfailedtestcasecount="0"
+		totalblockedtestcasecount="0"
+		childsuccesscount="0"
+		childfailedcount="0"
+		childblockedcount="0"
+		totalsuccesscount="0"
+		totalfailedcount="0"
+		totalblockedcount="0"
+		totalmaintenancemodecount="0"
+		user="Kumar"
+		rxversion="9.1.2.0"
+		host="J4-MOHAN"
+		osversion="Windows 10 64bit"
+		runtimeversion="4.0.30319.42000"
+		procarch="32bit"
+		oslanguage="en-US"
+		dtnlanguage="en-CA"
+		screenresolution="1920x1080"
+		timestamp="2019-10-23 9:06:52 AM"
+		timestampiso="2019-10-23T13:06:52"
+		endtime="2019-10-23 9:09:52 AM"
+		timeoutfactor="1"
+		module="createApptDrgNDrpWithinSameDay">
+		<detail>
+			createApptDrgNDrpWithinSameDay
+		</detail>
+		<errormessage>
+			Failed to find item 'Calendar.MainForm.PnlViews.txtCurrentDayAppt'.
+		</errormessage>
+		<varbindings>
+		</varbindings>
+		<item
+			timeRelativeToTestSuiteStartTime="01:43.648"
+			timeRelativeToTestModuleStartTime="01:43.648"
+			timeWallClock="09:08:35"
+			time="01:43.648"
+			level="Success"
+			category="User"
+			errimg="images_createAp_f9452bb3\createAp_f9452bb3_919f18bb_trace.jpg"
+			errthumb="images_createAp_f9452bb3\createAp_f9452bb3_919f18bb_trace_thumb.jpg">
+			<message>
+				Value &quot;Test Data Added 2019-10-23 9:06:56 AM&quot; Present as expected in &quot;Calendar List&quot;
+			</message>
+			<metainfo
+				codefile="c:\Users\Kumar\Downloads\RanorexAutomation\AA Enhanced\Modules\Utilities\Common.cs"
+				codeline="80"
+				loglvl="Success">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="03:00.010"
+			timeRelativeToTestModuleStartTime="03:00.010"
+			timeWallClock="09:09:52"
+			time="03:00.010"
+			level="Error"
+			category="Module"
+			errimg="images_createAp_f9452bb3\createAp_f9452bb3_afcf329a_trace.jpg"
+			errthumb="images_createAp_f9452bb3\createAp_f9452bb3_afcf329a_trace_thumb.jpg">
+			<message>
+				Failed to find item 'Calendar.MainForm.PnlViews.txtCurrentDayAppt'.<br/>No element found for path '?/?/form[@controlname='CalendarIndexForm']/container[@controlname='pnlBase']//container[@controlname='pnlViews']/?/?/container[@controlname='pnlDayViewControl']/?/?/table[@accessiblename='udvDay']/?/?/cell[@accessiblename='Appointment ''Test Data Added 2019-10-23 9:06:56 AM''']' at step 'cell[@accessiblename='Appointment ''Test Data Added 2019-10-23 9:06:56 AM''']' after 14 attempts within 1m.
+			</message>
+			<metainfo
+				stacktrace="   at Ranorex.Core.Repository.RepoItemInfo.FindInternal[T](Boolean findSingle, Boolean throwException, Duration effectiveTimeoutOverride)&#13;&#10;   at Ranorex.Core.Repository.RepoItemInfo.&lt;>c__DisplayClass75_0`1.&lt;Find>b__0()&#13;&#10;   at Ranorex.Core.Testing.Services.NoMaintenanceModeService.HandleElementNotFound[T](Func`1 action, RepoItemInfo entry)&#13;&#10;   at Ranorex.Core.Repository.RepoItemInfo.Find[T](Boolean findSingle, Boolean throwException, Duration effectiveTimeoutOverride)&#13;&#10;   at Ranorex.Core.Repository.RepoItemInfo.CreateAdapter[T](Boolean throwException, Duration waitTimeout)&#13;&#10;   at Ranorex.Core.Repository.RepoItemInfo.CreateAdapter[T](Boolean throwException)&#13;&#10;   at SmokeTest.Repositories.CalendarFolders.PnlViewsFolder.get_txtCurrentDayAppt() in c:\Users\Kumar\Downloads\RanorexAutomation\AA Enhanced\Repositories\Calendar.cs:line 859&#13;&#10;   at SmokeTest.createApptDrgNDrpWithinSameDay.CreateApptDrgNDropWithinSameDay() in c:\Users\Kumar\Downloads\RanorexAutomation\AA Enhanced\createApptDrgNDrpWithinSameDay.cs:line 90&#13;&#10;   at SmokeTest.createApptDrgNDrpWithinSameDay.Ranorex.Core.Testing.ITestModule.Run() in c:\Users\Kumar\Downloads\RanorexAutomation\AA Enhanced\createApptDrgNDrpWithinSameDay.cs:line 119&#13;&#10;   at Ranorex.Core.Testing.TestModuleLeaf.RunInternal(DataContext parentDataContext, Int32 iteration, Int32 iterationCount, Boolean skipIteration)"
+				codefile="c:\Users\Kumar\Downloads\RanorexAutomation\AA Enhanced\createApptDrgNDrpWithinSameDay.cs"
+				codeline="90"
+				type="repoitem"
+				path="/form[@controlname='MainForm']/?/?/form[@controlname='CalendarIndexForm']/container[@controlname='pnlBase']//container[@controlname='pnlViews']/?/?/container[@controlname='pnlDayViewControl']/?/?/table[@accessiblename='udvDay']/?/?/cell[@accessiblename='Appointment ''Test Data Added 2019-10-23 9:06:56 AM''']"
+				itempath="?/?/container[@controlname='pnlDayViewControl']/?/?/table[@accessiblename='udvDay']/?/?/cell[@accessiblename=$curdayapptselection]"
+				fullname="Calendar.MainForm.PnlViews.txtCurrentDayAppt"
+				id="0cba9cbeb8f640b2a57a5983c434eded"
+				timeout="90000"
+				failedStep="cell[@accessiblename=$curdayapptselection]"
+				bestPathPrefix="?/?/form[@controlname='CalendarIndexForm']/container[@controlname='pnlBase']/descendant-or-self::container[@controlname='pnlViews']/?/?/container[@controlname='pnlDayViewControl']/?/?/table[@accessiblename='udvDay']/?/?"
+				loglvl="Error">
+			</metainfo>
+		</item>
+	</activity>
+</report>

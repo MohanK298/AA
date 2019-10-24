@@ -1,0 +1,124 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<report
+	progress="">
+	<activity
+		result="Success"
+		duration="0ms"
+		durationms="0"
+		type="root"
+		rid="3690d3c37d84772"
+		totalerrorcount="0"
+		totalwarningcount="0"
+		totalsuccesstestcasecount="0"
+		totalfailedtestcasecount="0"
+		totalblockedtestcasecount="0"
+		childsuccesscount="0"
+		childfailedcount="0"
+		childblockedcount="0"
+		totalsuccesscount="0"
+		totalfailedcount="0"
+		totalblockedcount="0"
+		totalmaintenancemodecount="0"
+		user="Kumar"
+		rxversion="9.1.2.0"
+		host="J4-MOHAN"
+		osversion="Windows 10 64bit"
+		runtimeversion="4.0.30319.42000"
+		procarch="32bit"
+		oslanguage="en-US"
+		dtnlanguage="en-CA"
+		screenresolution="1920x1080"
+		timestamp="2019-10-16 4:44:57 PM"
+		timestampiso="2019-10-16T20:44:57"
+		endtime="2019-10-16 4:46:03 PM"
+		timeoutfactor="1"
+		module="verifyPromptNoFileSelection">
+		<detail>
+			verifyPromptNoFileSelection
+		</detail>
+		<varbindings>
+		</varbindings>
+		<item
+			timeRelativeToTestSuiteStartTime="00:44.155"
+			timeRelativeToTestModuleStartTime="00:44.155"
+			timeWallClock="16:45:41"
+			time="00:44.155"
+			level="Success"
+			category="Validation">
+			<message>
+				Document Detail Form Opened
+			</message>
+			<metainfo
+				type="repoitem"
+				path="/form[@controlname='DocumentDetail']"
+				itempath="/form[@controlname='DocumentDetail']"
+				fullname="Documents.DocumentDetail.Self"
+				id="99941e2d5c774e95a78800f265028bdc"
+				timeout="30000"
+				codefile="c:\Users\Kumar\Downloads\RanorexAutomation\AA Enhanced\verifyPromptNoFileSelection.cs"
+				codeline="54"
+				loglvl="Success">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:57.278"
+			timeRelativeToTestModuleStartTime="00:57.278"
+			timeWallClock="16:45:55"
+			time="00:57.278"
+			level="Success"
+			category="User">
+			<message>
+				Value &quot;Other&quot; Selected as expected
+			</message>
+			<metainfo
+				codefile="c:\Users\Kumar\Downloads\RanorexAutomation\AA Enhanced\Modules\Utilities\Common.cs"
+				codeline="248"
+				loglvl="Success">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="01:00.717"
+			timeRelativeToTestModuleStartTime="01:00.717"
+			timeWallClock="16:45:58"
+			time="01:00.717"
+			level="Success"
+			category="Validation">
+			<message>
+				Prompt Form Exists
+			</message>
+			<metainfo
+				type="repoitem"
+				path="/form[@controlname='PromptForm']"
+				itempath="/form[@controlname='PromptForm']"
+				fullname="Documents.PromptForm.Self"
+				id="c4c663cf05a9460586310ff73c7a297e"
+				timeout="30000"
+				codefile="c:\Users\Kumar\Downloads\RanorexAutomation\AA Enhanced\verifyPromptNoFileSelection.cs"
+				codeline="66"
+				loglvl="Success">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="01:01.146"
+			timeRelativeToTestModuleStartTime="01:01.146"
+			timeWallClock="16:45:58"
+			time="01:01.146"
+			level="Success"
+			category="Validation">
+			<message>
+				Attribute 'Text' of element for item 'Documents.PromptForm.txtInfo' does contain the specified value.
+			</message>
+			<metainfo
+				type="repoitem"
+				path="/form[@controlname='PromptForm']/container[@controlname='pnlBase']//element[@controlname='alblMessage']/text"
+				itempath="container[@controlname='pnlBase']//element[@controlname='alblMessage']/text"
+				fullname="Documents.PromptForm.txtInfo"
+				id="ed87414392fa482c993d6331c41ec6c9"
+				timeout="60000"
+				codefile="c:\Users\Kumar\Downloads\RanorexAutomation\AA Enhanced\verifyPromptNoFileSelection.cs"
+				codeline="67"
+				loglvl="Success">
+			</metainfo>
+		</item>
+	</activity>
+</report>

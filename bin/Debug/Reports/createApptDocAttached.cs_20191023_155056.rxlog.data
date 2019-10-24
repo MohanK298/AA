@@ -1,0 +1,112 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<report
+	progress="">
+	<activity
+		result="Failed"
+		duration="0ms"
+		durationms="0"
+		type="root"
+		rid="ca494f4e58f60c6"
+		totalerrorcount="1"
+		totalwarningcount="0"
+		totalsuccesstestcasecount="0"
+		totalfailedtestcasecount="0"
+		totalblockedtestcasecount="0"
+		childsuccesscount="0"
+		childfailedcount="0"
+		childblockedcount="0"
+		totalsuccesscount="0"
+		totalfailedcount="0"
+		totalblockedcount="0"
+		totalmaintenancemodecount="0"
+		user="Kumar"
+		rxversion="9.1.2.0"
+		host="J4-MOHAN"
+		osversion="Windows 10 64bit"
+		runtimeversion="4.0.30319.42000"
+		procarch="32bit"
+		oslanguage="en-US"
+		dtnlanguage="en-CA"
+		screenresolution="1920x1080"
+		timestamp="2019-10-23 3:51:04 PM"
+		timestampiso="2019-10-23T19:51:04"
+		endtime="2019-10-23 3:51:50 PM"
+		timeoutfactor="1"
+		module="createApptDocAttached">
+		<detail>
+			createApptDocAttached
+		</detail>
+		<errormessage>
+			Setting attribute 'Text' failed on element '{Text:atbLocationPath}'.
+		</errormessage>
+		<varbindings>
+		</varbindings>
+		<item
+			timeRelativeToTestSuiteStartTime="00:27.340"
+			timeRelativeToTestModuleStartTime="00:27.340"
+			timeWallClock="15:51:32"
+			time="00:27.340"
+			level="Success"
+			category="Validation"
+			errimg="images_createAp_95378d3a\createAp_95378d3a_98a31ed8_trace.jpg"
+			errthumb="images_createAp_95378d3a\createAp_95378d3a_98a31ed8_trace_thumb.jpg">
+			<message>
+				Document Detail Form Opened
+			</message>
+			<metainfo
+				type="repoitem"
+				path="/form[@controlname='DocumentDetail']"
+				itempath="/form[@controlname='DocumentDetail']"
+				fullname="Documents.DocumentDetail.Self"
+				id="99941e2d5c774e95a78800f265028bdc"
+				timeout="30000"
+				codefile="c:\Users\Kumar\Downloads\RanorexAutomation\AA Enhanced\createApptDocAttached.cs"
+				codeline="57"
+				loglvl="Success">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:42.716"
+			timeRelativeToTestModuleStartTime="00:42.716"
+			timeWallClock="15:51:47"
+			time="00:42.716"
+			level="Success"
+			category="User"
+			errimg="images_createAp_95378d3a\createAp_95378d3a_49ac3bb6_trace.jpg"
+			errthumb="images_createAp_95378d3a\createAp_95378d3a_49ac3bb6_trace_thumb.jpg">
+			<message>
+				Value &quot;Other&quot; Selected as expected
+			</message>
+			<metainfo
+				codefile="c:\Users\Kumar\Downloads\RanorexAutomation\AA Enhanced\Modules\Utilities\Common.cs"
+				codeline="250"
+				loglvl="Success">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:45.165"
+			timeRelativeToTestModuleStartTime="00:45.165"
+			timeWallClock="15:51:50"
+			time="00:45.165"
+			level="Error"
+			category="Module"
+			errimg="images_createAp_95378d3a\createAp_95378d3a_d7e08856_trace.jpg"
+			errthumb="images_createAp_95378d3a\createAp_95378d3a_d7e08856_trace_thumb.jpg">
+			<message>
+				Setting attribute 'Text' failed on element '{Text:atbLocationPath}'.<br/>Argument must not be null.
+			</message>
+			<metainfo
+				stacktrace="   at Ranorex.Core.Element.SetAttributeValue(String name, Object value)
+   at Ranorex.Core.Element.SetAttributeValue(String name, String value)
+   at SmokeTest.createApptDocAttached.FillDocument() in c:\Users\Kumar\Downloads\RanorexAutomation\AA Enhanced\createApptDocAttached.cs:line 71
+   at SmokeTest.createApptDocAttached.CreateApptWithDocument() in c:\Users\Kumar\Downloads\RanorexAutomation\AA Enhanced\createApptDocAttached.cs:line 102
+   at SmokeTest.createApptDocAttached.ValidateApptInDocument() in c:\Users\Kumar\Downloads\RanorexAutomation\AA Enhanced\createApptDocAttached.cs:line 123
+   at SmokeTest.createApptDocAttached.Ranorex.Core.Testing.ITestModule.Run() in c:\Users\Kumar\Downloads\RanorexAutomation\AA Enhanced\createApptDocAttached.cs:line 143
+   at Ranorex.Core.Testing.TestModuleLeaf.RunInternal(DataContext parentDataContext, Int32 iteration, Int32 iterationCount, Boolean skipIteration)"
+				codefile="c:\Users\Kumar\Downloads\RanorexAutomation\AA Enhanced\createApptDocAttached.cs"
+				codeline="71"
+				loglvl="Error">
+			</metainfo>
+		</item>
+	</activity>
+</report>

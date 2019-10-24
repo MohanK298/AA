@@ -1,0 +1,90 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<report
+	progress="">
+	<activity
+		result="Success"
+		duration="0ms"
+		durationms="0"
+		type="root"
+		rid="d488ccb2f1ee6c2"
+		totalerrorcount="0"
+		totalwarningcount="0"
+		totalsuccesstestcasecount="0"
+		totalfailedtestcasecount="0"
+		totalblockedtestcasecount="0"
+		childsuccesscount="0"
+		childfailedcount="0"
+		childblockedcount="0"
+		totalsuccesscount="0"
+		totalfailedcount="0"
+		totalblockedcount="0"
+		totalmaintenancemodecount="0"
+		user="Kumar"
+		rxversion="9.1.2.0"
+		host="J4-MOHAN"
+		osversion="Windows 10 64bit"
+		runtimeversion="4.0.30319.42000"
+		procarch="32bit"
+		oslanguage="en-US"
+		dtnlanguage="en-CA"
+		screenresolution="1920x1080"
+		timestamp="2019-10-22 4:59:21 PM"
+		timestampiso="2019-10-22T20:59:21"
+		endtime="2019-10-22 5:01:46 PM"
+		timeoutfactor="1"
+		module="createApptDrgNDrpWithinSameDay">
+		<detail>
+			createApptDrgNDrpWithinSameDay
+		</detail>
+		<varbindings>
+		</varbindings>
+		<item
+			timeRelativeToTestSuiteStartTime="02:04.570"
+			timeRelativeToTestModuleStartTime="02:04.570"
+			timeWallClock="17:01:25"
+			time="02:04.570"
+			level="Success"
+			category="User">
+			<message>
+				Value &quot;Test Data Added 2019-10-22 4:59:22 PM&quot; Present as expected in &quot;Calendar List&quot;
+			</message>
+			<metainfo
+				codefile="c:\Users\Kumar\Downloads\RanorexAutomation\AA Enhanced\Modules\Utilities\Common.cs"
+				codeline="80"
+				loglvl="Success">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="02:24.263"
+			timeRelativeToTestModuleStartTime="02:24.263"
+			timeWallClock="17:01:45"
+			time="02:24.263"
+			level="Info"
+			category="User">
+			<message>
+				Drag from {Cell:Appointment 'Test Data Added 2019-10-22 4:59:22 PM'}
+			</message>
+			<metainfo
+				codefile="c:\Users\Kumar\Downloads\RanorexAutomation\AA Enhanced\RanorexAutomationHelpers\UserCodeCollections\DragNDropLibrary.cs"
+				codeline="24"
+				loglvl="Info">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="02:25.126"
+			timeRelativeToTestModuleStartTime="02:25.126"
+			timeWallClock="17:01:46"
+			time="02:25.126"
+			level="Info"
+			category="User">
+			<message>
+				Drop at {Cell:October 22, 2019 6:30 PM}
+			</message>
+			<metainfo
+				codefile="c:\Users\Kumar\Downloads\RanorexAutomation\AA Enhanced\RanorexAutomationHelpers\UserCodeCollections\DragNDropLibrary.cs"
+				codeline="34"
+				loglvl="Info">
+			</metainfo>
+		</item>
+	</activity>
+</report>

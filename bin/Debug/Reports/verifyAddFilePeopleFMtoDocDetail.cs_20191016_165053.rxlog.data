@@ -1,0 +1,110 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<report
+	progress="">
+	<activity
+		result="Failed"
+		duration="4.4m"
+		durationms="262079"
+		type="root"
+		rid="fb26f5c147108f0"
+		totalerrorcount="1"
+		totalwarningcount="0"
+		totalsuccesstestcasecount="0"
+		totalfailedtestcasecount="0"
+		totalblockedtestcasecount="0"
+		childsuccesscount="0"
+		childfailedcount="0"
+		childblockedcount="0"
+		totalsuccesscount="0"
+		totalfailedcount="0"
+		totalblockedcount="0"
+		totalmaintenancemodecount="0"
+		user="Kumar"
+		rxversion="9.1.2.0"
+		host="J4-MOHAN"
+		osversion="Windows 10 64bit"
+		runtimeversion="4.0.30319.42000"
+		procarch="32bit"
+		oslanguage="en-US"
+		dtnlanguage="en-CA"
+		screenresolution="1920x1080"
+		timestamp="2019-10-16 4:51:06 PM"
+		timestampiso="2019-10-16T20:51:06"
+		endtime="2019-10-16 4:55:28 PM"
+		timeoutfactor="1"
+		module="verifyAddFilePeopleFMtoDocDetail">
+		<detail>
+			verifyAddFilePeopleFMtoDocDetail
+		</detail>
+		<varbindings>
+		</varbindings>
+		<item
+			timeRelativeToTestSuiteStartTime="00:34.935"
+			timeRelativeToTestModuleStartTime="00:34.935"
+			timeWallClock="16:51:41"
+			time="00:34.935"
+			level="Success"
+			category="Validation">
+			<message>
+				Document Detail Form Opened
+			</message>
+			<metainfo
+				type="repoitem"
+				path="/form[@controlname='DocumentDetail']"
+				itempath="/form[@controlname='DocumentDetail']"
+				fullname="Documents.DocumentDetail.Self"
+				id="99941e2d5c774e95a78800f265028bdc"
+				timeout="30000"
+				codefile="c:\Users\Kumar\Downloads\RanorexAutomation\AA Enhanced\verifyAddFilePeopleFMtoDocDetail.cs"
+				codeline="56"
+				loglvl="Success">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="01:15.563"
+			timeRelativeToTestModuleStartTime="01:15.563"
+			timeWallClock="16:52:21"
+			time="01:15.563"
+			level="Success"
+			category="User">
+			<message>
+				Value &quot;RanorexTestFile 2019-10-16 4:51:09 PM&quot; Selected as expected in &quot;Documents Table&quot;
+			</message>
+			<metainfo
+				codefile="c:\Users\Kumar\Downloads\RanorexAutomation\AA Enhanced\Modules\Utilities\Common.cs"
+				codeline="158"
+				loglvl="Success">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="03:41.870"
+			timeRelativeToTestModuleStartTime="03:41.870"
+			timeWallClock="16:54:48"
+			time="03:41.870"
+			level="Success"
+			category="User">
+			<message>
+				Value &quot;All&quot; Selected as expected
+			</message>
+			<metainfo
+				codefile="c:\Users\Kumar\Downloads\RanorexAutomation\AA Enhanced\Modules\Utilities\Common.cs"
+				codeline="248"
+				loglvl="Success">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="04:22.086"
+			timeRelativeToTestModuleStartTime="04:22.086"
+			timeWallClock="16:55:28"
+			time="04:22.086"
+			level="Error"
+			category="Module">
+			<message>
+				The test run has been aborted by the user.
+			</message>
+			<metainfo
+				loglvl="Error">
+			</metainfo>
+		</item>
+	</activity>
+</report>

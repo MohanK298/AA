@@ -1,0 +1,192 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<report
+	progress="">
+	<activity
+		result="Failed"
+		duration="0ms"
+		durationms="0"
+		type="root"
+		rid="fceba560cdab52e"
+		totalerrorcount="1"
+		totalwarningcount="0"
+		totalsuccesstestcasecount="0"
+		totalfailedtestcasecount="0"
+		totalblockedtestcasecount="0"
+		childsuccesscount="0"
+		childfailedcount="0"
+		childblockedcount="0"
+		totalsuccesscount="0"
+		totalfailedcount="0"
+		totalblockedcount="0"
+		totalmaintenancemodecount="0"
+		user="Kumar"
+		rxversion="9.1.2.0"
+		host="J4-MOHAN"
+		osversion="Windows 10 64bit"
+		runtimeversion="4.0.30319.42000"
+		procarch="32bit"
+		oslanguage="en-US"
+		dtnlanguage="en-CA"
+		screenresolution="1920x1080"
+		timestamp="2019-10-16 4:57:30 PM"
+		timestampiso="2019-10-16T20:57:30"
+		endtime="2019-10-16 5:01:31 PM"
+		timeoutfactor="1"
+		module="verifyAddFilePeopleFMtoDocDetail">
+		<detail>
+			verifyAddFilePeopleFMtoDocDetail
+		</detail>
+		<errormessage>
+			Index was out of range. Must be non-negative and less than the size of the collection.
+Parameter name: index
+		</errormessage>
+		<varbindings>
+		</varbindings>
+		<item
+			timeRelativeToTestSuiteStartTime="00:25.960"
+			timeRelativeToTestModuleStartTime="00:25.960"
+			timeWallClock="16:57:55"
+			time="00:25.960"
+			level="Success"
+			category="Validation">
+			<message>
+				Document Detail Form Opened
+			</message>
+			<metainfo
+				type="repoitem"
+				path="/form[@controlname='DocumentDetail']"
+				itempath="/form[@controlname='DocumentDetail']"
+				fullname="Documents.DocumentDetail.Self"
+				id="99941e2d5c774e95a78800f265028bdc"
+				timeout="30000"
+				codefile="c:\Users\Kumar\Downloads\RanorexAutomation\AA Enhanced\verifyAddFilePeopleFMtoDocDetail.cs"
+				codeline="56"
+				loglvl="Success">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="01:01.182"
+			timeRelativeToTestModuleStartTime="01:01.182"
+			timeWallClock="16:58:31"
+			time="01:01.182"
+			level="Success"
+			category="User">
+			<message>
+				Value &quot;RanorexTestFile 2019-10-16 4:57:31 PM&quot; Selected as expected in &quot;Documents Table&quot;
+			</message>
+			<metainfo
+				codefile="c:\Users\Kumar\Downloads\RanorexAutomation\AA Enhanced\Modules\Utilities\Common.cs"
+				codeline="158"
+				loglvl="Success">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="03:27.190"
+			timeRelativeToTestModuleStartTime="03:27.190"
+			timeWallClock="17:00:57"
+			time="03:27.190"
+			level="Success"
+			category="User">
+			<message>
+				Value &quot;All&quot; Selected as expected
+			</message>
+			<metainfo
+				codefile="c:\Users\Kumar\Downloads\RanorexAutomation\AA Enhanced\Modules\Utilities\Common.cs"
+				codeline="248"
+				loglvl="Success">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="03:28.891"
+			timeRelativeToTestModuleStartTime="03:28.891"
+			timeWallClock="17:00:58"
+			time="03:28.891"
+			level="Success"
+			category="User">
+			<message>
+				Multiple Selection performed for Documents
+			</message>
+			<metainfo
+				codefile="c:\Users\Kumar\Downloads\RanorexAutomation\AA Enhanced\Modules\Utilities\Common.cs"
+				codeline="321"
+				loglvl="Success">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="03:42.800"
+			timeRelativeToTestModuleStartTime="03:42.800"
+			timeWallClock="17:01:12"
+			time="03:42.800"
+			level="Success"
+			category="User">
+			<message>
+				Value &quot;All&quot; Selected as expected
+			</message>
+			<metainfo
+				codefile="c:\Users\Kumar\Downloads\RanorexAutomation\AA Enhanced\Modules\Utilities\Common.cs"
+				codeline="248"
+				loglvl="Success">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="03:44.311"
+			timeRelativeToTestModuleStartTime="03:44.311"
+			timeWallClock="17:01:14"
+			time="03:44.311"
+			level="Success"
+			category="User"
+			errimg="images_verifyAd_c42bcdf5\verifyAd_c42bcdf5_496f9e14_trace.jpg"
+			errthumb="images_verifyAd_c42bcdf5\verifyAd_c42bcdf5_496f9e14_trace_thumb.jpg">
+			<message>
+				Multiple Selection performed for People
+			</message>
+			<metainfo
+				codefile="c:\Users\Kumar\Downloads\RanorexAutomation\AA Enhanced\Modules\Utilities\Common.cs"
+				codeline="304"
+				loglvl="Success">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="03:57.565"
+			timeRelativeToTestModuleStartTime="03:57.565"
+			timeWallClock="17:01:27"
+			time="03:57.565"
+			level="Success"
+			category="User"
+			errimg="images_verifyAd_c42bcdf5\verifyAd_c42bcdf5_1b076455_trace.jpg"
+			errthumb="images_verifyAd_c42bcdf5\verifyAd_c42bcdf5_1b076455_trace_thumb.jpg">
+			<message>
+				Value &quot;All&quot; Selected as expected
+			</message>
+			<metainfo
+				codefile="c:\Users\Kumar\Downloads\RanorexAutomation\AA Enhanced\Modules\Utilities\Common.cs"
+				codeline="248"
+				loglvl="Success">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="04:01.229"
+			timeRelativeToTestModuleStartTime="04:01.229"
+			timeWallClock="17:01:31"
+			time="04:01.229"
+			level="Error"
+			category="Module"
+			errimg="images_verifyAd_c42bcdf5\verifyAd_c42bcdf5_1729d645_trace.jpg"
+			errthumb="images_verifyAd_c42bcdf5\verifyAd_c42bcdf5_1729d645_trace_thumb.jpg">
+			<message>
+				Index was out of range. Must be non-negative and less than the size of the collection.<br/>Parameter name: index
+			</message>
+			<metainfo
+				stacktrace="   at System.ThrowHelper.ThrowArgumentOutOfRangeException(ExceptionArgument argument, ExceptionResource resource)
+   at System.Collections.Generic.List`1.get_Item(Int32 index)
+   at SmokeTest.Modules.Utilities.Common.RetrieveCurrentSelectionFromTable(Adapter item) in c:\Users\Kumar\Downloads\RanorexAutomation\AA Enhanced\Modules\Utilities\Common.cs:line 331
+   at SmokeTest.verifyAddFilePeopleFMtoDocDetail.AddFilePeopleFM() in c:\Users\Kumar\Downloads\RanorexAutomation\AA Enhanced\verifyAddFilePeopleFMtoDocDetail.cs:line 111
+   at SmokeTest.verifyAddFilePeopleFMtoDocDetail.Ranorex.Core.Testing.ITestModule.Run() in c:\Users\Kumar\Downloads\RanorexAutomation\AA Enhanced\verifyAddFilePeopleFMtoDocDetail.cs:line 130
+   at Ranorex.Core.Testing.TestModuleLeaf.RunInternal(DataContext parentDataContext, Int32 iteration, Int32 iterationCount, Boolean skipIteration)"
+				codefile="c:\Users\Kumar\Downloads\RanorexAutomation\AA Enhanced\Modules\Utilities\Common.cs"
+				codeline="331"
+				loglvl="Error">
+			</metainfo>
+		</item>
+	</activity>
+</report>

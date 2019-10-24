@@ -1,0 +1,136 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<report
+	progress="">
+	<activity
+		result="Failed"
+		duration="0ms"
+		durationms="0"
+		type="root"
+		rid="23dc6fbfab36c352"
+		totalerrorcount="1"
+		totalwarningcount="0"
+		totalsuccesstestcasecount="0"
+		totalfailedtestcasecount="0"
+		totalblockedtestcasecount="0"
+		childsuccesscount="0"
+		childfailedcount="0"
+		childblockedcount="0"
+		totalsuccesscount="0"
+		totalfailedcount="0"
+		totalblockedcount="0"
+		totalmaintenancemodecount="0"
+		user="Kumar"
+		rxversion="9.1.2.0"
+		host="J4-MOHAN"
+		osversion="Windows 10 64bit"
+		runtimeversion="4.0.30319.42000"
+		procarch="32bit"
+		oslanguage="en-US"
+		dtnlanguage="en-CA"
+		screenresolution="1920x1080"
+		timestamp="2019-10-22 10:50:15 AM"
+		timestampiso="2019-10-22T14:50:15"
+		endtime="2019-10-22 10:55:15 AM"
+		timeoutfactor="1"
+		module="createRepeatingEvent">
+		<detail>
+			createRepeatingEvent
+		</detail>
+		<errormessage>
+			Repeating Event Exception Dialog is seen
+		</errormessage>
+		<varbindings>
+		</varbindings>
+		<item
+			timeRelativeToTestSuiteStartTime="02:41.259"
+			timeRelativeToTestModuleStartTime="02:41.259"
+			timeWallClock="10:52:57"
+			time="02:41.259"
+			level="Success"
+			category="User">
+			<message>
+				Value &quot;Weekly&quot; Selected as expected in &quot;Repeat Dropdown&quot; dropdown
+			</message>
+			<metainfo
+				codefile="c:\Users\Kumar\Downloads\RanorexAutomation\AA Enhanced\Modules\Utilities\Common.cs"
+				codeline="228"
+				loglvl="Success">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="04:10.571"
+			timeRelativeToTestModuleStartTime="04:10.571"
+			timeWallClock="10:54:26"
+			time="04:10.571"
+			level="Success"
+			category="User"
+			errimg="images_createRe_10c78cfa\createRe_10c78cfa_3af392c3_trace.jpg"
+			errthumb="images_createRe_10c78cfa\createRe_10c78cfa_3af392c3_trace_thumb.jpg">
+			<message>
+				Value &quot;Test Data Added 2019-10-22 10:50:19 AM&quot; Present as expected in &quot;Calendar List&quot;
+			</message>
+			<metainfo
+				codefile="c:\Users\Kumar\Downloads\RanorexAutomation\AA Enhanced\Modules\Utilities\Common.cs"
+				codeline="80"
+				loglvl="Success">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="04:57.923"
+			timeRelativeToTestModuleStartTime="04:57.923"
+			timeWallClock="10:55:13"
+			time="04:57.923"
+			level="Failure"
+			category="Validation"
+			errimg="images_createRe_10c78cfa\createRe_10c78cfa_cfd204d4_trace.jpg"
+			errthumb="images_createRe_10c78cfa\createRe_10c78cfa_cfd204d4_trace_thumb.jpg">
+			<message>
+				Repeating Event Exception Dialog is seen
+			</message>
+			<metainfo
+				type="repoitem"
+				path="/form[@controlname='RepeatingEventDialogForm']"
+				itempath="/form[@controlname='RepeatingEventDialogForm']"
+				fullname="Calendar.RepeatingEventDialogForm.Self"
+				id="80b6e908a8b1493f88947095923e28db"
+				timeout="30000"
+				codefile="c:\Users\Kumar\Downloads\RanorexAutomation\AA Enhanced\createRepeatingEvent.cs"
+				codeline="116"
+				failedStep="form[@controlname='RepeatingEventDialogForm']"
+				bestPathPrefix=""
+				loglvl="Failure">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="04:58.005"
+			timeRelativeToTestModuleStartTime="04:58.005"
+			timeWallClock="10:55:13"
+			time="04:58.005"
+			level="Error"
+			category="Module"
+			errimg="images_createRe_10c78cfa\createRe_10c78cfa_cfd204d4_trace.jpg"
+			errthumb="images_createRe_10c78cfa\createRe_10c78cfa_cfd204d4_trace_thumb.jpg">
+			<message>
+				Module execution was aborted because a validation step has failed. Repeating Event Exception Dialog is seen<br/>Failed to find item 'Calendar.RepeatingEventDialogForm.Self'.<br/>No element found for path '/form[@controlname='RepeatingEventDialogForm']' at step 'form[@controlname='RepeatingEventDialogForm']' after 81 attempts within 30s.
+			</message>
+			<metainfo
+				stacktrace="   at Ranorex.Validate.ThrowValidationException(RepoItemInfo itemInfo, ValidationException ex)
+   at Ranorex.Validate.IsTrueInternal(Boolean condition, String message, Options options, RepoItemInfo itemInfo, RanorexException innerException)
+   at Ranorex.Validate.Exists(RepoItemInfo itemInfo, String message, Options options)
+   at Ranorex.Validate.Exists(RepoItemInfo itemInfo, String message)
+   at SmokeTest.createRepeatingEvent.EditFewAppointment() in c:\Users\Kumar\Downloads\RanorexAutomation\AA Enhanced\createRepeatingEvent.cs:line 116
+   at SmokeTest.createRepeatingEvent.Ranorex.Core.Testing.ITestModule.Run() in c:\Users\Kumar\Downloads\RanorexAutomation\AA Enhanced\createRepeatingEvent.cs:line 144
+   at Ranorex.Core.Testing.TestModuleLeaf.RunInternal(DataContext parentDataContext, Int32 iteration, Int32 iterationCount, Boolean skipIteration)"
+				codefile="c:\Users\Kumar\Downloads\RanorexAutomation\AA Enhanced\createRepeatingEvent.cs"
+				codeline="116"
+				type="repoitem"
+				path="/form[@controlname='RepeatingEventDialogForm']"
+				itempath="/form[@controlname='RepeatingEventDialogForm']"
+				fullname="Calendar.RepeatingEventDialogForm.Self"
+				id="80b6e908a8b1493f88947095923e28db"
+				timeout="30000"
+				loglvl="Error">
+			</metainfo>
+		</item>
+	</activity>
+</report>

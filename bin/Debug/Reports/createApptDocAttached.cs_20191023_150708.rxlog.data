@@ -1,0 +1,96 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<report
+	progress="">
+	<activity
+		result="Failed"
+		duration="0ms"
+		durationms="0"
+		type="root"
+		rid="524ed537700600"
+		totalerrorcount="1"
+		totalwarningcount="0"
+		totalsuccesstestcasecount="0"
+		totalfailedtestcasecount="0"
+		totalblockedtestcasecount="0"
+		childsuccesscount="0"
+		childfailedcount="0"
+		childblockedcount="0"
+		totalsuccesscount="0"
+		totalfailedcount="0"
+		totalblockedcount="0"
+		totalmaintenancemodecount="0"
+		user="Kumar"
+		rxversion="9.1.2.0"
+		host="J4-MOHAN"
+		osversion="Windows 10 64bit"
+		runtimeversion="4.0.30319.42000"
+		procarch="32bit"
+		oslanguage="en-US"
+		dtnlanguage="en-CA"
+		screenresolution="1920x1080"
+		timestamp="2019-10-23 3:07:19 PM"
+		timestampiso="2019-10-23T19:07:19"
+		endtime="2019-10-23 3:09:03 PM"
+		timeoutfactor="1"
+		module="createApptDocAttached">
+		<detail>
+			createApptDocAttached
+		</detail>
+		<errormessage>
+			Failed to find item 'Calendar.MainForm.btnNewAppointment'.
+		</errormessage>
+		<varbindings>
+		</varbindings>
+		<item
+			timeRelativeToTestSuiteStartTime="00:25.221"
+			timeRelativeToTestModuleStartTime="00:25.221"
+			timeWallClock="15:07:44"
+			time="00:25.221"
+			level="Success"
+			category="Validation"
+			errimg="images_createAp_d9eb4638\createAp_d9eb4638_111909c2_trace.jpg"
+			errthumb="images_createAp_d9eb4638\createAp_d9eb4638_111909c2_trace_thumb.jpg">
+			<message>
+				Document Detail Form Opened
+			</message>
+			<metainfo
+				type="repoitem"
+				path="/form[@controlname='DocumentDetail']"
+				itempath="/form[@controlname='DocumentDetail']"
+				fullname="Documents.DocumentDetail.Self"
+				id="99941e2d5c774e95a78800f265028bdc"
+				timeout="30000"
+				codefile="c:\Users\Kumar\Downloads\RanorexAutomation\AA Enhanced\createApptDocAttached.cs"
+				codeline="57"
+				loglvl="Success">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="01:43.473"
+			timeRelativeToTestModuleStartTime="01:43.473"
+			timeWallClock="15:09:02"
+			time="01:43.473"
+			level="Error"
+			category="Module"
+			errimg="images_createAp_d9eb4638\createAp_d9eb4638_10372d5e_trace.jpg"
+			errthumb="images_createAp_d9eb4638\createAp_d9eb4638_10372d5e_trace_thumb.jpg">
+			<message>
+				Failed to find item 'Calendar.MainForm.btnNewAppointment'.<br/>No element found for path '?/?/form[@controlname='CalendarIndexForm']/container[@controlname='menubar_Fill_Panel']//toolbar[@accessiblename='Toolbar']/button[@accessiblename='New']' at step 'form[@controlname='CalendarIndexForm']' after 31 attempts within 30s.
+			</message>
+			<metainfo
+				stacktrace="   at Ranorex.Core.Repository.RepoItemInfo.FindInternal[T](Boolean findSingle, Boolean throwException, Duration effectiveTimeoutOverride)&#13;&#10;   at Ranorex.Core.Repository.RepoItemInfo.&lt;>c__DisplayClass75_0`1.&lt;Find>b__0()&#13;&#10;   at Ranorex.Core.Testing.Services.NoMaintenanceModeService.HandleElementNotFound[T](Func`1 action, RepoItemInfo entry)&#13;&#10;   at Ranorex.Core.Repository.RepoItemInfo.Find[T](Boolean findSingle, Boolean throwException, Duration effectiveTimeoutOverride)&#13;&#10;   at Ranorex.Core.Repository.RepoItemInfo.CreateAdapter[T](Boolean throwException, Duration waitTimeout)&#13;&#10;   at Ranorex.Core.Repository.RepoItemInfo.CreateAdapter[T](Boolean throwException)&#13;&#10;   at SmokeTest.Repositories.CalendarFolders.MainFormAppFolder.get_btnNewAppointment() in c:\Users\Kumar\Downloads\RanorexAutomation\AA Enhanced\Repositories\Calendar.cs:line 340&#13;&#10;   at SmokeTest.createApptDocAttached.CreateApptWithDocument() in c:\Users\Kumar\Downloads\RanorexAutomation\AA Enhanced\createApptDocAttached.cs:line 94&#13;&#10;   at SmokeTest.createApptDocAttached.ValidateApptInDocument() in c:\Users\Kumar\Downloads\RanorexAutomation\AA Enhanced\createApptDocAttached.cs:line 113&#13;&#10;   at SmokeTest.createApptDocAttached.Ranorex.Core.Testing.ITestModule.Run() in c:\Users\Kumar\Downloads\RanorexAutomation\AA Enhanced\createApptDocAttached.cs:line 133&#13;&#10;   at Ranorex.Core.Testing.TestModuleLeaf.RunInternal(DataContext parentDataContext, Int32 iteration, Int32 iterationCount, Boolean skipIteration)"
+				codefile="c:\Users\Kumar\Downloads\RanorexAutomation\AA Enhanced\createApptDocAttached.cs"
+				codeline="94"
+				type="repoitem"
+				path="/form[@controlname='MainForm']/?/?/form[@controlname='CalendarIndexForm']/container[@controlname='menubar_Fill_Panel']//toolbar[@accessiblename='Toolbar']/button[@accessiblename='New']"
+				itempath="?/?/form[@controlname='CalendarIndexForm']/container[@controlname='menubar_Fill_Panel']//toolbar[@accessiblename='Toolbar']/button[@accessiblename='New']"
+				fullname="Calendar.MainForm.btnNewAppointment"
+				id="352b053df1d54375ad6a3cb831dbc887"
+				timeout="60000"
+				failedStep="form[@controlname='CalendarIndexForm']"
+				bestPathPrefix="?/?"
+				loglvl="Error">
+			</metainfo>
+		</item>
+	</activity>
+</report>

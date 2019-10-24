@@ -1,0 +1,67 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<report
+	progress="">
+	<activity
+		result="Failed"
+		duration="0ms"
+		durationms="0"
+		type="root"
+		rid="11ecbe9905847456"
+		totalerrorcount="1"
+		totalwarningcount="0"
+		totalsuccesstestcasecount="0"
+		totalfailedtestcasecount="0"
+		totalblockedtestcasecount="0"
+		childsuccesscount="0"
+		childfailedcount="0"
+		childblockedcount="0"
+		totalsuccesscount="0"
+		totalfailedcount="0"
+		totalblockedcount="0"
+		totalmaintenancemodecount="0"
+		user="qa"
+		rxversion="8.3.1.0"
+		host="ADS-5056"
+		osversion="Windows 10 64bit"
+		runtimeversion="4.0.30319.42000"
+		procarch="32bit"
+		oslanguage="en-US"
+		dtnlanguage="en-CA"
+		screenresolution="3840x1080"
+		timestamp="2019-03-18 5:30:41 PM"
+		timestampiso="2019-03-18T21:30:41"
+		endtime="2019-03-18 5:32:18 PM"
+		timeoutfactor="1"
+		module="AddDocumentAM">
+		<detail>
+			AddDocumentAM
+		</detail>
+		<errormessage>
+			Failed to wait for item to exist.
+		</errormessage>
+		<varbindings>
+		</varbindings>
+		<item
+			timeRelativeToTestSuiteStartTime="01:36.305"
+			timeRelativeToTestModuleStartTime="01:36.307"
+			timeWallClock="17:32:18"
+			time="01:36.305"
+			level="Error"
+			category="Module"
+			errimg=".\AddDocum_52b7b1f8_370d0c30_trace.jpg"
+			errthumb=".\AddDocum_52b7b1f8_370d0c30_trace_thumb.jpg">
+			<message>
+				Failed to wait for item to exist.<br/>Failed to find item 'Files.FileDetailForm.DocumentAdded'.<br/>No element found for path 'container[@controlname='panelPicBackground']/container[@controlname='evenSplitPanelModernModeOnly']//tree[@automationid='ColScrollRegion: 0, RowScrollRegion: 0']/treeitem[@automationid='0']/text[@automationid='8']/text[@automationid='[Editor] Edit Area']' within 3s.
+			</message>
+			<metainfo
+				stacktrace="   at Ranorex.Core.Repository.RepoItemInfo.WaitForExists(Duration waitTimeout)
+   at SmokeTest.Modules.AddDocumentAM.Action() in C:\Qiao\AA Enhanced\Modules\AddDocumentAM.cs:line 60
+   at SmokeTest.Modules.AddDocumentAM.Ranorex.Core.Testing.ITestModule.Run() in C:\Qiao\AA Enhanced\Modules\AddDocumentAM.cs:line 72
+   at Ranorex.Core.Testing.TestModuleLeaf.RunInternal(DataContext parentDataContext, Int32 iteration, Int32 iterationCount, Boolean skipIteration)"
+				codefile="C:\Qiao\AA Enhanced\Modules\AddDocumentAM.cs"
+				codeline="60"
+				loglvl="Error">
+			</metainfo>
+		</item>
+	</activity>
+</report>

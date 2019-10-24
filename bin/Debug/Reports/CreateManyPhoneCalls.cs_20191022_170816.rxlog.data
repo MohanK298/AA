@@ -1,0 +1,124 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<report
+	progress="">
+	<activity
+		result="Failed"
+		duration="0ms"
+		durationms="0"
+		type="root"
+		rid="293f639545b2c496"
+		totalerrorcount="1"
+		totalwarningcount="2"
+		totalsuccesstestcasecount="0"
+		totalfailedtestcasecount="0"
+		totalblockedtestcasecount="0"
+		childsuccesscount="0"
+		childfailedcount="0"
+		childblockedcount="0"
+		totalsuccesscount="0"
+		totalfailedcount="0"
+		totalblockedcount="0"
+		totalmaintenancemodecount="0"
+		user="Kumar"
+		rxversion="9.1.2.0"
+		host="J4-MOHAN"
+		osversion="Windows 10 64bit"
+		runtimeversion="4.0.30319.42000"
+		procarch="32bit"
+		oslanguage="en-US"
+		dtnlanguage="en-CA"
+		screenresolution="1920x1080"
+		timestamp="2019-10-22 5:08:24 PM"
+		timestampiso="2019-10-22T21:08:24"
+		endtime="2019-10-23 12:54:08 AM"
+		timeoutfactor="1"
+		module="CreateManyPhoneCalls">
+		<detail>
+			CreateManyPhoneCalls
+		</detail>
+		<errormessage>
+			Failed to find item 'Communications.FindFilesForm.txtFindFile'.
+		</errormessage>
+		<varbindings>
+		</varbindings>
+		<item
+			timeRelativeToTestSuiteStartTime="00:20.235"
+			timeRelativeToTestModuleStartTime="00:20.235"
+			timeWallClock="17:08:44"
+			time="00:20.235"
+			level="Warn"
+			category="Data">
+			<message>
+				The following module variables are not bound to a data column:<br/>time, fileName, phoneCallNote
+			</message>
+			<metainfo
+				loglvl="Warn">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="316:03.404"
+			timeRelativeToTestModuleStartTime="316:03.404"
+			timeWallClock="22:24:27"
+			time="316:03.404"
+			level="Warn"
+			category="WinForms"
+			errimg="images_CreateMa_c8567982\CreateMa_c8567982_00eff184_trace.jpg"
+			errthumb="images_CreateMa_c8567982\CreateMa_c8567982_00eff184_trace_thumb.jpg">
+			<message>
+				The control was recognized as a WinForms .NET 1.1 control. If this application targets the .NET Framework v1.1, then please ignore this message. Otherwise, the object recognition is not correct, most probably due to an installation issue.<br/>Please, uninstall and reinstall Ranorex and try again.<br/>Process: 'AmicusAttorney.XWin' (pid 9328)<br/>(This message is only shown once per report.)
+			</message>
+			<metainfo
+				limitationName="WinFormsNet11"
+				showInProgressDialog="False"
+				codefile="c:\Users\Kumar\Downloads\RanorexAutomation\AA Enhanced\Modules\CreateManyPhoneCalls.cs"
+				codeline="83"
+				loglvl="Warn">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="383:06.140"
+			timeRelativeToTestModuleStartTime="383:06.140"
+			timeWallClock="23:31:30"
+			time="383:06.140"
+			level="Info"
+			category="User"
+			errimg="images_CreateMa_c8567982\CreateMa_c8567982_d51739ce_trace.jpg"
+			errthumb="images_CreateMa_c8567982\CreateMa_c8567982_d51739ce_trace_thumb.jpg">
+			<message>
+				Reached 800 records
+			</message>
+			<metainfo
+				codefile="c:\Users\Kumar\Downloads\RanorexAutomation\AA Enhanced\Modules\CreateManyPhoneCalls.cs"
+				codeline="77"
+				loglvl="Info">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="465:43.079"
+			timeRelativeToTestModuleStartTime="465:43.079"
+			timeWallClock="00:54:07"
+			time="465:43.079"
+			level="Error"
+			category="Module"
+			errimg="images_CreateMa_c8567982\CreateMa_c8567982_c4def38c_trace.jpg"
+			errthumb="images_CreateMa_c8567982\CreateMa_c8567982_c4def38c_trace_thumb.jpg">
+			<message>
+				Failed to find item 'Communications.FindFilesForm.txtFindFile'.<br/>No element found for path '/form[@controlname='FindFilesForm']/container[@controlname='pnlBase']//text[@automationid='atxtSearch_EmbeddableTextBox']' at step 'form[@controlname='FindFilesForm']' after 129 attempts within 1m.
+			</message>
+			<metainfo
+				stacktrace="   at Ranorex.Core.Repository.RepoItemInfo.FindInternal[T](Boolean findSingle, Boolean throwException, Duration effectiveTimeoutOverride)&#13;&#10;   at Ranorex.Core.Repository.RepoItemInfo.&lt;>c__DisplayClass75_0`1.&lt;Find>b__0()&#13;&#10;   at Ranorex.Core.Testing.Services.NoMaintenanceModeService.HandleElementNotFound[T](Func`1 action, RepoItemInfo entry)&#13;&#10;   at Ranorex.Core.Repository.RepoItemInfo.Find[T](Boolean findSingle, Boolean throwException, Duration effectiveTimeoutOverride)&#13;&#10;   at Ranorex.Core.Repository.RepoItemInfo.CreateAdapter[T](Boolean throwException, Duration waitTimeout)&#13;&#10;   at Ranorex.Core.Repository.RepoItemInfo.CreateAdapter[T](Boolean throwException)&#13;&#10;   at SmokeTest.Repositories.CommunicationsFolders.FindFilesFormAppFolder.get_txtFindFile() in c:\Users\Kumar\Downloads\RanorexAutomation\AA Enhanced\Repositories\Communications.cs:line 1003&#13;&#10;   at SmokeTest.Modules.CreateManyPhoneCalls.CreateCall() in c:\Users\Kumar\Downloads\RanorexAutomation\AA Enhanced\Modules\CreateManyPhoneCalls.cs:line 86&#13;&#10;   at SmokeTest.Modules.CreateManyPhoneCalls.Ranorex.Core.Testing.ITestModule.Run() in c:\Users\Kumar\Downloads\RanorexAutomation\AA Enhanced\Modules\CreateManyPhoneCalls.cs:line 109&#13;&#10;   at Ranorex.Core.Testing.TestModuleLeaf.RunInternal(DataContext parentDataContext, Int32 iteration, Int32 iterationCount, Boolean skipIteration)"
+				codefile="c:\Users\Kumar\Downloads\RanorexAutomation\AA Enhanced\Modules\CreateManyPhoneCalls.cs"
+				codeline="86"
+				type="repoitem"
+				path="/form[@controlname='FindFilesForm']/container[@controlname='pnlBase']//text[@automationid='atxtSearch_EmbeddableTextBox']"
+				itempath="container[@controlname='pnlBase']//text[@automationid='atxtSearch_EmbeddableTextBox']"
+				fullname="Communications.FindFilesForm.txtFindFile"
+				id="43686e9797a4424286f6aae6887cec13"
+				timeout="60000"
+				failedStep="form[@controlname='FindFilesForm']"
+				bestPathPrefix=""
+				loglvl="Error">
+			</metainfo>
+		</item>
+	</activity>
+</report>

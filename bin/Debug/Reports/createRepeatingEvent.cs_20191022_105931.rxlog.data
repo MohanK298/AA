@@ -1,0 +1,150 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<report
+	progress="">
+	<activity
+		result="Failed"
+		duration="0ms"
+		durationms="0"
+		type="root"
+		rid="9ed9c769ad0bf69"
+		totalerrorcount="1"
+		totalwarningcount="0"
+		totalsuccesstestcasecount="0"
+		totalfailedtestcasecount="0"
+		totalblockedtestcasecount="0"
+		childsuccesscount="0"
+		childfailedcount="0"
+		childblockedcount="0"
+		totalsuccesscount="0"
+		totalfailedcount="0"
+		totalblockedcount="0"
+		totalmaintenancemodecount="0"
+		user="Kumar"
+		rxversion="9.1.2.0"
+		host="J4-MOHAN"
+		osversion="Windows 10 64bit"
+		runtimeversion="4.0.30319.42000"
+		procarch="32bit"
+		oslanguage="en-US"
+		dtnlanguage="en-CA"
+		screenresolution="1920x1080"
+		timestamp="2019-10-22 10:59:57 AM"
+		timestampiso="2019-10-22T14:59:57"
+		endtime="2019-10-22 11:04:25 AM"
+		timeoutfactor="1"
+		module="createRepeatingEvent">
+		<detail>
+			createRepeatingEvent
+		</detail>
+		<errormessage>
+			Location updated for Appointment booked on October 23, 2019
+		</errormessage>
+		<varbindings>
+		</varbindings>
+		<item
+			timeRelativeToTestSuiteStartTime="02:15.626"
+			timeRelativeToTestModuleStartTime="02:15.626"
+			timeWallClock="11:02:13"
+			time="02:15.626"
+			level="Success"
+			category="User">
+			<message>
+				Value &quot;Weekly&quot; Selected as expected in &quot;Repeat Dropdown&quot; dropdown
+			</message>
+			<metainfo
+				codefile="c:\Users\Kumar\Downloads\RanorexAutomation\AA Enhanced\Modules\Utilities\Common.cs"
+				codeline="228"
+				loglvl="Success">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="03:28.279"
+			timeRelativeToTestModuleStartTime="03:28.279"
+			timeWallClock="11:03:25"
+			time="03:28.279"
+			level="Success"
+			category="User">
+			<message>
+				Value &quot;Test Data Added 2019-10-22 11:00:03 AM&quot; Present as expected in &quot;Calendar List&quot;
+			</message>
+			<metainfo
+				codefile="c:\Users\Kumar\Downloads\RanorexAutomation\AA Enhanced\Modules\Utilities\Common.cs"
+				codeline="80"
+				loglvl="Success">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="03:50.454"
+			timeRelativeToTestModuleStartTime="03:50.454"
+			timeWallClock="11:03:47"
+			time="03:50.454"
+			level="Success"
+			category="Validation"
+			errimg="images_createRe_60d97387\createRe_60d97387_9b1c1d52_trace.jpg"
+			errthumb="images_createRe_60d97387\createRe_60d97387_9b1c1d52_trace_thumb.jpg">
+			<message>
+				Repeating Event Exception Dialog is seen
+			</message>
+			<metainfo
+				type="repoitem"
+				path="/form[@controlname='RepeatingEventDialogForm']"
+				itempath="/form[@controlname='RepeatingEventDialogForm']"
+				fullname="Calendar.RepeatingEventDialogForm.Self"
+				id="80b6e908a8b1493f88947095923e28db"
+				timeout="30000"
+				codefile="c:\Users\Kumar\Downloads\RanorexAutomation\AA Enhanced\createRepeatingEvent.cs"
+				codeline="117"
+				loglvl="Success">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="04:26.444"
+			timeRelativeToTestModuleStartTime="04:26.444"
+			timeWallClock="11:04:23"
+			time="04:26.444"
+			level="Failure"
+			category="Validation"
+			errimg="images_createRe_60d97387\createRe_60d97387_4ff5a57d_trace.jpg"
+			errthumb="images_createRe_60d97387\createRe_60d97387_4ff5a57d_trace_thumb.jpg">
+			<message>
+				Location updated for Appointment booked on October 23, 2019
+			</message>
+			<metainfo
+				type="repoitem"
+				path="/form[@controlname='EventDetailForm']/container[@controlname='menubar_Fill_Panel']/container[@controlname='pnlBase']//container[@controlname='pnlLocation']/?/?/text[@automationid='[Editor] Edit Area']"
+				itempath=".//container[@controlname='pnlLocation']/?/?/text[@automationid='[Editor] Edit Area']"
+				fullname="Calendar.EventDetailForm.PnlBase.txtLocation"
+				id="2d8e2d47e4284cd199b8bce7c7625e21"
+				timeout="90000"
+				codefile="c:\Users\Kumar\Downloads\RanorexAutomation\AA Enhanced\createRepeatingEvent.cs"
+				codeline="122"
+				loglvl="Failure">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="04:26.482"
+			timeRelativeToTestModuleStartTime="04:26.482"
+			timeWallClock="11:04:23"
+			time="04:26.482"
+			level="Error"
+			category="Module"
+			errimg="images_createRe_60d97387\createRe_60d97387_4ff5a57d_trace.jpg"
+			errthumb="images_createRe_60d97387\createRe_60d97387_4ff5a57d_trace_thumb.jpg">
+			<message>
+				Module execution was aborted because a validation step has failed. Location updated for Appointment booked on October 23, 2019
+			</message>
+			<metainfo
+				stacktrace="   at Ranorex.Validate.ThrowValidationException(RepoItemInfo itemInfo, ValidationException ex)&#13;&#10;   at Ranorex.Validate.ReportOrThrowIfFailed(String errorReason, String message, String matchName, Object actualValue, Object matchValue, IElement element, RepoItemInfo itemInfo, Options options, RanorexException innerException)&#13;&#10;   at Ranorex.Validate.AttributeCompareImpl(IElement element, String name, String value, String message, Options options, RepoItemInfo itemInfo, Func`3 comparisonFunc, String reasonPattern)&#13;&#10;   at Ranorex.Validate.&lt;>c__DisplayClass40_0.&lt;Execute>g__attCompare|0()&#13;&#10;   at Ranorex.Core.Testing.Services.NoMaintenanceModeService.HandleValidateAttribute[T](Func`1 action, IAttributeValidation attributeValidation)&#13;&#10;   at Ranorex.Validate.Execute(AttributeValidation attributeValidation, Func`1 action, Options options, RepoItemInfo itemInfo)&#13;&#10;   at Ranorex.Validate.Execute(IElement element, IMatch match, String message, Options options, RepoItemInfo itemInfo, Func`3 comparisonFunc, String reasonPattern)&#13;&#10;   at Ranorex.Validate.AttributeContainsInternal(IElement element, String name, String value, String message, Options options, RepoItemInfo itemInfo)&#13;&#10;   at Ranorex.Validate.AttributeContainsInternal(RepoItemInfo itemInfo, String name, String value, String message, Options options)&#13;&#10;   at Ranorex.Validate.AttributeContains(RepoItemInfo itemInfo, String name, String value, String message, Options options)&#13;&#10;   at Ranorex.Validate.AttributeContains(RepoItemInfo itemInfo, String name, String value, String message)&#13;&#10;   at SmokeTest.createRepeatingEvent.EditFewAppointment() in c:\Users\Kumar\Downloads\RanorexAutomation\AA Enhanced\createRepeatingEvent.cs:line 122&#13;&#10;   at SmokeTest.createRepeatingEvent.Ranorex.Core.Testing.ITestModule.Run() in c:\Users\Kumar\Downloads\RanorexAutomation\AA Enhanced\createRepeatingEvent.cs:line 146&#13;&#10;   at Ranorex.Core.Testing.TestModuleLeaf.RunInternal(DataContext parentDataContext, Int32 iteration, Int32 iterationCount, Boolean skipIteration)"
+				codefile="c:\Users\Kumar\Downloads\RanorexAutomation\AA Enhanced\createRepeatingEvent.cs"
+				codeline="122"
+				type="repoitem"
+				path="/form[@controlname='EventDetailForm']/container[@controlname='menubar_Fill_Panel']/container[@controlname='pnlBase']//container[@controlname='pnlLocation']/?/?/text[@automationid='[Editor] Edit Area']"
+				itempath=".//container[@controlname='pnlLocation']/?/?/text[@automationid='[Editor] Edit Area']"
+				fullname="Calendar.EventDetailForm.PnlBase.txtLocation"
+				id="2d8e2d47e4284cd199b8bce7c7625e21"
+				timeout="90000"
+				loglvl="Error">
+			</metainfo>
+		</item>
+	</activity>
+</report>

@@ -1,0 +1,72 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<report
+	progress="">
+	<activity
+		result="Failed"
+		duration="0ms"
+		durationms="0"
+		type="root"
+		rid="2253d5041a1f615b"
+		totalerrorcount="1"
+		totalwarningcount="0"
+		totalsuccesstestcasecount="0"
+		totalfailedtestcasecount="0"
+		totalblockedtestcasecount="0"
+		childsuccesscount="0"
+		childfailedcount="0"
+		childblockedcount="0"
+		totalsuccesscount="0"
+		totalfailedcount="0"
+		totalblockedcount="0"
+		totalmaintenancemodecount="0"
+		user="Kumar"
+		rxversion="9.1.2.0"
+		host="J4-MOHAN"
+		osversion="Windows 10 64bit"
+		runtimeversion="4.0.30319.42000"
+		procarch="32bit"
+		oslanguage="en-US"
+		dtnlanguage="en-CA"
+		screenresolution="1920x1080"
+		timestamp="2019-10-23 3:10:28 PM"
+		timestampiso="2019-10-23T19:10:28"
+		endtime="2019-10-23 3:11:18 PM"
+		timeoutfactor="1"
+		module="createApptDocAttached">
+		<detail>
+			createApptDocAttached
+		</detail>
+		<errormessage>
+			Failed to find item 'Documents.MainForm.Self'.
+		</errormessage>
+		<varbindings>
+		</varbindings>
+		<item
+			timeRelativeToTestSuiteStartTime="00:49.429"
+			timeRelativeToTestModuleStartTime="00:49.429"
+			timeWallClock="15:11:18"
+			time="00:49.429"
+			level="Error"
+			category="Module"
+			errimg="images_createAp_f126bad2\createAp_f126bad2_d0031895_trace.jpg"
+			errthumb="images_createAp_f126bad2\createAp_f126bad2_d0031895_trace_thumb.jpg">
+			<message>
+				Failed to find item 'Documents.MainForm.Self'.<br/>No element found for path '/form[@controlname='MainForm']' at step 'form[@controlname='MainForm']' after 99 attempts within 30s.
+			</message>
+			<metainfo
+				stacktrace="   at Ranorex.Core.Repository.RepoItemInfo.FindInternal[T](Boolean findSingle, Boolean throwException, Duration effectiveTimeoutOverride)&#13;&#10;   at Ranorex.Core.Repository.RepoItemInfo.&lt;>c__DisplayClass75_0`1.&lt;Find>b__0()&#13;&#10;   at Ranorex.Core.Testing.Services.NoMaintenanceModeService.HandleElementNotFound[T](Func`1 action, RepoItemInfo entry)&#13;&#10;   at Ranorex.Core.Repository.RepoItemInfo.Find[T](Boolean findSingle, Boolean throwException, Duration effectiveTimeoutOverride)&#13;&#10;   at Ranorex.Core.Repository.RepoItemInfo.CreateAdapter[T](Boolean throwException, Duration waitTimeout)&#13;&#10;   at Ranorex.Core.Repository.RepoItemInfo.CreateAdapter[T](Boolean throwException)&#13;&#10;   at SmokeTest.Repositories.DocumentsFolders.MainFormAppFolder.get_Self() in c:\Users\Kumar\Downloads\RanorexAutomation\AA Enhanced\Repositories\Documents.cs:line 286&#13;&#10;   at SmokeTest.createApptDocAttached.GenerateDocument() in c:\Users\Kumar\Downloads\RanorexAutomation\AA Enhanced\createApptDocAttached.cs:line 54&#13;&#10;   at SmokeTest.createApptDocAttached.CreateApptWithDocument() in c:\Users\Kumar\Downloads\RanorexAutomation\AA Enhanced\createApptDocAttached.cs:line 96&#13;&#10;   at SmokeTest.createApptDocAttached.ValidateApptInDocument() in c:\Users\Kumar\Downloads\RanorexAutomation\AA Enhanced\createApptDocAttached.cs:line 118&#13;&#10;   at SmokeTest.createApptDocAttached.Ranorex.Core.Testing.ITestModule.Run() in c:\Users\Kumar\Downloads\RanorexAutomation\AA Enhanced\createApptDocAttached.cs:line 138&#13;&#10;   at Ranorex.Core.Testing.TestModuleLeaf.RunInternal(DataContext parentDataContext, Int32 iteration, Int32 iterationCount, Boolean skipIteration)"
+				codefile="c:\Users\Kumar\Downloads\RanorexAutomation\AA Enhanced\createApptDocAttached.cs"
+				codeline="54"
+				type="repoitem"
+				path="/form[@controlname='MainForm']"
+				itempath="/form[@controlname='MainForm']"
+				fullname="Documents.MainForm.Self"
+				id="60363a32d8b44df5a9727f0acde8cc56"
+				timeout="30000"
+				failedStep="form[@controlname='MainForm']"
+				bestPathPrefix=""
+				loglvl="Error">
+			</metainfo>
+		</item>
+	</activity>
+</report>

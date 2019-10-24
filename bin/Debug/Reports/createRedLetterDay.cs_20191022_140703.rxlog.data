@@ -1,0 +1,74 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<report
+	progress="">
+	<activity
+		result="Success"
+		duration="0ms"
+		durationms="0"
+		type="root"
+		rid="9721108baae9758"
+		totalerrorcount="0"
+		totalwarningcount="0"
+		totalsuccesstestcasecount="0"
+		totalfailedtestcasecount="0"
+		totalblockedtestcasecount="0"
+		childsuccesscount="0"
+		childfailedcount="0"
+		childblockedcount="0"
+		totalsuccesscount="0"
+		totalfailedcount="0"
+		totalblockedcount="0"
+		totalmaintenancemodecount="0"
+		user="Kumar"
+		rxversion="9.1.2.0"
+		host="J4-MOHAN"
+		osversion="Windows 10 64bit"
+		runtimeversion="4.0.30319.42000"
+		procarch="32bit"
+		oslanguage="en-US"
+		dtnlanguage="en-CA"
+		screenresolution="1920x1080"
+		timestamp="2019-10-22 2:07:12 PM"
+		timestampiso="2019-10-22T18:07:12"
+		endtime="2019-10-22 2:08:06 PM"
+		timeoutfactor="1"
+		module="createRedLetterDay">
+		<detail>
+			createRedLetterDay
+		</detail>
+		<varbindings>
+		</varbindings>
+		<item
+			timeRelativeToTestSuiteStartTime="00:39.004"
+			timeRelativeToTestModuleStartTime="00:39.004"
+			timeWallClock="14:07:51"
+			time="00:39.004"
+			level="Success"
+			category="User">
+			<message>
+				Value &quot;Red Letter Day&quot; Selected as expected in &quot;Event Type Dropdown&quot; dropdown
+			</message>
+			<metainfo
+				codefile="c:\Users\Kumar\Downloads\RanorexAutomation\AA Enhanced\Modules\Utilities\Common.cs"
+				codeline="228"
+				loglvl="Success">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:53.604"
+			timeRelativeToTestModuleStartTime="00:53.604"
+			timeWallClock="14:08:05"
+			time="00:53.604"
+			level="Success"
+			category="User">
+			<message>
+				Value &quot;Test Red Letter Day Added 2019-10-22 2:07:13 PM&quot; Present as expected in &quot;Calendar List&quot;
+			</message>
+			<metainfo
+				codefile="c:\Users\Kumar\Downloads\RanorexAutomation\AA Enhanced\Modules\Utilities\Common.cs"
+				codeline="80"
+				loglvl="Success">
+			</metainfo>
+		</item>
+	</activity>
+</report>

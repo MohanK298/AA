@@ -1,0 +1,64 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<report
+	progress="">
+	<activity
+		result="Failed"
+		duration="0ms"
+		durationms="0"
+		type="root"
+		rid="289912fb752fc49"
+		totalerrorcount="1"
+		totalwarningcount="0"
+		totalsuccesstestcasecount="0"
+		totalfailedtestcasecount="0"
+		totalblockedtestcasecount="0"
+		childsuccesscount="0"
+		childfailedcount="0"
+		childblockedcount="0"
+		totalsuccesscount="0"
+		totalfailedcount="0"
+		totalblockedcount="0"
+		totalmaintenancemodecount="0"
+		user="Kumar"
+		rxversion="9.1.2.0"
+		host="J4-MOHAN"
+		osversion="Windows 10 64bit"
+		runtimeversion="4.0.30319.42000"
+		procarch="32bit"
+		oslanguage="en-US"
+		dtnlanguage="en-CA"
+		screenresolution="1920x1080"
+		timestamp="2019-10-22 1:04:33 PM"
+		timestampiso="2019-10-22T17:04:33"
+		endtime="2019-10-22 1:04:49 PM"
+		timeoutfactor="1"
+		module="createApptWithEmailAlert">
+		<detail>
+			createApptWithEmailAlert
+		</detail>
+		<errormessage>
+			The request failed. The remote server returned an error: (401) Unauthorized.
+		</errormessage>
+		<varbindings>
+		</varbindings>
+		<item
+			timeRelativeToTestSuiteStartTime="00:15.633"
+			timeRelativeToTestModuleStartTime="00:15.633"
+			timeWallClock="13:04:49"
+			time="00:15.633"
+			level="Error"
+			category="Module"
+			errimg="images_createAp_7616deaf\createAp_7616deaf_40944372_trace.jpg"
+			errthumb="images_createAp_7616deaf\createAp_7616deaf_40944372_trace_thumb.jpg">
+			<message>
+				The request failed. The remote server returned an error: (401) Unauthorized.<br/>The remote server returned an error: (401) Unauthorized.
+			</message>
+			<metainfo
+				stacktrace="   at Microsoft.Exchange.WebServices.Data.ServiceRequestBase.GetEwsHttpWebResponse(IEwsHttpWebRequest request) in \\REDMOND\EXCHANGE\BUILD\E15\15.00.0913.015\SOURCES\sources\dev\EwsManagedApi\src\EwsManagedApi\Core\Requests\ServiceRequestBase.cs:line 831&#13;&#10;   at Microsoft.Exchange.WebServices.Data.ServiceRequestBase.ValidateAndEmitRequest(IEwsHttpWebRequest&amp; request) in \\REDMOND\EXCHANGE\BUILD\E15\15.00.0913.015\SOURCES\sources\dev\EwsManagedApi\src\EwsManagedApi\Core\Requests\ServiceRequestBase.cs:line 724&#13;&#10;   at Microsoft.Exchange.WebServices.Data.MultiResponseServiceRequest`1.Execute() in \\REDMOND\EXCHANGE\BUILD\E15\15.00.0913.015\SOURCES\sources\dev\EwsManagedApi\src\EwsManagedApi\Core\Requests\MultiResponseServiceRequest.cs:line 157&#13;&#10;   at Microsoft.Exchange.WebServices.Data.ExchangeService.FindItems[TItem](IEnumerable`1 parentFolderIds, SearchFilter searchFilter, String queryString, ViewBase view, Grouping groupBy, ServiceErrorHandling errorHandlingMode) in \\REDMOND\EXCHANGE\BUILD\E15\15.00.0913.015\SOURCES\sources\dev\EwsManagedApi\src\EwsManagedApi\Core\ExchangeService.cs:line 832&#13;&#10;   at Microsoft.Exchange.WebServices.Data.ExchangeService.FindItems(FolderId parentFolderId, SearchFilter searchFilter, ViewBase view) in \\REDMOND\EXCHANGE\BUILD\E15\15.00.0913.015\SOURCES\sources\dev\EwsManagedApi\src\EwsManagedApi\Core\ExchangeService.cs:line 937&#13;&#10;   at Microsoft.Exchange.WebServices.Data.ExchangeService.FindItems(WellKnownFolderName parentFolderName, ViewBase view) in \\REDMOND\EXCHANGE\BUILD\E15\15.00.0913.015\SOURCES\sources\dev\EwsManagedApi\src\EwsManagedApi\Core\ExchangeService.cs:line 1004&#13;&#10;   at SmokeTest.createApptWithEmailAlert.ConnectToExchangeServer() in c:\Users\Kumar\Downloads\RanorexAutomation\AA Enhanced\createApptWithEmailAlert.cs:line 61&#13;&#10;   at SmokeTest.createApptWithEmailAlert.Ranorex.Core.Testing.ITestModule.Run() in c:\Users\Kumar\Downloads\RanorexAutomation\AA Enhanced\createApptWithEmailAlert.cs:line 94&#13;&#10;   at Ranorex.Core.Testing.TestModuleLeaf.RunInternal(DataContext parentDataContext, Int32 iteration, Int32 iterationCount, Boolean skipIteration)"
+				codefile="\\REDMOND\EXCHANGE\BUILD\E15\15.00.0913.015\SOURCES\sources\dev\EwsManagedApi\src\EwsManagedApi\Core\Requests\ServiceRequestBase.cs"
+				codeline="831"
+				loglvl="Error">
+			</metainfo>
+		</item>
+	</activity>
+</report>

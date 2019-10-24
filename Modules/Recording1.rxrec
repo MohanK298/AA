@@ -1,0 +1,49 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<recordtable
+embeddedrepository="False"
+id="dd1bbd22-6cf3-4f8c-a5eb-2d3b964920fd"
+mode="Global">
+	<repeatcount>
+		1
+	</repeatcount>
+	<turbomode>
+		False
+	</turbomode>
+	<genreport>
+		True
+	</genreport>
+	<speedfactor>
+		1
+	</speedfactor>
+	<useDefaultItemLogging>
+		True
+	</useDefaultItemLogging>
+	<codegen
+	classname="Recording1"
+	namespace="SmokeTest.Modules">
+	</codegen>
+	<variables>
+	</variables>
+	<recorditems>
+	</recorditems>
+	<repository
+	id="9c89a729-e777-4e94-9be0-cbfad7b43c03"
+	name="Documents"
+	relativepath="..\Repositories\Documents.rxrep"
+	rxversion="9.0">
+		<codegen
+		classname="Documents"
+		namespace="SmokeTest.Repositories">
+		</codegen>
+		<rootfolder
+		id="ea52fcf3-9a43-460e-ae21-fd09d87ef9e5"
+		name="_rootdummy_">
+		</rootfolder>
+	</repository>
+	<usercodefile
+	lang="CSharp">
+		Recording1.UserCode.cs
+	</usercodefile>
+	<references>
+	</references>
+</recordtable>

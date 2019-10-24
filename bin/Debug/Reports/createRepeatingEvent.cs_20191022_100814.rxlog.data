@@ -1,0 +1,72 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<report
+	progress="">
+	<activity
+		result="Failed"
+		duration="0ms"
+		durationms="0"
+		type="root"
+		rid="2cf1b227181f1c0"
+		totalerrorcount="1"
+		totalwarningcount="0"
+		totalsuccesstestcasecount="0"
+		totalfailedtestcasecount="0"
+		totalblockedtestcasecount="0"
+		childsuccesscount="0"
+		childfailedcount="0"
+		childblockedcount="0"
+		totalsuccesscount="0"
+		totalfailedcount="0"
+		totalblockedcount="0"
+		totalmaintenancemodecount="0"
+		user="Kumar"
+		rxversion="9.1.2.0"
+		host="J4-MOHAN"
+		osversion="Windows 10 64bit"
+		runtimeversion="4.0.30319.42000"
+		procarch="32bit"
+		oslanguage="en-US"
+		dtnlanguage="en-CA"
+		screenresolution="1920x1080"
+		timestamp="2019-10-22 10:08:42 AM"
+		timestampiso="2019-10-22T14:08:42"
+		endtime="2019-10-22 10:12:28 AM"
+		timeoutfactor="1"
+		module="createRepeatingEvent">
+		<detail>
+			createRepeatingEvent
+		</detail>
+		<errormessage>
+			Failed to find item 'Calendar.EventDetailForm.PnlBase.txtAppointmentTitle'.
+		</errormessage>
+		<varbindings>
+		</varbindings>
+		<item
+			timeRelativeToTestSuiteStartTime="03:43.390"
+			timeRelativeToTestModuleStartTime="03:43.390"
+			timeWallClock="10:12:25"
+			time="03:43.390"
+			level="Error"
+			category="Module"
+			errimg="images_createRe_6639ba8f\createRe_6639ba8f_a918e991_trace.jpg"
+			errthumb="images_createRe_6639ba8f\createRe_6639ba8f_a918e991_trace_thumb.jpg">
+			<message>
+				Failed to find item 'Calendar.EventDetailForm.PnlBase.txtAppointmentTitle'.<br/>No element found for path '/form[@controlname='EventDetailForm']/container[@controlname='menubar_Fill_Panel']/container[@controlname='pnlBase']//text[@controlname='txtTitle_EmbeddableTextBox']' at step 'descendant-or-self::text[@controlname='txtTitle_EmbeddableTextBox']' after 18 attempts within 1.5m.
+			</message>
+			<metainfo
+				stacktrace="   at Ranorex.Core.Repository.RepoItemInfo.FindInternal[T](Boolean findSingle, Boolean throwException, Duration effectiveTimeoutOverride)&#13;&#10;   at Ranorex.Core.Repository.RepoItemInfo.&lt;>c__DisplayClass75_0`1.&lt;Find>b__0()&#13;&#10;   at Ranorex.Core.Testing.Services.NoMaintenanceModeService.HandleElementNotFound[T](Func`1 action, RepoItemInfo entry)&#13;&#10;   at Ranorex.Core.Repository.RepoItemInfo.Find[T](Boolean findSingle, Boolean throwException, Duration effectiveTimeoutOverride)&#13;&#10;   at Ranorex.Core.Repository.RepoItemInfo.CreateAdapter[T](Boolean throwException, Duration waitTimeout)&#13;&#10;   at Ranorex.Core.Repository.RepoItemInfo.CreateAdapter[T](Boolean throwException)&#13;&#10;   at SmokeTest.Repositories.CalendarFolders.PnlBaseFolder.get_txtAppointmentTitle() in c:\Users\Kumar\Downloads\RanorexAutomation\AA Enhanced\Repositories\Calendar.cs:line 1080&#13;&#10;   at SmokeTest.createRepeatingEvent.CreateRepatedAppointment() in c:\Users\Kumar\Downloads\RanorexAutomation\AA Enhanced\createRepeatingEvent.cs:line 71&#13;&#10;   at SmokeTest.createRepeatingEvent.Ranorex.Core.Testing.ITestModule.Run() in c:\Users\Kumar\Downloads\RanorexAutomation\AA Enhanced\createRepeatingEvent.cs:line 120&#13;&#10;   at Ranorex.Core.Testing.TestModuleLeaf.RunInternal(DataContext parentDataContext, Int32 iteration, Int32 iterationCount, Boolean skipIteration)"
+				codefile="c:\Users\Kumar\Downloads\RanorexAutomation\AA Enhanced\createRepeatingEvent.cs"
+				codeline="71"
+				type="repoitem"
+				path="/form[@controlname='EventDetailForm']/container[@controlname='menubar_Fill_Panel']/container[@controlname='pnlBase']//text[@controlname='txtTitle_EmbeddableTextBox']"
+				itempath=".//text[@controlname='txtTitle_EmbeddableTextBox']"
+				fullname="Calendar.EventDetailForm.PnlBase.txtAppointmentTitle"
+				id="ce59baf72beb435eb1fb3fde5ba21aa3"
+				timeout="90000"
+				failedStep="descendant-or-self::text[@controlname='txtTitle_EmbeddableTextBox']"
+				bestPathPrefix="/form[@controlname='EventDetailForm']/container[@controlname='menubar_Fill_Panel']/container[@controlname='pnlBase']"
+				loglvl="Error">
+			</metainfo>
+		</item>
+	</activity>
+</report>

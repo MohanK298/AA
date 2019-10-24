@@ -1,0 +1,140 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<report
+	progress="">
+	<activity
+		result="Success"
+		duration="0ms"
+		durationms="0"
+		type="root"
+		rid="7212329f18e438c"
+		totalerrorcount="0"
+		totalwarningcount="1"
+		totalsuccesstestcasecount="0"
+		totalfailedtestcasecount="0"
+		totalblockedtestcasecount="0"
+		childsuccesscount="0"
+		childfailedcount="0"
+		childblockedcount="0"
+		totalsuccesscount="0"
+		totalfailedcount="0"
+		totalblockedcount="0"
+		totalmaintenancemodecount="0"
+		user="Kumar"
+		rxversion="9.1.2.0"
+		host="J4-MOHAN"
+		osversion="Windows 10 64bit"
+		runtimeversion="4.0.30319.42000"
+		procarch="32bit"
+		oslanguage="en-US"
+		dtnlanguage="en-CA"
+		screenresolution="1920x1080"
+		timestamp="2019-10-16 4:41:17 PM"
+		timestampiso="2019-10-16T20:41:17"
+		endtime="2019-10-16 4:42:35 PM"
+		timeoutfactor="1"
+		module="verifyPromptNoFileSelection">
+		<detail>
+			verifyPromptNoFileSelection
+		</detail>
+		<varbindings>
+		</varbindings>
+		<item
+			timeRelativeToTestSuiteStartTime="00:23.514"
+			timeRelativeToTestModuleStartTime="00:23.514"
+			timeWallClock="16:41:41"
+			time="00:23.514"
+			level="Success"
+			category="Validation">
+			<message>
+				Document Detail Form Opened
+			</message>
+			<metainfo
+				type="repoitem"
+				path="/form[@controlname='DocumentDetail']"
+				itempath="/form[@controlname='DocumentDetail']"
+				fullname="Documents.DocumentDetail.Self"
+				id="99941e2d5c774e95a78800f265028bdc"
+				timeout="30000"
+				codefile="c:\Users\Kumar\Downloads\RanorexAutomation\AA Enhanced\verifyPromptNoFileSelection.cs"
+				codeline="54"
+				loglvl="Success">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="01:07.177"
+			timeRelativeToTestModuleStartTime="01:07.177"
+			timeWallClock="16:42:25"
+			time="01:07.177"
+			level="Warn"
+			category="Repository">
+			<message>
+				Item 'Documents.DropDownForm.tblDpdwnList.Self' could be found using its absolute path, but not using its relative path from the cached element of parent folder 'Documents.DropDownForm'. This can happen if either the item search timeout is too small or if items within a rooted folder do not share a common parent element. To fix this problem, first increase the item search timeout. If this does not help, create a separate rooted folder for this item or disable caching for the specified folder.
+			</message>
+			<metainfo
+				codefile="c:\Users\Kumar\Downloads\RanorexAutomation\AA Enhanced\verifyPromptNoFileSelection.cs"
+				codeline="64"
+				loglvl="Warn">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="01:08.046"
+			timeRelativeToTestModuleStartTime="01:08.046"
+			timeWallClock="16:42:25"
+			time="01:08.046"
+			level="Success"
+			category="User">
+			<message>
+				Value &quot;Other&quot; Selected as expected
+			</message>
+			<metainfo
+				codefile="c:\Users\Kumar\Downloads\RanorexAutomation\AA Enhanced\Modules\Utilities\Common.cs"
+				codeline="248"
+				loglvl="Success">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="01:11.616"
+			timeRelativeToTestModuleStartTime="01:11.616"
+			timeWallClock="16:42:29"
+			time="01:11.616"
+			level="Success"
+			category="Validation">
+			<message>
+				Prompt Form Exists
+			</message>
+			<metainfo
+				type="repoitem"
+				path="/form[@controlname='PromptForm']"
+				itempath="/form[@controlname='PromptForm']"
+				fullname="Documents.PromptForm.Self"
+				id="c4c663cf05a9460586310ff73c7a297e"
+				timeout="30000"
+				codefile="c:\Users\Kumar\Downloads\RanorexAutomation\AA Enhanced\verifyPromptNoFileSelection.cs"
+				codeline="66"
+				loglvl="Success">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="01:13.119"
+			timeRelativeToTestModuleStartTime="01:13.119"
+			timeWallClock="16:42:31"
+			time="01:13.119"
+			level="Success"
+			category="Validation">
+			<message>
+				Attribute 'Text' of element for item 'Documents.PromptForm.txtInfo' does contain the specified value.
+			</message>
+			<metainfo
+				type="repoitem"
+				path="/form[@controlname='PromptForm']/container[@controlname='pnlBase']//element[@controlname='alblMessage']/text"
+				itempath="container[@controlname='pnlBase']//element[@controlname='alblMessage']/text"
+				fullname="Documents.PromptForm.txtInfo"
+				id="ed87414392fa482c993d6331c41ec6c9"
+				timeout="60000"
+				codefile="c:\Users\Kumar\Downloads\RanorexAutomation\AA Enhanced\verifyPromptNoFileSelection.cs"
+				codeline="67"
+				loglvl="Success">
+			</metainfo>
+		</item>
+	</activity>
+</report>

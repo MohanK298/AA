@@ -1,0 +1,56 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<report
+	progress="">
+	<activity
+		result="Success"
+		duration="0ms"
+		durationms="0"
+		type="root"
+		rid="aaefed375a788fe"
+		totalerrorcount="0"
+		totalwarningcount="1"
+		totalsuccesstestcasecount="0"
+		totalfailedtestcasecount="0"
+		totalblockedtestcasecount="0"
+		childsuccesscount="0"
+		childfailedcount="0"
+		childblockedcount="0"
+		totalsuccesscount="0"
+		totalfailedcount="0"
+		totalblockedcount="0"
+		totalmaintenancemodecount="0"
+		user="qa"
+		rxversion="8.3.1.0"
+		host="ADS-5056"
+		osversion="Windows 10 64bit"
+		runtimeversion="4.0.30319.42000"
+		procarch="32bit"
+		oslanguage="en-US"
+		dtnlanguage="en-CA"
+		screenresolution="3840x1080"
+		timestamp="2019-03-25 12:43:23 PM"
+		timestampiso="2019-03-25T16:43:23"
+		endtime="2019-03-25 12:43:32 PM"
+		timeoutfactor="1"
+		module="BillingTestTrust">
+		<detail>
+			BillingTestTrust
+		</detail>
+		<varbindings>
+		</varbindings>
+		<item
+			timeRelativeToTestSuiteStartTime="00:06.524"
+			timeRelativeToTestModuleStartTime="00:06.525"
+			timeWallClock="12:43:29"
+			time="00:06.524"
+			level="Warn"
+			category="Data">
+			<message>
+				The following module variables are not bound to a data column:<br/>trustReceiptAmount, trustDescription, lastName, time, trustCheckAmount, difference
+			</message>
+			<metainfo
+				loglvl="Warn">
+			</metainfo>
+		</item>
+	</activity>
+</report>

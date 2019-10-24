@@ -1,0 +1,64 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<report
+	progress="">
+	<activity
+		result="Failed"
+		duration="0ms"
+		durationms="0"
+		type="root"
+		rid="1ab416ea9e14cc9e"
+		totalerrorcount="1"
+		totalwarningcount="0"
+		totalsuccesstestcasecount="0"
+		totalfailedtestcasecount="0"
+		totalblockedtestcasecount="0"
+		childsuccesscount="0"
+		childfailedcount="0"
+		childblockedcount="0"
+		totalsuccesscount="0"
+		totalfailedcount="0"
+		totalblockedcount="0"
+		totalmaintenancemodecount="0"
+		user="Kumar"
+		rxversion="9.1.2.0"
+		host="J4-MOHAN"
+		osversion="Windows 10 64bit"
+		runtimeversion="4.0.30319.42000"
+		procarch="32bit"
+		oslanguage="en-US"
+		dtnlanguage="en-CA"
+		screenresolution="1920x1080"
+		timestamp="2019-10-22 12:16:57 PM"
+		timestampiso="2019-10-22T16:16:57"
+		endtime="2019-10-22 12:17:15 PM"
+		timeoutfactor="1"
+		module="createApptWithEmailAlert">
+		<detail>
+			createApptWithEmailAlert
+		</detail>
+		<errormessage>
+			The Url property on the ExchangeService object must be set.
+		</errormessage>
+		<varbindings>
+		</varbindings>
+		<item
+			timeRelativeToTestSuiteStartTime="00:17.533"
+			timeRelativeToTestModuleStartTime="00:17.533"
+			timeWallClock="12:17:15"
+			time="00:17.533"
+			level="Error"
+			category="Module"
+			errimg="images_createAp_111ea91e\createAp_111ea91e_df5264e1_trace.jpg"
+			errthumb="images_createAp_111ea91e\createAp_111ea91e_df5264e1_trace_thumb.jpg">
+			<message>
+				The Url property on the ExchangeService object must be set.
+			</message>
+			<metainfo
+				stacktrace="   at Microsoft.Exchange.WebServices.Data.ExchangeService.Validate() in \\REDMOND\EXCHANGE\BUILD\E15\15.00.0913.015\SOURCES\sources\dev\EwsManagedApi\src\EwsManagedApi\Core\ExchangeService.cs:line 4764&#13;&#10;   at Microsoft.Exchange.WebServices.Data.FindRequest`1.Validate() in \\REDMOND\EXCHANGE\BUILD\E15\15.00.0913.015\SOURCES\sources\dev\EwsManagedApi\src\EwsManagedApi\Core\Requests\FindRequest.cs:line 45&#13;&#10;   at Microsoft.Exchange.WebServices.Data.ServiceRequestBase.ValidateAndEmitRequest(IEwsHttpWebRequest&amp; request) in \\REDMOND\EXCHANGE\BUILD\E15\15.00.0913.015\SOURCES\sources\dev\EwsManagedApi\src\EwsManagedApi\Core\Requests\ServiceRequestBase.cs:line 685&#13;&#10;   at Microsoft.Exchange.WebServices.Data.MultiResponseServiceRequest`1.Execute() in \\REDMOND\EXCHANGE\BUILD\E15\15.00.0913.015\SOURCES\sources\dev\EwsManagedApi\src\EwsManagedApi\Core\Requests\MultiResponseServiceRequest.cs:line 157&#13;&#10;   at Microsoft.Exchange.WebServices.Data.ExchangeService.FindItems[TItem](IEnumerable`1 parentFolderIds, SearchFilter searchFilter, String queryString, ViewBase view, Grouping groupBy, ServiceErrorHandling errorHandlingMode) in \\REDMOND\EXCHANGE\BUILD\E15\15.00.0913.015\SOURCES\sources\dev\EwsManagedApi\src\EwsManagedApi\Core\ExchangeService.cs:line 832&#13;&#10;   at Microsoft.Exchange.WebServices.Data.ExchangeService.FindItems(FolderId parentFolderId, SearchFilter searchFilter, ViewBase view) in \\REDMOND\EXCHANGE\BUILD\E15\15.00.0913.015\SOURCES\sources\dev\EwsManagedApi\src\EwsManagedApi\Core\ExchangeService.cs:line 937&#13;&#10;   at Microsoft.Exchange.WebServices.Data.ExchangeService.FindItems(WellKnownFolderName parentFolderName, ViewBase view) in \\REDMOND\EXCHANGE\BUILD\E15\15.00.0913.015\SOURCES\sources\dev\EwsManagedApi\src\EwsManagedApi\Core\ExchangeService.cs:line 1004&#13;&#10;   at SmokeTest.createApptWithEmailAlert.ConnectToExchangeServer() in c:\Users\Kumar\Downloads\RanorexAutomation\AA Enhanced\createApptWithEmailAlert.cs:line 58&#13;&#10;   at SmokeTest.createApptWithEmailAlert.Ranorex.Core.Testing.ITestModule.Run() in c:\Users\Kumar\Downloads\RanorexAutomation\AA Enhanced\createApptWithEmailAlert.cs:line 91&#13;&#10;   at Ranorex.Core.Testing.TestModuleLeaf.RunInternal(DataContext parentDataContext, Int32 iteration, Int32 iterationCount, Boolean skipIteration)"
+				codefile="\\REDMOND\EXCHANGE\BUILD\E15\15.00.0913.015\SOURCES\sources\dev\EwsManagedApi\src\EwsManagedApi\Core\ExchangeService.cs"
+				codeline="4764"
+				loglvl="Error">
+			</metainfo>
+		</item>
+	</activity>
+</report>

@@ -1,0 +1,204 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<report
+	progress="">
+	<activity
+		result="Failed"
+		duration="0ms"
+		durationms="0"
+		type="root"
+		rid="404aa350362e83c"
+		totalerrorcount="1"
+		totalwarningcount="9"
+		totalsuccesstestcasecount="0"
+		totalfailedtestcasecount="0"
+		totalblockedtestcasecount="0"
+		childsuccesscount="0"
+		childfailedcount="0"
+		childblockedcount="0"
+		totalsuccesscount="0"
+		totalfailedcount="0"
+		totalblockedcount="0"
+		totalmaintenancemodecount="0"
+		user="Kumar"
+		rxversion="9.1.2.0"
+		host="J4-MOHAN"
+		osversion="Windows 10 64bit"
+		runtimeversion="4.0.30319.42000"
+		procarch="32bit"
+		oslanguage="en-US"
+		dtnlanguage="en-CA"
+		screenresolution="1920x1080"
+		timestamp="2019-10-18 11:21:26 AM"
+		timestampiso="2019-10-18T15:21:26"
+		endtime="2019-10-18 11:44:34 AM"
+		timeoutfactor="1"
+		module="CreateManyPhoneCalls">
+		<detail>
+			CreateManyPhoneCalls
+		</detail>
+		<errormessage>
+			Invocation did not finish within the timeout of '00:00:05'.
+		</errormessage>
+		<varbindings>
+		</varbindings>
+		<item
+			timeRelativeToTestSuiteStartTime="00:40.641"
+			timeRelativeToTestModuleStartTime="00:40.641"
+			timeWallClock="11:22:06"
+			time="00:40.641"
+			level="Warn"
+			category="Data">
+			<message>
+				The following module variables are not bound to a data column:<br/>time, fileName, phoneCallNote
+			</message>
+			<metainfo
+				loglvl="Warn">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="04:15.134"
+			timeRelativeToTestModuleStartTime="04:15.134"
+			timeWallClock="11:25:41"
+			time="04:15.134"
+			level="Warn"
+			category="Repository">
+			<message>
+				Item 'Communications.PhoneDetailForm.MenubarFillPanel.btnAddFile' could be found using its absolute path, but not using its relative path from the cached element of parent folder 'Communications.PhoneDetailForm'. This can happen if either the item search timeout is too small or if items within a rooted folder do not share a common parent element. To fix this problem, first increase the item search timeout. If this does not help, create a separate rooted folder for this item or disable caching for the specified folder.
+			</message>
+			<metainfo
+				codefile="c:\Users\Kumar\Downloads\RanorexAutomation\AA Enhanced\Modules\CreateManyPhoneCalls.cs"
+				codeline="83"
+				loglvl="Warn">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="06:47.473"
+			timeRelativeToTestModuleStartTime="06:47.473"
+			timeWallClock="11:28:13"
+			time="06:47.473"
+			level="Warn"
+			category="Repository">
+			<message>
+				Item 'Communications.PhoneDetailForm.MenubarFillPanel.btnAddFile' could be found using its absolute path, but not using its relative path from the cached element of parent folder 'Communications.PhoneDetailForm'. This can happen if either the item search timeout is too small or if items within a rooted folder do not share a common parent element. To fix this problem, first increase the item search timeout. If this does not help, create a separate rooted folder for this item or disable caching for the specified folder.
+			</message>
+			<metainfo
+				codefile="c:\Users\Kumar\Downloads\RanorexAutomation\AA Enhanced\Modules\CreateManyPhoneCalls.cs"
+				codeline="83"
+				loglvl="Warn">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="09:19.993"
+			timeRelativeToTestModuleStartTime="09:19.993"
+			timeWallClock="11:30:46"
+			time="09:19.993"
+			level="Warn"
+			category="Repository">
+			<message>
+				Item 'Communications.PhoneDetailForm.MenubarFillPanel.btnAddFile' could be found using its absolute path, but not using its relative path from the cached element of parent folder 'Communications.PhoneDetailForm'. This can happen if either the item search timeout is too small or if items within a rooted folder do not share a common parent element. To fix this problem, first increase the item search timeout. If this does not help, create a separate rooted folder for this item or disable caching for the specified folder.
+			</message>
+			<metainfo
+				codefile="c:\Users\Kumar\Downloads\RanorexAutomation\AA Enhanced\Modules\CreateManyPhoneCalls.cs"
+				codeline="83"
+				loglvl="Warn">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="11:50.947"
+			timeRelativeToTestModuleStartTime="11:50.947"
+			timeWallClock="11:33:17"
+			time="11:50.947"
+			level="Warn"
+			category="Repository">
+			<message>
+				Item 'Communications.PhoneDetailForm.MenubarFillPanel.btnAddFile' could be found using its absolute path, but not using its relative path from the cached element of parent folder 'Communications.PhoneDetailForm'. This can happen if either the item search timeout is too small or if items within a rooted folder do not share a common parent element. To fix this problem, first increase the item search timeout. If this does not help, create a separate rooted folder for this item or disable caching for the specified folder.
+			</message>
+			<metainfo
+				codefile="c:\Users\Kumar\Downloads\RanorexAutomation\AA Enhanced\Modules\CreateManyPhoneCalls.cs"
+				codeline="83"
+				loglvl="Warn">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="14:21.209"
+			timeRelativeToTestModuleStartTime="14:21.209"
+			timeWallClock="11:35:47"
+			time="14:21.209"
+			level="Warn"
+			category="Repository">
+			<message>
+				Item 'Communications.PhoneDetailForm.MenubarFillPanel.btnAddFile' could be found using its absolute path, but not using its relative path from the cached element of parent folder 'Communications.PhoneDetailForm'. This can happen if either the item search timeout is too small or if items within a rooted folder do not share a common parent element. To fix this problem, first increase the item search timeout. If this does not help, create a separate rooted folder for this item or disable caching for the specified folder.
+			</message>
+			<metainfo
+				codefile="c:\Users\Kumar\Downloads\RanorexAutomation\AA Enhanced\Modules\CreateManyPhoneCalls.cs"
+				codeline="83"
+				loglvl="Warn">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="16:56.182"
+			timeRelativeToTestModuleStartTime="16:56.182"
+			timeWallClock="11:38:22"
+			time="16:56.182"
+			level="Warn"
+			category="Repository">
+			<message>
+				Item 'Communications.PhoneDetailForm.MenubarFillPanel.btnAddFile' could be found using its absolute path, but not using its relative path from the cached element of parent folder 'Communications.PhoneDetailForm'. This can happen if either the item search timeout is too small or if items within a rooted folder do not share a common parent element. To fix this problem, first increase the item search timeout. If this does not help, create a separate rooted folder for this item or disable caching for the specified folder.
+			</message>
+			<metainfo
+				codefile="c:\Users\Kumar\Downloads\RanorexAutomation\AA Enhanced\Modules\CreateManyPhoneCalls.cs"
+				codeline="83"
+				loglvl="Warn">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="20:14.884"
+			timeRelativeToTestModuleStartTime="20:14.884"
+			timeWallClock="11:41:41"
+			time="20:14.884"
+			level="Warn"
+			category="Repository">
+			<message>
+				Item 'Communications.PhoneDetailForm.MenubarFillPanel.btnAddFile' could be found using its absolute path, but not using its relative path from the cached element of parent folder 'Communications.PhoneDetailForm'. This can happen if either the item search timeout is too small or if items within a rooted folder do not share a common parent element. To fix this problem, first increase the item search timeout. If this does not help, create a separate rooted folder for this item or disable caching for the specified folder.
+			</message>
+			<metainfo
+				codefile="c:\Users\Kumar\Downloads\RanorexAutomation\AA Enhanced\Modules\CreateManyPhoneCalls.cs"
+				codeline="83"
+				loglvl="Warn">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="22:23.345"
+			timeRelativeToTestModuleStartTime="22:23.345"
+			timeWallClock="11:43:49"
+			time="22:23.345"
+			level="Warn"
+			category="Repository">
+			<message>
+				Item 'Communications.PhoneDetailForm.MenubarFillPanel.btnAddFile' could be found using its absolute path, but not using its relative path from the cached element of parent folder 'Communications.PhoneDetailForm'. This can happen if either the item search timeout is too small or if items within a rooted folder do not share a common parent element. To fix this problem, first increase the item search timeout. If this does not help, create a separate rooted folder for this item or disable caching for the specified folder.
+			</message>
+			<metainfo
+				codefile="c:\Users\Kumar\Downloads\RanorexAutomation\AA Enhanced\Modules\CreateManyPhoneCalls.cs"
+				codeline="83"
+				loglvl="Warn">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="22:57.717"
+			timeRelativeToTestModuleStartTime="22:57.717"
+			timeWallClock="11:44:24"
+			time="22:57.717"
+			level="Error"
+			category="Module">
+			<message>
+				Invocation did not finish within the timeout of '00:00:05'.
+			</message>
+			<metainfo
+				stacktrace="   at Ranorex.Core.FunctionExecuteWithTimeout.TryExecute[T](Func`1 func, TimeSpan timeout)&#13;&#10;   at Ranorex.Core.FunctionExecuteWithTimeout.WithTimeout[T](Func`1 func, Nullable`1 timeout)&#13;&#10;   at Ranorex.Plugin.WpfRootRule.TryAddWpfRootToElementEngine(WpfAutomationWrapper proxy, Win32FlavorElement candidate, GlueRuleExecutionState state)&#13;&#10;   at Ranorex.Plugin.WpfRootRule.AddWpfNative(GlueRuleExecutionState state)&#13;&#10;   at Ranorex.Plugin.WpfRootRule.Execute(GlueRuleExecutionState state)&#13;&#10;   at Ranorex.Core.ElementEngine.ApplyGlueRules(Element element, GlueRuleExecutionStateImpl state, Boolean includeRemotes)&#13;&#10;   at Ranorex.Core.ElementEngine.ApplyReplaceGlueRulesOnSingleRecentlyInsertedElement(Element parentElement, GlueRuleExecutionStateImpl state, GlueRuleExecutionStateImpl replaceState, Element recentlyInsertedElement)&#13;&#10;   at Ranorex.Core.ElementEngine.ApplyReplaceGlueRulesOnRecentlyInserted(Element element, GlueRuleExecutionStateImpl state)&#13;&#10;   at Ranorex.Core.ElementEngine.ApplyGlueRules(Element element, GlueRuleExecutionStateImpl state, Boolean includeRemotes)&#13;&#10;   at Ranorex.Core.ElementEngine.ApplyGlueRules(Element element, Boolean includeRemotes)&#13;&#10;   at Ranorex.Core.Element.GetChildren(CacheSession session)&#13;&#10;   at Ranorex.Core.Element.get_Children()&#13;&#10;   at Ranorex.Core.RxPath.collectAxis(LocationStep step, Axis optimizedAxis, Element self, IList`1 elements, Boolean quitOnFirstGoodNode)&#13;&#10;   at Ranorex.Core.RxPath.ApplyInternal(RxPath path, Element startElement, Duration timeout, Boolean findSingle, CacheSession&amp; usedCacheSession, PathDiagnostics&amp; pathDiagnostics)&#13;&#10;   at Ranorex.Core.RxPath.Apply(Element startElement, Duration timeout, Boolean findSingle, CacheSession&amp; usedCacheSession, PathDiagnostics&amp; pathDiagnostics)&#13;&#10;   at Ranorex.Core.Element.TryFindInternal(RxPath path, Duration timeout, Boolean findSingle, IList`1&amp; foundElements, CacheSession&amp; usedCacheSession, Duration&amp; elementSearchTime, Int32&amp; iterations)&#13;&#10;   at Ranorex.Core.Repository.RepoItemInfo.FindInternal[T](Boolean findSingle, Boolean throwException, Duration effectiveTimeoutOverride)&#13;&#10;   at Ranorex.Core.Repository.RepoItemInfo.&lt;>c__DisplayClass75_0`1.&lt;Find>b__0()&#13;&#10;   at Ranorex.Core.Testing.Services.NoMaintenanceModeService.HandleElementNotFound[T](Func`1 action, RepoItemInfo entry)&#13;&#10;   at Ranorex.Core.Repository.RepoItemInfo.Find[T](Boolean findSingle, Boolean throwException, Duration effectiveTimeoutOverride)&#13;&#10;   at Ranorex.Core.Repository.RepoItemInfo.CreateAdapter[T](Boolean throwException, Duration waitTimeout)&#13;&#10;   at Ranorex.Core.Repository.RepoItemInfo.CreateAdapter[T](Boolean throwException)&#13;&#10;   at SmokeTest.Repositories.CommunicationsFolders.FileSelectFormAppFolder.get_btnQuickFind() in c:\Users\Kumar\Downloads\RanorexAutomation\AA Enhanced\Repositories\Communications.cs:line 911&#13;&#10;   at SmokeTest.Modules.CreateManyPhoneCalls.CreateCall() in c:\Users\Kumar\Downloads\RanorexAutomation\AA Enhanced\Modules\CreateManyPhoneCalls.cs:line 84&#13;&#10;   at SmokeTest.Modules.CreateManyPhoneCalls.Ranorex.Core.Testing.ITestModule.Run() in c:\Users\Kumar\Downloads\RanorexAutomation\AA Enhanced\Modules\CreateManyPhoneCalls.cs:line 109&#13;&#10;   at Ranorex.Core.Testing.TestModuleLeaf.RunInternal(DataContext parentDataContext, Int32 iteration, Int32 iterationCount, Boolean skipIteration)"
+				codefile="c:\Users\Kumar\Downloads\RanorexAutomation\AA Enhanced\Repositories\Communications.cs"
+				codeline="911"
+				loglvl="Error">
+			</metainfo>
+		</item>
+	</activity>
+</report>

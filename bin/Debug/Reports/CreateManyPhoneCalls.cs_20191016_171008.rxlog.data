@@ -1,0 +1,88 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<report
+	progress="">
+	<activity
+		result="Failed"
+		duration="0ms"
+		durationms="0"
+		type="root"
+		rid="10128d4109759314"
+		totalerrorcount="1"
+		totalwarningcount="1"
+		totalsuccesstestcasecount="0"
+		totalfailedtestcasecount="0"
+		totalblockedtestcasecount="0"
+		childsuccesscount="0"
+		childfailedcount="0"
+		childblockedcount="0"
+		totalsuccesscount="0"
+		totalfailedcount="0"
+		totalblockedcount="0"
+		totalmaintenancemodecount="0"
+		user="Kumar"
+		rxversion="9.1.2.0"
+		host="J4-MOHAN"
+		osversion="Windows 10 64bit"
+		runtimeversion="4.0.30319.42000"
+		procarch="32bit"
+		oslanguage="en-US"
+		dtnlanguage="en-CA"
+		screenresolution="1920x1080"
+		timestamp="2019-10-16 5:10:14 PM"
+		timestampiso="2019-10-16T21:10:14"
+		endtime="2019-10-16 5:11:40 PM"
+		timeoutfactor="1"
+		module="CreateManyPhoneCalls">
+		<detail>
+			CreateManyPhoneCalls
+		</detail>
+		<errormessage>
+			Failed to find item 'Communications.MainForm.btnCommunications'.
+		</errormessage>
+		<varbindings>
+		</varbindings>
+		<item
+			timeRelativeToTestSuiteStartTime="00:17.999"
+			timeRelativeToTestModuleStartTime="00:17.999"
+			timeWallClock="17:10:32"
+			time="00:17.999"
+			level="Warn"
+			category="Data"
+			errimg="images_CreateMa_63eae191\CreateMa_63eae191_22334337_trace.jpg"
+			errthumb="images_CreateMa_63eae191\CreateMa_63eae191_22334337_trace_thumb.jpg">
+			<message>
+				The following module variables are not bound to a data column:<br/>time, fileName, phoneCallNote
+			</message>
+			<metainfo
+				loglvl="Warn">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="01:24.714"
+			timeRelativeToTestModuleStartTime="01:24.714"
+			timeWallClock="17:11:39"
+			time="01:24.714"
+			level="Error"
+			category="Module"
+			errimg="images_CreateMa_63eae191\CreateMa_63eae191_6ad2f531_trace.jpg"
+			errthumb="images_CreateMa_63eae191\CreateMa_63eae191_6ad2f531_trace_thumb.jpg">
+			<message>
+				Failed to find item 'Communications.MainForm.btnCommunications'.<br/>No element found for path '/form[@controlname='MainForm']/container[@controlname='pLeft']//tree[@accessiblerole='Outline']/button[@accessiblename='Communications']' at step 'form[@controlname='MainForm']' after 35 attempts within 1m.
+			</message>
+			<metainfo
+				stacktrace="   at Ranorex.Core.Repository.RepoItemInfo.FindInternal[T](Boolean findSingle, Boolean throwException, Duration effectiveTimeoutOverride)&#13;&#10;   at Ranorex.Core.Repository.RepoItemInfo.&lt;>c__DisplayClass75_0`1.&lt;Find>b__0()&#13;&#10;   at Ranorex.Core.Testing.Services.NoMaintenanceModeService.HandleElementNotFound[T](Func`1 action, RepoItemInfo entry)&#13;&#10;   at Ranorex.Core.Repository.RepoItemInfo.Find[T](Boolean findSingle, Boolean throwException, Duration effectiveTimeoutOverride)&#13;&#10;   at Ranorex.Core.Repository.RepoItemInfo.CreateAdapter[T](Boolean throwException, Duration waitTimeout)&#13;&#10;   at Ranorex.Core.Repository.RepoItemInfo.CreateAdapter[T](Boolean throwException)&#13;&#10;   at SmokeTest.Repositories.CommunicationsFolders.MainFormAppFolder.get_btnCommunications() in c:\Users\Kumar\Downloads\RanorexAutomation\AA Enhanced\Repositories\Communications.cs:line 239&#13;&#10;   at SmokeTest.Modules.CreateManyPhoneCalls.CreateCall() in c:\Users\Kumar\Downloads\RanorexAutomation\AA Enhanced\Modules\CreateManyPhoneCalls.cs:line 78&#13;&#10;   at SmokeTest.Modules.CreateManyPhoneCalls.Ranorex.Core.Testing.ITestModule.Run() in c:\Users\Kumar\Downloads\RanorexAutomation\AA Enhanced\Modules\CreateManyPhoneCalls.cs:line 108&#13;&#10;   at Ranorex.Core.Testing.TestModuleLeaf.RunInternal(DataContext parentDataContext, Int32 iteration, Int32 iterationCount, Boolean skipIteration)"
+				codefile="c:\Users\Kumar\Downloads\RanorexAutomation\AA Enhanced\Modules\CreateManyPhoneCalls.cs"
+				codeline="78"
+				type="repoitem"
+				path="/form[@controlname='MainForm']/container[@controlname='pLeft']//tree[@accessiblerole='Outline']/button[@accessiblename='Communications']"
+				itempath="container[@controlname='pLeft']//tree[@accessiblerole='Outline']/button[@accessiblename='Communications']"
+				fullname="Communications.MainForm.btnCommunications"
+				id="ae01bbe543094641b67e27fc5439cf85"
+				timeout="60000"
+				failedStep="form[@controlname='MainForm']"
+				bestPathPrefix=""
+				loglvl="Error">
+			</metainfo>
+		</item>
+	</activity>
+</report>

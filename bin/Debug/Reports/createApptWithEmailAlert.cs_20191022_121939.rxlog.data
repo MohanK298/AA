@@ -1,0 +1,64 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<report
+	progress="">
+	<activity
+		result="Failed"
+		duration="0ms"
+		durationms="0"
+		type="root"
+		rid="6eceeb05ecfa662"
+		totalerrorcount="1"
+		totalwarningcount="0"
+		totalsuccesstestcasecount="0"
+		totalfailedtestcasecount="0"
+		totalblockedtestcasecount="0"
+		childsuccesscount="0"
+		childfailedcount="0"
+		childblockedcount="0"
+		totalsuccesscount="0"
+		totalfailedcount="0"
+		totalblockedcount="0"
+		totalmaintenancemodecount="0"
+		user="Kumar"
+		rxversion="9.1.2.0"
+		host="J4-MOHAN"
+		osversion="Windows 10 64bit"
+		runtimeversion="4.0.30319.42000"
+		procarch="32bit"
+		oslanguage="en-US"
+		dtnlanguage="en-CA"
+		screenresolution="1920x1080"
+		timestamp="2019-10-22 12:19:47 PM"
+		timestampiso="2019-10-22T16:19:47"
+		endtime="2019-10-22 12:21:03 PM"
+		timeoutfactor="1"
+		module="createApptWithEmailAlert">
+		<detail>
+			createApptWithEmailAlert
+		</detail>
+		<errormessage>
+			The Autodiscover service couldn't be located.
+		</errormessage>
+		<varbindings>
+		</varbindings>
+		<item
+			timeRelativeToTestSuiteStartTime="01:15.217"
+			timeRelativeToTestModuleStartTime="01:15.217"
+			timeWallClock="12:21:02"
+			time="01:15.217"
+			level="Error"
+			category="Module"
+			errimg="images_createAp_83acd952\createAp_83acd952_151a0134_trace.jpg"
+			errthumb="images_createAp_83acd952\createAp_83acd952_151a0134_trace_thumb.jpg">
+			<message>
+				The Autodiscover service couldn't be located.
+			</message>
+			<metainfo
+				stacktrace="   at Microsoft.Exchange.WebServices.Autodiscover.AutodiscoverService.InternalGetLegacyUserSettings[TSettings](String emailAddress, List`1 redirectionEmailAddresses, Int32&amp; currentHop) in \\REDMOND\EXCHANGE\BUILD\E15\15.00.0913.015\SOURCES\sources\dev\EwsManagedApi\src\EwsManagedApi\Autodiscover\AutodiscoverService.cs:line 623&#13;&#10;   at Microsoft.Exchange.WebServices.Autodiscover.AutodiscoverService.GetLegacyUserSettings[TSettings](String emailAddress) in \\REDMOND\EXCHANGE\BUILD\E15\15.00.0913.015\SOURCES\sources\dev\EwsManagedApi\src\EwsManagedApi\Autodiscover\AutodiscoverService.cs:line 409&#13;&#10;   at Microsoft.Exchange.WebServices.Autodiscover.AutodiscoverService.InternalGetLegacyUserSettings(String emailAddress, List`1 requestedSettings) in \\REDMOND\EXCHANGE\BUILD\E15\15.00.0913.015\SOURCES\sources\dev\EwsManagedApi\src\EwsManagedApi\Autodiscover\AutodiscoverService.cs:line 805&#13;&#10;   at Microsoft.Exchange.WebServices.Autodiscover.AutodiscoverService.GetUserSettings(String userSmtpAddress, UserSettingName[] userSettingNames) in \\REDMOND\EXCHANGE\BUILD\E15\15.00.0913.015\SOURCES\sources\dev\EwsManagedApi\src\EwsManagedApi\Autodiscover\AutodiscoverService.cs:line 1649&#13;&#10;   at Microsoft.Exchange.WebServices.Data.ExchangeService.GetAutodiscoverUrl(String emailAddress, ExchangeVersion requestedServerVersion, AutodiscoverRedirectionUrlValidationCallback validateRedirectionUrlCallback) in \\REDMOND\EXCHANGE\BUILD\E15\15.00.0913.015\SOURCES\sources\dev\EwsManagedApi\src\EwsManagedApi\Core\ExchangeService.cs:line 4458&#13;&#10;   at Microsoft.Exchange.WebServices.Data.ExchangeService.AutodiscoverUrl(String emailAddress, AutodiscoverRedirectionUrlValidationCallback validateRedirectionUrlCallback) in \\REDMOND\EXCHANGE\BUILD\E15\15.00.0913.015\SOURCES\sources\dev\EwsManagedApi\src\EwsManagedApi\Core\ExchangeService.cs:line 4416&#13;&#10;   at Microsoft.Exchange.WebServices.Data.ExchangeService.AutodiscoverUrl(String emailAddress) in \\REDMOND\EXCHANGE\BUILD\E15\15.00.0913.015\SOURCES\sources\dev\EwsManagedApi\src\EwsManagedApi\Core\ExchangeService.cs:line 4370&#13;&#10;   at SmokeTest.createApptWithEmailAlert.ConnectToExchangeServer() in c:\Users\Kumar\Downloads\RanorexAutomation\AA Enhanced\createApptWithEmailAlert.cs:line 51&#13;&#10;   at SmokeTest.createApptWithEmailAlert.Ranorex.Core.Testing.ITestModule.Run() in c:\Users\Kumar\Downloads\RanorexAutomation\AA Enhanced\createApptWithEmailAlert.cs:line 91&#13;&#10;   at Ranorex.Core.Testing.TestModuleLeaf.RunInternal(DataContext parentDataContext, Int32 iteration, Int32 iterationCount, Boolean skipIteration)"
+				codefile="\\REDMOND\EXCHANGE\BUILD\E15\15.00.0913.015\SOURCES\sources\dev\EwsManagedApi\src\EwsManagedApi\Autodiscover\AutodiscoverService.cs"
+				codeline="623"
+				loglvl="Error">
+			</metainfo>
+		</item>
+	</activity>
+</report>

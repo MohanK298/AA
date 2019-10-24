@@ -1,0 +1,72 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<report
+	progress="">
+	<activity
+		result="Failed"
+		duration="0ms"
+		durationms="0"
+		type="root"
+		rid="57998c375e39cf7"
+		totalerrorcount="1"
+		totalwarningcount="0"
+		totalsuccesstestcasecount="0"
+		totalfailedtestcasecount="0"
+		totalblockedtestcasecount="0"
+		childsuccesscount="0"
+		childfailedcount="0"
+		childblockedcount="0"
+		totalsuccesscount="0"
+		totalfailedcount="0"
+		totalblockedcount="0"
+		totalmaintenancemodecount="0"
+		user="Kumar"
+		rxversion="9.1.2.0"
+		host="J4-MOHAN"
+		osversion="Windows 10 64bit"
+		runtimeversion="4.0.30319.42000"
+		procarch="32bit"
+		oslanguage="en-US"
+		dtnlanguage="en-CA"
+		screenresolution="1920x1080"
+		timestamp="2019-10-21 2:50:38 PM"
+		timestampiso="2019-10-21T18:50:38"
+		endtime="2019-10-21 2:51:43 PM"
+		timeoutfactor="1"
+		module="createRepeatingEvent">
+		<detail>
+			createRepeatingEvent
+		</detail>
+		<errormessage>
+			Failed to find item 'Calendar.MainForm.Self'.
+		</errormessage>
+		<varbindings>
+		</varbindings>
+		<item
+			timeRelativeToTestSuiteStartTime="01:04.466"
+			timeRelativeToTestModuleStartTime="01:04.466"
+			timeWallClock="14:51:42"
+			time="01:04.466"
+			level="Error"
+			category="Module"
+			errimg="images_createRe_41995b8f\createRe_41995b8f_ba03f849_trace.jpg"
+			errthumb="images_createRe_41995b8f\createRe_41995b8f_ba03f849_trace_thumb.jpg">
+			<message>
+				Failed to find item 'Calendar.MainForm.Self'.<br/>No element found for path '/form[@controlname='MainForm']' at step 'form[@controlname='MainForm']' after 2 attempts within 30s.
+			</message>
+			<metainfo
+				stacktrace="   at Ranorex.Core.Repository.RepoItemInfo.FindInternal[T](Boolean findSingle, Boolean throwException, Duration effectiveTimeoutOverride)&#13;&#10;   at Ranorex.Core.Repository.RepoItemInfo.&lt;>c__DisplayClass75_0`1.&lt;Find>b__0()&#13;&#10;   at Ranorex.Core.Testing.Services.NoMaintenanceModeService.HandleElementNotFound[T](Func`1 action, RepoItemInfo entry)&#13;&#10;   at Ranorex.Core.Repository.RepoItemInfo.Find[T](Boolean findSingle, Boolean throwException, Duration effectiveTimeoutOverride)&#13;&#10;   at Ranorex.Core.Repository.RepoItemInfo.CreateAdapter[T](Boolean throwException, Duration waitTimeout)&#13;&#10;   at Ranorex.Core.Repository.RepoItemInfo.CreateAdapter[T](Boolean throwException)&#13;&#10;   at SmokeTest.Repositories.CalendarFolders.MainFormAppFolder.get_Self() in c:\Users\Kumar\Downloads\RanorexAutomation\AA Enhanced\Repositories\Calendar.cs:line 242&#13;&#10;   at SmokeTest.createRepeatingEvent.CreateAppointment() in c:\Users\Kumar\Downloads\RanorexAutomation\AA Enhanced\createRepeatingEvent.cs:line 68&#13;&#10;   at SmokeTest.createRepeatingEvent.Ranorex.Core.Testing.ITestModule.Run() in c:\Users\Kumar\Downloads\RanorexAutomation\AA Enhanced\createRepeatingEvent.cs:line 92&#13;&#10;   at Ranorex.Core.Testing.TestModuleLeaf.RunInternal(DataContext parentDataContext, Int32 iteration, Int32 iterationCount, Boolean skipIteration)"
+				codefile="c:\Users\Kumar\Downloads\RanorexAutomation\AA Enhanced\createRepeatingEvent.cs"
+				codeline="68"
+				type="repoitem"
+				path="/form[@controlname='MainForm']"
+				itempath="/form[@controlname='MainForm']"
+				fullname="Calendar.MainForm.Self"
+				id="deb133dddb0842f3ad484c67bdbb85fe"
+				timeout="30000"
+				failedStep="form[@controlname='MainForm']"
+				bestPathPrefix=""
+				loglvl="Error">
+			</metainfo>
+		</item>
+	</activity>
+</report>

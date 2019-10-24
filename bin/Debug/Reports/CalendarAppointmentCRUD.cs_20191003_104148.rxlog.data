@@ -1,0 +1,124 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<report
+	progress="">
+	<activity
+		result="Success"
+		duration="0ms"
+		durationms="0"
+		type="root"
+		rid="2a0a8abcca5b9ea1"
+		totalerrorcount="0"
+		totalwarningcount="1"
+		totalsuccesstestcasecount="0"
+		totalfailedtestcasecount="0"
+		totalblockedtestcasecount="0"
+		childsuccesscount="0"
+		childfailedcount="0"
+		childblockedcount="0"
+		totalsuccesscount="0"
+		totalfailedcount="0"
+		totalblockedcount="0"
+		totalmaintenancemodecount="0"
+		user="Kumar"
+		rxversion="9.1.2.0"
+		host="J4-MOHAN"
+		osversion="Windows 10 64bit"
+		runtimeversion="4.0.30319.42000"
+		procarch="32bit"
+		oslanguage="en-US"
+		dtnlanguage="en-CA"
+		screenresolution="1920x1080"
+		timestamp="2019-10-03 10:41:55 AM"
+		timestampiso="2019-10-03T14:41:55"
+		endtime="2019-10-03 10:45:12 AM"
+		timeoutfactor="1"
+		module="CalendarAppointmentCRUD">
+		<detail>
+			CalendarAppointmentCRUD
+		</detail>
+		<varbindings>
+		</varbindings>
+		<item
+			timeRelativeToTestSuiteStartTime="00:59.947"
+			timeRelativeToTestModuleStartTime="00:59.947"
+			timeWallClock="10:42:55"
+			time="00:59.947"
+			level="Warn"
+			category="WinForms">
+			<message>
+				Something is limiting object recognition for WinForms. Missing privileges are a common cause of this. Try starting all Ranorex tools and the AUT with the same privileges, preferably as an administrator. <br/>Process: (pid 0)<br/>The following website provides more information on this technology limitation:<br/>https://www.ranorex.com/help/v9.1/interfaces-connectivity/technology-instrumentation/general-troubleshooting/#DotNetWinForms<br/>(This message is only shown once per report.)
+			</message>
+			<metainfo
+				limitationName="PotentiallyWinForms"
+				showInProgressDialog="False"
+				codefile="c:\Users\Kumar\Downloads\RanorexAutomation\AA Enhanced\Modules\CalendarAppointmentCRUD.cs"
+				codeline="88"
+				loglvl="Warn">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="02:14.450"
+			timeRelativeToTestModuleStartTime="02:14.450"
+			timeWallClock="10:44:09"
+			time="02:14.450"
+			level="Info"
+			category="User">
+			<message>
+				New Ranorex automation appointment created: Ranorex sanity 10:42 AM
+			</message>
+			<metainfo
+				codefile="c:\Users\Kumar\Downloads\RanorexAutomation\AA Enhanced\Modules\CalendarAppointmentCRUD.cs"
+				codeline="113"
+				loglvl="Info">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="02:20.918"
+			timeRelativeToTestModuleStartTime="02:20.918"
+			timeWallClock="10:44:16"
+			time="02:20.918"
+			level="Info"
+			category="User">
+			<message>
+				Ranorex sanity 10:42 AM
+			</message>
+			<metainfo
+				codefile="c:\Users\Kumar\Downloads\RanorexAutomation\AA Enhanced\Modules\CalendarAppointmentCRUD.cs"
+				codeline="142"
+				loglvl="Info">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="02:24.793"
+			timeRelativeToTestModuleStartTime="02:24.793"
+			timeWallClock="10:44:20"
+			time="02:24.793"
+			level="Info"
+			category="User">
+			<message>
+				11:12 AM
+			</message>
+			<metainfo
+				codefile="c:\Users\Kumar\Downloads\RanorexAutomation\AA Enhanced\Modules\CalendarAppointmentCRUD.cs"
+				codeline="144"
+				loglvl="Info">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="03:17.211"
+			timeRelativeToTestModuleStartTime="03:17.211"
+			timeWallClock="10:45:12"
+			time="03:17.211"
+			level="Success"
+			category="Validation">
+			<message>
+				Element for path '?/?/form[@controlname='CalendarIndexForm']/container[@controlname='pnlBase']//table[@accessiblename='Band 0']/row/cell[@text='Edited Ranorex sanity 10:42 AM']' does not exist (No element found for path '?/?/form[@controlname='CalendarIndexForm']/container[@controlname='pnlBase']//table[@accessiblename='Band 0']/row/cell[@text='Edited Ranorex sanity 10:42 AM']' at step 'cell[@text='Edited Ranorex sanity 10:42 AM']' after 3 attempts within 10s.).
+			</message>
+			<metainfo
+				codefile="c:\Users\Kumar\Downloads\RanorexAutomation\AA Enhanced\Modules\CalendarAppointmentCRUD.cs"
+				codeline="191"
+				loglvl="Success">
+			</metainfo>
+		</item>
+	</activity>
+</report>

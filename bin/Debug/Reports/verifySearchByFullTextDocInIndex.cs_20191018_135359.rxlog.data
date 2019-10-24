@@ -1,0 +1,72 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<report
+	progress="">
+	<activity
+		result="Failed"
+		duration="0ms"
+		durationms="0"
+		type="root"
+		rid="1a26b61850ae6cfc"
+		totalerrorcount="1"
+		totalwarningcount="0"
+		totalsuccesstestcasecount="0"
+		totalfailedtestcasecount="0"
+		totalblockedtestcasecount="0"
+		childsuccesscount="0"
+		childfailedcount="0"
+		childblockedcount="0"
+		totalsuccesscount="0"
+		totalfailedcount="0"
+		totalblockedcount="0"
+		totalmaintenancemodecount="0"
+		user="Kumar"
+		rxversion="9.1.2.0"
+		host="J4-MOHAN"
+		osversion="Windows 10 64bit"
+		runtimeversion="4.0.30319.42000"
+		procarch="32bit"
+		oslanguage="en-US"
+		dtnlanguage="en-CA"
+		screenresolution="1920x1080"
+		timestamp="2019-10-18 1:54:04 PM"
+		timestampiso="2019-10-18T17:54:04"
+		endtime="2019-10-18 1:55:34 PM"
+		timeoutfactor="1"
+		module="verifySearchByFullTextDocInIndex">
+		<detail>
+			verifySearchByFullTextDocInIndex
+		</detail>
+		<errormessage>
+			Failed to find item 'FirmSettings.MainForm.FirmSettingsForm.lnkDocIndexing'.
+		</errormessage>
+		<varbindings>
+		</varbindings>
+		<item
+			timeRelativeToTestSuiteStartTime="01:29.309"
+			timeRelativeToTestModuleStartTime="01:29.309"
+			timeWallClock="13:55:33"
+			time="01:29.309"
+			level="Error"
+			category="Module"
+			errimg="images_verifySe_21c10816\verifySe_21c10816_287370f5_trace.jpg"
+			errthumb="images_verifySe_21c10816\verifySe_21c10816_287370f5_trace_thumb.jpg">
+			<message>
+				Failed to find item 'FirmSettings.MainForm.FirmSettingsForm.lnkDocIndexing'.<br/>No element found for path '?/?/form[@controlname='FirmSettingsForm']//element[@controlname='amlblDocumentIndexing']/text[@accessiblerole='StaticText']' at step 'form[@controlname='FirmSettingsForm']' after 67 attempts within 1m.
+			</message>
+			<metainfo
+				stacktrace="   at Ranorex.Core.Repository.RepoItemInfo.FindInternal[T](Boolean findSingle, Boolean throwException, Duration effectiveTimeoutOverride)&#13;&#10;   at Ranorex.Core.Repository.RepoItemInfo.&lt;>c__DisplayClass75_0`1.&lt;Find>b__0()&#13;&#10;   at Ranorex.Core.Testing.Services.NoMaintenanceModeService.HandleElementNotFound[T](Func`1 action, RepoItemInfo entry)&#13;&#10;   at Ranorex.Core.Repository.RepoItemInfo.Find[T](Boolean findSingle, Boolean throwException, Duration effectiveTimeoutOverride)&#13;&#10;   at Ranorex.Core.Repository.RepoItemInfo.CreateAdapter[T](Boolean throwException, Duration waitTimeout)&#13;&#10;   at Ranorex.Core.Repository.RepoItemInfo.CreateAdapter[T](Boolean throwException)&#13;&#10;   at SmokeTest.Repositories.FirmSettingsFolders.FirmSettingsFormFolder.get_lnkDocIndexing() in c:\Users\Kumar\Downloads\RanorexAutomation\AA Enhanced\Repositories\FirmSettings.cs:line 455&#13;&#10;   at SmokeTest.verifySearchByFullTextDocInIndex.ValidateIndexingInFirmSetting() in c:\Users\Kumar\Downloads\RanorexAutomation\AA Enhanced\verifySearchByFullTextDocInIndex.cs:line 54&#13;&#10;   at SmokeTest.verifySearchByFullTextDocInIndex.ValidateFullTxtSearchUsingIndexing() in c:\Users\Kumar\Downloads\RanorexAutomation\AA Enhanced\verifySearchByFullTextDocInIndex.cs:line 87&#13;&#10;   at SmokeTest.verifySearchByFullTextDocInIndex.Ranorex.Core.Testing.ITestModule.Run() in c:\Users\Kumar\Downloads\RanorexAutomation\AA Enhanced\verifySearchByFullTextDocInIndex.cs:line 110&#13;&#10;   at Ranorex.Core.Testing.TestModuleLeaf.RunInternal(DataContext parentDataContext, Int32 iteration, Int32 iterationCount, Boolean skipIteration)"
+				codefile="c:\Users\Kumar\Downloads\RanorexAutomation\AA Enhanced\verifySearchByFullTextDocInIndex.cs"
+				codeline="54"
+				type="repoitem"
+				path="/form[@controlname='MainForm']/?/?/form[@controlname='FirmSettingsForm']//element[@controlname='amlblDocumentIndexing']/text[@accessiblerole='StaticText']"
+				itempath=".//element[@controlname='amlblDocumentIndexing']/text[@accessiblerole='StaticText']"
+				fullname="FirmSettings.MainForm.FirmSettingsForm.lnkDocIndexing"
+				id="87918223db764b36873044733ca9ee16"
+				timeout="90000"
+				failedStep="form[@controlname='FirmSettingsForm']"
+				bestPathPrefix="?/?"
+				loglvl="Error">
+			</metainfo>
+		</item>
+	</activity>
+</report>

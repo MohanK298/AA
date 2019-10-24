@@ -1,0 +1,124 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<report
+	progress="">
+	<activity
+		result="Success"
+		duration="0ms"
+		durationms="0"
+		type="root"
+		rid="9f91e90669bbe39"
+		totalerrorcount="0"
+		totalwarningcount="1"
+		totalsuccesstestcasecount="0"
+		totalfailedtestcasecount="0"
+		totalblockedtestcasecount="0"
+		childsuccesscount="0"
+		childfailedcount="0"
+		childblockedcount="0"
+		totalsuccesscount="0"
+		totalfailedcount="0"
+		totalblockedcount="0"
+		totalmaintenancemodecount="0"
+		user="qa"
+		rxversion="8.3.1.0"
+		host="ADS-5056"
+		osversion="Windows 10 64bit"
+		runtimeversion="4.0.30319.42000"
+		procarch="32bit"
+		oslanguage="en-US"
+		dtnlanguage="en-CA"
+		screenresolution="3840x1080"
+		timestamp="2019-03-25 12:37:03 PM"
+		timestampiso="2019-03-25T16:37:03"
+		endtime="2019-03-25 12:40:53 PM"
+		timeoutfactor="1"
+		module="CalendarAppointmentCRUD">
+		<detail>
+			CalendarAppointmentCRUD
+		</detail>
+		<varbindings>
+		</varbindings>
+		<item
+			timeRelativeToTestSuiteStartTime="02:24.296"
+			timeRelativeToTestModuleStartTime="02:24.297"
+			timeWallClock="12:39:28"
+			time="02:24.296"
+			level="Warn"
+			category="Win32">
+			<message>
+				The automating process does not have the required security permissions to access the process 'regedit'. UI element identification capabilities for controls in that process are limited.<br/>Process: 'regedit' (pid 8632)<br/>The following website provides more information on this technology limitation:<br/>https://www.ranorex.com/help/v8.3/interfaces-connectivity/technology-instrumentation/general-troubleshooting/#Win32BasedApplications<br/>(This message is only shown once per report.)
+			</message>
+			<metainfo
+				limitationName="ProcessPermissions"
+				showInProgressDialog="False"
+				codefile="C:\Qiao\AA Enhanced\Modules\CalendarAppointmentCRUD.cs"
+				codeline="112"
+				loglvl="Warn">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="02:26.418"
+			timeRelativeToTestModuleStartTime="02:26.419"
+			timeWallClock="12:39:30"
+			time="02:26.418"
+			level="Info"
+			category="User">
+			<message>
+				New Ranorex automation appointment created: Ranorex sanity 12:37 PM
+			</message>
+			<metainfo
+				codefile="C:\Qiao\AA Enhanced\Modules\CalendarAppointmentCRUD.cs"
+				codeline="113"
+				loglvl="Info">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="02:36.039"
+			timeRelativeToTestModuleStartTime="02:36.041"
+			timeWallClock="12:39:39"
+			time="02:36.039"
+			level="Info"
+			category="User">
+			<message>
+				Ranorex sanity 12:37 PM
+			</message>
+			<metainfo
+				codefile="C:\Qiao\AA Enhanced\Modules\CalendarAppointmentCRUD.cs"
+				codeline="142"
+				loglvl="Info">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="02:42.600"
+			timeRelativeToTestModuleStartTime="02:42.601"
+			timeWallClock="12:39:46"
+			time="02:42.600"
+			level="Info"
+			category="User">
+			<message>
+				01:07 PM
+			</message>
+			<metainfo
+				codefile="C:\Qiao\AA Enhanced\Modules\CalendarAppointmentCRUD.cs"
+				codeline="144"
+				loglvl="Info">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="03:49.355"
+			timeRelativeToTestModuleStartTime="03:49.356"
+			timeWallClock="12:40:53"
+			time="03:49.355"
+			level="Success"
+			category="Validation">
+			<message>
+				Element for path '?/?/form[@controlname='CalendarIndexForm']/container[@controlname='pnlBase']//table[@accessiblename='Band 0']/row/cell[@text='Edited Ranorex sanity 12:37 PM']' does not exist (No element found for path '?/?/form[@controlname='CalendarIndexForm']/container[@controlname='pnlBase']//table[@accessiblename='Band 0']/row/cell[@text='Edited Ranorex sanity 12:37 PM']' within 10s.).
+			</message>
+			<metainfo
+				codefile="C:\Qiao\AA Enhanced\Modules\CalendarAppointmentCRUD.cs"
+				codeline="195"
+				loglvl="Success">
+			</metainfo>
+		</item>
+	</activity>
+</report>

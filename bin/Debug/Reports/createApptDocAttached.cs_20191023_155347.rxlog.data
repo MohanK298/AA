@@ -1,0 +1,146 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<report
+	progress="">
+	<activity
+		result="Failed"
+		duration="0ms"
+		durationms="0"
+		type="root"
+		rid="2095088d87b61d04"
+		totalerrorcount="1"
+		totalwarningcount="0"
+		totalsuccesstestcasecount="0"
+		totalfailedtestcasecount="0"
+		totalblockedtestcasecount="0"
+		childsuccesscount="0"
+		childfailedcount="0"
+		childblockedcount="0"
+		totalsuccesscount="0"
+		totalfailedcount="0"
+		totalblockedcount="0"
+		totalmaintenancemodecount="0"
+		user="Kumar"
+		rxversion="9.1.2.0"
+		host="J4-MOHAN"
+		osversion="Windows 10 64bit"
+		runtimeversion="4.0.30319.42000"
+		procarch="32bit"
+		oslanguage="en-US"
+		dtnlanguage="en-CA"
+		screenresolution="1920x1080"
+		timestamp="2019-10-23 3:53:57 PM"
+		timestampiso="2019-10-23T19:53:57"
+		endtime="2019-10-23 3:58:24 PM"
+		timeoutfactor="1"
+		module="createApptDocAttached">
+		<detail>
+			createApptDocAttached
+		</detail>
+		<errormessage>
+			Failed to find item 'Files.MainForm.FilesIndexForm.listFirstFile'.
+		</errormessage>
+		<varbindings>
+		</varbindings>
+		<item
+			timeRelativeToTestSuiteStartTime="00:22.732"
+			timeRelativeToTestModuleStartTime="00:22.732"
+			timeWallClock="15:54:19"
+			time="00:22.732"
+			level="Success"
+			category="Validation">
+			<message>
+				Document Detail Form Opened
+			</message>
+			<metainfo
+				type="repoitem"
+				path="/form[@controlname='DocumentDetail']"
+				itempath="/form[@controlname='DocumentDetail']"
+				fullname="Documents.DocumentDetail.Self"
+				id="99941e2d5c774e95a78800f265028bdc"
+				timeout="30000"
+				codefile="c:\Users\Kumar\Downloads\RanorexAutomation\AA Enhanced\createApptDocAttached.cs"
+				codeline="57"
+				loglvl="Success">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:37.622"
+			timeRelativeToTestModuleStartTime="00:37.622"
+			timeWallClock="15:54:34"
+			time="00:37.622"
+			level="Success"
+			category="User">
+			<message>
+				Value &quot;Other&quot; Selected as expected
+			</message>
+			<metainfo
+				codefile="c:\Users\Kumar\Downloads\RanorexAutomation\AA Enhanced\Modules\Utilities\Common.cs"
+				codeline="250"
+				loglvl="Success">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="03:05.964"
+			timeRelativeToTestModuleStartTime="03:05.964"
+			timeWallClock="15:57:03"
+			time="03:05.964"
+			level="Failure"
+			category="User"
+			errimg="images_createAp_672e189f\createAp_672e189f_82c2eb65_trace.jpg"
+			errthumb="images_createAp_672e189f\createAp_672e189f_82c2eb65_trace_thumb.jpg">
+			<message>
+				Value &quot;RanorexTestFile 2019-10-23 3:53:58 PM&quot; not present for selection in &quot;Document Selector Table&quot;
+			</message>
+			<metainfo
+				codefile="c:\Users\Kumar\Downloads\RanorexAutomation\AA Enhanced\Modules\Utilities\Common.cs"
+				codeline="168"
+				loglvl="Failure">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="03:20.291"
+			timeRelativeToTestModuleStartTime="03:20.291"
+			timeWallClock="15:57:17"
+			time="03:20.291"
+			level="Failure"
+			category="User"
+			errimg="images_createAp_672e189f\createAp_672e189f_0cbb903a_trace.jpg"
+			errthumb="images_createAp_672e189f\createAp_672e189f_0cbb903a_trace_thumb.jpg">
+			<message>
+				Value &quot;Test Data Added 2019-10-23 3:53:58 PM&quot; not present in &quot;Calendar List&quot;
+			</message>
+			<metainfo
+				codefile="c:\Users\Kumar\Downloads\RanorexAutomation\AA Enhanced\Modules\Utilities\Common.cs"
+				codeline="88"
+				loglvl="Failure">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="04:26.963"
+			timeRelativeToTestModuleStartTime="04:26.963"
+			timeWallClock="15:58:24"
+			time="04:26.963"
+			level="Error"
+			category="Module"
+			errimg="images_createAp_672e189f\createAp_672e189f_7926b1fd_trace.jpg"
+			errthumb="images_createAp_672e189f\createAp_672e189f_7926b1fd_trace_thumb.jpg">
+			<message>
+				Failed to find item 'Files.MainForm.FilesIndexForm.listFirstFile'.<br/>No element found for path '?/?/form[@controlname='FilesIndexForm']//row[@accessiblename='Band 0 row 1']/cell[@accessiblename='File']' at step 'form[@controlname='FilesIndexForm']' after 61 attempts within 1m.
+			</message>
+			<metainfo
+				stacktrace="   at Ranorex.Core.Repository.RepoItemInfo.FindInternal[T](Boolean findSingle, Boolean throwException, Duration effectiveTimeoutOverride)&#13;&#10;   at Ranorex.Core.Repository.RepoItemInfo.&lt;>c__DisplayClass75_0`1.&lt;Find>b__0()&#13;&#10;   at Ranorex.Core.Testing.Services.NoMaintenanceModeService.HandleElementNotFound[T](Func`1 action, RepoItemInfo entry)&#13;&#10;   at Ranorex.Core.Repository.RepoItemInfo.Find[T](Boolean findSingle, Boolean throwException, Duration effectiveTimeoutOverride)&#13;&#10;   at Ranorex.Core.Repository.RepoItemInfo.CreateAdapter[T](Boolean throwException, Duration waitTimeout)&#13;&#10;   at Ranorex.Core.Repository.RepoItemInfo.CreateAdapter[T](Boolean throwException)&#13;&#10;   at SmokeTest.Repositories.FilesFolders.FilesIndexFormFolder.get_listFirstFile() in c:\Users\Kumar\Downloads\RanorexAutomation\AA Enhanced\Repositories\Files.cs:line 513&#13;&#10;   at SmokeTest.createApptDocAttached.ValidateApptInDocument() in c:\Users\Kumar\Downloads\RanorexAutomation\AA Enhanced\createApptDocAttached.cs:line 127&#13;&#10;   at SmokeTest.createApptDocAttached.Ranorex.Core.Testing.ITestModule.Run() in c:\Users\Kumar\Downloads\RanorexAutomation\AA Enhanced\createApptDocAttached.cs:line 143&#13;&#10;   at Ranorex.Core.Testing.TestModuleLeaf.RunInternal(DataContext parentDataContext, Int32 iteration, Int32 iterationCount, Boolean skipIteration)"
+				codefile="c:\Users\Kumar\Downloads\RanorexAutomation\AA Enhanced\createApptDocAttached.cs"
+				codeline="127"
+				type="repoitem"
+				path="/form[@controlname='MainForm']/?/?/form[@controlname='FilesIndexForm']//row[@accessiblename='Band 0 row 1']/cell[@accessiblename='File']"
+				itempath=".//row[@accessiblename='Band 0 row 1']/cell[@accessiblename='File']"
+				fullname="Files.MainForm.FilesIndexForm.listFirstFile"
+				id="f9a8db13b9ce4a92a704a8de7ea23484"
+				timeout="90000"
+				failedStep="form[@controlname='FilesIndexForm']"
+				bestPathPrefix="?/?"
+				loglvl="Error">
+			</metainfo>
+		</item>
+	</activity>
+</report>

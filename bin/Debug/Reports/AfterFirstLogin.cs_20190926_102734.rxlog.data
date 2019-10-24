@@ -1,0 +1,72 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<report
+	progress="">
+	<activity
+		result="Failed"
+		duration="49.78s"
+		durationms="49778"
+		type="root"
+		rid="48f137fe4ced3c7"
+		totalerrorcount="1"
+		totalwarningcount="1"
+		totalsuccesstestcasecount="0"
+		totalfailedtestcasecount="0"
+		totalblockedtestcasecount="0"
+		childsuccesscount="0"
+		childfailedcount="0"
+		childblockedcount="0"
+		totalsuccesscount="0"
+		totalfailedcount="0"
+		totalblockedcount="0"
+		totalmaintenancemodecount="0"
+		user="qa"
+		rxversion="9.1.0.0"
+		host="ADS-5087"
+		osversion="Windows 10 64bit"
+		runtimeversion="4.0.30319.42000"
+		procarch="32bit"
+		oslanguage="en-US"
+		dtnlanguage="en-US"
+		screenresolution="1920x1080"
+		timestamp="9/26/2019 10:27:37 AM"
+		timestampiso="2019-09-26T14:27:37"
+		endtime="9/26/2019 10:28:27 AM"
+		timeoutfactor="1"
+		module="AfterFirstLogin">
+		<detail>
+			AfterFirstLogin
+		</detail>
+		<varbindings>
+		</varbindings>
+		<item
+			timeRelativeToTestSuiteStartTime="00:00.000"
+			timeRelativeToTestModuleStartTime="00:45.515"
+			timeWallClock="10:28:23"
+			time="00:00.000"
+			level="Warn"
+			category="WinForms">
+			<message>
+				Something is limiting object recognition for WinForms. Missing privileges are a common cause of this. Try starting all Ranorex tools and the AUT with the same privileges, preferably as an administrator. <br/>Process: (pid 0)<br/>The following website provides more information on this technology limitation:<br/>https://www.ranorex.com/help/v9.1/interfaces-connectivity/technology-instrumentation/general-troubleshooting/#DotNetWinForms<br/>(This message is only shown once per report.)
+			</message>
+			<metainfo
+				limitationName="PotentiallyWinForms"
+				showInProgressDialog="False"
+				loglvl="Warn">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:00.000"
+			timeRelativeToTestModuleStartTime="00:49.778"
+			timeWallClock="10:28:27"
+			time="00:00.000"
+			level="Error"
+			category="Module">
+			<message>
+				The test run has been aborted by the user.
+			</message>
+			<metainfo
+				loglvl="Error">
+			</metainfo>
+		</item>
+	</activity>
+</report>

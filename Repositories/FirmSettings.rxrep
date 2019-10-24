@@ -1,5 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
-<repository
+﻿<repository
 id="358d9fa2-d73c-4905-9bfd-1fb7897837d2"
 name="FirmSettings"
 rxversion="9.0">
@@ -101,6 +100,26 @@ SUVORK5CYII=
 				searchtimeout="30000ms">
 					/form[@controlname='MainForm']/?/?/form[@controlname='FirmSettingsForm']//element[@controlname='amlblDocumentLocations']/text[@accessiblerole='StaticText']
 				</item>
+				<item
+				addcaps="text,accessible"
+				capname="text"
+				id="a6d8998d-4033-4df8-a585-86f949d4958e"
+				name="lnkDocumentGroups"
+				refimgid="8a5272ad-be2d-4b92-9446-f6e5a2288e32"
+				refpath="/form[@controlname='MainForm']/element[@controltypename='MdiClient']/form[@controlname='FirmSettingsForm']/container[@controlname='roundedPanelControl']/container[@controlname='panelScroll']/element[@controlname='amlblDocuments']/text[@accessiblerole='StaticText']"
+				searchtimeout="30000ms">
+					/form[@controlname='MainForm']/?/?/form[@controlname='FirmSettingsForm']//element[@controlname='amlblDocuments']/text[@accessiblerole='StaticText']
+				</item>
+				<item
+				addcaps="text,accessible"
+				capname="text"
+				id="87918223-db76-4b36-8730-44733ca9ee16"
+				name="lnkDocIndexing"
+				refimgid="4a386134-6801-447d-ba3b-66baee4e7696"
+				refpath="/form[@controlname='MainForm']/element[@controltypename='MdiClient']/form[@controlname='FirmSettingsForm']/container[@controlname='roundedPanelControl']/container[@controlname='panelScroll']/element[@controlname='amlblDocumentIndexing']/text[@accessiblerole='StaticText']"
+				searchtimeout="30000ms">
+					/form[@controlname='MainForm']/?/?/form[@controlname='FirmSettingsForm']//element[@controlname='amlblDocumentIndexing']/text[@accessiblerole='StaticText']
+				</item>
 				<basepath>
 					/form[@controlname='MainForm']/?/?/form[@controlname='FirmSettingsForm']
 				</basepath>
@@ -126,6 +145,7 @@ SUVORK5CYII=
 		id="ca27910a-bd04-4380-8ce4-c7f4e00d6004"
 		isrooted="True"
 		name="DocumentFirmSettingsForm"
+		refimgid="56009dbe-5a93-4e36-9517-69e909980155"
 		refpath="/form[@controlname='DocumentFirmSettingsForm']"
 		searchtimeout="30000ms"
 		usecache="True">
@@ -159,6 +179,84 @@ SUVORK5CYII=
 			searchtimeout="30000ms">
 				/form[@controlname='DocumentFirmSettingsForm']/?/?/toolbar[@automationid='Toolbar : toolbarBaseDesigner']/button[@automationid='[Toolbar : toolbarBaseDesigner Tools] Tool : TOOLBAR_BUTTON_OK - Index : 5 ']
 			</item>
+			<item
+			addcaps="checkbox,control,nativewindow"
+			capname="checkbox"
+			id="fb2cdf0e-0756-453d-a8ac-a88a5a7d40f2"
+			name="cbManageIndex"
+			refimgid="fd5431fd-a9d6-43fa-acb6-668a36f4c745"
+			refpath="/form[@controlname='DocumentFirmSettingsForm']/container[@controlname='pnlBase']/container[@controlname='pnlControls']/container[@controlname='panelTitleBase']/container[@controlname='panelBase']/container[@controlname='panelIndexing']/container[@controlname='panelAmicusManagedIndexing']/checkbox[@controlname='chkBxEnableManagedIndexing']"
+			searchtimeout="30000ms">
+				/form[@controlname='DocumentFirmSettingsForm']/container[@controlname='pnlBase']//container[@controlname='panelBase']/?/?/container[@controlname='panelAmicusManagedIndexing']/checkbox[@controlname='chkBxEnableManagedIndexing']
+			</item>
+			<item
+			addcaps="toolbar,accessible"
+			capname="toolbar"
+			id="7fc58390-d60c-4bfc-8149-5235ab481534"
+			name="Toolbar"
+			refimgid="cd02049f-d2b9-4fe3-a49d-fdb3428f2c35"
+			refpath="/form[@controlname='DocumentFirmSettingsForm']/element[@controlname='_BaseForm_Toolbars_Dock_Area_Bottom']/container[@accessiblename='DockBottom']/toolbar[@accessiblename='Toolbar']"
+			searchtimeout="30000ms">
+				/form[@controlname='DocumentFirmSettingsForm']/element[@controlname='_BaseForm_Toolbars_Dock_Area_Bottom']/?/?/toolbar[@accessiblename='Toolbar']
+			</item>
+			<folder
+			addcaps="toolbar,accessible"
+			capname="toolbar"
+			id="a46f0e67-2efd-4372-9e2c-096107dcfebb"
+			isrooted="True"
+			name="Toolbar1"
+			refpath="/form[@controlname='DocumentFirmSettingsForm']/element[@controlname='_BaseForm_Toolbars_Dock_Area_Bottom']/container[@accessiblename='DockBottom']/toolbar[@accessiblename='Toolbar']"
+			searchtimeout="30000ms"
+			usecache="False">
+				<item
+				addcaps="button,accessible"
+				capname="button"
+				id="a77477b8-7637-4951-9a64-5e41fff18dba"
+				name="btnApply"
+				refpath="/form[@controlname='DocumentFirmSettingsForm']/element[@controlname='_BaseForm_Toolbars_Dock_Area_Bottom']/container[@accessiblename='DockBottom']/toolbar[@accessiblename='Toolbar']/button[@accessiblename='Apply']"
+				searchtimeout="30000ms">
+					/form[@controlname='DocumentFirmSettingsForm']//toolbar[@accessiblename='Toolbar']/button[@accessiblename='Apply']
+				</item>
+				<item
+				addcaps="button,accessible"
+				capname="button"
+				id="fef4f13d-6db6-4da1-bb6e-5759993b6682"
+				name="btnCancel"
+				refpath="/form[@controlname='DocumentFirmSettingsForm']/element[@controlname='_BaseForm_Toolbars_Dock_Area_Bottom']/container[@accessiblename='DockBottom']/toolbar[@accessiblename='Toolbar']/button[@accessiblename='Cancel']"
+				searchtimeout="30000ms">
+					/form[@controlname='DocumentFirmSettingsForm']//toolbar[@accessiblename='Toolbar']/button[@accessiblename='Cancel']
+				</item>
+				<item
+				addcaps="button,accessible"
+				capname="button"
+				id="acb219c3-0d70-4777-aacc-571167c5e3a4"
+				name="btnNext"
+				refpath="/form[@controlname='DocumentFirmSettingsForm']/element[@controlname='_BaseForm_Toolbars_Dock_Area_Bottom']/container[@accessiblename='DockBottom']/toolbar[@accessiblename='Toolbar']/button[@accessiblename='Next']"
+				searchtimeout="30000ms">
+					/form[@controlname='DocumentFirmSettingsForm']//toolbar[@accessiblename='Toolbar']/button[@accessiblename='Next']
+				</item>
+				<item
+				addcaps="button,accessible"
+				capname="button"
+				id="d2449541-fa35-4b05-8918-adb102fe59bd"
+				name="btnOK"
+				refpath="/form[@controlname='DocumentFirmSettingsForm']/element[@controlname='_BaseForm_Toolbars_Dock_Area_Bottom']/container[@accessiblename='DockBottom']/toolbar[@accessiblename='Toolbar']/button[@accessiblename='OK']"
+				searchtimeout="30000ms">
+					/form[@controlname='DocumentFirmSettingsForm']//toolbar[@accessiblename='Toolbar']/button[@accessiblename='OK']
+				</item>
+				<item
+				addcaps="button,accessible"
+				capname="button"
+				id="3186ea49-4429-4bf4-b6e5-6755be9a3b55"
+				name="btnPrev"
+				refpath="/form[@controlname='DocumentFirmSettingsForm']/element[@controlname='_BaseForm_Toolbars_Dock_Area_Bottom']/container[@accessiblename='DockBottom']/toolbar[@accessiblename='Toolbar']/button[@accessiblename='Prev']"
+				searchtimeout="30000ms">
+					/form[@controlname='DocumentFirmSettingsForm']//toolbar[@accessiblename='Toolbar']/button[@accessiblename='Prev']
+				</item>
+				<basepath>
+					/form[@controlname='DocumentFirmSettingsForm']//toolbar[@accessiblename='Toolbar']
+				</basepath>
+			</folder>
 			<basepath>
 				/form[@controlname='DocumentFirmSettingsForm']
 			</basepath>
@@ -280,6 +378,16 @@ R9TKJFpJ8l5fzCcE+Q6ozFZt5OrldwAAAABJRU5ErkJggg==
 			searchtimeout="30000ms">
 				/form[@controlname='PromptForm']/?/?/toolbar[@automationid='Toolbar : toolbarBaseDesigner']/button[@automationid='[Toolbar : toolbarBaseDesigner Tools] Tool : TOOLBAR_BUTTON_OK - Index : 1 ']
 			</item>
+			<item
+			addcaps="button,accessible"
+			capname="button"
+			id="1139f9fe-33c5-49f0-8e87-748ca2673125"
+			name="btnOK"
+			refimgid="99bf49c9-1d34-4a00-bc36-4659698dab2d"
+			refpath="/form[@controlname='PromptForm']/element[@controlname='_BaseForm_Toolbars_Dock_Area_Bottom']/container[@accessiblename='DockBottom']/toolbar[@accessiblename='Toolbar']/button[@accessiblename='OK']"
+			searchtimeout="30000ms">
+				/form[@controlname='PromptForm']//toolbar[@accessiblename='Toolbar']/button[@accessiblename='OK']
+			</item>
 			<basepath>
 				/form[@controlname='PromptForm']
 			</basepath>
@@ -346,6 +454,188 @@ SUVORK5CYII=
 			</item>
 			<basepath>
 				/form[@controlname='DocumentsUnconvertedFirmSettingsForm']
+			</basepath>
+			<icon>
+				iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACx
+jwv8YQUAAAAJcEhZcwAADsQAAA7EAZUrDhsAAAFlSURBVDhPY6AJeOJjOvORg9p/FOyo/v9xoKUT
+VAlugKERDT921nwLVQoBb3Kj+Z5FOf9/FuP2/1msO3EYpBaIH7vr/Qcb8Oft6//kgFclif/Brnjo
+qPYZKvb/z8tn/z+tWfD/bWspWMHLwrj/r8pT/7/rrfv/dffG//++fwOr+3Hu+P8nPsYTwAY8CbRM
+fGSvCnbev29fwQpwgd9PH/1/N6ERHB5gzSDwyFX3IkjgeZLv/0+rF/z/snPD/4fWCmAND60V/3+Y
+1fP//cxuYABqgcUe2SqBDXge5qoDMcBN9w3MgDdNhf/fTWr+/xCoCKb4XU/t/7fd1Shi4BgJtPSG
+GqBzjhwDnkbaa4ANAIZBBDkGgDXDAMkGAFMmVCsEPHLTO0uKAU+jnYygWhHgeZIPUQY8dFS/BdWC
+Cd405uM14N+/f+egSnGDjyvnxjyyVQYbANL0FmjAm/aKH4+9zVWhSqCAgQEAq9YXqsYCPO8AAAAA
+SUVORK5CYII=
+			</icon>
+		</appfolder>
+		<appfolder
+		addcaps="form,control,nativewindow"
+		capname="form"
+		id="4e45f110-88b0-4af8-9d6a-29c8028ea612"
+		isrooted="True"
+		name="FileFirmSettingsForm"
+		refimgid="435b3d9e-94fc-4b28-bdb5-f8408693ce8f"
+		refpath="/form[@controlname='FileFirmSettingsForm']"
+		searchtimeout="30000ms"
+		usecache="True">
+			<item
+			capname="combobox"
+			id="a14c56ea-4bab-4fb1-93bd-9fa56d90ca7c"
+			name="cmbbxFileType"
+			searchtimeout="30000ms">
+				/form[@controlname='FileFirmSettingsForm']/container[@controlname='pnlBase']//container[@controlname='panelBase']/container[@controlname='panelDocumentGroups']//container[@controlname='pnlDropDown']/?/?/combobox/combobox[@accessiblerole='ComboBox']
+			</item>
+			<folder
+			addcaps="container,control,nativewindow"
+			capname="container"
+			id="93c65c7e-42ea-4439-a953-d10c9ede3dc7"
+			isrooted="True"
+			name="PnlButtonsAndList"
+			refpath="/form[@controlname='FileFirmSettingsForm']/container[@controlname='pnlBase']/container[@controlname='pnlControls']/container[@controlname='panelTitleBase']/container[@controlname='panelBase']/container[@controlname='panelDocumentGroups']/container[@controlname='fseDocumentGroups']/container[@controlname='panelBase']/container[@controlname='pnlButtonsAndList']"
+			searchtimeout="30000ms"
+			usecache="False">
+				<item
+				addcaps="button,accessible"
+				capname="button"
+				id="148110a3-ae3b-46ed-b843-bb7160a5805e"
+				name="btnEdit"
+				refimgid="1cb8f166-d0e2-4a5d-92c2-06c35d45d79f"
+				refpath="/form[@controlname='FileFirmSettingsForm']/container[@controlname='pnlBase']/container[@controlname='pnlControls']/container[@controlname='panelTitleBase']/container[@controlname='panelBase']/container[@controlname='panelDocumentGroups']/container[@controlname='fseDocumentGroups']/container[@controlname='panelBase']/container[@controlname='pnlButtonsAndList']/container[@controlname='pnlButtons']/element[@controlname='abtnEdit']/button[@accessiblename='Edit']"
+				searchtimeout="30000ms">
+					/form[@controlname='FileFirmSettingsForm']/container[@controlname='pnlBase']//container[@controlname='panelBase']/container[@controlname='panelDocumentGroups']//container[@controlname='pnlButtonsAndList']/?/?/element[@controlname='abtnEdit']/button[@accessiblename='Edit']
+				</item>
+				<item
+				addcaps="button,accessible"
+				capname="button"
+				id="60fdabb6-f193-48b5-b752-6203436cc4c6"
+				name="btnNew"
+				refimgid="2a7d4070-9e91-4864-bbe8-857f4f539575"
+				refpath="/form[@controlname='FileFirmSettingsForm']/container[@controlname='pnlBase']/container[@controlname='pnlControls']/container[@controlname='panelTitleBase']/container[@controlname='panelBase']/container[@controlname='panelDocumentGroups']/container[@controlname='fseDocumentGroups']/container[@controlname='panelBase']/container[@controlname='pnlButtonsAndList']/container[@controlname='pnlButtons']/element[@controlname='abtnNew']/button[@accessiblename='New']"
+				searchtimeout="30000ms">
+					/form[@controlname='FileFirmSettingsForm']/container[@controlname='pnlBase']//container[@controlname='panelBase']/container[@controlname='panelDocumentGroups']//container[@controlname='pnlButtonsAndList']/?/?/element[@controlname='abtnNew']/button[@accessiblename='New']
+				</item>
+				<item
+				addcaps="button,accessible"
+				capname="button"
+				id="c4970983-087a-42c9-a9d3-c72b21d1d3af"
+				name="btnRemove"
+				refimgid="d0af2011-9602-4c40-9b0a-c0b0fcc51a0f"
+				refpath="/form[@controlname='FileFirmSettingsForm']/container[@controlname='pnlBase']/container[@controlname='pnlControls']/container[@controlname='panelTitleBase']/container[@controlname='panelBase']/container[@controlname='panelDocumentGroups']/container[@controlname='fseDocumentGroups']/container[@controlname='panelBase']/container[@controlname='pnlButtonsAndList']/container[@controlname='pnlButtons']/element[@controlname='abtnRemove']/button[@accessiblename='Remove']"
+				searchtimeout="30000ms">
+					/form[@controlname='FileFirmSettingsForm']/container[@controlname='pnlBase']//container[@controlname='panelBase']/container[@controlname='panelDocumentGroups']//container[@controlname='pnlButtonsAndList']/?/?/element[@controlname='abtnRemove']/button[@accessiblename='Remove']
+				</item>
+				<item
+				addcaps="table,accessible"
+				capname="table"
+				id="e6549855-1435-4de9-abd7-0d067abce506"
+				name="tblDocGroups"
+				refimgid="41b8c85f-f342-49e3-ab7a-11ed8f070102"
+				refpath="/form[@controlname='FileFirmSettingsForm']/container[@controlname='pnlBase']/container[@controlname='pnlControls']/container[@controlname='panelTitleBase']/container[@controlname='panelBase']/container[@controlname='panelDocumentGroups']/container[@controlname='fseDocumentGroups']/container[@controlname='panelBase']/container[@controlname='pnlButtonsAndList']/element[@controlname='afsGrid']/table[@accessiblename='Band 0']"
+				searchtimeout="30000ms">
+					/form[@controlname='FileFirmSettingsForm']/container[@controlname='pnlBase']//container[@controlname='panelBase']/container[@controlname='panelDocumentGroups']//container[@controlname='pnlButtonsAndList']/?/?/table[@accessiblename='Band 0']
+				</item>
+				<item
+				addcaps="text,control,nativewindow"
+				capname="text"
+				id="6ac324f5-e76a-4b89-a1bd-cb5912094c97"
+				name="txtDocGroupName"
+				refimgid="e65668fa-7747-4e45-9aa0-13e1aeb88cba"
+				refpath="/form[@controlname='FileFirmSettingsForm']/container[@controlname='pnlBase']/container[@controlname='pnlControls']/container[@controlname='panelTitleBase']/container[@controlname='panelBase']/container[@controlname='panelDocumentGroups']/container[@controlname='fseDocumentGroups']/container[@controlname='panelBase']/container[@controlname='pnlButtonsAndList']/element[@controlname='atxtLabelEditor']/text[@controlname='atxtLabelEditor_EmbeddableTextBox']"
+				searchtimeout="30000ms">
+					/form[@controlname='FileFirmSettingsForm']/container[@controlname='pnlBase']//container[@controlname='panelBase']/container[@controlname='panelDocumentGroups']//container[@controlname='pnlButtonsAndList']/?/?/text[@controlname='atxtLabelEditor_EmbeddableTextBox']
+				</item>
+				<basepath>
+					/form[@controlname='FileFirmSettingsForm']/container[@controlname='pnlBase']//container[@controlname='panelBase']/container[@controlname='panelDocumentGroups']//container[@controlname='pnlButtonsAndList']
+				</basepath>
+			</folder>
+			<item
+			addcaps="button,accessible"
+			capname="button"
+			id="c4ac429f-0ea0-4797-9271-568f22f186a2"
+			name="btnApply"
+			refimgid="b6d942b3-ad6c-479c-b5ad-433a8a924e34"
+			refpath="/form[@controlname='FileFirmSettingsForm']/container[@controlname='pnlBase']/container[@controlname='pnlControls']/container[@controlname='panelTitleBase']/container[@controlname='panelBase']/container[@controlname='panelDocumentGroups']/container[@controlname='fseDocumentGroups']/container[@controlname='panelBase']/container[@controlname='pnlButtonsAndList']/container[@controlname='pnlButtons']/element[@controlname='abtnApply']/button[@accessiblename='Apply']"
+			searchtimeout="30000ms">
+				/form[@controlname='FileFirmSettingsForm']/container[@controlname='pnlBase']//container[@controlname='panelBase']/container[@controlname='panelDocumentGroups']//container[@controlname='pnlButtons']/element[@controlname='abtnApply']/button[@accessiblename='Apply']
+			</item>
+			<item
+			addcaps="button,accessible"
+			capname="button"
+			id="f1eb4f14-f6ee-452b-9a2f-c161cd2b1363"
+			name="btnCancel"
+			refimgid="ae438c53-58b3-4b09-aeda-5bce1bfeb93a"
+			refpath="/form[@controlname='FileFirmSettingsForm']/container[@controlname='pnlBase']/container[@controlname='pnlControls']/container[@controlname='panelTitleBase']/container[@controlname='panelBase']/container[@controlname='panelDocumentGroups']/container[@controlname='fseDocumentGroups']/container[@controlname='panelBase']/container[@controlname='pnlButtonsAndList']/container[@controlname='pnlButtons']/element[@controlname='abtnCancel']/button[@accessiblename='Cancel']"
+			searchtimeout="30000ms">
+				/form[@controlname='FileFirmSettingsForm']/container[@controlname='pnlBase']//container[@controlname='panelBase']/container[@controlname='panelDocumentGroups']//container[@controlname='pnlButtons']/element[@controlname='abtnCancel']/button[@accessiblename='Cancel']
+			</item>
+			<item
+			addcaps="toolbar,accessible"
+			capname="toolbar"
+			id="d14b015f-c3c9-4080-ae26-bf3a2f651ce9"
+			name="Toolbar"
+			refpath="/form[@controlname='FileFirmSettingsForm']/element[@controlname='_BaseForm_Toolbars_Dock_Area_Bottom']/container[@accessiblename='DockBottom']/toolbar[@accessiblename='Toolbar']"
+			searchtimeout="30000ms">
+				/form[@controlname='FileFirmSettingsForm']/element[@controlname='_BaseForm_Toolbars_Dock_Area_Bottom']/?/?/toolbar[@accessiblename='Toolbar']
+			</item>
+			<folder
+			addcaps="toolbar,accessible"
+			capname="toolbar"
+			id="9eb02419-e778-4d96-ac46-7b28501b6b6b"
+			isrooted="True"
+			name="Toolbar1"
+			refpath="/form[@controlname='FileFirmSettingsForm']/element[@controlname='_BaseForm_Toolbars_Dock_Area_Bottom']/container[@accessiblename='DockBottom']/toolbar[@accessiblename='Toolbar']"
+			searchtimeout="30000ms"
+			usecache="False">
+				<item
+				addcaps="button,accessible"
+				capname="button"
+				id="ed3e5aa0-2d34-49db-9ad2-6cb329901ffb"
+				name="btnApply"
+				refpath="/form[@controlname='FileFirmSettingsForm']/element[@controlname='_BaseForm_Toolbars_Dock_Area_Bottom']/container[@accessiblename='DockBottom']/toolbar[@accessiblename='Toolbar']/button[@accessiblename='Apply']"
+				searchtimeout="30000ms">
+					/form[@controlname='FileFirmSettingsForm']//toolbar[@accessiblename='Toolbar']/button[@accessiblename='Apply']
+				</item>
+				<item
+				addcaps="button,accessible"
+				capname="button"
+				id="29e6e145-7d84-4c97-b14a-dbcde454dd7e"
+				name="btnCancel"
+				refpath="/form[@controlname='FileFirmSettingsForm']/element[@controlname='_BaseForm_Toolbars_Dock_Area_Bottom']/container[@accessiblename='DockBottom']/toolbar[@accessiblename='Toolbar']/button[@accessiblename='Cancel']"
+				searchtimeout="30000ms">
+					/form[@controlname='FileFirmSettingsForm']//toolbar[@accessiblename='Toolbar']/button[@accessiblename='Cancel']
+				</item>
+				<item
+				addcaps="button,accessible"
+				capname="button"
+				id="0ce2c8c0-16f4-4fa0-8b23-5bc554479559"
+				name="btnNext"
+				refpath="/form[@controlname='FileFirmSettingsForm']/element[@controlname='_BaseForm_Toolbars_Dock_Area_Bottom']/container[@accessiblename='DockBottom']/toolbar[@accessiblename='Toolbar']/button[@accessiblename='Next']"
+				searchtimeout="30000ms">
+					/form[@controlname='FileFirmSettingsForm']//toolbar[@accessiblename='Toolbar']/button[@accessiblename='Next']
+				</item>
+				<item
+				addcaps="button,accessible"
+				capname="button"
+				id="dd420063-17f2-4aec-a425-6c9d4457469e"
+				name="btnOK"
+				refpath="/form[@controlname='FileFirmSettingsForm']/element[@controlname='_BaseForm_Toolbars_Dock_Area_Bottom']/container[@accessiblename='DockBottom']/toolbar[@accessiblename='Toolbar']/button[@accessiblename='OK']"
+				searchtimeout="30000ms">
+					/form[@controlname='FileFirmSettingsForm']//toolbar[@accessiblename='Toolbar']/button[@accessiblename='OK']
+				</item>
+				<item
+				addcaps="button,accessible"
+				capname="button"
+				id="4d4eafcd-66f5-4377-a026-9fca848f1050"
+				name="btnPrev"
+				refpath="/form[@controlname='FileFirmSettingsForm']/element[@controlname='_BaseForm_Toolbars_Dock_Area_Bottom']/container[@accessiblename='DockBottom']/toolbar[@accessiblename='Toolbar']/button[@accessiblename='Prev']"
+				searchtimeout="30000ms">
+					/form[@controlname='FileFirmSettingsForm']//toolbar[@accessiblename='Toolbar']/button[@accessiblename='Prev']
+				</item>
+				<basepath>
+					/form[@controlname='FileFirmSettingsForm']//toolbar[@accessiblename='Toolbar']
+				</basepath>
+			</folder>
+			<basepath>
+				/form[@controlname='FileFirmSettingsForm']
 			</basepath>
 			<icon>
 				iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACx

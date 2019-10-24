@@ -2312,6 +2312,7 @@ namespace SmokeTest.Repositories.Premium
             RepoItemInfo _matternameInfo;
             RepoItemInfo _clientselectorInfo;
             RepoItemInfo _saveopenInfo;
+            RepoItemInfo _btnnextInfo;
 
             /// <summary>
             /// Creates a new NewFileForm  folder.
@@ -2322,6 +2323,7 @@ namespace SmokeTest.Repositories.Premium
                 _matternameInfo = new RepoItemInfo(this, "MatterName", ".//text[@automationid='uteShortFileName_EmbeddableTextBox']", 30000, null, "d78b3cf9-c68f-438b-8598-725a81c66d75");
                 _clientselectorInfo = new RepoItemInfo(this, "ClientSelector", ".//container[@controlname='scPrimaryClient']//button", 30000, null, "e27f93d4-a7ff-435d-b618-0c52ceb80538");
                 _saveopenInfo = new RepoItemInfo(this, "SaveOpen", ".//button[@text='Save & Open']", 30000, null, "cf4d3b2a-5086-4415-8a03-86eec26e2c15");
+                _btnnextInfo = new RepoItemInfo(this, "btnNext", ".//toolbar[@accessiblename='Toolbar']/button[@accessiblename='NEXT']", 30000, null, "98722d2a-0c6c-4b47-8804-6aa52e8674eb");
             }
 
             /// <summary>
@@ -2417,6 +2419,30 @@ namespace SmokeTest.Repositories.Premium
                 get
                 {
                     return _saveopenInfo;
+                }
+            }
+
+            /// <summary>
+            /// The btnNext item.
+            /// </summary>
+            [RepositoryItem("98722d2a-0c6c-4b47-8804-6aa52e8674eb")]
+            public virtual Ranorex.Button btnNext
+            {
+                get
+                {
+                    return _btnnextInfo.CreateAdapter<Ranorex.Button>(true);
+                }
+            }
+
+            /// <summary>
+            /// The btnNext item info.
+            /// </summary>
+            [RepositoryItemInfo("98722d2a-0c6c-4b47-8804-6aa52e8674eb")]
+            public virtual RepoItemInfo btnNextInfo
+            {
+                get
+                {
+                    return _btnnextInfo;
                 }
             }
         }

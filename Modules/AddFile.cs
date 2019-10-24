@@ -36,7 +36,7 @@ namespace SmokeTest.Modules
     	public string time
     	{
     		get { return _time; }
-    		set { _time = value; }
+    		set { 	_time = value; }
     	}
     	
     	
@@ -107,10 +107,10 @@ namespace SmokeTest.Modules
         	file.PeopleSelectForm.listFirstValue.Click();
         	file.PeopleSelectForm.btnAddToRight.Click();
         	file.PeopleSelectForm.btnOK.Click();
-        	
+        	Delay.Seconds(5);
         	//file.NewFileForm.btnNext.Click();
-        	
-        	Delay.Seconds(10);
+        	file.NewFileForm.btnNext.Click();
+        	Delay.Seconds(5);
         	file.NewFileForm.btnSaveOpen.Click();
         	
         	FindFile();

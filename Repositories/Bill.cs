@@ -2308,7 +2308,7 @@ namespace SmokeTest.Repositories
             {
                 _btnyesInfo = new RepoItemInfo(this, "btnYes", ".//toolbar[@accessiblename='Toolbar']/button[@accessiblename='Yes']", 30000, null, "41ec1e28-8d8e-43c7-a96f-e1056d239d8b");
                 _btnyes1Info = new RepoItemInfo(this, "btnYes1", ".//toolbar[@accessiblename='Toolbar']/button[@accessiblename='Yes']", 30000, null, "c9e9a514-cbd1-4e50-b73a-6043a9863757");
-                _btnokInfo = new RepoItemInfo(this, "btnOk", "?/?/toolbar[@automationid='Toolbar : toolbarBaseDesigner']/button[@automationid='[Toolbar : toolbarBaseDesigner Tools] Tool : TOOLBAR_BUTTON_OK - Index : 3 ']", 30000, null, "f24d70d4-61ea-4fdf-9c26-d7922c3148ee");
+                _btnokInfo = new RepoItemInfo(this, "btnOk", "?/?/toolbar[@automationid='Toolbar : toolbarBaseDesigner']/button[@automationid='[Toolbar : toolbarBaseDesigner Tools] Tool : TOOLBAR_BUTTON_OK - Index : 1 ']", 30000, null, "f24d70d4-61ea-4fdf-9c26-d7922c3148ee");
                 _btnok1Info = new RepoItemInfo(this, "btnOk1", "?/?/toolbar[@automationid='Toolbar : toolbarBaseDesigner']/button[@automationid='[Toolbar : toolbarBaseDesigner Tools] Tool : TOOLBAR_BUTTON_OK - Index : 1 ']", 30000, null, "8a3f94c0-24ce-4a5b-a3a9-7f1041220cdb");
                 _amounttxtInfo = new RepoItemInfo(this, "AmountTxt", "container[@controlname='pnlBase']/?/?/container[@controlname='pnlMessage']/?/?/text[@accessiblename~'^A\\ charge\\ for\\ \\$2\\.30\\ will\\ n']", 30000, null, "210c9b41-cb75-461b-882e-f14009939e16");
                 _confirmationInfo = new RepoItemInfo(this, "Confirmation", "container[@controlname='pnlBase']//element[@controlname='alblMessage']", 30000, null, "b74b4ecf-7b3b-4904-a5d2-1d2072a119c9");

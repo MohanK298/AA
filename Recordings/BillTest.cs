@@ -74,7 +74,7 @@ namespace SmokeTest.Recordings
         void ITestModule.Run()
         {
             Mouse.DefaultMoveTime = 300;
-            Keyboard.DefaultKeyPressTime = 100;
+            Keyboard.DefaultKeyPressTime = 20;
             Delay.SpeedFactor = 1.00;
 
             Init();
@@ -183,39 +183,75 @@ namespace SmokeTest.Recordings
         }
 
 #region Image Feature Data
+        /// <summary>
+        /// DO NOT REFERENCE THIS CODE  - auto generated
+        /// </summary>
         CompressedImage UltraPanel2ClientArea_Screenshot1
         { get { return repo.BillingDetailForm.UltraPanel2ClientAreaInfo.GetScreenshot1(new Rectangle(0, 0, 336, 318)); } }
 
+        /// <summary>
+        /// DO NOT REFERENCE THIS CODE  - auto generated
+        /// </summary>
         Imaging.FindOptions UltraPanel2ClientArea_Screenshot1_Options
         { get { return Imaging.FindOptions.Parse("1;None;0,0,336,318;True;10000000;0ms"); } }
 
+        /// <summary>
+        /// DO NOT REFERENCE THIS CODE  - auto generated
+        /// </summary>
         CompressedImage UltraPanel1ClientArea_Screenshot1
         { get { return repo.BillingDetailForm.UltraPanel1ClientAreaInfo.GetScreenshot1(new Rectangle(0, 0, 346, 318)); } }
 
+        /// <summary>
+        /// DO NOT REFERENCE THIS CODE  - auto generated
+        /// </summary>
         Imaging.FindOptions UltraPanel1ClientArea_Screenshot1_Options
         { get { return Imaging.FindOptions.Parse("1;None;0,0,346,318;True;10000000;0ms"); } }
 
+        /// <summary>
+        /// DO NOT REFERENCE THIS CODE  - auto generated
+        /// </summary>
         CompressedImage UltraPanel1ClientArea_Screenshot3
         { get { return repo.BillingDetailForm.UltraPanel1ClientAreaInfo.GetScreenshot3(new Rectangle(0, 0, 346, 318)); } }
 
+        /// <summary>
+        /// DO NOT REFERENCE THIS CODE  - auto generated
+        /// </summary>
         Imaging.FindOptions UltraPanel1ClientArea_Screenshot3_Options
         { get { return Imaging.FindOptions.Parse("1;None;0,0,346,318;True;10000000;0ms"); } }
 
+        /// <summary>
+        /// DO NOT REFERENCE THIS CODE  - auto generated
+        /// </summary>
         CompressedImage Panel1_Screenshot1
         { get { return repo.BillingDetailForm.DraftBillPanel.Panel1Info.GetScreenshot1(new Rectangle(0, 0, 206, 207)); } }
 
+        /// <summary>
+        /// DO NOT REFERENCE THIS CODE  - auto generated
+        /// </summary>
         Imaging.FindOptions Panel1_Screenshot1_Options
         { get { return Imaging.FindOptions.Parse("1;None;0,0,206,207;True;10000000;0ms"); } }
 
+        /// <summary>
+        /// DO NOT REFERENCE THIS CODE  - auto generated
+        /// </summary>
         CompressedImage PnlPaymants_Screenshot1
         { get { return repo.BillingDetailForm.DraftBillPanel.PnlPaymantsInfo.GetScreenshot1(new Rectangle(0, 0, 469, 211)); } }
 
+        /// <summary>
+        /// DO NOT REFERENCE THIS CODE  - auto generated
+        /// </summary>
         Imaging.FindOptions PnlPaymants_Screenshot1_Options
         { get { return Imaging.FindOptions.Parse("1;None;0,0,469,211;True;10000000;0ms"); } }
 
+        /// <summary>
+        /// DO NOT REFERENCE THIS CODE  - auto generated
+        /// </summary>
         CompressedImage PnlPaymants_Screenshot2
         { get { return repo.BillingDetailForm.DraftBillPanel.PnlPaymantsInfo.GetScreenshot2(new Rectangle(0, 0, 469, 211)); } }
 
+        /// <summary>
+        /// DO NOT REFERENCE THIS CODE  - auto generated
+        /// </summary>
         Imaging.FindOptions PnlPaymants_Screenshot2_Options
         { get { return Imaging.FindOptions.Parse("1;None;0,0,469,211;True;10000000;0ms"); } }
 

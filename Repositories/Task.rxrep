@@ -1,5 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
-<repository
+﻿<repository
 id="67f57695-dc0f-494f-8733-8e9d5eccd384"
 name="Task"
 rxversion="9.0">
@@ -81,6 +80,13 @@ rxversion="9.0">
 			refpath="/form[@controlname='MainForm']/element[@controlname='_ultraExplorerBar']/tree[@accessiblerole='Outline']/button[@accessiblename='Tasks']"
 			searchtimeout="5000ms">
 				/form[@controlname='MainForm']/?/?/tree[@accessiblerole='Outline']/button[@accessiblename='Tasks']
+			</item>
+			<item
+			capname="table"
+			id="2290cfb1-3f2a-46fa-bd6d-30ad457c75d7"
+			name="tblTasks"
+			searchtimeout="30000ms">
+				/form[@controlname='MainForm']/element[@controltypename='MdiClient']/form[@controlname='TasksIndexForm']/container[@controlname='pnlBody']//table[@accessiblename='Band 0']
 			</item>
 			<basepath>
 				/form[@controlname='MainForm']

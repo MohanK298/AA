@@ -718,6 +718,15 @@ SUVORK5CYII=
 			searchtimeout="30000ms">
 				/form[@controlname='NewFileForm']//button[@text='Save &amp; Open']
 			</item>
+			<item
+			addcaps="button,accessible"
+			capname="button"
+			id="98722d2a-0c6c-4b47-8804-6aa52e8674eb"
+			name="btnNext"
+			refimgid="11800f05-f899-4fe1-8e9a-240fe6b279ea"
+			searchtimeout="30000ms">
+				/form[@controlname='NewFileForm']//toolbar[@accessiblename='Toolbar']/button[@accessiblename='NEXT']
+			</item>
 			<basepath>
 				/form[@controlname='NewFileForm']
 			</basepath>

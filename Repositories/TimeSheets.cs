@@ -133,6 +133,7 @@ namespace SmokeTest.Repositories
             RepoItemInfo _btnaddtimeentryInfo;
             RepoItemInfo _listfirstposteditemInfo;
             RepoItemInfo _btntimesheets1Info;
+            RepoItemInfo _tbltimesheetInfo;
 
             /// <summary>
             /// Creates a new MainForm  folder.
@@ -144,6 +145,7 @@ namespace SmokeTest.Repositories
                 _btnaddtimeentryInfo = new RepoItemInfo(this, "btnAddTimeEntry", "?/?/form[@controlname='TimeIndexForm']/container[@controlname='menubar_Fill_Panel']//toolbar[@accessiblename='Toolbar']/button[@accessiblename='New']", 30000, null, "6da3dfde-88ca-4519-ae00-d85612d08dbd");
                 _listfirstposteditemInfo = new RepoItemInfo(this, "listFirstPostedItem", "?/?/form[@controlname='TimeIndexForm']/container[@controlname='pWholePage']/?/?/container[@controlname='pUnpostedView']/?/?/element[@controlname='atgUnposted']/table[@accessiblerole='Table']/row[1]/cell[@accessiblename='File']", 30000, null, "aac7827b-fecc-467a-9ae9-c590140e15d7");
                 _btntimesheets1Info = new RepoItemInfo(this, "btnTimeSheets1", "?/?/tree[@accessiblerole='Outline']/button[@accessiblename='Time Sheets']", 5000, null, "3f72aab3-d0d1-477e-8c81-f6e8bf4738da");
+                _tbltimesheetInfo = new RepoItemInfo(this, "tblTimeSheet", "element[@controltypename='MdiClient']/form[@controlname='TimeIndexForm']/container[@controlname='pWholePage']/container[@controlname='pnlWhole']//table[@accessiblename='Band 0']", 30000, null, "6d9dd9ec-43c3-4beb-9b8b-f78eb8767488");
             }
 
             /// <summary>
@@ -263,6 +265,30 @@ namespace SmokeTest.Repositories
                 get
                 {
                     return _btntimesheets1Info;
+                }
+            }
+
+            /// <summary>
+            /// The tblTimeSheet item.
+            /// </summary>
+            [RepositoryItem("6d9dd9ec-43c3-4beb-9b8b-f78eb8767488")]
+            public virtual Ranorex.Table tblTimeSheet
+            {
+                get
+                {
+                    return _tbltimesheetInfo.CreateAdapter<Ranorex.Table>(true);
+                }
+            }
+
+            /// <summary>
+            /// The tblTimeSheet item info.
+            /// </summary>
+            [RepositoryItemInfo("6d9dd9ec-43c3-4beb-9b8b-f78eb8767488")]
+            public virtual RepoItemInfo tblTimeSheetInfo
+            {
+                get
+                {
+                    return _tbltimesheetInfo;
                 }
             }
         }

@@ -109,7 +109,8 @@ namespace SmokeTest.Modules
         
         public void createLocalFile()
         {
-        	localFileName = @"C:\Qiao\RanorexTestFile.txt";
+        	localFileName = System.IO.Directory.GetParent(System.IO.Directory.GetCurrentDirectory()).Parent.FullName +"\\"+ "RanorexTestFile.txt";
+        		//@"C:\Qiao\RanorexTestFile.txt";
 			try  
 			{  
 			    // Check if file already exists. If yes, delete it.   
@@ -130,7 +131,7 @@ namespace SmokeTest.Modules
 			}  
 			catch (Exception Ex)  
 			{  
-				Report.Log(ReportLevel.Failure, "Failed to create local file in %temp%");
+				Report.Log(ReportLevel.Failure, String.Format("Failed to create local file in %temp% due to {0}",Ex));
 			}   
         }
         

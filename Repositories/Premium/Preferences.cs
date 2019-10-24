@@ -1016,8 +1016,10 @@ namespace SmokeTest.Repositories.Premium
         public partial class GeneralPreferencesFormAppFolder : RepoGenBaseFolder
         {
             RepoItemInfo _buttonokInfo;
-            RepoItemInfo _generalpreferencesformInfo;
             RepoItemInfo _titlebarInfo;
+            RepoItemInfo _cbincludenotechronologyInfo;
+            RepoItemInfo _cbincludedatetimenotesInfo;
+            RepoItemInfo _generalpreferencesformInfo;
 
             /// <summary>
             /// Creates a new GeneralPreferencesForm  folder.
@@ -1026,8 +1028,10 @@ namespace SmokeTest.Repositories.Premium
                     base("GeneralPreferencesForm", "/form[@controltext='Preferences']", parentFolder, 5000, null, true, "bea9971f-6b2b-4fc3-a039-98b032aa9102", "")
             {
                 _buttonokInfo = new RepoItemInfo(this, "ButtonOK", ".//toolbar[@accessiblename='Toolbar']/button[@accessiblename='OK' and @enabled='True' and @accessiblestate='Focusable']", 5000, null, "737c9d4c-6593-4ccc-a43f-1ea3efc91e23");
-                _generalpreferencesformInfo = new RepoItemInfo(this, "GeneralPreferencesForm", "", 30000, null, "ce3dbf95-8bd2-4bb3-88b2-404d03acc97e");
                 _titlebarInfo = new RepoItemInfo(this, "TitleBar", "titlebar[@accessiblerole='TitleBar']", 30000, null, "f6a2b7f1-fa44-497c-9d5a-9b1ef0fbf09e");
+                _cbincludenotechronologyInfo = new RepoItemInfo(this, "cbIncludeNoteChronology", "container[@controlname='pnlBase']//container[@controlname='panelBase']/?/?/element[@controlname='achkIncludeNotesInChronology']/?/?/checkbox[@accessiblename>'Include Notes in Chronological']", 30000, null, "d93a174c-114b-4ef4-bfe4-896257982874");
+                _cbincludedatetimenotesInfo = new RepoItemInfo(this, "cbIncludeDateTimeNotes", "container[@controlname='pnlBase']//container[@controlname='panelBase']/?/?/element[@controlname='achkTimestampNote']/?/?/checkbox[@accessiblename>'Include Date/Time Stamp by']", 30000, null, "e5dda7cf-c2bd-451f-995f-a81bc24151ae");
+                _generalpreferencesformInfo = new RepoItemInfo(this, "GeneralPreferencesForm", "", 30000, null, "ce3dbf95-8bd2-4bb3-88b2-404d03acc97e");
             }
 
             /// <summary>
@@ -1079,30 +1083,6 @@ namespace SmokeTest.Repositories.Premium
             }
 
             /// <summary>
-            /// The GeneralPreferencesForm item.
-            /// </summary>
-            [RepositoryItem("ce3dbf95-8bd2-4bb3-88b2-404d03acc97e")]
-            public virtual Ranorex.Form GeneralPreferencesForm
-            {
-                get
-                {
-                    return _generalpreferencesformInfo.CreateAdapter<Ranorex.Form>(true);
-                }
-            }
-
-            /// <summary>
-            /// The GeneralPreferencesForm item info.
-            /// </summary>
-            [RepositoryItemInfo("ce3dbf95-8bd2-4bb3-88b2-404d03acc97e")]
-            public virtual RepoItemInfo GeneralPreferencesFormInfo
-            {
-                get
-                {
-                    return _generalpreferencesformInfo;
-                }
-            }
-
-            /// <summary>
             /// The TitleBar item.
             /// </summary>
             [RepositoryItem("f6a2b7f1-fa44-497c-9d5a-9b1ef0fbf09e")]
@@ -1123,6 +1103,78 @@ namespace SmokeTest.Repositories.Premium
                 get
                 {
                     return _titlebarInfo;
+                }
+            }
+
+            /// <summary>
+            /// The cbIncludeNoteChronology item.
+            /// </summary>
+            [RepositoryItem("d93a174c-114b-4ef4-bfe4-896257982874")]
+            public virtual Ranorex.CheckBox cbIncludeNoteChronology
+            {
+                get
+                {
+                    return _cbincludenotechronologyInfo.CreateAdapter<Ranorex.CheckBox>(true);
+                }
+            }
+
+            /// <summary>
+            /// The cbIncludeNoteChronology item info.
+            /// </summary>
+            [RepositoryItemInfo("d93a174c-114b-4ef4-bfe4-896257982874")]
+            public virtual RepoItemInfo cbIncludeNoteChronologyInfo
+            {
+                get
+                {
+                    return _cbincludenotechronologyInfo;
+                }
+            }
+
+            /// <summary>
+            /// The cbIncludeDateTimeNotes item.
+            /// </summary>
+            [RepositoryItem("e5dda7cf-c2bd-451f-995f-a81bc24151ae")]
+            public virtual Ranorex.CheckBox cbIncludeDateTimeNotes
+            {
+                get
+                {
+                    return _cbincludedatetimenotesInfo.CreateAdapter<Ranorex.CheckBox>(true);
+                }
+            }
+
+            /// <summary>
+            /// The cbIncludeDateTimeNotes item info.
+            /// </summary>
+            [RepositoryItemInfo("e5dda7cf-c2bd-451f-995f-a81bc24151ae")]
+            public virtual RepoItemInfo cbIncludeDateTimeNotesInfo
+            {
+                get
+                {
+                    return _cbincludedatetimenotesInfo;
+                }
+            }
+
+            /// <summary>
+            /// The GeneralPreferencesForm item.
+            /// </summary>
+            [RepositoryItem("ce3dbf95-8bd2-4bb3-88b2-404d03acc97e")]
+            public virtual Ranorex.Form GeneralPreferencesForm
+            {
+                get
+                {
+                    return _generalpreferencesformInfo.CreateAdapter<Ranorex.Form>(true);
+                }
+            }
+
+            /// <summary>
+            /// The GeneralPreferencesForm item info.
+            /// </summary>
+            [RepositoryItemInfo("ce3dbf95-8bd2-4bb3-88b2-404d03acc97e")]
+            public virtual RepoItemInfo GeneralPreferencesFormInfo
+            {
+                get
+                {
+                    return _generalpreferencesformInfo;
                 }
             }
         }

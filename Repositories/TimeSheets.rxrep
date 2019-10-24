@@ -1,5 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
-<repository
+﻿<repository
 id="85cef21d-b259-4ed5-8132-939ea6d6f214"
 name="TimeSheets"
 rxversion="9.0">
@@ -62,6 +61,13 @@ rxversion="9.0">
 			refpath="/form[@controlname='MainForm']/element[@controlname='_ultraExplorerBar']/tree[@accessiblerole='Outline']/button[@accessiblename='Time Sheets']"
 			searchtimeout="5000ms">
 				/form[@controlname='MainForm']/?/?/tree[@accessiblerole='Outline']/button[@accessiblename='Time Sheets']
+			</item>
+			<item
+			capname="table"
+			id="6d9dd9ec-43c3-4beb-9b8b-f78eb8767488"
+			name="tblTimeSheet"
+			searchtimeout="30000ms">
+				/form[@controlname='MainForm']/element[@controltypename='MdiClient']/form[@controlname='TimeIndexForm']/container[@controlname='pWholePage']/container[@controlname='pnlWhole']//table[@accessiblename='Band 0']
 			</item>
 			<basepath>
 				/form[@controlname='MainForm']

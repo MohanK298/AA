@@ -948,7 +948,7 @@ DAPIxVgFicf/GQCdrAkiuOdOjQAAAABJRU5ErkJggg==
 			name="btnOk"
 			refimgid="3db1c80b-db57-4f3e-a32e-cf04b99b91d6"
 			searchtimeout="30000ms">
-				/form[@controlname='PromptForm']/?/?/toolbar[@automationid='Toolbar : toolbarBaseDesigner']/button[@automationid='[Toolbar : toolbarBaseDesigner Tools] Tool : TOOLBAR_BUTTON_OK - Index : 3 ']
+				/form[@controlname='PromptForm']/?/?/toolbar[@automationid='Toolbar : toolbarBaseDesigner']/button[@automationid='[Toolbar : toolbarBaseDesigner Tools] Tool : TOOLBAR_BUTTON_OK - Index : 1 ']
 			</item>
 			<item
 			addcaps="button,accessible"
@@ -1174,7 +1174,7 @@ D8zerL8gSEaw7+rFqJ//CkX5CWkHqyZHVzU6AAAAAElFTkSuQmCC
 			capname="checkbox"
 			id="78d93d34-3d11-48dd-9947-7a0f8fb42732"
 			name="Checkbox"
-			refimgid="bd5feb8b-49d6-4740-bd84-b68d4775f6ea"
+			refimgid="ce9c8d8c-657c-4f8e-9945-7f18d773a613"
 			searchtimeout="30000ms">
 				/form[@controlname='InvoiceEmailForm']/container[@controlname='pnlBase']//tree[@automationid='ColScrollRegion: 0, RowScrollRegion: 0']/treeitem[@automationid='0']/checkbox[@automationid='5']
 			</item>

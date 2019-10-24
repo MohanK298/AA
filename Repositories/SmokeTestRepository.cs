@@ -56,6 +56,7 @@ namespace SmokeTest.Repositories
         SmokeTestRepositoryFolders.AmicusAttorneyXWin2AppFolder _amicusattorneyxwin2;
         SmokeTestRepositoryFolders.AnnouncementFormAppFolder _announcementform;
         SmokeTestRepositoryFolders.CustomerExperienceProgramFormAppFolder _customerexperienceprogramform;
+        SmokeTestRepositoryFolders.FileSelectFormAppFolder _fileselectform;
 
         /// <summary>
         /// Gets the singleton class instance representing the SmokeTestRepository element repository.
@@ -101,6 +102,7 @@ namespace SmokeTest.Repositories
             _amicusattorneyxwin2 = new SmokeTestRepositoryFolders.AmicusAttorneyXWin2AppFolder(this);
             _announcementform = new SmokeTestRepositoryFolders.AnnouncementFormAppFolder(this);
             _customerexperienceprogramform = new SmokeTestRepositoryFolders.CustomerExperienceProgramFormAppFolder(this);
+            _fileselectform = new SmokeTestRepositoryFolders.FileSelectFormAppFolder(this);
         }
 
 #region Variables
@@ -378,6 +380,15 @@ namespace SmokeTest.Repositories
         public virtual SmokeTestRepositoryFolders.CustomerExperienceProgramFormAppFolder CustomerExperienceProgramForm
         {
             get { return _customerexperienceprogramform; }
+        }
+
+        /// <summary>
+        /// The FileSelectForm folder.
+        /// </summary>
+        [RepositoryFolder("fae738c6-4910-43ea-b297-6e46cb432a0d")]
+        public virtual SmokeTestRepositoryFolders.FileSelectFormAppFolder FileSelectForm
+        {
+            get { return _fileselectform; }
         }
     }
 
@@ -1785,6 +1796,8 @@ namespace SmokeTest.Repositories
             RepoItemInfo _combodropdowncontrolInfo;
             RepoItemInfo _menuitemtodositemsmenuiteminInfo;
             RepoItemInfo _closealldetailsInfo;
+            RepoItemInfo _texteditoreditareaInfo;
+            RepoItemInfo _texteditoreditarea1Info;
 
             /// <summary>
             /// Creates a new AmicusAttorneyXWin  folder.
@@ -1798,6 +1811,8 @@ namespace SmokeTest.Repositories
                 _combodropdowncontrolInfo = new RepoItemInfo(this, "ComboDropDownControl", "element[@controlname='ComboDropDownControl']", 30000, null, "da4e5da1-dc4e-4cf9-93cb-020cbed948a0");
                 _menuitemtodositemsmenuiteminInfo = new RepoItemInfo(this, "MenuItemToDosItemsMenuItemIn", "?/?/container[@automationid='To Do''s']/menuitem[@automationid='[To Do''s Items] Menu Item :  - Index : 1 ']", 30000, null, "0085a9bb-fe81-4921-9c3f-1b92e1569213");
                 _closealldetailsInfo = new RepoItemInfo(this, "CloseAllDetails", "?/?/container[@automationid='&File']/menuitem[@text~'Close All Details']", 30000, null, "0842ec24-3132-4187-a841-b242971f4f74");
+                _texteditoreditareaInfo = new RepoItemInfo(this, "TextEditorEditArea", ".//tree[@automationid='ColScrollRegion: 0, RowScrollRegion: 0']/treeitem[@automationid='0']/?/?/text[@automationid='[Editor] Edit Area']", 30000, null, "a4f308c7-0f66-4056-a79e-939b1b31a33e");
+                _texteditoreditarea1Info = new RepoItemInfo(this, "TextEditorEditArea1", ".//tree[@automationid='ColScrollRegion: 0, RowScrollRegion: 0']/treeitem[@automationid='4']/?/?/text[@automationid='[Editor] Edit Area']", 30000, null, "ecf1853e-b8cf-4e32-8089-4005ac1ef4a1");
             }
 
             /// <summary>
@@ -1965,6 +1980,54 @@ namespace SmokeTest.Repositories
                 get
                 {
                     return _closealldetailsInfo;
+                }
+            }
+
+            /// <summary>
+            /// The TextEditorEditArea item.
+            /// </summary>
+            [RepositoryItem("a4f308c7-0f66-4056-a79e-939b1b31a33e")]
+            public virtual Ranorex.Text TextEditorEditArea
+            {
+                get
+                {
+                    return _texteditoreditareaInfo.CreateAdapter<Ranorex.Text>(true);
+                }
+            }
+
+            /// <summary>
+            /// The TextEditorEditArea item info.
+            /// </summary>
+            [RepositoryItemInfo("a4f308c7-0f66-4056-a79e-939b1b31a33e")]
+            public virtual RepoItemInfo TextEditorEditAreaInfo
+            {
+                get
+                {
+                    return _texteditoreditareaInfo;
+                }
+            }
+
+            /// <summary>
+            /// The TextEditorEditArea1 item.
+            /// </summary>
+            [RepositoryItem("ecf1853e-b8cf-4e32-8089-4005ac1ef4a1")]
+            public virtual Ranorex.Text TextEditorEditArea1
+            {
+                get
+                {
+                    return _texteditoreditarea1Info.CreateAdapter<Ranorex.Text>(true);
+                }
+            }
+
+            /// <summary>
+            /// The TextEditorEditArea1 item info.
+            /// </summary>
+            [RepositoryItemInfo("ecf1853e-b8cf-4e32-8089-4005ac1ef4a1")]
+            public virtual RepoItemInfo TextEditorEditArea1Info
+            {
+                get
+                {
+                    return _texteditoreditarea1Info;
                 }
             }
         }
@@ -5214,6 +5277,98 @@ namespace SmokeTest.Repositories
                 get
                 {
                     return _declineInfo;
+                }
+            }
+        }
+
+        /// <summary>
+        /// The FileSelectFormAppFolder folder.
+        /// </summary>
+        [RepositoryFolder("fae738c6-4910-43ea-b297-6e46cb432a0d")]
+        public partial class FileSelectFormAppFolder : RepoGenBaseFolder
+        {
+            RepoItemInfo _buttoneditordropdownbuttonInfo;
+            RepoItemInfo _texteditoreditareaInfo;
+
+            /// <summary>
+            /// Creates a new FileSelectForm  folder.
+            /// </summary>
+            public FileSelectFormAppFolder(RepoGenBaseFolder parentFolder) :
+                    base("FileSelectForm", "/form[@controlname='FileSelectForm']", parentFolder, 30000, null, true, "fae738c6-4910-43ea-b297-6e46cb432a0d", "")
+            {
+                _buttoneditordropdownbuttonInfo = new RepoItemInfo(this, "ButtonEditorDropdownButton", "container[@controlname='pnlBase']//element[@controlname='acmbSecondaryFilter']/button[@automationid='[Editor] dropdown button']", 30000, null, "8dda80ba-d52e-4bd1-859e-9b28502875a5");
+                _texteditoreditareaInfo = new RepoItemInfo(this, "TextEditorEditArea", "container[@controlname='pnlBase']//element[@controlname='acmbSecondaryFilter']/text[@automationid='[Editor] Edit Area']", 30000, null, "85b3f2c3-b3c1-47ca-93df-374404013f95");
+            }
+
+            /// <summary>
+            /// The Self item.
+            /// </summary>
+            [RepositoryItem("fae738c6-4910-43ea-b297-6e46cb432a0d")]
+            public virtual Ranorex.Form Self
+            {
+                get
+                {
+                    return _selfInfo.CreateAdapter<Ranorex.Form>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Self item info.
+            /// </summary>
+            [RepositoryItemInfo("fae738c6-4910-43ea-b297-6e46cb432a0d")]
+            public virtual RepoItemInfo SelfInfo
+            {
+                get
+                {
+                    return _selfInfo;
+                }
+            }
+
+            /// <summary>
+            /// The ButtonEditorDropdownButton item.
+            /// </summary>
+            [RepositoryItem("8dda80ba-d52e-4bd1-859e-9b28502875a5")]
+            public virtual Ranorex.Button ButtonEditorDropdownButton
+            {
+                get
+                {
+                    return _buttoneditordropdownbuttonInfo.CreateAdapter<Ranorex.Button>(true);
+                }
+            }
+
+            /// <summary>
+            /// The ButtonEditorDropdownButton item info.
+            /// </summary>
+            [RepositoryItemInfo("8dda80ba-d52e-4bd1-859e-9b28502875a5")]
+            public virtual RepoItemInfo ButtonEditorDropdownButtonInfo
+            {
+                get
+                {
+                    return _buttoneditordropdownbuttonInfo;
+                }
+            }
+
+            /// <summary>
+            /// The TextEditorEditArea item.
+            /// </summary>
+            [RepositoryItem("85b3f2c3-b3c1-47ca-93df-374404013f95")]
+            public virtual Ranorex.Text TextEditorEditArea
+            {
+                get
+                {
+                    return _texteditoreditareaInfo.CreateAdapter<Ranorex.Text>(true);
+                }
+            }
+
+            /// <summary>
+            /// The TextEditorEditArea item info.
+            /// </summary>
+            [RepositoryItemInfo("85b3f2c3-b3c1-47ca-93df-374404013f95")]
+            public virtual RepoItemInfo TextEditorEditAreaInfo
+            {
+                get
+                {
+                    return _texteditoreditareaInfo;
                 }
             }
         }

@@ -58,7 +58,7 @@ namespace SmokeTest.Modules.Attorney_FileDetails
         
         public void Action(){
         	PopupWatcher eventReminderPrompt = new PopupWatcher();
-        	eventReminderPrompt.WatchAndClick(calendar.EventReminderForm, calendar.EventReminderForm.IllBeThereInfo);
+        	eventReminderPrompt.WatchAndClick(calendar.EventReminderForm, calendar.EventReminderForm.btnIllBeThereInfo);
         	eventReminderPrompt.Start();
         	
         	file.MainForm.FilesIndexForm.listFirstFile.DoubleClick();

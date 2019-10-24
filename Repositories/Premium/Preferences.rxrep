@@ -1,5 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
-<repository
+﻿<repository
 id="505bce79-fb8c-419a-a704-c4cf408ffe1c"
 name="Preferences"
 rxversion="9.0">
@@ -379,18 +378,37 @@ D8zerL8gSEaw7+rFqJ//CkX5CWkHqyZHVzU6AAAAAElFTkSuQmCC
 				/form[@controltext='Preferences']//toolbar[@accessiblename='Toolbar']/button[@accessiblename='OK' and @enabled='True' and @accessiblestate='Focusable']
 			</item>
 			<item
-			capname="form"
-			id="ce3dbf95-8bd2-4bb3-88b2-404d03acc97e"
-			name="GeneralPreferencesForm"
-			searchtimeout="30000ms">
-				/form[@controltext='Preferences']
-			</item>
-			<item
 			capname="titlebar"
 			id="f6a2b7f1-fa44-497c-9d5a-9b1ef0fbf09e"
 			name="TitleBar"
 			searchtimeout="30000ms">
 				/form[@controltext='Preferences']/titlebar[@accessiblerole='TitleBar']
+			</item>
+			<item
+			addcaps="checkbox,accessible"
+			capname="checkbox"
+			id="d93a174c-114b-4ef4-bfe4-896257982874"
+			name="cbIncludeNoteChronology"
+			refimgid="bcf3f271-844d-48ad-bd13-d817c526d876"
+			searchtimeout="30000ms">
+				/form[@controltext='Preferences']/container[@controlname='pnlBase']//container[@controlname='panelBase']/?/?/element[@controlname='achkIncludeNotesInChronology']/?/?/checkbox[@accessiblename&gt;'Include Notes in Chronological']
+			</item>
+			<item
+			addcaps="checkbox,accessible"
+			capname="checkbox"
+			id="e5dda7cf-c2bd-451f-995f-a81bc24151ae"
+			name="cbIncludeDateTimeNotes"
+			refimgid="c3fa7c5c-5ddd-42fc-98c2-e72dc1870f19"
+			refpath="/form[@controlname='NotesPreferencesForm']/container[@controlname='pnlBase']/container[@controlname='pnlControls']/container[@controlname='panelTitleBase']/container[@controlname='panelBase']/container[@controlname='panelGeneral']/element[@controlname='achkTimestampNote']/checkbox[@accessiblename='Include Date/Time Stamp by default when I edit a new line on the Main Notes field on a File, Contact, Firm Member or Event']/checkbox[@accessiblename='Include Date/Time Stamp by default when I edit a new line on the Main Notes field on a File, Contact, Firm Member or Event']"
+			searchtimeout="30000ms">
+				/form[@controltext='Preferences']/container[@controlname='pnlBase']//container[@controlname='panelBase']/?/?/element[@controlname='achkTimestampNote']/?/?/checkbox[@accessiblename&gt;'Include Date/Time Stamp by']
+			</item>
+			<item
+			capname="form"
+			id="ce3dbf95-8bd2-4bb3-88b2-404d03acc97e"
+			name="GeneralPreferencesForm"
+			searchtimeout="30000ms">
+				/form[@controltext='Preferences']
 			</item>
 			<basepath>
 				/form[@controltext='Preferences']

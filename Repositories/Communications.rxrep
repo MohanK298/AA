@@ -1,5 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
-<repository
+﻿<repository
 id="b42b2dcb-d281-4bda-bc8d-0c2588695d68"
 name="Communications"
 rxversion="9.0">
@@ -147,6 +146,13 @@ rxversion="9.0">
 					/form[@controlname='MainForm']/?/?/form[@controlname='CommIndexForm']//tree[@automationid='ColScrollRegion: 0, RowScrollRegion: 0']
 				</basepath>
 			</folder>
+			<item
+			capname="table"
+			id="9f593331-1c6e-463a-91ec-a8c7956e014f"
+			name="tblCommunications"
+			searchtimeout="30000ms">
+				/form[@controlname='MainForm']/?/?/form[@controlname='CommIndexForm']/container[@controlname='splitContainer']//table[@accessiblename='Band 0']
+			</item>
 			<basepath>
 				/form[@controlname='MainForm']
 			</basepath>
@@ -233,6 +239,7 @@ XrLp0EM2aG+RntUiB+ZT6fxfIsRPbYnQgbXhGFYAAAAASUVORK5CYII=
 				<item
 				addcaps="button,accessible"
 				capname="button"
+				ensurevisible="True"
 				id="77799e61-2567-481e-b629-07fbece8545d"
 				name="btnAddFile"
 				refimgid="d1ff1616-6a61-4f3b-975f-d0f419ba6ec0"

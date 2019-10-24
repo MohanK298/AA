@@ -1,5 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
-<repository
+﻿<repository
 id="c8bd998c-790f-40c3-be60-979b32dfedc9"
 name="Calendar"
 rxversion="9.0">
@@ -209,6 +208,174 @@ AAAAADmCBQAAAJAjWAAAAAA5ggUAAAAQMwz/B/Pa+j2m8Yn1AAAAAElFTkSuQmCC
 			searchtimeout="30000ms">
 				/form[@controlname='MainForm']/?/?/form[@controlname='CalendarIndexForm']/container[@controlname='pnlBase']//container[@controlname='pnlLists']/element[@controlname='udgEvents']/table[@accessiblerole='Table']/row[1]/cell[@accessiblename='Title']
 			</item>
+			<item
+			capname="menuitem"
+			id="9a170fba-d46a-4a1b-b1ad-2c383cf1e34d"
+			name="menuListView"
+			searchtimeout="30000ms">
+				/form[@controlname='MainForm']/element[@controlname='_BaseModuleForm_Toolbars_Dock_Area_Top']//menuitem[@accessiblename='View']/menuitem[@accessiblename='Lists']
+			</item>
+			<item
+			capname="table"
+			id="88778537-3f3f-4b07-b56a-8181e153a75c"
+			name="tblCalendar"
+			refimgid="8555acbc-b091-4d58-acce-0838afe56642"
+			searchtimeout="30000ms">
+				/form[@controlname='MainForm']/?/?/form[@controlname='CalendarIndexForm']/container[@controlname='pnlBase']//container[@controlname='pnlLists']/?/?/table[@accessiblename='Band 0']
+			</item>
+			<folder
+			addcaps="toolbar,accessible"
+			capname="toolbar"
+			id="14c112de-f9ee-4532-a0ae-6e9862f12915"
+			isrooted="True"
+			name="Toolbar"
+			refpath="/form[@controlname='MainForm']/element[@controltypename='MdiClient']/form[@controlname='CalendarIndexForm']/container[@controlname='CalendarIndexForm_BottomPanel']/container[@controlname='centreObject']/element[@controltypename='UltraToolbarsDockArea' and @instance='0']/container[@accessiblename='DockTop']/toolbar[@accessiblename='Toolbar']"
+			searchtimeout="30000ms"
+			usecache="False">
+				<item
+				addcaps="button,accessible"
+				capname="button"
+				id="2629d918-26d8-4a08-a737-408bb2be87c6"
+				name="btnMonth"
+				refimgid="6f7f1fbd-92c6-489b-b2ba-d54b35dc55a4"
+				refpath="/form[@controlname='MainForm']/element[@controltypename='MdiClient']/form[@controlname='CalendarIndexForm']/container[@controlname='CalendarIndexForm_BottomPanel']/container[@controlname='centreObject']/element[@controltypename='UltraToolbarsDockArea' and @instance='0']/container[@accessiblename='DockTop']/toolbar[@accessiblename='Toolbar']/button[@accessiblename='Month']"
+				searchtimeout="30000ms">
+					/form[@controlname='MainForm']/?/?/form[@controlname='CalendarIndexForm']/container[@controlname='CalendarIndexForm_BottomPanel']//toolbar[@accessiblename='Toolbar']/button[@accessiblename='Month']
+				</item>
+				<item
+				addcaps="button,accessible"
+				capname="button"
+				id="87a12e36-6073-40e4-aa68-76f62a9584f8"
+				name="btnWeek"
+				refimgid="b31a3399-b1c8-4e96-9e8b-bd34b1ef7568"
+				refpath="/form[@controlname='MainForm']/element[@controltypename='MdiClient']/form[@controlname='CalendarIndexForm']/container[@controlname='CalendarIndexForm_BottomPanel']/container[@controlname='centreObject']/element[@controltypename='UltraToolbarsDockArea' and @instance='0']/container[@accessiblename='DockTop']/toolbar[@accessiblename='Toolbar']/button[@accessiblename='Week']"
+				searchtimeout="30000ms">
+					/form[@controlname='MainForm']/?/?/form[@controlname='CalendarIndexForm']/container[@controlname='CalendarIndexForm_BottomPanel']//toolbar[@accessiblename='Toolbar']/button[@accessiblename='Week']
+				</item>
+				<item
+				addcaps="menuitem,accessible"
+				capname="menuitem"
+				id="5727d18c-6880-4ee7-aca6-8ea43d1c8af1"
+				name="cbbxListsMenu"
+				refimgid="8fef1a74-f014-4163-9de1-f251deb531c9"
+				refpath="/form[@controlname='MainForm']/element[@controltypename='MdiClient']/form[@controlname='CalendarIndexForm']/container[@controlname='CalendarIndexForm_BottomPanel']/container[@controlname='centreObject']/element[@controltypename='UltraToolbarsDockArea' and @instance='0']/container[@accessiblename='DockTop']/toolbar[@accessiblename='Toolbar']/menuitem[@accessiblename='Lists']"
+				searchtimeout="30000ms">
+					/form[@controlname='MainForm']/?/?/form[@controlname='CalendarIndexForm']/container[@controlname='CalendarIndexForm_BottomPanel']//toolbar[@accessiblename='Toolbar']/menuitem[@accessiblename='Lists']
+				</item>
+				<item
+				addcaps="button,accessible"
+				capname="button"
+				id="c5e97359-b85d-4067-b2ff-05dde980207a"
+				name="btnToday"
+				refimgid="13c307d4-f4da-4ed6-ad2e-0d6347ea7e76"
+				refpath="/form[@controlname='MainForm']/element[@controltypename='MdiClient']/form[@controlname='CalendarIndexForm']/container[@controlname='CalendarIndexForm_BottomPanel']/container[@controlname='centreObject']/element[@controltypename='UltraToolbarsDockArea' and @instance='0']/container[@accessiblename='DockTop']/toolbar[@accessiblename='Toolbar']/button[@accessiblename='Today']"
+				searchtimeout="30000ms">
+					/form[@controlname='MainForm']/?/?/form[@controlname='CalendarIndexForm']/container[@controlname='CalendarIndexForm_BottomPanel']//toolbar[@accessiblename='Toolbar']/button[@accessiblename='Today']
+				</item>
+				<item
+				addcaps="button,accessible"
+				capname="button"
+				id="cc29d518-c062-4281-a520-3eb8e87e5d68"
+				name="btnDay"
+				refimgid="017dbc0e-85c6-4339-982e-733e074ca94d"
+				refpath="/form[@controlname='MainForm']/element[@controltypename='MdiClient']/form[@controlname='CalendarIndexForm']/container[@controlname='CalendarIndexForm_BottomPanel']/container[@controlname='centreObject']/element[@controltypename='UltraToolbarsDockArea' and @instance='0']/container[@accessiblename='DockTop']/toolbar[@accessiblename='Toolbar']/button[@accessiblename='Day']"
+				searchtimeout="30000ms">
+					/form[@controlname='MainForm']/?/?/form[@controlname='CalendarIndexForm']/container[@controlname='CalendarIndexForm_BottomPanel']//toolbar[@accessiblename='Toolbar']/button[@accessiblename='Day']
+				</item>
+				<basepath>
+					/form[@controlname='MainForm']/?/?/form[@controlname='CalendarIndexForm']/container[@controlname='CalendarIndexForm_BottomPanel']//toolbar[@accessiblename='Toolbar']
+				</basepath>
+			</folder>
+			<folder
+			addcaps="container,control,nativewindow"
+			capname="container"
+			id="68bac203-afc8-4e3d-93f3-3230e465ce9e"
+			isrooted="True"
+			name="PnlViews"
+			refpath="/form[@controlname='MainForm']/element[@controltypename='MdiClient']/form[@controlname='CalendarIndexForm']/container[@controlname='pnlBase']/container[@controlname='pnlToolbar']/container[@controlname='pnlViewsBase']/container[@controlname='pnlViews']"
+			searchtimeout="30000ms"
+			usecache="False">
+				<item
+				addcaps="container,control,nativewindow"
+				capname="container"
+				id="6ca66941-abd7-4202-82c8-7d500fb6f0cc"
+				name="PnlDayView"
+				refimgid="3d9dbea6-1dda-4e06-8e4a-4782ce9aed6a"
+				refpath="/form[@controlname='MainForm']/element[@controltypename='MdiClient']/form[@controlname='CalendarIndexForm']/container[@controlname='pnlBase']/container[@controlname='pnlToolbar']/container[@controlname='pnlViewsBase']/container[@controlname='pnlViews']/container[@controlname='pnlDayView']"
+				searchtimeout="30000ms">
+					/form[@controlname='MainForm']/?/?/form[@controlname='CalendarIndexForm']/container[@controlname='pnlBase']//container[@controlname='pnlViews']/container[@controlname='pnlDayView']
+				</item>
+				<item
+				addcaps="container,control,nativewindow"
+				capname="container"
+				id="069c97aa-e1c5-4800-9d81-94482fb4d302"
+				name="PnlWeekView"
+				refimgid="0948ab76-84a3-4f61-b915-8b628c0024d5"
+				refpath="/form[@controlname='MainForm']/element[@controltypename='MdiClient']/form[@controlname='CalendarIndexForm']/container[@controlname='pnlBase']/container[@controlname='pnlToolbar']/container[@controlname='pnlViewsBase']/container[@controlname='pnlViews']/container[@controlname='pnlWeekView']"
+				searchtimeout="30000ms">
+					/form[@controlname='MainForm']/?/?/form[@controlname='CalendarIndexForm']/container[@controlname='pnlBase']//container[@controlname='pnlViews']/container[@controlname='pnlWeekView']
+				</item>
+				<item
+				addcaps="container,accessible"
+				capname="container"
+				id="f4ec1e14-7316-4966-b56f-318f894e85d0"
+				name="shrtDay"
+				refimgid="7626eb7c-750f-4d7c-96ae-b4f617a664f7"
+				searchtimeout="30000ms">
+					/form[@controlname='MainForm']/?/?/form[@controlname='CalendarIndexForm']/container[@controlname='pnlBase']//container[@controlname='pnlViews']/container[@controlname='pnlWeekView']//container[@accessiblename='Week Area']/container[@accessiblename=$curwkday]
+				</item>
+				<item
+				addcaps="text,accessible"
+				capname="text"
+				id="11923b15-cf19-4d16-a0bb-903b88d01f66"
+				name="txtappointment"
+				refimgid="09f8570d-b85f-4811-abc7-8bd8f57611da"
+				searchtimeout="30000ms">
+					/form[@controlname='MainForm']/?/?/form[@controlname='CalendarIndexForm']/container[@controlname='pnlBase']//container[@controlname='pnlViews']/container[@controlname='pnlWeekView']//container[@accessiblename=$curwkday]/text[@accessiblevalue=$appmtData]
+				</item>
+				<item
+				addcaps="container,control,nativewindow"
+				capname="container"
+				id="c32d4a9a-b6b9-4a46-9ea3-327d0c941d12"
+				name="PnlMonthView"
+				refimgid="f1af6921-2d13-40bd-a8f7-a8476efd199b"
+				refpath="/form[@controlname='MainForm']/element[@controltypename='MdiClient']/form[@controlname='CalendarIndexForm']/container[@controlname='pnlBase']/container[@controlname='pnlToolbar']/container[@controlname='pnlViewsBase']/container[@controlname='pnlViews']/container[@controlname='pnlMonthView']"
+				searchtimeout="30000ms">
+					/form[@controlname='MainForm']/?/?/form[@controlname='CalendarIndexForm']/container[@controlname='pnlBase']//container[@controlname='pnlViews']/container[@controlname='pnlMonthView']
+				</item>
+				<item
+				addcaps="table,accessible"
+				capname="table"
+				id="fd631273-3053-4a4e-9f48-09136ee036ec"
+				name="tbCurrentDay"
+				refimgid="1f768a66-8190-47d4-879a-0907881cef19"
+				refpath="/form[@controlname='MainForm']/element[@controltypename='MdiClient']/form[@controlname='CalendarIndexForm']/container[@controlname='pnlBase']/container[@controlname='pnlToolbar']/container[@controlname='pnlViewsBase']/container[@controlname='pnlViews']/container[@controlname='pnlDayView']/container[@controlname='pnlDayViewControl']/element[@controlname='udvDay']/table[@accessiblename='udvDay']"
+				searchtimeout="30000ms">
+					/form[@controlname='MainForm']/?/?/form[@controlname='CalendarIndexForm']/container[@controlname='pnlBase']//container[@controlname='pnlViews']/?/?/container[@controlname='pnlDayViewControl']/?/?/table[@accessiblename='udvDay']
+				</item>
+				<item
+				addcaps="cell,accessible"
+				capname="cell"
+				id="0cba9cbe-b8f6-40b2-a57a-5983c434eded"
+				name="txtCurrentDayAppt"
+				refimgid="af6c04b5-3ca3-4284-b6ea-281f3039d43b"
+				searchtimeout="30000ms">
+					/form[@controlname='MainForm']/?/?/form[@controlname='CalendarIndexForm']/container[@controlname='pnlBase']//container[@controlname='pnlViews']/?/?/container[@controlname='pnlDayViewControl']/?/?/table[@accessiblename='udvDay']/?/?/cell[@accessiblename=$curdayapptselection]
+				</item>
+				<item
+				addcaps="container,accessible"
+				capname="container"
+				id="ea60a39e-f9c3-471e-820c-1ac6a04a19b0"
+				name="conCurrentDay"
+				refimgid="d1a69c5e-1ee1-4d01-b971-811d00ffb4e1"
+				refpath="/form[@controlname='MainForm']/element[@controltypename='MdiClient']/form[@controlname='CalendarIndexForm']/container[@controlname='pnlBase']/container[@controlname='pnlToolbar']/container[@controlname='pnlViewsBase']/container[@controlname='pnlViews']/container[@controlname='pnlDayView']/container[@controlname='pnlDayViewControl']/element[@controlname='udvDay']/table[@accessiblename='udvDay']/container"
+				searchtimeout="30000ms">
+					/form[@controlname='MainForm']/?/?/form[@controlname='CalendarIndexForm']/container[@controlname='pnlBase']//container[@controlname='pnlViews']/?/?/container[@controlname='pnlDayViewControl']/?/?/table[@accessiblename='udvDay']/container
+				</item>
+				<basepath>
+					/form[@controlname='MainForm']/?/?/form[@controlname='CalendarIndexForm']/container[@controlname='pnlBase']//container[@controlname='pnlViews']
+				</basepath>
+			</folder>
 			<basepath>
 				/form[@controlname='MainForm']
 			</basepath>
@@ -310,6 +477,149 @@ D8zerL8gSEaw7+rFqJ//CkX5CWkHqyZHVzU6AAAAAElFTkSuQmCC
 				refimgid="c1f84ab0-731f-4268-88fc-33d0a49c66e0"
 				searchtimeout="30000ms">
 					/form[@controlname='EventDetailForm']/container[@controlname='menubar_Fill_Panel']/container[@controlname='pnlBase']/container[@controlname='pnlControls']/?/?/container[@controlname='pnlDurationLeft']/container[@controlname='tmrEndTime']/?/text
+				</item>
+				<item
+				addcaps="treeitem,accessible"
+				capname="treeitem"
+				id="34cb5ff0-ccd0-473a-bc46-34278fa58025"
+				name="OutlineItem"
+				refpath="/form[@controlname='EventDetailForm']/container[@controlname='menubar_Fill_Panel']/container[@controlname='pnlBase']/container[@controlname='pnlControls']/container[@controlname='pnlTabs']/container[@controlname='pnlTreeMenu']/element[@controlname='utMenu']/tree[@accessiblerole='Outline']/treeitem[@accessiblename='']"
+				searchtimeout="30000ms">
+					/form[@controlname='EventDetailForm']/container[@controlname='menubar_Fill_Panel']/container[@controlname='pnlBase']/?/?/container[@controlname='pnlTabs']//treeitem[@accessiblename='']
+				</item>
+				<item
+				addcaps="treeitem,accessible"
+				capname="treeitem"
+				id="a481a967-6328-400b-b72e-02cffb4b4ad2"
+				name="FilesAndPeople"
+				refpath="/form[@controlname='EventDetailForm']/container[@controlname='menubar_Fill_Panel']/container[@controlname='pnlBase']/container[@controlname='pnlControls']/container[@controlname='pnlTabs']/container[@controlname='pnlTreeMenu']/element[@controlname='utMenu']/tree[@accessiblerole='Outline']/treeitem[@accessiblename='Files and People']"
+				searchtimeout="30000ms">
+					/form[@controlname='EventDetailForm']/container[@controlname='menubar_Fill_Panel']/container[@controlname='pnlBase']/?/?/container[@controlname='pnlTabs']//treeitem[@accessiblename='Files and People']
+				</item>
+				<item
+				addcaps="treeitem,accessible"
+				capname="treeitem"
+				id="6df38ed2-37da-433a-8209-f8ba07d47879"
+				name="Reminders"
+				refpath="/form[@controlname='EventDetailForm']/container[@controlname='menubar_Fill_Panel']/container[@controlname='pnlBase']/container[@controlname='pnlControls']/container[@controlname='pnlTabs']/container[@controlname='pnlTreeMenu']/element[@controlname='utMenu']/tree[@accessiblerole='Outline']/treeitem[@accessiblename='Reminders']"
+				searchtimeout="30000ms">
+					/form[@controlname='EventDetailForm']/container[@controlname='menubar_Fill_Panel']/container[@controlname='pnlBase']/?/?/container[@controlname='pnlTabs']//treeitem[@accessiblename='Reminders']
+				</item>
+				<item
+				addcaps="treeitem,accessible"
+				capname="treeitem"
+				id="83509920-5ec0-41bd-a75d-72c0d35df70d"
+				name="ChangeNotification"
+				refpath="/form[@controlname='EventDetailForm']/container[@controlname='menubar_Fill_Panel']/container[@controlname='pnlBase']/container[@controlname='pnlControls']/container[@controlname='pnlTabs']/container[@controlname='pnlTreeMenu']/element[@controlname='utMenu']/tree[@accessiblerole='Outline']/treeitem[@accessiblename='Change Notification']"
+				searchtimeout="30000ms">
+					/form[@controlname='EventDetailForm']/container[@controlname='menubar_Fill_Panel']/container[@controlname='pnlBase']/?/?/container[@controlname='pnlTabs']//treeitem[@accessiblename='Change Notification']
+				</item>
+				<item
+				addcaps="treeitem,accessible"
+				capname="treeitem"
+				id="deaf8d27-1678-426a-a58d-40c4d4042dec"
+				name="Repeat"
+				refpath="/form[@controlname='EventDetailForm']/container[@controlname='menubar_Fill_Panel']/container[@controlname='pnlBase']/container[@controlname='pnlControls']/container[@controlname='pnlTabs']/container[@controlname='pnlTreeMenu']/element[@controlname='utMenu']/tree[@accessiblerole='Outline']/treeitem[@accessiblename='Repeat']"
+				searchtimeout="30000ms">
+					/form[@controlname='EventDetailForm']/container[@controlname='menubar_Fill_Panel']/container[@controlname='pnlBase']/?/?/container[@controlname='pnlTabs']//treeitem[@accessiblename='Repeat']
+				</item>
+				<item
+				addcaps="treeitem,accessible"
+				capname="treeitem"
+				id="31d155f7-20db-4b72-9d69-b1373f2eaf67"
+				name="Links"
+				refpath="/form[@controlname='EventDetailForm']/container[@controlname='menubar_Fill_Panel']/container[@controlname='pnlBase']/container[@controlname='pnlControls']/container[@controlname='pnlTabs']/container[@controlname='pnlTreeMenu']/element[@controlname='utMenu']/tree[@accessiblerole='Outline']/treeitem[@accessiblename='Links']"
+				searchtimeout="30000ms">
+					/form[@controlname='EventDetailForm']/container[@controlname='menubar_Fill_Panel']/container[@controlname='pnlBase']/?/?/container[@controlname='pnlTabs']//treeitem[@accessiblename='Links']
+				</item>
+				<item
+				addcaps="treeitem,accessible"
+				capname="treeitem"
+				id="e809da0e-c861-45b4-9ab2-2df6d37cd67a"
+				name="AssistanceSetup"
+				refpath="/form[@controlname='EventDetailForm']/container[@controlname='menubar_Fill_Panel']/container[@controlname='pnlBase']/container[@controlname='pnlControls']/container[@controlname='pnlTabs']/container[@controlname='pnlTreeMenu']/element[@controlname='utMenu']/tree[@accessiblerole='Outline']/treeitem[@accessiblename='Assistance Setup']"
+				searchtimeout="30000ms">
+					/form[@controlname='EventDetailForm']/container[@controlname='menubar_Fill_Panel']/container[@controlname='pnlBase']/?/?/container[@controlname='pnlTabs']//treeitem[@accessiblename='Assistance Setup']
+				</item>
+				<item
+				addcaps="treeitem,accessible"
+				capname="treeitem"
+				id="d2fb9cdb-640b-41f5-a25a-62f24b36ee81"
+				name="MainNote"
+				refpath="/form[@controlname='EventDetailForm']/container[@controlname='menubar_Fill_Panel']/container[@controlname='pnlBase']/container[@controlname='pnlControls']/container[@controlname='pnlTabs']/container[@controlname='pnlTreeMenu']/element[@controlname='utMenu']/tree[@accessiblerole='Outline']/treeitem[@accessiblename='Main Note']"
+				searchtimeout="30000ms">
+					/form[@controlname='EventDetailForm']/container[@controlname='menubar_Fill_Panel']/container[@controlname='pnlBase']/?/?/container[@controlname='pnlTabs']//treeitem[@accessiblename='Main Note']
+				</item>
+				<item
+				addcaps="treeitem,accessible"
+				capname="treeitem"
+				id="5d2d4826-4334-4b03-9a5b-228455624db5"
+				name="NotesList"
+				refpath="/form[@controlname='EventDetailForm']/container[@controlname='menubar_Fill_Panel']/container[@controlname='pnlBase']/container[@controlname='pnlControls']/container[@controlname='pnlTabs']/container[@controlname='pnlTreeMenu']/element[@controlname='utMenu']/tree[@accessiblerole='Outline']/treeitem[@accessiblename='Notes List']"
+				searchtimeout="30000ms">
+					/form[@controlname='EventDetailForm']/container[@controlname='menubar_Fill_Panel']/container[@controlname='pnlBase']/?/?/container[@controlname='pnlTabs']//treeitem[@accessiblename='Notes List']
+				</item>
+				<item
+				addcaps="treeitem,accessible"
+				capname="treeitem"
+				id="695ff616-dbca-4819-a740-7d504ca2a85c"
+				name="DocumentsEMail"
+				refpath="/form[@controlname='EventDetailForm']/container[@controlname='menubar_Fill_Panel']/container[@controlname='pnlBase']/container[@controlname='pnlControls']/container[@controlname='pnlTabs']/container[@controlname='pnlTreeMenu']/element[@controlname='utMenu']/tree[@accessiblerole='Outline']/treeitem[@accessiblename='Documents &amp; E-mail']"
+				searchtimeout="30000ms">
+					/form[@controlname='EventDetailForm']/container[@controlname='menubar_Fill_Panel']/container[@controlname='pnlBase']/?/?/container[@controlname='pnlTabs']//treeitem[@accessiblename='Documents &amp; E-mail']
+				</item>
+				<item
+				addcaps="treeitem,accessible"
+				capname="treeitem"
+				id="8e279a06-b7c6-459d-aced-2cef0b39fe4b"
+				name="History"
+				refpath="/form[@controlname='EventDetailForm']/container[@controlname='menubar_Fill_Panel']/container[@controlname='pnlBase']/container[@controlname='pnlControls']/container[@controlname='pnlTabs']/container[@controlname='pnlTreeMenu']/element[@controlname='utMenu']/tree[@accessiblerole='Outline']/treeitem[@accessiblename='History']"
+				searchtimeout="30000ms">
+					/form[@controlname='EventDetailForm']/container[@controlname='menubar_Fill_Panel']/container[@controlname='pnlBase']/?/?/container[@controlname='pnlTabs']//treeitem[@accessiblename='History']
+				</item>
+				<item
+				addcaps="tree,accessible"
+				capname="tree"
+				id="3d2dad9a-a0b2-4f17-8382-d1dc096d0137"
+				name="Outline"
+				refpath="/form[@controlname='EventDetailForm']/container[@controlname='menubar_Fill_Panel']/container[@controlname='pnlBase']/container[@controlname='pnlControls']/container[@controlname='pnlTabs']/container[@controlname='pnlTreeMenu']/element[@controlname='utMenu']/tree[@accessiblerole='Outline']"
+				searchtimeout="30000ms">
+					/form[@controlname='EventDetailForm']/container[@controlname='menubar_Fill_Panel']/container[@controlname='pnlBase']/?/?/container[@controlname='pnlTabs']//tree[@accessiblerole='Outline']
+				</item>
+				<item
+				addcaps="combobox,control,nativewindow"
+				capname="combobox"
+				id="f3ffb856-5a9b-42a3-9c35-7baca87be4d9"
+				name="cmbbxRepeat"
+				refimgid="ad89d05d-52d7-40c7-a303-e30767c7aa75"
+				refpath="/form[@controlname='EventDetailForm']/container[@controlname='menubar_Fill_Panel']/container[@controlname='pnlBase']/container[@controlname='pnlControls']/container[@controlname='pnlTabs']/container[@controlname='pnlViews']/container[@controlname='pnlRepeat']/combobox[@controlname='cmbRepeat']"
+				searchtimeout="30000ms">
+					/form[@controlname='EventDetailForm']/container[@controlname='menubar_Fill_Panel']/container[@controlname='pnlBase']/?/?/container[@controlname='pnlTabs']//combobox[@controlname='cmbRepeat']
+				</item>
+				<item
+				capname="checkbox"
+				id="44146afd-d8d8-46d9-88d3-02b62949ae19"
+				name="cbWeekday"
+				searchtimeout="30000ms">
+					/form[@controlname='EventDetailForm']/container[@controlname='menubar_Fill_Panel']/container[@controlname='pnlBase']/?/?/container[@controlname='pnlTabs']//container[@controlname='pnlRepeatInterval']/?/?/element[@controlname='chk'+$weekday]/?/?/checkbox[@accessiblename=$weekday]
+				</item>
+				<item
+				addcaps="picture,rawimage"
+				capname="rawimage"
+				id="e8adb05f-7fad-4f77-993b-eff04c6fe622"
+				name="imgDoc"
+				refimgid="3c221813-763b-4669-8441-9b3ff7878cbb"
+				searchtimeout="30000ms">
+					/form[@controlname='EventDetailForm']/container[@controlname='menubar_Fill_Panel']/container[@controlname='pnlBase']/?/?/container[@controlname='pnlTabs']//container[@controlname='scDocuments']/?/?/rawimage
+				</item>
+				<item
+				addcaps="picture,rawimage"
+				capname="rawimage"
+				id="3367b3f3-595d-4b5a-80b1-c4e448b47058"
+				name="imgEmail"
+				refimgid="430bcb43-0536-4e6f-9494-4a67665cf3aa"
+				searchtimeout="30000ms">
+					/form[@controlname='EventDetailForm']/container[@controlname='menubar_Fill_Panel']/container[@controlname='pnlBase']/?/?/container[@controlname='pnlTabs']//container[@controlname='scEmail']/?/?/rawimage
 				</item>
 				<basepath>
 					/form[@controlname='EventDetailForm']/container[@controlname='menubar_Fill_Panel']/container[@controlname='pnlBase']
@@ -610,7 +920,7 @@ D8zerL8gSEaw7+rFqJ//CkX5CWkHqyZHVzU6AAAAAElFTkSuQmCC
 			addcaps="button,accessible"
 			capname="button"
 			id="2eb87503-44e8-410a-be26-1b21c92df3c8"
-			name="IllBeThere"
+			name="btnIllBeThere"
 			refimgid="743f8d7a-aa5b-4e14-af06-5d33087b0e47"
 			refpath="/form[@controlname='EventReminderForm']/container[@controlname='pnlBase']/container[@controlname='pnlControls']/element[@controlname='abtnIllbethere']/button[@accessiblename='I''ll be there']"
 			searchtimeout="30000ms">
@@ -664,9 +974,236 @@ Cd405uM14N+/f+egSnGDjyvnxjyyVQYbANL0FmjAm/aKH4+9zVWhSqCAgQEAq9YXqsYCPO8AAAAA
 SUVORK5CYII=
 			</icon>
 		</appfolder>
+		<appfolder
+		addcaps="form,control,nativewindow"
+		capname="form"
+		id="80b6e908-a8b1-493f-8894-7095923e28db"
+		isrooted="True"
+		name="RepeatingEventDialogForm"
+		refimgid="76b058b3-280a-47be-a132-e3e9a2ee9f21"
+		refpath="/form[@controlname='RepeatingEventDialogForm']"
+		searchtimeout="30000ms"
+		usecache="True">
+			<item
+			addcaps="text,accessible"
+			capname="text"
+			id="ee15178f-58f3-431c-a416-bd0f05dd4c9b"
+			name="txtRepeatEvent"
+			refimgid="36837c93-8fe1-4479-96f2-18e75459a8c8"
+			refpath="/form[@controlname='RepeatingEventDialogForm']/container[@controlname='pnlBase']/container[@controlname='pnlControls']/element[@controlname='alblCaption']/text[@accessiblename='This is a Repeating Event. Would you like to change all occurences of this Event, or just this one?']"
+			searchtimeout="30000ms">
+				/form[@controlname='RepeatingEventDialogForm']/container[@controlname='pnlBase']//text[@accessiblename&gt;'This is a Repeating Event.']
+			</item>
+			<item
+			addcaps="toolbar,accessible"
+			capname="toolbar"
+			id="6e061358-79b6-4ad0-b3c4-f291df4f0523"
+			name="Toolbar"
+			refpath="/form[@controlname='RepeatingEventDialogForm']/element[@controlname='_BaseForm_Toolbars_Dock_Area_Bottom']/container[@accessiblename='DockBottom']/toolbar[@accessiblename='Toolbar']"
+			searchtimeout="30000ms">
+				/form[@controlname='RepeatingEventDialogForm']/element[@controlname='_BaseForm_Toolbars_Dock_Area_Bottom']/?/?/toolbar[@accessiblename='Toolbar']
+			</item>
+			<folder
+			addcaps="toolbar,accessible"
+			capname="toolbar"
+			id="1dd01108-5412-48c2-858a-9b7cd01589c1"
+			isrooted="True"
+			name="Toolbar1"
+			refpath="/form[@controlname='RepeatingEventDialogForm']/element[@controlname='_BaseForm_Toolbars_Dock_Area_Bottom']/container[@accessiblename='DockBottom']/toolbar[@accessiblename='Toolbar']"
+			searchtimeout="30000ms"
+			usecache="False">
+				<item
+				addcaps="button,accessible"
+				capname="button"
+				id="ffb2d1b7-1ddf-4643-b914-f151cebc1b0e"
+				name="btnALL"
+				refpath="/form[@controlname='RepeatingEventDialogForm']/element[@controlname='_BaseForm_Toolbars_Dock_Area_Bottom']/container[@accessiblename='DockBottom']/toolbar[@accessiblename='Toolbar']/button[@accessiblename='ALL']"
+				searchtimeout="30000ms">
+					/form[@controlname='RepeatingEventDialogForm']//toolbar[@accessiblename='Toolbar']/button[@accessiblename='ALL']
+				</item>
+				<item
+				addcaps="button,accessible"
+				capname="button"
+				id="e69f2566-3c89-4112-b68a-e3296ab951f1"
+				name="btnCancel"
+				refpath="/form[@controlname='RepeatingEventDialogForm']/element[@controlname='_BaseForm_Toolbars_Dock_Area_Bottom']/container[@accessiblename='DockBottom']/toolbar[@accessiblename='Toolbar']/button[@accessiblename='Cancel']"
+				searchtimeout="30000ms">
+					/form[@controlname='RepeatingEventDialogForm']//toolbar[@accessiblename='Toolbar']/button[@accessiblename='Cancel']
+				</item>
+				<item
+				addcaps="button,accessible"
+				capname="button"
+				id="803d5dca-1ed1-4cde-b5cf-d7778a523fa5"
+				name="btnThisOne"
+				refpath="/form[@controlname='RepeatingEventDialogForm']/element[@controlname='_BaseForm_Toolbars_Dock_Area_Bottom']/container[@accessiblename='DockBottom']/toolbar[@accessiblename='Toolbar']/button[@accessiblename='This One']"
+				searchtimeout="30000ms">
+					/form[@controlname='RepeatingEventDialogForm']//toolbar[@accessiblename='Toolbar']/button[@accessiblename='This One']
+				</item>
+				<basepath>
+					/form[@controlname='RepeatingEventDialogForm']//toolbar[@accessiblename='Toolbar']
+				</basepath>
+			</folder>
+			<basepath>
+				/form[@controlname='RepeatingEventDialogForm']
+			</basepath>
+			<icon>
+				iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACx
+jwv8YQUAAAAJcEhZcwAADsQAAA7EAZUrDhsAAAFlSURBVDhPY6AJeOJjOvORg9p/FOyo/v9xoKUT
+VAlugKERDT921nwLVQoBb3Kj+Z5FOf9/FuP2/1msO3EYpBaIH7vr/Qcb8Oft6//kgFclif/Brnjo
+qPYZKvb/z8tn/z+tWfD/bWspWMHLwrj/r8pT/7/rrfv/dffG//++fwOr+3Hu+P8nPsYTwAY8CbRM
+fGSvCnbev29fwQpwgd9PH/1/N6ERHB5gzSDwyFX3IkjgeZLv/0+rF/z/snPD/4fWCmAND60V/3+Y
+1fP//cxuYABqgcUe2SqBDXge5qoDMcBN9w3MgDdNhf/fTWr+/xCoCKb4XU/t/7fd1Shi4BgJtPSG
+GqBzjhwDnkbaa4ANAIZBBDkGgDXDAMkGAFMmVCsEPHLTO0uKAU+jnYygWhHgeZIPUQY8dFS/BdWC
+Cd405uM14N+/f+egSnGDjyvnxjyyVQYbANL0FmjAm/aKH4+9zVWhSqCAgQEAq9YXqsYCPO8AAAAA
+SUVORK5CYII=
+			</icon>
+		</appfolder>
+		<appfolder
+		addcaps="form,control,nativewindow"
+		capname="form"
+		id="6dabc59a-531b-4fb6-a288-0c4bdc17ecfc"
+		isrooted="True"
+		name="DocumentSelectorForm"
+		refimgid="c7e90901-60a0-4e6f-b1dc-0ec87deedac1"
+		refpath="/form[@controlname='DocumentSelectorForm']"
+		searchtimeout="30000ms"
+		usecache="True">
+			<item
+			addcaps="toolbar,accessible"
+			capname="toolbar"
+			id="cdb73349-1a36-43b1-b0a8-7c87dc4149f9"
+			name="Toolbar"
+			refpath="/form[@controlname='DocumentSelectorForm']/element[@controlname='_BaseForm_Toolbars_Dock_Area_Bottom']/container[@accessiblename='DockBottom']/toolbar[@accessiblename='Toolbar']"
+			searchtimeout="30000ms">
+				/form[@controlname='DocumentSelectorForm']/element[@controlname='_BaseForm_Toolbars_Dock_Area_Bottom']/?/?/toolbar[@accessiblename='Toolbar']
+			</item>
+			<folder
+			addcaps="toolbar,accessible"
+			capname="toolbar"
+			id="57656a71-1919-435b-a6bd-cb3272e862a1"
+			isrooted="True"
+			name="Toolbar1"
+			refpath="/form[@controlname='DocumentSelectorForm']/element[@controlname='_BaseForm_Toolbars_Dock_Area_Bottom']/container[@accessiblename='DockBottom']/toolbar[@accessiblename='Toolbar']"
+			searchtimeout="30000ms"
+			usecache="False">
+				<item
+				addcaps="button,accessible"
+				capname="button"
+				id="ae9db969-bdc2-40d3-bb5e-c19eb6f310af"
+				name="btnCancel"
+				refpath="/form[@controlname='DocumentSelectorForm']/element[@controlname='_BaseForm_Toolbars_Dock_Area_Bottom']/container[@accessiblename='DockBottom']/toolbar[@accessiblename='Toolbar']/button[@accessiblename='Cancel']"
+				searchtimeout="30000ms">
+					/form[@controlname='DocumentSelectorForm']//toolbar[@accessiblename='Toolbar']/button[@accessiblename='Cancel']
+				</item>
+				<item
+				addcaps="button,accessible"
+				capname="button"
+				id="e2a25cc8-dbc2-4bbf-8f52-2eb5e1f23fb4"
+				name="btnNone"
+				refpath="/form[@controlname='DocumentSelectorForm']/element[@controlname='_BaseForm_Toolbars_Dock_Area_Bottom']/container[@accessiblename='DockBottom']/toolbar[@accessiblename='Toolbar']/button[@accessiblename='None']"
+				searchtimeout="30000ms">
+					/form[@controlname='DocumentSelectorForm']//toolbar[@accessiblename='Toolbar']/button[@accessiblename='None']
+				</item>
+				<item
+				addcaps="button,accessible"
+				capname="button"
+				id="31178d73-9239-45df-8aeb-d5f3117e1c53"
+				name="btnOK"
+				refpath="/form[@controlname='DocumentSelectorForm']/element[@controlname='_BaseForm_Toolbars_Dock_Area_Bottom']/container[@accessiblename='DockBottom']/toolbar[@accessiblename='Toolbar']/button[@accessiblename='OK']"
+				searchtimeout="30000ms">
+					/form[@controlname='DocumentSelectorForm']//toolbar[@accessiblename='Toolbar']/button[@accessiblename='OK']
+				</item>
+				<basepath>
+					/form[@controlname='DocumentSelectorForm']//toolbar[@accessiblename='Toolbar']
+				</basepath>
+			</folder>
+			<folder
+			addcaps="container,control,nativewindow"
+			capname="container"
+			id="cfb76013-756c-4501-bb84-0eaed133297d"
+			isrooted="True"
+			name="PnlBase"
+			refpath="/form[@controlname='DocumentSelectorForm']/container[@controlname='pnlBase']"
+			searchtimeout="30000ms"
+			usecache="False">
+				<item
+				addcaps="button,accessible"
+				capname="button"
+				id="f1054860-5c71-4eec-860e-aa68f5101f99"
+				name="btnRemove"
+				refimgid="71427fcb-c375-4a43-a1a2-7663965f56d4"
+				refpath="/form[@controlname='DocumentSelectorForm']/container[@controlname='pnlBase']/container[@controlname='pnlControls']/element[@controlname='ubtnRemove']/button[@accessiblename='&lt;']"
+				searchtimeout="30000ms">
+					/form[@controlname='DocumentSelectorForm']/container[@controlname='pnlBase']//button[@accessiblename='&lt;']
+				</item>
+				<item
+				addcaps="button,accessible"
+				capname="button"
+				id="7e198c9d-f7ff-4c6e-8aba-ebb573ebc0aa"
+				name="btnAdd"
+				refimgid="9ad52893-8647-4c82-afba-e9d20c965e40"
+				refpath="/form[@controlname='DocumentSelectorForm']/container[@controlname='pnlBase']/container[@controlname='pnlControls']/element[@controlname='ubtnAdd']/button[@accessiblename='>']"
+				searchtimeout="30000ms">
+					/form[@controlname='DocumentSelectorForm']/container[@controlname='pnlBase']//button[@accessiblename='&gt;']
+				</item>
+				<item
+				addcaps="table,accessible"
+				capname="table"
+				id="ecdd0391-f400-45fc-950c-4546b1dbc073"
+				name="tbSelected"
+				refimgid="db871df4-0e41-4185-99cc-b58ca865de4f"
+				refpath="/form[@controlname='DocumentSelectorForm']/container[@controlname='pnlBase']/container[@controlname='pnlControls']/element[@controlname='abgSelection']/table[@accessiblename='ArrayList']"
+				searchtimeout="30000ms">
+					/form[@controlname='DocumentSelectorForm']/container[@controlname='pnlBase']//table[@accessiblename='ArrayList']
+				</item>
+				<item
+				addcaps="table,accessible"
+				capname="table"
+				id="9dcfdd10-4c8e-4195-a910-f6d65ff436d8"
+				name="tbCurrSelection"
+				refimgid="87193009-3d28-4725-aa1d-6c93c35de1bd"
+				refpath="/form[@controlname='DocumentSelectorForm']/container[@controlname='pnlBase']/container[@controlname='pnlControls']/element[@controlname='adgDocuments']/table[@accessiblename='Band 0']"
+				searchtimeout="30000ms">
+					/form[@controlname='DocumentSelectorForm']/container[@controlname='pnlBase']//table[@accessiblename='Band 0']
+				</item>
+				<basepath>
+					/form[@controlname='DocumentSelectorForm']/container[@controlname='pnlBase']
+				</basepath>
+			</folder>
+			<basepath>
+				/form[@controlname='DocumentSelectorForm']
+			</basepath>
+			<icon>
+				iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACx
+jwv8YQUAAAAJcEhZcwAADsQAAA7EAZUrDhsAAAFlSURBVDhPY6AJeOJjOvORg9p/FOyo/v9xoKUT
+VAlugKERDT921nwLVQoBb3Kj+Z5FOf9/FuP2/1msO3EYpBaIH7vr/Qcb8Oft6//kgFclif/Brnjo
+qPYZKvb/z8tn/z+tWfD/bWspWMHLwrj/r8pT/7/rrfv/dffG//++fwOr+3Hu+P8nPsYTwAY8CbRM
+fGSvCnbev29fwQpwgd9PH/1/N6ERHB5gzSDwyFX3IkjgeZLv/0+rF/z/snPD/4fWCmAND60V/3+Y
+1fP//cxuYABqgcUe2SqBDXge5qoDMcBN9w3MgDdNhf/fTWr+/xCoCKb4XU/t/7fd1Shi4BgJtPSG
+GqBzjhwDnkbaa4ANAIZBBDkGgDXDAMkGAFMmVCsEPHLTO0uKAU+jnYygWhHgeZIPUQY8dFS/BdWC
+Cd405uM14N+/f+egSnGDjyvnxjyyVQYbANL0FmjAm/aKH4+9zVWhSqCAgQEAq9YXqsYCPO8AAAAA
+SUVORK5CYII=
+			</icon>
+		</appfolder>
 		<basepath>
 		</basepath>
 	</rootfolder>
 	<variables>
+		<var
+		id="c4049308-6105-4a78-bb10-0747b2f77ef5"
+		name="weekday">
+		</var>
+		<var
+		id="9bd4984b-a63b-4981-acb8-02e15473be61"
+		name="curwkday">
+		</var>
+		<var
+		id="24cada72-ad06-465e-815d-e5c8edf5a924"
+		name="appmtData">
+		</var>
+		<var
+		id="6738ba8b-3ee3-429a-9580-8c187b3ee81e"
+		name="curdayapptselection">
+		</var>
 	</variables>
 </repository>

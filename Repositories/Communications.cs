@@ -183,6 +183,7 @@ namespace SmokeTest.Repositories
             RepoItemInfo _newitemdropdownInfo;
             RepoItemInfo _newemailInfo;
             RepoItemInfo _btnsyncnowInfo;
+            RepoItemInfo _tblcommunicationsInfo;
 
             /// <summary>
             /// Creates a new MainForm  folder.
@@ -200,6 +201,7 @@ namespace SmokeTest.Repositories
                 _newitemdropdownInfo = new RepoItemInfo(this, "newItemDropDown", "?/?/form[@controlname='CommIndexForm']//?/menuitem[@name='New']", 30000, null, "f227d675-d472-41ed-bfc7-ef5a8c4385e4");
                 _newemailInfo = new RepoItemInfo(this, "newEmail", ".//menuitem[@accessiblename='E-mail']", 30000, null, "20fd97b5-0fa6-4bfc-9498-7115d29544ab");
                 _btnsyncnowInfo = new RepoItemInfo(this, "btnSyncNow", "?/?/form[@controlname='CommIndexForm']//?/button[@text='Synchronize now']", 30000, null, "53e376b3-fa0b-425a-9ac1-47febc8a641a");
+                _tblcommunicationsInfo = new RepoItemInfo(this, "tblCommunications", "?/?/form[@controlname='CommIndexForm']/container[@controlname='splitContainer']//table[@accessiblename='Band 0']", 30000, null, "9f593331-1c6e-463a-91ec-a8c7956e014f");
             }
 
             /// <summary>
@@ -439,6 +441,30 @@ namespace SmokeTest.Repositories
                 get
                 {
                     return _btnsyncnowInfo;
+                }
+            }
+
+            /// <summary>
+            /// The tblCommunications item.
+            /// </summary>
+            [RepositoryItem("9f593331-1c6e-463a-91ec-a8c7956e014f")]
+            public virtual Ranorex.Table tblCommunications
+            {
+                get
+                {
+                    return _tblcommunicationsInfo.CreateAdapter<Ranorex.Table>(true);
+                }
+            }
+
+            /// <summary>
+            /// The tblCommunications item info.
+            /// </summary>
+            [RepositoryItemInfo("9f593331-1c6e-463a-91ec-a8c7956e014f")]
+            public virtual RepoItemInfo tblCommunicationsInfo
+            {
+                get
+                {
+                    return _tblcommunicationsInfo;
                 }
             }
 
@@ -705,7 +731,7 @@ namespace SmokeTest.Repositories
                     base("MenubarFillPanel", "container[@controlname='menubar_Fill_Panel']", parentFolder, 30000, null, false, "185d02f6-45bc-47b5-94ea-b1a8119328d1", "")
             {
                 _btnokInfo = new RepoItemInfo(this, "btnOK", ".//toolbar[@accessiblename='Toolbar']/button[@accessiblename='OK']", 30000, null, "7b267506-d26d-46dd-b250-d6e2d804a27e");
-                _btnaddfileInfo = new RepoItemInfo(this, "btnAddFile", "container[@controlname='pnlBase']//container[@controlname='pnlFiles']//button[@accessiblerole='PushButton']", 30000, null, "77799e61-2567-481e-b629-07fbece8545d");
+                _btnaddfileInfo = new RepoItemInfo(this, "btnAddFile", "container[@controlname='pnlBase']//container[@controlname='pnlFiles']//button[@accessiblerole='PushButton']", 30000, true, "77799e61-2567-481e-b629-07fbece8545d");
                 _txtphonecallnoteInfo = new RepoItemInfo(this, "txtPhoneCallNote", "container[@controlname='pnlBase']//container[@controlname='pnlSummary']/?/?/text[@controltypename='EmbeddableTextBoxWithUIPermissions']/text[@accessiblerole='Text']", 30000, null, "d8934aa4-795b-4630-9a76-135dda99b373");
                 _btndeleteInfo = new RepoItemInfo(this, "btnDelete", ".//toolbar[@accessiblename='Toolbar']/button[@accessiblename='Delete']", 30000, null, "0465641d-6a1d-4f8e-b1e7-ad5372e4279b");
             }

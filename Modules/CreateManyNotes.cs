@@ -65,7 +65,7 @@ namespace SmokeTest.Modules
          public void CreateStickyNote()
          {
         	//Create Many Notes
-        	for (int value = 001; value <= 500; value++)
+        	for (int value = 001; value <= 2; value++)
         	{
 	         	//Open notes section and window
 	        	note.MainForm.btnNotes.Click();

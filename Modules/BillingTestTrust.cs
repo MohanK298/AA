@@ -93,8 +93,8 @@ namespace SmokeTest.Modules
         	bill.AmicusAttorneyXWin1.Trust.Click();
         	
         	Report.Info("Check Trust Receipt MenuItem Exist? " + bill.AmicusAttorneyXWin2.optionTrustReceiptInfo.Exists());
-        	bill.AmicusAttorneyXWin2.optionTrustReceipt.Select();
-//        	bill.AmicusAttorneyXWin2.optionTrustReceipt.Click();
+//        	bill.AmicusAttorneyXWin2.optionTrustReceipt.Select();
+        	bill.AmicusAttorneyXWin2.optionTrustReceipt.Click();
 //        	bill.AmicusAttorneyXWin2.optionTrustReceipt.Select();
         	//bill.TrustDetailBaseForm.PnlBase.txtAmount.PressKeys(trustReceiptAmount);
         	bill.TrustDetailBaseForm.PnlBase.txtAmount.PressKeys("35.00");

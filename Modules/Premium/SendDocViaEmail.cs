@@ -100,13 +100,16 @@ namespace SmokeTest.Modules.Premium
         	comm.DropDownForm.All_My_Contacts.Click();
         	comm.ContactFullName = "Ranorex Test Email" + testTime;
         	comm.PeopleSelectForm.Contact.DoubleClick();
+        	comm.NewFileForm.btnNext.Click();
         	comm.NewFileForm.SaveOpen.Click();
         }
         
         private void AddDocumentToMatter()
         {
+        	
         	comm.FileDetailForm.File_Facts.Document.Click();
         	comm.FileDetailForm.PanelRight.NewBtn.Click();
+        	
         	comm.DocumentDetail.Title.PressKeys("Ranorex Email Test Doc");
         	filePath = Utilities.Common.CreateLocalTextFile("Ranorex Email Test Doc");
         	comm.DocumentDetail.AtbLocationPath.PressKeys(filePath);

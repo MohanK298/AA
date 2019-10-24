@@ -13,11 +13,10 @@ using System.Text.RegularExpressions;
 using System.Drawing;
 using System.Threading;
 using WinForms = System.Windows.Forms;
-
+using OpenQA.Selenium;
 using Ranorex;
 using Ranorex.Core;
 using Ranorex.Core.Testing;
-
 using SmokeTest.Repositories;
 
 namespace SmokeTest.Modules
@@ -66,7 +65,9 @@ namespace SmokeTest.Modules
         	phoneCall.MainForm.btnCommunications.Click();
         	phoneCall.MainForm.btnNewMenuItem.Click();
         	phoneCall.AmicusAttorneyXWin.MenuPopup.Click("47;20");
-
+        	//Keyboard.PrepareFocus(repo.CefForm.Open);
+        	//Keyboard.Press(System.Windows.Forms.Keys.P | System.Windows.Forms.Keys.Shift | System.Windows.Forms.Keys.Control, Keyboard.DefaultScanCode, Keyboard.DefaultKeyPressTime, 1, true);
+//        	Keyboard.Press("{ControlKey down}{ShiftKey down}{P}{ControlKey up}");
         	//Add file to task
         	phoneCall.PhoneDetailForm.MenubarFillPanel.btnAddFile.Click();
         	phoneCall.FileSelectForm.btnQuickFind.Click();

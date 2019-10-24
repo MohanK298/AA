@@ -62,31 +62,42 @@ namespace SmokeTest.Modules
 
         public void CreateCall()
         {
-        	for (int value = 001; value <= 500; value++)
+	        	phoneCall.MainForm.Self.Activate();
+        	for (int value = 001; value <= 1500; value++)
         	{
 	        	//Open window to add a new phone call
+	        	//phoneCall.MainForm.btnCommunications.Click();
+	        	//phoneCall.MainForm.btnNewMenuItem.Click();
+	        	//phoneCall.AmicusAttorneyXWin.MenuPopup.Click("47;20");
+	        	//Keyboard.PrepareFocus(phoneCall.MainForm.btnCommunications);
+
 	        	phoneCall.MainForm.btnCommunications.Click();
-	        	phoneCall.MainForm.btnNewMenuItem.Click();
-	        	phoneCall.AmicusAttorneyXWin.MenuPopup.Click("47;20");
-	
+	        	if(value==800)
+	        	{
+	        		Report.Info("Reached 800 records");
+	        	}
+
+	        	Keyboard.Press(System.Windows.Forms.Keys.P | System.Windows.Forms.Keys.Shift | System.Windows.Forms.Keys.Control, Keyboard.DefaultScanCode, Keyboard.DefaultKeyPressTime, 1, true);
+				//Keyboard.Press("{ControlKey down}{ShiftKey down}{P}{ControlKey up}");
 	        	//Add file to task
 	        	phoneCall.PhoneDetailForm.MenubarFillPanel.btnAddFile.Click();
 	        	phoneCall.FileSelectForm.btnQuickFind.Click();
-	        	phoneCall.FindFilesForm.txtFindFile.PressKeys("Ranorex File " + String.Format("{0:000}", value));
+	        	//phoneCall.FindFilesForm.txtFindFile.PressKeys("Ranorex File " + String.Format("{0:000}", value));
+	        	phoneCall.FindFilesForm.txtFindFile.PressKeys("Client File Pegasus");
 	        	phoneCall.FindFilesForm.btnOK.Click();
 	        	phoneCall.FileSelectForm.listFirstFoundFile.DoubleClick();
 	        	
 	        	//Add note to the call
-	        	phoneCall.PhoneDetailForm.MenubarFillPanel.txtPhoneCallNote.PressKeys("Ranorex Phone Call "+ String.Format("{0:000}", value));
+	        	phoneCall.PhoneDetailForm.MenubarFillPanel.txtPhoneCallNote.PressKeys("Client File Pegasus Phone Call "+ System.DateTime.Now.ToString());
 	        	
 	        	//Save phone call
 	        	phoneCall.PhoneDetailForm.MenubarFillPanel.btnOK.Click();
 	        	
 	        	//Verify if the phone call is created
-	        	phoneCall.MainForm.btnShowAllFiles.Click();
-	        	phoneCall.MainForm.listFirstFile.DoubleClick();
-	        	Report.Success("Create Phone Call passed");
-	        	phoneCall.PhoneDetailForm.MenubarFillPanel.btnOK.Click();
+//	        	phoneCall.MainForm.btnShowAllFiles.Click();
+//	        	phoneCall.MainForm.listFirstFile.DoubleClick();
+//	        	Report.Success("Create Phone Call passed");
+//	        	phoneCall.PhoneDetailForm.MenubarFillPanel.btnOK.Click();
         	}
         }
         void ITestModule.Run()

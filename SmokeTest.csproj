@@ -52,6 +52,12 @@
   </PropertyGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.Targets" />
   <ItemGroup>
+    <Reference Include="Microsoft.Exchange.WebServices">
+      <HintPath>packages\Microsoft.Exchange.WebServices.2.2\lib\40\Microsoft.Exchange.WebServices.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Exchange.WebServices.Auth">
+      <HintPath>packages\Microsoft.Exchange.WebServices.2.2\lib\40\Microsoft.Exchange.WebServices.Auth.dll</HintPath>
+    </Reference>
     <Reference Include="Ranorex.Bootstrapper">
       <Private>False</Private>
     </Reference>
@@ -137,6 +143,51 @@
       <UserCode>true</UserCode>
       <id>e8042068-f3d7-4b2b-b7c6-f0482bafc98a</id>
     </Compile>
+    <Compile Include="changePrefIncludeChronology.cs">
+      <id>6dc5c4f6-14c7-49e1-ad3f-12ee842c628a</id>
+    </Compile>
+    <Compile Include="convertToAppointmentFromControlPanel.cs">
+      <id>70654c63-ef08-49f7-b186-9ce0991be445</id>
+    </Compile>
+    <Compile Include="convertToPhoneCallFromControlPanel.cs">
+      <id>36957c65-53b1-47c3-b6db-637938ba5e86</id>
+    </Compile>
+    <Compile Include="convertToTimeEntry.cs">
+      <id>24f2ddcf-5dd9-426d-a879-78b4e8682630</id>
+    </Compile>
+    <Compile Include="convertToToDo.cs">
+      <id>701ff450-1375-4e27-85eb-38ef964b1f42</id>
+    </Compile>
+    <Compile Include="createApptDocAttached.cs">
+      <id>c16e10a1-ee2c-44d0-8ce5-ac58253ee3ad</id>
+    </Compile>
+    <Compile Include="createApptDrgNDrpWithinSameDay.cs">
+      <id>1ee24686-c4b8-4f81-ad2e-d09b628d005a</id>
+    </Compile>
+    <Compile Include="createApptWithEmailAlert.cs">
+      <id>b7938405-9d5c-4908-9635-d355ba57b40c</id>
+    </Compile>
+    <Compile Include="createRedLetterDay.cs">
+      <id>6c79af82-9ade-4335-ac70-cf4d19d3cde4</id>
+    </Compile>
+    <Compile Include="createRepeatingEvent.cs">
+      <id>71658915-9e40-4ac7-bf9e-78d45584ab00</id>
+    </Compile>
+    <Compile Include="deleteNoteFromFile.cs">
+      <id>7d3686f8-bc8b-4e84-8cf6-2430fce45a44</id>
+    </Compile>
+    <Compile Include="deleteNoteUsingContextClick.cs">
+      <id>4f0bcc5c-c427-469c-bd25-b966a5e5eb2d</id>
+    </Compile>
+    <Compile Include="deleteNoteUsingKeys.cs">
+      <id>afaaadc8-f8ff-48ab-aaf4-b20f0dab794e</id>
+    </Compile>
+    <Compile Include="forwardNotesValidation.cs">
+      <id>8f5ea478-6e73-477f-bbc3-db71e1a1ac1f</id>
+    </Compile>
+    <Compile Include="makeAssociationValidation.cs">
+      <id>e9981751-cb92-4d7e-89dc-631af32ec1ea</id>
+    </Compile>
     <Compile Include="Modules\AddContact.cs">
       <id>592a0510-1ead-4814-ab98-e85f01e1f1e5</id>
     </Compile>
@@ -206,6 +257,9 @@
     <Compile Include="Modules\Attorney_FileDetails\CreateFile.cs">
       <id>3191dd81-050f-4152-a689-aa5a8093f6b1</id>
     </Compile>
+    <Compile Include="Modules\Attorney_FileDetails\CreateMultipleDocuments.cs">
+      <id>dc88f6e9-3e42-4fb2-8e95-181e6d7fcbd7</id>
+    </Compile>
     <Compile Include="Modules\Attorney_FileDetails\FindFile.cs">
       <id>e7383656-87c4-4102-94bf-f1c466d3c0a5</id>
     </Compile>
@@ -215,8 +269,14 @@
     <Compile Include="Modules\Attorney_FileDetails\SwitchUserManage.cs">
       <id>f51e5290-0588-42cf-876e-7c0c432c77e2</id>
     </Compile>
+    <Compile Include="Modules\Attorney_FileDetails\testfolder.cs">
+      <id>a66fb97f-8d79-401e-a05c-08c26fa6392e</id>
+    </Compile>
     <Compile Include="Modules\Attorney_FileDetails\VerifyDocuments.cs">
       <id>d37b351b-e53f-487d-96e7-1d2b37414a01</id>
+    </Compile>
+    <Compile Include="Modules\basicValidation.cs">
+      <id>71a2a73c-4c26-4618-abba-cbc63d596f5d</id>
     </Compile>
     <Compile Include="Modules\BillAPX.cs">
       <id>b1876b40-be4f-4f3a-9b35-032b2fab6942</id>
@@ -386,6 +446,18 @@
     <Compile Include="Modules\ReceivePaymentAPX.cs">
       <id>c3a85e91-f601-4156-922b-8dcd1076d89b</id>
     </Compile>
+    <Compile Include="Modules\Recording1.cs">
+      <BoundTo>a2b511a4-7e0e-47d5-975a-434abc589713</BoundTo>
+      <DependentUpon>Recording1.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>b692b0c7-8872-414f-9d43-8522939cfb3d</id>
+    </Compile>
+    <Compile Include="Modules\Recording1.UserCode.cs">
+      <BoundTo>a2b511a4-7e0e-47d5-975a-434abc589713</BoundTo>
+      <DependentUpon>Recording1.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>27843a14-2f34-412f-bc03-6ef2ab511f92</id>
+    </Compile>
     <Compile Include="Modules\SendDocumentViaEmail.cs">
       <id>4b7d6b73-f432-4a30-82a7-fc7f72845358</id>
     </Compile>
@@ -404,11 +476,17 @@
     <Compile Include="Modules\Utilities\SendMail.cs">
       <id>ee8dc323-7f62-4bce-91af-c03ec43558dd</id>
     </Compile>
+    <Compile Include="Modules\validateDocumentIndexViewer.cs">
+      <id>6ca04291-0553-4754-817d-376c41638b4d</id>
+    </Compile>
     <Compile Include="Modules\VoidPayment.cs">
       <id>7f4d4c36-2214-4bbc-ac4d-faea2f7b708e</id>
     </Compile>
     <Compile Include="Modules\VoidPaymentAPX.cs">
       <id>f06bea47-ac9c-4145-a550-392759f98b54</id>
+    </Compile>
+    <Compile Include="noteCreationFileBradValidationTimeEntryCreation.cs">
+      <id>09f99052-c9b2-4a87-b2cc-76c960d7d7f1</id>
     </Compile>
     <Compile Include="Program.cs">
       <id>918f42e9-e652-4f48-b724-49dc745ceefe</id>
@@ -593,6 +671,9 @@
       <UserCode>true</UserCode>
       <id>d0bb5317-efe1-4751-a8d4-2068fd6d48ca</id>
     </Compile>
+    <Compile Include="replyNotesValidation.cs">
+      <id>43a14dbb-44bc-4b76-8b5e-129ef18bdf2d</id>
+    </Compile>
     <Compile Include="Repositories\Bill.cs">
       <BoundTo>39EC50C6-8736-4169-B853-EEE0A163C1EF</BoundTo>
       <DependentUpon>Bill.rxrep</DependentUpon>
@@ -743,6 +824,36 @@
       <RepositoryCode>true</RepositoryCode>
       <id>a66d8957-28ea-4e54-b078-5da1441b8730</id>
     </Compile>
+    <Compile Include="selectNoteValidateAssociatedButtons.cs">
+      <id>36f09a03-f643-4bbd-b08c-8c823077be81</id>
+    </Compile>
+    <Compile Include="validateDocDetailButtons.cs">
+      <id>026832a2-6b45-430f-b874-aa945223cb10</id>
+    </Compile>
+    <Compile Include="verifyAddDocIndexAutoTxtSearch.cs">
+      <id>1ab527ed-17ab-4601-9723-ce1c6be8be82</id>
+    </Compile>
+    <Compile Include="verifyAddDocToDocumentGroup.cs">
+      <id>d7f529a0-7ca2-4387-b356-571b9d7c4105</id>
+    </Compile>
+    <Compile Include="verifyAddFilePeopleFMtoDocDetail.cs">
+      <id>963f966c-dae4-40c5-a308-b3ce85535cde</id>
+    </Compile>
+    <Compile Include="verifyAddNotes.cs">
+      <id>a28c3791-b9c7-4564-8736-db904061f81c</id>
+    </Compile>
+    <Compile Include="verifyEventsAddFromFiles.cs">
+      <id>146d0ef0-48ae-4188-8d16-d49f05e38ff1</id>
+    </Compile>
+    <Compile Include="verifyPromptNoFileSelection.cs">
+      <id>43117c4e-e5c9-474a-bbb4-ad558c78e391</id>
+    </Compile>
+    <Compile Include="verifySearchByFullTextDocInIndex.cs">
+      <id>48de73d1-6cfe-41cd-ba39-e6a68094c6f1</id>
+    </Compile>
+    <Compile Include="verifySearchByTitleandSummaryFields.cs">
+      <id>83cb5673-c7b0-4539-b1a0-6c1d62d2947d</id>
+    </Compile>
     <None Include="app.config">
       <id>1aaa3a92-1c67-4dda-8271-dde657482fda</id>
     </None>
@@ -764,6 +875,14 @@
       <BoundTo>72941242-5cc9-4da0-af70-ff782b7d734b</BoundTo>
       <id>d41a23c4-d089-4c84-aa55-946662f6824d</id>
       <recordtableid>d55e470e-eec1-4552-b6e9-8ceef4940272</recordtableid>
+    </None>
+    <None Include="Modules\Recording1.rxrec">
+      <id>a2b511a4-7e0e-47d5-975a-434abc589713</id>
+      <recordtableid>dd1bbd22-6cf3-4f8c-a5eb-2d3b964920fd</recordtableid>
+      <BoundTo>045BFD79-4C17-4D4F-B791-44BA6634EEDE</BoundTo>
+    </None>
+    <None Include="packages.config">
+      <id>4d8a72c5-0d3b-4250-a865-8a01dcbc4b17</id>
     </None>
     <None Include="Recordings\BillingDirectTest.rxrec">
       <BoundTo>72941242-5cc9-4da0-af70-ff782b7d734b</BoundTo>
@@ -796,9 +915,9 @@
       <recordtableid>1d3db6ff-ee1a-4918-a1e6-5dd8da1a10eb</recordtableid>
     </None>
     <None Include="Recordings\Recording1.rxrec">
-      <BoundTo>72941242-5cc9-4da0-af70-ff782b7d734b</BoundTo>
       <id>b0702ab4-8f8d-4eac-8323-3fe972ec9578</id>
       <recordtableid>0f3f1343-b4ec-426a-abb8-96a87d3e5019</recordtableid>
+      <BoundTo>72941242-5cc9-4da0-af70-ff782b7d734b</BoundTo>
     </None>
     <None Include="Recordings\Recording2.rxrec">
       <id>3d8c614d-c539-4bac-b792-7371b9a93d5e</id>
@@ -1127,6 +1246,9 @@
     </Folder>
     <Folder Include="Modules\Attorney_FileDetails">
       <id>a7a60edb-d95d-47f6-95e0-e9e9b65ff68a</id>
+    </Folder>
+    <Folder Include="Modules\Notes">
+      <id>316bacfb-f87c-4c09-af0e-20fae3959b52</id>
     </Folder>
     <Folder Include="Modules\Utilities">
       <id>705ce71c-049d-46b9-8f55-ad5ad6266832</id>

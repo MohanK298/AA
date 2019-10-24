@@ -79,7 +79,6 @@ namespace SmokeTest.Modules
         public static void CloseAllDetails()
         {
         	repo.MainForm.Self.Activate();
-        	repo.MainForm.menuItemFileInfo.WaitForExists(new Duration(3000));
         	repo.MainForm.menuItemFile.Select();
         	repo.AmicusAttorneyXWin.CloseAllDetails.Click();
         }

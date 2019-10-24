@@ -75,6 +75,10 @@ will be used throughout the Smoke Test]]>
 			ref="4617983a-3a28-4d33-be7a-4f2f47cc588a"
 			type="UserCode">
 			</testmodule>
+			<smartfoldernode
+			id="050bea6e-2129-44ce-8a76-eef174d86edd"
+			name="CreateRepeatingApptWithExceptions">
+			</smartfoldernode>
 			<testmodule
 			id="05761224-4d1e-489b-9c6c-f9cf7041822f"
 			name="BillingTestGeneralRetainer"
@@ -100,6 +104,12 @@ will be used throughout the Smoke Test]]>
 					variablename="fileName">
 					</var>
 				</databinding>
+			</testmodule>
+			<testmodule
+			id="06afd20a-eb97-4b63-9178-961037e3c874"
+			name="noteCreationFileBradValidationTimeEntryCreation"
+			ref="c9f6287e-5780-4fcd-aa10-0abffc68adf3"
+			type="UserCode">
 			</testmodule>
 			<smartfoldernode
 			datasource="NoteData"
@@ -140,6 +150,10 @@ Module]]>
 					<![CDATA[Create and Verify an Appointment event in Calendar module]]>
 				</description>
 			</smartfoldernode>
+			<testcase
+			id="0eb91bf1-6a6d-403e-a327-77532be52941"
+			name="Document_Indexing">
+			</testcase>
 			<testsuite
 			ReportTime="RelativeToTestSuiteStartTime"
 			TracingScreenshotMode="Foreground"
@@ -160,6 +174,16 @@ Module]]>
 			reporttemplatefolder=""
 			reportwriteinterval="30000ms">
 			</testsuite>
+			<smartfoldernode
+			id="0fc09e0e-23a5-4203-9f7b-cac59cdc96bc"
+			name="ValidateDocumentDetailButtons">
+			</smartfoldernode>
+			<testmodule
+			id="1027f6cf-5d31-41a6-8d7e-6aa852eef1e0"
+			name="createApptWithEmailAlert"
+			ref="4be38324-eac6-4d99-a2b1-718844eead53"
+			type="UserCode">
+			</testmodule>
 			<testmodule
 			id="12fdb4cf-af88-4da5-a4b2-f4653555c69e"
 			name="DeleteTask"
@@ -270,6 +294,12 @@ Module]]>
 			type="UserCode">
 			</testmodule>
 			<testmodule
+			id="17fda873-d899-426b-b3d8-00c77c73db77"
+			name="makeAssociationValidation"
+			ref="af54e5fe-e07a-4a40-8e61-873c83da518e"
+			type="UserCode">
+			</testmodule>
+			<testmodule
 			id="19c53a8d-d6ad-47f2-a637-712be9621deb"
 			name="AddNote"
 			ref="000ea7aa-65a2-40a9-a29e-f52ff9e3f883"
@@ -320,6 +350,30 @@ Module]]>
 module]]>
 				</description>
 			</smartfoldernode>
+			<testmodule
+			id="1de7d58f-9a78-4b42-a4fe-6c7aaaa19b2c"
+			name="convertToToDo"
+			ref="834f172e-1d9e-473a-ba47-3a25ea1a4cb5"
+			type="UserCode">
+			</testmodule>
+			<testmodule
+			id="1e55a1ce-1947-42ef-9bac-07481c0f928c"
+			name="validateDocDetailButtons"
+			ref="94fe2f07-989f-4bd7-990c-6ec033fef26b"
+			type="UserCode">
+			</testmodule>
+			<testmodule
+			id="1fc882f9-b2fa-4d0a-a930-8435836099d2"
+			name="createApptDocAttached"
+			ref="10a89633-7144-4480-9f9e-1743b2c122c9"
+			type="UserCode">
+			</testmodule>
+			<testmodule
+			id="2250839d-149f-4ba7-add4-93587d92a4eb"
+			name="forwardNotesValidation"
+			ref="1a287ee6-cf30-4fd4-8b65-15a4d2333aae"
+			type="UserCode">
+			</testmodule>
 			<smartfoldernode
 			datasource="DocumentsData"
 			id="22b73dda-3596-4fb7-ad79-85749b8d500e"
@@ -342,6 +396,28 @@ module]]>
 			datasource="FileAPXData"
 			id="2463e94a-2e9b-40f5-a44d-f08282a4477c"
 			name="TimeEntryAPX">
+			</smartfoldernode>
+			<smartfoldernode
+			id="25fff493-96c7-4fa1-87bc-096455a8f900"
+			name="DeleteNotes">
+			</smartfoldernode>
+			<testmodule
+			id="270e7f98-2239-493d-8796-ee073c7d8dc0"
+			name="deleteNoteUsingContextClick"
+			ref="caac4d69-c8f9-4648-ae07-251cf0792ee9"
+			type="UserCode">
+			</testmodule>
+			<smartfoldernode
+			id="27a7df85-b9cb-42dd-9bcd-f43a7b3d2737"
+			name="SendNotesValidation">
+			</smartfoldernode>
+			<smartfoldernode
+			id="28b86733-59a2-4365-a7d5-24ca2f0e5982"
+			name="VerifySearchByTitleandSummaryFields">
+			</smartfoldernode>
+			<smartfoldernode
+			id="28d4da33-7130-44db-9aba-ed0ed24734b4"
+			name="SelectNoteValidateAssociatedButtons">
 			</smartfoldernode>
 			<testmodule
 			id="29398dde-2182-423d-8249-bd4b09807f7e"
@@ -383,6 +459,16 @@ module]]>
 					</var>
 				</databinding>
 			</testmodule>
+			<testmodule
+			id="2c9df57e-7dfb-4415-b8c4-8e0547068ff9"
+			name="convertToPhoneCallFromControlPanel"
+			ref="d01ccd96-97fd-4a24-bd5f-a4202960d1d0"
+			type="UserCode">
+			</testmodule>
+			<smartfoldernode
+			id="2d4fb370-e1d6-4300-93aa-ce4f17212b57"
+			name="VerifyPromptNoFileSelection">
+			</smartfoldernode>
 			<testmodule
 			id="2fe46f71-0c95-4143-b2f2-8b617f8c70af"
 			name="BillingAddContact"
@@ -541,6 +627,12 @@ module]]>
 			name="ReceivePaymentAPX">
 			</smartfoldernode>
 			<testmodule
+			id="457bbab7-0422-4dcf-957c-9cf88232495d"
+			name="createRedLetterDay"
+			ref="f579159e-b184-4bcb-9325-0375b5f921b9"
+			type="UserCode">
+			</testmodule>
+			<testmodule
 			id="4609cf40-ae9c-4f19-856c-8b081e195605"
 			name="AddFile"
 			ref="23f9d399-ea0a-4173-b826-d70b6404eaf0"
@@ -609,6 +701,18 @@ module]]>
 					variablename="editAppointmentTitle">
 					</var>
 				</databinding>
+			</testmodule>
+			<testmodule
+			id="4af792f6-7c4c-4e5b-a333-de611aa4eaa1"
+			name="verifySearchByFullTextDocInIndex"
+			ref="7795ca54-95e5-4bb4-9ef3-bc7c0f33d9c3"
+			type="UserCode">
+			</testmodule>
+			<testmodule
+			id="4b4da38b-d33e-40c3-b1e0-5ac650528f65"
+			name="validateDocumentIndexViewer"
+			ref="edde5660-5c5a-4291-a286-d87fd79aec15"
+			type="UserCode">
 			</testmodule>
 			<testmodule
 			id="4d4cb17a-5ed9-4753-af9f-f709e4bd01f9"
@@ -691,6 +795,12 @@ Attorney side]]>
 				</databinding>
 			</testmodule>
 			<testmodule
+			id="4f4fdf1a-7437-40c4-8883-35692e7ec56c"
+			name="verifyAddNotes"
+			ref="4daf26a7-d293-4e3e-b3ba-c4efed986c71"
+			type="UserCode">
+			</testmodule>
+			<testmodule
 			id="5070dacd-fce7-46a7-89f6-1d3a36a1f800"
 			name="PaymentAPX"
 			ref="be0c556a-a60e-4803-a426-dbde17c7e9b3"
@@ -740,6 +850,12 @@ Attorney side]]>
 					</var>
 				</databinding>
 			</testmodule>
+			<testmodule
+			id="519a0b15-8153-459f-a6d3-79ff3029b4de"
+			name="createRepeatingEvent"
+			ref="d9a7f1f5-b5bc-4db9-9a38-16897e14c640"
+			type="UserCode">
+			</testmodule>
 			<smartfoldernode
 			datasource="LibraryData"
 			id="51b7b830-ea6e-4cae-b412-b50997157a16"
@@ -764,6 +880,12 @@ SIDE--------------------<BR>Create and Verify a contact that will be used on a
 Billing File]]>
 				</description>
 			</smartfoldernode>
+			<testmodule
+			id="54cbe7ea-adee-43d8-8d84-8e15b1ee9993"
+			name="verifyAddDocToDocumentGroup"
+			ref="b026d7d2-2339-489d-bded-d6aad181323c"
+			type="UserCode">
+			</testmodule>
 			<smartfoldernode
 			datasource="PhoneCallData"
 			id="565753a1-f5bc-48f2-a9a2-16bf7b4ccf87"
@@ -786,6 +908,10 @@ module]]>
 					<![CDATA[Adds a&nbsp;File in&nbsp;File module - Attorney Side 
 which will be used throughout the Smoke Test]]>
 				</description>
+			</smartfoldernode>
+			<smartfoldernode
+			id="5b5aea69-6426-460b-b666-6ea8e58b7416"
+			name="VerifyEventsAddFromFiles">
 			</smartfoldernode>
 			<smartfoldernode
 			id="617d1b07-0685-449a-a510-b2038d125def"
@@ -941,6 +1067,10 @@ which will be used throughout the Smoke Test]]>
 				</databinding>
 			</testmodule>
 			<smartfoldernode
+			id="666db4da-8a00-402e-82a8-10fb9106bed8"
+			name="ValidateDocumentIndexViewer">
+			</smartfoldernode>
+			<smartfoldernode
 			datasource="FileData"
 			id="66a83577-8864-4b77-9f46-c6a771f806f3"
 			name="AddWebURL">
@@ -951,6 +1081,10 @@ which will be used throughout the Smoke Test]]>
 			ref="19422362-b116-427a-addc-7ad6d6a56f62"
 			type="UserCode">
 			</testmodule>
+			<testcase
+			id="67e9bae2-280b-4ca4-8e22-d3573671ec71"
+			name="Calendar">
+			</testcase>
 			<testmodule
 			id="6b18d245-7d04-48f8-b6be-41041e111f0f"
 			name="AddDocumentAM"
@@ -985,6 +1119,12 @@ which will be used throughout the Smoke Test]]>
 				</description>
 			</smartfoldernode>
 			<testmodule
+			id="6d203d21-086a-49a3-b22f-749a2c1175bb"
+			name="convertToTimeEntry"
+			ref="365c594c-9e3f-4817-97a7-415289fb464e"
+			type="UserCode">
+			</testmodule>
+			<testmodule
 			id="6da2d09b-7a06-44b4-985d-92c3ddd908ad"
 			name="AddDocument"
 			ref="833fa8d2-53dd-4f83-a862-2175ee24f816"
@@ -1010,10 +1150,28 @@ event]]>
 					<![CDATA[<P>Delete the edited Document</P>]]>
 				</description>
 			</smartfoldernode>
+			<testmodule
+			id="70cd4739-4a04-4ed2-a874-655d170bf8a2"
+			name="deleteNoteFromFile"
+			ref="51667991-2f83-4a73-a830-7748c7d473c9"
+			type="UserCode">
+			</testmodule>
 			<testcase
 			id="7247446d-c83a-4e5b-b541-9873829122ab"
 			name="APX">
 			</testcase>
+			<testmodule
+			id="7362bf02-a225-49c0-96a2-c06cf71c928d"
+			name="verifyAddDocIndexAutoTxtSearch"
+			ref="49b33d33-8e68-4bd7-ab32-81c58c96a0c0"
+			type="UserCode">
+			</testmodule>
+			<testmodule
+			id="7533e7c2-479f-4ed4-b5cc-c67bfaa7b37d"
+			name="changePrefIncludeChronology"
+			ref="4397348b-1e9f-4326-b0fb-0cbd4a73df59"
+			type="UserCode">
+			</testmodule>
 			<smartfoldernode
 			id="75bfd9cc-6eb9-42a6-bbaf-110143ffbd36"
 			name="AddDocument">
@@ -1022,6 +1180,12 @@ event]]>
 			id="75dc9db6-e399-46df-a30b-7cdc1a20ca70"
 			name="Gmail">
 			</smartfoldernode>
+			<testmodule
+			id="76049d43-8115-4a03-b6b2-defdfc62f7c7"
+			name="selectNoteValidateAssociatedButtons"
+			ref="3f0f8556-291d-4eee-b977-cfc47b6cad9a"
+			type="UserCode">
+			</testmodule>
 			<testmodule
 			enabled="False"
 			id="7743cb8a-d4f9-4383-9327-3bc1d08e25ae"
@@ -1134,6 +1298,14 @@ event]]>
 					</var>
 				</databinding>
 			</testmodule>
+			<testcase
+			id="7dd06647-a62c-4aba-b0f2-4ff956b0705a"
+			name="Document_Detail_Module">
+			</testcase>
+			<smartfoldernode
+			id="8415e0b4-3c9d-48b5-9028-1adabd0000b2"
+			name="CreateRedLetterDayWithDragNDropWeekly">
+			</smartfoldernode>
 			<testmodule
 			id="855b4275-d8fc-4029-ba6e-62150f99884e"
 			name="CreateManyTimeEntries"
@@ -1159,6 +1331,12 @@ event]]>
 					variablename="time">
 					</var>
 				</databinding>
+			</testmodule>
+			<testmodule
+			id="86c4049d-9a1d-45ca-a661-c85b399ce63d"
+			name="convertToAppointmentFromControlPanel"
+			ref="59bc1f30-eb6b-473f-87b7-06ecc8655817"
+			type="UserCode">
 			</testmodule>
 			<testmodule
 			id="886ada20-b3e3-49ab-a530-6f0f4915e28d"
@@ -1196,6 +1374,10 @@ event]]>
 					</var>
 				</databinding>
 			</testmodule>
+			<smartfoldernode
+			id="8db0154d-7953-4ec5-8e78-25b7335b140e"
+			name="NoteCreationFileBradValidationTimeEntryCreation">
+			</smartfoldernode>
 			<testmodule
 			id="8ef0e117-8d93-4bec-8725-9114d04482cb"
 			name="AddPrecedent"
@@ -1228,6 +1410,12 @@ event]]>
 					<![CDATA[Delete the created Bill]]>
 				</description>
 			</smartfoldernode>
+			<testmodule
+			id="95dc7d63-0ff1-449b-95d2-aaef83286d64"
+			name="verifySearchByTitleandSummaryFields"
+			ref="edf56377-4b39-4bf0-b911-270883140b37"
+			type="UserCode">
+			</testmodule>
 			<smartfoldernode
 			id="96c98d30-371a-418c-b011-50bbeca9dbe8"
 			name="Document_Management">
@@ -1270,6 +1458,10 @@ event]]>
 					</var>
 				</databinding>
 			</testmodule>
+			<smartfoldernode
+			id="97c1f960-53e1-422f-ac6f-1cf84dbefe22"
+			name="VerifyAddDocToDocGroup">
+			</smartfoldernode>
 			<testmodule
 			id="9892e0ca-f2ac-4fff-8db0-5506ae16c726"
 			name="AddFolder2"
@@ -1296,6 +1488,10 @@ event]]>
 					</var>
 				</databinding>
 			</testmodule>
+			<smartfoldernode
+			id="9c9e0c7c-6641-4e4d-b439-4d25916c0fa2"
+			name="VerifySearchByFullTextDocInIndex">
+			</smartfoldernode>
 			<testmodule
 			id="9ec87489-e267-4573-8632-e52e9d23aa6b"
 			name="VerifyDocuments"
@@ -1434,6 +1630,10 @@ Validation)]]>
 			id="a7497b82-903e-43dd-b66d-2ffcdc149f74"
 			name="ClientPortal">
 			</testcase>
+			<smartfoldernode
+			id="a8bdc1ce-01af-4c76-8bd9-13848fac5071"
+			name="VerifyAddNotes">
+			</smartfoldernode>
 			<testmodule
 			id="a930b892-0266-42fd-aec6-4d6925d4b8f0"
 			name="BillingDeleteDirectBill"
@@ -1577,6 +1777,14 @@ module]]>
 					</var>
 				</databinding>
 			</testmodule>
+			<testcase
+			id="aeb7dc97-d19f-4b3e-885e-afb028bb27b0"
+			name="Notes_Module">
+			</testcase>
+			<smartfoldernode
+			id="b049a834-9d04-4f9c-964c-51fefe3f15e9"
+			name="ChangePreferencesIncludeChronology">
+			</smartfoldernode>
 			<testmodule
 			enabled="False"
 			id="b27f747c-6d5c-448a-9944-8f8e18adf223"
@@ -1643,6 +1851,10 @@ directly and create a Bill]]>
 			ref="840ac78a-7185-42c0-a164-634cc87945c6"
 			type="UserCode">
 			</testmodule>
+			<smartfoldernode
+			id="ba5bae89-ea99-4944-bc4d-020775309139"
+			name="ConvertNotes">
+			</smartfoldernode>
 			<testmodule
 			id="bbf489e9-55ad-40bf-8c35-bbba191ce8f6"
 			name="AddFile"
@@ -1675,10 +1887,24 @@ directly and create a Bill]]>
 					</var>
 				</databinding>
 			</testmodule>
+			<testmodule
+			id="bcfb63a3-19a8-43f3-b542-9fe241cb094b"
+			name="deleteNoteUsingKeys"
+			ref="9f7f4956-8b33-43ed-8ef8-f24dee06a801"
+			type="UserCode">
+			</testmodule>
+			<smartfoldernode
+			id="bd8c4bc3-0b90-4dac-8b1b-b6717fa88ce5"
+			name="VerifyAddDocIndexAutoTxtSearch">
+			</smartfoldernode>
 			<smartfoldernode
 			datasource="TimeSheetsData"
 			id="bfc3cc06-7961-4f29-a1fd-bc3e54456886"
 			name="CreateManyTimeEntries">
+			</smartfoldernode>
+			<smartfoldernode
+			id="c0088c70-07b5-48d1-91f5-d418467d6306"
+			name="MakeAssociationValidation">
 			</smartfoldernode>
 			<testmodule
 			id="c23fb0fe-e6bf-4d56-a273-3f85243c2e86"
@@ -1891,9 +2117,21 @@ directly and create a Bill]]>
 			type="UserCode">
 			</testmodule>
 			<testmodule
+			id="dc2e89f2-f419-4e1f-a813-ce9ee070d33b"
+			name="replyNotesValidation"
+			ref="352b74a1-47c0-4293-a18f-73de09bb364a"
+			type="UserCode">
+			</testmodule>
+			<testmodule
 			id="dc7acbd7-2908-42b2-879a-7f8e9d00cb18"
 			name="Logout"
 			ref="d10246f4-af1f-4921-ac63-4f462998c5d5"
+			type="UserCode">
+			</testmodule>
+			<testmodule
+			id="deb44f13-9864-467d-b8fb-29b018cfc9e0"
+			name="verifyEventsAddFromFiles"
+			ref="e6a7fb17-bdc2-47b0-845c-d5c6edb39592"
 			type="UserCode">
 			</testmodule>
 			<smartfoldernode
@@ -1949,6 +2187,12 @@ Page]]>
 					</var>
 				</databinding>
 			</testmodule>
+			<testmodule
+			id="e24c31f6-e095-44f1-ae87-5c5da72d114a"
+			name="basicValidation"
+			ref="078e3302-ffdd-467b-9d40-945d43ea0afa"
+			type="UserCode">
+			</testmodule>
 			<smartfoldernode
 			id="e41ee8eb-9dc9-46f3-ac26-ef9b039bcb3f"
 			name="VerifyDocuments">
@@ -1986,6 +2230,16 @@ Page]]>
 			id="e7a80499-860e-4db5-8da5-5e49197a331e"
 			name="VoidPaymentAPX">
 			</smartfoldernode>
+			<smartfoldernode
+			id="e86fa298-7367-46c5-b8ee-1c655dd4c261"
+			name="VerifyAddFilePeopleFMtoDocDetail">
+			</smartfoldernode>
+			<testmodule
+			id="e8d0c344-873f-4458-8fe2-2485b695a2c8"
+			name="verifyPromptNoFileSelection"
+			ref="1ecf0744-527b-410a-a31d-7eca4f2a3451"
+			type="UserCode">
+			</testmodule>
 			<smartfoldernode
 			id="e9a55d19-06cb-4062-b9bb-20e1e6ec25d0"
 			name="BillingDeleteBill">
@@ -2052,6 +2306,10 @@ bill]]>
 				</databinding>
 			</testmodule>
 			<smartfoldernode
+			id="f009e389-eafb-4981-ab14-563dc83060a0"
+			name="Basic_Notes_Module_Validation">
+			</smartfoldernode>
+			<smartfoldernode
 			datasource="BillData"
 			id="f2676856-71ec-4e3b-8ece-85f89f181184"
 			name="BillingTestGeneralRetainer">
@@ -2064,6 +2322,12 @@ bill]]>
 			id="f2afbf18-e114-4413-8a5b-c3af171e5b4b"
 			name="PreferenceTestNew"
 			ref="b716090a-a578-469c-bc4e-af3fa3b4ad44"
+			type="UserCode">
+			</testmodule>
+			<testmodule
+			id="f3e95f48-f1d5-48e2-8276-036fdea8ba54"
+			name="verifyAddFilePeopleFMtoDocDetail"
+			ref="a63edb99-5884-4f86-8d9b-4b5e1ce9a347"
 			type="UserCode">
 			</testmodule>
 			<testmodule
@@ -2202,6 +2466,10 @@ bill]]>
 					</var>
 				</databinding>
 			</testmodule>
+			<smartfoldernode
+			id="fa338964-1e4d-44de-8e8b-2bf0e088ca08"
+			name="CreateApptWithDocumentAttached">
+			</smartfoldernode>
 			<testmodule
 			id="fb43df9e-22d0-4349-a9e7-74e52d978f49"
 			name="AddStatusReport"
@@ -2244,6 +2512,10 @@ bill]]>
 					</var>
 				</databinding>
 			</testmodule>
+			<smartfoldernode
+			id="fd873d91-350c-4a3a-bf15-754ba1c009e1"
+			name="CreateApptWithRemainderAlert">
+			</smartfoldernode>
 			<teardown
 			id="fdf78db1-a734-47ba-af26-4c88090b4cc0"
 			name="teardown1">
@@ -2992,6 +3264,222 @@ bill]]>
 						name="teardown1">
 						</teardown>
 					</testcase>
+					<testcase
+					id="aeb7dc97-d19f-4b3e-885e-afb028bb27b0"
+					name="Notes_Module">
+						<smartfoldernode
+						id="f009e389-eafb-4981-ab14-563dc83060a0"
+						name="Basic_Notes_Module_Validation">
+							<testmodule
+							id="e24c31f6-e095-44f1-ae87-5c5da72d114a"
+							name="basicValidation">
+							</testmodule>
+						</smartfoldernode>
+						<smartfoldernode
+						id="28d4da33-7130-44db-9aba-ed0ed24734b4"
+						name="SelectNoteValidateAssociatedButtons">
+							<testmodule
+							id="76049d43-8115-4a03-b6b2-defdfc62f7c7"
+							name="selectNoteValidateAssociatedButtons">
+							</testmodule>
+						</smartfoldernode>
+						<smartfoldernode
+						id="c0088c70-07b5-48d1-91f5-d418467d6306"
+						name="MakeAssociationValidation">
+							<testmodule
+							id="17fda873-d899-426b-b3d8-00c77c73db77"
+							name="makeAssociationValidation">
+							</testmodule>
+						</smartfoldernode>
+						<smartfoldernode
+						id="8db0154d-7953-4ec5-8e78-25b7335b140e"
+						name="NoteCreationFileBradValidationTimeEntryCreation">
+							<testmodule
+							id="06afd20a-eb97-4b63-9178-961037e3c874"
+							name="noteCreationFileBradValidationTimeEntryCreation">
+							</testmodule>
+						</smartfoldernode>
+						<smartfoldernode
+						id="25fff493-96c7-4fa1-87bc-096455a8f900"
+						name="DeleteNotes">
+							<testmodule
+							id="270e7f98-2239-493d-8796-ee073c7d8dc0"
+							name="deleteNoteUsingContextClick">
+							</testmodule>
+							<testmodule
+							id="bcfb63a3-19a8-43f3-b542-9fe241cb094b"
+							name="deleteNoteUsingKeys">
+							</testmodule>
+							<testmodule
+							id="70cd4739-4a04-4ed2-a874-655d170bf8a2"
+							name="deleteNoteFromFile">
+							</testmodule>
+						</smartfoldernode>
+						<smartfoldernode
+						id="27a7df85-b9cb-42dd-9bcd-f43a7b3d2737"
+						name="SendNotesValidation">
+							<testmodule
+							id="2250839d-149f-4ba7-add4-93587d92a4eb"
+							name="forwardNotesValidation">
+							</testmodule>
+							<testmodule
+							id="dc2e89f2-f419-4e1f-a813-ce9ee070d33b"
+							name="replyNotesValidation">
+							</testmodule>
+						</smartfoldernode>
+						<smartfoldernode
+						id="ba5bae89-ea99-4944-bc4d-020775309139"
+						name="ConvertNotes">
+							<testmodule
+							id="6d203d21-086a-49a3-b22f-749a2c1175bb"
+							name="convertToTimeEntry">
+							</testmodule>
+							<testmodule
+							id="1de7d58f-9a78-4b42-a4fe-6c7aaaa19b2c"
+							name="convertToToDo">
+							</testmodule>
+							<testmodule
+							id="2c9df57e-7dfb-4415-b8c4-8e0547068ff9"
+							name="convertToPhoneCallFromControlPanel">
+							</testmodule>
+							<testmodule
+							id="86c4049d-9a1d-45ca-a661-c85b399ce63d"
+							name="convertToAppointmentFromControlPanel">
+							</testmodule>
+						</smartfoldernode>
+						<smartfoldernode
+						id="b049a834-9d04-4f9c-964c-51fefe3f15e9"
+						name="ChangePreferencesIncludeChronology">
+							<testmodule
+							id="7533e7c2-479f-4ed4-b5cc-c67bfaa7b37d"
+							name="changePrefIncludeChronology">
+							</testmodule>
+						</smartfoldernode>
+					</testcase>
+					<testcase
+					id="7dd06647-a62c-4aba-b0f2-4ff956b0705a"
+					name="Document_Detail_Module">
+						<smartfoldernode
+						id="666db4da-8a00-402e-82a8-10fb9106bed8"
+						name="ValidateDocumentIndexViewer">
+							<testmodule
+							id="4b4da38b-d33e-40c3-b1e0-5ac650528f65"
+							name="validateDocumentIndexViewer">
+							</testmodule>
+						</smartfoldernode>
+						<smartfoldernode
+						id="0fc09e0e-23a5-4203-9f7b-cac59cdc96bc"
+						name="ValidateDocumentDetailButtons">
+							<testmodule
+							id="1e55a1ce-1947-42ef-9bac-07481c0f928c"
+							name="validateDocDetailButtons">
+							</testmodule>
+						</smartfoldernode>
+						<smartfoldernode
+						id="97c1f960-53e1-422f-ac6f-1cf84dbefe22"
+						name="VerifyAddDocToDocGroup">
+							<testmodule
+							id="54cbe7ea-adee-43d8-8d84-8e15b1ee9993"
+							name="verifyAddDocToDocumentGroup">
+							</testmodule>
+						</smartfoldernode>
+						<smartfoldernode
+						id="e86fa298-7367-46c5-b8ee-1c655dd4c261"
+						name="VerifyAddFilePeopleFMtoDocDetail">
+							<testmodule
+							id="f3e95f48-f1d5-48e2-8276-036fdea8ba54"
+							name="verifyAddFilePeopleFMtoDocDetail">
+							</testmodule>
+						</smartfoldernode>
+						<smartfoldernode
+						id="5b5aea69-6426-460b-b666-6ea8e58b7416"
+						name="VerifyEventsAddFromFiles">
+							<testmodule
+							id="deb44f13-9864-467d-b8fb-29b018cfc9e0"
+							name="verifyEventsAddFromFiles">
+							</testmodule>
+						</smartfoldernode>
+						<smartfoldernode
+						id="a8bdc1ce-01af-4c76-8bd9-13848fac5071"
+						name="VerifyAddNotes">
+							<testmodule
+							id="4f4fdf1a-7437-40c4-8883-35692e7ec56c"
+							name="verifyAddNotes">
+							</testmodule>
+						</smartfoldernode>
+						<smartfoldernode
+						id="2d4fb370-e1d6-4300-93aa-ce4f17212b57"
+						name="VerifyPromptNoFileSelection">
+							<testmodule
+							id="e8d0c344-873f-4458-8fe2-2485b695a2c8"
+							name="verifyPromptNoFileSelection">
+							</testmodule>
+						</smartfoldernode>
+						<smartfoldernode
+						id="bd8c4bc3-0b90-4dac-8b1b-b6717fa88ce5"
+						name="VerifyAddDocIndexAutoTxtSearch">
+							<testmodule
+							id="7362bf02-a225-49c0-96a2-c06cf71c928d"
+							name="verifyAddDocIndexAutoTxtSearch">
+							</testmodule>
+						</smartfoldernode>
+					</testcase>
+					<testcase
+					id="0eb91bf1-6a6d-403e-a327-77532be52941"
+					name="Document_Indexing">
+						<smartfoldernode
+						id="28b86733-59a2-4365-a7d5-24ca2f0e5982"
+						name="VerifySearchByTitleandSummaryFields">
+							<testmodule
+							id="95dc7d63-0ff1-449b-95d2-aaef83286d64"
+							name="verifySearchByTitleandSummaryFields">
+							</testmodule>
+						</smartfoldernode>
+						<smartfoldernode
+						id="9c9e0c7c-6641-4e4d-b439-4d25916c0fa2"
+						name="VerifySearchByFullTextDocInIndex">
+							<testmodule
+							id="4af792f6-7c4c-4e5b-a333-de611aa4eaa1"
+							name="verifySearchByFullTextDocInIndex">
+							</testmodule>
+						</smartfoldernode>
+					</testcase>
+					<testcase
+					id="67e9bae2-280b-4ca4-8e22-d3573671ec71"
+					name="Calendar">
+						<smartfoldernode
+						id="050bea6e-2129-44ce-8a76-eef174d86edd"
+						name="CreateRepeatingApptWithExceptions">
+							<testmodule
+							id="519a0b15-8153-459f-a6d3-79ff3029b4de"
+							name="createRepeatingEvent">
+							</testmodule>
+						</smartfoldernode>
+						<smartfoldernode
+						id="fd873d91-350c-4a3a-bf15-754ba1c009e1"
+						name="CreateApptWithRemainderAlert">
+							<testmodule
+							id="1027f6cf-5d31-41a6-8d7e-6aa852eef1e0"
+							name="createApptWithEmailAlert">
+							</testmodule>
+						</smartfoldernode>
+						<smartfoldernode
+						id="8415e0b4-3c9d-48b5-9028-1adabd0000b2"
+						name="CreateRedLetterDayWithDragNDropWeekly">
+							<testmodule
+							id="457bbab7-0422-4dcf-957c-9cf88232495d"
+							name="createRedLetterDay">
+							</testmodule>
+						</smartfoldernode>
+						<smartfoldernode
+						id="fa338964-1e4d-44de-8e8b-2bf0e088ca08"
+						name="CreateApptWithDocumentAttached">
+							<testmodule
+							id="1fc882f9-b2fa-4d0a-a930-8435836099d2"
+							name="createApptDocAttached">
+							</testmodule>
+						</smartfoldernode>
+					</testcase>
 				</testcase>
 			</testsuite>
 		</childhierarchy>
@@ -3528,215 +4016,17 @@ bill]]>
 	default="TestRun">
 		<testconfiguration
 		name="TestRun">
-			<testcontainer
-			id="011c73f0-c0f0-475f-a47b-68d7f585c7ca">
-			</testcontainer>
-			<testcontainer
-			id="019c20d4-d5ca-4cc1-b2d4-d6ba32724a2e">
-			</testcontainer>
-			<testcontainer
-			id="020fa6c1-b65e-43d8-adbf-e916aee0015e">
-			</testcontainer>
-			<testcontainer
-			id="031bdf19-b993-4e49-98d3-42afd9e86fcb">
-			</testcontainer>
-			<testcontainer
-			id="0aacc30c-766d-44a5-a0c4-5b7d05b3954b">
-			</testcontainer>
-			<testcontainer
-			id="0ab772d6-dec6-4974-855f-ff3b742165a3">
-			</testcontainer>
-			<testcontainer
-			id="0c9e64c0-68a4-4cdc-91a2-147f5a9ae058">
-			</testcontainer>
-			<testcontainer
-			id="0ca5fe10-df54-47f5-9b14-557f59785b43">
-			</testcontainer>
-			<testcontainer
-			id="0eb72ea6-ec25-4e4d-b8b9-413c6c05572e">
-			</testcontainer>
-			<testcontainer
-			id="15d854c4-74db-4dcb-93c0-e6631cefe305">
-			</testcontainer>
-			<testcontainer
-			id="1cd0fa2d-1c92-4ebd-b085-28577af4f552">
-			</testcontainer>
-			<testcontainer
-			id="22b73dda-3596-4fb7-ad79-85749b8d500e">
-			</testcontainer>
-			<testcontainer
-			id="23fcef2f-b313-4434-9cac-536ecf3009d3">
-			</testcontainer>
-			<testcontainer
-			id="2463e94a-2e9b-40f5-a44d-f08282a4477c">
-			</testcontainer>
-			<testcontainer
-			id="32442159-632a-43ca-aa2b-a7a41794639b">
-			</testcontainer>
-			<testcontainer
-			id="3354bb10-62fe-479e-9188-98414e24f959">
-			</testcontainer>
-			<testcontainer
-			id="341f66fc-768f-4fad-b39c-5baa19ca4fbd">
-			</testcontainer>
-			<testcontainer
-			id="341fadd3-dddf-4ae8-ab25-7a805f3c16db">
-			</testcontainer>
-			<testcontainer
-			id="37c9e3f8-34e3-46ea-8a5c-2a0fca4079c3">
-			</testcontainer>
-			<testcontainer
-			id="3d587e15-d432-4a12-8531-db56cb59b79f">
-			</testcontainer>
-			<testcontainer
-			id="3f7e9bda-619a-435d-89e3-2bc090023364">
-			</testcontainer>
-			<testcontainer
-			id="4610af79-dade-4f36-a8a6-bc0ab8f3af4e">
-			</testcontainer>
-			<testcontainer
-			id="465b5dd6-3959-41b4-8b6e-11868cbf7f9a">
-			</testcontainer>
-			<testcontainer
-			id="48127973-c9a3-4064-8264-46bbf0e6f7d0">
-			</testcontainer>
-			<testcontainer
-			id="4e9c0e21-4a9c-4ee6-8f89-4bd34b4f3b6e">
-			</testcontainer>
-			<testcontainer
-			id="4ef7b0b3-886c-423c-af84-cc33d562d95d">
-			</testcontainer>
-			<testcontainer
-			id="51b7b830-ea6e-4cae-b412-b50997157a16">
-			</testcontainer>
-			<testcontainer
-			id="5350ce73-fef1-45bb-8dc2-a694dac53f7c">
-			</testcontainer>
-			<testcontainer
-			id="565753a1-f5bc-48f2-a9a2-16bf7b4ccf87">
-			</testcontainer>
-			<testcontainer
-			id="58213b65-da44-4b6b-8a1d-dd85c0118017">
-			</testcontainer>
-			<testcontainer
-			id="617d1b07-0685-449a-a510-b2038d125def">
-			</testcontainer>
-			<testcontainer
-			id="64a5051c-5e93-4631-9ae4-106f27c84059">
-			</testcontainer>
-			<testcontainer
-			id="658e3020-1e20-4cb1-b196-89a6ef9ca8a2">
-			</testcontainer>
-			<testcontainer
-			id="66a83577-8864-4b77-9f46-c6a771f806f3">
-			</testcontainer>
-			<testcontainer
-			id="6cdc4fb3-8ead-4a22-84ce-7eff8cca1ab2">
-			</testcontainer>
-			<testcontainer
-			id="6f4fdecc-21a0-492c-98be-0db96735fa65">
-			</testcontainer>
-			<testcontainer
-			id="701a4de7-911e-4959-bc20-c0e8423f48e1">
-			</testcontainer>
-			<testcontainer
-			id="75bfd9cc-6eb9-42a6-bbaf-110143ffbd36">
-			</testcontainer>
-			<testcontainer
-			id="7ab50160-7a97-40e2-ad44-b1bba3374998">
-			</testcontainer>
-			<testcontainer
-			id="8b2c2e55-1965-4c10-ba2b-4417e7a86a84">
-			</testcontainer>
-			<testcontainer
-			id="95ab7eb5-2b1a-47dc-9667-b0e86e945f00">
-			</testcontainer>
-			<testcontainer
-			id="9f8ea467-20b6-4944-ae88-6a5125f0a9d8">
-			</testcontainer>
-			<testcontainer
-			id="9fc23d85-a310-4b95-b796-1a858db47c20">
-			</testcontainer>
-			<testcontainer
-			id="9fd8a977-6bc6-4f25-881a-45177c0ded94">
-			</testcontainer>
-			<testcontainer
-			id="a11353b5-3294-4eaa-83d3-a0331ed7ef67">
-			</testcontainer>
-			<testcontainer
-			id="a6609dd3-5550-4d0e-8d9f-9279a09d9a32">
-			</testcontainer>
-			<testcontainer
-			id="a70e92f8-63bd-4ea9-83fc-7350852f3736">
-			</testcontainer>
-			<testcontainer
-			id="aa612ed2-cc68-428f-b068-9092a5e59916">
-			</testcontainer>
-			<testcontainer
-			id="ab5c5578-5063-4334-b382-bc86ad2db9d3">
-			</testcontainer>
-			<testcontainer
-			id="accc6f36-0a6b-4488-8785-61ecc2dfdf49">
-			</testcontainer>
-			<testcontainer
-			id="ae08bef5-05bf-4753-9e12-cab4f965fd83">
-			</testcontainer>
-			<testcontainer
-			id="b2d51e4d-a3b3-459c-b358-6e3ed196c14d">
-			</testcontainer>
-			<testcontainer
-			id="b66a83f5-3c47-4551-9db7-a418cad9b788">
-			</testcontainer>
-			<testcontainer
-			id="b73a540d-0d4a-444f-9289-bcbca7b1e7c4">
-			</testcontainer>
-			<testcontainer
-			id="c7f34fde-f3e3-4bc3-b1ce-d2a714048076">
-			</testcontainer>
-			<testcontainer
-			id="ca29637c-c17a-4632-ae73-5f94259f87e4">
-			</testcontainer>
-			<testcontainer
-			id="cb7d9a72-28d4-40e4-8ba0-8593b79bbc22">
-			</testcontainer>
-			<testcontainer
-			id="cce75b9f-2a0a-4eea-879e-3e7540f86d4e">
-			</testcontainer>
-			<testcontainer
-			id="cef60493-9e3d-4998-9bf4-596fde0078bc">
-			</testcontainer>
-			<testcontainer
-			id="dec6b1c6-534b-41f0-bdcb-c728a5bd2ab4">
-			</testcontainer>
-			<testcontainer
-			id="e41ee8eb-9dc9-46f3-ac26-ef9b039bcb3f">
-			</testcontainer>
-			<testcontainer
-			id="e56a65dc-1f93-4351-a226-b2e4d2b238f3">
-			</testcontainer>
-			<testcontainer
-			id="e60efaf3-ada5-47bf-9bc6-eb20dd9708b2">
-			</testcontainer>
-			<testcontainer
-			id="e7a80499-860e-4db5-8da5-5e49197a331e">
-			</testcontainer>
-			<testcontainer
-			id="e9a55d19-06cb-4062-b9bb-20e1e6ec25d0">
-			</testcontainer>
-			<testcontainer
-			id="f2676856-71ec-4e3b-8ece-85f89f181184">
-			</testcontainer>
-			<testcontainer
-			id="f99c8430-4f8a-4f3c-a418-e18174b84a5e">
-			</testcontainer>
-			<testcontainer
-			id="fbd357b7-088e-4cef-a8d2-7d18c364b71c">
-			</testcontainer>
 		</testconfiguration>
 	</testconfigurations>
 	<references>
 		<reference>
 			Excel
+		</reference>
+		<reference>
+			Microsoft.Exchange.WebServices.Auth.dll
+		</reference>
+		<reference>
+			Microsoft.Exchange.WebServices.dll
 		</reference>
 		<reference>
 			Ranorex Automation Helpers.dll

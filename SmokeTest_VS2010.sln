@@ -1,0 +1,29 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+# Ranorex Studio 8.3
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{46E3E0D0-752C-4E91-BA22-6F65AB417384}"
+	ProjectSection(SolutionItems) = postProject
+		TestRail = .\TestRail.trsd
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SmokeTest", "SmokeTest.csproj", "{C1935D58-308E-40C1-B5C3-1132400202E1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ranorex Automation Helpers", "RanorexAutomationHelpers\Ranorex Automation Helpers.csproj", "{55FF7619-8215-4254-9666-07F67277850F}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x86 = Debug|x86
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{C1935D58-308E-40C1-B5C3-1132400202E1}.Debug|x86.Build.0 = Debug|x86
+		{C1935D58-308E-40C1-B5C3-1132400202E1}.Debug|x86.ActiveCfg = Debug|x86
+		{C1935D58-308E-40C1-B5C3-1132400202E1}.Release|x86.Build.0 = Release|x86
+		{C1935D58-308E-40C1-B5C3-1132400202E1}.Release|x86.ActiveCfg = Release|x86
+		{55FF7619-8215-4254-9666-07F67277850F}.Debug|x86.Build.0 = Debug|x86
+		{55FF7619-8215-4254-9666-07F67277850F}.Debug|x86.ActiveCfg = Debug|x86
+		{55FF7619-8215-4254-9666-07F67277850F}.Release|x86.Build.0 = Release|x86
+		{55FF7619-8215-4254-9666-07F67277850F}.Release|x86.ActiveCfg = Release|x86
+	EndGlobalSection
+EndGlobal

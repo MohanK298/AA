@@ -8,6 +8,10 @@ rxversion="9.0">
 			name="Attorney_Email">
 			</testcase>
 			<smartfoldernode
+			id="00e7b547-ace3-430b-87bc-afc35384f5c9"
+			name="TestViewNavigation">
+			</smartfoldernode>
+			<smartfoldernode
 			datasource="TimeSheetsData"
 			id="011c73f0-c0f0-475f-a47b-68d7f585c7ca"
 			name="EditTimeEntry">
@@ -2364,6 +2368,12 @@ bill]]>
 				</databinding>
 			</testmodule>
 			<testmodule
+			id="f5a16d5f-0b38-4475-9415-458c07356c8e"
+			name="testViewNavigation"
+			ref="a50c2c9b-e677-4477-8c5e-570d20d59e2b"
+			type="UserCode">
+			</testmodule>
+			<testmodule
 			id="f8558255-a145-4e45-8d72-41b5ff550eb8"
 			name="BillingEditTimeEntryExpense"
 			ref="022a047e-00a0-4a69-ad96-e03dc449769c"
@@ -3477,6 +3487,14 @@ bill]]>
 							<testmodule
 							id="1fc882f9-b2fa-4d0a-a930-8435836099d2"
 							name="createApptDocAttached">
+							</testmodule>
+						</smartfoldernode>
+						<smartfoldernode
+						id="00e7b547-ace3-430b-87bc-afc35384f5c9"
+						name="TestViewNavigation">
+							<testmodule
+							id="f5a16d5f-0b38-4475-9415-458c07356c8e"
+							name="testViewNavigation">
 							</testmodule>
 						</smartfoldernode>
 					</testcase>

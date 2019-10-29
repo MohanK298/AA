@@ -120,6 +120,16 @@ SUVORK5CYII=
 				searchtimeout="30000ms">
 					/form[@controlname='MainForm']/?/?/form[@controlname='FirmSettingsForm']//element[@controlname='amlblDocumentIndexing']/text[@accessiblerole='StaticText']
 				</item>
+				<item
+				addcaps="text,accessible"
+				capname="text"
+				id="867149ad-8d5c-4065-89cb-c22fcce34c86"
+				name="lnkEventCategories"
+				refimgid="24095efb-1441-45c9-8535-8955cccb00ed"
+				refpath="/form[@controlname='MainForm']/element[@controltypename='MdiClient']/form[@controlname='FirmSettingsForm']/container[@controlname='roundedPanelControl']/container[@controlname='panelScroll']/element[@controlname='amlblEventCategories']/text[@accessiblerole='StaticText']"
+				searchtimeout="30000ms">
+					/form[@controlname='MainForm']/?/?/form[@controlname='FirmSettingsForm']//element[@controlname='amlblEventCategories']/text[@accessiblerole='StaticText']
+				</item>
 				<basepath>
 					/form[@controlname='MainForm']/?/?/form[@controlname='FirmSettingsForm']
 				</basepath>
@@ -636,6 +646,127 @@ SUVORK5CYII=
 			</folder>
 			<basepath>
 				/form[@controlname='FileFirmSettingsForm']
+			</basepath>
+			<icon>
+				iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACx
+jwv8YQUAAAAJcEhZcwAADsQAAA7EAZUrDhsAAAFlSURBVDhPY6AJeOJjOvORg9p/FOyo/v9xoKUT
+VAlugKERDT921nwLVQoBb3Kj+Z5FOf9/FuP2/1msO3EYpBaIH7vr/Qcb8Oft6//kgFclif/Brnjo
+qPYZKvb/z8tn/z+tWfD/bWspWMHLwrj/r8pT/7/rrfv/dffG//++fwOr+3Hu+P8nPsYTwAY8CbRM
+fGSvCnbev29fwQpwgd9PH/1/N6ERHB5gzSDwyFX3IkjgeZLv/0+rF/z/snPD/4fWCmAND60V/3+Y
+1fP//cxuYABqgcUe2SqBDXge5qoDMcBN9w3MgDdNhf/fTWr+/xCoCKb4XU/t/7fd1Shi4BgJtPSG
+GqBzjhwDnkbaa4ANAIZBBDkGgDXDAMkGAFMmVCsEPHLTO0uKAU+jnYygWhHgeZIPUQY8dFS/BdWC
+Cd405uM14N+/f+egSnGDjyvnxjyyVQYbANL0FmjAm/aKH4+9zVWhSqCAgQEAq9YXqsYCPO8AAAAA
+SUVORK5CYII=
+			</icon>
+		</appfolder>
+		<appfolder
+		addcaps="form,control,nativewindow"
+		capname="form"
+		id="2aa2284d-471f-4a47-902c-92ee9a785a1f"
+		isrooted="True"
+		name="CalendarFirmSettingsForm"
+		refimgid="ed301f14-1a39-4d9c-b59c-8a0499d8fe0f"
+		refpath="/form[@controlname='CalendarFirmSettingsForm']"
+		searchtimeout="30000ms"
+		usecache="True">
+			<item
+			addcaps="toolbar,accessible"
+			capname="toolbar"
+			id="f9a0f8d8-ca7c-418d-b314-585f8fed0af6"
+			name="Toolbar"
+			refpath="/form[@controlname='CalendarFirmSettingsForm']/element[@controlname='_BaseForm_Toolbars_Dock_Area_Bottom']/container[@accessiblename='DockBottom']/toolbar[@accessiblename='Toolbar']"
+			searchtimeout="30000ms">
+				/form[@controlname='CalendarFirmSettingsForm']/element[@controlname='_BaseForm_Toolbars_Dock_Area_Bottom']/?/?/toolbar[@accessiblename='Toolbar']
+			</item>
+			<folder
+			addcaps="toolbar,accessible"
+			capname="toolbar"
+			id="54bb039f-6852-40cb-b3aa-aa5603ae2cc0"
+			isrooted="True"
+			name="Toolbar1"
+			refpath="/form[@controlname='CalendarFirmSettingsForm']/element[@controlname='_BaseForm_Toolbars_Dock_Area_Bottom']/container[@accessiblename='DockBottom']/toolbar[@accessiblename='Toolbar']"
+			searchtimeout="30000ms"
+			usecache="False">
+				<item
+				addcaps="button,accessible"
+				capname="button"
+				id="6294c166-d44c-4357-9ea3-a9268e33067c"
+				name="Apply"
+				refpath="/form[@controlname='CalendarFirmSettingsForm']/element[@controlname='_BaseForm_Toolbars_Dock_Area_Bottom']/container[@accessiblename='DockBottom']/toolbar[@accessiblename='Toolbar']/button[@accessiblename='Apply']"
+				searchtimeout="30000ms">
+					/form[@controlname='CalendarFirmSettingsForm']//toolbar[@accessiblename='Toolbar']/button[@accessiblename='Apply']
+				</item>
+				<item
+				addcaps="button,accessible"
+				capname="button"
+				id="d31f0461-295a-4cf7-b69c-e37d5f763696"
+				name="Cancel"
+				refpath="/form[@controlname='CalendarFirmSettingsForm']/element[@controlname='_BaseForm_Toolbars_Dock_Area_Bottom']/container[@accessiblename='DockBottom']/toolbar[@accessiblename='Toolbar']/button[@accessiblename='Cancel']"
+				searchtimeout="30000ms">
+					/form[@controlname='CalendarFirmSettingsForm']//toolbar[@accessiblename='Toolbar']/button[@accessiblename='Cancel']
+				</item>
+				<item
+				addcaps="button,accessible"
+				capname="button"
+				id="49697b48-eebe-49f2-a014-7cfac0defbde"
+				name="Next"
+				refpath="/form[@controlname='CalendarFirmSettingsForm']/element[@controlname='_BaseForm_Toolbars_Dock_Area_Bottom']/container[@accessiblename='DockBottom']/toolbar[@accessiblename='Toolbar']/button[@accessiblename='Next']"
+				searchtimeout="30000ms">
+					/form[@controlname='CalendarFirmSettingsForm']//toolbar[@accessiblename='Toolbar']/button[@accessiblename='Next']
+				</item>
+				<item
+				addcaps="button,accessible"
+				capname="button"
+				id="bb042873-6134-41eb-a08d-7e5d31aa1965"
+				name="ButtonOK"
+				refpath="/form[@controlname='CalendarFirmSettingsForm']/element[@controlname='_BaseForm_Toolbars_Dock_Area_Bottom']/container[@accessiblename='DockBottom']/toolbar[@accessiblename='Toolbar']/button[@accessiblename='OK']"
+				searchtimeout="30000ms">
+					/form[@controlname='CalendarFirmSettingsForm']//toolbar[@accessiblename='Toolbar']/button[@accessiblename='OK']
+				</item>
+				<item
+				addcaps="button,accessible"
+				capname="button"
+				id="949274a0-dc72-4662-a3bd-6109cfa705fa"
+				name="Prev"
+				refpath="/form[@controlname='CalendarFirmSettingsForm']/element[@controlname='_BaseForm_Toolbars_Dock_Area_Bottom']/container[@accessiblename='DockBottom']/toolbar[@accessiblename='Toolbar']/button[@accessiblename='Prev']"
+				searchtimeout="30000ms">
+					/form[@controlname='CalendarFirmSettingsForm']//toolbar[@accessiblename='Toolbar']/button[@accessiblename='Prev']
+				</item>
+				<item
+				addcaps="unknown,accessible"
+				capname="unknown"
+				id="d8ca9b26-a834-48b3-9100-c225dcf8e9f6"
+				name="None"
+				refpath="/form[@controlname='CalendarFirmSettingsForm']/element[@controlname='_BaseForm_Toolbars_Dock_Area_Bottom']/container[@accessiblename='DockBottom']/toolbar[@accessiblename='Toolbar']/element[@accessiblename='']"
+				searchtimeout="30000ms">
+					/form[@controlname='CalendarFirmSettingsForm']//toolbar[@accessiblename='Toolbar']/element[@accessiblename='']
+				</item>
+				<basepath>
+					/form[@controlname='CalendarFirmSettingsForm']//toolbar[@accessiblename='Toolbar']
+				</basepath>
+			</folder>
+			<item
+			addcaps="table,accessible"
+			capname="table"
+			id="f85cdd0c-9109-47a8-b0f3-e2950fe48da7"
+			name="tbEventCategories"
+			refimgid="6b53388f-5124-4d3c-b3c0-e46caa075195"
+			refpath="/form[@controlname='CalendarFirmSettingsForm']/container[@controlname='pnlBase']/container[@controlname='pnlControls']/container[@controlname='panelTitleBase']/container[@controlname='panelBase']/container[@controlname='panelEventCategories']/container[@controlname='fseEventCategories']/container[@controlname='panelBase']/container[@controlname='pnlButtonsAndList']/element[@controlname='afsGrid']/table[@accessiblename='Band 0']"
+			searchtimeout="30000ms">
+				/form[@controlname='CalendarFirmSettingsForm']/container[@controlname='pnlBase']//container[@controlname='panelBase']/container[@controlname='panelEventCategories']//container[@controlname='pnlButtonsAndList']/?/?/table[@accessiblename='Band 0']
+			</item>
+			<item
+			addcaps="button,control,nativewindow"
+			capname="button"
+			id="4f629582-6a7e-4483-9716-6cc1ff2ef645"
+			name="btnColorSelector"
+			refimgid="7b668bf1-c86e-4ee4-a922-c69b084ca557"
+			refpath="/form[@controlname='CalendarFirmSettingsForm']/container[@controlname='pnlBase']/container[@controlname='pnlControls']/container[@controlname='panelTitleBase']/container[@controlname='panelBase']/container[@controlname='panelEventCategories']/container[@controlname='fseEventCategories']/container[@controlname='panelBase']/container[@controlname='pnlButtonsAndList']/container[@controlname='pnlButtons']/button[@controlname='colorSelector']"
+			searchtimeout="30000ms">
+				/form[@controlname='CalendarFirmSettingsForm']/container[@controlname='pnlBase']//container[@controlname='panelBase']/container[@controlname='panelEventCategories']//container[@controlname='pnlButtons']/button[@controlname='colorSelector']
+			</item>
+			<basepath>
+				/form[@controlname='CalendarFirmSettingsForm']
 			</basepath>
 			<icon>
 				iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACx

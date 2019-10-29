@@ -252,6 +252,7 @@ namespace SmokeTest.Repositories
             RepoItemInfo _listitemtitleInfo;
             RepoItemInfo _menulistviewInfo;
             RepoItemInfo _tblcalendarInfo;
+            RepoItemInfo _txtlabelInfo;
 
             /// <summary>
             /// Creates a new MainForm  folder.
@@ -268,6 +269,7 @@ namespace SmokeTest.Repositories
                 _listitemtitleInfo = new RepoItemInfo(this, "listItemTitle", "?/?/form[@controlname='CalendarIndexForm']/container[@controlname='pnlBase']//container[@controlname='pnlLists']/element[@controlname='udgEvents']/table[@accessiblerole='Table']/row[1]/cell[@accessiblename='Title']", 30000, null, "87b2c3a3-832c-4c05-8125-631f1f7fbbba");
                 _menulistviewInfo = new RepoItemInfo(this, "menuListView", "element[@controlname='_BaseModuleForm_Toolbars_Dock_Area_Top']//menuitem[@accessiblename='View']/menuitem[@accessiblename='Lists']", 30000, null, "9a170fba-d46a-4a1b-b1ad-2c383cf1e34d");
                 _tblcalendarInfo = new RepoItemInfo(this, "tblCalendar", "?/?/form[@controlname='CalendarIndexForm']/container[@controlname='pnlBase']//container[@controlname='pnlLists']/?/?/table[@accessiblename='Band 0']", 30000, null, "88778537-3f3f-4b07-b56a-8181e153a75c");
+                _txtlabelInfo = new RepoItemInfo(this, "txtLabel", "?/?/form[@controlname='CalendarIndexForm']/container[@controlname='menubar_Fill_Panel']/?/?/text", 30000, null, "64af5f5c-65d7-4e12-85e4-0972b06f9ba3");
             }
 
             /// <summary>
@@ -474,6 +476,30 @@ namespace SmokeTest.Repositories
             }
 
             /// <summary>
+            /// The txtLabel item.
+            /// </summary>
+            [RepositoryItem("64af5f5c-65d7-4e12-85e4-0972b06f9ba3")]
+            public virtual Ranorex.Text txtLabel
+            {
+                get
+                {
+                    return _txtlabelInfo.CreateAdapter<Ranorex.Text>(true);
+                }
+            }
+
+            /// <summary>
+            /// The txtLabel item info.
+            /// </summary>
+            [RepositoryItemInfo("64af5f5c-65d7-4e12-85e4-0972b06f9ba3")]
+            public virtual RepoItemInfo txtLabelInfo
+            {
+                get
+                {
+                    return _txtlabelInfo;
+                }
+            }
+
+            /// <summary>
             /// The Toolbar folder.
             /// </summary>
             [RepositoryFolder("14c112de-f9ee-4532-a0ae-6e9862f12915")]
@@ -503,6 +529,8 @@ namespace SmokeTest.Repositories
             RepoItemInfo _cbbxlistsmenuInfo;
             RepoItemInfo _btntodayInfo;
             RepoItemInfo _btndayInfo;
+            RepoItemInfo _btnrangeInfo;
+            RepoItemInfo _btnyearInfo;
 
             /// <summary>
             /// Creates a new Toolbar  folder.
@@ -515,6 +543,8 @@ namespace SmokeTest.Repositories
                 _cbbxlistsmenuInfo = new RepoItemInfo(this, "cbbxListsMenu", "menuitem[@accessiblename='Lists']", 30000, null, "5727d18c-6880-4ee7-aca6-8ea43d1c8af1");
                 _btntodayInfo = new RepoItemInfo(this, "btnToday", "button[@accessiblename='Today']", 30000, null, "c5e97359-b85d-4067-b2ff-05dde980207a");
                 _btndayInfo = new RepoItemInfo(this, "btnDay", "button[@accessiblename='Day']", 30000, null, "cc29d518-c062-4281-a520-3eb8e87e5d68");
+                _btnrangeInfo = new RepoItemInfo(this, "btnRange", "button[@accessiblename='Range']", 30000, null, "996e23b2-394f-4b2d-8d47-1c3f5f920aab");
+                _btnyearInfo = new RepoItemInfo(this, "btnYear", "button[@accessiblename='Year']", 30000, null, "5ecc1856-0b78-47dc-bfe3-ce63366bf7ac");
             }
 
             /// <summary>
@@ -660,6 +690,54 @@ namespace SmokeTest.Repositories
                     return _btndayInfo;
                 }
             }
+
+            /// <summary>
+            /// The btnRange item.
+            /// </summary>
+            [RepositoryItem("996e23b2-394f-4b2d-8d47-1c3f5f920aab")]
+            public virtual Ranorex.Button btnRange
+            {
+                get
+                {
+                    return _btnrangeInfo.CreateAdapter<Ranorex.Button>(true);
+                }
+            }
+
+            /// <summary>
+            /// The btnRange item info.
+            /// </summary>
+            [RepositoryItemInfo("996e23b2-394f-4b2d-8d47-1c3f5f920aab")]
+            public virtual RepoItemInfo btnRangeInfo
+            {
+                get
+                {
+                    return _btnrangeInfo;
+                }
+            }
+
+            /// <summary>
+            /// The btnYear item.
+            /// </summary>
+            [RepositoryItem("5ecc1856-0b78-47dc-bfe3-ce63366bf7ac")]
+            public virtual Ranorex.Button btnYear
+            {
+                get
+                {
+                    return _btnyearInfo.CreateAdapter<Ranorex.Button>(true);
+                }
+            }
+
+            /// <summary>
+            /// The btnYear item info.
+            /// </summary>
+            [RepositoryItemInfo("5ecc1856-0b78-47dc-bfe3-ce63366bf7ac")]
+            public virtual RepoItemInfo btnYearInfo
+            {
+                get
+                {
+                    return _btnyearInfo;
+                }
+            }
         }
 
         /// <summary>
@@ -676,6 +754,7 @@ namespace SmokeTest.Repositories
             RepoItemInfo _tbcurrentdayInfo;
             RepoItemInfo _txtcurrentdayapptInfo;
             RepoItemInfo _concurrentdayInfo;
+            RepoItemInfo _pnlyearviewInfo;
 
             /// <summary>
             /// Creates a new PnlViews  folder.
@@ -691,6 +770,7 @@ namespace SmokeTest.Repositories
                 _tbcurrentdayInfo = new RepoItemInfo(this, "tbCurrentDay", "?/?/container[@controlname='pnlDayViewControl']/?/?/table[@accessiblename='udvDay']", 30000, null, "fd631273-3053-4a4e-9f48-09136ee036ec");
                 _txtcurrentdayapptInfo = new RepoItemInfo(this, "txtCurrentDayAppt", "?/?/container[@controlname='pnlDayViewControl']/?/?/table[@accessiblename='udvDay']/?/?/cell[@accessiblename=$curdayapptselection]", 30000, null, "0cba9cbe-b8f6-40b2-a57a-5983c434eded");
                 _concurrentdayInfo = new RepoItemInfo(this, "conCurrentDay", "?/?/container[@controlname='pnlDayViewControl']/?/?/table[@accessiblename='udvDay']/container", 30000, null, "ea60a39e-f9c3-471e-820c-1ac6a04a19b0");
+                _pnlyearviewInfo = new RepoItemInfo(this, "PnlYearView", "container[@controlname='pnlYearView']", 30000, null, "41e3fce8-79d9-434b-8571-0bdeafb31773");
             }
 
             /// <summary>
@@ -906,6 +986,30 @@ namespace SmokeTest.Repositories
                 get
                 {
                     return _concurrentdayInfo;
+                }
+            }
+
+            /// <summary>
+            /// The PnlYearView item.
+            /// </summary>
+            [RepositoryItem("41e3fce8-79d9-434b-8571-0bdeafb31773")]
+            public virtual Ranorex.Container PnlYearView
+            {
+                get
+                {
+                    return _pnlyearviewInfo.CreateAdapter<Ranorex.Container>(true);
+                }
+            }
+
+            /// <summary>
+            /// The PnlYearView item info.
+            /// </summary>
+            [RepositoryItemInfo("41e3fce8-79d9-434b-8571-0bdeafb31773")]
+            public virtual RepoItemInfo PnlYearViewInfo
+            {
+                get
+                {
+                    return _pnlyearviewInfo;
                 }
             }
         }

@@ -461,6 +461,9 @@
     <Compile Include="Modules\SendDocumentViaEmail.cs">
       <id>4b7d6b73-f432-4a30-82a7-fc7f72845358</id>
     </Compile>
+    <Compile Include="Modules\testViewNavigation.cs">
+      <id>d9857e46-dc36-4d57-a32e-6e9af474156d</id>
+    </Compile>
     <Compile Include="Modules\TimeEntryAPX.cs">
       <id>821adb03-f2c8-47f5-8bb4-17b61d9d35e0</id>
     </Compile>

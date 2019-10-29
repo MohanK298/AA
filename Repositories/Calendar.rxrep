@@ -282,6 +282,26 @@ AAAAADmCBQAAAJAjWAAAAAA5ggUAAAAQMwz/B/Pa+j2m8Yn1AAAAAElFTkSuQmCC
 				searchtimeout="30000ms">
 					/form[@controlname='MainForm']/?/?/form[@controlname='CalendarIndexForm']/container[@controlname='CalendarIndexForm_BottomPanel']//toolbar[@accessiblename='Toolbar']/button[@accessiblename='Day']
 				</item>
+				<item
+				addcaps="button,accessible"
+				capname="button"
+				id="996e23b2-394f-4b2d-8d47-1c3f5f920aab"
+				name="btnRange"
+				refimgid="340682de-c133-4fda-ac09-b12bec040d09"
+				refpath="/form[@controlname='MainForm']/element[@controltypename='MdiClient']/form[@controlname='CalendarIndexForm']/container[@controlname='CalendarIndexForm_BottomPanel']/container[@controlname='centreObject']/element[@controltypename='UltraToolbarsDockArea' and @instance='0']/container[@accessiblename='DockTop']/toolbar[@accessiblename='Toolbar']/button[@accessiblename='Range']"
+				searchtimeout="30000ms">
+					/form[@controlname='MainForm']/?/?/form[@controlname='CalendarIndexForm']/container[@controlname='CalendarIndexForm_BottomPanel']//toolbar[@accessiblename='Toolbar']/button[@accessiblename='Range']
+				</item>
+				<item
+				addcaps="button,accessible"
+				capname="button"
+				id="5ecc1856-0b78-47dc-bfe3-ce63366bf7ac"
+				name="btnYear"
+				refimgid="45a657cc-a707-4913-89a1-916e84158775"
+				refpath="/form[@controlname='MainForm']/element[@controltypename='MdiClient']/form[@controlname='CalendarIndexForm']/container[@controlname='CalendarIndexForm_BottomPanel']/container[@controlname='centreObject']/element[@controltypename='UltraToolbarsDockArea' and @instance='0']/container[@accessiblename='DockTop']/toolbar[@accessiblename='Toolbar']/button[@accessiblename='Year']"
+				searchtimeout="30000ms">
+					/form[@controlname='MainForm']/?/?/form[@controlname='CalendarIndexForm']/container[@controlname='CalendarIndexForm_BottomPanel']//toolbar[@accessiblename='Toolbar']/button[@accessiblename='Year']
+				</item>
 				<basepath>
 					/form[@controlname='MainForm']/?/?/form[@controlname='CalendarIndexForm']/container[@controlname='CalendarIndexForm_BottomPanel']//toolbar[@accessiblename='Toolbar']
 				</basepath>
@@ -372,10 +392,29 @@ AAAAADmCBQAAAJAjWAAAAAA5ggUAAAAQMwz/B/Pa+j2m8Yn1AAAAAElFTkSuQmCC
 				searchtimeout="30000ms">
 					/form[@controlname='MainForm']/?/?/form[@controlname='CalendarIndexForm']/container[@controlname='pnlBase']//container[@controlname='pnlViews']/?/?/container[@controlname='pnlDayViewControl']/?/?/table[@accessiblename='udvDay']/container
 				</item>
+				<item
+				addcaps="container,control,nativewindow"
+				capname="container"
+				id="41e3fce8-79d9-434b-8571-0bdeafb31773"
+				name="PnlYearView"
+				refimgid="72ae441c-6a17-48fd-9240-4e1655cbcea3"
+				refpath="/form[@controlname='MainForm']/element[@controltypename='MdiClient']/form[@controlname='CalendarIndexForm']/container[@controlname='pnlBase']/container[@controlname='pnlToolbar']/container[@controlname='pnlViewsBase']/container[@controlname='pnlViews']/container[@controlname='pnlYearView']"
+				searchtimeout="30000ms">
+					/form[@controlname='MainForm']/?/?/form[@controlname='CalendarIndexForm']/container[@controlname='pnlBase']//container[@controlname='pnlViews']/container[@controlname='pnlYearView']
+				</item>
 				<basepath>
 					/form[@controlname='MainForm']/?/?/form[@controlname='CalendarIndexForm']/container[@controlname='pnlBase']//container[@controlname='pnlViews']
 				</basepath>
 			</folder>
+			<item
+			addcaps="text,uiautomation"
+			capname="text"
+			id="64af5f5c-65d7-4e12-85e4-0972b06f9ba3"
+			name="txtLabel"
+			refimgid="8a25196f-80ab-4ac9-b6ab-e0f2abfabfd5"
+			searchtimeout="30000ms">
+				/form[@controlname='MainForm']/?/?/form[@controlname='CalendarIndexForm']/container[@controlname='menubar_Fill_Panel']/?/?/text
+			</item>
 			<basepath>
 				/form[@controlname='MainForm']
 			</basepath>

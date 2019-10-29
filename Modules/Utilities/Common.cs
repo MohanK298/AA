@@ -219,8 +219,9 @@ namespace SmokeTest.Modules.Utilities
         public void SelectItemDropdown(Ranorex.Adapter dpdwnData,string itemValue,string dpdwnName)
         {
         	int k=0;
+        	dpdwnData.Click();
         	var cmbbxData = dpdwnData.As <Ranorex.ComboBox>();
-        	cmbbxData.Click();
+        	//cmbbxData.Click();
         	IList<Ranorex.ListItem> listitems = cmbbxData.Items;
         	foreach(Ranorex.ListItem item in listitems)
         	{

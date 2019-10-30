@@ -217,6 +217,7 @@ AAAAADmCBQAAAJAjWAAAAAA5ggUAAAAQMwz/B/Pa+j2m8Yn1AAAAAElFTkSuQmCC
 			</item>
 			<item
 			capname="table"
+			ensurevisible="True"
 			id="88778537-3f3f-4b07-b56a-8181e153a75c"
 			name="tblCalendar"
 			refimgid="8555acbc-b091-4d58-acce-0838afe56642"
@@ -301,6 +302,96 @@ AAAAADmCBQAAAJAjWAAAAAA5ggUAAAAQMwz/B/Pa+j2m8Yn1AAAAAElFTkSuQmCC
 				refpath="/form[@controlname='MainForm']/element[@controltypename='MdiClient']/form[@controlname='CalendarIndexForm']/container[@controlname='CalendarIndexForm_BottomPanel']/container[@controlname='centreObject']/element[@controltypename='UltraToolbarsDockArea' and @instance='0']/container[@accessiblename='DockTop']/toolbar[@accessiblename='Toolbar']/button[@accessiblename='Year']"
 				searchtimeout="30000ms">
 					/form[@controlname='MainForm']/?/?/form[@controlname='CalendarIndexForm']/container[@controlname='CalendarIndexForm_BottomPanel']//toolbar[@accessiblename='Toolbar']/button[@accessiblename='Year']
+				</item>
+				<item
+				addcaps="menuitem,accessible"
+				capname="menuitem"
+				id="f2f938e6-a540-468f-b28d-92438309c095"
+				name="MyDoSomedayEvents"
+				refpath="/form[@controlname='MainForm']/element[@controltypename='MdiClient']/form[@controlname='CalendarIndexForm']/container[@controlname='CalendarIndexForm_BottomPanel']/container[@controlname='centreObject']/element[@controltypename='UltraToolbarsDockArea' and @instance='0']/container[@accessiblename='DockTop']/toolbar[@accessiblename='Toolbar']/menuitem[@accessiblename='Lists']/menuitem[@accessiblename='My Do Someday Events']"
+				searchtimeout="30000ms">
+					/form[@controlname='MainForm']/?/?/form[@controlname='CalendarIndexForm']/container[@controlname='CalendarIndexForm_BottomPanel']//toolbar[@accessiblename='Toolbar']/menuitem[@accessiblename='Lists']/menuitem[@accessiblename='My Do Someday Events']
+				</item>
+				<item
+				addcaps="menuitem,accessible"
+				capname="menuitem"
+				id="37728ba4-08d2-4f2e-9210-0ee4645e1774"
+				name="MyRepeatingEvents"
+				refpath="/form[@controlname='MainForm']/element[@controltypename='MdiClient']/form[@controlname='CalendarIndexForm']/container[@controlname='CalendarIndexForm_BottomPanel']/container[@controlname='centreObject']/element[@controltypename='UltraToolbarsDockArea' and @instance='0']/container[@accessiblename='DockTop']/toolbar[@accessiblename='Toolbar']/menuitem[@accessiblename='Lists']/menuitem[@accessiblename='My Repeating Events']"
+				searchtimeout="30000ms">
+					/form[@controlname='MainForm']/?/?/form[@controlname='CalendarIndexForm']/container[@controlname='CalendarIndexForm_BottomPanel']//toolbar[@accessiblename='Toolbar']/menuitem[@accessiblename='Lists']/menuitem[@accessiblename='My Repeating Events']
+				</item>
+				<item
+				addcaps="menuitem,accessible"
+				capname="menuitem"
+				id="6052b5b9-d547-4016-8b19-fbe4f4581e92"
+				name="MyFutureAppointments"
+				refpath="/form[@controlname='MainForm']/element[@controltypename='MdiClient']/form[@controlname='CalendarIndexForm']/container[@controlname='CalendarIndexForm_BottomPanel']/container[@controlname='centreObject']/element[@controltypename='UltraToolbarsDockArea' and @instance='0']/container[@accessiblename='DockTop']/toolbar[@accessiblename='Toolbar']/menuitem[@accessiblename='Lists']/menuitem[@accessiblename='My Future Appointments']"
+				searchtimeout="30000ms">
+					/form[@controlname='MainForm']/?/?/form[@controlname='CalendarIndexForm']/container[@controlname='CalendarIndexForm_BottomPanel']//toolbar[@accessiblename='Toolbar']/menuitem[@accessiblename='Lists']/menuitem[@accessiblename='My Future Appointments']
+				</item>
+				<item
+				addcaps="menuitem,accessible"
+				capname="menuitem"
+				id="b3a014d5-d101-4cb5-8e5e-0f0a8d144f16"
+				name="MyFutureToDos"
+				refpath="/form[@controlname='MainForm']/element[@controltypename='MdiClient']/form[@controlname='CalendarIndexForm']/container[@controlname='CalendarIndexForm_BottomPanel']/container[@controlname='centreObject']/element[@controltypename='UltraToolbarsDockArea' and @instance='0']/container[@accessiblename='DockTop']/toolbar[@accessiblename='Toolbar']/menuitem[@accessiblename='Lists']/menuitem[@accessiblename='My Future To Do''s']"
+				searchtimeout="30000ms">
+					/form[@controlname='MainForm']/?/?/form[@controlname='CalendarIndexForm']/container[@controlname='CalendarIndexForm_BottomPanel']//toolbar[@accessiblename='Toolbar']/menuitem[@accessiblename='Lists']/menuitem[@accessiblename='My Future To Do''s']
+				</item>
+				<item
+				addcaps="menuitem,accessible"
+				capname="menuitem"
+				id="94bdb5d9-70df-45e8-9c14-afbb8f8337bc"
+				name="MyPastAppointments"
+				refpath="/form[@controlname='MainForm']/element[@controltypename='MdiClient']/form[@controlname='CalendarIndexForm']/container[@controlname='CalendarIndexForm_BottomPanel']/container[@controlname='centreObject']/element[@controltypename='UltraToolbarsDockArea' and @instance='0']/container[@accessiblename='DockTop']/toolbar[@accessiblename='Toolbar']/menuitem[@accessiblename='Lists']/menuitem[@accessiblename='My Past Appointments']"
+				searchtimeout="30000ms">
+					/form[@controlname='MainForm']/?/?/form[@controlname='CalendarIndexForm']/container[@controlname='CalendarIndexForm_BottomPanel']//toolbar[@accessiblename='Toolbar']/menuitem[@accessiblename='Lists']/menuitem[@accessiblename='My Past Appointments']
+				</item>
+				<item
+				addcaps="menuitem,accessible"
+				capname="menuitem"
+				id="7edf5a53-0046-4879-87b5-10554ded210e"
+				name="MyDoneToDos"
+				refpath="/form[@controlname='MainForm']/element[@controltypename='MdiClient']/form[@controlname='CalendarIndexForm']/container[@controlname='CalendarIndexForm_BottomPanel']/container[@controlname='centreObject']/element[@controltypename='UltraToolbarsDockArea' and @instance='0']/container[@accessiblename='DockTop']/toolbar[@accessiblename='Toolbar']/menuitem[@accessiblename='Lists']/menuitem[@accessiblename='My Done To Do''s']"
+				searchtimeout="30000ms">
+					/form[@controlname='MainForm']/?/?/form[@controlname='CalendarIndexForm']/container[@controlname='CalendarIndexForm_BottomPanel']//toolbar[@accessiblename='Toolbar']/menuitem[@accessiblename='Lists']/menuitem[@accessiblename='My Done To Do''s']
+				</item>
+				<item
+				addcaps="menuitem,accessible"
+				capname="menuitem"
+				id="a3feaa4b-33f2-423b-a4ac-0f35281208a1"
+				name="AllMyEvents"
+				refpath="/form[@controlname='MainForm']/element[@controltypename='MdiClient']/form[@controlname='CalendarIndexForm']/container[@controlname='CalendarIndexForm_BottomPanel']/container[@controlname='centreObject']/element[@controltypename='UltraToolbarsDockArea' and @instance='0']/container[@accessiblename='DockTop']/toolbar[@accessiblename='Toolbar']/menuitem[@accessiblename='Lists']/menuitem[@accessiblename='All My Events']"
+				searchtimeout="30000ms">
+					/form[@controlname='MainForm']/?/?/form[@controlname='CalendarIndexForm']/container[@controlname='CalendarIndexForm_BottomPanel']//toolbar[@accessiblename='Toolbar']/menuitem[@accessiblename='Lists']/menuitem[@accessiblename='All My Events']
+				</item>
+				<item
+				addcaps="menuitem,accessible"
+				capname="menuitem"
+				id="90e0516a-f741-4aee-b50c-6804c97fedf6"
+				name="MyMilestoneEvents"
+				refpath="/form[@controlname='MainForm']/element[@controltypename='MdiClient']/form[@controlname='CalendarIndexForm']/container[@controlname='CalendarIndexForm_BottomPanel']/container[@controlname='centreObject']/element[@controltypename='UltraToolbarsDockArea' and @instance='0']/container[@accessiblename='DockTop']/toolbar[@accessiblename='Toolbar']/menuitem[@accessiblename='Lists']/menuitem[@accessiblename='My Milestone Events']"
+				searchtimeout="30000ms">
+					/form[@controlname='MainForm']/?/?/form[@controlname='CalendarIndexForm']/container[@controlname='CalendarIndexForm_BottomPanel']//toolbar[@accessiblename='Toolbar']/menuitem[@accessiblename='Lists']/menuitem[@accessiblename='My Milestone Events']
+				</item>
+				<item
+				addcaps="menuitem,accessible"
+				capname="menuitem"
+				id="331dde76-ec5f-40cc-95b1-04c9c5ba87f9"
+				name="Holidays"
+				refpath="/form[@controlname='MainForm']/element[@controltypename='MdiClient']/form[@controlname='CalendarIndexForm']/container[@controlname='CalendarIndexForm_BottomPanel']/container[@controlname='centreObject']/element[@controltypename='UltraToolbarsDockArea' and @instance='0']/container[@accessiblename='DockTop']/toolbar[@accessiblename='Toolbar']/menuitem[@accessiblename='Lists']/menuitem[@accessiblename='Holidays']"
+				searchtimeout="30000ms">
+					/form[@controlname='MainForm']/?/?/form[@controlname='CalendarIndexForm']/container[@controlname='CalendarIndexForm_BottomPanel']//toolbar[@accessiblename='Toolbar']/menuitem[@accessiblename='Lists']/menuitem[@accessiblename='Holidays']
+				</item>
+				<item
+				addcaps="menuitem,accessible"
+				capname="menuitem"
+				id="2cce3a48-e3a5-41d0-a4d0-f995ab4da8ff"
+				name="CurrentProfile"
+				refpath="/form[@controlname='MainForm']/element[@controltypename='MdiClient']/form[@controlname='CalendarIndexForm']/container[@controlname='CalendarIndexForm_BottomPanel']/container[@controlname='centreObject']/element[@controltypename='UltraToolbarsDockArea' and @instance='0']/container[@accessiblename='DockTop']/toolbar[@accessiblename='Toolbar']/menuitem[@accessiblename='Lists']/menuitem[@accessiblename='Current Profile']"
+				searchtimeout="30000ms">
+					/form[@controlname='MainForm']/?/?/form[@controlname='CalendarIndexForm']/container[@controlname='CalendarIndexForm_BottomPanel']//toolbar[@accessiblename='Toolbar']/menuitem[@accessiblename='Lists']/menuitem[@accessiblename='Current Profile']
 				</item>
 				<basepath>
 					/form[@controlname='MainForm']/?/?/form[@controlname='CalendarIndexForm']/container[@controlname='CalendarIndexForm_BottomPanel']//toolbar[@accessiblename='Toolbar']
@@ -413,7 +504,7 @@ AAAAADmCBQAAAJAjWAAAAAA5ggUAAAAQMwz/B/Pa+j2m8Yn1AAAAAElFTkSuQmCC
 			name="txtLabel"
 			refimgid="8a25196f-80ab-4ac9-b6ab-e0f2abfabfd5"
 			searchtimeout="30000ms">
-				/form[@controlname='MainForm']/?/?/form[@controlname='CalendarIndexForm']/container[@controlname='menubar_Fill_Panel']/?/?/text
+				/form[@controlname='MainForm']/?/?/form[@controlname='CalendarIndexForm']/container[@controlname='menubar_Fill_Panel']/?/?/text[@accessiblename=$listselection]
 			</item>
 			<basepath>
 				/form[@controlname='MainForm']
@@ -1224,6 +1315,31 @@ Cd405uM14N+/f+egSnGDjyvnxjyyVQYbANL0FmjAm/aKH4+9zVWhSqCAgQEAq9YXqsYCPO8AAAAA
 SUVORK5CYII=
 			</icon>
 		</appfolder>
+		<appfolder
+		addcaps="form,control,nativewindow"
+		capname="form"
+		id="1d0fcb77-393e-4dd6-8295-b834b570ef49"
+		isrooted="True"
+		name="ProgressForm"
+		refimgid="eadc164c-aad3-4028-bee1-8933c9c7c967"
+		refpath="/form[@controlname='ProgressForm']"
+		searchtimeout="30000ms"
+		usecache="True">
+			<basepath>
+				/form[@controlname='ProgressForm']
+			</basepath>
+			<icon>
+				iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACx
+jwv8YQUAAAAJcEhZcwAADsQAAA7EAZUrDhsAAAFlSURBVDhPY6AJeOJjOvORg9p/FOyo/v9xoKUT
+VAlugKERDT921nwLVQoBb3Kj+Z5FOf9/FuP2/1msO3EYpBaIH7vr/Qcb8Oft6//kgFclif/Brnjo
+qPYZKvb/z8tn/z+tWfD/bWspWMHLwrj/r8pT/7/rrfv/dffG//++fwOr+3Hu+P8nPsYTwAY8CbRM
+fGSvCnbev29fwQpwgd9PH/1/N6ERHB5gzSDwyFX3IkjgeZLv/0+rF/z/snPD/4fWCmAND60V/3+Y
+1fP//cxuYABqgcUe2SqBDXge5qoDMcBN9w3MgDdNhf/fTWr+/xCoCKb4XU/t/7fd1Shi4BgJtPSG
+GqBzjhwDnkbaa4ANAIZBBDkGgDXDAMkGAFMmVCsEPHLTO0uKAU+jnYygWhHgeZIPUQY8dFS/BdWC
+Cd405uM14N+/f+egSnGDjyvnxjyyVQYbANL0FmjAm/aKH4+9zVWhSqCAgQEAq9YXqsYCPO8AAAAA
+SUVORK5CYII=
+			</icon>
+		</appfolder>
 		<basepath>
 		</basepath>
 	</rootfolder>
@@ -1243,6 +1359,10 @@ SUVORK5CYII=
 		<var
 		id="6738ba8b-3ee3-429a-9580-8c187b3ee81e"
 		name="curdayapptselection">
+		</var>
+		<var
+		id="042390e8-7952-43e9-ab20-d68833f02199"
+		name="listselection">
 		</var>
 	</variables>
 </repository>

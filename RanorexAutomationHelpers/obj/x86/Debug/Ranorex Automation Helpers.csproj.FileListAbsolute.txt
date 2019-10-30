@@ -26,3 +26,10 @@ C:\Users\Kumar\Downloads\RanorexAutomation\AA Enhanced\RanorexAutomationHelpers\
 C:\Users\Kumar\Downloads\RanorexAutomation\AA Enhanced\RanorexAutomationHelpers\obj\x86\Debug\Ranorex Automation Helpers.csprojResolveAssemblyReference.cache
 C:\Users\Kumar\Downloads\RanorexAutomation\AA Enhanced\RanorexAutomationHelpers\obj\x86\Debug\Ranorex Automation Helpers.dll
 C:\Users\Kumar\Downloads\RanorexAutomation\AA Enhanced\RanorexAutomationHelpers\obj\x86\Debug\Ranorex Automation Helpers.pdb
+C:\Users\kumar\Downloads\AA_Automation\RanorexAutomationHelpers\bin\Debug\Ranorex Automation Helpers.dll
+C:\Users\kumar\Downloads\AA_Automation\RanorexAutomationHelpers\bin\Debug\Ranorex Automation Helpers.pdb
+C:\Users\kumar\Downloads\AA_Automation\RanorexAutomationHelpers\bin\Debug\Ranorex.Core.Resolver.dll
+C:\Users\kumar\Downloads\AA_Automation\RanorexAutomationHelpers\bin\Debug\Ranorex.ReportToPDF.exe
+C:\Users\kumar\Downloads\AA_Automation\RanorexAutomationHelpers\obj\x86\Debug\Ranorex Automation Helpers.csprojResolveAssemblyReference.cache
+C:\Users\kumar\Downloads\AA_Automation\RanorexAutomationHelpers\obj\x86\Debug\Ranorex Automation Helpers.dll
+C:\Users\kumar\Downloads\AA_Automation\RanorexAutomationHelpers\obj\x86\Debug\Ranorex Automation Helpers.pdb

@@ -1,16 +1,8 @@
 ﻿<Properties>
   <Array name="active">
-    <Element value="SmokeTest.rxtst" />
+    <Element value="Repositories\Calendar.rxrep" />
   </Array>
-  <Array name="bookmarks">
-    <Element value="Breakpoint|c:\Users\Kumar\Downloads\RanorexAutomation\AA Enhanced\Modules\AddFile.cs|105|10|True|Break||" />
-    <Element value="Bookmark|C:\Users\Kumar\Downloads\RanorexAutomation\AA Enhanced\Modules\Utilities\Common.cs|62|4" />
-    <Element value="Breakpoint|C:\Users\Kumar\Downloads\RanorexAutomation\AA Enhanced\changePrefIncludeChronology.cs|89|10|True|Break||" />
-    <Element value="Breakpoint|C:\Users\Kumar\Downloads\RanorexAutomation\AA Enhanced\changePrefIncludeChronology.cs|88|10|True|Break||" />
-    <Element value="Breakpoint|C:\Users\Kumar\Downloads\RanorexAutomation\AA Enhanced\verifyPromptNoFileSelection.cs|65|10|True|Break||" />
-    <Element value="Breakpoint|C:\Users\Kumar\Downloads\RanorexAutomation\AA Enhanced\Modules\testViewNavigation.cs|98|10|True|Break||" />
-    <Element value="Breakpoint|C:\Users\Kumar\Downloads\RanorexAutomation\AA Enhanced\Modules\testViewNavigation.cs|97|10|True|Break||" />
-  </Array>
+  <Array name="bookmarks" />
   <Array name="files">
     <Element value="SmokeTest.rxtst" />
     <Element value="Modules\Utilities\Common.cs" />

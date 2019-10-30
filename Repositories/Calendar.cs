@@ -38,6 +38,7 @@ namespace SmokeTest.Repositories
         CalendarFolders.AppointmentOverlapDialogAppFolder _appointmentoverlapdialog;
         CalendarFolders.RepeatingEventDialogFormAppFolder _repeatingeventdialogform;
         CalendarFolders.DocumentSelectorFormAppFolder _documentselectorform;
+        CalendarFolders.ProgressFormAppFolder _progressform;
 
         /// <summary>
         /// Gets the singleton class instance representing the Calendar element repository.
@@ -65,6 +66,7 @@ namespace SmokeTest.Repositories
             _appointmentoverlapdialog = new CalendarFolders.AppointmentOverlapDialogAppFolder(this);
             _repeatingeventdialogform = new CalendarFolders.RepeatingEventDialogFormAppFolder(this);
             _documentselectorform = new CalendarFolders.DocumentSelectorFormAppFolder(this);
+            _progressform = new CalendarFolders.ProgressFormAppFolder(this);
         }
 
 #region Variables
@@ -115,6 +117,18 @@ namespace SmokeTest.Repositories
         {
             get { return _curdayapptselection; }
             set { _curdayapptselection = value; }
+        }
+
+        string _listselection = "";
+
+        /// <summary>
+        /// Gets or sets the value of variable listselection.
+        /// </summary>
+        [TestVariable("042390e8-7952-43e9-ab20-d68833f02199")]
+        public string listselection
+        {
+            get { return _listselection; }
+            set { _listselection = value; }
         }
 
 #endregion
@@ -229,6 +243,15 @@ namespace SmokeTest.Repositories
         {
             get { return _documentselectorform; }
         }
+
+        /// <summary>
+        /// The ProgressForm folder.
+        /// </summary>
+        [RepositoryFolder("1d0fcb77-393e-4dd6-8295-b834b570ef49")]
+        public virtual CalendarFolders.ProgressFormAppFolder ProgressForm
+        {
+            get { return _progressform; }
+        }
     }
 
     /// <summary>
@@ -268,8 +291,8 @@ namespace SmokeTest.Repositories
                 _btnviewmenuInfo = new RepoItemInfo(this, "btnViewMenu", "element[@controlname='_BaseModuleForm_Toolbars_Dock_Area_Top']//menuitem[@accessiblename='View']", 30000, null, "45870d03-fa10-43d8-9082-4373bae1957d");
                 _listitemtitleInfo = new RepoItemInfo(this, "listItemTitle", "?/?/form[@controlname='CalendarIndexForm']/container[@controlname='pnlBase']//container[@controlname='pnlLists']/element[@controlname='udgEvents']/table[@accessiblerole='Table']/row[1]/cell[@accessiblename='Title']", 30000, null, "87b2c3a3-832c-4c05-8125-631f1f7fbbba");
                 _menulistviewInfo = new RepoItemInfo(this, "menuListView", "element[@controlname='_BaseModuleForm_Toolbars_Dock_Area_Top']//menuitem[@accessiblename='View']/menuitem[@accessiblename='Lists']", 30000, null, "9a170fba-d46a-4a1b-b1ad-2c383cf1e34d");
-                _tblcalendarInfo = new RepoItemInfo(this, "tblCalendar", "?/?/form[@controlname='CalendarIndexForm']/container[@controlname='pnlBase']//container[@controlname='pnlLists']/?/?/table[@accessiblename='Band 0']", 30000, null, "88778537-3f3f-4b07-b56a-8181e153a75c");
-                _txtlabelInfo = new RepoItemInfo(this, "txtLabel", "?/?/form[@controlname='CalendarIndexForm']/container[@controlname='menubar_Fill_Panel']/?/?/text", 30000, null, "64af5f5c-65d7-4e12-85e4-0972b06f9ba3");
+                _tblcalendarInfo = new RepoItemInfo(this, "tblCalendar", "?/?/form[@controlname='CalendarIndexForm']/container[@controlname='pnlBase']//container[@controlname='pnlLists']/?/?/table[@accessiblename='Band 0']", 30000, true, "88778537-3f3f-4b07-b56a-8181e153a75c");
+                _txtlabelInfo = new RepoItemInfo(this, "txtLabel", "?/?/form[@controlname='CalendarIndexForm']/container[@controlname='menubar_Fill_Panel']/?/?/text[@accessiblename=$listselection]", 30000, null, "64af5f5c-65d7-4e12-85e4-0972b06f9ba3");
             }
 
             /// <summary>
@@ -531,6 +554,16 @@ namespace SmokeTest.Repositories
             RepoItemInfo _btndayInfo;
             RepoItemInfo _btnrangeInfo;
             RepoItemInfo _btnyearInfo;
+            RepoItemInfo _mydosomedayeventsInfo;
+            RepoItemInfo _myrepeatingeventsInfo;
+            RepoItemInfo _myfutureappointmentsInfo;
+            RepoItemInfo _myfuturetodosInfo;
+            RepoItemInfo _mypastappointmentsInfo;
+            RepoItemInfo _mydonetodosInfo;
+            RepoItemInfo _allmyeventsInfo;
+            RepoItemInfo _mymilestoneeventsInfo;
+            RepoItemInfo _holidaysInfo;
+            RepoItemInfo _currentprofileInfo;
 
             /// <summary>
             /// Creates a new Toolbar  folder.
@@ -545,6 +578,16 @@ namespace SmokeTest.Repositories
                 _btndayInfo = new RepoItemInfo(this, "btnDay", "button[@accessiblename='Day']", 30000, null, "cc29d518-c062-4281-a520-3eb8e87e5d68");
                 _btnrangeInfo = new RepoItemInfo(this, "btnRange", "button[@accessiblename='Range']", 30000, null, "996e23b2-394f-4b2d-8d47-1c3f5f920aab");
                 _btnyearInfo = new RepoItemInfo(this, "btnYear", "button[@accessiblename='Year']", 30000, null, "5ecc1856-0b78-47dc-bfe3-ce63366bf7ac");
+                _mydosomedayeventsInfo = new RepoItemInfo(this, "MyDoSomedayEvents", "menuitem[@accessiblename='Lists']/menuitem[@accessiblename='My Do Someday Events']", 30000, null, "f2f938e6-a540-468f-b28d-92438309c095");
+                _myrepeatingeventsInfo = new RepoItemInfo(this, "MyRepeatingEvents", "menuitem[@accessiblename='Lists']/menuitem[@accessiblename='My Repeating Events']", 30000, null, "37728ba4-08d2-4f2e-9210-0ee4645e1774");
+                _myfutureappointmentsInfo = new RepoItemInfo(this, "MyFutureAppointments", "menuitem[@accessiblename='Lists']/menuitem[@accessiblename='My Future Appointments']", 30000, null, "6052b5b9-d547-4016-8b19-fbe4f4581e92");
+                _myfuturetodosInfo = new RepoItemInfo(this, "MyFutureToDos", "menuitem[@accessiblename='Lists']/menuitem[@accessiblename='My Future To Do''s']", 30000, null, "b3a014d5-d101-4cb5-8e5e-0f0a8d144f16");
+                _mypastappointmentsInfo = new RepoItemInfo(this, "MyPastAppointments", "menuitem[@accessiblename='Lists']/menuitem[@accessiblename='My Past Appointments']", 30000, null, "94bdb5d9-70df-45e8-9c14-afbb8f8337bc");
+                _mydonetodosInfo = new RepoItemInfo(this, "MyDoneToDos", "menuitem[@accessiblename='Lists']/menuitem[@accessiblename='My Done To Do''s']", 30000, null, "7edf5a53-0046-4879-87b5-10554ded210e");
+                _allmyeventsInfo = new RepoItemInfo(this, "AllMyEvents", "menuitem[@accessiblename='Lists']/menuitem[@accessiblename='All My Events']", 30000, null, "a3feaa4b-33f2-423b-a4ac-0f35281208a1");
+                _mymilestoneeventsInfo = new RepoItemInfo(this, "MyMilestoneEvents", "menuitem[@accessiblename='Lists']/menuitem[@accessiblename='My Milestone Events']", 30000, null, "90e0516a-f741-4aee-b50c-6804c97fedf6");
+                _holidaysInfo = new RepoItemInfo(this, "Holidays", "menuitem[@accessiblename='Lists']/menuitem[@accessiblename='Holidays']", 30000, null, "331dde76-ec5f-40cc-95b1-04c9c5ba87f9");
+                _currentprofileInfo = new RepoItemInfo(this, "CurrentProfile", "menuitem[@accessiblename='Lists']/menuitem[@accessiblename='Current Profile']", 30000, null, "2cce3a48-e3a5-41d0-a4d0-f995ab4da8ff");
             }
 
             /// <summary>
@@ -736,6 +779,246 @@ namespace SmokeTest.Repositories
                 get
                 {
                     return _btnyearInfo;
+                }
+            }
+
+            /// <summary>
+            /// The MyDoSomedayEvents item.
+            /// </summary>
+            [RepositoryItem("f2f938e6-a540-468f-b28d-92438309c095")]
+            public virtual Ranorex.MenuItem MyDoSomedayEvents
+            {
+                get
+                {
+                    return _mydosomedayeventsInfo.CreateAdapter<Ranorex.MenuItem>(true);
+                }
+            }
+
+            /// <summary>
+            /// The MyDoSomedayEvents item info.
+            /// </summary>
+            [RepositoryItemInfo("f2f938e6-a540-468f-b28d-92438309c095")]
+            public virtual RepoItemInfo MyDoSomedayEventsInfo
+            {
+                get
+                {
+                    return _mydosomedayeventsInfo;
+                }
+            }
+
+            /// <summary>
+            /// The MyRepeatingEvents item.
+            /// </summary>
+            [RepositoryItem("37728ba4-08d2-4f2e-9210-0ee4645e1774")]
+            public virtual Ranorex.MenuItem MyRepeatingEvents
+            {
+                get
+                {
+                    return _myrepeatingeventsInfo.CreateAdapter<Ranorex.MenuItem>(true);
+                }
+            }
+
+            /// <summary>
+            /// The MyRepeatingEvents item info.
+            /// </summary>
+            [RepositoryItemInfo("37728ba4-08d2-4f2e-9210-0ee4645e1774")]
+            public virtual RepoItemInfo MyRepeatingEventsInfo
+            {
+                get
+                {
+                    return _myrepeatingeventsInfo;
+                }
+            }
+
+            /// <summary>
+            /// The MyFutureAppointments item.
+            /// </summary>
+            [RepositoryItem("6052b5b9-d547-4016-8b19-fbe4f4581e92")]
+            public virtual Ranorex.MenuItem MyFutureAppointments
+            {
+                get
+                {
+                    return _myfutureappointmentsInfo.CreateAdapter<Ranorex.MenuItem>(true);
+                }
+            }
+
+            /// <summary>
+            /// The MyFutureAppointments item info.
+            /// </summary>
+            [RepositoryItemInfo("6052b5b9-d547-4016-8b19-fbe4f4581e92")]
+            public virtual RepoItemInfo MyFutureAppointmentsInfo
+            {
+                get
+                {
+                    return _myfutureappointmentsInfo;
+                }
+            }
+
+            /// <summary>
+            /// The MyFutureToDos item.
+            /// </summary>
+            [RepositoryItem("b3a014d5-d101-4cb5-8e5e-0f0a8d144f16")]
+            public virtual Ranorex.MenuItem MyFutureToDos
+            {
+                get
+                {
+                    return _myfuturetodosInfo.CreateAdapter<Ranorex.MenuItem>(true);
+                }
+            }
+
+            /// <summary>
+            /// The MyFutureToDos item info.
+            /// </summary>
+            [RepositoryItemInfo("b3a014d5-d101-4cb5-8e5e-0f0a8d144f16")]
+            public virtual RepoItemInfo MyFutureToDosInfo
+            {
+                get
+                {
+                    return _myfuturetodosInfo;
+                }
+            }
+
+            /// <summary>
+            /// The MyPastAppointments item.
+            /// </summary>
+            [RepositoryItem("94bdb5d9-70df-45e8-9c14-afbb8f8337bc")]
+            public virtual Ranorex.MenuItem MyPastAppointments
+            {
+                get
+                {
+                    return _mypastappointmentsInfo.CreateAdapter<Ranorex.MenuItem>(true);
+                }
+            }
+
+            /// <summary>
+            /// The MyPastAppointments item info.
+            /// </summary>
+            [RepositoryItemInfo("94bdb5d9-70df-45e8-9c14-afbb8f8337bc")]
+            public virtual RepoItemInfo MyPastAppointmentsInfo
+            {
+                get
+                {
+                    return _mypastappointmentsInfo;
+                }
+            }
+
+            /// <summary>
+            /// The MyDoneToDos item.
+            /// </summary>
+            [RepositoryItem("7edf5a53-0046-4879-87b5-10554ded210e")]
+            public virtual Ranorex.MenuItem MyDoneToDos
+            {
+                get
+                {
+                    return _mydonetodosInfo.CreateAdapter<Ranorex.MenuItem>(true);
+                }
+            }
+
+            /// <summary>
+            /// The MyDoneToDos item info.
+            /// </summary>
+            [RepositoryItemInfo("7edf5a53-0046-4879-87b5-10554ded210e")]
+            public virtual RepoItemInfo MyDoneToDosInfo
+            {
+                get
+                {
+                    return _mydonetodosInfo;
+                }
+            }
+
+            /// <summary>
+            /// The AllMyEvents item.
+            /// </summary>
+            [RepositoryItem("a3feaa4b-33f2-423b-a4ac-0f35281208a1")]
+            public virtual Ranorex.MenuItem AllMyEvents
+            {
+                get
+                {
+                    return _allmyeventsInfo.CreateAdapter<Ranorex.MenuItem>(true);
+                }
+            }
+
+            /// <summary>
+            /// The AllMyEvents item info.
+            /// </summary>
+            [RepositoryItemInfo("a3feaa4b-33f2-423b-a4ac-0f35281208a1")]
+            public virtual RepoItemInfo AllMyEventsInfo
+            {
+                get
+                {
+                    return _allmyeventsInfo;
+                }
+            }
+
+            /// <summary>
+            /// The MyMilestoneEvents item.
+            /// </summary>
+            [RepositoryItem("90e0516a-f741-4aee-b50c-6804c97fedf6")]
+            public virtual Ranorex.MenuItem MyMilestoneEvents
+            {
+                get
+                {
+                    return _mymilestoneeventsInfo.CreateAdapter<Ranorex.MenuItem>(true);
+                }
+            }
+
+            /// <summary>
+            /// The MyMilestoneEvents item info.
+            /// </summary>
+            [RepositoryItemInfo("90e0516a-f741-4aee-b50c-6804c97fedf6")]
+            public virtual RepoItemInfo MyMilestoneEventsInfo
+            {
+                get
+                {
+                    return _mymilestoneeventsInfo;
+                }
+            }
+
+            /// <summary>
+            /// The Holidays item.
+            /// </summary>
+            [RepositoryItem("331dde76-ec5f-40cc-95b1-04c9c5ba87f9")]
+            public virtual Ranorex.MenuItem Holidays
+            {
+                get
+                {
+                    return _holidaysInfo.CreateAdapter<Ranorex.MenuItem>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Holidays item info.
+            /// </summary>
+            [RepositoryItemInfo("331dde76-ec5f-40cc-95b1-04c9c5ba87f9")]
+            public virtual RepoItemInfo HolidaysInfo
+            {
+                get
+                {
+                    return _holidaysInfo;
+                }
+            }
+
+            /// <summary>
+            /// The CurrentProfile item.
+            /// </summary>
+            [RepositoryItem("2cce3a48-e3a5-41d0-a4d0-f995ab4da8ff")]
+            public virtual Ranorex.MenuItem CurrentProfile
+            {
+                get
+                {
+                    return _currentprofileInfo.CreateAdapter<Ranorex.MenuItem>(true);
+                }
+            }
+
+            /// <summary>
+            /// The CurrentProfile item info.
+            /// </summary>
+            [RepositoryItemInfo("2cce3a48-e3a5-41d0-a4d0-f995ab4da8ff")]
+            public virtual RepoItemInfo CurrentProfileInfo
+            {
+                get
+                {
+                    return _currentprofileInfo;
                 }
             }
         }
@@ -2940,6 +3223,46 @@ namespace SmokeTest.Repositories
                 get
                 {
                     return _tbcurrselectionInfo;
+                }
+            }
+        }
+
+        /// <summary>
+        /// The ProgressFormAppFolder folder.
+        /// </summary>
+        [RepositoryFolder("1d0fcb77-393e-4dd6-8295-b834b570ef49")]
+        public partial class ProgressFormAppFolder : RepoGenBaseFolder
+        {
+
+            /// <summary>
+            /// Creates a new ProgressForm  folder.
+            /// </summary>
+            public ProgressFormAppFolder(RepoGenBaseFolder parentFolder) :
+                    base("ProgressForm", "/form[@controlname='ProgressForm']", parentFolder, 30000, null, true, "1d0fcb77-393e-4dd6-8295-b834b570ef49", "")
+            {
+            }
+
+            /// <summary>
+            /// The Self item.
+            /// </summary>
+            [RepositoryItem("1d0fcb77-393e-4dd6-8295-b834b570ef49")]
+            public virtual Ranorex.Form Self
+            {
+                get
+                {
+                    return _selfInfo.CreateAdapter<Ranorex.Form>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Self item info.
+            /// </summary>
+            [RepositoryItemInfo("1d0fcb77-393e-4dd6-8295-b834b570ef49")]
+            public virtual RepoItemInfo SelfInfo
+            {
+                get
+                {
+                    return _selfInfo;
                 }
             }
         }

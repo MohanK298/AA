@@ -94,8 +94,13 @@ namespace SmokeTest.Modules
         		Report.Failure("Failed to navigate to Weekly View");
         	}*/
         	
-        	cmn.SelectItemDropdown(calendar.MainForm.Toolbar.cbbxListsMenu,"All My Events","Events Dropdown");
-        	if(calendar.MainForm.tblCalendar.Visible && calendar.MainForm.txtLabelInfo.Name.Equals("All My Events"))
+        	calendar.MainForm.Toolbar.cbbxListsMenu.Click();
+        	calendar.MainForm.Toolbar.AllMyEvents.Click();
+        	calendar.listselection="All My Events";
+        	Delay.Seconds(15);
+        	//calendar.ProgressForm.SelfInfo.WaitForNotExists(120);
+        	
+        	if(calendar.MainForm.txtLabelInfo.Exists())
         	{
         		Report.Success("Successfully navigated to All My Events");
         	}
@@ -104,8 +109,13 @@ namespace SmokeTest.Modules
         		Report.Failure("Failed to navigate to All My Events");
         	}
         	
-        	cmn.SelectItemDropdown(calendar.MainForm.Toolbar.cbbxListsMenu,"Holidays","Events Dropdown");
-        	if(calendar.MainForm.tblCalendar.Visible && calendar.MainForm.txtLabelInfo.Name.Equals("Holidays"))
+        	calendar.MainForm.Toolbar.cbbxListsMenu.Click();
+        	calendar.MainForm.Toolbar.Holidays.Click();
+        	calendar.listselection="Holidays";
+        	Delay.Seconds(5);
+        	//calendar.ProgressForm.SelfInfo.WaitForNotExists(120);
+        	
+        	if(calendar.MainForm.txtLabelInfo.Exists())
         	{
         		Report.Success("Successfully navigated to Holidays");
         	}

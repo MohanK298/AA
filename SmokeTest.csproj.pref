@@ -9,11 +9,11 @@
     <Element value="Repositories\Documents.rxrep" />
     <Element value="Repositories\Note.rxrep" />
     <Element value="Modules\CreateManyPhoneCalls.cs" />
-    <Element value="Repositories\Calendar.rxrep" />
     <Element value="Repositories\Calendar.cs" />
-    <Element value="createApptWithEmailAlert.cs" />
     <Element value="createRedLetterDay.cs" />
     <Element value="Modules\testViewNavigation.cs" />
+    <Element value="Repositories\Calendar.rxrep" />
+    <Element value="Modules\createExceptionbyDragnDropInRepAppt.cs" />
   </Array>
   <Properties name="projectSavedData">
     <Properties name="customTool">

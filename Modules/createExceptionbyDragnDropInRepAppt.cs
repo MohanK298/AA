@@ -1,8 +1,8 @@
 ﻿/*
  * Created by Ranorex
- * User: Kumar
- * Date: 2019-10-22
- * Time: 4:15 PM
+ * User: kumar
+ * Date: 10/31/2019
+ * Time: 2:39 PM
  * 
  * To change this template use Tools > Options > Coding > Edit standard headers.
  */
@@ -14,27 +14,25 @@ using System.Drawing;
 using System.Threading;
 using WinForms = System.Windows.Forms;
 using SmokeTest.Repositories;
-using SmokeTest.Modules.Utilities;
-using Ranorex.AutomationHelpers.UserCodeCollections;
 using Ranorex;
+using Ranorex.AutomationHelpers.UserCodeCollections;
 using Ranorex.Core;
 using Ranorex.Core.Testing;
-
-namespace SmokeTest
+using SmokeTest.Modules.Utilities;
+namespace SmokeTest.Modules
 {
     /// <summary>
-    /// Description of createApptDrgNDrpWithinSameDay.
+    /// Description of createExceptionbyDragnDropInRepAppt.
     /// </summary>
-    [TestModule("F9477D36-A271-46FA-8A00-A70467E1A425", ModuleType.UserCode, 1)]
-
-    public class createApptDrgNDrpWithinSameDay : ITestModule
+    [TestModule("DAC03C33-2719-4EE3-BAD1-9784D331494E", ModuleType.UserCode, 1)]
+    public class createExceptionbyDragnDropInRepAppt : ITestModule
     {
         /// <summary>
         /// Constructs a new instance.
         /// </summary>
-        Calendar calendar = Calendar.Instance;
-    	Common cmn=new Common();
-        public createApptDrgNDrpWithinSameDay()
+        Calendar calendar=Calendar.Instance;
+        Common cmn=new Common();
+        public createExceptionbyDragnDropInRepAppt()
         {
             // Do not delete - a parameterless constructor is required!
         }
@@ -45,10 +43,10 @@ namespace SmokeTest
         /// <remarks>You should not call this method directly, instead pass the module
         /// instance to the <see cref="TestModuleRunner.Run(ITestModule)"/> method
         /// that will in turn invoke this method.</remarks>
-		static string rndData=System.DateTime.Now.ToString();
+        static string rndData=System.DateTime.Now.ToString();
 		string data=String.Format("Test Data Added {0}",rndData);
 		string fileName=String.Format("RanorexTestFile {0}",rndData); 
-		//string location="Meeting Room 1";
+		string location="Meeting Room 1";
           public void ValidateEventRemainderPopup()
         {
         	if(calendar.EventReminderForm.SelfInfo.Exists(70000))
@@ -64,15 +62,26 @@ namespace SmokeTest
        	}
        }
 		
-		private void CreateApptDrgNDropWithinSameDay()
+		private void CreateRepeatedAppointment()
         {
-			//calendar.MainForm.Self.Activate();
+			System.DateTime day1;
+			System.DateTime day2;
+			string strday1,strday2;
+			calendar.MainForm.Self.Activate();
         	calendar.MainForm.btnCalendar.Click();
         	calendar.MainForm.btnNewAppointment.Click();
         	Delay.Seconds(1);
         	calendar.EventDetailForm.PnlBase.txtAppointmentTitle.PressKeys(data);
         	calendar.EventDetailForm.PnlBase.txtStartTime.PressKeys(System.DateTime.Now.ToShortTimeString());
         	calendar.EventDetailForm.PnlBase.txtEndTime.PressKeys(System.DateTime.Now.AddHours(1).ToShortTimeString());
+        	calendar.EventDetailForm.PnlBase.Repeat.Click();
+        	cmn.SelectItemDropdown(calendar.EventDetailForm.PnlBase.cmbbxRepeat,"Weekly","Repeat Dropdown");
+        	calendar.weekday=System.DateTime.Now.ToString("ddd");
+        	calendar.EventDetailForm.PnlBase.cbWeekday.Check();
+        	Delay.Seconds(1);
+        	calendar.weekday=System.DateTime.Now.AddDays(1).ToString("ddd");
+        	calendar.EventDetailForm.PnlBase.cbWeekday.Check();
+        	cmn.SelectItemDropdown(calendar.EventDetailForm.PnlBase.cmbbxHolidayRule,"Cancel that occurrence","Holiday Rule Dropdown");
         	calendar.EventDetailForm.btnOK.Click();
         	Delay.Seconds(3);
         	AppointmentOverlapPrompt();
@@ -82,44 +91,44 @@ namespace SmokeTest
         	calendar.MainForm.menuListView.Click();
         	Delay.Seconds(3);
         	cmn.VerifyDataExistsInTable(calendar.MainForm.tblCalendar,data,"Calendar List");
-        	calendar.MainForm.Toolbar.btnToday.Click();
-        	calendar.MainForm.PnlViews.tbCurrentDay.Click();
-        	//calendar.EventDetailForm.btnCancel.Click();
-        	calendar.MainForm.Self.Activate();
-        	string currentDayData =String.Format("Appointment '{0}'",data);
-        	calendar.curdayapptselection=currentDayData;
-        	Ranorex.Cell curdaysource = calendar.MainForm.PnlViews.txtCurrentDayAppt;
-        	string destTime=RoundUpTimeFormat(System.DateTime.Now);
-        	calendar.curdayapptselection=destTime;
-        	DragNDropLibrary.DragAndDrop(curdaysource,calendar.MainForm.PnlViews.txtCurrentDayAppt);
         	
         	
-        }       
-		private string RoundUpTimeFormat(System.DateTime newDate)
-		{
-			System.TimeSpan ts1;
-			int minutes = newDate.Minute;
-			if (minutes > 0 && minutes < 30)
-			{
-			    ts1 = new System.TimeSpan(newDate.Hour +3, 30, 0);
-			}
-			else
-			{
-			    ts1 = new System.TimeSpan(newDate.Hour + 4, 00, 0);
-			}
-			newDate = new System.DateTime(newDate.Year, newDate.Month, newDate.Day, ts1.Hours, ts1.Minutes, newDate.Millisecond);
-			string currentdate = newDate.ToString("MMMM dd, yyyy h:mm tt");
-			return currentdate;
-		}
-
+        	
+        	
+        	calendar.MainForm.Toolbar.btnWeek.Click();
+        	day1=System.DateTime.Now;
+			day2=day1.AddDays(2);
+			strday1=day1.ToString("MMMM d, yyyy");
+			strday2=day2.ToString("MMMM d, yyyy");
+			calendar.curwkday=strday1;
+			calendar.MainForm.PnlViews.shrtDay.Click();
+			calendar.appmtData=data;
+			//calendar.MainForm.PnlViews.txtappointment;
+			Delay.Seconds(2);
+			Ranorex.Text sourceappt=calendar.MainForm.PnlViews.txtappointment;
+			calendar.curwkday=strday2;
+			DragNDropLibrary.DragAndDrop(sourceappt,calendar.MainForm.PnlViews.shrtDay);
+			Delay.Seconds(2);
+        	Validate.Exists(calendar.RepeatingEventDialogForm.SelfInfo,"Repeating Event Exception Dialog is seen");
+			calendar.RepeatingEventDialogForm.Toolbar1.btnThisOne.Click();
+			Delay.Seconds(2);
+			calendar.curwkday=strday2;
+			calendar.MainForm.PnlViews.shrtDay.Click();
+			calendar.appmtData=data;
+			Validate.Exists(calendar.MainForm.PnlViews.txtappointmentInfo,"Appt Moved to a new Date");
+			
+			
+        	
+        	
+        }
+        
+        
         void ITestModule.Run()
         {
             Mouse.DefaultMoveTime = 300;
             Keyboard.DefaultKeyPressTime = 100;
             Delay.SpeedFactor = 1.0;
-            CreateApptDrgNDropWithinSameDay();
-            //Appointment 'Test Data Added 2019-10-22 10:21:34 AM'
-            //October 22, 2019 9:30 PM
+            CreateRepeatedAppointment();
         }
     }
 }

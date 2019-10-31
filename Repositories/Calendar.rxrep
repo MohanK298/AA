@@ -506,6 +506,16 @@ AAAAADmCBQAAAJAjWAAAAAA5ggUAAAAQMwz/B/Pa+j2m8Yn1AAAAAElFTkSuQmCC
 			searchtimeout="30000ms">
 				/form[@controlname='MainForm']/?/?/form[@controlname='CalendarIndexForm']/container[@controlname='menubar_Fill_Panel']/?/?/text[@accessiblename=$listselection]
 			</item>
+			<item
+			addcaps="button,accessible"
+			capname="button"
+			id="53e932d5-271a-4c82-97fd-6d1d6ef83398"
+			name="btnCalendarNew"
+			refimgid="34796875-cc5a-46f5-aeb2-640c5fccfea1"
+			refpath="/form[@controlname='MainForm']/element[@controlname='_ultraExplorerBar']/tree[@accessiblerole='Outline']/button[@accessiblename='Calendar']"
+			searchtimeout="30000ms">
+				/form[@controlname='MainForm']/?/?/tree[@accessiblerole='Outline']/button[@accessiblename='Calendar']
+			</item>
 			<basepath>
 				/form[@controlname='MainForm']
 			</basepath>
@@ -750,6 +760,46 @@ D8zerL8gSEaw7+rFqJ//CkX5CWkHqyZHVzU6AAAAAElFTkSuQmCC
 				refimgid="430bcb43-0536-4e6f-9494-4a67665cf3aa"
 				searchtimeout="30000ms">
 					/form[@controlname='EventDetailForm']/container[@controlname='menubar_Fill_Panel']/container[@controlname='pnlBase']/?/?/container[@controlname='pnlTabs']//container[@controlname='scEmail']/?/?/rawimage
+				</item>
+				<item
+				addcaps="combobox,control,nativewindow"
+				capname="combobox"
+				id="a597aade-0ee2-4496-8a10-0a1694118ac8"
+				name="cmbbxHolidayRule"
+				refimgid="5d356f23-c6f5-4c63-88e1-f124391a2ea1"
+				refpath="/form[@controlname='EventDetailForm']/container[@controlname='menubar_Fill_Panel']/container[@controlname='pnlBase']/container[@controlname='pnlControls']/container[@controlname='pnlTabs']/container[@controlname='pnlViews']/container[@controlname='pnlRepeat']/container[@controlname='pnlRepeatDuration']/combobox[@controlname='cmbHolidayRule']"
+				searchtimeout="30000ms">
+					/form[@controlname='EventDetailForm']/container[@controlname='menubar_Fill_Panel']/container[@controlname='pnlBase']//container[@controlname='pnlRepeat']/?/?/combobox[@controlname='cmbHolidayRule']
+				</item>
+				<item
+				addcaps="checkbox,accessible"
+				capname="checkbox"
+				id="2a32f209-a448-45a4-bd3a-c13b7e124fde"
+				name="cbMilestone"
+				refimgid="c7064ea8-19b7-4ccb-9222-c0e2b9f7b593"
+				refpath="/form[@controlname='EventDetailForm']/container[@controlname='menubar_Fill_Panel']/container[@controlname='pnlBase']/container[@controlname='pnlControls']/container[@controlname='pnlDateTimeCategory']/element[@controlname='uchkIsMilestone']/checkbox[@accessiblename='Milestone']/checkbox[@accessiblename='Milestone']"
+				searchtimeout="30000ms">
+					/form[@controlname='EventDetailForm']/container[@controlname='menubar_Fill_Panel']/container[@controlname='pnlBase']//element[@controlname='uchkIsMilestone']/?/?/checkbox[@accessiblename='Milestone']
+				</item>
+				<item
+				addcaps="checkbox,accessible"
+				capname="checkbox"
+				id="cce2af4e-3f10-4e9b-8c44-6cf2e4f83c12"
+				name="cbShowAdjournments"
+				refimgid="8cbb7e0f-8581-4ccc-a2cc-348f6e393cb4"
+				refpath="/form[@controlname='EventDetailForm']/container[@controlname='menubar_Fill_Panel']/container[@controlname='pnlBase']/container[@controlname='pnlControls']/container[@controlname='pnlDateTimeCategory']/container[@controlname='pnlDurationRight']/element[@controlname='achkShowAdjournments']/checkbox[@accessiblename='Show Adjournments']/checkbox[@accessiblename='Show Adjournments']"
+				searchtimeout="30000ms">
+					/form[@controlname='EventDetailForm']/container[@controlname='menubar_Fill_Panel']/container[@controlname='pnlBase']//container[@controlname='pnlDurationRight']/element[@controlname='achkShowAdjournments']/checkbox[@accessiblename='Show Adjournments']/checkbox[@accessiblename='Show Adjournments']
+				</item>
+				<item
+				addcaps="text,uiautomation,uiautomationvalue"
+				capname="text"
+				id="f93d6931-0772-4f51-af66-c6003bd8eaa6"
+				name="txtStartDate"
+				refimgid="68e773d0-2a63-452c-8e5a-f708522eac56"
+				refpath="/form[@controlname='EventDetailForm']/container[@controlname='menubar_Fill_Panel']/container[@controlname='pnlBase']/container[@controlname='pnlControls']/container[@controlname='pnlDateTimeCategory']/element[@controlname='adteStartDate']/text[@automationid='[Editor] Edit Area']"
+				searchtimeout="30000ms">
+					/form[@controlname='EventDetailForm']/container[@controlname='menubar_Fill_Panel']/container[@controlname='pnlBase']//text[@automationid='[Editor] Edit Area']
 				</item>
 				<basepath>
 					/form[@controlname='EventDetailForm']/container[@controlname='menubar_Fill_Panel']/container[@controlname='pnlBase']
@@ -1327,6 +1377,90 @@ SUVORK5CYII=
 		usecache="True">
 			<basepath>
 				/form[@controlname='ProgressForm']
+			</basepath>
+			<icon>
+				iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACx
+jwv8YQUAAAAJcEhZcwAADsQAAA7EAZUrDhsAAAFlSURBVDhPY6AJeOJjOvORg9p/FOyo/v9xoKUT
+VAlugKERDT921nwLVQoBb3Kj+Z5FOf9/FuP2/1msO3EYpBaIH7vr/Qcb8Oft6//kgFclif/Brnjo
+qPYZKvb/z8tn/z+tWfD/bWspWMHLwrj/r8pT/7/rrfv/dffG//++fwOr+3Hu+P8nPsYTwAY8CbRM
+fGSvCnbev29fwQpwgd9PH/1/N6ERHB5gzSDwyFX3IkjgeZLv/0+rF/z/snPD/4fWCmAND60V/3+Y
+1fP//cxuYABqgcUe2SqBDXge5qoDMcBN9w3MgDdNhf/fTWr+/xCoCKb4XU/t/7fd1Shi4BgJtPSG
+GqBzjhwDnkbaa4ANAIZBBDkGgDXDAMkGAFMmVCsEPHLTO0uKAU+jnYygWhHgeZIPUQY8dFS/BdWC
+Cd405uM14N+/f+egSnGDjyvnxjyyVQYbANL0FmjAm/aKH4+9zVWhSqCAgQEAq9YXqsYCPO8AAAAA
+SUVORK5CYII=
+			</icon>
+		</appfolder>
+		<appfolder
+		addcaps="form,control,nativewindow"
+		capname="form"
+		id="19a2803e-9969-43e8-9cf2-d53ad50a4537"
+		isrooted="True"
+		name="AdjournmentReasonForm"
+		refimgid="8905b54a-9909-42c4-9040-e2134b09dfa8"
+		refpath="/form[@controlname='AdjournmentReasonForm']"
+		searchtimeout="30000ms"
+		usecache="True">
+			<item
+			addcaps="text,accessible"
+			capname="text"
+			id="81af3f16-d89a-41c6-ab23-6468014a5719"
+			name="txtAdjournReason"
+			refimgid="8bd70d2e-90b5-4d07-bd0e-105b38bb2294"
+			refpath="/form[@controlname='AdjournmentReasonForm']/container[@controlname='pnlBase']/container[@controlname='pnlControls']/element[@controlname='uteAdjournmentReason']/text[@controlname='_EmbeddableTextBox']/text[@accessiblerole='Text']"
+			searchtimeout="30000ms">
+				/form[@controlname='AdjournmentReasonForm']/container[@controlname='pnlBase']//text[@controlname='_EmbeddableTextBox']/text[@accessiblerole='Text']
+			</item>
+			<item
+			addcaps="toolbar,accessible"
+			capname="toolbar"
+			id="0cc8496f-0907-469d-ac5a-00b73c1cb304"
+			name="Toolbar"
+			refpath="/form[@controlname='AdjournmentReasonForm']/element[@controlname='_BaseForm_Toolbars_Dock_Area_Bottom']/container[@accessiblename='DockBottom']/toolbar[@accessiblename='Toolbar']"
+			searchtimeout="30000ms">
+				/form[@controlname='AdjournmentReasonForm']/element[@controlname='_BaseForm_Toolbars_Dock_Area_Bottom']/?/?/toolbar[@accessiblename='Toolbar']
+			</item>
+			<folder
+			addcaps="toolbar,accessible"
+			capname="toolbar"
+			id="37441593-c8ff-4205-bbbe-0c74e2f689d8"
+			isrooted="True"
+			name="Toolbar1"
+			refpath="/form[@controlname='AdjournmentReasonForm']/element[@controlname='_BaseForm_Toolbars_Dock_Area_Bottom']/container[@accessiblename='DockBottom']/toolbar[@accessiblename='Toolbar']"
+			searchtimeout="30000ms"
+			usecache="False">
+				<item
+				addcaps="button,accessible"
+				capname="button"
+				id="1d3b9d21-6d1c-44a2-9cd8-814ac96d0e33"
+				name="Cancel"
+				refpath="/form[@controlname='AdjournmentReasonForm']/element[@controlname='_BaseForm_Toolbars_Dock_Area_Bottom']/container[@accessiblename='DockBottom']/toolbar[@accessiblename='Toolbar']/button[@accessiblename='Cancel']"
+				searchtimeout="30000ms">
+					/form[@controlname='AdjournmentReasonForm']//toolbar[@accessiblename='Toolbar']/button[@accessiblename='Cancel']
+				</item>
+				<item
+				addcaps="button,accessible"
+				capname="button"
+				id="4b4e4f79-8434-406c-a013-f94c4b8e188c"
+				name="ButtonOK"
+				refpath="/form[@controlname='AdjournmentReasonForm']/element[@controlname='_BaseForm_Toolbars_Dock_Area_Bottom']/container[@accessiblename='DockBottom']/toolbar[@accessiblename='Toolbar']/button[@accessiblename='OK']"
+				searchtimeout="30000ms">
+					/form[@controlname='AdjournmentReasonForm']//toolbar[@accessiblename='Toolbar']/button[@accessiblename='OK']
+				</item>
+				<item
+				addcaps="unknown,accessible"
+				capname="unknown"
+				id="eac37a54-5fd9-42da-919e-726e248a9ea9"
+				name="None"
+				refpath="/form[@controlname='AdjournmentReasonForm']/element[@controlname='_BaseForm_Toolbars_Dock_Area_Bottom']/container[@accessiblename='DockBottom']/toolbar[@accessiblename='Toolbar']/element[@accessiblename='']"
+				searchtimeout="30000ms">
+					/form[@controlname='AdjournmentReasonForm']//toolbar[@accessiblename='Toolbar']/element[@accessiblename='']
+				</item>
+				<basepath>
+					/form[@controlname='AdjournmentReasonForm']//toolbar[@accessiblename='Toolbar']
+				</basepath>
+			</folder>
+			<basepath>
+				/form[@controlname='AdjournmentReasonForm']
 			</basepath>
 			<icon>
 				iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACx

@@ -332,6 +332,12 @@
     <Compile Include="Modules\CpVerify.cs">
       <id>b3b8a271-4c73-44f6-b5f1-e107a83516d8</id>
     </Compile>
+    <Compile Include="Modules\createAdjrnApptwithMilestone.cs">
+      <id>faec19d3-bc63-40d1-ad36-ed3846c74ab1</id>
+    </Compile>
+    <Compile Include="Modules\createAndDeleteToDo.cs">
+      <id>a13cc26b-2aad-43d4-8bed-1ba4bfcb46c1</id>
+    </Compile>
     <Compile Include="Modules\CreateAppointment.cs">
       <id>fae3e468-5b12-43bf-aabd-c966ed668678</id>
     </Compile>
@@ -340,6 +346,9 @@
     </Compile>
     <Compile Include="Modules\CreateDocument.cs">
       <id>23fc13f5-5d37-40ee-91e0-6267373d9908</id>
+    </Compile>
+    <Compile Include="Modules\createExceptionbyDragnDropInRepAppt.cs">
+      <id>f0a6fe32-1091-4cdf-9e80-5b30b64b9d22</id>
     </Compile>
     <Compile Include="Modules\CreateManyContacts.cs">
       <id>7de44ca0-b301-45bd-ae99-6cb5d6c45bbc</id>

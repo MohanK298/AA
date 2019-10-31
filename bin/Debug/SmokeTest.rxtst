@@ -566,6 +566,12 @@ module]]>
 			id="3354bb10-62fe-479e-9188-98414e24f959"
 			name="Attorney_FileDetails">
 			</testcase>
+			<testmodule
+			id="33e0688d-9109-4665-b7ca-00b39ed19bce"
+			name="createAdjrnApptwithMilestone"
+			ref="ce24fe51-646f-4564-93e3-8ab5367edc20"
+			type="UserCode">
+			</testmodule>
 			<testcase
 			id="341f66fc-768f-4fad-b39c-5baa19ca4fbd"
 			name="Billing">
@@ -616,6 +622,10 @@ module]]>
 			ref="48520123-515d-49d3-945c-12e4d882c59c"
 			type="UserCode">
 			</testmodule>
+			<smartfoldernode
+			id="3b2e6fab-e895-4cf3-bd0a-f93aef1425ae"
+			name="CreateAdjrnApptwithMilestone">
+			</smartfoldernode>
 			<smartfoldernode
 			id="3d587e15-d432-4a12-8531-db56cb59b79f"
 			name="SendDocumentViaEmail">
@@ -925,6 +935,12 @@ which will be used throughout the Smoke Test]]>
 			id="61ef647d-d741-4b78-a075-714a6e661c88"
 			name="AddSummary"
 			ref="ea681289-5f56-4977-b7ad-826657b454eb"
+			type="UserCode">
+			</testmodule>
+			<testmodule
+			id="63f2c82a-d2d5-4d86-b7ea-b18a5172bbdf"
+			name="createExceptionbyDragnDropInRepAppt"
+			ref="dac03c33-2719-4ee3-bad1-9784d331494e"
 			type="UserCode">
 			</testmodule>
 			<testmodule
@@ -1496,6 +1512,10 @@ event]]>
 			id="9c9e0c7c-6641-4e4d-b439-4d25916c0fa2"
 			name="VerifySearchByFullTextDocInIndex">
 			</smartfoldernode>
+			<smartfoldernode
+			id="9eb94e5b-0d1d-4b65-b0ec-298802c6bafa"
+			name="CreateExceptionbyDragnDropInRepAppt">
+			</smartfoldernode>
 			<testmodule
 			id="9ec87489-e267-4573-8632-e52e9d23aa6b"
 			name="VerifyDocuments"
@@ -1539,6 +1559,10 @@ event]]>
 					<![CDATA[Create and Verify bill on the billing file (Multiple 
 Validation)]]>
 				</description>
+			</smartfoldernode>
+			<smartfoldernode
+			id="a144bc81-23a9-4299-9449-215258c0c26c"
+			name="CreatendDeleteToDo">
 			</smartfoldernode>
 			<testmodule
 			id="a2c3271d-cb81-46d7-b146-8ffe1d6f85ca"
@@ -2118,6 +2142,12 @@ directly and create a Bill]]>
 			id="d9b0da9b-e278-4d77-b272-e4bc298e1d08"
 			name="AddNotes"
 			ref="39757aba-2474-4146-a459-bda32520c0da"
+			type="UserCode">
+			</testmodule>
+			<testmodule
+			id="dbf16a2f-7653-4679-b483-b9d27a04bd13"
+			name="createAndDeleteToDo"
+			ref="c4d67e9d-e8dd-4652-bf78-0184c97ff14a"
 			type="UserCode">
 			</testmodule>
 			<testmodule
@@ -3495,6 +3525,30 @@ bill]]>
 							<testmodule
 							id="f5a16d5f-0b38-4475-9415-458c07356c8e"
 							name="testViewNavigation">
+							</testmodule>
+						</smartfoldernode>
+						<smartfoldernode
+						id="a144bc81-23a9-4299-9449-215258c0c26c"
+						name="CreatendDeleteToDo">
+							<testmodule
+							id="dbf16a2f-7653-4679-b483-b9d27a04bd13"
+							name="createAndDeleteToDo">
+							</testmodule>
+						</smartfoldernode>
+						<smartfoldernode
+						id="9eb94e5b-0d1d-4b65-b0ec-298802c6bafa"
+						name="CreateExceptionbyDragnDropInRepAppt">
+							<testmodule
+							id="63f2c82a-d2d5-4d86-b7ea-b18a5172bbdf"
+							name="createExceptionbyDragnDropInRepAppt">
+							</testmodule>
+						</smartfoldernode>
+						<smartfoldernode
+						id="3b2e6fab-e895-4cf3-bd0a-f93aef1425ae"
+						name="CreateAdjrnApptwithMilestone">
+							<testmodule
+							id="33e0688d-9109-4665-b7ca-00b39ed19bce"
+							name="createAdjrnApptwithMilestone">
 							</testmodule>
 						</smartfoldernode>
 					</testcase>

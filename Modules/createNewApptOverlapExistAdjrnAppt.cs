@@ -1,8 +1,8 @@
 ﻿/*
  * Created by Ranorex
  * User: kumar
- * Date: 10/31/2019
- * Time: 4:16 PM
+ * Date: 11/4/2019
+ * Time: 11:41 AM
  * 
  * To change this template use Tools > Options > Coding > Edit standard headers.
  */
@@ -22,17 +22,17 @@ using Ranorex.Core.Testing;
 namespace SmokeTest.Modules
 {
     /// <summary>
-    /// Description of createAdjrnApptwithMilestone.
+    /// Description of createNewApptOverlapExistAdjrnAppt.
     /// </summary>
-    [TestModule("CE24FE51-646F-4564-93E3-8AB5367EDC20", ModuleType.UserCode, 1)]
-    public class createAdjrnApptwithMilestone : ITestModule
+    [TestModule("6CE50DD2-E5C1-4B32-985C-3E7701FF6B7E", ModuleType.UserCode, 1)]
+    public class createNewApptOverlapExistAdjrnAppt : ITestModule
     {
         /// <summary>
         /// Constructs a new instance.
         /// </summary>
         Calendar calendar=Calendar.Instance;
         Common cmn=new Common();
-        public createAdjrnApptwithMilestone()
+        public createNewApptOverlapExistAdjrnAppt()
         {
             // Do not delete - a parameterless constructor is required!
         }
@@ -43,7 +43,7 @@ namespace SmokeTest.Modules
         /// <remarks>You should not call this method directly, instead pass the module
         /// instance to the <see cref="TestModuleRunner.Run(ITestModule)"/> method
         /// that will in turn invoke this method.</remarks>
-        static string rndData=System.DateTime.Now.ToString();
+           static string rndData=System.DateTime.Now.ToString();
 		string data=String.Format("Test Data Added {0}",rndData);
 		string fileName=String.Format("RanorexTestFile {0}",rndData); 
         public void ValidateEventRemainderPopup()
@@ -61,19 +61,19 @@ namespace SmokeTest.Modules
        	}
        }
 		
-		private void CreateAdjrnApptwithMilestone()
+		private void CreateNewApptOverlapExistAdjrnAppt()
         {
 			string new_Data="";
 			string adj_data="";
-			string strday1,strday2;
-			System.DateTime day1,day2;
+			string strtTime=System.DateTime.Now.ToShortTimeString();
+			string endTime=System.DateTime.Now.AddHours(1).ToShortTimeString();
 			calendar.MainForm.Self.Activate();
         	calendar.MainForm.btnCalendar.Click();
         	calendar.MainForm.btnNewAppointment.Click();
         	Delay.Seconds(1);
         	calendar.EventDetailForm.PnlBase.txtAppointmentTitle.PressKeys(data);
-        	calendar.EventDetailForm.PnlBase.txtStartTime.PressKeys(System.DateTime.Now.ToShortTimeString());
-        	calendar.EventDetailForm.PnlBase.txtEndTime.PressKeys(System.DateTime.Now.AddHours(1).ToShortTimeString());
+        	calendar.EventDetailForm.PnlBase.txtStartTime.PressKeys(strtTime);
+        	calendar.EventDetailForm.PnlBase.txtEndTime.PressKeys(endTime);
         	calendar.EventDetailForm.PnlBase.cbMilestone.Check(); 
         	calendar.EventDetailForm.PnlBase.cbShowAdjournments.Check();
         	calendar.EventDetailForm.btnOK.Click();
@@ -88,6 +88,7 @@ namespace SmokeTest.Modules
         	cmn.VerifyDataExistsInTable(calendar.MainForm.tblCalendar,new_Data,"Calendar List");
 			
         	cmn.SelectItemFromTableDblClick(calendar.MainForm.tblCalendar,new_Data,"Calendar List");
+        	calendar.EventDetailForm.PnlBase.txtStartDate.Click();
         	calendar.EventDetailForm.PnlBase.txtStartDate.PressKeys(System.DateTime.Now.AddDays(2).ToShortDateString());
         	calendar.EventDetailForm.btnOK.Click();
         	Validate.Exists(calendar.AdjournmentReasonForm.SelfInfo,"Adjournment Reason Form");
@@ -97,30 +98,24 @@ namespace SmokeTest.Modules
         	calendar.AppointmentOverlapDialog.btnOk.Click();
         	adj_data+="[Adjourned to "+System.DateTime.Now.AddDays(2).ToString("MMM dd, yyyy")+"] "+data;
         	cmn.VerifyDataExistsInTable(calendar.MainForm.tblCalendar,adj_data,"Calendar List");
-        	cmn.SelectItemFromTableDblClick(calendar.MainForm.tblCalendar,adj_data,"Calendar List");
-        	Validate.Attribute(calendar.EventDetailForm.PnlBase.cbMilestoneInfo,"AccessibleValue","Unchecked","Milestone Checkbox unchecked");
-        	Validate.Attribute(calendar.EventDetailForm.PnlBase.cbMilestoneInfo,"AccessibleState","Unavailable","Milestone Checkbox Unavailable");
-        	Validate.Attribute(calendar.EventDetailForm.btnOKInfo,"Enabled","False","Ok Button Disabled");
-        	Validate.Attribute(calendar.EventDetailForm.Toolbar1.btnAvailabilityInfo,"Enabled","False","Availability Button Disabled");
-        	Validate.Attribute(calendar.EventDetailForm.Toolbar1.btnPortalInfo,"Enabled","False","Portal Button Disabled");
-        	Validate.Attribute(calendar.EventDetailForm.Toolbar1.btnRestrictInfo,"Enabled","False","Restrict Button Disabled");
-        	Validate.Attribute(calendar.EventDetailForm.btnDeleteInfo,"Enabled","False","Delete Button Disabled");
-        	Validate.Attribute(calendar.EventDetailForm.Toolbar1.btnDoTimeEntryInfo,"Enabled","True","Time Entry Button Enabled");
-        	Validate.Attribute(calendar.EventDetailForm.Toolbar1.btnPrint,"Enabled","True","Print Button Enabled");
+        	
+        	calendar.MainForm.btnCalendar.Click();
+        	calendar.MainForm.btnNewAppointment.Click();
+        	Delay.Seconds(1);
+        	calendar.EventDetailForm.PnlBase.txtAppointmentTitle.PressKeys(data+"_2");
+        	calendar.EventDetailForm.PnlBase.txtStartTime.PressKeys(strtTime);
+        	calendar.EventDetailForm.PnlBase.txtEndTime.PressKeys(endTime);
+        	calendar.EventDetailForm.btnOK.Click();
+        	Delay.Seconds(3);
+        	AppointmentOverlapPrompt();
+        	ValidateEventRemainderPopup();
+        	cmn.SelectItemFromTableDblClick(calendar.MainForm.tblCalendar,data+"_2","Calendar List");
+        	calendar.EventDetailForm.Toolbar1.btnAvailability.Click();
+        	Delay.Seconds(2);
+        	Validate.Attribute(calendar.PromptForm.txtMsgInfo,"Text","There are currently no conflicts for the scheduling of this Appointment.","No Scheduling Conflict Message");
+        	calendar.PromptForm.btnOK.Click();
         	calendar.EventDetailForm.btnCancel.Click();
-
-        	calendar.MainForm.Toolbar.btnWeek.Click();
-        	day1=System.DateTime.Now;
-			day2=day1.AddDays(2);
-			strday1=day1.ToString("MMMM d, yyyy");
-			strday2=day2.ToString("MMMM d, yyyy");
-			calendar.curwkday=strday2;
-			calendar.MainForm.PnlViews.shrtDay.Click();
-			calendar.appmtData=data;
-			calendar.MainForm.PnlViews.txtappointment.DoubleClick();
-			Validate.Attribute(calendar.EventDetailForm.PnlBase.cbMilestoneInfo,"AccessibleValue","True",String.Format("Milestone Checkbox Checked for Appointment {0}",System.DateTime.Now.AddDays(2).ToShortDateString()));
-			Validate.Attribute(calendar.EventDetailForm.PnlBase.cbMilestoneInfo,"Enabled","True",String.Format("Milestone Checkbox Available for Appointment {0}",System.DateTime.Now.AddDays(2).ToShortDateString()));
-        	calendar.EventDetailForm.btnCancel.Click();
+        	
         	
 		}
         void ITestModule.Run()
@@ -128,7 +123,7 @@ namespace SmokeTest.Modules
             Mouse.DefaultMoveTime = 300;
             Keyboard.DefaultKeyPressTime = 100;
             Delay.SpeedFactor = 1.0;
-            CreateAdjrnApptwithMilestone();
+            CreateNewApptOverlapExistAdjrnAppt();
         }
     }
 }

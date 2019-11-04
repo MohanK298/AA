@@ -9,9 +9,8 @@
       <string>60513a05-eab7-41e7-8c10-e51c735edc2e</string>
       <string>{C1935D58-308E-40C1-B5C3-1132400202E1}</string>
       <string>0edde0ba-5989-4446-bb3a-b15e14e0e1a3</string>
-      <string>a7a60edb-d95d-47f6-95e0-e9e9b65ff68a</string>
     </ArrayOfString>
   </SerializedValue>
-  <ProjectBrowserState value="[Solution SmokeTest[Ranorex Automation Helpers[UserCodeCollections[]]SmokeTest[Modules[Utilities[]]Recordings[]Repositories[]]]]&#xD;&#xA;Solution SmokeTest\SmokeTest\Repositories\Calendar.rxrep&#xD;&#xA;Solution SmokeTest\SmokeTest\Recordings\Recording2.rxrec" />
+  <ProjectBrowserState value="[Solution SmokeTest[Ranorex Automation Helpers[UserCodeCollections[]]SmokeTest[Modules[Utilities[]]Recordings[]Repositories[]]]]&#xD;&#xA;Solution SmokeTest\SmokeTest\Modules\createAdjrnApptwithMilestone.cs&#xD;&#xA;Solution SmokeTest\SmokeTest\Modules\createAdjrnApptwithMilestone.cs" />
   <StartupProject value="{C1935D58-308E-40C1-B5C3-1132400202E1}" />
 </Properties>

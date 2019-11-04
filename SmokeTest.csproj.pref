@@ -1,7 +1,5 @@
 ﻿<Properties>
-  <Array name="active">
-    <Element value="Repositories\Calendar.rxrep" />
-  </Array>
+  <Array name="active" />
   <Array name="bookmarks" />
   <Array name="files">
     <Element value="SmokeTest.rxtst" />
@@ -10,10 +8,9 @@
     <Element value="Repositories\Note.rxrep" />
     <Element value="Modules\CreateManyPhoneCalls.cs" />
     <Element value="Repositories\Calendar.cs" />
-    <Element value="createRedLetterDay.cs" />
-    <Element value="Modules\testViewNavigation.cs" />
     <Element value="Repositories\Calendar.rxrep" />
     <Element value="Modules\createExceptionbyDragnDropInRepAppt.cs" />
+    <Element value="Modules\createAdjrnApptwithMilestone.cs" />
   </Array>
   <Properties name="projectSavedData">
     <Properties name="customTool">

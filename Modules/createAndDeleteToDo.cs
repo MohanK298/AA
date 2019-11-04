@@ -45,22 +45,52 @@ namespace SmokeTest.Modules
         
         static string rndData=System.DateTime.Now.ToString();
 		string data=String.Format("Test ToDo Added {0}",rndData);
+		
+		private void SelectFirstFile()
+       {
+       	if(calendar.FileSelectForm.SelfInfo.Exists(3000))
+       	{
+       		calendar.FileSelectForm.listFirstFoundFile.DoubleClick();
+       	}
+       }
+	   private void CloseFileSelectForm()
+       {
+       	if(calendar.FileSelectForm.SelfInfo.Exists(3000))
+       	{
+       		calendar.FileSelectForm.btnOK.Click();
+       	}
+       }
+		 private void TimeEntryOverlapPrompt()
+       {
+       	if(calendar.PromptForm.SelfInfo.Exists(3000))
+       	{
+       		calendar.PromptForm.btnYes.Click();
+       	}
+       }
 		private void CreatendDeleteToDo()
         {
 			calendar.MainForm.Self.Activate();
-        	calendar.MainForm.btnCalendarNew.Click();
+        	calendar.MainForm.btnCalendar.Click();
         	calendar.MainForm.btnNewAppointment.Click();
         	Delay.Seconds(1);
         	calendar.EventDetailForm.PnlBase.txtAppointmentTitle.PressKeys(data);
         	cmn.SelectItemDropdown(calendar.EventDetailForm.PnlBase.SelectEvent,"To Do","Event Type Dropdown");
         	calendar.EventDetailForm.btnOK.Click();
         	Delay.Seconds(3);
-        	calendar.MainForm.btnCalendarNew.Click();
+        	calendar.MainForm.btnCalendar.Click();
         	calendar.MainForm.btnViewMenu.Click();
         	calendar.MainForm.menuListView.Click();
         	Delay.Seconds(3);
         	cmn.VerifyDataExistsInTable(calendar.MainForm.tblCalendar,data,"Calendar List");
         	cmn.SelectItemFromTableDblClick(calendar.MainForm.tblCalendar,data,"Calendar List");
+        	
+        	calendar.EventDetailForm.Toolbar1.btnDoTimeEntry.Click();
+        	SelectFirstFile();
+        	calendar.TimeEntryDetailsForm.Toolbar1.btnSaveNew.Click();
+        	TimeEntryOverlapPrompt();
+        	CloseFileSelectForm();
+        	calendar.TimeEntryDetailsForm.Toolbar1.btnCancel.Click();
+        	
         	calendar.EventDetailForm.btnDelete.Click();
         	calendar.PromptForm.btnYes.Click();
         	Delay.Seconds(2);

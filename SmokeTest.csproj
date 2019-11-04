@@ -332,6 +332,9 @@
     <Compile Include="Modules\CpVerify.cs">
       <id>b3b8a271-4c73-44f6-b5f1-e107a83516d8</id>
     </Compile>
+    <Compile Include="Modules\createAdjrnApptWithDragnDrop.cs">
+      <id>3983ec9c-1902-4369-b85a-561a41385c34</id>
+    </Compile>
     <Compile Include="Modules\createAdjrnApptwithMilestone.cs">
       <id>faec19d3-bc63-40d1-ad36-ed3846c74ab1</id>
     </Compile>
@@ -364,6 +367,15 @@
     </Compile>
     <Compile Include="Modules\CreateManyTimeEntries.cs">
       <id>1a29c988-ee97-4062-9df5-c3e73ca907ce</id>
+    </Compile>
+    <Compile Include="Modules\createnDeleteMasterAdjrnAppt_All.cs">
+      <id>9e09933f-caae-4b85-96c8-e140f939c9ce</id>
+    </Compile>
+    <Compile Include="Modules\createnDeleteMasterAdjrnAppt_ThisOne.cs">
+      <id>be6455f0-0395-48eb-acbc-653c93e32450</id>
+    </Compile>
+    <Compile Include="Modules\createNewApptOverlapExistAdjrnAppt.cs">
+      <id>3bc9ec62-2150-4aee-bc5e-29e97e20c7aa</id>
     </Compile>
     <Compile Include="Modules\CreateNote.cs">
       <id>e9b91e6d-bee0-4b08-b178-4677c052b9b8</id>

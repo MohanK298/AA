@@ -38,6 +38,8 @@ namespace SmokeTest
 		static string rndData=System.DateTime.Now.ToString();
 		string data=String.Format("Test Data Added {0}",rndData);
 		string fileName=String.Format("RanorexTestFile {0}",rndData);
+		string parentfolder =System.IO.Directory.GetParent(System.IO.Directory.GetCurrentDirectory()).Parent.FullName +"\\DataFiles\\";
+		string shrtFileName="";
         public createApptDocAttached()
         {
             // Do not delete - a parameterless constructor is required!
@@ -60,8 +62,8 @@ namespace SmokeTest
         private void FillDocument()
         {
 			
-        	//localFileName=cmn.createLocalFile();
-        	localFileName="C:\\Users\\Kumar\\Downloads\\RanorexAutomation\\AA Enhanced\\DataFiles\\RanorexTestFile2019-10-23 44026 PM.txt";
+        	localFileName=cmn.createLocalFile();
+        	//localFileName="C:\\Users\\Kumar\\Downloads\\RanorexAutomation\\AA Enhanced\\DataFiles\\RanorexTestFile2019-10-23 44026 PM.txt";
         	doc.DocumentDetail.Self.Activate();
         	doc.DocumentDetail.PnlBase.txtDocumentTitle.PressKeys(fileName);
         	//doc.DocumentDetail.PnlBase.btnDropdownType.Click();
@@ -109,11 +111,13 @@ namespace SmokeTest
 			calendar.EventDetailForm.PnlBase.txtStartTime.PressKeys(System.DateTime.Now.ToShortTimeString());
         	calendar.EventDetailForm.PnlBase.txtEndTime.PressKeys(System.DateTime.Now.AddHours(1).ToShortTimeString());
         	calendar.EventDetailForm.PnlBase.DocumentsEMail.Click();
-        	calendar.EventDetailForm.PnlBase.imgDoc.Click();
+        	calendar.EventDetailForm.PnlBase.btnDoc.Click();
         	calendar.FileSelectForm.listFirstFoundFile.DoubleClick();
         	cmn.SelectItemFromTableDblClick(calendar.DocumentSelectorForm.PnlBase.tbCurrSelection,fileName,"Document Selector Table");
         	calendar.EventDetailForm.btnOK.Click();
         	Delay.Seconds(3);
+        	AppointmentOverlapPrompt();
+        	ValidateEventRemainderPopup();
         	calendar.MainForm.btnCalendar.Click();
         	calendar.MainForm.btnViewMenu.Click();
         	calendar.MainForm.menuListView.Click();
@@ -123,18 +127,23 @@ namespace SmokeTest
         private void ValidateApptInDocument()
         {
         	CreateApptWithDocument();
-        	file.fileName=fileName;
+        	shrtFileName=localFileName.Substring(parentfolder.Length,(localFileName.Length-parentfolder.Length-4));
         	Delay.Seconds(3);
         	file.MainForm.btnFiles.Click();
         	file.MainForm.FilesIndexForm.listFirstFile.DoubleClick();	
         	Delay.Seconds(2);
         	file.FileDetailForm.Documents.Click();
+        	Delay.Seconds(2);
+        	file.fileName=shrtFileName;
+        	Delay.Seconds(2);
         	file.FileDetailForm.lstItemAmicusFile.DoubleClick();
         	file.DocumentDetail.PnlBase.lnkEvents.Click();
         	file.DocumentDetail.PnlBase.btnEventSelection.Click();
         	cmn.VerifyDataExistsInTable(file.EventSelectForm.Panel1.tblSelectedEvents,data,"Events Selected Table");
         	file.EventSelectForm.Toolbar1.btnCancel.Click();
+        	file.DocumentDetail.Toolbar1.btnCancel.Click();
         	file.FileDetailForm.btnSaveClose.Click();
+        	
         }
         
         void ITestModule.Run()

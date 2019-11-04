@@ -1,8 +1,8 @@
 ﻿/*
  * Created by Ranorex
  * User: kumar
- * Date: 10/31/2019
- * Time: 4:16 PM
+ * Date: 11/4/2019
+ * Time: 1:12 PM
  * 
  * To change this template use Tools > Options > Coding > Edit standard headers.
  */
@@ -22,17 +22,17 @@ using Ranorex.Core.Testing;
 namespace SmokeTest.Modules
 {
     /// <summary>
-    /// Description of createAdjrnApptwithMilestone.
+    /// Description of createnDeleteMasterAdjrnAppt_All.
     /// </summary>
-    [TestModule("CE24FE51-646F-4564-93E3-8AB5367EDC20", ModuleType.UserCode, 1)]
-    public class createAdjrnApptwithMilestone : ITestModule
+    [TestModule("EB4E22A4-CDA1-44B3-905F-4CC81364AE0E", ModuleType.UserCode, 1)]
+    public class createnDeleteMasterAdjrnAppt_All : ITestModule
     {
         /// <summary>
         /// Constructs a new instance.
         /// </summary>
         Calendar calendar=Calendar.Instance;
         Common cmn=new Common();
-        public createAdjrnApptwithMilestone()
+        public createnDeleteMasterAdjrnAppt_All()
         {
             // Do not delete - a parameterless constructor is required!
         }
@@ -61,7 +61,7 @@ namespace SmokeTest.Modules
        	}
        }
 		
-		private void CreateAdjrnApptwithMilestone()
+		private void CreatenDeleteMasterAdjrnAppt_All()
         {
 			string new_Data="";
 			string adj_data="";
@@ -88,27 +88,16 @@ namespace SmokeTest.Modules
         	cmn.VerifyDataExistsInTable(calendar.MainForm.tblCalendar,new_Data,"Calendar List");
 			
         	cmn.SelectItemFromTableDblClick(calendar.MainForm.tblCalendar,new_Data,"Calendar List");
+        	calendar.EventDetailForm.PnlBase.txtStartDate.Click();
         	calendar.EventDetailForm.PnlBase.txtStartDate.PressKeys(System.DateTime.Now.AddDays(2).ToShortDateString());
         	calendar.EventDetailForm.btnOK.Click();
         	Validate.Exists(calendar.AdjournmentReasonForm.SelfInfo,"Adjournment Reason Form");
-        	calendar.AdjournmentReasonForm.txtAdjournReason.Click();
         	calendar.AdjournmentReasonForm.txtAdjournReason.PressKeys(String.Format("Moving 2 days from current Day {0}",System.DateTime.Now.ToShortDateString()));
         	calendar.AdjournmentReasonForm.Toolbar1.ButtonOK.Click();
-        	calendar.AppointmentOverlapDialog.btnOk.Click();
+        	AppointmentOverlapPrompt();
         	adj_data+="[Adjourned to "+System.DateTime.Now.AddDays(2).ToString("MMM dd, yyyy")+"] "+data;
         	cmn.VerifyDataExistsInTable(calendar.MainForm.tblCalendar,adj_data,"Calendar List");
-        	cmn.SelectItemFromTableDblClick(calendar.MainForm.tblCalendar,adj_data,"Calendar List");
-        	Validate.Attribute(calendar.EventDetailForm.PnlBase.cbMilestoneInfo,"AccessibleValue","Unchecked","Milestone Checkbox unchecked");
-        	Validate.Attribute(calendar.EventDetailForm.PnlBase.cbMilestoneInfo,"AccessibleState","Unavailable","Milestone Checkbox Unavailable");
-        	Validate.Attribute(calendar.EventDetailForm.btnOKInfo,"Enabled","False","Ok Button Disabled");
-        	Validate.Attribute(calendar.EventDetailForm.Toolbar1.btnAvailabilityInfo,"Enabled","False","Availability Button Disabled");
-        	Validate.Attribute(calendar.EventDetailForm.Toolbar1.btnPortalInfo,"Enabled","False","Portal Button Disabled");
-        	Validate.Attribute(calendar.EventDetailForm.Toolbar1.btnRestrictInfo,"Enabled","False","Restrict Button Disabled");
-        	Validate.Attribute(calendar.EventDetailForm.btnDeleteInfo,"Enabled","False","Delete Button Disabled");
-        	Validate.Attribute(calendar.EventDetailForm.Toolbar1.btnDoTimeEntryInfo,"Enabled","True","Time Entry Button Enabled");
-        	Validate.Attribute(calendar.EventDetailForm.Toolbar1.btnPrint,"Enabled","True","Print Button Enabled");
-        	calendar.EventDetailForm.btnCancel.Click();
-
+        	
         	calendar.MainForm.Toolbar.btnWeek.Click();
         	day1=System.DateTime.Now;
 			day2=day1.AddDays(2);
@@ -118,17 +107,25 @@ namespace SmokeTest.Modules
 			calendar.MainForm.PnlViews.shrtDay.Click();
 			calendar.appmtData=data;
 			calendar.MainForm.PnlViews.txtappointment.DoubleClick();
-			Validate.Attribute(calendar.EventDetailForm.PnlBase.cbMilestoneInfo,"AccessibleValue","True",String.Format("Milestone Checkbox Checked for Appointment {0}",System.DateTime.Now.AddDays(2).ToShortDateString()));
-			Validate.Attribute(calendar.EventDetailForm.PnlBase.cbMilestoneInfo,"Enabled","True",String.Format("Milestone Checkbox Available for Appointment {0}",System.DateTime.Now.AddDays(2).ToShortDateString()));
-        	calendar.EventDetailForm.btnCancel.Click();
-        	
+			calendar.EventDetailForm.btnDelete.Click();
+			calendar.PromptForm.btnYes.Click();
+//			Validate.AttributeContains(calendar.PromptForm.txtMsgInfo,"Text","This Appointment has one or more past Adjournments.","Delete Adjournment Prompt");
+			calendar.PromptForm.Toolbar1.btnAll.Click();
+			Delay.Seconds(2);
+			Validate.NotExists(calendar.MainForm.PnlViews.txtappointmentInfo,String.Format("Master Instance Appt not present for {0}",strday2));
+			calendar.curwkday=strday1;
+			calendar.MainForm.PnlViews.shrtDay.Click();
+			calendar.appmtData=adj_data;
+			Validate.NotExists(calendar.MainForm.PnlViews.txtappointmentInfo,String.Format("Adjournment Instance Appt not present for {0}",strday1));
+			
 		}
+        
         void ITestModule.Run()
         {
             Mouse.DefaultMoveTime = 300;
             Keyboard.DefaultKeyPressTime = 100;
             Delay.SpeedFactor = 1.0;
-            CreateAdjrnApptwithMilestone();
+            CreatenDeleteMasterAdjrnAppt_All();
         }
     }
 }

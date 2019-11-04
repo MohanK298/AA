@@ -604,6 +604,10 @@ module]]>
 			ref="2ba134cf-3728-4d05-be50-d4e5ec0b8c8b"
 			type="UserCode">
 			</testmodule>
+			<smartfoldernode
+			id="3603e041-f535-4d9c-ad69-c45e53b082d1"
+			name="CreateNewApptOverlapExistAdjrnAppt">
+			</smartfoldernode>
 			<testmodule
 			id="3652c65c-e210-4b5e-a247-e4914eeb529c"
 			name="AddToDo"
@@ -1105,6 +1109,10 @@ which will be used throughout the Smoke Test]]>
 			id="67e9bae2-280b-4ca4-8e22-d3573671ec71"
 			name="Calendar">
 			</testcase>
+			<smartfoldernode
+			id="69784dea-f2ba-4174-8e33-8521d722fad9"
+			name="CreatenDeleteMasterAdjrnAppt_All">
+			</smartfoldernode>
 			<testmodule
 			id="6b18d245-7d04-48f8-b6be-41041e111f0f"
 			name="AddDocumentAM"
@@ -1981,6 +1989,12 @@ directly and create a Bill]]>
 				</databinding>
 			</testmodule>
 			<testmodule
+			id="c482a05f-2890-412b-b8a1-3f7408ae6272"
+			name="createAdjrnApptWithDragnDrop"
+			ref="94a93ae6-06e1-4f40-9875-95fcccc2434e"
+			type="UserCode">
+			</testmodule>
+			<testmodule
 			id="c62e505d-1898-4b18-93fb-6bcce2abc026"
 			name="AddTimeEntryAPX"
 			ref="2f867f25-29f5-403b-a71b-d076c0809167"
@@ -2227,10 +2241,22 @@ Page]]>
 			ref="078e3302-ffdd-467b-9d40-945d43ea0afa"
 			type="UserCode">
 			</testmodule>
+			<testmodule
+			id="e2d25de1-e581-4500-8bc5-48eb590d4890"
+			name="createnDeleteMasterAdjrnAppt_All"
+			ref="eb4e22a4-cda1-44b3-905f-4cc81364ae0e"
+			type="UserCode">
+			</testmodule>
 			<smartfoldernode
 			id="e41ee8eb-9dc9-46f3-ac26-ef9b039bcb3f"
 			name="VerifyDocuments">
 			</smartfoldernode>
+			<testmodule
+			id="e4b294e1-af5f-4d37-9b7c-75c245bf372d"
+			name="createNewApptOverlapExistAdjrnAppt"
+			ref="6ce50dd2-e5c1-4b32-985c-3e7701ff6b7e"
+			type="UserCode">
+			</testmodule>
 			<smartfoldernode
 			id="e56a65dc-1f93-4351-a226-b2e4d2b238f3"
 			name="SwitchUserManage">
@@ -2307,6 +2333,10 @@ bill]]>
 					</var>
 				</databinding>
 			</testmodule>
+			<smartfoldernode
+			id="eba13b1a-cf04-406f-94a0-e41df0fcebcf"
+			name="CreateAdjrnApptWithDragnDrop">
+			</smartfoldernode>
 			<testmodule
 			id="ebb53c96-d4d0-46cd-868e-b1346908ede9"
 			name="CreateManyFiles"
@@ -2339,9 +2369,19 @@ bill]]>
 					</var>
 				</databinding>
 			</testmodule>
+			<testmodule
+			id="efbfe7fa-525b-4dd2-bdbe-fccfa695f964"
+			name="createnDeleteMasterAdjrnAppt_ThisOne"
+			ref="bf76562d-fb42-4827-90db-59d832dee937"
+			type="UserCode">
+			</testmodule>
 			<smartfoldernode
 			id="f009e389-eafb-4981-ab14-563dc83060a0"
 			name="Basic_Notes_Module_Validation">
+			</smartfoldernode>
+			<smartfoldernode
+			id="f12fbbbf-777a-42ad-a910-e4e7e4709a8f"
+			name="CreatenDeleteMasterAdjrnAppt_ThisOne">
 			</smartfoldernode>
 			<smartfoldernode
 			datasource="BillData"
@@ -3549,6 +3589,38 @@ bill]]>
 							<testmodule
 							id="33e0688d-9109-4665-b7ca-00b39ed19bce"
 							name="createAdjrnApptwithMilestone">
+							</testmodule>
+						</smartfoldernode>
+						<smartfoldernode
+						id="3603e041-f535-4d9c-ad69-c45e53b082d1"
+						name="CreateNewApptOverlapExistAdjrnAppt">
+							<testmodule
+							id="e4b294e1-af5f-4d37-9b7c-75c245bf372d"
+							name="createNewApptOverlapExistAdjrnAppt">
+							</testmodule>
+						</smartfoldernode>
+						<smartfoldernode
+						id="eba13b1a-cf04-406f-94a0-e41df0fcebcf"
+						name="CreateAdjrnApptWithDragnDrop">
+							<testmodule
+							id="c482a05f-2890-412b-b8a1-3f7408ae6272"
+							name="createAdjrnApptWithDragnDrop">
+							</testmodule>
+						</smartfoldernode>
+						<smartfoldernode
+						id="69784dea-f2ba-4174-8e33-8521d722fad9"
+						name="CreatenDeleteMasterAdjrnAppt_All">
+							<testmodule
+							id="e2d25de1-e581-4500-8bc5-48eb590d4890"
+							name="createnDeleteMasterAdjrnAppt_All">
+							</testmodule>
+						</smartfoldernode>
+						<smartfoldernode
+						id="f12fbbbf-777a-42ad-a910-e4e7e4709a8f"
+						name="CreatenDeleteMasterAdjrnAppt_ThisOne">
+							<testmodule
+							id="efbfe7fa-525b-4dd2-bdbe-fccfa695f964"
+							name="createnDeleteMasterAdjrnAppt_ThisOne">
 							</testmodule>
 						</smartfoldernode>
 					</testcase>

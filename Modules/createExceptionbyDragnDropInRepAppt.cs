@@ -46,8 +46,7 @@ namespace SmokeTest.Modules
         static string rndData=System.DateTime.Now.ToString();
 		string data=String.Format("Test Data Added {0}",rndData);
 		string fileName=String.Format("RanorexTestFile {0}",rndData); 
-		string location="Meeting Room 1";
-          public void ValidateEventRemainderPopup()
+        public void ValidateEventRemainderPopup()
         {
         	if(calendar.EventReminderForm.SelfInfo.Exists(70000))
         	{
@@ -105,6 +104,7 @@ namespace SmokeTest.Modules
 			calendar.appmtData=data;
 			//calendar.MainForm.PnlViews.txtappointment;
 			Delay.Seconds(2);
+
 			Ranorex.Text sourceappt=calendar.MainForm.PnlViews.txtappointment;
 			calendar.curwkday=strday2;
 			DragNDropLibrary.DragAndDrop(sourceappt,calendar.MainForm.PnlViews.shrtDay);

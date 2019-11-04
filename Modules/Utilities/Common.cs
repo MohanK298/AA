@@ -263,7 +263,7 @@ namespace SmokeTest.Modules.Utilities
         
         public string createLocalFile()
         {
-        	string fileName="RanorexTestFile"+System.DateTime.Now.ToString().Replace(":","");
+        	string fileName="RanorexTestFile"+System.DateTime.Now.ToString().Replace(":","").Replace("/","").Replace(" ","");
         	string localFileName;
         	localFileName = System.IO.Directory.GetParent(System.IO.Directory.GetCurrentDirectory()).Parent.FullName +"\\DataFiles\\"+ fileName+ ".txt";
         		//@"C:\Qiao\RanorexTestFile.txt";

@@ -867,7 +867,7 @@ D8zerL8gSEaw7+rFqJ//CkX5CWkHqyZHVzU6AAAAAElFTkSuQmCC
 			name="lstItemAmicusFile"
 			refimgid="2a70c853-c79c-4e02-89e2-e7f3f5b93ed0"
 			searchtimeout="30000ms">
-				/form[@controlname='FileDetailForm']/container[@controlname='panelPicBackground']/container[@controlname='evenSplitPanelModernModeOnly']/container[@controlname='panelRight']/?/?/container[@controlname='DocumentPanel']/?/?/container[@controlname='amicusVFSBrowser1']/container[@controlname='panel2']//listitem[@text=$fileName]
+				/form[@controlname='FileDetailForm']/container[@controlname='panelPicBackground']/container[@controlname='evenSplitPanelModernModeOnly']/container[@controlname='panelRight']/?/?/container[@controlname='DocumentPanel']/?/?/container[@controlname='amicusVFSBrowser1']/container[@controlname='panel2']//listitem[@text&gt;$fileName]
 			</item>
 			<basepath>
 				/form[@controlname='FileDetailForm']
@@ -1194,6 +1194,109 @@ SUVORK5CYII=
 			searchtimeout="30000ms">
 				/form[@controlname='DocumentDetail']//toolbar[@automationid='Toolbar : toolbarBaseDesigner']/button[@automationid='[Toolbar : toolbarBaseDesigner Tools] Tool : TOOLBAR_BUTTON_OK - Index : 8 ']
 			</item>
+			<folder
+			addcaps="toolbar,accessible"
+			capname="toolbar"
+			id="55aa76b6-438a-4ab4-a685-d77a10ed86cf"
+			isrooted="True"
+			name="Toolbar1"
+			refpath="/form[@controlname='DocumentDetail']/container[@controlname='menubar_Fill_Panel']/element[@controlname='_menubar_Fill_Panel_Toolbars_Dock_Area_Bottom']/container[@accessiblename='DockBottom']/toolbar[@accessiblename='Toolbar']"
+			searchtimeout="30000ms"
+			usecache="False">
+				<item
+				addcaps="toolbar,accessible"
+				capname="toolbar"
+				id="c40af80b-4383-453a-a196-fc62ba10cdd2"
+				name="Toolbar"
+				refpath="/form[@controlname='DocumentDetail']/container[@controlname='menubar_Fill_Panel']/element[@controlname='_menubar_Fill_Panel_Toolbars_Dock_Area_Bottom']/container[@accessiblename='DockBottom']/toolbar[@accessiblename='Toolbar']"
+				searchtimeout="30000ms">
+					/form[@controlname='DocumentDetail']/container[@controlname='menubar_Fill_Panel']//toolbar[@accessiblename='Toolbar']
+				</item>
+				<item
+				addcaps="button,accessible"
+				capname="button"
+				id="d83c8963-bc12-419a-a7df-a13d939e3c39"
+				name="btnCancel"
+				refpath="/form[@controlname='DocumentDetail']/container[@controlname='menubar_Fill_Panel']/element[@controlname='_menubar_Fill_Panel_Toolbars_Dock_Area_Bottom']/container[@accessiblename='DockBottom']/toolbar[@accessiblename='Toolbar']/button[@accessiblename='Cancel']"
+				searchtimeout="30000ms">
+					/form[@controlname='DocumentDetail']/container[@controlname='menubar_Fill_Panel']//toolbar[@accessiblename='Toolbar']/button[@accessiblename='Cancel']
+				</item>
+				<item
+				addcaps="button,accessible"
+				capname="button"
+				id="719856fc-21e6-4bed-bfce-7c84e06bf555"
+				name="btnDelete"
+				refpath="/form[@controlname='DocumentDetail']/container[@controlname='menubar_Fill_Panel']/element[@controlname='_menubar_Fill_Panel_Toolbars_Dock_Area_Bottom']/container[@accessiblename='DockBottom']/toolbar[@accessiblename='Toolbar']/button[@accessiblename='Delete']"
+				searchtimeout="30000ms">
+					/form[@controlname='DocumentDetail']/container[@controlname='menubar_Fill_Panel']//toolbar[@accessiblename='Toolbar']/button[@accessiblename='Delete']
+				</item>
+				<item
+				addcaps="button,accessible"
+				capname="button"
+				id="f74b3c56-303c-47fe-a123-22ad6929996f"
+				name="btnDoTimeEntry"
+				refpath="/form[@controlname='DocumentDetail']/container[@controlname='menubar_Fill_Panel']/element[@controlname='_menubar_Fill_Panel_Toolbars_Dock_Area_Bottom']/container[@accessiblename='DockBottom']/toolbar[@accessiblename='Toolbar']/button[@accessiblename='Do Time Entry']"
+				searchtimeout="30000ms">
+					/form[@controlname='DocumentDetail']/container[@controlname='menubar_Fill_Panel']//toolbar[@accessiblename='Toolbar']/button[@accessiblename='Do Time Entry']
+				</item>
+				<item
+				addcaps="button,accessible"
+				capname="button"
+				id="6df126e7-c3e6-4610-91b5-1d9fc040c77e"
+				name="btnNext"
+				refpath="/form[@controlname='DocumentDetail']/container[@controlname='menubar_Fill_Panel']/element[@controlname='_menubar_Fill_Panel_Toolbars_Dock_Area_Bottom']/container[@accessiblename='DockBottom']/toolbar[@accessiblename='Toolbar']/button[@accessiblename='Next']"
+				searchtimeout="30000ms">
+					/form[@controlname='DocumentDetail']/container[@controlname='menubar_Fill_Panel']//toolbar[@accessiblename='Toolbar']/button[@accessiblename='Next']
+				</item>
+				<item
+				addcaps="button,accessible"
+				capname="button"
+				id="84723939-461b-4d2f-96ab-a285ced1ed9d"
+				name="btnOK"
+				refpath="/form[@controlname='DocumentDetail']/container[@controlname='menubar_Fill_Panel']/element[@controlname='_menubar_Fill_Panel_Toolbars_Dock_Area_Bottom']/container[@accessiblename='DockBottom']/toolbar[@accessiblename='Toolbar']/button[@accessiblename='OK']"
+				searchtimeout="30000ms">
+					/form[@controlname='DocumentDetail']/container[@controlname='menubar_Fill_Panel']//toolbar[@accessiblename='Toolbar']/button[@accessiblename='OK']
+				</item>
+				<item
+				addcaps="button,accessible"
+				capname="button"
+				id="ec55cbfc-ef86-47e1-a3da-e035d6ba3888"
+				name="btnPortal"
+				refpath="/form[@controlname='DocumentDetail']/container[@controlname='menubar_Fill_Panel']/element[@controlname='_menubar_Fill_Panel_Toolbars_Dock_Area_Bottom']/container[@accessiblename='DockBottom']/toolbar[@accessiblename='Toolbar']/button[@accessiblename='Portal']"
+				searchtimeout="30000ms">
+					/form[@controlname='DocumentDetail']/container[@controlname='menubar_Fill_Panel']//toolbar[@accessiblename='Toolbar']/button[@accessiblename='Portal']
+				</item>
+				<item
+				addcaps="button,accessible"
+				capname="button"
+				id="def9b2a0-37b9-48ea-a8ad-0fa5041d7803"
+				name="btnPrev"
+				refpath="/form[@controlname='DocumentDetail']/container[@controlname='menubar_Fill_Panel']/element[@controlname='_menubar_Fill_Panel_Toolbars_Dock_Area_Bottom']/container[@accessiblename='DockBottom']/toolbar[@accessiblename='Toolbar']/button[@accessiblename='Prev']"
+				searchtimeout="30000ms">
+					/form[@controlname='DocumentDetail']/container[@controlname='menubar_Fill_Panel']//toolbar[@accessiblename='Toolbar']/button[@accessiblename='Prev']
+				</item>
+				<item
+				addcaps="button,accessible"
+				capname="button"
+				id="f5eaa1d6-7c04-4dce-bcc9-91686f228b19"
+				name="btnPrint"
+				refpath="/form[@controlname='DocumentDetail']/container[@controlname='menubar_Fill_Panel']/element[@controlname='_menubar_Fill_Panel_Toolbars_Dock_Area_Bottom']/container[@accessiblename='DockBottom']/toolbar[@accessiblename='Toolbar']/button[@accessiblename='Print']"
+				searchtimeout="30000ms">
+					/form[@controlname='DocumentDetail']/container[@controlname='menubar_Fill_Panel']//toolbar[@accessiblename='Toolbar']/button[@accessiblename='Print']
+				</item>
+				<item
+				addcaps="button,accessible"
+				capname="button"
+				id="f42c363c-bda3-4b75-b60e-29ea93157b7d"
+				name="btnRestrict"
+				refpath="/form[@controlname='DocumentDetail']/container[@controlname='menubar_Fill_Panel']/element[@controlname='_menubar_Fill_Panel_Toolbars_Dock_Area_Bottom']/container[@accessiblename='DockBottom']/toolbar[@accessiblename='Toolbar']/button[@accessiblename='Restrict']"
+				searchtimeout="30000ms">
+					/form[@controlname='DocumentDetail']/container[@controlname='menubar_Fill_Panel']//toolbar[@accessiblename='Toolbar']/button[@accessiblename='Restrict']
+				</item>
+				<basepath>
+					/form[@controlname='DocumentDetail']/container[@controlname='menubar_Fill_Panel']//toolbar[@accessiblename='Toolbar']
+				</basepath>
+			</folder>
 			<basepath>
 				/form[@controlname='DocumentDetail']
 			</basepath>

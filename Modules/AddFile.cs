@@ -109,7 +109,7 @@ namespace SmokeTest.Modules
         	file.PeopleSelectForm.btnOK.Click();
         	Delay.Seconds(5);
         	//file.NewFileForm.btnNext.Click();
-        	file.NewFileForm.btnNext.Click();
+        	//file.NewFileForm.btnNext.Click();
         	Delay.Seconds(5);
         	file.NewFileForm.btnSaveOpen.Click();
         	

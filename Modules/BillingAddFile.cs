@@ -82,7 +82,10 @@ namespace SmokeTest.Modules
         	file.MainForm.btnFiles.Click();
         	file.MainForm.FilesIndexForm.btnNewFile.Click();
         	
-        	//file.PromptForm.btnNo.Click();
+        	if(file.PromptForm.SelfInfo.Exists(3000))
+        	   {
+        	   	file.PromptForm.btnNo.Click();
+        	   }
         	
         	//Type the file name and other variables
         	file.NewFileForm.txtFileName.TextValue = fileName + time;
@@ -119,6 +122,7 @@ namespace SmokeTest.Modules
         	file.FileDetailForm.btnSaveClose.Click();
         	Delay.Seconds(1);
         	file.PromptForm.ButtonYes.Click();
+        	file.FileDetailForm.btnSaveClose.Click();
         }
         
         void ITestModule.Run()

@@ -37,7 +37,9 @@ namespace SmokeTest.Modules
         public void Perform(){
         	bill.MainForm.FilesIndexForm.listFirstFound.Click(System.Windows.Forms.MouseButtons.Right);
         	bill.AmicusAttorneyXWin.optionBill.Click();
-        	bill.PromptForm.btnYes.Click();
+        	bill.PromptForm.btnOk.Click();
+        	//bill.BillingDetailForm.btnClose.Click();
+        	//bill.PromptForm.btnYes.Click();
         }
         
         void ITestModule.Run()

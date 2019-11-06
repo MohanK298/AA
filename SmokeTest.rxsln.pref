@@ -11,6 +11,6 @@
       <string>0edde0ba-5989-4446-bb3a-b15e14e0e1a3</string>
     </ArrayOfString>
   </SerializedValue>
-  <ProjectBrowserState value="[Solution SmokeTest[Ranorex Automation Helpers[UserCodeCollections[]]SmokeTest[Modules[Utilities[]]Recordings[]Repositories[]]]]&#xD;&#xA;Solution SmokeTest\SmokeTest\Modules\createAdjrnApptwithMilestone.cs&#xD;&#xA;Solution SmokeTest\SmokeTest\Modules\createAdjrnApptwithMilestone.cs" />
+  <ProjectBrowserState value="[Solution SmokeTest[Ranorex Automation Helpers[UserCodeCollections[]]SmokeTest[Modules[Utilities[]]Recordings[]Repositories[]]]]&#xD;&#xA;Solution SmokeTest\SmokeTest\SmokeTest.rxtst&#xD;&#xA;Solution SmokeTest\SmokeTest\createApptDrgNDrpWithinSameDay.cs" />
   <StartupProject value="{C1935D58-308E-40C1-B5C3-1132400202E1}" />
 </Properties>

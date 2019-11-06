@@ -59,7 +59,9 @@ namespace SmokeTest.Modules
 
         public void FindFile(){
         	bill.MainForm.btnFiles.Click();
+        	Delay.Seconds(2);
         	bill.MainForm.FilesIndexForm.btnQuickFind.Click();
+        	Delay.Seconds(2);
         	bill.FindFilesForm.txtFindFile.TextValue = fileName + time;
         	bill.FindFilesForm.btnOK.Click();	
         }

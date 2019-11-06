@@ -192,6 +192,7 @@ namespace SmokeTest.Repositories
             RepoItemInfo _rdbtnclientexpensesInfo;
             RepoItemInfo _rdbtntimefeesInfo;
             RepoItemInfo _menuitemtoolbartoolbartoolstoolInfo;
+            RepoItemInfo _tbltimeentryInfo;
 
             /// <summary>
             /// Creates a new MainForm  folder.
@@ -207,6 +208,7 @@ namespace SmokeTest.Repositories
                 _rdbtnclientexpensesInfo = new RepoItemInfo(this, "rdbtnClientExpenses", "container[@controlname='pLeft']//container[@controltypename='UltraExplorerBarContainerControl' and @instance='0']/?/?/container[@controlname='TimeXtraIndexControlPanelControl']//element[@controlname='aoptShow']/radiobutton[@automationid='[Editor] [valuelist] ValueListItem 1']", 30000, null, "c1f968bd-65dd-45f9-9fc2-e192794a854f");
                 _rdbtntimefeesInfo = new RepoItemInfo(this, "rdbtnTimeFees", "container[@controlname='pLeft']//container[@controltypename='UltraExplorerBarContainerControl' and @instance='0']/?/?/container[@controlname='TimeXtraIndexControlPanelControl']//element[@controlname='aoptShow']/radiobutton[@automationid='[Editor] [valuelist] ValueListItem 0']", 30000, null, "b3feef60-ee5c-4349-9fd1-360d666c6e3e");
                 _menuitemtoolbartoolbartoolstoolInfo = new RepoItemInfo(this, "MenuItemToolbarToolbarToolsTool", "?/?/form[@controlname='TimeXtraIndexForm']//toolbar[@automationid='Toolbar : toolbar']/menuitem[@automationid='[Toolbar : toolbar Tools] Tool : KEY_NEW_TIME_EXPENSE_OPTIONS - Index : 1 ']", 30000, null, "aa781940-1177-4e68-9d83-1ed66e790110");
+                _tbltimeentryInfo = new RepoItemInfo(this, "tblTimeEntry", "?/?/form[@controlname='TimeXtraIndexForm']/container[@controlname='pWholePage']/container[@controlname='pnlWhole']//table[@accessiblename='Band 0']", 30000, null, "7bf33959-f96d-4eba-97f7-18437717743d");
             }
 
             /// <summary>
@@ -422,6 +424,30 @@ namespace SmokeTest.Repositories
                 get
                 {
                     return _menuitemtoolbartoolbartoolstoolInfo;
+                }
+            }
+
+            /// <summary>
+            /// The tblTimeEntry item.
+            /// </summary>
+            [RepositoryItem("7bf33959-f96d-4eba-97f7-18437717743d")]
+            public virtual Ranorex.Table tblTimeEntry
+            {
+                get
+                {
+                    return _tbltimeentryInfo.CreateAdapter<Ranorex.Table>(true);
+                }
+            }
+
+            /// <summary>
+            /// The tblTimeEntry item info.
+            /// </summary>
+            [RepositoryItemInfo("7bf33959-f96d-4eba-97f7-18437717743d")]
+            public virtual RepoItemInfo tblTimeEntryInfo
+            {
+                get
+                {
+                    return _tbltimeentryInfo;
                 }
             }
         }

@@ -1,5 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
-<repository
+﻿<repository
 id="8f0e5ec4-a867-4e62-bdfe-d2f7cda5402e"
 name="BillingTE"
 rxversion="9.0">
@@ -99,6 +98,16 @@ rxversion="9.0">
 			refpath="/form[@controlname='MainForm']/element[@controltypename='MdiClient']/form[@controlname='TimeXtraIndexForm']/container[@controlname='menubar_Fill_Panel']/element[@controlname='_BaseForm_Fill_Panel_Toolbars_Dock_Area_Top']/toolbar[@automationid='Toolbar : toolbar']/menuitem[@automationid='[Toolbar : toolbar Tools] Tool : KEY_NEW_TIME_EXPENSE_OPTIONS - Index : 1 ']"
 			searchtimeout="30000ms">
 				/form[@controlname='MainForm']/?/?/form[@controlname='TimeXtraIndexForm']//toolbar[@automationid='Toolbar : toolbar']/menuitem[@automationid='[Toolbar : toolbar Tools] Tool : KEY_NEW_TIME_EXPENSE_OPTIONS - Index : 1 ']
+			</item>
+			<item
+			addcaps="table,accessible"
+			capname="table"
+			id="7bf33959-f96d-4eba-97f7-18437717743d"
+			name="tblTimeEntry"
+			refimgid="ddfd1acd-69b4-4823-86a6-c91ee7e58f84"
+			refpath="/form[@controlname='MainForm']/element[@controltypename='MdiClient']/form[@controlname='TimeXtraIndexForm']/container[@controlname='pWholePage']/container[@controlname='pnlWhole']/container[@controlname='pUnpostedView']/container[@controlname='pTimeDataGrid']/element[@controlname='atgExpenseList']/table[@accessiblename='Band 0']"
+			searchtimeout="30000ms">
+				/form[@controlname='MainForm']/?/?/form[@controlname='TimeXtraIndexForm']/container[@controlname='pWholePage']/container[@controlname='pnlWhole']//table[@accessiblename='Band 0']
 			</item>
 			<basepath>
 				/form[@controlname='MainForm']

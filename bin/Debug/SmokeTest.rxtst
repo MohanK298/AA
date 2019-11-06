@@ -831,28 +831,10 @@ Attorney side]]>
 			type="UserCode">
 				<databinding>
 					<var
-					dataname="Time"
-					datasourceid="658e3020-1e20-4cb1-b196-89a6ef9ca8a2"
-					variableid="aec9779d-92eb-4ba6-8caf-df4ee77e0618"
-					variablename="time">
-					</var>
-					<var
-					dataname="ActivityDescription"
+					dataname="Quantity"
 					datasourceid="2229067c-b731-4975-a536-6604daa756a2"
-					variableid="1a44f55d-ecb2-441a-925c-c7b93d366bd8"
-					variablename="activityDescription">
-					</var>
-					<var
-					dataname="FileName"
-					datasourceid="2229067c-b731-4975-a536-6604daa756a2"
-					variableid="4e2e0a93-425c-44b3-8a61-3a50431c47d3"
-					variablename="fileName">
-					</var>
-					<var
-					dataname="TimeExpenseDescription"
-					datasourceid="2229067c-b731-4975-a536-6604daa756a2"
-					variableid="2666b24c-e898-4991-8dc8-dcf717d800fb"
-					variablename="timeExpenseDescription">
+					variableid="765b6909-df63-495d-8099-276ce900334c"
+					variablename="quantity">
 					</var>
 					<var
 					dataname="Unit"
@@ -861,10 +843,28 @@ Attorney side]]>
 					variablename="unit">
 					</var>
 					<var
-					dataname="Quantity"
+					dataname="TimeExpenseDescription"
 					datasourceid="2229067c-b731-4975-a536-6604daa756a2"
-					variableid="765b6909-df63-495d-8099-276ce900334c"
-					variablename="quantity">
+					variableid="2666b24c-e898-4991-8dc8-dcf717d800fb"
+					variablename="timeExpenseDescription">
+					</var>
+					<var
+					dataname="FileName"
+					datasourceid="2229067c-b731-4975-a536-6604daa756a2"
+					variableid="4e2e0a93-425c-44b3-8a61-3a50431c47d3"
+					variablename="fileName">
+					</var>
+					<var
+					dataname="ActivityDescription"
+					datasourceid="2229067c-b731-4975-a536-6604daa756a2"
+					variableid="1a44f55d-ecb2-441a-925c-c7b93d366bd8"
+					variablename="activityDescription">
+					</var>
+					<var
+					dataname="Time"
+					datasourceid="658e3020-1e20-4cb1-b196-89a6ef9ca8a2"
+					variableid="aec9779d-92eb-4ba6-8caf-df4ee77e0618"
+					variablename="time">
 					</var>
 				</databinding>
 			</testmodule>
@@ -2460,6 +2460,24 @@ bill]]>
 					datasourceid="2229067c-b731-4975-a536-6604daa756a2"
 					variableid="6d094b3b-c333-4039-a2f9-19f4e147d93a"
 					variablename="editDescriptionTimeEntry">
+					</var>
+					<var
+					dataname="ActivityDescription"
+					datasourceid="2229067c-b731-4975-a536-6604daa756a2"
+					variableid="5a5dc04b-19f2-42db-875f-692a4bd7b0c0"
+					variablename="activityDescription">
+					</var>
+					<var
+					dataname="Time"
+					datasourceid="658e3020-1e20-4cb1-b196-89a6ef9ca8a2"
+					variableid="3e424b5f-ec90-4c79-9d7e-331dcd879e13"
+					variablename="time">
+					</var>
+					<var
+					dataname="FileName"
+					datasourceid="2229067c-b731-4975-a536-6604daa756a2"
+					variableid="d4c4a8c2-2431-40c4-a0b1-a1fc206865b1"
+					variablename="fileName">
 					</var>
 				</databinding>
 			</testmodule>
@@ -4160,6 +4178,51 @@ bill]]>
 	default="TestRun">
 		<testconfiguration
 		name="TestRun">
+			<testcontainer
+			id="019c20d4-d5ca-4cc1-b2d4-d6ba32724a2e">
+			</testcontainer>
+			<testcontainer
+			id="0c9e64c0-68a4-4cdc-91a2-147f5a9ae058">
+			</testcontainer>
+			<testcontainer
+			id="341f66fc-768f-4fad-b39c-5baa19ca4fbd">
+			</testcontainer>
+			<testcontainer
+			id="5350ce73-fef1-45bb-8dc2-a694dac53f7c">
+			</testcontainer>
+			<testcontainer
+			id="658e3020-1e20-4cb1-b196-89a6ef9ca8a2">
+			</testcontainer>
+			<testcontainer
+			id="95ab7eb5-2b1a-47dc-9667-b0e86e945f00">
+			</testcontainer>
+			<testcontainer
+			id="9fc23d85-a310-4b95-b796-1a858db47c20">
+			</testcontainer>
+			<testcontainer
+			id="a11353b5-3294-4eaa-83d3-a0331ed7ef67">
+			</testcontainer>
+			<testcontainer
+			id="a6609dd3-5550-4d0e-8d9f-9279a09d9a32">
+			</testcontainer>
+			<testcontainer
+			id="ab5c5578-5063-4334-b382-bc86ad2db9d3">
+			</testcontainer>
+			<testcontainer
+			id="b2d51e4d-a3b3-459c-b358-6e3ed196c14d">
+			</testcontainer>
+			<testcontainer
+			id="c7f34fde-f3e3-4bc3-b1ce-d2a714048076">
+			</testcontainer>
+			<testcontainer
+			id="cb7d9a72-28d4-40e4-8ba0-8593b79bbc22">
+			</testcontainer>
+			<testcontainer
+			id="e9a55d19-06cb-4062-b9bb-20e1e6ec25d0">
+			</testcontainer>
+			<testcontainer
+			id="f2676856-71ec-4e3b-8ece-85f89f181184">
+			</testcontainer>
 		</testconfiguration>
 	</testconfigurations>
 	<references>

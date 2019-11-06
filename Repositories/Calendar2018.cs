@@ -136,6 +136,7 @@ namespace SmokeTest.Repositories
             RepoItemInfo _neweventbtnInfo;
             RepoItemInfo _maincontentInfo;
             RepoItemInfo _appoinmentmenuitemInfo;
+            RepoItemInfo _tblcalendarInfo;
 
             /// <summary>
             /// Creates a new MainForm  folder.
@@ -150,6 +151,7 @@ namespace SmokeTest.Repositories
                 _neweventbtnInfo = new RepoItemInfo(this, "newEventBtn", "?/?/form[@controlname='CalendarIndexForm']//toolbar[@automationid='Toolbar : toolbar']/button[@name='New']", 30000, null, "19242c5b-dd94-4859-8f48-ab1ab01b2739");
                 _maincontentInfo = new RepoItemInfo(this, "mainContent", "element[@controltypename='MdiClient']", 30000, null, "57366bec-9b2d-4bee-8e21-85ab61afe93a");
                 _appoinmentmenuitemInfo = new RepoItemInfo(this, "appoinmentMenuItem", "form[@processname='AmicusAttorney.XWin' and @controltypename='DropDownForm']/?/?/?/menuitem[@automationid='[To Do''s Items] Menu Item :  - Index : 1 ']", 30000, null, "606b9b55-6c81-4e64-9229-474cd9c3d0ec");
+                _tblcalendarInfo = new RepoItemInfo(this, "tblCalendar", "?/?/form[@controlname='CalendarIndexForm']/container[@controlname='pnlBase']//container[@controlname='pnlLists']/?/?/table[@accessiblename='Band 0']", 30000, true, "88778537-3f3f-4b07-b56a-8181e153a75c");
             }
 
             /// <summary>
@@ -293,6 +295,30 @@ namespace SmokeTest.Repositories
                 get
                 {
                     return _appoinmentmenuitemInfo;
+                }
+            }
+
+            /// <summary>
+            /// The tblCalendar item.
+            /// </summary>
+            [RepositoryItem("88778537-3f3f-4b07-b56a-8181e153a75c")]
+            public virtual Ranorex.Table tblCalendar
+            {
+                get
+                {
+                    return _tblcalendarInfo.CreateAdapter<Ranorex.Table>(true);
+                }
+            }
+
+            /// <summary>
+            /// The tblCalendar item info.
+            /// </summary>
+            [RepositoryItemInfo("88778537-3f3f-4b07-b56a-8181e153a75c")]
+            public virtual RepoItemInfo tblCalendarInfo
+            {
+                get
+                {
+                    return _tblcalendarInfo;
                 }
             }
 

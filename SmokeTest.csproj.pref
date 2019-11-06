@@ -1,16 +1,18 @@
 ﻿<Properties>
-  <Array name="active" />
+  <Array name="active">
+    <Element value="SmokeTest.rxtst" />
+  </Array>
   <Array name="bookmarks" />
   <Array name="files">
-    <Element value="SmokeTest.rxtst" />
-    <Element value="Modules\Utilities\Common.cs" />
-    <Element value="Repositories\Documents.rxrep" />
-    <Element value="Repositories\Note.rxrep" />
-    <Element value="Modules\CreateManyPhoneCalls.cs" />
-    <Element value="Repositories\Calendar.cs" />
+    <Element value="Repositories\Files.rxrep" />
     <Element value="Repositories\Calendar.rxrep" />
-    <Element value="Modules\createExceptionbyDragnDropInRepAppt.cs" />
-    <Element value="Modules\createAdjrnApptwithMilestone.cs" />
+    <Element value="Modules\CreateManyPhoneCalls.cs" />
+    <Element value="Modules\Utilities\Common.cs" />
+    <Element value="SmokeTest.rxtst" />
+    <Element value="Repositories\Calendar2018.rxrep" />
+    <Element value="Modules\BillingAddFile.cs" />
+    <Element value="Modules\BillingEditTimeEntryExpense.cs" />
+    <Element value="Repositories\BillingTE.rxrep" />
   </Array>
   <Properties name="projectSavedData">
     <Properties name="customTool">

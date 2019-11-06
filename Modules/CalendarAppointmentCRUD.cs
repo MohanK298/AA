@@ -13,7 +13,7 @@ using System.Text.RegularExpressions;
 using System.Drawing;
 using System.Threading;
 using WinForms = System.Windows.Forms;
-
+using SmokeTest.Modules.Utilities;
 using Ranorex;
 using Ranorex.Core;
 using Ranorex.Core.Testing;
@@ -31,8 +31,9 @@ namespace SmokeTest.Modules
     	System.DateTime appoinmentStartTime = System.DateTime.Now;
     	Duration customWaitTime = new Duration(3000);
     	Calendar2018 calendarRepo = Calendar2018.Instance;
+    	Common cmn=new Common();
     	Cell appointment;
-    	
+    	string apptName="";
         /// <summary>
         /// Constructs a new instance.
         /// </summary>
@@ -110,6 +111,7 @@ namespace SmokeTest.Modules
         	        	
         	try {
         		appointment = String.Format("?/?/form[@controlname='CalendarIndexForm']/container[@controlname='pnlBase']//table[@accessiblename='Band 0']/row/cell[@text='Ranorex sanity {0}']", appoinmentStartTime.ToString("hh:mm tt"));
+        		apptName=String.Format("Ranorex sanity {0}",appoinmentStartTime.ToString("hh:mm tt"));
         		Report.Info("New Ranorex automation appointment created: " + appointment.Text);
         		
         	} catch (Exception) {
@@ -134,7 +136,8 @@ namespace SmokeTest.Modules
 //        	goToCalendarModule();
         	try {
 //        		appointment.Select();
-        		appointment.DoubleClick();
+        		//appointment.DoubleClick();
+        		cmn.SelectItemFromTableDblClick(calendarRepo.MainForm.tblCalendar,apptName,"Calendar List");
         		calendarRepo.EventDetailForm.SelfInfo.WaitForExists(customWaitTime);
         	} catch (Exception) {
         		Report.Log(ReportLevel.Failure, "Failed to read appointment " + appointment.Text);
@@ -150,8 +153,11 @@ namespace SmokeTest.Modules
         private void updateAppointment()
         {
         	goToCalendarModule();
+        	Delay.Seconds(3);
         	try {
-        		appointment.DoubleClick();
+        	//Report.Info(appointment.Text);
+        		//appointment.DoubleClick();
+        		cmn.SelectItemFromTableDblClick(calendarRepo.MainForm.tblCalendar,apptName,"Calendar List");
         		calendarRepo.EventDetailForm.SelfInfo.WaitForExists(customWaitTime);
         	} catch (Exception) {
         		Report.Log(ReportLevel.Failure, "Update Appointment, failed to open the appointment details.");

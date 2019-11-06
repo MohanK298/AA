@@ -1040,7 +1040,7 @@ D8zerL8gSEaw7+rFqJ//CkX5CWkHqyZHVzU6AAAAAElFTkSuQmCC
 			name="btnSendtoFinal"
 			refimgid="1bb4a2ee-39a9-42bb-ac7e-db9c97d6f2c6"
 			searchtimeout="30000ms">
-				/form[@controlname='BillingDetailForm']//toolbar[@automationid='Toolbar : toolbar']/button[@automationid='[Toolbar : toolbar Tools] Tool : KEY_SINGLE_SEND_TO_FINAL - Index : 3 ']
+				/form[@controlname='BillingDetailForm']/container[@controlname='menubar_Fill_Panel']//toolbar[@accessiblename='Toolbar']/button[@accessiblename='Send to Final']
 			</item>
 			<item
 			addcaps="button,accessible"
@@ -1049,7 +1049,7 @@ D8zerL8gSEaw7+rFqJ//CkX5CWkHqyZHVzU6AAAAAElFTkSuQmCC
 			name="btnClose"
 			refimgid="f187cd42-8d19-4556-9af7-61ee832d6a73"
 			searchtimeout="30000ms">
-				/form[@controlname='BillingDetailForm']//toolbar[@automationid='Toolbar : toolbar']/button[@automationid='[Toolbar : toolbar Tools] Tool : CLOSE - Index : 23 ']
+				/form[@controlname='BillingDetailForm']/container[@controlname='menubar_Fill_Panel']//toolbar[@accessiblename='Toolbar']/button[@accessiblename='Close']
 			</item>
 			<item
 			addcaps="button,accessible"

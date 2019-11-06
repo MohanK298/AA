@@ -13,7 +13,7 @@ using System.Text.RegularExpressions;
 using System.Drawing;
 using System.Threading;
 using WinForms = System.Windows.Forms;
-
+using SmokeTest.Modules.Utilities;
 using Ranorex;
 using Ranorex.Core;
 using Ranorex.Core.Testing;
@@ -27,7 +27,7 @@ namespace SmokeTest.Modules
     {
     	//Repository Variable
     	BillingTE te = BillingTE.Instance;
-    	
+    	Common cmn=new Common();
     	string _activityDescription = "";
     	[TestVariable("1A44F55D-ECB2-441A-925C-C7B93D366BD8")]
     	public string activityDescription
@@ -84,6 +84,7 @@ namespace SmokeTest.Modules
         }
 
         public void PerformTimeEntry(){
+        	string actdes=activityDescription+ time;
         	te.MainForm.btnTimeFeesExpenses.Click();
         	te.MainForm.btnMenuItem.Click();
         	te.AmicusAttorneyXWin.MenuPopup.Click("58;21");
@@ -92,16 +93,20 @@ namespace SmokeTest.Modules
         	te.FindFilesForm.btnOK.Click();
         	
         	te.FileSelectForm.listFirstFound.DoubleClick();
-        	te.TimeEntryDetailsForm.txtActivityDescription.PressKeys(activityDescription);
+        	te.TimeEntryDetailsForm.txtActivityDescription.PressKeys(actdes);
         	te.TimeEntryDetailsForm.btnOK.Click();
         	
         	//Verify
-        	te.MainForm.listFirstTimeEntryFile.DoubleClick();
-        	Report.Success("Create Time Entry for Billing passed");
+        	//te.MainForm.listFirstTimeEntryFile.DoubleClick();
+        	te.MainForm.rdbtnTimeFees.Click();
+        	Delay.Seconds(2);
+        	cmn.SelectItemFromTableDblClick(te.MainForm.tblTimeEntry,fileName + time,"Time Entry Table");
+        	Report.Success(String.Format("Create Time Entry for Billing passed with Activity Description {0}",actdes));
         	te.TimeEntryDetailsForm.btnOK.Click();
         }
         
         public void PerformTimeExpense(){
+        	string actdes=activityDescription+ time;
         	te.MainForm.btnTimeFeesExpenses.Click();
         	te.MainForm.btnMenuItem.Click();
         	te.AmicusAttorneyXWin.MenuPopup.Click("67;38");
@@ -118,14 +123,16 @@ namespace SmokeTest.Modules
         	te.ExpenseXtraDetailsForm.PnlBase.txtUnit.TextValue = unit;
         	Keyboard.Press(System.Windows.Forms.Keys.A | System.Windows.Forms.Keys.Control, 30, Keyboard.DefaultKeyPressTime, 1, true);
             te.ExpenseXtraDetailsForm1.txtDescription.PressKeys("{Back}");
-        	te.ExpenseXtraDetailsForm1.txtDescription.PressKeys(timeExpenseDescription);
+        	te.ExpenseXtraDetailsForm1.txtDescription.PressKeys(actdes);
         	te.ExpenseXtraDetailsForm1.btnOK.Click();
         	
         	//Verify
         	te.MainForm.rdbtnClientExpenses.Click();
-        	te.MainForm.listFirstTimeExpenseFile.DoubleClick();
-        	Report.Success("Create Time Expense for Billing passed");
+        	Delay.Seconds(2);
+        	cmn.SelectItemFromTableDblClick(te.MainForm.tblTimeEntry,fileName + time,"Time Expense Table");
+        	Report.Success(String.Format("Create Time Expense for Billing passed with Activity Description {0}",actdes));
         	te.ExpenseXtraDetailsForm1.btnOK.Click();
+        	
         }
         
         void ITestModule.Run()

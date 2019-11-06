@@ -1,5 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
-<repository
+﻿<repository
 id="209359d6-6243-44a3-a93f-8e5f2276d683"
 name="Calendar2018"
 rxversion="9.0">
@@ -325,6 +324,15 @@ rxversion="9.0">
 			name="appoinmentMenuItem"
 			searchtimeout="30000ms">
 				/form[@controlname='MainForm']/form[@processname='AmicusAttorney.XWin' and @controltypename='DropDownForm']/?/?/?/menuitem[@automationid='[To Do''s Items] Menu Item :  - Index : 1 ']
+			</item>
+			<item
+			capname="table"
+			ensurevisible="True"
+			id="88778537-3f3f-4b07-b56a-8181e153a75c"
+			name="tblCalendar"
+			refimgid="8555acbc-b091-4d58-acce-0838afe56642"
+			searchtimeout="30000ms">
+				/form[@controlname='MainForm']/?/?/form[@controlname='CalendarIndexForm']/container[@controlname='pnlBase']//container[@controlname='pnlLists']/?/?/table[@accessiblename='Band 0']
 			</item>
 			<basepath>
 				/form[@controlname='MainForm']

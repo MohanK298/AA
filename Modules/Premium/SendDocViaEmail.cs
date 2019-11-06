@@ -100,7 +100,7 @@ namespace SmokeTest.Modules.Premium
         	comm.DropDownForm.All_My_Contacts.Click();
         	comm.ContactFullName = "Ranorex Test Email" + testTime;
         	comm.PeopleSelectForm.Contact.DoubleClick();
-        	comm.NewFileForm.btnNext.Click();
+        	//comm.NewFileForm.btnNext.Click();
         	comm.NewFileForm.SaveOpen.Click();
         }
         

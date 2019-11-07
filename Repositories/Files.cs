@@ -334,6 +334,7 @@ namespace SmokeTest.Repositories
             RepoItemInfo _btnfilesInfo;
             RepoItemInfo _fileInfo;
             RepoItemInfo _btnfiles1Info;
+            RepoItemInfo _cmbbxfilestatusInfo;
 
             /// <summary>
             /// Creates a new MainForm  folder.
@@ -345,6 +346,7 @@ namespace SmokeTest.Repositories
                 _btnfilesInfo = new RepoItemInfo(this, "btnFiles", "container[@controlname='pLeft']//tree[@accessiblerole='Outline']/button[@accessiblename='Files']", 30000, null, "a059dd0c-eefd-4172-8a43-291a6a123540");
                 _fileInfo = new RepoItemInfo(this, "File", "container[@controlname='pLeft']//container[@automationid='[Group] 3']", 30000, null, "09cbfbb9-fa8b-4df6-b2e9-6a55116ef460");
                 _btnfiles1Info = new RepoItemInfo(this, "btnFiles1", "?/?/tree[@accessiblerole='Outline']/button[@accessiblename='Files']", 5000, null, "15bfd0c3-eb95-45e1-bd41-8060dc1aa90e");
+                _cmbbxfilestatusInfo = new RepoItemInfo(this, "cmbbxFileStatus", "container[@controlname='pLeft']//container[@controltypename='UltraExplorerBarContainerControl' and @instance='0']/?/?/container[@controlname='FileIndexControlPanelControl']/?/?/container[@controlname='panel1']/combobox[@controlname='acmbAASFileStatus']", 30000, null, "eea97b66-30ca-4966-b4b0-612c57e7bc45");
             }
 
             /// <summary>
@@ -440,6 +442,30 @@ namespace SmokeTest.Repositories
                 get
                 {
                     return _btnfiles1Info;
+                }
+            }
+
+            /// <summary>
+            /// The cmbbxFileStatus item.
+            /// </summary>
+            [RepositoryItem("eea97b66-30ca-4966-b4b0-612c57e7bc45")]
+            public virtual Ranorex.ComboBox cmbbxFileStatus
+            {
+                get
+                {
+                    return _cmbbxfilestatusInfo.CreateAdapter<Ranorex.ComboBox>(true);
+                }
+            }
+
+            /// <summary>
+            /// The cmbbxFileStatus item info.
+            /// </summary>
+            [RepositoryItemInfo("eea97b66-30ca-4966-b4b0-612c57e7bc45")]
+            public virtual RepoItemInfo cmbbxFileStatusInfo
+            {
+                get
+                {
+                    return _cmbbxfilestatusInfo;
                 }
             }
 
@@ -1249,7 +1275,7 @@ namespace SmokeTest.Repositories
                 _relatedfilesInfo = new RepoItemInfo(this, "RelatedFiles", "container[@controlname='panelLeftBase']/?/?/element[@controlname='utreeFacts']/?/?/treeitem[@accessiblename='Related Files']", 30000, null, "9e11cd3b-2e78-410f-8721-17e7d8b29c7a");
                 _btnaddInfo = new RepoItemInfo(this, "BtnAdd", "container[@controlname='panelPicBackground']/container[@controlname='evenSplitPanelModernModeOnly']//container[@controlname='FilePanel']/?/?/picture[@controlname='picListBackgroundPanel']//button[@accessiblename='Add']", 30000, null, "633b8cd3-1471-46f9-b98f-a4e207eda1a6");
                 _shortfilenameInfo = new RepoItemInfo(this, "ShortFileName", "container[@controlname='panelPicBackground']/container[@controlname='evenSplitPanelModernModeOnly']/container[@controlname='panelRight']//row[@accessiblename='Band 0 row 1']/cell[@accessiblename='Short File Name']", 30000, null, "0f43d456-ed49-4478-bfe5-2b719b6de03a");
-                _selectfolderInfo = new RepoItemInfo(this, "SelectFolder", "container[@controlname='panelPicBackground']/container[@controlname='evenSplitPanelModernModeOnly']/container[@controlname='panelRight']/?/?/container[@controlname='DocumentPanel']/?/?/container[@controlname='amicusVFSBrowser1']/container[@controlname='panel2']//listitem[@text~'tutorial']", 30000, null, "6e43b44a-8b60-48fe-b4f5-c2f5b0fd8466");
+                _selectfolderInfo = new RepoItemInfo(this, "SelectFolder", "container[@controlname='panelPicBackground']/container[@controlname='evenSplitPanelModernModeOnly']/container[@controlname='panelRight']/?/?/container[@controlname='DocumentPanel']/?/?/container[@controlname='amicusVFSBrowser1']/container[@controlname='panel2']//listitem[@text~'DataFiles']", 30000, null, "6e43b44a-8b60-48fe-b4f5-c2f5b0fd8466");
                 _eventsInfo = new RepoItemInfo(this, "Events", "container[@controlname='panelLeftBase']/?/?/element[@controlname='utreeFacts']/?/?/treeitem[@accessiblename='Events']", 30000, null, "6342e263-a835-4334-8303-f2a7f668eff8");
                 _allmyeventsInfo = new RepoItemInfo(this, "AllMyEvents", "container[@controlname='panelLeftBase']/?/?/element[@controlname='utreeFacts']/?/?/treeitem[@accessiblename='All My Events']", 30000, null, "09161ab7-51d7-442a-8f68-0e2092617ce9");
                 _btnnewInfo = new RepoItemInfo(this, "btnNew", "container[@controlname='panelPicBackground']/container[@controlname='evenSplitPanelModernModeOnly']//container[@controlname='EventPanel']/?/?/picture[@controlname='picListBackgroundPanel']//button[@accessiblename='New']", 30000, null, "712f6cb5-0feb-4b8a-beea-ad37a5b1d4a2");

@@ -13,7 +13,7 @@ using System.Text.RegularExpressions;
 using System.Drawing;
 using System.Threading;
 using WinForms = System.Windows.Forms;
-
+using SmokeTest.Modules.Utilities;
 using Ranorex;
 using Ranorex.Core;
 using Ranorex.Core.Testing;
@@ -31,13 +31,14 @@ namespace SmokeTest.Modules.Attorney_FileDetails
         //Repository Variable
        Files file = Files.Instance;
        Documents document = Documents.Instance;
-       
+       Common cmn=new Common();
         public AddDocument()
         {
             // Do not delete - a parameterless constructor is required!
         }
 
-        public void Action(){
+        public void Action()
+        {
         	file.MainForm.FilesIndexForm.listFirstFile.DoubleClick();
         	Delay.Seconds(2);
         	file.FileDetailForm.Documents.Click();
@@ -64,7 +65,8 @@ namespace SmokeTest.Modules.Attorney_FileDetails
 //        	Validate.Exists(file.FileDetailForm.DocumentAdded);
 //           	file.FileDetailForm.btnSaveClose.Click();
         	
-        	var localFileName = @"C:\Qiao\RanorexTestFile.txt";
+        	string localFileName="";// = @"C:\Qiao\RanorexTestFile.txt";
+        	localFileName=cmn.createLocalFile();
         	document.DocumentDetail.PnlBase.txtDocumentTitle.PressKeys("Add Document Test");
         	document.DocumentDetail.PnlBase.fileLocationPathText.Element.SetAttributeValue("Text", localFileName);
         	document.DocumentDetail.MenubarFillPanel.txtDocumentSummary.PressKeys("Document Adding Test");
@@ -80,8 +82,8 @@ namespace SmokeTest.Modules.Attorney_FileDetails
         	Validate.Exists(file.FileDetailForm.RanorexTestDoc);
         	file.FileDetailForm.btnSaveClose.Click();
         	
-        	
         }
+        
         void ITestModule.Run()
         {
             Mouse.DefaultMoveTime = 300;

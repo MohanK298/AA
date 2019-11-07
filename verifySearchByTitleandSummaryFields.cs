@@ -63,7 +63,9 @@ namespace SmokeTest
 		private void GenerateDocument()
         {
         	doc.MainForm.Self.Activate();
+        	Delay.Seconds(2);
         	Keyboard.Press(System.Windows.Forms.Keys.X | System.Windows.Forms.Keys.Shift | System.Windows.Forms.Keys.Control, Keyboard.DefaultScanCode, Keyboard.DefaultKeyPressTime, 1, true);
+        	Delay.Seconds(2);
         	Keyboard.Press(System.Windows.Forms.Keys.N | System.Windows.Forms.Keys.Control, Keyboard.DefaultScanCode, Keyboard.DefaultKeyPressTime, 1, true);
         	Validate.Exists(doc.DocumentDetail.SelfInfo,"Document Detail Form Opened");
         }

@@ -243,6 +243,7 @@ namespace SmokeTest.Repositories
             RepoItemInfo _firmsettingsInfo;
             RepoItemInfo _officeInfo;
             RepoItemInfo _statictextInfo;
+            RepoItemInfo _imgfirmsettingsInfo;
 
             /// <summary>
             /// Creates a new MainForm  folder.
@@ -254,6 +255,7 @@ namespace SmokeTest.Repositories
                 _firmsettingsInfo = new RepoItemInfo(this, "FirmSettings", "container[@controlname='pLeft']//container[@controltypename='UltraExplorerBarContainerControl' and @instance='0']/?/?/container[@controlname='OfficeControlPanel']/?/?/container[@controlname='panelParent']/container[@controltypename='Panel' and @instance='10']/?/?/text[@accessiblename='Firm Settings']", 30000, null, "910739be-87a1-483a-95a2-26dd966926db");
                 _officeInfo = new RepoItemInfo(this, "Office", "container[@controlname='pLeft']//container[@automationid='[Group] 0']", 30000, null, "cf89fd98-8bd1-4aa9-98f4-9608b43450e1");
                 _statictextInfo = new RepoItemInfo(this, "StaticText", "?/?/form[@controlname='FirmSettingsForm']//element[@controlname='amlblDocumentLocations']/text[@accessiblerole='StaticText']", 30000, null, "9f1de6c7-6881-4dc0-8c7b-0499e37e5b62");
+                _imgfirmsettingsInfo = new RepoItemInfo(this, "imgFirmSettings", "container[@controlname='pLeft']//container[@controltypename='UltraExplorerBarContainerControl' and @instance='0']/?/?/container[@controlname='OfficeControlPanel']//container[@controltypename='Panel' and @instance='10']/picture[@controltypename='PictureBox']", 30000, null, "15d9ec06-2d1b-49c0-a76f-a6e89c6fb1c4");
             }
 
             /// <summary>
@@ -349,6 +351,30 @@ namespace SmokeTest.Repositories
                 get
                 {
                     return _statictextInfo;
+                }
+            }
+
+            /// <summary>
+            /// The imgFirmSettings item.
+            /// </summary>
+            [RepositoryItem("15d9ec06-2d1b-49c0-a76f-a6e89c6fb1c4")]
+            public virtual Ranorex.Picture imgFirmSettings
+            {
+                get
+                {
+                    return _imgfirmsettingsInfo.CreateAdapter<Ranorex.Picture>(true);
+                }
+            }
+
+            /// <summary>
+            /// The imgFirmSettings item info.
+            /// </summary>
+            [RepositoryItemInfo("15d9ec06-2d1b-49c0-a76f-a6e89c6fb1c4")]
+            public virtual RepoItemInfo imgFirmSettingsInfo
+            {
+                get
+                {
+                    return _imgfirmsettingsInfo;
                 }
             }
 

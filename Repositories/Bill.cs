@@ -290,6 +290,7 @@ namespace SmokeTest.Repositories
             RepoItemInfo _startupopenInfo;
             RepoItemInfo _filesInfo;
             RepoItemInfo _officeInfo;
+            RepoItemInfo _tblhistorylistInfo;
 
             /// <summary>
             /// Creates a new MainForm  folder.
@@ -307,7 +308,7 @@ namespace SmokeTest.Repositories
                 _receivepaymentInfo = new RepoItemInfo(this, "ReceivePayment", "?/?/form[@controlname='BaseIndexForm']/container[@controlname='menubar_Fill_Panel']//toolbar[@accessiblename='Toolbar']/?/?/menuitem[@accessiblename='Receive Payment']", 30000, null, "c95d2da7-e745-4414-94ba-0c387ff5e2e1");
                 _optionplusInfo = new RepoItemInfo(this, "optionPlus", "?/?/form[@controlname='BaseIndexForm']/element[@controlname='agrdBillList']/table/row[1]", 30000, null, "8a66d022-9ccc-4bb2-a82c-4f41c927dd3a");
                 _listpaymentInfo = new RepoItemInfo(this, "listPayment", "?/?/form[@controlname='BaseIndexForm']//row[@accessiblename='Band 0 row 1']/row[@accessiblename='HistoryList row 2']/cell[@accessiblename='Type']", 30000, null, "da05677c-babd-4f68-beba-60fc906a6da2");
-                _paymentInfo = new RepoItemInfo(this, "Payment", "?/?/form[@controlname='BaseIndexForm']/?/?/table[@accessiblename='Band 0']/?/?/table[@accessiblename='HistoryList']/row[@accessiblename='HistoryList row 2']", 30000, null, "e4bdcfdd-f4cf-4922-8d81-9bef4a21bd07");
+                _paymentInfo = new RepoItemInfo(this, "Payment", "?/?/form[@controlname='BaseIndexForm']/?/?/table[@accessiblename='Band 0']/?/?/table[@accessiblename='HistoryList']/row[@accessiblename='HistoryList row 1']", 30000, null, "e4bdcfdd-f4cf-4922-8d81-9bef4a21bd07");
                 _billingInfo = new RepoItemInfo(this, "BILLING", "container[@controlname='pLeft']//container[@name='atcAttorneyOrAccounting']/?/?/text[@accessiblename='BILLING']", 30000, null, "138d559f-1a6d-4c05-83dd-d12f19f4bb2f");
                 _actionsInfo = new RepoItemInfo(this, "Actions", "?/?/toolbar[@automationid='MainMenu : mainMenubar']/menuitem[@name='Actions']", 30000, null, "ab90189d-6919-4a68-9599-67f52e710373");
                 _pctbackgroundInfo = new RepoItemInfo(this, "PctBackground", "?/?/form[@controlname='NavigatorForm']/container[@controlname='roundedPanelControl']/?/?/picture[@controlname='pctBackground']", 30000, null, "bf6003ba-e9b3-47a5-8a06-a13a1cedffe3");
@@ -315,6 +316,7 @@ namespace SmokeTest.Repositories
                 _startupopenInfo = new RepoItemInfo(this, "startUpOpen", "?/?/form[@controlname='NavigatorForm']/container[@controlname='roundedPanelControl']/container[@controlname='amicusGradientPanel1']//combobox[@controlname='acmbStartup']/button[@accessiblename='Open']", 30000, null, "b9b48b3f-f31a-4ffc-82c6-f7a26115785a");
                 _filesInfo = new RepoItemInfo(this, "Files", "container[@controlname='pLeft']//container[@name='Files']", 30000, null, "5f1a990c-84a5-4e4f-acc5-f98a35aad171");
                 _officeInfo = new RepoItemInfo(this, "Office", "container[@controlname='pLeft']//container[@name='Office']", 30000, null, "92ad9151-2298-4ca1-879b-656142118baa");
+                _tblhistorylistInfo = new RepoItemInfo(this, "tblHistoryList", "?/?/form[@controlname='BaseIndexForm']/?/?/table[@accessiblename='Band 0']/?/?/table[@accessiblename='HistoryList']", 30000, null, "209c00a5-3c5b-4558-89b3-ab3df802f3e1");
             }
 
             /// <summary>
@@ -746,6 +748,30 @@ namespace SmokeTest.Repositories
                 get
                 {
                     return _officeInfo;
+                }
+            }
+
+            /// <summary>
+            /// The tblHistoryList item.
+            /// </summary>
+            [RepositoryItem("209c00a5-3c5b-4558-89b3-ab3df802f3e1")]
+            public virtual Ranorex.Table tblHistoryList
+            {
+                get
+                {
+                    return _tblhistorylistInfo.CreateAdapter<Ranorex.Table>(true);
+                }
+            }
+
+            /// <summary>
+            /// The tblHistoryList item info.
+            /// </summary>
+            [RepositoryItemInfo("209c00a5-3c5b-4558-89b3-ab3df802f3e1")]
+            public virtual RepoItemInfo tblHistoryListInfo
+            {
+                get
+                {
+                    return _tblhistorylistInfo;
                 }
             }
 

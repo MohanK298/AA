@@ -13,7 +13,8 @@ using System.Text.RegularExpressions;
 using System.Drawing;
 using System.Threading;
 using WinForms = System.Windows.Forms;
-
+using SmokeTest.Modules.Utilities;
+using SmokeTest.Repositories;
 using Ranorex;
 using Ranorex.Core;
 using Ranorex.Core.Testing;
@@ -27,7 +28,9 @@ namespace SmokeTest.Modules
     public class AddDocumentAM : ITestModule
    {
         //Repository Variable
-       SmokeTest.Repositories.Files file = new SmokeTest.Repositories.Files();
+       Files file = new Files();
+       Documents document = Documents.Instance;
+       Common cmn=new Common();
         public AddDocumentAM()
         {
             // Do not delete - a parameterless constructor is required!
@@ -42,21 +45,35 @@ namespace SmokeTest.Modules
         	Delay.Seconds(1);
         	file.FileDetailForm.btnNewDoc.Click();
         	Delay.Seconds(1);
+        	string localFileName="";// = @"C:\Qiao\RanorexTestFile.txt";
+        	localFileName=cmn.createLocalFile();
         	//file.DocumentDetail.pnlBase.txtDocumentTitle.PressKeys(documentTitle + time);
         	file.DocumentDetail.PnlBase.txtDocumentTitle.PressKeys("Add Document Test");
-        	file.DocumentDetail.PnlBase.ButtonEditorDropdownButton.Click();
-        	Delay.Seconds(1);
-        	file.DropdownSelector.DropdownSelect0.Click();
-        	Delay.Seconds(1);
-        	file.DocumentDetail.PnlBase.btnLocation.Click();
-        	Delay.Seconds(1);
-        	file.OpenFile.ViewWnd.DocumentFolder.Click();
-        	Delay.Seconds(1);
-        	file.OpenFile.ViewWnd.Document.DoubleClick();   	
+//        	file.DocumentDetail.PnlBase.ButtonEditorDropdownButton.Click();
+//        	Delay.Seconds(1);
+//        	file.DropdownSelector.DropdownSelect0.Click();
+//        	Delay.Seconds(1);
+//        	file.DocumentDetail.PnlBase.btnLocation.Click();
+//        	Delay.Seconds(1);
+//        	file.OpenFile.ViewWnd.DocumentFolder.Click();
+//        	Delay.Seconds(1);
+//        	file.OpenFile.ViewWnd.Document.DoubleClick();   	
      		//file.OpenFolder.btnOK.Click();
-        	Delay.Seconds(2);        	
-        	file.DocumentDetail.summaryTxt.PressKeys("Document Adding Test");
-        	file.DocumentDetail.btnOK.Click();  
+        	document.DocumentDetail.PnlBase.fileLocationPathText.Element.SetAttributeValue("Text", localFileName);
+        	document.DocumentDetail.MenubarFillPanel.txtDocumentSummary.PressKeys("Document Adding Test");
+        	document.DocumentDetail.PnlBase.btnFilesAndPeople.Click();
+        	
+//        	//Add file
+//        	document.DocumentDetail.PnlBase.btnAddFile.Click();
+//        	document.FileSelectForm.btnQuickFind.Click();
+//        	document.FindFilesForm.txtFindFile.TextValue = "Add Document Test";
+//        	document.FindFilesForm.btnOK.Click();
+//        	document.FileSelectForm.listFirstFoundFile.DoubleClick();
+        	document.DocumentDetail.MenubarFillPanel.btnOK.Click();
+     		
+     		Delay.Seconds(2);
+//        	file.DocumentDetail.summaryTxt.PressKeys("Document Adding Test");
+//        	file.DocumentDetail.btnOK.Click();  
         	Delay.Seconds(2);
         	Validate.Exists(file.FileDetailForm.DocumentAdded);
            	file.FileDetailForm.btnSaveClose.Click();

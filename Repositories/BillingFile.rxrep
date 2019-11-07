@@ -1,5 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
-<repository
+﻿<repository
 id="c7edb0c1-ad9b-4d1a-85d8-b9c273f7f973"
 name="BillingFile"
 rxversion="9.0">
@@ -70,6 +69,16 @@ rxversion="9.0">
 				refimgid="8d5c7273-189e-4afc-ab33-221bec6701c2"
 				searchtimeout="30000ms">
 					/form[@controlname='MainForm']/?/?/form[@controlname='FilesIndexForm']//tree[@automationid='ColScrollRegion: 0, RowScrollRegion: 0']/row[@automationid='Band Headers']/cell[@automationid='[Column Header] ShortFileName']
+				</item>
+				<item
+				addcaps="table,accessible"
+				capname="table"
+				id="a14b0ce0-68ad-43ef-b0df-ad81cc4b2826"
+				name="tblFiles"
+				refimgid="7742a2ce-130b-401c-bb98-58c81298dda9"
+				refpath="/form[@controlname='MainForm']/element[@controltypename='MdiClient']/form[@controlname='FilesIndexForm']/element[@controlname='udgFileIndex']/table[@accessiblename='Band 0']"
+				searchtimeout="30000ms">
+					/form[@controlname='MainForm']/?/?/form[@controlname='FilesIndexForm']/?/?/table[@accessiblename='Band 0']
 				</item>
 				<basepath>
 					/form[@controlname='MainForm']/?/?/form[@controlname='FilesIndexForm']

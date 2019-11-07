@@ -302,6 +302,7 @@ namespace SmokeTest.Repositories
             RepoItemInfo _btnnewfileInfo;
             RepoItemInfo _btnquickfindInfo;
             RepoItemInfo _filesortInfo;
+            RepoItemInfo _tblfilesInfo;
 
             /// <summary>
             /// Creates a new FilesIndexForm  folder.
@@ -313,6 +314,7 @@ namespace SmokeTest.Repositories
                 _btnnewfileInfo = new RepoItemInfo(this, "btnNewFile", "container[@controlname='menubar_Fill_Panel']//toolbar[@accessiblename='Toolbar']/button[@accessiblename='New']", 30000, null, "67c64f03-ce8c-4697-9f87-12e510451c1f");
                 _btnquickfindInfo = new RepoItemInfo(this, "btnQuickFind", "container[@controlname='menubar_Fill_Panel']//toolbar[@accessiblename='Toolbar']/button[@accessiblename='QuickFind']", 30000, null, "bf14625f-916d-4379-a342-b908bc512592");
                 _filesortInfo = new RepoItemInfo(this, "FileSort", ".//tree[@automationid='ColScrollRegion: 0, RowScrollRegion: 0']/row[@automationid='Band Headers']/cell[@automationid='[Column Header] ShortFileName']", 30000, null, "a0fed64a-dbb5-4196-a4b4-3ca44d0350a9");
+                _tblfilesInfo = new RepoItemInfo(this, "tblFiles", "?/?/table[@accessiblename='Band 0']", 30000, null, "a14b0ce0-68ad-43ef-b0df-ad81cc4b2826");
             }
 
             /// <summary>
@@ -432,6 +434,30 @@ namespace SmokeTest.Repositories
                 get
                 {
                     return _filesortInfo;
+                }
+            }
+
+            /// <summary>
+            /// The tblFiles item.
+            /// </summary>
+            [RepositoryItem("a14b0ce0-68ad-43ef-b0df-ad81cc4b2826")]
+            public virtual Ranorex.Table tblFiles
+            {
+                get
+                {
+                    return _tblfilesInfo.CreateAdapter<Ranorex.Table>(true);
+                }
+            }
+
+            /// <summary>
+            /// The tblFiles item info.
+            /// </summary>
+            [RepositoryItemInfo("a14b0ce0-68ad-43ef-b0df-ad81cc4b2826")]
+            public virtual RepoItemInfo tblFilesInfo
+            {
+                get
+                {
+                    return _tblfilesInfo;
                 }
             }
         }

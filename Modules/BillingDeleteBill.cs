@@ -13,7 +13,7 @@ using System.Text.RegularExpressions;
 using System.Drawing;
 using System.Threading;
 using WinForms = System.Windows.Forms;
-
+using SmokeTest.Modules.Utilities;
 using Ranorex;
 using Ranorex.Core;
 using Ranorex.Core.Testing;
@@ -27,7 +27,7 @@ namespace SmokeTest.Modules
     {
         //Repository Variable
         Bill bill = Bill.Instance;
-        
+        Common cmn=new Common();
         public BillingDeleteBill()
         {
             // Do not delete - a parameterless constructor is required!
@@ -37,22 +37,24 @@ namespace SmokeTest.Modules
         {
         	bill.MainForm.optionPlus.Click("8;11");
         	
-        	bill.MainForm.Payment.Click(System.Windows.Forms.MouseButtons.Right);
+        	cmn.OpenContextMenuItemFromTable(bill.MainForm.tblHistoryList,"Payment","History List Table");
+        	//bill.MainForm.Payment.Click(System.Windows.Forms.MouseButtons.Right);
            	bill.AmicusAttorneyXWin.optionDelete.Click();
             bill.PromptForm.btnYes.Click();
             
         	bill.MainForm.optionPlus.Click("8;11");
             try{
-        	bill.MainForm.listPayment.Click(System.Windows.Forms.MouseButtons.Right, "159;15");
+        	cmn.OpenContextMenuItemFromTable(bill.MainForm.tblHistoryList,"Bill","History List Table");
+        		//bill.MainForm.listPayment.Click(System.Windows.Forms.MouseButtons.Right, "159;15");
             bill.AmicusAttorneyXWin.optionDelete.Click();
             bill.PromptForm.btnYes.Click();	
         	} catch(Exception ex){
         		Report.Log(ReportLevel.Warn, "Module", "(Optional Action) " + ex.Message);
         	}
             
-            bill.MainForm.optionPlus.Click(System.Windows.Forms.MouseButtons.Right);
-            bill.AmicusAttorneyXWin.optionDelete.Click();
-            bill.PromptForm.btnYes.Click();
+//            bill.MainForm.optionPlus.Click(System.Windows.Forms.MouseButtons.Right);
+//            bill.AmicusAttorneyXWin.optionDelete.Click();
+//            bill.PromptForm.btnYes.Click();
         }
         
         void ITestModule.Run()

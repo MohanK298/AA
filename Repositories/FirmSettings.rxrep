@@ -134,6 +134,16 @@ SUVORK5CYII=
 					/form[@controlname='MainForm']/?/?/form[@controlname='FirmSettingsForm']
 				</basepath>
 			</folder>
+			<item
+			addcaps="picture,control,nativewindow"
+			capname="picture"
+			id="15d9ec06-2d1b-49c0-a76f-a6e89c6fb1c4"
+			name="imgFirmSettings"
+			refimgid="f11d9f09-6c45-49ae-b81f-64518d9950d9"
+			refpath="/form[@controlname='MainForm']/container[@controlname='pLeft']/container[@caption='' and @controltypename='Panel' and @instance='1']/element[@controlname='_ultraExplorerBar']/container[@caption='' and @controltypename='UltraExplorerBarContainerControl' and @instance='0']/container[@controlname='controlPanelWrapper']/container[@controlname='OfficeControlPanel']/container[@controlname='sSCMenu']/container[@controlname='panelParent']/container[@caption='' and @controltypename='Panel' and @instance='10']/picture[@controltypename='PictureBox']"
+			searchtimeout="30000ms">
+				/form[@controlname='MainForm']/container[@controlname='pLeft']//container[@controltypename='UltraExplorerBarContainerControl' and @instance='0']/?/?/container[@controlname='OfficeControlPanel']//container[@controltypename='Panel' and @instance='10']/picture[@controltypename='PictureBox']
+			</item>
 			<basepath>
 				/form[@controlname='MainForm']
 			</basepath>

@@ -13,7 +13,7 @@ using System.Text.RegularExpressions;
 using System.Drawing;
 using System.Threading;
 using WinForms = System.Windows.Forms;
-
+using SmokeTest.Modules.Utilities;
 using Ranorex;
 using Ranorex.Core;
 using Ranorex.Core.Testing;
@@ -27,7 +27,7 @@ namespace SmokeTest.Modules
     {
     	//Repository Variable
     	BillingFile file = BillingFile.Instance;
-    	
+    	Common cmn=new Common();
     	//Variables
     	string _time = "";
     	[TestVariable("6193B8F1-1EEA-4693-866C-25439B548AA0")]
@@ -72,8 +72,8 @@ namespace SmokeTest.Modules
         public void FindFile(){
         	//Find file
         	file.MainForm.FilesIndexForm.btnQuickFind.Click();
-        	//file.FindFilesForm.txtFindFile.TextValue = fileName + time;
-        	file.FindFilesForm.txtFindFile.TextValue = fileName;
+        	file.FindFilesForm.txtFindFile.TextValue = fileName + time;
+        	//file.FindFilesForm.txtFindFile.TextValue = fileName;
         	file.FindFilesForm.btnOK.Click();
         }
         
@@ -104,9 +104,10 @@ namespace SmokeTest.Modules
         	file.NewFileForm.btnSaveOpen.Click();
         	
         	FindFile();
-        	
+        	Delay.Seconds(2);
         	//Verify File
-        	file.MainForm.FilesIndexForm.listFirstFile.DoubleClick();
+        	cmn.SelectItemFromTableDblClick(file.MainForm.FilesIndexForm.tblFiles,fileName + time,"File List Table");
+        	//file.MainForm.FilesIndexForm.listFirstFile.DoubleClick();
         	Validate.Equals(file.FileDetailForm.titlebarFileDetail.Text, fileName + time + "1");
         	Delay.Seconds(3);
         	
@@ -122,7 +123,7 @@ namespace SmokeTest.Modules
         	file.FileDetailForm.btnSaveClose.Click();
         	Delay.Seconds(1);
         	file.PromptForm.ButtonYes.Click();
-        	file.FileDetailForm.btnSaveClose.Click();
+//        	file.FileDetailForm.btnSaveClose.Click();
         }
         
         void ITestModule.Run()

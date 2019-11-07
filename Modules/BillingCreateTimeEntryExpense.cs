@@ -101,7 +101,7 @@ namespace SmokeTest.Modules
         	te.MainForm.rdbtnTimeFees.Click();
         	Delay.Seconds(2);
         	cmn.SelectItemFromTableDblClick(te.MainForm.tblTimeEntry,fileName + time,"Time Entry Table");
-        	Report.Success(String.Format("Create Time Entry for Billing passed with Activity Description {0}",actdes));
+        	//Report.Success(String.Format("Create Time Entry for Billing passed with Activity Description {0}",actdes));
         	te.TimeEntryDetailsForm.btnOK.Click();
         }
         
@@ -130,7 +130,7 @@ namespace SmokeTest.Modules
         	te.MainForm.rdbtnClientExpenses.Click();
         	Delay.Seconds(2);
         	cmn.SelectItemFromTableDblClick(te.MainForm.tblTimeEntry,fileName + time,"Time Expense Table");
-        	Report.Success(String.Format("Create Time Expense for Billing passed with Activity Description {0}",actdes));
+        //	Report.Success(String.Format("Create Time Expense for Billing passed with Activity Description {0}",actdes));
         	te.ExpenseXtraDetailsForm1.btnOK.Click();
         	
         }

@@ -111,12 +111,12 @@ namespace SmokeTest.Modules
         	file.FileDetailForm.Accounting.Click();
         	Delay.Seconds(2);
         	
-        	file.FileDetailForm.clientID.PressKeys("001");
-        	file.FileDetailForm.matterID.PressKeys("002");
+        	//file.FileDetailForm.clientID.PressKeys("001");
+        	//file.FileDetailForm.matterID.PressKeys("002");
         	//file.FileDetailForm.clientID.TextValue = time.TrimEnd('3');
         	//file.FileDetailForm.matterID.TextValue = time.TrimStart('2');
-        	//file.FileDetailForm.clientID.TextValue = (time.Equals("")) ? System.DateTime.Now.ToString() : time.TrimEnd('3');
-        	//file.FileDetailForm.matterID.TextValue = (time.Equals("")) ? System.DateTime.Now.ToString() : time.TrimStart('2');
+        	file.FileDetailForm.clientID.TextValue = (time.Equals("")) ? System.DateTime.Now.ToString() : time.TrimEnd('3');
+        	file.FileDetailForm.matterID.TextValue = (time.Equals("")) ? System.DateTime.Now.ToString() : time.TrimStart('2');
         	
         	Delay.Seconds(1);
         	file.FileDetailForm.btnSaveClose.Click();

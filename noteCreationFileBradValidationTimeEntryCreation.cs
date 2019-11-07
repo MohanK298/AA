@@ -74,6 +74,9 @@ namespace SmokeTest
         	
         	Delay.Seconds(3);
         	file.MainForm.btnFiles.Click();
+        	Delay.Seconds(2);
+        	cmn.SelectItemDropdown(file.MainForm.cmbbxFileStatus,"All","File Status");
+        	Delay.Seconds(1);
         	file.MainForm.FilesIndexForm.listFirstFile.DoubleClick();
         	file.FileDetailForm.Notes.Click();
         	file.FileDetailForm.MyNotes.Click();

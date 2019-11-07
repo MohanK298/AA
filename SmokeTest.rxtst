@@ -1536,6 +1536,7 @@ event]]>
 			name="BillFileAPX">
 			</smartfoldernode>
 			<smartfoldernode
+			datasource="BillTEData"
 			id="9fc23d85-a310-4b95-b796-1a858db47c20"
 			name="BillingDeleteTimeEntryExpense">
 				<description>
@@ -2100,6 +2101,20 @@ directly and create a Bill]]>
 			name="BillingDeleteTimeEntryExpense"
 			ref="3df4173d-e05a-4b4d-a908-d7912e0d4190"
 			type="UserCode">
+				<databinding>
+					<var
+					dataname="FileName"
+					datasourceid="2229067c-b731-4975-a536-6604daa756a2"
+					variableid="ff1bf688-fd6b-4f61-8534-a37820c4e5a0"
+					variablename="fileName">
+					</var>
+					<var
+					dataname="Time"
+					datasourceid="658e3020-1e20-4cb1-b196-89a6ef9ca8a2"
+					variableid="de994c62-f9cf-4ec2-901c-9b494fa57427"
+					variablename="time">
+					</var>
+				</databinding>
 			</testmodule>
 			<testmodule
 			id="d53ec0b4-ad33-4a79-8890-b61f4a506f23"
@@ -2585,16 +2600,10 @@ bill]]>
 			type="UserCode">
 				<databinding>
 					<var
-					dataname="Time"
-					datasourceid="658e3020-1e20-4cb1-b196-89a6ef9ca8a2"
-					variableid="6193b8f1-1eea-4693-866c-25439b548aa0"
-					variablename="time">
-					</var>
-					<var
-					dataname="LastName"
+					dataname="FileName"
 					datasourceid="30ac79c4-690b-4117-acc1-d8ab98e520a9"
-					variableid="eeab8051-d07d-447a-972f-314eab0ecd9c"
-					variablename="lastName">
+					variableid="dde10115-729e-4144-aac6-425eaf372517"
+					variablename="fileName">
 					</var>
 					<var
 					dataname="FirstName"
@@ -2603,10 +2612,16 @@ bill]]>
 					variablename="firstName">
 					</var>
 					<var
-					dataname="FileName"
+					dataname="LastName"
 					datasourceid="30ac79c4-690b-4117-acc1-d8ab98e520a9"
-					variableid="dde10115-729e-4144-aac6-425eaf372517"
-					variablename="fileName">
+					variableid="eeab8051-d07d-447a-972f-314eab0ecd9c"
+					variablename="lastName">
+					</var>
+					<var
+					dataname="Time"
+					datasourceid="658e3020-1e20-4cb1-b196-89a6ef9ca8a2"
+					variableid="6193b8f1-1eea-4693-866c-25439b548aa0"
+					variablename="time">
 					</var>
 				</databinding>
 			</testmodule>
@@ -4179,49 +4194,19 @@ bill]]>
 		<testconfiguration
 		name="TestRun">
 			<testcontainer
-			id="019c20d4-d5ca-4cc1-b2d4-d6ba32724a2e">
+			id="0eb91bf1-6a6d-403e-a327-77532be52941">
 			</testcontainer>
 			<testcontainer
-			id="0c9e64c0-68a4-4cdc-91a2-147f5a9ae058">
-			</testcontainer>
-			<testcontainer
-			id="341f66fc-768f-4fad-b39c-5baa19ca4fbd">
-			</testcontainer>
-			<testcontainer
-			id="5350ce73-fef1-45bb-8dc2-a694dac53f7c">
+			id="28b86733-59a2-4365-a7d5-24ca2f0e5982">
 			</testcontainer>
 			<testcontainer
 			id="658e3020-1e20-4cb1-b196-89a6ef9ca8a2">
 			</testcontainer>
 			<testcontainer
-			id="95ab7eb5-2b1a-47dc-9667-b0e86e945f00">
-			</testcontainer>
-			<testcontainer
-			id="9fc23d85-a310-4b95-b796-1a858db47c20">
-			</testcontainer>
-			<testcontainer
-			id="a11353b5-3294-4eaa-83d3-a0331ed7ef67">
-			</testcontainer>
-			<testcontainer
-			id="a6609dd3-5550-4d0e-8d9f-9279a09d9a32">
-			</testcontainer>
-			<testcontainer
-			id="ab5c5578-5063-4334-b382-bc86ad2db9d3">
-			</testcontainer>
-			<testcontainer
-			id="b2d51e4d-a3b3-459c-b358-6e3ed196c14d">
-			</testcontainer>
-			<testcontainer
-			id="c7f34fde-f3e3-4bc3-b1ce-d2a714048076">
+			id="9c9e0c7c-6641-4e4d-b439-4d25916c0fa2">
 			</testcontainer>
 			<testcontainer
 			id="cb7d9a72-28d4-40e4-8ba0-8593b79bbc22">
-			</testcontainer>
-			<testcontainer
-			id="e9a55d19-06cb-4062-b9bb-20e1e6ec25d0">
-			</testcontainer>
-			<testcontainer
-			id="f2676856-71ec-4e3b-8ece-85f89f181184">
 			</testcontainer>
 		</testconfiguration>
 	</testconfigurations>

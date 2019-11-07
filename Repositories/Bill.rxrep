@@ -203,7 +203,7 @@ rxversion="9.0">
 			name="Payment"
 			refimgid="8121c7da-c9e9-4285-be24-42fba29753ad"
 			searchtimeout="30000ms">
-				/form[@controlname='MainForm']/?/?/form[@controlname='BaseIndexForm']/?/?/table[@accessiblename='Band 0']/?/?/table[@accessiblename='HistoryList']/row[@accessiblename='HistoryList row 2']
+				/form[@controlname='MainForm']/?/?/form[@controlname='BaseIndexForm']/?/?/table[@accessiblename='Band 0']/?/?/table[@accessiblename='HistoryList']/row[@accessiblename='HistoryList row 1']
 			</item>
 			<item
 			addcaps="text,accessible"
@@ -268,6 +268,16 @@ rxversion="9.0">
 			refimgid="ec2536bf-ab14-4b4f-8f54-6aaac8f40638"
 			searchtimeout="30000ms">
 				/form[@controlname='MainForm']/container[@controlname='pLeft']//container[@name='Office']
+			</item>
+			<item
+			addcaps="table,accessible"
+			capname="table"
+			id="209c00a5-3c5b-4558-89b3-ab3df802f3e1"
+			name="tblHistoryList"
+			refimgid="12817a1c-6c9e-4c7a-ab48-595853c448fd"
+			refpath="/form[@controlname='MainForm']/element[@controltypename='MdiClient']/form[@controlname='BaseIndexForm']/element[@controlname='agrdBillList']/table[@accessiblename='Band 0']/row[@accessiblename='Band 0 row 1']/table[@accessiblename='HistoryList']"
+			searchtimeout="30000ms">
+				/form[@controlname='MainForm']/?/?/form[@controlname='BaseIndexForm']/?/?/table[@accessiblename='Band 0']/?/?/table[@accessiblename='HistoryList']
 			</item>
 			<basepath>
 				/form[@controlname='MainForm']

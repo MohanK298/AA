@@ -183,12 +183,6 @@ Module]]>
 			name="ValidateDocumentDetailButtons">
 			</smartfoldernode>
 			<testmodule
-			id="1027f6cf-5d31-41a6-8d7e-6aa852eef1e0"
-			name="createApptWithEmailAlert"
-			ref="4be38324-eac6-4d99-a2b1-718844eead53"
-			type="UserCode">
-			</testmodule>
-			<testmodule
 			id="12fdb4cf-af88-4da5-a4b2-f4653555c69e"
 			name="DeleteTask"
 			ref="d46adf6e-82f2-4abb-aa65-df691675a923"
@@ -2625,10 +2619,6 @@ bill]]>
 					</var>
 				</databinding>
 			</testmodule>
-			<smartfoldernode
-			id="fd873d91-350c-4a3a-bf15-754ba1c009e1"
-			name="CreateApptWithRemainderAlert">
-			</smartfoldernode>
 			<teardown
 			id="fdf78db1-a734-47ba-af26-4c88090b4cc0"
 			name="teardown1">
@@ -3366,18 +3356,6 @@ bill]]>
 					name="Import_Fees_&amp;_Expenses">
 					</smartfoldernode>
 					<testcase
-					id="f999b233-305c-4e9e-a5e8-bd5b49a34123"
-					name="Logout">
-						<testmodule
-						id="dc7acbd7-2908-42b2-879a-7f8e9d00cb18"
-						name="Logout">
-						</testmodule>
-						<teardown
-						id="fdf78db1-a734-47ba-af26-4c88090b4cc0"
-						name="teardown1">
-						</teardown>
-					</testcase>
-					<testcase
 					id="aeb7dc97-d19f-4b3e-885e-afb028bb27b0"
 					name="Notes_Module">
 						<smartfoldernode
@@ -3569,14 +3547,6 @@ bill]]>
 							</testmodule>
 						</smartfoldernode>
 						<smartfoldernode
-						id="fd873d91-350c-4a3a-bf15-754ba1c009e1"
-						name="CreateApptWithRemainderAlert">
-							<testmodule
-							id="1027f6cf-5d31-41a6-8d7e-6aa852eef1e0"
-							name="createApptWithEmailAlert">
-							</testmodule>
-						</smartfoldernode>
-						<smartfoldernode
 						id="8415e0b4-3c9d-48b5-9028-1adabd0000b2"
 						name="CreateRedLetterDayWithDragNDropWeekly">
 							<testmodule
@@ -3656,6 +3626,18 @@ bill]]>
 							name="createnDeleteMasterAdjrnAppt_ThisOne">
 							</testmodule>
 						</smartfoldernode>
+					</testcase>
+					<testcase
+					id="f999b233-305c-4e9e-a5e8-bd5b49a34123"
+					name="Logout">
+						<testmodule
+						id="dc7acbd7-2908-42b2-879a-7f8e9d00cb18"
+						name="Logout">
+						</testmodule>
+						<teardown
+						id="fdf78db1-a734-47ba-af26-4c88090b4cc0"
+						name="teardown1">
+						</teardown>
 					</testcase>
 				</testcase>
 			</testsuite>
@@ -4193,21 +4175,6 @@ bill]]>
 	default="TestRun">
 		<testconfiguration
 		name="TestRun">
-			<testcontainer
-			id="0eb91bf1-6a6d-403e-a327-77532be52941">
-			</testcontainer>
-			<testcontainer
-			id="28b86733-59a2-4365-a7d5-24ca2f0e5982">
-			</testcontainer>
-			<testcontainer
-			id="658e3020-1e20-4cb1-b196-89a6ef9ca8a2">
-			</testcontainer>
-			<testcontainer
-			id="9c9e0c7c-6641-4e4d-b439-4d25916c0fa2">
-			</testcontainer>
-			<testcontainer
-			id="cb7d9a72-28d4-40e4-8ba0-8593b79bbc22">
-			</testcontainer>
 		</testconfiguration>
 	</testconfigurations>
 	<references>

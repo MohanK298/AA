@@ -95,7 +95,8 @@ namespace SmokeTest.Modules
         	calendar.AdjournmentReasonForm.txtAdjournReason.Click();
         	calendar.AdjournmentReasonForm.txtAdjournReason.PressKeys(String.Format("Moving 2 days from current Day {0}",System.DateTime.Now.ToShortDateString()));
         	calendar.AdjournmentReasonForm.Toolbar1.ButtonOK.Click();
-        	calendar.AppointmentOverlapDialog.btnOk.Click();
+        	//calendar.AppointmentOverlapDialog.btnOk.Click();
+        	AppointmentOverlapPrompt();
         	adj_data+="[Adjourned to "+System.DateTime.Now.AddDays(2).ToString("MMM dd, yyyy")+"] "+data;
         	cmn.VerifyDataExistsInTable(calendar.MainForm.tblCalendar,adj_data,"Calendar List");
         	

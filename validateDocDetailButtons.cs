@@ -86,22 +86,30 @@ namespace SmokeTest
 			Validate.AttributeContains(doc.DocumentDetail.PnlBase.txtDocumentTitleInfo,"Text",fileName,String.Format("Document Current File Name is {0}",doc.DocumentDetail.PnlBase.txtDocumentTitle.TextValue));
 			//Validate Time Entry Button			
 			doc.DocumentDetail.MenubarFillPanel.btnDoTimeEntry.Click();
+			Delay.Seconds(2);
+			doc.TimeEntryDetailsForm.Self.Activate();
 			Validate.Exists(doc.TimeEntryDetailsForm.SelfInfo,"Time Entry Form Exists");
 			doc.TimeEntryDetailsForm.Toolbar1.btnCancel.Click();
 			//Validate Restrict Button
 			doc.DocumentDetail.MenubarFillPanel.btnRestrict.Click();
 			Validate.Exists(doc.RestrictionsForm.SelfInfo,"Restriction Form Exists");
 			doc.RestrictionsForm.Toolbar1.btnCancel.Click();
-			doc.DocumentDetail.MenubarFillPanel.btnPortal.Click();
+			
 			//Validate Portal Sharing Button
+			if(doc.DocumentDetail.MenubarFillPanel.btnPortal.Enabled)
+			{doc.DocumentDetail.MenubarFillPanel.btnPortal.Click();
+			Delay.Seconds(2);
+			doc.PortalForm.Self.Activate();
 			Validate.Exists(doc.PortalForm.SelfInfo,"Portal Sharing Form Exists");
 			doc.PortalForm.Toolbar1.btnCancel.Click();
+			}
 			doc.DocumentDetail.MenubarFillPanel.btnDelete.Click();
 			//Validate Delete Button
 			Validate.Exists(doc.PromptForm.SelfInfo,"Delete Prompt Exists");
 			doc.PromptForm.btnCancel.Click();
 			Delay.Seconds(2);
 			//Validate Cancel Button
+			doc.DocumentDetail.Self.Activate();
 			doc.DocumentDetail.MenubarFillPanel.btnCancel.Click();
 			Delay.Seconds(2);
 			Validate.NotExists(doc.DocumentDetail.SelfInfo,"Document Detail Not Exists");

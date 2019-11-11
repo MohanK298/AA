@@ -244,6 +244,8 @@ namespace SmokeTest.Repositories
             RepoItemInfo _officeInfo;
             RepoItemInfo _statictextInfo;
             RepoItemInfo _imgfirmsettingsInfo;
+            RepoItemInfo _viewInfo;
+            RepoItemInfo _firmsettings1Info;
 
             /// <summary>
             /// Creates a new MainForm  folder.
@@ -256,6 +258,8 @@ namespace SmokeTest.Repositories
                 _officeInfo = new RepoItemInfo(this, "Office", "container[@controlname='pLeft']//container[@automationid='[Group] 0']", 30000, null, "cf89fd98-8bd1-4aa9-98f4-9608b43450e1");
                 _statictextInfo = new RepoItemInfo(this, "StaticText", "?/?/form[@controlname='FirmSettingsForm']//element[@controlname='amlblDocumentLocations']/text[@accessiblerole='StaticText']", 30000, null, "9f1de6c7-6881-4dc0-8c7b-0499e37e5b62");
                 _imgfirmsettingsInfo = new RepoItemInfo(this, "imgFirmSettings", "container[@controlname='pLeft']//container[@controltypename='UltraExplorerBarContainerControl' and @instance='0']/?/?/container[@controlname='OfficeControlPanel']//container[@controltypename='Panel' and @instance='10']/picture[@controltypename='PictureBox']", 30000, null, "15d9ec06-2d1b-49c0-a76f-a6e89c6fb1c4");
+                _viewInfo = new RepoItemInfo(this, "View", "element[@controlname='_BaseModuleForm_Toolbars_Dock_Area_Top']//menuitem[@accessiblename='View']", 30000, null, "659fa57b-9823-4117-99ed-0b10775385c1");
+                _firmsettings1Info = new RepoItemInfo(this, "FirmSettings1", "element[@controlname='_BaseModuleForm_Toolbars_Dock_Area_Top']//menuitem[@accessiblename='View']/menuitem[@accessiblename='Firm Settings']", 30000, null, "5ffe6e96-1194-47cb-8b8a-57f254926ff4");
             }
 
             /// <summary>
@@ -375,6 +379,54 @@ namespace SmokeTest.Repositories
                 get
                 {
                     return _imgfirmsettingsInfo;
+                }
+            }
+
+            /// <summary>
+            /// The View item.
+            /// </summary>
+            [RepositoryItem("659fa57b-9823-4117-99ed-0b10775385c1")]
+            public virtual Ranorex.MenuItem View
+            {
+                get
+                {
+                    return _viewInfo.CreateAdapter<Ranorex.MenuItem>(true);
+                }
+            }
+
+            /// <summary>
+            /// The View item info.
+            /// </summary>
+            [RepositoryItemInfo("659fa57b-9823-4117-99ed-0b10775385c1")]
+            public virtual RepoItemInfo ViewInfo
+            {
+                get
+                {
+                    return _viewInfo;
+                }
+            }
+
+            /// <summary>
+            /// The FirmSettings1 item.
+            /// </summary>
+            [RepositoryItem("5ffe6e96-1194-47cb-8b8a-57f254926ff4")]
+            public virtual Ranorex.MenuItem FirmSettings1
+            {
+                get
+                {
+                    return _firmsettings1Info.CreateAdapter<Ranorex.MenuItem>(true);
+                }
+            }
+
+            /// <summary>
+            /// The FirmSettings1 item info.
+            /// </summary>
+            [RepositoryItemInfo("5ffe6e96-1194-47cb-8b8a-57f254926ff4")]
+            public virtual RepoItemInfo FirmSettings1Info
+            {
+                get
+                {
+                    return _firmsettings1Info;
                 }
             }
 

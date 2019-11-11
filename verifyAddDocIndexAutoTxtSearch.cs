@@ -48,7 +48,10 @@ namespace SmokeTest
         	frm.MainForm.Self.Activate();
         	frm.MainForm.Office.Click();
         	Delay.Seconds(2);
-        	frm.MainForm.FirmSettings.Click();
+        	//frm.MainForm.FirmSettings.Click();
+        	frm.MainForm.View.Click();
+        	Delay.Seconds(2);
+        	frm.MainForm.FirmSettings1.Click();
         	Delay.Seconds(2);
         	frm.MainForm.FirmSettingsForm.lnkDocIndexing.Click();
         	Validate.Exists(frm.DocumentFirmSettingsForm.SelfInfo,"Document File Setting Form Exists");
@@ -62,7 +65,9 @@ namespace SmokeTest
         private void GenerateDocument()
         {
         	doc.MainForm.Self.Activate();
+        	Delay.Seconds(5);
         	Keyboard.Press(System.Windows.Forms.Keys.X | System.Windows.Forms.Keys.Shift | System.Windows.Forms.Keys.Control, Keyboard.DefaultScanCode, Keyboard.DefaultKeyPressTime, 1, true);
+        	Delay.Seconds(2);
         	Keyboard.Press(System.Windows.Forms.Keys.N | System.Windows.Forms.Keys.Control, Keyboard.DefaultScanCode, Keyboard.DefaultKeyPressTime, 1, true);
         	Validate.Exists(doc.DocumentDetail.SelfInfo,"Document Detail Form Opened");
         }

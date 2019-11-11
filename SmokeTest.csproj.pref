@@ -1,5 +1,7 @@
 ﻿<Properties>
-  <Array name="active" />
+  <Array name="active">
+    <Element value="verifySearchByFullTextDocInIndex.cs" />
+  </Array>
   <Array name="bookmarks">
     <Element value="Breakpoint|C:\Users\kumar\Downloads\AA_Automation\Modules\BillingEditTimeEntryExpense.cs|81|10|True|Break||" />
     <Element value="Breakpoint|C:\Users\kumar\Downloads\AA_Automation\Modules\BillingEditTimeEntryExpense.cs|96|10|True|Break||" />
@@ -10,14 +12,16 @@
     <Element value="Breakpoint|C:\Users\kumar\Downloads\AA_Automation\Modules\BillingEditTimeEntryExpense.cs|85|10|True|Break||" />
   </Array>
   <Array name="files">
+    <Element value="Repositories\FirmSettings.cs" />
+    <Element value="Modules\Attorney_FileDetails\VerifyDocuments.cs" />
     <Element value="SmokeTest.rxtst" />
     <Element value="Repositories\BillingTE.rxrep" />
-    <Element value="Modules\BillingAddFile.cs" />
     <Element value="Modules\Utilities\Common.cs" />
-    <Element value="Repositories\BillingTE.cs" />
-    <Element value="Modules\BillingDeleteBill.cs" />
-    <Element value="Repositories\Bill.cs" />
-    <Element value="Repositories\Bill.rxrep" />
+    <Element value="Modules\AddPrecedentFile.cs" />
+    <Element value="Modules\AddFile.cs" />
+    <Element value="Repositories\Files.cs" />
+    <Element value="Repositories\Files.rxrep" />
+    <Element value="verifySearchByFullTextDocInIndex.cs" />
   </Array>
   <Properties name="projectSavedData">
     <Properties name="customTool">

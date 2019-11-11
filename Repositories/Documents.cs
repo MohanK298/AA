@@ -359,6 +359,7 @@ namespace SmokeTest.Repositories
             RepoItemInfo _cbincludeversionsInfo;
             RepoItemInfo _imgsearchiconInfo;
             RepoItemInfo _txtdocumentslistcountInfo;
+            RepoItemInfo _nextactivecontrolInfo;
 
             /// <summary>
             /// Creates a new DocumentsIndexForm  folder.
@@ -370,7 +371,7 @@ namespace SmokeTest.Repositories
                 _listfirstitemInfo = new RepoItemInfo(this, "listFirstItem", "container[@controlname='pnlBase']//container[@controlname='panel1' and @caption='' and @controltypename='SplitterPanel']/?/?/table/row[1]/cell[@accessiblename='File']", 30000, null, "c214fbaa-0743-4a06-99f2-bcb4e2c86e66");
                 _buttontoolbartoolbartoolstooltInfo = new RepoItemInfo(this, "ButtonToolbarToolbarToolsToolT", ".//toolbar[@automationid='Toolbar : toolbar']/button[@automationid='[Toolbar : toolbar Tools] Tool : TOOLBAR_MDI_CHILD_INDEX_NEW - Index : 0 ']", 30000, null, "02cb59b9-2646-4368-af46-326abf2ad8ac");
                 _tbldocumentsInfo = new RepoItemInfo(this, "tblDocuments", "container[@controlname='pnlBase']/container[@controlname='pnlWorldox']//table[@accessiblename='Band 0']", 30000, null, "d0eac17a-cc1c-48c9-8352-ffb8aef69aeb");
-                _docpreviewInfo = new RepoItemInfo(this, "docpreview", "container[@controlname='pnlBase']/container[@controlname='pnlWorldox']/container[@controlname='splitContainer1']/container[@controlname='panel2']//container[@controlname='']", 30000, null, "61297b3f-47a3-452f-a948-89ec64345ca1");
+                _docpreviewInfo = new RepoItemInfo(this, "docpreview", "container[@controlname='pnlBase']//container[@controlname='nextActiveControl']", 30000, null, "61297b3f-47a3-452f-a948-89ec64345ca1");
                 _previewrightInfo = new RepoItemInfo(this, "previewRight", "container[@controlname='menubar_Fill_Panel']//toolbar[@accessiblename='Toolbar']/?/?/menuitem[@accessiblename='Right']", 30000, null, "f3853ebc-4d1a-4a54-ab77-856bbba495d6");
                 _previewbottomInfo = new RepoItemInfo(this, "previewBottom", "container[@controlname='menubar_Fill_Panel']//toolbar[@accessiblename='Toolbar']/?/?/menuitem[@accessiblename='Bottom']", 30000, null, "1e610ce6-951d-48c0-850f-556aeab89b1e");
                 _previewoffInfo = new RepoItemInfo(this, "previewOff", "container[@controlname='menubar_Fill_Panel']//toolbar[@accessiblename='Toolbar']/?/?/menuitem[@accessiblename='Off']", 30000, null, "7f2d805e-202a-45f0-8fe2-4150a75fa905");
@@ -386,6 +387,7 @@ namespace SmokeTest.Repositories
                 _cbincludeversionsInfo = new RepoItemInfo(this, "cbIncludeVersions", "container[@controlname='pnlBase']/?/?/element[@controlname='aceIncludeVersions']/?/?/checkbox[@accessiblename='Include Versions']", 30000, null, "a9650824-be6b-49c8-b2e0-2a579488925d");
                 _imgsearchiconInfo = new RepoItemInfo(this, "imgSearchIcon", "container[@controlname='pnlBase']/?/?/picture[@controlname='pctSearch']", 30000, null, "06bbd1aa-fec6-4a4f-b528-8635935ddf91");
                 _txtdocumentslistcountInfo = new RepoItemInfo(this, "txtDocumentsListCount", "container[@controlname='pnlBase']//text[@accessiblename<'Documents']", 30000, null, "0bb4be1d-4a7e-4dc4-9f25-a36658f7b316");
+                _nextactivecontrolInfo = new RepoItemInfo(this, "NextActiveControl", "container[@controlname='pnlBase']/container[@controlname='pnlWorldox']/container[@controlname='splitContainer1']/container[@controlname='panel2']//container[@controlname='']", 30000, null, "c63ad10f-59c9-4f11-8087-a4c097880553");
             }
 
             /// <summary>
@@ -889,6 +891,30 @@ namespace SmokeTest.Repositories
                 get
                 {
                     return _txtdocumentslistcountInfo;
+                }
+            }
+
+            /// <summary>
+            /// The NextActiveControl item.
+            /// </summary>
+            [RepositoryItem("c63ad10f-59c9-4f11-8087-a4c097880553")]
+            public virtual Ranorex.Container NextActiveControl
+            {
+                get
+                {
+                    return _nextactivecontrolInfo.CreateAdapter<Ranorex.Container>(true);
+                }
+            }
+
+            /// <summary>
+            /// The NextActiveControl item info.
+            /// </summary>
+            [RepositoryItemInfo("c63ad10f-59c9-4f11-8087-a4c097880553")]
+            public virtual RepoItemInfo NextActiveControlInfo
+            {
+                get
+                {
+                    return _nextactivecontrolInfo;
                 }
             }
         }

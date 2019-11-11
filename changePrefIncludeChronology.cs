@@ -90,24 +90,28 @@ namespace SmokeTest
         	//string path=String.Format(".//text[@accessiblevalue='{0}']",data);
         	//if(found == true)    file.FileDetailForm.containerChronology.TryFindSingle(new RxPath(path),10000,out txtValue)
         	
-        	if(file.FileDetailForm.chronologyTextInfo.Exists())
-        	{
-        		Report.Success(String.Format("Value \"{0}\" Present as expected",data));
-        	}
-        	else
-        	{
-        		Report.Failure(String.Format("Value \"{0}\" not present",data));
-        	}
+//        	if(file.FileDetailForm.chronologyTextInfo.Exists())
+//        	{
+//        		Report.Success(String.Format("Value \"{0}\" Present as expected",data));
+//        	}
+//        	else
+//        	{
+//        		Report.Failure(String.Format("Value \"{0}\" not present",data));
+//        	}
         	file.FileDetailForm.btnSaveClose.Click();
         }
 		        
         public void ChangePrefIncludeChronology(bool cbValue)
         {
-        	pref.MainForm.Self.Activate();
+//        	pref.MainForm.Self.Activate();
         	pref.MainForm.OfficeModule.Click();
-        	Delay.Seconds(3);
-        	pref.MainForm.Preferences.Click();
-        	Delay.Seconds(3);
+//        	Delay.Seconds(3);
+//        	pref.MainForm.Preferences.Click();
+//        	Delay.Seconds(3);
+			pref.MainForm.View.Click();
+			Delay.Seconds(2);
+			pref.MainForm.Preferences1.Click();
+			Delay.Seconds(2);
         	pref.MainForm.PreferencesForm.General.Click();
         	if(cbValue == true)
         	{

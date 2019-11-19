@@ -109,8 +109,9 @@ namespace SmokeTest.Modules
         
         public void createLocalFile()
         {
-        	localFileName = System.IO.Directory.GetParent(System.IO.Directory.GetCurrentDirectory()).Parent.FullName +"\\"+ "RanorexTestFile.txt";
-        		//@"C:\Qiao\RanorexTestFile.txt";
+        	//localFileName = System.IO.Directory.GetParent(System.IO.Directory.GetCurrentDirectory()).Parent.FullName +"\\"+ "RanorexTestFile.txt";
+        		//@
+        		localFileName ="C:\\Qiao\\RanorexTestFile.txt";
 			try  
 			{  
 			    // Check if file already exists. If yes, delete it.   

@@ -152,7 +152,7 @@ namespace SmokeTest.Modules.Utilities
         		for(int j=0;j<tadapter.Rows[i].Cells.Count;j++)
         		{
         		
-        			if(tadapter.Rows[i].Cells[j].As<Ranorex.Cell>().Text.Equals(data))
+        			if(tadapter.Rows[i].Cells[j].As<Ranorex.Cell>().Text.Contains(data))
         			{
         				tadapter.Rows[i].Cells[j+1].As<Ranorex.Cell>().Focus();
         				tadapter.Rows[i].Cells[j+1].As<Ranorex.Cell>().MoveTo();
@@ -265,8 +265,8 @@ namespace SmokeTest.Modules.Utilities
         {
         	string fileName="RanorexTestFile"+System.DateTime.Now.ToString().Replace(":","").Replace("/","").Replace(" ","");
         	string localFileName;
-        	localFileName = System.IO.Directory.GetParent(System.IO.Directory.GetCurrentDirectory()).Parent.FullName +"\\DataFiles\\"+ fileName+ ".txt";
-        		//@"C:\Qiao\RanorexTestFile.txt";
+        	//localFileName = System.IO.Directory.GetParent(System.IO.Directory.GetCurrentDirectory()).Parent.FullName +"\\DataFiles\\"+ fileName+ ".txt";
+        	localFileName="C:\\Qiao\\DataFiles\\"+fileName+".txt";
 			try  
 			{  
 			    // Check if file already exists. If yes, delete it.   
@@ -296,8 +296,9 @@ namespace SmokeTest.Modules.Utilities
         {
         	string fileName="RanorexTestFile"+System.DateTime.Now.ToString().Replace(":","").Replace("/","").Replace(" ","");
         	string localFileName;
-        	localFileName = System.IO.Directory.GetParent(System.IO.Directory.GetCurrentDirectory()).Parent.FullName +"\\DataFiles\\"+ fileName+ ".txt";
+        	//localFileName = System.IO.Directory.GetParent(System.IO.Directory.GetCurrentDirectory()).Parent.FullName +"\\DataFiles\\"+ fileName+ ".txt";
         		//@"C:\Qiao\RanorexTestFile.txt";
+        		localFileName="C:\\Qiao\\DataFiles\\"+fileName+".txt";
 			try  
 			{  
 			    // Check if file already exists. If yes, delete it.   

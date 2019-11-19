@@ -57,10 +57,10 @@ namespace SmokeTest.Modules.Attorney_FileDetails
         }
         
         public void Action(){
-        	PopupWatcher eventReminderPrompt = new PopupWatcher();
-        	eventReminderPrompt.WatchAndClick(calendar.EventReminderForm, calendar.EventReminderForm.btnIllBeThereInfo);
-        	eventReminderPrompt.Start();
-        	
+        	//PopupWatcher eventReminderPrompt = new PopupWatcher();
+        	//eventReminderPrompt.WatchAndClick(calendar.EventReminderForm, calendar.EventReminderForm.btnIllBeThereInfo);
+        	//eventReminderPrompt.Start();
+        	Delay.Seconds(3);
         	file.MainForm.FilesIndexForm.listFirstFile.DoubleClick();
         	Delay.Seconds(2);
         	file.FileDetailForm.Events.Click();
@@ -76,24 +76,42 @@ namespace SmokeTest.Modules.Attorney_FileDetails
         	calendar.EventDetailForm.PnlBase.txtLocation.PressKeys(location);
         	
         	//Save the appointment
-        	PopupWatcher appointmentOverlapDialog = new PopupWatcher();
-        	appointmentOverlapDialog.WatchAndClick(calendar.AppointmentOverlapDialog, calendar.AppointmentOverlapDialog.btnOkInfo);
-        	appointmentOverlapDialog.Start();
+        	//PopupWatcher appointmentOverlapDialog = new PopupWatcher();
+        	//appointmentOverlapDialog.WatchAndClick(calendar.AppointmentOverlapDialog, calendar.AppointmentOverlapDialog.btnOkInfo);
+        	//appointmentOverlapDialog.Start();
         	
         	calendar.EventDetailForm.btnOK.Click();
         	Delay.Seconds(5);
+        	AppointmentOverlapPrompt();
+        	ValidateEventRemainderPopup();
         	file.FileDetailForm.btnSaveClose.Click();
-        	appointmentOverlapDialog.Stop();
-        	
+        	//appointmentOverlapDialog.Stop();
+        	Delay.Seconds(2);
         	file.MainForm.FilesIndexForm.listFirstFile.DoubleClick();
         	Delay.Seconds(2);
         	file.FileDetailForm.Events.Click();
         	file.FileDetailForm.AllMyEvents.Click();
         	Validate.Attribute(file.FileDetailForm.TitleInfo, "Text", "Test for Precedents App");
         	file.FileDetailForm.btnSaveClose.Click();
-        	eventReminderPrompt.Stop();
+        	//eventReminderPrompt.Stop();
+        	ValidateEventRemainderPopup();
+           	
         }
-        
+           public void ValidateEventRemainderPopup()
+        {
+        	if(calendar.EventReminderForm.SelfInfo.Exists(70000))
+        	{
+        		calendar.EventReminderForm.btnIllBeThere.Click();
+        	}
+        }
+              public void AppointmentOverlapPrompt()
+       {
+       	if(calendar.AppointmentOverlapDialog.SelfInfo.Exists(3000))
+       	{
+       		calendar.AppointmentOverlapDialog.btnOk.Click();
+       	}
+       }
+		
         void ITestModule.Run()
         {
             Mouse.DefaultMoveTime = 300;

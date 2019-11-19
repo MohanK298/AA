@@ -5553,6 +5553,8 @@ namespace SmokeTest.Repositories
             RepoItemInfo _radiosameoriginalInfo;
             RepoItemInfo _btnokInfo;
             RepoItemInfo _btnnextInfo;
+            RepoItemInfo _tblprecedentInfo;
+            RepoItemInfo _btnaddInfo;
 
             /// <summary>
             /// Creates a new PrecedentSelectForm  folder.
@@ -5564,6 +5566,8 @@ namespace SmokeTest.Repositories
                 _radiosameoriginalInfo = new RepoItemInfo(this, "RadioSameOriginal", "container[@controlname='pnlBase']/?/?/radiobutton[@controlname='radioSameAsOriginal']", 30000, null, "1c650af2-51b2-4f21-ba01-8fb3e8221896");
                 _btnokInfo = new RepoItemInfo(this, "btnOk", "?/?/toolbar[@automationid='Toolbar : toolbarBaseDesigner']/button[@automationid='[Toolbar : toolbarBaseDesigner Tools] Tool : TOOLBAR_BUTTON_OK - Index : 4 ']", 30000, null, "3071c0e0-feb2-40fe-90ad-e7182348b8a5");
                 _btnnextInfo = new RepoItemInfo(this, "btnNext", ".//toolbar[@accessiblename='Toolbar']/button[@accessiblename='NEXT']", 30000, null, "f8d888fd-40f2-4857-8220-941b7155aca6");
+                _tblprecedentInfo = new RepoItemInfo(this, "tblPrecedent", "container[@controlname='panel1']/?/?/table[@accessiblename='Band 0']", 30000, null, "df4fdc53-5c9f-4598-a46a-9505e9381042");
+                _btnaddInfo = new RepoItemInfo(this, "btnAdd", "container[@controlname='panel1']/?/?/button[@accessiblename='>']", 30000, null, "e0e50b19-d0af-462c-9442-95c8c3407618");
             }
 
             /// <summary>
@@ -5683,6 +5687,54 @@ namespace SmokeTest.Repositories
                 get
                 {
                     return _btnnextInfo;
+                }
+            }
+
+            /// <summary>
+            /// The tblPrecedent item.
+            /// </summary>
+            [RepositoryItem("df4fdc53-5c9f-4598-a46a-9505e9381042")]
+            public virtual Ranorex.Table tblPrecedent
+            {
+                get
+                {
+                    return _tblprecedentInfo.CreateAdapter<Ranorex.Table>(true);
+                }
+            }
+
+            /// <summary>
+            /// The tblPrecedent item info.
+            /// </summary>
+            [RepositoryItemInfo("df4fdc53-5c9f-4598-a46a-9505e9381042")]
+            public virtual RepoItemInfo tblPrecedentInfo
+            {
+                get
+                {
+                    return _tblprecedentInfo;
+                }
+            }
+
+            /// <summary>
+            /// The btnAdd item.
+            /// </summary>
+            [RepositoryItem("e0e50b19-d0af-462c-9442-95c8c3407618")]
+            public virtual Ranorex.Button btnAdd
+            {
+                get
+                {
+                    return _btnaddInfo.CreateAdapter<Ranorex.Button>(true);
+                }
+            }
+
+            /// <summary>
+            /// The btnAdd item info.
+            /// </summary>
+            [RepositoryItemInfo("e0e50b19-d0af-462c-9442-95c8c3407618")]
+            public virtual RepoItemInfo btnAddInfo
+            {
+                get
+                {
+                    return _btnaddInfo;
                 }
             }
         }

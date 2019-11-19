@@ -13,7 +13,7 @@ using System.Text.RegularExpressions;
 using System.Drawing;
 using System.Threading;
 using WinForms = System.Windows.Forms;
-
+using SmokeTest.Modules.Utilities;
 using Ranorex;
 using Ranorex.Core;
 using Ranorex.Core.Testing;
@@ -30,7 +30,7 @@ namespace SmokeTest.Modules
     	//Files file = Files.Instance;
         SmokeTest.Repositories.Files file = new SmokeTest.Repositories.Files();
     	SmokeTest.Repositories.Calendar calendar = new SmokeTest.Repositories.Calendar();
-    	
+    	Common cmn=new Common();
     	//Variables
     	string _time = "";
     	[TestVariable("6193B8F1-1EEA-4693-866C-25439B548AA0")]
@@ -65,7 +65,10 @@ namespace SmokeTest.Modules
         	file.FileDetailForm.AllMyEvents.Click();
         	file.FileDetailForm.PrecedentAction.Click();
         	file.FileDetailForm.UsePrecedent.Click();
-        	file.PrecedentSelectForm.SelectPrecedent.DoubleClick();
+        	//file.PrecedentSelectForm.SelectPrecedent.DoubleClick();
+        	cmn.SelectItemDropdown(file.PrecedentSelectForm.tblPrecedent,"Precedent Test");
+        	file.PrecedentSelectForm.btnAdd.Click();
+        	//cmn.SelectItemFromTableDblClick(file.PrecedentSelectForm.tblPrecedent,"Precedent Test","Precedent Select Table");
         	file.PrecedentSelectForm.btnOk.Click();
         	file.BaseDatesForm.btnOk.Click();
         	Validate.Exists(file.FileDetailForm.VerifyPrecedent1Info);

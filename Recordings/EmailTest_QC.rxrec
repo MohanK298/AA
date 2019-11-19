@@ -29,6 +29,7 @@ rxversion="9.0">
 		<userrecorditem
 		classname="EmailTest_QC"
 		enabled="True"
+		hasreturntype="False"
 		isexternaltestmethod="False"
 		methodname="Mouse_Click_ContainerGroup9"
 		namespace="SmokeTest.Recordings"

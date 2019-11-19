@@ -68,6 +68,7 @@ namespace SmokeTest
         {
         	Delay.Seconds(2);
         	doc.MainForm.Self.Activate();
+        	doc.MainForm.btnDocuments.Click();
         	Delay.Seconds(2);
         	Keyboard.Press(System.Windows.Forms.Keys.X | System.Windows.Forms.Keys.Shift | System.Windows.Forms.Keys.Control, Keyboard.DefaultScanCode, Keyboard.DefaultKeyPressTime, 1, true);
         	Delay.Seconds(2);

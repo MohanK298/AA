@@ -127,7 +127,7 @@ namespace SmokeTest.Modules
             people.NewPersonForm.PanelBase.txtLastName.TextValue = lastName + time;
             
             people.NewPersonForm.btnNext.Click();
-            
+            Delay.Seconds(3);
             //Add Communication Details
             people.PeopleDetailForm.txtCommunicationDetails.DoubleClick();
             if(people.EditCommunicationForm.radiobtnPhone.Checked != true){

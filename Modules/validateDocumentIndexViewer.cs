@@ -66,8 +66,9 @@ namespace SmokeTest.Modules
         	doc.DocumentDetail.PnlBase.btnAddFile.Click();
         	doc.FileSelectForm.listFirstFoundFile.DoubleClick();
         	doc.DocumentDetail.MenubarFillPanel.btnOK.Click();
+        	doc.MainForm.DocumentsIndexForm.menuItemPrevPane.Click();
+        	doc.MainForm.DocumentsIndexForm.previewOff.Click();
         }
-        
         private void validatePreviewPane()
         {
         	doc.MainForm.Self.Activate();
@@ -78,11 +79,13 @@ namespace SmokeTest.Modules
         	doc.MainForm.DocumentsIndexForm.previewRight.Click();
         	Delay.Seconds(3);
         	Validate.Attribute(doc.MainForm.DocumentsIndexForm.docpreviewInfo,"Visible","True","Right Preview Visible");
+        	Delay.Seconds(3);
         	doc.MainForm.DocumentsIndexForm.menuItemPrevPane.Click();
         	doc.MainForm.DocumentsIndexForm.previewBottom.Click();
         	Delay.Seconds(3);
 //        	doc.MainForm.DocumentsIndexForm.docpreview.Focus();
         	Validate.Attribute(doc.MainForm.DocumentsIndexForm.docpreviewInfo,"Visible","True","Bottom Preview Visible");
+        	Delay.Seconds(3);
         	doc.MainForm.DocumentsIndexForm.menuItemPrevPane.Click();
         	doc.MainForm.DocumentsIndexForm.previewOff.Click();
         	Delay.Seconds(3);

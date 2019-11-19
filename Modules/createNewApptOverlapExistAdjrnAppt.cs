@@ -99,7 +99,7 @@ namespace SmokeTest.Modules
         	AppointmentOverlapPrompt();
         	adj_data+="[Adjourned to "+System.DateTime.Now.AddDays(2).ToString("MMM dd, yyyy")+"] "+data;
         	cmn.VerifyDataExistsInTable(calendar.MainForm.tblCalendar,adj_data,"Calendar List");
-        	
+        	Delay.Seconds(10);
         	calendar.MainForm.btnCalendar.Click();
         	calendar.MainForm.btnNewAppointment.Click();
         	Delay.Seconds(1);
@@ -110,6 +110,7 @@ namespace SmokeTest.Modules
         	Delay.Seconds(3);
         	AppointmentOverlapPrompt();
         	ValidateEventRemainderPopup();
+        	Delay.Seconds(10);
         	cmn.SelectItemFromTableDblClick(calendar.MainForm.tblCalendar,data+"_2","Calendar List");
         	calendar.EventDetailForm.Toolbar1.btnAvailability.Click();
         	Delay.Seconds(2);

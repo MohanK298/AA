@@ -13,7 +13,6 @@ using System.Text.RegularExpressions;
 using System.Drawing;
 using System.Threading;
 using WinForms = System.Windows.Forms;
-
 using Ranorex;
 using Ranorex.Core;
 using Ranorex.Core.Testing;
@@ -62,7 +61,7 @@ namespace SmokeTest.Modules
         }
         
         public void CreateFile(){
-        	
+        	string rndData="";
         	//Open window to add a file
         	file.MainForm.btnFiles.Click();
         	file.MainForm.FilesIndexForm.btnNewFile.Click();
@@ -110,20 +109,31 @@ namespace SmokeTest.Modules
         	Delay.Seconds(1);
         	file.FileDetailForm.Accounting.Click();
         	Delay.Seconds(2);
-        	
+        	rndData=RandomData();
         	//file.FileDetailForm.clientID.PressKeys("001");
         	//file.FileDetailForm.matterID.PressKeys("002");
         	//file.FileDetailForm.clientID.TextValue = time.TrimEnd('3');
         	//file.FileDetailForm.matterID.TextValue = time.TrimStart('2');
         	file.FileDetailForm.clientID.TextValue = (time.Equals("")) ? System.DateTime.Now.ToString() : time.TrimEnd('3');
-        	file.FileDetailForm.matterID.TextValue = (time.Equals("")) ? System.DateTime.Now.ToString() : time.TrimStart('2');
+        	file.FileDetailForm.matterID.TextValue = rndData;
         	
         	Delay.Seconds(1);
         	file.FileDetailForm.btnSaveClose.Click();
         	Delay.Seconds(1);
-        	file.PromptForm.ButtonYes.Click();
+        	if(file.PromptForm.ButtonYesInfo.Exists(3000))
+        	
+        	   {file.PromptForm.ButtonYes.Click();}
         }
-
+		private string RandomData()
+		{
+			Random rnd=new Random();
+			 StringBuilder builder = new StringBuilder();  
+			 builder.Append(rnd.Next());
+			 builder.Append(rnd.Next(2,2000));
+			 builder.Append(rnd.Next(1, 500));  
+    return builder.ToString();  
+		}
+		
         void ITestModule.Run()
         {
             Mouse.DefaultMoveTime = 300;

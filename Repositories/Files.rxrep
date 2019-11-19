@@ -2038,6 +2038,26 @@ D8zerL8gSEaw7+rFqJ//CkX5CWkHqyZHVzU6AAAAAElFTkSuQmCC
 			searchtimeout="30000ms">
 				/form[@controlname='PrecedentSelectForm']//toolbar[@accessiblename='Toolbar']/button[@accessiblename='NEXT']
 			</item>
+			<item
+			addcaps="table,accessible"
+			capname="table"
+			id="df4fdc53-5c9f-4598-a46a-9505e9381042"
+			name="tblPrecedent"
+			refimgid="646e492c-9bf6-4f55-b28a-7b9146a777fe"
+			refpath="/form[@controlname='PrecedentSelectForm']/container[@controlname='panel1']/element[@controlname='abgSelector']/table[@accessiblename='Band 0']"
+			searchtimeout="30000ms">
+				/form[@controlname='PrecedentSelectForm']/container[@controlname='panel1']/?/?/table[@accessiblename='Band 0']
+			</item>
+			<item
+			addcaps="button,accessible"
+			capname="button"
+			id="e0e50b19-d0af-462c-9442-95c8c3407618"
+			name="btnAdd"
+			refimgid="6cdc6b8b-29b1-4835-9b43-e7326e42756a"
+			refpath="/form[@controlname='PrecedentSelectForm']/container[@controlname='panel1']/element[@controlname='ubtnAdd']/button[@accessiblename='>']"
+			searchtimeout="30000ms">
+				/form[@controlname='PrecedentSelectForm']/container[@controlname='panel1']/?/?/button[@accessiblename='&gt;']
+			</item>
 			<basepath>
 				/form[@controlname='PrecedentSelectForm']
 			</basepath>

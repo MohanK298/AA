@@ -36,6 +36,7 @@ namespace SmokeTest.Modules
        
         public void Action()
         {
+        	Random rnd=new Random();
         	file.MainForm.FilesIndexForm.listFirstFile.DoubleClick();
         	Delay.Seconds(2);
         	file.FileDetailForm.Events.Click();
@@ -45,7 +46,7 @@ namespace SmokeTest.Modules
         	file.FileDetailForm.SelectToDo.PressKeys("{LShiftKey up}");
         	file.FileDetailForm.Precedent.Click();
         	file.FileDetailForm.SavePrecedent.Click();
-        	file.NewPrecedentForm.txtPrecedentName.PressKeys("Precedent Test");
+        	file.NewPrecedentForm.txtPrecedentName.TextValue="Precedent Test"+rnd.Next(1,1000).ToString();
         	file.NewPrecedentForm.RadioSameOriginal.Click();
         	file.NewPrecedentForm.btnOk.Click();
         	file.PrecedentProfileForm.txtPrecedentDescription.PressKeys("Precedents Test Description");

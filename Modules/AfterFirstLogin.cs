@@ -52,14 +52,19 @@ namespace SmokeTest.Modules
             Keyboard.DefaultKeyPressTime = 100;
             Delay.SpeedFactor = 1.0;
             
-            PopupWatcher ceipDialogWatcher = new PopupWatcher();
-            ceipDialogWatcher.WatchAndClick(str.CustomerExperienceProgramForm, str.CustomerExperienceProgramForm.DeclineInfo);
-            ceipDialogWatcher.Start();
-            if (str.AnnouncementForm.SelfInfo.Exists()) {
+//            PopupWatcher ceipDialogWatcher = new PopupWatcher();
+//            ceipDialogWatcher.WatchAndClick(str.CustomerExperienceProgramForm, str.CustomerExperienceProgramForm.DeclineInfo);
+//            ceipDialogWatcher.Start();
+			if(str.CustomerExperienceProgramForm.SelfInfo.Exists(10000))
+			{
+				str.CustomerExperienceProgramForm.Decline.Click();
+			}
+
+            if (str.AnnouncementForm.SelfInfo.Exists(60000)) {
             	CloseAnnoncementForm();
             }
             CloseAllDetails();
-            ceipDialogWatcher.Stop();
+        //    ceipDialogWatcher.Stop();
             
         }
         

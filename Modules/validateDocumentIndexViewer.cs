@@ -72,7 +72,8 @@ namespace SmokeTest.Modules
         private void validatePreviewPane()
         {
         	doc.MainForm.Self.Activate();
-        	cmn.SelectItemFromTableSingleClick(doc.MainForm.DocumentsIndexForm.tblDocuments,fileName,"Documents Table");
+        	cmn.SelectItemFromTableDblClick(doc.MainForm.DocumentsIndexForm.tblDocuments,fileName,"Documents Table");
+        	doc.DocumentDetail.MenubarFillPanel.btnCancel.Click();
         	Delay.Seconds(3);
         	doc.MainForm.Self.Activate();
         	doc.MainForm.DocumentsIndexForm.menuItemPrevPane.Click();

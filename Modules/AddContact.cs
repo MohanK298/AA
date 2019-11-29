@@ -120,16 +120,19 @@ namespace SmokeTest.Modules
         	//Select Attorney Module
         	people.MainForm.Attorney.Click();
         	//Add a contact
-        	people.MainForm.btnPeople.Click();
+        	//people.MainForm.btnPeople.Click();
         	people.MainForm.btnPeople1.Click();
             people.MainForm.btnNew.Click();
-            people.NewPersonForm.PanelBase.txtFirstName.TextValue = firstName;
-            people.NewPersonForm.PanelBase.txtLastName.TextValue = lastName + time;
+            people.NewPersonForm.PanelBase.txtFirstName.PressKeys(firstName);
+            people.NewPersonForm.PanelBase.txtLastName.PressKeys(lastName + time);
             
             people.NewPersonForm.btnNext.Click();
             Delay.Seconds(3);
             //Add Communication Details
-            people.PeopleDetailForm.txtCommunicationDetails.DoubleClick();
+            if(people.PeopleDetailForm.txtCommunicationDetailsInfo.Exists(5000))
+               {
+               	people.PeopleDetailForm.txtCommunicationDetails.DoubleClick();
+               }
             if(people.EditCommunicationForm.radiobtnPhone.Checked != true){
             	people.EditCommunicationForm.radiobtnPhone.Click();
             }

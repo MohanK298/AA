@@ -107,6 +107,7 @@ namespace SmokeTest
 			strday2=day2.ToString("MMMM dd, yyyy");
 			strday3=day3.ToString("MMMM dd, yyyy");
 			calendar.curwkday=strday1;
+			Delay.Seconds(2);
 			calendar.MainForm.PnlViews.shrtDay.Click();
 			Delay.Seconds(3);
 			calendar.appmtData=data;

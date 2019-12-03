@@ -1,12 +1,10 @@
 ﻿<Properties>
   <Array name="active">
-    <Element value="Modules\validateDocumentIndexViewer.cs" />
+    <Element value="SmokeTest.rxtst" />
   </Array>
   <Array name="bookmarks" />
   <Array name="files">
     <Element value="SmokeTest.rxtst" />
-    <Element value="Repositories\SmokeTestRepository.cs" />
-    <Element value="Repositories\SmokeTestRepository.rxrep" />
     <Element value="Modules\validateDocumentIndexViewer.cs" />
   </Array>
   <Properties name="projectSavedData">

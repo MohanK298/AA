@@ -118,6 +118,40 @@ namespace SmokeTest.Modules.Utilities
         				Report.Failure(String.Format("Corresponding Value \"{0}\" not present as expected for {1} in \"{2}\"",correspondData,data,tblName));
         	}
         }
+         
+         public void VerifyCorrespondingDataExistsInTable(Ranorex.Adapter tbldata,string data,string[] correspondData,string tblName)
+        {
+        	int k=0;
+        	var tadapter = tbldata.As <Ranorex.Table>();
+        	for(int i=0;i<tadapter.Rows.Count;i++)
+        	{
+        		for(int j=0;j<tadapter.Rows[i].Cells.Count;j++)
+        		{
+     				if(tadapter.Rows[i].Cells[j].As<Ranorex.Cell>().Text.Contains(data))
+        			{
+        				for(int x=0;x<tadapter.Rows[i].Cells.Count;x++)
+        				{
+        					for(int m=0;m<correspondData.Length;m++)
+        					{
+        						if(tadapter.Rows[i].Cells[x].As<Ranorex.Cell>().Text.Contains(correspondData[m]))
+        					{
+        							Report.Success(String.Format("Corresponding Value \"{0}\" Present as expected for {1} in \"{2}\"",correspondData[m],data,tblName));
+        					   		k++;
+        						//break;
+        					}
+        					}
+        				}
+        				}
+
+        			}
+        		}
+        	
+        	if(k==0)
+        	{
+        		Report.Failure(String.Format("Corresponding Value \"{0}\" not present as expected for {1} in \"{2}\"",correspondData.ToString(),data,tblName));
+        	}
+        }
+         
         
     	[UserCodeMethod]
         public void VerifyDataNotExistsInTable(Ranorex.Adapter tbldata,string data,string tblname)

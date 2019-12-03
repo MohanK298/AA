@@ -3539,6 +3539,14 @@ bill]]>
 					id="67e9bae2-280b-4ca4-8e22-d3573671ec71"
 					name="Calendar">
 						<smartfoldernode
+						id="3603e041-f535-4d9c-ad69-c45e53b082d1"
+						name="CreateNewApptOverlapExistAdjrnAppt">
+							<testmodule
+							id="e4b294e1-af5f-4d37-9b7c-75c245bf372d"
+							name="createNewApptOverlapExistAdjrnAppt">
+							</testmodule>
+						</smartfoldernode>
+						<smartfoldernode
 						id="050bea6e-2129-44ce-8a76-eef174d86edd"
 						name="CreateRepeatingApptWithExceptions">
 							<testmodule
@@ -3592,14 +3600,6 @@ bill]]>
 							<testmodule
 							id="33e0688d-9109-4665-b7ca-00b39ed19bce"
 							name="createAdjrnApptwithMilestone">
-							</testmodule>
-						</smartfoldernode>
-						<smartfoldernode
-						id="3603e041-f535-4d9c-ad69-c45e53b082d1"
-						name="CreateNewApptOverlapExistAdjrnAppt">
-							<testmodule
-							id="e4b294e1-af5f-4d37-9b7c-75c245bf372d"
-							name="createNewApptOverlapExistAdjrnAppt">
 							</testmodule>
 						</smartfoldernode>
 						<smartfoldernode
@@ -4176,10 +4176,43 @@ bill]]>
 		<testconfiguration
 		name="TestRun">
 			<testcontainer
+			id="00e7b547-ace3-430b-87bc-afc35384f5c9">
+			</testcontainer>
+			<testcontainer
+			id="050bea6e-2129-44ce-8a76-eef174d86edd">
+			</testcontainer>
+			<testcontainer
+			id="3603e041-f535-4d9c-ad69-c45e53b082d1">
+			</testcontainer>
+			<testcontainer
+			id="3b2e6fab-e895-4cf3-bd0a-f93aef1425ae">
+			</testcontainer>
+			<testcontainer
 			id="658e3020-1e20-4cb1-b196-89a6ef9ca8a2">
 			</testcontainer>
 			<testcontainer
-			id="cb7d9a72-28d4-40e4-8ba0-8593b79bbc22">
+			id="67e9bae2-280b-4ca4-8e22-d3573671ec71">
+			</testcontainer>
+			<testcontainer
+			id="69784dea-f2ba-4174-8e33-8521d722fad9">
+			</testcontainer>
+			<testcontainer
+			id="8415e0b4-3c9d-48b5-9028-1adabd0000b2">
+			</testcontainer>
+			<testcontainer
+			id="9eb94e5b-0d1d-4b65-b0ec-298802c6bafa">
+			</testcontainer>
+			<testcontainer
+			id="a144bc81-23a9-4299-9449-215258c0c26c">
+			</testcontainer>
+			<testcontainer
+			id="eba13b1a-cf04-406f-94a0-e41df0fcebcf">
+			</testcontainer>
+			<testcontainer
+			id="f12fbbbf-777a-42ad-a910-e4e7e4709a8f">
+			</testcontainer>
+			<testcontainer
+			id="fa338964-1e4d-44de-8e8b-2bf0e088ca08">
 			</testcontainer>
 		</testconfiguration>
 	</testconfigurations>

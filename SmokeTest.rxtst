@@ -3539,6 +3539,14 @@ bill]]>
 					id="67e9bae2-280b-4ca4-8e22-d3573671ec71"
 					name="Calendar">
 						<smartfoldernode
+						id="3603e041-f535-4d9c-ad69-c45e53b082d1"
+						name="CreateNewApptOverlapExistAdjrnAppt">
+							<testmodule
+							id="e4b294e1-af5f-4d37-9b7c-75c245bf372d"
+							name="createNewApptOverlapExistAdjrnAppt">
+							</testmodule>
+						</smartfoldernode>
+						<smartfoldernode
 						id="050bea6e-2129-44ce-8a76-eef174d86edd"
 						name="CreateRepeatingApptWithExceptions">
 							<testmodule
@@ -3592,14 +3600,6 @@ bill]]>
 							<testmodule
 							id="33e0688d-9109-4665-b7ca-00b39ed19bce"
 							name="createAdjrnApptwithMilestone">
-							</testmodule>
-						</smartfoldernode>
-						<smartfoldernode
-						id="3603e041-f535-4d9c-ad69-c45e53b082d1"
-						name="CreateNewApptOverlapExistAdjrnAppt">
-							<testmodule
-							id="e4b294e1-af5f-4d37-9b7c-75c245bf372d"
-							name="createNewApptOverlapExistAdjrnAppt">
 							</testmodule>
 						</smartfoldernode>
 						<smartfoldernode
@@ -4175,12 +4175,6 @@ bill]]>
 	default="TestRun">
 		<testconfiguration
 		name="TestRun">
-			<testcontainer
-			id="658e3020-1e20-4cb1-b196-89a6ef9ca8a2">
-			</testcontainer>
-			<testcontainer
-			id="cb7d9a72-28d4-40e4-8ba0-8593b79bbc22">
-			</testcontainer>
 		</testconfiguration>
 	</testconfigurations>
 	<references>

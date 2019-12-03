@@ -83,7 +83,7 @@ rxversion="9.0">
 				id="61297b3f-47a3-452f-a948-89ec64345ca1"
 				name="docpreview"
 				searchtimeout="30000ms">
-					/form[@controlname='MainForm']/?/?/form[@controlname='DocumentsIndexForm']/container[@controlname='pnlBase']//container[@controlname='nextActiveControl']
+					/form[@controlname='MainForm']/?/?/form[@controlname='DocumentsIndexForm']/container[@controlname='pnlBase']//container[@controlname='panel2']
 				</item>
 				<item
 				addcaps="menuitem,accessible"

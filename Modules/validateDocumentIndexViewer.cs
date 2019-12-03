@@ -72,13 +72,13 @@ namespace SmokeTest.Modules
         private void validatePreviewPane()
         {
         	doc.MainForm.Self.Activate();
+        	doc.MainForm.DocumentsIndexForm.menuItemPrevPane.Click();
+        	doc.MainForm.DocumentsIndexForm.previewRight.Click();
+        	Delay.Seconds(3);
         	cmn.SelectItemFromTableDblClick(doc.MainForm.DocumentsIndexForm.tblDocuments,fileName,"Documents Table");
         	doc.DocumentDetail.MenubarFillPanel.btnCancel.Click();
         	Delay.Seconds(3);
         	doc.MainForm.Self.Activate();
-        	doc.MainForm.DocumentsIndexForm.menuItemPrevPane.Click();
-        	doc.MainForm.DocumentsIndexForm.previewRight.Click();
-        	Delay.Seconds(3);
         	Validate.Attribute(doc.MainForm.DocumentsIndexForm.docpreviewInfo,"Visible","True","Right Preview Visible");
         	Delay.Seconds(3);
         	doc.MainForm.DocumentsIndexForm.menuItemPrevPane.Click();

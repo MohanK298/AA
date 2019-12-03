@@ -38,7 +38,7 @@ namespace SmokeTest
 		static string rndData=System.DateTime.Now.ToString();
 		string data=String.Format("Test Data Added {0}",rndData);
 		string fileName=String.Format("RanorexTestFile {0}",rndData);
-		string parentfolder =System.IO.Directory.GetParent(System.IO.Directory.GetCurrentDirectory()).Parent.FullName +"\\DataFiles\\";
+		string parentfolder ="C:\\Qiao\\DataFiles\\";
 		string shrtFileName="";
         public createApptDocAttached()
         {
@@ -68,7 +68,7 @@ namespace SmokeTest
         	doc.DocumentDetail.PnlBase.txtDocumentTitle.PressKeys(fileName);
         	//doc.DocumentDetail.PnlBase.btnDropdownType.Click();
         	//cmn.SelectItemDropdown(doc.tblDpdwnList.Self,"Other");
-        	Report.Info(localFileName);
+//        	Report.Info(localFileName);
         	doc.DocumentDetail.PnlBase.btnLocation.Click();
         	doc.Open.txtFilePath.PressKeys(localFileName);
         	doc.Open.btnOpen.Click();

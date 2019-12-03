@@ -115,9 +115,9 @@ namespace SmokeTest
 			 doc.DocumentDetail.MenubarFillPanel.btnOK.Click();
         	 Delay.Seconds(2);
         	 
-        	 cmn.VerifyCorrespondingDataExistsInTable(doc.MainForm.DocumentsIndexForm.tblDocuments,fileName,correspondingData1,"Documents Table");
+        	 cmn.VerifyCorrespondingDataExistsInTable(doc.MainForm.DocumentsIndexForm.tblDocuments,fileName,correspondingData1.Split(','),"Documents Table");
         	// cmn.VerifyCorrespondingDataExistsInTable(doc.MainForm.DocumentsIndexForm.tblDocuments,fileName,correspondingData2,"Documents Table");
-        	 cmn.VerifyCorrespondingDataExistsInTable(doc.MainForm.DocumentsIndexForm.tblDocuments,fileName,correspondingData3,"Documents Table");
+        	cmn.VerifyCorrespondingDataExistsInTable(doc.MainForm.DocumentsIndexForm.tblDocuments,fileName,correspondingData3.Split(','),"Documents Table");
         }
         
         

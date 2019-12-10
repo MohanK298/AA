@@ -65,6 +65,11 @@ namespace SmokeTest.Modules
         {
 			string new_Data="";
 			string adj_data="";
+			string strday1;
+			System.DateTime day1;
+			day1=System.DateTime.Now.AddDays(-1);
+			strday1=day1.ToString("MMMM d, yyyy");
+			calendar.curwkday=strday1;
 			string strtTime=System.DateTime.Now.ToShortTimeString();
 			string endTime=System.DateTime.Now.AddHours(1).ToShortTimeString();
 			calendar.MainForm.Self.Activate();
@@ -72,6 +77,7 @@ namespace SmokeTest.Modules
         	calendar.MainForm.btnNewAppointment.Click();
         	Delay.Seconds(1);
         	calendar.EventDetailForm.PnlBase.txtAppointmentTitle.PressKeys(data);
+        	calendar.EventDetailForm.PnlBase.txtStartDate.PressKeys(day1.ToShortDateString());
         	calendar.EventDetailForm.PnlBase.txtStartTime.PressKeys(strtTime);
         	calendar.EventDetailForm.PnlBase.txtEndTime.PressKeys(endTime);
         	calendar.EventDetailForm.PnlBase.cbMilestone.Check(); 
@@ -81,15 +87,22 @@ namespace SmokeTest.Modules
         	AppointmentOverlapPrompt();
         	ValidateEventRemainderPopup();
         	calendar.MainForm.btnCalendar.Click();
-        	calendar.MainForm.btnViewMenu.Click();
-        	calendar.MainForm.menuListView.Click();
+        	//calendar.MainForm.btnViewMenu.Click();
+        //	calendar.MainForm.menuListView.Click();
         	Delay.Seconds(3);
         	new_Data+="Milestone: "+data;
-        	cmn.VerifyDataExistsInTable(calendar.MainForm.tblCalendar,new_Data,"Calendar List");
-			
-        	cmn.SelectItemFromTableDblClick(calendar.MainForm.tblCalendar,new_Data,"Calendar List");
+        	//cmn.VerifyDataExistsInTable(calendar.MainForm.tblCalendar,new_Data,"Calendar List");
+			calendar.MainForm.Toolbar.btnWeek.Click();
+        	Delay.Seconds(2);
+			calendar.MainForm.PnlViews.shrtDay.Click();
+			Delay.Seconds(3);
+			calendar.appmtData1=data;
+			calendar.MainForm.PnlViews.txtAppt.DoubleClick();
+        	
+        	
+        	//cmn.SelectItemFromTableDblClick(calendar.MainForm.tblCalendar,new_Data,"Calendar List");
         	calendar.EventDetailForm.PnlBase.txtStartDate.Click();
-        	calendar.EventDetailForm.PnlBase.txtStartDate.PressKeys(System.DateTime.Now.AddDays(2).ToShortDateString());
+        	calendar.EventDetailForm.PnlBase.txtStartDate.PressKeys(System.DateTime.Now.AddDays(1).ToShortDateString());
         	calendar.EventDetailForm.btnOK.Click();
         	Validate.Exists(calendar.AdjournmentReasonForm.SelfInfo,"Adjournment Reason Form");
         	calendar.AdjournmentReasonForm.txtAdjournReason.Click();
@@ -97,13 +110,15 @@ namespace SmokeTest.Modules
         	calendar.AdjournmentReasonForm.Toolbar1.ButtonOK.Click();
         	//calendar.AppointmentOverlapDialog.btnOk.Click();
         	AppointmentOverlapPrompt();
-        	adj_data+="[Adjourned to "+System.DateTime.Now.AddDays(2).ToString("MMM dd, yyyy")+"] "+data;
-        	cmn.VerifyDataExistsInTable(calendar.MainForm.tblCalendar,adj_data,"Calendar List");
+        	adj_data+="[Adjourned to "+System.DateTime.Now.AddDays(1).ToString("MMM dd, yyyy")+"] "+data;
+        	
+        	//cmn.VerifyDataExistsInTable(calendar.MainForm.tblCalendar,adj_data,"Calendar List");
         	Delay.Seconds(10);
         	calendar.MainForm.btnCalendar.Click();
         	calendar.MainForm.btnNewAppointment.Click();
         	Delay.Seconds(1);
         	calendar.EventDetailForm.PnlBase.txtAppointmentTitle.PressKeys(data+"_2");
+        	calendar.EventDetailForm.PnlBase.txtStartDate.PressKeys(day1.ToShortDateString());
         	calendar.EventDetailForm.PnlBase.txtStartTime.PressKeys(strtTime);
         	calendar.EventDetailForm.PnlBase.txtEndTime.PressKeys(endTime);
         	calendar.EventDetailForm.btnOK.Click();
@@ -111,7 +126,15 @@ namespace SmokeTest.Modules
         	AppointmentOverlapPrompt();
         	ValidateEventRemainderPopup();
         	Delay.Seconds(10);
-        	cmn.SelectItemFromTableDblClick(calendar.MainForm.tblCalendar,data+"_2","Calendar List");
+        	//cmn.SelectItemFromTableDblClick(calendar.MainForm.tblCalendar,data+"_2","Calendar List");
+        	
+        	Delay.Seconds(2);
+			calendar.MainForm.PnlViews.shrtDay.Click();
+			Delay.Seconds(3);
+			calendar.appmtData=data+"_2";
+			calendar.MainForm.PnlViews.txtappointment.DoubleClick();
+        	
+        	
         	calendar.EventDetailForm.Toolbar1.btnAvailability.Click();
         	Delay.Seconds(2);
         	Validate.Attribute(calendar.PromptForm.txtMsgInfo,"Text","There are currently no conflicts for the scheduling of this Appointment.","No Scheduling Conflict Message");

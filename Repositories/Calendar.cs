@@ -137,6 +137,18 @@ namespace SmokeTest.Repositories
             set { _listselection = value; }
         }
 
+        string _appmtData1 = "";
+
+        /// <summary>
+        /// Gets or sets the value of variable appmtData1.
+        /// </summary>
+        [TestVariable("a304888a-99f7-4a56-88f3-9e201fa0f345")]
+        public string appmtData1
+        {
+            get { return _appmtData1; }
+            set { _appmtData1 = value; }
+        }
+
 #endregion
 
         /// <summary>
@@ -1097,6 +1109,7 @@ namespace SmokeTest.Repositories
             RepoItemInfo _txtcurrentdayapptInfo;
             RepoItemInfo _concurrentdayInfo;
             RepoItemInfo _pnlyearviewInfo;
+            RepoItemInfo _txtapptInfo;
 
             /// <summary>
             /// Creates a new PnlViews  folder.
@@ -1113,6 +1126,7 @@ namespace SmokeTest.Repositories
                 _txtcurrentdayapptInfo = new RepoItemInfo(this, "txtCurrentDayAppt", "?/?/container[@controlname='pnlDayViewControl']/?/?/table[@accessiblename='udvDay']/?/?/cell[@accessiblename=$curdayapptselection]", 30000, null, "0cba9cbe-b8f6-40b2-a57a-5983c434eded");
                 _concurrentdayInfo = new RepoItemInfo(this, "conCurrentDay", "?/?/container[@controlname='pnlDayViewControl']/?/?/table[@accessiblename='udvDay']/container", 30000, null, "ea60a39e-f9c3-471e-820c-1ac6a04a19b0");
                 _pnlyearviewInfo = new RepoItemInfo(this, "PnlYearView", "container[@controlname='pnlYearView']", 30000, null, "41e3fce8-79d9-434b-8571-0bdeafb31773");
+                _txtapptInfo = new RepoItemInfo(this, "txtAppt", "container[@controlname='pnlWeekView']//container[@accessiblename=$curwkday]/text[@text=$appmtData1]", 30000, null, "7cf11ee3-afa1-4785-8ebd-d3fd52be2e1f");
             }
 
             /// <summary>
@@ -1352,6 +1366,30 @@ namespace SmokeTest.Repositories
                 get
                 {
                     return _pnlyearviewInfo;
+                }
+            }
+
+            /// <summary>
+            /// The txtAppt item.
+            /// </summary>
+            [RepositoryItem("7cf11ee3-afa1-4785-8ebd-d3fd52be2e1f")]
+            public virtual Ranorex.Text txtAppt
+            {
+                get
+                {
+                    return _txtapptInfo.CreateAdapter<Ranorex.Text>(true);
+                }
+            }
+
+            /// <summary>
+            /// The txtAppt item info.
+            /// </summary>
+            [RepositoryItemInfo("7cf11ee3-afa1-4785-8ebd-d3fd52be2e1f")]
+            public virtual RepoItemInfo txtApptInfo
+            {
+                get
+                {
+                    return _txtapptInfo;
                 }
             }
         }

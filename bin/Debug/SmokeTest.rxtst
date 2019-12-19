@@ -299,6 +299,12 @@ Module]]>
 			ref="000ea7aa-65a2-40a9-a29e-f52ff9e3f883"
 			type="UserCode">
 			</testmodule>
+			<testmodule
+			id="19d73f2f-7176-4991-a219-681f4c50303e"
+			name="closeExistingPrompts"
+			ref="fdd2e606-d9d7-4eee-a27d-dc862a5293a3"
+			type="UserCode">
+			</testmodule>
 			<testcase
 			id="1a61e0ba-1409-4fc7-b56d-8fef757916d1"
 			name="CreateManyRecords">
@@ -376,6 +382,12 @@ module]]>
 					<![CDATA[Edit and Verify the created Document]]>
 				</description>
 			</smartfoldernode>
+			<testmodule
+			id="23d81723-6205-416f-9883-3fbe0422cc5b"
+			name="closeExistingPrompts"
+			ref="fdd2e606-d9d7-4eee-a27d-dc862a5293a3"
+			type="UserCode">
+			</testmodule>
 			<smartfoldernode
 			id="23fcef2f-b313-4434-9cac-536ecf3009d3"
 			name="PaymentAPX">
@@ -689,6 +701,10 @@ module]]>
 			id="48127973-c9a3-4064-8264-46bbf0e6f7d0"
 			name="AddNote">
 			</smartfoldernode>
+			<teardown
+			id="485c861d-ca01-4afa-94cd-bac577b0d45b"
+			name="teardown">
+			</teardown>
 			<testmodule
 			enabled="False"
 			id="49811b92-8f56-4ed1-8276-aceae4873874"
@@ -726,6 +742,12 @@ module]]>
 			id="4d4cb17a-5ed9-4753-af9f-f709e4bd01f9"
 			name="DeleteDocument"
 			ref="673de6e6-28b2-4346-a905-e834ebe0e73c"
+			type="UserCode">
+			</testmodule>
+			<testmodule
+			id="4e3f1ee6-ec81-4b06-8701-653431c20771"
+			name="closeExistingPrompts"
+			ref="fdd2e606-d9d7-4eee-a27d-dc862a5293a3"
 			type="UserCode">
 			</testmodule>
 			<smartfoldernode
@@ -921,6 +943,12 @@ which will be used throughout the Smoke Test]]>
 			id="5b5aea69-6426-460b-b666-6ea8e58b7416"
 			name="VerifyEventsAddFromFiles">
 			</smartfoldernode>
+			<testmodule
+			id="5dcff961-b249-4cfa-b249-ef0d4ca32872"
+			name="closeExistingPrompts"
+			ref="fdd2e606-d9d7-4eee-a27d-dc862a5293a3"
+			type="UserCode">
+			</testmodule>
 			<smartfoldernode
 			id="617d1b07-0685-449a-a510-b2038d125def"
 			name="AddRelatedFiles">
@@ -1184,6 +1212,10 @@ event]]>
 			ref="49b33d33-8e68-4bd7-ab32-81c58c96a0c0"
 			type="UserCode">
 			</testmodule>
+			<teardown
+			id="75060f55-ed1d-4f19-b22a-9c9aa5a33a8f"
+			name="teardown">
+			</teardown>
 			<testmodule
 			id="7533e7c2-479f-4ed4-b5cc-c67bfaa7b37d"
 			name="changePrefIncludeChronology"
@@ -1320,6 +1352,12 @@ event]]>
 			id="7dd06647-a62c-4aba-b0f2-4ff956b0705a"
 			name="Document_Detail_Module">
 			</testcase>
+			<testmodule
+			id="7ee23165-3e67-4d25-b823-d4a037b12c01"
+			name="closeExistingPrompts"
+			ref="fdd2e606-d9d7-4eee-a27d-dc862a5293a3"
+			type="UserCode">
+			</testmodule>
 			<smartfoldernode
 			id="8415e0b4-3c9d-48b5-9028-1adabd0000b2"
 			name="CreateRedLetterDayWithDragNDropWeekly">
@@ -1547,6 +1585,12 @@ event]]>
 			ref="44ed8d19-9b72-44ac-ac3d-0ffb9d3f55a3"
 			type="UserCode">
 			</testmodule>
+			<testmodule
+			id="a0de809e-16a5-41e3-b20e-99d285543c94"
+			name="closeExistingPrompts"
+			ref="fdd2e606-d9d7-4eee-a27d-dc862a5293a3"
+			type="UserCode">
+			</testmodule>
 			<smartfoldernode
 			id="a11353b5-3294-4eaa-83d3-a0331ed7ef67"
 			name="BillingCreateBill">
@@ -1653,6 +1697,12 @@ Validation)]]>
 			id="a7497b82-903e-43dd-b66d-2ffcdc149f74"
 			name="ClientPortal">
 			</testcase>
+			<testmodule
+			id="a7b0c5ab-5daf-49ca-91b6-ef98c404320b"
+			name="closeExistingPrompts"
+			ref="fdd2e606-d9d7-4eee-a27d-dc862a5293a3"
+			type="UserCode">
+			</testmodule>
 			<smartfoldernode
 			id="a8bdc1ce-01af-4c76-8bd9-13848fac5071"
 			name="VerifyAddNotes">
@@ -1808,6 +1858,10 @@ module]]>
 			id="b049a834-9d04-4f9c-964c-51fefe3f15e9"
 			name="ChangePreferencesIncludeChronology">
 			</smartfoldernode>
+			<teardown
+			id="b14ad441-49d0-4040-9de7-76ffff5a60f4"
+			name="teardown">
+			</teardown>
 			<testmodule
 			enabled="False"
 			id="b27f747c-6d5c-448a-9944-8f8e18adf223"
@@ -1955,6 +2009,10 @@ directly and create a Bill]]>
 					</var>
 				</databinding>
 			</testmodule>
+			<teardown
+			id="c2a6cc13-1ce9-473a-814d-5b1ef95ae297"
+			name="teardown">
+			</teardown>
 			<testmodule
 			id="c2eef881-b3b0-4d8f-9b2b-a11ad0c7882b"
 			name="EditDocument"
@@ -2001,6 +2059,10 @@ directly and create a Bill]]>
 					</var>
 				</databinding>
 			</testmodule>
+			<teardown
+			id="c71f08e7-1280-43da-aa99-0d89b3479fbf"
+			name="teardown">
+			</teardown>
 			<smartfoldernode
 			datasource="BillData"
 			id="c7f34fde-f3e3-4bc3-b1ce-d2a714048076"
@@ -2133,6 +2195,10 @@ directly and create a Bill]]>
 			id="d5b02be0-b086-4da3-b457-ad7b350addd1"
 			name="AddFileAPX">
 			</smartfoldernode>
+			<teardown
+			id="d78be6e3-705c-4dd8-890c-f7f345b2f8b2"
+			name="teardown">
+			</teardown>
 			<testmodule
 			id="d7b768de-88e3-4aed-84d3-d1dd6baea6e5"
 			name="ReceivePaymentAPX"
@@ -2309,6 +2375,10 @@ Page]]>
 bill]]>
 				</description>
 			</smartfoldernode>
+			<teardown
+			id="e9ac942e-0202-412a-b5e3-ba3a78d7e155"
+			name="teardown">
+			</teardown>
 			<smartfoldernode
 			datasource="FileAPXData"
 			id="ea76f4ba-7237-4d88-b156-6fb7b3040839"
@@ -2882,6 +2952,14 @@ bill]]>
 							name="SendDocViaEmail">
 							</testmodule>
 						</smartfoldernode>
+						<teardown
+						id="e9ac942e-0202-412a-b5e3-ba3a78d7e155"
+						name="teardown">
+							<testmodule
+							id="7ee23165-3e67-4d25-b823-d4a037b12c01"
+							name="closeExistingPrompts">
+							</testmodule>
+						</teardown>
 					</testcase>
 					<testcase
 					id="341f66fc-768f-4fad-b39c-5baa19ca4fbd"
@@ -2982,6 +3060,14 @@ bill]]>
 							name="BillingARStartUpBalance">
 							</testmodule>
 						</smartfoldernode>
+						<teardown
+						id="75060f55-ed1d-4f19-b22a-9c9aa5a33a8f"
+						name="teardown">
+							<testmodule
+							id="5dcff961-b249-4cfa-b249-ef0d4ca32872"
+							name="closeExistingPrompts">
+							</testmodule>
+						</teardown>
 					</testcase>
 					<testcase
 					id="cce75b9f-2a0a-4eea-879e-3e7540f86d4e"
@@ -3194,6 +3280,14 @@ bill]]>
 							name="CheckCache">
 							</testmodule>
 						</smartfoldernode>
+						<teardown
+						id="c71f08e7-1280-43da-aa99-0d89b3479fbf"
+						name="teardown">
+							<testmodule
+							id="23d81723-6205-416f-9883-3fbe0422cc5b"
+							name="closeExistingPrompts">
+							</testmodule>
+						</teardown>
 					</testcase>
 					<testcase
 					id="a7497b82-903e-43dd-b66d-2ffcdc149f74"
@@ -3430,6 +3524,14 @@ bill]]>
 							name="changePrefIncludeChronology">
 							</testmodule>
 						</smartfoldernode>
+						<teardown
+						id="d78be6e3-705c-4dd8-890c-f7f345b2f8b2"
+						name="teardown">
+							<testmodule
+							id="a7b0c5ab-5daf-49ca-91b6-ef98c404320b"
+							name="closeExistingPrompts">
+							</testmodule>
+						</teardown>
 					</testcase>
 					<testcase
 					id="7dd06647-a62c-4aba-b0f2-4ff956b0705a"
@@ -3498,6 +3600,14 @@ bill]]>
 							name="verifyAddDocIndexAutoTxtSearch">
 							</testmodule>
 						</smartfoldernode>
+						<teardown
+						id="485c861d-ca01-4afa-94cd-bac577b0d45b"
+						name="teardown">
+							<testmodule
+							id="a0de809e-16a5-41e3-b20e-99d285543c94"
+							name="closeExistingPrompts">
+							</testmodule>
+						</teardown>
 					</testcase>
 					<testcase
 					id="0eb91bf1-6a6d-403e-a327-77532be52941"
@@ -3518,6 +3628,14 @@ bill]]>
 							name="verifySearchByFullTextDocInIndex">
 							</testmodule>
 						</smartfoldernode>
+						<teardown
+						id="c2a6cc13-1ce9-473a-814d-5b1ef95ae297"
+						name="teardown">
+							<testmodule
+							id="19d73f2f-7176-4991-a219-681f4c50303e"
+							name="closeExistingPrompts">
+							</testmodule>
+						</teardown>
 					</testcase>
 					<testcase
 					id="67e9bae2-280b-4ca4-8e22-d3573671ec71"
@@ -3610,6 +3728,14 @@ bill]]>
 							name="createnDeleteMasterAdjrnAppt_ThisOne">
 							</testmodule>
 						</smartfoldernode>
+						<teardown
+						id="b14ad441-49d0-4040-9de7-76ffff5a60f4"
+						name="teardown">
+							<testmodule
+							id="4e3f1ee6-ec81-4b06-8701-653431c20771"
+							name="closeExistingPrompts">
+							</testmodule>
+						</teardown>
 					</testcase>
 					<testcase
 					id="f999b233-305c-4e9e-a5e8-bd5b49a34123"
@@ -4242,9 +4368,6 @@ bill]]>
 			</testcontainer>
 			<testcontainer
 			id="3b2e6fab-e895-4cf3-bd0a-f93aef1425ae">
-			</testcontainer>
-			<testcontainer
-			id="3d587e15-d432-4a12-8531-db56cb59b79f">
 			</testcontainer>
 			<testcontainer
 			id="3f7e9bda-619a-435d-89e3-2bc090023364">

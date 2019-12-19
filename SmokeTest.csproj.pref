@@ -1,12 +1,10 @@
 ﻿<Properties>
   <Array name="active">
-    <Element value="Modules\createNewApptOverlapExistAdjrnAppt.cs" />
+    <Element value="SmokeTest.rxtst" />
   </Array>
   <Array name="bookmarks" />
   <Array name="files">
     <Element value="SmokeTest.rxtst" />
-    <Element value="Repositories\Calendar.cs" />
-    <Element value="Repositories\Calendar.rxrep" />
     <Element value="Modules\createNewApptOverlapExistAdjrnAppt.cs" />
   </Array>
   <Properties name="projectSavedData">

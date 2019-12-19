@@ -326,6 +326,9 @@
     <Compile Include="Modules\CheckEmailFromClient.cs">
       <id>f3be0698-2946-408a-809e-efa7c1d29d38</id>
     </Compile>
+    <Compile Include="Modules\closeExistingPrompts.cs">
+      <id>b7aed1f0-b1c8-4141-b332-2dd058c6976d</id>
+    </Compile>
     <Compile Include="Modules\CpNote.cs">
       <id>44dae08b-eaae-42ae-8474-342b0b27d061</id>
     </Compile>

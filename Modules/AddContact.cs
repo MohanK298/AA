@@ -170,6 +170,7 @@ namespace SmokeTest.Modules
             Delay.SpeedFactor = 1.0;
             
             CreateContact();
+            Utilities.Common.ClosePrompt();
         }
     }
 }

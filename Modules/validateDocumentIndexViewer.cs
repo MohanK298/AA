@@ -101,6 +101,7 @@ namespace SmokeTest.Modules
             GenerateDocument();
             FillDocument();
             validatePreviewPane();
+            Utilities.Common.ClosePrompt();
         }
     }
 }

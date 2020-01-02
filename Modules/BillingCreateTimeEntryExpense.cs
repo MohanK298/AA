@@ -143,6 +143,7 @@ namespace SmokeTest.Modules
         	
             PerformTimeEntry();
             PerformTimeExpense();
+            Utilities.Common.ClosePrompt();
         }
     }
 }

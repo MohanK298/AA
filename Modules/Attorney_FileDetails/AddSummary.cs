@@ -38,6 +38,7 @@ namespace SmokeTest.Modules.Attorney_FileDetails
             Delay.SpeedFactor = 1.0;
             
             Action();
+            Utilities.Common.ClosePrompt();
         }
         
         public void Action(){
@@ -53,6 +54,7 @@ namespace SmokeTest.Modules.Attorney_FileDetails
         	Delay.Seconds(2);
         	Validate.Attribute(file.FileDetailForm.txtSummaryInfo, "Text", "This is a Smoke Test text.");
         	file.FileDetailForm.btnSaveClose.Click();
+        	
         	
         }
     }

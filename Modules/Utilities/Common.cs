@@ -67,6 +67,29 @@ namespace SmokeTest.Modules.Utilities
 			return localFileName;			
         }
         [UserCodeMethod]
+        public static void ClosePrompt()
+        {
+        	
+        	List<Element> all = (List<Element>)Host.Local.Find(new RxPath("/form"));
+			
+			foreach(Element e in all)
+			{
+				Form f = new Form(e);
+			//	Report.Info(f.Title);
+			//	Report.Info(f.FlavorName);
+			if(f.FlavorName.Equals("winforms"))
+				   if(f.Title!="Amicus Attorney")
+				   {
+				Report.Info(String.Format("{0} Prompt/Dialog Closed",f.Title));
+				   	f.Close();
+				   }
+
+			}
+        	
+        }
+        
+        
+        [UserCodeMethod]
         public void VerifyDataExistsInTable(Ranorex.Adapter tbldata,string data,string tblName)
         {
         	int k=0;

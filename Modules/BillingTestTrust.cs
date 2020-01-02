@@ -145,6 +145,7 @@ namespace SmokeTest.Modules
             
             PerformTrustReceipt();
             PerformTrustCheck();
+            Utilities.Common.ClosePrompt();
         }
     }
 }

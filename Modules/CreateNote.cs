@@ -101,6 +101,7 @@ namespace SmokeTest.Modules
             CreateStickyNote();
             
             Delay.Seconds(3);
+            Utilities.Common.ClosePrompt();
         }
     }
 }

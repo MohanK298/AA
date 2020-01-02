@@ -147,6 +147,7 @@ namespace SmokeTest.Modules
             PerformCreateNewFile();
             PerformCreateBill();
             BillingDirectTest.Start();
+            Utilities.Common.ClosePrompt();
         }
     }
 }

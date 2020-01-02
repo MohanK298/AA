@@ -13,7 +13,7 @@ using System.Text.RegularExpressions;
 using System.Drawing;
 using System.Threading;
 using WinForms = System.Windows.Forms;
-
+using SmokeTest.Modules.Utilities;
 using Ranorex;
 using Ranorex.Core;
 using Ranorex.Core.Testing;
@@ -28,13 +28,14 @@ namespace SmokeTest.Modules.Attorney_FileDetails
     {
        //Repository Variable
        SmokeTest.Repositories.Files file = new SmokeTest.Repositories.Files();
-       
+       Common cmn=new Common();
         public AddOther()
         {
             // Do not delete - a parameterless constructor is required!
         }
 
-       	public void Action(){	
+       	public void Action(){
+        	file.MainForm.btnFiles.Click();
         	file.MainForm.FilesIndexForm.listFirstFile.DoubleClick();
         	Delay.Seconds(2);
         	file.FileDetailForm.Documents.Click();
@@ -46,7 +47,10 @@ namespace SmokeTest.Modules.Attorney_FileDetails
         	//file.DocumentDetail.pnlBase.txtDocumentTitle.PressKeys(documentTitle + time);
         	file.DocumentDetail.PnlBase.txtDocumentTitle.PressKeys("Add Other Type Test");
         	file.DocumentDetail.PnlBase.ButtonEditorDropdownButton.Click();
-        	file.DropdownSelector.DropdownSelect2.Click();
+        	//file.DropdownSelector.DropdownSelect2.Click();
+        	//doc.DocumentDetail.PnlBase.btnDropdownType.Click();
+        	file.DropDownForm.Self.Activate();
+        	cmn.SelectItemDropdown(file.tblDpdwnList.Self,"Other");
         	Delay.Seconds(1);
         	file.DocumentDetail.PnlBase.Text.PressKeys("Adding Other Type Test");
         	file.DocumentDetail.summaryTxt.PressKeys("This is adding Other Type Test");
@@ -62,6 +66,8 @@ namespace SmokeTest.Modules.Attorney_FileDetails
             Delay.SpeedFactor = 1.0;
             
         Action();
+        
+        Utilities.Common.ClosePrompt();
         }
     }
 }

@@ -50,6 +50,7 @@ namespace SmokeTest.Modules
             
             Perform();
             BillTest.Start();
+            Utilities.Common.ClosePrompt();
         }
     }
 }

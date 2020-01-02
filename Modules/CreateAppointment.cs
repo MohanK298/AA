@@ -182,6 +182,7 @@ namespace SmokeTest.Modules
             
             //CheckUI();
             Appointment();
+            Utilities.Common.ClosePrompt();
         }
     }
 }

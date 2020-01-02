@@ -113,6 +113,7 @@ namespace SmokeTest
             Keyboard.DefaultKeyPressTime = 100;
             Delay.SpeedFactor = 1.0;
             SearchByTitleandSummaryFields();
+            Common.ClosePrompt();
         }
     }
 }

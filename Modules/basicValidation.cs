@@ -83,6 +83,7 @@ namespace SmokeTest.Modules.Attorney_FileDetails
             saveButtonValidation();
             DetailsButtonValidation();
             clearButtonValidation();
+            Utilities.Common.ClosePrompt();
             
         }
     }

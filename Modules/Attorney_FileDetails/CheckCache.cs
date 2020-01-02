@@ -81,6 +81,7 @@ namespace SmokeTest.Modules.Attorney_FileDetails
         	Validate.AttributeContains(fd.FileDetailForm.PanelRight.TextInfo, "Text", "Ranorex test file Main Note text" + eventTitle);
         	
         	fd.FileDetailForm.SaveClose.Click();
+        	Utilities.Common.ClosePrompt();
         }
         
         private void AddSummary()

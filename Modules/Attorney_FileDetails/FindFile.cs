@@ -62,6 +62,7 @@ namespace SmokeTest.Modules.Attorney_FileDetails
         	file.FindFilesForm.txtFindFile.TextValue = fileName + time;
         	file.FindFilesForm.btnOK.Click();
         	Delay.Seconds(2);
+        	Utilities.Common.ClosePrompt();
         }
     }
 }

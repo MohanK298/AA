@@ -71,6 +71,7 @@ namespace SmokeTest.Modules
             Delay.SpeedFactor = 1.0;
             
             EditDocumentWithData();
+            Utilities.Common.ClosePrompt();
         }
     }
 }

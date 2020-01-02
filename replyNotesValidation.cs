@@ -85,6 +85,7 @@ namespace SmokeTest
             Delay.SpeedFactor = 1.0;
             CreateNote();
             ReplyNote();
+            SmokeTest.Modules.Utilities.Common.ClosePrompt();
         }
     }
 }

@@ -102,6 +102,7 @@ namespace SmokeTest
             createNote();
             selectExistingNote();
             validateAssociatedButtons();
+            SmokeTest.Modules.Utilities.Common.ClosePrompt();
             
         }
     }

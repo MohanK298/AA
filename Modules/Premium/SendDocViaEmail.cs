@@ -123,6 +123,7 @@ namespace SmokeTest.Modules.Premium
         	comm.DocumentSelector.Title.Click();
         	comm.DocumentSelector.AddBtn.Click();
         	comm.DocumentSelector.OkBtn.Click();
+        	Utilities.Common.ClosePrompt();
         }
     }
 }

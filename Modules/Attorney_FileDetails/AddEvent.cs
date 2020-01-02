@@ -119,6 +119,7 @@ namespace SmokeTest.Modules.Attorney_FileDetails
             Delay.SpeedFactor = 1.0;
             
             Action();
+            Utilities.Common.ClosePrompt();
         }
     }
 }

@@ -45,8 +45,9 @@ namespace SmokeTest.Repositories
         FilesFolders.PrecedentSelectFormAppFolder _precedentselectform;
         FilesFolders.BaseDatesFormAppFolder _basedatesform;
         FilesFolders.CportalAppFolder _cportal;
-        FilesFolders.DropDownFormAppFolder _dropdownform;
         FilesFolders.EventSelectFormAppFolder _eventselectform;
+        FilesFolders.DropDownFormAppFolder _dropdownform;
+        FilesFolders.TblDpdwnListFolder _tbldpdwnlist;
 
         /// <summary>
         /// Gets the singleton class instance representing the Files element repository.
@@ -81,8 +82,9 @@ namespace SmokeTest.Repositories
             _precedentselectform = new FilesFolders.PrecedentSelectFormAppFolder(this);
             _basedatesform = new FilesFolders.BaseDatesFormAppFolder(this);
             _cportal = new FilesFolders.CportalAppFolder(this);
-            _dropdownform = new FilesFolders.DropDownFormAppFolder(this);
             _eventselectform = new FilesFolders.EventSelectFormAppFolder(this);
+            _dropdownform = new FilesFolders.DropDownFormAppFolder(this);
+            _tbldpdwnlist = new FilesFolders.TblDpdwnListFolder(this);
         }
 
 #region Variables
@@ -300,21 +302,30 @@ namespace SmokeTest.Repositories
         }
 
         /// <summary>
-        /// The DropDownForm folder.
-        /// </summary>
-        [RepositoryFolder("89df28d4-b6bc-43c7-94c0-200e140dafbc")]
-        public virtual FilesFolders.DropDownFormAppFolder DropDownForm
-        {
-            get { return _dropdownform; }
-        }
-
-        /// <summary>
         /// The EventSelectForm folder.
         /// </summary>
         [RepositoryFolder("834fd3b1-345a-4495-979a-24821394ee96")]
         public virtual FilesFolders.EventSelectFormAppFolder EventSelectForm
         {
             get { return _eventselectform; }
+        }
+
+        /// <summary>
+        /// The DropDownForm folder.
+        /// </summary>
+        [RepositoryFolder("85d01cfc-c704-4417-8959-970a6f8c573a")]
+        public virtual FilesFolders.DropDownFormAppFolder DropDownForm
+        {
+            get { return _dropdownform; }
+        }
+
+        /// <summary>
+        /// The tblDpdwnList folder.
+        /// </summary>
+        [RepositoryFolder("bfd0616b-dd76-47a3-b95b-f515f9c3419a")]
+        public virtual FilesFolders.TblDpdwnListFolder tblDpdwnList
+        {
+            get { return _tbldpdwnlist; }
         }
     }
 
@@ -5950,46 +5961,6 @@ namespace SmokeTest.Repositories
         }
 
         /// <summary>
-        /// The DropDownFormAppFolder folder.
-        /// </summary>
-        [RepositoryFolder("89df28d4-b6bc-43c7-94c0-200e140dafbc")]
-        public partial class DropDownFormAppFolder : RepoGenBaseFolder
-        {
-
-            /// <summary>
-            /// Creates a new DropDownForm  folder.
-            /// </summary>
-            public DropDownFormAppFolder(RepoGenBaseFolder parentFolder) :
-                    base("DropDownForm", "/form", parentFolder, 30000, null, true, "89df28d4-b6bc-43c7-94c0-200e140dafbc", "")
-            {
-            }
-
-            /// <summary>
-            /// The Self item.
-            /// </summary>
-            [RepositoryItem("89df28d4-b6bc-43c7-94c0-200e140dafbc")]
-            public virtual Ranorex.Form Self
-            {
-                get
-                {
-                    return _selfInfo.CreateAdapter<Ranorex.Form>(true);
-                }
-            }
-
-            /// <summary>
-            /// The Self item info.
-            /// </summary>
-            [RepositoryItemInfo("89df28d4-b6bc-43c7-94c0-200e140dafbc")]
-            public virtual RepoItemInfo SelfInfo
-            {
-                get
-                {
-                    return _selfInfo;
-                }
-            }
-        }
-
-        /// <summary>
         /// The EventSelectFormAppFolder folder.
         /// </summary>
         [RepositoryFolder("834fd3b1-345a-4495-979a-24821394ee96")]
@@ -6387,6 +6358,86 @@ namespace SmokeTest.Repositories
                 get
                 {
                     return _tbleventsInfo;
+                }
+            }
+        }
+
+        /// <summary>
+        /// The DropDownFormAppFolder folder.
+        /// </summary>
+        [RepositoryFolder("85d01cfc-c704-4417-8959-970a6f8c573a")]
+        public partial class DropDownFormAppFolder : RepoGenBaseFolder
+        {
+
+            /// <summary>
+            /// Creates a new DropDownForm  folder.
+            /// </summary>
+            public DropDownFormAppFolder(RepoGenBaseFolder parentFolder) :
+                    base("DropDownForm", "/form[@title='']", parentFolder, 30000, null, true, "85d01cfc-c704-4417-8959-970a6f8c573a", "")
+            {
+            }
+
+            /// <summary>
+            /// The Self item.
+            /// </summary>
+            [RepositoryItem("85d01cfc-c704-4417-8959-970a6f8c573a")]
+            public virtual Ranorex.Form Self
+            {
+                get
+                {
+                    return _selfInfo.CreateAdapter<Ranorex.Form>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Self item info.
+            /// </summary>
+            [RepositoryItemInfo("85d01cfc-c704-4417-8959-970a6f8c573a")]
+            public virtual RepoItemInfo SelfInfo
+            {
+                get
+                {
+                    return _selfInfo;
+                }
+            }
+        }
+
+        /// <summary>
+        /// The TblDpdwnListFolder folder.
+        /// </summary>
+        [RepositoryFolder("bfd0616b-dd76-47a3-b95b-f515f9c3419a")]
+        public partial class TblDpdwnListFolder : RepoGenBaseFolder
+        {
+
+            /// <summary>
+            /// Creates a new tblDpdwnList  folder.
+            /// </summary>
+            public TblDpdwnListFolder(RepoGenBaseFolder parentFolder) :
+                    base("tblDpdwnList", "/form[@title='']/?/?/table[@accessiblename='Band 0']", parentFolder, 60000, null, false, "bfd0616b-dd76-47a3-b95b-f515f9c3419a", "")
+            {
+            }
+
+            /// <summary>
+            /// The Self item.
+            /// </summary>
+            [RepositoryItem("bfd0616b-dd76-47a3-b95b-f515f9c3419a")]
+            public virtual Ranorex.Table Self
+            {
+                get
+                {
+                    return _selfInfo.CreateAdapter<Ranorex.Table>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Self item info.
+            /// </summary>
+            [RepositoryItemInfo("bfd0616b-dd76-47a3-b95b-f515f9c3419a")]
+            public virtual RepoItemInfo SelfInfo
+            {
+                get
+                {
+                    return _selfInfo;
                 }
             }
         }

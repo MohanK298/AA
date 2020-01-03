@@ -157,7 +157,7 @@ namespace SmokeTest.Modules
             
             //Validation
             Validate.Exists(people.PeopleDetailForm.AddressDetails);
-            Delay.Seconds(5);
+            Delay.Seconds(10);
             
             //Save and close
             people.PeopleDetailForm.btnSaveClose.Click();
@@ -170,7 +170,7 @@ namespace SmokeTest.Modules
             Delay.SpeedFactor = 1.0;
             
             CreateContact();
-            Utilities.Common.ClosePrompt();
+         //   Utilities.Common.ClosePrompt();
         }
     }
 }

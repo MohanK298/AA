@@ -80,6 +80,7 @@ namespace SmokeTest.Modules
         public void CreateFile(){
         	
         	//Open window to add a file
+        	file.MainForm.Self.Activate();
         	file.MainForm.btnFiles.Click();
         	file.MainForm.FilesIndexForm.btnNewFile.Click();
         	
@@ -134,8 +135,17 @@ namespace SmokeTest.Modules
         	
         	Delay.Seconds(1);
         	file.FileDetailForm.btnSaveClose.Click();
+        	if(file.FileDetailForm.btnSaveCloseInfo.Exists())
+        	{
+        		file.FileDetailForm.btnSaveClose.Click();	
+        	}
         	Delay.Seconds(1);
         	file.PromptForm.ButtonYes.Click();
+        	Delay.Seconds(1);
+        	if(file.PromptForm.ButtonYesInfo.Exists())
+        	{
+        		file.PromptForm.ButtonYes.Click();	
+        	}
         }
 
         void ITestModule.Run()
@@ -145,7 +155,7 @@ namespace SmokeTest.Modules
             Delay.SpeedFactor = 1.0;
             
             CreateFile();
-            Utilities.Common.ClosePrompt();
+          //  Utilities.Common.ClosePrompt();
         }
     }
 }

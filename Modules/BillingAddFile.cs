@@ -79,6 +79,7 @@ namespace SmokeTest.Modules
         
         public void Perform(){
         	//Open window to add a file
+        	file.MainForm.Self.Activate();
         	file.MainForm.btnFiles.Click();
         	file.MainForm.FilesIndexForm.btnNewFile.Click();
         	
@@ -133,7 +134,7 @@ namespace SmokeTest.Modules
             Delay.SpeedFactor = 1.0;
             
             Perform();
-            Utilities.Common.ClosePrompt();
+            //Utilities.Common.ClosePrompt();
         }
     }
 }

@@ -13,7 +13,7 @@ using System.Text.RegularExpressions;
 using System.Drawing;
 using System.Threading;
 using WinForms = System.Windows.Forms;
-
+using Ranorex.AutomationHelpers.Modules;
 using Ranorex;
 using Ranorex.Core;
 using Ranorex.Core.Testing;
@@ -32,6 +32,12 @@ namespace SmokeTest.Modules
         {
             // Do not delete - a parameterless constructor is required!
         }
+        
+//        private SendReport()
+//        {
+//        	EmailModule em=new EmailModule();
+//        	em.SendPdfReportOnComplete();
+//        }
         
         void ITestModule.Run()
         {

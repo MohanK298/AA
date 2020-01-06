@@ -55,6 +55,7 @@ namespace SmokeTest
         	Delay.Seconds(2);
         	frm.MainForm.FirmSettingsForm.lnkDocIndexing.Click();
         	Validate.Exists(frm.DocumentFirmSettingsForm.SelfInfo,"Document File Setting Form Exists");
+        	frm.DocumentFirmSettingsForm.cbManageIndex.Check();
         	Validate.AttributeEqual(frm.DocumentFirmSettingsForm.cbManageIndexInfo,"Checked","True","Document Index Checkbox is Checked");
         	frm.DocumentFirmSettingsForm.Toolbar1.btnCancel.Click();
         }

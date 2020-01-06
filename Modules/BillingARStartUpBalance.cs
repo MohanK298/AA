@@ -65,6 +65,7 @@ namespace SmokeTest.Modules
         
         public void Perform()
         {
+        	bill.MainForm.Self.Activate();
         	bill.MainForm.BILLING.Click();
 //        	bill.MainForm.Actions.Select();
 			bill.MainForm.Office.Click();

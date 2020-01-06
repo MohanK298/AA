@@ -38,6 +38,8 @@ namespace Ranorex.AutomationHelpers.Modules
         [TestVariable("279773ef-ef45-414a-a555-48cb80bfc115")]
         public string Subject { get; set; }
 
+        
+        
         /// <summary>
         /// Gets or sets the value of the email body.
         /// </summary>
@@ -132,11 +134,12 @@ namespace Ranorex.AutomationHelpers.Modules
             //Will be executed at the very end of the TestSuite
             TestSuite.TestSuiteCompleted += this.OnTestSuiteCompletedSendResult;
         }
-
+		public string reportPath = "\\\\ads-to-file-01\\data$\\products\\AmicusCloud\\AutomatedSanityResults";
         private void OnTestSuiteCompletedSendResult(object sender, EventArgs e)
         {
             var currentTestSuiteStatus = TestReport.CurrentTestSuiteActivity;
             var reportFile = CreateReports();
+			
 
             if (this.SendEmailOnFailure && currentTestSuiteStatus.Status == ActivityStatus.Failed
                 || this.SendEmailOnSuccess && currentTestSuiteStatus.Status == ActivityStatus.Success
@@ -144,10 +147,10 @@ namespace Ranorex.AutomationHelpers.Modules
                 || this.SendPdfReportOnComplete && !this.SendEmailOnFailure && !this.SendEmailOnSuccess)
             {
                 EmailLibrary.SendEmail(
-                    this.Subject,
+                    this.Subject+=" - "+System.DateTime.Now.ToString("MM/dd/yyyy") + " Testing Status - "+currentTestSuiteStatus.Status,
                     this.To,
                     this.From,
-                    this.Body,
+                    this.Body+="Hi All,<br/>Please find the attached Test Report for Automation run on  "+System.DateTime.Now.ToString("MM/dd/yyyy")+" "+System.DateTime.Now.ToString("h:mm tt")+"."+ Environment.NewLine + "<br/><br/>Path to the PDF Report Generated from Automation is : "+String.Format("<a href='{0}'>Pdf Report</a>",reportFile[1].ToString())+"<br/><br/>Thanks<br/>Automation Team",
                     reportFile,
                     this.ServerHostname,
                     int.Parse(this.ServerPort),
@@ -193,6 +196,7 @@ namespace Ranorex.AutomationHelpers.Modules
             {
                 ReportToPDFModule pdfModule = new ReportToPDFModule();
                 pdfModule.PdfName = TestReport.ReportEnvironment.ReportName + ".pdf";
+                pdfModule.PdfDirectoryPath=reportPath;
                 pdfModule.Xml = this.PdfReportCustomStylesheet ?? "";
                 pdfModule.Details = "all";
                 return pdfModule.CreatePDF();

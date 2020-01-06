@@ -79,6 +79,7 @@ namespace SmokeTest
         	 GenerateDocument();
         	 FillDocument();
         	 cmn.SelectItemFromTableDblClick(doc.MainForm.DocumentsIndexForm.tblDocuments,fileName,"Documents Table");
+        	 Delay.Seconds(2);
         	 doc.DocumentDetail.PnlBase.btnFilesAndPeople.Click();
         	 doc.DocumentDetail.PnlBase.btnAddFile.Click();
         	// cmn.SelectItemDropdown(doc.FileSelectForm.cmbbxFileType,doc.tblDropdown,"All");

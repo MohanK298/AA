@@ -48,7 +48,11 @@ namespace SmokeTest.Modules.Attorney_FileDetails
         public void Action(){
         	firmsetting.MainForm.Office.Click();
         	Delay.Seconds(1);
-        	firmsetting.MainForm.imgFirmSettings.Click();
+        	
+        	firmsetting.MainForm.View.Click();
+			Delay.Seconds(2);
+			firmsetting.MainForm.FirmSettings1.Click();
+			
         	Delay.Seconds(2);
         	firmsetting.MainForm.FirmSettingsForm.Management.Click();
         	Delay.Seconds(1);

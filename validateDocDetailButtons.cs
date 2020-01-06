@@ -75,6 +75,7 @@ namespace SmokeTest
          	//Select a Document
          	cmn.SelectItemFromTableDblClick(doc.MainForm.DocumentsIndexForm.tblDocuments,fileName,"Documents Table");
          	//Validate Document Summary is the same as entered
+		
          	Validate.AttributeContains(doc.DocumentDetail.MenubarFillPanel.txtDocumentSummaryInfo,"Text",data,String.Format("Document Summary is {0}",data));
          	//Navigate to Next Document
          	doc.DocumentDetail.MenubarFillPanel.btnNext.Click();

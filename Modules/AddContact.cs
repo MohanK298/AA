@@ -118,6 +118,7 @@ namespace SmokeTest.Modules
 		
         public void CreateContact(){
         	//Select Attorney Module
+        	people.MainForm.Self.Activate();
         	people.MainForm.Attorney.Click();
         	//Add a contact
         	//people.MainForm.btnPeople.Click();

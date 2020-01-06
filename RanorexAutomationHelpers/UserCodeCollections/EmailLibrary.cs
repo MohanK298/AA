@@ -86,7 +86,7 @@ namespace Ranorex.AutomationHelpers.UserCodeCollections
                         Subject = subject,
                         Body = body
                     };
-
+					message.IsBodyHtml=true;
                     if (attachments != null)
                     {
 

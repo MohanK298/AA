@@ -1879,6 +1879,98 @@ module]]>
 directly and create a Bill]]>
 				</description>
 			</smartfoldernode>
+			<testmodule
+			id="b3e9e3a4-8559-4832-9301-48fb09fbb328"
+			name="EmailModule"
+			ref="d8198cc7-82f5-46b2-81e7-3ed789544877"
+			type="UserCode">
+				<databinding>
+					<var
+					dataname="Subject"
+					datasourceid="64e40821-5af1-4e11-b080-2b9b34407a12"
+					variableid="279773ef-ef45-414a-a555-48cb80bfc115"
+					variablename="Subject">
+					</var>
+					<var
+					dataname="Body"
+					datasourceid="64e40821-5af1-4e11-b080-2b9b34407a12"
+					variableid="ef2dc4ee-14a8-483f-92ad-f2c6bd6d67db"
+					variablename="Body">
+					</var>
+					<var
+					dataname="To"
+					datasourceid="64e40821-5af1-4e11-b080-2b9b34407a12"
+					variableid="12fd536f-980f-4e5a-a921-acaf0c6247e5"
+					variablename="To">
+					</var>
+					<var
+					dataname="From"
+					datasourceid="64e40821-5af1-4e11-b080-2b9b34407a12"
+					variableid="718a0466-d3a5-4d93-93a0-91ccd5f1a19e"
+					variablename="From">
+					</var>
+					<var
+					dataname="ServerHostName"
+					datasourceid="64e40821-5af1-4e11-b080-2b9b34407a12"
+					variableid="2436c39d-0705-4ec3-85fb-5e9835a1ab18"
+					variablename="ServerHostname">
+					</var>
+					<var
+					dataname="ServerPort"
+					datasourceid="64e40821-5af1-4e11-b080-2b9b34407a12"
+					variableid="e255daf0-00ef-4b39-a594-273d574839a1"
+					variablename="ServerPort">
+					</var>
+					<var
+					dataname="UseSSL"
+					datasourceid="64e40821-5af1-4e11-b080-2b9b34407a12"
+					variableid="c898ee67-ee7f-4258-ab69-d855b0d92274"
+					variablename="UseSSL">
+					</var>
+					<var
+					dataname="Username"
+					datasourceid="64e40821-5af1-4e11-b080-2b9b34407a12"
+					variableid="38abb172-e49e-4d92-a24f-145709bdd7e3"
+					variablename="Username">
+					</var>
+					<var
+					dataname="Password"
+					datasourceid="64e40821-5af1-4e11-b080-2b9b34407a12"
+					variableid="b97a0c41-28c8-44ed-b089-a8ca4b6af9d7"
+					variablename="Password">
+					</var>
+					<var
+					dataname="SendEmailOnFailure"
+					datasourceid="64e40821-5af1-4e11-b080-2b9b34407a12"
+					variableid="07580bd9-744c-4666-83a6-ba22c0c8d909"
+					variablename="SendEmailOnFailure">
+					</var>
+					<var
+					dataname="SendEmailOnSuccess"
+					datasourceid="64e40821-5af1-4e11-b080-2b9b34407a12"
+					variableid="670a378a-e239-43e7-8325-c216fd11f190"
+					variablename="SendEmailOnSuccess">
+					</var>
+					<var
+					dataname="SendZippedReportOnComplete"
+					datasourceid="64e40821-5af1-4e11-b080-2b9b34407a12"
+					variableid="154c39b9-9dd8-4f75-934e-973ef4c5de5b"
+					variablename="SendZippedReportOnComplete">
+					</var>
+					<var
+					dataname="SendPDFReportOnComplete"
+					datasourceid="64e40821-5af1-4e11-b080-2b9b34407a12"
+					variableid="7038d9db-9189-4fe3-9fb3-13f3cacde5a0"
+					variablename="SendPdfReportOnComplete">
+					</var>
+					<var
+					dataname="PDFReportCustomStyleSheet"
+					datasourceid="64e40821-5af1-4e11-b080-2b9b34407a12"
+					variableid="b56d72a4-8257-4ec5-a054-455d9094b56a"
+					variablename="PdfReportCustomStylesheet">
+					</var>
+				</databinding>
+			</testmodule>
 			<smartfoldernode
 			datasource="ContactAPXData"
 			id="b66a83f5-3c47-4551-9db7-a418cad9b788"
@@ -2591,6 +2683,7 @@ bill]]>
 			name="CreateManyPhoneCalls">
 			</smartfoldernode>
 			<testcase
+			datasource="SendEmailConnector"
 			id="f999b233-305c-4e9e-a5e8-bd5b49a34123"
 			name="Logout">
 				<description>
@@ -3748,6 +3841,10 @@ bill]]>
 						<teardown
 						id="fdf78db1-a734-47ba-af26-4c88090b4cc0"
 						name="teardown1">
+							<testmodule
+							id="b3e9e3a4-8559-4832-9301-48fb09fbb328"
+							name="EmailModule">
+							</testmodule>
 						</teardown>
 					</testcase>
 				</testcase>
@@ -4190,6 +4287,23 @@ bill]]>
 			</maskedcolumns>
 		</DataSource>
 		<DataSource
+		filename="C:\Users\kumar\Downloads\AA\SmokeTestData.xlsx"
+		id="64fc3ad5-4624-45fa-abd4-db62b03e3722"
+		includefile="Unchecked"
+		lastknownrowcount="0"
+		name="PDFReportConnector"
+		type="Ranorex.Core.Data.ExcelDataConnector"
+		worksheetname="ReportPDF"
+		worksheetrange="Auto-Range">
+			<lastknowncolumns>
+				<column>
+					Column1
+				</column>
+			</lastknowncolumns>
+			<maskedcolumns>
+			</maskedcolumns>
+		</DataSource>
+		<DataSource
 		filename="SmokeTestData.xlsx"
 		id="44029a73-17ff-4f5a-a628-0f4ea31cb67c"
 		includefile="Checked"
@@ -4230,6 +4344,62 @@ bill]]>
 				</column>
 				<column>
 					LastName
+				</column>
+			</lastknowncolumns>
+			<maskedcolumns>
+			</maskedcolumns>
+		</DataSource>
+		<DataSource
+		filename="C:\Users\kumar\Downloads\AA\SmokeTestData.xlsx"
+		id="64e40821-5af1-4e11-b080-2b9b34407a12"
+		includefile="Unchecked"
+		lastknownrowcount="1"
+		name="SendEmailConnector"
+		type="Ranorex.Core.Data.ExcelDataConnector"
+		worksheetname="SendEmail"
+		worksheetrange="Auto-Range">
+			<lastknowncolumns>
+				<column>
+					Subject
+				</column>
+				<column>
+					Body
+				</column>
+				<column>
+					To
+				</column>
+				<column>
+					From
+				</column>
+				<column>
+					ServerHostName
+				</column>
+				<column>
+					ServerPort
+				</column>
+				<column>
+					UseSSL
+				</column>
+				<column>
+					Username
+				</column>
+				<column>
+					Password
+				</column>
+				<column>
+					SendEmailOnFailure
+				</column>
+				<column>
+					SendEmailOnSuccess
+				</column>
+				<column>
+					SendZippedReportOnComplete
+				</column>
+				<column>
+					SendPDFReportOnComplete
+				</column>
+				<column>
+					PDFReportCustomStyleSheet
 				</column>
 			</lastknowncolumns>
 			<maskedcolumns>

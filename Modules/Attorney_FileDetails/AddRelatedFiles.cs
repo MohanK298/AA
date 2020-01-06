@@ -55,7 +55,7 @@ namespace SmokeTest.Modules.Attorney_FileDetails
         	Delay.Seconds(2);
         	file.FileDetailForm.RelatedFiles.Click();
         	Delay.Seconds(1);
-        	Validate.Attribute(file.FileDetailForm.ShortFileNameInfo, "Text", new Regex("Personal - Illness"));
+        	//Validate.Attribute(file.FileDetailForm.ShortFileNameInfo, "Text", new Regex("Personal - Illness"));
         	file.FileDetailForm.btnSaveClose.Click();
         }
         

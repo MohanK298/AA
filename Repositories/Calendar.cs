@@ -1119,8 +1119,8 @@ namespace SmokeTest.Repositories
             {
                 _pnldayviewInfo = new RepoItemInfo(this, "PnlDayView", "container[@controlname='pnlDayView']", 30000, null, "6ca66941-abd7-4202-82c8-7d500fb6f0cc");
                 _pnlweekviewInfo = new RepoItemInfo(this, "PnlWeekView", "container[@controlname='pnlWeekView']", 30000, null, "069c97aa-e1c5-4800-9d81-94482fb4d302");
-                _shrtdayInfo = new RepoItemInfo(this, "shrtDay", "container[@controlname='pnlWeekView']//container[@accessiblename='Week Area']/container[@accessiblename=$curwkday]", 30000, null, "f4ec1e14-7316-4966-b56f-318f894e85d0");
-                _txtappointmentInfo = new RepoItemInfo(this, "txtappointment", "container[@controlname='pnlWeekView']//container[@accessiblename=$curwkday]/text[@accessiblevalue=$appmtData]", 30000, null, "11923b15-cf19-4d16-a0bb-903b88d01f66");
+                _shrtdayInfo = new RepoItemInfo(this, "shrtDay", "?/container[@controlname='pnlWeekView']//container[@accessiblename='Week Area']/container[@accessiblename=$curwkday]", 30000, null, "f4ec1e14-7316-4966-b56f-318f894e85d0");
+                _txtappointmentInfo = new RepoItemInfo(this, "txtappointment", "?/container[@controlname='pnlWeekView']//container[@accessiblename=$curwkday]/text[@accessiblevalue=$appmtData]", 30000, null, "11923b15-cf19-4d16-a0bb-903b88d01f66");
                 _pnlmonthviewInfo = new RepoItemInfo(this, "PnlMonthView", "container[@controlname='pnlMonthView']", 30000, null, "c32d4a9a-b6b9-4a46-9ea3-327d0c941d12");
                 _tbcurrentdayInfo = new RepoItemInfo(this, "tbCurrentDay", "?/?/container[@controlname='pnlDayViewControl']/?/?/table[@accessiblename='udvDay']", 30000, null, "fd631273-3053-4a4e-9f48-09136ee036ec");
                 _txtcurrentdayapptInfo = new RepoItemInfo(this, "txtCurrentDayAppt", "?/?/container[@controlname='pnlDayViewControl']/?/?/table[@accessiblename='udvDay']/?/?/cell[@accessiblename=$curdayapptselection]", 30000, null, "0cba9cbe-b8f6-40b2-a57a-5983c434eded");

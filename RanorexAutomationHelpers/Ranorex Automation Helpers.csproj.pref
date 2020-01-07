@@ -1,8 +1,11 @@
 ﻿<Properties>
-  <Array name="active">
-    <Element value="Modules\EmailModule.cs" />
+  <Array name="active" />
+  <Array name="bookmarks">
+    <Element value="Bookmark|C:\Users\kumar\Downloads\AA\RanorexAutomationHelpers\Modules\EmailModule.cs|24|18" />
+    <Element value="Bookmark|C:\Users\kumar\Downloads\AA\RanorexAutomationHelpers\Modules\EmailModule.cs|44|49" />
+    <Element value="Bookmark|C:\Users\kumar\Downloads\AA\RanorexAutomationHelpers\Modules\EmailModule.cs|47|23" />
+    <Element value="Bookmark|C:\Users\kumar\Downloads\AA\RanorexAutomationHelpers\Modules\EmailModule.cs|153|26" />
   </Array>
-  <Array name="bookmarks" />
   <Array name="files">
     <Element value="Modules\EmailModule.cs" />
   </Array>

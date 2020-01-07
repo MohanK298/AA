@@ -139,7 +139,7 @@ namespace Ranorex.AutomationHelpers.Modules
         {
             var currentTestSuiteStatus = TestReport.CurrentTestSuiteActivity;
             var reportFile = CreateReports();
-			
+            var totalDuration = (Math.Floor(currentTestSuiteStatus.TotalDuration/3600000.0)).ToString()+"Hours "+(Math.Floor(currentTestSuiteStatus.TotalDuration/60000.0)).ToString()+"Minutes "+(Math.Floor(currentTestSuiteStatus.TotalDuration/10000.0)).ToString()+"Seconds";
 
             if (this.SendEmailOnFailure && currentTestSuiteStatus.Status == ActivityStatus.Failed
                 || this.SendEmailOnSuccess && currentTestSuiteStatus.Status == ActivityStatus.Success
@@ -150,7 +150,11 @@ namespace Ranorex.AutomationHelpers.Modules
                     this.Subject+=" - "+System.DateTime.Now.ToString("MM/dd/yyyy") + " Testing Status - "+currentTestSuiteStatus.Status,
                     this.To,
                     this.From,
-                    this.Body+="Hi All,<br/>Please find the attached Test Report for Automation run on  "+System.DateTime.Now.ToString("MM/dd/yyyy")+" "+System.DateTime.Now.ToString("h:mm tt")+"."+ Environment.NewLine + "<br/><br/>Path to the PDF Report Generated from Automation is : "+String.Format("<a href='{0}'>Pdf Report</a>",reportFile[1].ToString())+"<br/><br/>Thanks<br/>Automation Team",
+                    this.Body+="Hi All,<br/>Please find the attached Test Report for Automation run on  "+System.DateTime.Now.ToString("MM/dd/yyyy")+" "+System.DateTime.Now.ToString("h:mm tt")+"."+
+                    Environment.NewLine + "<br/><br/>Path to the PDF Report Generated from Automation is : "+String.Format("<a href='{0}'>Pdf Report</a>",reportFile[1].ToString())+
+                    "<br/>Total Test Cases Count: "+(currentTestSuiteStatus.TotalSuccessCount+currentTestSuiteStatus.TotalFailedCount+currentTestSuiteStatus.TotalBlockedCount)+
+                    "<br/>Total Test Cases Passed: "+currentTestSuiteStatus.TotalSuccessCount+"<br/>Total Test Cases Failed: "+currentTestSuiteStatus.TotalFailedCount+
+                    "<br/>Total Run Duration: "+totalDuration +"<br/><br/>Thanks<br/>Automation Team",
                     reportFile,
                     this.ServerHostname,
                     int.Parse(this.ServerPort),

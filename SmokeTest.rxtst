@@ -2187,7 +2187,7 @@ directly and create a Bill]]>
 			id="cb7d9a72-28d4-40e4-8ba0-8593b79bbc22"
 			name="Login">
 				<description>
-					<![CDATA[Login to the Amicus Attorney Premium 2016]]>
+					<![CDATA[Login to the Amicus Attorney Premium]]>
 				</description>
 			</testcase>
 			<testcase
@@ -4297,7 +4297,19 @@ bill]]>
 		worksheetrange="Auto-Range">
 			<lastknowncolumns>
 				<column>
-					Column1
+					PdfName
+				</column>
+				<column>
+					PdfDirectoryPath
+				</column>
+				<column>
+					Xml
+				</column>
+				<column>
+					Details
+				</column>
+				<column>
+					DeleteRanorexReport
 				</column>
 			</lastknowncolumns>
 			<maskedcolumns>

@@ -103,9 +103,9 @@ namespace SmokeTest
 			day1=System.DateTime.Now;
 			day2=day1.AddDays(1);
 			day3=day1.AddDays(2);
-			strday1=day1.ToString("MMMM dd, yyyy");
-			strday2=day2.ToString("MMMM dd, yyyy");
-			strday3=day3.ToString("MMMM dd, yyyy");
+			strday1=day1.ToString("MMMM d, yyyy");
+			strday2=day2.ToString("MMMM d, yyyy");
+			strday3=day3.ToString("MMMM d, yyyy");
 			calendar.curwkday=strday1;
 			Delay.Seconds(2);
 			calendar.MainForm.PnlViews.shrtDay.Click();

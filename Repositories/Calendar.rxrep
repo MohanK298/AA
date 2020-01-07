@@ -433,7 +433,7 @@ AAAAADmCBQAAAJAjWAAAAAA5ggUAAAAQMwz/B/Pa+j2m8Yn1AAAAAElFTkSuQmCC
 				name="shrtDay"
 				refimgid="7626eb7c-750f-4d7c-96ae-b4f617a664f7"
 				searchtimeout="30000ms">
-					/form[@controlname='MainForm']/?/?/form[@controlname='CalendarIndexForm']/container[@controlname='pnlBase']//container[@controlname='pnlViews']/container[@controlname='pnlWeekView']//container[@accessiblename='Week Area']/container[@accessiblename=$curwkday]
+					/form[@controlname='MainForm']/?/?/form[@controlname='CalendarIndexForm']/container[@controlname='pnlBase']//container[@controlname='pnlViews']/?/container[@controlname='pnlWeekView']//container[@accessiblename='Week Area']/container[@accessiblename=$curwkday]
 				</item>
 				<item
 				addcaps="text,accessible"
@@ -442,7 +442,7 @@ AAAAADmCBQAAAJAjWAAAAAA5ggUAAAAQMwz/B/Pa+j2m8Yn1AAAAAElFTkSuQmCC
 				name="txtappointment"
 				refimgid="09f8570d-b85f-4811-abc7-8bd8f57611da"
 				searchtimeout="30000ms">
-					/form[@controlname='MainForm']/?/?/form[@controlname='CalendarIndexForm']/container[@controlname='pnlBase']//container[@controlname='pnlViews']/container[@controlname='pnlWeekView']//container[@accessiblename=$curwkday]/text[@accessiblevalue=$appmtData]
+					/form[@controlname='MainForm']/?/?/form[@controlname='CalendarIndexForm']/container[@controlname='pnlBase']//container[@controlname='pnlViews']/?/container[@controlname='pnlWeekView']//container[@accessiblename=$curwkday]/text[@accessiblevalue=$appmtData]
 				</item>
 				<item
 				addcaps="container,control,nativewindow"

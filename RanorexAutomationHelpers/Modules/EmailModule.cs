@@ -139,7 +139,7 @@ namespace Ranorex.AutomationHelpers.Modules
         {
             var currentTestSuiteStatus = TestReport.CurrentTestSuiteActivity;
             var reportFile = CreateReports();
-            var totalDuration = (Math.Floor(currentTestSuiteStatus.TotalDuration/3600000.0)).ToString()+"Hours "+(Math.Floor(currentTestSuiteStatus.TotalDuration/60000.0)).ToString()+"Minutes "+(Math.Floor(currentTestSuiteStatus.TotalDuration/10000.0)).ToString()+"Seconds";
+            var totalDuration = (Math.Floor((currentTestSuiteStatus.TotalDuration/3600000.0)%24)).ToString()+" Hours "+(Math.Floor((currentTestSuiteStatus.TotalDuration/60000.0)%60)).ToString()+" Minutes "+(Math.Floor((currentTestSuiteStatus.TotalDuration/1000.0)%60)).ToString()+" Seconds";
 
             if (this.SendEmailOnFailure && currentTestSuiteStatus.Status == ActivityStatus.Failed
                 || this.SendEmailOnSuccess && currentTestSuiteStatus.Status == ActivityStatus.Success

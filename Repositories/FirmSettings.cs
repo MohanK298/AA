@@ -36,6 +36,7 @@ namespace SmokeTest.Repositories
         FirmSettingsFolders.DocumentUnconvertedAppFolder _documentunconverted;
         FirmSettingsFolders.FileFirmSettingsFormAppFolder _filefirmsettingsform;
         FirmSettingsFolders.CalendarFirmSettingsFormAppFolder _calendarfirmsettingsform;
+        FirmSettingsFolders.TimeFirmSettingsFormAppFolder _timefirmsettingsform;
 
         /// <summary>
         /// Gets the singleton class instance representing the FirmSettings element repository.
@@ -61,6 +62,7 @@ namespace SmokeTest.Repositories
             _documentunconverted = new FirmSettingsFolders.DocumentUnconvertedAppFolder(this);
             _filefirmsettingsform = new FirmSettingsFolders.FileFirmSettingsFormAppFolder(this);
             _calendarfirmsettingsform = new FirmSettingsFolders.CalendarFirmSettingsFormAppFolder(this);
+            _timefirmsettingsform = new FirmSettingsFolders.TimeFirmSettingsFormAppFolder(this);
         }
 
 #region Variables
@@ -158,6 +160,15 @@ namespace SmokeTest.Repositories
         public virtual FirmSettingsFolders.CalendarFirmSettingsFormAppFolder CalendarFirmSettingsForm
         {
             get { return _calendarfirmsettingsform; }
+        }
+
+        /// <summary>
+        /// The TimeFirmSettingsForm folder.
+        /// </summary>
+        [RepositoryFolder("561b7d16-6f40-4eae-a0f5-8fad2729f8ea")]
+        public virtual FirmSettingsFolders.TimeFirmSettingsFormAppFolder TimeFirmSettingsForm
+        {
+            get { return _timefirmsettingsform; }
         }
     }
 
@@ -450,6 +461,8 @@ namespace SmokeTest.Repositories
             RepoItemInfo _lnkdocumentgroupsInfo;
             RepoItemInfo _lnkdocindexingInfo;
             RepoItemInfo _lnkeventcategoriesInfo;
+            RepoItemInfo _lnkaccountingInfo;
+            RepoItemInfo _lnkactivitycodesInfo;
 
             /// <summary>
             /// Creates a new FirmSettingsForm  folder.
@@ -461,6 +474,8 @@ namespace SmokeTest.Repositories
                 _lnkdocumentgroupsInfo = new RepoItemInfo(this, "lnkDocumentGroups", ".//element[@controlname='amlblDocuments']/text[@accessiblerole='StaticText']", 30000, null, "a6d8998d-4033-4df8-a585-86f949d4958e");
                 _lnkdocindexingInfo = new RepoItemInfo(this, "lnkDocIndexing", ".//element[@controlname='amlblDocumentIndexing']/text[@accessiblerole='StaticText']", 30000, null, "87918223-db76-4b36-8730-44733ca9ee16");
                 _lnkeventcategoriesInfo = new RepoItemInfo(this, "lnkEventCategories", ".//element[@controlname='amlblEventCategories']/text[@accessiblerole='StaticText']", 30000, null, "867149ad-8d5c-4065-89cb-c22fcce34c86");
+                _lnkaccountingInfo = new RepoItemInfo(this, "lnkAccounting", ".//element[@controlname='amlblAccounting']/text[@accessiblerole='StaticText']", 30000, null, "8cb19134-8256-463c-9c48-edd33253c434");
+                _lnkactivitycodesInfo = new RepoItemInfo(this, "lnkActivityCodes", ".//element[@controlname='amlblActivityCodes']/text[@accessiblerole='StaticText']", 30000, null, "866b6523-04a9-4da7-9233-7cba2942e5c2");
             }
 
             /// <summary>
@@ -580,6 +595,54 @@ namespace SmokeTest.Repositories
                 get
                 {
                     return _lnkeventcategoriesInfo;
+                }
+            }
+
+            /// <summary>
+            /// The lnkAccounting item.
+            /// </summary>
+            [RepositoryItem("8cb19134-8256-463c-9c48-edd33253c434")]
+            public virtual Ranorex.Text lnkAccounting
+            {
+                get
+                {
+                    return _lnkaccountingInfo.CreateAdapter<Ranorex.Text>(true);
+                }
+            }
+
+            /// <summary>
+            /// The lnkAccounting item info.
+            /// </summary>
+            [RepositoryItemInfo("8cb19134-8256-463c-9c48-edd33253c434")]
+            public virtual RepoItemInfo lnkAccountingInfo
+            {
+                get
+                {
+                    return _lnkaccountingInfo;
+                }
+            }
+
+            /// <summary>
+            /// The lnkActivityCodes item.
+            /// </summary>
+            [RepositoryItem("866b6523-04a9-4da7-9233-7cba2942e5c2")]
+            public virtual Ranorex.Text lnkActivityCodes
+            {
+                get
+                {
+                    return _lnkactivitycodesInfo.CreateAdapter<Ranorex.Text>(true);
+                }
+            }
+
+            /// <summary>
+            /// The lnkActivityCodes item info.
+            /// </summary>
+            [RepositoryItemInfo("866b6523-04a9-4da7-9233-7cba2942e5c2")]
+            public virtual RepoItemInfo lnkActivityCodesInfo
+            {
+                get
+                {
+                    return _lnkactivitycodesInfo;
                 }
             }
         }
@@ -2182,6 +2245,305 @@ namespace SmokeTest.Repositories
                 get
                 {
                     return _noneInfo;
+                }
+            }
+        }
+
+        /// <summary>
+        /// The TimeFirmSettingsFormAppFolder folder.
+        /// </summary>
+        [RepositoryFolder("561b7d16-6f40-4eae-a0f5-8fad2729f8ea")]
+        public partial class TimeFirmSettingsFormAppFolder : RepoGenBaseFolder
+        {
+            FirmSettingsFolders.Toolbar1Folder3 _toolbar1;
+            RepoItemInfo _cmbbxaccountingsystemInfo;
+            RepoItemInfo _cbamicusbillingInfo;
+            RepoItemInfo _toolbarInfo;
+
+            /// <summary>
+            /// Creates a new TimeFirmSettingsForm  folder.
+            /// </summary>
+            public TimeFirmSettingsFormAppFolder(RepoGenBaseFolder parentFolder) :
+                    base("TimeFirmSettingsForm", "/form[@controlname='TimeFirmSettingsForm']", parentFolder, 30000, null, true, "561b7d16-6f40-4eae-a0f5-8fad2729f8ea", "")
+            {
+                _toolbar1 = new FirmSettingsFolders.Toolbar1Folder3(this);
+                _cmbbxaccountingsystemInfo = new RepoItemInfo(this, "cmbbxAccountingSystem", "container[@controlname='pnlBase']//element[@controlname='acmbSystem']/combobox[@accessiblename='Manual Entry']/combobox[@accessiblerole='ComboBox']", 30000, null, "01cb2a65-53c2-4a61-b7f4-417324bb55f0");
+                _cbamicusbillingInfo = new RepoItemInfo(this, "cbAmicusBilling", "container[@controlname='pnlBase']//container[@controlname='panelAccounting']/element[@controlname='achkBillingActivated']/?/?/checkbox[@accessiblename='Use Amicus Billing']", 30000, null, "51a75010-278b-48e5-b408-da63b627d102");
+                _toolbarInfo = new RepoItemInfo(this, "Toolbar", "element[@controlname='_BaseForm_Toolbars_Dock_Area_Bottom']/?/?/toolbar[@accessiblename='Toolbar']", 30000, null, "cde2347b-7539-4d39-bee8-0dcb30915363");
+            }
+
+            /// <summary>
+            /// The Self item.
+            /// </summary>
+            [RepositoryItem("561b7d16-6f40-4eae-a0f5-8fad2729f8ea")]
+            public virtual Ranorex.Form Self
+            {
+                get
+                {
+                    return _selfInfo.CreateAdapter<Ranorex.Form>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Self item info.
+            /// </summary>
+            [RepositoryItemInfo("561b7d16-6f40-4eae-a0f5-8fad2729f8ea")]
+            public virtual RepoItemInfo SelfInfo
+            {
+                get
+                {
+                    return _selfInfo;
+                }
+            }
+
+            /// <summary>
+            /// The cmbbxAccountingSystem item.
+            /// </summary>
+            [RepositoryItem("01cb2a65-53c2-4a61-b7f4-417324bb55f0")]
+            public virtual Ranorex.ComboBox cmbbxAccountingSystem
+            {
+                get
+                {
+                    return _cmbbxaccountingsystemInfo.CreateAdapter<Ranorex.ComboBox>(true);
+                }
+            }
+
+            /// <summary>
+            /// The cmbbxAccountingSystem item info.
+            /// </summary>
+            [RepositoryItemInfo("01cb2a65-53c2-4a61-b7f4-417324bb55f0")]
+            public virtual RepoItemInfo cmbbxAccountingSystemInfo
+            {
+                get
+                {
+                    return _cmbbxaccountingsystemInfo;
+                }
+            }
+
+            /// <summary>
+            /// The cbAmicusBilling item.
+            /// </summary>
+            [RepositoryItem("51a75010-278b-48e5-b408-da63b627d102")]
+            public virtual Ranorex.CheckBox cbAmicusBilling
+            {
+                get
+                {
+                    return _cbamicusbillingInfo.CreateAdapter<Ranorex.CheckBox>(true);
+                }
+            }
+
+            /// <summary>
+            /// The cbAmicusBilling item info.
+            /// </summary>
+            [RepositoryItemInfo("51a75010-278b-48e5-b408-da63b627d102")]
+            public virtual RepoItemInfo cbAmicusBillingInfo
+            {
+                get
+                {
+                    return _cbamicusbillingInfo;
+                }
+            }
+
+            /// <summary>
+            /// The Toolbar item.
+            /// </summary>
+            [RepositoryItem("cde2347b-7539-4d39-bee8-0dcb30915363")]
+            public virtual Ranorex.ToolBar Toolbar
+            {
+                get
+                {
+                    return _toolbarInfo.CreateAdapter<Ranorex.ToolBar>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Toolbar item info.
+            /// </summary>
+            [RepositoryItemInfo("cde2347b-7539-4d39-bee8-0dcb30915363")]
+            public virtual RepoItemInfo ToolbarInfo
+            {
+                get
+                {
+                    return _toolbarInfo;
+                }
+            }
+
+            /// <summary>
+            /// The Toolbar1 folder.
+            /// </summary>
+            [RepositoryFolder("f8b37d13-6286-466f-b842-e4fe17b8b47c")]
+            public virtual FirmSettingsFolders.Toolbar1Folder3 Toolbar1
+            {
+                get { return _toolbar1; }
+            }
+        }
+
+        /// <summary>
+        /// The Toolbar1Folder3 folder.
+        /// </summary>
+        [RepositoryFolder("f8b37d13-6286-466f-b842-e4fe17b8b47c")]
+        public partial class Toolbar1Folder3 : RepoGenBaseFolder
+        {
+            RepoItemInfo _applyInfo;
+            RepoItemInfo _cancelInfo;
+            RepoItemInfo _nextInfo;
+            RepoItemInfo _buttonokInfo;
+            RepoItemInfo _prevInfo;
+
+            /// <summary>
+            /// Creates a new Toolbar1  folder.
+            /// </summary>
+            public Toolbar1Folder3(RepoGenBaseFolder parentFolder) :
+                    base("Toolbar1", ".//toolbar[@accessiblename='Toolbar']", parentFolder, 30000, null, false, "f8b37d13-6286-466f-b842-e4fe17b8b47c", "")
+            {
+                _applyInfo = new RepoItemInfo(this, "Apply", "button[@accessiblename='Apply']", 30000, null, "d240ce51-d8f9-4ffd-9214-e6b6c6a6a2f6");
+                _cancelInfo = new RepoItemInfo(this, "Cancel", "button[@accessiblename='Cancel']", 30000, null, "39ae63a1-d70b-4024-b958-2897f0987aff");
+                _nextInfo = new RepoItemInfo(this, "Next", "button[@accessiblename='Next']", 30000, null, "bfb06976-4045-4282-bc93-20c04d8cf4ac");
+                _buttonokInfo = new RepoItemInfo(this, "ButtonOK", "button[@accessiblename='OK']", 30000, null, "5d3e4bad-ca98-4551-83f8-d163bff55725");
+                _prevInfo = new RepoItemInfo(this, "Prev", "button[@accessiblename='Prev']", 30000, null, "09d538a4-4cf7-4f26-b2b4-f9e8013da41c");
+            }
+
+            /// <summary>
+            /// The Self item.
+            /// </summary>
+            [RepositoryItem("f8b37d13-6286-466f-b842-e4fe17b8b47c")]
+            public virtual Ranorex.ToolBar Self
+            {
+                get
+                {
+                    return _selfInfo.CreateAdapter<Ranorex.ToolBar>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Self item info.
+            /// </summary>
+            [RepositoryItemInfo("f8b37d13-6286-466f-b842-e4fe17b8b47c")]
+            public virtual RepoItemInfo SelfInfo
+            {
+                get
+                {
+                    return _selfInfo;
+                }
+            }
+
+            /// <summary>
+            /// The Apply item.
+            /// </summary>
+            [RepositoryItem("d240ce51-d8f9-4ffd-9214-e6b6c6a6a2f6")]
+            public virtual Ranorex.Button Apply
+            {
+                get
+                {
+                    return _applyInfo.CreateAdapter<Ranorex.Button>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Apply item info.
+            /// </summary>
+            [RepositoryItemInfo("d240ce51-d8f9-4ffd-9214-e6b6c6a6a2f6")]
+            public virtual RepoItemInfo ApplyInfo
+            {
+                get
+                {
+                    return _applyInfo;
+                }
+            }
+
+            /// <summary>
+            /// The Cancel item.
+            /// </summary>
+            [RepositoryItem("39ae63a1-d70b-4024-b958-2897f0987aff")]
+            public virtual Ranorex.Button Cancel
+            {
+                get
+                {
+                    return _cancelInfo.CreateAdapter<Ranorex.Button>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Cancel item info.
+            /// </summary>
+            [RepositoryItemInfo("39ae63a1-d70b-4024-b958-2897f0987aff")]
+            public virtual RepoItemInfo CancelInfo
+            {
+                get
+                {
+                    return _cancelInfo;
+                }
+            }
+
+            /// <summary>
+            /// The Next item.
+            /// </summary>
+            [RepositoryItem("bfb06976-4045-4282-bc93-20c04d8cf4ac")]
+            public virtual Ranorex.Button Next
+            {
+                get
+                {
+                    return _nextInfo.CreateAdapter<Ranorex.Button>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Next item info.
+            /// </summary>
+            [RepositoryItemInfo("bfb06976-4045-4282-bc93-20c04d8cf4ac")]
+            public virtual RepoItemInfo NextInfo
+            {
+                get
+                {
+                    return _nextInfo;
+                }
+            }
+
+            /// <summary>
+            /// The ButtonOK item.
+            /// </summary>
+            [RepositoryItem("5d3e4bad-ca98-4551-83f8-d163bff55725")]
+            public virtual Ranorex.Button ButtonOK
+            {
+                get
+                {
+                    return _buttonokInfo.CreateAdapter<Ranorex.Button>(true);
+                }
+            }
+
+            /// <summary>
+            /// The ButtonOK item info.
+            /// </summary>
+            [RepositoryItemInfo("5d3e4bad-ca98-4551-83f8-d163bff55725")]
+            public virtual RepoItemInfo ButtonOKInfo
+            {
+                get
+                {
+                    return _buttonokInfo;
+                }
+            }
+
+            /// <summary>
+            /// The Prev item.
+            /// </summary>
+            [RepositoryItem("09d538a4-4cf7-4f26-b2b4-f9e8013da41c")]
+            public virtual Ranorex.Button Prev
+            {
+                get
+                {
+                    return _prevInfo.CreateAdapter<Ranorex.Button>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Prev item info.
+            /// </summary>
+            [RepositoryItemInfo("09d538a4-4cf7-4f26-b2b4-f9e8013da41c")]
+            public virtual RepoItemInfo PrevInfo
+            {
+                get
+                {
+                    return _prevInfo;
                 }
             }
         }

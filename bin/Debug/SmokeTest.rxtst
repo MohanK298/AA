@@ -4362,9 +4362,9 @@ bill]]>
 			</maskedcolumns>
 		</DataSource>
 		<DataSource
-		filename="C:\Users\kumar\Downloads\AA\SmokeTestData.xlsx"
+		filename="SmokeTestData.xlsx"
 		id="64e40821-5af1-4e11-b080-2b9b34407a12"
-		includefile="Unchecked"
+		includefile="Checked"
 		lastknownrowcount="1"
 		name="SendEmailConnector"
 		type="Ranorex.Core.Data.ExcelDataConnector"

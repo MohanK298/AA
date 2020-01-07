@@ -130,6 +130,26 @@ SUVORK5CYII=
 				searchtimeout="30000ms">
 					/form[@controlname='MainForm']/?/?/form[@controlname='FirmSettingsForm']//element[@controlname='amlblEventCategories']/text[@accessiblerole='StaticText']
 				</item>
+				<item
+				addcaps="text,accessible"
+				capname="text"
+				id="8cb19134-8256-463c-9c48-edd33253c434"
+				name="lnkAccounting"
+				refimgid="4d6bbdc2-fcea-4133-b935-0f50e11defe2"
+				refpath="/form[@controlname='MainForm']/element[@controltypename='MdiClient']/form[@controlname='FirmSettingsForm']/container[@controlname='roundedPanelControl']/container[@controlname='panelScroll']/element[@controlname='amlblAccounting']/text[@accessiblerole='StaticText']"
+				searchtimeout="30000ms">
+					/form[@controlname='MainForm']/?/?/form[@controlname='FirmSettingsForm']//element[@controlname='amlblAccounting']/text[@accessiblerole='StaticText']
+				</item>
+				<item
+				addcaps="text,accessible"
+				capname="text"
+				id="866b6523-04a9-4da7-9233-7cba2942e5c2"
+				name="lnkActivityCodes"
+				refimgid="618a6dd5-1e73-4c5a-ad4c-8926c07f8386"
+				refpath="/form[@controlname='MainForm']/element[@controltypename='MdiClient']/form[@controlname='FirmSettingsForm']/container[@controlname='roundedPanelControl']/container[@controlname='panelScroll']/element[@controlname='amlblActivityCodes']/text[@accessiblerole='StaticText']"
+				searchtimeout="30000ms">
+					/form[@controlname='MainForm']/?/?/form[@controlname='FirmSettingsForm']//element[@controlname='amlblActivityCodes']/text[@accessiblerole='StaticText']
+				</item>
 				<basepath>
 					/form[@controlname='MainForm']/?/?/form[@controlname='FirmSettingsForm']
 				</basepath>
@@ -795,6 +815,117 @@ SUVORK5CYII=
 			</item>
 			<basepath>
 				/form[@controlname='CalendarFirmSettingsForm']
+			</basepath>
+			<icon>
+				iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACx
+jwv8YQUAAAAJcEhZcwAADsQAAA7EAZUrDhsAAAFlSURBVDhPY6AJeOJjOvORg9p/FOyo/v9xoKUT
+VAlugKERDT921nwLVQoBb3Kj+Z5FOf9/FuP2/1msO3EYpBaIH7vr/Qcb8Oft6//kgFclif/Brnjo
+qPYZKvb/z8tn/z+tWfD/bWspWMHLwrj/r8pT/7/rrfv/dffG//++fwOr+3Hu+P8nPsYTwAY8CbRM
+fGSvCnbev29fwQpwgd9PH/1/N6ERHB5gzSDwyFX3IkjgeZLv/0+rF/z/snPD/4fWCmAND60V/3+Y
+1fP//cxuYABqgcUe2SqBDXge5qoDMcBN9w3MgDdNhf/fTWr+/xCoCKb4XU/t/7fd1Shi4BgJtPSG
+GqBzjhwDnkbaa4ANAIZBBDkGgDXDAMkGAFMmVCsEPHLTO0uKAU+jnYygWhHgeZIPUQY8dFS/BdWC
+Cd405uM14N+/f+egSnGDjyvnxjyyVQYbANL0FmjAm/aKH4+9zVWhSqCAgQEAq9YXqsYCPO8AAAAA
+SUVORK5CYII=
+			</icon>
+		</appfolder>
+		<appfolder
+		addcaps="form,control,nativewindow"
+		capname="form"
+		id="561b7d16-6f40-4eae-a0f5-8fad2729f8ea"
+		isrooted="True"
+		name="TimeFirmSettingsForm"
+		refpath="/form[@controlname='TimeFirmSettingsForm']"
+		searchtimeout="30000ms"
+		usecache="True">
+			<item
+			addcaps="combobox,accessible"
+			capname="combobox"
+			id="01cb2a65-53c2-4a61-b7f4-417324bb55f0"
+			name="cmbbxAccountingSystem"
+			refimgid="f21e728d-c17e-4857-b442-4b4dd90254ba"
+			refpath="/form[@controlname='TimeFirmSettingsForm']/container[@controlname='pnlBase']/container[@controlname='pnlControls']/container[@controlname='panelTitleBase']/container[@controlname='panelBase']/container[@controlname='panelAccounting']/element[@controlname='acmbSystem']/combobox[@accessiblename='Manual Entry']/combobox[@accessiblerole='ComboBox']"
+			searchtimeout="30000ms">
+				/form[@controlname='TimeFirmSettingsForm']/container[@controlname='pnlBase']//element[@controlname='acmbSystem']/combobox[@accessiblename='Manual Entry']/combobox[@accessiblerole='ComboBox']
+			</item>
+			<item
+			addcaps="checkbox,accessible"
+			capname="checkbox"
+			id="51a75010-278b-48e5-b408-da63b627d102"
+			name="cbAmicusBilling"
+			refimgid="dd1ffce1-3507-48cb-b3c7-5dba89c43497"
+			refpath="/form[@controlname='TimeFirmSettingsForm']/container[@controlname='pnlBase']/container[@controlname='pnlControls']/container[@controlname='panelTitleBase']/container[@controlname='panelBase']/container[@controlname='panelAccounting']/element[@controlname='achkBillingActivated']/checkbox[@accessiblename='Use Amicus Billing']/checkbox[@accessiblename='Use Amicus Billing']"
+			searchtimeout="30000ms">
+				/form[@controlname='TimeFirmSettingsForm']/container[@controlname='pnlBase']//container[@controlname='panelAccounting']/element[@controlname='achkBillingActivated']/?/?/checkbox[@accessiblename='Use Amicus Billing']
+			</item>
+			<item
+			addcaps="toolbar,accessible"
+			capname="toolbar"
+			id="cde2347b-7539-4d39-bee8-0dcb30915363"
+			name="Toolbar"
+			refpath="/form[@controlname='TimeFirmSettingsForm']/element[@controlname='_BaseForm_Toolbars_Dock_Area_Bottom']/container[@accessiblename='DockBottom']/toolbar[@accessiblename='Toolbar']"
+			searchtimeout="30000ms">
+				/form[@controlname='TimeFirmSettingsForm']/element[@controlname='_BaseForm_Toolbars_Dock_Area_Bottom']/?/?/toolbar[@accessiblename='Toolbar']
+			</item>
+			<folder
+			addcaps="toolbar,accessible"
+			capname="toolbar"
+			id="f8b37d13-6286-466f-b842-e4fe17b8b47c"
+			isrooted="True"
+			name="Toolbar1"
+			refpath="/form[@controlname='TimeFirmSettingsForm']/element[@controlname='_BaseForm_Toolbars_Dock_Area_Bottom']/container[@accessiblename='DockBottom']/toolbar[@accessiblename='Toolbar']"
+			searchtimeout="30000ms"
+			usecache="False">
+				<item
+				addcaps="button,accessible"
+				capname="button"
+				id="d240ce51-d8f9-4ffd-9214-e6b6c6a6a2f6"
+				name="Apply"
+				refpath="/form[@controlname='TimeFirmSettingsForm']/element[@controlname='_BaseForm_Toolbars_Dock_Area_Bottom']/container[@accessiblename='DockBottom']/toolbar[@accessiblename='Toolbar']/button[@accessiblename='Apply']"
+				searchtimeout="30000ms">
+					/form[@controlname='TimeFirmSettingsForm']//toolbar[@accessiblename='Toolbar']/button[@accessiblename='Apply']
+				</item>
+				<item
+				addcaps="button,accessible"
+				capname="button"
+				id="39ae63a1-d70b-4024-b958-2897f0987aff"
+				name="Cancel"
+				refpath="/form[@controlname='TimeFirmSettingsForm']/element[@controlname='_BaseForm_Toolbars_Dock_Area_Bottom']/container[@accessiblename='DockBottom']/toolbar[@accessiblename='Toolbar']/button[@accessiblename='Cancel']"
+				searchtimeout="30000ms">
+					/form[@controlname='TimeFirmSettingsForm']//toolbar[@accessiblename='Toolbar']/button[@accessiblename='Cancel']
+				</item>
+				<item
+				addcaps="button,accessible"
+				capname="button"
+				id="bfb06976-4045-4282-bc93-20c04d8cf4ac"
+				name="Next"
+				refpath="/form[@controlname='TimeFirmSettingsForm']/element[@controlname='_BaseForm_Toolbars_Dock_Area_Bottom']/container[@accessiblename='DockBottom']/toolbar[@accessiblename='Toolbar']/button[@accessiblename='Next']"
+				searchtimeout="30000ms">
+					/form[@controlname='TimeFirmSettingsForm']//toolbar[@accessiblename='Toolbar']/button[@accessiblename='Next']
+				</item>
+				<item
+				addcaps="button,accessible"
+				capname="button"
+				id="5d3e4bad-ca98-4551-83f8-d163bff55725"
+				name="ButtonOK"
+				refpath="/form[@controlname='TimeFirmSettingsForm']/element[@controlname='_BaseForm_Toolbars_Dock_Area_Bottom']/container[@accessiblename='DockBottom']/toolbar[@accessiblename='Toolbar']/button[@accessiblename='OK']"
+				searchtimeout="30000ms">
+					/form[@controlname='TimeFirmSettingsForm']//toolbar[@accessiblename='Toolbar']/button[@accessiblename='OK']
+				</item>
+				<item
+				addcaps="button,accessible"
+				capname="button"
+				id="09d538a4-4cf7-4f26-b2b4-f9e8013da41c"
+				name="Prev"
+				refpath="/form[@controlname='TimeFirmSettingsForm']/element[@controlname='_BaseForm_Toolbars_Dock_Area_Bottom']/container[@accessiblename='DockBottom']/toolbar[@accessiblename='Toolbar']/button[@accessiblename='Prev']"
+				searchtimeout="30000ms">
+					/form[@controlname='TimeFirmSettingsForm']//toolbar[@accessiblename='Toolbar']/button[@accessiblename='Prev']
+				</item>
+				<basepath>
+					/form[@controlname='TimeFirmSettingsForm']//toolbar[@accessiblename='Toolbar']
+				</basepath>
+			</folder>
+			<basepath>
+				/form[@controlname='TimeFirmSettingsForm']
 			</basepath>
 			<icon>
 				iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACx

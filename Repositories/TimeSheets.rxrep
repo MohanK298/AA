@@ -28,9 +28,8 @@ rxversion="9.0">
 			id="efb70690-bcef-4af5-b395-4f24859a9063"
 			name="btnTimeSheets"
 			refimgid="4b23dbca-c743-4878-8150-79e49e876076"
-			refpath="/form[@controlname='MainForm']/container[@controlname='pLeft']/container[@caption='' and @controltypename='Panel' and @instance='1']/element[@controlname='_ultraExplorerBar']/tree[@accessiblerole='Outline']/button[@accessiblename='Time Sheets']"
 			searchtimeout="30000ms">
-				/form[@controlname='MainForm']/container[@controlname='pLeft']//tree[@accessiblerole='Outline']/button[@accessiblename='Time Sheets']
+				/form[@controlname='MainForm']/?/?/tree[@accessiblerole='Outline']/button[@accessiblename='Time Sheets']
 			</item>
 			<item
 			addcaps="button,accessible"
@@ -119,7 +118,6 @@ rxversion="9.0">
 			id="6222050e-1389-4db7-bcac-f05908349596"
 			isrooted="True"
 			name="TimeIndexControlPanelControl"
-			refpath="/form[@controlname='MainForm']/container[@controlname='pLeft']/container[@caption='' and @controltypename='Panel' and @instance='1']/element[@controlname='_ultraExplorerBar']/container[@caption='' and @controltypename='UltraExplorerBarContainerControl' and @instance='0']/container[@controlname='controlPanelWrapper']/container[@controlname='TimeIndexControlPanelControl']"
 			searchtimeout="30000ms"
 			usecache="False">
 				<item
@@ -128,9 +126,8 @@ rxversion="9.0">
 				id="f438cd71-b0e2-4030-b8b3-a0911b779de7"
 				name="lnkUnposted"
 				refimgid="36817918-8841-4dad-80bc-8bd862e52dff"
-				refpath="/form[@controlname='MainForm']/container[@controlname='pLeft']/container[@caption='' and @controltypename='Panel' and @instance='1']/element[@controlname='_ultraExplorerBar']/container[@caption='' and @controltypename='UltraExplorerBarContainerControl' and @instance='0']/container[@controlname='controlPanelWrapper']/container[@controlname='TimeIndexControlPanelControl']/container[@controlname='atcUnpostedOrMontylyOrStatistice']/container[@controlname='&lt;Selected>k__BackingField']/element[@controltypename='AmicusLabel']/text[@accessiblename='Unposted']"
 				searchtimeout="30000ms">
-					/form[@controlname='MainForm']/container[@controlname='pLeft']//container[@controltypename='UltraExplorerBarContainerControl' and @instance='0']/?/?/container[@controlname='TimeIndexControlPanelControl']/?/?/container[@controlname='&lt;Selected&gt;k__BackingField']/?/?/text[@accessiblename='Unposted']
+					/form[@controlname='MainForm']//container[@controltypename='UltraExplorerBarContainerControl' and @instance='0']/?/?/container[@controlname='TimeIndexControlPanelControl']/?/?/container[@controlname='&lt;Selected&gt;k__BackingField']/?/?/text[@accessiblename='Unposted']
 				</item>
 				<item
 				addcaps="text,accessible"
@@ -138,9 +135,8 @@ rxversion="9.0">
 				id="7f35d07c-c443-4af4-bbfb-7af349a5ee83"
 				name="lnkMonthly"
 				refimgid="838d1afe-0e35-49fe-9fb0-9dcd74f2edd4"
-				refpath="/form[@controlname='MainForm']/container[@controlname='pLeft']/container[@caption='' and @controltypename='Panel' and @instance='1']/element[@controlname='_ultraExplorerBar']/container[@caption='' and @controltypename='UltraExplorerBarContainerControl' and @instance='0']/container[@controlname='controlPanelWrapper']/container[@controlname='TimeIndexControlPanelControl']/container[@controlname='atcUnpostedOrMontylyOrStatistice']/container[@caption='' and @controltypename='AmicusTab' and @instance='1']/element[@controltypename='AmicusLabel']/text[@accessiblename='Monthly']"
 				searchtimeout="30000ms">
-					/form[@controlname='MainForm']/container[@controlname='pLeft']//container[@controltypename='UltraExplorerBarContainerControl' and @instance='0']/?/?/container[@controlname='TimeIndexControlPanelControl']/container[@controlname='atcUnpostedOrMontylyOrStatistice']//text[@accessiblename='Monthly']
+					/form[@controlname='MainForm']//container[@controltypename='UltraExplorerBarContainerControl' and @instance='0']/?/?/container[@controlname='TimeIndexControlPanelControl']/container[@controlname='atcUnpostedOrMontylyOrStatistice']//text[@accessiblename='Monthly']
 				</item>
 				<item
 				addcaps="text,accessible"
@@ -148,9 +144,8 @@ rxversion="9.0">
 				id="cd9155ae-9479-429d-8529-ca1522ee3e1a"
 				name="lnkStatistics"
 				refimgid="00bdad2b-e481-4c52-a363-6738d7c1e613"
-				refpath="/form[@controlname='MainForm']/container[@controlname='pLeft']/container[@caption='' and @controltypename='Panel' and @instance='1']/element[@controlname='_ultraExplorerBar']/container[@caption='' and @controltypename='UltraExplorerBarContainerControl' and @instance='0']/container[@controlname='controlPanelWrapper']/container[@controlname='TimeIndexControlPanelControl']/container[@controlname='atcUnpostedOrMontylyOrStatistice']/container[@caption='' and @controltypename='AmicusTab' and @instance='2']/element[@controltypename='AmicusLabel']/text[@accessiblename='Statistics']"
 				searchtimeout="30000ms">
-					/form[@controlname='MainForm']/container[@controlname='pLeft']//container[@controltypename='UltraExplorerBarContainerControl' and @instance='0']/?/?/container[@controlname='TimeIndexControlPanelControl']/container[@controlname='atcUnpostedOrMontylyOrStatistice']//text[@accessiblename='Statistics']
+					/form[@controlname='MainForm']//container[@controltypename='UltraExplorerBarContainerControl' and @instance='0']/?/?/container[@controlname='TimeIndexControlPanelControl']/container[@controlname='atcUnpostedOrMontylyOrStatistice']//text[@accessiblename='Statistics']
 				</item>
 				<item
 				addcaps="text,accessible"
@@ -159,7 +154,7 @@ rxversion="9.0">
 				name="txtMonthlyTotalAmt"
 				refimgid="e2c796fc-61d1-40c1-8f4e-3b721cabfdfc"
 				searchtimeout="30000ms">
-					/form[@controlname='MainForm']/container[@controlname='pLeft']//container[@controltypename='UltraExplorerBarContainerControl' and @instance='0']/?/?/container[@controlname='TimeIndexControlPanelControl']//container[@controlname='pnlMonthlyView']/element[@controlname='ulblTotalAmountValue']/text
+					/form[@controlname='MainForm']//container[@controltypename='UltraExplorerBarContainerControl' and @instance='0']/?/?/container[@controlname='TimeIndexControlPanelControl']//container[@controlname='pnlMonthlyView']/element[@controlname='ulblTotalAmountValue']/text
 				</item>
 				<item
 				addcaps="text,accessible"
@@ -168,7 +163,7 @@ rxversion="9.0">
 				name="txtMonthlyTotalTime"
 				refimgid="3143eb9b-dabb-4070-a615-37824b0444ed"
 				searchtimeout="30000ms">
-					/form[@controlname='MainForm']/container[@controlname='pLeft']//container[@controltypename='UltraExplorerBarContainerControl' and @instance='0']/?/?/container[@controlname='TimeIndexControlPanelControl']//container[@controlname='pnlMonthlyView']/element[@controlname='ulblTotalTimeValue']/text
+					/form[@controlname='MainForm']//container[@controltypename='UltraExplorerBarContainerControl' and @instance='0']/?/?/container[@controlname='TimeIndexControlPanelControl']//container[@controlname='pnlMonthlyView']/element[@controlname='ulblTotalTimeValue']/text
 				</item>
 				<item
 				addcaps="text,accessible"
@@ -177,7 +172,7 @@ rxversion="9.0">
 				name="txtMonthlyTotalUnposted"
 				refimgid="74bb6f56-e438-49ca-8e7b-08df93e2475f"
 				searchtimeout="30000ms">
-					/form[@controlname='MainForm']/container[@controlname='pLeft']//container[@controltypename='UltraExplorerBarContainerControl' and @instance='0']/?/?/container[@controlname='TimeIndexControlPanelControl']//container[@controlname='pnlMonthlyView']/element[@controlname='ulblUnpostedValue']/text
+					/form[@controlname='MainForm']//container[@controltypename='UltraExplorerBarContainerControl' and @instance='0']/?/?/container[@controlname='TimeIndexControlPanelControl']//container[@controlname='pnlMonthlyView']/element[@controlname='ulblUnpostedValue']/text
 				</item>
 				<item
 				addcaps="text,accessible"
@@ -186,7 +181,7 @@ rxversion="9.0">
 				name="txtMonthlyTotalPosted"
 				refimgid="0c5c9e13-ebf5-4629-9ab3-e6c3494471a0"
 				searchtimeout="30000ms">
-					/form[@controlname='MainForm']/container[@controlname='pLeft']//container[@controltypename='UltraExplorerBarContainerControl' and @instance='0']/?/?/container[@controlname='TimeIndexControlPanelControl']//container[@controlname='pnlMonthlyView']/element[@controlname='ulblPostedValue']/text
+					/form[@controlname='MainForm']//container[@controltypename='UltraExplorerBarContainerControl' and @instance='0']/?/?/container[@controlname='TimeIndexControlPanelControl']//container[@controlname='pnlMonthlyView']/element[@controlname='ulblPostedValue']/text
 				</item>
 				<item
 				addcaps="text,accessible"
@@ -195,7 +190,7 @@ rxversion="9.0">
 				name="txtMonthName"
 				refimgid="04be3130-dbd2-4c67-a9f2-f13361ad974e"
 				searchtimeout="30000ms">
-					/form[@controlname='MainForm']/container[@controlname='pLeft']//container[@controltypename='UltraExplorerBarContainerControl' and @instance='0']/?/?/container[@controlname='TimeIndexControlPanelControl']//container[@controlname='pnlMonthlyView']/element[@controlname='ulblDateValue']/text
+					/form[@controlname='MainForm']//container[@controltypename='UltraExplorerBarContainerControl' and @instance='0']/?/?/container[@controlname='TimeIndexControlPanelControl']//container[@controlname='pnlMonthlyView']/element[@controlname='ulblDateValue']/text
 				</item>
 				<item
 				addcaps="text,accessible"
@@ -204,7 +199,7 @@ rxversion="9.0">
 				name="txtUnpostedAmtCurrentDay"
 				refimgid="07e2982f-e485-40fc-bae6-62c7a1a62f6d"
 				searchtimeout="30000ms">
-					/form[@controlname='MainForm']/container[@controlname='pLeft']//container[@controltypename='UltraExplorerBarContainerControl' and @instance='0']/?/?/container[@controlname='TimeIndexControlPanelControl']//container[@controlname='pnlUnposted']/element[@controlname='lblUnpostedDate']/text
+					/form[@controlname='MainForm']//container[@controltypename='UltraExplorerBarContainerControl' and @instance='0']/?/?/container[@controlname='TimeIndexControlPanelControl']//container[@controlname='pnlUnposted']/element[@controlname='lblUnpostedDate']/text
 				</item>
 				<item
 				addcaps="text,accessible"
@@ -213,7 +208,7 @@ rxversion="9.0">
 				name="txtLstPostedDay"
 				refimgid="313d64f8-07b3-4afa-9cdb-1d0e83f65e5b"
 				searchtimeout="30000ms">
-					/form[@controlname='MainForm']/container[@controlname='pLeft']//container[@controltypename='UltraExplorerBarContainerControl' and @instance='0']/?/?/container[@controlname='TimeIndexControlPanelControl']//container[@controlname='pnlUnposted']/element[@controlname='lblDayLastPosted']/text
+					/form[@controlname='MainForm']//container[@controltypename='UltraExplorerBarContainerControl' and @instance='0']/?/?/container[@controlname='TimeIndexControlPanelControl']//container[@controlname='pnlUnposted']/element[@controlname='lblDayLastPosted']/text
 				</item>
 				<item
 				addcaps="text,accessible"
@@ -222,7 +217,7 @@ rxversion="9.0">
 				name="txtTotalUnpostedTime"
 				refimgid="093b8489-363d-4390-ba00-c4c93afb2522"
 				searchtimeout="30000ms">
-					/form[@controlname='MainForm']/container[@controlname='pLeft']//container[@controltypename='UltraExplorerBarContainerControl' and @instance='0']/?/?/container[@controlname='TimeIndexControlPanelControl']//container[@controlname='pnlUnposted']/element[@controlname='lblDayTotalTime']/text
+					/form[@controlname='MainForm']//container[@controltypename='UltraExplorerBarContainerControl' and @instance='0']/?/?/container[@controlname='TimeIndexControlPanelControl']//container[@controlname='pnlUnposted']/element[@controlname='lblDayTotalTime']/text
 				</item>
 				<item
 				addcaps="text,accessible"
@@ -231,7 +226,7 @@ rxversion="9.0">
 				name="txtTotalNonBillTime"
 				refimgid="2ddd594b-b999-4748-96a9-015dc5337608"
 				searchtimeout="30000ms">
-					/form[@controlname='MainForm']/container[@controlname='pLeft']//container[@controltypename='UltraExplorerBarContainerControl' and @instance='0']/?/?/container[@controlname='TimeIndexControlPanelControl']//container[@controlname='pnlUnposted']/element[@controlname='lblDayNonBillTime']/text
+					/form[@controlname='MainForm']//container[@controltypename='UltraExplorerBarContainerControl' and @instance='0']/?/?/container[@controlname='TimeIndexControlPanelControl']//container[@controlname='pnlUnposted']/element[@controlname='lblDayNonBillTime']/text
 				</item>
 				<item
 				addcaps="text,accessible"
@@ -239,12 +234,91 @@ rxversion="9.0">
 				id="cb1dd173-2860-41bd-98a6-6fd204867609"
 				name="txtTotalBillTime"
 				refimgid="bbe32587-eb30-4501-8ba4-eafe0770d7d6"
-				refpath="/form[@controlname='MainForm']/container[@controlname='pLeft']/container[@caption='' and @controltypename='Panel' and @instance='1']/element[@controlname='_ultraExplorerBar']/container[@caption='' and @controltypename='UltraExplorerBarContainerControl' and @instance='0']/container[@controlname='controlPanelWrapper']/container[@controlname='TimeIndexControlPanelControl']/container[@controlname='pnlClock']/container[@controlname='pnlUnposted']/element[@controlname='lblDayBillableTime']/text[@accessiblename='0.10']"
 				searchtimeout="30000ms">
-					/form[@controlname='MainForm']/container[@controlname='pLeft']//container[@controltypename='UltraExplorerBarContainerControl' and @instance='0']/?/?/container[@controlname='TimeIndexControlPanelControl']//container[@controlname='pnlUnposted']/element[@controlname='lblDayBillableTime']/text[@accessiblename='0.10']
+					/form[@controlname='MainForm']//container[@controltypename='UltraExplorerBarContainerControl' and @instance='0']/?/?/container[@controlname='TimeIndexControlPanelControl']//container[@controlname='pnlUnposted']/element[@controlname='lblDayBillableTime']/text[@accessiblename='0.10']
 				</item>
 				<basepath>
-					/form[@controlname='MainForm']/container[@controlname='pLeft']//container[@controltypename='UltraExplorerBarContainerControl' and @instance='0']/?/?/container[@controlname='TimeIndexControlPanelControl']
+					/form[@controlname='MainForm']//container[@controltypename='UltraExplorerBarContainerControl' and @instance='0']/?/?/container[@controlname='TimeIndexControlPanelControl']
+				</basepath>
+			</folder>
+			<item
+			addcaps="container,accessible"
+			capname="container"
+			id="b2fa5904-6c7d-435c-a7f0-b3ae13f97028"
+			name="shrtDay"
+			refimgid="3993cd02-b0d5-4175-a145-afb002bbb194"
+			searchtimeout="30000ms">
+				/form[@controlname='MainForm']/?/?/form[@controlname='TimeIndexForm']/container[@controlname='pWholePage']/container[@controlname='pnlWhole']/container[@controlname='pMonthlyView']//container[@accessiblename=$curwk]/container[@accessiblename=$curwkday]
+			</item>
+			<item
+			addcaps="text,accessible"
+			capname="text"
+			id="1e15b17a-d12c-44f2-96b8-75a053aeaaef"
+			name="txtappointment"
+			refimgid="b1f49229-7379-4947-bef6-656b8d304abb"
+			searchtimeout="30000ms">
+				/form[@controlname='MainForm']/?/?/form[@controlname='TimeIndexForm']/container[@controlname='pWholePage']/container[@controlname='pnlWhole']//container[@accessiblename=$curwk]/container[@accessiblename=$curwkday]/text[@accessiblename&gt;'Appointment']
+			</item>
+			<folder
+			addcaps="container,control,nativewindow"
+			capname="container"
+			id="276b6f5a-8ab1-426b-bfdd-422c50d1f3d8"
+			isrooted="True"
+			name="PnlWhole"
+			refpath="/form[@controlname='MainForm']/element[@controltypename='MdiClient']/form[@controlname='TimeIndexForm']/container[@controlname='pWholePage']/container[@controlname='pnlWhole']"
+			searchtimeout="30000ms"
+			usecache="False">
+				<item
+				addcaps="picture,control,nativewindow"
+				capname="picture"
+				id="f44a2e25-4605-4a23-a890-bf628a8d18fa"
+				name="prevMonth"
+				refimgid="8ec0bfcb-9331-45f3-b5c0-a2a933921c5d"
+				refpath="/form[@controlname='MainForm']/element[@controltypename='MdiClient']/form[@controlname='TimeIndexForm']/container[@controlname='pWholePage']/container[@controlname='pnlWhole']/container[@controlname='pMonthlyView']/container[@controlname='pMonthCalendar']/container[@controlname='dnMonthViewCalendar']/container[@controlname='pnlControls']/picture[@controlname='picPrev']"
+				searchtimeout="30000ms">
+					/form[@controlname='MainForm']/?/?/form[@controlname='TimeIndexForm']/container[@controlname='pWholePage']/container[@controlname='pnlWhole']/?/?/container[@controlname='pMonthCalendar']//picture[@controlname='picPrev']
+				</item>
+				<item
+				addcaps="picture,control,nativewindow"
+				capname="picture"
+				id="5aaa40c4-af63-4cf3-98d3-b8406170c499"
+				name="nxtDay"
+				refimgid="d2984755-79c2-4093-8b1e-48365a7a2f4f"
+				refpath="/form[@controlname='MainForm']/element[@controltypename='MdiClient']/form[@controlname='TimeIndexForm']/container[@controlname='pWholePage']/container[@controlname='pnlWhole']/container[@controlname='pMonthlyView']/container[@controlname='pMonthList']/container[@controlname='dnTimeEntryList']/container[@controlname='pnlControls']/picture[@controlname='picNext']"
+				searchtimeout="30000ms">
+					/form[@controlname='MainForm']/?/?/form[@controlname='TimeIndexForm']/container[@controlname='pWholePage']/container[@controlname='pnlWhole']/?/?/container[@controlname='pMonthList']//picture[@controlname='picNext']
+				</item>
+				<item
+				addcaps="picture,control,nativewindow"
+				capname="picture"
+				id="ace29dea-8863-41e4-b12e-e24bb7723a63"
+				name="prevDay"
+				refimgid="611f91af-b7fc-47b6-93f7-2e67c620bccb"
+				refpath="/form[@controlname='MainForm']/element[@controltypename='MdiClient']/form[@controlname='TimeIndexForm']/container[@controlname='pWholePage']/container[@controlname='pnlWhole']/container[@controlname='pMonthlyView']/container[@controlname='pMonthList']/container[@controlname='dnTimeEntryList']/container[@controlname='pnlControls']/picture[@controlname='picPrev']"
+				searchtimeout="30000ms">
+					/form[@controlname='MainForm']/?/?/form[@controlname='TimeIndexForm']/container[@controlname='pWholePage']/container[@controlname='pnlWhole']/?/?/container[@controlname='pMonthList']//picture[@controlname='picPrev']
+				</item>
+				<item
+				addcaps="picture,control,nativewindow"
+				capname="picture"
+				id="31e3aaa6-9cb2-4484-b0ea-2dd0da6a3aaa"
+				name="nxtMonth"
+				refimgid="c0b412ed-7996-477e-8c81-c61e3be3fe42"
+				refpath="/form[@controlname='MainForm']/element[@controltypename='MdiClient']/form[@controlname='TimeIndexForm']/container[@controlname='pWholePage']/container[@controlname='pnlWhole']/container[@controlname='pMonthlyView']/container[@controlname='pMonthCalendar']/container[@controlname='dnMonthViewCalendar']/container[@controlname='pnlControls']/picture[@controlname='picNext']"
+				searchtimeout="30000ms">
+					/form[@controlname='MainForm']/?/?/form[@controlname='TimeIndexForm']/container[@controlname='pWholePage']/container[@controlname='pnlWhole']/?/?/container[@controlname='pMonthCalendar']//picture[@controlname='picNext']
+				</item>
+				<item
+				addcaps="text,accessible"
+				capname="text"
+				id="b3c0a672-8f4a-4832-b1d3-0e6a6aab82f3"
+				name="txtcurrentday"
+				refimgid="560af39d-e706-43aa-8039-dab8be9a6e31"
+				searchtimeout="30000ms">
+					/form[@controlname='MainForm']/?/?/form[@controlname='TimeIndexForm']/container[@controlname='pWholePage']/container[@controlname='pnlWhole']/?/?/container[@controlname='pMonthList']//text[@accessiblename=$curwkday1]
+				</item>
+				<basepath>
+					/form[@controlname='MainForm']/?/?/form[@controlname='TimeIndexForm']/container[@controlname='pWholePage']/container[@controlname='pnlWhole']
 				</basepath>
 			</folder>
 			<basepath>
@@ -305,6 +379,82 @@ D8zerL8gSEaw7+rFqJ//CkX5CWkHqyZHVzU6AAAAAElFTkSuQmCC
 			searchtimeout="30000ms">
 				/form[@controlname='FileSelectForm']/container[@controlname='pnlBase']//element[@controlname='uteSearch']/text[@controlname='uteSearch_EmbeddableTextBox']
 			</item>
+			<item
+			addcaps="toolbar,accessible"
+			capname="toolbar"
+			id="04b72c2d-b148-4007-a5ff-ecc09ac4e6a4"
+			name="Toolbar"
+			refpath="/form[@controlname='FileSelectForm']/element[@controlname='_BaseForm_Toolbars_Dock_Area_Bottom']/container[@accessiblename='DockBottom']/toolbar[@accessiblename='Toolbar']"
+			searchtimeout="30000ms">
+				/form[@controlname='FileSelectForm']/element[@controlname='_BaseForm_Toolbars_Dock_Area_Bottom']/?/?/toolbar[@accessiblename='Toolbar']
+			</item>
+			<folder
+			addcaps="toolbar,accessible"
+			capname="toolbar"
+			id="cc6f15ab-250a-4235-acca-412b387a7b89"
+			isrooted="True"
+			name="Toolbar1"
+			refpath="/form[@controlname='TimeEntryDetailsForm']/container[@controlname='menubar_Fill_Panel']/element[@controlname='_menubar_Fill_Panel_Toolbars_Dock_Area_Bottom']/container[@accessiblename='DockBottom']/toolbar[@accessiblename='Toolbar']"
+			searchtimeout="30000ms"
+			usecache="False">
+				<item
+				addcaps="button,accessible"
+				capname="button"
+				id="cc74ea31-4955-4e0d-b8a7-9e3d97e3e6d4"
+				name="Cancel"
+				refpath="/form[@controlname='FileSelectForm']/element[@controlname='_BaseForm_Toolbars_Dock_Area_Bottom']/container[@accessiblename='DockBottom']/toolbar[@accessiblename='Toolbar']/button[@accessiblename='Cancel']"
+				searchtimeout="30000ms">
+					/form[@controlname='FileSelectForm']//toolbar[@accessiblename='Toolbar']/button[@accessiblename='Cancel']
+				</item>
+				<item
+				addcaps="button,accessible"
+				capname="button"
+				id="a77254b7-113a-4727-b849-66c74ab43e33"
+				name="ButtonNew"
+				refpath="/form[@controlname='FileSelectForm']/element[@controlname='_BaseForm_Toolbars_Dock_Area_Bottom']/container[@accessiblename='DockBottom']/toolbar[@accessiblename='Toolbar']/button[@accessiblename='New']"
+				searchtimeout="30000ms">
+					/form[@controlname='FileSelectForm']//toolbar[@accessiblename='Toolbar']/button[@accessiblename='New']
+				</item>
+				<item
+				addcaps="button,accessible"
+				capname="button"
+				id="ebd47c1d-aabc-4df9-967c-965390aece41"
+				name="None1"
+				refpath="/form[@controlname='FileSelectForm']/element[@controlname='_BaseForm_Toolbars_Dock_Area_Bottom']/container[@accessiblename='DockBottom']/toolbar[@accessiblename='Toolbar']/button[@accessiblename='None']"
+				searchtimeout="30000ms">
+					/form[@controlname='FileSelectForm']//toolbar[@accessiblename='Toolbar']/button[@accessiblename='None']
+				</item>
+				<item
+				addcaps="button,accessible"
+				capname="button"
+				id="17bd4ab4-b806-4e41-bf9e-1ebfe2c5c595"
+				name="ButtonOK"
+				refpath="/form[@controlname='FileSelectForm']/element[@controlname='_BaseForm_Toolbars_Dock_Area_Bottom']/container[@accessiblename='DockBottom']/toolbar[@accessiblename='Toolbar']/button[@accessiblename='OK']"
+				searchtimeout="30000ms">
+					/form[@controlname='FileSelectForm']//toolbar[@accessiblename='Toolbar']/button[@accessiblename='OK']
+				</item>
+				<item
+				addcaps="button,accessible"
+				capname="button"
+				id="c329a216-9f48-4005-bf30-2011dbf92ad7"
+				name="WhoseFile"
+				refpath="/form[@controlname='FileSelectForm']/element[@controlname='_BaseForm_Toolbars_Dock_Area_Bottom']/container[@accessiblename='DockBottom']/toolbar[@accessiblename='Toolbar']/button[@accessiblename='Whose File']"
+				searchtimeout="30000ms">
+					/form[@controlname='FileSelectForm']//toolbar[@accessiblename='Toolbar']/button[@accessiblename='Whose File']
+				</item>
+				<item
+				addcaps="unknown,accessible"
+				capname="unknown"
+				id="11bbfaee-c055-4468-a0fe-06bc46e68743"
+				name="None"
+				refpath="/form[@controlname='FileSelectForm']/element[@controlname='_BaseForm_Toolbars_Dock_Area_Bottom']/container[@accessiblename='DockBottom']/toolbar[@accessiblename='Toolbar']/element[@accessiblename='']"
+				searchtimeout="30000ms">
+					/form[@controlname='FileSelectForm']//toolbar[@accessiblename='Toolbar']/element[@accessiblename='']
+				</item>
+				<basepath>
+					/form[@controlname='FileSelectForm']//toolbar[@accessiblename='Toolbar']
+				</basepath>
+			</folder>
 			<basepath>
 				/form[@controlname='FileSelectForm']
 			</basepath>
@@ -449,6 +599,78 @@ D8zerL8gSEaw7+rFqJ//CkX5CWkHqyZHVzU6AAAAAElFTkSuQmCC
 				searchtimeout="30000ms">
 					/form[@controlname='TimeEntryDetailsForm']/container[@controlname='menubar_Fill_Panel']/container[@controlname='pnlBase']//container[@controlname='panel1']/?/?/container[@controlname='tmrDuration']/?/?/text[@accessiblerole='Text']
 				</item>
+				<item
+				addcaps="unknown,accessible"
+				capname="unknown"
+				id="9a9175bb-8972-4b11-a550-dea1f38e9a75"
+				name="None"
+				refpath="/form[@controlname='TimeEntryDetailsForm']/container[@controlname='menubar_Fill_Panel']/element[@controlname='_menubar_Fill_Panel_Toolbars_Dock_Area_Bottom']/container[@accessiblename='DockBottom']/toolbar[@accessiblename='Toolbar']/element[@accessiblename='']"
+				searchtimeout="30000ms">
+					/form[@controlname='TimeEntryDetailsForm']/container[@controlname='menubar_Fill_Panel']//toolbar[@accessiblename='Toolbar']/element[@accessiblename='']
+				</item>
+				<item
+				addcaps="button,accessible"
+				capname="button"
+				id="d9ead5a1-92f6-4d23-b5d0-6f774cdb8dfa"
+				name="Prev"
+				refpath="/form[@controlname='TimeEntryDetailsForm']/container[@controlname='menubar_Fill_Panel']/element[@controlname='_menubar_Fill_Panel_Toolbars_Dock_Area_Bottom']/container[@accessiblename='DockBottom']/toolbar[@accessiblename='Toolbar']/button[@accessiblename='Prev']"
+				searchtimeout="30000ms">
+					/form[@controlname='TimeEntryDetailsForm']/container[@controlname='menubar_Fill_Panel']//toolbar[@accessiblename='Toolbar']/button[@accessiblename='Prev']
+				</item>
+				<item
+				addcaps="button,accessible"
+				capname="button"
+				id="874055cd-b38a-4b37-b303-2ef354f7b664"
+				name="Next"
+				refpath="/form[@controlname='TimeEntryDetailsForm']/container[@controlname='menubar_Fill_Panel']/element[@controlname='_menubar_Fill_Panel_Toolbars_Dock_Area_Bottom']/container[@accessiblename='DockBottom']/toolbar[@accessiblename='Toolbar']/button[@accessiblename='Next']"
+				searchtimeout="30000ms">
+					/form[@controlname='TimeEntryDetailsForm']/container[@controlname='menubar_Fill_Panel']//toolbar[@accessiblename='Toolbar']/button[@accessiblename='Next']
+				</item>
+				<item
+				addcaps="button,accessible"
+				capname="button"
+				id="9609251c-0668-4f47-886f-4011e2441dbf"
+				name="Print"
+				refpath="/form[@controlname='TimeEntryDetailsForm']/container[@controlname='menubar_Fill_Panel']/element[@controlname='_menubar_Fill_Panel_Toolbars_Dock_Area_Bottom']/container[@accessiblename='DockBottom']/toolbar[@accessiblename='Toolbar']/button[@accessiblename='Print']"
+				searchtimeout="30000ms">
+					/form[@controlname='TimeEntryDetailsForm']/container[@controlname='menubar_Fill_Panel']//toolbar[@accessiblename='Toolbar']/button[@accessiblename='Print']
+				</item>
+				<item
+				addcaps="button,accessible"
+				capname="button"
+				id="b38e4470-f218-44e0-8c8b-4b39e856ee13"
+				name="Post"
+				refpath="/form[@controlname='TimeEntryDetailsForm']/container[@controlname='menubar_Fill_Panel']/element[@controlname='_menubar_Fill_Panel_Toolbars_Dock_Area_Bottom']/container[@accessiblename='DockBottom']/toolbar[@accessiblename='Toolbar']/button[@accessiblename='Post']"
+				searchtimeout="30000ms">
+					/form[@controlname='TimeEntryDetailsForm']/container[@controlname='menubar_Fill_Panel']//toolbar[@accessiblename='Toolbar']/button[@accessiblename='Post']
+				</item>
+				<item
+				addcaps="button,accessible"
+				capname="button"
+				id="b8900224-0e8d-49b2-95ba-9448c1cc9336"
+				name="SaveNew"
+				refpath="/form[@controlname='TimeEntryDetailsForm']/container[@controlname='menubar_Fill_Panel']/element[@controlname='_menubar_Fill_Panel_Toolbars_Dock_Area_Bottom']/container[@accessiblename='DockBottom']/toolbar[@accessiblename='Toolbar']/button[@accessiblename='Save &amp; New']"
+				searchtimeout="30000ms">
+					/form[@controlname='TimeEntryDetailsForm']/container[@controlname='menubar_Fill_Panel']//toolbar[@accessiblename='Toolbar']/button[@accessiblename='Save &amp; New']
+				</item>
+				<item
+				addcaps="button,accessible"
+				capname="button"
+				id="f833817e-b6f3-4cf8-84ce-cd3cc5915ba4"
+				name="Cancel"
+				refpath="/form[@controlname='TimeEntryDetailsForm']/container[@controlname='menubar_Fill_Panel']/element[@controlname='_menubar_Fill_Panel_Toolbars_Dock_Area_Bottom']/container[@accessiblename='DockBottom']/toolbar[@accessiblename='Toolbar']/button[@accessiblename='Cancel']"
+				searchtimeout="30000ms">
+					/form[@controlname='TimeEntryDetailsForm']/container[@controlname='menubar_Fill_Panel']//toolbar[@accessiblename='Toolbar']/button[@accessiblename='Cancel']
+				</item>
+				<item
+				addcaps="toolbar,accessible"
+				capname="toolbar"
+				id="f68283ed-ccbb-4436-8307-a75da3c92ee0"
+				name="Toolbar"
+				refpath="/form[@controlname='TimeEntryDetailsForm']/container[@controlname='menubar_Fill_Panel']/element[@controlname='_menubar_Fill_Panel_Toolbars_Dock_Area_Bottom']/container[@accessiblename='DockBottom']/toolbar[@accessiblename='Toolbar']"
+				searchtimeout="30000ms">
+					/form[@controlname='TimeEntryDetailsForm']/container[@controlname='menubar_Fill_Panel']//toolbar[@accessiblename='Toolbar']
+				</item>
 				<basepath>
 					/form[@controlname='TimeEntryDetailsForm']/container[@controlname='menubar_Fill_Panel']
 				</basepath>
@@ -472,6 +694,16 @@ D8zerL8gSEaw7+rFqJ//CkX5CWkHqyZHVzU6AAAAAElFTkSuQmCC
 			refpath="/form[@controlname='TimeEntryDetailsForm']/container[@controlname='menubar_Fill_Panel']/container[@controlname='pnlBase']/container[@controlname='pnlControls']/container[@controlname='panel2']/element[@controlname='ucmbBillingRate']/button[@automationid='[Editor] dropdown button']"
 			searchtimeout="30000ms">
 				/form[@controlname='TimeEntryDetailsForm']/?/?/container[@controlname='pnlBase']//element[@controlname='ucmbBillingRate']/button[@automationid='[Editor] dropdown button']
+			</item>
+			<item
+			addcaps="combobox,accessible"
+			capname="combobox"
+			id="795adeb2-db6a-445f-9007-9fbcc6f4df0b"
+			name="cmbbxActivityCodes"
+			refimgid="6fe3e34f-03e0-44c1-a429-b6d178572f92"
+			refpath="/form[@controlname='TimeEntryDetailsForm']/container[@controlname='menubar_Fill_Panel']/container[@controlname='pnlBase']/container[@controlname='pnlControls']/container[@controlname='panel2']/container[@controlname='panel1']/container[@controlname='pnlBottom']/container[@controlname='pnlActivityCode']/element[@controlname='ucmbActivity']/combobox[@accessiblename='&lt;My Activity Codes>']/combobox[@accessiblerole='ComboBox']"
+			searchtimeout="30000ms">
+				/form[@controlname='TimeEntryDetailsForm']/?/?/container[@controlname='pnlBase']//container[@controlname='panel1']/?/?/container[@controlname='pnlActivityCode']/?/?/combobox[@accessiblename='&lt;My Activity Codes&gt;']/combobox[@accessiblerole='ComboBox']
 			</item>
 			<basepath>
 				/form[@controlname='TimeEntryDetailsForm']
@@ -500,6 +732,34 @@ mgbMPkceHnXBqAtAeDi5gHz8/z8Al8RZImtwgVkAAAAASUVORK5CYII=
 			refpath="/form[@controlname='PromptForm']/element[@controlname='_BaseForm_Toolbars_Dock_Area_Bottom']/container[@accessiblename='DockBottom']/toolbar[@accessiblename='Toolbar']/button[@accessiblename='Yes']"
 			searchtimeout="30000ms">
 				/form[@controlname='PromptForm']//toolbar[@accessiblename='Toolbar']/button[@accessiblename='Yes']
+			</item>
+			<item
+			addcaps="button,accessible"
+			capname="button"
+			id="4e3ae3c4-21b6-45e6-bbf4-8c0a5b4e5f4c"
+			name="btnNo"
+			refpath="/form[@controlname='PromptForm']/element[@controlname='_BaseForm_Toolbars_Dock_Area_Bottom']/container[@accessiblename='DockBottom']/toolbar[@accessiblename='Toolbar']/button[@accessiblename='No']"
+			searchtimeout="30000ms">
+				/form[@controlname='PromptForm']//toolbar[@accessiblename='Toolbar']/button[@accessiblename='No']
+			</item>
+			<item
+			addcaps="toolbar,accessible"
+			capname="toolbar"
+			id="4f0946f3-943d-41f4-b3a8-627ade31a499"
+			name="Toolbar"
+			refpath="/form[@controlname='PromptForm']/element[@controlname='_BaseForm_Toolbars_Dock_Area_Bottom']/container[@accessiblename='DockBottom']/toolbar[@accessiblename='Toolbar']"
+			searchtimeout="30000ms">
+				/form[@controlname='PromptForm']/element[@controlname='_BaseForm_Toolbars_Dock_Area_Bottom']/?/?/toolbar[@accessiblename='Toolbar']
+			</item>
+			<item
+			addcaps="text,accessible"
+			capname="text"
+			id="22690823-bbc8-4df5-a355-3076c6c6f0fd"
+			name="txtTimeKeeper"
+			refimgid="0329dbba-e397-4ee5-85bc-3e18b1c3602f"
+			refpath="/form[@controlname='PromptForm']/container[@controlname='pnlBase']/container[@controlname='pnlControls']/container[@controlname='pnlMessage']/element[@controlname='alblMessage']/text[@accessiblename='The Timekeeper already has a Time Entry on this File on this date. Do you want to combine them?']"
+			searchtimeout="30000ms">
+				/form[@controlname='PromptForm']/container[@controlname='pnlBase']/?/?/container[@controlname='pnlMessage']/?/?/text[@accessiblename&gt;'The Timekeeper already has']
 			</item>
 			<basepath>
 				/form[@controlname='PromptForm']
@@ -694,17 +954,15 @@ SUVORK5CYII=
 		refpath="/form"
 		searchtimeout="30000ms"
 		usecache="True">
-			<folder
+			<item
+			addcaps="table,accessible"
 			capname="table"
-			id="e021d742-3056-42fb-a0a0-d5b0b9e15fa6"
-			isrooted="True"
+			id="c830f074-668c-45b4-ba1b-5b87d1d2365b"
 			name="tblDropdown"
-			searchtimeout="30000ms"
-			usecache="False">
-				<basepath>
-					/form/?/?/table
-				</basepath>
-			</folder>
+			refpath="/form/element/table"
+			searchtimeout="30000ms">
+				/form/?/?/table
+			</item>
 			<basepath>
 				/form
 			</basepath>
@@ -728,5 +986,17 @@ QmCC
 		</basepath>
 	</rootfolder>
 	<variables>
+		<var
+		id="9479bfaf-f1ed-406d-b6a0-0b518b6d5c74"
+		name="curwkday">
+		</var>
+		<var
+		id="1c89f5df-54db-48b5-ae50-4be1be76b4bc"
+		name="curwk">
+		</var>
+		<var
+		id="d9eb6908-9db7-46af-9fa7-9e85c3327ac3"
+		name="curwkday1">
+		</var>
 	</variables>
 </repository>

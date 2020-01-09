@@ -266,6 +266,9 @@
     <Compile Include="Modules\Attorney_FileDetails\AddNotes.cs">
       <id>888523a3-93f0-4b34-bb3d-1100bcf8e991</id>
     </Compile>
+    <Compile Include="Modules\Attorney_FileDetails\setupAccountingSystem_add2ActivityCodes.cs">
+      <id>3c7997f3-d42d-4f61-b26e-6678120a52b4</id>
+    </Compile>
     <Compile Include="Modules\Attorney_FileDetails\SwitchUserManage.cs">
       <id>f51e5290-0588-42cf-876e-7c0c432c77e2</id>
     </Compile>
@@ -392,11 +395,20 @@
     <Compile Include="Modules\CreateTask.cs">
       <id>52489ca6-9aab-4d01-8d31-60ccad79dd8d</id>
     </Compile>
+    <Compile Include="Modules\createTE_ValidateActivityCodes.cs">
+      <id>cc12d988-83f5-4cd7-b0c9-ca8ebb3f88d7</id>
+    </Compile>
     <Compile Include="Modules\CreateTimeEntry.cs">
       <id>fcecf97f-64b4-4aa8-a16c-c4baf3a2bbc1</id>
     </Compile>
     <Compile Include="Modules\CalendarAppointmentCRUD.cs">
       <id>eaa2aeb6-8106-4b4a-9dc2-2c30b0dabbff</id>
+    </Compile>
+    <Compile Include="Modules\Create_TE_Past_Current_Future.cs">
+      <id>b5fef54f-25e1-4c93-ad9b-45ad2629bfba</id>
+    </Compile>
+    <Compile Include="Modules\delete2TimeEntries.cs">
+      <id>decca88b-b334-4add-83a4-8b7ec18aa8db</id>
     </Compile>
     <Compile Include="Modules\DeleteAppointment.cs">
       <id>c53a0d8a-9f15-4ac7-b61c-99a6f12d8e40</id>
@@ -488,8 +500,17 @@
     <Compile Include="Modules\testViewNavigation.cs">
       <id>d9857e46-dc36-4d57-a32e-6e9af474156d</id>
     </Compile>
+    <Compile Include="Modules\timeentries_monthlyview.cs">
+      <id>be43e638-a2c5-45f2-bad4-49b9773a578c</id>
+    </Compile>
+    <Compile Include="Modules\timeentries_monthlyview_monthnavigation.cs">
+      <id>792e7534-9ea5-4528-8a28-527ba283e244</id>
+    </Compile>
     <Compile Include="Modules\TimeEntryAPX.cs">
       <id>821adb03-f2c8-47f5-8bb4-17b61d9d35e0</id>
+    </Compile>
+    <Compile Include="Modules\timentries_monthlyview_navigatebtwdays.cs">
+      <id>f689a032-238f-4481-869c-da11d12d2085</id>
     </Compile>
     <Compile Include="Modules\UserCodeModule1.cs">
       <id>9d9a2824-7ea1-427f-a963-92f735984f61</id>

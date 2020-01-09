@@ -152,7 +152,7 @@ namespace Ranorex.AutomationHelpers.Modules
                     this.From,
                     this.Body+="Hi All,<br/>Please find the attached Test Report for Automation run on  "+System.DateTime.Now.ToString("MM/dd/yyyy")+" "+System.DateTime.Now.ToString("h:mm tt")+"."+
                     Environment.NewLine + "<br/><br/>Path to the PDF Report Generated from Automation is : "+String.Format("<a href='{0}'>Pdf Report</a>",reportFile[1].ToString())+
-                    "<br/>Total Test Cases Count: "+(currentTestSuiteStatus.TotalSuccessCount+currentTestSuiteStatus.TotalFailedCount+currentTestSuiteStatus.TotalBlockedCount)+
+                    "<br/>Total Test Cases Count: "+(currentTestSuiteStatus.TotalSuccessCount+currentTestSuiteStatus.TotalFailedCount)+
                     "<br/>Total Test Cases Passed: "+currentTestSuiteStatus.TotalSuccessCount+"<br/>Total Test Cases Failed: "+currentTestSuiteStatus.TotalFailedCount+
                     "<br/>Total Run Duration: "+totalDuration +"<br/><br/>Thanks<br/>Automation Team",
                     reportFile,

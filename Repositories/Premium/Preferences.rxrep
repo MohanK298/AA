@@ -711,7 +711,7 @@ D8zerL8gSEaw7+rFqJ//CkX5CWkHqyZHVzU6AAAAAElFTkSuQmCC
 				capname="table"
 				id="5c83ac77-20bb-4041-a9f4-96aecfd1018b"
 				name="tbActivityCodeSelection"
-				refimgid="bf4e7e76-7d48-41af-919f-1353eefe984e"
+				refimgid="6243c178-668d-444b-b4d1-5eb949488e59"
 				refpath="/form[@controlname='ActivityCodeSelectForm']/container[@controlname='pnlBase']/container[@controlname='pnlControls']/container[@controlname='panel2']/element[@controlname='cheatingGridOnlyForBorder']/table[@accessiblerole='Table']"
 				searchtimeout="30000ms">
 					/form[@controlname='ActivityCodeSelectForm']/container[@controlname='pnlBase']//element[@controlname='cheatingGridOnlyForBorder']/table[@accessiblerole='Table']
@@ -745,6 +745,25 @@ D8zerL8gSEaw7+rFqJ//CkX5CWkHqyZHVzU6AAAAAElFTkSuQmCC
 				refpath="/form[@controlname='ActivityCodeSelectForm']/container[@controlname='pnlBase']/container[@controlname='pnlControls']/container[@controlname='panel2']/element[@controlname='ubtnRemove']/button[@accessiblename='&lt;']"
 				searchtimeout="30000ms">
 					/form[@controlname='ActivityCodeSelectForm']/container[@controlname='pnlBase']//element[@controlname='ubtnRemove']/button[@accessiblename='&lt;']
+				</item>
+				<item
+				addcaps="checkbox,accessible"
+				capname="checkbox"
+				id="4174dd95-2d23-4d56-a210-229b57a7a676"
+				name="cbSelectDoubleClick"
+				refimgid="ccb8214b-8b67-4ddf-858d-1e7531ad9bbb"
+				refpath="/form[@controlname='ActivityCodeSelectForm']/container[@controlname='pnlBase']/container[@controlname='pnlControls']/container[@controlname='panel2']/element[@controlname='uchkDoubleClick']/checkbox[@accessiblename='Double-click selects and closes']/checkbox[@accessiblename='Double-click selects and closes']"
+				searchtimeout="30000ms">
+					/form[@controlname='ActivityCodeSelectForm']/container[@controlname='pnlBase']//element[@controlname='uchkDoubleClick']/?/?/checkbox[@accessiblename&gt;'Double-click selects and']
+				</item>
+				<item
+				addcaps="treeitem,accessible"
+				capname="treeitem"
+				id="c0357e00-4fbf-475c-85ea-7a266edf580f"
+				name="treeitemActivity"
+				refimgid="b36e0d22-6d83-4b0f-8ae2-e2bd2a92da7a"
+				searchtimeout="30000ms">
+					/form[@controlname='ActivityCodeSelectForm']/container[@controlname='pnlBase']//element[@controlname='utTreeView']/?/?/treeitem[@accessiblename=$activityname]
 				</item>
 				<basepath>
 					/form[@controlname='ActivityCodeSelectForm']/container[@controlname='pnlBase']
@@ -910,5 +929,9 @@ SUVORK5CYII=
 		</basepath>
 	</rootfolder>
 	<variables>
+		<var
+		id="34ebd2d6-43a7-4893-9f8a-bd7e3ab5da27"
+		name="activityname">
+		</var>
 	</variables>
 </repository>

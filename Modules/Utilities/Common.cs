@@ -18,7 +18,7 @@ using SmokeTest.Repositories;
 using Ranorex;
 using Ranorex.Core;
 using Ranorex.Core.Testing;
-
+using System.Globalization;
 namespace SmokeTest.Modules.Utilities
 {
     /// <summary>
@@ -111,6 +111,13 @@ namespace SmokeTest.Modules.Utilities
         				Report.Failure(String.Format("Value \"{0}\" not present in \"{1}\"",data,tblName));
         	}
         }
+        
+        public int GetTableRowCount(Ranorex.Adapter tbldata,string tblName)
+        {
+        	var tadapter = tbldata.As <Ranorex.Table>();
+        	return tadapter.Rows.Count;
+        }
+        
         
          public void VerifyCorrespondingDataExistsInTable(Ranorex.Adapter tbldata,string data,string correspondData,string tblName)
         {
@@ -225,6 +232,61 @@ namespace SmokeTest.Modules.Utilities
         				Report.Failure(String.Format("Value \"{0}\" not present for selection in \"{1}\"",data,tblName));
         	}
         } 
+        
+        public void SelectItemFromTableDblClick(Ranorex.Adapter tbldata,string itemValue)
+        {
+        	int k=0;
+        	var tadapter = tbldata.As <Ranorex.Table>();
+        	for(int i=0;i<tadapter.Rows.Count;i++)
+        	{
+        			if(tadapter.Rows[i].Cells[0].As<Ranorex.Cell>().Text.Contains(itemValue))
+        			{
+        				tadapter.Rows[i].Cells[0].As<Ranorex.Cell>().DoubleClick();
+        				Report.Success(String.Format("Value \"{0}\" Selected as expected",itemValue));
+        				k++;
+        				break;
+        		    }
+        	}
+        	if(k==0)
+        	{
+        				Report.Info(String.Format("Value \"{0}\" not present for selection/Value already selected ",itemValue));
+        	}
+        }
+        
+        public void SelectItemFromTableDblClick(Ranorex.Adapter tbldata,int rowno)
+        {
+        	int k=0;
+        	var tadapter = tbldata.As <Ranorex.Table>();
+        	var rowcount=tadapter.Rows.Count;
+        	//Report.Info(rowcount);
+        	for(int i=0;i<rowcount;i++)
+        	{
+        			if(tadapter.Rows[i].Cells[0].As<Ranorex.Cell>().RowIndex==rowno)
+        			{
+        				tadapter.Rows[i].Cells[0].As<Ranorex.Cell>().DoubleClick();
+        				Report.Success(String.Format("Value  Selected as expected"));
+        				k++;
+        				break;
+        		    }
+        	}
+        	if(k==0)
+        	{
+        		Report.Info(String.Format("Value  not present for selection/Value already selected "));
+        	}
+        }
+        
+        public int GetWeekOfYear(System.DateTime time)
+		{
+		    DayOfWeek day = CultureInfo.InvariantCulture.Calendar.GetDayOfWeek(time);
+		    if (day >= DayOfWeek.Monday && day <= DayOfWeek.Wednesday)
+		    {
+		        time = time.AddDays(3);
+		    }
+		
+		 
+		    return CultureInfo.InvariantCulture.Calendar.GetWeekOfYear(time, CalendarWeekRule.FirstFourDayWeek, DayOfWeek.Monday);
+		} 
+	        
         public void SelectItemFromTableSingleClick(Ranorex.Adapter tbldata,string data,string tblName)
         {
         	int k=0;
@@ -409,7 +471,7 @@ namespace SmokeTest.Modules.Utilities
 			{
 				down+="{Down}";
 			}
-			Keyboard.Press("{LShiftKey}"+down+"{LShiftKey up}");
+			Keyboard.Press("{LShiftKey down}"+down+"{LShiftKey up}");
 			
 			Report.Success("Multiple Selection performed for Documents");
 		}

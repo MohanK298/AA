@@ -1,10 +1,15 @@
 ﻿<Properties>
   <Array name="active">
-    <Element value="SmokeTest.rxtst" />
+    <Element value="Repositories\TimeSheets.rxrep" />
   </Array>
   <Array name="bookmarks" />
   <Array name="files">
     <Element value="SmokeTest.rxtst" />
+    <Element value="Modules\Utilities\Common.cs" />
+    <Element value="Modules\Create_TE_Past_Current_Future.cs" />
+    <Element value="Repositories\TimeSheets.rxrep" />
+    <Element value="Modules\createNewApptOverlapExistAdjrnAppt.cs" />
+    <Element value="Repositories\Calendar.rxrep" />
   </Array>
   <Properties name="projectSavedData">
     <Properties name="customTool">

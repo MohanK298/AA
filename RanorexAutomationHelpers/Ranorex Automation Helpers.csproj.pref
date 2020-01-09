@@ -6,9 +6,7 @@
     <Element value="Bookmark|C:\Users\kumar\Downloads\AA\RanorexAutomationHelpers\Modules\EmailModule.cs|47|23" />
     <Element value="Bookmark|C:\Users\kumar\Downloads\AA\RanorexAutomationHelpers\Modules\EmailModule.cs|153|26" />
   </Array>
-  <Array name="files">
-    <Element value="Modules\EmailModule.cs" />
-  </Array>
+  <Array name="files" />
   <Properties name="projectSavedData">
     <Properties name="customTool">
       <runOnBuild value="False" />

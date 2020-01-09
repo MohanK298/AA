@@ -59,6 +59,18 @@ namespace SmokeTest.Repositories.Premium
 
 #region Variables
 
+        string _activityname = "";
+
+        /// <summary>
+        /// Gets or sets the value of variable activityname.
+        /// </summary>
+        [TestVariable("34ebd2d6-43a7-4893-9f8a-bd7e3ab5da27")]
+        public string activityname
+        {
+            get { return _activityname; }
+            set { _activityname = value; }
+        }
+
 #endregion
 
         /// <summary>
@@ -1951,6 +1963,8 @@ namespace SmokeTest.Repositories.Premium
             RepoItemInfo _btnaddInfo;
             RepoItemInfo _tbactivitycodeselectedInfo;
             RepoItemInfo _btnremoveInfo;
+            RepoItemInfo _cbselectdoubleclickInfo;
+            RepoItemInfo _treeitemactivityInfo;
 
             /// <summary>
             /// Creates a new PnlBase  folder.
@@ -1962,6 +1976,8 @@ namespace SmokeTest.Repositories.Premium
                 _btnaddInfo = new RepoItemInfo(this, "btnAdd", ".//element[@controlname='ubtnAdd']/button[@accessiblename='>']", 30000, null, "7b09a2b1-a3be-4c9c-8da3-d1fc1c0d5fc5");
                 _tbactivitycodeselectedInfo = new RepoItemInfo(this, "tbActivityCodeSelected", ".//element[@controlname='udgCurrentSelect']/table[@accessiblename='ArrayList']", 30000, null, "15038208-3753-4b1d-9c83-3cc144eb751e");
                 _btnremoveInfo = new RepoItemInfo(this, "btnRemove", ".//element[@controlname='ubtnRemove']/button[@accessiblename='<']", 30000, null, "f2502893-e901-4462-93cb-2f564f73cd7b");
+                _cbselectdoubleclickInfo = new RepoItemInfo(this, "cbSelectDoubleClick", ".//element[@controlname='uchkDoubleClick']/?/?/checkbox[@accessiblename>'Double-click selects and']", 30000, null, "4174dd95-2d23-4d56-a210-229b57a7a676");
+                _treeitemactivityInfo = new RepoItemInfo(this, "treeitemActivity", ".//element[@controlname='utTreeView']/?/?/treeitem[@accessiblename=$activityname]", 30000, null, "c0357e00-4fbf-475c-85ea-7a266edf580f");
             }
 
             /// <summary>
@@ -2081,6 +2097,54 @@ namespace SmokeTest.Repositories.Premium
                 get
                 {
                     return _btnremoveInfo;
+                }
+            }
+
+            /// <summary>
+            /// The cbSelectDoubleClick item.
+            /// </summary>
+            [RepositoryItem("4174dd95-2d23-4d56-a210-229b57a7a676")]
+            public virtual Ranorex.CheckBox cbSelectDoubleClick
+            {
+                get
+                {
+                    return _cbselectdoubleclickInfo.CreateAdapter<Ranorex.CheckBox>(true);
+                }
+            }
+
+            /// <summary>
+            /// The cbSelectDoubleClick item info.
+            /// </summary>
+            [RepositoryItemInfo("4174dd95-2d23-4d56-a210-229b57a7a676")]
+            public virtual RepoItemInfo cbSelectDoubleClickInfo
+            {
+                get
+                {
+                    return _cbselectdoubleclickInfo;
+                }
+            }
+
+            /// <summary>
+            /// The treeitemActivity item.
+            /// </summary>
+            [RepositoryItem("c0357e00-4fbf-475c-85ea-7a266edf580f")]
+            public virtual Ranorex.TreeItem treeitemActivity
+            {
+                get
+                {
+                    return _treeitemactivityInfo.CreateAdapter<Ranorex.TreeItem>(true);
+                }
+            }
+
+            /// <summary>
+            /// The treeitemActivity item info.
+            /// </summary>
+            [RepositoryItemInfo("c0357e00-4fbf-475c-85ea-7a266edf580f")]
+            public virtual RepoItemInfo treeitemActivityInfo
+            {
+                get
+                {
+                    return _treeitemactivityInfo;
                 }
             }
         }

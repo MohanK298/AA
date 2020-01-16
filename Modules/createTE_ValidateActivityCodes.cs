@@ -64,7 +64,7 @@ namespace SmokeTest.Modules
         	cmn.VerifyDataExistsInTable(ts.DropDownForm.tblDropdown,"Attend discovery","Activity Code Dropdown");
         	ts.TimeEntryDetailsForm.MenubarFillPanel.Self.Click();
         	ts.TimeEntryDetailsForm.MenubarFillPanel.Cancel.Click();
-        	if(ts.PromptForm.txtTimeKeeperInfo.Exists(3000))
+        	if(ts.PromptForm.txtPromptInfo.Exists(3000))
         	{
         	   	ts.PromptForm.btnYes.Click();
         	}
@@ -78,6 +78,7 @@ namespace SmokeTest.Modules
             Keyboard.DefaultKeyPressTime = 100;
             Delay.SpeedFactor = 1.0;
             CreateTE_ValidateActivitycodes();
+            Utilities.Common.ClosePrompt();
         }
     }
 }

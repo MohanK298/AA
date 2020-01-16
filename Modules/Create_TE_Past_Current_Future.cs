@@ -57,7 +57,7 @@ namespace SmokeTest.Modules
         	ts.TimeEntryDetailsForm.MenubarFillPanel.txtActivityDescription.TextValue="Test";
         	ts.TimeEntryDetailsForm.txtDate.PressKeys(System.DateTime.Now.AddDays(-1).ToShortDateString());
         	ts.TimeEntryDetailsForm.MenubarFillPanel.btnOK.Click();
-        	if(ts.PromptForm.txtTimeKeeperInfo.Exists(3000))
+        	if(ts.PromptForm.txtPromptInfo.Exists(3000))
         	{
         	   	ts.PromptForm.btnYes.Click();
         	}
@@ -72,7 +72,7 @@ namespace SmokeTest.Modules
         	}
         	ts.TimeEntryDetailsForm.MenubarFillPanel.txtActivityDescription.TextValue="Test";
         	ts.TimeEntryDetailsForm.MenubarFillPanel.btnOK.Click();
-        	if(ts.PromptForm.txtTimeKeeperInfo.Exists(3000))
+        	if(ts.PromptForm.txtPromptInfo.Exists(3000))
         	{
         	   	ts.PromptForm.btnYes.Click();
         	}
@@ -88,7 +88,7 @@ namespace SmokeTest.Modules
         	ts.TimeEntryDetailsForm.MenubarFillPanel.txtActivityDescription.TextValue="Test";
         	ts.TimeEntryDetailsForm.txtDate.PressKeys(System.DateTime.Now.AddDays(1).ToShortDateString());
         	ts.TimeEntryDetailsForm.MenubarFillPanel.btnOK.Click();
-        	if(ts.PromptForm.txtTimeKeeperInfo.Exists(3000))
+        	if(ts.PromptForm.txtPromptInfo.Exists(3000))
         	{
         	   	ts.PromptForm.btnYes.Click();
         	}
@@ -96,6 +96,8 @@ namespace SmokeTest.Modules
         }
         private void CheckTimeEntries()
         {
+        	Delay.Seconds(30);
+        	Report.Info("Waiting for 30 seconds");
         	ts.MainForm.cmbbxUnpostedDates.Click();
         	Delay.Seconds(1);
         	cmn.VerifyDataExistsInTable(ts.DropDownForm.tblDropdown,"Today","Unposted Dropdown");
@@ -116,6 +118,7 @@ namespace SmokeTest.Modules
             Delay.SpeedFactor = 1.0;
             createTimeEntries();
             CheckTimeEntries();
+            Utilities.Common.ClosePrompt();
         }
     }
 }

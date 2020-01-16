@@ -73,7 +73,7 @@ SUVORK5CYII=
 			name="Office"
 			refimgid="1503f128-3b07-4c98-b851-3998796189ea"
 			searchtimeout="30000ms">
-				/form[@controlname='MainForm']/container[@controlname='pLeft']//container[@automationid='[Group] 0']
+				/form[@controlname='MainForm']/?//container[@automationid='[Group] 0']
 			</item>
 			<item
 			addcaps="text,accessible"

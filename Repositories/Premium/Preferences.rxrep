@@ -330,7 +330,7 @@ rxversion="9.0">
 			name="OfficeModule"
 			refimgid="45bed2df-2a4b-4b4a-9e43-48e195fd8256"
 			searchtimeout="30000ms">
-				/form[@controlname='MainForm']/container[@controlname='pLeft']//container[@name='Office']
+				/form[@controlname='MainForm']/?//container[@name='Office']
 			</item>
 			<item
 			addcaps="text,accessible"
@@ -831,6 +831,7 @@ SUVORK5CYII=
 		id="989dda3b-b17c-4a3c-b51a-d0304723a038"
 		isrooted="True"
 		name="TimePreferencesForm"
+		refimgid="f10215d2-88cd-4a93-86fa-c097afe6c73f"
 		refpath="/form[@controlname='TimePreferencesForm']"
 		searchtimeout="30000ms"
 		usecache="True">
@@ -910,6 +911,35 @@ SUVORK5CYII=
 					/form[@controlname='TimePreferencesForm']//toolbar[@accessiblename='Toolbar']
 				</basepath>
 			</folder>
+			<item
+			addcaps="combobox,accessible"
+			capname="combobox"
+			id="f4161df3-6bd4-4119-b12f-0e95597a01d1"
+			name="cmbbxDefaultCodes"
+			refimgid="f0af79fb-21a4-45b4-aa40-784df4c6c1ec"
+			searchtimeout="30000ms">
+				/form[@controlname='TimePreferencesForm']/container[@controlname='pnlBase']//container[@controlname='panelActivityCodes']/?/?/combobox/combobox[@accessiblerole='ComboBox']
+			</item>
+			<item
+			addcaps="radiobutton,control,nativewindow"
+			capname="radiobutton"
+			id="392a87ba-9aad-4a5c-a0f8-7926df76785c"
+			name="rdoMinutes"
+			refimgid="98f7e1c1-5e5d-4a94-bb2f-99bd5f6d47e3"
+			refpath="/form[@controlname='TimePreferencesForm']/container[@controlname='pnlBase']/container[@controlname='pnlControls']/container[@controlname='panelTitleBase']/container[@controlname='panelBase']/container[@controlname='panelFormatting']/radiobutton[@controlname='radioMinutes']"
+			searchtimeout="30000ms">
+				/form[@controlname='TimePreferencesForm']/container[@controlname='pnlBase']//container[@controlname='panelFormatting']/radiobutton[@controlname='radioMinutes']
+			</item>
+			<item
+			addcaps="radiobutton,control,nativewindow"
+			capname="radiobutton"
+			id="7d29b1ea-4280-4f5c-a6a1-4561b18256e5"
+			name="rdoTenths"
+			refimgid="f004b997-de0a-438f-8d47-a9e033d44182"
+			refpath="/form[@controlname='TimePreferencesForm']/container[@controlname='pnlBase']/container[@controlname='pnlControls']/container[@controlname='panelTitleBase']/container[@controlname='panelBase']/container[@controlname='panelFormatting']/radiobutton[@controlname='radioTenths']"
+			searchtimeout="30000ms">
+				/form[@controlname='TimePreferencesForm']/container[@controlname='pnlBase']//container[@controlname='panelFormatting']/radiobutton[@controlname='radioTenths']
+			</item>
 			<basepath>
 				/form[@controlname='TimePreferencesForm']
 			</basepath>
@@ -923,6 +953,43 @@ fGSvCnbev29fwQpwgd9PH/1/N6ERHB5gzSDwyFX3IkjgeZLv/0+rF/z/snPD/4fWCmAND60V/3+Y
 GqBzjhwDnkbaa4ANAIZBBDkGgDXDAMkGAFMmVCsEPHLTO0uKAU+jnYygWhHgeZIPUQY8dFS/BdWC
 Cd405uM14N+/f+egSnGDjyvnxjyyVQYbANL0FmjAm/aKH4+9zVWhSqCAgQEAq9YXqsYCPO8AAAAA
 SUVORK5CYII=
+			</icon>
+		</appfolder>
+		<appfolder
+		addcaps="form,control,nativewindow"
+		capname="form"
+		id="0abde5c6-cda9-48ba-9275-e19f920c3654"
+		isrooted="True"
+		name="DropDownForm"
+		refpath="/form"
+		searchtimeout="30000ms"
+		usecache="True">
+			<item
+			addcaps="table,accessible"
+			capname="table"
+			id="0bc4323e-c32f-47d1-88ed-80a618099183"
+			name="tbDropdown"
+			refpath="/form/element/table"
+			searchtimeout="30000ms">
+				/form/?/?/table
+			</item>
+			<basepath>
+				/form
+			</basepath>
+			<icon>
+				iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAALGPC/xhBQAAAAlwSFlz
+AAAOxAAADsQBlSsOGwAAAlFJREFUOE+lk+tLk2EYh/eX9CGipCIyCKLo4HHlzA8SVoR9KogkkKDM
+CKRCCwQtKUjtIJSdrKggqQ+CFZmHHGlzzrU552HqNnWbO7zHXT3bBLXQoG74fXvv63c9z8tj+O9p
+aDFz55WDmuYBqpp+cLnRzJnqTk5UdlNc8YWic60Ulr6koOTJshw8/RjjkXIMdc9tNLVrNLZp3GqV
+qX4dofJZkIpHs5Q3+Tl710fJ7UlO1o5zvNrN0SoXh644yS8zsyZtB4baZjN1bwLcfBvm4oMpTt1w
+U3zdybFrDg5ftVNYYaPg0iCmcisHLgxgLLOQe95CRmk369KNGGoaXuAPxAhHNeZFQhGVYFghIDIb
+SsUbUPDMyLi9Mg6PhHVMosvqYePW7QJQ38JqE4+DokJEijMX0ZkKaoz6VSwuLxs2b8Nw/+n7hU//
+HE0HSYkzH9OZmdeYnNNw+xR+Tir0DP0FoItmWSwnm8M606J5TDQ7pxSs4zKd1tUACW1NLMtxglEd
+X0hjYlbD5VWwTSj0j8h8tgjAphUAi+pxZsRySl3FLtQtozK9wxLtfSsAkupqQl1PqQdS6o6kusJ3
+l0yXQ6LNnACkLwckb1yDqDh3YKn6dEq9zy3R45TosMX40PsbQOyiLqiHhLo/eesqIwl1z6L6V3uM
+T9Yo73q8rE8A7i0xEOVI4p+HYggATMyByxdnyKPRP6rxbVilw67wcVBOAtambRFvof4hufvzyTGa
+yBbJEskUycg1sS/HxN7sPPaI7M7KY1dmKjszUsnJL2LhTf7rGAy/AP7X5rYY5FLEAAAAAElFTkSu
+QmCC
 			</icon>
 		</appfolder>
 		<basepath>

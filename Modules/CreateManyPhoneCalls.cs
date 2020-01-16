@@ -63,7 +63,7 @@ namespace SmokeTest.Modules
         public void CreateCall()
         {
 	        	phoneCall.MainForm.Self.Activate();
-        	for (int value = 001; value <= 1500; value++)
+        	for (int value = 001; value <= 10; value++)
         	{
 	        	//Open window to add a new phone call
 	        	//phoneCall.MainForm.btnCommunications.Click();
@@ -88,7 +88,7 @@ namespace SmokeTest.Modules
 	        	phoneCall.FileSelectForm.listFirstFoundFile.DoubleClick();
 	        	
 	        	//Add note to the call
-	        	phoneCall.PhoneDetailForm.MenubarFillPanel.txtPhoneCallNote.PressKeys("Client File Pegasus Phone Call "+ System.DateTime.Now.ToString());
+	        	phoneCall.PhoneDetailForm.MenubarFillPanel.txtPhoneCallNote.PressKeys(value+" Client File Pegasus Phone Call "+ System.DateTime.Now.ToString());
 	        	
 	        	//Save phone call
 	        	phoneCall.PhoneDetailForm.MenubarFillPanel.btnOK.Click();

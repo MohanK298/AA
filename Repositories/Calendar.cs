@@ -42,6 +42,7 @@ namespace SmokeTest.Repositories
         CalendarFolders.AdjournmentReasonFormAppFolder _adjournmentreasonform;
         CalendarFolders.AdjournmentsFormAppFolder _adjournmentsform;
         CalendarFolders.TimeEntryDetailsFormAppFolder _timeentrydetailsform;
+        CalendarFolders.AutoCompleteFormAppFolder _autocompleteform;
 
         /// <summary>
         /// Gets the singleton class instance representing the Calendar element repository.
@@ -73,6 +74,7 @@ namespace SmokeTest.Repositories
             _adjournmentreasonform = new CalendarFolders.AdjournmentReasonFormAppFolder(this);
             _adjournmentsform = new CalendarFolders.AdjournmentsFormAppFolder(this);
             _timeentrydetailsform = new CalendarFolders.TimeEntryDetailsFormAppFolder(this);
+            _autocompleteform = new CalendarFolders.AutoCompleteFormAppFolder(this);
         }
 
 #region Variables
@@ -297,6 +299,15 @@ namespace SmokeTest.Repositories
         {
             get { return _timeentrydetailsform; }
         }
+
+        /// <summary>
+        /// The AutoCompleteForm folder.
+        /// </summary>
+        [RepositoryFolder("f15bf352-1864-4ef5-9c12-1c6b35d1a93b")]
+        public virtual CalendarFolders.AutoCompleteFormAppFolder AutoCompleteForm
+        {
+            get { return _autocompleteform; }
+        }
     }
 
     /// <summary>
@@ -333,7 +344,7 @@ namespace SmokeTest.Repositories
                 _pnlviews = new CalendarFolders.PnlViewsFolder(this);
                 _selfInfo = new SelfInfoClass(this);
                 _btnnewappointmentInfo = new RepoItemInfo(this, "btnNewAppointment", "?/?/form[@controlname='CalendarIndexForm']/container[@controlname='menubar_Fill_Panel']//toolbar[@accessiblename='Toolbar']/button[@accessiblename='New']", 30000, null, "352b053d-f1d5-4375-ad6a-3cb831dbc887");
-                _btncalendarInfo = new RepoItemInfo(this, "btnCalendar", "container[@controlname='pLeft']//tree[@accessiblerole='Outline']/button[@accessiblename='Calendar']", 30000, null, "5731cd0c-0ba4-4426-9aac-e577c6187a12");
+                _btncalendarInfo = new RepoItemInfo(this, "btnCalendar", "?//tree[@accessiblerole='Outline']/button[@accessiblename='Calendar']", 30000, null, "5731cd0c-0ba4-4426-9aac-e577c6187a12");
                 _btnviewmenuInfo = new RepoItemInfo(this, "btnViewMenu", "element[@controlname='_BaseModuleForm_Toolbars_Dock_Area_Top']//menuitem[@accessiblename='View']", 30000, null, "45870d03-fa10-43d8-9082-4373bae1957d");
                 _listitemtitleInfo = new RepoItemInfo(this, "listItemTitle", "?/?/form[@controlname='CalendarIndexForm']/container[@controlname='pnlBase']//container[@controlname='pnlLists']/element[@controlname='udgEvents']/table[@accessiblerole='Table']/row[1]/cell[@accessiblename='Title']", 30000, null, "87b2c3a3-832c-4c05-8125-631f1f7fbbba");
                 _menulistviewInfo = new RepoItemInfo(this, "menuListView", "element[@controlname='_BaseModuleForm_Toolbars_Dock_Area_Top']//menuitem[@accessiblename='View']/menuitem[@accessiblename='Lists']", 30000, null, "9a170fba-d46a-4a1b-b1ad-2c383cf1e34d");
@@ -1595,6 +1606,8 @@ namespace SmokeTest.Repositories
             RepoItemInfo _txtstartdateInfo;
             RepoItemInfo _btndetailsInfo;
             RepoItemInfo _btndocInfo;
+            RepoItemInfo _txtfileautocompleteInfo;
+            RepoItemInfo _txtpeopleautocompleteInfo;
 
             /// <summary>
             /// Creates a new PnlBase  folder.
@@ -1631,6 +1644,8 @@ namespace SmokeTest.Repositories
                 _txtstartdateInfo = new RepoItemInfo(this, "txtStartDate", ".//text[@automationid='[Editor] Edit Area']", 30000, null, "f93d6931-0772-4f51-af66-c6003bd8eaa6");
                 _btndetailsInfo = new RepoItemInfo(this, "btnDetails", ".//container[@controlname='pnlDurationRight']/?/?/button[@accessiblename='Details']", 30000, null, "9c077f3f-dd16-4aa4-ae2c-6e03c3dee4bc");
                 _btndocInfo = new RepoItemInfo(this, "btnDoc", "?/?/container[@controlname='pnlTabs']//container[@controlname='scDocuments']/?/?/button[@accessiblerole='PushButton']", 30000, null, "43b89a3b-dda8-42be-8111-f8fac1139c19");
+                _txtfileautocompleteInfo = new RepoItemInfo(this, "txtFileAutoComplete", "?/?/container[@controlname='pnlTabs']//text[@controlname='txtAutoComplete']", 30000, null, "ca097421-7092-49fa-adad-c42dc971fab1");
+                _txtpeopleautocompleteInfo = new RepoItemInfo(this, "txtPeopleAutoComplete", "?/?/container[@controlname='pnlTabs']//container[@controlname='scPeople']//text[@controlname='txtAutoComplete']", 30000, null, "6c251565-bd78-4891-8599-2cef1314d6f7");
             }
 
             /// <summary>
@@ -2350,6 +2365,54 @@ namespace SmokeTest.Repositories
                 get
                 {
                     return _btndocInfo;
+                }
+            }
+
+            /// <summary>
+            /// The txtFileAutoComplete item.
+            /// </summary>
+            [RepositoryItem("ca097421-7092-49fa-adad-c42dc971fab1")]
+            public virtual Ranorex.Text txtFileAutoComplete
+            {
+                get
+                {
+                    return _txtfileautocompleteInfo.CreateAdapter<Ranorex.Text>(true);
+                }
+            }
+
+            /// <summary>
+            /// The txtFileAutoComplete item info.
+            /// </summary>
+            [RepositoryItemInfo("ca097421-7092-49fa-adad-c42dc971fab1")]
+            public virtual RepoItemInfo txtFileAutoCompleteInfo
+            {
+                get
+                {
+                    return _txtfileautocompleteInfo;
+                }
+            }
+
+            /// <summary>
+            /// The txtPeopleAutoComplete item.
+            /// </summary>
+            [RepositoryItem("6c251565-bd78-4891-8599-2cef1314d6f7")]
+            public virtual Ranorex.Text txtPeopleAutoComplete
+            {
+                get
+                {
+                    return _txtpeopleautocompleteInfo.CreateAdapter<Ranorex.Text>(true);
+                }
+            }
+
+            /// <summary>
+            /// The txtPeopleAutoComplete item info.
+            /// </summary>
+            [RepositoryItemInfo("6c251565-bd78-4891-8599-2cef1314d6f7")]
+            public virtual RepoItemInfo txtPeopleAutoCompleteInfo
+            {
+                get
+                {
+                    return _txtpeopleautocompleteInfo;
                 }
             }
         }
@@ -4801,6 +4864,72 @@ namespace SmokeTest.Repositories
                 get
                 {
                     return _btnsavenewInfo;
+                }
+            }
+        }
+
+        /// <summary>
+        /// The AutoCompleteFormAppFolder folder.
+        /// </summary>
+        [RepositoryFolder("f15bf352-1864-4ef5-9c12-1c6b35d1a93b")]
+        public partial class AutoCompleteFormAppFolder : RepoGenBaseFolder
+        {
+            RepoItemInfo _tbautocompleteInfo;
+
+            /// <summary>
+            /// Creates a new AutoCompleteForm  folder.
+            /// </summary>
+            public AutoCompleteFormAppFolder(RepoGenBaseFolder parentFolder) :
+                    base("AutoCompleteForm", "/form[@title='']", parentFolder, 30000, null, false, "f15bf352-1864-4ef5-9c12-1c6b35d1a93b", "")
+            {
+                _tbautocompleteInfo = new RepoItemInfo(this, "tbAutoComplete", "table[@class='SysListView32']", 30000, null, "deb573fc-69ec-4f25-af26-2b550a44b414");
+            }
+
+            /// <summary>
+            /// The Self item.
+            /// </summary>
+            [RepositoryItem("f15bf352-1864-4ef5-9c12-1c6b35d1a93b")]
+            public virtual Ranorex.Form Self
+            {
+                get
+                {
+                    return _selfInfo.CreateAdapter<Ranorex.Form>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Self item info.
+            /// </summary>
+            [RepositoryItemInfo("f15bf352-1864-4ef5-9c12-1c6b35d1a93b")]
+            public virtual RepoItemInfo SelfInfo
+            {
+                get
+                {
+                    return _selfInfo;
+                }
+            }
+
+            /// <summary>
+            /// The tbAutoComplete item.
+            /// </summary>
+            [RepositoryItem("deb573fc-69ec-4f25-af26-2b550a44b414")]
+            public virtual Ranorex.Table tbAutoComplete
+            {
+                get
+                {
+                    return _tbautocompleteInfo.CreateAdapter<Ranorex.Table>(true);
+                }
+            }
+
+            /// <summary>
+            /// The tbAutoComplete item info.
+            /// </summary>
+            [RepositoryItemInfo("deb573fc-69ec-4f25-af26-2b550a44b414")]
+            public virtual RepoItemInfo tbAutoCompleteInfo
+            {
+                get
+                {
+                    return _tbautocompleteInfo;
                 }
             }
         }

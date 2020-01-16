@@ -816,7 +816,7 @@ D8zerL8gSEaw7+rFqJ//CkX5CWkHqyZHVzU6AAAAAElFTkSuQmCC
 			name="tblFileDetailsBrad"
 			refimgid="65fa31a9-3d1b-426c-8ccc-48e360d94195"
 			searchtimeout="30000ms">
-				/form[@controlname='FileDetailForm']/container[@controlname='panelPicBackground']/container[@controlname='evenSplitPanelModernModeOnly']/container[@controlname='panelRight']/?/?/container[@controlname='NotePanel']//table[@accessiblename='Band 0']
+				/form[@controlname='FileDetailForm']/container[@controlname='panelPicBackground']/container[@controlname='evenSplitPanelModernModeOnly']/container[@controlname='panelRight']/?/?/container//table[@accessiblename='Band 0']
 			</item>
 			<item
 			capname="treeitem"

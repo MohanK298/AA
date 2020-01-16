@@ -323,7 +323,9 @@ namespace SmokeTest.Modules.Utilities
         		
         			if(tadapter.Rows[i].Cells[j].As<Ranorex.Cell>().Text.Equals(data))
         			{
-        				Mouse.Click(tadapter.Rows[i].Cells[j+1].As<Ranorex.Cell>(),WinForms.MouseButtons.Right);
+        				if(j<tadapter.Columns.Count)
+        				{Mouse.Click(tadapter.Rows[i].Cells[j+1].As<Ranorex.Cell>(),WinForms.MouseButtons.Right);}
+        				else{Mouse.Click(tadapter.Rows[i].Cells[j].As<Ranorex.Cell>(),WinForms.MouseButtons.Right);}
         				Report.Success(String.Format("Value \"{0}\" Context Clicked as expected in \"{1}\"",data,tblName));
         				k++;
         				break;
@@ -475,6 +477,32 @@ namespace SmokeTest.Modules.Utilities
 			
 			Report.Success("Multiple Selection performed for Documents");
 		}
+        
+        public void MultipleSelection(Ranorex.Adapter item,string[] data)
+        {
+        	int i,j,k=0;
+			var tadapter = item.As <Ranorex.Table>();
+			for(i=0;i<tadapter.Rows.Count;i++)
+        	{
+				if(k>data.Length)
+					break;
+				for(j=0;j<tadapter.Rows[i].Cells.Count;j++)
+        		{
+    				if(tadapter.Rows[i].Cells[j].As<Ranorex.Cell>().Text.Equals(data[k]))
+        			{
+						Keyboard.Press("{LControlKey down}");
+						tadapter.Rows[i].Cells[j].As<Ranorex.Cell>().Click();
+	       				k++;
+	       				i=0;
+        				break;
+        			}
+        		}
+				
+			}
+			Keyboard.Press("{LControlKey up}");
+        }
+        
+        
         public string RetrieveCurrentSelectionFromTable(Ranorex.Adapter item)
         {
         	string data="";

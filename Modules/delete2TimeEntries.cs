@@ -54,7 +54,7 @@ namespace SmokeTest.Modules
         	}
         	ts.TimeEntryDetailsForm.MenubarFillPanel.txtActivityDescription.TextValue="Test";
         	ts.TimeEntryDetailsForm.MenubarFillPanel.btnOK.Click();
-        	if(ts.PromptForm.txtTimeKeeperInfo.Exists(3000))
+        	if(ts.PromptForm.txtPromptInfo.Exists(3000))
         	{
         	   	ts.PromptForm.btnNo.Click();
         	}
@@ -67,7 +67,7 @@ namespace SmokeTest.Modules
         	}
         	ts.TimeEntryDetailsForm.MenubarFillPanel.txtActivityDescription.TextValue="Test";
         	ts.TimeEntryDetailsForm.MenubarFillPanel.btnOK.Click();
-        	if(ts.PromptForm.txtTimeKeeperInfo.Exists(3000))
+        	if(ts.PromptForm.txtPromptInfo.Exists(3000))
         	{
         	   	ts.PromptForm.btnNo.Click();
         	}
@@ -95,6 +95,7 @@ namespace SmokeTest.Modules
             Keyboard.DefaultKeyPressTime = 1000;
             Delay.SpeedFactor = 1.0;
             Create_Delete2TE();
+            Utilities.Common.ClosePrompt();
         }
     }
 }

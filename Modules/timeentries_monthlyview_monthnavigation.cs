@@ -67,7 +67,7 @@ namespace SmokeTest.Modules
         	}
         	ts.TimeEntryDetailsForm.MenubarFillPanel.txtActivityDescription.TextValue="Test";
         	ts.TimeEntryDetailsForm.MenubarFillPanel.btnOK.Click();
-        	if(ts.PromptForm.txtTimeKeeperInfo.Exists(3000))
+        	if(ts.PromptForm.txtPromptInfo.Exists(3000))
         	{
         	   	ts.PromptForm.btnYes.Click();
         	}
@@ -85,7 +85,7 @@ namespace SmokeTest.Modules
         	ts.TimeEntryDetailsForm.MenubarFillPanel.txtActivityDescription.TextValue="Test";
         	ts.TimeEntryDetailsForm.txtDate.PressKeys(strfrstdaymonthprev);
         	ts.TimeEntryDetailsForm.MenubarFillPanel.btnOK.Click();
-        	if(ts.PromptForm.txtTimeKeeperInfo.Exists(3000))
+        	if(ts.PromptForm.txtPromptInfo.Exists(3000))
         	{
         	   	ts.PromptForm.btnYes.Click();
         	}
@@ -105,7 +105,7 @@ namespace SmokeTest.Modules
         	ts.TimeEntryDetailsForm.MenubarFillPanel.txtActivityDescription.TextValue="Test";
         	ts.TimeEntryDetailsForm.txtDate.PressKeys(strfrstdaymonthnxt);
         	ts.TimeEntryDetailsForm.MenubarFillPanel.btnOK.Click();
-        	if(ts.PromptForm.txtTimeKeeperInfo.Exists(3000))
+        	if(ts.PromptForm.txtPromptInfo.Exists(3000))
         	{
         	   	ts.PromptForm.btnYes.Click();
         	}

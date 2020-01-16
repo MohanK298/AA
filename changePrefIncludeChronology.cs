@@ -105,9 +105,6 @@ namespace SmokeTest
         {
 //        	pref.MainForm.Self.Activate();
         	pref.MainForm.OfficeModule.Click();
-//        	Delay.Seconds(3);
-//        	pref.MainForm.Preferences.Click();
-//        	Delay.Seconds(3);
 			pref.MainForm.View.Click();
 			Delay.Seconds(2);
 			pref.MainForm.Preferences1.Click();

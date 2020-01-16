@@ -184,9 +184,8 @@ AAAAADmCBQAAAJAjWAAAAAA5ggUAAAAQMwz/B/Pa+j2m8Yn1AAAAAElFTkSuQmCC
 			id="5731cd0c-0ba4-4426-9aac-e577c6187a12"
 			name="btnCalendar"
 			refimgid="8cc40d7f-1087-405e-ae69-d4a1f626171d"
-			refpath="/form[@controlname='MainForm' and @title='Amicus Attorney' and @processname='AmicusAttorney.XWin' and @controltypename='MainFormXtra' and @instance='1']/container[@controlname='pLeft']/container[@caption='' and @controltypename='Panel' and @instance='1']/element[@controlname='_ultraExplorerBar']/tree[@accessiblerole='Outline']/button[@accessiblename='Calendar']"
 			searchtimeout="30000ms">
-				/form[@controlname='MainForm']/container[@controlname='pLeft']//tree[@accessiblerole='Outline']/button[@accessiblename='Calendar']
+				/form[@controlname='MainForm']/?//tree[@accessiblerole='Outline']/button[@accessiblename='Calendar']
 			</item>
 			<item
 			addcaps="menuitem,accessible"
@@ -613,7 +612,7 @@ D8zerL8gSEaw7+rFqJ//CkX5CWkHqyZHVzU6AAAAAElFTkSuQmCC
 				capname="button"
 				id="bdeab380-2e39-46fa-866e-b1288abcb52f"
 				name="btnAddFile"
-				refimgid="bdf6c5f4-afcb-448f-9223-d1f4aa90a73f"
+				refimgid="55752b7a-f1b6-422a-b383-5f770da20c15"
 				refpath="/form[@controlname='EventDetailForm']/container[@controlname='menubar_Fill_Panel']/container[@controlname='pnlBase']/container[@controlname='pnlControls']/container[@controlname='pnlTabs']/container[@controlname='pnlViews']/container[@controlname='pnlPeopleAndFiles']/container[@controlname='scFiles']/element[@controlname='ubtnIcon']/button[@accessiblerole='PushButton']"
 				searchtimeout="30000ms">
 					/form[@controlname='EventDetailForm']/container[@controlname='menubar_Fill_Panel']/container[@controlname='pnlBase']/?/?/container[@controlname='pnlTabs']//container[@controlname='scFiles']/?/?/button[@accessiblerole='PushButton']
@@ -829,6 +828,26 @@ D8zerL8gSEaw7+rFqJ//CkX5CWkHqyZHVzU6AAAAAElFTkSuQmCC
 				refpath="/form[@controlname='EventDetailForm']/container[@controlname='menubar_Fill_Panel']/container[@controlname='pnlBase']/container[@controlname='pnlControls']/container[@controlname='pnlTabs']/container[@controlname='pnlViews']/container[@controlname='pnlDocumentsAndEmail']/container[@controlname='scDocuments']/element[@controlname='ubtnIcon']/button[@accessiblerole='PushButton']"
 				searchtimeout="30000ms">
 					/form[@controlname='EventDetailForm']/container[@controlname='menubar_Fill_Panel']/container[@controlname='pnlBase']/?/?/container[@controlname='pnlTabs']//container[@controlname='scDocuments']/?/?/button[@accessiblerole='PushButton']
+				</item>
+				<item
+				addcaps="text,control,nativewindow"
+				capname="text"
+				id="ca097421-7092-49fa-adad-c42dc971fab1"
+				name="txtFileAutoComplete"
+				refimgid="06446900-fccb-4418-b09f-e62295ee14d7"
+				refpath="/form[@controlname='EventDetailForm']/container[@controlname='menubar_Fill_Panel']/container[@controlname='pnlBase']/container[@controlname='pnlControls']/container[@controlname='pnlTabs']/container[@controlname='pnlViews']/container[@controlname='pnlPeopleAndFiles']/container[@controlname='scFiles']/text[@controlname='txtAutoComplete']"
+				searchtimeout="30000ms">
+					/form[@controlname='EventDetailForm']/container[@controlname='menubar_Fill_Panel']/container[@controlname='pnlBase']/?/?/container[@controlname='pnlTabs']//text[@controlname='txtAutoComplete']
+				</item>
+				<item
+				addcaps="text,control,nativewindow"
+				capname="text"
+				id="6c251565-bd78-4891-8599-2cef1314d6f7"
+				name="txtPeopleAutoComplete"
+				refimgid="109a12ce-94ac-452e-aa60-71783310bf1e"
+				refpath="/form[@controlname='EventDetailForm']/container[@controlname='menubar_Fill_Panel']/container[@controlname='pnlBase']/container[@controlname='pnlControls']/container[@controlname='pnlTabs']/container[@controlname='pnlViews']/container[@controlname='pnlPeopleAndFiles']/container[@controlname='scPeople']/container[@controlname='pnlContacts']/container[@controlname='scContacts']/text[@controlname='txtAutoComplete']"
+				searchtimeout="30000ms">
+					/form[@controlname='EventDetailForm']/container[@controlname='menubar_Fill_Panel']/container[@controlname='pnlBase']/?/?/container[@controlname='pnlTabs']//container[@controlname='scPeople']//text[@controlname='txtAutoComplete']
 				</item>
 				<basepath>
 					/form[@controlname='EventDetailForm']/container[@controlname='menubar_Fill_Panel']/container[@controlname='pnlBase']
@@ -1879,6 +1898,39 @@ fGSvCnbev29fwQpwgd9PH/1/N6ERHB5gzSDwyFX3IkjgeZLv/0+rF/z/snPD/4fWCmAND60V/3+Y
 GqBzjhwDnkbaa4ANAIZBBDkGgDXDAMkGAFMmVCsEPHLTO0uKAU+jnYygWhHgeZIPUQY8dFS/BdWC
 Cd405uM14N+/f+egSnGDjyvnxjyyVQYbANL0FmjAm/aKH4+9zVWhSqCAgQEAq9YXqsYCPO8AAAAA
 SUVORK5CYII=
+			</icon>
+		</appfolder>
+		<appfolder
+		addcaps="form,nativewindow"
+		capname="form"
+		id="f15bf352-1864-4ef5-9c12-1c6b35d1a93b"
+		isrooted="True"
+		name="AutoCompleteForm"
+		refpath="/form[@title='']"
+		searchtimeout="30000ms"
+		usecache="False">
+			<item
+			addcaps="table,nativewindow"
+			capname="table"
+			id="deb573fc-69ec-4f25-af26-2b550a44b414"
+			name="tbAutoComplete"
+			refimgid="e2b73be1-6f76-4cc3-92a9-77f386af4f12"
+			refpath="/form[@title='']/table[@class='SysListView32']"
+			searchtimeout="30000ms">
+				/form[@title='']/table[@class='SysListView32']
+			</item>
+			<basepath>
+				/form[@title='']
+			</basepath>
+			<icon>
+				iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACx
+jwv8YQUAAAAJcEhZcwAADsQAAA7EAZUrDhsAAAEnSURBVDhPY8AFXmUEGz7xNjrxxM/s4rPUAHuo
+MGHwxMPwySMHtf9YsZvuV6gy7OCRl+FmrBqR8GN3/edQ5RDw0Fnj9t+P7/+Tgx+5aL9hABIP/pMJ
+HrtovwO74rG73v9/v379fxpk9f+hjdL/p/4W/992VPz/uHja/49LZvx/113z/2mILVBO8f9jD32w
+ZpB3wJpB4JG9KliAWABTD9UONAAaQGBJOxUIDeR/Wjn3/6vixP+PbJXBYiDXgQBMPVQ7mgH2yAbM
++/+qJOn/Q4IGIHmBPAMc1Skz4HmMqxipBnxYOk0Qqh0CHjmq/QJLEmOAowbCdmQAliTCAKBuRqgW
+TAAKUBDAZsAjWyXsNqODf//+8T72NPgNMQCYDoBOBorJQKWRAAMDAHoxMgiROIZSAAAAAElFTkSu
+QmCC
 			</icon>
 		</appfolder>
 		<basepath>

@@ -28,9 +28,8 @@ rxversion="9.0">
 			id="ac425c30-405d-4fac-9c3a-1bb0462df3e3"
 			name="btnNotes"
 			refimgid="0a2eb246-5a83-4752-a43d-a248ab5bc397"
-			refpath="/form[@controlname='MainForm']/container[@controlname='pLeft']/container[@caption='' and @controltypename='Panel' and @instance='1']/element[@controlname='_ultraExplorerBar']/tree[@accessiblerole='Outline']/button[@accessiblename='Notes']"
 			searchtimeout="30000ms">
-				/form[@controlname='MainForm']/container[@controlname='pLeft']//tree[@accessiblerole='Outline']/button[@accessiblename='Notes']
+				/form[@controlname='MainForm']/?/?/tree[@accessiblerole='Outline']/button[@accessiblename='Notes']
 			</item>
 			<item
 			addcaps="button,accessible"
@@ -58,9 +57,8 @@ rxversion="9.0">
 			id="b1f6da12-b83c-42a6-b95d-7f7100959747"
 			name="selectToday"
 			refimgid="07d24a9c-6e9f-45fd-9a6c-780a33c6952f"
-			refpath="/form[@controlname='MainForm']/container[@controlname='pLeft']/container[@caption='' and @controltypename='Panel' and @instance='1']/element[@controlname='_ultraExplorerBar']/container[@caption='' and @controltypename='UltraExplorerBarContainerControl' and @instance='0']/container[@controlname='controlPanelWrapper']/container[@controlname='NotesIndexControlPanelControl']/container[@controlname='panel3']/container[@controlname='atcUnassociatedOrToday']/container[@caption='' and @controltypename='AmicusTab' and @instance='1']/element[@controltypename='AmicusLabel']/text[@accessiblename='Today']"
 			searchtimeout="30000ms">
-				/form[@controlname='MainForm']/container[@controlname='pLeft']//container[@controltypename='UltraExplorerBarContainerControl' and @instance='0']/?/?/container[@controlname='NotesIndexControlPanelControl']/container[@controlname='panel3']/container[@controlname='atcUnassociatedOrToday']//text[@accessiblename='Today']
+				/form[@controlname='MainForm']/?//container[@controltypename='UltraExplorerBarContainerControl' and @instance='0']/?/?/container[@controlname='NotesIndexControlPanelControl']/container[@controlname='panel3']/container[@controlname='atcUnassociatedOrToday']//text[@accessiblename='Today']
 			</item>
 			<item
 			addcaps="button,accessible"

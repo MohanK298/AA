@@ -34,6 +34,8 @@ namespace SmokeTest.Repositories
         TimeSheetsFolders.PromptFormAppFolder _promptform;
         TimeSheetsFolders.TimeEntryAssistantFormAppFolder _timeentryassistantform;
         TimeSheetsFolders.DropDownFormAppFolder _dropdownform;
+        TimeSheetsFolders.TimeFindFormAppFolder _timefindform;
+        TimeSheetsFolders.ContextmenuAppFolder _contextmenu;
 
         /// <summary>
         /// Gets the singleton class instance representing the TimeSheets element repository.
@@ -57,6 +59,8 @@ namespace SmokeTest.Repositories
             _promptform = new TimeSheetsFolders.PromptFormAppFolder(this);
             _timeentryassistantform = new TimeSheetsFolders.TimeEntryAssistantFormAppFolder(this);
             _dropdownform = new TimeSheetsFolders.DropDownFormAppFolder(this);
+            _timefindform = new TimeSheetsFolders.TimeFindFormAppFolder(this);
+            _contextmenu = new TimeSheetsFolders.ContextmenuAppFolder(this);
         }
 
 #region Variables
@@ -172,6 +176,24 @@ namespace SmokeTest.Repositories
         public virtual TimeSheetsFolders.DropDownFormAppFolder DropDownForm
         {
             get { return _dropdownform; }
+        }
+
+        /// <summary>
+        /// The TimeFindForm folder.
+        /// </summary>
+        [RepositoryFolder("0b7eb145-1216-4628-be10-ec4aa5123f34")]
+        public virtual TimeSheetsFolders.TimeFindFormAppFolder TimeFindForm
+        {
+            get { return _timefindform; }
+        }
+
+        /// <summary>
+        /// The contextmenu folder.
+        /// </summary>
+        [RepositoryFolder("25434408-91cb-4f38-8ebe-6fcd50aac3db")]
+        public virtual TimeSheetsFolders.ContextmenuAppFolder contextmenu
+        {
+            get { return _contextmenu; }
         }
     }
 
@@ -580,7 +602,7 @@ namespace SmokeTest.Repositories
             public TimeIndexControlPanelControlFolder(RepoGenBaseFolder parentFolder) :
                     base("TimeIndexControlPanelControl", ".//container[@controltypename='UltraExplorerBarContainerControl' and @instance='0']/?/?/container[@controlname='TimeIndexControlPanelControl']", parentFolder, 30000, null, false, "6222050e-1389-4db7-bcac-f05908349596", "")
             {
-                _lnkunpostedInfo = new RepoItemInfo(this, "lnkUnposted", "?/?/container[@controlname='<Selected>k__BackingField']/?/?/text[@accessiblename='Unposted']", 30000, null, "f438cd71-b0e2-4030-b8b3-a0911b779de7");
+                _lnkunpostedInfo = new RepoItemInfo(this, "lnkUnposted", "?/?/container/?/?/text[@accessiblename='Unposted']", 30000, null, "f438cd71-b0e2-4030-b8b3-a0911b779de7");
                 _lnkmonthlyInfo = new RepoItemInfo(this, "lnkMonthly", "container[@controlname='atcUnpostedOrMontylyOrStatistice']//text[@accessiblename='Monthly']", 30000, null, "7f35d07c-c443-4af4-bbfb-7af349a5ee83");
                 _lnkstatisticsInfo = new RepoItemInfo(this, "lnkStatistics", "container[@controlname='atcUnpostedOrMontylyOrStatistice']//text[@accessiblename='Statistics']", 30000, null, "cd9155ae-9479-429d-8529-ca1522ee3e1a");
                 _txtmonthlytotalamtInfo = new RepoItemInfo(this, "txtMonthlyTotalAmt", ".//container[@controlname='pnlMonthlyView']/element[@controlname='ulblTotalAmountValue']/text", 30000, null, "91fb63b6-07ec-4864-b82e-a98a2b64153d");
@@ -1565,7 +1587,7 @@ namespace SmokeTest.Repositories
                 _menubarfillpanel = new TimeSheetsFolders.MenubarFillPanelFolder(this);
                 _txtdateInfo = new RepoItemInfo(this, "txtDate", "?/?/container[@controlname='pnlBase']//element[@controlname='ucalendarcbDate']/text[@automationid='[Editor] Edit Area']", 30000, null, "a2c3e9cd-6176-4c9f-90fb-1c5d57ea48f2");
                 _btndrpdwnratesInfo = new RepoItemInfo(this, "btnDrpdwnRates", "?/?/container[@controlname='pnlBase']//element[@controlname='ucmbBillingRate']/button[@automationid='[Editor] dropdown button']", 30000, null, "c3ed359a-06f1-49e2-8b94-e2b6254c9e39");
-                _cmbbxactivitycodesInfo = new RepoItemInfo(this, "cmbbxActivityCodes", "?/?/container[@controlname='pnlBase']//container[@controlname='panel1']/?/?/container[@controlname='pnlActivityCode']/?/?/combobox[@accessiblename='<My Activity Codes>']/combobox[@accessiblerole='ComboBox']", 30000, null, "795adeb2-db6a-445f-9007-9fbcc6f4df0b");
+                _cmbbxactivitycodesInfo = new RepoItemInfo(this, "cmbbxActivityCodes", "?/?/container[@controlname='pnlBase']//container[@controlname='panel1']/?/?/container[@controlname='pnlActivityCode']/?/?/combobox/combobox[@accessiblerole='ComboBox']", 30000, null, "795adeb2-db6a-445f-9007-9fbcc6f4df0b");
             }
 
             /// <summary>
@@ -2087,7 +2109,7 @@ namespace SmokeTest.Repositories
             RepoItemInfo _btnyesInfo;
             RepoItemInfo _btnnoInfo;
             RepoItemInfo _toolbarInfo;
-            RepoItemInfo _txttimekeeperInfo;
+            RepoItemInfo _txtpromptInfo;
 
             /// <summary>
             /// Creates a new PromptForm  folder.
@@ -2098,7 +2120,7 @@ namespace SmokeTest.Repositories
                 _btnyesInfo = new RepoItemInfo(this, "btnYes", ".//toolbar[@accessiblename='Toolbar']/button[@accessiblename='Yes']", 30000, null, "dc8e7913-f4ea-44e2-b251-1bc736f023ad");
                 _btnnoInfo = new RepoItemInfo(this, "btnNo", ".//toolbar[@accessiblename='Toolbar']/button[@accessiblename='No']", 30000, null, "4e3ae3c4-21b6-45e6-bbf4-8c0a5b4e5f4c");
                 _toolbarInfo = new RepoItemInfo(this, "Toolbar", "element[@controlname='_BaseForm_Toolbars_Dock_Area_Bottom']/?/?/toolbar[@accessiblename='Toolbar']", 30000, null, "4f0946f3-943d-41f4-b3a8-627ade31a499");
-                _txttimekeeperInfo = new RepoItemInfo(this, "txtTimeKeeper", "container[@controlname='pnlBase']/?/?/container[@controlname='pnlMessage']/?/?/text[@accessiblename>'The Timekeeper already has']", 30000, null, "22690823-bbc8-4df5-a355-3076c6c6f0fd");
+                _txtpromptInfo = new RepoItemInfo(this, "txtPrompt", "container[@controlname='pnlBase']/?/?/container[@controlname='pnlMessage']/?/?/text", 30000, null, "22690823-bbc8-4df5-a355-3076c6c6f0fd");
             }
 
             /// <summary>
@@ -2198,26 +2220,26 @@ namespace SmokeTest.Repositories
             }
 
             /// <summary>
-            /// The txtTimeKeeper item.
+            /// The txtPrompt item.
             /// </summary>
             [RepositoryItem("22690823-bbc8-4df5-a355-3076c6c6f0fd")]
-            public virtual Ranorex.Text txtTimeKeeper
+            public virtual Ranorex.Text txtPrompt
             {
                 get
                 {
-                    return _txttimekeeperInfo.CreateAdapter<Ranorex.Text>(true);
+                    return _txtpromptInfo.CreateAdapter<Ranorex.Text>(true);
                 }
             }
 
             /// <summary>
-            /// The txtTimeKeeper item info.
+            /// The txtPrompt item info.
             /// </summary>
             [RepositoryItemInfo("22690823-bbc8-4df5-a355-3076c6c6f0fd")]
-            public virtual RepoItemInfo txtTimeKeeperInfo
+            public virtual RepoItemInfo txtPromptInfo
             {
                 get
                 {
-                    return _txttimekeeperInfo;
+                    return _txtpromptInfo;
                 }
             }
         }
@@ -2504,7 +2526,7 @@ namespace SmokeTest.Repositories
                 _tbtimeentryassistantInfo = new RepoItemInfo(this, "tbTimeEntryAssistant", ".//table[@accessiblename='Band 0']", 30000, null, "e63e5ff0-278b-4465-97e5-8f271e621a61");
                 _cbnotesInfo = new RepoItemInfo(this, "cbNotes", ".//checkbox[@accessiblename='Notes']/checkbox[@accessiblename='Notes']", 30000, null, "db9c8ce2-0763-48ca-971f-8033b84985e7");
                 _cboutstandingphonecallsemailsInfo = new RepoItemInfo(this, "cbOutstandingPhoneCallsEMails", ".//checkbox[@accessiblename>'Outstanding Phone Calls/E']/checkbox[@accessiblename>'Outstanding Phone Calls/E']", 30000, null, "42dec4bd-0fa0-4f1c-9c3a-fa4322244e44");
-                _cmbbxdayInfo = new RepoItemInfo(this, "cmbbxDay", ".//combobox[@accessiblename='1 day']/combobox[@accessiblerole='ComboBox']", 30000, null, "3721d5d4-89e4-4c17-af0d-b28f858b861e");
+                _cmbbxdayInfo = new RepoItemInfo(this, "cmbbxDay", ".//combobox[@accessiblename~'days|day|All']/combobox[@accessiblerole='ComboBox']", 30000, null, "3721d5d4-89e4-4c17-af0d-b28f858b861e");
             }
 
             /// <summary>
@@ -2738,6 +2760,372 @@ namespace SmokeTest.Repositories
                 get
                 {
                     return _tbldropdownInfo;
+                }
+            }
+        }
+
+        /// <summary>
+        /// The TimeFindFormAppFolder folder.
+        /// </summary>
+        [RepositoryFolder("0b7eb145-1216-4628-be10-ec4aa5123f34")]
+        public partial class TimeFindFormAppFolder : RepoGenBaseFolder
+        {
+            RepoItemInfo _btnokInfo;
+            RepoItemInfo _btncancelInfo;
+            RepoItemInfo _cbdatedInfo;
+            RepoItemInfo _txtdateInfo;
+
+            /// <summary>
+            /// Creates a new TimeFindForm  folder.
+            /// </summary>
+            public TimeFindFormAppFolder(RepoGenBaseFolder parentFolder) :
+                    base("TimeFindForm", "/form[@controlname='TimeFindForm']", parentFolder, 30000, null, false, "0b7eb145-1216-4628-be10-ec4aa5123f34", "")
+            {
+                _btnokInfo = new RepoItemInfo(this, "btnOk", ".//toolbar[@accessiblename='Toolbar']/button[@accessiblename='OK']", 30000, null, "fe0decad-bbb7-4691-a101-32f3b81573ba");
+                _btncancelInfo = new RepoItemInfo(this, "btnCancel", ".//toolbar[@accessiblename='Toolbar']/button[@accessiblename='Cancel']", 30000, null, "bc90c32c-95e3-45a7-a96d-f997afddc8ce");
+                _cbdatedInfo = new RepoItemInfo(this, "cbDated", "container[@controlname='panel1']/element[@controlname='uceDated']/checkbox[@accessiblename='Dated']/checkbox[@accessiblename='Dated']", 30000, null, "f71c0674-e5c4-46c7-8978-796c72af363c");
+                _txtdateInfo = new RepoItemInfo(this, "txtDate", "container[@controlname='panel1']/element[@controlname='udteFrom']/text[@automationid='[Editor] Edit Area']", 30000, null, "221604c7-afcf-402e-9388-59e741217252");
+            }
+
+            /// <summary>
+            /// The Self item.
+            /// </summary>
+            [RepositoryItem("0b7eb145-1216-4628-be10-ec4aa5123f34")]
+            public virtual Ranorex.Form Self
+            {
+                get
+                {
+                    return _selfInfo.CreateAdapter<Ranorex.Form>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Self item info.
+            /// </summary>
+            [RepositoryItemInfo("0b7eb145-1216-4628-be10-ec4aa5123f34")]
+            public virtual RepoItemInfo SelfInfo
+            {
+                get
+                {
+                    return _selfInfo;
+                }
+            }
+
+            /// <summary>
+            /// The btnOk item.
+            /// </summary>
+            [RepositoryItem("fe0decad-bbb7-4691-a101-32f3b81573ba")]
+            public virtual Ranorex.Button btnOk
+            {
+                get
+                {
+                    return _btnokInfo.CreateAdapter<Ranorex.Button>(true);
+                }
+            }
+
+            /// <summary>
+            /// The btnOk item info.
+            /// </summary>
+            [RepositoryItemInfo("fe0decad-bbb7-4691-a101-32f3b81573ba")]
+            public virtual RepoItemInfo btnOkInfo
+            {
+                get
+                {
+                    return _btnokInfo;
+                }
+            }
+
+            /// <summary>
+            /// The btnCancel item.
+            /// </summary>
+            [RepositoryItem("bc90c32c-95e3-45a7-a96d-f997afddc8ce")]
+            public virtual Ranorex.Button btnCancel
+            {
+                get
+                {
+                    return _btncancelInfo.CreateAdapter<Ranorex.Button>(true);
+                }
+            }
+
+            /// <summary>
+            /// The btnCancel item info.
+            /// </summary>
+            [RepositoryItemInfo("bc90c32c-95e3-45a7-a96d-f997afddc8ce")]
+            public virtual RepoItemInfo btnCancelInfo
+            {
+                get
+                {
+                    return _btncancelInfo;
+                }
+            }
+
+            /// <summary>
+            /// The cbDated item.
+            /// </summary>
+            [RepositoryItem("f71c0674-e5c4-46c7-8978-796c72af363c")]
+            public virtual Ranorex.CheckBox cbDated
+            {
+                get
+                {
+                    return _cbdatedInfo.CreateAdapter<Ranorex.CheckBox>(true);
+                }
+            }
+
+            /// <summary>
+            /// The cbDated item info.
+            /// </summary>
+            [RepositoryItemInfo("f71c0674-e5c4-46c7-8978-796c72af363c")]
+            public virtual RepoItemInfo cbDatedInfo
+            {
+                get
+                {
+                    return _cbdatedInfo;
+                }
+            }
+
+            /// <summary>
+            /// The txtDate item.
+            /// </summary>
+            [RepositoryItem("221604c7-afcf-402e-9388-59e741217252")]
+            public virtual Ranorex.Text txtDate
+            {
+                get
+                {
+                    return _txtdateInfo.CreateAdapter<Ranorex.Text>(true);
+                }
+            }
+
+            /// <summary>
+            /// The txtDate item info.
+            /// </summary>
+            [RepositoryItemInfo("221604c7-afcf-402e-9388-59e741217252")]
+            public virtual RepoItemInfo txtDateInfo
+            {
+                get
+                {
+                    return _txtdateInfo;
+                }
+            }
+        }
+
+        /// <summary>
+        /// The ContextmenuAppFolder folder.
+        /// </summary>
+        [RepositoryFolder("25434408-91cb-4f38-8ebe-6fcd50aac3db")]
+        public partial class ContextmenuAppFolder : RepoGenBaseFolder
+        {
+            RepoItemInfo _timeentryInfo;
+            RepoItemInfo _timesaverInfo;
+            RepoItemInfo _openitemInfo;
+            RepoItemInfo _ignoreitemInfo;
+            RepoItemInfo _addtofileInfo;
+            RepoItemInfo _printInfo;
+            RepoItemInfo _contextInfo;
+
+            /// <summary>
+            /// Creates a new contextmenu  folder.
+            /// </summary>
+            public ContextmenuAppFolder(RepoGenBaseFolder parentFolder) :
+                    base("contextmenu", "/contextmenu", parentFolder, 30000, null, false, "25434408-91cb-4f38-8ebe-6fcd50aac3db", "")
+            {
+                _timeentryInfo = new RepoItemInfo(this, "TimeEntry", "?/?/menuitem[1]", 30000, null, "c33d530e-e687-4f21-9ef2-f090facdc7ad");
+                _timesaverInfo = new RepoItemInfo(this, "TimeSaver", "?/?/menuitem[2]", 30000, null, "8119edd4-91c5-4be7-a92b-73bc80236ac9");
+                _openitemInfo = new RepoItemInfo(this, "OpenItem", "?/?/menuitem[3]", 30000, null, "249215ce-bed3-45fe-af06-45ded39ed305");
+                _ignoreitemInfo = new RepoItemInfo(this, "IgnoreItem", "?/?/menuitem[4]", 30000, null, "543e5d39-0584-4913-be6b-98964f9b26a1");
+                _addtofileInfo = new RepoItemInfo(this, "AddToFile", "?/?/menuitem[5]", 30000, null, "8795c723-c9d5-4af3-b552-fd1007f398e8");
+                _printInfo = new RepoItemInfo(this, "Print", "?/?/menuitem[6]", 30000, null, "a8060748-8207-46c5-8359-1e941bfbe199");
+                _contextInfo = new RepoItemInfo(this, "Context", "contextmenu", 30000, null, "70095c7d-2c17-499c-8fb6-5d0c797b2243");
+            }
+
+            /// <summary>
+            /// The Self item.
+            /// </summary>
+            [RepositoryItem("25434408-91cb-4f38-8ebe-6fcd50aac3db")]
+            public virtual Ranorex.ContextMenu Self
+            {
+                get
+                {
+                    return _selfInfo.CreateAdapter<Ranorex.ContextMenu>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Self item info.
+            /// </summary>
+            [RepositoryItemInfo("25434408-91cb-4f38-8ebe-6fcd50aac3db")]
+            public virtual RepoItemInfo SelfInfo
+            {
+                get
+                {
+                    return _selfInfo;
+                }
+            }
+
+            /// <summary>
+            /// The TimeEntry item.
+            /// </summary>
+            [RepositoryItem("c33d530e-e687-4f21-9ef2-f090facdc7ad")]
+            public virtual Ranorex.MenuItem TimeEntry
+            {
+                get
+                {
+                    return _timeentryInfo.CreateAdapter<Ranorex.MenuItem>(true);
+                }
+            }
+
+            /// <summary>
+            /// The TimeEntry item info.
+            /// </summary>
+            [RepositoryItemInfo("c33d530e-e687-4f21-9ef2-f090facdc7ad")]
+            public virtual RepoItemInfo TimeEntryInfo
+            {
+                get
+                {
+                    return _timeentryInfo;
+                }
+            }
+
+            /// <summary>
+            /// The TimeSaver item.
+            /// </summary>
+            [RepositoryItem("8119edd4-91c5-4be7-a92b-73bc80236ac9")]
+            public virtual Ranorex.MenuItem TimeSaver
+            {
+                get
+                {
+                    return _timesaverInfo.CreateAdapter<Ranorex.MenuItem>(true);
+                }
+            }
+
+            /// <summary>
+            /// The TimeSaver item info.
+            /// </summary>
+            [RepositoryItemInfo("8119edd4-91c5-4be7-a92b-73bc80236ac9")]
+            public virtual RepoItemInfo TimeSaverInfo
+            {
+                get
+                {
+                    return _timesaverInfo;
+                }
+            }
+
+            /// <summary>
+            /// The OpenItem item.
+            /// </summary>
+            [RepositoryItem("249215ce-bed3-45fe-af06-45ded39ed305")]
+            public virtual Ranorex.MenuItem OpenItem
+            {
+                get
+                {
+                    return _openitemInfo.CreateAdapter<Ranorex.MenuItem>(true);
+                }
+            }
+
+            /// <summary>
+            /// The OpenItem item info.
+            /// </summary>
+            [RepositoryItemInfo("249215ce-bed3-45fe-af06-45ded39ed305")]
+            public virtual RepoItemInfo OpenItemInfo
+            {
+                get
+                {
+                    return _openitemInfo;
+                }
+            }
+
+            /// <summary>
+            /// The IgnoreItem item.
+            /// </summary>
+            [RepositoryItem("543e5d39-0584-4913-be6b-98964f9b26a1")]
+            public virtual Ranorex.MenuItem IgnoreItem
+            {
+                get
+                {
+                    return _ignoreitemInfo.CreateAdapter<Ranorex.MenuItem>(true);
+                }
+            }
+
+            /// <summary>
+            /// The IgnoreItem item info.
+            /// </summary>
+            [RepositoryItemInfo("543e5d39-0584-4913-be6b-98964f9b26a1")]
+            public virtual RepoItemInfo IgnoreItemInfo
+            {
+                get
+                {
+                    return _ignoreitemInfo;
+                }
+            }
+
+            /// <summary>
+            /// The AddToFile item.
+            /// </summary>
+            [RepositoryItem("8795c723-c9d5-4af3-b552-fd1007f398e8")]
+            public virtual Ranorex.MenuItem AddToFile
+            {
+                get
+                {
+                    return _addtofileInfo.CreateAdapter<Ranorex.MenuItem>(true);
+                }
+            }
+
+            /// <summary>
+            /// The AddToFile item info.
+            /// </summary>
+            [RepositoryItemInfo("8795c723-c9d5-4af3-b552-fd1007f398e8")]
+            public virtual RepoItemInfo AddToFileInfo
+            {
+                get
+                {
+                    return _addtofileInfo;
+                }
+            }
+
+            /// <summary>
+            /// The Print item.
+            /// </summary>
+            [RepositoryItem("a8060748-8207-46c5-8359-1e941bfbe199")]
+            public virtual Ranorex.MenuItem Print
+            {
+                get
+                {
+                    return _printInfo.CreateAdapter<Ranorex.MenuItem>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Print item info.
+            /// </summary>
+            [RepositoryItemInfo("a8060748-8207-46c5-8359-1e941bfbe199")]
+            public virtual RepoItemInfo PrintInfo
+            {
+                get
+                {
+                    return _printInfo;
+                }
+            }
+
+            /// <summary>
+            /// The Context item.
+            /// </summary>
+            [RepositoryItem("70095c7d-2c17-499c-8fb6-5d0c797b2243")]
+            public virtual Ranorex.ContextMenu Context
+            {
+                get
+                {
+                    return _contextInfo.CreateAdapter<Ranorex.ContextMenu>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Context item info.
+            /// </summary>
+            [RepositoryItemInfo("70095c7d-2c17-499c-8fb6-5d0c797b2243")]
+            public virtual RepoItemInfo ContextInfo
+            {
+                get
+                {
+                    return _contextInfo;
                 }
             }
         }

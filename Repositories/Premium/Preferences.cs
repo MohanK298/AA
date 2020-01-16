@@ -33,6 +33,7 @@ namespace SmokeTest.Repositories.Premium
         PreferencesFolders.PromptFormAppFolder _promptform;
         PreferencesFolders.ActivityCodeSelectFormAppFolder _activitycodeselectform;
         PreferencesFolders.TimePreferencesFormAppFolder _timepreferencesform;
+        PreferencesFolders.DropDownFormAppFolder _dropdownform;
 
         /// <summary>
         /// Gets the singleton class instance representing the Preferences element repository.
@@ -55,6 +56,7 @@ namespace SmokeTest.Repositories.Premium
             _promptform = new PreferencesFolders.PromptFormAppFolder(this);
             _activitycodeselectform = new PreferencesFolders.ActivityCodeSelectFormAppFolder(this);
             _timepreferencesform = new PreferencesFolders.TimePreferencesFormAppFolder(this);
+            _dropdownform = new PreferencesFolders.DropDownFormAppFolder(this);
         }
 
 #region Variables
@@ -138,6 +140,15 @@ namespace SmokeTest.Repositories.Premium
         {
             get { return _timepreferencesform; }
         }
+
+        /// <summary>
+        /// The DropDownForm folder.
+        /// </summary>
+        [RepositoryFolder("0abde5c6-cda9-48ba-9275-e19f920c3654")]
+        public virtual PreferencesFolders.DropDownFormAppFolder DropDownForm
+        {
+            get { return _dropdownform; }
+        }
     }
 
     /// <summary>
@@ -189,7 +200,7 @@ namespace SmokeTest.Repositories.Premium
                 _preferencesInfo = new RepoItemInfo(this, "Preferences", "container[@controlname='pLeft']//container[@controltypename='UltraExplorerBarContainerControl' and @instance='0']/?/?/container[@controlname='OfficeControlPanel']/?/?/container[@controlname='panelParent']/container[@controltypename='Panel' and @instance='1']/?/?/text[@accessiblename='Preferences']", 5000, null, "e8070780-ea94-40d3-b0f8-705ceb778f02");
                 _emailInfo = new RepoItemInfo(this, "Email", "?/?/form[@controlname='PreferencesForm']//element[@controlname='amlblGeneralEmail']/text[@accessiblerole='StaticText']", 5000, null, "cbbae7a3-84c7-42bd-bc53-a5a606c50c26");
                 _calendarcontactsInfo = new RepoItemInfo(this, "CalendarContacts", "?/?/form[@controlname='PreferencesForm']//element[@controlname='amlblGeneralOutlookLink']/text[@accessiblerole='StaticText']", 5000, null, "f9a4d701-e8b7-468b-a742-e4a7f6bd6467");
-                _officemoduleInfo = new RepoItemInfo(this, "OfficeModule", "container[@controlname='pLeft']//container[@name='Office']", 30000, null, "d2a47121-362f-434c-8f1d-236b0154cfeb");
+                _officemoduleInfo = new RepoItemInfo(this, "OfficeModule", "?//container[@name='Office']", 30000, null, "d2a47121-362f-434c-8f1d-236b0154cfeb");
                 _officemoduleheaderInfo = new RepoItemInfo(this, "OfficeModuleHeader", "container[@controlname='pLeft']//container[@controltypename='UltraExplorerBarContainerControl' and @instance='0']/container[@controlname='controlPanelWrapper']/?/?/text[@accessiblename='Office']", 30000, null, "32e9d3c2-bb77-47c7-8c58-58006e26c75f");
                 _preferences1Info = new RepoItemInfo(this, "Preferences1", "element[@controlname='_BaseModuleForm_Toolbars_Dock_Area_Top']//menuitem[@accessiblename='View']/menuitem[@accessiblename='Preferences']", 30000, null, "bc20cecc-b0d5-4e62-a99e-4a666f47c43d");
                 _reportsInfo = new RepoItemInfo(this, "Reports", "element[@controlname='_BaseModuleForm_Toolbars_Dock_Area_Top']//menuitem[@accessiblename='View']/menuitem[@accessiblename='Reports']", 30000, null, "1058c8d7-cd03-4d2e-ac62-326747b48f4a");
@@ -2249,6 +2260,9 @@ namespace SmokeTest.Repositories.Premium
         {
             PreferencesFolders.Toolbar1Folder1 _toolbar1;
             RepoItemInfo _toolbarInfo;
+            RepoItemInfo _cmbbxdefaultcodesInfo;
+            RepoItemInfo _rdominutesInfo;
+            RepoItemInfo _rdotenthsInfo;
 
             /// <summary>
             /// Creates a new TimePreferencesForm  folder.
@@ -2258,6 +2272,9 @@ namespace SmokeTest.Repositories.Premium
             {
                 _toolbar1 = new PreferencesFolders.Toolbar1Folder1(this);
                 _toolbarInfo = new RepoItemInfo(this, "Toolbar", "element[@controlname='_BaseForm_Toolbars_Dock_Area_Bottom']/?/?/toolbar[@accessiblename='Toolbar']", 30000, null, "f149a424-963a-4c37-8a18-b8babbd65826");
+                _cmbbxdefaultcodesInfo = new RepoItemInfo(this, "cmbbxDefaultCodes", "container[@controlname='pnlBase']//container[@controlname='panelActivityCodes']/?/?/combobox/combobox[@accessiblerole='ComboBox']", 30000, null, "f4161df3-6bd4-4119-b12f-0e95597a01d1");
+                _rdominutesInfo = new RepoItemInfo(this, "rdoMinutes", "container[@controlname='pnlBase']//container[@controlname='panelFormatting']/radiobutton[@controlname='radioMinutes']", 30000, null, "392a87ba-9aad-4a5c-a0f8-7926df76785c");
+                _rdotenthsInfo = new RepoItemInfo(this, "rdoTenths", "container[@controlname='pnlBase']//container[@controlname='panelFormatting']/radiobutton[@controlname='radioTenths']", 30000, null, "7d29b1ea-4280-4f5c-a6a1-4561b18256e5");
             }
 
             /// <summary>
@@ -2305,6 +2322,78 @@ namespace SmokeTest.Repositories.Premium
                 get
                 {
                     return _toolbarInfo;
+                }
+            }
+
+            /// <summary>
+            /// The cmbbxDefaultCodes item.
+            /// </summary>
+            [RepositoryItem("f4161df3-6bd4-4119-b12f-0e95597a01d1")]
+            public virtual Ranorex.ComboBox cmbbxDefaultCodes
+            {
+                get
+                {
+                    return _cmbbxdefaultcodesInfo.CreateAdapter<Ranorex.ComboBox>(true);
+                }
+            }
+
+            /// <summary>
+            /// The cmbbxDefaultCodes item info.
+            /// </summary>
+            [RepositoryItemInfo("f4161df3-6bd4-4119-b12f-0e95597a01d1")]
+            public virtual RepoItemInfo cmbbxDefaultCodesInfo
+            {
+                get
+                {
+                    return _cmbbxdefaultcodesInfo;
+                }
+            }
+
+            /// <summary>
+            /// The rdoMinutes item.
+            /// </summary>
+            [RepositoryItem("392a87ba-9aad-4a5c-a0f8-7926df76785c")]
+            public virtual Ranorex.RadioButton rdoMinutes
+            {
+                get
+                {
+                    return _rdominutesInfo.CreateAdapter<Ranorex.RadioButton>(true);
+                }
+            }
+
+            /// <summary>
+            /// The rdoMinutes item info.
+            /// </summary>
+            [RepositoryItemInfo("392a87ba-9aad-4a5c-a0f8-7926df76785c")]
+            public virtual RepoItemInfo rdoMinutesInfo
+            {
+                get
+                {
+                    return _rdominutesInfo;
+                }
+            }
+
+            /// <summary>
+            /// The rdoTenths item.
+            /// </summary>
+            [RepositoryItem("7d29b1ea-4280-4f5c-a6a1-4561b18256e5")]
+            public virtual Ranorex.RadioButton rdoTenths
+            {
+                get
+                {
+                    return _rdotenthsInfo.CreateAdapter<Ranorex.RadioButton>(true);
+                }
+            }
+
+            /// <summary>
+            /// The rdoTenths item info.
+            /// </summary>
+            [RepositoryItemInfo("7d29b1ea-4280-4f5c-a6a1-4561b18256e5")]
+            public virtual RepoItemInfo rdoTenthsInfo
+            {
+                get
+                {
+                    return _rdotenthsInfo;
                 }
             }
 
@@ -2510,6 +2599,72 @@ namespace SmokeTest.Repositories.Premium
                 get
                 {
                     return _btnprevInfo;
+                }
+            }
+        }
+
+        /// <summary>
+        /// The DropDownFormAppFolder folder.
+        /// </summary>
+        [RepositoryFolder("0abde5c6-cda9-48ba-9275-e19f920c3654")]
+        public partial class DropDownFormAppFolder : RepoGenBaseFolder
+        {
+            RepoItemInfo _tbdropdownInfo;
+
+            /// <summary>
+            /// Creates a new DropDownForm  folder.
+            /// </summary>
+            public DropDownFormAppFolder(RepoGenBaseFolder parentFolder) :
+                    base("DropDownForm", "/form", parentFolder, 30000, null, true, "0abde5c6-cda9-48ba-9275-e19f920c3654", "")
+            {
+                _tbdropdownInfo = new RepoItemInfo(this, "tbDropdown", "?/?/table", 30000, null, "0bc4323e-c32f-47d1-88ed-80a618099183");
+            }
+
+            /// <summary>
+            /// The Self item.
+            /// </summary>
+            [RepositoryItem("0abde5c6-cda9-48ba-9275-e19f920c3654")]
+            public virtual Ranorex.Form Self
+            {
+                get
+                {
+                    return _selfInfo.CreateAdapter<Ranorex.Form>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Self item info.
+            /// </summary>
+            [RepositoryItemInfo("0abde5c6-cda9-48ba-9275-e19f920c3654")]
+            public virtual RepoItemInfo SelfInfo
+            {
+                get
+                {
+                    return _selfInfo;
+                }
+            }
+
+            /// <summary>
+            /// The tbDropdown item.
+            /// </summary>
+            [RepositoryItem("0bc4323e-c32f-47d1-88ed-80a618099183")]
+            public virtual Ranorex.Table tbDropdown
+            {
+                get
+                {
+                    return _tbdropdownInfo.CreateAdapter<Ranorex.Table>(true);
+                }
+            }
+
+            /// <summary>
+            /// The tbDropdown item info.
+            /// </summary>
+            [RepositoryItemInfo("0bc4323e-c32f-47d1-88ed-80a618099183")]
+            public virtual RepoItemInfo tbDropdownInfo
+            {
+                get
+                {
+                    return _tbdropdownInfo;
                 }
             }
         }

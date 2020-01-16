@@ -326,6 +326,9 @@
     <Compile Include="Modules\BillingTestTrust.cs">
       <id>cdbe35d0-9cc4-4c9e-a895-fd0f7e31c1f2</id>
     </Compile>
+    <Compile Include="Modules\changePref_Formatting_DefaultCode.cs">
+      <id>9f2e2544-3a69-4889-b0d7-fd938f31944a</id>
+    </Compile>
     <Compile Include="Modules\CheckEmailFromClient.cs">
       <id>f3be0698-2946-408a-809e-efa7c1d29d38</id>
     </Compile>
@@ -374,6 +377,9 @@
     <Compile Include="Modules\CreateManyTimeEntries.cs">
       <id>1a29c988-ee97-4062-9df5-c3e73ca907ce</id>
     </Compile>
+    <Compile Include="Modules\createMultiplePhoneCalls_TimeSaverRightClick.cs">
+      <id>1bfea856-4938-4ac4-97d5-d264ec9d42e7</id>
+    </Compile>
     <Compile Include="Modules\createnDeleteMasterAdjrnAppt_All.cs">
       <id>9e09933f-caae-4b85-96c8-e140f939c9ce</id>
     </Compile>
@@ -406,6 +412,9 @@
     </Compile>
     <Compile Include="Modules\Create_TE_Past_Current_Future.cs">
       <id>b5fef54f-25e1-4c93-ad9b-45ad2629bfba</id>
+    </Compile>
+    <Compile Include="Modules\create_TE_ValidateDateRange_ExcludeOptions_TAssist.cs">
+      <id>29124833-f249-4942-a046-9511989ddcbf</id>
     </Compile>
     <Compile Include="Modules\delete2TimeEntries.cs">
       <id>decca88b-b334-4add-83a4-8b7ec18aa8db</id>
@@ -479,6 +488,9 @@
     <Compile Include="Modules\Premium\SendDocViaEmail.cs">
       <id>65f9c183-df11-4d4d-9016-93742bc2a78b</id>
     </Compile>
+    <Compile Include="Modules\quickFind_TE_Past_Current_Dates.cs">
+      <id>edb26355-dbc8-47d2-9e66-7de6e06f247a</id>
+    </Compile>
     <Compile Include="Modules\ReceivePaymentAPX.cs">
       <id>c3a85e91-f601-4156-922b-8dcd1076d89b</id>
     </Compile>
@@ -499,6 +511,9 @@
     </Compile>
     <Compile Include="Modules\testViewNavigation.cs">
       <id>d9857e46-dc36-4d57-a32e-6e9af474156d</id>
+    </Compile>
+    <Compile Include="Modules\timeAssistant_RightClickOptions.cs">
+      <id>f9a5a236-7a6a-4bf1-9d8e-6e21155b9221</id>
     </Compile>
     <Compile Include="Modules\timeentries_monthlyview.cs">
       <id>be43e638-a2c5-45f2-bad4-49b9773a578c</id>
@@ -524,8 +539,17 @@
     <Compile Include="Modules\Utilities\SendMail.cs">
       <id>ee8dc323-7f62-4bce-91af-c03ec43558dd</id>
     </Compile>
+    <Compile Include="Modules\validateAutoComplete_Files_People.cs">
+      <id>bcf04439-084e-4685-bde3-3887d6379ee5</id>
+    </Compile>
     <Compile Include="Modules\validateDocumentIndexViewer.cs">
       <id>6ca04291-0553-4754-817d-376c41638b4d</id>
+    </Compile>
+    <Compile Include="Modules\validate_Existing_Time_Entry_OnFile_Msg.cs">
+      <id>775104d3-10a9-498e-aea9-307577fa4930</id>
+    </Compile>
+    <Compile Include="Modules\validate_NoFileOn_Time_Entry_Msg.cs">
+      <id>03c1ad4e-1da8-4c5a-906a-49faf3d31d7e</id>
     </Compile>
     <Compile Include="Modules\VoidPayment.cs">
       <id>7f4d4c36-2214-4bbc-ac4d-faea2f7b708e</id>

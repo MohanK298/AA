@@ -114,6 +114,7 @@ namespace SmokeTest.Modules.Attorney_FileDetails
 					Report.Success("1 Activity Codes has been added to the list");
 					
 				}
+				pf.ActivityCodeSelectForm.PnlBase.cbSelectDoubleClick.Check();
 				pf.ActivityCodeSelectForm.Toolbar1.btnOK.Click();
 					
 				}
@@ -131,6 +132,7 @@ namespace SmokeTest.Modules.Attorney_FileDetails
             Delay.SpeedFactor = 1.0;
             SetupAccountingSystem_Verify();
             Add2ActivityCodes();
+            Utilities.Common.ClosePrompt();
         }
     }
 }

@@ -203,7 +203,7 @@ namespace SmokeTest.Repositories
                     base("MainForm", "/form[@controlname='MainForm']", parentFolder, 30000, null, true, "655498a9-3925-4370-84a4-49670f3581d2", "")
             {
                 _emailontopofthelist = new CommunicationsFolders.EmailOnTopOfTheListFolder(this);
-                _btncommunicationsInfo = new RepoItemInfo(this, "btnCommunications", "?/?/tree[@accessiblerole='Outline']/button[@accessiblename='Communications']", 30000, null, "ae01bbe5-4309-4641-b67e-27fc5439cf85");
+                _btncommunicationsInfo = new RepoItemInfo(this, "btnCommunications", "?//tree[@accessiblerole='Outline']/button[@accessiblename='Communications']", 30000, true, "ae01bbe5-4309-4641-b67e-27fc5439cf85");
                 _btnnewmenuitemInfo = new RepoItemInfo(this, "btnNewMenuItem", "?/?/form[@controlname='CommIndexForm']/container[@controlname='menubar_Fill_Panel']//toolbar[@accessiblename='Toolbar']/menuitem[@accessiblename='']", 30000, null, "897ca1c5-902b-4e0a-8506-7e8920a5dd78");
                 _listfirstfileInfo = new RepoItemInfo(this, "listFirstFile", "?/?/form[@controlname='CommIndexForm']/container[@controlname='splitContainer']//row[@accessiblename='Band 0 row 1']/cell[@accessiblename='File']", 30000, null, "8c766cd0-ba5e-4950-8eb2-7e60ad516829");
                 _btnallfilesInfo = new RepoItemInfo(this, "btnAllFiles", "container[@controlname='pLeft']//container[@controlname='CommIndexControlPanel']/container[@controlname='pnlBase']/container[@controlname='atcOutstandingOrToday']/container[@controlname='<Selected>k__BackingField']/?/?/text[@accessiblename='All']", 30000, null, "a9c9068b-720b-44aa-89ef-165764efa2c3");

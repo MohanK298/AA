@@ -257,7 +257,7 @@ namespace SmokeTest.Repositories
             {
                 _notesitemfolder = new NoteFolders.NotesItemFolderFolder(this);
                 _panelleft = new NoteFolders.PanelLeftFolder(this);
-                _btnnotesInfo = new RepoItemInfo(this, "btnNotes", "?/?/tree[@accessiblerole='Outline']/button[@accessiblename='Notes']", 30000, null, "ac425c30-405d-4fac-9c3a-1bb0462df3e3");
+                _btnnotesInfo = new RepoItemInfo(this, "btnNotes", "?//tree[@accessiblerole='Outline']/button[@accessiblename='Notes']", 30000, true, "ac425c30-405d-4fac-9c3a-1bb0462df3e3");
                 _btnnewstickyInfo = new RepoItemInfo(this, "btnNewSticky", "?/?/form[@controlname='NotesIndexForm']/container[@controlname='menubar_Fill_Panel']//toolbar[@accessiblename='Toolbar']/button[@accessiblename='Sticky']", 30000, null, "ab21e8d1-614f-4c13-a0d1-8d4413c296aa");
                 _listnoteoneInfo = new RepoItemInfo(this, "listNoteOne", "?/?/form[@controlname='NotesIndexForm']/container[@controlname='pnlBase']/?/?/table/row[1]/cell[@accessiblename='Author']", 30000, null, "efa081ba-2fb6-47e3-af0b-ec5f5dbae3c4");
                 _selecttodayInfo = new RepoItemInfo(this, "selectToday", "?//container[@controltypename='UltraExplorerBarContainerControl' and @instance='0']/?/?/container[@controlname='NotesIndexControlPanelControl']/container[@controlname='panel3']/container[@controlname='atcUnassociatedOrToday']//text[@accessiblename='Today']", 30000, null, "b1f6da12-b83c-42a6-b95d-7f7100959747");

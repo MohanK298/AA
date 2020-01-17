@@ -229,7 +229,7 @@ namespace SmokeTest.Repositories
                 _toolbar = new TimeSheetsFolders.ToolbarFolder(this);
                 _timeindexcontrolpanelcontrol = new TimeSheetsFolders.TimeIndexControlPanelControlFolder(this);
                 _pnlwhole = new TimeSheetsFolders.PnlWholeFolder(this);
-                _btntimesheetsInfo = new RepoItemInfo(this, "btnTimeSheets", "?/?/tree[@accessiblerole='Outline']/button[@accessiblename='Time Sheets']", 30000, null, "efb70690-bcef-4af5-b395-4f24859a9063");
+                _btntimesheetsInfo = new RepoItemInfo(this, "btnTimeSheets", "?//tree[@accessiblerole='Outline']/button[@accessiblename='Time Sheets']", 30000, true, "efb70690-bcef-4af5-b395-4f24859a9063");
                 _btnaddtimeentryInfo = new RepoItemInfo(this, "btnAddTimeEntry", "?/?/form[@controlname='TimeIndexForm']/container[@controlname='menubar_Fill_Panel']//toolbar[@accessiblename='Toolbar']/button[@accessiblename='New']", 30000, null, "6da3dfde-88ca-4519-ae00-d85612d08dbd");
                 _listfirstposteditemInfo = new RepoItemInfo(this, "listFirstPostedItem", "?/?/form[@controlname='TimeIndexForm']/container[@controlname='pWholePage']/?/?/container[@controlname='pUnpostedView']/?/?/element[@controlname='atgUnposted']/table[@accessiblerole='Table']/row[1]/cell[@accessiblename='File']", 30000, null, "aac7827b-fecc-467a-9ae9-c590140e15d7");
                 _tbltimesheetInfo = new RepoItemInfo(this, "tblTimeSheet", "element[@controltypename='MdiClient']/form[@controlname='TimeIndexForm']/container[@controlname='pWholePage']/container[@controlname='pnlWhole']//table[@accessiblename='Band 0']", 30000, null, "6d9dd9ec-43c3-4beb-9b8b-f78eb8767488");

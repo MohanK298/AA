@@ -25,11 +25,12 @@ rxversion="9.0">
 			<item
 			addcaps="button,accessible"
 			capname="button"
+			ensurevisible="True"
 			id="ae01bbe5-4309-4641-b67e-27fc5439cf85"
 			name="btnCommunications"
-			refimgid="48a6e883-0fa8-408f-842d-2bf22b9d16f9"
+			refimgid="b62e2633-6234-481a-9fb9-bb5ab27a5897"
 			searchtimeout="30000ms">
-				/form[@controlname='MainForm']/?/?/tree[@accessiblerole='Outline']/button[@accessiblename='Communications']
+				/form[@controlname='MainForm']/?//tree[@accessiblerole='Outline']/button[@accessiblename='Communications']
 			</item>
 			<item
 			addcaps="menuitem,accessible"

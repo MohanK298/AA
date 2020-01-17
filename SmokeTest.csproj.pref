@@ -5,9 +5,6 @@
   <Array name="bookmarks" />
   <Array name="files">
     <Element value="SmokeTest.rxtst" />
-    <Element value="Repositories\TimeSheets.rxrep" />
-    <Element value="Repositories\Files.rxrep" />
-    <Element value="Modules\create_TE_ValidateDateRange_ExcludeOptions_TAssist.cs" />
   </Array>
   <Properties name="projectSavedData">
     <Properties name="customTool">

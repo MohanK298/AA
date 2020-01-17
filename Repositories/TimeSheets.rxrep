@@ -25,11 +25,12 @@ rxversion="9.0">
 			<item
 			addcaps="button,accessible"
 			capname="button"
+			ensurevisible="True"
 			id="efb70690-bcef-4af5-b395-4f24859a9063"
 			name="btnTimeSheets"
-			refimgid="4b23dbca-c743-4878-8150-79e49e876076"
+			refimgid="51f9fa1e-310a-445e-97a0-b12d7a4a4794"
 			searchtimeout="30000ms">
-				/form[@controlname='MainForm']/?/?/tree[@accessiblerole='Outline']/button[@accessiblename='Time Sheets']
+				/form[@controlname='MainForm']/?//tree[@accessiblerole='Outline']/button[@accessiblename='Time Sheets']
 			</item>
 			<item
 			addcaps="button,accessible"

@@ -48,6 +48,7 @@ namespace SmokeTest.Modules
         static string rndData=System.DateTime.Now.ToString();
 		string curdata=String.Format("Test Data Added {0}",rndData);
 		string[] strData=new string[3];
+		string[] strData1=new string[3];
         private void PhoneCallTimeSaver()
         {
         	int initial_count,final_count=0;
@@ -70,8 +71,11 @@ namespace SmokeTest.Modules
 	        	strData[i]=curdata+"_"+i;
 	        	phoneCall.PhoneDetailForm.MenubarFillPanel.btnOK.Click();
         	}
+        	Array.Reverse(strData);
+        	cmn.SelectItemFromTableSingleClick(phoneCall.MainForm.tblCommunications,strData[0],"Phone Call Table");
         	cmn.MultipleSelection(phoneCall.MainForm.tblCommunications,strData);
         	cmn.OpenContextMenuItemFromTable(phoneCall.MainForm.tblCommunications,curdata+"_"+0,"Phone call Table");
+        	Delay.Seconds(2);
         	phoneCall.ContextMenu.TimeSaver.Click();
         	Delay.Seconds(3);
         	phoneCall.PromptForm.btnNo.Click();

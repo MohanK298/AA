@@ -299,12 +299,22 @@ namespace SmokeTest.Modules.Utilities
         		
         			if(tadapter.Rows[i].Cells[j].As<Ranorex.Cell>().Text.Equals(data))
         			{
-        				tadapter.Rows[i].Cells[j+1].As<Ranorex.Cell>().Click();
+        				if(tadapter.Rows[i].Cells.Count<j)
+        				{tadapter.Rows[i].Cells[j+1].As<Ranorex.Cell>().Click();
         				Report.Success(String.Format("Value \"{0}\" Selected as expected in \"{1}\"",data,tblName));
         				k++;
         				break;
+        				}
+        				else
+        				{tadapter.Rows[i].Cells[j].As<Ranorex.Cell>().Click();
+        				Report.Success(String.Format("Value \"{0}\" Selected as expected in \"{1}\"",data,tblName));
+        				k++;
+        				break;
+        				}
         			}
         		}
+        		if(k>0)
+        			break;
         	}
         	if(k==0)
         	{
@@ -484,16 +494,16 @@ namespace SmokeTest.Modules.Utilities
 			var tadapter = item.As <Ranorex.Table>();
 			for(i=0;i<tadapter.Rows.Count;i++)
         	{
-				if(k>data.Length)
+				if(k>=data.Length)
 					break;
 				for(j=0;j<tadapter.Rows[i].Cells.Count;j++)
         		{
     				if(tadapter.Rows[i].Cells[j].As<Ranorex.Cell>().Text.Equals(data[k]))
         			{
-						Keyboard.Press("{LControlKey down}");
 						tadapter.Rows[i].Cells[j].As<Ranorex.Cell>().Click();
+						Keyboard.Press("{LControlKey down}");
 	       				k++;
-	       				i=0;
+//	       				i=0;
         				break;
         			}
         		}

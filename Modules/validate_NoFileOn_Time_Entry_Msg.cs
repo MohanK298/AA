@@ -117,6 +117,9 @@ namespace SmokeTest.Modules
         	}
         	ts.PromptForm.btnNo.Click();
         	ts.TimeEntryAssistantForm.PnlBase.cbItemsWithNoFile.Check();
+        	if(ts.PromptForm.SelfInfo.Exists(3000))
+        	{ts.PromptForm.btnNo.Click();
+        	}
         	ts.TimeEntryAssistantForm.Toolbar1.btnClose.Click();
          
         }

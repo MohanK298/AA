@@ -96,8 +96,9 @@ namespace SmokeTest.Modules
         }
         private void CheckTimeEntries()
         {
-        	Delay.Seconds(30);
-        	Report.Info("Waiting for 30 seconds");
+        	ts.MainForm.TimeIndexControlPanelControl.lnkUnposted.Click();
+        	Delay.Seconds(10);
+        	Report.Info("Waiting for 10 seconds");
         	ts.MainForm.cmbbxUnpostedDates.Click();
         	Delay.Seconds(1);
         	cmn.VerifyDataExistsInTable(ts.DropDownForm.tblDropdown,"Today","Unposted Dropdown");

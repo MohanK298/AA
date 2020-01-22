@@ -46,6 +46,8 @@ namespace SmokeTest.Modules
         private void Create_Delete2TE()
         {
         	// Create Unposted Time Entry for the Today
+        	ts.MainForm.Self.Activate();
+        	ts.MainForm.btnTimeSheets.Click();
         	ts.MainForm.btnAddTimeEntry.Click();
         	ts.FileSelectForm.listFirstFoundFile.DoubleClick();
         	if(ts.FileSelectForm.Toolbar1.ButtonOKInfo.Exists(3000))

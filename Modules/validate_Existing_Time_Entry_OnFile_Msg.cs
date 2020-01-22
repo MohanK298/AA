@@ -100,9 +100,11 @@ namespace SmokeTest.Modules
         	{
         		Report.Failure(String.Format("Invalid Prompt shown as {0}",ts.PromptForm.txtPrompt.TextValue));
         	}
-        	ts.PromptForm.btnNo.Click();
+        	if(ts.PromptForm.SelfInfo.Exists(3000))
+        	   {        	ts.PromptForm.btnNo.Click();}
         	ts.TimeEntryAssistantForm.Toolbar1.btnClose.Click();
-        	
+        	Delay.Seconds(1);
+        	ts.MainForm.TimeIndexControlPanelControl.lnkUnposted.Click();
         	cmn.VerifyDataExistsInTable(ts.MainForm.tblTimeSheet,data+"_1","Time Entry Table");
         	
         	

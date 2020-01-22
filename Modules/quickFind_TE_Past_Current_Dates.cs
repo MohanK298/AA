@@ -70,7 +70,7 @@ namespace SmokeTest.Modules
         	ts.TimeEntryDetailsForm.MenubarFillPanel.btnOK.Click();
         	if(ts.PromptForm.txtPromptInfo.Exists(3000))
         	{
-        	   	ts.PromptForm.btnYes.Click();
+        	   	ts.PromptForm.btnNo.Click();
         	}
         	Report.Success(String.Format("Time Entries has been created for Past Date - {0}",System.DateTime.Now.AddDays(-1).ToShortDateString()));
         	
@@ -85,13 +85,14 @@ namespace SmokeTest.Modules
         	ts.TimeEntryDetailsForm.MenubarFillPanel.btnOK.Click();
         	if(ts.PromptForm.txtPromptInfo.Exists(3000))
         	{
-        	   	ts.PromptForm.btnYes.Click();
+        	   	ts.PromptForm.btnNo.Click();
         	}
         	Report.Success(String.Format("Time Entries has been created for Current Date - {0}",System.DateTime.Now.ToShortDateString()));
         
         
         	//Quick Find Time Entries
-        	
+        	ts.MainForm.TimeIndexControlPanelControl.lnkUnposted.Click();
+        	Delay.Seconds(3);
         	ts.MainForm.Toolbar.btnQuickFind.Click();
         	ts.TimeFindForm.SelfInfo.WaitForExists(3000);
         	
@@ -99,12 +100,14 @@ namespace SmokeTest.Modules
         	ts.TimeFindForm.cbDated.Check();
         	ts.TimeFindForm.txtDate.PressKeys(System.DateTime.Now.ToShortDateString());
         	ts.TimeFindForm.btnOk.Click();
+        	Delay.Seconds(1);
         	cmn.VerifyDataExistsInTable(ts.MainForm.tblTimeSheet,data,String.Format("Time Entries Table for the date - {0}",System.DateTime.Now.ToShortDateString()));
         
         
         	
         	//Quick Find Time Entries
-        	
+        	ts.MainForm.TimeIndexControlPanelControl.lnkUnposted.Click();
+        	Delay.Seconds(3);
         	ts.MainForm.Toolbar.btnQuickFind.Click();
         	ts.TimeFindForm.SelfInfo.WaitForExists(3000);
         	
@@ -112,6 +115,7 @@ namespace SmokeTest.Modules
         	ts.TimeFindForm.cbDated.Check();
         	ts.TimeFindForm.txtDate.PressKeys(System.DateTime.Now.AddDays(-1).ToShortDateString());
         	ts.TimeFindForm.btnOk.Click();
+        	Delay.Seconds(1);
         	cmn.VerifyDataExistsInTable(ts.MainForm.tblTimeSheet,data,String.Format("Time Entries Table for the date - {0}",System.DateTime.Now.AddDays(-1).ToShortDateString()));
         }
         

@@ -299,11 +299,13 @@ namespace SmokeTest.Modules.Utilities
         		
         			if(tadapter.Rows[i].Cells[j].As<Ranorex.Cell>().Text.Equals(data))
         			{
-        				if(tadapter.Rows[i].Cells.Count<j)
-        				{tadapter.Rows[i].Cells[j+1].As<Ranorex.Cell>().Click();
-        				Report.Success(String.Format("Value \"{0}\" Selected as expected in \"{1}\"",data,tblName));
-        				k++;
-        				break;
+        				if(j<tadapter.Rows[i].Cells.Count-1)
+        				{
+        					tadapter.Rows[i].Cells[j+1].As<Ranorex.Cell>().Focus();
+        					tadapter.Rows[i].Cells[j+1].As<Ranorex.Cell>().Click();
+        					Report.Success(String.Format("Value \"{0}\" Selected as expected in \"{1}\"",data,tblName));
+        					k++;
+        					break;
         				}
         				else
         				{tadapter.Rows[i].Cells[j].As<Ranorex.Cell>().Click();

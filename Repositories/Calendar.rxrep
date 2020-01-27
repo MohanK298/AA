@@ -849,6 +849,52 @@ D8zerL8gSEaw7+rFqJ//CkX5CWkHqyZHVzU6AAAAAElFTkSuQmCC
 				searchtimeout="30000ms">
 					/form[@controlname='EventDetailForm']/container[@controlname='menubar_Fill_Panel']/container[@controlname='pnlBase']/?/?/container[@controlname='pnlTabs']//container[@controlname='scPeople']//text[@controlname='txtAutoComplete']
 				</item>
+				<item
+				addcaps="radiobutton,accessible"
+				capname="radiobutton"
+				id="f9cfc645-8392-40e7-87c8-99b89d5655f4"
+				name="rdoContinual"
+				refpath="/form[@controlname='EventDetailForm']/container[@controlname='menubar_Fill_Panel']/container[@controlname='pnlBase']/container[@controlname='pnlControls']/container[@controlname='pnlTabs']/container[@controlname='pnlViews']/container[@controlname='pnlRepeat']/container[@controlname='pnlRepeatDuration']/element[@controlname='uoptDuration']/list[@accessiblename='Until']/container[@accessiblerole='Grouping']/radiobutton[@accessiblename='Continual']"
+				searchtimeout="30000ms">
+					/form[@controlname='EventDetailForm']/container[@controlname='menubar_Fill_Panel']/container[@controlname='pnlBase']/?/?/container[@controlname='pnlTabs']//container[@controlname='pnlRepeatDuration']/?/?/list[@accessiblename='Until']/?/?/radiobutton[@accessiblename='Continual']
+				</item>
+				<item
+				addcaps="radiobutton,accessible"
+				capname="radiobutton"
+				id="e75956dc-3365-4b4d-a94c-aae75a1ce98d"
+				name="rdoUntil"
+				refpath="/form[@controlname='EventDetailForm']/container[@controlname='menubar_Fill_Panel']/container[@controlname='pnlBase']/container[@controlname='pnlControls']/container[@controlname='pnlTabs']/container[@controlname='pnlViews']/container[@controlname='pnlRepeat']/container[@controlname='pnlRepeatDuration']/element[@controlname='uoptDuration']/list[@accessiblename='Until']/container[@accessiblerole='Grouping']/radiobutton[@accessiblename='Until']"
+				searchtimeout="30000ms">
+					/form[@controlname='EventDetailForm']/container[@controlname='menubar_Fill_Panel']/container[@controlname='pnlBase']/?/?/container[@controlname='pnlTabs']//container[@controlname='pnlRepeatDuration']/?/?/list[@accessiblename='Until']/?/?/radiobutton[@accessiblename='Until']
+				</item>
+				<item
+				addcaps="radiobutton,accessible"
+				capname="radiobutton"
+				id="12f4d074-d54c-4dcb-9542-992867be5b5c"
+				name="rdoUpTo"
+				refpath="/form[@controlname='EventDetailForm']/container[@controlname='menubar_Fill_Panel']/container[@controlname='pnlBase']/container[@controlname='pnlControls']/container[@controlname='pnlTabs']/container[@controlname='pnlViews']/container[@controlname='pnlRepeat']/container[@controlname='pnlRepeatDuration']/element[@controlname='uoptDuration']/list[@accessiblename='Until']/container[@accessiblerole='Grouping']/radiobutton[@accessiblename='Up to']"
+				searchtimeout="30000ms">
+					/form[@controlname='EventDetailForm']/container[@controlname='menubar_Fill_Panel']/container[@controlname='pnlBase']/?/?/container[@controlname='pnlTabs']//container[@controlname='pnlRepeatDuration']/?/?/list[@accessiblename='Until']/?/?/radiobutton[@accessiblename='Up to']
+				</item>
+				<item
+				addcaps="container,accessible"
+				capname="container"
+				id="e1f045dd-b8ad-4be9-b8ca-22c5ab96dc32"
+				name="Grouping"
+				refpath="/form[@controlname='EventDetailForm']/container[@controlname='menubar_Fill_Panel']/container[@controlname='pnlBase']/container[@controlname='pnlControls']/container[@controlname='pnlTabs']/container[@controlname='pnlViews']/container[@controlname='pnlRepeat']/container[@controlname='pnlRepeatDuration']/element[@controlname='uoptDuration']/list[@accessiblename='Until']/container[@accessiblerole='Grouping']"
+				searchtimeout="30000ms">
+					/form[@controlname='EventDetailForm']/container[@controlname='menubar_Fill_Panel']/container[@controlname='pnlBase']/?/?/container[@controlname='pnlTabs']//list[@accessiblename='Until']/container[@accessiblerole='Grouping']
+				</item>
+				<item
+				addcaps="text,uiautomation,uiautomationvalue"
+				capname="text"
+				id="c59b8aaf-fe67-44ee-97e1-989b6fecad2f"
+				name="txtOccurence"
+				refimgid="ed4b21d6-1ebb-499e-929b-91e5b02bee1e"
+				refpath="/form[@controlname='EventDetailForm']/container[@controlname='menubar_Fill_Panel']/container[@controlname='pnlBase']/container[@controlname='pnlControls']/container[@controlname='pnlTabs']/container[@controlname='pnlViews']/container[@controlname='pnlRepeat']/container[@controlname='pnlRepeatDuration']/element[@controlname='txtOccurrences']/text[@automationid='[Editor] Edit Area']"
+				searchtimeout="30000ms">
+					/form[@controlname='EventDetailForm']/container[@controlname='menubar_Fill_Panel']/container[@controlname='pnlBase']/?/?/container[@controlname='pnlTabs']//container[@controlname='pnlRepeatDuration']/element[@controlname='txtOccurrences']/text[@automationid='[Editor] Edit Area']
+				</item>
 				<basepath>
 					/form[@controlname='EventDetailForm']/container[@controlname='menubar_Fill_Panel']/container[@controlname='pnlBase']
 				</basepath>

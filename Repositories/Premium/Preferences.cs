@@ -34,6 +34,7 @@ namespace SmokeTest.Repositories.Premium
         PreferencesFolders.ActivityCodeSelectFormAppFolder _activitycodeselectform;
         PreferencesFolders.TimePreferencesFormAppFolder _timepreferencesform;
         PreferencesFolders.DropDownFormAppFolder _dropdownform;
+        PreferencesFolders.OutlookPreferenceFormAppFolder _outlookpreferenceform;
 
         /// <summary>
         /// Gets the singleton class instance representing the Preferences element repository.
@@ -57,6 +58,7 @@ namespace SmokeTest.Repositories.Premium
             _activitycodeselectform = new PreferencesFolders.ActivityCodeSelectFormAppFolder(this);
             _timepreferencesform = new PreferencesFolders.TimePreferencesFormAppFolder(this);
             _dropdownform = new PreferencesFolders.DropDownFormAppFolder(this);
+            _outlookpreferenceform = new PreferencesFolders.OutlookPreferenceFormAppFolder(this);
         }
 
 #region Variables
@@ -148,6 +150,15 @@ namespace SmokeTest.Repositories.Premium
         public virtual PreferencesFolders.DropDownFormAppFolder DropDownForm
         {
             get { return _dropdownform; }
+        }
+
+        /// <summary>
+        /// The OutlookPreferenceForm folder.
+        /// </summary>
+        [RepositoryFolder("b656a986-e5bf-4cfc-b5ca-4cec5869b490")]
+        public virtual PreferencesFolders.OutlookPreferenceFormAppFolder OutlookPreferenceForm
+        {
+            get { return _outlookpreferenceform; }
         }
     }
 
@@ -2665,6 +2676,46 @@ namespace SmokeTest.Repositories.Premium
                 get
                 {
                     return _tbdropdownInfo;
+                }
+            }
+        }
+
+        /// <summary>
+        /// The OutlookPreferenceFormAppFolder folder.
+        /// </summary>
+        [RepositoryFolder("b656a986-e5bf-4cfc-b5ca-4cec5869b490")]
+        public partial class OutlookPreferenceFormAppFolder : RepoGenBaseFolder
+        {
+
+            /// <summary>
+            /// Creates a new OutlookPreferenceForm  folder.
+            /// </summary>
+            public OutlookPreferenceFormAppFolder(RepoGenBaseFolder parentFolder) :
+                    base("OutlookPreferenceForm", "/form[@controlname='OutlookPreferencesForm']", parentFolder, 30000, null, false, "b656a986-e5bf-4cfc-b5ca-4cec5869b490", "")
+            {
+            }
+
+            /// <summary>
+            /// The Self item.
+            /// </summary>
+            [RepositoryItem("b656a986-e5bf-4cfc-b5ca-4cec5869b490")]
+            public virtual Ranorex.Form Self
+            {
+                get
+                {
+                    return _selfInfo.CreateAdapter<Ranorex.Form>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Self item info.
+            /// </summary>
+            [RepositoryItemInfo("b656a986-e5bf-4cfc-b5ca-4cec5869b490")]
+            public virtual RepoItemInfo SelfInfo
+            {
+                get
+                {
+                    return _selfInfo;
                 }
             }
         }

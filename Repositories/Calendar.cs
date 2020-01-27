@@ -1608,6 +1608,11 @@ namespace SmokeTest.Repositories
             RepoItemInfo _btndocInfo;
             RepoItemInfo _txtfileautocompleteInfo;
             RepoItemInfo _txtpeopleautocompleteInfo;
+            RepoItemInfo _rdocontinualInfo;
+            RepoItemInfo _rdountilInfo;
+            RepoItemInfo _rdouptoInfo;
+            RepoItemInfo _groupingInfo;
+            RepoItemInfo _txtoccurenceInfo;
 
             /// <summary>
             /// Creates a new PnlBase  folder.
@@ -1646,6 +1651,11 @@ namespace SmokeTest.Repositories
                 _btndocInfo = new RepoItemInfo(this, "btnDoc", "?/?/container[@controlname='pnlTabs']//container[@controlname='scDocuments']/?/?/button[@accessiblerole='PushButton']", 30000, null, "43b89a3b-dda8-42be-8111-f8fac1139c19");
                 _txtfileautocompleteInfo = new RepoItemInfo(this, "txtFileAutoComplete", "?/?/container[@controlname='pnlTabs']//text[@controlname='txtAutoComplete']", 30000, null, "ca097421-7092-49fa-adad-c42dc971fab1");
                 _txtpeopleautocompleteInfo = new RepoItemInfo(this, "txtPeopleAutoComplete", "?/?/container[@controlname='pnlTabs']//container[@controlname='scPeople']//text[@controlname='txtAutoComplete']", 30000, null, "6c251565-bd78-4891-8599-2cef1314d6f7");
+                _rdocontinualInfo = new RepoItemInfo(this, "rdoContinual", "?/?/container[@controlname='pnlTabs']//container[@controlname='pnlRepeatDuration']/?/?/list[@accessiblename='Until']/?/?/radiobutton[@accessiblename='Continual']", 30000, null, "f9cfc645-8392-40e7-87c8-99b89d5655f4");
+                _rdountilInfo = new RepoItemInfo(this, "rdoUntil", "?/?/container[@controlname='pnlTabs']//container[@controlname='pnlRepeatDuration']/?/?/list[@accessiblename='Until']/?/?/radiobutton[@accessiblename='Until']", 30000, null, "e75956dc-3365-4b4d-a94c-aae75a1ce98d");
+                _rdouptoInfo = new RepoItemInfo(this, "rdoUpTo", "?/?/container[@controlname='pnlTabs']//container[@controlname='pnlRepeatDuration']/?/?/list[@accessiblename='Until']/?/?/radiobutton[@accessiblename='Up to']", 30000, null, "12f4d074-d54c-4dcb-9542-992867be5b5c");
+                _groupingInfo = new RepoItemInfo(this, "Grouping", "?/?/container[@controlname='pnlTabs']//list[@accessiblename='Until']/container[@accessiblerole='Grouping']", 30000, null, "e1f045dd-b8ad-4be9-b8ca-22c5ab96dc32");
+                _txtoccurenceInfo = new RepoItemInfo(this, "txtOccurence", "?/?/container[@controlname='pnlTabs']//container[@controlname='pnlRepeatDuration']/element[@controlname='txtOccurrences']/text[@automationid='[Editor] Edit Area']", 30000, null, "c59b8aaf-fe67-44ee-97e1-989b6fecad2f");
             }
 
             /// <summary>
@@ -2413,6 +2423,126 @@ namespace SmokeTest.Repositories
                 get
                 {
                     return _txtpeopleautocompleteInfo;
+                }
+            }
+
+            /// <summary>
+            /// The rdoContinual item.
+            /// </summary>
+            [RepositoryItem("f9cfc645-8392-40e7-87c8-99b89d5655f4")]
+            public virtual Ranorex.RadioButton rdoContinual
+            {
+                get
+                {
+                    return _rdocontinualInfo.CreateAdapter<Ranorex.RadioButton>(true);
+                }
+            }
+
+            /// <summary>
+            /// The rdoContinual item info.
+            /// </summary>
+            [RepositoryItemInfo("f9cfc645-8392-40e7-87c8-99b89d5655f4")]
+            public virtual RepoItemInfo rdoContinualInfo
+            {
+                get
+                {
+                    return _rdocontinualInfo;
+                }
+            }
+
+            /// <summary>
+            /// The rdoUntil item.
+            /// </summary>
+            [RepositoryItem("e75956dc-3365-4b4d-a94c-aae75a1ce98d")]
+            public virtual Ranorex.RadioButton rdoUntil
+            {
+                get
+                {
+                    return _rdountilInfo.CreateAdapter<Ranorex.RadioButton>(true);
+                }
+            }
+
+            /// <summary>
+            /// The rdoUntil item info.
+            /// </summary>
+            [RepositoryItemInfo("e75956dc-3365-4b4d-a94c-aae75a1ce98d")]
+            public virtual RepoItemInfo rdoUntilInfo
+            {
+                get
+                {
+                    return _rdountilInfo;
+                }
+            }
+
+            /// <summary>
+            /// The rdoUpTo item.
+            /// </summary>
+            [RepositoryItem("12f4d074-d54c-4dcb-9542-992867be5b5c")]
+            public virtual Ranorex.RadioButton rdoUpTo
+            {
+                get
+                {
+                    return _rdouptoInfo.CreateAdapter<Ranorex.RadioButton>(true);
+                }
+            }
+
+            /// <summary>
+            /// The rdoUpTo item info.
+            /// </summary>
+            [RepositoryItemInfo("12f4d074-d54c-4dcb-9542-992867be5b5c")]
+            public virtual RepoItemInfo rdoUpToInfo
+            {
+                get
+                {
+                    return _rdouptoInfo;
+                }
+            }
+
+            /// <summary>
+            /// The Grouping item.
+            /// </summary>
+            [RepositoryItem("e1f045dd-b8ad-4be9-b8ca-22c5ab96dc32")]
+            public virtual Ranorex.Container Grouping
+            {
+                get
+                {
+                    return _groupingInfo.CreateAdapter<Ranorex.Container>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Grouping item info.
+            /// </summary>
+            [RepositoryItemInfo("e1f045dd-b8ad-4be9-b8ca-22c5ab96dc32")]
+            public virtual RepoItemInfo GroupingInfo
+            {
+                get
+                {
+                    return _groupingInfo;
+                }
+            }
+
+            /// <summary>
+            /// The txtOccurence item.
+            /// </summary>
+            [RepositoryItem("c59b8aaf-fe67-44ee-97e1-989b6fecad2f")]
+            public virtual Ranorex.Text txtOccurence
+            {
+                get
+                {
+                    return _txtoccurenceInfo.CreateAdapter<Ranorex.Text>(true);
+                }
+            }
+
+            /// <summary>
+            /// The txtOccurence item info.
+            /// </summary>
+            [RepositoryItemInfo("c59b8aaf-fe67-44ee-97e1-989b6fecad2f")]
+            public virtual RepoItemInfo txtOccurenceInfo
+            {
+                get
+                {
+                    return _txtoccurenceInfo;
                 }
             }
         }

@@ -992,6 +992,18 @@ yBbJEskUycg1sS/HxN7sPPaI7M7KY1dmKjszUsnJL2LhTf7rGAy/AP7X5rYY5FLEAAAAAElFTkSu
 QmCC
 			</icon>
 		</appfolder>
+		<appfolder
+		capname="form"
+		id="b656a986-e5bf-4cfc-b5ca-4cec5869b490"
+		isrooted="True"
+		name="OutlookPreferenceForm"
+		refimgid="10d03eac-d28a-4c12-a204-ba61aad68d9c"
+		searchtimeout="30000ms"
+		usecache="False">
+			<basepath>
+				/form[@controlname='OutlookPreferencesForm']
+			</basepath>
+		</appfolder>
 		<basepath>
 		</basepath>
 	</rootfolder>

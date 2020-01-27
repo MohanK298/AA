@@ -70,6 +70,7 @@ namespace SmokeTest
         	calendar.MainForm.btnNewAppointment.Click();
         	Delay.Seconds(1);
         	calendar.EventDetailForm.PnlBase.txtAppointmentTitle.PressKeys(data);
+        	//calendar.EventDetailForm.PnlBase.txtStartDate.TextValue=System.DateTime.Now.AddDays(-(int)System.DateTime.Today.DayOfWeek + (int)System.DayOfWeek.Monday).ToShortDateString();
         	calendar.EventDetailForm.PnlBase.txtStartTime.PressKeys(System.DateTime.Now.ToShortTimeString());
         	calendar.EventDetailForm.PnlBase.txtEndTime.PressKeys(System.DateTime.Now.AddHours(1).ToShortTimeString());
         	calendar.EventDetailForm.PnlBase.Repeat.Click();
@@ -80,8 +81,9 @@ namespace SmokeTest
         	calendar.weekday=System.DateTime.Now.AddDays(1).ToString("ddd");
         	calendar.EventDetailForm.PnlBase.cbWeekday.Check();
         	Delay.Seconds(1);
-        	calendar.weekday=System.DateTime.Now.AddDays(2).ToString("ddd");
-        	calendar.EventDetailForm.PnlBase.cbWeekday.Check();
+        	calendar.EventDetailForm.PnlBase.rdoUpTo.Select();
+        	calendar.EventDetailForm.PnlBase.txtOccurence.TextValue="2";
+        	cmn.SelectItemDropdown(calendar.EventDetailForm.PnlBase.cmbbxHolidayRule,"Schedule it anyway","Holiday Rule Dropdown");
         	calendar.EventDetailForm.btnOK.Click();
         	Delay.Seconds(3);
         	AppointmentOverlapPrompt();
@@ -96,16 +98,13 @@ namespace SmokeTest
 		{
 			System.DateTime day1;
 			System.DateTime day2;
-			System.DateTime day3;
-			string strday1,strday2,strday3;
+			string strday1,strday2;
 			calendar.MainForm.Toolbar.btnWeek.Click();
 			Delay.Seconds(2);
 			day1=System.DateTime.Now;
 			day2=day1.AddDays(1);
-			day3=day1.AddDays(2);
 			strday1=day1.ToString("MMMM d, yyyy");
 			strday2=day2.ToString("MMMM d, yyyy");
-			strday3=day3.ToString("MMMM d, yyyy");
 			calendar.curwkday=strday1;
 			Delay.Seconds(2);
 			calendar.MainForm.PnlViews.shrtDay.Click();
@@ -127,22 +126,7 @@ namespace SmokeTest
 			calendar.curwkday=strday2;
 			calendar.MainForm.PnlViews.shrtDay.Click();
 			calendar.MainForm.PnlViews.txtappointment.DoubleClick();
-			Delay.Seconds(2);
-			calendar.EventDetailForm.PnlBase.txtLocation.Click();
-			calendar.EventDetailForm.PnlBase.txtLocation.PressKeys(location);
-			calendar.EventDetailForm.PnlBase.txtEndTime.PressKeys(System.DateTime.Now.AddHours(1).ToShortTimeString());
-			calendar.EventDetailForm.btnOK.Click();
-			Validate.Exists(calendar.RepeatingEventDialogForm.SelfInfo,"Repeating Event Exception Dialog is seen");
-			calendar.RepeatingEventDialogForm.Toolbar1.btnThisOne.Click();
-			Delay.Seconds(3);
-			calendar.MainForm.PnlViews.txtappointment.DoubleClick();
-			Validate.AttributeContains(calendar.EventDetailForm.PnlBase.txtLocationInfo,"UIAutomationValueValue",location,String.Format("Location updated for Appointment booked on {0}",strday2));
-			calendar.EventDetailForm.btnCancel.Click();
-			Delay.Seconds(3);
-			calendar.curwkday=strday3;
-			calendar.MainForm.PnlViews.shrtDay.Click();
-			calendar.MainForm.PnlViews.txtappointment.DoubleClick();
-			Validate.AttributeContains(calendar.EventDetailForm.PnlBase.txtLocationInfo,"UIAutomationValueValue","",String.Format("Location value empty for Appointment booked on {0}",strday3));
+			Validate.AttributeContains(calendar.EventDetailForm.PnlBase.txtLocationInfo,"UIAutomationValueValue","",String.Format("Location value empty for Appointment booked on {0}",strday2));
 			calendar.EventDetailForm.btnCancel.Click();
 		}
         void ITestModule.Run()

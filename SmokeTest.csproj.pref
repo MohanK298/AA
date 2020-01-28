@@ -1,15 +1,14 @@
 ﻿<Properties>
   <Array name="active">
-    <Element value="Modules\Utilities\Common.cs" />
+    <Element value="Modules\startApp.cs" />
   </Array>
   <Array name="bookmarks" />
   <Array name="files">
-    <Element value="Repositories\Premium\Preferences.rxrep" />
-    <Element value="Repositories\TimeSheets.rxrep" />
     <Element value="SmokeTest.rxtst" />
-    <Element value="Repositories\Calendar.rxrep" />
-    <Element value="Modules\Utilities\Common.cs" />
-    <Element value="Modules\createMultiplePhoneCalls_TimeSaverRightClick.cs" />
+    <Element value="Repositories\Login.rxrep" />
+    <Element value="Modules\AfterFirstLogin.cs" />
+    <Element value="Modules\startApp.cs" />
+    <Element value="Repositories\Login.cs" />
   </Array>
   <Properties name="projectSavedData">
     <Properties name="customTool">

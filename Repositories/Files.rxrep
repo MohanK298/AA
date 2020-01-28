@@ -108,9 +108,8 @@ rxversion="9.0">
 			id="15bfd0c3-eb95-45e1-bd41-8060dc1aa90e"
 			name="btnFiles1"
 			refimgid="a337ebd1-a6d1-4baa-baae-999f67a9bb4a"
-			refpath="/form[@controlname='MainForm']/element[@controlname='_ultraExplorerBar']/tree[@accessiblerole='Outline']/button[@accessiblename='Files']"
 			searchtimeout="5000ms">
-				/form[@controlname='MainForm']/?/?/tree[@accessiblerole='Outline']/button[@accessiblename='Files']
+				/form[@controlname='MainForm']/?//tree[@accessiblerole='Outline']/button[@accessiblename='Files']
 			</item>
 			<item
 			addcaps="combobox,control,nativewindow"

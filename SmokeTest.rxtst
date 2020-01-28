@@ -1187,6 +1187,12 @@ which will be used throughout the Smoke Test]]>
 			id="67e9bae2-280b-4ca4-8e22-d3573671ec71"
 			name="Calendar">
 			</testcase>
+			<testmodule
+			id="683a71e4-c2c2-4e0a-ba9c-c9c357373e52"
+			name="startApp"
+			ref="5b05b347-e4f6-4dbd-b9a7-c588bffbea40"
+			type="UserCode">
+			</testmodule>
 			<smartfoldernode
 			id="69784dea-f2ba-4174-8e33-8521d722fad9"
 			name="CreatenDeleteMasterAdjrnAppt_All">
@@ -1240,6 +1246,10 @@ which will be used throughout the Smoke Test]]>
 			ref="833fa8d2-53dd-4f83-a862-2175ee24f816"
 			type="UserCode">
 			</testmodule>
+			<testcase
+			id="6efb8f01-7398-4295-b52c-d8dcaaa9599a"
+			name="2_Firm_Members_Test">
+			</testcase>
 			<testcase
 			id="6f179f43-cac7-46b6-85e3-c764fb8e6fba"
 			name="PreferencesTest">
@@ -4110,6 +4120,14 @@ bill]]>
 							name="closeExistingPrompts">
 							</testmodule>
 						</teardown>
+					</testcase>
+					<testcase
+					id="6efb8f01-7398-4295-b52c-d8dcaaa9599a"
+					name="2_Firm_Members_Test">
+						<testmodule
+						id="683a71e4-c2c2-4e0a-ba9c-c9c357373e52"
+						name="startApp">
+						</testmodule>
 					</testcase>
 					<testcase
 					id="f999b233-305c-4e9e-a5e8-bd5b49a34123"

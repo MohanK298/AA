@@ -356,7 +356,7 @@ namespace SmokeTest.Repositories
                 _filesindexform = new FilesFolders.FilesIndexFormFolder(this);
                 _btnfilesInfo = new RepoItemInfo(this, "btnFiles", "container[@controlname='pLeft']//tree[@accessiblerole='Outline']/button[@accessiblename='Files']", 30000, null, "a059dd0c-eefd-4172-8a43-291a6a123540");
                 _fileInfo = new RepoItemInfo(this, "File", "container[@controlname='pLeft']//container[@automationid='[Group] 3']", 30000, null, "09cbfbb9-fa8b-4df6-b2e9-6a55116ef460");
-                _btnfiles1Info = new RepoItemInfo(this, "btnFiles1", "?/?/tree[@accessiblerole='Outline']/button[@accessiblename='Files']", 5000, null, "15bfd0c3-eb95-45e1-bd41-8060dc1aa90e");
+                _btnfiles1Info = new RepoItemInfo(this, "btnFiles1", "?//tree[@accessiblerole='Outline']/button[@accessiblename='Files']", 5000, null, "15bfd0c3-eb95-45e1-bd41-8060dc1aa90e");
                 _cmbbxfilestatusInfo = new RepoItemInfo(this, "cmbbxFileStatus", "container[@controlname='pLeft']//container[@controltypename='UltraExplorerBarContainerControl' and @instance='0']/?/?/container[@controlname='FileIndexControlPanelControl']/?/?/container[@controlname='panel1']/combobox[@controlname='acmbAASFileStatus']", 30000, null, "eea97b66-30ca-4966-b4b0-612c57e7bc45");
             }
 

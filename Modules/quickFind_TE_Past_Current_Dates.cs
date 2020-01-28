@@ -127,6 +127,7 @@ namespace SmokeTest.Modules
         	
         	file.FileDetailForm.TimeSpent.Click();
         	file.FileDetailForm.tblFileDetailsBradInfo.WaitForExists(10000);
+        	
         	cmn.VerifyCorrespondingDataExistsInTable(file.FileDetailForm.tblFileDetailsBrad,System.DateTime.Now.ToString("MMM dd/yy"),data,"Time Entries Table");
         	file.FileDetailForm.btnSaveClose.Click();
         	

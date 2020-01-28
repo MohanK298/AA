@@ -509,6 +509,9 @@
     <Compile Include="Modules\SendDocumentViaEmail.cs">
       <id>4b7d6b73-f432-4a30-82a7-fc7f72845358</id>
     </Compile>
+    <Compile Include="Modules\startApp.cs">
+      <id>933c19c6-cae7-4701-96a8-30f93cab68e2</id>
+    </Compile>
     <Compile Include="Modules\testViewNavigation.cs">
       <id>d9857e46-dc36-4d57-a32e-6e9af474156d</id>
     </Compile>
@@ -817,6 +820,12 @@
       <DependentUpon>Library.rxrep</DependentUpon>
       <RepositoryCode>true</RepositoryCode>
       <id>5734a3c1-10a4-43ea-a8f0-0a10db8f8e8e</id>
+    </Compile>
+    <Compile Include="Repositories\Login.cs">
+      <BoundTo>8ee354e8-eb51-4361-9643-57357bad0ec6</BoundTo>
+      <DependentUpon>Login.rxrep</DependentUpon>
+      <RepositoryCode>true</RepositoryCode>
+      <id>7f54b58c-be34-4ad1-ae3b-45952010bdab</id>
     </Compile>
     <Compile Include="Repositories\Note.cs">
       <BoundTo>DBDD3C39-17CD-4F44-B71C-3E391074099C</BoundTo>
@@ -1162,6 +1171,17 @@
       <id>89ee47b3-f36f-40c7-82e1-2e26a6a73cd2</id>
       <repoid>b84ce12f-4952-4c47-b32d-df295b9efdc2</repoid>
       <reporootid>af0ca106-1259-44b2-bae0-9076417b625f</reporootid>
+    </None>
+    <None Include="Repositories\Login.rximg">
+      <BoundTo>8ee354e8-eb51-4361-9643-57357bad0ec6</BoundTo>
+      <DependentUpon>Login.rxrep</DependentUpon>
+      <imageblob>true</imageblob>
+      <id>6f58b8d3-305f-4cdc-80ad-400c05c57e2e</id>
+    </None>
+    <None Include="Repositories\Login.rxrep">
+      <id>8ee354e8-eb51-4361-9643-57357bad0ec6</id>
+      <repoid>0590d673-1c1a-4e15-ba94-7e49609f0dcd</repoid>
+      <reporootid>5ef322c8-b0ca-474c-a89b-a70fb297402b</reporootid>
     </None>
     <None Include="Repositories\Note.rximg">
       <BoundTo>DBDD3C39-17CD-4F44-B71C-3E391074099C</BoundTo>

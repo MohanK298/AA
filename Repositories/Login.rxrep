@@ -1,0 +1,236 @@
+﻿<repository
+id="0590d673-1c1a-4e15-ba94-7e49609f0dcd"
+name="Login">
+	<codegen
+	classname="Login"
+	namespace="SmokeTest.Repositories">
+	</codegen>
+	<rootfolder
+	capname="unknown"
+	id="5ef322c8-b0ca-474c-a89b-a70fb297402b"
+	isrooted="True"
+	name="Root"
+	searchtimeout="0ms"
+	usecache="True">
+		<appfolder
+		addcaps="form,control,nativewindow"
+		capname="form"
+		id="ca16897b-8561-4bec-91d5-5e4caa0d49c6"
+		isrooted="True"
+		name="LoginForm"
+		refimgid="3be427e7-6186-430e-a854-636704a412f9"
+		refpath="/form[@controlname='LoginForm']"
+		searchtimeout="30000ms"
+		usecache="True">
+			<item
+			addcaps="text,accessible"
+			capname="text"
+			id="9e4c6d59-55df-433b-83e5-a4ec4e7d4da9"
+			name="FirmId"
+			refimgid="bc9d6262-abaa-4968-a86a-0890bf0d54b2"
+			refpath="/form[@controlname='LoginForm']/container[@controlname='cpLogin']/text[@controlname='_firmIdTextBox']/text[@accessiblerole='Text']"
+			searchtimeout="30000ms">
+				/form[@controlname='LoginForm']/?/?/text[@controlname='_firmIdTextBox']/text[@accessiblerole='Text']
+			</item>
+			<item
+			addcaps="text,accessible"
+			capname="text"
+			id="d774919a-d017-4b3f-9b7b-81658594f693"
+			name="UserId"
+			refimgid="602d21a3-caf8-422e-88d2-ed9eed5abc74"
+			refpath="/form[@controlname='LoginForm']/container[@controlname='cpLogin']/text[@controlname='_userIdTextBox']/text[@accessiblerole='Text']"
+			searchtimeout="30000ms">
+				/form[@controlname='LoginForm']/?/?/text[@controlname='_userIdTextBox']/text[@accessiblerole='Text']
+			</item>
+			<item
+			addcaps="text,accessible"
+			capname="text"
+			id="12b5793b-875f-4b2c-98e9-8c93ed55d904"
+			name="Pwd"
+			refimgid="86a855f6-c88d-4ee9-bcd6-103f100b18ec"
+			refpath="/form[@controlname='LoginForm']/container[@controlname='cpLogin']/text[@controlname='_passwordTextBox']/text[@accessiblerole='Text']"
+			searchtimeout="30000ms">
+				/form[@controlname='LoginForm']/?/?/text[@controlname='_passwordTextBox']/text[@accessiblerole='Text']
+			</item>
+			<item
+			addcaps="text,accessible"
+			capname="text"
+			id="419676a5-6a3e-40a7-9c79-39f21f2f3121"
+			name="ServerName"
+			refimgid="7372a136-b17e-4aff-9067-5ea669c9a348"
+			refpath="/form[@controlname='LoginForm']/container[@controlname='cpLogin']/text[@controlname='txtHTTPServerName']/text[@accessiblerole='Text']"
+			searchtimeout="30000ms">
+				/form[@controlname='LoginForm']/?/?/text[@controlname='txtHTTPServerName']/text[@accessiblerole='Text']
+			</item>
+			<item
+			addcaps="checkbox,control,nativewindow"
+			capname="checkbox"
+			id="87311ce0-4af0-4b6e-b51b-f1667d30674c"
+			name="cbRememberPwd"
+			refimgid="41e387cd-f1e5-49d2-b78b-4249b3c84f02"
+			refpath="/form[@controlname='LoginForm']/container[@controlname='cpLogin']/checkbox[@controlname='checkRememberMe']"
+			searchtimeout="30000ms">
+				/form[@controlname='LoginForm']/?/?/checkbox[@controlname='checkRememberMe']
+			</item>
+			<item
+			addcaps="button,accessible"
+			capname="button"
+			id="e781e2df-e56d-4aa9-b7b0-2c8f844d5a43"
+			name="btnCancel"
+			refimgid="dcf7f8bc-ddab-4969-8ad4-a8ce50454126"
+			refpath="/form[@controlname='LoginForm']/container[@controlname='cpLogin']/element[@controlname='btnCancel']/button[@accessiblename='Cancel']"
+			searchtimeout="30000ms">
+				/form[@controlname='LoginForm']/?/?/element[@controlname='btnCancel']/button[@accessiblename='Cancel']
+			</item>
+			<item
+			addcaps="button,accessible"
+			capname="button"
+			id="adef954c-6be3-4184-8fbf-9899b8ec81b9"
+			name="btnLogin"
+			refimgid="81c411ea-5633-4528-91e8-7f679db8f581"
+			refpath="/form[@controlname='LoginForm']/container[@controlname='cpLogin']/element[@controlname='btnLogin']/button[@accessiblename='Login']"
+			searchtimeout="30000ms">
+				/form[@controlname='LoginForm']/?/?/element[@controlname='btnLogin']/button[@accessiblename='Login']
+			</item>
+			<basepath>
+				/form[@controlname='LoginForm']
+			</basepath>
+			<icon>
+				iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACx
+jwv8YQUAAAAJcEhZcwAADsQAAA7EAZUrDhsAAAFlSURBVDhPY6AJeOJjOvORg9p/FOyo/v9xoKUT
+VAlugKERDT921nwLVQoBb3Kj+Z5FOf9/FuP2/1msO3EYpBaIH7vr/Qcb8Oft6//kgFclif/Brnjo
+qPYZKvb/z8tn/z+tWfD/bWspWMHLwrj/r8pT/7/rrfv/dffG//++fwOr+3Hu+P8nPsYTwAY8CbRM
+fGSvCnbev29fwQpwgd9PH/1/N6ERHB5gzSDwyFX3IkjgeZLv/0+rF/z/snPD/4fWCmAND60V/3+Y
+1fP//cxuYABqgcUe2SqBDXge5qoDMcBN9w3MgDdNhf/fTWr+/xCoCKb4XU/t/7fd1Shi4BgJtPSG
+GqBzjhwDnkbaa4ANAIZBBDkGgDXDAMkGAFMmVCsEPHLTO0uKAU+jnYygWhHgeZIPUQY8dFS/BdWC
+Cd405uM14N+/f+egSnGDjyvnxjyyVQYbANL0FmjAm/aKH4+9zVWhSqCAgQEAq9YXqsYCPO8AAAAA
+SUVORK5CYII=
+			</icon>
+		</appfolder>
+		<appfolder
+		addcaps="form,control,nativewindow"
+		capname="form"
+		id="5fb23e7f-84df-4c53-ac49-00c75ae26838"
+		isrooted="True"
+		name="AnnouncementForm"
+		refimgid="c3da3bc9-a32d-459d-868c-c41c92b620cb"
+		refpath="/form[@controlname='AnnouncementForm']"
+		searchtimeout="30000ms"
+		usecache="True">
+			<folder
+			addcaps="toolbar,uiautomation"
+			capname="toolbar"
+			id="54b27292-56fb-423e-aa5b-fec471918b19"
+			isrooted="True"
+			name="ToolbarToolbarBaseDesigner1"
+			refimgid="6735e6e0-0fb3-4c15-9a02-a627e5388035"
+			refpath="/form[@controlname='AnnouncementForm']/element[@controlname='_BaseForm_Toolbars_Dock_Area_Bottom']/toolbar[@automationid='Toolbar : toolbarBaseDesigner']"
+			searchtimeout="30000ms"
+			usecache="False">
+				<item
+				addcaps="toolbar,uiautomation"
+				capname="toolbar"
+				id="f8621256-5586-4676-ab22-c7362c234348"
+				name="ToolbarToolbarBaseDesigner"
+				refimgid="d3413047-f9ed-4f73-91d9-3a4865359f9d"
+				refpath="/form[@controlname='AnnouncementForm']/element[@controlname='_BaseForm_Toolbars_Dock_Area_Bottom']/toolbar[@automationid='Toolbar : toolbarBaseDesigner']"
+				searchtimeout="30000ms">
+					/form[@controlname='AnnouncementForm']/?/?/toolbar[@automationid='Toolbar : toolbarBaseDesigner']
+				</item>
+				<item
+				addcaps="button,uiautomation,uiautomationinvoke"
+				capname="button"
+				id="5f336440-bb7d-46b5-82ed-0eaacb36cdde"
+				name="btnOK"
+				refimgid="c4140290-5ea9-4dcd-a88d-252a8cf89682"
+				refpath="/form[@controlname='AnnouncementForm']/element[@controlname='_BaseForm_Toolbars_Dock_Area_Bottom']/toolbar[@automationid='Toolbar : toolbarBaseDesigner']/button[@automationid='[Toolbar : toolbarBaseDesigner Tools] Tool : TOOLBAR_BUTTON_OK - Index : 1 ']"
+				searchtimeout="30000ms">
+					/form[@controlname='AnnouncementForm']/?/?/toolbar[@automationid='Toolbar : toolbarBaseDesigner']/button[@automationid='[Toolbar : toolbarBaseDesigner Tools] Tool : TOOLBAR_BUTTON_OK - Index : 1 ']
+				</item>
+				<item
+				addcaps="text,uiautomation"
+				capname="text"
+				id="0d0bb2ba-a4e0-4b12-876e-0a01a4952e4d"
+				name="TextToolbarToolbarBaseDesignerTools"
+				refimgid="12f1740b-fb51-4381-990f-fc17f4021c4e"
+				refpath="/form[@controlname='AnnouncementForm']/element[@controlname='_BaseForm_Toolbars_Dock_Area_Bottom']/toolbar[@automationid='Toolbar : toolbarBaseDesigner']/text[@automationid='[Toolbar : toolbarBaseDesigner Tools] Tool : TOOLBAR_ALIGN_SPRING - Index : 0 ']"
+				searchtimeout="30000ms">
+					/form[@controlname='AnnouncementForm']/?/?/toolbar[@automationid='Toolbar : toolbarBaseDesigner']/text[@automationid='[Toolbar : toolbarBaseDesigner Tools] Tool : TOOLBAR_ALIGN_SPRING - Index : 0 ']
+				</item>
+				<basepath>
+					/form[@controlname='AnnouncementForm']/?/?/toolbar[@automationid='Toolbar : toolbarBaseDesigner']
+				</basepath>
+			</folder>
+			<item
+			addcaps="checkbox,control,nativewindow"
+			capname="checkbox"
+			id="c63102f6-7140-4cd0-b48b-531eca21e41e"
+			name="AmicusCheckBox1"
+			refimgid="70a9e32e-c1f6-451c-b935-208e168fa75b"
+			refpath="/form[@controlname='AnnouncementForm']/container[@controlname='pnlBase']/container[@controlname='pnlControls']/container[@controlname='panel2']/checkbox[@controlname='amicusCheckBox1']"
+			searchtimeout="30000ms">
+				/form[@controlname='AnnouncementForm']/container[@controlname='pnlBase']//checkbox[@controlname='amicusCheckBox1']
+			</item>
+			<basepath>
+				/form[@controlname='AnnouncementForm']
+			</basepath>
+			<icon>
+				iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACx
+jwv8YQUAAAAJcEhZcwAADsQAAA7EAZUrDhsAAAFlSURBVDhPY6AJeOJjOvORg9p/FOyo/v9xoKUT
+VAlugKERDT921nwLVQoBb3Kj+Z5FOf9/FuP2/1msO3EYpBaIH7vr/Qcb8Oft6//kgFclif/Brnjo
+qPYZKvb/z8tn/z+tWfD/bWspWMHLwrj/r8pT/7/rrfv/dffG//++fwOr+3Hu+P8nPsYTwAY8CbRM
+fGSvCnbev29fwQpwgd9PH/1/N6ERHB5gzSDwyFX3IkjgeZLv/0+rF/z/snPD/4fWCmAND60V/3+Y
+1fP//cxuYABqgcUe2SqBDXge5qoDMcBN9w3MgDdNhf/fTWr+/xCoCKb4XU/t/7fd1Shi4BgJtPSG
+GqBzjhwDnkbaa4ANAIZBBDkGgDXDAMkGAFMmVCsEPHLTO0uKAU+jnYygWhHgeZIPUQY8dFS/BdWC
+Cd405uM14N+/f+egSnGDjyvnxjyyVQYbANL0FmjAm/aKH4+9zVWhSqCAgQEAq9YXqsYCPO8AAAAA
+SUVORK5CYII=
+			</icon>
+		</appfolder>
+		<appfolder
+		addcaps="form,control,nativewindow"
+		capname="form"
+		id="5b4360c6-01f7-496a-bfc3-e317aa2b2f36"
+		isrooted="True"
+		name="CustomerExperienceProgramForm"
+		refimgid="b4274d62-8568-41db-a7b8-0c4a9ea6e885"
+		refpath="/form[@controlname='CustomerExperienceProgramForm']"
+		searchtimeout="30000ms"
+		usecache="True">
+			<item
+			addcaps="button,accessible"
+			capname="button"
+			id="fb5aa2c7-cc21-4b91-92b1-fb3d435fd376"
+			name="Accept"
+			refpath="/form[@controlname='CustomerExperienceProgramForm']/container[@controlname='pnlBase']/container[@controlname='pnlControls']/element[@controlname='abtnAccept']/button[@accessiblename='Accept']"
+			searchtimeout="30000ms">
+				/form[@controlname='CustomerExperienceProgramForm']/container[@controlname='pnlBase']//button[@accessiblename='Accept']
+			</item>
+			<item
+			capname="button"
+			id="dd3f5840-31fa-4cae-87a6-c1560ff69f47"
+			name="Decline"
+			refimgid="fb494c99-fc56-430e-94c8-fe5cf9a4530b"
+			searchtimeout="30000ms">
+				/form[@controlname='CustomerExperienceProgramForm']//button[@name='Decline']
+			</item>
+			<basepath>
+				/form[@controlname='CustomerExperienceProgramForm']
+			</basepath>
+			<icon>
+				iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACx
+jwv8YQUAAAAJcEhZcwAADsQAAA7EAZUrDhsAAAFlSURBVDhPY6AJeOJjOvORg9p/FOyo/v9xoKUT
+VAlugKERDT921nwLVQoBb3Kj+Z5FOf9/FuP2/1msO3EYpBaIH7vr/Qcb8Oft6//kgFclif/Brnjo
+qPYZKvb/z8tn/z+tWfD/bWspWMHLwrj/r8pT/7/rrfv/dffG//++fwOr+3Hu+P8nPsYTwAY8CbRM
+fGSvCnbev29fwQpwgd9PH/1/N6ERHB5gzSDwyFX3IkjgeZLv/0+rF/z/snPD/4fWCmAND60V/3+Y
+1fP//cxuYABqgcUe2SqBDXge5qoDMcBN9w3MgDdNhf/fTWr+/xCoCKb4XU/t/7fd1Shi4BgJtPSG
+GqBzjhwDnkbaa4ANAIZBBDkGgDXDAMkGAFMmVCsEPHLTO0uKAU+jnYygWhHgeZIPUQY8dFS/BdWC
+Cd405uM14N+/f+egSnGDjyvnxjyyVQYbANL0FmjAm/aKH4+9zVWhSqCAgQEAq9YXqsYCPO8AAAAA
+SUVORK5CYII=
+			</icon>
+		</appfolder>
+		<basepath>
+		</basepath>
+	</rootfolder>
+	<variables>
+	</variables>
+</repository>

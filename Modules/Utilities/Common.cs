@@ -502,7 +502,8 @@ namespace SmokeTest.Modules.Utilities
         		{
     				if(tadapter.Rows[i].Cells[j].As<Ranorex.Cell>().Text.Equals(data[k]))
         			{
-						tadapter.Rows[i].Cells[j].As<Ranorex.Cell>().Click();
+    					tadapter.Rows[i].Cells[j].As<Ranorex.Cell>().Focus();
+    					tadapter.Rows[i].Cells[j].As<Ranorex.Cell>().Click();
 						Keyboard.Press("{LControlKey down}");
 	       				k++;
 //	       				i=0;

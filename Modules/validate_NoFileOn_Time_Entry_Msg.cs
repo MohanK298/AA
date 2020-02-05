@@ -104,11 +104,9 @@ namespace SmokeTest.Modules
         	ts.MainForm.Toolbar.btnTimeEntryAssistant.Click();
         	ts.TimeEntryAssistantForm.SelfInfo.WaitForExists(3000);
         	ts.TimeEntryAssistantForm.PnlBase.cbItemsWithNoFile.Uncheck();
-        	Delay.Seconds(1);
         	cmn.MultipleSelection(ts.TimeEntryAssistantForm.PnlBase.tbTimeEntryAssistant,arrdata);
-        	Delay.Seconds(1);
         	ts.TimeEntryAssistantForm.Toolbar1.btnTimeSaver.Click();
-        	ts.PromptForm.SelfInfo.WaitForExists(10000);
+        	ts.PromptForm.SelfInfo.WaitForExists(3000);
         	if(ts.PromptForm.txtPrompt.TextValue.Contains("One or more items have no File assigned. Do you wish to continue?"))
         	{
         		Report.Success("Prompt shown successfully for peforming Time Saver on Files which are not assigned");

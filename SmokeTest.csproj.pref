@@ -4,10 +4,10 @@
   </Array>
   <Array name="bookmarks" />
   <Array name="files">
+    <Element value="Modules\startApp.cs" />
     <Element value="SmokeTest.rxtst" />
     <Element value="Repositories\Login.rxrep" />
     <Element value="Modules\AfterFirstLogin.cs" />
-    <Element value="Modules\startApp.cs" />
     <Element value="Repositories\Login.cs" />
   </Array>
   <Properties name="projectSavedData">

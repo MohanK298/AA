@@ -74,11 +74,15 @@ namespace SmokeTest.Modules
         void ITestModule.Run()
         {
             Mouse.DefaultMoveTime = 300;
-            Keyboard.DefaultKeyPressTime = 100;
+            Keyboard.DefaultKeyPressTime = 20;
             Delay.SpeedFactor = 1.00;
 
             Init();
 
+            Report.Log(ReportLevel.Info, "Invoke action", "Invoking Restore() on item 'MainForm'.", repo.MainForm.SelfInfo, new RecordItemIndex(0));
+            repo.MainForm.Self.Restore();
+            Delay.Milliseconds(0);
+            
         }
 
 #region Image Feature Data

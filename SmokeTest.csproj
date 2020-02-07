@@ -509,6 +509,9 @@
     <Compile Include="Modules\SendDocumentViaEmail.cs">
       <id>4b7d6b73-f432-4a30-82a7-fc7f72845358</id>
     </Compile>
+    <Compile Include="Modules\shareFileBetween2FM.cs">
+      <id>6b3a02cd-aeb1-4c06-bc11-476acf83ac26</id>
+    </Compile>
     <Compile Include="Modules\startApp.cs">
       <id>933c19c6-cae7-4701-96a8-30f93cab68e2</id>
     </Compile>

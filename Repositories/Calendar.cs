@@ -333,6 +333,8 @@ namespace SmokeTest.Repositories
             RepoItemInfo _tblcalendarInfo;
             RepoItemInfo _txtlabelInfo;
             RepoItemInfo _btncalendarnewInfo;
+            RepoItemInfo _imgprevweekInfo;
+            RepoItemInfo _imgnextweekInfo;
 
             /// <summary>
             /// Creates a new MainForm  folder.
@@ -351,6 +353,8 @@ namespace SmokeTest.Repositories
                 _tblcalendarInfo = new RepoItemInfo(this, "tblCalendar", "?/?/form[@controlname='CalendarIndexForm']/container[@controlname='pnlBase']//container[@controlname='pnlLists']/?/?/table[@accessiblename='Band 0']", 30000, true, "88778537-3f3f-4b07-b56a-8181e153a75c");
                 _txtlabelInfo = new RepoItemInfo(this, "txtLabel", "?/?/form[@controlname='CalendarIndexForm']/container[@controlname='menubar_Fill_Panel']/?/?/text[@accessiblename=$listselection]", 30000, null, "64af5f5c-65d7-4e12-85e4-0972b06f9ba3");
                 _btncalendarnewInfo = new RepoItemInfo(this, "btnCalendarNew", "?/?/tree[@accessiblerole='Outline']/button[@accessiblename='Calendar']", 30000, null, "53e932d5-271a-4c82-97fd-6d1d6ef83398");
+                _imgprevweekInfo = new RepoItemInfo(this, "imgPrevWeek", "?/?/form[@controlname='CalendarIndexForm']/container[@controlname='menubar_Fill_Panel']/?/?/container[@controlname='dnWeekView']/?/?/picture[@controlname='picPrev']", 30000, null, "156e2415-30f9-47cc-906e-270be38006bd");
+                _imgnextweekInfo = new RepoItemInfo(this, "imgNextWeek", "?/?/form[@controlname='CalendarIndexForm']/container[@controlname='menubar_Fill_Panel']/?/?/container[@controlname='dnWeekView']/?/?/picture[@controlname='picNext']", 30000, null, "62f4cfb0-96b0-4cc5-9aad-3e7ec1180248");
             }
 
             /// <summary>
@@ -601,6 +605,54 @@ namespace SmokeTest.Repositories
                 get
                 {
                     return _btncalendarnewInfo;
+                }
+            }
+
+            /// <summary>
+            /// The imgPrevWeek item.
+            /// </summary>
+            [RepositoryItem("156e2415-30f9-47cc-906e-270be38006bd")]
+            public virtual Ranorex.Picture imgPrevWeek
+            {
+                get
+                {
+                    return _imgprevweekInfo.CreateAdapter<Ranorex.Picture>(true);
+                }
+            }
+
+            /// <summary>
+            /// The imgPrevWeek item info.
+            /// </summary>
+            [RepositoryItemInfo("156e2415-30f9-47cc-906e-270be38006bd")]
+            public virtual RepoItemInfo imgPrevWeekInfo
+            {
+                get
+                {
+                    return _imgprevweekInfo;
+                }
+            }
+
+            /// <summary>
+            /// The imgNextWeek item.
+            /// </summary>
+            [RepositoryItem("62f4cfb0-96b0-4cc5-9aad-3e7ec1180248")]
+            public virtual Ranorex.Picture imgNextWeek
+            {
+                get
+                {
+                    return _imgnextweekInfo.CreateAdapter<Ranorex.Picture>(true);
+                }
+            }
+
+            /// <summary>
+            /// The imgNextWeek item info.
+            /// </summary>
+            [RepositoryItemInfo("62f4cfb0-96b0-4cc5-9aad-3e7ec1180248")]
+            public virtual RepoItemInfo imgNextWeekInfo
+            {
+                get
+                {
+                    return _imgnextweekInfo;
                 }
             }
 

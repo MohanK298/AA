@@ -25,6 +25,26 @@ mode="Global">
 	<variables>
 	</variables>
 	<recorditems>
+		<invokeactionrecorditem
+		action="Restore"
+		enabled="True"
+		optional="False"
+		searchpropertyid="125be30a-cf3e-4017-b528-685c1f70b600">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="60363a32-d8b4-4df5-a972-7f0acde8cc56"
+			sourcename="ItemRecorderEditor">
+				<path>
+					/form[@controlname='MainForm']
+				</path>
+			</info>
+			<arguments
+			id="81f46ef0-4a40-47cd-b2db-a997fb067cb4">
+			</arguments>
+		</invokeactionrecorditem>
 	</recorditems>
 	<repository
 	id="9c89a729-e777-4e94-9be0-cbfad7b43c03"

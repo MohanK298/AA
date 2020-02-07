@@ -35,6 +35,7 @@ namespace SmokeTest.Repositories.Premium
         PreferencesFolders.TimePreferencesFormAppFolder _timepreferencesform;
         PreferencesFolders.DropDownFormAppFolder _dropdownform;
         PreferencesFolders.OutlookPreferenceFormAppFolder _outlookpreferenceform;
+        RepoItemInfo _txtstatusbarInfo;
 
         /// <summary>
         /// Gets the singleton class instance representing the Preferences element repository.
@@ -59,6 +60,7 @@ namespace SmokeTest.Repositories.Premium
             _timepreferencesform = new PreferencesFolders.TimePreferencesFormAppFolder(this);
             _dropdownform = new PreferencesFolders.DropDownFormAppFolder(this);
             _outlookpreferenceform = new PreferencesFolders.OutlookPreferenceFormAppFolder(this);
+            _txtstatusbarInfo = new RepoItemInfo(this, "txtStatusBar", "/form[@controlname='MainForm']/?/?/text[@accessiblename>$loginuser]", 30000, null, "b3d12918-7366-40c2-a7c7-c2ed51766be2");
         }
 
 #region Variables
@@ -75,6 +77,18 @@ namespace SmokeTest.Repositories.Premium
             set { _activityname = value; }
         }
 
+        string _loginuser = "";
+
+        /// <summary>
+        /// Gets or sets the value of variable loginuser.
+        /// </summary>
+        [TestVariable("52f1fc1c-e481-4595-b82d-587703fa07aa")]
+        public string loginuser
+        {
+            get { return _loginuser; }
+            set { _loginuser = value; }
+        }
+
 #endregion
 
         /// <summary>
@@ -86,6 +100,30 @@ namespace SmokeTest.Repositories.Premium
             get
             {
                 return _selfInfo;
+            }
+        }
+
+        /// <summary>
+        /// The txtStatusBar item.
+        /// </summary>
+        [RepositoryItem("b3d12918-7366-40c2-a7c7-c2ed51766be2")]
+        public virtual Ranorex.Text txtStatusBar
+        {
+            get
+            {
+                 return _txtstatusbarInfo.CreateAdapter<Ranorex.Text>(true);
+            }
+        }
+
+        /// <summary>
+        /// The txtStatusBar item info.
+        /// </summary>
+        [RepositoryItemInfo("b3d12918-7366-40c2-a7c7-c2ed51766be2")]
+        public virtual RepoItemInfo txtStatusBarInfo
+        {
+            get
+            {
+                return _txtstatusbarInfo;
             }
         }
 
@@ -199,12 +237,13 @@ namespace SmokeTest.Repositories.Premium
             RepoItemInfo _navigationpaneInfo;
             RepoItemInfo _statusbarInfo;
             RepoItemInfo _viewInfo;
+            RepoItemInfo _sbmainformInfo;
 
             /// <summary>
             /// Creates a new MainForm  folder.
             /// </summary>
             public MainFormAppFolder(RepoGenBaseFolder parentFolder) :
-                    base("MainForm", "/form[@controlname='MainForm']", parentFolder, 5000, null, true, "b9a82f60-19c0-4379-9e4c-c1c2e71f4bb6", "")
+                    base("MainForm", "/form[@controlname='MainForm']", parentFolder, 5000, null, false, "b9a82f60-19c0-4379-9e4c-c1c2e71f4bb6", "")
             {
                 _preferencesform = new PreferencesFolders.PreferencesFormFolder(this);
                 _preferencesform1Info = new RepoItemInfo(this, "PreferencesForm1", "?/?/form[@controlname='PreferencesForm']/container[@controlname='roundedPanelControl']/container[@controlname='panelScroll']", 30000, null, "8d684eba-a662-47cc-8a75-81babbd90865");
@@ -231,6 +270,7 @@ namespace SmokeTest.Repositories.Premium
                 _navigationpaneInfo = new RepoItemInfo(this, "NavigationPane", "element[@controlname='_BaseModuleForm_Toolbars_Dock_Area_Top']//menuitem[@accessiblename='View']/menuitem[@accessiblename='Navigation Pane']", 30000, null, "6e09193c-1af5-4f69-b7e2-8c54edd53b19");
                 _statusbarInfo = new RepoItemInfo(this, "StatusBar", "element[@controlname='_BaseModuleForm_Toolbars_Dock_Area_Top']//menuitem[@accessiblename='View']/menuitem[@accessiblename='Status Bar']", 30000, null, "14331ed2-74ac-435d-8469-42c7c6a98f0a");
                 _viewInfo = new RepoItemInfo(this, "View", "element[@controlname='_BaseModuleForm_Toolbars_Dock_Area_Top']//menuitem[@accessiblename='View']", 30000, null, "659fa57b-9823-4117-99ed-0b10775385c1");
+                _sbmainformInfo = new RepoItemInfo(this, "SbMainform", "statusbar[@controlname='sbMainform']", 30000, null, "121d8862-2f22-4bad-91a9-650e718907dc");
             }
 
             /// <summary>
@@ -830,6 +870,30 @@ namespace SmokeTest.Repositories.Premium
                 get
                 {
                     return _viewInfo;
+                }
+            }
+
+            /// <summary>
+            /// The SbMainform item.
+            /// </summary>
+            [RepositoryItem("121d8862-2f22-4bad-91a9-650e718907dc")]
+            public virtual Ranorex.StatusBar SbMainform
+            {
+                get
+                {
+                    return _sbmainformInfo.CreateAdapter<Ranorex.StatusBar>(true);
+                }
+            }
+
+            /// <summary>
+            /// The SbMainform item info.
+            /// </summary>
+            [RepositoryItemInfo("121d8862-2f22-4bad-91a9-650e718907dc")]
+            public virtual RepoItemInfo SbMainformInfo
+            {
+                get
+                {
+                    return _sbmainformInfo;
                 }
             }
 

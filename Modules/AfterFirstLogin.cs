@@ -74,6 +74,7 @@ namespace SmokeTest.Modules
         		str.AnnouncementForm.Self.Activate();
         		str.AnnouncementForm.SelfInfo.WaitForExists(customWaitTime);
         		str.AnnouncementForm.ToolbarToolbarBaseDesigner1.btnOKInfo.WaitForExists(customWaitTime);
+        		str.AnnouncementForm.AmicusCheckBox1.Check();
         		str.AnnouncementForm.ToolbarToolbarBaseDesigner1.btnOK.Click();
         	} catch (Exception) {
         		

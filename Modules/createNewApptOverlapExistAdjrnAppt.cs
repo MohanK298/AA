@@ -94,6 +94,12 @@ namespace SmokeTest.Modules
         	//cmn.VerifyDataExistsInTable(calendar.MainForm.tblCalendar,new_Data,"Calendar List");
 			calendar.MainForm.Toolbar.btnWeek.Click();
         	Delay.Seconds(2);
+        	
+        	if(System.DateTime.Now.ToString("ddd").Equals("Mon"))
+        	{
+        		calendar.MainForm.imgPrevWeek.Click();
+        	}
+        	
 			calendar.MainForm.PnlViews.shrtDay.Click();
 			Delay.Seconds(3);
 			calendar.appmtData1=data;
@@ -113,7 +119,7 @@ namespace SmokeTest.Modules
         	adj_data+="[Adjourned to "+System.DateTime.Now.AddDays(1).ToString("MMM dd, yyyy")+"] "+data;
         	
         	//cmn.VerifyDataExistsInTable(calendar.MainForm.tblCalendar,adj_data,"Calendar List");
-        	Delay.Seconds(10);
+        	Delay.Seconds(5);
         	calendar.MainForm.btnCalendar.Click();
         	calendar.MainForm.btnNewAppointment.Click();
         	Delay.Seconds(1);
@@ -125,7 +131,7 @@ namespace SmokeTest.Modules
         	Delay.Seconds(3);
         	AppointmentOverlapPrompt();
         	ValidateEventRemainderPopup();
-        	Delay.Seconds(10);
+        	Delay.Seconds(5);
         	//cmn.SelectItemFromTableDblClick(calendar.MainForm.tblCalendar,data+"_2","Calendar List");
         	
         	Delay.Seconds(2);
@@ -140,7 +146,10 @@ namespace SmokeTest.Modules
         	Validate.Attribute(calendar.PromptForm.txtMsgInfo,"Text","There are currently no conflicts for the scheduling of this Appointment.","No Scheduling Conflict Message");
         	calendar.PromptForm.btnOK.Click();
         	calendar.EventDetailForm.btnCancel.Click();
-        	
+        	if(System.DateTime.Now.ToString("ddd").Equals("Mon"))
+        	{
+        		calendar.MainForm.imgNextWeek.Click();
+        	}
         	
 		}
         void ITestModule.Run()

@@ -15,6 +15,7 @@ using System.Drawing;
 using System.Threading;
 using WinForms = System.Windows.Forms;
 using SmokeTest.Repositories;
+using SmokeTest.Repositories.Premium;
 using Ranorex;
 using Ranorex.Core;
 using Ranorex.Core.Testing;
@@ -36,6 +37,8 @@ namespace SmokeTest.Modules.Utilities
         /// within a user code collection.
         /// </summary>
         Documents doc=Documents.Instance;
+        Preferences pref=Preferences.Instance;
+        SmokeTestRepository str = SmokeTestRepository.Instance;
         [UserCodeMethod]
         public static string CreateLocalTextFile(string fileName)
         {
@@ -531,5 +534,62 @@ namespace SmokeTest.Modules.Utilities
         	}
         	return data;
         }
+		private void CloseAnnoncementForm()
+        {
+        	if(str.AnnouncementForm.SelfInfo.Exists(3000))
+        	{
+        		str.AnnouncementForm.Self.Activate();
+        		str.AnnouncementForm.SelfInfo.WaitForExists(3000);
+        		str.AnnouncementForm.ToolbarToolbarBaseDesigner1.btnOKInfo.WaitForExists(3000);
+        		
+        		
+        		
+        			str.AnnouncementForm.AmicusCheckBox1.Check();   	
+        			str.AnnouncementForm.ToolbarToolbarBaseDesigner1.btnOK.Click();
+        		   }
+        		
+        	
+        }
+        public void switchUser(string user)
+        {
+        	string currentuser="Logged in as "+user;
+        	pref.loginuser=currentuser;
+        	CloseAnnoncementForm();
+        	if(pref.MainForm.SbMainform.Visible==true && pref.txtStatusBar.TextValue.Contains(currentuser))
+        	{
+        		Report.Info(pref.txtStatusBar.TextValue);
+        		if(pref.txtStatusBarInfo.Exists(3000))
+        		   {
+        			
+        			//pref.MainForm.Self.EnsureVisible();
+        			pref.txtStatusBar.EnsureVisible();
+        			pref.txtStatusBar.Focus();
+        			pref.txtStatusBar.Parent.Focus();
+        		   	Report.Info(string.Format("Application switched to Login User 1- {0}",user));
+        		   }
+
+        	}
+        	else
+        	{
+				pref.MainForm.OfficeModule.Click();
+        		pref.MainForm.View.Click();
+				Delay.Seconds(2);
+				pref.MainForm.StatusBar.Click();
+				Delay.Seconds(2);
+				Report.Info(pref.txtStatusBar.TextValue);
+				if(pref.txtStatusBarInfo.Exists(3000))
+        		{
+				   	//pref.MainForm.Self.Activate();
+			//	   	pref.MainForm.Self.EnsureVisible();
+				   	pref.txtStatusBar.EnsureVisible();
+				   	pref.txtStatusBar.Focus();
+				   	pref.txtStatusBar.Parent.Focus();
+					Report.Info(string.Format("Application switched to Login User 2- {0}",user));
+		     	}
+        	}
+			
+        }
+        
     }
 }
+

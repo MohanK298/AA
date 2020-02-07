@@ -524,6 +524,26 @@ AAAAADmCBQAAAJAjWAAAAAA5ggUAAAAQMwz/B/Pa+j2m8Yn1AAAAAElFTkSuQmCC
 			searchtimeout="30000ms">
 				/form[@controlname='MainForm']/?/?/tree[@accessiblerole='Outline']/button[@accessiblename='Calendar']
 			</item>
+			<item
+			addcaps="picture,control,nativewindow"
+			capname="picture"
+			id="156e2415-30f9-47cc-906e-270be38006bd"
+			name="imgPrevWeek"
+			refimgid="e92bc166-a2a6-4ce3-99d1-9c0a6acfd60d"
+			refpath="/form[@controlname='MainForm']/element[@controltypename='MdiClient']/form[@controlname='CalendarIndexForm']/container[@controlname='menubar_Fill_Panel']/element[@controlname='_BaseForm_Fill_Panel_Toolbars_Dock_Area_Top']/container[@controlname='dnWeekView']/container[@controlname='pnlControls']/picture[@controlname='picPrev']"
+			searchtimeout="30000ms">
+				/form[@controlname='MainForm']/?/?/form[@controlname='CalendarIndexForm']/container[@controlname='menubar_Fill_Panel']/?/?/container[@controlname='dnWeekView']/?/?/picture[@controlname='picPrev']
+			</item>
+			<item
+			addcaps="picture,control,nativewindow"
+			capname="picture"
+			id="62f4cfb0-96b0-4cc5-9aad-3e7ec1180248"
+			name="imgNextWeek"
+			refimgid="775b7900-e9d2-455e-86eb-e55df7975c89"
+			refpath="/form[@controlname='MainForm']/element[@controltypename='MdiClient']/form[@controlname='CalendarIndexForm']/container[@controlname='menubar_Fill_Panel']/element[@controlname='_BaseForm_Fill_Panel_Toolbars_Dock_Area_Top']/container[@controlname='dnWeekView']/container[@controlname='pnlControls']/picture[@controlname='picNext']"
+			searchtimeout="30000ms">
+				/form[@controlname='MainForm']/?/?/form[@controlname='CalendarIndexForm']/container[@controlname='menubar_Fill_Panel']/?/?/container[@controlname='dnWeekView']/?/?/picture[@controlname='picNext']
+			</item>
 			<basepath>
 				/form[@controlname='MainForm']
 			</basepath>

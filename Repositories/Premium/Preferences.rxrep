@@ -22,7 +22,7 @@ rxversion="9.0">
 		refimgid="f9534d55-4b80-4492-ac4e-1bc802341a26"
 		refpath="/form[@controlname='MainForm']"
 		searchtimeout="5000ms"
-		usecache="True">
+		usecache="False">
 			<item
 			capname="container"
 			id="8d684eba-a662-47cc-8a75-81babbd90865"
@@ -502,6 +502,16 @@ rxversion="9.0">
 			refpath="/form[@controlname='MainForm']/element[@controlname='_BaseModuleForm_Toolbars_Dock_Area_Top']/container[@accessiblename='DockTop']/menubar[@accessiblename='Toolbar']/menuitem[@accessiblename='View']"
 			searchtimeout="30000ms">
 				/form[@controlname='MainForm']/element[@controlname='_BaseModuleForm_Toolbars_Dock_Area_Top']//menuitem[@accessiblename='View']
+			</item>
+			<item
+			addcaps="statusbar,control,nativewindow"
+			capname="statusbar"
+			id="121d8862-2f22-4bad-91a9-650e718907dc"
+			name="SbMainform"
+			refimgid="0ee79701-916f-4457-aded-f89f841a0cf9"
+			refpath="/form[@controlname='MainForm']/statusbar[@controlname='sbMainform']"
+			searchtimeout="30000ms">
+				/form[@controlname='MainForm']/statusbar[@controlname='sbMainform']
 			</item>
 			<basepath>
 				/form[@controlname='MainForm']
@@ -1004,6 +1014,15 @@ QmCC
 				/form[@controlname='OutlookPreferencesForm']
 			</basepath>
 		</appfolder>
+		<item
+		addcaps="text,accessible"
+		capname="text"
+		id="b3d12918-7366-40c2-a7c7-c2ed51766be2"
+		name="txtStatusBar"
+		refimgid="14fd128b-8543-4799-b043-de6ca4cc211c"
+		searchtimeout="30000ms">
+			/form[@controlname='MainForm']/?/?/text[@accessiblename&gt;$loginuser]
+		</item>
 		<basepath>
 		</basepath>
 	</rootfolder>
@@ -1011,6 +1030,10 @@ QmCC
 		<var
 		id="34ebd2d6-43a7-4893-9f8a-bd7e3ab5da27"
 		name="activityname">
+		</var>
+		<var
+		id="52f1fc1c-e481-4595-b82d-587703fa07aa"
+		name="loginuser">
 		</var>
 	</variables>
 </repository>

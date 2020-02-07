@@ -14,6 +14,7 @@ using System.Drawing;
 using System.Threading;
 using WinForms = System.Windows.Forms;
 using SmokeTest.Repositories;
+using SmokeTest.Repositories.Premium;
 using SmokeTest.Modules.Utilities;
 using Ranorex;
 using Ranorex.Core;
@@ -36,6 +37,9 @@ namespace SmokeTest.Modules
         }
 
         Login login=Login.Instance;
+        Common cmn=new Common();
+        Preferences pref=Preferences.Instance;
+        SmokeTestRepository str = SmokeTestRepository.Instance;
         /// <summary>
         /// Performs the playback of actions in this module.
         /// </summary>
@@ -47,6 +51,24 @@ namespace SmokeTest.Modules
         {
         	Host.Local.RunApplication("C:\\Amicus\\Amicus Attorney Workstation\\AmicusAttorney.XWin.exe");
         }
+        
+        private void CloseAnnoncementForm()
+        {
+        	if(str.AnnouncementForm.SelfInfo.Exists(3000))
+        	{
+        		str.AnnouncementForm.Self.Activate();
+        		str.AnnouncementForm.SelfInfo.WaitForExists(3000);
+        		str.AnnouncementForm.ToolbarToolbarBaseDesigner1.btnOKInfo.WaitForExists(3000);
+        		
+        		
+        		
+        			str.AnnouncementForm.AmicusCheckBox1.Check();   	
+        			str.AnnouncementForm.ToolbarToolbarBaseDesigner1.btnOK.Click();
+        		   }
+        		
+        	
+        }
+        
         private void EnterCredentials()
         {
         	login.SelfInfo.WaitForExists(10000);
@@ -55,7 +77,21 @@ namespace SmokeTest.Modules
         	login.LoginForm.Pwd.TextValue="password";
         	login.LoginForm.ServerName.TextValue="J4-Mohanss";
         	login.LoginForm.btnLogin.Click();
+        	str.MainForm.SelfInfo.WaitForExists(10000);
+        	CloseAnnoncementForm();
+        	if(pref.MainForm.SbMainform.Visible.Equals(false))
+        	{pref.MainForm.OfficeModule.Click();
+    		pref.MainForm.View.Click();
+			Delay.Seconds(2);
+			pref.MainForm.StatusBar.Click();
+			Delay.Seconds(2);}
+        	cmn.switchUser("MKumar 298");
+        	
         }
+
+        
+			
+			
         void ITestModule.Run()
         {
             Mouse.DefaultMoveTime = 300;
@@ -63,6 +99,8 @@ namespace SmokeTest.Modules
             Delay.SpeedFactor = 1.0;
             OpenApp();
             EnterCredentials();
+            //cmn.switchUser("MKumar 298");
+
         }
     }
 }

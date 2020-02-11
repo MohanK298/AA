@@ -1,18 +1,10 @@
 ﻿<Properties>
   <Array name="active">
-    <Element value="Modules\Utilities\Common.cs" />
+    <Element value="SmokeTest.rxtst" />
   </Array>
-  <Array name="bookmarks">
-    <Element value="Breakpoint|C:\Users\kumar\Downloads\AA\Modules\startApp.cs|107|1|True|Break||" />
-  </Array>
+  <Array name="bookmarks" />
   <Array name="files">
     <Element value="SmokeTest.rxtst" />
-    <Element value="Modules\shareFileBetween2FM.cs" />
-    <Element value="Repositories\Files.rxrep" />
-    <Element value="Modules\Attorney_FileDetails\AddEvent.cs" />
-    <Element value="Repositories\Files.cs" />
-    <Element value="Modules\startApp.cs" />
-    <Element value="Modules\Utilities\Common.cs" />
   </Array>
   <Properties name="projectSavedData">
     <Properties name="customTool">

@@ -38,6 +38,8 @@ namespace SmokeTest.Modules.Attorney_FileDetails
         
         public void Action()
         {
+        	file.MainForm.Self.Activate();
+        	Delay.Seconds(2);
         	file.MainForm.FilesIndexForm.listFirstFile.DoubleClick();
         	Delay.Seconds(2);
         	file.FileDetailForm.Events.Click();

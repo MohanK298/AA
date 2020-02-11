@@ -74,7 +74,7 @@ namespace SmokeTest.Repositories.Premium
         void ITestModule.Run()
         {
             Mouse.DefaultMoveTime = 300;
-            Keyboard.DefaultKeyPressTime = 20;
+            Keyboard.DefaultKeyPressTime = 100;
             Delay.SpeedFactor = 1.00;
 
             Init();
@@ -117,11 +117,11 @@ namespace SmokeTest.Repositories.Premium
             
             Report.Log(ReportLevel.Info, "Keyboard", "Key 'A' Press with focus on 'TrustDetailBaseForm.AtxtAmount'.", repo.TrustDetailBaseForm.AtxtAmountInfo, new RecordItemIndex(8));
             Keyboard.PrepareFocus(repo.TrustDetailBaseForm.AtxtAmount);
-            Keyboard.Press(System.Windows.Forms.Keys.A, 30, 100, 1, true);
+            Keyboard.Press(System.Windows.Forms.Keys.A, 30, Keyboard.DefaultKeyPressTime, 1, true);
             Delay.Milliseconds(0);
             
             Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '35' with focus on 'TrustDetailBaseForm.AtxtAmount'.", repo.TrustDetailBaseForm.AtxtAmountInfo, new RecordItemIndex(9));
-            repo.TrustDetailBaseForm.AtxtAmount.PressKeys("35", 100);
+            repo.TrustDetailBaseForm.AtxtAmount.PressKeys("35");
             Delay.Milliseconds(0);
             
             Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'TrustDetailBaseForm.ButtonToolbarToolbarBaseDesignerToo1' at 32;18.", repo.TrustDetailBaseForm.ButtonToolbarToolbarBaseDesignerToo1Info, new RecordItemIndex(10));

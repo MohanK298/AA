@@ -62,7 +62,8 @@ namespace SmokeTest.Modules.Attorney_FileDetails
 			file.DocumentDetail.PnlBase.EnterURL.PressKeys("C:\\Qiao\\DataFiles");
 			Delay.Seconds(1);
         	file.DocumentDetail.summaryTxt.PressKeys("Folder Adding Test");
-        	file.DocumentDetail.btnOK.Click();  
+        	file.DocumentDetail.btnOK.Click();
+			Delay.Seconds(2);        	
         	file.FileDetailForm.AddedFolder.Click();
         	Validate.Exists(file.FileDetailForm.FolderView);
         	//Validate.Exists(file.FileDetailForm.AllDoc);

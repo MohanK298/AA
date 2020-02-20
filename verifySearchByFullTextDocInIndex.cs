@@ -66,6 +66,7 @@ namespace SmokeTest
 		string fileName=String.Format("RanorexTestFile {0}",rndData);
         private void GenerateDocument()
         {
+        	localFileName=cmn.createLocalFile(rndData);
         	Delay.Seconds(2);
         	doc.MainForm.Self.Activate();
         	doc.MainForm.btnDocuments.Click();
@@ -79,7 +80,7 @@ namespace SmokeTest
         private void FillDocument()
         {
 
-        	localFileName=cmn.createLocalFile(rndData);
+        	
         	doc.DocumentDetail.Self.Activate();
         	doc.DocumentDetail.PnlBase.txtDocumentTitle.PressKeys(fileName);
         	doc.DocumentDetail.PnlBase.fileLocationPathText.Element.SetAttributeValue("Text", localFileName);

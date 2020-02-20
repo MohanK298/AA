@@ -66,6 +66,7 @@ namespace SmokeTest
         }
 		private void GenerateDocument()
         {
+			localFileName=cmn.createLocalFile();
         	doc.MainForm.Self.Activate();
         	doc.MainForm.btnDocuments.Click();
         	Delay.Seconds(2);
@@ -77,7 +78,7 @@ namespace SmokeTest
 		
         private void FillDocument()
         {
-        	localFileName=cmn.createLocalFile();
+        	
         	doc.DocumentDetail.Self.Activate();
         	doc.DocumentDetail.PnlBase.txtDocumentTitle.PressKeys(fileName);
         	doc.DocumentDetail.PnlBase.fileLocationPathText.Element.SetAttributeValue("Text", localFileName);

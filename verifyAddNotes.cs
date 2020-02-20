@@ -49,6 +49,7 @@ namespace SmokeTest
 		string fileName=String.Format("RanorexTestFile {0}",rndData);
         private void GenerateDocument()
         {
+        	localFileName=cmn.createLocalFile();
         	doc.MainForm.Self.Activate();
         	Keyboard.Press(System.Windows.Forms.Keys.X | System.Windows.Forms.Keys.Shift | System.Windows.Forms.Keys.Control, Keyboard.DefaultScanCode, Keyboard.DefaultKeyPressTime, 1, true);
         	Keyboard.Press(System.Windows.Forms.Keys.N | System.Windows.Forms.Keys.Control, Keyboard.DefaultScanCode, Keyboard.DefaultKeyPressTime, 1, true);
@@ -58,7 +59,7 @@ namespace SmokeTest
         private void FillDocument()
         {
 
-        	localFileName=cmn.createLocalFile();
+        	
         	doc.DocumentDetail.Self.Activate();
         	doc.DocumentDetail.PnlBase.txtDocumentTitle.PressKeys(fileName);
         	doc.DocumentDetail.PnlBase.fileLocationPathText.Element.SetAttributeValue("Text", localFileName);

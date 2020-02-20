@@ -37,6 +37,12 @@ namespace SmokeTest.Modules
         }
 
         public void Action(){
+        	
+        	string localFileName="";// = @"C:\Qiao\RanorexTestFile.txt";
+        	localFileName=cmn.createLocalFile();
+        	
+        	file.MainForm.Self.Activate();
+        	Delay.Seconds(2);
         	file.MainForm.FilesIndexForm.listFirstFile.DoubleClick();
         	Delay.Seconds(2);
         	file.FileDetailForm.Documents.Click();
@@ -45,9 +51,9 @@ namespace SmokeTest.Modules
         	Delay.Seconds(1);
         	file.FileDetailForm.btnNewDoc.Click();
         	Delay.Seconds(1);
-        	string localFileName="";// = @"C:\Qiao\RanorexTestFile.txt";
-        	localFileName=cmn.createLocalFile();
+        	
         	//file.DocumentDetail.pnlBase.txtDocumentTitle.PressKeys(documentTitle + time);
+        	
         	file.DocumentDetail.PnlBase.txtDocumentTitle.PressKeys("Add Document Test");
 //        	file.DocumentDetail.PnlBase.ButtonEditorDropdownButton.Click();
 //        	Delay.Seconds(1);

@@ -605,6 +605,7 @@ module]]>
 			name="AddStatusReport">
 			</smartfoldernode>
 			<testmodule
+			enabled="False"
 			id="35a91732-6776-449f-a54f-465cd066536c"
 			name="CheckCache"
 			ref="ccaf2aa4-5385-4d93-bf01-8068b00a91b5"
@@ -1204,6 +1205,7 @@ which will be used throughout the Smoke Test]]>
 			name="CreatenDeleteMasterAdjrnAppt_All">
 			</smartfoldernode>
 			<testmodule
+			enabled="False"
 			id="6b18d245-7d04-48f8-b6be-41041e111f0f"
 			name="AddDocumentAM"
 			ref="6261295e-cdab-4332-bf04-9a6fe398cb07"

@@ -65,6 +65,7 @@ namespace SmokeTest.Modules
         	cmn.SelectItemFromTableDblClick(te.MainForm.tblTimeEntry,fileName+time,"Time Expense Table");
         	//te.MainForm.listFirstTimeExpenseFile.DoubleClick();
         	te.ExpenseXtraDetailsForm.btnDelete.Click();
+        	Delay.Seconds(2);
         	te.PromptForm.btnYes.Click();
         }
         

@@ -179,7 +179,10 @@ namespace SmokeTest.Modules
 	        	localFileName=cmn.createLocalFile();
 	        	doc.DocumentDetail.Self.Activate();
 	        	doc.DocumentDetail.PnlBase.txtDocumentTitle.PressKeys(fileName);
-	        	doc.DocumentDetail.PnlBase.fileLocationPathText.Element.SetAttributeValue("Text", localFileName);
+	        	//doc.DocumentDetail.PnlBase.fileLocationPathText.Element.SetAttributeValue("Text", localFileName);
+	        	doc.DocumentDetail.PnlBase.btnLocation.Click();
+        		doc.Open.txtFilePath.Element.SetAttributeValue("Text", localFileName);
+        		doc.Open.btnOpen.Click();
 	        	doc.DocumentDetail.MenubarFillPanel.txtDocumentSummary.PressKeys(curdata);
 	        	doc.DocumentDetail.PnlBase.btnFilesAndPeople.Click();
 	        	doc.DocumentDetail.PnlBase.btnAddFile.Click();

@@ -65,6 +65,7 @@ namespace SmokeTest.Modules
             //Verify if note has been edited
             note.MainForm.listNoteOne.DoubleClick();
             Report.Success("Edit Note passed");
+            Delay.Seconds(2);
             note.NoteDetail.MenubarFillPanel.btnOK.Click();
         }
         

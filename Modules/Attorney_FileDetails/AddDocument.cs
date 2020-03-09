@@ -68,7 +68,10 @@ namespace SmokeTest.Modules.Attorney_FileDetails
         	string localFileName="";// = @"C:\Qiao\RanorexTestFile.txt";
         	localFileName=cmn.createLocalFile();
         	document.DocumentDetail.PnlBase.txtDocumentTitle.PressKeys("Add Document Test");
-        	document.DocumentDetail.PnlBase.fileLocationPathText.Element.SetAttributeValue("Text", localFileName);
+        	//document.DocumentDetail.PnlBase.fileLocationPathText.Element.SetAttributeValue("Text", localFileName);
+        	document.DocumentDetail.PnlBase.btnLocation.Click();
+        	document.Open.txtFilePath.Element.SetAttributeValue("Text", localFileName);
+        	document.Open.btnOpen.Click();
         	document.DocumentDetail.MenubarFillPanel.txtDocumentSummary.PressKeys("Document Adding Test");
         	document.DocumentDetail.PnlBase.btnFilesAndPeople.Click();
         	

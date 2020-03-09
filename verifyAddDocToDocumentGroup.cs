@@ -49,7 +49,8 @@ namespace SmokeTest
 		string fileName=String.Format("RanorexTestFile {0}",rndData);
         private void GenerateDocument()
         {
-        	localFileName=cmn.createLocalFile();
+        	//localFileName=cmn.createLocalFile();
+        	localFileName="C:\\Qiao\\DataFiles\\5.txt";
         	doc.MainForm.Self.Activate();
         	Keyboard.Press(System.Windows.Forms.Keys.X | System.Windows.Forms.Keys.Shift | System.Windows.Forms.Keys.Control, Keyboard.DefaultScanCode, Keyboard.DefaultKeyPressTime, 1, true);
         	Keyboard.Press(System.Windows.Forms.Keys.N | System.Windows.Forms.Keys.Control, Keyboard.DefaultScanCode, Keyboard.DefaultKeyPressTime, 1, true);
@@ -62,7 +63,10 @@ namespace SmokeTest
         	
         	doc.DocumentDetail.Self.Activate();
         	doc.DocumentDetail.PnlBase.txtDocumentTitle.PressKeys(fileName);
-        	doc.DocumentDetail.PnlBase.fileLocationPathText.Element.SetAttributeValue("Text", localFileName);
+        	//doc.DocumentDetail.PnlBase.fileLocationPathText.Element.SetAttributeValue("Text", localFileName);
+        	doc.DocumentDetail.PnlBase.btnLocation.Click();
+        	doc.Open.txtFilePath.Element.SetAttributeValue("Text", localFileName);
+        	doc.Open.btnOpen.Click();
         	doc.DocumentDetail.MenubarFillPanel.txtDocumentSummary.PressKeys(data);
         	doc.DocumentDetail.PnlBase.btnFilesAndPeople.Click();
         	doc.DocumentDetail.PnlBase.btnAddFile.Click();
@@ -76,7 +80,10 @@ namespace SmokeTest
         	string correspondingData="";
         	 GenerateDocument();
         	 FillDocument();
+        	 doc.MainForm.Self.Activate();
+        	 Delay.Seconds(2);
         	 cmn.SelectItemFromTableDblClick(doc.MainForm.DocumentsIndexForm.tblDocuments,fileName,"Documents Table");
+			 Delay.Seconds(2);
         	 doc.DocumentDetail.PnlBase.lnkDocumentGroups.Click();
         	 doc.DocumentDetail.PnlBase.btnAddDocGroups.Click();
         	 cmn.MultipleDocSelection(doc.SimpleDocSelectForm.Panel1.tblDocGroup,1);

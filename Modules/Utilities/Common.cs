@@ -72,18 +72,18 @@ namespace SmokeTest.Modules.Utilities
         [UserCodeMethod]
         public static void ClosePrompt()
         {
-        	
+        	string controlName="";
         	List<Element> all = (List<Element>)Host.Local.Find(new RxPath("/form"));
-			
 			foreach(Element e in all)
 			{
 				Form f = new Form(e);
+				controlName=f.GetAttributeValue<String>("ControlName");
 			//	Report.Info(f.Title);
 			//	Report.Info(f.FlavorName);
 			if(f.FlavorName.Equals("winforms"))
-				   if(f.Title!="Amicus Attorney")
+				if(f.Title!="Amicus Attorney" && controlName!="Main Form")
 				   {
-				Report.Info(String.Format("{0} Prompt/Dialog Closed",f.Title));
+						Report.Info(String.Format("{0} Prompt/Dialog Closed",controlName));
 				   	f.Close();
 				   }
 

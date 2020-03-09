@@ -34,7 +34,10 @@ namespace SmokeTest.Modules
         }
 
         public void DeleteTimeEntryWithData(){
+        	timeEntry.MainForm.Self.Activate();
+        	Delay.Seconds(4);
         	timeEntry.MainForm.listFirstPostedItem.DoubleClick();
+        	Delay.Seconds(2);
         	timeEntry.TimeEntryDetailsForm.MenubarFillPanel.btnDelete.Click();
         	timeEntry.PromptForm.btnYes.Click();
         	

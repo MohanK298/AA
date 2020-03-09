@@ -65,7 +65,10 @@ namespace SmokeTest.Modules
 //        	Delay.Seconds(1);
 //        	file.OpenFile.ViewWnd.Document.DoubleClick();   	
      		//file.OpenFolder.btnOK.Click();
-        	document.DocumentDetail.PnlBase.fileLocationPathText.Element.SetAttributeValue("Text", localFileName);
+        //	document.DocumentDetail.PnlBase.fileLocationPathText.Element.SetAttributeValue("Text", localFileName);
+        	document.DocumentDetail.PnlBase.btnLocation.Click();
+        	document.Open.txtFilePath.Element.SetAttributeValue("Text", localFileName);
+        	document.Open.btnOpen.Click();
         	document.DocumentDetail.MenubarFillPanel.txtDocumentSummary.PressKeys("Document Adding Test");
         	document.DocumentDetail.PnlBase.btnFilesAndPeople.Click();
         	

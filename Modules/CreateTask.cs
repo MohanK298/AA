@@ -83,6 +83,7 @@ namespace SmokeTest.Modules
         	//task.MainForm.listFirstTask.DoubleClick();
         	task.MainForm.listSecondTask.DoubleClick();
         	Report.Success("Create Task passed" + "Task Title: " + taskTitle + time);
+        	Delay.Seconds(2);
         	task.EventDetailForm.MenubarFillPanel.btnOK.Click();
         }
         /// <summary>

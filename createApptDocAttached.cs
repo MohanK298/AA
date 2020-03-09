@@ -112,6 +112,7 @@ namespace SmokeTest
         	calendar.EventDetailForm.PnlBase.txtEndTime.PressKeys(System.DateTime.Now.AddHours(1).ToShortTimeString());
         	calendar.EventDetailForm.PnlBase.DocumentsEMail.Click();
         	calendar.EventDetailForm.PnlBase.btnDoc.Click();
+        	Report.Info(localFileName);
         	calendar.FileSelectForm.listFirstFoundFile.DoubleClick();
         	cmn.SelectItemFromTableDblClick(calendar.DocumentSelectorForm.PnlBase.tbCurrSelection,fileName,"Document Selector Table");
         	calendar.EventDetailForm.btnOK.Click();
@@ -130,12 +131,20 @@ namespace SmokeTest
         	shrtFileName=localFileName.Substring(parentfolder.Length,(localFileName.Length-parentfolder.Length-4));
         	Delay.Seconds(3);
         	file.MainForm.btnFiles.Click();
+        	
+        	        	
+        	Delay.Seconds(2);
+        	cmn.SelectItemDropdown(file.MainForm.cmbbxFileStatus,"All","File Status");
+        	Delay.Seconds(1);
+        	
+        	
         	file.MainForm.FilesIndexForm.listFirstFile.DoubleClick();	
         	Delay.Seconds(2);
         	file.FileDetailForm.Documents.Click();
         	Delay.Seconds(2);
         	file.fileName=shrtFileName;
         	Delay.Seconds(2);
+      	
         	file.FileDetailForm.lstItemAmicusFile.DoubleClick();
         	file.DocumentDetail.PnlBase.lnkEvents.Click();
         	file.DocumentDetail.PnlBase.btnEventSelection.Click();

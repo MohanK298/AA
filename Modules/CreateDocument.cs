@@ -77,7 +77,10 @@ namespace SmokeTest.Modules
         	//Add data
         	document.DocumentDetail.PnlBase.txtDocumentTitle.PressKeys(documentTitle + time);
         	//document.DocumentDetail.PnlBase.txtDocumentTitle.PressKeys("Document Title");
-        	document.DocumentDetail.PnlBase.fileLocationPathText.Element.SetAttributeValue("Text", localFileName);
+        	//document.DocumentDetail.PnlBase.fileLocationPathText.Element.SetAttributeValue("Text", localFileName);
+        	document.DocumentDetail.PnlBase.btnLocation.Click();
+        	document.Open.txtFilePath.Element.SetAttributeValue("Text", localFileName);
+        	document.Open.btnOpen.Click();
         	
         	/**
         	document.DocumentDetail.PnlBase.btnLocation.Click();

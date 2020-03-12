@@ -264,15 +264,17 @@ namespace SmokeTest.Repositories
         {
             DocumentsFolders.DocumentsIndexFormFolder _documentsindexform;
             RepoItemInfo _btndocumentsInfo;
+            RepoItemInfo _cmbbxdoctypeInfo;
 
             /// <summary>
             /// Creates a new MainForm  folder.
             /// </summary>
             public MainFormAppFolder(RepoGenBaseFolder parentFolder) :
-                    base("MainForm", "/form[@controlname='MainForm']", parentFolder, 30000, null, true, "60363a32-d8b4-4df5-a972-7f0acde8cc56", "")
+                    base("MainForm", "/form[@controlname='MainForm']", parentFolder, 30000, null, false, "60363a32-d8b4-4df5-a972-7f0acde8cc56", "")
             {
                 _documentsindexform = new DocumentsFolders.DocumentsIndexFormFolder(this);
                 _btndocumentsInfo = new RepoItemInfo(this, "btnDocuments", "container[@controlname='pLeft']//tree[@accessiblerole='Outline']/button[@accessiblename='Documents']", 30000, null, "0257a548-bfb7-40fe-b6c4-5be1531df3ce");
+                _cmbbxdoctypeInfo = new RepoItemInfo(this, "cmbbxDocType", "container[@controlname='pLeft']//container[@controltypename='UltraExplorerBarContainerControl' and @instance='0']/?/?/container[@controlname='DocumentsIndexPanelControl']/?/?/combobox[@controlname='acmbDocType']", 30000, null, "10208f91-7150-49fb-a8d0-be12dc1105eb");
             }
 
             /// <summary>
@@ -320,6 +322,30 @@ namespace SmokeTest.Repositories
                 get
                 {
                     return _btndocumentsInfo;
+                }
+            }
+
+            /// <summary>
+            /// The cmbbxDocType item.
+            /// </summary>
+            [RepositoryItem("10208f91-7150-49fb-a8d0-be12dc1105eb")]
+            public virtual Ranorex.ComboBox cmbbxDocType
+            {
+                get
+                {
+                    return _cmbbxdoctypeInfo.CreateAdapter<Ranorex.ComboBox>(true);
+                }
+            }
+
+            /// <summary>
+            /// The cmbbxDocType item info.
+            /// </summary>
+            [RepositoryItemInfo("10208f91-7150-49fb-a8d0-be12dc1105eb")]
+            public virtual RepoItemInfo cmbbxDocTypeInfo
+            {
+                get
+                {
+                    return _cmbbxdoctypeInfo;
                 }
             }
 
@@ -932,7 +958,7 @@ namespace SmokeTest.Repositories
             /// Creates a new DocumentDetail  folder.
             /// </summary>
             public DocumentDetailAppFolder(RepoGenBaseFolder parentFolder) :
-                    base("DocumentDetail", "/form[@controlname='DocumentDetail']", parentFolder, 30000, null, true, "99941e2d-5c77-4e95-a788-00f265028bdc", "")
+                    base("DocumentDetail", "/form[@controlname='DocumentDetail']", parentFolder, 30000, null, false, "99941e2d-5c77-4e95-a788-00f265028bdc", "")
             {
                 _pnlbase = new DocumentsFolders.PnlBaseFolder(this);
                 _menubarfillpanel = new DocumentsFolders.MenubarFillPanelFolder(this);
@@ -3654,7 +3680,7 @@ namespace SmokeTest.Repositories
             /// Creates a new PeopleSelectForm  folder.
             /// </summary>
             public PeopleSelectFormAppFolder(RepoGenBaseFolder parentFolder) :
-                    base("PeopleSelectForm", "/form[@controlname='PeopleSelectForm']", parentFolder, 30000, null, true, "a29fc937-43ec-4d0e-bcdb-f9f2d1263563", "")
+                    base("PeopleSelectForm", "/form[@controlname='PeopleSelectForm']", parentFolder, 30000, null, false, "a29fc937-43ec-4d0e-bcdb-f9f2d1263563", "")
             {
                 _panel1 = new DocumentsFolders.Panel1Folder(this);
                 _toolbar1 = new DocumentsFolders.Toolbar1Folder4(this);

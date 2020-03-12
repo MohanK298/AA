@@ -39,6 +39,7 @@ namespace SmokeTest.Modules.Utilities
         Documents doc=Documents.Instance;
         Preferences pref=Preferences.Instance;
         SmokeTestRepository str = SmokeTestRepository.Instance;
+         
         [UserCodeMethod]
         public static string CreateLocalTextFile(string fileName)
         {
@@ -536,6 +537,10 @@ namespace SmokeTest.Modules.Utilities
         }
 		private void CloseAnnoncementForm()
         {
+			str.MainForm.Self.Activate();
+        	str.MainForm.menuItemFile.Select();
+        	str.AmicusAttorneyXWin.CloseAllDetails.Click();
+        
         	if(str.AnnouncementForm.SelfInfo.Exists(3000))
         	{
         		str.AnnouncementForm.Self.Activate();
@@ -554,10 +559,11 @@ namespace SmokeTest.Modules.Utilities
         {
         	string currentuser="Logged in as "+user;
         	pref.loginuser=currentuser;
+        	
         	CloseAnnoncementForm();
         	if(pref.MainForm.SbMainform.Visible==true && pref.txtStatusBar.TextValue.Contains(currentuser))
         	{
-        		Report.Info(pref.txtStatusBar.TextValue);
+//        		Report.Info(pref.txtStatusBar.TextValue);
         		if(pref.txtStatusBarInfo.Exists(3000))
         		   {
         			
@@ -566,6 +572,7 @@ namespace SmokeTest.Modules.Utilities
         			pref.txtStatusBar.Focus();
         			pref.txtStatusBar.Parent.Focus();
         		   	Report.Info(string.Format("Application switched to Login User 1- {0}",user));
+        		   		CloseAnnoncementForm();
         		   }
 
         	}
@@ -585,6 +592,7 @@ namespace SmokeTest.Modules.Utilities
 				   	pref.txtStatusBar.Focus();
 				   	pref.txtStatusBar.Parent.Focus();
 					Report.Info(string.Format("Application switched to Login User 2- {0}",user));
+						CloseAnnoncementForm();
 		     	}
         	}
 			

@@ -539,7 +539,7 @@ D8zerL8gSEaw7+rFqJ//CkX5CWkHqyZHVzU6AAAAAElFTkSuQmCC
 		isrooted="True"
 		name="GeneralPreferencesForm"
 		searchtimeout="5000ms"
-		usecache="True">
+		usecache="False">
 			<item
 			addcaps="button,accessible"
 			capname="button"
@@ -621,7 +621,7 @@ D8zerL8gSEaw7+rFqJ//CkX5CWkHqyZHVzU6AAAAAElFTkSuQmCC
 		refimgid="d7c6da8e-05ae-469e-824a-0567769bf7de"
 		refpath="/form[@controlname='EmailPreferencesForm']"
 		searchtimeout="5000ms"
-		usecache="True">
+		usecache="False">
 			<item
 			addcaps="button,accessible"
 			capname="button"
@@ -668,7 +668,7 @@ D8zerL8gSEaw7+rFqJ//CkX5CWkHqyZHVzU6AAAAAElFTkSuQmCC
 		name="PromptForm"
 		refpath="/form[@controlname='PromptForm']"
 		searchtimeout="5000ms"
-		usecache="True">
+		usecache="False">
 			<item
 			addcaps="button,accessible"
 			capname="button"
@@ -706,7 +706,7 @@ D8zerL8gSEaw7+rFqJ//CkX5CWkHqyZHVzU6AAAAAElFTkSuQmCC
 		name="ActivityCodeSelectForm"
 		refpath="/form[@controlname='ActivityCodeSelectForm']"
 		searchtimeout="30000ms"
-		usecache="True">
+		usecache="False">
 			<folder
 			addcaps="container,control,nativewindow"
 			capname="container"
@@ -844,7 +844,7 @@ SUVORK5CYII=
 		refimgid="f10215d2-88cd-4a93-86fa-c097afe6c73f"
 		refpath="/form[@controlname='TimePreferencesForm']"
 		searchtimeout="30000ms"
-		usecache="True">
+		usecache="False">
 			<item
 			addcaps="toolbar,accessible"
 			capname="toolbar"
@@ -973,7 +973,7 @@ SUVORK5CYII=
 		name="DropDownForm"
 		refpath="/form"
 		searchtimeout="30000ms"
-		usecache="True">
+		usecache="False">
 			<item
 			addcaps="table,accessible"
 			capname="table"

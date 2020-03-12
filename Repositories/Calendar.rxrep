@@ -21,7 +21,7 @@ rxversion="9.0">
 		name="MainForm"
 		refpath="/form[@controlname='MainForm']"
 		searchtimeout="30000ms"
-		usecache="True">
+		usecache="False">
 			<image
 			guid="a6892501-aea4-42f6-9d2d-4ac778305f06"
 			name="Screenshot11">
@@ -578,6 +578,7 @@ D8zerL8gSEaw7+rFqJ//CkX5CWkHqyZHVzU6AAAAAElFTkSuQmCC
 			id="3d41e383-1b60-42a8-8184-c5238d5a15c0"
 			isrooted="True"
 			name="PnlBase"
+			refimgid="312faed9-1e1b-42a6-9b05-0c4c4dc1cf43"
 			refpath="/form[@controlname='EventDetailForm']/container[@controlname='menubar_Fill_Panel']/container[@controlname='pnlBase']"
 			searchtimeout="30000ms"
 			usecache="False">
@@ -914,6 +915,16 @@ D8zerL8gSEaw7+rFqJ//CkX5CWkHqyZHVzU6AAAAAElFTkSuQmCC
 				refpath="/form[@controlname='EventDetailForm']/container[@controlname='menubar_Fill_Panel']/container[@controlname='pnlBase']/container[@controlname='pnlControls']/container[@controlname='pnlTabs']/container[@controlname='pnlViews']/container[@controlname='pnlRepeat']/container[@controlname='pnlRepeatDuration']/element[@controlname='txtOccurrences']/text[@automationid='[Editor] Edit Area']"
 				searchtimeout="30000ms">
 					/form[@controlname='EventDetailForm']/container[@controlname='menubar_Fill_Panel']/container[@controlname='pnlBase']/?/?/container[@controlname='pnlTabs']//container[@controlname='pnlRepeatDuration']/element[@controlname='txtOccurrences']/text[@automationid='[Editor] Edit Area']
+				</item>
+				<item
+				addcaps="button,accessible"
+				capname="button"
+				id="4f2be2b0-aac2-48c1-b761-dca75f0ed578"
+				name="btnAddFirmMember"
+				refimgid="87793c95-dc25-42eb-bdd8-048423bb75d8"
+				refpath="/form[@controlname='EventDetailForm']/container[@controlname='menubar_Fill_Panel']/container[@controlname='pnlBase']/container[@controlname='pnlControls']/container[@controlname='pnlTabs']/container[@controlname='pnlViews']/container[@controlname='pnlPeopleAndFiles']/container[@controlname='scPeople']/container[@controlname='pnlFirmMembers']/container[@controlname='scFirmMembers']/element[@controlname='ubtnIcon']/button[@accessiblerole='PushButton']"
+				searchtimeout="30000ms">
+					/form[@controlname='EventDetailForm']/container[@controlname='menubar_Fill_Panel']/container[@controlname='pnlBase']/?/?/container[@controlname='pnlTabs']/container[@controlname='pnlViews']/?/?/container[@controlname='scPeople']/?/?/container[@controlname='scFirmMembers']/element[@controlname='ubtnIcon']/button[@accessiblerole='PushButton']
 				</item>
 				<basepath>
 					/form[@controlname='EventDetailForm']/container[@controlname='menubar_Fill_Panel']/container[@controlname='pnlBase']
@@ -1999,6 +2010,137 @@ TAAKUBDAZsAjWyXsNqODf//+8T72NPgNMQCYDoBOBorJQKWRAAMDAHoxMgiROIZSAAAAAElFTkSu
 QmCC
 			</icon>
 		</appfolder>
+		<appfolder
+		addcaps="form,control,nativewindow"
+		capname="form"
+		id="666efb86-e67d-474a-a750-0b4bbab5034d"
+		isrooted="True"
+		name="PeopleSelectForm"
+		refpath="/form[@controlname='PeopleSelectForm']"
+		searchtimeout="30000ms"
+		usecache="True">
+			<item
+			addcaps="button,accessible"
+			capname="button"
+			id="feb63af1-0eb2-46f9-8583-da0696eddcec"
+			name="btnQuickFind"
+			refimgid="d6694edc-6ff5-4c17-a0ea-0dda468d0cd9"
+			refpath="/form[@controlname='PeopleSelectForm']/element[@controlname='_BaseForm_Toolbars_Dock_Area_Bottom']/container[@accessiblename='DockBottom']/toolbar[@accessiblename='Toolbar']/button[@accessiblename='QuickFind']"
+			searchtimeout="30000ms">
+				/form[@controlname='PeopleSelectForm']//toolbar[@accessiblename='Toolbar']/button[@accessiblename='QuickFind']
+			</item>
+			<item
+			addcaps="cell,accessible"
+			capname="cell"
+			id="73669959-52dc-47e9-a096-dd0fe97a79c2"
+			name="listFirstValue"
+			refimgid="1ba50300-a5fb-4754-808d-031dc6899b17"
+			refpath="/form[@controlname='PeopleSelectForm']/container[@controlname='panel1']/element[@controlname='apgSelector']/table[@accessiblerole='Table']/row[@accessiblename='Band 0 row 1']/cell[@accessiblename='Name']"
+			searchtimeout="30000ms">
+				/form[@controlname='PeopleSelectForm']/container[@controlname='panel1']//row[@accessiblename='Band 0 row 1']/cell[@accessiblename='Name']
+			</item>
+			<item
+			addcaps="button,accessible"
+			capname="button"
+			id="d79674fe-d048-46eb-9768-141a736e8e57"
+			name="btnAddToRight"
+			refimgid="27ff6960-1890-4197-922e-5836f0110837"
+			refpath="/form[@controlname='PeopleSelectForm']/container[@controlname='panel1']/element[@controlname='ubtnAdd']/button[@accessiblename='>']"
+			searchtimeout="30000ms">
+				/form[@controlname='PeopleSelectForm']/container[@controlname='panel1']/?/?/button[@accessiblename='&gt;']
+			</item>
+			<item
+			addcaps="button,accessible"
+			capname="button"
+			id="8286f689-332a-47bc-9e03-71af9f67c906"
+			name="btnOK"
+			refimgid="18d84ea1-5ab8-4bf9-bf7b-0a3a35818448"
+			refpath="/form[@controlname='PeopleSelectForm']/element[@controlname='_BaseForm_Toolbars_Dock_Area_Bottom']/container[@accessiblename='DockBottom']/toolbar[@accessiblename='Toolbar']/button[@accessiblename='OK']"
+			searchtimeout="30000ms">
+				/form[@controlname='PeopleSelectForm']//toolbar[@accessiblename='Toolbar']/button[@accessiblename='OK']
+			</item>
+			<item
+			addcaps="combobox,accessible"
+			capname="combobox"
+			id="084da027-5d50-43c8-9685-ebbec22e3d2d"
+			name="ComboBox"
+			refimgid="e7d3df2c-d80a-4cc5-a651-861a84d92c3f"
+			searchtimeout="30000ms">
+				/form[@controlname='PeopleSelectForm']/container[@controlname='pnlBase']//element[@controlname='ucmbSecondaryFilter']/combobox/combobox[@accessiblerole='ComboBox']
+			</item>
+			<folder
+			addcaps="container,control,nativewindow"
+			capname="container"
+			id="7972a37b-3e70-438f-8af5-981323ad6835"
+			isrooted="True"
+			name="Panel1"
+			refpath="/form[@controlname='PeopleSelectForm']/container[@controlname='panel1']"
+			searchtimeout="30000ms"
+			usecache="False">
+				<item
+				addcaps="button,accessible"
+				capname="button"
+				id="d5267dc5-e966-4214-8787-6dba6d79f68f"
+				name="btnAddToLeft"
+				refimgid="1a12015e-9aba-4a90-9fdd-e930de8855c1"
+				refpath="/form[@controlname='PeopleSelectForm']/container[@controlname='panel1']/element[@controlname='ubtnRemove']/button[@accessiblename='&lt;']"
+				searchtimeout="30000ms">
+					/form[@controlname='PeopleSelectForm']/container[@controlname='panel1']/?/?/button[@accessiblename='&lt;']
+				</item>
+				<item
+				addcaps="table,accessible"
+				capname="table"
+				id="c4dd6a48-73f9-4a4c-bae7-4c8ebec1a7f9"
+				name="tbSelected"
+				refimgid="1286b6a3-ce4e-4678-b982-0ec08ecb9959"
+				refpath="/form[@controlname='PeopleSelectForm']/container[@controlname='panel1']/element[@controlname='abgSelection']/table[@accessiblename='ArrayList']"
+				searchtimeout="30000ms">
+					/form[@controlname='PeopleSelectForm']/container[@controlname='panel1']/?/?/table[@accessiblename='ArrayList']
+				</item>
+				<item
+				addcaps="table,accessible"
+				capname="table"
+				id="ed3d9e94-d6d3-4cb5-906e-2842ddb81827"
+				name="tbSelection"
+				refimgid="a8839932-cab4-43d6-b25f-a3cd954b1927"
+				refpath="/form[@controlname='PeopleSelectForm']/container[@controlname='panel1']/element[@controlname='apgSelector']/table[@accessiblename='Band 0']"
+				searchtimeout="30000ms">
+					/form[@controlname='PeopleSelectForm']/container[@controlname='panel1']/?/?/table[@accessiblename='Band 0']
+				</item>
+				<basepath>
+					/form[@controlname='PeopleSelectForm']/container[@controlname='panel1']
+				</basepath>
+			</folder>
+			<basepath>
+				/form[@controlname='PeopleSelectForm']
+			</basepath>
+			<icon>
+				iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACx
+jwv8YQUAAAAJcEhZcwAADsQAAA7EAZUrDhsAAAJoSURBVDhPtZJZSJRRGIb/+Z0yy43E1CibUIKC
+IFqoi6KNlou6MGmxiyBQKAhNsc2BSSuJhHCpRJMySSPLkMaK1MgoW8Y0Nclxi2jIJIlGhgyd+c/7
+dpz50yBvgnrg4xw43/vyLUf5L2CgZ7+oPPwVuauJozMo0gLBoj3NJE3yWfVlTY4BDRc0OF56RPsl
+sHo5teJgiuIpQK6qMU0h7p4s13P/hFYzMTwIeEaBLy10XdzA/n0mCusqsmoBcWU6cNZvFLdS62W6
+n0+lg/vZvei6o8H1ERQeYqiL9mWxbDaq5LtUonEXWbOCKA0GzAY3XN/WStlEO6g6BLScAdtOkZ+q
+yWEr38ZE8ZUsDEMVRHcW+TyBrF5MFPqBpxcO6VLFyAH7OjxM8bBhL/kkjsJu4Y+mfMLdxiZpMHg5
+g/hcRnakk3UbZRUhQLICXa9MRWd9EW5vGeVYr427ib4c9sWtkQbvaZMGrSGBxEgd2ZVJPt5Glkdw
+bKC6XjGi59l25Id7WBlDPI0nBvPYOjeCjpQEtkdHetugVkt2mslHW4myMCB1ooIxgpCuANdCgdr1
+FG9SONJ8Tq79BTVnHV9LA2dpEoUtkby3kijxBzJC3brWB49HEQUGiJuxdMRHk/3HyN5s8nsRbarC
+9vAAOZ/NRMUcIEd1o7cxScrGV2kAMBMH5cQLVdoXTeOHTbPk6nbQsTOW3UvD2L0kiK6scIgCFcyc
+P97/7xjodJp4QKHIUzVcDQRuzCYr51Fcj4QoCQDOGzy0mCYV/8L7MVCWaGOyHNwJGRYZR2Sk+xMd
+D8zerL8gSEaw7+rFqJ//CkX5CWkHqyZHVzU6AAAAAElFTkSuQmCC
+			</icon>
+		</appfolder>
+		<folder
+		capname="table"
+		id="bfd0616b-dd76-47a3-b95b-f515f9c3419a"
+		isrooted="True"
+		name="tblDpdwnList"
+		searchtimeout="60000ms"
+		usecache="False">
+			<basepath>
+				/form[@title='']/?/?/table[@accessiblename='Band 0']
+			</basepath>
+		</folder>
 		<basepath>
 		</basepath>
 	</rootfolder>

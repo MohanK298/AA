@@ -1,10 +1,15 @@
 ﻿<Properties>
   <Array name="active">
-    <Element value="SmokeTest.rxtst" />
+    <Element value="Modules\Utilities\Common.cs" />
   </Array>
   <Array name="bookmarks" />
   <Array name="files">
+    <Element value="Modules\shareApptmtBetween2FM.cs" />
     <Element value="SmokeTest.rxtst" />
+    <Element value="Modules\shareTaskBetweenFM.cs" />
+    <Element value="Repositories\Task.cs" />
+    <Element value="Modules\shareFileBetween2FM.cs" />
+    <Element value="Modules\Utilities\Common.cs" />
   </Array>
   <Properties name="projectSavedData">
     <Properties name="customTool">

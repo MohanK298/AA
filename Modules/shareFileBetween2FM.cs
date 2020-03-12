@@ -39,7 +39,9 @@ namespace SmokeTest.Modules
         
         Files files=Files.Instance;
         Common cmn=new Common();
-        
+        string curuser="";
+        	string user="";
+        	string fileName="";
         
         /// <summary>
         /// Performs the playback of actions in this module.
@@ -50,8 +52,14 @@ namespace SmokeTest.Modules
         
         private void shareFileBetweenFM()
         {
-        	string user="Admin User";
-        	string fileName="";
+        	
+        	
+        	var datasource=Ranorex.DataSources.Get("LoginData");
+        	datasource.Load();
+        	curuser=datasource.Rows[0].Values[1].ToString();
+        	user=datasource.Rows[1].Values[1].ToString();
+        	cmn.switchUser(curuser);
+        	
         	files.MainForm.Self.Activate();
         	files.MainForm.btnFiles1.Click();
         	files.MainForm.FilesIndexForm.listFirstFile.DoubleClick();

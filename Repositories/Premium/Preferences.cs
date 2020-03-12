@@ -1614,7 +1614,7 @@ namespace SmokeTest.Repositories.Premium
             /// Creates a new GeneralPreferencesForm  folder.
             /// </summary>
             public GeneralPreferencesFormAppFolder(RepoGenBaseFolder parentFolder) :
-                    base("GeneralPreferencesForm", "/form[@controltext='Preferences']", parentFolder, 5000, null, true, "bea9971f-6b2b-4fc3-a039-98b032aa9102", "")
+                    base("GeneralPreferencesForm", "/form[@controltext='Preferences']", parentFolder, 5000, null, false, "bea9971f-6b2b-4fc3-a039-98b032aa9102", "")
             {
                 _buttonokInfo = new RepoItemInfo(this, "ButtonOK", ".//toolbar[@accessiblename='Toolbar']/button[@accessiblename='OK' and @enabled='True' and @accessiblestate='Focusable']", 5000, null, "737c9d4c-6593-4ccc-a43f-1ea3efc91e23");
                 _titlebarInfo = new RepoItemInfo(this, "TitleBar", "titlebar[@accessiblerole='TitleBar']", 30000, null, "f6a2b7f1-fa44-497c-9d5a-9b1ef0fbf09e");
@@ -1806,7 +1806,7 @@ namespace SmokeTest.Repositories.Premium
             /// Creates a new EmailPreferencesForm  folder.
             /// </summary>
             public EmailPreferencesFormAppFolder(RepoGenBaseFolder parentFolder) :
-                    base("EmailPreferencesForm", "/form[@controlname='EmailPreferencesForm']", parentFolder, 5000, null, true, "8f89f9d5-6bb3-4d24-9785-550bec029a33", "")
+                    base("EmailPreferencesForm", "/form[@controlname='EmailPreferencesForm']", parentFolder, 5000, null, false, "8f89f9d5-6bb3-4d24-9785-550bec029a33", "")
             {
                 _closeInfo = new RepoItemInfo(this, "Close", ".//toolbar[@accessiblename='Toolbar']/button[@accessiblename='Close ']", 5000, null, "b9d64f5c-cd9c-41b2-9ca2-16db60e86ae3");
                 _buttontoolbarwizardtoolstoolclInfo = new RepoItemInfo(this, "ButtonToolbarWIZARDToolsToolCL", "?/?/?/button[@name='Close ' and @controltype='Button']", 30000, null, "0ca01454-1e39-40d2-80df-5ff5d2c6dfae");
@@ -1897,7 +1897,7 @@ namespace SmokeTest.Repositories.Premium
             /// Creates a new PromptForm  folder.
             /// </summary>
             public PromptFormAppFolder(RepoGenBaseFolder parentFolder) :
-                    base("PromptForm", "/form[@controlname='PromptForm']", parentFolder, 5000, null, true, "bc5b262c-9b08-4061-b61d-1a018c35ee93", "")
+                    base("PromptForm", "/form[@controlname='PromptForm']", parentFolder, 5000, null, false, "bc5b262c-9b08-4061-b61d-1a018c35ee93", "")
             {
                 _buttonokInfo = new RepoItemInfo(this, "ButtonOK", ".//toolbar[@accessiblename='Toolbar']/button[@accessiblename='OK']", 5000, null, "89367da5-0a25-43d8-9f9a-812cf5a935e7");
             }
@@ -1965,7 +1965,7 @@ namespace SmokeTest.Repositories.Premium
             /// Creates a new ActivityCodeSelectForm  folder.
             /// </summary>
             public ActivityCodeSelectFormAppFolder(RepoGenBaseFolder parentFolder) :
-                    base("ActivityCodeSelectForm", "/form[@controlname='ActivityCodeSelectForm']", parentFolder, 30000, null, true, "a9abd819-eaed-4ff5-b28b-f05de99f856e", "")
+                    base("ActivityCodeSelectForm", "/form[@controlname='ActivityCodeSelectForm']", parentFolder, 30000, null, false, "a9abd819-eaed-4ff5-b28b-f05de99f856e", "")
             {
                 _pnlbase = new PreferencesFolders.PnlBaseFolder(this);
                 _toolbar1 = new PreferencesFolders.Toolbar1Folder(this);
@@ -2343,7 +2343,7 @@ namespace SmokeTest.Repositories.Premium
             /// Creates a new TimePreferencesForm  folder.
             /// </summary>
             public TimePreferencesFormAppFolder(RepoGenBaseFolder parentFolder) :
-                    base("TimePreferencesForm", "/form[@controlname='TimePreferencesForm']", parentFolder, 30000, null, true, "989dda3b-b17c-4a3c-b51a-d0304723a038", "")
+                    base("TimePreferencesForm", "/form[@controlname='TimePreferencesForm']", parentFolder, 30000, null, false, "989dda3b-b17c-4a3c-b51a-d0304723a038", "")
             {
                 _toolbar1 = new PreferencesFolders.Toolbar1Folder1(this);
                 _toolbarInfo = new RepoItemInfo(this, "Toolbar", "element[@controlname='_BaseForm_Toolbars_Dock_Area_Bottom']/?/?/toolbar[@accessiblename='Toolbar']", 30000, null, "f149a424-963a-4c37-8a18-b8babbd65826");
@@ -2690,7 +2690,7 @@ namespace SmokeTest.Repositories.Premium
             /// Creates a new DropDownForm  folder.
             /// </summary>
             public DropDownFormAppFolder(RepoGenBaseFolder parentFolder) :
-                    base("DropDownForm", "/form", parentFolder, 30000, null, true, "0abde5c6-cda9-48ba-9275-e19f920c3654", "")
+                    base("DropDownForm", "/form", parentFolder, 30000, null, false, "0abde5c6-cda9-48ba-9275-e19f920c3654", "")
             {
                 _tbdropdownInfo = new RepoItemInfo(this, "tbDropdown", "?/?/table", 30000, null, "0bc4323e-c32f-47d1-88ed-80a618099183");
             }

@@ -30,6 +30,7 @@ namespace SmokeTest.Modules
     	//Repository Variable
     	SmokeTestRepository str = SmokeTestRepository.Instance;
     	Duration customWaitTime = new Duration(3000);
+    	SmokeTest.Repositories.Premium.Preferences pref= SmokeTest.Repositories.Premium.Preferences.Instance;
     	public static SmokeTestRepository repo = SmokeTestRepository.Instance; 
     	
         /// <summary>
@@ -65,9 +66,15 @@ namespace SmokeTest.Modules
             }
             CloseAllDetails();
         //    ceipDialogWatcher.Stop();
-            
+           ShowStatusBar(); 
         }
-        
+        private void ShowStatusBar()
+        {
+        		pref.MainForm.OfficeModule.Click();
+        		pref.MainForm.View.Click();
+				Delay.Seconds(2);
+				pref.MainForm.StatusBar.Click();
+        }
         private void CloseAnnoncementForm()
         {
         	try {

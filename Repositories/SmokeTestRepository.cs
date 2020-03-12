@@ -404,7 +404,7 @@ namespace SmokeTest.Repositories
             /// Creates a new LoginForm  folder.
             /// </summary>
             public LoginFormAppFolder(RepoGenBaseFolder parentFolder) :
-                    base("LoginForm", "/form[@controlname='LoginForm']", parentFolder, 30000, null, true, "3f45e1f0-acd8-4ceb-b8b7-54312a732261", "")
+                    base("LoginForm", "/form[@controlname='LoginForm']", parentFolder, 30000, null, false, "3f45e1f0-acd8-4ceb-b8b7-54312a732261", "")
             {
                 _txtuseridInfo = new RepoItemInfo(this, "txtUserID", "?/?/text[@controlname='_userIdTextBox']/text[@accessiblerole='Text']", 30000, null, "2966ec5a-c480-40ec-b83d-bf3bd2a57545");
                 _txtpasswordInfo = new RepoItemInfo(this, "txtPassword", "?/?/text[@controlname='_passwordTextBox']/text[@accessiblerole='Text']", 30000, null, "f7ef8f76-57a9-4a13-b788-bdc021404d47");
@@ -620,7 +620,7 @@ namespace SmokeTest.Repositories
             /// Creates a new MainForm  folder.
             /// </summary>
             public MainFormAppFolder(RepoGenBaseFolder parentFolder) :
-                    base("MainForm", "/form[@controlname='MainForm']", parentFolder, 30000, null, true, "528ece51-7bcd-4d13-88b8-bafb9c983f78", "")
+                    base("MainForm", "/form[@controlname='MainForm']", parentFolder, 30000, null, false, "528ece51-7bcd-4d13-88b8-bafb9c983f78", "")
             {
                 _band0row11 = new SmokeTestRepositoryFolders.Band0Row11Folder(this);
                 _commindexform = new SmokeTestRepositoryFolders.CommIndexFormFolder(this);
@@ -1790,7 +1790,7 @@ namespace SmokeTest.Repositories
             /// Creates a new AmicusAttorneyXWin  folder.
             /// </summary>
             public AmicusAttorneyXWinAppFolder(RepoGenBaseFolder parentFolder) :
-                    base("AmicusAttorneyXWin", "/form[@processname='AmicusAttorney.XWin' and @controltypename='DropDownForm']", parentFolder, 30000, null, true, "ff1c30d7-b832-47d5-8096-d4e839f2ef95", "")
+                    base("AmicusAttorneyXWin", "/form[@processname='AmicusAttorney.XWin' and @controltypename='DropDownForm']", parentFolder, 30000, null, false, "ff1c30d7-b832-47d5-8096-d4e839f2ef95", "")
             {
                 _menupopupInfo = new RepoItemInfo(this, "MenuPopup", "?/?/contextmenu[@accessiblerole='MenuPopup']", 30000, null, "63cf9a47-a0b0-4522-b869-e1d6d518a074");
                 _menuitemviewitemsmenuitemindeInfo = new RepoItemInfo(this, "MenuItemViewItemsMenuItemInde", "?/?/container[@automationid='&View']/menuitem[@automationid='[&View Items] Menu Item :  - Index : 5 ']", 30000, null, "99b417df-efa6-4933-a769-ab673adf23c9");
@@ -4720,7 +4720,7 @@ namespace SmokeTest.Repositories
             /// Creates a new GeneralPreferencesForm  folder.
             /// </summary>
             public GeneralPreferencesFormAppFolder(RepoGenBaseFolder parentFolder) :
-                    base("GeneralPreferencesForm", "/form[@controlname='GeneralPreferencesForm']", parentFolder, 30000, null, true, "c850d394-a8ec-4ad0-ac32-4d6d55a956a2", "")
+                    base("GeneralPreferencesForm", "/form[@controlname='GeneralPreferencesForm']", parentFolder, 30000, null, false, "c850d394-a8ec-4ad0-ac32-4d6d55a956a2", "")
             {
                 _generalmyprofileInfo = new RepoItemInfo(this, "GeneralMyProfile", "container[@controlname='pnlBase']//element[@controlname='alblTitle']/text[@accessiblename='General - My Profile']", 30000, null, "e741b6e2-c168-49e5-934d-10af18886eb8");
                 _buttontoolbartoolbarbasedesignertooInfo = new RepoItemInfo(this, "ButtonToolbarToolbarBaseDesignerToo", "?/?/toolbar[@automationid='Toolbar : toolbarBaseDesigner']/button[@automationid='[Toolbar : toolbarBaseDesigner Tools] Tool : TOOLBAR_BUTTON_OK - Index : 5 ']", 30000, null, "2bd84dc2-4438-4ac0-800f-f421040af846");
@@ -4944,7 +4944,7 @@ namespace SmokeTest.Repositories
             /// Creates a new AnnouncementForm  folder.
             /// </summary>
             public AnnouncementFormAppFolder(RepoGenBaseFolder parentFolder) :
-                    base("AnnouncementForm", "/form[@controlname='AnnouncementForm']", parentFolder, 30000, null, true, "5fb23e7f-84df-4c53-ac49-00c75ae26838", "")
+                    base("AnnouncementForm", "/form[@controlname='AnnouncementForm']", parentFolder, 30000, null, false, "5fb23e7f-84df-4c53-ac49-00c75ae26838", "")
             {
                 _toolbartoolbarbasedesigner1 = new SmokeTestRepositoryFolders.ToolbarToolbarBaseDesigner1Folder(this);
                 _amicuscheckbox1Info = new RepoItemInfo(this, "AmicusCheckBox1", "container[@controlname='pnlBase']//checkbox[@controlname='amicusCheckBox1']", 30000, null, "c63102f6-7140-4cd0-b48b-531eca21e41e");
@@ -5139,7 +5139,7 @@ namespace SmokeTest.Repositories
             /// Creates a new CustomerExperienceProgramForm  folder.
             /// </summary>
             public CustomerExperienceProgramFormAppFolder(RepoGenBaseFolder parentFolder) :
-                    base("CustomerExperienceProgramForm", "/form[@controlname='CustomerExperienceProgramForm']", parentFolder, 30000, null, true, "5b4360c6-01f7-496a-bfc3-e317aa2b2f36", "")
+                    base("CustomerExperienceProgramForm", "/form[@controlname='CustomerExperienceProgramForm']", parentFolder, 30000, null, false, "5b4360c6-01f7-496a-bfc3-e317aa2b2f36", "")
             {
                 _acceptInfo = new RepoItemInfo(this, "Accept", "container[@controlname='pnlBase']//button[@accessiblename='Accept']", 30000, null, "fb5aa2c7-cc21-4b91-92b1-fb3d435fd376");
                 _declineInfo = new RepoItemInfo(this, "Decline", ".//button[@name='Decline']", 30000, null, "dd3f5840-31fa-4cae-87a6-c1560ff69f47");

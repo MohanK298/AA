@@ -21,7 +21,7 @@ rxversion="9.0">
 		name="MainForm"
 		refpath="/form[@controlname='MainForm']"
 		searchtimeout="30000ms"
-		usecache="True">
+		usecache="False">
 			<item
 			addcaps="button,accessible"
 			capname="button"
@@ -77,9 +77,8 @@ rxversion="9.0">
 			id="a7735a8a-9f90-447f-baf7-04909abd1811"
 			name="btnTasks1"
 			refimgid="0afa6871-9cf1-4db6-9195-cc56705dc7ed"
-			refpath="/form[@controlname='MainForm']/element[@controlname='_ultraExplorerBar']/tree[@accessiblerole='Outline']/button[@accessiblename='Tasks']"
 			searchtimeout="5000ms">
-				/form[@controlname='MainForm']/?/?/tree[@accessiblerole='Outline']/button[@accessiblename='Tasks']
+				/form[@controlname='MainForm']/?/?/?/tree[@accessiblerole='Outline']/button[@accessiblename='Tasks']
 			</item>
 			<item
 			capname="table"

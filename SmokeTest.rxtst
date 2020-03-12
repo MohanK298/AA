@@ -1199,6 +1199,32 @@ which will be used throughout the Smoke Test]]>
 			name="startApp"
 			ref="5b05b347-e4f6-4dbd-b9a7-c588bffbea40"
 			type="UserCode">
+				<databinding>
+					<var
+					dataname="FirmID"
+					datasourceid="10a02d89-1919-4498-99e9-4193531e844f"
+					variableid="f0a21d94-1772-4e62-ad3a-4bb55cc94183"
+					variablename="firmid">
+					</var>
+					<var
+					dataname="UserID"
+					datasourceid="10a02d89-1919-4498-99e9-4193531e844f"
+					variableid="96caed55-fd85-4c44-9534-5d329b545087"
+					variablename="username">
+					</var>
+					<var
+					dataname="Password"
+					datasourceid="10a02d89-1919-4498-99e9-4193531e844f"
+					variableid="d2bca0ae-b50d-43c3-824a-5717f903ef75"
+					variablename="password">
+					</var>
+					<var
+					dataname="ServerName"
+					datasourceid="10a02d89-1919-4498-99e9-4193531e844f"
+					variableid="9c23c705-7713-432f-8020-d3bf7d166b0d"
+					variablename="server">
+					</var>
+				</databinding>
 			</testmodule>
 			<smartfoldernode
 			id="69784dea-f2ba-4174-8e33-8521d722fad9"
@@ -1255,7 +1281,11 @@ which will be used throughout the Smoke Test]]>
 			type="UserCode">
 			</testmodule>
 			<testcase
+			datarangeactive="True"
+			datasource="LoginData"
 			id="6efb8f01-7398-4295-b52c-d8dcaaa9599a"
+			maxrange="0"
+			minrange="0"
 			name="2_Firm_Members_Test">
 			</testcase>
 			<testcase
@@ -2212,6 +2242,12 @@ directly and create a Bill]]>
 			id="c24867b5-28d6-4b4f-b953-17f6d978c96e"
 			name="Delete2TE">
 			</smartfoldernode>
+			<testmodule
+			id="c27bfc1c-6c69-4163-ba93-b11c19ee98d1"
+			name="Logout"
+			ref="d10246f4-af1f-4921-ac63-4f462998c5d5"
+			type="UserCode">
+			</testmodule>
 			<teardown
 			id="c2a6cc13-1ce9-473a-814d-5b1ef95ae297"
 			name="teardown">
@@ -2240,6 +2276,12 @@ directly and create a Bill]]>
 			id="c482a05f-2890-412b-b8a1-3f7408ae6272"
 			name="createAdjrnApptWithDragnDrop"
 			ref="94a93ae6-06e1-4f40-9875-95fcccc2434e"
+			type="UserCode">
+			</testmodule>
+			<testmodule
+			id="c5024592-d1ab-4a17-b15a-2a57aee23e78"
+			name="shareApptmtBetween2FM"
+			ref="6788a635-78b4-4927-ba28-4e197f3aaf92"
 			type="UserCode">
 			</testmodule>
 			<testmodule
@@ -2624,6 +2666,12 @@ bill]]>
 			name="AddTimeEntryAPX">
 			</smartfoldernode>
 			<testmodule
+			id="eaf0fc10-b20d-4535-9e23-add27f559bc0"
+			name="shareTaskBetweenFM"
+			ref="df7c56a0-a5de-4a40-9e08-2f1f94ae0b49"
+			type="UserCode">
+			</testmodule>
+			<testmodule
 			id="eb97d3d5-fc99-4f66-bc21-9823b40b27a8"
 			name="EditTask"
 			ref="921851ac-bd6c-4ff7-927f-7302cd67f4e0"
@@ -2698,6 +2746,12 @@ bill]]>
 			type="UserCode">
 			</testmodule>
 			<testmodule
+			id="ee8cd0bc-ed0c-494a-bca5-5997a548d9c4"
+			name="shareDocumentBetweenFM"
+			ref="6af27867-6861-48c6-8db5-5ee255193e69"
+			type="UserCode">
+			</testmodule>
+			<testmodule
 			id="efbfe7fa-525b-4dd2-bdbe-fccfa695f964"
 			name="createnDeleteMasterAdjrnAppt_ThisOne"
 			ref="bf76562d-fb42-4827-90db-59d832dee937"
@@ -2707,6 +2761,12 @@ bill]]>
 			id="f009e389-eafb-4981-ab14-563dc83060a0"
 			name="Basic_Notes_Module_Validation">
 			</smartfoldernode>
+			<testmodule
+			id="f0d3a0a6-37ae-4c83-9c3f-363d073068d1"
+			name="shareNotesBetweenFM"
+			ref="bf8b8482-a9d2-4cce-9a81-8eba45c66366"
+			type="UserCode">
+			</testmodule>
 			<smartfoldernode
 			id="f12fbbbf-777a-42ad-a910-e4e7e4709a8f"
 			name="CreatenDeleteMasterAdjrnAppt_ThisOne">
@@ -4140,6 +4200,26 @@ bill]]>
 						id="49eacae3-cf01-42cb-9e68-a58dd10eb600"
 						name="shareFileBetween2FM">
 						</testmodule>
+						<testmodule
+						id="c5024592-d1ab-4a17-b15a-2a57aee23e78"
+						name="shareApptmtBetween2FM">
+						</testmodule>
+						<testmodule
+						id="eaf0fc10-b20d-4535-9e23-add27f559bc0"
+						name="shareTaskBetweenFM">
+						</testmodule>
+						<testmodule
+						id="f0d3a0a6-37ae-4c83-9c3f-363d073068d1"
+						name="shareNotesBetweenFM">
+						</testmodule>
+						<testmodule
+						id="ee8cd0bc-ed0c-494a-bca5-5997a548d9c4"
+						name="shareDocumentBetweenFM">
+						</testmodule>
+						<testmodule
+						id="c27bfc1c-6c69-4163-ba93-b11c19ee98d1"
+						name="Logout">
+						</testmodule>
 					</testcase>
 					<testcase
 					id="f999b233-305c-4e9e-a5e8-bd5b49a34123"
@@ -4548,7 +4628,7 @@ bill]]>
 		filename="SmokeTestData.xlsx"
 		id="10a02d89-1919-4498-99e9-4193531e844f"
 		includefile="Checked"
-		lastknownrowcount="1"
+		lastknownrowcount="2"
 		name="LoginData"
 		type="Ranorex.Core.Data.ExcelDataConnector"
 		worksheetname="Login"
@@ -4568,6 +4648,9 @@ bill]]>
 				</column>
 			</lastknowncolumns>
 			<maskedcolumns>
+				<columnname>
+					Password
+				</columnname>
 			</maskedcolumns>
 		</DataSource>
 		<DataSource
@@ -4945,6 +5028,9 @@ bill]]>
 			</testcontainer>
 			<testcontainer
 			id="6cdc4fb3-8ead-4a22-84ce-7eff8cca1ab2">
+			</testcontainer>
+			<testcontainer
+			id="6efb8f01-7398-4295-b52c-d8dcaaa9599a">
 			</testcontainer>
 			<testcontainer
 			id="6f4fdecc-21a0-492c-98be-0db96735fa65">

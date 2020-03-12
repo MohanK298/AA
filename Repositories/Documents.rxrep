@@ -21,13 +21,13 @@ rxversion="9.0">
 		name="MainForm"
 		refpath="/form[@controlname='MainForm']"
 		searchtimeout="30000ms"
-		usecache="True">
+		usecache="False">
 			<item
 			addcaps="button,accessible"
 			capname="button"
 			id="0257a548-bfb7-40fe-b6c4-5be1531df3ce"
 			name="btnDocuments"
-			refimgid="342bbd52-d418-430f-bfbf-07962be78280"
+			refimgid="a362f2a6-f189-4bc7-9932-65ccf9cc6249"
 			refpath="/form[@controlname='MainForm']/container[@controlname='pLeft']/container[@caption='' and @controltypename='Panel' and @instance='1']/element[@controlname='_ultraExplorerBar']/tree[@accessiblerole='Outline']/button[@accessiblename='Documents']"
 			searchtimeout="30000ms">
 				/form[@controlname='MainForm']/container[@controlname='pLeft']//tree[@accessiblerole='Outline']/button[@accessiblename='Documents']
@@ -243,6 +243,16 @@ rxversion="9.0">
 					/form[@controlname='MainForm']/?/?/form[@controlname='DocumentsIndexForm']
 				</basepath>
 			</folder>
+			<item
+			addcaps="combobox,control,nativewindow"
+			capname="combobox"
+			id="10208f91-7150-49fb-a8d0-be12dc1105eb"
+			name="cmbbxDocType"
+			refimgid="da2c3716-9230-4755-9222-17b0f861da12"
+			refpath="/form[@controlname='MainForm']/container[@controlname='pLeft']/container[@caption='' and @controltypename='Panel' and @instance='1']/element[@controlname='_ultraExplorerBar']/container[@caption='' and @controltypename='UltraExplorerBarContainerControl' and @instance='0']/container[@controlname='controlPanelWrapper']/container[@controlname='DocumentsIndexPanelControl']/container[@controlname='panel3']/combobox[@controlname='acmbDocType']"
+			searchtimeout="30000ms">
+				/form[@controlname='MainForm']/container[@controlname='pLeft']//container[@controltypename='UltraExplorerBarContainerControl' and @instance='0']/?/?/container[@controlname='DocumentsIndexPanelControl']/?/?/combobox[@controlname='acmbDocType']
+			</item>
 			<basepath>
 				/form[@controlname='MainForm']
 			</basepath>
@@ -271,7 +281,7 @@ D8zerL8gSEaw7+rFqJ//CkX5CWkHqyZHVzU6AAAAAElFTkSuQmCC
 		refimgid="d6f5557a-b48c-4ba6-af1f-c7e62ae12da9"
 		refpath="/form[@controlname='DocumentDetail']"
 		searchtimeout="30000ms"
-		usecache="True">
+		usecache="False">
 			<folder
 			addcaps="container,control,nativewindow"
 			capname="container"
@@ -1339,7 +1349,7 @@ SUVORK5CYII=
 		refimgid="df9e57ba-f1d5-4c95-8ff1-62283f268bcd"
 		refpath="/form[@controlname='PeopleSelectForm']"
 		searchtimeout="30000ms"
-		usecache="True">
+		usecache="False">
 			<item
 			addcaps="combobox,accessible"
 			capname="combobox"

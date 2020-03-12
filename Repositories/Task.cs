@@ -153,14 +153,14 @@ namespace SmokeTest.Repositories
             /// Creates a new MainForm  folder.
             /// </summary>
             public MainFormAppFolder(RepoGenBaseFolder parentFolder) :
-                    base("MainForm", "/form[@controlname='MainForm']", parentFolder, 30000, null, true, "0025caff-06db-4f62-b7e2-c256af5878f7", "")
+                    base("MainForm", "/form[@controlname='MainForm']", parentFolder, 30000, null, false, "0025caff-06db-4f62-b7e2-c256af5878f7", "")
             {
                 _btntasksInfo = new RepoItemInfo(this, "btnTasks", "container[@controlname='pLeft']//tree[@accessiblerole='Outline']/button[@accessiblename='Tasks']", 30000, null, "fe9b126c-3a41-42f5-b49a-7be85202f0a1");
                 _btnnewtaskInfo = new RepoItemInfo(this, "btnNewTask", "?/?/form[@controlname='TasksIndexForm']/container[@controlname='menubar_Fill_Panel']//toolbar[@accessiblename='Toolbar']/button[@accessiblename='New']", 30000, null, "e66f694b-7c8a-4ee9-8bb2-e209db2c129b");
                 _listfirsttaskInfo = new RepoItemInfo(this, "listFirstTask", "?/?/form[@controlname='TasksIndexForm']/container[@controlname='pnlBody']//table/row[1]/cell[@accessiblename='File']", 30000, null, "a09bf20c-bbd8-4bca-9e68-03fd26342d90");
                 _listsecondtaskInfo = new RepoItemInfo(this, "listSecondTask", "?/?/form[@controlname='TasksIndexForm']/container[@controlname='pnlBody']//row[@accessiblename='Band 0 row 1']/cell[@accessiblename='File']", 30000, null, "9fbe5719-2716-420a-8aaf-a407bfae12f3");
                 _btnallInfo = new RepoItemInfo(this, "btnAll", "container[@controlname='pLeft']//container[@controltypename='UltraExplorerBarContainerControl' and @instance='0']/?/?/container[@controlname='CommIndexControlPanel']/container[@controlname='pnlBase']/container[@controlname='atcOutstandingOrToday']//text[@accessiblename='All']", 30000, null, "03219a57-8378-4f6a-86a2-bcebb7f3f14f");
-                _btntasks1Info = new RepoItemInfo(this, "btnTasks1", "?/?/tree[@accessiblerole='Outline']/button[@accessiblename='Tasks']", 5000, null, "a7735a8a-9f90-447f-baf7-04909abd1811");
+                _btntasks1Info = new RepoItemInfo(this, "btnTasks1", "?/?/?/tree[@accessiblerole='Outline']/button[@accessiblename='Tasks']", 5000, null, "a7735a8a-9f90-447f-baf7-04909abd1811");
                 _tbltasksInfo = new RepoItemInfo(this, "tblTasks", "element[@controltypename='MdiClient']/form[@controlname='TasksIndexForm']/container[@controlname='pnlBody']//table[@accessiblename='Band 0']", 30000, null, "2290cfb1-3f2a-46fa-bd6d-30ad457c75d7");
             }
 

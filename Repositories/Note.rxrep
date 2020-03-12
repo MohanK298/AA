@@ -21,7 +21,7 @@ rxversion="9.0">
 		name="MainForm"
 		refpath="/form[@controlname='MainForm']"
 		searchtimeout="30000ms"
-		usecache="True">
+		usecache="False">
 			<item
 			addcaps="button,accessible"
 			capname="button"
@@ -232,7 +232,7 @@ D8zerL8gSEaw7+rFqJ//CkX5CWkHqyZHVzU6AAAAAElFTkSuQmCC
 		name="PeopleSelectForm"
 		refpath="/form[@controlname='PeopleSelectForm']"
 		searchtimeout="30000ms"
-		usecache="True">
+		usecache="False">
 			<item
 			addcaps="text,accessible"
 			capname="text"
@@ -248,7 +248,7 @@ D8zerL8gSEaw7+rFqJ//CkX5CWkHqyZHVzU6AAAAAElFTkSuQmCC
 			capname="button"
 			id="308fb4fb-edd9-4492-a7ac-9e8bcc7c62b1"
 			name="btnAddToRight"
-			refimgid="00121006-5417-4139-b57e-bec5a9597b91"
+			refimgid="be3d4cc3-130f-454a-98c1-4c653596f97e"
 			refpath="/form[@controlname='PeopleSelectForm']/container[@controlname='panel1']/element[@controlname='ubtnAdd']/button[@accessiblename='>']"
 			searchtimeout="30000ms">
 				/form[@controlname='PeopleSelectForm']/container[@controlname='panel1']/?/?/button[@accessiblename='&gt;']
@@ -258,7 +258,7 @@ D8zerL8gSEaw7+rFqJ//CkX5CWkHqyZHVzU6AAAAAElFTkSuQmCC
 			capname="button"
 			id="3813598d-42f5-4ae2-b41e-95efcf98c79f"
 			name="btnOK"
-			refimgid="ffe97732-f34e-4054-87b6-966a076d0701"
+			refimgid="27326db0-9477-4bb2-9c09-e15f97760173"
 			refpath="/form[@controlname='PeopleSelectForm']/element[@controlname='_BaseForm_Toolbars_Dock_Area_Bottom']/container[@accessiblename='DockBottom']/toolbar[@accessiblename='Toolbar']/button[@accessiblename='OK']"
 			searchtimeout="30000ms">
 				/form[@controlname='PeopleSelectForm']//toolbar[@accessiblename='Toolbar']/button[@accessiblename='OK']
@@ -268,7 +268,7 @@ D8zerL8gSEaw7+rFqJ//CkX5CWkHqyZHVzU6AAAAAElFTkSuQmCC
 			capname="cell"
 			id="ba1dcbfa-a709-4daa-80e9-13da200c8d00"
 			name="listNameOne"
-			refimgid="c53feed8-f0f7-46fe-8149-1e24a1ad5cb8"
+			refimgid="70d40a11-c497-45ee-98f4-78bca3ba53e4"
 			refpath="/form[@controlname='PeopleSelectForm']/container[@controlname='panel1']/element[@controlname='apgSelector']/table[@accessiblerole='Table']/row[@accessiblename='Band 0 row 1']/cell[@accessiblename='Name']"
 			searchtimeout="30000ms">
 				/form[@controlname='PeopleSelectForm']/container[@controlname='panel1']//row[@accessiblename='Band 0 row 1']/cell[@accessiblename='Name']
@@ -277,8 +277,61 @@ D8zerL8gSEaw7+rFqJ//CkX5CWkHqyZHVzU6AAAAAElFTkSuQmCC
 			capname="button"
 			id="4e8113c3-e5fb-444f-99f8-5bcf3d5870d7"
 			name="btnCancel"
+			refimgid="5e6ec0a0-ef8c-49a0-9e72-a4411596cb14"
 			searchtimeout="30000ms">
 				/form[@controlname='PeopleSelectForm']//toolbar[@accessiblename='Toolbar']/button[@accessiblename='Cancel']
+			</item>
+			<folder
+			addcaps="container,control,nativewindow"
+			capname="container"
+			id="7972a37b-3e70-438f-8af5-981323ad6835"
+			isrooted="True"
+			name="Panel1"
+			refpath="/form[@controlname='PeopleSelectForm']/container[@controlname='panel1']"
+			searchtimeout="30000ms"
+			usecache="False">
+				<item
+				addcaps="button,accessible"
+				capname="button"
+				id="d5267dc5-e966-4214-8787-6dba6d79f68f"
+				name="btnAddToLeft"
+				refimgid="93dcc8c8-7b2d-44e8-a992-b24997ea6f88"
+				refpath="/form[@controlname='PeopleSelectForm']/container[@controlname='panel1']/element[@controlname='ubtnRemove']/button[@accessiblename='&lt;']"
+				searchtimeout="30000ms">
+					/form[@controlname='PeopleSelectForm']/container[@controlname='panel1']/?/?/button[@accessiblename='&lt;']
+				</item>
+				<item
+				addcaps="table,accessible"
+				capname="table"
+				id="c4dd6a48-73f9-4a4c-bae7-4c8ebec1a7f9"
+				name="tbSelected"
+				refimgid="658cf056-1614-49c4-be8a-69b6ffcc91b8"
+				refpath="/form[@controlname='PeopleSelectForm']/container[@controlname='panel1']/element[@controlname='abgSelection']/table[@accessiblename='ArrayList']"
+				searchtimeout="30000ms">
+					/form[@controlname='PeopleSelectForm']/container[@controlname='panel1']/?/?/table[@accessiblename='ArrayList']
+				</item>
+				<item
+				addcaps="table,accessible"
+				capname="table"
+				id="ed3d9e94-d6d3-4cb5-906e-2842ddb81827"
+				name="tbSelection"
+				refimgid="f3df99ff-81df-4acf-85bb-9e9bf521102b"
+				refpath="/form[@controlname='PeopleSelectForm']/container[@controlname='panel1']/element[@controlname='apgSelector']/table[@accessiblename='Band 0']"
+				searchtimeout="30000ms">
+					/form[@controlname='PeopleSelectForm']/container[@controlname='panel1']/?/?/table[@accessiblename='Band 0']
+				</item>
+				<basepath>
+					/form[@controlname='PeopleSelectForm']/container[@controlname='panel1']
+				</basepath>
+			</folder>
+			<item
+			addcaps="combobox,accessible"
+			capname="combobox"
+			id="084da027-5d50-43c8-9685-ebbec22e3d2d"
+			name="ComboBox"
+			refimgid="a271d9a0-62a7-4074-9228-2222f73f4fcd"
+			searchtimeout="30000ms">
+				/form[@controlname='PeopleSelectForm']/container[@controlname='pnlBase']//element[@controlname='ucmbSecondaryFilter']/combobox/combobox[@accessiblerole='ComboBox']
 			</item>
 			<basepath>
 				/form[@controlname='PeopleSelectForm']
@@ -307,7 +360,7 @@ D8zerL8gSEaw7+rFqJ//CkX5CWkHqyZHVzU6AAAAAElFTkSuQmCC
 		name="StickyDetails"
 		refpath="/form[@controlname='StickyDetails']"
 		searchtimeout="30000ms"
-		usecache="True">
+		usecache="False">
 			<item
 			addcaps="button,accessible"
 			capname="button"
@@ -529,7 +582,7 @@ D8zerL8gSEaw7+rFqJ//CkX5CWkHqyZHVzU6AAAAAElFTkSuQmCC
 		name="NoteDetail"
 		refpath="/form[@controlname='NoteDetail']"
 		searchtimeout="30000ms"
-		usecache="True">
+		usecache="False">
 			<folder
 			addcaps="container,control,nativewindow"
 			capname="container"
@@ -1311,6 +1364,17 @@ Cd405uM14N+/f+egSnGDjyvnxjyyVQYbANL0FmjAm/aKH4+9zVWhSqCAgQEAq9YXqsYCPO8AAAAA
 SUVORK5CYII=
 			</icon>
 		</appfolder>
+		<folder
+		capname="table"
+		id="bfd0616b-dd76-47a3-b95b-f515f9c3419a"
+		isrooted="True"
+		name="tblDpdwnList"
+		searchtimeout="60000ms"
+		usecache="False">
+			<basepath>
+				/form[@title='']/?/?/table[@accessiblename='Band 0']
+			</basepath>
+		</folder>
 		<basepath>
 		</basepath>
 	</rootfolder>

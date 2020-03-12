@@ -36,6 +36,38 @@ namespace SmokeTest.Modules
             // Do not delete - a parameterless constructor is required!
         }
 
+string _username = "";
+[TestVariable("96caed55-fd85-4c44-9534-5d329b545087")]
+public string username
+{
+	get { return _username; }
+	set { _username = value; }
+}
+
+string _password = "";
+[TestVariable("d2bca0ae-b50d-43c3-824a-5717f903ef75")]
+public string password
+{
+	get { return _password; }
+	set { _password = value; }
+}
+
+string _server = "";
+[TestVariable("9c23c705-7713-432f-8020-d3bf7d166b0d")]
+public string server
+{
+	get { return _server; }
+	set { _server = value; }
+}
+
+ string _firmid = "";
+[TestVariable("f0a21d94-1772-4e62-ad3a-4bb55cc94183")]
+public string firmid
+{
+	get { return _firmid; }
+	set { _firmid = value; }
+}
+
         Login login=Login.Instance;
         Common cmn=new Common();
         Preferences pref=Preferences.Instance;
@@ -71,11 +103,16 @@ namespace SmokeTest.Modules
         
         private void EnterCredentials()
         {
+
+        	var datasource=Ranorex.DataSources.Get("LoginData");
+        	datasource.Load();
+        	
         	login.SelfInfo.WaitForExists(10000);
-        	login.LoginForm.FirmId.TextValue="QA Toronto 10";
-        	login.LoginForm.UserId.TextValue="admin user";
-        	login.LoginForm.Pwd.TextValue="password";
-        	login.LoginForm.ServerName.TextValue="J4-Mohanss";
+        	
+        	login.LoginForm.FirmId.TextValue=datasource.Rows[1].Values[0].ToString();//"QA Toronto 10";
+        	login.LoginForm.UserId.TextValue=datasource.Rows[1].Values[1].ToString();//="admin user";
+        	login.LoginForm.Pwd.TextValue=datasource.Rows[1].Values[2].ToString();//"password";
+        	login.LoginForm.ServerName.TextValue=datasource.Rows[1].Values[3].ToString();//"J4-Mohanss";
         	login.LoginForm.btnLogin.Click();
         	str.MainForm.SelfInfo.WaitForExists(10000);
         	CloseAnnoncementForm();
@@ -85,8 +122,6 @@ namespace SmokeTest.Modules
 			Delay.Seconds(2);
 			pref.MainForm.StatusBar.Click();
 			Delay.Seconds(2);}
-        	cmn.switchUser("MKumar 298");
-        	
         }
 
         
@@ -99,7 +134,7 @@ namespace SmokeTest.Modules
             Delay.SpeedFactor = 1.0;
             OpenApp();
             EnterCredentials();
-            //cmn.switchUser("MKumar 298");
+            
 
         }
     }

@@ -21,7 +21,7 @@ rxversion="9.0">
 		name="LoginForm"
 		refpath="/form[@controlname='LoginForm']"
 		searchtimeout="30000ms"
-		usecache="True">
+		usecache="False">
 			<item
 			addcaps="text,accessible"
 			capname="text"
@@ -109,7 +109,7 @@ D8zerL8gSEaw7+rFqJ//CkX5CWkHqyZHVzU6AAAAAElFTkSuQmCC
 		name="MainForm"
 		refpath="/form[@controlname='MainForm']"
 		searchtimeout="30000ms"
-		usecache="True">
+		usecache="False">
 			<item
 			addcaps="menuitem,accessible"
 			capname="menuitem"
@@ -687,7 +687,7 @@ D8zerL8gSEaw7+rFqJ//CkX5CWkHqyZHVzU6AAAAAElFTkSuQmCC
 		name="AmicusAttorneyXWin"
 		refpath="/form[@title='' and @processname='AmicusAttorney.XWin' and @controltypename='DropDownForm']"
 		searchtimeout="30000ms"
-		usecache="True">
+		usecache="False">
 			<item
 			addcaps="contextmenu,accessible"
 			capname="contextmenu"
@@ -3109,7 +3109,7 @@ F/cXNG0rDkAnVtkAAAAASUVORK5CYII=
 		name="GeneralPreferencesForm"
 		refpath="/form[@controlname='GeneralPreferencesForm']"
 		searchtimeout="30000ms"
-		usecache="True">
+		usecache="False">
 			<item
 			addcaps="text,accessible"
 			capname="text"
@@ -3308,7 +3308,7 @@ DAPIxVgFicf/GQCdrAkiuOdOjQAAAABJRU5ErkJggg==
 		refimgid="c3da3bc9-a32d-459d-868c-c41c92b620cb"
 		refpath="/form[@controlname='AnnouncementForm']"
 		searchtimeout="30000ms"
-		usecache="True">
+		usecache="False">
 			<folder
 			addcaps="toolbar,uiautomation"
 			capname="toolbar"
@@ -3386,7 +3386,7 @@ SUVORK5CYII=
 		refimgid="b4274d62-8568-41db-a7b8-0c4a9ea6e885"
 		refpath="/form[@controlname='CustomerExperienceProgramForm']"
 		searchtimeout="30000ms"
-		usecache="True">
+		usecache="False">
 			<item
 			addcaps="button,accessible"
 			capname="button"

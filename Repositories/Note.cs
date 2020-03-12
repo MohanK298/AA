@@ -42,6 +42,7 @@ namespace SmokeTest.Repositories
         NoteFolders.EventSelectFormAppFolder _eventselectform;
         NoteFolders.EventReminderFormAppFolder _eventreminderform;
         NoteFolders.AppointmentOverlapDialogAppFolder _appointmentoverlapdialog;
+        NoteFolders.TblDpdwnListFolder _tbldpdwnlist;
 
         /// <summary>
         /// Gets the singleton class instance representing the Note element repository.
@@ -73,6 +74,7 @@ namespace SmokeTest.Repositories
             _eventselectform = new NoteFolders.EventSelectFormAppFolder(this);
             _eventreminderform = new NoteFolders.EventReminderFormAppFolder(this);
             _appointmentoverlapdialog = new NoteFolders.AppointmentOverlapDialogAppFolder(this);
+            _tbldpdwnlist = new NoteFolders.TblDpdwnListFolder(this);
         }
 
 #region Variables
@@ -225,6 +227,15 @@ namespace SmokeTest.Repositories
         {
             get { return _appointmentoverlapdialog; }
         }
+
+        /// <summary>
+        /// The tblDpdwnList folder.
+        /// </summary>
+        [RepositoryFolder("bfd0616b-dd76-47a3-b95b-f515f9c3419a")]
+        public virtual NoteFolders.TblDpdwnListFolder tblDpdwnList
+        {
+            get { return _tbldpdwnlist; }
+        }
     }
 
     /// <summary>
@@ -253,7 +264,7 @@ namespace SmokeTest.Repositories
             /// Creates a new MainForm  folder.
             /// </summary>
             public MainFormAppFolder(RepoGenBaseFolder parentFolder) :
-                    base("MainForm", "/form[@controlname='MainForm']", parentFolder, 30000, null, true, "23762e79-ae30-4042-a701-23ee08bc77d2", "")
+                    base("MainForm", "/form[@controlname='MainForm']", parentFolder, 30000, null, false, "23762e79-ae30-4042-a701-23ee08bc77d2", "")
             {
                 _notesitemfolder = new NoteFolders.NotesItemFolderFolder(this);
                 _panelleft = new NoteFolders.PanelLeftFolder(this);
@@ -927,23 +938,27 @@ namespace SmokeTest.Repositories
         [RepositoryFolder("b1f4cf85-db15-43b9-8e57-af6ede980ec3")]
         public partial class PeopleSelectFormAppFolder : RepoGenBaseFolder
         {
+            NoteFolders.Panel1Folder _panel1;
             RepoItemInfo _txtnameInfo;
             RepoItemInfo _btnaddtorightInfo;
             RepoItemInfo _btnokInfo;
             RepoItemInfo _listnameoneInfo;
             RepoItemInfo _btncancelInfo;
+            RepoItemInfo _comboboxInfo;
 
             /// <summary>
             /// Creates a new PeopleSelectForm  folder.
             /// </summary>
             public PeopleSelectFormAppFolder(RepoGenBaseFolder parentFolder) :
-                    base("PeopleSelectForm", "/form[@controlname='PeopleSelectForm']", parentFolder, 30000, null, true, "b1f4cf85-db15-43b9-8e57-af6ede980ec3", "")
+                    base("PeopleSelectForm", "/form[@controlname='PeopleSelectForm']", parentFolder, 30000, null, false, "b1f4cf85-db15-43b9-8e57-af6ede980ec3", "")
             {
+                _panel1 = new NoteFolders.Panel1Folder(this);
                 _txtnameInfo = new RepoItemInfo(this, "txtName", "container[@controlname='pnlBase']//container[@controlname='panel']/element[@controlname='uteSearch']/?/?/text[@accessiblerole='Text']", 30000, null, "e2b51411-ba38-4b1b-93de-4b2d4aa1fba7");
                 _btnaddtorightInfo = new RepoItemInfo(this, "btnAddToRight", "container[@controlname='panel1']/?/?/button[@accessiblename='>']", 30000, null, "308fb4fb-edd9-4492-a7ac-9e8bcc7c62b1");
                 _btnokInfo = new RepoItemInfo(this, "btnOK", ".//toolbar[@accessiblename='Toolbar']/button[@accessiblename='OK']", 30000, null, "3813598d-42f5-4ae2-b41e-95efcf98c79f");
                 _listnameoneInfo = new RepoItemInfo(this, "listNameOne", "container[@controlname='panel1']//row[@accessiblename='Band 0 row 1']/cell[@accessiblename='Name']", 30000, null, "ba1dcbfa-a709-4daa-80e9-13da200c8d00");
                 _btncancelInfo = new RepoItemInfo(this, "btnCancel", ".//toolbar[@accessiblename='Toolbar']/button[@accessiblename='Cancel']", 30000, null, "4e8113c3-e5fb-444f-99f8-5bcf3d5870d7");
+                _comboboxInfo = new RepoItemInfo(this, "ComboBox", "container[@controlname='pnlBase']//element[@controlname='ucmbSecondaryFilter']/combobox/combobox[@accessiblerole='ComboBox']", 30000, null, "084da027-5d50-43c8-9685-ebbec22e3d2d");
             }
 
             /// <summary>
@@ -1089,6 +1104,157 @@ namespace SmokeTest.Repositories
                     return _btncancelInfo;
                 }
             }
+
+            /// <summary>
+            /// The ComboBox item.
+            /// </summary>
+            [RepositoryItem("084da027-5d50-43c8-9685-ebbec22e3d2d")]
+            public virtual Ranorex.ComboBox ComboBox
+            {
+                get
+                {
+                    return _comboboxInfo.CreateAdapter<Ranorex.ComboBox>(true);
+                }
+            }
+
+            /// <summary>
+            /// The ComboBox item info.
+            /// </summary>
+            [RepositoryItemInfo("084da027-5d50-43c8-9685-ebbec22e3d2d")]
+            public virtual RepoItemInfo ComboBoxInfo
+            {
+                get
+                {
+                    return _comboboxInfo;
+                }
+            }
+
+            /// <summary>
+            /// The Panel1 folder.
+            /// </summary>
+            [RepositoryFolder("7972a37b-3e70-438f-8af5-981323ad6835")]
+            public virtual NoteFolders.Panel1Folder Panel1
+            {
+                get { return _panel1; }
+            }
+        }
+
+        /// <summary>
+        /// The Panel1Folder folder.
+        /// </summary>
+        [RepositoryFolder("7972a37b-3e70-438f-8af5-981323ad6835")]
+        public partial class Panel1Folder : RepoGenBaseFolder
+        {
+            RepoItemInfo _btnaddtoleftInfo;
+            RepoItemInfo _tbselectedInfo;
+            RepoItemInfo _tbselectionInfo;
+
+            /// <summary>
+            /// Creates a new Panel1  folder.
+            /// </summary>
+            public Panel1Folder(RepoGenBaseFolder parentFolder) :
+                    base("Panel1", "container[@controlname='panel1']", parentFolder, 30000, null, false, "7972a37b-3e70-438f-8af5-981323ad6835", "")
+            {
+                _btnaddtoleftInfo = new RepoItemInfo(this, "btnAddToLeft", "?/?/button[@accessiblename='<']", 30000, null, "d5267dc5-e966-4214-8787-6dba6d79f68f");
+                _tbselectedInfo = new RepoItemInfo(this, "tbSelected", "?/?/table[@accessiblename='ArrayList']", 30000, null, "c4dd6a48-73f9-4a4c-bae7-4c8ebec1a7f9");
+                _tbselectionInfo = new RepoItemInfo(this, "tbSelection", "?/?/table[@accessiblename='Band 0']", 30000, null, "ed3d9e94-d6d3-4cb5-906e-2842ddb81827");
+            }
+
+            /// <summary>
+            /// The Self item.
+            /// </summary>
+            [RepositoryItem("7972a37b-3e70-438f-8af5-981323ad6835")]
+            public virtual Ranorex.Container Self
+            {
+                get
+                {
+                    return _selfInfo.CreateAdapter<Ranorex.Container>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Self item info.
+            /// </summary>
+            [RepositoryItemInfo("7972a37b-3e70-438f-8af5-981323ad6835")]
+            public virtual RepoItemInfo SelfInfo
+            {
+                get
+                {
+                    return _selfInfo;
+                }
+            }
+
+            /// <summary>
+            /// The btnAddToLeft item.
+            /// </summary>
+            [RepositoryItem("d5267dc5-e966-4214-8787-6dba6d79f68f")]
+            public virtual Ranorex.Button btnAddToLeft
+            {
+                get
+                {
+                    return _btnaddtoleftInfo.CreateAdapter<Ranorex.Button>(true);
+                }
+            }
+
+            /// <summary>
+            /// The btnAddToLeft item info.
+            /// </summary>
+            [RepositoryItemInfo("d5267dc5-e966-4214-8787-6dba6d79f68f")]
+            public virtual RepoItemInfo btnAddToLeftInfo
+            {
+                get
+                {
+                    return _btnaddtoleftInfo;
+                }
+            }
+
+            /// <summary>
+            /// The tbSelected item.
+            /// </summary>
+            [RepositoryItem("c4dd6a48-73f9-4a4c-bae7-4c8ebec1a7f9")]
+            public virtual Ranorex.Table tbSelected
+            {
+                get
+                {
+                    return _tbselectedInfo.CreateAdapter<Ranorex.Table>(true);
+                }
+            }
+
+            /// <summary>
+            /// The tbSelected item info.
+            /// </summary>
+            [RepositoryItemInfo("c4dd6a48-73f9-4a4c-bae7-4c8ebec1a7f9")]
+            public virtual RepoItemInfo tbSelectedInfo
+            {
+                get
+                {
+                    return _tbselectedInfo;
+                }
+            }
+
+            /// <summary>
+            /// The tbSelection item.
+            /// </summary>
+            [RepositoryItem("ed3d9e94-d6d3-4cb5-906e-2842ddb81827")]
+            public virtual Ranorex.Table tbSelection
+            {
+                get
+                {
+                    return _tbselectionInfo.CreateAdapter<Ranorex.Table>(true);
+                }
+            }
+
+            /// <summary>
+            /// The tbSelection item info.
+            /// </summary>
+            [RepositoryItemInfo("ed3d9e94-d6d3-4cb5-906e-2842ddb81827")]
+            public virtual RepoItemInfo tbSelectionInfo
+            {
+                get
+                {
+                    return _tbselectionInfo;
+                }
+            }
         }
 
         /// <summary>
@@ -1112,7 +1278,7 @@ namespace SmokeTest.Repositories
             /// Creates a new StickyDetails  folder.
             /// </summary>
             public StickyDetailsAppFolder(RepoGenBaseFolder parentFolder) :
-                    base("StickyDetails", "/form[@controlname='StickyDetails']", parentFolder, 30000, null, true, "07c60877-cbb9-44e9-be99-6ca1a0f4f5c4", "")
+                    base("StickyDetails", "/form[@controlname='StickyDetails']", parentFolder, 30000, null, false, "07c60877-cbb9-44e9-be99-6ca1a0f4f5c4", "")
             {
                 _btnaddfileInfo = new RepoItemInfo(this, "btnAddFile", "container[@controlname='StickyDetails_Fill_Panel']//button[@accessiblerole='PushButton']", 30000, null, "b45e18a3-5bc6-4639-aaeb-aaf8384a41b7");
                 _txtnoteboxInfo = new RepoItemInfo(this, "txtNoteBox", "container[@controlname='StickyDetails_Fill_Panel']/element[@controlname='uteStickyMessage']/text[@controltypename='EmbeddableTextBoxWithUIPermissions']/text[@accessiblerole='Text']", 30000, null, "f5d7c246-dc66-4469-94d9-aec2222e94d5");
@@ -1639,7 +1805,7 @@ namespace SmokeTest.Repositories
             /// Creates a new NoteDetail  folder.
             /// </summary>
             public NoteDetailAppFolder(RepoGenBaseFolder parentFolder) :
-                    base("NoteDetail", "/form[@controlname='NoteDetail']", parentFolder, 30000, null, true, "01b7c8aa-6d22-4050-b6b8-bdc0607327c4", "")
+                    base("NoteDetail", "/form[@controlname='NoteDetail']", parentFolder, 30000, null, false, "01b7c8aa-6d22-4050-b6b8-bdc0607327c4", "")
             {
                 _menubarfillpanel = new NoteFolders.MenubarFillPanelFolder(this);
             }
@@ -3733,6 +3899,46 @@ namespace SmokeTest.Repositories
                 get
                 {
                     return _buttonokInfo;
+                }
+            }
+        }
+
+        /// <summary>
+        /// The TblDpdwnListFolder folder.
+        /// </summary>
+        [RepositoryFolder("bfd0616b-dd76-47a3-b95b-f515f9c3419a")]
+        public partial class TblDpdwnListFolder : RepoGenBaseFolder
+        {
+
+            /// <summary>
+            /// Creates a new tblDpdwnList  folder.
+            /// </summary>
+            public TblDpdwnListFolder(RepoGenBaseFolder parentFolder) :
+                    base("tblDpdwnList", "/form[@title='']/?/?/table[@accessiblename='Band 0']", parentFolder, 60000, null, false, "bfd0616b-dd76-47a3-b95b-f515f9c3419a", "")
+            {
+            }
+
+            /// <summary>
+            /// The Self item.
+            /// </summary>
+            [RepositoryItem("bfd0616b-dd76-47a3-b95b-f515f9c3419a")]
+            public virtual Ranorex.Table Self
+            {
+                get
+                {
+                    return _selfInfo.CreateAdapter<Ranorex.Table>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Self item info.
+            /// </summary>
+            [RepositoryItemInfo("bfd0616b-dd76-47a3-b95b-f515f9c3419a")]
+            public virtual RepoItemInfo SelfInfo
+            {
+                get
+                {
+                    return _selfInfo;
                 }
             }
         }

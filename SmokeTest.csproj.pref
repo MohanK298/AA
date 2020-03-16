@@ -1,15 +1,13 @@
 ﻿<Properties>
   <Array name="active">
-    <Element value="Modules\Utilities\Common.cs" />
+    <Element value="Modules\Word_AddIn.cs" />
   </Array>
   <Array name="bookmarks" />
   <Array name="files">
-    <Element value="Modules\shareApptmtBetween2FM.cs" />
+    <Element value="Repositories\Word_app.rxrep" />
     <Element value="SmokeTest.rxtst" />
-    <Element value="Modules\shareTaskBetweenFM.cs" />
-    <Element value="Repositories\Task.cs" />
-    <Element value="Modules\shareFileBetween2FM.cs" />
-    <Element value="Modules\Utilities\Common.cs" />
+    <Element value="Modules\Word_AddIn.cs" />
+    <Element value="Repositories\Premium\Preferences.rxrep" />
   </Array>
   <Properties name="projectSavedData">
     <Properties name="customTool">

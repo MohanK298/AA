@@ -2012,7 +2012,7 @@ namespace SmokeTest.Repositories
             /// Creates a new Open  folder.
             /// </summary>
             public OpenAppFolder(RepoGenBaseFolder parentFolder) :
-                    base("Open", "/form[@title='Open']", parentFolder, 30000, null, true, "51eef256-da32-4f80-bddf-b71842b97b11", "")
+                    base("Open", "/form[@title='Open']", parentFolder, 30000, null, false, "51eef256-da32-4f80-bddf-b71842b97b11", "")
             {
                 _linkdocumentsInfo = new RepoItemInfo(this, "linkDocuments", "element[@class='DUIViewWndClassName']/container/element[1]/?/?/tree[@controlid='100']//treeitem[@text='Documents']", 30000, null, "9f7cf95a-a585-42e3-95c4-cee108f15eb0");
                 _listitemInfo = new RepoItemInfo(this, "listItem", "element[@class='DUIViewWndClassName']//container[@caption='ShellView']/?/?/listitem[@automationid='0']/text[@automationid='System.ItemNameDisplay']", 30000, null, "00aa1062-f87b-4faf-a344-d6fe15483eb3");

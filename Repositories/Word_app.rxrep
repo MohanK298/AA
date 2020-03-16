@@ -1,0 +1,446 @@
+﻿<repository
+id="b1218eb4-f9c5-4e73-8a9c-cfaf0b998fcf"
+name="Word_app">
+	<codegen
+	classname="Word_app"
+	namespace="SmokeTest.Repositories">
+	</codegen>
+	<rootfolder
+	capname="unknown"
+	id="c231291c-9472-4edf-a05a-23ca4aa4bae1"
+	isrooted="True"
+	name="Root"
+	searchtimeout="0ms"
+	usecache="True">
+		<appfolder
+		addcaps="form,nativewindow"
+		capname="form"
+		id="bd79bdeb-a21b-4fa0-9337-021c113fa064"
+		isrooted="True"
+		name="Word"
+		refimgid="5d264323-d628-4667-ace1-aad3433b8315"
+		refpath="/form[@title='Word']"
+		searchtimeout="30000ms"
+		usecache="False">
+			<item
+			addcaps="listitem,uiautomation,uiautomationinvoke"
+			capname="listitem"
+			id="3eb4dbbc-87dc-4326-925d-21fc6c0a8e60"
+			name="BlankDocument"
+			refimgid="bcee64b3-968a-4c0f-a5f7-7675f6150a67"
+			refpath="/form[@title='Word']/element[@class='FullpageUIHost']/container[@class='NetUIHWND']/container[@automationid='BackstageView']/container[@name='New']/container[@name='New']/list[@name='Featured']/listitem[@automationid='AIOStartDocument' and @name='Blank document']"
+			searchtimeout="30000ms">
+				/form[@title='Word']//container[@automationid='BackstageView']/container[@name='New']/?/?/list[@name='Featured']/listitem[@name='Blank document']
+			</item>
+			<item
+			addcaps="link,uiautomation,uiautomationinvoke,uiautomationvalue"
+			capname="link"
+			id="75913b04-a832-4b3a-9724-15807f9e1505"
+			name="lnkOpenOtherDocuments"
+			refimgid="fd0c532b-204b-47b3-ab3d-d0fc4bc346c2"
+			refpath="/form[@title='Word']/element[@class='FullpageUIHost']/container[@class='NetUIHWND']/container[@automationid='BackstageView']/container[@name='New']/container[@name='New']/container[@name='Recent']/link[@name='Open Other Documents']"
+			searchtimeout="30000ms">
+				/form[@title='Word']//container[@automationid='BackstageView']/container[@name='New']/?/?/container[@name='Recent']/link[@name='Open Other Documents']
+			</item>
+			<item
+			addcaps="button,uiautomation,uiautomationinvoke"
+			capname="button"
+			id="80e09eca-6ad8-4a8b-8f03-5084be374769"
+			name="btnBrowse"
+			refimgid="a400b0d2-9b1e-41e8-8fef-6344c28e4bfa"
+			refpath="/form[@title='Word']/element[@class='FullpageUIHost']/container[@class='NetUIHWND']/container[@automationid='BackstageView']/container[@name='Open']/container[@name='Open']/container[@classname='NetUIScrollViewer']/contextmenu[@name='Open']/container[@classname='NetUIElement']/button[@name='Browse']"
+			searchtimeout="30000ms">
+				/form[@title='Word']//container[@automationid='BackstageView']/container[@name='Open']/container[@name='Open']/?/?/contextmenu[@name='Open']/?/?/button[@name='Browse']
+			</item>
+			<basepath>
+				/form[@title='Word']
+			</basepath>
+			<icon>
+				iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACx
+jwv8YQUAAAAJcEhZcwAADsQAAA7EAZUrDhsAAAEzSURBVDhPY4ABi5CVnLpRs421wmenaYbNmKwZ
+Ov2ARvC0txrBU/9rBE39D1WGCbQj563TiZx7G4j/a0fM/q8dPuu/VtjM/5qhM/5rhkz/DzMAJIaM
+gZb81AqbMYFBJ2ref52ouf8JGYAOfv3+CzaEbANAAKSOaANAYjAMA3AD9GLmgQVABoBAQe+u/4Gl
+q8Fsol0AAqYJC8D08p1X/5dP3gtmE+UCkAE7T97/Xzxx7//T1579v3Dzxf9Z687/b55zmHgXTFx5
+9v/uUw/+ty84/v/Jy0//9599+D+sYi3xLsjq2gUWjK3b9P/AuYdgtl7ETOJd4JC5DCxoGj///9TV
+Z8FsomMBZADN0wE2QJEB8KRMcWaCAVB21oqcbQbKzkCJaRoh0w9rBk/7ADMAqgwNMDAAAI/ecB2F
+22goAAAAAElFTkSuQmCC
+			</icon>
+		</appfolder>
+		<appfolder
+		addcaps="form,nativewindow"
+		capname="form"
+		id="e4a8a966-dfef-4712-a17a-6d03f307c44e"
+		isrooted="True"
+		name="AmicusAttorneyTasksToolbar"
+		refimgid="abe93452-835a-44e8-9d20-b9d726a7dcc4"
+		refpath="/form[@title='Amicus Attorney Tasks Toolbar']"
+		searchtimeout="30000ms"
+		usecache="False">
+			<item
+			addcaps="button,nativewindow"
+			capname="button"
+			id="94873efb-139e-45a1-bc8b-70a56f59fd2f"
+			name="btnNext"
+			refimgid="4be7801f-f21f-430a-b17f-e4fe154ed8d6"
+			refpath="/form[@title='Amicus Attorney Tasks Toolbar']/button[@text='&amp;Next >']"
+			searchtimeout="30000ms">
+				/form[@title&gt;'Amicus Attorney Tasks Too']/button[@text='&amp;Next &gt;']
+			</item>
+			<item
+			addcaps="button,nativewindow"
+			capname="button"
+			id="042a29ce-a0a5-4df6-8326-7fcb6fc9456c"
+			name="btnClose"
+			refimgid="a12bd92f-b45e-42f4-8ed7-78a23bd78713"
+			refpath="/form[@title='Amicus Attorney Tasks Toolbar']/button[@text='&amp;Close']"
+			searchtimeout="30000ms">
+				/form[@title&gt;'Amicus Attorney Tasks Too']/button[@text='&amp;Close']
+			</item>
+			<basepath>
+				/form[@title&gt;'Amicus Attorney Tasks Too']
+			</basepath>
+			<icon>
+				iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACx
+jwv8YQUAAAAJcEhZcwAADsQAAA7EAZUrDhsAAAHJSURBVDhPlZJBaxpBGIb3B+xd9ujFkwfBi4J0
+C15FRcjBgyiLRM976KkwZ8tqJEHDQg4huhVpDGXRUNB0wNDb3lLo3jyIP6D+gbfzjdEk6pb2hRdm
+Zud9vu8bVglSOBzGdDoNdLPZhLhGPq50Og3GOOKnHBGTQ6f1857Oe73evwGKPsCwMa01x/8/wH5Y
+sb1gAM09n8+lXwNehyPm+jiAwvV6HeVyGe91fQfQxPxa0YWS+QxVd6HF996gWq3uqrbbbRnuX19L
+wGKxCPSbDkzTBDmZTMowmToiSJCz2Szy+fwGQNVJjLEdoFQq4ep+iIeHTxgOP6Db7WI0Gu26pS4I
+dAC4sm2cn53h3eVXFB0H67UFzzvFnQi3LAupVAqVSgWz2Ux2eQDoXFyg0Wgg43vQHQ6L2+Dcwt3t
+LVarFXK53Hb2TZg0mUzkR3oHArRaLXz58Q2Mu1DjcUSjUfx8eoIjOqrVai/BrfYBnU5HVOVwXRex
+WAyJRALj8RiDwUDeeY69aB9gGIYM05y+byMi1t9//8JyuUShUPg7gB4mFAqh3+/j8fFenNvIeOIP
+FBDmOVBV9RAgRIdbSxHEME5wc/MRRYtB0zNHworyBwgd/ef4Dy06AAAAAElFTkSuQmCC
+			</icon>
+		</appfolder>
+		<appfolder
+		addcaps="form,nativewindow"
+		capname="form"
+		id="d10eec8f-fc93-4df8-91bd-8a07354d02f4"
+		isrooted="True"
+		name="AmicusMergeToolbarInstallShieldWiz"
+		refimgid="28083cb7-d59a-4d1d-a3f9-bbb7461c5213"
+		refpath="/form[@title='Amicus Merge Toolbar - InstallShield Wizard']"
+		searchtimeout="30000ms"
+		usecache="False">
+			<item
+			addcaps="button,nativewindow"
+			capname="button"
+			id="eded0331-798c-4066-a91c-a16468c6e13e"
+			name="btnNext"
+			refimgid="d93a8e1c-7348-4c15-868c-4b20c9a8e3c9"
+			refpath="/form[@title='Amicus Merge Toolbar - InstallShield Wizard']/button[@text='&amp;Next >']"
+			searchtimeout="30000ms">
+				/form[@title&gt;'Amicus Merge Toolbar - InstallShield']/button[@text='&amp;Next &gt;']
+			</item>
+			<item
+			addcaps="button,nativewindow"
+			capname="button"
+			id="ce8a14bb-713f-48c7-a1c7-1c5d06b11e31"
+			name="btnInstall"
+			refimgid="d4936fcb-3ce4-4bd7-97ee-4e3a10703497"
+			refpath="/form[@title='Amicus Merge Toolbar - InstallShield Wizard']/button[@text='&amp;Install']"
+			searchtimeout="30000ms">
+				/form[@title&gt;'Amicus Merge Toolbar - InstallShield']/button[@text='&amp;Install']
+			</item>
+			<item
+			addcaps="button,nativewindow"
+			capname="button"
+			id="c749325a-ce19-42fd-a257-87725d4ec49f"
+			name="btnFinish"
+			refimgid="9d540075-b2fd-4d57-8eb5-c3d6968bb24b"
+			refpath="/form[@title='Amicus Merge Toolbar - InstallShield Wizard']/button[@text='&amp;Finish']"
+			searchtimeout="30000ms">
+				/form[@title&gt;'Amicus Merge Toolbar - InstallShield']/button[@text='&amp;Finish']
+			</item>
+			<basepath>
+				/form[@title&gt;'Amicus Merge Toolbar - InstallShield']
+			</basepath>
+			<icon>
+				iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACx
+jwv8YQUAAAAJcEhZcwAADsQAAA7EAZUrDhsAAAHJSURBVDhPlZJBaxpBGIb3B+xd9ujFkwfBi4J0
+C15FRcjBgyiLRM976KkwZ8tqJEHDQg4huhVpDGXRUNB0wNDb3lLo3jyIP6D+gbfzjdEk6pb2hRdm
+Zud9vu8bVglSOBzGdDoNdLPZhLhGPq50Og3GOOKnHBGTQ6f1857Oe73evwGKPsCwMa01x/8/wH5Y
+sb1gAM09n8+lXwNehyPm+jiAwvV6HeVyGe91fQfQxPxa0YWS+QxVd6HF996gWq3uqrbbbRnuX19L
+wGKxCPSbDkzTBDmZTMowmToiSJCz2Szy+fwGQNVJjLEdoFQq4ep+iIeHTxgOP6Db7WI0Gu26pS4I
+dAC4sm2cn53h3eVXFB0H67UFzzvFnQi3LAupVAqVSgWz2Ux2eQDoXFyg0Wgg43vQHQ6L2+Dcwt3t
+LVarFXK53Hb2TZg0mUzkR3oHArRaLXz58Q2Mu1DjcUSjUfx8eoIjOqrVai/BrfYBnU5HVOVwXRex
+WAyJRALj8RiDwUDeeY69aB9gGIYM05y+byMi1t9//8JyuUShUPg7gB4mFAqh3+/j8fFenNvIeOIP
+FBDmOVBV9RAgRIdbSxHEME5wc/MRRYtB0zNHworyBwgd/ef4Dy06AAAAAElFTkSuQmCC
+			</icon>
+		</appfolder>
+		<appfolder
+		addcaps="form,nativewindow,wordapplication"
+		capname="form"
+		id="c072e9e4-db33-47e4-a0de-33a0dd76587a"
+		isrooted="True"
+		name="WordDocument"
+		searchtimeout="30000ms"
+		usecache="False">
+			<item
+			addcaps="tabpage,uiautomation"
+			capname="tabpage"
+			id="5144b965-e124-4e87-bc1f-d72906393936"
+			name="tabAmicusTasks"
+			refimgid="1b42cf2e-adcc-4e34-9242-0838a6bf23bd"
+			searchtimeout="30000ms">
+				/form[@caption='Word']/container[@caption='MsoDockTop']//container[@name='Ribbon']/tabpagelist[@name='Ribbon Tabs']/tabpage[@name='Amicus Tasks']
+			</item>
+			<item
+			addcaps="text,uiautomation"
+			capname="text"
+			id="bf029171-4234-4dc6-a111-078345c223a3"
+			name="txtBody"
+			refimgid="460fcea3-2959-4d70-b872-3134dbfa20e7"
+			searchtimeout="30000ms">
+				/form[@caption='Word']//worddoc/element/text[@automationid='Body']
+			</item>
+			<item
+			addcaps="container,uiautomation"
+			capname="container"
+			id="9e59c208-a360-4583-99fc-f876f08c006b"
+			name="AmicusAttorneyTasks"
+			refpath="/form[@title='Document1 - Word']/container[@caption='MsoDockTop']/container[@caption='Ribbon']/element[@class='MsoWorkPane']/element[@class='NUIPane']/container[@classname='NetUIHWNDElement']/container[@name='Ribbon']/container[@name='Lower Ribbon']/container[@name='Amicus Tasks']/container[@name='Amicus Attorney Tasks']"
+			searchtimeout="30000ms">
+				/form[@caption='Word']/container[@caption='MsoDockTop']//container[@name='Ribbon']/container[@name='Lower Ribbon']/container[@name='Amicus Tasks']/container[@name='Amicus Attorney Tasks']
+			</item>
+			<folder
+			addcaps="container,uiautomation"
+			capname="container"
+			id="7bca0e63-f46e-4147-b361-e56d83c94ac8"
+			isrooted="True"
+			name="AmicusAttorneyTasks1"
+			refpath="/form[@title='Document1 - Word']/container[@caption='MsoDockTop']/container[@caption='Ribbon']/element[@class='MsoWorkPane']/element[@class='NUIPane']/container[@classname='NetUIHWNDElement']/container[@name='Ribbon']/container[@name='Lower Ribbon']/container[@name='Amicus Tasks']/container[@name='Amicus Attorney Tasks']"
+			searchtimeout="30000ms"
+			usecache="False">
+				<item
+				addcaps="button,uiautomation,uiautomationinvoke"
+				capname="button"
+				id="86a6c91e-2c45-43ff-84a9-2bb8807d649e"
+				name="btnAbout"
+				refpath="/form[@title='Document1 - Word']/container[@caption='MsoDockTop']/container[@caption='Ribbon']/element[@class='MsoWorkPane']/element[@class='NUIPane']/container[@classname='NetUIHWNDElement']/container[@name='Ribbon']/container[@name='Lower Ribbon']/container[@name='Amicus Tasks']/container[@name='Amicus Attorney Tasks']/button[@name='About']"
+				searchtimeout="30000ms">
+					/form[@caption='Word']//container[@name='Ribbon']/container[@name='Lower Ribbon']/container[@name='Amicus Tasks']/container[@name='Amicus Attorney Tasks']/button[@name='About']
+				</item>
+				<item
+				addcaps="button,uiautomation,uiautomationinvoke"
+				capname="button"
+				id="370dd61c-ad63-4ddd-8155-5169c040d5a7"
+				name="btnAddToFile"
+				refpath="/form[@title='Document1 - Word']/container[@caption='MsoDockTop']/container[@caption='Ribbon']/element[@class='MsoWorkPane']/element[@class='NUIPane']/container[@classname='NetUIHWNDElement']/container[@name='Ribbon']/container[@name='Lower Ribbon']/container[@name='Amicus Tasks']/container[@name='Amicus Attorney Tasks']/button[@name='Add to File']"
+				searchtimeout="30000ms">
+					/form[@caption='Word']//container[@name='Ribbon']/container[@name='Lower Ribbon']/container[@name='Amicus Tasks']/container[@name='Amicus Attorney Tasks']/button[@name='Add to File']
+				</item>
+				<item
+				addcaps="button,uiautomation,uiautomationinvoke"
+				capname="button"
+				id="e33662ac-e4ff-434c-8bf4-f453f1456feb"
+				name="btnAddToLibrary"
+				refpath="/form[@title='Document1 - Word']/container[@caption='MsoDockTop']/container[@caption='Ribbon']/element[@class='MsoWorkPane']/element[@class='NUIPane']/container[@classname='NetUIHWNDElement']/container[@name='Ribbon']/container[@name='Lower Ribbon']/container[@name='Amicus Tasks']/container[@name='Amicus Attorney Tasks']/button[@name='Add to Library']"
+				searchtimeout="30000ms">
+					/form[@caption='Word']//container[@name='Ribbon']/container[@name='Lower Ribbon']/container[@name='Amicus Tasks']/container[@name='Amicus Attorney Tasks']/button[@name='Add to Library']
+				</item>
+				<item
+				addcaps="button,uiautomation,uiautomationinvoke"
+				capname="button"
+				id="81317f65-9a35-46d7-b858-225ff716d776"
+				name="btnAddToPeople"
+				refpath="/form[@title='Document1 - Word']/container[@caption='MsoDockTop']/container[@caption='Ribbon']/element[@class='MsoWorkPane']/element[@class='NUIPane']/container[@classname='NetUIHWNDElement']/container[@name='Ribbon']/container[@name='Lower Ribbon']/container[@name='Amicus Tasks']/container[@name='Amicus Attorney Tasks']/button[@name='Add to People']"
+				searchtimeout="30000ms">
+					/form[@caption='Word']//container[@name='Ribbon']/container[@name='Lower Ribbon']/container[@name='Amicus Tasks']/container[@name='Amicus Attorney Tasks']/button[@name='Add to People']
+				</item>
+				<item
+				addcaps="button,uiautomation,uiautomationinvoke"
+				capname="button"
+				id="b9110527-b394-4669-8c5a-4382c67b7fdc"
+				name="btnCheckIn"
+				refpath="/form[@title='Document1 - Word']/container[@caption='MsoDockTop']/container[@caption='Ribbon']/element[@class='MsoWorkPane']/element[@class='NUIPane']/container[@classname='NetUIHWNDElement']/container[@name='Ribbon']/container[@name='Lower Ribbon']/container[@name='Amicus Tasks']/container[@name='Amicus Attorney Tasks']/button[@name='Check In']"
+				searchtimeout="30000ms">
+					/form[@caption='Word']//container[@name='Ribbon']/container[@name='Lower Ribbon']/container[@name='Amicus Tasks']/container[@name='Amicus Attorney Tasks']/button[@name='Check In']
+				</item>
+				<item
+				addcaps="button,uiautomation,uiautomationinvoke"
+				capname="button"
+				id="f9ac17b6-dbad-4d86-ae3c-802e5a20d914"
+				name="btnCheckOut"
+				refpath="/form[@title='Document1 - Word']/container[@caption='MsoDockTop']/container[@caption='Ribbon']/element[@class='MsoWorkPane']/element[@class='NUIPane']/container[@classname='NetUIHWNDElement']/container[@name='Ribbon']/container[@name='Lower Ribbon']/container[@name='Amicus Tasks']/container[@name='Amicus Attorney Tasks']/button[@name='Check Out']"
+				searchtimeout="30000ms">
+					/form[@caption='Word']//container[@name='Ribbon']/container[@name='Lower Ribbon']/container[@name='Amicus Tasks']/container[@name='Amicus Attorney Tasks']/button[@name='Check Out']
+				</item>
+				<item
+				addcaps="button,uiautomation,uiautomationinvoke"
+				capname="button"
+				id="741de932-f371-4001-a832-5c9599e9e0cc"
+				name="btnDetails"
+				refpath="/form[@title='Document1 - Word']/container[@caption='MsoDockTop']/container[@caption='Ribbon']/element[@class='MsoWorkPane']/element[@class='NUIPane']/container[@classname='NetUIHWNDElement']/container[@name='Ribbon']/container[@name='Lower Ribbon']/container[@name='Amicus Tasks']/container[@name='Amicus Attorney Tasks']/button[@name='Details']"
+				searchtimeout="30000ms">
+					/form[@caption='Word']//container[@name='Ribbon']/container[@name='Lower Ribbon']/container[@name='Amicus Tasks']/container[@name='Amicus Attorney Tasks']/button[@name='Details']
+				</item>
+				<item
+				addcaps="button,uiautomation,uiautomationinvoke"
+				capname="button"
+				id="2817ce46-2e66-4dca-a99d-bf0d37ba3ee1"
+				name="btnSearchAmicus"
+				refpath="/form[@title='Document1 - Word']/container[@caption='MsoDockTop']/container[@caption='Ribbon']/element[@class='MsoWorkPane']/element[@class='NUIPane']/container[@classname='NetUIHWNDElement']/container[@name='Ribbon']/container[@name='Lower Ribbon']/container[@name='Amicus Tasks']/container[@name='Amicus Attorney Tasks']/button[@name='Search Amicus']"
+				searchtimeout="30000ms">
+					/form[@caption='Word']//container[@name='Ribbon']/container[@name='Lower Ribbon']/container[@name='Amicus Tasks']/container[@name='Amicus Attorney Tasks']/button[@name='Search Amicus']
+				</item>
+				<item
+				addcaps="text,uiautomation"
+				capname="text"
+				id="9fd703be-b32e-4386-ba42-c26b6475ee64"
+				name="NetUILabel"
+				refpath="/form[@title='Document1 - Word']/container[@caption='MsoDockTop']/container[@caption='Ribbon']/element[@class='MsoWorkPane']/element[@class='NUIPane']/container[@classname='NetUIHWNDElement']/container[@name='Ribbon']/container[@name='Lower Ribbon']/container[@name='Amicus Tasks']/container[@name='Amicus Attorney Tasks']/text[@classname='NetUILabel']"
+				searchtimeout="30000ms">
+					/form[@caption='Word']//container[@name='Ribbon']/container[@name='Lower Ribbon']/container[@name='Amicus Tasks']/container[@name='Amicus Attorney Tasks']/text[@classname='NetUILabel']
+				</item>
+				<item
+				addcaps="text,uiautomation,uiautomationvalue"
+				capname="text"
+				id="c12f24e8-4135-44ee-ba9d-46d806c8bdf5"
+				name="txtSearchText"
+				refpath="/form[@title='Document1 - Word']/container[@caption='MsoDockTop']/container[@caption='Ribbon']/element[@class='MsoWorkPane']/element[@class='NUIPane']/container[@classname='NetUIHWNDElement']/container[@name='Ribbon']/container[@name='Lower Ribbon']/container[@name='Amicus Tasks']/container[@name='Amicus Attorney Tasks']/text[@name='Search Text']"
+				searchtimeout="30000ms">
+					/form[@caption='Word']//container[@name='Ribbon']/container[@name='Lower Ribbon']/container[@name='Amicus Tasks']/container[@name='Amicus Attorney Tasks']/text[@name='Search Text']
+				</item>
+				<basepath>
+					/form[@caption='Word']//container[@name='Ribbon']/container[@name='Lower Ribbon']/container[@name='Amicus Tasks']/container[@name='Amicus Attorney Tasks']
+				</basepath>
+			</folder>
+			<basepath>
+				/form[@caption='Word']
+			</basepath>
+			<icon>
+				iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACx
+jwv8YQUAAAAJcEhZcwAADsQAAA7EAZUrDhsAAAEzSURBVDhPY4ABi5CVnLpRs421wmenaYbNmKwZ
+Ov2ARvC0txrBU/9rBE39D1WGCbQj563TiZx7G4j/a0fM/q8dPuu/VtjM/5qhM/5rhkz/DzMAJIaM
+gZb81AqbMYFBJ2ref52ouf8JGYAOfv3+CzaEbANAAKSOaANAYjAMA3AD9GLmgQVABoBAQe+u/4Gl
+q8Fsol0AAqYJC8D08p1X/5dP3gtmE+UCkAE7T97/Xzxx7//T1579v3Dzxf9Z687/b55zmHgXTFx5
+9v/uUw/+ty84/v/Jy0//9599+D+sYi3xLsjq2gUWjK3b9P/AuYdgtl7ETOJd4JC5DCxoGj///9TV
+Z8FsomMBZADN0wE2QJEB8KRMcWaCAVB21oqcbQbKzkCJaRoh0w9rBk/7ADMAqgwNMDAAAI/ecB2F
+22goAAAAAElFTkSuQmCC
+			</icon>
+		</appfolder>
+		<item
+		capname="form"
+		id="a2c4be22-c12f-4bd1-8b6c-e544b057bc67"
+		name="SplashWord"
+		searchtimeout="30000ms">
+			/form[@title='Opening - Word']
+		</item>
+		<appfolder
+		addcaps="form,nativewindow"
+		capname="form"
+		id="fdda8440-f0fe-46fa-a49a-f593c1b7d482"
+		isrooted="True"
+		name="SaveAs"
+		refpath="/form[@title='Save As']"
+		searchtimeout="30000ms"
+		usecache="False">
+			<item
+			addcaps="text,nativewindow"
+			capname="text"
+			id="d06f8955-7af5-44ca-803b-27b941076d23"
+			name="txtSavePath"
+			refimgid="f3829996-9b69-4d98-bf88-69a1cc9a1ec2"
+			searchtimeout="30000ms">
+				/form[@title='Save As']/?/?/container/element/combobox[@class='ComboBox']/text
+			</item>
+			<item
+			addcaps="button,nativewindow"
+			capname="button"
+			id="698bb55f-f44f-4b6a-9d5e-0a1ddbc825b5"
+			name="btnSave"
+			refimgid="bdfc5555-7505-48a1-8f54-8c1c440f9e66"
+			refpath="/form[@title='Save As']/button[@text='&amp;Save']"
+			searchtimeout="30000ms">
+				/form[@title='Save As']/button[@text='&amp;Save']
+			</item>
+			<basepath>
+				/form[@title='Save As']
+			</basepath>
+			<icon>
+				iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACx
+jwv8YQUAAAAJcEhZcwAADsQAAA7EAZUrDhsAAAEzSURBVDhPY4ABi5CVnLpRs421wmenaYbNmKwZ
+Ov2ARvC0txrBU/9rBE39D1WGCbQj563TiZx7G4j/a0fM/q8dPuu/VtjM/5qhM/5rhkz/DzMAJIaM
+gZb81AqbMYFBJ2ref52ouf8JGYAOfv3+CzaEbANAAKSOaANAYjAMA3AD9GLmgQVABoBAQe+u/4Gl
+q8Fsol0AAqYJC8D08p1X/5dP3gtmE+UCkAE7T97/Xzxx7//T1579v3Dzxf9Z687/b55zmHgXTFx5
+9v/uUw/+ty84/v/Jy0//9599+D+sYi3xLsjq2gUWjK3b9P/AuYdgtl7ETOJd4JC5DCxoGj///9TV
+Z8FsomMBZADN0wE2QJEB8KRMcWaCAVB21oqcbQbKzkCJaRoh0w9rBk/7ADMAqgwNMDAAAI/ecB2F
+22goAAAAAElFTkSuQmCC
+			</icon>
+		</appfolder>
+		<appfolder
+		addcaps="form,nativewindow"
+		capname="form"
+		id="51eef256-da32-4f80-bddf-b71842b97b11"
+		isrooted="True"
+		name="Open"
+		refimgid="481c3241-5e12-4210-bc1e-b33ee66557c0"
+		refpath="/form[@title='Open']"
+		searchtimeout="30000ms"
+		usecache="True">
+			<item
+			addcaps="treeitem"
+			capname="treeitem"
+			id="9f7cf95a-a585-42e3-95c4-cee108f15eb0"
+			name="linkDocuments"
+			refimgid="daa885fb-e1ae-47c0-835d-7836de011d57"
+			refpath="/form[@title='Open']/element[@class='DUIViewWndClassName']/container[@class='DirectUIHWND']/element[@class='CtrlNotifySink' and @instance='0']/element[@class='NamespaceTreeControl']/tree[@controlid='100']/treeitem[@text='Desktop']/treeitem[@text='This PC']/treeitem[@text='Documents']"
+			searchtimeout="30000ms">
+				/form[@title='Open']/element[@class='DUIViewWndClassName']/container/element[1]/?/?/tree[@controlid='100']//treeitem[@text='Documents']
+			</item>
+			<item
+			addcaps="text,uiautomation,uiautomationvalue"
+			capname="text"
+			id="00aa1062-f87b-4faf-a344-d6fe15483eb3"
+			name="listItem"
+			refimgid="fbbedb9d-c537-4cab-8932-2d2671f03ae2"
+			refpath="/form[@title='Open']/element[@class='DUIViewWndClassName']/container[@class='DirectUIHWND']/element[@class='CtrlNotifySink' and @instance='1']/container[@caption='ShellView']/container[@class='DirectUIHWND']/listitem[@automationid='0']/text[@automationid='System.ItemNameDisplay']"
+			searchtimeout="30000ms">
+				/form[@title='Open']/element[@class='DUIViewWndClassName']//container[@caption='ShellView']/?/?/listitem[@automationid='0']/text[@automationid='System.ItemNameDisplay']
+			</item>
+			<item
+			addcaps="button,nativewindow"
+			capname="button"
+			id="b3317b5b-1ee6-4768-8a5c-1a2e440866c8"
+			name="btnOpen"
+			refimgid="ff04da1e-3c45-4545-a34e-9b1bc387094a"
+			refpath="/form[@title='Open']/button[@text='&amp;Open']"
+			searchtimeout="30000ms">
+				/form[@title='Open']/button[@text='&amp;Open']
+			</item>
+			<item
+			addcaps="text,nativewindow"
+			capname="text"
+			id="a1345425-b62a-4a47-b48d-41ecbdd850b4"
+			name="txtFilePath"
+			refimgid="10646b02-1231-4460-b134-209f257747fd"
+			searchtimeout="30000ms">
+				/form[@title='Open']/?/?/text
+			</item>
+			<basepath>
+				/form[@title='Open']
+			</basepath>
+			<icon>
+				iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACx
+jwv8YQUAAAAJcEhZcwAADsQAAA7EAZUrDhsAAAKcSURBVDhPrZNZSFVRFIa3N7GsHlLqoR60DJQo
+hZACS8KgSQokCgMpG8gEm7CIMKPBUswhMRXFKYeEtBTRjNREjUSvE2ldE8pyyik1NdLrPWetv32v
+JwmjNz9YZ8HZ+/v35ux9xGKi07rgsV5Xrs0o5CQfA991NXBucDEPd+/Qhs3Mz12IDXXVRVFTzhC9
+ClYodQtTlDXzfZ1KYWtHuTgkDcAqbe48VlqtRFtpDfpbQdPjwLdsDJx2xM9IB3DpBlDaMnCoACfu
+MWBqarXFnPPEEvODWwrT0ZIJoplZYsmUHu/W2XPvma3MHWehvvRiLlw/i1syJNe/0uxILK7gyRFn
+LgtRqC1WUTszmCfq2NiUgmYba3S4OoIHE0EtF5jK9zI/WaPgpgzpbdtlkc1wZ+15lAaA35xQqOYI
+0BeLiaLb6A46Cr2wwowhBxhJAdWfBJW4mThcEJdHxGi6DGjIS+asbUxlngrV+7P6KQ7jzyKgjFej
+QQgMRl8GcxnUxiDZPBSOFswFgcmaLgPeZt6gcGumQhcTt5zCdOU1fDnujaH4UDQvt0WHuwswmQdq
+DGR6sd1EkTKg5HqCpsslej54IkRAzbJTuP4Qj8Uc4Mn8YBi/FqE/xA96KwFj1UWG/hjUAkcFd+Q3
+MFT4arrlUugo1aeJIwRMT51Nn3c7wFgRwPwjhsfi/VArN9nj6wKq8jBxnAA9cu+Sjq0syzFabhWP
+DmziCKdB41WBoXMr1F/Jm1Wq3k/jYW7q8BUn9fsle5WipXzPbhZ9773MjmTuGCWWJJ7o2chpBxvw
+QAAPZSXIeqwDUmWPkdtO2tnO/R//XGmL8zd/Xui4/fVheh6cxuneekrd10D5QdncWuovx5bOTfn/
+v2De0j/JC7DW+mIgxG8156WhX9NdggAAAABJRU5ErkJggg==
+			</icon>
+		</appfolder>
+		<basepath>
+		</basepath>
+	</rootfolder>
+	<variables>
+	</variables>
+</repository>

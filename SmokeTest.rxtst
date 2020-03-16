@@ -976,6 +976,10 @@ Billing File]]>
 module]]>
 				</description>
 			</smartfoldernode>
+			<testcase
+			id="57309174-e9c7-40be-bd68-5649d6c71a38"
+			name="Word_Addin">
+			</testcase>
 			<smartfoldernode
 			datasource="FileData"
 			id="578c8c98-c4b3-4e32-bd1d-8a5620c35086"
@@ -1509,9 +1513,21 @@ event]]>
 				</databinding>
 			</testmodule>
 			<testmodule
+			id="8647281d-d269-41ef-80f3-447d8fc42734"
+			name="VerifyDocDetailOfficeAddInExistingDoc"
+			ref="4876fafd-5d59-4a74-988f-c7110d962a65"
+			type="UserCode">
+			</testmodule>
+			<testmodule
 			id="86c4049d-9a1d-45ca-a661-c85b399ce63d"
 			name="convertToAppointmentFromControlPanel"
 			ref="59bc1f30-eb6b-473f-87b7-06ecc8655817"
+			type="UserCode">
+			</testmodule>
+			<testmodule
+			id="8827a87b-f9ba-4072-b02d-819b6e02ff6a"
+			name="Word_AddIn"
+			ref="97edf10a-7d43-499c-969c-75a8db0f528d"
 			type="UserCode">
 			</testmodule>
 			<testmodule
@@ -4237,6 +4253,18 @@ bill]]>
 							</testmodule>
 						</teardown>
 					</testcase>
+					<testcase
+					id="57309174-e9c7-40be-bd68-5649d6c71a38"
+					name="Word_Addin">
+						<testmodule
+						id="8827a87b-f9ba-4072-b02d-819b6e02ff6a"
+						name="Word_AddIn">
+						</testmodule>
+						<testmodule
+						id="8647281d-d269-41ef-80f3-447d8fc42734"
+						name="VerifyDocDetailOfficeAddInExistingDoc">
+						</testmodule>
+					</testcase>
 				</testcase>
 			</testsuite>
 		</childhierarchy>
@@ -4992,6 +5020,9 @@ bill]]>
 			</testcontainer>
 			<testcontainer
 			id="565753a1-f5bc-48f2-a9a2-16bf7b4ccf87">
+			</testcontainer>
+			<testcontainer
+			id="57309174-e9c7-40be-bd68-5649d6c71a38">
 			</testcontainer>
 			<testcontainer
 			id="58213b65-da44-4b6b-8a1d-dd85c0118017">

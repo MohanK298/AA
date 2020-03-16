@@ -1609,6 +1609,11 @@ namespace SmokeTest.Repositories.Premium
             RepoItemInfo _cbincludedatetimenotesInfo;
             RepoItemInfo _generalpreferencesformInfo;
             RepoItemInfo _btnactivitycodesInfo;
+            RepoItemInfo _txtwordpathInfo;
+            RepoItemInfo _btnwordinstallInfo;
+            RepoItemInfo _btnwordremoveInfo;
+            RepoItemInfo _btninstallmergetoolbarInfo;
+            RepoItemInfo _btnuninstallmergetoolbarInfo;
 
             /// <summary>
             /// Creates a new GeneralPreferencesForm  folder.
@@ -1622,6 +1627,11 @@ namespace SmokeTest.Repositories.Premium
                 _cbincludedatetimenotesInfo = new RepoItemInfo(this, "cbIncludeDateTimeNotes", "container[@controlname='pnlBase']//container[@controlname='panelBase']/?/?/element[@controlname='achkTimestampNote']/?/?/checkbox[@accessiblename>'Include Date/Time Stamp by']", 30000, null, "e5dda7cf-c2bd-451f-995f-a81bc24151ae");
                 _generalpreferencesformInfo = new RepoItemInfo(this, "GeneralPreferencesForm", "", 30000, null, "ce3dbf95-8bd2-4bb3-88b2-404d03acc97e");
                 _btnactivitycodesInfo = new RepoItemInfo(this, "btnActivityCodes", "container[@controlname='pnlBase']//container[@controlname='panelActivityCodes']/container[@controlname='scActivityCode']/?/?/button[@accessiblerole='PushButton']", 30000, null, "9918b405-e9d0-424b-b729-cedd0216156b");
+                _txtwordpathInfo = new RepoItemInfo(this, "txtWordPath", "container[@controlname='pnlBase']//container[@controlname='panelBase']/?/?/element[@controlname='atxtWord']/text[@controlname='atxtWord_EmbeddableTextBox']", 30000, null, "f13ad314-531c-41e3-906b-16fcfeab8ca9");
+                _btnwordinstallInfo = new RepoItemInfo(this, "btnWordInstall", "container[@controlname='pnlBase']//container[@controlname='panelBase']/?/?/element[@controlname='abtnInstallTasksToolbar']/button[@accessiblename='Install']", 30000, null, "dc0c5c68-9a44-4dc0-ae91-1061227feb2f");
+                _btnwordremoveInfo = new RepoItemInfo(this, "btnWordRemove", "container[@controlname='pnlBase']//container[@controlname='panelBase']/?/?/element[@controlname='abtnInstallTasksToolbar']/button[@accessiblename='Remove']", 30000, null, "3757a068-6dff-4072-8ce5-2ab3fa2bd94b");
+                _btninstallmergetoolbarInfo = new RepoItemInfo(this, "btnInstallMergeToolbar", "container[@controlname='pnlBase']//container[@controlname='panelBase']/?/?/element[@controlname='abtnInstallMergeToolbar']/button[@accessiblename='Install']", 30000, null, "dcae1e15-6188-4909-bc1c-d547749020e3");
+                _btnuninstallmergetoolbarInfo = new RepoItemInfo(this, "btnUninstallMergeToolbar", "container[@controlname='pnlBase']//container[@controlname='panelBase']/?/?/element[@controlname='abtnInstallMergeToolbar']/button[@accessiblename='Uninstall']", 30000, null, "76657972-03d1-465d-b1c7-65c03db6b69f");
             }
 
             /// <summary>
@@ -1789,6 +1799,126 @@ namespace SmokeTest.Repositories.Premium
                 get
                 {
                     return _btnactivitycodesInfo;
+                }
+            }
+
+            /// <summary>
+            /// The txtWordPath item.
+            /// </summary>
+            [RepositoryItem("f13ad314-531c-41e3-906b-16fcfeab8ca9")]
+            public virtual Ranorex.Text txtWordPath
+            {
+                get
+                {
+                    return _txtwordpathInfo.CreateAdapter<Ranorex.Text>(true);
+                }
+            }
+
+            /// <summary>
+            /// The txtWordPath item info.
+            /// </summary>
+            [RepositoryItemInfo("f13ad314-531c-41e3-906b-16fcfeab8ca9")]
+            public virtual RepoItemInfo txtWordPathInfo
+            {
+                get
+                {
+                    return _txtwordpathInfo;
+                }
+            }
+
+            /// <summary>
+            /// The btnWordInstall item.
+            /// </summary>
+            [RepositoryItem("dc0c5c68-9a44-4dc0-ae91-1061227feb2f")]
+            public virtual Ranorex.Button btnWordInstall
+            {
+                get
+                {
+                    return _btnwordinstallInfo.CreateAdapter<Ranorex.Button>(true);
+                }
+            }
+
+            /// <summary>
+            /// The btnWordInstall item info.
+            /// </summary>
+            [RepositoryItemInfo("dc0c5c68-9a44-4dc0-ae91-1061227feb2f")]
+            public virtual RepoItemInfo btnWordInstallInfo
+            {
+                get
+                {
+                    return _btnwordinstallInfo;
+                }
+            }
+
+            /// <summary>
+            /// The btnWordRemove item.
+            /// </summary>
+            [RepositoryItem("3757a068-6dff-4072-8ce5-2ab3fa2bd94b")]
+            public virtual Ranorex.Button btnWordRemove
+            {
+                get
+                {
+                    return _btnwordremoveInfo.CreateAdapter<Ranorex.Button>(true);
+                }
+            }
+
+            /// <summary>
+            /// The btnWordRemove item info.
+            /// </summary>
+            [RepositoryItemInfo("3757a068-6dff-4072-8ce5-2ab3fa2bd94b")]
+            public virtual RepoItemInfo btnWordRemoveInfo
+            {
+                get
+                {
+                    return _btnwordremoveInfo;
+                }
+            }
+
+            /// <summary>
+            /// The btnInstallMergeToolbar item.
+            /// </summary>
+            [RepositoryItem("dcae1e15-6188-4909-bc1c-d547749020e3")]
+            public virtual Ranorex.Button btnInstallMergeToolbar
+            {
+                get
+                {
+                    return _btninstallmergetoolbarInfo.CreateAdapter<Ranorex.Button>(true);
+                }
+            }
+
+            /// <summary>
+            /// The btnInstallMergeToolbar item info.
+            /// </summary>
+            [RepositoryItemInfo("dcae1e15-6188-4909-bc1c-d547749020e3")]
+            public virtual RepoItemInfo btnInstallMergeToolbarInfo
+            {
+                get
+                {
+                    return _btninstallmergetoolbarInfo;
+                }
+            }
+
+            /// <summary>
+            /// The btnUninstallMergeToolbar item.
+            /// </summary>
+            [RepositoryItem("76657972-03d1-465d-b1c7-65c03db6b69f")]
+            public virtual Ranorex.Button btnUninstallMergeToolbar
+            {
+                get
+                {
+                    return _btnuninstallmergetoolbarInfo.CreateAdapter<Ranorex.Button>(true);
+                }
+            }
+
+            /// <summary>
+            /// The btnUninstallMergeToolbar item info.
+            /// </summary>
+            [RepositoryItemInfo("76657972-03d1-465d-b1c7-65c03db6b69f")]
+            public virtual RepoItemInfo btnUninstallMergeToolbarInfo
+            {
+                get
+                {
+                    return _btnuninstallmergetoolbarInfo;
                 }
             }
         }

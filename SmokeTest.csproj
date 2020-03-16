@@ -569,11 +569,17 @@
     <Compile Include="Modules\validate_NoFileOn_Time_Entry_Msg.cs">
       <id>03c1ad4e-1da8-4c5a-906a-49faf3d31d7e</id>
     </Compile>
+    <Compile Include="Modules\VerifyDocDetailOfficeAddInExistingDoc.cs">
+      <id>4b968662-445c-4cb3-9f17-5b5768fc79cf</id>
+    </Compile>
     <Compile Include="Modules\VoidPayment.cs">
       <id>7f4d4c36-2214-4bbc-ac4d-faea2f7b708e</id>
     </Compile>
     <Compile Include="Modules\VoidPaymentAPX.cs">
       <id>f06bea47-ac9c-4145-a550-392759f98b54</id>
+    </Compile>
+    <Compile Include="Modules\Word_AddIn.cs">
+      <id>a7f5b1dc-5d0d-4ac1-b258-bd9a234b82a5</id>
     </Compile>
     <Compile Include="noteCreationFileBradValidationTimeEntryCreation.cs">
       <id>09f99052-c9b2-4a87-b2cc-76c960d7d7f1</id>
@@ -919,6 +925,12 @@
       <DependentUpon>TimeSheets.rxrep</DependentUpon>
       <RepositoryCode>true</RepositoryCode>
       <id>a66d8957-28ea-4e54-b078-5da1441b8730</id>
+    </Compile>
+    <Compile Include="Repositories\Word_app.cs">
+      <BoundTo>9a6b545d-b692-488c-a599-f0311276a9eb</BoundTo>
+      <DependentUpon>Word_app.rxrep</DependentUpon>
+      <RepositoryCode>true</RepositoryCode>
+      <id>6884786e-76f3-4fb6-8938-add715281dc2</id>
     </Compile>
     <Compile Include="selectNoteValidateAssociatedButtons.cs">
       <id>36f09a03-f643-4bbd-b08c-8c823077be81</id>
@@ -1346,6 +1358,17 @@
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
       <id>1e4e1c3c-508d-4294-99d4-cc8119ef76fe</id>
     </Content>
+    <None Include="Repositories\Word_app.rximg">
+      <BoundTo>9a6b545d-b692-488c-a599-f0311276a9eb</BoundTo>
+      <DependentUpon>Word_app.rxrep</DependentUpon>
+      <imageblob>true</imageblob>
+      <id>3cb0b2ef-1827-4ac8-a39d-8ae5894feff6</id>
+    </None>
+    <None Include="Repositories\Word_app.rxrep">
+      <id>9a6b545d-b692-488c-a599-f0311276a9eb</id>
+      <repoid>b1218eb4-f9c5-4e73-8a9c-cfaf0b998fcf</repoid>
+      <reporootid>c231291c-9472-4edf-a05a-23ca4aa4bae1</reporootid>
+    </None>
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Modules">

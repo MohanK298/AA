@@ -593,6 +593,56 @@ D8zerL8gSEaw7+rFqJ//CkX5CWkHqyZHVzU6AAAAAElFTkSuQmCC
 			searchtimeout="30000ms">
 				/form[@controltext='Preferences']/container[@controlname='pnlBase']//container[@controlname='panelActivityCodes']/container[@controlname='scActivityCode']/?/?/button[@accessiblerole='PushButton']
 			</item>
+			<item
+			addcaps="text,control,nativewindow"
+			capname="text"
+			id="f13ad314-531c-41e3-906b-16fcfeab8ca9"
+			name="txtWordPath"
+			refimgid="ddcc007c-528b-441f-936f-b2dbad32398f"
+			refpath="/form[@controlname='DocumentTemplatePreferencesForm']/container[@controlname='pnlBase']/container[@controlname='pnlControls']/container[@controlname='panelTitleBase']/container[@controlname='panelBase']/container[@controlname='panelDisplay']/element[@controlname='atxtWord']/text[@controlname='atxtWord_EmbeddableTextBox']"
+			searchtimeout="30000ms">
+				/form[@controltext='Preferences']/container[@controlname='pnlBase']//container[@controlname='panelBase']/?/?/element[@controlname='atxtWord']/text[@controlname='atxtWord_EmbeddableTextBox']
+			</item>
+			<item
+			addcaps="button,accessible"
+			capname="button"
+			id="dc0c5c68-9a44-4dc0-ae91-1061227feb2f"
+			name="btnWordInstall"
+			refimgid="8137c570-2de3-47e5-a89f-b10eba119704"
+			refpath="/form[@controlname='DocumentTemplatePreferencesForm']/container[@controlname='pnlBase']/container[@controlname='pnlControls']/container[@controlname='panelTitleBase']/container[@controlname='panelBase']/container[@controlname='panelDisplay']/element[@controlname='abtnInstallTasksToolbar']/button[@accessiblename='Install']"
+			searchtimeout="30000ms">
+				/form[@controltext='Preferences']/container[@controlname='pnlBase']//container[@controlname='panelBase']/?/?/element[@controlname='abtnInstallTasksToolbar']/button[@accessiblename='Install']
+			</item>
+			<item
+			addcaps="button,accessible"
+			capname="button"
+			id="3757a068-6dff-4072-8ce5-2ab3fa2bd94b"
+			name="btnWordRemove"
+			refimgid="9da08c44-bafd-4507-84e3-54cda9e9ebcb"
+			refpath="/form[@controlname='DocumentTemplatePreferencesForm']/container[@controlname='pnlBase']/container[@controlname='pnlControls']/container[@controlname='panelTitleBase']/container[@controlname='panelBase']/container[@controlname='panelDisplay']/element[@controlname='abtnInstallTasksToolbar']/button[@accessiblename='Remove']"
+			searchtimeout="30000ms">
+				/form[@controltext='Preferences']/container[@controlname='pnlBase']//container[@controlname='panelBase']/?/?/element[@controlname='abtnInstallTasksToolbar']/button[@accessiblename='Remove']
+			</item>
+			<item
+			addcaps="button,accessible"
+			capname="button"
+			id="dcae1e15-6188-4909-bc1c-d547749020e3"
+			name="btnInstallMergeToolbar"
+			refimgid="61cf42ee-1f98-40f4-9912-6ea7c60c2edd"
+			refpath="/form[@controlname='DocumentTemplatePreferencesForm']/container[@controlname='pnlBase']/container[@controlname='pnlControls']/container[@controlname='panelTitleBase']/container[@controlname='panelBase']/container[@controlname='panelDisplay']/element[@controlname='abtnInstallMergeToolbar']/button[@accessiblename='Install']"
+			searchtimeout="30000ms">
+				/form[@controltext='Preferences']/container[@controlname='pnlBase']//container[@controlname='panelBase']/?/?/element[@controlname='abtnInstallMergeToolbar']/button[@accessiblename='Install']
+			</item>
+			<item
+			addcaps="button,accessible"
+			capname="button"
+			id="76657972-03d1-465d-b1c7-65c03db6b69f"
+			name="btnUninstallMergeToolbar"
+			refimgid="88450088-6a82-466d-8997-7213e5a139cd"
+			refpath="/form[@controlname='DocumentTemplatePreferencesForm']/container[@controlname='pnlBase']/container[@controlname='pnlControls']/container[@controlname='panelTitleBase']/container[@controlname='panelBase']/container[@controlname='panelDisplay']/element[@controlname='abtnInstallMergeToolbar']/button[@accessiblename='Uninstall']"
+			searchtimeout="30000ms">
+				/form[@controltext='Preferences']/container[@controlname='pnlBase']//container[@controlname='panelBase']/?/?/element[@controlname='abtnInstallMergeToolbar']/button[@accessiblename='Uninstall']
+			</item>
 			<basepath>
 				/form[@controltext='Preferences']
 			</basepath>

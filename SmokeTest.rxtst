@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <testsuitedoc
 rxversion="9.0">
 	<testsuiteentryhierarchy>
@@ -378,6 +378,12 @@ module]]>
 			id="1de7d58f-9a78-4b42-a4fe-6c7aaaa19b2c"
 			name="convertToToDo"
 			ref="834f172e-1d9e-473a-ba47-3a25ea1a4cb5"
+			type="UserCode">
+			</testmodule>
+			<testmodule
+			id="1e270848-b9dd-49a2-9faf-3dbbaa544160"
+			name="validatePreferenceLinks"
+			ref="af4b7f3b-2aed-4790-9a73-c3a41128a7d1"
 			type="UserCode">
 			</testmodule>
 			<testmodule
@@ -2523,7 +2529,7 @@ directly and create a Bill]]>
 			</testmodule>
 			<testmodule
 			id="d9b0da9b-e278-4d77-b272-e4bc298e1d08"
-			name="AddWebURL"
+			name="AddNotes"
 			ref="39757aba-2474-4146-a459-bda32520c0da"
 			type="UserCode">
 			</testmodule>
@@ -2545,6 +2551,10 @@ directly and create a Bill]]>
 			ref="d10246f4-af1f-4921-ac63-4f462998c5d5"
 			type="UserCode">
 			</testmodule>
+			<testcase
+			id="dd7e2cc8-a2ca-441e-a3f6-80016dba2aae"
+			name="ValidatePreferenceLinks">
+			</testcase>
 			<testcase
 			id="ddd4bae8-4a40-4286-aafa-a7331e00f10b"
 			name="Outlook_AddIn">
@@ -3601,7 +3611,7 @@ bill]]>
 						name="AddWebURL">
 							<testmodule
 							id="d9b0da9b-e278-4d77-b272-e4bc298e1d08"
-							name="AddWebURL">
+							name="AddNotes">
 							</testmodule>
 						</smartfoldernode>
 						<smartfoldernode
@@ -4325,6 +4335,14 @@ bill]]>
 						name="VerifyOutlook_Enabled_AmicusToolbar">
 						</testmodule>
 					</testcase>
+					<testcase
+					id="dd7e2cc8-a2ca-441e-a3f6-80016dba2aae"
+					name="ValidatePreferenceLinks">
+						<testmodule
+						id="1e270848-b9dd-49a2-9faf-3dbbaa544160"
+						name="validatePreferenceLinks">
+						</testmodule>
+					</testcase>
 				</testcase>
 			</testsuite>
 		</childhierarchy>
@@ -4957,6 +4975,9 @@ bill]]>
 			</testcontainer>
 			<testcontainer
 			id="cb7d9a72-28d4-40e4-8ba0-8593b79bbc22">
+			</testcontainer>
+			<testcontainer
+			id="dd7e2cc8-a2ca-441e-a3f6-80016dba2aae">
 			</testcontainer>
 			<testcontainer
 			id="ddd4bae8-4a40-4286-aafa-a7331e00f10b">

@@ -74,12 +74,12 @@ namespace SmokeTest.Recordings
         void ITestModule.Run()
         {
             Mouse.DefaultMoveTime = 300;
-            Keyboard.DefaultKeyPressTime = 100;
+            Keyboard.DefaultKeyPressTime = 20;
             Delay.SpeedFactor = 1.00;
 
             Init();
 
-            Report.Log(ReportLevel.Info, "Application", "Run application 'C:\\Amicus\\Amicus Attorney Premium Workstation\\AmicusAttorney.XWin.exe' in normal mode. Return value bound to $.", new RecordItemIndex(0));
+            Report.Log(ReportLevel.Info, "Application", "Run application 'C:\\Amicus\\Amicus Attorney Premium Workstation\\AmicusAttorney.XWin.exe' in normal mode.", new RecordItemIndex(0));
             Host.Local.RunApplication("C:\\Amicus\\Amicus Attorney Premium Workstation\\AmicusAttorney.XWin.exe", "", "C:\\Amicus\\Amicus Attorney Premium Workstation", false);
             Delay.Milliseconds(0);
             
@@ -98,7 +98,7 @@ namespace SmokeTest.Recordings
             Delay.Milliseconds(200);
             
             Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '{Back}{Back}{Back}{Back}{Back}{LShiftKey down}T{LShiftKey up}erri' with focus on 'LoginForm.txtUserID'.", repo.LoginForm.txtUserIDInfo, new RecordItemIndex(4));
-            repo.LoginForm.txtUserID.PressKeys("{Back}{Back}{Back}{Back}{Back}{LShiftKey down}T{LShiftKey up}erri");
+            repo.LoginForm.txtUserID.PressKeys("{Back}{Back}{Back}{Back}{Back}{LShiftKey down}T{LShiftKey up}erri", 100);
             Delay.Milliseconds(0);
             
             Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'LoginForm.txtPassword' at 32;9.", repo.LoginForm.txtPasswordInfo, new RecordItemIndex(5));
@@ -106,7 +106,7 @@ namespace SmokeTest.Recordings
             Delay.Milliseconds(200);
             
             Report.Log(ReportLevel.Info, "Keyboard", "Key sequence 'password' with focus on 'LoginForm.txtPassword'.", repo.LoginForm.txtPasswordInfo, new RecordItemIndex(6));
-            repo.LoginForm.txtPassword.PressKeys("password");
+            repo.LoginForm.txtPassword.PressKeys("password", 100);
             Delay.Milliseconds(0);
             
             Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'LoginForm.btnLogin' at 28;13.", repo.LoginForm.btnLoginInfo, new RecordItemIndex(7));

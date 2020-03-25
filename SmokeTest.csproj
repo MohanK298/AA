@@ -575,6 +575,9 @@
     <Compile Include="Modules\validateDocumentIndexViewer.cs">
       <id>6ca04291-0553-4754-817d-376c41638b4d</id>
     </Compile>
+    <Compile Include="Modules\validatePreferenceLinks.cs">
+      <id>e3dc1d93-0255-41ae-bc6b-02d9461b6718</id>
+    </Compile>
     <Compile Include="Modules\validate_Existing_Time_Entry_OnFile_Msg.cs">
       <id>775104d3-10a9-498e-aea9-307577fa4930</id>
     </Compile>

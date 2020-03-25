@@ -228,6 +228,51 @@ Cd405uM14N+/f+egSnGDjyvnxjyyVQYbANL0FmjAm/aKH4+9zVWhSqCAgQEAq9YXqsYCPO8AAAAA
 SUVORK5CYII=
 			</icon>
 		</appfolder>
+		<appfolder
+		addcaps="form,control,nativewindow"
+		capname="form"
+		id="aee45c88-2397-4893-b4bb-380ffc9ce352"
+		isrooted="True"
+		name="Update"
+		refimgid="fa8712df-d5fe-4601-9523-33dd5b3aa253"
+		refpath="/form[@controlname='Form1']"
+		searchtimeout="30000ms"
+		usecache="True">
+			<item
+			addcaps="button,control,nativewindow"
+			capname="button"
+			id="c9f65c85-0b07-40aa-a093-05c69c92cffa"
+			name="btnContinue"
+			refimgid="a2675fc6-ba63-416b-98a6-4bebc0c5681a"
+			refpath="/form[@controlname='Form1']/button[@controlname='button2']"
+			searchtimeout="30000ms">
+				/form[@controlname='Form1']/button[@controlname='button2']
+			</item>
+			<item
+			addcaps="button,control,nativewindow"
+			capname="button"
+			id="d88b156e-0473-471f-8dcd-326a091a432e"
+			name="btnFinish"
+			refimgid="e63995f9-d0e9-4404-81a2-cc2ac9f948c6"
+			refpath="/form[@controlname='Form1']/button[@controlname='button1']"
+			searchtimeout="30000ms">
+				/form[@controlname='Form1']/button[@controlname='button1']
+			</item>
+			<basepath>
+				/form[@controlname='Form1']
+			</basepath>
+			<icon>
+				iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACx
+jwv8YQUAAAAJcEhZcwAADsQAAA7EAZUrDhsAAAFlSURBVDhPY6AJeOJjOvORg9p/FOyo/v9xoKUT
+VAlugKERDT921nwLVQoBb3Kj+Z5FOf9/FuP2/1msO3EYpBaIH7vr/Qcb8Oft6//kgFclif/Brnjo
+qPYZKvb/z8tn/z+tWfD/bWspWMHLwrj/r8pT/7/rrfv/dffG//++fwOr+3Hu+P8nPsYTwAY8CbRM
+fGSvCnbev29fwQpwgd9PH/1/N6ERHB5gzSDwyFX3IkjgeZLv/0+rF/z/snPD/4fWCmAND60V/3+Y
+1fP//cxuYABqgcUe2SqBDXge5qoDMcBN9w3MgDdNhf/fTWr+/xCoCKb4XU/t/7fd1Shi4BgJtPSG
+GqBzjhwDnkbaa4ANAIZBBDkGgDXDAMkGAFMmVCsEPHLTO0uKAU+jnYygWhHgeZIPUQY8dFS/BdWC
+Cd405uM14N+/f+egSnGDjyvnxjyyVQYbANL0FmjAm/aKH4+9zVWhSqCAgQEAq9YXqsYCPO8AAAAA
+SUVORK5CYII=
+			</icon>
+		</appfolder>
 		<basepath>
 		</basepath>
 	</rootfolder>

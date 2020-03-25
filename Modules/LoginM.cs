@@ -19,6 +19,8 @@ using Ranorex.Core;
 using Ranorex.Core.Testing;
 
 using SmokeTest.Repositories;
+using SmokeTest.Repositories.Premium;
+using SmokeTest.Modules.Utilities;
 
 namespace SmokeTest
 {
@@ -30,6 +32,7 @@ namespace SmokeTest
     {
     	//Repository Variable
     	SmokeTestRepository str = SmokeTestRepository.Instance;
+    	Login login=Login.Instance;
     	Duration customWaitTime = new Duration(300000);
     	
     	string _password = "";
@@ -71,27 +74,62 @@ namespace SmokeTest
         {
             // Do not delete - a parameterless constructor is required!
         }
-        
+       
+        	
         //Launch application and login
-        public void Login(){
+        public void LoginUser(){
         	
-        	Host.Local.RunApplication("C:\\Amicus\\Amicus Attorney Workstation\\AmicusAttorney.XWin.exe");
+        	 var datasource=Ranorex.DataSources.Get("LoginData");
+        datasource.Load();
 
-        	str.LoginForm.txtFirmID.TextValue = firmID;
-        	Delay.Seconds(1);
+//        	str.LoginForm.txtFirmID.TextValue = firmID;
+//        	Delay.Seconds(1);
+//        	
+//        	str.LoginForm.txtUserID.TextValue = userID;
+//        	Delay.Seconds(1);
+//        	
+//        	str.LoginForm.txtPassword.TextValue = password;
+//        	Delay.Seconds(1);
+//        	
+//        	str.LoginForm.txtServerName.TextValue = serverName;
+//        	Delay.Seconds(1);
+//        	
+//        	str.LoginForm.btnLogin.Click();
         	
-        	str.LoginForm.txtUserID.TextValue = userID;
-        	Delay.Seconds(1);
         	
-        	str.LoginForm.txtPassword.TextValue = password;
-        	Delay.Seconds(1);
+        	login.LoginForm.FirmId.TextValue=datasource.Rows[0].Values[0].ToString();//"QA Toronto 10";
+        	login.LoginForm.UserId.TextValue=datasource.Rows[0].Values[1].ToString();//="admin user";
+        	login.LoginForm.Pwd.TextValue=datasource.Rows[0].Values[2].ToString();//"password";
+        	login.LoginForm.ServerName.TextValue=datasource.Rows[0].Values[3].ToString();//"J4-Mohanss";
+        	login.LoginForm.btnLogin.Click();
+        	str.MainForm.SelfInfo.WaitForExists(10000);
+        
         	
-        	str.LoginForm.txtServerName.TextValue = serverName;
-        	Delay.Seconds(1);
         	
-        	str.LoginForm.btnLogin.Click();
         }
 
+        public void update()
+        {
+        	Host.Local.RunApplication("C:\\Amicus\\Amicus Attorney Workstation\\AmicusAttorney.XWin.exe");
+        	
+        	if(login.Update.SelfInfo.Exists(10000))
+        	{
+        		if(login.Update.btnContinueInfo.Exists(3000))
+        		{
+        			login.Update.btnContinue.Click();
+        		}
+        		login.Update.btnFinishInfo.WaitForExists(240000);
+        		if(login.Update.btnFinishInfo.Exists(3000))
+        		{
+        			login.Update.btnFinish.Click();
+        			Report.Success("Amicus Attorney Updated Successfully");
+        		}
+        			
+        	}
+        	Report.Success("Amicus Attorney opened Successfully");
+        	
+        }
+        
         //This part will handle billing setup on the first login of the day
         public void BillingSetup(){
         	for(int i=0; i<7; i++){
@@ -106,16 +144,16 @@ namespace SmokeTest
             Mouse.DefaultMoveTime = 300;
             Keyboard.DefaultKeyPressTime = 100;
             Delay.SpeedFactor = 1.0;
-            
-           Login();
+           update(); 
+           LoginUser();
            
            /*try{
            		BillingSetup();
            }catch(Exception ex){
            		Report.Log(ReportLevel.Warn, "(Could Not Find Billing Setup Window) " + ex.Message);
            }*/
-           Delay.Seconds(180);
-           str.MainForm.SelfInfo.WaitForExists(customWaitTime);
+        //   Delay.Seconds(180);
+           //str.MainForm.SelfInfo.WaitForExists(customWaitTime);
         }
     }
 }

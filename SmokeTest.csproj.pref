@@ -1,13 +1,12 @@
 ﻿<Properties>
   <Array name="active">
-    <Element value="Modules\Word_AddIn.cs" />
+    <Element value="Modules\LoginM.cs" />
   </Array>
   <Array name="bookmarks" />
   <Array name="files">
-    <Element value="Repositories\Word_app.rxrep" />
     <Element value="SmokeTest.rxtst" />
-    <Element value="Modules\Word_AddIn.cs" />
-    <Element value="Repositories\Premium\Preferences.rxrep" />
+    <Element value="Modules\startApp.cs" />
+    <Element value="Modules\LoginM.cs" />
   </Array>
   <Properties name="projectSavedData">
     <Properties name="customTool">

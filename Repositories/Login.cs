@@ -30,6 +30,7 @@ namespace SmokeTest.Repositories
         LoginFolders.LoginFormAppFolder _loginform;
         LoginFolders.AnnouncementFormAppFolder _announcementform;
         LoginFolders.CustomerExperienceProgramFormAppFolder _customerexperienceprogramform;
+        LoginFolders.UpdateAppFolder _update;
 
         /// <summary>
         /// Gets the singleton class instance representing the Login element repository.
@@ -49,6 +50,7 @@ namespace SmokeTest.Repositories
             _loginform = new LoginFolders.LoginFormAppFolder(this);
             _announcementform = new LoginFolders.AnnouncementFormAppFolder(this);
             _customerexperienceprogramform = new LoginFolders.CustomerExperienceProgramFormAppFolder(this);
+            _update = new LoginFolders.UpdateAppFolder(this);
         }
 
 #region Variables
@@ -92,6 +94,15 @@ namespace SmokeTest.Repositories
         public virtual LoginFolders.CustomerExperienceProgramFormAppFolder CustomerExperienceProgramForm
         {
             get { return _customerexperienceprogramform; }
+        }
+
+        /// <summary>
+        /// The Update folder.
+        /// </summary>
+        [RepositoryFolder("aee45c88-2397-4893-b4bb-380ffc9ce352")]
+        public virtual LoginFolders.UpdateAppFolder Update
+        {
+            get { return _update; }
         }
     }
 
@@ -606,6 +617,98 @@ namespace SmokeTest.Repositories
                 get
                 {
                     return _declineInfo;
+                }
+            }
+        }
+
+        /// <summary>
+        /// The UpdateAppFolder folder.
+        /// </summary>
+        [RepositoryFolder("aee45c88-2397-4893-b4bb-380ffc9ce352")]
+        public partial class UpdateAppFolder : RepoGenBaseFolder
+        {
+            RepoItemInfo _btncontinueInfo;
+            RepoItemInfo _btnfinishInfo;
+
+            /// <summary>
+            /// Creates a new Update  folder.
+            /// </summary>
+            public UpdateAppFolder(RepoGenBaseFolder parentFolder) :
+                    base("Update", "/form[@controlname='Form1']", parentFolder, 30000, null, true, "aee45c88-2397-4893-b4bb-380ffc9ce352", "")
+            {
+                _btncontinueInfo = new RepoItemInfo(this, "btnContinue", "button[@controlname='button2']", 30000, null, "c9f65c85-0b07-40aa-a093-05c69c92cffa");
+                _btnfinishInfo = new RepoItemInfo(this, "btnFinish", "button[@controlname='button1']", 30000, null, "d88b156e-0473-471f-8dcd-326a091a432e");
+            }
+
+            /// <summary>
+            /// The Self item.
+            /// </summary>
+            [RepositoryItem("aee45c88-2397-4893-b4bb-380ffc9ce352")]
+            public virtual Ranorex.Form Self
+            {
+                get
+                {
+                    return _selfInfo.CreateAdapter<Ranorex.Form>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Self item info.
+            /// </summary>
+            [RepositoryItemInfo("aee45c88-2397-4893-b4bb-380ffc9ce352")]
+            public virtual RepoItemInfo SelfInfo
+            {
+                get
+                {
+                    return _selfInfo;
+                }
+            }
+
+            /// <summary>
+            /// The btnContinue item.
+            /// </summary>
+            [RepositoryItem("c9f65c85-0b07-40aa-a093-05c69c92cffa")]
+            public virtual Ranorex.Button btnContinue
+            {
+                get
+                {
+                    return _btncontinueInfo.CreateAdapter<Ranorex.Button>(true);
+                }
+            }
+
+            /// <summary>
+            /// The btnContinue item info.
+            /// </summary>
+            [RepositoryItemInfo("c9f65c85-0b07-40aa-a093-05c69c92cffa")]
+            public virtual RepoItemInfo btnContinueInfo
+            {
+                get
+                {
+                    return _btncontinueInfo;
+                }
+            }
+
+            /// <summary>
+            /// The btnFinish item.
+            /// </summary>
+            [RepositoryItem("d88b156e-0473-471f-8dcd-326a091a432e")]
+            public virtual Ranorex.Button btnFinish
+            {
+                get
+                {
+                    return _btnfinishInfo.CreateAdapter<Ranorex.Button>(true);
+                }
+            }
+
+            /// <summary>
+            /// The btnFinish item info.
+            /// </summary>
+            [RepositoryItemInfo("d88b156e-0473-471f-8dcd-326a091a432e")]
+            public virtual RepoItemInfo btnFinishInfo
+            {
+                get
+                {
+                    return _btnfinishInfo;
                 }
             }
         }

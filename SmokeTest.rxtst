@@ -11,6 +11,12 @@ rxversion="9.0">
 			id="00e7b547-ace3-430b-87bc-afc35384f5c9"
 			name="TestViewNavigation">
 			</smartfoldernode>
+			<testmodule
+			id="00f16073-a758-4d91-94b1-03477c9e13a8"
+			name="AddToLibrary_Doc_OfficeAddIn"
+			ref="bbae675f-7c4c-4eda-96cb-f9f4792aa9ae"
+			type="UserCode">
+			</testmodule>
 			<smartfoldernode
 			datasource="TimeSheetsData"
 			id="011c73f0-c0f0-475f-a47b-68d7f585c7ca"
@@ -2361,8 +2367,11 @@ directly and create a Bill]]>
 			name="TimeEntries">
 			</testcase>
 			<testcase
+			datarangeactive="True"
 			datasource="LoginData"
 			id="cb7d9a72-28d4-40e4-8ba0-8593b79bbc22"
+			maxrange="0"
+			minrange="0"
 			name="Login">
 				<description>
 					<![CDATA[Login to the Amicus Attorney Premium]]>
@@ -2404,6 +2413,12 @@ directly and create a Bill]]>
 					<![CDATA[Edit and Verify created Task event]]>
 				</description>
 			</smartfoldernode>
+			<testmodule
+			id="cf2e3d15-335b-46cd-ba50-e3e4e5a4be0c"
+			name="AddToPeople_Doc_Office_AddIn"
+			ref="1567ac5f-e7c5-4044-b946-9127d5fe5e34"
+			type="UserCode">
+			</testmodule>
 			<testmodule
 			enabled="False"
 			id="d19c8d17-2437-4c8f-8f06-9e8a3eb14985"
@@ -2530,6 +2545,10 @@ directly and create a Bill]]>
 			ref="d10246f4-af1f-4921-ac63-4f462998c5d5"
 			type="UserCode">
 			</testmodule>
+			<testcase
+			id="ddd4bae8-4a40-4286-aafa-a7331e00f10b"
+			name="Outlook_AddIn">
+			</testcase>
 			<testmodule
 			id="deb44f13-9864-467d-b8fb-29b018cfc9e0"
 			name="verifyEventsAddFromFiles"
@@ -2615,6 +2634,12 @@ Page]]>
 			id="e4b294e1-af5f-4d37-9b7c-75c245bf372d"
 			name="createNewApptOverlapExistAdjrnAppt"
 			ref="6ce50dd2-e5c1-4b32-985c-3e7701ff6b7e"
+			type="UserCode">
+			</testmodule>
+			<testmodule
+			id="e5646aeb-02a1-424c-9b72-d58e17d43b6a"
+			name="VerifyOutlook_Enabled_AmicusToolbar"
+			ref="0df65b44-6467-42b1-915e-f9992bb6dc33"
 			type="UserCode">
 			</testmodule>
 			<smartfoldernode
@@ -2815,7 +2840,6 @@ bill]]>
 			type="UserCode">
 			</testmodule>
 			<testmodule
-			enabled="False"
 			id="f4c8ca79-828b-4527-b5f9-0bd82956ee2e"
 			name="LoginM"
 			ref="86270bf4-ce4d-42e6-99fd-39a39e59d33d"
@@ -2855,6 +2879,12 @@ bill]]>
 			id="f5a16d5f-0b38-4475-9415-458c07356c8e"
 			name="testViewNavigation"
 			ref="a50c2c9b-e677-4477-8c5e-570d20d59e2b"
+			type="UserCode">
+			</testmodule>
+			<testmodule
+			id="f6dabff4-4425-4006-a5cb-150f1673df0b"
+			name="AddToFile_Doc_OfficeAddIn"
+			ref="6d49f9ec-16a6-43d9-b6b5-a5436c01975c"
 			type="UserCode">
 			</testmodule>
 			<testmodule
@@ -2932,6 +2962,12 @@ bill]]>
 			id="f901d733-7704-463e-9ba4-bae8cefc0d42"
 			name="CreateManyPhoneCalls">
 			</smartfoldernode>
+			<testmodule
+			id="f9215f1b-885e-42dc-ad1a-9cd990be82e2"
+			name="SearchFunctionality_Office_WordAddIn"
+			ref="7233f945-b61d-4620-8661-2f78b0f4152f"
+			type="UserCode">
+			</testmodule>
 			<testcase
 			datasource="SendEmailConnector"
 			id="f999b233-305c-4e9e-a5e8-bd5b49a34123"
@@ -4264,6 +4300,30 @@ bill]]>
 						id="8647281d-d269-41ef-80f3-447d8fc42734"
 						name="VerifyDocDetailOfficeAddInExistingDoc">
 						</testmodule>
+						<testmodule
+						id="f6dabff4-4425-4006-a5cb-150f1673df0b"
+						name="AddToFile_Doc_OfficeAddIn">
+						</testmodule>
+						<testmodule
+						id="cf2e3d15-335b-46cd-ba50-e3e4e5a4be0c"
+						name="AddToPeople_Doc_Office_AddIn">
+						</testmodule>
+						<testmodule
+						id="00f16073-a758-4d91-94b1-03477c9e13a8"
+						name="AddToLibrary_Doc_OfficeAddIn">
+						</testmodule>
+						<testmodule
+						id="f9215f1b-885e-42dc-ad1a-9cd990be82e2"
+						name="SearchFunctionality_Office_WordAddIn">
+						</testmodule>
+					</testcase>
+					<testcase
+					id="ddd4bae8-4a40-4286-aafa-a7331e00f10b"
+					name="Outlook_AddIn">
+						<testmodule
+						id="e5646aeb-02a1-424c-9b72-d58e17d43b6a"
+						name="VerifyOutlook_Enabled_AmicusToolbar">
+						</testmodule>
 					</testcase>
 				</testcase>
 			</testsuite>
@@ -4902,25 +4962,16 @@ bill]]>
 			id="019c20d4-d5ca-4cc1-b2d4-d6ba32724a2e">
 			</testcontainer>
 			<testcontainer
-			id="020fa6c1-b65e-43d8-adbf-e916aee0015e">
-			</testcontainer>
-			<testcontainer
 			id="031bdf19-b993-4e49-98d3-42afd9e86fcb">
 			</testcontainer>
 			<testcontainer
 			id="050bea6e-2129-44ce-8a76-eef174d86edd">
 			</testcontainer>
 			<testcontainer
-			id="0aacc30c-766d-44a5-a0c4-5b7d05b3954b">
-			</testcontainer>
-			<testcontainer
 			id="0ab772d6-dec6-4974-855f-ff3b742165a3">
 			</testcontainer>
 			<testcontainer
 			id="0c9e64c0-68a4-4cdc-91a2-147f5a9ae058">
-			</testcontainer>
-			<testcontainer
-			id="0ca5fe10-df54-47f5-9b14-557f59785b43">
 			</testcontainer>
 			<testcontainer
 			id="0ea1f9a7-31f0-4cd6-baf7-559e7a41c068">
@@ -4933,9 +4984,6 @@ bill]]>
 			</testcontainer>
 			<testcontainer
 			id="0fc09e0e-23a5-4203-9f7b-cac59cdc96bc">
-			</testcontainer>
-			<testcontainer
-			id="15d854c4-74db-4dcb-93c0-e6631cefe305">
 			</testcontainer>
 			<testcontainer
 			id="18ff24f3-8679-4458-b3fe-e4bf51c16e55">
@@ -4968,19 +5016,10 @@ bill]]>
 			id="32442159-632a-43ca-aa2b-a7a41794639b">
 			</testcontainer>
 			<testcontainer
-			id="3354bb10-62fe-479e-9188-98414e24f959">
-			</testcontainer>
-			<testcontainer
 			id="341f66fc-768f-4fad-b39c-5baa19ca4fbd">
 			</testcontainer>
 			<testcontainer
-			id="341fadd3-dddf-4ae8-ab25-7a805f3c16db">
-			</testcontainer>
-			<testcontainer
 			id="3603e041-f535-4d9c-ad69-c45e53b082d1">
-			</testcontainer>
-			<testcontainer
-			id="37c9e3f8-34e3-46ea-8a5c-2a0fca4079c3">
 			</testcontainer>
 			<testcontainer
 			id="3b2e6fab-e895-4cf3-bd0a-f93aef1425ae">
@@ -4992,19 +5031,7 @@ bill]]>
 			id="3d587e15-d432-4a12-8531-db56cb59b79f">
 			</testcontainer>
 			<testcontainer
-			id="3f7e9bda-619a-435d-89e3-2bc090023364">
-			</testcontainer>
-			<testcontainer
-			id="4610af79-dade-4f36-a8a6-bc0ab8f3af4e">
-			</testcontainer>
-			<testcontainer
 			id="465b5dd6-3959-41b4-8b6e-11868cbf7f9a">
-			</testcontainer>
-			<testcontainer
-			id="48127973-c9a3-4064-8264-46bbf0e6f7d0">
-			</testcontainer>
-			<testcontainer
-			id="4e9c0e21-4a9c-4ee6-8f89-4bd34b4f3b6e">
 			</testcontainer>
 			<testcontainer
 			id="4ef7b0b3-886c-423c-af84-cc33d562d95d">
@@ -5031,9 +5058,6 @@ bill]]>
 			id="5b5aea69-6426-460b-b666-6ea8e58b7416">
 			</testcontainer>
 			<testcontainer
-			id="617d1b07-0685-449a-a510-b2038d125def">
-			</testcontainer>
-			<testcontainer
 			id="64a5051c-5e93-4631-9ae4-106f27c84059">
 			</testcontainer>
 			<testcontainer
@@ -5041,9 +5065,6 @@ bill]]>
 			</testcontainer>
 			<testcontainer
 			id="666db4da-8a00-402e-82a8-10fb9106bed8">
-			</testcontainer>
-			<testcontainer
-			id="66a83577-8864-4b77-9f46-c6a771f806f3">
 			</testcontainer>
 			<testcontainer
 			id="6782dbf2-9bcd-44c0-8142-de70f57d6aa3">
@@ -5070,12 +5091,6 @@ bill]]>
 			id="701a4de7-911e-4959-bc20-c0e8423f48e1">
 			</testcontainer>
 			<testcontainer
-			id="75bfd9cc-6eb9-42a6-bbaf-110143ffbd36">
-			</testcontainer>
-			<testcontainer
-			id="7ab50160-7a97-40e2-ad44-b1bba3374998">
-			</testcontainer>
-			<testcontainer
 			id="7dd06647-a62c-4aba-b0f2-4ff956b0705a">
 			</testcontainer>
 			<testcontainer
@@ -5083,9 +5098,6 @@ bill]]>
 			</testcontainer>
 			<testcontainer
 			id="8415e0b4-3c9d-48b5-9028-1adabd0000b2">
-			</testcontainer>
-			<testcontainer
-			id="8b2c2e55-1965-4c10-ba2b-4417e7a86a84">
 			</testcontainer>
 			<testcontainer
 			id="8db0154d-7953-4ec5-8e78-25b7335b140e">
@@ -5178,16 +5190,10 @@ bill]]>
 			id="cef60493-9e3d-4998-9bf4-596fde0078bc">
 			</testcontainer>
 			<testcontainer
+			id="ddd4bae8-4a40-4286-aafa-a7331e00f10b">
+			</testcontainer>
+			<testcontainer
 			id="dec6b1c6-534b-41f0-bdcb-c728a5bd2ab4">
-			</testcontainer>
-			<testcontainer
-			id="e41ee8eb-9dc9-46f3-ac26-ef9b039bcb3f">
-			</testcontainer>
-			<testcontainer
-			id="e56a65dc-1f93-4351-a226-b2e4d2b238f3">
-			</testcontainer>
-			<testcontainer
-			id="e60efaf3-ada5-47bf-9bc6-eb20dd9708b2">
 			</testcontainer>
 			<testcontainer
 			id="e86fa298-7367-46c5-b8ee-1c655dd4c261">
@@ -5221,9 +5227,6 @@ bill]]>
 			</testcontainer>
 			<testcontainer
 			id="fa338964-1e4d-44de-8e8b-2bf0e088ca08">
-			</testcontainer>
-			<testcontainer
-			id="fbd357b7-088e-4cef-a8d2-7d18c364b71c">
 			</testcontainer>
 		</testconfiguration>
 	</testconfigurations>

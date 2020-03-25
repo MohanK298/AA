@@ -218,6 +218,15 @@
     <Compile Include="Modules\AddToDo.cs">
       <id>a8fd4472-270c-477b-96d5-b56f171067be</id>
     </Compile>
+    <Compile Include="Modules\AddToFile_Doc_OfficeAddIn.cs">
+      <id>5fbe8347-394c-4add-894b-81ddd0e470c3</id>
+    </Compile>
+    <Compile Include="Modules\AddToLibrary_Doc_OfficeAddIn.cs">
+      <id>fcedf71a-98d7-4707-a3f4-39a0408a9c09</id>
+    </Compile>
+    <Compile Include="Modules\AddToPeople_Doc_Office_AddIn.cs">
+      <id>1668f538-0d45-483e-b0ad-a5a19402f4a0</id>
+    </Compile>
     <Compile Include="Modules\AfterFirstLogin.cs">
       <id>26a96e05-3c64-453a-bf15-82c0244ff190</id>
     </Compile>
@@ -506,6 +515,9 @@
       <UserCode>true</UserCode>
       <id>27843a14-2f34-412f-bc03-6ef2ab511f92</id>
     </Compile>
+    <Compile Include="Modules\SearchFunctionality_Office_WordAddIn.cs">
+      <id>761b4ac7-36f6-4b21-943e-ff9e2cf973d6</id>
+    </Compile>
     <Compile Include="Modules\SendDocumentViaEmail.cs">
       <id>4b7d6b73-f432-4a30-82a7-fc7f72845358</id>
     </Compile>
@@ -571,6 +583,9 @@
     </Compile>
     <Compile Include="Modules\VerifyDocDetailOfficeAddInExistingDoc.cs">
       <id>4b968662-445c-4cb3-9f17-5b5768fc79cf</id>
+    </Compile>
+    <Compile Include="Modules\VerifyOutlook_Enabled_AmicusToolbar.cs">
+      <id>54d1ac5d-2fa8-433b-8e72-d5c271148cfc</id>
     </Compile>
     <Compile Include="Modules\VoidPayment.cs">
       <id>7f4d4c36-2214-4bbc-ac4d-faea2f7b708e</id>
@@ -853,6 +868,12 @@
       <DependentUpon>Note.rxrep</DependentUpon>
       <RepositoryCode>true</RepositoryCode>
       <id>4f08ab23-d1c4-464e-b1c7-fe10e67ff0e1</id>
+    </Compile>
+    <Compile Include="Repositories\Outlook_AddIn.cs">
+      <BoundTo>903f6b3b-a995-4139-babe-4e5aa0992e27</BoundTo>
+      <DependentUpon>Outlook_AddIn.rxrep</DependentUpon>
+      <RepositoryCode>true</RepositoryCode>
+      <id>b04ac4d6-3e12-4768-b89d-27c56c2be469</id>
     </Compile>
     <Compile Include="Repositories\People.cs">
       <BoundTo>7D6B7893-9870-41AF-B93B-C13F8CB6A357</BoundTo>
@@ -1220,6 +1241,17 @@
       <id>DBDD3C39-17CD-4F44-B71C-3E391074099C</id>
       <repoid>8056debe-6b9a-42b9-b512-a4ceeb0afa46</repoid>
       <reporootid>de38a076-8e47-4455-9a53-8e9f6218336a</reporootid>
+    </None>
+    <None Include="Repositories\Outlook_AddIn.rximg">
+      <BoundTo>903f6b3b-a995-4139-babe-4e5aa0992e27</BoundTo>
+      <DependentUpon>Outlook_AddIn.rxrep</DependentUpon>
+      <imageblob>true</imageblob>
+      <id>f0711fbc-8911-4d0f-815b-6b98434b94dc</id>
+    </None>
+    <None Include="Repositories\Outlook_AddIn.rxrep">
+      <id>903f6b3b-a995-4139-babe-4e5aa0992e27</id>
+      <repoid>31ef849c-bc5c-4524-896f-a0fe187f4d61</repoid>
+      <reporootid>b0647827-511c-40e5-94fe-1bfd60b6273a</reporootid>
     </None>
     <None Include="Repositories\People.rximg">
       <BoundTo>7D6B7893-9870-41AF-B93B-C13F8CB6A357</BoundTo>

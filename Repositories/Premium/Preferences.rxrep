@@ -686,11 +686,74 @@ D8zerL8gSEaw7+rFqJ//CkX5CWkHqyZHVzU6AAAAAElFTkSuQmCC
 			addcaps="button,uiautomation,uiautomationinvoke"
 			capname="button"
 			id="0ca01454-1e39-40d2-80df-5ff5d2c6dfae"
-			name="ButtonToolbarWIZARDToolsToolCL"
+			name="btnClose"
 			refimgid="4f068347-d0d6-4f69-9405-7fa9c69eff86"
 			searchtimeout="30000ms">
 				/form[@controlname='EmailPreferencesForm']/?/?/?/button[@name='Close ' and @controltype='Button']
 			</item>
+			<item
+			addcaps="radiobutton,control,nativewindow"
+			capname="radiobutton"
+			id="5d756fa7-50ee-453f-8bef-f712188028ee"
+			name="rdoOutlook"
+			refimgid="2fb972c5-a759-46ab-b24d-0cb09e655fd7"
+			refpath="/form[@controlname='EmailPreferencesForm']/container[@controlname='pnlControls']/container[@controlname='pnlBody']/radiobutton[@controlname='ardoOutlook']"
+			searchtimeout="30000ms">
+				/form[@controlname='EmailPreferencesForm']/container[@controlname='pnlControls']/?/?/radiobutton[@controlname='ardoOutlook']
+			</item>
+			<item
+			addcaps="button,accessible"
+			capname="button"
+			id="664623d6-704a-4176-9ba8-24f3abe11e67"
+			name="btnStep1"
+			refimgid="ceb89ecc-62fe-4664-aec5-eb36197aeae7"
+			refpath="/form[@controlname='EmailPreferencesForm']/container[@controlname='pnlControls']/container[@controlname='pnlBody']/container[@controlname='panel2']/element[@controlname='abtnStep1']/button[@accessiblename='Step 1']"
+			searchtimeout="30000ms">
+				/form[@controlname='EmailPreferencesForm']/container[@controlname='pnlControls']/?/?/container[@controlname='panel2']/?/?/button[@accessiblename='Step 1']
+			</item>
+			<folder
+			addcaps="container,control,nativewindow"
+			capname="container"
+			id="52b91707-b3b2-4b1d-9162-92276126deef"
+			isrooted="True"
+			name="Panel2"
+			refpath="/form[@controlname='EmailPreferencesForm']/container[@controlname='pnlControls']/container[@controlname='pnlBody']/container[@controlname='panel2']"
+			searchtimeout="30000ms"
+			usecache="False">
+				<item
+				addcaps="button,accessible"
+				capname="button"
+				id="ed97aef4-5780-4ad8-9009-1f274d8776c7"
+				name="btnStep2"
+				refimgid="1f5de061-3e17-49ae-ae2d-a8953a7329e9"
+				refpath="/form[@controlname='EmailPreferencesForm']/container[@controlname='pnlControls']/container[@controlname='pnlBody']/container[@controlname='panel2']/element[@controlname='abtnStep2']/button[@accessiblename='Step 2']"
+				searchtimeout="30000ms">
+					/form[@controlname='EmailPreferencesForm']/container[@controlname='pnlControls']/?/?/container[@controlname='panel2']/?/?/button[@accessiblename='Step 2']
+				</item>
+				<item
+				addcaps="button,accessible"
+				capname="button"
+				id="32370495-7823-468d-8135-963a05a05997"
+				name="btnStep3"
+				refimgid="99d17104-5b18-40eb-94e6-eff3f058293c"
+				refpath="/form[@controlname='EmailPreferencesForm']/container[@controlname='pnlControls']/container[@controlname='pnlBody']/container[@controlname='panel2']/element[@controlname='abtnStep3']/button[@accessiblename='Step 3']"
+				searchtimeout="30000ms">
+					/form[@controlname='EmailPreferencesForm']/container[@controlname='pnlControls']/?/?/container[@controlname='panel2']/?/?/button[@accessiblename='Step 3']
+				</item>
+				<item
+				addcaps="button,accessible"
+				capname="button"
+				id="a1211bb4-df19-4a53-b56d-2319723b5e47"
+				name="btnStep4"
+				refimgid="12671711-08a5-4f23-a2d2-3e9882752f0c"
+				refpath="/form[@controlname='EmailPreferencesForm']/container[@controlname='pnlControls']/container[@controlname='pnlBody']/container[@controlname='panel2']/element[@controlname='abtnStep4']/button[@accessiblename='Step 4']"
+				searchtimeout="30000ms">
+					/form[@controlname='EmailPreferencesForm']/container[@controlname='pnlControls']/?/?/container[@controlname='panel2']/?/?/button[@accessiblename='Step 4']
+				</item>
+				<basepath>
+					/form[@controlname='EmailPreferencesForm']/container[@controlname='pnlControls']/?/?/container[@controlname='panel2']
+				</basepath>
+			</folder>
 			<basepath>
 				/form[@controlname='EmailPreferencesForm']
 			</basepath>
@@ -1021,6 +1084,7 @@ SUVORK5CYII=
 		id="0abde5c6-cda9-48ba-9275-e19f920c3654"
 		isrooted="True"
 		name="DropDownForm"
+		refimgid="9b439083-c37b-4518-8373-1f06ef985dcf"
 		refpath="/form"
 		searchtimeout="30000ms"
 		usecache="False">
@@ -1032,6 +1096,16 @@ SUVORK5CYII=
 			refpath="/form/element/table"
 			searchtimeout="30000ms">
 				/form/?/?/table
+			</item>
+			<item
+			addcaps="container,uiautomation,uiautomationinvoke,uiautomationvalue"
+			capname="container"
+			id="c6aee353-b694-44a8-a21e-447b0e955142"
+			name="GroupByExpandedDateToday"
+			refimgid="cc7a24b1-8505-4e0a-9309-505f76b3a348"
+			refpath="/form[@title='Inbox - amicustestmk1@gmail.com - Outlook']/element[@controlid='4704']/container[@name='Group By: Expanded: Date: Today']"
+			searchtimeout="30000ms">
+				/form/element[@controlid='4704']/container[2]
 			</item>
 			<basepath>
 				/form
@@ -1073,6 +1147,277 @@ QmCC
 		searchtimeout="30000ms">
 			/form[@controlname='MainForm']/?/?/text[@accessiblename&gt;$loginuser]
 		</item>
+		<appfolder
+		capname="form"
+		id="706cf2c9-95ed-489b-926e-6212b1e11089"
+		isrooted="True"
+		name="EmailBasicForm"
+		refimgid="90db8687-516a-44be-add9-5a707595db50"
+		searchtimeout="30000ms"
+		usecache="False">
+			<folder
+			addcaps="container,control,nativewindow"
+			capname="container"
+			id="cf7778a3-9ca0-42c5-89c0-8b3e2521410f"
+			isrooted="True"
+			name="PnlControls"
+			refpath="/form[@controlname='EmailBasicsForm']/container[@controlname='pnlControls']"
+			searchtimeout="30000ms"
+			usecache="False">
+				<item
+				addcaps="checkbox,accessible"
+				capname="checkbox"
+				id="a5f4c87f-75ff-48ac-addc-549430a3d20c"
+				name="cbSavedUnsavedEmail"
+				refimgid="cc7b3c63-4eb4-4387-929b-c0fde9201787"
+				refpath="/form[@controlname='EmailBasicsForm']/container[@controlname='pnlControls']/container[@controlname='pnlBody']/element[@controlname='aceAutoDelete']/checkbox[@accessiblename='When Saved/Unsaved E-mail is deleted in Amicus, also delete in Outlook / Exchange']/checkbox[@accessiblename='When Saved/Unsaved E-mail is deleted in Amicus, also delete in Outlook / Exchange']"
+				searchtimeout="30000ms">
+					/form[@controlname='EmailBasicsForm']/container[@controlname='pnlControls']/?/?/element[@controlname='aceAutoDelete']/?/?/checkbox[@accessiblename&gt;'When Saved/Unsaved E-mail']
+				</item>
+				<item
+				addcaps="checkbox,accessible"
+				capname="checkbox"
+				id="6ffaf4bc-6e92-4490-a7a4-7d818cf0fd48"
+				name="cbEnableAmicusToolbar"
+				refimgid="ca0c08e3-30c7-434e-b13d-f0cb00e8a59c"
+				refpath="/form[@controlname='EmailBasicsForm']/container[@controlname='pnlControls']/container[@controlname='pnlBody']/element[@controlname='aceEnableOutlookToolbar']/checkbox[@accessiblename='Enable the Amicus Taskbar within Outlook']/checkbox[@accessiblename='Enable the Amicus Taskbar within Outlook']"
+				searchtimeout="30000ms">
+					/form[@controlname='EmailBasicsForm']/container[@controlname='pnlControls']/?/?/element[@controlname='aceEnableOutlookToolbar']/?/?/checkbox[@accessiblename&gt;'Enable the Amicus Taskbar']
+				</item>
+				<item
+				addcaps="checkbox,accessible"
+				capname="checkbox"
+				id="4228d04f-e61f-4a27-8de0-cb332e2251df"
+				name="cbShowEmbeddedView"
+				refimgid="d1eeb31e-a386-4dbb-9541-76d5c3c0128f"
+				refpath="/form[@controlname='EmailBasicsForm']/container[@controlname='pnlControls']/container[@controlname='pnlBody']/element[@controlname='aceIsOutlookView']/checkbox[@accessiblename='Show the embedded view of my Outlook mail in the Communications module']/checkbox[@accessiblename='Show the embedded view of my Outlook mail in the Communications module']"
+				searchtimeout="30000ms">
+					/form[@controlname='EmailBasicsForm']/container[@controlname='pnlControls']/?/?/element[@controlname='aceIsOutlookView']/?/?/checkbox[@accessiblename&gt;'Show the embedded view of']
+				</item>
+				<item
+				addcaps="checkbox,accessible"
+				capname="checkbox"
+				id="45a26c26-9745-4dce-b79c-fb1ecf6f7b90"
+				name="cbStartTimer"
+				refimgid="49d68d69-f056-4e5b-9c67-327f79c45d08"
+				refpath="/form[@controlname='EmailBasicsForm']/container[@controlname='pnlControls']/container[@controlname='pnlBody']/element[@controlname='aceAutoStartTimer']/checkbox[@accessiblename='Start Timer when E-mail is created (if associated with one Amicus File)']/checkbox[@accessiblename='Start Timer when E-mail is created (if associated with one Amicus File)']"
+				searchtimeout="30000ms">
+					/form[@controlname='EmailBasicsForm']/container[@controlname='pnlControls']/?/?/element[@controlname='aceAutoStartTimer']/?/?/checkbox[@accessiblename&gt;'Start Timer when E-mail is']
+				</item>
+				<basepath>
+					/form[@controlname='EmailBasicsForm']/container[@controlname='pnlControls']
+				</basepath>
+			</folder>
+			<item
+			addcaps="toolbar,accessible"
+			capname="toolbar"
+			id="f3be7281-4f9d-4f82-83e5-34b52a235c7f"
+			name="Toolbar"
+			refpath="/form[@controlname='EmailBasicsForm']/element[@controlname='_BaseDialogForm_Toolbars_Dock_Area_Bottom']/container[@accessiblename='DockBottom']/toolbar[@accessiblename='Toolbar']"
+			searchtimeout="30000ms">
+				/form[@controlname='EmailBasicsForm']/element[@controlname='_BaseDialogForm_Toolbars_Dock_Area_Bottom']/?/?/toolbar[@accessiblename='Toolbar']
+			</item>
+			<item
+			addcaps="container,accessible"
+			capname="container"
+			id="293b3c8a-0445-4915-b69f-c9c9f5318b8a"
+			name="DockBottom"
+			refpath="/form[@controlname='EmailBasicsForm']/element[@controlname='_BaseDialogForm_Toolbars_Dock_Area_Bottom']/container[@accessiblename='DockBottom']"
+			searchtimeout="30000ms">
+				/form[@controlname='EmailBasicsForm']/?/?/container[@accessiblename='DockBottom']
+			</item>
+			<folder
+			addcaps="toolbar,accessible"
+			capname="toolbar"
+			id="f1d620b7-25fe-4fcf-a3a8-382d67df57ab"
+			isrooted="True"
+			name="Toolbar1"
+			refpath="/form[@controlname='EmailBasicsForm']/element[@controlname='_BaseDialogForm_Toolbars_Dock_Area_Bottom']/container[@accessiblename='DockBottom']/toolbar[@accessiblename='Toolbar']"
+			searchtimeout="30000ms"
+			usecache="False">
+				<item
+				addcaps="button,accessible"
+				capname="button"
+				id="2c24bf23-2b18-47be-9e82-50e712b56036"
+				name="btnCancel"
+				refpath="/form[@controlname='EmailBasicsForm']/element[@controlname='_BaseDialogForm_Toolbars_Dock_Area_Bottom']/container[@accessiblename='DockBottom']/toolbar[@accessiblename='Toolbar']/button[@accessiblename='Cancel ']"
+				searchtimeout="30000ms">
+					/form[@controlname='EmailBasicsForm']//toolbar[@accessiblename='Toolbar']/button[@accessiblename='Cancel ']
+				</item>
+				<item
+				addcaps="button,accessible"
+				capname="button"
+				id="ad1cec3d-426c-44fb-a644-84e280f46875"
+				name="btnFinish"
+				refpath="/form[@controlname='EmailBasicsForm']/element[@controlname='_BaseDialogForm_Toolbars_Dock_Area_Bottom']/container[@accessiblename='DockBottom']/toolbar[@accessiblename='Toolbar']/button[@accessiblename='Finish']"
+				searchtimeout="30000ms">
+					/form[@controlname='EmailBasicsForm']//toolbar[@accessiblename='Toolbar']/button[@accessiblename='Finish']
+				</item>
+				<basepath>
+					/form[@controlname='EmailBasicsForm']//toolbar[@accessiblename='Toolbar']
+				</basepath>
+			</folder>
+			<basepath>
+				/form[@controlname='EmailBasicsForm']
+			</basepath>
+		</appfolder>
+		<appfolder
+		capname="form"
+		id="1ecd7445-4792-4ebd-a292-efe8f2ac1993"
+		isrooted="True"
+		name="EmailAttachmentForm"
+		searchtimeout="30000ms"
+		usecache="False">
+			<item
+			addcaps="button,accessible"
+			capname="button"
+			id="214c150f-1b1f-48f0-87b8-45eab5530b3a"
+			name="btnFinish"
+			refimgid="3b9b2b18-7ddb-4e9a-a47e-09b5c286dcb2"
+			refpath="/form[@controlname='EmailAttachmentsForm']/element[@controlname='_BaseDialogForm_Toolbars_Dock_Area_Bottom']/container[@accessiblename='DockBottom']/toolbar[@accessiblename='Toolbar']/button[@accessiblename='Finish']"
+			searchtimeout="30000ms">
+				/form[@controlname='EmailAttachmentsForm']//toolbar[@accessiblename='Toolbar']/button[@accessiblename='Finish']
+			</item>
+			<basepath>
+				/form[@controlname='EmailAttachmentsForm']
+			</basepath>
+		</appfolder>
+		<appfolder
+		capname="form"
+		id="96965b7c-4928-499b-88c2-72a9cfa78caf"
+		isrooted="True"
+		name="EmailAutoSaveForm"
+		refimgid="c7dcd6de-c542-4e6a-9b32-582dd0a903ad"
+		searchtimeout="30000ms"
+		usecache="False">
+			<item
+			addcaps="button,accessible"
+			capname="button"
+			id="5d886b85-fda9-4a73-8c6c-d1b897c3fb0c"
+			name="btnFinish"
+			refimgid="873d4cc9-6c69-49a4-9017-11e662670294"
+			refpath="/form[@controlname='EmailAutosaveForm']/element[@controlname='_BaseDialogForm_Toolbars_Dock_Area_Bottom']/container[@accessiblename='DockBottom']/toolbar[@accessiblename='Toolbar']/button[@accessiblename='Finish']"
+			searchtimeout="30000ms">
+				/form[@controlname='EmailAutosaveForm']//toolbar[@accessiblename='Toolbar']/button[@accessiblename='Finish']
+			</item>
+			<basepath>
+				/form[@controlname='EmailAutosaveForm']
+			</basepath>
+		</appfolder>
+		<appfolder
+		capname="form"
+		id="8ec2b23c-7c34-46a1-8bba-633aca0f33bd"
+		isrooted="True"
+		name="EmailInitialization"
+		refimgid="a6022f73-b098-42eb-8dd5-cde03d0b77ed"
+		searchtimeout="30000ms"
+		usecache="False">
+			<folder
+			addcaps="container,control,nativewindow"
+			capname="container"
+			id="68d947a9-89b4-4795-96ad-7ed596056eef"
+			isrooted="True"
+			name="PnlControls"
+			refpath="/form[@controlname='EmailInitialization']/container[@controlname='pnlControls']"
+			searchtimeout="30000ms"
+			usecache="False">
+				<item
+				addcaps="checkbox,accessible"
+				capname="checkbox"
+				id="02fad97f-f831-43de-901b-36b242a7d4bc"
+				name="cbReadytoBeginProcess"
+				refimgid="6de6e079-ed6e-4fe1-b7de-8306485e8139"
+				refpath="/form[@controlname='EmailInitialization']/container[@controlname='pnlControls']/container[@controlname='pnlBody']/container[@controlname='panelOutlook']/element[@controlname='achkReadyToProcess']/checkbox[@accessiblename='I am ready to begin processing my e-mail.']/checkbox[@accessiblename='I am ready to begin processing my e-mail.']"
+				searchtimeout="30000ms">
+					/form[@controlname='EmailInitialization']/container[@controlname='pnlControls']/?/?/container[@controlname='panelOutlook']/element[@controlname='achkReadyToProcess']/checkbox[@accessiblename&gt;'I am ready to begin processing']/checkbox[@accessiblename&gt;'I am ready to begin processing']
+				</item>
+				<item
+				addcaps="checkbox,accessible"
+				capname="checkbox"
+				id="fc325317-2ff0-429b-9312-a6f9e4b0fd4f"
+				name="cbCurrentlyLoggedIn"
+				refimgid="77780918-2365-4a38-9c20-507381701ab7"
+				refpath="/form[@controlname='EmailInitialization']/container[@controlname='pnlControls']/container[@controlname='pnlBody']/container[@controlname='panelOutlook']/element[@controlname='uchkWorkstation']/checkbox[@accessiblename='I am currently logged in to my customary workstation where my Outlook is configured.']/checkbox[@accessiblename='I am currently logged in to my customary workstation where my Outlook is configured.']"
+				searchtimeout="30000ms">
+					/form[@controlname='EmailInitialization']/container[@controlname='pnlControls']/?/?/container[@controlname='panelOutlook']/element[@controlname='uchkWorkstation']/checkbox[@accessiblename&gt;'I am currently logged in to']/checkbox[@accessiblename&gt;'I am currently logged in to']
+				</item>
+				<item
+				addcaps="checkbox,accessible"
+				capname="checkbox"
+				id="16424595-089a-4ed1-96da-e7b1865e26ae"
+				name="cbReviewGuide"
+				refimgid="94da482c-9c88-4069-b95a-e0c28a6600ad"
+				refpath="/form[@controlname='EmailInitialization']/container[@controlname='pnlControls']/container[@controlname='pnlBody']/element[@controlname='uchkReviewGuide']/checkbox[@accessiblename='Review the']/checkbox[@accessiblename='Review the']"
+				searchtimeout="30000ms">
+					/form[@controlname='EmailInitialization']/container[@controlname='pnlControls']/container[@controlname='pnlBody']/element[@controlname='uchkReviewGuide']/checkbox[@accessiblename='Review the']/checkbox[@accessiblename='Review the']
+				</item>
+				<basepath>
+					/form[@controlname='EmailInitialization']/container[@controlname='pnlControls']
+				</basepath>
+			</folder>
+			<item
+			addcaps="toolbar,accessible"
+			capname="toolbar"
+			id="a393cef9-dcb0-4817-a1a7-f06c708d4711"
+			name="Toolbar"
+			refpath="/form[@controlname='EmailInitialization']/element[@controlname='_BaseDialogForm_Toolbars_Dock_Area_Bottom']/container[@accessiblename='DockBottom']/toolbar[@accessiblename='Toolbar']"
+			searchtimeout="30000ms">
+				/form[@controlname='EmailInitialization']/element[@controlname='_BaseDialogForm_Toolbars_Dock_Area_Bottom']/?/?/toolbar[@accessiblename='Toolbar']
+			</item>
+			<folder
+			addcaps="toolbar,accessible"
+			capname="toolbar"
+			id="8f780116-45de-418e-a9de-622402a80ab7"
+			isrooted="True"
+			name="Toolbar1"
+			refpath="/form[@controlname='EmailInitialization']/element[@controlname='_BaseDialogForm_Toolbars_Dock_Area_Bottom']/container[@accessiblename='DockBottom']/toolbar[@accessiblename='Toolbar']"
+			searchtimeout="30000ms"
+			usecache="False">
+				<item
+				addcaps="button,accessible"
+				capname="button"
+				id="71af1314-9647-4a99-b1ce-0eae064769c1"
+				name="btnBeginProcess"
+				refpath="/form[@controlname='EmailInitialization']/element[@controlname='_BaseDialogForm_Toolbars_Dock_Area_Bottom']/container[@accessiblename='DockBottom']/toolbar[@accessiblename='Toolbar']/button[@accessiblename='Begin Process']"
+				searchtimeout="30000ms">
+					/form[@controlname='EmailInitialization']//toolbar[@accessiblename='Toolbar']/button[@accessiblename='Begin Process']
+				</item>
+				<item
+				addcaps="button,accessible"
+				capname="button"
+				id="f0bb6831-4dc8-4406-ad77-a0d0811c3047"
+				name="btnCancel"
+				refpath="/form[@controlname='EmailInitialization']/element[@controlname='_BaseDialogForm_Toolbars_Dock_Area_Bottom']/container[@accessiblename='DockBottom']/toolbar[@accessiblename='Toolbar']/button[@accessiblename='Cancel ']"
+				searchtimeout="30000ms">
+					/form[@controlname='EmailInitialization']//toolbar[@accessiblename='Toolbar']/button[@accessiblename='Cancel ']
+				</item>
+				<item
+				addcaps="unknown,accessible"
+				capname="unknown"
+				id="57df86d0-1a53-4b0e-a39b-aa496c013259"
+				name="None"
+				refpath="/form[@controlname='EmailInitialization']/element[@controlname='_BaseDialogForm_Toolbars_Dock_Area_Bottom']/container[@accessiblename='DockBottom']/toolbar[@accessiblename='Toolbar']/element[@accessiblename='']"
+				searchtimeout="30000ms">
+					/form[@controlname='EmailInitialization']//toolbar[@accessiblename='Toolbar']/element[@accessiblename='']
+				</item>
+				<item
+				addcaps="button,accessible"
+				capname="button"
+				id="b349eda3-5bf2-4293-acd3-62c487aec631"
+				name="btnFinish"
+				refimgid="25ef55b9-d9a4-4cd6-a887-606be9b79412"
+				refpath="/form[@controlname='EmailInitialization']/element[@controlname='_BaseDialogForm_Toolbars_Dock_Area_Bottom']/container[@accessiblename='DockBottom']/toolbar[@accessiblename='Toolbar']/button[@accessiblename='Finish']"
+				searchtimeout="30000ms">
+					/form[@controlname='EmailInitialization']//toolbar[@accessiblename='Toolbar']/button[@accessiblename='Finish']
+				</item>
+				<basepath>
+					/form[@controlname='EmailInitialization']//toolbar[@accessiblename='Toolbar']
+				</basepath>
+			</folder>
+			<basepath>
+				/form[@controlname='EmailInitialization']
+			</basepath>
+		</appfolder>
 		<basepath>
 		</basepath>
 	</rootfolder>

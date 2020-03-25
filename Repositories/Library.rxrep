@@ -1,5 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
-<repository
+﻿<repository
 id="b84ce12f-4952-4c47-b32d-df295b9efdc2"
 name="Library"
 rxversion="9.0">
@@ -328,6 +327,7 @@ DAPIxVgFicf/GQCdrAkiuOdOjQAAAABJRU5ErkJggg==
 		id="15a7411e-b3f3-4c8f-9398-232b8d3a48be"
 		isrooted="True"
 		name="LibraryDetail"
+		refimgid="7cfd4efa-d77d-4f15-aca6-d3a23874344e"
 		refpath="/form[@controlname='LibraryDetail']"
 		searchtimeout="30000ms"
 		usecache="True">
@@ -336,7 +336,7 @@ DAPIxVgFicf/GQCdrAkiuOdOjQAAAABJRU5ErkJggg==
 			capname="text"
 			id="b771c5d3-a4cd-4896-a008-4a63ccc01952"
 			name="txtpageTitle"
-			refimgid="9271420a-70d1-40ef-9689-06317c598736"
+			refimgid="5827fdf6-a1b9-4ef7-b125-2dcf0395b7a5"
 			refpath="/form[@controlname='LibraryDetail']/container[@controlname='menubar_Fill_Panel']/container[@controlname='pnlBase']/container[@controlname='pnlControls']/text[@controlname='atbTitle']"
 			searchtimeout="30000ms">
 				/form[@controlname='LibraryDetail']/?/?/container[@controlname='pnlBase']/?/?/text[@controlname='atbTitle']
@@ -346,7 +346,7 @@ DAPIxVgFicf/GQCdrAkiuOdOjQAAAABJRU5ErkJggg==
 			capname="text"
 			id="8bb351ed-6691-47f4-a325-c8c5bf734734"
 			name="txtSummary"
-			refimgid="1cfd4a7f-c937-461b-9e20-9a693ab6038a"
+			refimgid="0163569d-37aa-47a7-bcd2-1d4e833d31fd"
 			searchtimeout="30000ms">
 				/form[@controlname='LibraryDetail']/container[@controlname='menubar_Fill_Panel']/container[@controlname='pnlBase']/?/?/container[@controlname='pnlBrad']//text[@accessiblerole='Text']
 			</item>
@@ -355,10 +355,39 @@ DAPIxVgFicf/GQCdrAkiuOdOjQAAAABJRU5ErkJggg==
 			capname="button"
 			id="1380b252-7913-4c1d-b6f4-f7abb1b3cd34"
 			name="btnOK"
-			refimgid="40772dd5-2b0b-4bfc-9210-2f27ffe9c0a1"
+			refimgid="66f2e0b8-7094-4578-869a-ff5db865b0a5"
 			refpath="/form[@controlname='LibraryDetail']/container[@controlname='menubar_Fill_Panel']/element[@controlname='_menubar_Fill_Panel_Toolbars_Dock_Area_Bottom']/container[@accessiblename='DockBottom']/toolbar[@accessiblename='Toolbar']/button[@accessiblename='OK']"
 			searchtimeout="30000ms">
 				/form[@controlname='LibraryDetail']/container[@controlname='menubar_Fill_Panel']//toolbar[@accessiblename='Toolbar']/button[@accessiblename='OK']
+			</item>
+			<item
+			addcaps="text,accessible"
+			capname="text"
+			id="ab0261d2-25aa-470a-bbc0-8b7d1b4f32b1"
+			name="lnkFiles"
+			refimgid="a9ba1b5e-7dcb-419c-83f8-0c5e6a0bac2c"
+			refpath="/form[@controlname='LibraryDetail']/container[@controlname='menubar_Fill_Panel']/container[@controlname='pnlBase']/container[@controlname='pnlControls']/container[@controlname='panel1']/element[@controlname='alblFiles']/text[@accessiblename='Files']"
+			searchtimeout="30000ms">
+				/form[@controlname='LibraryDetail']/?/?/container[@controlname='pnlBase']/?/?/container[@controlname='panel1']/?/?/text[@accessiblename='Files']
+			</item>
+			<item
+			addcaps="button,accessible"
+			capname="button"
+			id="c1ee80f0-bb0e-4ed4-9e27-e6842331bbc0"
+			name="btnAddFiles"
+			refimgid="daecd3b0-2289-47ef-9742-5433842cc5bb"
+			refpath="/form[@controlname='LibraryDetail']/container[@controlname='menubar_Fill_Panel']/container[@controlname='pnlBase']/container[@controlname='pnlControls']/container[@controlname='pnlBrad']/container[@controlname='panel2']/container[@controlname='scFile']/element[@controlname='ubtnIcon']/button[@accessiblerole='PushButton']"
+			searchtimeout="30000ms">
+				/form[@controlname='LibraryDetail']/container[@controlname='menubar_Fill_Panel']/container[@controlname='pnlBase']/?/?/container[@controlname='pnlBrad']//button[@accessiblerole='PushButton']
+			</item>
+			<item
+			addcaps="text,accessible"
+			capname="text"
+			id="4b9d0b5c-0e54-4e3c-852b-41ac5a229cee"
+			name="txtFileName"
+			refimgid="8bd6fcde-a58c-4f03-8da7-ea00f7cec777"
+			searchtimeout="30000ms">
+				/form[@controlname='LibraryDetail']/container[@controlname='menubar_Fill_Panel']/container[@controlname='pnlBase']/?/?/container[@controlname='pnlBrad']/?/?/container[@controlname='scFile']//text
 			</item>
 			<basepath>
 				/form[@controlname='LibraryDetail']
@@ -398,8 +427,246 @@ D8zerL8gSEaw7+rFqJ//CkX5CWkHqyZHVzU6AAAAAElFTkSuQmCC
 			searchtimeout="30000ms">
 				/form[@controlname='PromptForm']//toolbar[@accessiblename='Toolbar']/button[@accessiblename='OK']
 			</item>
+			<item
+			addcaps="button,accessible"
+			capname="button"
+			id="88898cec-5f5c-4f27-860c-accd79540b49"
+			name="btnCancel"
+			refimgid="3b5aa302-3973-4144-861d-c8c6befc5483"
+			refpath="/form[@controlname='PromptForm']/element[@controlname='_BaseForm_Toolbars_Dock_Area_Bottom']/container[@accessiblename='DockBottom']/toolbar[@accessiblename='Toolbar']/button[@accessiblename='Cancel']"
+			searchtimeout="30000ms">
+				/form[@controlname='PromptForm']//toolbar[@accessiblename='Toolbar']/button[@accessiblename='Cancel']
+			</item>
+			<item
+			addcaps="button,accessible"
+			capname="button"
+			id="3d190d1f-7089-45d5-941d-81c658fc3454"
+			name="btnYes"
+			refimgid="06c3b516-7409-4097-b8da-29b0a37768c7"
+			refpath="/form[@controlname='PromptForm']/element[@controlname='_BaseForm_Toolbars_Dock_Area_Bottom']/container[@accessiblename='DockBottom']/toolbar[@accessiblename='Toolbar']/button[@accessiblename='Yes']"
+			searchtimeout="30000ms">
+				/form[@controlname='PromptForm']//toolbar[@accessiblename='Toolbar']/button[@accessiblename='Yes']
+			</item>
+			<item
+			addcaps="button,accessible"
+			capname="button"
+			id="8723fd21-816e-431c-9ba3-2f00186da5e2"
+			name="btnNo"
+			refimgid="29a4d64b-1d26-4262-a4a2-76158151a30a"
+			refpath="/form[@controlname='PromptForm']/element[@controlname='_BaseForm_Toolbars_Dock_Area_Bottom']/container[@accessiblename='DockBottom']/toolbar[@accessiblename='Toolbar']/button[@accessiblename='No']"
+			searchtimeout="30000ms">
+				/form[@controlname='PromptForm']//toolbar[@accessiblename='Toolbar']/button[@accessiblename='No']
+			</item>
 			<basepath>
 				/form[@controlname='PromptForm']
+			</basepath>
+			<icon>
+				iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACx
+jwv8YQUAAAAJcEhZcwAADsQAAA7EAZUrDhsAAAJoSURBVDhPtZJZSJRRGIb/+Z0yy43E1CibUIKC
+IFqoi6KNlou6MGmxiyBQKAhNsc2BSSuJhHCpRJMySSPLkMaK1MgoW8Y0Nclxi2jIJIlGhgyd+c/7
+dpz50yBvgnrg4xw43/vyLUf5L2CgZ7+oPPwVuauJozMo0gLBoj3NJE3yWfVlTY4BDRc0OF56RPsl
+sHo5teJgiuIpQK6qMU0h7p4s13P/hFYzMTwIeEaBLy10XdzA/n0mCusqsmoBcWU6cNZvFLdS62W6
+n0+lg/vZvei6o8H1ERQeYqiL9mWxbDaq5LtUonEXWbOCKA0GzAY3XN/WStlEO6g6BLScAdtOkZ+q
+yWEr38ZE8ZUsDEMVRHcW+TyBrF5MFPqBpxcO6VLFyAH7OjxM8bBhL/kkjsJu4Y+mfMLdxiZpMHg5
+g/hcRnakk3UbZRUhQLICXa9MRWd9EW5vGeVYr427ib4c9sWtkQbvaZMGrSGBxEgd2ZVJPt5Glkdw
+bKC6XjGi59l25Id7WBlDPI0nBvPYOjeCjpQEtkdHetugVkt2mslHW4myMCB1ooIxgpCuANdCgdr1
+FG9SONJ8Tq79BTVnHV9LA2dpEoUtkby3kijxBzJC3brWB49HEQUGiJuxdMRHk/3HyN5s8nsRbarC
+9vAAOZ/NRMUcIEd1o7cxScrGV2kAMBMH5cQLVdoXTeOHTbPk6nbQsTOW3UvD2L0kiK6scIgCFcyc
+P97/7xjodJp4QKHIUzVcDQRuzCYr51Fcj4QoCQDOGzy0mCYV/8L7MVCWaGOyHNwJGRYZR2Sk+xMd
+D8zerL8gSEaw7+rFqJ//CkX5CWkHqyZHVzU6AAAAAElFTkSuQmCC
+			</icon>
+		</appfolder>
+		<appfolder
+		addcaps="form,control,nativewindow"
+		capname="form"
+		id="b44a82d5-8e21-45bf-9c27-407befd88902"
+		isrooted="True"
+		name="FileSelectForm"
+		refimgid="638a211d-6eb9-4d2a-84f8-aea29dae8e3f"
+		refpath="/form[@controlname='FileSelectForm']"
+		searchtimeout="30000ms"
+		usecache="True">
+			<item
+			addcaps="button,accessible"
+			capname="button"
+			id="904efb63-44bf-4358-9532-7d94fbbf8f7a"
+			name="btnQuickFind"
+			refimgid="f49703e3-2d6f-49dc-a6ff-c40e97886934"
+			refpath="/form[@controlname='FileSelectForm']/element[@controlname='_BaseForm_Toolbars_Dock_Area_Bottom']/container[@accessiblename='DockBottom']/toolbar[@accessiblename='Toolbar']/button[@accessiblename='QuickFind']"
+			searchtimeout="30000ms">
+				/form[@controlname='FileSelectForm']//toolbar[@accessiblename='Toolbar']/button[@accessiblename='QuickFind']
+			</item>
+			<item
+			addcaps="cell,accessible"
+			capname="cell"
+			id="cdff6ec8-4ec8-41ad-8704-5a1d4c34061b"
+			name="listFirstFoundFile"
+			refimgid="976c54c5-d4c8-4499-8b21-aef0320c4739"
+			refpath="/form[@controlname='FileSelectForm']/container[@controlname='panel1']/element[@controlname='ufgSelector']/table[@accessiblerole='Table']/row[@accessiblename='Band 0 row 1']/cell[@accessiblename='File']"
+			searchtimeout="30000ms">
+				/form[@controlname='FileSelectForm']/container[@controlname='panel1']//row[@accessiblename='Band 0 row 1']/cell[@accessiblename='File']
+			</item>
+			<item
+			addcaps="text,uiautomation,uiautomationvalue"
+			capname="text"
+			id="888999c0-9967-4bb0-87b4-0e6b3796bbd8"
+			name="TextEditorEditArea"
+			refimgid="fb4420b8-4a84-4bf6-9868-e4d781c96381"
+			refpath="/form[@controlname='FileSelectForm']/container[@controlname='panel1']/element[@controlname='ufgSelector']/element/tree/treeitem[@automationid='0']/text[@automationid='10']/text[@automationid='[Editor] Edit Area']"
+			searchtimeout="30000ms">
+				/form[@controlname='FileSelectForm']//tree[@itemstatus=' !IG_DATA_START!ObjectIdentifier^IG_TOKEN_SEPERATOR^Infragistics.Win.UltraWinGrid.RowColRegionIntersectionUIElement+RowColRegionIntersectionUIElementUiaProviderStub^IG_TOKEN_DELIMETER^AssemblyVersion^IG_TOKEN_SEPERATOR^16.1.20161.1000^IG_TOKEN_DELIMETER^IsRootStub^IG_TOKEN_SEPERATOR^False^IG_TOKEN_SEPERATOR^4^IG_TOKEN_DELIMETER^DataRowCount^IG_TOKEN_SEPERATOR^12^IG_TOKEN_SEPERATOR^2^IG_TOKEN_DELIMETER^!IG_DATA_END!']/treeitem[@automationid='0']/text[@automationid='10']/text[@automationid='[Editor] Edit Area']
+			</item>
+			<item
+			addcaps="button,accessible"
+			capname="button"
+			id="056eeea2-6a5f-4184-9b81-03946b316cd8"
+			name="btnAdd"
+			refimgid="a7eb68cc-3339-45b9-86ba-cd90213a4aa5"
+			refpath="/form[@controlname='FileSelectForm']/container[@controlname='panel1']/element[@controlname='ubtnAdd']/button[@accessiblename='>']"
+			searchtimeout="30000ms">
+				/form[@controlname='FileSelectForm']/container[@controlname='panel1']/?/?/button[@accessiblename='&gt;']
+			</item>
+			<item
+			addcaps="button,uiautomation,uiautomationinvoke"
+			capname="button"
+			id="ba8141ca-6e1e-45cf-9292-a67eec8922f7"
+			name="ButtonToolbarToolbarBaseDesignerToo"
+			refimgid="81af9251-78f7-4ee0-98ab-f64ccaf8b31c"
+			refpath="/form[@controlname='FileSelectForm']/element[@controlname='_BaseForm_Toolbars_Dock_Area_Bottom']/toolbar/button[@automationid='[Toolbar : toolbarBaseDesigner Tools] Tool : TOOLBAR_BUTTON_OK - Index : 5 ']"
+			searchtimeout="30000ms">
+				/form[@controlname='FileSelectForm']/?/?/toolbar[@automationid='Toolbar : toolbarBaseDesigner']/button[@automationid='[Toolbar : toolbarBaseDesigner Tools] Tool : TOOLBAR_BUTTON_OK - Index : 5 ']
+			</item>
+			<item
+			addcaps="table,accessible"
+			capname="table"
+			id="3cd4dbd3-7156-4fac-a345-f0915d8a5558"
+			name="tblFiles"
+			refimgid="7f70e275-3089-4337-a45a-a5798a9359aa"
+			refpath="/form[@controlname='FileSelectForm']/container[@controlname='panel1']/element[@controlname='ufgSelector']/table[@accessiblename='Band 0']"
+			searchtimeout="30000ms">
+				/form[@controlname='FileSelectForm']/container[@controlname='panel1']/?/?/table[@accessiblename='Band 0']
+			</item>
+			<item
+			addcaps="table,accessible"
+			capname="table"
+			id="8951bfad-6ee2-41b5-b554-7723a07739f7"
+			name="tblSelectedFiles"
+			refimgid="a3ec37f3-403c-47b0-aee3-7eb71076a816"
+			refpath="/form[@controlname='FileSelectForm']/container[@controlname='panel1']/element[@controlname='udgSelection']/table[@accessiblename='ArrayList']"
+			searchtimeout="30000ms">
+				/form[@controlname='FileSelectForm']/container[@controlname='panel1']/?/?/table[@accessiblename='ArrayList']
+			</item>
+			<item
+			addcaps="button,accessible"
+			capname="button"
+			id="d6907c83-b919-4364-aafb-dd23e292908e"
+			name="btnRemove"
+			refimgid="da39a2d2-ae2c-4dcf-8807-c5f4a2beea3d"
+			refpath="/form[@controlname='FileSelectForm']/container[@controlname='panel1']/element[@controlname='ubtnRemove']/button[@accessiblename='&lt;']"
+			searchtimeout="30000ms">
+				/form[@controlname='FileSelectForm']/container[@controlname='panel1']/?/?/button[@accessiblename='&lt;']
+			</item>
+			<item
+			addcaps="toolbar,accessible"
+			capname="toolbar"
+			id="24d5094b-ae00-4615-9a2b-cdefd4fe8311"
+			name="Toolbar"
+			refpath="/form[@controlname='FileSelectForm']/element[@controlname='_BaseForm_Toolbars_Dock_Area_Bottom']/container[@accessiblename='DockBottom']/toolbar[@accessiblename='Toolbar']"
+			searchtimeout="30000ms">
+				/form[@controlname='FileSelectForm']/element[@controlname='_BaseForm_Toolbars_Dock_Area_Bottom']/?/?/toolbar[@accessiblename='Toolbar']
+			</item>
+			<folder
+			addcaps="toolbar,accessible"
+			capname="toolbar"
+			id="0ea46c96-434b-47de-b7ac-b660b54fddf1"
+			isrooted="True"
+			name="Toolbar1"
+			refpath="/form[@controlname='FileSelectForm']/element[@controlname='_BaseForm_Toolbars_Dock_Area_Bottom']/container[@accessiblename='DockBottom']/toolbar[@accessiblename='Toolbar']"
+			searchtimeout="30000ms"
+			usecache="False">
+				<item
+				addcaps="button,accessible"
+				capname="button"
+				id="00b962bd-8e01-432b-8917-e1fe9a1ac00f"
+				name="btnCancel"
+				refpath="/form[@controlname='FileSelectForm']/element[@controlname='_BaseForm_Toolbars_Dock_Area_Bottom']/container[@accessiblename='DockBottom']/toolbar[@accessiblename='Toolbar']/button[@accessiblename='Cancel']"
+				searchtimeout="30000ms">
+					/form[@controlname='FileSelectForm']//toolbar[@accessiblename='Toolbar']/button[@accessiblename='Cancel']
+				</item>
+				<item
+				addcaps="button,accessible"
+				capname="button"
+				id="d1e922c0-9863-4407-89ff-e1541dd945c3"
+				name="btnNew"
+				refpath="/form[@controlname='FileSelectForm']/element[@controlname='_BaseForm_Toolbars_Dock_Area_Bottom']/container[@accessiblename='DockBottom']/toolbar[@accessiblename='Toolbar']/button[@accessiblename='New']"
+				searchtimeout="30000ms">
+					/form[@controlname='FileSelectForm']//toolbar[@accessiblename='Toolbar']/button[@accessiblename='New']
+				</item>
+				<item
+				addcaps="button,accessible"
+				capname="button"
+				id="df978766-9720-406e-9b88-fb59de59706c"
+				name="btnNone"
+				refpath="/form[@controlname='FileSelectForm']/element[@controlname='_BaseForm_Toolbars_Dock_Area_Bottom']/container[@accessiblename='DockBottom']/toolbar[@accessiblename='Toolbar']/button[@accessiblename='None']"
+				searchtimeout="30000ms">
+					/form[@controlname='FileSelectForm']//toolbar[@accessiblename='Toolbar']/button[@accessiblename='None']
+				</item>
+				<item
+				addcaps="button,accessible"
+				capname="button"
+				id="4b5f011d-3612-4b9b-856a-596c75a1f751"
+				name="btnOK"
+				refpath="/form[@controlname='FileSelectForm']/element[@controlname='_BaseForm_Toolbars_Dock_Area_Bottom']/container[@accessiblename='DockBottom']/toolbar[@accessiblename='Toolbar']/button[@accessiblename='OK']"
+				searchtimeout="30000ms">
+					/form[@controlname='FileSelectForm']//toolbar[@accessiblename='Toolbar']/button[@accessiblename='OK']
+				</item>
+				<item
+				addcaps="button,accessible"
+				capname="button"
+				id="5281bef7-1eeb-439f-9e36-6eb4d3519117"
+				name="btnWhoseFile"
+				refpath="/form[@controlname='FileSelectForm']/element[@controlname='_BaseForm_Toolbars_Dock_Area_Bottom']/container[@accessiblename='DockBottom']/toolbar[@accessiblename='Toolbar']/button[@accessiblename='Whose File']"
+				searchtimeout="30000ms">
+					/form[@controlname='FileSelectForm']//toolbar[@accessiblename='Toolbar']/button[@accessiblename='Whose File']
+				</item>
+				<basepath>
+					/form[@controlname='FileSelectForm']//toolbar[@accessiblename='Toolbar']
+				</basepath>
+			</folder>
+			<item
+			addcaps="combobox,accessible"
+			capname="combobox"
+			id="896a761a-ad09-40de-ab4d-aea0281556c1"
+			name="cmbbxFileType"
+			refimgid="602b7ac0-d933-4722-8c42-279dd48ac1e8"
+			searchtimeout="30000ms">
+				/form[@controlname='FileSelectForm']/container[@controlname='pnlBase']//element[@controlname='acmbSecondaryFilter']/combobox/combobox[@accessiblerole='ComboBox']
+			</item>
+			<item
+			addcaps="unknown,control,nativewindow"
+			capname="unknown"
+			id="7c68b320-1299-43f5-8cf7-38ed302e5f51"
+			name="cmbbxFileType_update"
+			refimgid="6b55e99a-c1ac-494c-b553-972e6fa17db7"
+			searchtimeout="30000ms">
+				/form[@controlname='FileSelectForm']/container/container//element[@controlname='acmbSecondaryFilter']
+			</item>
+			<item
+			capname="button"
+			id="2c762f7b-8a3f-45d6-9151-7e6b99270301"
+			name="dpdwnbutton"
+			searchtimeout="30000ms">
+				/form[@controlname='FileSelectForm']/container[@controlname='pnlBase']//element[@controlname='acmbSecondaryFilter']/button[@automationid='[Editor] dropdown button']
+			</item>
+			<item
+			capname="listitem"
+			id="526a6a39-773d-4ec2-8af7-0a7ffbb7ab9d"
+			name="dpdwnFirstItem"
+			searchtimeout="30000ms">
+				/form[@controlname='FileSelectForm']/container[@controlname='pnlBase']//element[@controlname='acmbSecondaryFilter']/listitem[@name='All']
+			</item>
+			<basepath>
+				/form[@controlname='FileSelectForm']
 			</basepath>
 			<icon>
 				iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACx

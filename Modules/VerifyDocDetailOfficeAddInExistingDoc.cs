@@ -78,7 +78,7 @@ namespace SmokeTest.Modules
         	
         		
         }
-        	private void OpenApp()
+        private void OpenApp()
         {
         	Host.Local.RunApplication(wordPath);
         	Delay.Seconds(5);

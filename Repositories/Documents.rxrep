@@ -517,6 +517,24 @@ D8zerL8gSEaw7+rFqJ//CkX5CWkHqyZHVzU6AAAAAElFTkSuQmCC
 				searchtimeout="30000ms">
 					/form[@controlname='DocumentDetail']/?/?/container[@controlname='pnlBase']/?/?/container[@controlname='pscRelatedPeople']//button[@accessiblerole='PushButton']
 				</item>
+				<item
+				addcaps="text,accessible"
+				capname="text"
+				id="54dab3b1-b4d8-425a-b287-d817baf83c6c"
+				name="txtPeopleName"
+				refimgid="768c7d66-8420-48e4-a264-ab4564c7861c"
+				searchtimeout="30000ms">
+					/form[@controlname='DocumentDetail']/?/?/container[@controlname='pnlBase']/container[@controlname='pnlControls']/container[@controlname='pscRelatedPeople']//container[@controlname='pnlLinks']/?/?///text
+				</item>
+				<item
+				addcaps="text,accessible"
+				capname="text"
+				id="1c10ca09-2ff5-4b43-b837-68d19de40bb7"
+				name="txtFileName"
+				refimgid="f52afb3d-55c0-4b17-b5ff-ebf2d7fec99e"
+				searchtimeout="30000ms">
+					/form[@controlname='DocumentDetail']/?/?/container[@controlname='pnlBase']/?/?/container[@controlname='scFiles']//text
+				</item>
 				<basepath>
 					/form[@controlname='DocumentDetail']/?/?/container[@controlname='pnlBase']
 				</basepath>
@@ -1025,6 +1043,26 @@ D8zerL8gSEaw7+rFqJ//CkX5CWkHqyZHVzU6AAAAAElFTkSuQmCC
 			searchtimeout="30000ms">
 				/form[@controlname='PromptForm']/container[@controlname='pnlBase']//element[@controlname='alblMessage']/text
 			</item>
+			<item
+			addcaps="button,accessible"
+			capname="button"
+			id="3d190d1f-7089-45d5-941d-81c658fc3454"
+			name="btnYes"
+			refimgid="06c3b516-7409-4097-b8da-29b0a37768c7"
+			refpath="/form[@controlname='PromptForm']/element[@controlname='_BaseForm_Toolbars_Dock_Area_Bottom']/container[@accessiblename='DockBottom']/toolbar[@accessiblename='Toolbar']/button[@accessiblename='Yes']"
+			searchtimeout="30000ms">
+				/form[@controlname='PromptForm']//toolbar[@accessiblename='Toolbar']/button[@accessiblename='Yes']
+			</item>
+			<item
+			addcaps="button,accessible"
+			capname="button"
+			id="8723fd21-816e-431c-9ba3-2f00186da5e2"
+			name="btnNo"
+			refimgid="29a4d64b-1d26-4262-a4a2-76158151a30a"
+			refpath="/form[@controlname='PromptForm']/element[@controlname='_BaseForm_Toolbars_Dock_Area_Bottom']/container[@accessiblename='DockBottom']/toolbar[@accessiblename='Toolbar']/button[@accessiblename='No']"
+			searchtimeout="30000ms">
+				/form[@controlname='PromptForm']//toolbar[@accessiblename='Toolbar']/button[@accessiblename='No']
+			</item>
 			<basepath>
 				/form[@controlname='PromptForm']
 			</basepath>
@@ -1479,6 +1517,15 @@ SUVORK5CYII=
 			refpath="/form[@controlname='PeopleSelectForm']/container[@controlname='panel1']/element[@controlname='apgSelector']/element/tree/treeitem[@automationid='0']/text[@automationid='2']/text[@automationid='[Editor] Edit Area']"
 			searchtimeout="30000ms">
 				/form[@controlname='PeopleSelectForm']//tree[@itemstatus=' !IG_DATA_START!ObjectIdentifier^IG_TOKEN_SEPERATOR^Infragistics.Win.UltraWinGrid.RowColRegionIntersectionUIElement+RowColRegionIntersectionUIElementUiaProviderStub^IG_TOKEN_DELIMETER^AssemblyVersion^IG_TOKEN_SEPERATOR^16.1.20161.1000^IG_TOKEN_DELIMETER^IsRootStub^IG_TOKEN_SEPERATOR^False^IG_TOKEN_SEPERATOR^4^IG_TOKEN_DELIMETER^DataRowCount^IG_TOKEN_SEPERATOR^14^IG_TOKEN_SEPERATOR^2^IG_TOKEN_DELIMETER^!IG_DATA_END!']/treeitem[@automationid='0']/text[@automationid='2']/text[@automationid='[Editor] Edit Area']
+			</item>
+			<item
+			addcaps="cell,accessible"
+			capname="row"
+			id="eb282859-083e-4a13-b287-a272ddd603e1"
+			name="listFirstFoundFile"
+			refimgid="976c54c5-d4c8-4499-8b21-aef0320c4739"
+			searchtimeout="30000ms">
+				/form[@controlname='PeopleSelectForm']//table[@accessiblename='Band 0']/row[@accessiblename='Band 0 row 1']
 			</item>
 			<basepath>
 				/form[@controlname='PeopleSelectForm']

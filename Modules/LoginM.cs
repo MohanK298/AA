@@ -138,15 +138,18 @@ namespace SmokeTest
 			if (myProc.ProcessName == "OUTLOOK")
 			{
 				myProc.Kill();
+				Report.Success("Outlook proccess is closed successfully");
 			}
 			if (myProc.ProcessName == "WINWORD")
 			{
 				myProc.Kill();
+				Report.Success("Word proccess is closed successfully");
 			}
 			
 			if (myProc.ProcessName == "AmicusAttorney.XWin")
 			{
 				myProc.Kill();
+				Report.Success("Amicus Attorney proccess is closed successfully");
 			}
 			
 			}

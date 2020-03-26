@@ -102,7 +102,7 @@ namespace SmokeTest
         	login.LoginForm.Pwd.TextValue=datasource.Rows[0].Values[2].ToString();//"password";
         	login.LoginForm.ServerName.TextValue=datasource.Rows[0].Values[3].ToString();//"J4-Mohanss";
         	login.LoginForm.btnLogin.Click();
-        	str.MainForm.SelfInfo.WaitForExists(10000);
+        	Delay.Seconds(10);
         
         	
         	

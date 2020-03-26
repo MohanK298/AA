@@ -575,6 +575,9 @@
     <Compile Include="Modules\validateDocumentIndexViewer.cs">
       <id>6ca04291-0553-4754-817d-376c41638b4d</id>
     </Compile>
+    <Compile Include="Modules\validateMergeTemplates.cs">
+      <id>da63731b-f953-499c-b795-ac567273eb63</id>
+    </Compile>
     <Compile Include="Modules\validatePreferenceLinks.cs">
       <id>e3dc1d93-0255-41ae-bc6b-02d9461b6718</id>
     </Compile>
@@ -865,6 +868,12 @@
       <DependentUpon>Login.rxrep</DependentUpon>
       <RepositoryCode>true</RepositoryCode>
       <id>7f54b58c-be34-4ad1-ae3b-45952010bdab</id>
+    </Compile>
+    <Compile Include="Repositories\MergeTemplates.cs">
+      <BoundTo>d5c4e341-6139-427c-909c-447a33e90ea1</BoundTo>
+      <DependentUpon>MergeTemplates.rxrep</DependentUpon>
+      <RepositoryCode>true</RepositoryCode>
+      <id>b98641ee-239c-4c4b-9e27-a080a0fdacc5</id>
     </Compile>
     <Compile Include="Repositories\Note.cs">
       <BoundTo>DBDD3C39-17CD-4F44-B71C-3E391074099C</BoundTo>
@@ -1233,6 +1242,17 @@
       <id>8ee354e8-eb51-4361-9643-57357bad0ec6</id>
       <repoid>0590d673-1c1a-4e15-ba94-7e49609f0dcd</repoid>
       <reporootid>5ef322c8-b0ca-474c-a89b-a70fb297402b</reporootid>
+    </None>
+    <None Include="Repositories\MergeTemplates.rximg">
+      <BoundTo>d5c4e341-6139-427c-909c-447a33e90ea1</BoundTo>
+      <DependentUpon>MergeTemplates.rxrep</DependentUpon>
+      <imageblob>true</imageblob>
+      <id>db52c167-c78c-412d-85c0-b21f9efebb54</id>
+    </None>
+    <None Include="Repositories\MergeTemplates.rxrep">
+      <id>d5c4e341-6139-427c-909c-447a33e90ea1</id>
+      <repoid>8c419c05-a899-4a53-b24c-888f70ee0e7d</repoid>
+      <reporootid>a732d52e-ecb3-4057-a9a3-44e031d09052</reporootid>
     </None>
     <None Include="Repositories\Note.rximg">
       <BoundTo>DBDD3C39-17CD-4F44-B71C-3E391074099C</BoundTo>

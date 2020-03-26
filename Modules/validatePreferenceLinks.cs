@@ -53,6 +53,16 @@ namespace SmokeTest.Modules
 			FilesHeaderValidation();
 			CalendarHeaderValidation();
 			PeopleHeaderValidation();
+			DocumentHeaderValidation();
+			TimeHeaderValidation();
+			NotesHeaderValidation();
+			CommHeaderValidation();
+			LibraryHeaderValidation();
+			EmailHeaderValidation();
+			
+			
+			
+		
         }
         
         
@@ -209,6 +219,158 @@ namespace SmokeTest.Modules
         		pref.PeoplePrefForm.Toolbar1.ButtonOK.Click();
         	}
         }
+         
+         
+         private void DocumentHeaderValidation()
+         {
+         	pref.MainForm.PreferencesForm.Management.Click();
+        	if(pref.DocTemplatePrefForm.SelfInfo.Exists(3000))
+        	{
+        		if(pref.DocTemplatePrefForm.txtDocumentsInfo.Exists(3000))
+        			Report.Success("Document Management Window is opened successfully");
+        		Validate.AttributeEqual(pref.DocTemplatePrefForm.txtDocumentsInfo,"Text","Documents - Management","Documents - Management text is displayed successfully");
+        		pref.DocTemplatePrefForm.Toolbar1.ButtonOK.Click();
+        	}
+        	
+            	
+        	
+        	pref.MainForm.PreferencesForm.DocumentAssembly.Click();
+        	if(pref.DocTemplatePrefForm.SelfInfo.Exists(3000))
+        	{
+        		if(pref.DocTemplatePrefForm.txtDocumentsInfo.Exists(5000))
+        			Report.Success("Document assembly Window is opened successfully");
+        		Validate.AttributeEqual(pref.DocTemplatePrefForm.txtDocumentsInfo,"Text","Documents - Document Assembly","Documents - Document Assembly text is displayed successfully");
+        		pref.DocTemplatePrefForm.Toolbar1.ButtonOK.Click();
+        	}
+         }
+         
+         
+          private void TimeHeaderValidation()
+         {
+         	pref.MainForm.PreferencesForm.BillingRates.Click();
+        	if(pref.TimePreferencesForm.SelfInfo.Exists(3000))
+        	{
+        		if(pref.TimePreferencesForm.txtTimeInfo.Exists(3000))
+        			Report.Success("Billing Rates Window is opened successfully");
+        		Validate.AttributeEqual(pref.TimePreferencesForm.txtTimeInfo,"Text","Time - Billing Rates","Time - Billing Rates text is displayed successfully");
+        		pref.TimePreferencesForm.Toolbar1.btnOK.Click();
+        	}
+        	
+            	
+        	
+        	pref.MainForm.PreferencesForm.TimeNewEntries.Click();
+        	if(pref.TimePreferencesForm.SelfInfo.Exists(3000))
+        	{
+        		if(pref.TimePreferencesForm.txtTimeInfo.Exists(3000))
+        			Report.Success("Time New Entries Window is opened successfully");
+        		Validate.AttributeEqual(pref.TimePreferencesForm.txtTimeInfo,"Text","Time - New Entries","Time - New Entries text is displayed successfully");
+        		pref.TimePreferencesForm.Toolbar1.btnOK.Click();
+        	}
+        	
+        	
+        	pref.MainForm.PreferencesForm.Timer.Click();
+        	if(pref.TimePreferencesForm.SelfInfo.Exists(3000))
+        	{
+        		if(pref.TimePreferencesForm.txtTimeInfo.Exists(3000))
+        			Report.Success("Timer Window is opened successfully");
+        		Validate.AttributeEqual(pref.TimePreferencesForm.txtTimeInfo,"Text","Time - Timer","Time - Timer text is displayed successfully");
+        		pref.TimePreferencesForm.Toolbar1.btnOK.Click();
+        	}
+        	
+        	pref.MainForm.PreferencesForm.Formatting.Click();
+        	if(pref.TimePreferencesForm.SelfInfo.Exists(3000))
+        	{
+        		if(pref.TimePreferencesForm.txtTimeInfo.Exists(3000))
+        			Report.Success("Formatting is opened successfully");
+        		Validate.AttributeEqual(pref.TimePreferencesForm.txtTimeInfo,"Text","Time - Formatting","Time - Formatting text is displayed successfully");
+        		pref.TimePreferencesForm.Toolbar1.btnOK.Click();
+        	}
+        	
+        	
+        	pref.MainForm.PreferencesForm.ActivityCodes.Click();
+        	if(pref.TimePreferencesForm.SelfInfo.Exists(3000))
+        	{
+        		if(pref.TimePreferencesForm.txtTimeInfo.Exists(3000))
+        			Report.Success("Activity Codes Window is opened successfully");
+        		Validate.AttributeEqual(pref.TimePreferencesForm.txtTimeInfo,"Text","Time - My Activity Codes","Time - My Activity Codes text is displayed successfully");
+        		pref.TimePreferencesForm.Toolbar1.btnOK.Click();
+        	}
+        	
+        	pref.MainForm.PreferencesForm.Fiscal.Click();
+        	if(pref.TimePreferencesForm.SelfInfo.Exists(3000))
+        	{
+        		if(pref.TimePreferencesForm.txtTimeInfo.Exists(3000))
+        			Report.Success("Statistics Window is opened successfully");
+        		Validate.AttributeEqual(pref.TimePreferencesForm.txtTimeInfo,"Text","Time - Statistics","Time - Statistics text is displayed successfully");
+        		pref.TimePreferencesForm.Toolbar1.btnOK.Click();
+        	}
+        	
+         }
+          
+          
+        private void NotesHeaderValidation()
+        {
+        	pref.MainForm.PreferencesForm.General.Click();
+        	if(pref.NotesPrefForm.SelfInfo.Exists(3000))
+        	{
+        		if(pref.NotesPrefForm.txtNotesInfo.Exists(3000))
+        			Report.Success("General Window is opened successfully");
+        		Validate.AttributeEqual(pref.NotesPrefForm.txtNotesInfo,"Text","Notes - General","Notes - General text is displayed successfully");
+        		pref.NotesPrefForm.Toolbar1.ButtonOK.Click();
+        	}
+        
+        }
+        
+        
+        private void CommHeaderValidation()
+        {
+        	pref.MainForm.PreferencesForm.Messages.Click();
+        	if(pref.CommPrefForm.SelfInfo.Exists(3000))
+        	{
+        		if(pref.CommPrefForm.txtCommInfo.Exists(3000))
+        			Report.Success("Communication Messages Window is opened successfully");
+        		Validate.AttributeEqual(pref.CommPrefForm.txtCommInfo,"Text","Communications - Phone Calls and Messages","Communications - Phone Calls and Messages text is displayed successfully");
+        		pref.CommPrefForm.Toolbar1.ButtonOK.Click();
+        	}
+        
+        }
+        
+        private void LibraryHeaderValidation()
+        {
+        	pref.MainForm.PreferencesForm.Defaults.Click();
+        	if(pref.LibPrefForm.SelfInfo.Exists(3000))
+        	{
+        		if(pref.LibPrefForm.txtLibInfo.Exists(3000))
+        			Report.Success("Library Defaults Window is opened successfully");
+        		Validate.AttributeEqual(pref.LibPrefForm.txtLibInfo,"Text","Library - Defaults","Library - Defaults text is displayed successfully");
+        		pref.LibPrefForm.Toolbar1.ButtonOK.Click();
+        	}
+        
+        }
+        
+        private void EmailHeaderValidation()
+        {
+        	pref.MainForm.Email.Click();
+        	if(pref.EmailPreferencesForm.SelfInfo.Exists(3000))
+        	{
+        		if(pref.EmailPreferencesForm.txtEmailInfo.Exists(3000))
+        			Report.Success("Email Links Window is opened successfully");
+        		Validate.AttributeEqual(pref.EmailPreferencesForm.txtEmailInfo,"Text","Outlook / Exchange E-mail","Outlook / Exchange E-mail text is displayed successfully");
+        		pref.EmailPreferencesForm.btnClose.Click();
+        	}
+        	
+        	
+        	pref.MainForm.CalendarContacts.Click();
+        	if(pref.OutlookPreferenceForm.SelfInfo.Exists(3000))
+        	{
+        		if(pref.OutlookPreferenceForm.txtCalendarInfo.Exists(3000))
+        			Report.Success("Calendar and Contacts Integrations Window is opened successfully");
+        		Validate.AttributeEqual(pref.OutlookPreferenceForm.txtCalendarInfo,"Text","Calendar and Contacts Integrations","Calendar and Contacts Integrations text is displayed successfully");
+        		pref.OutlookPreferenceForm.Toolbar1.ButtonOK.Click();
+        	}
+        	
+        }
+        
         
         /// <summary>
         /// Performs the playback of actions in this module.

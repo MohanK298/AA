@@ -1,19 +1,13 @@
 ﻿<Properties>
-<<<<<<< HEAD
-  <Array name="active" />
-  <Array name="bookmarks" />
-  <Array name="files" />
-=======
   <Array name="active">
-    <Element value="Modules\LoginM.cs" />
+    <Element value="Modules\validatePreferenceLinks.cs" />
   </Array>
   <Array name="bookmarks" />
   <Array name="files">
     <Element value="SmokeTest.rxtst" />
-    <Element value="Modules\startApp.cs" />
-    <Element value="Modules\LoginM.cs" />
+    <Element value="Modules\validatePreferenceLinks.cs" />
+    <Element value="Repositories\Premium\Preferences.rxrep" />
   </Array>
->>>>>>> 550db13dcbc72a5f501162f31f3d51efaf39d874
   <Properties name="projectSavedData">
     <Properties name="customTool">
       <fileNames value="" />

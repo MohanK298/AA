@@ -2342,6 +2342,10 @@ directly and create a Bill]]>
 			id="c71f08e7-1280-43da-aa99-0d89b3479fbf"
 			name="teardown">
 			</teardown>
+			<testcase
+			id="c76fc965-21c0-47ea-907e-a9b6653a5a70"
+			name="ValidateMergeTemplates">
+			</testcase>
 			<smartfoldernode
 			datasource="BillData"
 			id="c7f34fde-f3e3-4bc3-b1ce-d2a714048076"
@@ -2471,6 +2475,12 @@ directly and create a Bill]]>
 					variablename="time">
 					</var>
 				</databinding>
+			</testmodule>
+			<testmodule
+			id="d4d80eb2-38e8-47a0-b276-5e69ff070b7f"
+			name="validateMergeTemplates"
+			ref="faf66008-8bde-4bb0-9a2b-fccd49d4e972"
+			type="UserCode">
 			</testmodule>
 			<testmodule
 			id="d53ec0b4-ad33-4a79-8890-b61f4a506f23"
@@ -4343,6 +4353,14 @@ bill]]>
 						name="validatePreferenceLinks">
 						</testmodule>
 					</testcase>
+					<testcase
+					id="c76fc965-21c0-47ea-907e-a9b6653a5a70"
+					name="ValidateMergeTemplates">
+						<testmodule
+						id="d4d80eb2-38e8-47a0-b276-5e69ff070b7f"
+						name="validateMergeTemplates">
+						</testmodule>
+					</testcase>
 				</testcase>
 			</testsuite>
 		</childhierarchy>
@@ -4972,6 +4990,9 @@ bill]]>
 		name="TestRun">
 			<testcontainer
 			id="658e3020-1e20-4cb1-b196-89a6ef9ca8a2">
+			</testcontainer>
+			<testcontainer
+			id="c76fc965-21c0-47ea-907e-a9b6653a5a70">
 			</testcontainer>
 			<testcontainer
 			id="cb7d9a72-28d4-40e4-8ba0-8593b79bbc22">

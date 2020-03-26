@@ -130,6 +130,31 @@ namespace SmokeTest
         	
         }
         
+        
+        private void CloseProcess()
+        {
+        	foreach(System.Diagnostics.Process myProc in System.Diagnostics.Process.GetProcesses())
+			{
+			if (myProc.ProcessName == "OUTLOOK")
+			{
+				myProc.Kill();
+			}
+			if (myProc.ProcessName == "WINWORD")
+			{
+				myProc.Kill();
+			}
+			
+			if (myProc.ProcessName == "AmicusAttorney.XWin")
+			{
+				myProc.Kill();
+			}
+			
+			}
+        	Delay.Seconds(10);
+        }
+        
+        
+        
         //This part will handle billing setup on the first login of the day
         public void BillingSetup(){
         	for(int i=0; i<7; i++){
@@ -144,9 +169,10 @@ namespace SmokeTest
             Mouse.DefaultMoveTime = 300;
             Keyboard.DefaultKeyPressTime = 100;
             Delay.SpeedFactor = 1.0;
-           update(); 
-           LoginUser();
-           
+            CloseProcess();
+            update(); 
+            LoginUser();
+//           
            /*try{
            		BillingSetup();
            }catch(Exception ex){

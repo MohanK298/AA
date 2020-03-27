@@ -361,6 +361,12 @@ namespace SmokeTest.Modules
         	
         	
         	pref.MainForm.CalendarContacts.Click();
+        	
+        	if(pref.PromptForm.SelfInfo.Exists(3000))
+        	{
+        		pref.PromptForm.ButtonOK.Click();
+        	}
+        	
         	if(pref.OutlookPreferenceForm.SelfInfo.Exists(3000))
         	{
         		if(pref.OutlookPreferenceForm.txtCalendarInfo.Exists(3000))

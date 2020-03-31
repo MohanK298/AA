@@ -13,7 +13,7 @@ using System.Text.RegularExpressions;
 using System.Drawing;
 using System.Threading;
 using WinForms = System.Windows.Forms;
-
+using SmokeTest.Modules.Utilities;
 using Ranorex;
 using Ranorex.Core;
 using Ranorex.Core.Testing;
@@ -28,6 +28,7 @@ namespace SmokeTest.Modules
     public class BillingARStartUpBalance : ITestModule
     {
     	Bill bill = Bill.Instance;
+    	Common cmn=new Common();
     	Duration customWaitTime = new Duration(3000);
     	
     	
@@ -60,7 +61,7 @@ namespace SmokeTest.Modules
             Keyboard.DefaultKeyPressTime = 100;
             Delay.SpeedFactor = 1.0;
             Perform();
-            Utilities.Common.ClosePrompt();
+            cmn.ClosePrompt();
         }
         
         public void Perform()

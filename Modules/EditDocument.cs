@@ -13,7 +13,7 @@ using System.Text.RegularExpressions;
 using System.Drawing;
 using System.Threading;
 using WinForms = System.Windows.Forms;
-
+using SmokeTest.Modules.Utilities;
 using Ranorex;
 using Ranorex.Core;
 using Ranorex.Core.Testing;
@@ -27,7 +27,7 @@ namespace SmokeTest.Modules
     {
     	//Repository variable
     	Documents document = Documents.Instance;
-    	
+    	Common cmn=new Common();
     	string _editSummary = "";
     	[TestVariable("8208E68A-651A-4B8A-85EC-3A01D4FE8A8E")]
     	public string editSummary
@@ -71,7 +71,7 @@ namespace SmokeTest.Modules
             Delay.SpeedFactor = 1.0;
             
             EditDocumentWithData();
-            Utilities.Common.ClosePrompt();
+            cmn.ClosePrompt();
         }
     }
 }

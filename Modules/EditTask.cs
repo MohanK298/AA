@@ -13,7 +13,7 @@ using System.Text.RegularExpressions;
 using System.Drawing;
 using System.Threading;
 using WinForms = System.Windows.Forms;
-
+using SmokeTest.Modules.Utilities;
 using Ranorex;
 using Ranorex.Core;
 using Ranorex.Core.Testing;
@@ -26,7 +26,7 @@ namespace SmokeTest.Modules
     public class EditTask : ITestModule
     {
         Task task = Task.Instance;
-        
+        Common cmn=new Common();
         string _time = "";
         [TestVariable("753C10F0-404E-40C5-B1A6-3198814A31BC")]
         public string time
@@ -77,7 +77,7 @@ namespace SmokeTest.Modules
             Delay.SpeedFactor = 1.0;
             
             EditTaskData();
-            Utilities.Common.ClosePrompt();
+            cmn.ClosePrompt();
         }
     }
 }

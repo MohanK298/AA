@@ -13,7 +13,7 @@ using System.Text.RegularExpressions;
 using System.Drawing;
 using System.Threading;
 using WinForms = System.Windows.Forms;
-
+using SmokeTest.Modules.Utilities;
 using Ranorex;
 using Ranorex.Core;
 using Ranorex.Core.Testing;
@@ -27,7 +27,7 @@ namespace SmokeTest.Modules
     {
     	//Repository Variable
     	Library lib = Library.Instance;
-    	
+    	Common cmn=new Common();
     	string _txtSummary = "";
     	[TestVariable("1A3FE1A8-743F-465B-860C-84C99ED51F97")]
     	public string txtSummary
@@ -107,7 +107,7 @@ namespace SmokeTest.Modules
             Delay.SpeedFactor = 1.0;
         	
             Perform();
-            Utilities.Common.ClosePrompt();
+            cmn.ClosePrompt();
         }
     }
 }

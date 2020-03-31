@@ -14,6 +14,7 @@ using System.Drawing;
 using System.Threading;
 using WinForms = System.Windows.Forms;
 using SmokeTest.Repositories;
+using SmokeTest.Modules.Utilities;
 using Ranorex;
 using Ranorex.Core;
 using Ranorex.Core.Testing;
@@ -28,6 +29,7 @@ namespace SmokeTest.Modules.Attorney_FileDetails
     {
     	
     	Note note = Note.Instance;
+    	Common cmn=new Common();
         /// <summary>
         /// Constructs a new instance.
         /// </summary>
@@ -83,7 +85,7 @@ namespace SmokeTest.Modules.Attorney_FileDetails
             saveButtonValidation();
             DetailsButtonValidation();
             clearButtonValidation();
-            Utilities.Common.ClosePrompt();
+            cmn.ClosePrompt();
             
         }
     }

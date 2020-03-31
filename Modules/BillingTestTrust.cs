@@ -13,7 +13,7 @@ using System.Text.RegularExpressions;
 using System.Drawing;
 using System.Threading;
 using WinForms = System.Windows.Forms;
-
+using SmokeTest.Modules.Utilities;
 using Ranorex;
 using Ranorex.Core;
 using Ranorex.Core.Testing;
@@ -27,7 +27,7 @@ namespace SmokeTest.Modules
     {
     	//Repository Variable
     	Bill bill = Bill.Instance;
-    	
+    	Common cmn=new Common();
     	//Variables
     	BillingTestGeneralRetainer btgr = new BillingTestGeneralRetainer();
     	
@@ -145,7 +145,7 @@ namespace SmokeTest.Modules
             
             PerformTrustReceipt();
             PerformTrustCheck();
-            Utilities.Common.ClosePrompt();
+            cmn.ClosePrompt();
         }
     }
 }

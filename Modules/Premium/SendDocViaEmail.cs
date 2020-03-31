@@ -13,7 +13,7 @@ using System.Text.RegularExpressions;
 using System.Drawing;
 using System.Threading;
 using WinForms = System.Windows.Forms;
-
+using SmokeTest.Modules.Utilities;
 using Ranorex;
 using Ranorex.Core;
 using Ranorex.Core.Testing;
@@ -29,6 +29,8 @@ namespace SmokeTest.Modules.Premium
     public class SendDocViaEmail : ITestModule
     {
     	Communications comm = Communications.Instance;
+    	Common cmn=new Common();
+    		
     	Outlook ol = Outlook.Instance;
     	string filePath;
     	string testTime = System.DateTime.Now.ToString();
@@ -123,7 +125,7 @@ namespace SmokeTest.Modules.Premium
         	comm.DocumentSelector.Title.Click();
         	comm.DocumentSelector.AddBtn.Click();
         	comm.DocumentSelector.OkBtn.Click();
-        	Utilities.Common.ClosePrompt();
+        	cmn.ClosePrompt();
         }
     }
 }

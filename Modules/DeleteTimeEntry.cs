@@ -13,7 +13,7 @@ using System.Text.RegularExpressions;
 using System.Drawing;
 using System.Threading;
 using WinForms = System.Windows.Forms;
-
+using SmokeTest.Modules.Utilities;
 using Ranorex;
 using Ranorex.Core;
 using Ranorex.Core.Testing;
@@ -27,7 +27,7 @@ namespace SmokeTest.Modules
     {
     	//Respository variable
     	TimeSheets timeEntry = TimeSheets.Instance;
-    	
+    	Common cmn=new Common();
         public DeleteTimeEntry()
         {
             // Do not delete - a parameterless constructor is required!
@@ -52,7 +52,7 @@ namespace SmokeTest.Modules
             Delay.SpeedFactor = 1.0;
             
             DeleteTimeEntryWithData();
-            Utilities.Common.ClosePrompt();
+            cmn.ClosePrompt();
         }
     }
 }

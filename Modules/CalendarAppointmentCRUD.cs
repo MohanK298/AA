@@ -58,7 +58,7 @@ namespace SmokeTest.Modules
             readAppointment();
             updateAppointment();
             deleteAppoinment();
-            Utilities.Common.ClosePrompt();
+            cmn.ClosePrompt();
         }
         
         private void createNewAppointment()

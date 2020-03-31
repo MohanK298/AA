@@ -238,7 +238,7 @@ namespace SmokeTest.Modules
             timeentryAssist();
             createdata();
             excludecheckTimeEntry();
-            Utilities.Common.ClosePrompt();
+            cmn.ClosePrompt();
         }
     }
 }

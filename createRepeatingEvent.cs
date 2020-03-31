@@ -136,7 +136,7 @@ namespace SmokeTest
             Delay.SpeedFactor = 1.0;
             CreateRepeatedAppointment();
             EditFewAppointment();
-            Common.ClosePrompt();
+            cmn.ClosePrompt();
         }
     }
 }

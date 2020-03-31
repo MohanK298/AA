@@ -13,7 +13,7 @@ using System.Text.RegularExpressions;
 using System.Drawing;
 using System.Threading;
 using WinForms = System.Windows.Forms;
-
+using SmokeTest.Modules.Utilities;
 using Ranorex;
 using Ranorex.Core;
 using Ranorex.Core.Testing;
@@ -30,7 +30,7 @@ namespace SmokeTest.Modules
     {
     	//Repository variable
     	Calendar calendar = Calendar.Instance;
-    	
+    	Common cmn=new Common();
     	//Local variables
     	
     	string _time = "";
@@ -182,7 +182,7 @@ namespace SmokeTest.Modules
             
             //CheckUI();
             Appointment();
-            Utilities.Common.ClosePrompt();
+            cmn.ClosePrompt();
         }
     }
 }

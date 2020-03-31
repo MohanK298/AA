@@ -17,6 +17,7 @@ using OpenQA.Selenium;
 using Ranorex;
 using Ranorex.Core;
 using Ranorex.Core.Testing;
+using SmokeTest.Modules.Utilities;
 using SmokeTest.Repositories;
 
 namespace SmokeTest.Modules
@@ -29,7 +30,7 @@ namespace SmokeTest.Modules
     {
     	//Repository variable
     	Communications phoneCall = Communications.Instance;
-    	
+    	Common cmn=new Common();
     	string _time = "";
     	[TestVariable("A5B395D0-5507-4949-9806-A866115FEE46")]
     	public string time
@@ -95,7 +96,7 @@ namespace SmokeTest.Modules
             Delay.SpeedFactor = 1.0;
             
             CreateCall();
-            Utilities.Common.ClosePrompt();
+            cmn.ClosePrompt();
         }
     }
 }

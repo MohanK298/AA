@@ -13,7 +13,7 @@ using System.Text.RegularExpressions;
 using System.Drawing;
 using System.Threading;
 using WinForms = System.Windows.Forms;
-
+using SmokeTest.Modules.Utilities;
 using Ranorex;
 using Ranorex.Core;
 using Ranorex.Core.Testing;
@@ -27,7 +27,7 @@ namespace SmokeTest.Modules
     {
     	//Respository variable
     	TimeSheets timeEntry = TimeSheets.Instance;
-    	
+    	Common cmn=new Common();
     	string _editActivityDescription = "";
     	[TestVariable("FC175A6C-C38A-461D-96A6-2E74FB8607C0")]
     	public string editActivityDescription
@@ -71,7 +71,7 @@ namespace SmokeTest.Modules
             Delay.SpeedFactor = 1.0;
             
             EditTimeEntryWithData();
-            Utilities.Common.ClosePrompt();
+            cmn.ClosePrompt();
         }
     }
 }

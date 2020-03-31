@@ -14,6 +14,7 @@ using System.Drawing;
 using System.Threading;
 using WinForms = System.Windows.Forms;
 using SmokeTest.Repositories;
+
 using SmokeTest.Modules.Utilities;
 using Ranorex;
 using Ranorex.Core;
@@ -97,7 +98,7 @@ namespace SmokeTest.Modules
             Keyboard.DefaultKeyPressTime = 1000;
             Delay.SpeedFactor = 1.0;
             Create_Delete2TE();
-            Utilities.Common.ClosePrompt();
+            cmn.ClosePrompt();
         }
     }
 }

@@ -1202,6 +1202,8 @@ namespace SmokeTest.Repositories
         {
             RepoItemInfo _yesInfo;
             RepoItemInfo _btnokInfo;
+            RepoItemInfo _btnshowdetailsInfo;
+            RepoItemInfo _txterrormessageInfo;
 
             /// <summary>
             /// Creates a new PromptForm  folder.
@@ -1211,6 +1213,8 @@ namespace SmokeTest.Repositories
             {
                 _yesInfo = new RepoItemInfo(this, "Yes", "?/?/toolbar[@automationid='Toolbar : toolbarBaseDesigner']/button[@automationid='[Toolbar : toolbarBaseDesigner Tools] Tool : TOOLBAR_BUTTON_OK - Index : 1 ']", 30000, null, "c9ea5325-0467-446e-9e47-09c9c58a26cf");
                 _btnokInfo = new RepoItemInfo(this, "btnOK", ".//toolbar[@accessiblename='Toolbar']/button[@accessiblename='OK']", 30000, null, "1139f9fe-33c5-49f0-8e87-748ca2673125");
+                _btnshowdetailsInfo = new RepoItemInfo(this, "btnShowDetails", "container[@controlname='pnlBase']//button[@accessiblename='Show Details']", 30000, null, "b719990b-5c90-47b4-856d-da83a29fd0a9");
+                _txterrormessageInfo = new RepoItemInfo(this, "txtErrorMessage", "container[@controlname='pnlBase']/?/?/container[@controlname='pnlDetails']//text[@accessiblerole='Text']", 30000, null, "544cde61-57aa-4f3f-9968-74f5ddb821b7");
             }
 
             /// <summary>
@@ -1282,6 +1286,54 @@ namespace SmokeTest.Repositories
                 get
                 {
                     return _btnokInfo;
+                }
+            }
+
+            /// <summary>
+            /// The btnShowDetails item.
+            /// </summary>
+            [RepositoryItem("b719990b-5c90-47b4-856d-da83a29fd0a9")]
+            public virtual Ranorex.Button btnShowDetails
+            {
+                get
+                {
+                    return _btnshowdetailsInfo.CreateAdapter<Ranorex.Button>(true);
+                }
+            }
+
+            /// <summary>
+            /// The btnShowDetails item info.
+            /// </summary>
+            [RepositoryItemInfo("b719990b-5c90-47b4-856d-da83a29fd0a9")]
+            public virtual RepoItemInfo btnShowDetailsInfo
+            {
+                get
+                {
+                    return _btnshowdetailsInfo;
+                }
+            }
+
+            /// <summary>
+            /// The txtErrorMessage item.
+            /// </summary>
+            [RepositoryItem("544cde61-57aa-4f3f-9968-74f5ddb821b7")]
+            public virtual Ranorex.Text txtErrorMessage
+            {
+                get
+                {
+                    return _txterrormessageInfo.CreateAdapter<Ranorex.Text>(true);
+                }
+            }
+
+            /// <summary>
+            /// The txtErrorMessage item info.
+            /// </summary>
+            [RepositoryItemInfo("544cde61-57aa-4f3f-9968-74f5ddb821b7")]
+            public virtual RepoItemInfo txtErrorMessageInfo
+            {
+                get
+                {
+                    return _txterrormessageInfo;
                 }
             }
         }

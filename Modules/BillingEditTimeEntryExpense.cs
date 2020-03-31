@@ -107,7 +107,7 @@ namespace SmokeTest.Modules
             
             PerformForTimeEntry();
             PerformForTimeExpense();
-            Utilities.Common.ClosePrompt();
+            cmn.ClosePrompt();
         }
     }
 }

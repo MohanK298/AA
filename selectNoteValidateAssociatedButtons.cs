@@ -14,6 +14,7 @@ using System.Drawing;
 using System.Threading;
 using WinForms = System.Windows.Forms;
 using SmokeTest.Repositories;
+using SmokeTest.Modules.Utilities;
 using Ranorex;
 using Ranorex.Core;
 using Ranorex.Core.Testing;
@@ -31,7 +32,7 @@ namespace SmokeTest
         /// </summary>
         
 		Note note = Note.Instance;        
-        
+		Common cmn=new Common();
         public selectNoteValidateAssociatedButtons()
         {
             // Do not delete - a parameterless constructor is required!
@@ -102,7 +103,7 @@ namespace SmokeTest
             createNote();
             selectExistingNote();
             validateAssociatedButtons();
-            SmokeTest.Modules.Utilities.Common.ClosePrompt();
+            cmn.ClosePrompt();
             
         }
     }

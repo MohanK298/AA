@@ -13,7 +13,7 @@ using System.Text.RegularExpressions;
 using System.Drawing;
 using System.Threading;
 using WinForms = System.Windows.Forms;
-
+using SmokeTest.Modules.Utilities;
 using Ranorex;
 using Ranorex.Core;
 using Ranorex.Core.Testing;
@@ -30,6 +30,7 @@ namespace SmokeTest.Modules
     public class BillAPX : ITestModule
     {
         Bill bill = Bill.Instance;
+        Common cmn=new Common();
         BillingTE te = BillingTE.Instance;
         
         string _fileName = "";
@@ -89,7 +90,7 @@ namespace SmokeTest.Modules
             Delay.SpeedFactor = 1.0;
             
             Perform();
-            Utilities.Common.ClosePrompt();
+            cmn.ClosePrompt();
         }
     }
 }

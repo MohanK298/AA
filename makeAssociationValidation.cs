@@ -71,7 +71,7 @@ namespace SmokeTest
             navigateToNotesModule();
             createNote();
             selectFile();
-            Common.ClosePrompt();
+            cmn.ClosePrompt();
         }
     }
 }

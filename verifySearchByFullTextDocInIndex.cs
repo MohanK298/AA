@@ -160,7 +160,7 @@ namespace SmokeTest
             ValidateFullTxtSearchUsingIndexing();
             ValidateFullTxtSearchUsingAllDocIndexing();
             RefineSearch();
-            Common.ClosePrompt();
+            cmn.ClosePrompt();
         }
     }
 }

@@ -14,6 +14,7 @@ using System.Drawing;
 using System.Threading;
 using WinForms = System.Windows.Forms;
 using SmokeTest.Repositories;
+
 using SmokeTest.Modules.Utilities;
 using Ranorex;
 using Ranorex.Core;
@@ -130,7 +131,7 @@ namespace SmokeTest.Modules
             Delay.SpeedFactor = 1.0;
             create_Appointment();
             TE_withNoFile();
-            Utilities.Common.ClosePrompt();
+            cmn.ClosePrompt();
         }
     }
 }

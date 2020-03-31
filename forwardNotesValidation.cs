@@ -17,7 +17,7 @@ using SmokeTest.Repositories;
 using Ranorex;
 using Ranorex.Core;
 using Ranorex.Core.Testing;
-
+using SmokeTest.Modules.Utilities;
 namespace SmokeTest
 {
     /// <summary>
@@ -30,6 +30,7 @@ namespace SmokeTest
         /// Constructs a new instance.
         /// </summary>
         Note note=Note.Instance;
+        Common cmn=new Common();
         public forwardNotesValidation()
         {
             // Do not delete - a parameterless constructor is required!
@@ -86,7 +87,7 @@ namespace SmokeTest
             Delay.SpeedFactor = 1.0;
             CreateNote();
             ForwardNote();
-            SmokeTest.Modules.Utilities.Common.ClosePrompt();
+            cmn.ClosePrompt();
         }
     }
 }

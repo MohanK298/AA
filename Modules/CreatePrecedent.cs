@@ -13,7 +13,7 @@ using System.Text.RegularExpressions;
 using System.Drawing;
 using System.Threading;
 using WinForms = System.Windows.Forms;
-
+using SmokeTest.Modules.Utilities;
 using Ranorex;
 using Ranorex.Core;
 using Ranorex.Core.Testing;
@@ -28,6 +28,7 @@ namespace SmokeTest.Modules
     {
         SmokeTest.Repositories.Files file = new SmokeTest.Repositories.Files();
     	SmokeTest.Repositories.Calendar calendar = new SmokeTest.Repositories.Calendar();
+    	Common cmn=new Common();
     	
         public CreatePrecedent()
         {
@@ -64,7 +65,7 @@ namespace SmokeTest.Modules
             Delay.SpeedFactor = 1.0;
             
             Action();
-            Utilities.Common.ClosePrompt();
+            cmn.ClosePrompt();
         }
     }
 }

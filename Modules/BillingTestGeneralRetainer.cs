@@ -13,7 +13,7 @@ using System.Text.RegularExpressions;
 using System.Drawing;
 using System.Threading;
 using WinForms = System.Windows.Forms;
-
+using SmokeTest.Modules.Utilities;
 using Ranorex;
 using Ranorex.Core;
 using Ranorex.Core.Testing;
@@ -27,6 +27,7 @@ namespace SmokeTest.Modules
     {
     	//Repository Variable
     	Bill bill = Bill.Instance;
+    	Common cmn=new Common();
     	
     	string _fileName = "";
     	[TestVariable("9DCAEDD1-2837-4DAE-98E9-E6E5B3C84EA3")]
@@ -84,7 +85,7 @@ namespace SmokeTest.Modules
             Delay.SpeedFactor = 1.0;
             
             Perform();
-            Utilities.Common.ClosePrompt();
+            cmn.ClosePrompt();
         }
     }
 }

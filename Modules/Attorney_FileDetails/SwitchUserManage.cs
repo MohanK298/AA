@@ -13,7 +13,7 @@ using System.Text.RegularExpressions;
 using System.Drawing;
 using System.Threading;
 using WinForms = System.Windows.Forms;
-
+using SmokeTest.Modules.Utilities;
 using Ranorex;
 using Ranorex.Core;
 using Ranorex.Core.Testing;
@@ -27,7 +27,7 @@ namespace SmokeTest.Modules.Attorney_FileDetails
     public class SwitchUserManage : ITestModule
     {
         SmokeTest.Repositories.FirmSettings firmsetting = new SmokeTest.Repositories.FirmSettings();
-        
+        Common cmn=new Common();
  /*       public class Locator
         {
         	public const string Xpath = "/form[@controlname='ProgressForm']";
@@ -93,7 +93,7 @@ namespace SmokeTest.Modules.Attorney_FileDetails
             Delay.SpeedFactor = 1.0;
             
             Action();
-            Utilities.Common.ClosePrompt();
+            cmn.ClosePrompt();
         }
     }
 }

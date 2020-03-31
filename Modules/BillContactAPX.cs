@@ -13,7 +13,7 @@ using System.Text.RegularExpressions;
 using System.Drawing;
 using System.Threading;
 using WinForms = System.Windows.Forms;
-
+using SmokeTest.Modules.Utilities;
 using Ranorex;
 using Ranorex.Core;
 using Ranorex.Core.Testing;
@@ -29,6 +29,7 @@ namespace SmokeTest.Modules
     public class BillContactAPX : ITestModule
     {
         BillingClient client = BillingClient.Instance;
+        Common cmn=new Common();
     	
     	string _time = "";
     	[TestVariable("B1EA9EEA-A648-4FEE-9045-B21AF52419E0")]
@@ -155,7 +156,7 @@ namespace SmokeTest.Modules
             Delay.SpeedFactor = 1.0;
             
             Perform();
-            Utilities.Common.ClosePrompt();
+            cmn.ClosePrompt();
         }
     }
 }

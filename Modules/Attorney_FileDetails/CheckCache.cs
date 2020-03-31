@@ -14,6 +14,7 @@ using System.Text.RegularExpressions;
 using System.Drawing;
 using System.Threading;
 using WinForms = System.Windows.Forms;
+using SmokeTest.Modules.Utilities;
 using Ranorex;
 using Ranorex.Core;
 using Ranorex.Core.Testing;
@@ -29,6 +30,7 @@ namespace SmokeTest.Modules.Attorney_FileDetails
     {
     	FileDetails fd = FileDetails.Instance;
     	Communications cm = Communications.Instance;
+    	Common cmn=new Common();
     	EventDetails ed = EventDetails.Instance;
     	string eventTitle = "Ranorex event " + System.DateTime.Now;
     	
@@ -81,7 +83,7 @@ namespace SmokeTest.Modules.Attorney_FileDetails
         	Validate.AttributeContains(fd.FileDetailForm.PanelRight.TextInfo, "Text", "Ranorex test file Main Note text" + eventTitle);
         	
         	fd.FileDetailForm.SaveClose.Click();
-        	Utilities.Common.ClosePrompt();
+        	cmn.ClosePrompt();
         }
         
         private void AddSummary()

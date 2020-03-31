@@ -1,20 +1,11 @@
 ﻿<Properties>
   <Array name="active">
-    <Element value="Repositories\Outlook_AddIn.rxrep" />
+    <Element value="Repositories\Premium\Preferences.rxrep" />
   </Array>
   <Array name="bookmarks" />
   <Array name="files">
-    <Element value="Repositories\Outlook_AddIn.rxrep" />
+    <Element value="Repositories\Premium\Preferences.rxrep" />
     <Element value="SmokeTest.rxtst" />
-    <Element value="Repositories\Communications.rxrep" />
-    <Element value="Modules\verifyAddtoPeople_Outlook_AddIn.cs" />
-    <Element value="Modules\VerifyAddtoFile_Outlook_AddIn.cs" />
   </Array>
-  <Properties name="projectSavedData">
-    <Properties name="customTool">
-      <fileNames value="" />
-      <runOnBuild value="False" />
-    </Properties>
-    <Array name="recentusercodeselections" />
-  </Properties>
+  <Properties name="projectSavedData" />
 </Properties>

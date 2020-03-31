@@ -141,7 +141,7 @@ namespace SmokeTest.Modules
             Delay.SpeedFactor = 1.0;
             quickfind();
             Verify_TE_FileBrad();
-            Utilities.Common.ClosePrompt();
+            cmn.ClosePrompt();
         }
     }
 }

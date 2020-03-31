@@ -13,7 +13,7 @@ using System.Text.RegularExpressions;
 using System.Drawing;
 using System.Threading;
 using WinForms = System.Windows.Forms;
-
+using SmokeTest.Repositories;
 using Ranorex;
 using Ranorex.Core;
 using Ranorex.Core.Testing;
@@ -33,7 +33,7 @@ namespace SmokeTest.Modules
         {
             // Do not delete - a parameterless constructor is required!
         }
-
+		FirmSettings fm=FirmSettings.Instance;
         /// <summary>
         /// Performs the playback of actions in this module.
         /// </summary>
@@ -55,10 +55,18 @@ namespace SmokeTest.Modules
 			if(f.FlavorName.Equals("winforms"))
 				   if(f.Title!="Amicus Attorney")
 				   {
-				Report.Info(String.Format("{0} Prompt/Dialog Closed after Test Case Failure",f.Title));
+					Report.Info(String.Format("{0} Prompt/Dialog Closed after Test Case Failure",f.Title));
 				   	f.Close();
 				   }
-
+			}
+			if(fm.PromptForm.SelfInfo.Exists(3000))
+			{
+				if(fm.PromptForm.btnShowDetailsInfo.Exists(3000))
+				{
+					fm.PromptForm.btnShowDetails.Click();
+					Report.Failure(String.Format("The Test Case failed with the following error message - {0}",fm.PromptForm.txtErrorMessage));
+				}
+				fm.PromptForm.Self.Close();
 			}
         	
         }

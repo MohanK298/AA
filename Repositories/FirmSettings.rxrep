@@ -446,6 +446,26 @@ R9TKJFpJ8l5fzCcE+Q6ozFZt5OrldwAAAABJRU5ErkJggg==
 			searchtimeout="30000ms">
 				/form[@controlname='PromptForm']//toolbar[@accessiblename='Toolbar']/button[@accessiblename='OK']
 			</item>
+			<item
+			addcaps="button,accessible"
+			capname="button"
+			id="b719990b-5c90-47b4-856d-da83a29fd0a9"
+			name="btnShowDetails"
+			refimgid="49162cb2-1652-4622-b069-394e498c52af"
+			refpath="/form[@controlname='PromptForm']/container[@controlname='pnlBase']/container[@controlname='pnlControls']/element[@controlname='abtnDetails']/button[@accessiblename='Show Details']"
+			searchtimeout="30000ms">
+				/form[@controlname='PromptForm']/container[@controlname='pnlBase']//button[@accessiblename='Show Details']
+			</item>
+			<item
+			addcaps="text,accessible"
+			capname="text"
+			id="544cde61-57aa-4f3f-9968-74f5ddb821b7"
+			name="txtErrorMessage"
+			refimgid="8ad877f2-b193-4156-b08e-924220b6f4c4"
+			refpath="/form[@controlname='PromptForm']/container[@controlname='pnlBase']/container[@controlname='pnlControls']/container[@controlname='pnlDetails']/element[@controlname='ateDetails']/text[@controlname='_EmbeddableTextBox']/text[@accessiblerole='Text']"
+			searchtimeout="30000ms">
+				/form[@controlname='PromptForm']/container[@controlname='pnlBase']/?/?/container[@controlname='pnlDetails']//text[@accessiblerole='Text']
+			</item>
 			<basepath>
 				/form[@controlname='PromptForm']
 			</basepath>

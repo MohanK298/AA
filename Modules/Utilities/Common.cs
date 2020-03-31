@@ -38,8 +38,9 @@ namespace SmokeTest.Modules.Utilities
         /// </summary>
         Documents doc=Documents.Instance;
         Preferences pref=Preferences.Instance;
+        FirmSettings fm=new FirmSettings();
         SmokeTestRepository str = SmokeTestRepository.Instance;
-         
+        
         [UserCodeMethod]
         public static string CreateLocalTextFile(string fileName)
         {
@@ -71,7 +72,7 @@ namespace SmokeTest.Modules.Utilities
 			return localFileName;			
         }
         [UserCodeMethod]
-        public static void ClosePrompt()
+        public void ClosePrompt()
         {
         	string controlName="";
         	List<Element> all = (List<Element>)Host.Local.Find(new RxPath("/form"));
@@ -87,7 +88,18 @@ namespace SmokeTest.Modules.Utilities
 						Report.Info(String.Format("{0} Prompt/Dialog Closed",controlName));
 				   	f.Close();
 				   }
-
+			
+					
+			}
+			
+			if(fm.PromptForm.SelfInfo.Exists(3000))
+			{
+				if(fm.PromptForm.btnShowDetailsInfo.Exists(3000))
+				{
+					fm.PromptForm.btnShowDetails.Click();
+					Report.Failure(String.Format("The Test Case failed with the following error message - {0}",fm.PromptForm.txtErrorMessage.TextValue));
+				}
+				fm.PromptForm.Self.Close();
 			}
         	
         }

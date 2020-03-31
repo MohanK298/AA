@@ -16,7 +16,7 @@ using WinForms = System.Windows.Forms;
 using Ranorex;
 using Ranorex.Core;
 using Ranorex.Core.Testing;
-
+using SmokeTest.Modules.Utilities;
 using SmokeTest.Repositories;
 using SmokeTest.Modules;
 
@@ -28,7 +28,7 @@ namespace SmokeTest.Modules
     {
         //Repository Variable
     	Files file = Files.Instance;
-    	
+    	Common cmn=new Common();
     	 string _time = "";
     	[TestVariable("6193B8F1-1EEA-4693-866C-25439B548AA0")]
     	public string time
@@ -141,7 +141,7 @@ namespace SmokeTest.Modules
             Delay.SpeedFactor = 1.0;
             
             CreateFile();
-            Utilities.Common.ClosePrompt();
+            cmn.ClosePrompt();
         }
     }
 }

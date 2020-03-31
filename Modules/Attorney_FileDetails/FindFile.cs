@@ -13,7 +13,7 @@ using System.Text.RegularExpressions;
 using System.Drawing;
 using System.Threading;
 using WinForms = System.Windows.Forms;
-
+using SmokeTest.Modules.Utilities;
 using Ranorex;
 using Ranorex.Core;
 using Ranorex.Core.Testing;
@@ -28,7 +28,7 @@ namespace SmokeTest.Modules.Attorney_FileDetails
     {
         //Repository Variable
         SmokeTest.Repositories.Files file = new SmokeTest.Repositories.Files();
-    	
+        Common cmn=new Common();
         public FindFile()
         {
             // Do not delete - a parameterless constructor is required!
@@ -62,7 +62,7 @@ namespace SmokeTest.Modules.Attorney_FileDetails
         	file.FindFilesForm.txtFindFile.TextValue = fileName + time;
         	file.FindFilesForm.btnOK.Click();
         	Delay.Seconds(2);
-        	Utilities.Common.ClosePrompt();
+        	cmn.ClosePrompt();
         }
     }
 }

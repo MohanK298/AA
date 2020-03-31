@@ -67,7 +67,7 @@ namespace SmokeTest.Modules.Attorney_FileDetails
             
         Action();
         
-        Utilities.Common.ClosePrompt();
+        cmn.ClosePrompt();
         }
     }
 }

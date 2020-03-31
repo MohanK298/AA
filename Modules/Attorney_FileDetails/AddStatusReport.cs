@@ -13,7 +13,7 @@ using System.Text.RegularExpressions;
 using System.Drawing;
 using System.Threading;
 using WinForms = System.Windows.Forms;
-
+using SmokeTest.Modules.Utilities;
 using Ranorex;
 using Ranorex.Core;
 using Ranorex.Core.Testing;
@@ -24,7 +24,7 @@ namespace SmokeTest.Modules.Attorney_FileDetails
     public class AddStatusReport : ITestModule
     {
     	SmokeTest.Repositories.Files file = new SmokeTest.Repositories.Files();
-    	
+    	Common cmn=new Common();
         public AddStatusReport()
         {
             // Do not delete - a parameterless constructor is required!
@@ -54,7 +54,7 @@ namespace SmokeTest.Modules.Attorney_FileDetails
             Delay.SpeedFactor = 1.0;
             
             Action();
-            Utilities.Common.ClosePrompt();
+            cmn.ClosePrompt();
         }
     }
 }

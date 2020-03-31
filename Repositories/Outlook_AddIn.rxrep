@@ -126,11 +126,42 @@ name="Outlook_AddIn">
 			<item
 			addcaps="unknown,uiautomation,uiautomationinvoke,uiautomationvalue"
 			capname="unknown"
+			ensurevisible="True"
 			id="9971401f-63a8-485d-915e-2b999fa48767"
 			name="FirstMail"
 			refimgid="165155ef-3036-463a-8f45-76288bc484bb"
 			searchtimeout="30000ms">
 				/form[@title&gt;'Inbox -']/element[@controlid='4704']/container[2]/element[1]
+			</item>
+			<item
+			addcaps="text,uiautomation,uiautomationvalue"
+			capname="text"
+			id="38b23c13-ca3e-4fdd-b440-a16658301bb8"
+			name="txtSearchQuery"
+			refimgid="32452a4c-0a1a-4a01-a26e-b5053dfaf762"
+			refpath="/form[@title='Inbox - amicustestmk1@gmail.com - Outlook']/element[@controlid='1']/container[@caption='NUIDocumentWindow']/container[@class='NetUIHWND']/element[@classname='NetUINetUI']/button[@classname='NetUIFolderBarRoot']/text[@name='Search Query']"
+			searchtimeout="30000ms">
+				/form[@title&gt;'Inbox -']/?/?/container[@caption='NUIDocumentWindow']/container[@class='NetUIHWND']/element[@classname='NetUINetUI']/button[@classname='NetUIFolderBarRoot']/text[@name='Search Query']
+			</item>
+			<item
+			addcaps="button,uiautomation,uiautomationinvoke"
+			capname="button"
+			id="a126acfe-9afc-480f-b3cd-88a67c0030c3"
+			name="btnSubmitSearch"
+			refimgid="0a34c5cb-f16d-48fd-9a91-fadf9339ce0d"
+			refpath="/form[@title='Inbox - amicustestmk1@gmail.com - Outlook']/element[@controlid='1']/container[@caption='NUIDocumentWindow']/container[@class='NetUIHWND']/element[@classname='NetUINetUI']/button[@classname='NetUIFolderBarRoot']/button[@name='Submit Search']"
+			searchtimeout="30000ms">
+				/form[@title&gt;'Inbox -']/?/?/container[@caption='NUIDocumentWindow']/container[@class='NetUIHWND']/element[@classname='NetUINetUI']/button[@classname='NetUIFolderBarRoot']/button[@name='Submit Search']
+			</item>
+			<item
+			addcaps="unknown,uiautomation,uiautomationinvoke,uiautomationvalue"
+			capname="unknown"
+			ensurevisible="True"
+			id="ec8f72c7-558a-4fd1-8412-0bcda82a97da"
+			name="Mail"
+			refimgid="165155ef-3036-463a-8f45-76288bc484bb"
+			searchtimeout="30000ms">
+				/form[@title&gt;'Inbox -']/element[@controlid='4704']/container[$week]/element[$mailindex]
 			</item>
 			<basepath>
 				/form[@title&gt;'Inbox -']
@@ -238,6 +269,13 @@ TkSuQmCC
 				searchtimeout="30000ms">
 					/form[@title&gt;$mailSub]//container[@name='Ribbon']/container[@name='Lower Ribbon']/container[@name='Amicus Tasks']/container[@name='Amicus Attorney Tasks']/text[@name='Search Text']
 				</item>
+				<item
+				capname="button"
+				id="1bdd9eb7-1255-47b2-bd54-f0f625df59f3"
+				name="btnViewAddToRelatedFile"
+				searchtimeout="30000ms">
+					/form[@title&gt;$mailSub]//container[@name='Ribbon']/container[@name='Lower Ribbon']/container[@name='Amicus Tasks']/container[@name='Amicus Attorney Tasks']/button[@name='View/Add To Related File']
+				</item>
 				<basepath>
 					/form[@title&gt;$mailSub]//container[@name='Ribbon']/container[@name='Lower Ribbon']/container[@name='Amicus Tasks']/container[@name='Amicus Attorney Tasks']
 				</basepath>
@@ -275,6 +313,14 @@ TkSuQmCC
 		<var
 		id="89d52fa4-36d8-4c73-9823-44d690186102"
 		name="mailSub">
+		</var>
+		<var
+		id="b648fbe7-1103-4ad1-a9d5-b312558d308d"
+		name="week">
+		</var>
+		<var
+		id="ed3b52d4-b0a2-4470-915d-0aec105d0578"
+		name="mailindex">
 		</var>
 	</variables>
 </repository>

@@ -587,6 +587,12 @@
     <Compile Include="Modules\validate_NoFileOn_Time_Entry_Msg.cs">
       <id>03c1ad4e-1da8-4c5a-906a-49faf3d31d7e</id>
     </Compile>
+    <Compile Include="Modules\VerifyAddtoFile_Outlook_AddIn.cs">
+      <id>5505a52c-dee8-4c93-bf78-c8670765f8c8</id>
+    </Compile>
+    <Compile Include="Modules\verifyAddtoPeople_Outlook_AddIn.cs">
+      <id>73211779-a250-49be-9d5c-5a8460eb34ce</id>
+    </Compile>
     <Compile Include="Modules\VerifyDocDetailOfficeAddInExistingDoc.cs">
       <id>4b968662-445c-4cb3-9f17-5b5768fc79cf</id>
     </Compile>

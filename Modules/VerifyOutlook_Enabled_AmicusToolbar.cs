@@ -62,7 +62,7 @@ namespace SmokeTest.Modules
 			Delay.Seconds(2);
 			pref.MainForm.Email.Click();
 			checkAmicusToolbarInstalled();
-			
+			CheckAmicusTasksInOutlook();
 		
  		}
 
@@ -91,15 +91,32 @@ namespace SmokeTest.Modules
         	pref.EmailInitialization.Toolbar1.btnBeginProcess.Click();
         	
         	pref.PromptForm.ButtonOK.Click();
-        	pref.PromptForm.ButtonOK.Click();
+        	if(pref.PromptForm.SelfInfo.Exists(3000))
+        	   {pref.PromptForm.ButtonOK.Click();}
         	pref.EmailInitialization.Toolbar1.btnFinish.Click();
         	
         	pref.EmailPreferencesForm.btnClose.Click();
         	
-        	
-        	
- 			
 		}
+        
+        private void CheckAmicusTasksInOutlook()
+        {
+        	OpenApp();
+        	if(outlook.Outlook.tabAmicusTasksInfo.Exists(3000))
+        	{
+        		Report.Success("Amicus Tasks Tab is opened successfully");
+        		outlook.Outlook.tabAmicusTasks.Click();
+        		if(outlook.Outlook.AmicusAttorneyTasks1.SelfInfo.Exists(3000))
+        		{
+        			Validate.Exists(outlook.Outlook.AmicusAttorneyTasks1.btnAddToFile,"Add to File Button are displayed successfully");
+        			Validate.Exists(outlook.Outlook.AmicusAttorneyTasks1.btnAddToPeople,"Add to People Button are displayed successfully");
+        			Validate.Exists(outlook.Outlook.AmicusAttorneyTasks1.btnDetails,"Details Button are displayed successfully");
+        			Validate.Exists(outlook.Outlook.AmicusAttorneyTasks1.btnAbout,"About Button are displayed successfully");
+        			Validate.Exists(outlook.Outlook.AmicusAttorneyTasks1.btnSearchAmicus,"Search Amicus Button are displayed successfully");
+        		}
+        	}
+        	outlook.Outlook.Self.Close();
+        }
         	
         private void verifyOutlook_Enabled_AmicusToolbar()
         {
@@ -118,7 +135,7 @@ namespace SmokeTest.Modules
             Mouse.DefaultMoveTime = 300;
             Keyboard.DefaultKeyPressTime = 100;
             Delay.SpeedFactor = 1.0;
-            //OpenApp();
+            
             setOutlookAddIn();
         }
     }

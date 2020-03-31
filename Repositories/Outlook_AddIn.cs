@@ -65,6 +65,30 @@ namespace SmokeTest.Repositories
             set { _mailSub = value; }
         }
 
+        string _week = "";
+
+        /// <summary>
+        /// Gets or sets the value of variable week.
+        /// </summary>
+        [TestVariable("b648fbe7-1103-4ad1-a9d5-b312558d308d")]
+        public string week
+        {
+            get { return _week; }
+            set { _week = value; }
+        }
+
+        string _mailindex = "";
+
+        /// <summary>
+        /// Gets or sets the value of variable mailindex.
+        /// </summary>
+        [TestVariable("ed3b52d4-b0a2-4470-915d-0aec105d0578")]
+        public string mailindex
+        {
+            get { return _mailindex; }
+            set { _mailindex = value; }
+        }
+
 #endregion
 
         /// <summary>
@@ -124,6 +148,9 @@ namespace SmokeTest.Repositories
             RepoItemInfo _amicusattorneytasksInfo;
             RepoItemInfo _groupbyexpandeddatetodayInfo;
             RepoItemInfo _firstmailInfo;
+            RepoItemInfo _txtsearchqueryInfo;
+            RepoItemInfo _btnsubmitsearchInfo;
+            RepoItemInfo _mailInfo;
 
             /// <summary>
             /// Creates a new Outlook  folder.
@@ -135,7 +162,10 @@ namespace SmokeTest.Repositories
                 _tabamicustasksInfo = new RepoItemInfo(this, "tabAmicusTasks", "container[@caption='MsoDockTop']//container[@name='Ribbon']/tabpagelist[@name='Ribbon Tabs']/tabpage[@name='Amicus Tasks']", 30000, null, "419dbcbd-cf88-4918-9ac0-ce4d15c1416f");
                 _amicusattorneytasksInfo = new RepoItemInfo(this, "AmicusAttorneyTasks", "container[@caption='MsoDockTop']//container[@name='Ribbon']/container[@name='Lower Ribbon']/container[@name='Amicus Tasks']/container[@name='Amicus Attorney Tasks']", 30000, null, "e27c05d2-c78e-4d45-a474-bd1d61bf9b58");
                 _groupbyexpandeddatetodayInfo = new RepoItemInfo(this, "GroupByExpandedDateToday", "element[@controlid='4704']/container[2]", 30000, null, "e2efa048-3a0c-4b7f-87b2-97dbe43097f6");
-                _firstmailInfo = new RepoItemInfo(this, "FirstMail", "element[@controlid='4704']/container[2]/element[1]", 30000, null, "9971401f-63a8-485d-915e-2b999fa48767");
+                _firstmailInfo = new RepoItemInfo(this, "FirstMail", "element[@controlid='4704']/container[2]/element[1]", 30000, true, "9971401f-63a8-485d-915e-2b999fa48767");
+                _txtsearchqueryInfo = new RepoItemInfo(this, "txtSearchQuery", "?/?/container[@caption='NUIDocumentWindow']/container[@class='NetUIHWND']/element[@classname='NetUINetUI']/button[@classname='NetUIFolderBarRoot']/text[@name='Search Query']", 30000, null, "38b23c13-ca3e-4fdd-b440-a16658301bb8");
+                _btnsubmitsearchInfo = new RepoItemInfo(this, "btnSubmitSearch", "?/?/container[@caption='NUIDocumentWindow']/container[@class='NetUIHWND']/element[@classname='NetUINetUI']/button[@classname='NetUIFolderBarRoot']/button[@name='Submit Search']", 30000, null, "a126acfe-9afc-480f-b3cd-88a67c0030c3");
+                _mailInfo = new RepoItemInfo(this, "Mail", "element[@controlid='4704']/container[$week]/element[$mailindex]", 30000, true, "ec8f72c7-558a-4fd1-8412-0bcda82a97da");
             }
 
             /// <summary>
@@ -255,6 +285,78 @@ namespace SmokeTest.Repositories
                 get
                 {
                     return _firstmailInfo;
+                }
+            }
+
+            /// <summary>
+            /// The txtSearchQuery item.
+            /// </summary>
+            [RepositoryItem("38b23c13-ca3e-4fdd-b440-a16658301bb8")]
+            public virtual Ranorex.Text txtSearchQuery
+            {
+                get
+                {
+                    return _txtsearchqueryInfo.CreateAdapter<Ranorex.Text>(true);
+                }
+            }
+
+            /// <summary>
+            /// The txtSearchQuery item info.
+            /// </summary>
+            [RepositoryItemInfo("38b23c13-ca3e-4fdd-b440-a16658301bb8")]
+            public virtual RepoItemInfo txtSearchQueryInfo
+            {
+                get
+                {
+                    return _txtsearchqueryInfo;
+                }
+            }
+
+            /// <summary>
+            /// The btnSubmitSearch item.
+            /// </summary>
+            [RepositoryItem("a126acfe-9afc-480f-b3cd-88a67c0030c3")]
+            public virtual Ranorex.Button btnSubmitSearch
+            {
+                get
+                {
+                    return _btnsubmitsearchInfo.CreateAdapter<Ranorex.Button>(true);
+                }
+            }
+
+            /// <summary>
+            /// The btnSubmitSearch item info.
+            /// </summary>
+            [RepositoryItemInfo("a126acfe-9afc-480f-b3cd-88a67c0030c3")]
+            public virtual RepoItemInfo btnSubmitSearchInfo
+            {
+                get
+                {
+                    return _btnsubmitsearchInfo;
+                }
+            }
+
+            /// <summary>
+            /// The Mail item.
+            /// </summary>
+            [RepositoryItem("ec8f72c7-558a-4fd1-8412-0bcda82a97da")]
+            public virtual Ranorex.Unknown Mail
+            {
+                get
+                {
+                    return _mailInfo.CreateAdapter<Ranorex.Unknown>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Mail item info.
+            /// </summary>
+            [RepositoryItemInfo("ec8f72c7-558a-4fd1-8412-0bcda82a97da")]
+            public virtual RepoItemInfo MailInfo
+            {
+                get
+                {
+                    return _mailInfo;
                 }
             }
 
@@ -606,6 +708,7 @@ namespace SmokeTest.Repositories
             RepoItemInfo _btnsearchamicusInfo;
             RepoItemInfo _netuilabelInfo;
             RepoItemInfo _txtsearchtextInfo;
+            RepoItemInfo _btnviewaddtorelatedfileInfo;
 
             /// <summary>
             /// Creates a new AmicusAttorneyTasks1  folder.
@@ -620,6 +723,7 @@ namespace SmokeTest.Repositories
                 _btnsearchamicusInfo = new RepoItemInfo(this, "btnSearchAmicus", "button[@name='Search Amicus']", 30000, null, "964794ec-5596-4b03-a32b-23497565d9e2");
                 _netuilabelInfo = new RepoItemInfo(this, "NetUILabel", "text[@classname='NetUILabel']", 30000, null, "3de288df-e1af-4677-a111-c0f385411288");
                 _txtsearchtextInfo = new RepoItemInfo(this, "txtSearchText", "text[@name='Search Text']", 30000, null, "a2ce95a9-1c1c-4687-89b6-7c1701efc7d2");
+                _btnviewaddtorelatedfileInfo = new RepoItemInfo(this, "btnViewAddToRelatedFile", "button[@name='View/Add To Related File']", 30000, null, "1bdd9eb7-1255-47b2-bd54-f0f625df59f3");
             }
 
             /// <summary>
@@ -811,6 +915,30 @@ namespace SmokeTest.Repositories
                 get
                 {
                     return _txtsearchtextInfo;
+                }
+            }
+
+            /// <summary>
+            /// The btnViewAddToRelatedFile item.
+            /// </summary>
+            [RepositoryItem("1bdd9eb7-1255-47b2-bd54-f0f625df59f3")]
+            public virtual Ranorex.Button btnViewAddToRelatedFile
+            {
+                get
+                {
+                    return _btnviewaddtorelatedfileInfo.CreateAdapter<Ranorex.Button>(true);
+                }
+            }
+
+            /// <summary>
+            /// The btnViewAddToRelatedFile item info.
+            /// </summary>
+            [RepositoryItemInfo("1bdd9eb7-1255-47b2-bd54-f0f625df59f3")]
+            public virtual RepoItemInfo btnViewAddToRelatedFileInfo
+            {
+                get
+                {
+                    return _btnviewaddtorelatedfileInfo;
                 }
             }
         }

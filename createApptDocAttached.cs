@@ -34,11 +34,12 @@ namespace SmokeTest
         Common cmn=new Common();
         Documents doc=Documents.Instance;
         Files file=Files.Instance;
-        string localFileName;
+         
 		static string rndData=System.DateTime.Now.ToString();
 		string data=String.Format("Test Data Added {0}",rndData);
 		string fileName=String.Format("RanorexTestFile {0}",rndData);
 		string parentfolder ="C:\\Qiao\\DataFiles\\";
+		string localFileName ="C:\\Qiao\\DataFiles\\13.txt";
 		string shrtFileName="";
         public createApptDocAttached()
         {
@@ -62,7 +63,7 @@ namespace SmokeTest
         private void FillDocument()
         {
 			
-        	localFileName=cmn.createLocalFile();
+        	
         	//localFileName="C:\\Users\\Kumar\\Downloads\\RanorexAutomation\\AA Enhanced\\DataFiles\\RanorexTestFile2019-10-23 44026 PM.txt";
         	doc.DocumentDetail.Self.Activate();
         	doc.DocumentDetail.PnlBase.txtDocumentTitle.PressKeys(fileName);

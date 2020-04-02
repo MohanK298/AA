@@ -2242,6 +2242,12 @@ directly and create a Bill]]>
 			id="bd8c4bc3-0b90-4dac-8b1b-b6717fa88ce5"
 			name="VerifyAddDocIndexAutoTxtSearch">
 			</smartfoldernode>
+			<testmodule
+			id="be840dff-c267-47e9-a8cd-eb9060806c8a"
+			name="searchFunctionlity_Outlook_In"
+			ref="991f9fed-1914-4311-b4b4-5fef9c264082"
+			type="UserCode">
+			</testmodule>
 			<smartfoldernode
 			datasource="TimeSheetsData"
 			id="bfc3cc06-7961-4f29-a1fd-bc3e54456886"
@@ -2550,7 +2556,7 @@ directly and create a Bill]]>
 			</testmodule>
 			<testmodule
 			id="d9b0da9b-e278-4d77-b272-e4bc298e1d08"
-			name="AddWebURL"
+			name="AddNotes"
 			ref="39757aba-2474-4146-a459-bda32520c0da"
 			type="UserCode">
 			</testmodule>
@@ -3632,7 +3638,7 @@ bill]]>
 						name="AddWebURL">
 							<testmodule
 							id="d9b0da9b-e278-4d77-b272-e4bc298e1d08"
-							name="AddWebURL">
+							name="AddNotes">
 							</testmodule>
 						</smartfoldernode>
 						<smartfoldernode
@@ -4349,22 +4355,6 @@ bill]]>
 						</testmodule>
 					</testcase>
 					<testcase
-					id="f999b233-305c-4e9e-a5e8-bd5b49a34123"
-					name="Logout">
-						<testmodule
-						id="dc7acbd7-2908-42b2-879a-7f8e9d00cb18"
-						name="Logout">
-						</testmodule>
-						<teardown
-						id="fdf78db1-a734-47ba-af26-4c88090b4cc0"
-						name="teardown1">
-							<testmodule
-							id="b3e9e3a4-8559-4832-9301-48fb09fbb328"
-							name="EmailModule">
-							</testmodule>
-						</teardown>
-					</testcase>
-					<testcase
 					id="ddd4bae8-4a40-4286-aafa-a7331e00f10b"
 					name="Outlook_AddIn">
 						<testmodule
@@ -4379,6 +4369,26 @@ bill]]>
 						id="708e53da-52b4-4dd0-b35b-bb251cee3806"
 						name="verifyAddtoPeople_Outlook_AddIn">
 						</testmodule>
+						<testmodule
+						id="be840dff-c267-47e9-a8cd-eb9060806c8a"
+						name="searchFunctionlity_Outlook_In">
+						</testmodule>
+					</testcase>
+					<testcase
+					id="f999b233-305c-4e9e-a5e8-bd5b49a34123"
+					name="Logout">
+						<testmodule
+						id="dc7acbd7-2908-42b2-879a-7f8e9d00cb18"
+						name="Logout">
+						</testmodule>
+						<teardown
+						id="fdf78db1-a734-47ba-af26-4c88090b4cc0"
+						name="teardown1">
+							<testmodule
+							id="b3e9e3a4-8559-4832-9301-48fb09fbb328"
+							name="EmailModule">
+							</testmodule>
+						</teardown>
 					</testcase>
 				</testcase>
 			</testsuite>
@@ -5297,6 +5307,9 @@ bill]]>
 			</testcontainer>
 			<testcontainer
 			id="dd7e2cc8-a2ca-441e-a3f6-80016dba2aae">
+			</testcontainer>
+			<testcontainer
+			id="ddd4bae8-4a40-4286-aafa-a7331e00f10b">
 			</testcontainer>
 			<testcontainer
 			id="dec6b1c6-534b-41f0-bdcb-c728a5bd2ab4">

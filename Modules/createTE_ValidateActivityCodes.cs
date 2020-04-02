@@ -60,6 +60,7 @@ namespace SmokeTest.Modules
         	}
         	ts.TimeEntryDetailsForm.MenubarFillPanel.txtActivityDescription.TextValue="Test";
         	ts.TimeEntryDetailsForm.cmbbxActivityCodes.Click();
+        	Delay.Seconds(2);
         	cmn.VerifyDataExistsInTable(ts.DropDownForm.tblDropdown,"Attend trial","Activity Code Dropdown");
         	cmn.VerifyDataExistsInTable(ts.DropDownForm.tblDropdown,"Attend discovery","Activity Code Dropdown");
         	ts.TimeEntryDetailsForm.MenubarFillPanel.Self.Click();

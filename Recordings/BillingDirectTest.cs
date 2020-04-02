@@ -74,7 +74,7 @@ namespace SmokeTest.Recordings
         void ITestModule.Run()
         {
             Mouse.DefaultMoveTime = 300;
-            Keyboard.DefaultKeyPressTime = 100;
+            Keyboard.DefaultKeyPressTime = 20;
             Delay.SpeedFactor = 1.00;
 
             Init();
@@ -162,9 +162,15 @@ namespace SmokeTest.Recordings
         }
 
 #region Image Feature Data
+        /// <summary>
+        /// DO NOT REFERENCE THIS CODE  - auto generated
+        /// </summary>
         CompressedImage Panel1_Screenshot2
         { get { return repo.BillingDetailForm.DraftBillPanel.Panel1Info.GetScreenshot2(new Rectangle(0, 0, 206, 207)); } }
 
+        /// <summary>
+        /// DO NOT REFERENCE THIS CODE  - auto generated
+        /// </summary>
         Imaging.FindOptions Panel1_Screenshot2_Options
         { get { return Imaging.FindOptions.Parse("1;None;0,0,206,207;True;10000000;0ms"); } }
 

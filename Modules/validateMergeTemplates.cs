@@ -46,7 +46,10 @@ namespace SmokeTest.Modules
         	
         	if(mtemp.DocumentTemplateManagementForm.SelfInfo.Exists(3000))
         	{
-        		mtemp.DocumentTemplateManagementForm.PnlBase.lnkStandardTemplates.Click();
+        		if(mtemp.DocumentTemplateManagementForm.PnlBase.lnkStandardTemplatesInfo.Exists(3000))
+        		{
+        			mtemp.DocumentTemplateManagementForm.PnlBase.lnkStandardTemplates.Click();
+        		}
         		Delay.Seconds(2);
         		Validate.AttributeEqual(mtemp.DocumentTemplateManagementForm.PnlBase.btnNewGroupInfo,"Text","New Group","New Group button is displayed successfully");
         		Validate.AttributeEqual(mtemp.DocumentTemplateManagementForm.PnlBase.btnNewTemplateInfo,"Text","New Template","New Template button is displayed successfully");
@@ -54,14 +57,15 @@ namespace SmokeTest.Modules
         		Validate.AttributeEqual(mtemp.DocumentTemplateManagementForm.PnlBase.btnDeleteInfo,"Text","Delete","Delete button is displayed successfully");
         		
         		Validate.Exists(mtemp.DocumentTemplateManagementForm.PnlBase.treeOutline,"Standard Templates are displayed successfully");
-        		
-        		mtemp.DocumentTemplateManagementForm.PnlBase.lnkHotDocsAdvanceTemplates.Click();
-        		Delay.Seconds(2);
-        		Validate.AttributeEqual(mtemp.DocumentTemplateManagementForm.PnlBase.btnLaunchHotDocsAuthorInfo,"Text","Launch HotDocs Author","Launch HotDocs Author button is displayed successfully");
-        		Validate.AttributeEqual(mtemp.DocumentTemplateManagementForm.PnlBase.btnEditHotDocsTemplateInfo,"Text","Edit HotDocs Template","Edit HotDocs Template button is displayed successfully");
-        		count=cmn.GetTableRowCount(mtemp.DocumentTemplateManagementForm.PnlBase.tblHotDocsAdvanceTemplates,"Merge Templates");
-        		Report.Success(String.Format("The number of templates present for HotDocs Advance Templates are {0}",count));
-        		
+        		if(mtemp.DocumentTemplateManagementForm.PnlBase.lnkHotDocsAdvanceTemplatesInfo.Exists(3000))
+        		{
+        			mtemp.DocumentTemplateManagementForm.PnlBase.lnkHotDocsAdvanceTemplates.Click();
+	        		Delay.Seconds(2);
+	        		Validate.AttributeEqual(mtemp.DocumentTemplateManagementForm.PnlBase.btnLaunchHotDocsAuthorInfo,"Text","Launch HotDocs Author","Launch HotDocs Author button is displayed successfully");
+	        		Validate.AttributeEqual(mtemp.DocumentTemplateManagementForm.PnlBase.btnEditHotDocsTemplateInfo,"Text","Edit HotDocs Template","Edit HotDocs Template button is displayed successfully");
+	        		count=cmn.GetTableRowCount(mtemp.DocumentTemplateManagementForm.PnlBase.tblHotDocsAdvanceTemplates,"Merge Templates");
+	        		Report.Success(String.Format("The number of templates present for HotDocs Advance Templates are {0}",count));
+        		}
         		mtemp.DocumentTemplateManagementForm.Toolbar1.btnClose.Click();
         		
         		

@@ -55,6 +55,7 @@ namespace SmokeTest
         	//Fill data in notes
         	note.PeopleSelectForm.listNameOne.DoubleClick();
         	note.StickyDetails.btnAddFile.Click();
+        	Delay.Seconds(2);
         	note.FileSelectForm.fileListItemOne.DoubleClick();
         	Delay.Seconds(2);
         	note.StickyDetails.txtNoteBox.PressKeys(data);
@@ -69,7 +70,9 @@ namespace SmokeTest
         public void ConvertToDo()
         {
         	CreateNote();
+        	Delay.Seconds(2);
         	cmn.SelectItemFromTableDblClick(note.MainForm.NotesItemFolder.tblNotes,data,"Notes Table");
+        	Delay.Seconds(2);
         	cmn.SelectItemDropdown(note.NoteDetail.MenubarFillPanel.cmbboxConvertTo,"To Do","Convert To");
         	note.NoteDetail.MenubarFillPanel.btnConvert.Click();
         	Delay.Seconds(3);

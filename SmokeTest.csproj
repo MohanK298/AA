@@ -518,6 +518,9 @@
     <Compile Include="Modules\SearchFunctionality_Office_WordAddIn.cs">
       <id>761b4ac7-36f6-4b21-943e-ff9e2cf973d6</id>
     </Compile>
+    <Compile Include="Modules\searchFunctionlity_Outlook_In.cs">
+      <id>057458ae-e3b6-4682-bd86-45ca6b97729d</id>
+    </Compile>
     <Compile Include="Modules\SendDocumentViaEmail.cs">
       <id>4b7d6b73-f432-4a30-82a7-fc7f72845358</id>
     </Compile>

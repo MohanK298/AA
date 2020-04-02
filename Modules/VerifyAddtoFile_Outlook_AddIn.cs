@@ -45,7 +45,7 @@ namespace SmokeTest.Modules
         {
         	Host.Local.RunApplication(outlookPath);
         	Delay.Seconds(5);
-        	outlook.OutlookSplash.SelfInfo.WaitForNotExists(10000);
+        	outlook.OutlookSplash.SelfInfo.WaitForNotExists(60000);
         	
         }
         
@@ -81,6 +81,7 @@ namespace SmokeTest.Modules
         			if(comm.EmailDetailForm.SelfInfo.Exists(3000))
         			{
         				Report.Success("Email Details Form opened successfully");
+        				Validate.Exists(comm.EmailDetailForm.PnlBase.txtPeopleNameInfo,String.Format("File Added to the E-mail is - {0}",comm.EmailDetailForm.PnlBase.txtFileName.TextValue));
         			}
         			comm.EmailDetailForm.Toolbar1.btnOk.Click();
         			if(comm.PromptForm.SelfInfo.Exists(3000))
@@ -101,6 +102,7 @@ namespace SmokeTest.Modules
         		if(comm.EmailDetailForm.SelfInfo.Exists(3000))
     			{
     				Report.Success("Email Details Form opened successfully");
+    				Validate.Exists(comm.EmailDetailForm.PnlBase.txtPeopleNameInfo,String.Format("File Added to the E-mail is - {0}",comm.EmailDetailForm.PnlBase.txtFileName.TextValue));
     			}
     			comm.EmailDetailForm.Toolbar1.btnOk.Click();
     			if(comm.PromptForm.SelfInfo.Exists(3000))

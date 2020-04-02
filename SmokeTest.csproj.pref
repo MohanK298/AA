@@ -1,11 +1,20 @@
 ﻿<Properties>
   <Array name="active">
-    <Element value="Repositories\Premium\Preferences.rxrep" />
+    <Element value="Modules\SearchFunctionality_Office_WordAddIn.cs" />
   </Array>
   <Array name="bookmarks" />
   <Array name="files">
-    <Element value="Repositories\Premium\Preferences.rxrep" />
+    <Element value="Modules\SearchFunctionality_Office_WordAddIn.cs" />
+    <Element value="Repositories\Outlook_AddIn.rxrep" />
     <Element value="SmokeTest.rxtst" />
+    <Element value="Modules\searchFunctionlity_Outlook_In.cs" />
+    <Element value="Repositories\Outlook_AddIn.cs" />
   </Array>
-  <Properties name="projectSavedData" />
+  <Properties name="projectSavedData">
+    <Properties name="customTool">
+      <fileNames value="" />
+      <runOnBuild value="False" />
+    </Properties>
+    <Array name="recentusercodeselections" />
+  </Properties>
 </Properties>

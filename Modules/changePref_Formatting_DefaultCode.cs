@@ -58,6 +58,7 @@ namespace SmokeTest.Modules
 			//Select a Default Activity Code
 			pref.MainForm.PreferencesForm.ActivityCodes.Click();
 			pref.TimePreferencesForm.cmbbxDefaultCodes.Click();
+			Delay.Seconds(2);
 			cmn.SelectItemDropdown(pref.DropDownForm.tbDropdown,"Attend trial");
 			pref.TimePreferencesForm.Toolbar1.btnOK.Click();
 			Delay.Seconds(2);
@@ -107,6 +108,7 @@ namespace SmokeTest.Modules
 			//Select a Default Activity Code
 			pref.MainForm.PreferencesForm.ActivityCodes.Click();
 			pref.TimePreferencesForm.cmbbxDefaultCodes.Click();
+			Delay.Seconds(2);
 			cmn.SelectItemDropdown(pref.DropDownForm.tbDropdown,"None");
 			pref.TimePreferencesForm.Toolbar1.btnOK.Click();
 			Delay.Seconds(2);

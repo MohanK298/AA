@@ -40,7 +40,7 @@ namespace SmokeTest.Modules.Utilities
         Preferences pref=Preferences.Instance;
         FirmSettings fm=new FirmSettings();
         SmokeTestRepository str = SmokeTestRepository.Instance;
-        
+        Outlook_AddIn outlook=Outlook_AddIn.Instance;
         [UserCodeMethod]
         public static string CreateLocalTextFile(string fileName)
         {
@@ -127,6 +127,37 @@ namespace SmokeTest.Modules.Utilities
         				Report.Failure(String.Format("Value \"{0}\" not present in \"{1}\"",data,tblName));
         	}
         }
+        
+        
+        
+        public void VerifyDataExistsInTable(Ranorex.Adapter tbldata,string[] data,string tblName)
+        {
+        	int k=0;
+        	var tadapter = tbldata.As <Ranorex.Table>();
+        	foreach(var myrow in tadapter.Rows)
+        	{
+        		foreach(var cell in myrow.Cells)
+        		{
+        			foreach(string txt in data)
+        			{
+        				Report.Info(txt+"1");
+        			if(cell.Text.StartsWith(txt))
+        			{
+        				Report.Success(String.Format("Value \"{0}\" Present as expected in \"{1}\"",txt,tblName));
+        				k++;
+        				break;
+        			}
+        			}
+        		}
+        	}
+        	if(k==0)
+        	{
+        				Report.Failure(String.Format("Value \"{0}\" not present in \"{1}\"",data,tblName));
+        	}
+        }
+        
+        
+        
         
         public int GetTableRowCount(Ranorex.Adapter tbldata,string tblName)
         {
@@ -530,6 +561,65 @@ namespace SmokeTest.Modules.Utilities
 			}
 			Keyboard.Press("{LControlKey up}");
         }
+        
+        public string MultiSelectEmail(int mailCount,bool getValues=false)
+        {
+        	int l=0;
+        	string mailsubject="";
+        	string txt="";
+        	int indx1,indx2=0;
+        	string txt2="";
+        	IList<Ranorex.Container> containers = outlook.Outlook.mailPanel.FindChildren<Ranorex.Container>(); 
+        	for(int i=0;i<mailCount;i++)
+        	{
+        		if(l>=mailCount)
+					break;
+        		for(int j=1;j<containers.Count;j++)
+        		{
+        			//containers[2].Click();
+        			Delay.Seconds(1);
+        			Report.Info(containers[j].GetAttributeValue<String>("Name"));
+        			IList<Ranorex.Unknown> elements=containers[j].FindChildren<Ranorex.Unknown>();
+        			for(int k=0;k<elements.Count;k++)
+        			{
+        				elements[k].Focus();
+        				elements[k].Click();
+        				Keyboard.Press("{LControlKey down}");
+	       				
+        				if(getValues==true)
+        				{
+        					
+        					txt=elements[k].Element.GetAttributeValueText("Name");
+							indx1=txt.IndexOf("Subject ")+8;
+							indx2=txt.IndexOf(", Received");
+							txt2=txt.Substring(indx1,indx2-indx1);
+							if(txt2.Length>15)
+							{
+								txt2=txt2.Substring(0,15);
+							}
+							mailsubject+=txt2+"~";
+        				}
+        				l++;
+	       				if(l==mailCount)
+	       				{
+	       					break;
+	       				}
+        			}
+        			
+        		}
+        	}
+        	Keyboard.Press("{LControlKey up}");	
+        	if(getValues==true)
+        	{
+        		return mailsubject;
+        	}
+        	else
+        	{
+        		return null;	
+        	}
+        	
+        }
+        
         
         
         public string RetrieveCurrentSelectionFromTable(Ranorex.Adapter item)

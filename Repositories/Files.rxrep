@@ -970,6 +970,26 @@ D8zerL8gSEaw7+rFqJ//CkX5CWkHqyZHVzU6AAAAAElFTkSuQmCC
 			searchtimeout="30000ms">
 				/form[@controlname='FileDetailForm']/container[@controlname='panelPicBackground']/container[@controlname='evenSplitPanelModernModeOnly']//table[@accessiblename='Band 0']
 			</item>
+			<item
+			addcaps="treeitem,accessible"
+			capname="treeitem"
+			id="6a70ba52-813a-4983-8a64-d3782432bbc9"
+			name="Communications"
+			refimgid="4c1a0a0b-d291-4b84-8e8a-2132af398911"
+			refpath="/form[@controlname='FileDetailForm']/container[@controlname='panelLeftBase']/container[@controlname='panelLeft']/element[@controlname='utreeFacts']/tree[@accessiblerole='Outline']/treeitem[@accessiblename='Communications']"
+			searchtimeout="30000ms">
+				/form[@controlname='FileDetailForm']/container[@controlname='panelLeftBase']/?/?/element[@controlname='utreeFacts']/?/?/treeitem[@accessiblename='Communications']
+			</item>
+			<item
+			addcaps="treeitem,accessible"
+			capname="treeitem"
+			id="0c592710-6f3a-4842-a904-a3db89c38490"
+			name="MyEMails"
+			refimgid="1e5b425e-48ab-4397-883e-12b2ec28c8df"
+			refpath="/form[@controlname='FileDetailForm']/container[@controlname='panelLeftBase']/container[@controlname='panelLeft']/element[@controlname='utreeFacts']/tree[@accessiblerole='Outline']/treeitem[@accessiblename='My E-mails']"
+			searchtimeout="30000ms">
+				/form[@controlname='FileDetailForm']/container[@controlname='panelLeftBase']/?/?/element[@controlname='utreeFacts']/?/?/treeitem[@accessiblename='My E-mails']
+			</item>
 			<basepath>
 				/form[@controlname='FileDetailForm']
 			</basepath>
@@ -1084,6 +1104,16 @@ D8zerL8gSEaw7+rFqJ//CkX5CWkHqyZHVzU6AAAAAElFTkSuQmCC
 			refpath="/form[@controlname='FileSelectForm']/element[@controlname='_BaseForm_Toolbars_Dock_Area_Bottom']/container[@accessiblename='DockBottom']/toolbar[@accessiblename='Toolbar']/button[@accessiblename='OK']"
 			searchtimeout="30000ms">
 				/form[@controlname='FileSelectForm']//toolbar[@accessiblename='Toolbar']/button[@accessiblename='OK']
+			</item>
+			<item
+			addcaps="cell,accessible"
+			capname="cell"
+			id="b94c3369-4a5a-4669-a270-77f33ae91d97"
+			name="listFirstFoundFile"
+			refimgid="6f2c8504-8f13-4a8f-92c3-7a148470465c"
+			refpath="/form[@controlname='FileSelectForm']/container[@controlname='panel1']/element[@controlname='ufgSelector']/table[@accessiblerole='Table']/row[@accessiblename='Band 0 row 1']/cell[@accessiblename='File']"
+			searchtimeout="30000ms">
+				/form[@controlname='FileSelectForm']/container[@controlname='panel1']//row[@accessiblename='Band 0 row 1']/cell[@accessiblename='File']
 			</item>
 			<basepath>
 				/form[@controlname='FileSelectForm']

@@ -11,6 +11,6 @@
       <string>0edde0ba-5989-4446-bb3a-b15e14e0e1a3</string>
     </ArrayOfString>
   </SerializedValue>
-  <ProjectBrowserState value="[Solution SmokeTest[SmokeTest[Repositories[]]]]&#xD;&#xA;Solution SmokeTest\SmokeTest\Modules&#xD;&#xA;Solution SmokeTest\SmokeTest\Modules" />
+  <ProjectBrowserState value="[Solution SmokeTest[SmokeTest[Modules[Utilities[]]]]]&#xD;&#xA;Solution SmokeTest\SmokeTest\Modules\verifyOutlookFolders_ValidateButtons.cs&#xD;&#xA;Solution SmokeTest\SmokeTest\Modules\validateAutoComplete_Files_People.cs" />
   <StartupProject value="{C1935D58-308E-40C1-B5C3-1132400202E1}" />
 </Properties>

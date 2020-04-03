@@ -1,8 +1,8 @@
 ﻿/*
  * Created by Ranorex
  * User: kumar
- * Date: 3/23/2020
- * Time: 3:48 PM
+ * Date: 4/3/2020
+ * Time: 11:25 AM
  * 
  * To change this template use Tools > Options > Coding > Edit standard headers.
  */
@@ -23,20 +23,19 @@ using Ranorex.Core.Testing;
 namespace SmokeTest.Modules
 {
     /// <summary>
-    /// Description of VerifyOutlook_Enabled_AmicusToolbar.
+    /// Description of verifyOutlookDisabledToolbar.
     /// </summary>
-    [TestModule("0DF65B44-6467-42B1-915E-F9992BB6DC33", ModuleType.UserCode, 1)]
-    public class VerifyOutlook_Enabled_AmicusToolbar : ITestModule
+    [TestModule("95CDA624-0891-4693-91DB-4DC1179D2F6F", ModuleType.UserCode, 1)]
+    public class verifyOutlookDisabledToolbar : ITestModule
     {
         /// <summary>
         /// Constructs a new instance.
         /// </summary>
-        public VerifyOutlook_Enabled_AmicusToolbar()
+        public verifyOutlookDisabledToolbar()
         {
             // Do not delete - a parameterless constructor is required!
         }
-
-       string outlookPath="C:\\Program Files (x86)\\Microsoft Office\\root\\Office16\\OUTLOOK.EXE";
+ 		string outlookPath="C:\\Program Files (x86)\\Microsoft Office\\root\\Office16\\OUTLOOK.EXE";
         Common cmn=new Common();
         FirmSettings frm=FirmSettings.Instance;
         Preferences pref=Preferences.Instance;
@@ -50,8 +49,8 @@ namespace SmokeTest.Modules
         	outlook.OutlookSplash.SelfInfo.WaitForNotExists(60000);
         	
         }
-        
-        	private void setOutlookAddIn()
+         
+        private void UnsetOutlookAddIn()
  		{
  			
  			pref.MainForm.Self.Activate();
@@ -61,21 +60,22 @@ namespace SmokeTest.Modules
 			pref.MainForm.Preferences1.Click();
 			Delay.Seconds(2);
 			pref.MainForm.Email.Click();
-			checkAmicusToolbarInstalled();
-			CheckAmicusTasksInOutlook();
+			checkAmicusToolbarNotInstalled();
+			CheckAmicusAddInNotInOutlook();
 		
  		}
-
-        private void checkAmicusToolbarInstalled()
+        
+        
+         private void checkAmicusToolbarNotInstalled()
 		{
         	pref.EmailPreferencesForm.rdoOutlook.Select();
         	
         	pref.EmailPreferencesForm.btnStep1.Click();
         	pref.EmailBasicForm.SelfInfo.WaitForExists(3000);
-        	pref.EmailBasicForm.PnlControls.cbEnableAmicusToolbar.Check();
-        	pref.EmailBasicForm.PnlControls.cbSavedUnsavedEmail.Check();
-        	pref.EmailBasicForm.PnlControls.cbShowEmbeddedView.Check();
-        	pref.EmailBasicForm.PnlControls.cbStartTimer.Check();
+        	pref.EmailBasicForm.PnlControls.cbEnableAmicusToolbar.Uncheck();
+        	pref.EmailBasicForm.PnlControls.cbSavedUnsavedEmail.Uncheck();
+        	pref.EmailBasicForm.PnlControls.cbShowEmbeddedView.Uncheck();
+        	pref.EmailBasicForm.PnlControls.cbStartTimer.Uncheck();
         	pref.EmailBasicForm.Toolbar1.btnFinish.Click();
         	
         	pref.EmailPreferencesForm.Panel2.btnStep2.Click();
@@ -99,33 +99,13 @@ namespace SmokeTest.Modules
         	
 		}
         
-        private void CheckAmicusTasksInOutlook()
+        private void CheckAmicusAddInNotInOutlook()
         {
         	OpenApp();
-        	if(outlook.Outlook.tabAmicusTasksInfo.Exists(3000))
-        	{
-        		Report.Success("Amicus Tasks Tab is opened successfully");
-        		outlook.Outlook.tabAmicusTasks.Click();
-        		if(outlook.Outlook.AmicusAttorneyTasks1.SelfInfo.Exists(3000))
-        		{
-        			if(outlook.Outlook.AmicusAttorneyTasks1.btnAddToFileInfo.Exists(3000))
-        			{Validate.Exists(outlook.Outlook.AmicusAttorneyTasks1.btnAddToFile,"Add to File Button are displayed successfully");}
-        			else
-        			{Validate.Exists(outlook.Outlook.AmicusAttorneyTasks1.btnViewAddToRelatedFileInfo,"View/Add Related to File Button are displayed successfully");}
-        				
-        			Validate.Exists(outlook.Outlook.AmicusAttorneyTasks1.btnAddToPeople,"Add to People Button are displayed successfully");
-        			Validate.Exists(outlook.Outlook.AmicusAttorneyTasks1.btnDetails,"Details Button are displayed successfully");
-        			Validate.Exists(outlook.Outlook.AmicusAttorneyTasks1.btnAbout,"About Button are displayed successfully");
-        			Validate.Exists(outlook.Outlook.AmicusAttorneyTasks1.btnSearchAmicus,"Search Amicus Button are displayed successfully");
-        		}
-        	}
+        	Validate.NotExists(outlook.Outlook.tabAmicusTasksInfo,"Amicus Tasks Toolbar not installed as expected");
         	outlook.Outlook.Self.Close();
         }
-        	
-        private void verifyOutlook_Enabled_AmicusToolbar()
-        {
-        	
-        }
+        
         
         
         /// <summary>
@@ -139,8 +119,6 @@ namespace SmokeTest.Modules
             Mouse.DefaultMoveTime = 300;
             Keyboard.DefaultKeyPressTime = 100;
             Delay.SpeedFactor = 1.0;
-            
-            setOutlookAddIn();
         }
     }
 }

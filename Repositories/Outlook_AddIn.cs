@@ -177,6 +177,7 @@ namespace SmokeTest.Repositories
         public partial class OutlookAppFolder : RepoGenBaseFolder
         {
             Outlook_AddInFolders.AmicusAttorneyTasks1Folder _amicusattorneytasks1;
+            Outlook_AddInFolders.MailFoldersFolder _mailfolders;
             RepoItemInfo _tabamicustasksInfo;
             RepoItemInfo _amicusattorneytasksInfo;
             RepoItemInfo _groupbyexpandeddatetodayInfo;
@@ -184,14 +185,17 @@ namespace SmokeTest.Repositories
             RepoItemInfo _txtsearchqueryInfo;
             RepoItemInfo _btnsubmitsearchInfo;
             RepoItemInfo _mailInfo;
+            RepoItemInfo _treeitemgmailInfo;
+            RepoItemInfo _mailpanelInfo;
 
             /// <summary>
             /// Creates a new Outlook  folder.
             /// </summary>
             public OutlookAppFolder(RepoGenBaseFolder parentFolder) :
-                    base("Outlook", "/form[@title>'Inbox -']", parentFolder, 30000, null, true, "c0ccc582-3a65-46de-8e8a-f6698ad12cac", "")
+                    base("Outlook", "/form[@title<' - Outlook']", parentFolder, 30000, null, true, "c0ccc582-3a65-46de-8e8a-f6698ad12cac", "")
             {
                 _amicusattorneytasks1 = new Outlook_AddInFolders.AmicusAttorneyTasks1Folder(this);
+                _mailfolders = new Outlook_AddInFolders.MailFoldersFolder(this);
                 _tabamicustasksInfo = new RepoItemInfo(this, "tabAmicusTasks", "container[@caption='MsoDockTop']//container[@name='Ribbon']/tabpagelist[@name='Ribbon Tabs']/tabpage[@name='Amicus Tasks']", 30000, null, "419dbcbd-cf88-4918-9ac0-ce4d15c1416f");
                 _amicusattorneytasksInfo = new RepoItemInfo(this, "AmicusAttorneyTasks", "container[@caption='MsoDockTop']//container[@name='Ribbon']/container[@name='Lower Ribbon']/container[@name='Amicus Tasks']/container[@name='Amicus Attorney Tasks']", 30000, null, "e27c05d2-c78e-4d45-a474-bd1d61bf9b58");
                 _groupbyexpandeddatetodayInfo = new RepoItemInfo(this, "GroupByExpandedDateToday", "element[@controlid='4704']/container[2]", 30000, null, "e2efa048-3a0c-4b7f-87b2-97dbe43097f6");
@@ -199,6 +203,8 @@ namespace SmokeTest.Repositories
                 _txtsearchqueryInfo = new RepoItemInfo(this, "txtSearchQuery", "?/?/container[@caption='NUIDocumentWindow']/container[@class='NetUIHWND']/element[@classname='NetUINetUI']/button[@classname='NetUIFolderBarRoot']/text[@name='Search Query']", 30000, null, "38b23c13-ca3e-4fdd-b440-a16658301bb8");
                 _btnsubmitsearchInfo = new RepoItemInfo(this, "btnSubmitSearch", "?/?/container[@caption='NUIDocumentWindow']/container[@class='NetUIHWND']/element[@classname='NetUINetUI']/button[@classname='NetUIFolderBarRoot']/button[@name='Submit Search']", 30000, null, "a126acfe-9afc-480f-b3cd-88a67c0030c3");
                 _mailInfo = new RepoItemInfo(this, "Mail", "element[@controlid='4704']/container[$week]/element[$mailindex]", 30000, true, "ec8f72c7-558a-4fd1-8412-0bcda82a97da");
+                _treeitemgmailInfo = new RepoItemInfo(this, "TreeItemGmail", "container[@controlid='103']//tree[@name='Mail Folders']/treeitem/treeitem[@name='[Gmail]']", 30000, null, "e514fa8a-3e23-4687-aaa5-7683dc5646b4");
+                _mailpanelInfo = new RepoItemInfo(this, "mailPanel", "element[@controlid='4704']", 30000, null, "e88d9c01-7b8b-454e-b03f-171a0da5375b");
             }
 
             /// <summary>
@@ -394,12 +400,69 @@ namespace SmokeTest.Repositories
             }
 
             /// <summary>
+            /// The TreeItemGmail item.
+            /// </summary>
+            [RepositoryItem("e514fa8a-3e23-4687-aaa5-7683dc5646b4")]
+            public virtual Ranorex.TreeItem TreeItemGmail
+            {
+                get
+                {
+                    return _treeitemgmailInfo.CreateAdapter<Ranorex.TreeItem>(true);
+                }
+            }
+
+            /// <summary>
+            /// The TreeItemGmail item info.
+            /// </summary>
+            [RepositoryItemInfo("e514fa8a-3e23-4687-aaa5-7683dc5646b4")]
+            public virtual RepoItemInfo TreeItemGmailInfo
+            {
+                get
+                {
+                    return _treeitemgmailInfo;
+                }
+            }
+
+            /// <summary>
+            /// The mailPanel item.
+            /// </summary>
+            [RepositoryItem("e88d9c01-7b8b-454e-b03f-171a0da5375b")]
+            public virtual Ranorex.Unknown mailPanel
+            {
+                get
+                {
+                    return _mailpanelInfo.CreateAdapter<Ranorex.Unknown>(true);
+                }
+            }
+
+            /// <summary>
+            /// The mailPanel item info.
+            /// </summary>
+            [RepositoryItemInfo("e88d9c01-7b8b-454e-b03f-171a0da5375b")]
+            public virtual RepoItemInfo mailPanelInfo
+            {
+                get
+                {
+                    return _mailpanelInfo;
+                }
+            }
+
+            /// <summary>
             /// The AmicusAttorneyTasks1 folder.
             /// </summary>
             [RepositoryFolder("549fc0aa-202a-4fd4-8722-4b7ceb2eee34")]
             public virtual Outlook_AddInFolders.AmicusAttorneyTasks1Folder AmicusAttorneyTasks1
             {
                 get { return _amicusattorneytasks1; }
+            }
+
+            /// <summary>
+            /// The MailFolders folder.
+            /// </summary>
+            [RepositoryFolder("834ad0a2-d865-43dd-b24e-105d5a7d4273")]
+            public virtual Outlook_AddInFolders.MailFoldersFolder MailFolders
+            {
+                get { return _mailfolders; }
             }
         }
 
@@ -416,6 +479,7 @@ namespace SmokeTest.Repositories
             RepoItemInfo _btnsearchamicusInfo;
             RepoItemInfo _netuilabelInfo;
             RepoItemInfo _txtsearchtextInfo;
+            RepoItemInfo _btnviewaddtorelatedfileInfo;
 
             /// <summary>
             /// Creates a new AmicusAttorneyTasks1  folder.
@@ -430,6 +494,7 @@ namespace SmokeTest.Repositories
                 _btnsearchamicusInfo = new RepoItemInfo(this, "btnSearchAmicus", "button[@name='Search Amicus']", 30000, null, "30c08587-4dd4-422f-92c8-72f4d63bb3d4");
                 _netuilabelInfo = new RepoItemInfo(this, "NetUILabel", "text[@classname='NetUILabel']", 30000, null, "99002b99-bc15-40d8-b7e3-cdd143184dfb");
                 _txtsearchtextInfo = new RepoItemInfo(this, "txtSearchText", "text[@name='Search Text']", 30000, null, "f5d6a070-0b05-4b22-b817-52510d1a5f49");
+                _btnviewaddtorelatedfileInfo = new RepoItemInfo(this, "btnViewAddToRelatedFile", "button[@name='View/Add To Related File']", 30000, null, "31a09de1-3faf-4032-a38c-d0cdead9e45e");
             }
 
             /// <summary>
@@ -621,6 +686,252 @@ namespace SmokeTest.Repositories
                 get
                 {
                     return _txtsearchtextInfo;
+                }
+            }
+
+            /// <summary>
+            /// The btnViewAddToRelatedFile item.
+            /// </summary>
+            [RepositoryItem("31a09de1-3faf-4032-a38c-d0cdead9e45e")]
+            public virtual Ranorex.Button btnViewAddToRelatedFile
+            {
+                get
+                {
+                    return _btnviewaddtorelatedfileInfo.CreateAdapter<Ranorex.Button>(true);
+                }
+            }
+
+            /// <summary>
+            /// The btnViewAddToRelatedFile item info.
+            /// </summary>
+            [RepositoryItemInfo("31a09de1-3faf-4032-a38c-d0cdead9e45e")]
+            public virtual RepoItemInfo btnViewAddToRelatedFileInfo
+            {
+                get
+                {
+                    return _btnviewaddtorelatedfileInfo;
+                }
+            }
+        }
+
+        /// <summary>
+        /// The MailFoldersFolder folder.
+        /// </summary>
+        [RepositoryFolder("834ad0a2-d865-43dd-b24e-105d5a7d4273")]
+        public partial class MailFoldersFolder : RepoGenBaseFolder
+        {
+            RepoItemInfo _binInfo;
+            RepoItemInfo _draftsInfo;
+            RepoItemInfo _spamInfo;
+            RepoItemInfo _starredInfo;
+            RepoItemInfo _importantInfo;
+            RepoItemInfo _sentmailInfo;
+            RepoItemInfo _outboxInfo;
+
+            /// <summary>
+            /// Creates a new MailFolders  folder.
+            /// </summary>
+            public MailFoldersFolder(RepoGenBaseFolder parentFolder) :
+                    base("MailFolders", ".//tree[@name='Mail Folders']", parentFolder, 30000, null, false, "834ad0a2-d865-43dd-b24e-105d5a7d4273", "")
+            {
+                _binInfo = new RepoItemInfo(this, "Bin", "treeitem/treeitem/treeitem[@name>'Bin:']", 30000, null, "27ae4c73-55dd-432f-a351-de1def614e26");
+                _draftsInfo = new RepoItemInfo(this, "Drafts", "treeitem/treeitem/treeitem[@name>'Drafts']", 30000, null, "00f19ee0-0124-4e66-8a8e-7f977bffbaf1");
+                _spamInfo = new RepoItemInfo(this, "Spam", "treeitem/treeitem/treeitem[@name>'Spam']", 30000, null, "236beefa-f8e0-4664-b7dd-abd58dcecd2d");
+                _starredInfo = new RepoItemInfo(this, "Starred", "treeitem/treeitem/treeitem[@name>'Starred']", 30000, null, "b4cdc3dc-d6ec-40ec-9d74-cdf7c9d9e850");
+                _importantInfo = new RepoItemInfo(this, "Important", "treeitem/treeitem/treeitem[@name>'Important']", 30000, null, "7ff51a1f-9c6a-4099-83e0-65371e0d52d2");
+                _sentmailInfo = new RepoItemInfo(this, "SentMail", "treeitem/treeitem/treeitem[@name>'Sent Mail']", 30000, null, "4c011f10-1106-457b-81bf-e8c9afd0ec6a");
+                _outboxInfo = new RepoItemInfo(this, "Outbox", "treeitem/treeitem[@name>'Outbox']", 30000, null, "a2237b08-2ceb-4da4-95dc-bfce00fedd2f");
+            }
+
+            /// <summary>
+            /// The Self item.
+            /// </summary>
+            [RepositoryItem("834ad0a2-d865-43dd-b24e-105d5a7d4273")]
+            public virtual Ranorex.Tree Self
+            {
+                get
+                {
+                    return _selfInfo.CreateAdapter<Ranorex.Tree>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Self item info.
+            /// </summary>
+            [RepositoryItemInfo("834ad0a2-d865-43dd-b24e-105d5a7d4273")]
+            public virtual RepoItemInfo SelfInfo
+            {
+                get
+                {
+                    return _selfInfo;
+                }
+            }
+
+            /// <summary>
+            /// The Bin item.
+            /// </summary>
+            [RepositoryItem("27ae4c73-55dd-432f-a351-de1def614e26")]
+            public virtual Ranorex.TreeItem Bin
+            {
+                get
+                {
+                    return _binInfo.CreateAdapter<Ranorex.TreeItem>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Bin item info.
+            /// </summary>
+            [RepositoryItemInfo("27ae4c73-55dd-432f-a351-de1def614e26")]
+            public virtual RepoItemInfo BinInfo
+            {
+                get
+                {
+                    return _binInfo;
+                }
+            }
+
+            /// <summary>
+            /// The Drafts item.
+            /// </summary>
+            [RepositoryItem("00f19ee0-0124-4e66-8a8e-7f977bffbaf1")]
+            public virtual Ranorex.TreeItem Drafts
+            {
+                get
+                {
+                    return _draftsInfo.CreateAdapter<Ranorex.TreeItem>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Drafts item info.
+            /// </summary>
+            [RepositoryItemInfo("00f19ee0-0124-4e66-8a8e-7f977bffbaf1")]
+            public virtual RepoItemInfo DraftsInfo
+            {
+                get
+                {
+                    return _draftsInfo;
+                }
+            }
+
+            /// <summary>
+            /// The Spam item.
+            /// </summary>
+            [RepositoryItem("236beefa-f8e0-4664-b7dd-abd58dcecd2d")]
+            public virtual Ranorex.TreeItem Spam
+            {
+                get
+                {
+                    return _spamInfo.CreateAdapter<Ranorex.TreeItem>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Spam item info.
+            /// </summary>
+            [RepositoryItemInfo("236beefa-f8e0-4664-b7dd-abd58dcecd2d")]
+            public virtual RepoItemInfo SpamInfo
+            {
+                get
+                {
+                    return _spamInfo;
+                }
+            }
+
+            /// <summary>
+            /// The Starred item.
+            /// </summary>
+            [RepositoryItem("b4cdc3dc-d6ec-40ec-9d74-cdf7c9d9e850")]
+            public virtual Ranorex.TreeItem Starred
+            {
+                get
+                {
+                    return _starredInfo.CreateAdapter<Ranorex.TreeItem>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Starred item info.
+            /// </summary>
+            [RepositoryItemInfo("b4cdc3dc-d6ec-40ec-9d74-cdf7c9d9e850")]
+            public virtual RepoItemInfo StarredInfo
+            {
+                get
+                {
+                    return _starredInfo;
+                }
+            }
+
+            /// <summary>
+            /// The Important item.
+            /// </summary>
+            [RepositoryItem("7ff51a1f-9c6a-4099-83e0-65371e0d52d2")]
+            public virtual Ranorex.TreeItem Important
+            {
+                get
+                {
+                    return _importantInfo.CreateAdapter<Ranorex.TreeItem>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Important item info.
+            /// </summary>
+            [RepositoryItemInfo("7ff51a1f-9c6a-4099-83e0-65371e0d52d2")]
+            public virtual RepoItemInfo ImportantInfo
+            {
+                get
+                {
+                    return _importantInfo;
+                }
+            }
+
+            /// <summary>
+            /// The SentMail item.
+            /// </summary>
+            [RepositoryItem("4c011f10-1106-457b-81bf-e8c9afd0ec6a")]
+            public virtual Ranorex.TreeItem SentMail
+            {
+                get
+                {
+                    return _sentmailInfo.CreateAdapter<Ranorex.TreeItem>(true);
+                }
+            }
+
+            /// <summary>
+            /// The SentMail item info.
+            /// </summary>
+            [RepositoryItemInfo("4c011f10-1106-457b-81bf-e8c9afd0ec6a")]
+            public virtual RepoItemInfo SentMailInfo
+            {
+                get
+                {
+                    return _sentmailInfo;
+                }
+            }
+
+            /// <summary>
+            /// The Outbox item.
+            /// </summary>
+            [RepositoryItem("a2237b08-2ceb-4da4-95dc-bfce00fedd2f")]
+            public virtual Ranorex.TreeItem Outbox
+            {
+                get
+                {
+                    return _outboxInfo.CreateAdapter<Ranorex.TreeItem>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Outbox item info.
+            /// </summary>
+            [RepositoryItemInfo("a2237b08-2ceb-4da4-95dc-bfce00fedd2f")]
+            public virtual RepoItemInfo OutboxInfo
+            {
+                get
+                {
+                    return _outboxInfo;
                 }
             }
         }

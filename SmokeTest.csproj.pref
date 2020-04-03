@@ -1,14 +1,13 @@
 ﻿<Properties>
   <Array name="active">
-    <Element value="Modules\SearchFunctionality_Office_WordAddIn.cs" />
+    <Element value="Modules\verifyOutlookFolders_ValidateButtons.cs" />
   </Array>
   <Array name="bookmarks" />
   <Array name="files">
-    <Element value="Modules\SearchFunctionality_Office_WordAddIn.cs" />
-    <Element value="Repositories\Outlook_AddIn.rxrep" />
     <Element value="SmokeTest.rxtst" />
-    <Element value="Modules\searchFunctionlity_Outlook_In.cs" />
-    <Element value="Repositories\Outlook_AddIn.cs" />
+    <Element value="Modules\verifyOutlookFolders_ValidateButtons.cs" />
+    <Element value="Repositories\Outlook_AddIn.rxrep" />
+    <Element value="Modules\Utilities\Common.cs" />
   </Array>
   <Properties name="projectSavedData">
     <Properties name="customTool">

@@ -67,6 +67,10 @@ namespace SmokeTest.Modules
 			txt2=txt.Substring(indx1,indx2-indx1);
 
 			Report.Success(String.Format("Mail Subject - {0} opened successfully",txt2));
+			if(txt2.Length>91)
+			{
+				txt2=txt2.Substring(0,15);
+			}
 			outlook.mailSub=txt2;
         	outlook.Outlook.FirstMail.DoubleClick();
         	outlook.DetailedView.tabAmicusTasks.Click();

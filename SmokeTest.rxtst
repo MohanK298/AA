@@ -189,6 +189,16 @@ Module]]>
 			name="ValidateDocumentDetailButtons">
 			</smartfoldernode>
 			<testmodule
+			id="10192298-0424-4878-b67d-235e4ea33815"
+			name="closeExistingPrompts"
+			ref="fdd2e606-d9d7-4eee-a27d-dc862a5293a3"
+			type="UserCode">
+			</testmodule>
+			<teardown
+			id="12a77593-55ec-4667-8b57-152f7e4d5509"
+			name="teardown">
+			</teardown>
+			<testmodule
 			id="12fdb4cf-af88-4da5-a4b2-f4653555c69e"
 			name="DeleteTask"
 			ref="d46adf6e-82f2-4abb-aa65-df691675a923"
@@ -438,6 +448,12 @@ module]]>
 			name="DeleteNotes">
 			</smartfoldernode>
 			<testmodule
+			id="2660679b-96c6-4d00-be53-89ac528b9707"
+			name="closeExistingPrompts"
+			ref="fdd2e606-d9d7-4eee-a27d-dc862a5293a3"
+			type="UserCode">
+			</testmodule>
+			<testmodule
 			id="270e7f98-2239-493d-8796-ee073c7d8dc0"
 			name="deleteNoteUsingContextClick"
 			ref="caac4d69-c8f9-4648-ae07-251cf0792ee9"
@@ -455,6 +471,12 @@ module]]>
 			id="28d4da33-7130-44db-9aba-ed0ed24734b4"
 			name="SelectNoteValidateAssociatedButtons">
 			</smartfoldernode>
+			<testmodule
+			id="28f8bf6e-60db-4735-8b96-e4bbceae2294"
+			name="closeExistingPrompts"
+			ref="fdd2e606-d9d7-4eee-a27d-dc862a5293a3"
+			type="UserCode">
+			</testmodule>
 			<testmodule
 			id="29398dde-2182-423d-8249-bd4b09807f7e"
 			name="BillAPX"
@@ -616,6 +638,16 @@ module]]>
 			id="341fadd3-dddf-4ae8-ab25-7a805f3c16db"
 			name="AddStatusReport">
 			</smartfoldernode>
+			<testmodule
+			id="34cd3154-baf5-43be-b487-7d53cc97d9e2"
+			name="VerifyAddtoFile_MultiSelectMails"
+			ref="eadf9548-d7da-4a10-91c7-b05a40259440"
+			type="UserCode">
+			</testmodule>
+			<teardown
+			id="3597c28f-d93d-45f4-bdbd-4bab33b3e79a"
+			name="teardown">
+			</teardown>
 			<testmodule
 			enabled="False"
 			id="35a91732-6776-449f-a54f-465cd066536c"
@@ -1007,6 +1039,12 @@ which will be used throughout the Smoke Test]]>
 				</description>
 			</smartfoldernode>
 			<testmodule
+			id="59648392-18e2-47a0-9a66-eb777ad58976"
+			name="closeExistingPrompts"
+			ref="fdd2e606-d9d7-4eee-a27d-dc862a5293a3"
+			type="UserCode">
+			</testmodule>
+			<testmodule
 			id="5a0c28d1-1f08-478f-bd00-7de765fb636a"
 			name="timeAssistant_RightClickOptions"
 			ref="7831df50-10f4-434f-ba8d-ea6c90789454"
@@ -1022,6 +1060,10 @@ which will be used throughout the Smoke Test]]>
 			ref="fdd2e606-d9d7-4eee-a27d-dc862a5293a3"
 			type="UserCode">
 			</testmodule>
+			<teardown
+			id="605eac43-5d5c-459b-a750-74476a625858"
+			name="teardown">
+			</teardown>
 			<smartfoldernode
 			id="617d1b07-0685-449a-a510-b2038d125def"
 			name="AddRelatedFiles">
@@ -1246,6 +1288,12 @@ which will be used throughout the Smoke Test]]>
 			id="69784dea-f2ba-4174-8e33-8521d722fad9"
 			name="CreatenDeleteMasterAdjrnAppt_All">
 			</smartfoldernode>
+			<testmodule
+			id="6a55da77-38ad-4371-9c6e-819bda651b06"
+			name="verifyOutlookFolders_ValidateButtons"
+			ref="dcf5c849-f374-4eac-a917-7706f079ed7f"
+			type="UserCode">
+			</testmodule>
 			<testmodule
 			enabled="False"
 			id="6b18d245-7d04-48f8-b6be-41041e111f0f"
@@ -1699,6 +1747,16 @@ event]]>
 			id="9c9e0c7c-6641-4e4d-b439-4d25916c0fa2"
 			name="VerifySearchByFullTextDocInIndex">
 			</smartfoldernode>
+			<testmodule
+			id="9d178e00-073b-48e2-b090-c16b4101e089"
+			name="closeExistingPrompts"
+			ref="fdd2e606-d9d7-4eee-a27d-dc862a5293a3"
+			type="UserCode">
+			</testmodule>
+			<teardown
+			id="9e8b1fbc-176e-45cc-9704-dcdb67572caf"
+			name="teardown">
+			</teardown>
 			<smartfoldernode
 			id="9eb94e5b-0d1d-4b65-b0ec-298802c6bafa"
 			name="CreateExceptionbyDragnDropInRepAppt">
@@ -1955,6 +2013,12 @@ billing side that will be billed on a file]]>
 			id="accc6f36-0a6b-4488-8785-61ecc2dfdf49"
 			name="Appointment2018">
 			</smartfoldernode>
+			<testmodule
+			id="ad2ed350-95b7-4488-9b4f-539801e5fdb5"
+			name="VerifyDetailsButtonDisabled_MultiSelectMails"
+			ref="f34c5a6d-bbdf-49f9-9526-b2bd54f3160e"
+			type="UserCode">
+			</testmodule>
 			<smartfoldernode
 			datasource="NoteData"
 			id="ae08bef5-05bf-4753-9e12-cab4f965fd83"
@@ -2408,6 +2472,12 @@ directly and create a Bill]]>
 			id="cc5bf42a-9412-47cc-b34a-1818dfc0ae75"
 			name="ChangePref_Formatting_DefaultCode">
 			</smartfoldernode>
+			<testmodule
+			id="ccc3298e-0110-47a5-8d82-5ec0fe5be0bb"
+			name="verifyOutlookDisabledToolbar"
+			ref="95cda624-0891-4693-91db-4dc1179d2f6f"
+			type="UserCode">
+			</testmodule>
 			<testcase
 			id="cce75b9f-2a0a-4eea-879e-3e7540f86d4e"
 			name="BillingAPX">
@@ -2924,6 +2994,10 @@ bill]]>
 			ref="6d49f9ec-16a6-43d9-b6b5-a5436c01975c"
 			type="UserCode">
 			</testmodule>
+			<teardown
+			id="f711277d-0f19-4427-95c8-3dc22bb57fab"
+			name="teardown">
+			</teardown>
 			<testmodule
 			id="f8558255-a145-4e45-8d72-41b5ff550eb8"
 			name="BillingEditTimeEntryExpense"
@@ -4309,6 +4383,14 @@ bill]]>
 						id="c27bfc1c-6c69-4163-ba93-b11c19ee98d1"
 						name="Logout">
 						</testmodule>
+						<teardown
+						id="605eac43-5d5c-459b-a750-74476a625858"
+						name="teardown">
+							<testmodule
+							id="10192298-0424-4878-b67d-235e4ea33815"
+							name="closeExistingPrompts">
+							</testmodule>
+						</teardown>
 					</testcase>
 					<testcase
 					id="dd7e2cc8-a2ca-441e-a3f6-80016dba2aae"
@@ -4317,6 +4399,14 @@ bill]]>
 						id="1e270848-b9dd-49a2-9faf-3dbbaa544160"
 						name="validatePreferenceLinks">
 						</testmodule>
+						<teardown
+						id="3597c28f-d93d-45f4-bdbd-4bab33b3e79a"
+						name="teardown">
+							<testmodule
+							id="59648392-18e2-47a0-9a66-eb777ad58976"
+							name="closeExistingPrompts">
+							</testmodule>
+						</teardown>
 					</testcase>
 					<testcase
 					id="c76fc965-21c0-47ea-907e-a9b6653a5a70"
@@ -4325,6 +4415,14 @@ bill]]>
 						id="d4d80eb2-38e8-47a0-b276-5e69ff070b7f"
 						name="validateMergeTemplates">
 						</testmodule>
+						<teardown
+						id="12a77593-55ec-4667-8b57-152f7e4d5509"
+						name="teardown">
+							<testmodule
+							id="28f8bf6e-60db-4735-8b96-e4bbceae2294"
+							name="closeExistingPrompts">
+							</testmodule>
+						</teardown>
 					</testcase>
 					<testcase
 					id="57309174-e9c7-40be-bd68-5649d6c71a38"
@@ -4353,10 +4451,22 @@ bill]]>
 						id="f9215f1b-885e-42dc-ad1a-9cd990be82e2"
 						name="SearchFunctionality_Office_WordAddIn">
 						</testmodule>
+						<teardown
+						id="f711277d-0f19-4427-95c8-3dc22bb57fab"
+						name="teardown">
+							<testmodule
+							id="2660679b-96c6-4d00-be53-89ac528b9707"
+							name="closeExistingPrompts">
+							</testmodule>
+						</teardown>
 					</testcase>
 					<testcase
 					id="ddd4bae8-4a40-4286-aafa-a7331e00f10b"
 					name="Outlook_AddIn">
+						<testmodule
+						id="ccc3298e-0110-47a5-8d82-5ec0fe5be0bb"
+						name="verifyOutlookDisabledToolbar">
+						</testmodule>
 						<testmodule
 						id="e5646aeb-02a1-424c-9b72-d58e17d43b6a"
 						name="VerifyOutlook_Enabled_AmicusToolbar">
@@ -4373,6 +4483,26 @@ bill]]>
 						id="be840dff-c267-47e9-a8cd-eb9060806c8a"
 						name="searchFunctionlity_Outlook_In">
 						</testmodule>
+						<testmodule
+						id="6a55da77-38ad-4371-9c6e-819bda651b06"
+						name="verifyOutlookFolders_ValidateButtons">
+						</testmodule>
+						<testmodule
+						id="ad2ed350-95b7-4488-9b4f-539801e5fdb5"
+						name="VerifyDetailsButtonDisabled_MultiSelectMails">
+						</testmodule>
+						<testmodule
+						id="34cd3154-baf5-43be-b487-7d53cc97d9e2"
+						name="VerifyAddtoFile_MultiSelectMails">
+						</testmodule>
+						<teardown
+						id="9e8b1fbc-176e-45cc-9704-dcdb67572caf"
+						name="teardown">
+							<testmodule
+							id="9d178e00-073b-48e2-b090-c16b4101e089"
+							name="closeExistingPrompts">
+							</testmodule>
+						</teardown>
 					</testcase>
 					<testcase
 					id="f999b233-305c-4e9e-a5e8-bd5b49a34123"

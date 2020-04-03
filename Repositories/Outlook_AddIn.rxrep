@@ -27,16 +27,15 @@ name="Outlook_AddIn">
 			name="tabAmicusTasks"
 			refimgid="31edf74f-8716-42fb-bb8c-4bd597584fbe"
 			searchtimeout="30000ms">
-				/form[@title&gt;'Inbox -']/container[@caption='MsoDockTop']//container[@name='Ribbon']/tabpagelist[@name='Ribbon Tabs']/tabpage[@name='Amicus Tasks']
+				/form[@title&lt;' - Outlook']/container[@caption='MsoDockTop']//container[@name='Ribbon']/tabpagelist[@name='Ribbon Tabs']/tabpage[@name='Amicus Tasks']
 			</item>
 			<item
 			addcaps="container,uiautomation"
 			capname="container"
 			id="e27c05d2-c78e-4d45-a474-bd1d61bf9b58"
 			name="AmicusAttorneyTasks"
-			refpath="/form[@title='Inbox - amicustestmk1@gmail.com - Outlook']/container[@caption='MsoDockTop']/container[@caption='Ribbon']/element[@class='MsoWorkPane']/element[@class='NUIPane']/container[@class='NetUIHWND']/container[@name='Ribbon']/container[@name='Lower Ribbon']/container[@name='Amicus Tasks']/container[@name='Amicus Attorney Tasks']"
 			searchtimeout="30000ms">
-				/form[@title&gt;'Inbox -']/container[@caption='MsoDockTop']//container[@name='Ribbon']/container[@name='Lower Ribbon']/container[@name='Amicus Tasks']/container[@name='Amicus Attorney Tasks']
+				/form[@title&lt;' - Outlook']/container[@caption='MsoDockTop']//container[@name='Ribbon']/container[@name='Lower Ribbon']/container[@name='Amicus Tasks']/container[@name='Amicus Attorney Tasks']
 			</item>
 			<folder
 			addcaps="container,uiautomation"
@@ -44,7 +43,6 @@ name="Outlook_AddIn">
 			id="549fc0aa-202a-4fd4-8722-4b7ceb2eee34"
 			isrooted="True"
 			name="AmicusAttorneyTasks1"
-			refpath="/form[@title='Inbox - amicustestmk1@gmail.com - Outlook']/container[@caption='MsoDockTop']/container[@caption='Ribbon']/element[@class='MsoWorkPane']/element[@class='NUIPane']/container[@class='NetUIHWND']/container[@name='Ribbon']/container[@name='Lower Ribbon']/container[@name='Amicus Tasks']/container[@name='Amicus Attorney Tasks']"
 			searchtimeout="30000ms"
 			usecache="False">
 				<item
@@ -52,66 +50,66 @@ name="Outlook_AddIn">
 				capname="button"
 				id="ec6f13a4-a8fa-4706-9f06-d9009221c3e9"
 				name="btnAbout"
-				refpath="/form[@title='Inbox - amicustestmk1@gmail.com - Outlook']/container[@caption='MsoDockTop']/container[@caption='Ribbon']/element[@class='MsoWorkPane']/element[@class='NUIPane']/container[@class='NetUIHWND']/container[@name='Ribbon']/container[@name='Lower Ribbon']/container[@name='Amicus Tasks']/container[@name='Amicus Attorney Tasks']/button[@name='About']"
 				searchtimeout="30000ms">
-					/form[@title&gt;'Inbox -']//container[@name='Ribbon']/container[@name='Lower Ribbon']/container[@name='Amicus Tasks']/container[@name='Amicus Attorney Tasks']/button[@name='About']
+					/form[@title&lt;' - Outlook']//container[@name='Ribbon']/container[@name='Lower Ribbon']/container[@name='Amicus Tasks']/container[@name='Amicus Attorney Tasks']/button[@name='About']
 				</item>
 				<item
 				addcaps="button,uiautomation,uiautomationinvoke"
 				capname="button"
 				id="b4d302b2-83da-403b-abe9-ead74d8af29a"
 				name="btnAddToFile"
-				refpath="/form[@title='Inbox - amicustestmk1@gmail.com - Outlook']/container[@caption='MsoDockTop']/container[@caption='Ribbon']/element[@class='MsoWorkPane']/element[@class='NUIPane']/container[@class='NetUIHWND']/container[@name='Ribbon']/container[@name='Lower Ribbon']/container[@name='Amicus Tasks']/container[@name='Amicus Attorney Tasks']/button[@name='Add to File']"
 				searchtimeout="30000ms">
-					/form[@title&gt;'Inbox -']//container[@name='Ribbon']/container[@name='Lower Ribbon']/container[@name='Amicus Tasks']/container[@name='Amicus Attorney Tasks']/button[@name='Add to File']
+					/form[@title&lt;' - Outlook']//container[@name='Ribbon']/container[@name='Lower Ribbon']/container[@name='Amicus Tasks']/container[@name='Amicus Attorney Tasks']/button[@name='Add to File']
 				</item>
 				<item
 				addcaps="button,uiautomation,uiautomationinvoke"
 				capname="button"
 				id="dc812f88-b280-45dc-bbb6-3f4cb73e6d01"
 				name="btnAddToPeople"
-				refpath="/form[@title='Inbox - amicustestmk1@gmail.com - Outlook']/container[@caption='MsoDockTop']/container[@caption='Ribbon']/element[@class='MsoWorkPane']/element[@class='NUIPane']/container[@class='NetUIHWND']/container[@name='Ribbon']/container[@name='Lower Ribbon']/container[@name='Amicus Tasks']/container[@name='Amicus Attorney Tasks']/button[@name='Add to People']"
 				searchtimeout="30000ms">
-					/form[@title&gt;'Inbox -']//container[@name='Ribbon']/container[@name='Lower Ribbon']/container[@name='Amicus Tasks']/container[@name='Amicus Attorney Tasks']/button[@name='Add to People']
+					/form[@title&lt;' - Outlook']//container[@name='Ribbon']/container[@name='Lower Ribbon']/container[@name='Amicus Tasks']/container[@name='Amicus Attorney Tasks']/button[@name='Add to People']
 				</item>
 				<item
 				addcaps="button,uiautomation,uiautomationinvoke"
 				capname="button"
 				id="f84ff7cf-30c4-4bbb-a066-f3fc9c6e92e9"
 				name="btnDetails"
-				refpath="/form[@title='Inbox - amicustestmk1@gmail.com - Outlook']/container[@caption='MsoDockTop']/container[@caption='Ribbon']/element[@class='MsoWorkPane']/element[@class='NUIPane']/container[@class='NetUIHWND']/container[@name='Ribbon']/container[@name='Lower Ribbon']/container[@name='Amicus Tasks']/container[@name='Amicus Attorney Tasks']/button[@name='Details']"
 				searchtimeout="30000ms">
-					/form[@title&gt;'Inbox -']//container[@name='Ribbon']/container[@name='Lower Ribbon']/container[@name='Amicus Tasks']/container[@name='Amicus Attorney Tasks']/button[@name='Details']
+					/form[@title&lt;' - Outlook']//container[@name='Ribbon']/container[@name='Lower Ribbon']/container[@name='Amicus Tasks']/container[@name='Amicus Attorney Tasks']/button[@name='Details']
 				</item>
 				<item
 				addcaps="button,uiautomation,uiautomationinvoke"
 				capname="button"
 				id="30c08587-4dd4-422f-92c8-72f4d63bb3d4"
 				name="btnSearchAmicus"
-				refpath="/form[@title='Inbox - amicustestmk1@gmail.com - Outlook']/container[@caption='MsoDockTop']/container[@caption='Ribbon']/element[@class='MsoWorkPane']/element[@class='NUIPane']/container[@class='NetUIHWND']/container[@name='Ribbon']/container[@name='Lower Ribbon']/container[@name='Amicus Tasks']/container[@name='Amicus Attorney Tasks']/button[@name='Search Amicus']"
 				searchtimeout="30000ms">
-					/form[@title&gt;'Inbox -']//container[@name='Ribbon']/container[@name='Lower Ribbon']/container[@name='Amicus Tasks']/container[@name='Amicus Attorney Tasks']/button[@name='Search Amicus']
+					/form[@title&lt;' - Outlook']//container[@name='Ribbon']/container[@name='Lower Ribbon']/container[@name='Amicus Tasks']/container[@name='Amicus Attorney Tasks']/button[@name='Search Amicus']
 				</item>
 				<item
 				addcaps="text,uiautomation"
 				capname="text"
 				id="99002b99-bc15-40d8-b7e3-cdd143184dfb"
 				name="NetUILabel"
-				refpath="/form[@title='Inbox - amicustestmk1@gmail.com - Outlook']/container[@caption='MsoDockTop']/container[@caption='Ribbon']/element[@class='MsoWorkPane']/element[@class='NUIPane']/container[@class='NetUIHWND']/container[@name='Ribbon']/container[@name='Lower Ribbon']/container[@name='Amicus Tasks']/container[@name='Amicus Attorney Tasks']/text[@classname='NetUILabel']"
 				searchtimeout="30000ms">
-					/form[@title&gt;'Inbox -']//container[@name='Ribbon']/container[@name='Lower Ribbon']/container[@name='Amicus Tasks']/container[@name='Amicus Attorney Tasks']/text[@classname='NetUILabel']
+					/form[@title&lt;' - Outlook']//container[@name='Ribbon']/container[@name='Lower Ribbon']/container[@name='Amicus Tasks']/container[@name='Amicus Attorney Tasks']/text[@classname='NetUILabel']
 				</item>
 				<item
 				addcaps="text,uiautomation,uiautomationvalue"
 				capname="text"
 				id="f5d6a070-0b05-4b22-b817-52510d1a5f49"
 				name="txtSearchText"
-				refpath="/form[@title='Inbox - amicustestmk1@gmail.com - Outlook']/container[@caption='MsoDockTop']/container[@caption='Ribbon']/element[@class='MsoWorkPane']/element[@class='NUIPane']/container[@class='NetUIHWND']/container[@name='Ribbon']/container[@name='Lower Ribbon']/container[@name='Amicus Tasks']/container[@name='Amicus Attorney Tasks']/text[@name='Search Text']"
 				searchtimeout="30000ms">
-					/form[@title&gt;'Inbox -']//container[@name='Ribbon']/container[@name='Lower Ribbon']/container[@name='Amicus Tasks']/container[@name='Amicus Attorney Tasks']/text[@name='Search Text']
+					/form[@title&lt;' - Outlook']//container[@name='Ribbon']/container[@name='Lower Ribbon']/container[@name='Amicus Tasks']/container[@name='Amicus Attorney Tasks']/text[@name='Search Text']
+				</item>
+				<item
+				capname="button"
+				id="31a09de1-3faf-4032-a38c-d0cdead9e45e"
+				name="btnViewAddToRelatedFile"
+				searchtimeout="30000ms">
+					/form[@title&lt;' - Outlook']//container[@name='Ribbon']/container[@name='Lower Ribbon']/container[@name='Amicus Tasks']/container[@name='Amicus Attorney Tasks']/button[@name='View/Add To Related File']
 				</item>
 				<basepath>
-					/form[@title&gt;'Inbox -']//container[@name='Ribbon']/container[@name='Lower Ribbon']/container[@name='Amicus Tasks']/container[@name='Amicus Attorney Tasks']
+					/form[@title&lt;' - Outlook']//container[@name='Ribbon']/container[@name='Lower Ribbon']/container[@name='Amicus Tasks']/container[@name='Amicus Attorney Tasks']
 				</basepath>
 			</folder>
 			<item
@@ -121,7 +119,7 @@ name="Outlook_AddIn">
 			name="GroupByExpandedDateToday"
 			refimgid="79624e18-856d-45ed-894a-df33d74f43fd"
 			searchtimeout="30000ms">
-				/form[@title&gt;'Inbox -']/element[@controlid='4704']/container[2]
+				/form[@title&lt;' - Outlook']/element[@controlid='4704']/container[2]
 			</item>
 			<item
 			addcaps="unknown,uiautomation,uiautomationinvoke,uiautomationvalue"
@@ -131,7 +129,7 @@ name="Outlook_AddIn">
 			name="FirstMail"
 			refimgid="165155ef-3036-463a-8f45-76288bc484bb"
 			searchtimeout="30000ms">
-				/form[@title&gt;'Inbox -']/element[@controlid='4704']/container[2]/element[1]
+				/form[@title&lt;' - Outlook']/element[@controlid='4704']/container[2]/element[1]
 			</item>
 			<item
 			addcaps="text,uiautomation,uiautomationvalue"
@@ -139,9 +137,8 @@ name="Outlook_AddIn">
 			id="38b23c13-ca3e-4fdd-b440-a16658301bb8"
 			name="txtSearchQuery"
 			refimgid="32452a4c-0a1a-4a01-a26e-b5053dfaf762"
-			refpath="/form[@title='Inbox - amicustestmk1@gmail.com - Outlook']/element[@controlid='1']/container[@caption='NUIDocumentWindow']/container[@class='NetUIHWND']/element[@classname='NetUINetUI']/button[@classname='NetUIFolderBarRoot']/text[@name='Search Query']"
 			searchtimeout="30000ms">
-				/form[@title&gt;'Inbox -']/?/?/container[@caption='NUIDocumentWindow']/container[@class='NetUIHWND']/element[@classname='NetUINetUI']/button[@classname='NetUIFolderBarRoot']/text[@name='Search Query']
+				/form[@title&lt;' - Outlook']/?/?/container[@caption='NUIDocumentWindow']/container[@class='NetUIHWND']/element[@classname='NetUINetUI']/button[@classname='NetUIFolderBarRoot']/text[@name='Search Query']
 			</item>
 			<item
 			addcaps="button,uiautomation,uiautomationinvoke"
@@ -149,9 +146,8 @@ name="Outlook_AddIn">
 			id="a126acfe-9afc-480f-b3cd-88a67c0030c3"
 			name="btnSubmitSearch"
 			refimgid="0a34c5cb-f16d-48fd-9a91-fadf9339ce0d"
-			refpath="/form[@title='Inbox - amicustestmk1@gmail.com - Outlook']/element[@controlid='1']/container[@caption='NUIDocumentWindow']/container[@class='NetUIHWND']/element[@classname='NetUINetUI']/button[@classname='NetUIFolderBarRoot']/button[@name='Submit Search']"
 			searchtimeout="30000ms">
-				/form[@title&gt;'Inbox -']/?/?/container[@caption='NUIDocumentWindow']/container[@class='NetUIHWND']/element[@classname='NetUINetUI']/button[@classname='NetUIFolderBarRoot']/button[@name='Submit Search']
+				/form[@title&lt;' - Outlook']/?/?/container[@caption='NUIDocumentWindow']/container[@class='NetUIHWND']/element[@classname='NetUINetUI']/button[@classname='NetUIFolderBarRoot']/button[@name='Submit Search']
 			</item>
 			<item
 			addcaps="unknown,uiautomation,uiautomationinvoke,uiautomationvalue"
@@ -161,10 +157,96 @@ name="Outlook_AddIn">
 			name="Mail"
 			refimgid="165155ef-3036-463a-8f45-76288bc484bb"
 			searchtimeout="30000ms">
-				/form[@title&gt;'Inbox -']/element[@controlid='4704']/container[$week]/element[$mailindex]
+				/form[@title&lt;' - Outlook']/element[@controlid='4704']/container[$week]/element[$mailindex]
+			</item>
+			<item
+			addcaps="treeitem,uiautomation"
+			capname="treeitem"
+			id="e514fa8a-3e23-4687-aaa5-7683dc5646b4"
+			name="TreeItemGmail"
+			refimgid="68cfed93-f820-48f7-933b-4faf6cb77bb4"
+			searchtimeout="30000ms">
+				/form[@title&lt;' - Outlook']/container[@controlid='103']//tree[@name='Mail Folders']/treeitem/treeitem[@name='[Gmail]']
+			</item>
+			<folder
+			addcaps="tree,uiautomation"
+			capname="tree"
+			id="834ad0a2-d865-43dd-b24e-105d5a7d4273"
+			isrooted="True"
+			name="MailFolders"
+			refpath="/form[@title='[Gmail] - amicustestmk1@gmail.com - Outlook']/container[@caption='NUIDocumentWindow' and @controlid='103']/container[@class='NetUIHWND']/element[@classname='NetUINetUI']/container[2]/tree[@name='Mail Folders']"
+			searchtimeout="30000ms"
+			usecache="False">
+				<item
+				addcaps="treeitem,uiautomation"
+				capname="treeitem"
+				id="27ae4c73-55dd-432f-a351-de1def614e26"
+				name="Bin"
+				searchtimeout="30000ms">
+					/form[@title&lt;' - Outlook']//tree[@name='Mail Folders']/treeitem/treeitem/treeitem[@name&gt;'Bin:']
+				</item>
+				<item
+				addcaps="treeitem,uiautomation"
+				capname="treeitem"
+				id="00f19ee0-0124-4e66-8a8e-7f977bffbaf1"
+				name="Drafts"
+				searchtimeout="30000ms">
+					/form[@title&lt;' - Outlook']//tree[@name='Mail Folders']/treeitem/treeitem/treeitem[@name&gt;'Drafts']
+				</item>
+				<item
+				addcaps="treeitem,uiautomation"
+				capname="treeitem"
+				id="236beefa-f8e0-4664-b7dd-abd58dcecd2d"
+				name="Spam"
+				searchtimeout="30000ms">
+					/form[@title&lt;' - Outlook']//tree[@name='Mail Folders']/treeitem/treeitem/treeitem[@name&gt;'Spam']
+				</item>
+				<item
+				addcaps="treeitem,uiautomation"
+				capname="treeitem"
+				id="b4cdc3dc-d6ec-40ec-9d74-cdf7c9d9e850"
+				name="Starred"
+				searchtimeout="30000ms">
+					/form[@title&lt;' - Outlook']//tree[@name='Mail Folders']/treeitem/treeitem/treeitem[@name&gt;'Starred']
+				</item>
+				<item
+				addcaps="treeitem,uiautomation"
+				capname="treeitem"
+				id="7ff51a1f-9c6a-4099-83e0-65371e0d52d2"
+				name="Important"
+				searchtimeout="30000ms">
+					/form[@title&lt;' - Outlook']//tree[@name='Mail Folders']/treeitem/treeitem/treeitem[@name&gt;'Important']
+				</item>
+				<item
+				addcaps="treeitem,uiautomation"
+				capname="treeitem"
+				id="4c011f10-1106-457b-81bf-e8c9afd0ec6a"
+				name="SentMail"
+				searchtimeout="30000ms">
+					/form[@title&lt;' - Outlook']//tree[@name='Mail Folders']/treeitem/treeitem/treeitem[@name&gt;'Sent Mail']
+				</item>
+				<item
+				addcaps="treeitem,uiautomation"
+				capname="treeitem"
+				id="a2237b08-2ceb-4da4-95dc-bfce00fedd2f"
+				name="Outbox"
+				refimgid="251324a2-15dd-484a-a723-a39565af6ac2"
+				searchtimeout="30000ms">
+					/form[@title&lt;' - Outlook']//tree[@name='Mail Folders']/treeitem/treeitem[@name&gt;'Outbox']
+				</item>
+				<basepath>
+					/form[@title&lt;' - Outlook']//tree[@name='Mail Folders']
+				</basepath>
+			</folder>
+			<item
+			capname="unknown"
+			id="e88d9c01-7b8b-454e-b03f-171a0da5375b"
+			name="mailPanel"
+			searchtimeout="30000ms">
+				/form[@title&lt;' - Outlook']/element[@controlid='4704']
 			</item>
 			<basepath>
-				/form[@title&gt;'Inbox -']
+				/form[@title&lt;' - Outlook']
 			</basepath>
 			<icon>
 				iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACx

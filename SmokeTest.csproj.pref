@@ -1,13 +1,11 @@
 ﻿<Properties>
   <Array name="active">
-    <Element value="Modules\verifyOutlookFolders_ValidateButtons.cs" />
+    <Element value="SmokeTest.rxtst" />
   </Array>
   <Array name="bookmarks" />
   <Array name="files">
     <Element value="SmokeTest.rxtst" />
-    <Element value="Modules\verifyOutlookFolders_ValidateButtons.cs" />
-    <Element value="Repositories\Outlook_AddIn.rxrep" />
-    <Element value="Modules\Utilities\Common.cs" />
+    <Element value="Modules\VerifyAddtoFile_Outlook_AddIn.cs" />
   </Array>
   <Properties name="projectSavedData">
     <Properties name="customTool">

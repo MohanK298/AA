@@ -582,6 +582,10 @@ namespace SmokeTest.Modules.Utilities
         			IList<Ranorex.Unknown> elements=containers[j].FindChildren<Ranorex.Unknown>();
         			for(int k=0;k<elements.Count;k++)
         			{
+        				if(l>=mailCount)
+	       				{
+	       					break;
+	       				}
         				elements[k].Focus();
         				elements[k].Click();
         				Keyboard.Press("{LControlKey down}");
@@ -600,11 +604,11 @@ namespace SmokeTest.Modules.Utilities
 							mailsubject+=txt2+"~";
         				}
         				l++;
-	       				if(l==mailCount)
-	       				{
-	       					break;
-	       				}
         			}
+        			if(l>=mailCount)
+       				{
+       					break;
+       				}
         			
         		}
         	}

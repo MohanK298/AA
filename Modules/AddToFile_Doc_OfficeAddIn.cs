@@ -49,6 +49,7 @@ namespace SmokeTest.Modules
         	Host.Local.RunApplication(wordPath);
         	Delay.Seconds(5);
         	//wapp.Word.BlankDocument.Click();
+        	wapp.Word.lnkOpenOtherDocuments.Focus();
         	wapp.Word.lnkOpenOtherDocuments.Click();
         	Delay.Seconds(2);
         	wapp.Word.btnBrowse.Click();

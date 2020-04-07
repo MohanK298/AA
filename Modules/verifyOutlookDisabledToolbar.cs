@@ -79,9 +79,19 @@ namespace SmokeTest.Modules
         	pref.EmailBasicForm.Toolbar1.btnFinish.Click();
         	
         	pref.EmailPreferencesForm.Panel2.btnStep2.Click();
+        	if(pref.EmailAttachmentForm.txtAttachmentSaveLocation.GetAttributeValue<String>("Text")=="")
+    	    {
+    	    	pref.EmailAttachmentForm.txtAttachmentSaveLocation.TextValue="\\\\NEWAUTOMATION\\DocumentAssemblyTemplates";
+    	    	pref.EmailAttachmentForm.btnBrowse.Click();
+    	    	Delay.Seconds(1);
+    	    	pref.BrowseFolder.btnOK.Click();
+    	    	
+    	    }
         	pref.EmailAttachmentForm.btnFinish.Click();
         	
         	pref.EmailPreferencesForm.Panel2.btnStep3.Click();
+        	
+        	
         	pref.EmailAutoSaveForm.btnFinish.Click();
         	
         	pref.EmailPreferencesForm.Panel2.btnStep4.Click();
@@ -98,12 +108,25 @@ namespace SmokeTest.Modules
         	pref.EmailPreferencesForm.btnClose.Click();
         	
 		}
-        
+        private void CloseProcess()
+    	{
+        	foreach(System.Diagnostics.Process myProc in System.Diagnostics.Process.GetProcesses())
+			{
+				if (myProc.ProcessName == "OUTLOOK")
+				{
+					myProc.Kill();
+					Report.Success("Outlook proccess is closed successfully");
+				}
+    		}
+        }
+         
+         
         private void CheckAmicusAddInNotInOutlook()
         {
         	OpenApp();
         	Validate.NotExists(outlook.Outlook.tabAmicusTasksInfo,"Amicus Tasks Toolbar not installed as expected");
         	outlook.Outlook.Self.Close();
+        	CloseProcess();
         }
         
         
@@ -119,6 +142,7 @@ namespace SmokeTest.Modules
             Mouse.DefaultMoveTime = 300;
             Keyboard.DefaultKeyPressTime = 100;
             Delay.SpeedFactor = 1.0;
+            UnsetOutlookAddIn();
         }
     }
 }

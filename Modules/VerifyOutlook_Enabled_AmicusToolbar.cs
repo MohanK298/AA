@@ -41,7 +41,8 @@ namespace SmokeTest.Modules
         FirmSettings frm=FirmSettings.Instance;
         Preferences pref=Preferences.Instance;
         Outlook_AddIn outlook=Outlook_AddIn.Instance;
-        
+        Login login=Login.Instance;
+        SmokeTestRepository str = SmokeTestRepository.Instance;
         
         private void OpenApp()
         {
@@ -50,6 +51,28 @@ namespace SmokeTest.Modules
         	outlook.OutlookSplash.SelfInfo.WaitForNotExists(60000);
         	
         }
+        
+        
+         private void OpenAmicusApp()
+        {
+        	Host.Local.RunApplication("C:\\Amicus\\Amicus Attorney Workstation\\AmicusAttorney.XWin.exe");
+        	var datasource=Ranorex.DataSources.Get("LoginData");
+        	datasource.Load();
+        	
+        	login.SelfInfo.WaitForExists(10000);
+        	
+        	login.LoginForm.FirmId.TextValue=datasource.Rows[0].Values[0].ToString();//"QA Toronto 10";
+        	login.LoginForm.UserId.TextValue=datasource.Rows[0].Values[1].ToString();//="admin user";
+        	login.LoginForm.Pwd.TextValue=datasource.Rows[0].Values[2].ToString();//"password";
+        	login.LoginForm.ServerName.TextValue=datasource.Rows[0].Values[3].ToString();//"J4-Mohanss";
+        	login.LoginForm.btnLogin.Click();
+        	if(pref.PromptForm.SelfInfo.Exists(3000))
+        	{
+        		pref.PromptForm.btnNo.Click();
+        	}
+        	Delay.Seconds(10);
+        }
+        
         
         	private void setOutlookAddIn()
  		{
@@ -96,6 +119,9 @@ namespace SmokeTest.Modules
         	pref.EmailInitialization.Toolbar1.btnFinish.Click();
         	
         	pref.EmailPreferencesForm.btnClose.Click();
+        	
+        	pref.MainForm.Self.Close();
+        	OpenAmicusApp();
         	
 		}
         

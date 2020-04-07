@@ -69,7 +69,7 @@ namespace SmokeTest.Modules
     		}
    			Report.Info(mailsub);
    			outlook.Outlook.Self.Close();
-   			ValidateMailsInFile(mailsub);
+   		//	ValidateMailsInFile(mailsub);
    			
         }
         
@@ -77,6 +77,7 @@ namespace SmokeTest.Modules
         {
         	file.MainForm.Self.Activate();
         	file.MainForm.btnFiles1.Click();
+        	Delay.Seconds(3);
         	file.MainForm.FilesIndexForm.listFirstFile.DoubleClick();
         	Delay.Seconds(1);
         	file.FileDetailForm.Communications.Click();

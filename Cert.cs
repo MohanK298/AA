@@ -87,14 +87,11 @@ namespace SmokeTest
         void ITestModule.Run()
         {
             Mouse.DefaultMoveTime = 300;
-            Keyboard.DefaultKeyPressTime = 20;
+            Keyboard.DefaultKeyPressTime = 100;
             Delay.SpeedFactor = 1.00;
 
             Init();
 
-            Report.Log(ReportLevel.Info, "Wait", "Waiting 5s to exist. Associated repository item: 'FileExplorer.Downloads'", repo.FileExplorer.DownloadsInfo, new ActionTimeout(5000), new RecordItemIndex(0));
-            repo.FileExplorer.DownloadsInfo.WaitForExists(5000);
-            
         }
 
 #region Image Feature Data

@@ -191,7 +191,7 @@ name="Outlook_AddIn">
 				id="00f19ee0-0124-4e66-8a8e-7f977bffbaf1"
 				name="Drafts"
 				searchtimeout="30000ms">
-					/form[@title&lt;' - Outlook']//tree[@name='Mail Folders']/treeitem/treeitem/treeitem[@name&gt;'Drafts']
+					/form[@title&lt;' - Outlook']//tree[@name='Mail Folders']/treeitem//treeitem[@name&gt;'Drafts']
 				</item>
 				<item
 				addcaps="treeitem,uiautomation"
@@ -199,7 +199,7 @@ name="Outlook_AddIn">
 				id="236beefa-f8e0-4664-b7dd-abd58dcecd2d"
 				name="Spam"
 				searchtimeout="30000ms">
-					/form[@title&lt;' - Outlook']//tree[@name='Mail Folders']/treeitem/treeitem/treeitem[@name&gt;'Spam']
+					/form[@title&lt;' - Outlook']//tree[@name='Mail Folders']/treeitem//treeitem[@name&gt;'Spam']
 				</item>
 				<item
 				addcaps="treeitem,uiautomation"
@@ -207,7 +207,7 @@ name="Outlook_AddIn">
 				id="b4cdc3dc-d6ec-40ec-9d74-cdf7c9d9e850"
 				name="Starred"
 				searchtimeout="30000ms">
-					/form[@title&lt;' - Outlook']//tree[@name='Mail Folders']/treeitem/treeitem/treeitem[@name&gt;'Starred']
+					/form[@title&lt;' - Outlook']//tree[@name='Mail Folders']/treeitem//treeitem[@name&gt;'Starred']
 				</item>
 				<item
 				addcaps="treeitem,uiautomation"
@@ -215,7 +215,7 @@ name="Outlook_AddIn">
 				id="7ff51a1f-9c6a-4099-83e0-65371e0d52d2"
 				name="Important"
 				searchtimeout="30000ms">
-					/form[@title&lt;' - Outlook']//tree[@name='Mail Folders']/treeitem/treeitem/treeitem[@name&gt;'Important']
+					/form[@title&lt;' - Outlook']//tree[@name='Mail Folders']/treeitem//treeitem[@name&gt;'Important']
 				</item>
 				<item
 				addcaps="treeitem,uiautomation"
@@ -223,7 +223,7 @@ name="Outlook_AddIn">
 				id="4c011f10-1106-457b-81bf-e8c9afd0ec6a"
 				name="SentMail"
 				searchtimeout="30000ms">
-					/form[@title&lt;' - Outlook']//tree[@name='Mail Folders']/treeitem/treeitem/treeitem[@name&gt;'Sent Mail']
+					/form[@title&lt;' - Outlook']//tree[@name='Mail Folders']/treeitem//treeitem[@name&gt;'Sent Mail']
 				</item>
 				<item
 				addcaps="treeitem,uiautomation"
@@ -233,6 +233,24 @@ name="Outlook_AddIn">
 				refimgid="251324a2-15dd-484a-a723-a39565af6ac2"
 				searchtimeout="30000ms">
 					/form[@title&lt;' - Outlook']//tree[@name='Mail Folders']/treeitem/treeitem[@name&gt;'Outbox']
+				</item>
+				<item
+				addcaps="treeitem,uiautomation"
+				capname="treeitem"
+				id="d0b7a0e1-c51d-4826-9a85-1ba786ac3553"
+				name="DeletedItems"
+				refimgid="f2b69c7f-9be4-49ca-a22f-024b77537258"
+				searchtimeout="30000ms">
+					/form[@title&lt;' - Outlook']//tree[@name='Mail Folders']/treeitem//treeitem[@name='Deleted Items']
+				</item>
+				<item
+				addcaps="treeitem,uiautomation"
+				capname="treeitem"
+				id="c6cd82af-8d2a-4ce5-9c5d-61c2677867d7"
+				name="JunkEmail"
+				refimgid="72a0e9fd-d94b-4b91-8b55-74fdef93ce07"
+				searchtimeout="30000ms">
+					/form[@title&lt;' - Outlook']//tree[@name='Mail Folders']/treeitem/treeitem[@name='Junk Email']
 				</item>
 				<basepath>
 					/form[@title&lt;' - Outlook']//tree[@name='Mail Folders']

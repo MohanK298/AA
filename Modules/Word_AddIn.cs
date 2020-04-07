@@ -42,7 +42,8 @@ namespace SmokeTest.Modules
  		private void OpenApp()
         {
         	Host.Local.RunApplication(wordPath);
-        	Delay.Seconds(5);
+        	Delay.Seconds(10);
+        	wapp.Word.Self.Activate();
         	wapp.Word.BlankDocument.Click();
         }
         
@@ -128,6 +129,10 @@ namespace SmokeTest.Modules
  				Validate.Attribute(wapp.WordDocument.AmicusAttorneyTasks1.btnCheckInInfo,"Enabled","False","Check-In button disabled as expected");
  				Validate.Attribute(wapp.WordDocument.AmicusAttorneyTasks1.btnCheckOutInfo,"Enabled","False","Check-Out button disabled as expected");
  				Validate.Attribute(wapp.WordDocument.AmicusAttorneyTasks1.btnAboutInfo,"Enabled","True","About button is active and Enabled as expected");
+ 			}
+ 			if(wapp.WordDocument.SelfInfo.Exists(3000))
+ 			{
+ 				wapp.WordDocument.Self.Close();
  			}
  		}
  		/// <summary>

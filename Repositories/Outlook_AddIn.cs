@@ -727,6 +727,8 @@ namespace SmokeTest.Repositories
             RepoItemInfo _importantInfo;
             RepoItemInfo _sentmailInfo;
             RepoItemInfo _outboxInfo;
+            RepoItemInfo _deleteditemsInfo;
+            RepoItemInfo _junkemailInfo;
 
             /// <summary>
             /// Creates a new MailFolders  folder.
@@ -735,12 +737,14 @@ namespace SmokeTest.Repositories
                     base("MailFolders", ".//tree[@name='Mail Folders']", parentFolder, 30000, null, false, "834ad0a2-d865-43dd-b24e-105d5a7d4273", "")
             {
                 _binInfo = new RepoItemInfo(this, "Bin", "treeitem/treeitem/treeitem[@name>'Bin:']", 30000, null, "27ae4c73-55dd-432f-a351-de1def614e26");
-                _draftsInfo = new RepoItemInfo(this, "Drafts", "treeitem/treeitem/treeitem[@name>'Drafts']", 30000, null, "00f19ee0-0124-4e66-8a8e-7f977bffbaf1");
-                _spamInfo = new RepoItemInfo(this, "Spam", "treeitem/treeitem/treeitem[@name>'Spam']", 30000, null, "236beefa-f8e0-4664-b7dd-abd58dcecd2d");
-                _starredInfo = new RepoItemInfo(this, "Starred", "treeitem/treeitem/treeitem[@name>'Starred']", 30000, null, "b4cdc3dc-d6ec-40ec-9d74-cdf7c9d9e850");
-                _importantInfo = new RepoItemInfo(this, "Important", "treeitem/treeitem/treeitem[@name>'Important']", 30000, null, "7ff51a1f-9c6a-4099-83e0-65371e0d52d2");
-                _sentmailInfo = new RepoItemInfo(this, "SentMail", "treeitem/treeitem/treeitem[@name>'Sent Mail']", 30000, null, "4c011f10-1106-457b-81bf-e8c9afd0ec6a");
+                _draftsInfo = new RepoItemInfo(this, "Drafts", "treeitem//treeitem[@name>'Drafts']", 30000, null, "00f19ee0-0124-4e66-8a8e-7f977bffbaf1");
+                _spamInfo = new RepoItemInfo(this, "Spam", "treeitem//treeitem[@name>'Spam']", 30000, null, "236beefa-f8e0-4664-b7dd-abd58dcecd2d");
+                _starredInfo = new RepoItemInfo(this, "Starred", "treeitem//treeitem[@name>'Starred']", 30000, null, "b4cdc3dc-d6ec-40ec-9d74-cdf7c9d9e850");
+                _importantInfo = new RepoItemInfo(this, "Important", "treeitem//treeitem[@name>'Important']", 30000, null, "7ff51a1f-9c6a-4099-83e0-65371e0d52d2");
+                _sentmailInfo = new RepoItemInfo(this, "SentMail", "treeitem//treeitem[@name>'Sent Mail']", 30000, null, "4c011f10-1106-457b-81bf-e8c9afd0ec6a");
                 _outboxInfo = new RepoItemInfo(this, "Outbox", "treeitem/treeitem[@name>'Outbox']", 30000, null, "a2237b08-2ceb-4da4-95dc-bfce00fedd2f");
+                _deleteditemsInfo = new RepoItemInfo(this, "DeletedItems", "treeitem//treeitem[@name='Deleted Items']", 30000, null, "d0b7a0e1-c51d-4826-9a85-1ba786ac3553");
+                _junkemailInfo = new RepoItemInfo(this, "JunkEmail", "treeitem/treeitem[@name='Junk Email']", 30000, null, "c6cd82af-8d2a-4ce5-9c5d-61c2677867d7");
             }
 
             /// <summary>
@@ -932,6 +936,54 @@ namespace SmokeTest.Repositories
                 get
                 {
                     return _outboxInfo;
+                }
+            }
+
+            /// <summary>
+            /// The DeletedItems item.
+            /// </summary>
+            [RepositoryItem("d0b7a0e1-c51d-4826-9a85-1ba786ac3553")]
+            public virtual Ranorex.TreeItem DeletedItems
+            {
+                get
+                {
+                    return _deleteditemsInfo.CreateAdapter<Ranorex.TreeItem>(true);
+                }
+            }
+
+            /// <summary>
+            /// The DeletedItems item info.
+            /// </summary>
+            [RepositoryItemInfo("d0b7a0e1-c51d-4826-9a85-1ba786ac3553")]
+            public virtual RepoItemInfo DeletedItemsInfo
+            {
+                get
+                {
+                    return _deleteditemsInfo;
+                }
+            }
+
+            /// <summary>
+            /// The JunkEmail item.
+            /// </summary>
+            [RepositoryItem("c6cd82af-8d2a-4ce5-9c5d-61c2677867d7")]
+            public virtual Ranorex.TreeItem JunkEmail
+            {
+                get
+                {
+                    return _junkemailInfo.CreateAdapter<Ranorex.TreeItem>(true);
+                }
+            }
+
+            /// <summary>
+            /// The JunkEmail item info.
+            /// </summary>
+            [RepositoryItemInfo("c6cd82af-8d2a-4ce5-9c5d-61c2677867d7")]
+            public virtual RepoItemInfo JunkEmailInfo
+            {
+                get
+                {
+                    return _junkemailInfo;
                 }
             }
         }

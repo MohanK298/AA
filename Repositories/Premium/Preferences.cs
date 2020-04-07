@@ -48,6 +48,7 @@ namespace SmokeTest.Repositories.Premium
         PreferencesFolders.NotesPrefFormAppFolder _notesprefform;
         PreferencesFolders.CommPrefFormAppFolder _commprefform;
         PreferencesFolders.LibPrefFormAppFolder _libprefform;
+        PreferencesFolders.BrowseFolderAppFolder _browsefolder;
         RepoItemInfo _txtstatusbarInfo;
 
         /// <summary>
@@ -86,6 +87,7 @@ namespace SmokeTest.Repositories.Premium
             _notesprefform = new PreferencesFolders.NotesPrefFormAppFolder(this);
             _commprefform = new PreferencesFolders.CommPrefFormAppFolder(this);
             _libprefform = new PreferencesFolders.LibPrefFormAppFolder(this);
+            _browsefolder = new PreferencesFolders.BrowseFolderAppFolder(this);
             _txtstatusbarInfo = new RepoItemInfo(this, "txtStatusBar", "/form[@controlname='MainForm']/?/?/text[@accessiblename>$loginuser]", 30000, null, "b3d12918-7366-40c2-a7c7-c2ed51766be2");
         }
 
@@ -340,6 +342,15 @@ namespace SmokeTest.Repositories.Premium
         public virtual PreferencesFolders.LibPrefFormAppFolder LibPrefForm
         {
             get { return _libprefform; }
+        }
+
+        /// <summary>
+        /// The BrowseFolder folder.
+        /// </summary>
+        [RepositoryFolder("eec0a337-6c0d-435a-980b-d2db32b5370e")]
+        public virtual PreferencesFolders.BrowseFolderAppFolder BrowseFolder
+        {
+            get { return _browsefolder; }
         }
     }
 
@@ -2424,6 +2435,7 @@ namespace SmokeTest.Repositories.Premium
         public partial class PromptFormAppFolder : RepoGenBaseFolder
         {
             RepoItemInfo _buttonokInfo;
+            RepoItemInfo _btnnoInfo;
 
             /// <summary>
             /// Creates a new PromptForm  folder.
@@ -2432,6 +2444,7 @@ namespace SmokeTest.Repositories.Premium
                     base("PromptForm", "/form[@controlname='PromptForm']", parentFolder, 5000, null, false, "bc5b262c-9b08-4061-b61d-1a018c35ee93", "")
             {
                 _buttonokInfo = new RepoItemInfo(this, "ButtonOK", ".//toolbar[@accessiblename='Toolbar']/button[@accessiblename='OK']", 5000, null, "89367da5-0a25-43d8-9f9a-812cf5a935e7");
+                _btnnoInfo = new RepoItemInfo(this, "btnNo", ".//toolbar[@accessiblename='Toolbar']/button[@accessiblename='No']", 30000, null, "5077ea57-9e2d-48c1-9dc0-6f6da844db51");
             }
 
             /// <summary>
@@ -2479,6 +2492,30 @@ namespace SmokeTest.Repositories.Premium
                 get
                 {
                     return _buttonokInfo;
+                }
+            }
+
+            /// <summary>
+            /// The btnNo item.
+            /// </summary>
+            [RepositoryItem("5077ea57-9e2d-48c1-9dc0-6f6da844db51")]
+            public virtual Ranorex.Button btnNo
+            {
+                get
+                {
+                    return _btnnoInfo.CreateAdapter<Ranorex.Button>(true);
+                }
+            }
+
+            /// <summary>
+            /// The btnNo item info.
+            /// </summary>
+            [RepositoryItemInfo("5077ea57-9e2d-48c1-9dc0-6f6da844db51")]
+            public virtual RepoItemInfo btnNoInfo
+            {
+                get
+                {
+                    return _btnnoInfo;
                 }
             }
         }
@@ -4010,6 +4047,8 @@ namespace SmokeTest.Repositories.Premium
         public partial class EmailAttachmentFormAppFolder : RepoGenBaseFolder
         {
             RepoItemInfo _btnfinishInfo;
+            RepoItemInfo _txtattachmentsavelocationInfo;
+            RepoItemInfo _btnbrowseInfo;
 
             /// <summary>
             /// Creates a new EmailAttachmentForm  folder.
@@ -4018,6 +4057,8 @@ namespace SmokeTest.Repositories.Premium
                     base("EmailAttachmentForm", "/form[@controlname='EmailAttachmentsForm']", parentFolder, 30000, null, false, "1ecd7445-4792-4ebd-a292-efe8f2ac1993", "")
             {
                 _btnfinishInfo = new RepoItemInfo(this, "btnFinish", ".//toolbar[@accessiblename='Toolbar']/button[@accessiblename='Finish']", 30000, null, "214c150f-1b1f-48f0-87b8-45eab5530b3a");
+                _txtattachmentsavelocationInfo = new RepoItemInfo(this, "txtAttachmentSaveLocation", "container[@controlname='pnlControls']//text[@controlname='ateAttachmentLocation_EmbeddableTextBox']", 30000, null, "9cdd19a3-fc76-4c29-b8f7-b7632dd312b1");
+                _btnbrowseInfo = new RepoItemInfo(this, "btnBrowse", "container[@controlname='pnlControls']//button[@accessiblename='Browse']", 30000, null, "f597cc10-ccd4-4e84-8218-fd782bd8124b");
             }
 
             /// <summary>
@@ -4065,6 +4106,54 @@ namespace SmokeTest.Repositories.Premium
                 get
                 {
                     return _btnfinishInfo;
+                }
+            }
+
+            /// <summary>
+            /// The txtAttachmentSaveLocation item.
+            /// </summary>
+            [RepositoryItem("9cdd19a3-fc76-4c29-b8f7-b7632dd312b1")]
+            public virtual Ranorex.Text txtAttachmentSaveLocation
+            {
+                get
+                {
+                    return _txtattachmentsavelocationInfo.CreateAdapter<Ranorex.Text>(true);
+                }
+            }
+
+            /// <summary>
+            /// The txtAttachmentSaveLocation item info.
+            /// </summary>
+            [RepositoryItemInfo("9cdd19a3-fc76-4c29-b8f7-b7632dd312b1")]
+            public virtual RepoItemInfo txtAttachmentSaveLocationInfo
+            {
+                get
+                {
+                    return _txtattachmentsavelocationInfo;
+                }
+            }
+
+            /// <summary>
+            /// The btnBrowse item.
+            /// </summary>
+            [RepositoryItem("f597cc10-ccd4-4e84-8218-fd782bd8124b")]
+            public virtual Ranorex.Button btnBrowse
+            {
+                get
+                {
+                    return _btnbrowseInfo.CreateAdapter<Ranorex.Button>(true);
+                }
+            }
+
+            /// <summary>
+            /// The btnBrowse item info.
+            /// </summary>
+            [RepositoryItemInfo("f597cc10-ccd4-4e84-8218-fd782bd8124b")]
+            public virtual RepoItemInfo btnBrowseInfo
+            {
+                get
+                {
+                    return _btnbrowseInfo;
                 }
             }
         }
@@ -7406,6 +7495,98 @@ namespace SmokeTest.Repositories.Premium
                 get
                 {
                     return _noneInfo;
+                }
+            }
+        }
+
+        /// <summary>
+        /// The BrowseFolderAppFolder folder.
+        /// </summary>
+        [RepositoryFolder("eec0a337-6c0d-435a-980b-d2db32b5370e")]
+        public partial class BrowseFolderAppFolder : RepoGenBaseFolder
+        {
+            RepoItemInfo _btnokInfo;
+            RepoItemInfo _treedesktopInfo;
+
+            /// <summary>
+            /// Creates a new BrowseFolder  folder.
+            /// </summary>
+            public BrowseFolderAppFolder(RepoGenBaseFolder parentFolder) :
+                    base("BrowseFolder", "/form[@title='Browse For Folder']", parentFolder, 30000, null, false, "eec0a337-6c0d-435a-980b-d2db32b5370e", "")
+            {
+                _btnokInfo = new RepoItemInfo(this, "btnOK", "button[@text='OK']", 30000, null, "cef06e1d-5e85-4fee-af76-22b0569bed04");
+                _treedesktopInfo = new RepoItemInfo(this, "treeDesktop", "?/?/tree[@controlid='100']/treeitem[@text='Desktop']", 30000, null, "2988f422-9a3a-45aa-a28e-2cb45a4db02f");
+            }
+
+            /// <summary>
+            /// The Self item.
+            /// </summary>
+            [RepositoryItem("eec0a337-6c0d-435a-980b-d2db32b5370e")]
+            public virtual Ranorex.Form Self
+            {
+                get
+                {
+                    return _selfInfo.CreateAdapter<Ranorex.Form>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Self item info.
+            /// </summary>
+            [RepositoryItemInfo("eec0a337-6c0d-435a-980b-d2db32b5370e")]
+            public virtual RepoItemInfo SelfInfo
+            {
+                get
+                {
+                    return _selfInfo;
+                }
+            }
+
+            /// <summary>
+            /// The btnOK item.
+            /// </summary>
+            [RepositoryItem("cef06e1d-5e85-4fee-af76-22b0569bed04")]
+            public virtual Ranorex.Button btnOK
+            {
+                get
+                {
+                    return _btnokInfo.CreateAdapter<Ranorex.Button>(true);
+                }
+            }
+
+            /// <summary>
+            /// The btnOK item info.
+            /// </summary>
+            [RepositoryItemInfo("cef06e1d-5e85-4fee-af76-22b0569bed04")]
+            public virtual RepoItemInfo btnOKInfo
+            {
+                get
+                {
+                    return _btnokInfo;
+                }
+            }
+
+            /// <summary>
+            /// The treeDesktop item.
+            /// </summary>
+            [RepositoryItem("2988f422-9a3a-45aa-a28e-2cb45a4db02f")]
+            public virtual Ranorex.TreeItem treeDesktop
+            {
+                get
+                {
+                    return _treedesktopInfo.CreateAdapter<Ranorex.TreeItem>(true);
+                }
+            }
+
+            /// <summary>
+            /// The treeDesktop item info.
+            /// </summary>
+            [RepositoryItemInfo("2988f422-9a3a-45aa-a28e-2cb45a4db02f")]
+            public virtual RepoItemInfo treeDesktopInfo
+            {
+                get
+                {
+                    return _treedesktopInfo;
                 }
             }
         }

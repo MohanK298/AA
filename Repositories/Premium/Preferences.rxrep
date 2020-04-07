@@ -821,6 +821,13 @@ D8zerL8gSEaw7+rFqJ//CkX5CWkHqyZHVzU6AAAAAElFTkSuQmCC
 			searchtimeout="5000ms">
 				/form[@controlname='PromptForm']//toolbar[@accessiblename='Toolbar']/button[@accessiblename='OK']
 			</item>
+			<item
+			capname="button"
+			id="5077ea57-9e2d-48c1-9dc0-6f6da844db51"
+			name="btnNo"
+			searchtimeout="30000ms">
+				/form[@controlname='PromptForm']//toolbar[@accessiblename='Toolbar']/button[@accessiblename='No']
+			</item>
 			<basepath>
 				/form[@controlname='PromptForm']
 			</basepath>
@@ -1400,6 +1407,26 @@ QmCC
 			refpath="/form[@controlname='EmailAttachmentsForm']/element[@controlname='_BaseDialogForm_Toolbars_Dock_Area_Bottom']/container[@accessiblename='DockBottom']/toolbar[@accessiblename='Toolbar']/button[@accessiblename='Finish']"
 			searchtimeout="30000ms">
 				/form[@controlname='EmailAttachmentsForm']//toolbar[@accessiblename='Toolbar']/button[@accessiblename='Finish']
+			</item>
+			<item
+			addcaps="text,control,nativewindow"
+			capname="text"
+			id="9cdd19a3-fc76-4c29-b8f7-b7632dd312b1"
+			name="txtAttachmentSaveLocation"
+			refimgid="cd7b4e99-b9bb-4b98-9bd1-4384fccb43a2"
+			refpath="/form[@controlname='EmailAttachmentsForm']/container[@controlname='pnlControls']/container[@controlname='pnlBody']/element[@controlname='ateAttachmentLocation']/text[@controlname='ateAttachmentLocation_EmbeddableTextBox']"
+			searchtimeout="30000ms">
+				/form[@controlname='EmailAttachmentsForm']/container[@controlname='pnlControls']//text[@controlname='ateAttachmentLocation_EmbeddableTextBox']
+			</item>
+			<item
+			addcaps="button,accessible"
+			capname="button"
+			id="f597cc10-ccd4-4e84-8218-fd782bd8124b"
+			name="btnBrowse"
+			refimgid="233ef620-5119-4f10-b7fe-8cdb2db3b89b"
+			refpath="/form[@controlname='EmailAttachmentsForm']/container[@controlname='pnlControls']/container[@controlname='pnlBody']/element[@controlname='abtnAttachmentLocation']/button[@accessiblename='Browse']"
+			searchtimeout="30000ms">
+				/form[@controlname='EmailAttachmentsForm']/container[@controlname='pnlControls']//button[@accessiblename='Browse']
 			</item>
 			<basepath>
 				/form[@controlname='EmailAttachmentsForm']
@@ -2443,6 +2470,37 @@ QmCC
 			</folder>
 			<basepath>
 				/form[@controlname='LibraryPreferencesForm']
+			</basepath>
+		</appfolder>
+		<appfolder
+		capname="form"
+		id="eec0a337-6c0d-435a-980b-d2db32b5370e"
+		isrooted="True"
+		name="BrowseFolder"
+		searchtimeout="30000ms"
+		usecache="False">
+			<item
+			addcaps="button,nativewindow"
+			capname="button"
+			id="cef06e1d-5e85-4fee-af76-22b0569bed04"
+			name="btnOK"
+			refimgid="d88b7566-fcaa-4f35-a56b-668aaaf0b747"
+			refpath="/form[@title='Browse For Folder']/button[@text='OK']"
+			searchtimeout="30000ms">
+				/form[@title='Browse For Folder']/button[@text='OK']
+			</item>
+			<item
+			addcaps="treeitem"
+			capname="treeitem"
+			id="2988f422-9a3a-45aa-a28e-2cb45a4db02f"
+			name="treeDesktop"
+			refimgid="7ce5590e-0a9e-47ce-b224-f314bc82918a"
+			refpath="/form[@title='Browse For Folder']/element[@class='SHBrowseForFolder ShellNameSpace Control']/tree[@controlid='100']/treeitem[@text='Desktop']"
+			searchtimeout="30000ms">
+				/form[@title='Browse For Folder']/?/?/tree[@controlid='100']/treeitem[@text='Desktop']
+			</item>
+			<basepath>
+				/form[@title='Browse For Folder']
 			</basepath>
 		</appfolder>
 		<basepath>

@@ -105,10 +105,57 @@ namespace SmokeTest.Modules
         	}
         	
         	
+        	if(outlook.Outlook.MailFolders.DeletedItemsInfo.Exists(3000))
+        	{
+        		outlook.Outlook.MailFolders.DeletedItems.Click();
+        		Report.Success("Deleted Items Folders is opened successfully");
+        		outlook.Outlook.tabAmicusTasks.Click();
+        		Report.Success("Amicus Tasks Tab is opened successfully");
+        		if(outlook.Outlook.AmicusAttorneyTasks1.SelfInfo.Exists(3000))
+        		{
+        			if(outlook.Outlook.AmicusAttorneyTasks1.btnAddToFileInfo.Exists(3000))
+        			{Validate.Attribute(outlook.Outlook.AmicusAttorneyTasks1.btnAddToFileInfo,"Enabled","False","Details button disabled as expected");
+ 				}
+        			else
+        			{Validate.Attribute(outlook.Outlook.AmicusAttorneyTasks1.btnViewAddToRelatedFileInfo,"Enabled","False","View/Add Related to File Button is disabled as expected");}
+        				
+        			Validate.Attribute(outlook.Outlook.AmicusAttorneyTasks1.btnAddToPeopleInfo,"Enabled","False","Add to People Button is disabled as expected");
+        			Validate.Attribute(outlook.Outlook.AmicusAttorneyTasks1.btnDetailsInfo,"Enabled","False","Details is disabled as expected");
+        			Validate.Attribute(outlook.Outlook.AmicusAttorneyTasks1.txtSearchTextInfo,"Enabled","True","Search Query is enabled as expected");
+        			Validate.Attribute(outlook.Outlook.AmicusAttorneyTasks1.btnSearchAmicusInfo,"Enabled","True","Search Button is enabled as expected");
+        			Validate.Attribute(outlook.Outlook.AmicusAttorneyTasks1.btnAboutInfo,"Enabled","True","About Button is enabled as expected");
+        		}
+        	}
+        	
+        	
+        	
+        	
         	if(outlook.Outlook.MailFolders.SpamInfo.Exists(3000))
         	{
         		outlook.Outlook.MailFolders.Spam.Click();
         		Report.Success("Spam Folders is opened successfully");
+        		outlook.Outlook.tabAmicusTasks.Click();
+        		Report.Success("Amicus Tasks Tab is opened successfully");
+        		if(outlook.Outlook.AmicusAttorneyTasks1.SelfInfo.Exists(3000))
+        		{
+        			if(outlook.Outlook.AmicusAttorneyTasks1.btnAddToFileInfo.Exists(3000))
+        			{Validate.Attribute(outlook.Outlook.AmicusAttorneyTasks1.btnAddToFileInfo,"Enabled","False","Details button disabled as expected");
+ 				}
+        			else
+        			{Validate.Attribute(outlook.Outlook.AmicusAttorneyTasks1.btnViewAddToRelatedFileInfo,"Enabled","False","View/Add Related to File Button is disabled as expected");}
+        				
+        			Validate.Attribute(outlook.Outlook.AmicusAttorneyTasks1.btnAddToPeopleInfo,"Enabled","False","Add to People Button is disabled as expected");
+        			Validate.Attribute(outlook.Outlook.AmicusAttorneyTasks1.btnDetailsInfo,"Enabled","False","Details Button is disabled as expected");
+        			Validate.Attribute(outlook.Outlook.AmicusAttorneyTasks1.txtSearchTextInfo,"Enabled","True","Search Query is enabled as expected");
+        			Validate.Attribute(outlook.Outlook.AmicusAttorneyTasks1.btnSearchAmicusInfo,"Enabled","True","Search Button is enabled as expected");
+        			Validate.Attribute(outlook.Outlook.AmicusAttorneyTasks1.btnAboutInfo,"Enabled","True","About Button is enabled as expected");
+        		}
+        	}
+        	
+        	if(outlook.Outlook.MailFolders.JunkEmailInfo.Exists(3000))
+        	{
+        		outlook.Outlook.MailFolders.JunkEmail.Click();
+        		Report.Success("Junk Email Folders is opened successfully");
         		outlook.Outlook.tabAmicusTasks.Click();
         		Report.Success("Amicus Tasks Tab is opened successfully");
         		if(outlook.Outlook.AmicusAttorneyTasks1.SelfInfo.Exists(3000))

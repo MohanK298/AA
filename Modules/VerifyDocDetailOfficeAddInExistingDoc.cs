@@ -73,8 +73,12 @@ namespace SmokeTest.Modules
         	
         	cmn.SelectItemFromTableDblClick(doc.MainForm.DocumentsIndexForm.tblDocuments,fileName,"Documents Table");
         	Delay.Seconds(2);
-        	doc.DocumentDetail.PnlBase.lnkVirtualPath.Click();
-        	wapp.SplashWordInfo.WaitForNotExists(5000);
+        	if(doc.DocumentDetail.PnlBase.lnkVirtualPathInfo.Exists(3000))
+        	{
+        		doc.DocumentDetail.PnlBase.lnkVirtualPath.Click();
+        		wapp.SplashWordInfo.WaitForNotExists(5000);
+        	}
+        	
         	
         		
         }
@@ -109,9 +113,16 @@ namespace SmokeTest.Modules
         		{
         			Report.Success("Document Details Exists and Opens Successfully from Office Add-in");
         		}
-        		doc.DocumentDetail.MenubarFillPanel.btnCancel.Click();
-        		doc.DocumentDetail.MenubarFillPanel.btnCancel.Click();
-        		wapp.WordDocument.Self.Close();
+        		if(doc.DocumentDetail.MenubarFillPanel.btnCancelInfo.Exists(3000))
+        		{
+        			doc.DocumentDetail.MenubarFillPanel.btnCancel.Click();
+	        		if(doc.DocumentDetail.MenubarFillPanel.btnCancelInfo.Exists(3000))
+	        		{
+	        			doc.DocumentDetail.MenubarFillPanel.btnCancel.Click();
+	        		}
+        		
+        		}
+				wapp.WordDocument.Self.Close();        		
         	}
         	
         /// <summary>

@@ -31,24 +31,6 @@ rxversion="9.0">
 		</var>
 	</variables>
 	<recorditems>
-		<WaitForRecordItem
-		enabled="True"
-		optional="False"
-		searchpropertyid="1b76d752-2efb-4025-9813-badade3fd1d4"
-		waitaction="Exists"
-		waittimeout="5000ms">
-			<comment>
-			</comment>
-			<bindings>
-			</bindings>
-			<info
-			id="ba0bde44-e86c-45f7-8df1-05b626783b42"
-			sourcename="RepositoryEditor">
-				<path>
-					/form[@title='File Explorer']/element[@class='ShellTabWindowClass']/?/?/container[@class='DirectUIHWND']/element[1]/?/?/tree[@controlid='100']/treeitem[@text='Quick access']/treeitem[@text='Downloads']
-				</path>
-			</info>
-		</WaitForRecordItem>
 	</recorditems>
 	<repository
 	id="91cd7df6-4de5-4c6b-abf1-071917f7c6f7"

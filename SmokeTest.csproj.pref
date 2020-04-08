@@ -4,10 +4,10 @@
   </Array>
   <Array name="bookmarks" />
   <Array name="files">
-    <Element value="Modules\Utilities\Common.cs" />
     <Element value="SmokeTest.rxtst" />
     <Element value="Repositories\Files.cs" />
     <Element value="Repositories\Files.rxrep" />
+    <Element value="Modules\Utilities\Common.cs" />
   </Array>
   <Properties name="projectSavedData">
     <Properties name="customTool">

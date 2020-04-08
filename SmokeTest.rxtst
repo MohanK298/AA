@@ -2685,7 +2685,7 @@ directly and create a Bill]]>
 			</testmodule>
 			<testmodule
 			id="d9b0da9b-e278-4d77-b272-e4bc298e1d08"
-			name="AddNotes"
+			name="AddWebURL"
 			ref="39757aba-2474-4146-a459-bda32520c0da"
 			type="UserCode">
 			</testmodule>
@@ -3771,7 +3771,7 @@ bill]]>
 						name="AddWebURL">
 							<testmodule
 							id="d9b0da9b-e278-4d77-b272-e4bc298e1d08"
-							name="AddNotes">
+							name="AddWebURL">
 							</testmodule>
 						</smartfoldernode>
 						<smartfoldernode

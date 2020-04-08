@@ -77,23 +77,22 @@ namespace SmokeTest.Modules
 			Validate.Exists(files.ToolbarForm.Toolbar1.AlignVerticallyInfo,"Align Vertically List is displayed as expected");
 			Validate.Exists(files.ToolbarForm.Toolbar1.ExitAmicusAttorneyInfo,"Exit Amicus Attorney List is displayed as expected");
         	
+			
+			files.ToolbarForm.Toolbar1.MenuItem.Click();
         	
-        	
-        	
-        	files.MainForm.View.Click();
+			files.MainForm.View.Click();
         	Delay.Seconds(1);
         	files.MainForm.Toolbars.Click();
         	Delay.Seconds(1);
         	if(files.MainForm.HideAmicusToolbarInfo.Exists(3000))
         	{
         		files.MainForm.HideAmicusToolbar.Click();
-        		files.ToolbarForm.SelfInfo.WaitForNotExists(3000);
-        		Validate.NotExists(files.ToolbarForm.SelfInfo,"Floating Tool bar is not present as expected");
-
-        	}
-        	
+        		Delay.Seconds(2);	
+   				Validate.NotExists(files.ToolbarForm.SelfInfo,"Floating Tool bar is not present as expected");
+			}
         	
 		}
+		
 		
 		
 		

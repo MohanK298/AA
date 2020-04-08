@@ -39,8 +39,39 @@ namespace SmokeTest.Modules
         Files files=Files.Instance;
         Login login=Login.Instance;
         SmokeTestRepository str = SmokeTestRepository.Instance;
+        
+        
+        private void OpenAmicusApp()
+        {
+        	Host.Local.RunApplication("C:\\Amicus\\Amicus Attorney Workstation\\AmicusAttorney.XWin.exe");
+        	var datasource=Ranorex.DataSources.Get("LoginData");
+        	Delay.Seconds(2);
+        	datasource.Load();
+        	
+        	login.SelfInfo.WaitForExists(10000);
+        	
+        	login.LoginForm.FirmId.TextValue=datasource.Rows[0].Values[0].ToString();//"QA Toronto 10";
+        	login.LoginForm.UserId.TextValue=datasource.Rows[0].Values[1].ToString();//="admin user";
+        	login.LoginForm.Pwd.TextValue=datasource.Rows[0].Values[2].ToString();//"password";
+        	login.LoginForm.ServerName.TextValue=datasource.Rows[0].Values[3].ToString();//"J4-Mohanss";
+        	login.LoginForm.btnLogin.Click();
+        	if(files.PromptForm.SelfInfo.Exists(3000))
+        	{
+        		files.PromptForm.ButtonNo.Click();
+        	}
+        	Delay.Seconds(10);
+        }
+        	
+        
+        
+        
+        
         private void validateToolbarRetainExitAA()
 		{
+        	
+        	files.MainForm.Self.Activate();
+        	
+        	
 			files.MainForm.View.Click();
         	Delay.Seconds(1);
         	files.MainForm.Toolbars.Click();
@@ -54,6 +85,12 @@ namespace SmokeTest.Modules
         		}
         	}
         	
+        	files.MainForm.View.Click();
+        	Delay.Seconds(1);
+        	files.MainForm.Toolbars.Click();
+        	Delay.Seconds(1);
+        	
+        	
         	if(files.MainForm.ShowAmicusToolbarInfo.Exists(3000))
         	{
         		files.MainForm.ShowAmicusToolbar.Click();
@@ -63,7 +100,7 @@ namespace SmokeTest.Modules
         		}
         	}
         	
-        	files.MainForm.Self.Close();
+        	str.MainForm.btnCloseApp.Click();
         	OpenAmicusApp();
         	
         	
@@ -100,26 +137,6 @@ namespace SmokeTest.Modules
         	
          }
          
-         private void OpenAmicusApp()
-        {
-        	Host.Local.RunApplication("C:\\Amicus\\Amicus Attorney Workstation\\AmicusAttorney.XWin.exe");
-        	var datasource=Ranorex.DataSources.Get("LoginData");
-        	datasource.Load();
-        	
-        	login.SelfInfo.WaitForExists(10000);
-        	
-        	login.LoginForm.FirmId.TextValue=datasource.Rows[0].Values[0].ToString();//"QA Toronto 10";
-        	login.LoginForm.UserId.TextValue=datasource.Rows[0].Values[1].ToString();//="admin user";
-        	login.LoginForm.Pwd.TextValue=datasource.Rows[0].Values[2].ToString();//"password";
-        	login.LoginForm.ServerName.TextValue=datasource.Rows[0].Values[3].ToString();//"J4-Mohanss";
-        	login.LoginForm.btnLogin.Click();
-        	if(files.PromptForm.SelfInfo.Exists(3000))
-        	{
-        		files.PromptForm.ButtonNo.Click();
-        	}
-        	Delay.Seconds(10);
-        }
-        	
         	
         	
         

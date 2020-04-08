@@ -4,8 +4,10 @@
   </Array>
   <Array name="bookmarks" />
   <Array name="files">
+    <Element value="Modules\Utilities\Common.cs" />
     <Element value="SmokeTest.rxtst" />
-    <Element value="Modules\VerifyAddtoFile_Outlook_AddIn.cs" />
+    <Element value="Repositories\Files.cs" />
+    <Element value="Repositories\Files.rxrep" />
   </Array>
   <Properties name="projectSavedData">
     <Properties name="customTool">

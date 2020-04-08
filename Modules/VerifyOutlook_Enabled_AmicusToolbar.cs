@@ -53,7 +53,7 @@ namespace SmokeTest.Modules
         }
         
         
-         private void OpenAmicusApp()
+        private void OpenAmicusApp()
         {
         	Host.Local.RunApplication("C:\\Amicus\\Amicus Attorney Workstation\\AmicusAttorney.XWin.exe");
         	var datasource=Ranorex.DataSources.Get("LoginData");

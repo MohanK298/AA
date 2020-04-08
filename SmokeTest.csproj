@@ -572,17 +572,32 @@
     <Compile Include="Modules\Utilities\SendMail.cs">
       <id>ee8dc323-7f62-4bce-91af-c03ec43558dd</id>
     </Compile>
+    <Compile Include="Modules\validateAdvancedToolbars.cs">
+      <id>a87e04eb-4161-45f3-83df-32da8a145940</id>
+    </Compile>
     <Compile Include="Modules\validateAutoComplete_Files_People.cs">
       <id>bcf04439-084e-4685-bde3-3887d6379ee5</id>
     </Compile>
     <Compile Include="Modules\validateDocumentIndexViewer.cs">
       <id>6ca04291-0553-4754-817d-376c41638b4d</id>
     </Compile>
+    <Compile Include="Modules\validateFloatingToolbar.cs">
+      <id>6c90254c-6c39-4c63-a9fe-e4ffee4348a4</id>
+    </Compile>
     <Compile Include="Modules\validateMergeTemplates.cs">
       <id>da63731b-f953-499c-b795-ac567273eb63</id>
     </Compile>
     <Compile Include="Modules\validatePreferenceLinks.cs">
       <id>e3dc1d93-0255-41ae-bc6b-02d9461b6718</id>
+    </Compile>
+    <Compile Include="Modules\validateStandardToolbars.cs">
+      <id>11e6554d-5c10-4525-8071-08e5f165d9bf</id>
+    </Compile>
+    <Compile Include="Modules\validateTimerToolbar.cs">
+      <id>cdcbd23e-b8d9-4b92-924d-df7bb51d26b6</id>
+    </Compile>
+    <Compile Include="Modules\validateToolbarsRetain.cs">
+      <id>c2c7710e-6766-48f3-80b0-28706a6c0e90</id>
     </Compile>
     <Compile Include="Modules\validate_Existing_Time_Entry_OnFile_Msg.cs">
       <id>775104d3-10a9-498e-aea9-307577fa4930</id>

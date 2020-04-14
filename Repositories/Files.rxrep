@@ -375,6 +375,78 @@ rxversion="9.0">
 			searchtimeout="30000ms">
 				/form[@controlname='MainForm']/element[@controlname='_BaseModuleForm_Toolbars_Dock_Area_Top']//menuitem[@accessiblename='View']/?/?/menuitem[@accessiblename='Hide Timer']
 			</item>
+			<item
+			addcaps="menuitem,accessible"
+			capname="menuitem"
+			id="f59dfa0a-fd92-4405-90b2-158b21a27aa2"
+			name="NewFile"
+			refpath="/form[@controlname='MainForm']/element[@controlname='_BaseModuleForm_Toolbars_Dock_Area_Top']/container[@accessiblename='DockTop']/menubar[@accessiblename='Toolbar']/menuitem[@accessiblename='Actions']/menuitem[@accessiblename='New File']"
+			searchtimeout="30000ms">
+				/form[@controlname='MainForm']/element[@controlname='_BaseModuleForm_Toolbars_Dock_Area_Top']//menuitem[@accessiblename='Actions']/menuitem[@accessiblename='New File']
+			</item>
+			<item
+			addcaps="menuitem,accessible"
+			capname="menuitem"
+			id="5b49769f-2837-4f34-ac2e-8021e4eb7b10"
+			name="GenerateADocument"
+			refpath="/form[@controlname='MainForm']/element[@controlname='_BaseModuleForm_Toolbars_Dock_Area_Top']/container[@accessiblename='DockTop']/menubar[@accessiblename='Toolbar']/menuitem[@accessiblename='Actions']/menuitem[@accessiblename='Generate a Document']"
+			searchtimeout="30000ms">
+				/form[@controlname='MainForm']/element[@controlname='_BaseModuleForm_Toolbars_Dock_Area_Top']//menuitem[@accessiblename='Actions']/menuitem[@accessiblename='Generate a Document']
+			</item>
+			<item
+			addcaps="menuitem,accessible"
+			capname="menuitem"
+			id="1b7e4aa8-2573-4180-a96a-966fdc93d5b6"
+			name="SendToWorldox"
+			refpath="/form[@controlname='MainForm']/element[@controlname='_BaseModuleForm_Toolbars_Dock_Area_Top']/container[@accessiblename='DockTop']/menubar[@accessiblename='Toolbar']/menuitem[@accessiblename='Actions']/menuitem[@accessiblename='Send to Worldox']"
+			searchtimeout="30000ms">
+				/form[@controlname='MainForm']/element[@controlname='_BaseModuleForm_Toolbars_Dock_Area_Top']//menuitem[@accessiblename='Actions']/menuitem[@accessiblename='Send to Worldox']
+			</item>
+			<item
+			addcaps="menuitem,accessible"
+			capname="menuitem"
+			id="eaf79b51-42d1-4fc9-8179-68ac87cabe95"
+			name="CheckConflicts"
+			refpath="/form[@controlname='MainForm']/element[@controlname='_BaseModuleForm_Toolbars_Dock_Area_Top']/container[@accessiblename='DockTop']/menubar[@accessiblename='Toolbar']/menuitem[@accessiblename='Actions']/menuitem[@accessiblename='Check Conflicts']"
+			searchtimeout="30000ms">
+				/form[@controlname='MainForm']/element[@controlname='_BaseModuleForm_Toolbars_Dock_Area_Top']//menuitem[@accessiblename='Actions']/menuitem[@accessiblename='Check Conflicts']
+			</item>
+			<item
+			addcaps="menuitem,accessible"
+			capname="menuitem"
+			id="d17b4728-0d0d-47fb-97f4-b14952d54f1d"
+			name="ChangeAssignment"
+			refpath="/form[@controlname='MainForm']/element[@controlname='_BaseModuleForm_Toolbars_Dock_Area_Top']/container[@accessiblename='DockTop']/menubar[@accessiblename='Toolbar']/menuitem[@accessiblename='Actions']/menuitem[@accessiblename='Change Assignment']"
+			searchtimeout="30000ms">
+				/form[@controlname='MainForm']/element[@controlname='_BaseModuleForm_Toolbars_Dock_Area_Top']//menuitem[@accessiblename='Actions']/menuitem[@accessiblename='Change Assignment']
+			</item>
+			<item
+			addcaps="menuitem,accessible"
+			capname="menuitem"
+			id="9ebaae85-c247-46a1-bd35-065dcc0b53d7"
+			name="ViewRecentClientPortalActivity"
+			refpath="/form[@controlname='MainForm']/element[@controlname='_BaseModuleForm_Toolbars_Dock_Area_Top']/container[@accessiblename='DockTop']/menubar[@accessiblename='Toolbar']/menuitem[@accessiblename='Actions']/menuitem[@accessiblename='View Recent Client Portal Activity']"
+			searchtimeout="30000ms">
+				/form[@controlname='MainForm']/element[@controlname='_BaseModuleForm_Toolbars_Dock_Area_Top']//menuitem[@accessiblename='Actions']/menuitem[@accessiblename&gt;'View Recent Client Portal']
+			</item>
+			<item
+			addcaps="menuitem,accessible"
+			capname="menuitem"
+			id="e0cb3616-c259-4a50-b488-4bc7aca5610f"
+			name="DeleteFile"
+			refpath="/form[@controlname='MainForm']/element[@controlname='_BaseModuleForm_Toolbars_Dock_Area_Top']/container[@accessiblename='DockTop']/menubar[@accessiblename='Toolbar']/menuitem[@accessiblename='Actions']/menuitem[@accessiblename='Delete File']"
+			searchtimeout="30000ms">
+				/form[@controlname='MainForm']/element[@controlname='_BaseModuleForm_Toolbars_Dock_Area_Top']//menuitem[@accessiblename='Actions']/menuitem[@accessiblename='Delete File']
+			</item>
+			<item
+			addcaps="menuitem,accessible"
+			capname="menuitem"
+			id="e55c5bbf-fe24-4e76-98c9-bea8dbb65dfa"
+			name="Actions"
+			refpath="/form[@controlname='MainForm']/element[@controlname='_BaseModuleForm_Toolbars_Dock_Area_Top']/container[@accessiblename='DockTop']/menubar[@accessiblename='Toolbar']/menuitem[@accessiblename='Actions']"
+			searchtimeout="30000ms">
+				/form[@controlname='MainForm']/element[@controlname='_BaseModuleForm_Toolbars_Dock_Area_Top']//menuitem[@accessiblename='Actions']
+			</item>
 			<basepath>
 				/form[@controlname='MainForm']
 			</basepath>
@@ -1280,6 +1352,25 @@ D8zerL8gSEaw7+rFqJ//CkX5CWkHqyZHVzU6AAAAAElFTkSuQmCC
 			refimgid="0dea1512-6818-4706-a832-4511d9f18f7d"
 			searchtimeout="30000ms">
 				/form[@controlname='PromptForm']//toolbar[@accessiblename='Toolbar']/button[@accessiblename='No']
+			</item>
+			<item
+			addcaps="text,accessible"
+			capname="text"
+			id="b8ff9087-acef-4c04-b381-7c45cae2ee91"
+			name="txtMsg"
+			refimgid="e6b86fea-5b81-4062-92f7-4bd17c91d61e"
+			searchtimeout="30000ms">
+				/form[@controlname='PromptForm']/container[@controlname='pnlBase']/?/?/container[@controlname='pnlMessage']/?/?/text
+			</item>
+			<item
+			addcaps="button,accessible"
+			capname="button"
+			id="163756b6-47ef-4236-8695-8699e024d3d3"
+			name="ButtonOK"
+			refimgid="eadbc7d9-e21b-4a1a-8657-eb7d9f57c215"
+			refpath="/form[@controlname='PromptForm']/element[@controlname='_BaseForm_Toolbars_Dock_Area_Bottom']/container[@accessiblename='DockBottom']/toolbar[@accessiblename='Toolbar']/button[@accessiblename='OK']"
+			searchtimeout="30000ms">
+				/form[@controlname='PromptForm']//toolbar[@accessiblename='Toolbar']/button[@accessiblename='OK']
 			</item>
 			<basepath>
 				/form[@controlname='PromptForm']
@@ -3051,6 +3142,497 @@ SUVORK5CYII=
 			</folder>
 			<basepath>
 				/form[@controlname='TimerToolbarForm']
+			</basepath>
+			<icon>
+				iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACx
+jwv8YQUAAAAJcEhZcwAADsQAAA7EAZUrDhsAAAFlSURBVDhPY6AJeOJjOvORg9p/FOyo/v9xoKUT
+VAlugKERDT921nwLVQoBb3Kj+Z5FOf9/FuP2/1msO3EYpBaIH7vr/Qcb8Oft6//kgFclif/Brnjo
+qPYZKvb/z8tn/z+tWfD/bWspWMHLwrj/r8pT/7/rrfv/dffG//++fwOr+3Hu+P8nPsYTwAY8CbRM
+fGSvCnbev29fwQpwgd9PH/1/N6ERHB5gzSDwyFX3IkjgeZLv/0+rF/z/snPD/4fWCmAND60V/3+Y
+1fP//cxuYABqgcUe2SqBDXge5qoDMcBN9w3MgDdNhf/fTWr+/xCoCKb4XU/t/7fd1Shi4BgJtPSG
+GqBzjhwDnkbaa4ANAIZBBDkGgDXDAMkGAFMmVCsEPHLTO0uKAU+jnYygWhHgeZIPUQY8dFS/BdWC
+Cd405uM14N+/f+egSnGDjyvnxjyyVQYbANL0FmjAm/aKH4+9zVWhSqCAgQEAq9YXqsYCPO8AAAAA
+SUVORK5CYII=
+			</icon>
+		</appfolder>
+		<appfolder
+		addcaps="form,control,nativewindow"
+		capname="form"
+		id="8cad2d8c-c31b-468e-908f-57787ef4d52d"
+		isrooted="True"
+		name="ConflictCheckForm"
+		refimgid="52afdc3f-1152-4c26-a788-911cc15e69a5"
+		refpath="/form[@controlname='ConflictCheckForm']"
+		searchtimeout="30000ms"
+		usecache="True">
+			<folder
+			addcaps="list,accessible"
+			capname="list"
+			id="0cfa0e65-d64a-4fe3-a242-be95ef40698b"
+			isrooted="True"
+			name="Search1"
+			searchtimeout="30000ms"
+			usecache="False">
+				<item
+				addcaps="radiobutton,accessible"
+				capname="radiobutton"
+				id="58559dcf-6fd4-4365-9f75-ada4aedfd94c"
+				name="rdoAdvancedSearch"
+				searchtimeout="30000ms">
+					/form[@controlname='ConflictCheckForm']/container[@controlname='pnlBase']//list/?/?/radiobutton[@accessiblename='Advanced Search']
+				</item>
+				<item
+				addcaps="radiobutton,accessible"
+				capname="radiobutton"
+				id="3189f27a-d783-4989-b599-58b68e0378b9"
+				name="rdoBasicSearch"
+				searchtimeout="30000ms">
+					/form[@controlname='ConflictCheckForm']/container[@controlname='pnlBase']//list/?/?/radiobutton[@accessiblename='Basic Search']
+				</item>
+				<item
+				addcaps="container,accessible"
+				capname="container"
+				id="b24eeaca-6a04-4350-91ec-d901121d163a"
+				name="Grouping"
+				searchtimeout="30000ms">
+					/form[@controlname='ConflictCheckForm']/container[@controlname='pnlBase']//list/container[@accessiblerole='Grouping']
+				</item>
+				<basepath>
+					/form[@controlname='ConflictCheckForm']/container[@controlname='pnlBase']//list
+				</basepath>
+			</folder>
+			<folder
+			addcaps="container,control,nativewindow"
+			capname="container"
+			id="43fbc5a0-a8ed-41ef-a279-4575a67b7728"
+			isrooted="True"
+			name="PnlBase"
+			refpath="/form[@controlname='ConflictCheckForm']/container[@controlname='pnlBase']"
+			searchtimeout="30000ms"
+			usecache="False">
+				<item
+				addcaps="checkbox,accessible"
+				capname="checkbox"
+				id="d7dae093-89a9-4a9e-b36c-392d1d28f233"
+				name="ContactCompanyName"
+				refimgid="5ba79899-66f0-4e21-847f-06b70a57088f"
+				refpath="/form[@controlname='ConflictCheckForm']/container[@controlname='pnlBase']/container[@controlname='pnlControls']/container[@controlname='panelCheckboxes']/element[@controlname='achkContactCompanyName']/checkbox[@accessiblename='Contact Company Name']/checkbox[@accessiblename='Contact Company Name']"
+				searchtimeout="30000ms">
+					/form[@controlname='ConflictCheckForm']/container[@controlname='pnlBase']//element[@controlname='achkContactCompanyName']/?/?/checkbox[@accessiblename='Contact Company Name']
+				</item>
+				<item
+				addcaps="checkbox,accessible"
+				capname="checkbox"
+				id="4717256a-72eb-41d6-9946-d068fd0c48b6"
+				name="ContactFullName"
+				refimgid="4dfd5e49-9448-46f9-a19f-a15a8b005ae7"
+				refpath="/form[@controlname='ConflictCheckForm']/container[@controlname='pnlBase']/container[@controlname='pnlControls']/container[@controlname='panelCheckboxes']/element[@controlname='achkContactFullName']/checkbox[@accessiblename='Contact Full Name']/checkbox[@accessiblename='Contact Full Name']"
+				searchtimeout="30000ms">
+					/form[@controlname='ConflictCheckForm']/container[@controlname='pnlBase']//element[@controlname='achkContactFullName']/?/?/checkbox[@accessiblename='Contact Full Name']
+				</item>
+				<item
+				addcaps="text,uiautomation,uiautomationvalue"
+				capname="text"
+				id="55274459-19c7-466e-beff-714ec1a238ff"
+				name="txtAdvanceConflictSearch"
+				refimgid="49f6071c-88ab-4301-bb29-7ff9d48e6fd5"
+				refpath="/form[@controlname='ConflictCheckForm']/container[@controlname='pnlBase']/container[@controlname='pnlControls']/element[@controlname='uteSearchText']/text[@automationid='[Editor] Edit Area']"
+				searchtimeout="30000ms">
+					/form[@controlname='ConflictCheckForm']/container[@controlname='pnlBase']//text[@automationid='[Editor] Edit Area']
+				</item>
+				<item
+				addcaps="checkbox,accessible"
+				capname="checkbox"
+				id="788edd20-b56e-4ea6-a0e7-07eea3263540"
+				name="ContactStreetAddress"
+				refimgid="c04f7dcd-f94f-4d18-8bc0-14f2ffa6a7e8"
+				refpath="/form[@controlname='ConflictCheckForm']/container[@controlname='pnlBase']/container[@controlname='pnlControls']/container[@controlname='panelCheckboxes']/element[@controlname='achkContactStreetAddress']/checkbox[@accessiblename='Contact Street Address']/checkbox[@accessiblename='Contact Street Address']"
+				searchtimeout="30000ms">
+					/form[@controlname='ConflictCheckForm']/container[@controlname='pnlBase']//element[@controlname='achkContactStreetAddress']/?/?/checkbox[@accessiblename='Contact Street Address']
+				</item>
+				<item
+				addcaps="checkbox,accessible"
+				capname="checkbox"
+				id="9b26f491-eb34-48fd-9f4a-263995adcf79"
+				name="ContactMainNote"
+				refimgid="605724f7-dfe7-4bef-be40-e6b6673fcf42"
+				refpath="/form[@controlname='ConflictCheckForm']/container[@controlname='pnlBase']/container[@controlname='pnlControls']/container[@controlname='panelCheckboxes']/element[@controlname='achkContactMainNote']/checkbox[@accessiblename='Contact Main Note']/checkbox[@accessiblename='Contact Main Note']"
+				searchtimeout="30000ms">
+					/form[@controlname='ConflictCheckForm']/container[@controlname='pnlBase']//element[@controlname='achkContactMainNote']/?/?/checkbox[@accessiblename='Contact Main Note']
+				</item>
+				<item
+				addcaps="checkbox,accessible"
+				capname="checkbox"
+				id="a5ef24c3-c41a-46e9-b0d2-a4cd52c3fa59"
+				name="ContactCustomTextFields"
+				refimgid="584eb7c4-7ab9-4271-92f9-ebdd564c4173"
+				refpath="/form[@controlname='ConflictCheckForm']/container[@controlname='pnlBase']/container[@controlname='pnlControls']/container[@controlname='panelCheckboxes']/element[@controlname='achkContactCustomFields']/checkbox[@accessiblename='Contact Custom Text Fields']/checkbox[@accessiblename='Contact Custom Text Fields']"
+				searchtimeout="30000ms">
+					/form[@controlname='ConflictCheckForm']/container[@controlname='pnlBase']//element[@controlname='achkContactCustomFields']/?/?/checkbox[@accessiblename&gt;'Contact Custom Text Field']
+				</item>
+				<item
+				addcaps="checkbox,accessible"
+				capname="checkbox"
+				id="2b75867a-3657-4eb5-a3e6-fe9ea3c5a953"
+				name="ShowContactRelationships"
+				refimgid="a86d3e1e-3c10-4ec2-91b1-b64315bd545b"
+				refpath="/form[@controlname='ConflictCheckForm']/container[@controlname='pnlBase']/container[@controlname='pnlControls']/container[@controlname='panelCheckboxes']/element[@controlname='achkAlsoShowRelatedPeople']/checkbox[@accessiblename='Show Contact Relationships']/checkbox[@accessiblename='Show Contact Relationships']"
+				searchtimeout="30000ms">
+					/form[@controlname='ConflictCheckForm']/container[@controlname='pnlBase']//element[@controlname='achkAlsoShowRelatedPeople']/?/?/checkbox[@accessiblename&gt;'Show Contact Relationship']
+				</item>
+				<item
+				addcaps="checkbox,accessible"
+				capname="checkbox"
+				id="05657963-33e5-427d-bf9a-ba0564b7b2de"
+				name="FileName"
+				refimgid="ea548b7e-6ab2-41e6-8e37-8cd5524befef"
+				refpath="/form[@controlname='ConflictCheckForm']/container[@controlname='pnlBase']/container[@controlname='pnlControls']/container[@controlname='panelCheckboxes']/element[@controlname='achkFileName']/checkbox[@accessiblename='File Name']/checkbox[@accessiblename='File Name']"
+				searchtimeout="30000ms">
+					/form[@controlname='ConflictCheckForm']/container[@controlname='pnlBase']//element[@controlname='achkFileName']/?/?/checkbox[@accessiblename='File Name']
+				</item>
+				<item
+				addcaps="checkbox,accessible"
+				capname="checkbox"
+				id="6e936eee-d9f4-4e76-82c6-8938be26359a"
+				name="FileMainNote"
+				refimgid="a9f0d28a-00dd-4fed-bf90-99521cb22584"
+				refpath="/form[@controlname='ConflictCheckForm']/container[@controlname='pnlBase']/container[@controlname='pnlControls']/container[@controlname='panelCheckboxes']/element[@controlname='achkFileMainNote']/checkbox[@accessiblename='File Main Note']/checkbox[@accessiblename='File Main Note']"
+				searchtimeout="30000ms">
+					/form[@controlname='ConflictCheckForm']/container[@controlname='pnlBase']//element[@controlname='achkFileMainNote']/?/?/checkbox[@accessiblename='File Main Note']
+				</item>
+				<item
+				addcaps="checkbox,accessible"
+				capname="checkbox"
+				id="d0aa0d80-f640-43dd-9176-660b76710eb4"
+				name="FileSummary"
+				refimgid="a395e204-7d17-48ad-bcf0-642924472c67"
+				refpath="/form[@controlname='ConflictCheckForm']/container[@controlname='pnlBase']/container[@controlname='pnlControls']/container[@controlname='panelCheckboxes']/element[@controlname='achkFileSummary']/checkbox[@accessiblename='File Summary']/checkbox[@accessiblename='File Summary']"
+				searchtimeout="30000ms">
+					/form[@controlname='ConflictCheckForm']/container[@controlname='pnlBase']//element[@controlname='achkFileSummary']/?/?/checkbox[@accessiblename='File Summary']
+				</item>
+				<item
+				addcaps="checkbox,accessible"
+				capname="checkbox"
+				id="71757520-3861-4264-9b3d-7d8f28a7054b"
+				name="FileStatus"
+				refimgid="ae5c12ef-588f-40f4-aab2-a5e12c9673e8"
+				refpath="/form[@controlname='ConflictCheckForm']/container[@controlname='pnlBase']/container[@controlname='pnlControls']/container[@controlname='panelCheckboxes']/element[@controlname='achkFileStatus']/checkbox[@accessiblename='File Status']/checkbox[@accessiblename='File Status']"
+				searchtimeout="30000ms">
+					/form[@controlname='ConflictCheckForm']/container[@controlname='pnlBase']//element[@controlname='achkFileStatus']/?/?/checkbox[@accessiblename='File Status']
+				</item>
+				<item
+				addcaps="checkbox,accessible"
+				capname="checkbox"
+				id="6d7a194a-843b-4250-ad5a-55eafbe392e9"
+				name="FileCustomTextFields"
+				refimgid="1ed4404b-c03f-4225-abc2-5119f714d4e6"
+				refpath="/form[@controlname='ConflictCheckForm']/container[@controlname='pnlBase']/container[@controlname='pnlControls']/container[@controlname='panelCheckboxes']/element[@controlname='achkFileCustomFields']/checkbox[@accessiblename='File Custom Text Fields']/checkbox[@accessiblename='File Custom Text Fields']"
+				searchtimeout="30000ms">
+					/form[@controlname='ConflictCheckForm']/container[@controlname='pnlBase']//element[@controlname='achkFileCustomFields']/?/?/checkbox[@accessiblename='File Custom Text Fields']
+				</item>
+				<item
+				addcaps="checkbox,accessible"
+				capname="checkbox"
+				id="c60a5ac7-999d-4dac-b577-7b0eeac530f3"
+				name="NoteRecords"
+				refimgid="86ec4584-266a-459c-b7f2-d81b75e561f7"
+				refpath="/form[@controlname='ConflictCheckForm']/container[@controlname='pnlBase']/container[@controlname='pnlControls']/container[@controlname='panelCheckboxes']/element[@controlname='achkNotes']/checkbox[@accessiblename='Note records']/checkbox[@accessiblename='Note records']"
+				searchtimeout="30000ms">
+					/form[@controlname='ConflictCheckForm']/container[@controlname='pnlBase']//element[@controlname='achkNotes']/?/?/checkbox[@accessiblename='Note records']
+				</item>
+				<item
+				addcaps="checkbox,accessible"
+				capname="checkbox"
+				id="600053cc-50f6-4154-8aeb-4b1f9996d84c"
+				name="EventTitleAndNotes"
+				refimgid="32de1d73-64c8-441c-8c33-d54b4170b26e"
+				refpath="/form[@controlname='ConflictCheckForm']/container[@controlname='pnlBase']/container[@controlname='pnlControls']/container[@controlname='panelCheckboxes']/element[@controlname='achkEvents']/checkbox[@accessiblename='Event Title and Notes']/checkbox[@accessiblename='Event Title and Notes']"
+				searchtimeout="30000ms">
+					/form[@controlname='ConflictCheckForm']/container[@controlname='pnlBase']//element[@controlname='achkEvents']/?/?/checkbox[@accessiblename='Event Title and Notes']
+				</item>
+				<item
+				addcaps="checkbox,accessible"
+				capname="checkbox"
+				id="25a7e146-34a0-46a4-b363-5cda4f6d9af3"
+				name="DocumentTitleAndSummary"
+				refimgid="5e95ffa7-c512-40f7-98c3-b6cc4cfc1c22"
+				refpath="/form[@controlname='ConflictCheckForm']/container[@controlname='pnlBase']/container[@controlname='pnlControls']/container[@controlname='panelCheckboxes']/element[@controlname='achkDocuments']/checkbox[@accessiblename='Document Title and Summary']/checkbox[@accessiblename='Document Title and Summary']"
+				searchtimeout="30000ms">
+					/form[@controlname='ConflictCheckForm']/container[@controlname='pnlBase']//element[@controlname='achkDocuments']/?/?/checkbox[@accessiblename&gt;'Document Title and Summar']
+				</item>
+				<item
+				addcaps="checkbox,accessible"
+				capname="checkbox"
+				id="15779f51-c7fe-4167-b078-160607822f80"
+				name="TimeEntryDescriptions"
+				refimgid="7759df7a-5b77-425e-b6b4-b03a948339d3"
+				refpath="/form[@controlname='ConflictCheckForm']/container[@controlname='pnlBase']/container[@controlname='pnlControls']/container[@controlname='panelCheckboxes']/element[@controlname='achkTimeEntries']/checkbox[@accessiblename='Time Entry Descriptions']/checkbox[@accessiblename='Time Entry Descriptions']"
+				searchtimeout="30000ms">
+					/form[@controlname='ConflictCheckForm']/container[@controlname='pnlBase']//element[@controlname='achkTimeEntries']/?/?/checkbox[@accessiblename='Time Entry Descriptions']
+				</item>
+				<item
+				addcaps="checkbox,accessible"
+				capname="checkbox"
+				id="a00d00d9-223a-4ccb-b7a1-533866e08f17"
+				name="CommunicationsToFrom"
+				refimgid="22d07585-6c17-463b-bde2-f7941318940d"
+				refpath="/form[@controlname='ConflictCheckForm']/container[@controlname='pnlBase']/container[@controlname='pnlControls']/container[@controlname='panelCheckboxes']/element[@controlname='achkCommunicationTo']/checkbox[@accessiblename='Communications To / From']/checkbox[@accessiblename='Communications To / From']"
+				searchtimeout="30000ms">
+					/form[@controlname='ConflictCheckForm']/container[@controlname='pnlBase']//element[@controlname='achkCommunicationTo']/?/?/checkbox[@accessiblename='Communications To / From']
+				</item>
+				<item
+				addcaps="checkbox,accessible"
+				capname="checkbox"
+				id="20961255-05bc-45eb-9a00-7d635943ed97"
+				name="CommunicationsNotesMessage"
+				refimgid="b5647ce4-e750-49d1-80c4-8ffba6d3eebc"
+				refpath="/form[@controlname='ConflictCheckForm']/container[@controlname='pnlBase']/container[@controlname='pnlControls']/container[@controlname='panelCheckboxes']/element[@controlname='achkCommunicationNotes']/checkbox[@accessiblename='Communications Notes / Message']/checkbox[@accessiblename='Communications Notes / Message']"
+				searchtimeout="30000ms">
+					/form[@controlname='ConflictCheckForm']/container[@controlname='pnlBase']//element[@controlname='achkCommunicationNotes']/?/?/checkbox[@accessiblename&gt;'Communications Notes / Me']
+				</item>
+				<item
+				addcaps="text,control,nativewindow"
+				capname="text"
+				id="056b00e3-960f-476a-a471-958627abdbc0"
+				name="txtBasicConflictSearch"
+				refimgid="ab573899-9dee-460a-bb93-79d5fdd7dbc7"
+				refpath="/form[@controlname='ConflictCheckForm']/container[@controlname='pnlBase']/container[@controlname='pnlControls']/element[@controlname='uteSearchText']/text[@controlname='uteSearchText_EmbeddableTextBox']"
+				searchtimeout="30000ms">
+					/form[@controlname='ConflictCheckForm']/container[@controlname='pnlBase']//text[@controlname='uteSearchText_EmbeddableTextBox']
+				</item>
+				<basepath>
+					/form[@controlname='ConflictCheckForm']/container[@controlname='pnlBase']
+				</basepath>
+			</folder>
+			<item
+			addcaps="toolbar,accessible"
+			capname="toolbar"
+			id="6bc4cddd-d4db-4561-b9ab-0b83e19b92b8"
+			name="Toolbar"
+			refpath="/form[@controlname='ConflictCheckForm']/element[@controlname='_BaseForm_Toolbars_Dock_Area_Bottom']/container[@accessiblename='DockBottom']/toolbar[@accessiblename='Toolbar']"
+			searchtimeout="30000ms">
+				/form[@controlname='ConflictCheckForm']/element[@controlname='_BaseForm_Toolbars_Dock_Area_Bottom']/?/?/toolbar[@accessiblename='Toolbar']
+			</item>
+			<folder
+			addcaps="toolbar,accessible"
+			capname="toolbar"
+			id="bc57cfbd-5db4-4edc-bc56-113583ee267b"
+			isrooted="True"
+			name="Toolbar1"
+			refpath="/form[@controlname='ConflictCheckResult']/container[@controlname='menubar_Fill_Panel']/element[@controlname='_menubar_Fill_Panel_Toolbars_Dock_Area_Bottom']/container[@accessiblename='DockBottom']/toolbar[@accessiblename='Toolbar']"
+			searchtimeout="30000ms"
+			usecache="False">
+				<item
+				addcaps="button,accessible"
+				capname="button"
+				id="c17842bc-3e6f-4eb1-b269-1fdcb35d1728"
+				name="Cancel"
+				refpath="/form[@controlname='ConflictCheckForm']/element[@controlname='_BaseForm_Toolbars_Dock_Area_Bottom']/container[@accessiblename='DockBottom']/toolbar[@accessiblename='Toolbar']/button[@accessiblename='Cancel']"
+				searchtimeout="30000ms">
+					/form[@controlname='ConflictCheckForm']//toolbar[@accessiblename='Toolbar']/button[@accessiblename='Cancel']
+				</item>
+				<item
+				addcaps="button,accessible"
+				capname="button"
+				id="1255a906-3c34-46ea-af61-a6c39274d1a2"
+				name="CheckNow"
+				refpath="/form[@controlname='ConflictCheckForm']/element[@controlname='_BaseForm_Toolbars_Dock_Area_Bottom']/container[@accessiblename='DockBottom']/toolbar[@accessiblename='Toolbar']/button[@accessiblename='Check Now']"
+				searchtimeout="30000ms">
+					/form[@controlname='ConflictCheckForm']//toolbar[@accessiblename='Toolbar']/button[@accessiblename='Check Now']
+				</item>
+				<item
+				addcaps="unknown,accessible"
+				capname="unknown"
+				id="dc35857b-6230-43fc-8ad8-092cbf8b2079"
+				name="None"
+				refpath="/form[@controlname='ConflictCheckForm']/element[@controlname='_BaseForm_Toolbars_Dock_Area_Bottom']/container[@accessiblename='DockBottom']/toolbar[@accessiblename='Toolbar']/element[@accessiblename='']"
+				searchtimeout="30000ms">
+					/form[@controlname='ConflictCheckForm']//toolbar[@accessiblename='Toolbar']/element[@accessiblename='']
+				</item>
+				<basepath>
+					/form[@controlname='ConflictCheckForm']//toolbar[@accessiblename='Toolbar']
+				</basepath>
+			</folder>
+			<basepath>
+				/form[@controlname='ConflictCheckForm']
+			</basepath>
+			<icon>
+				iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACx
+jwv8YQUAAAAJcEhZcwAADsQAAA7EAZUrDhsAAAFlSURBVDhPY6AJeOJjOvORg9p/FOyo/v9xoKUT
+VAlugKERDT921nwLVQoBb3Kj+Z5FOf9/FuP2/1msO3EYpBaIH7vr/Qcb8Oft6//kgFclif/Brnjo
+qPYZKvb/z8tn/z+tWfD/bWspWMHLwrj/r8pT/7/rrfv/dffG//++fwOr+3Hu+P8nPsYTwAY8CbRM
+fGSvCnbev29fwQpwgd9PH/1/N6ERHB5gzSDwyFX3IkjgeZLv/0+rF/z/snPD/4fWCmAND60V/3+Y
+1fP//cxuYABqgcUe2SqBDXge5qoDMcBN9w3MgDdNhf/fTWr+/xCoCKb4XU/t/7fd1Shi4BgJtPSG
+GqBzjhwDnkbaa4ANAIZBBDkGgDXDAMkGAFMmVCsEPHLTO0uKAU+jnYygWhHgeZIPUQY8dFS/BdWC
+Cd405uM14N+/f+egSnGDjyvnxjyyVQYbANL0FmjAm/aKH4+9zVWhSqCAgQEAq9YXqsYCPO8AAAAA
+SUVORK5CYII=
+			</icon>
+		</appfolder>
+		<appfolder
+		addcaps="form,control,nativewindow"
+		capname="form"
+		id="effcefca-4a1d-449f-8bca-8852ca1dc216"
+		isrooted="True"
+		name="ConflictCheckResult"
+		refimgid="e290a47e-c1c0-4e56-b8a1-7042f38520ea"
+		refpath="/form[@controlname='ConflictCheckResult']"
+		searchtimeout="30000ms"
+		usecache="True">
+			<item
+			addcaps="text,uiautomation,uiautomationvalue"
+			capname="unknown"
+			id="c534504b-69cc-40c6-af88-9234a9266686"
+			name="txtConflitSearchResult"
+			refimgid="a0f86122-2c1f-4c45-8a3c-fe343c45f622"
+			searchtimeout="30000ms">
+				/form[@controlname='ConflictCheckResult']/container[@controlname='menubar_Fill_Panel']/container[@controlname='pnlBase']//element[@controlname='lblText']
+			</item>
+			<item
+			addcaps="titlebar,accessible"
+			capname="titlebar"
+			id="8718d05c-da1b-4645-87a6-1bb7c78eeb7d"
+			name="txttitleBar"
+			refimgid="5eb76521-d995-4d60-8aab-b39df39b7e56"
+			refpath="/form[@controlname='ConflictCheckResult']/titlebar[@accessiblerole='TitleBar']"
+			searchtimeout="30000ms">
+				/form[@controlname='ConflictCheckResult']/titlebar[@accessiblerole='TitleBar']
+			</item>
+			<item
+			addcaps="table,accessible"
+			capname="table"
+			id="e793b38f-a8ef-4115-951c-d2d76e28bd17"
+			name="tblConflictSearchResults"
+			refimgid="4aeeefa5-ceba-4e1b-b84d-ae7731ffbaa1"
+			refpath="/form[@controlname='ConflictCheckResult']/container[@controlname='menubar_Fill_Panel']/container[@controlname='pnlBase']/container[@controlname='pnlControls']/element[@controlname='abgConflictResults']/table[@accessiblename='Band 0']"
+			searchtimeout="30000ms">
+				/form[@controlname='ConflictCheckResult']/container[@controlname='menubar_Fill_Panel']/container[@controlname='pnlBase']//table[@accessiblename='Band 0']
+			</item>
+			<folder
+			addcaps="toolbar,accessible"
+			capname="toolbar"
+			id="39170d99-b94c-4774-acee-f73a455eedb6"
+			isrooted="True"
+			name="Toolbar1"
+			refpath="/form[@controlname='ConflictCheckResult']/container[@controlname='menubar_Fill_Panel']/element[@controlname='_menubar_Fill_Panel_Toolbars_Dock_Area_Bottom']/container[@accessiblename='DockBottom']/toolbar[@accessiblename='Toolbar']"
+			searchtimeout="30000ms"
+			usecache="False">
+				<item
+				addcaps="toolbar,accessible"
+				capname="toolbar"
+				id="4102516b-0e5d-474e-98b6-753ebc125a10"
+				name="Toolbar"
+				refpath="/form[@controlname='ConflictCheckResult']/container[@controlname='menubar_Fill_Panel']/element[@controlname='_menubar_Fill_Panel_Toolbars_Dock_Area_Bottom']/container[@accessiblename='DockBottom']/toolbar[@accessiblename='Toolbar']"
+				searchtimeout="30000ms">
+					/form[@controlname='ConflictCheckResult']/container[@controlname='menubar_Fill_Panel']//toolbar[@accessiblename='Toolbar']
+				</item>
+				<item
+				addcaps="button,accessible"
+				capname="button"
+				id="b9eaa864-9b95-4da5-9ef3-d00a4119383d"
+				name="btnClose"
+				refpath="/form[@controlname='ConflictCheckResult']/container[@controlname='menubar_Fill_Panel']/element[@controlname='_menubar_Fill_Panel_Toolbars_Dock_Area_Bottom']/container[@accessiblename='DockBottom']/toolbar[@accessiblename='Toolbar']/button[@accessiblename='Close']"
+				searchtimeout="30000ms">
+					/form[@controlname='ConflictCheckResult']/container[@controlname='menubar_Fill_Panel']//toolbar[@accessiblename='Toolbar']/button[@accessiblename='Close']
+				</item>
+				<item
+				addcaps="button,accessible"
+				capname="button"
+				id="0872c0fc-6184-47d4-b106-eb16a02198d7"
+				name="btnPrint"
+				refpath="/form[@controlname='ConflictCheckResult']/container[@controlname='menubar_Fill_Panel']/element[@controlname='_menubar_Fill_Panel_Toolbars_Dock_Area_Bottom']/container[@accessiblename='DockBottom']/toolbar[@accessiblename='Toolbar']/button[@accessiblename='Print']"
+				searchtimeout="30000ms">
+					/form[@controlname='ConflictCheckResult']/container[@controlname='menubar_Fill_Panel']//toolbar[@accessiblename='Toolbar']/button[@accessiblename='Print']
+				</item>
+				<basepath>
+					/form[@controlname='ConflictCheckResult']/container[@controlname='menubar_Fill_Panel']//toolbar[@accessiblename='Toolbar']
+				</basepath>
+			</folder>
+			<basepath>
+				/form[@controlname='ConflictCheckResult']
+			</basepath>
+			<icon>
+				iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACx
+jwv8YQUAAAAJcEhZcwAADsQAAA7EAZUrDhsAAAFlSURBVDhPY6AJeOJjOvORg9p/FOyo/v9xoKUT
+VAlugKERDT921nwLVQoBb3Kj+Z5FOf9/FuP2/1msO3EYpBaIH7vr/Qcb8Oft6//kgFclif/Brnjo
+qPYZKvb/z8tn/z+tWfD/bWspWMHLwrj/r8pT/7/rrfv/dffG//++fwOr+3Hu+P8nPsYTwAY8CbRM
+fGSvCnbev29fwQpwgd9PH/1/N6ERHB5gzSDwyFX3IkjgeZLv/0+rF/z/snPD/4fWCmAND60V/3+Y
+1fP//cxuYABqgcUe2SqBDXge5qoDMcBN9w3MgDdNhf/fTWr+/xCoCKb4XU/t/7fd1Shi4BgJtPSG
+GqBzjhwDnkbaa4ANAIZBBDkGgDXDAMkGAFMmVCsEPHLTO0uKAU+jnYygWhHgeZIPUQY8dFS/BdWC
+Cd405uM14N+/f+egSnGDjyvnxjyyVQYbANL0FmjAm/aKH4+9zVWhSqCAgQEAq9YXqsYCPO8AAAAA
+SUVORK5CYII=
+			</icon>
+		</appfolder>
+		<appfolder
+		addcaps="form,control,nativewindow"
+		capname="form"
+		id="4c6527c8-514b-42b6-8a6a-1aa6a72eddda"
+		isrooted="True"
+		name="ConflictCheckPrint"
+		refimgid="eac4bab7-b92a-4509-a287-c3335fd1b691"
+		refpath="/form[@controlname='ConflictCheckPrint']"
+		searchtimeout="30000ms"
+		usecache="True">
+			<item
+			addcaps="text,control,nativewindow"
+			capname="unknown"
+			id="a240930e-2ba2-4d92-b70c-8e7496cdb3b0"
+			name="txtConflictSearchResult"
+			refimgid="6cbd82d6-f469-4b44-a9c6-33bb9adc8f4a"
+			searchtimeout="30000ms">
+				/form[@controlname='ConflictCheckPrint']/container[@controlname='pnlBase']/?/?/element[@controlname='lblText']
+			</item>
+			<item
+			addcaps="combobox,control,nativewindow"
+			capname="combobox"
+			id="cc34bb86-7530-4764-9a75-e53391aaed3d"
+			name="cmbbxReportGeneration"
+			refimgid="0e14b6be-e681-466d-8cae-10daa0e7913b"
+			refpath="/form[@controlname='ConflictCheckPrint']/container[@controlname='pnlBase']/container[@controlname='pnlControls']/combobox[@controlname='awcbOutputFormat']"
+			searchtimeout="30000ms">
+				/form[@controlname='ConflictCheckPrint']/container[@controlname='pnlBase']/?/?/combobox[@controlname='awcbOutputFormat']
+			</item>
+			<item
+			addcaps="toolbar,accessible"
+			capname="toolbar"
+			id="dbcac068-b16f-45cf-bffb-21151cf4c0ba"
+			name="Toolbar"
+			refpath="/form[@controlname='ConflictCheckPrint']/element[@controlname='_BaseForm_Toolbars_Dock_Area_Bottom']/container[@accessiblename='DockBottom']/toolbar[@accessiblename='Toolbar']"
+			searchtimeout="30000ms">
+				/form[@controlname='ConflictCheckPrint']/element[@controlname='_BaseForm_Toolbars_Dock_Area_Bottom']/?/?/toolbar[@accessiblename='Toolbar']
+			</item>
+			<folder
+			addcaps="toolbar,accessible"
+			capname="toolbar"
+			id="bebb7de2-a605-4212-bd2c-509dfb825156"
+			isrooted="True"
+			name="Toolbar1"
+			refpath="/form[@controlname='ConflictCheckResult']/container[@controlname='menubar_Fill_Panel']/element[@controlname='_menubar_Fill_Panel_Toolbars_Dock_Area_Bottom']/container[@accessiblename='DockBottom']/toolbar[@accessiblename='Toolbar']"
+			searchtimeout="30000ms"
+			usecache="False">
+				<item
+				addcaps="button,accessible"
+				capname="button"
+				id="9c0e2702-5347-44be-b162-9fb5b668562e"
+				name="btnCancel"
+				refpath="/form[@controlname='ConflictCheckPrint']/element[@controlname='_BaseForm_Toolbars_Dock_Area_Bottom']/container[@accessiblename='DockBottom']/toolbar[@accessiblename='Toolbar']/button[@accessiblename='Cancel']"
+				searchtimeout="30000ms">
+					/form[@controlname='ConflictCheckPrint']//toolbar[@accessiblename='Toolbar']/button[@accessiblename='Cancel']
+				</item>
+				<item
+				addcaps="button,accessible"
+				capname="button"
+				id="75739aa1-4f69-4a59-ad8c-704789c470dd"
+				name="btnOK"
+				refpath="/form[@controlname='ConflictCheckPrint']/element[@controlname='_BaseForm_Toolbars_Dock_Area_Bottom']/container[@accessiblename='DockBottom']/toolbar[@accessiblename='Toolbar']/button[@accessiblename='OK']"
+				searchtimeout="30000ms">
+					/form[@controlname='ConflictCheckPrint']//toolbar[@accessiblename='Toolbar']/button[@accessiblename='OK']
+				</item>
+				<basepath>
+					/form[@controlname='ConflictCheckPrint']//toolbar[@accessiblename='Toolbar']
+				</basepath>
+			</folder>
+			<basepath>
+				/form[@controlname='ConflictCheckPrint']
 			</basepath>
 			<icon>
 				iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACx

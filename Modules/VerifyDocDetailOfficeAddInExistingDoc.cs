@@ -58,8 +58,8 @@ namespace SmokeTest.Modules
         private void FillDocument()
         {
 
-        	
         	doc.DocumentDetail.Self.Activate();
+        	Delay.Seconds(1);
         	doc.DocumentDetail.PnlBase.txtDocumentTitle.PressKeys(fileName);
         	//doc.DocumentDetail.PnlBase.fileLocationPathText.Element.SetAttributeValue("Text", localFileName);
         	doc.DocumentDetail.PnlBase.btnLocation.Click();

@@ -173,6 +173,7 @@ namespace SmokeTest.Repositories
         [RepositoryFolder("e7642fea-b149-4b94-9587-27bb46a02ba1")]
         public partial class MainFormAppFolder : RepoGenBaseFolder
         {
+            PeopleFolders.PeopleIndexForm1Folder _peopleindexform1;
             RepoItemInfo _btnnewInfo;
             RepoItemInfo _attorneyInfo;
             RepoItemInfo _btnpeopleInfo;
@@ -184,6 +185,7 @@ namespace SmokeTest.Repositories
             public MainFormAppFolder(RepoGenBaseFolder parentFolder) :
                     base("MainForm", "/form[@controlname='MainForm']", parentFolder, 30000, null, true, "e7642fea-b149-4b94-9587-27bb46a02ba1", "")
             {
+                _peopleindexform1 = new PeopleFolders.PeopleIndexForm1Folder(this);
                 _btnnewInfo = new RepoItemInfo(this, "btnNew", "?/?/form[@controlname='PeopleIndexForm']/container[@controlname='menubar_Fill_Panel']//toolbar[@accessiblename='Toolbar']/button[@accessiblename='New']", 30000, null, "a9152bb7-e5cc-4608-9074-a3a3e6d1299c");
                 _attorneyInfo = new RepoItemInfo(this, "Attorney", "container[@controlname='pLeft']/?/?/container[@controlname='atcAttorneyOrAccounting']/?/?/element[@controltypename='AmicusLabel']", 30000, null, "acac4f1c-d0c1-4331-b8f8-7999b4152a41");
                 _btnpeopleInfo = new RepoItemInfo(this, "btnPeople", "container[@controlname='pLeft']//tree[@accessiblerole='Outline']/button[@accessiblename='People']", 30000, null, "c9c84568-6998-4fa4-820a-6fda46fad578");
@@ -307,6 +309,133 @@ namespace SmokeTest.Repositories
                 get
                 {
                     return _btnpeople1Info;
+                }
+            }
+
+            /// <summary>
+            /// The PeopleIndexForm1 folder.
+            /// </summary>
+            [RepositoryFolder("9477df91-6304-465e-87cb-a9515472fe04")]
+            public virtual PeopleFolders.PeopleIndexForm1Folder PeopleIndexForm1
+            {
+                get { return _peopleindexform1; }
+            }
+        }
+
+        /// <summary>
+        /// The PeopleIndexForm1Folder folder.
+        /// </summary>
+        [RepositoryFolder("9477df91-6304-465e-87cb-a9515472fe04")]
+        public partial class PeopleIndexForm1Folder : RepoGenBaseFolder
+        {
+            RepoItemInfo _peopleindexformInfo;
+            RepoItemInfo _tblpeopledetailsInfo;
+            RepoItemInfo _listfirstpeopleInfo;
+
+            /// <summary>
+            /// Creates a new PeopleIndexForm1  folder.
+            /// </summary>
+            public PeopleIndexForm1Folder(RepoGenBaseFolder parentFolder) :
+                    base("PeopleIndexForm1", "?/?/form[@controlname='PeopleIndexForm']", parentFolder, 30000, null, false, "9477df91-6304-465e-87cb-a9515472fe04", "")
+            {
+                _peopleindexformInfo = new RepoItemInfo(this, "PeopleIndexForm", "", 30000, null, "a593927e-96aa-4f7a-9adc-1f1915d774c3");
+                _tblpeopledetailsInfo = new RepoItemInfo(this, "tblPeopleDetails", "?/?/table[@accessiblename='Band 0']", 30000, null, "d6980ba1-611c-476f-b78c-1ecb110233a2");
+                _listfirstpeopleInfo = new RepoItemInfo(this, "listFirstPeople", "?/?/table[@accessiblename='Band 0']/row[@accessiblename='Band 0 row 1']", 30000, null, "8e8a7148-ff60-409f-a33d-a06cecac3fa6");
+            }
+
+            /// <summary>
+            /// The Self item.
+            /// </summary>
+            [RepositoryItem("9477df91-6304-465e-87cb-a9515472fe04")]
+            public virtual Ranorex.Form Self
+            {
+                get
+                {
+                    return _selfInfo.CreateAdapter<Ranorex.Form>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Self item info.
+            /// </summary>
+            [RepositoryItemInfo("9477df91-6304-465e-87cb-a9515472fe04")]
+            public virtual RepoItemInfo SelfInfo
+            {
+                get
+                {
+                    return _selfInfo;
+                }
+            }
+
+            /// <summary>
+            /// The PeopleIndexForm item.
+            /// </summary>
+            [RepositoryItem("a593927e-96aa-4f7a-9adc-1f1915d774c3")]
+            public virtual Ranorex.Form PeopleIndexForm
+            {
+                get
+                {
+                    return _peopleindexformInfo.CreateAdapter<Ranorex.Form>(true);
+                }
+            }
+
+            /// <summary>
+            /// The PeopleIndexForm item info.
+            /// </summary>
+            [RepositoryItemInfo("a593927e-96aa-4f7a-9adc-1f1915d774c3")]
+            public virtual RepoItemInfo PeopleIndexFormInfo
+            {
+                get
+                {
+                    return _peopleindexformInfo;
+                }
+            }
+
+            /// <summary>
+            /// The tblPeopleDetails item.
+            /// </summary>
+            [RepositoryItem("d6980ba1-611c-476f-b78c-1ecb110233a2")]
+            public virtual Ranorex.Table tblPeopleDetails
+            {
+                get
+                {
+                    return _tblpeopledetailsInfo.CreateAdapter<Ranorex.Table>(true);
+                }
+            }
+
+            /// <summary>
+            /// The tblPeopleDetails item info.
+            /// </summary>
+            [RepositoryItemInfo("d6980ba1-611c-476f-b78c-1ecb110233a2")]
+            public virtual RepoItemInfo tblPeopleDetailsInfo
+            {
+                get
+                {
+                    return _tblpeopledetailsInfo;
+                }
+            }
+
+            /// <summary>
+            /// The listFirstPeople item.
+            /// </summary>
+            [RepositoryItem("8e8a7148-ff60-409f-a33d-a06cecac3fa6")]
+            public virtual Ranorex.Row listFirstPeople
+            {
+                get
+                {
+                    return _listfirstpeopleInfo.CreateAdapter<Ranorex.Row>(true);
+                }
+            }
+
+            /// <summary>
+            /// The listFirstPeople item info.
+            /// </summary>
+            [RepositoryItemInfo("8e8a7148-ff60-409f-a33d-a06cecac3fa6")]
+            public virtual RepoItemInfo listFirstPeopleInfo
+            {
+                get
+                {
+                    return _listfirstpeopleInfo;
                 }
             }
         }
@@ -519,6 +648,9 @@ namespace SmokeTest.Repositories
             RepoItemInfo _actionbtnInfo;
             RepoItemInfo _manageapxInfo;
             RepoItemInfo _manageapxpaymentmethodsInfo;
+            RepoItemInfo _communicationsInfo;
+            RepoItemInfo _myemailsInfo;
+            RepoItemInfo _tblpeopleInfo;
 
             /// <summary>
             /// Creates a new PeopleDetailForm  folder.
@@ -533,6 +665,9 @@ namespace SmokeTest.Repositories
                 _actionbtnInfo = new RepoItemInfo(this, "ActionBtn", "?/?/toolbar[@automationid='MainMenu : menubar']/menuitem[@automationid='[MainMenu : menubar Tools] Tool : MAIN_MENU_ACTIONS - Index : 4 ']", 30000, null, "f7a8df47-403d-48fc-89c8-da2c5617a0d3");
                 _manageapxInfo = new RepoItemInfo(this, "ManageAPX", "element[@controlname='_BaseForm_Toolbars_Dock_Area_Top']//menuitem[@accessiblename='Actions']/menuitem[@accessiblename='Manage APX Payment Method']", 30000, null, "18acdeb4-bb64-4251-afe6-78a2b4e8f7c1");
                 _manageapxpaymentmethodsInfo = new RepoItemInfo(this, "ManageAPXPaymentMethods", "element[@controlname='_BaseForm_Toolbars_Dock_Area_Top']//menuitem[@accessiblename='Actions']/menuitem[@accessiblename~'^Manage\\ APX\\ Payment\\ Method']", 30000, null, "44971364-45c6-41a8-b8bd-3edf5dbb11e9");
+                _communicationsInfo = new RepoItemInfo(this, "Communications", "container[@controlname='panelLeftBase']/?/?/element[@controlname='utreePeopleDetails']/?/?/treeitem[@accessiblename='Communications']", 30000, null, "afe734f4-e131-4871-b4f2-d932ce6d33ae");
+                _myemailsInfo = new RepoItemInfo(this, "MyEMails", "container[@controlname='panelLeftBase']/?/?/element[@controlname='utreePeopleDetails']/?/?/treeitem[@accessiblename='My E-mails']", 30000, null, "66ab64a0-1c33-4e62-9f54-1b5a168279b0");
+                _tblpeopleInfo = new RepoItemInfo(this, "tblPeople", "picture[@controlname='picBackground']/container[@controlname='panelBase']/container[@controlname='panelBottomBase']//table[@accessiblename='Band 0']", 30000, null, "a1771a89-fa73-437f-980a-0b8cc00b614a");
             }
 
             /// <summary>
@@ -724,6 +859,78 @@ namespace SmokeTest.Repositories
                 get
                 {
                     return _manageapxpaymentmethodsInfo;
+                }
+            }
+
+            /// <summary>
+            /// The Communications item.
+            /// </summary>
+            [RepositoryItem("afe734f4-e131-4871-b4f2-d932ce6d33ae")]
+            public virtual Ranorex.TreeItem Communications
+            {
+                get
+                {
+                    return _communicationsInfo.CreateAdapter<Ranorex.TreeItem>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Communications item info.
+            /// </summary>
+            [RepositoryItemInfo("afe734f4-e131-4871-b4f2-d932ce6d33ae")]
+            public virtual RepoItemInfo CommunicationsInfo
+            {
+                get
+                {
+                    return _communicationsInfo;
+                }
+            }
+
+            /// <summary>
+            /// The MyEMails item.
+            /// </summary>
+            [RepositoryItem("66ab64a0-1c33-4e62-9f54-1b5a168279b0")]
+            public virtual Ranorex.TreeItem MyEMails
+            {
+                get
+                {
+                    return _myemailsInfo.CreateAdapter<Ranorex.TreeItem>(true);
+                }
+            }
+
+            /// <summary>
+            /// The MyEMails item info.
+            /// </summary>
+            [RepositoryItemInfo("66ab64a0-1c33-4e62-9f54-1b5a168279b0")]
+            public virtual RepoItemInfo MyEMailsInfo
+            {
+                get
+                {
+                    return _myemailsInfo;
+                }
+            }
+
+            /// <summary>
+            /// The tblPeople item.
+            /// </summary>
+            [RepositoryItem("a1771a89-fa73-437f-980a-0b8cc00b614a")]
+            public virtual Ranorex.Table tblPeople
+            {
+                get
+                {
+                    return _tblpeopleInfo.CreateAdapter<Ranorex.Table>(true);
+                }
+            }
+
+            /// <summary>
+            /// The tblPeople item info.
+            /// </summary>
+            [RepositoryItemInfo("a1771a89-fa73-437f-980a-0b8cc00b614a")]
+            public virtual RepoItemInfo tblPeopleInfo
+            {
+                get
+                {
+                    return _tblpeopleInfo;
                 }
             }
         }

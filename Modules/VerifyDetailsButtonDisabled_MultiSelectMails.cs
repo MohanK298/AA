@@ -53,7 +53,7 @@ namespace SmokeTest.Modules
         private void ValidateDetailsButton_MultiSelectMails()
         {
         	OpenApp();
-        	cmn.MultiSelectEmail(3);
+        	cmn.MultiSelectEmail(outlook.Outlook.mailPanel,3);
         	outlook.Outlook.tabAmicusTasks.Click();
     		Report.Success("Amicus Tasks Tab is opened successfully");
     		Delay.Seconds(2);

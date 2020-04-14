@@ -79,14 +79,18 @@ namespace SmokeTest.Modules
         	pref.EmailBasicForm.Toolbar1.btnFinish.Click();
         	
         	pref.EmailPreferencesForm.Panel2.btnStep2.Click();
-        	if(pref.EmailAttachmentForm.txtAttachmentSaveLocation.GetAttributeValue<String>("Text")=="")
-    	    {
-    	    	pref.EmailAttachmentForm.txtAttachmentSaveLocation.TextValue="\\\\NEWAUTOMATION\\DocumentAssemblyTemplates";
-    	    	pref.EmailAttachmentForm.btnBrowse.Click();
-    	    	Delay.Seconds(1);
-    	    	pref.BrowseFolder.btnOK.Click();
-    	    	
-    	    }
+        	Delay.Seconds(1);
+        	if(!pref.EmailAttachmentForm.btnFinish.Enabled)
+        	{
+        		if(pref.EmailAttachmentForm.txtAttachmentSaveLocation.GetAttributeValue<String>("Text")=="")
+	    	    {
+	    	    	pref.EmailAttachmentForm.txtAttachmentSaveLocation.TextValue="\\\\NEWAUTOMATION\\DocumentAssemblyTemplates";
+	    	    	pref.EmailAttachmentForm.btnBrowse.Click();
+	    	    	Delay.Seconds(1);
+	    	    	pref.BrowseFolder.btnOK.Click();
+	    	    	
+	    	    }
+        	}
         	pref.EmailAttachmentForm.btnFinish.Click();
         	
         	pref.EmailPreferencesForm.Panel2.btnStep3.Click();

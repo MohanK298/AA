@@ -121,6 +121,8 @@ namespace SmokeTest.Modules.Utilities
         				break;
         			}
         		}
+        		if(k>0)
+        			break;
         	}
         	if(k==0)
         	{
@@ -562,14 +564,14 @@ namespace SmokeTest.Modules.Utilities
 			Keyboard.Press("{LControlKey up}");
         }
         
-        public string MultiSelectEmail(int mailCount,bool getValues=false)
+        public string MultiSelectEmail(Ranorex.Adapter item,int mailCount,bool getValues=false)
         {
         	int l=0;
         	string mailsubject="";
         	string txt="";
         	int indx1,indx2=0;
         	string txt2="";
-        	IList<Ranorex.Container> containers = outlook.Outlook.mailPanel.FindChildren<Ranorex.Container>(); 
+        	IList<Ranorex.Container> containers = item.FindChildren<Ranorex.Container>(); 
         	for(int i=0;i<mailCount;i++)
         	{
         		if(l>=mailCount)
@@ -597,9 +599,9 @@ namespace SmokeTest.Modules.Utilities
 							indx1=txt.IndexOf("Subject ")+8;
 							indx2=txt.IndexOf(", Received");
 							txt2=txt.Substring(indx1,indx2-indx1);
-							if(txt2.Length>15)
+							if(txt2.Length>10)
 							{
-								txt2=txt2.Substring(0,15);
+								txt2=txt2.Substring(0,10);
 							}
 							mailsubject+=txt2+"~";
         				}

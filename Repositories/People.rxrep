@@ -1,5 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
-<repository
+﻿<repository
 id="a9ee7572-62e1-4ea6-870f-349c027b52c3"
 name="People"
 rxversion="9.0">
@@ -29,7 +28,7 @@ rxversion="9.0">
 			capname="button"
 			id="a9152bb7-e5cc-4608-9074-a3a3e6d1299c"
 			name="btnNew"
-			refimgid="d936e429-b7e2-4731-b98b-ce330b5ff3cf"
+			refimgid="6c0b469f-6cb5-4746-8a0f-61a013d77b10"
 			refpath="/form[@controlname='MainForm']/element[@controltypename='MdiClient']/form[@controlname='PeopleIndexForm']/container[@controlname='menubar_Fill_Panel']/element[@controlname='_BaseForm_Fill_Panel_Toolbars_Dock_Area_Top']/container[@accessiblename='DockTop']/toolbar[@accessiblename='Toolbar']/button[@accessiblename='New']"
 			searchtimeout="30000ms">
 				/form[@controlname='MainForm']/?/?/form[@controlname='PeopleIndexForm']/container[@controlname='menubar_Fill_Panel']//toolbar[@accessiblename='Toolbar']/button[@accessiblename='New']
@@ -39,7 +38,7 @@ rxversion="9.0">
 			capname="unknown"
 			id="acac4f1c-d0c1-4331-b8f8-7999b4152a41"
 			name="Attorney"
-			refimgid="6820aff0-448a-4c91-9574-cf32847b8592"
+			refimgid="9d6065ff-131a-4d83-adcc-0222c8a87519"
 			searchtimeout="30000ms">
 				/form[@controlname='MainForm']/container[@controlname='pLeft']/?/?/container[@controlname='atcAttorneyOrAccounting']/?/?/element[@controltypename='AmicusLabel']
 			</item>
@@ -48,7 +47,7 @@ rxversion="9.0">
 			capname="button"
 			id="c9c84568-6998-4fa4-820a-6fda46fad578"
 			name="btnPeople"
-			refimgid="4dcac1d3-565f-4708-ab7c-45ce048025ce"
+			refimgid="f11365f1-48f5-4550-9a00-915146262317"
 			refpath="/form[@controlname='MainForm']/container[@controlname='pLeft']/container[@caption='' and @controltypename='Panel' and @instance='1']/element[@controlname='_ultraExplorerBar']/tree[@accessiblerole='Outline']/button[@accessiblename='People']"
 			searchtimeout="30000ms">
 				/form[@controlname='MainForm']/container[@controlname='pLeft']//tree[@accessiblerole='Outline']/button[@accessiblename='People']
@@ -58,10 +57,53 @@ rxversion="9.0">
 			capname="container"
 			id="daac252b-3c88-4c2d-ae9a-367f4a60081d"
 			name="btnPeople1"
-			refimgid="819ee39c-66d3-498d-945b-5d4a2ca00ee0"
+			refimgid="e33c4f2a-f1c1-4623-95ad-b5349c0041fe"
 			searchtimeout="5000ms">
 				/form[@controlname='MainForm']/container[@controlname='pLeft']//container[@automationid='[Group] 6']
 			</item>
+			<folder
+			addcaps="form,control,nativewindow"
+			capname="form"
+			id="9477df91-6304-465e-87cb-a9515472fe04"
+			isrooted="True"
+			name="PeopleIndexForm1"
+			refpath="/form[@controlname='MainForm']/element[@controltypename='MdiClient']/form[@controlname='PeopleIndexForm']"
+			searchtimeout="30000ms"
+			usecache="False">
+				<item
+				addcaps="form,control,nativewindow"
+				capname="form"
+				id="a593927e-96aa-4f7a-9adc-1f1915d774c3"
+				name="PeopleIndexForm"
+				refimgid="cf0bd93b-2b61-4052-935d-5df402c3ce66"
+				refpath="/form[@controlname='MainForm']/element[@controltypename='MdiClient']/form[@controlname='PeopleIndexForm']"
+				searchtimeout="30000ms">
+					/form[@controlname='MainForm']/?/?/form[@controlname='PeopleIndexForm']
+				</item>
+				<item
+				addcaps="table,accessible"
+				capname="table"
+				id="d6980ba1-611c-476f-b78c-1ecb110233a2"
+				name="tblPeopleDetails"
+				refimgid="a553f971-2256-4424-8352-798571f1ff87"
+				refpath="/form[@controlname='MainForm']/element[@controltypename='MdiClient']/form[@controlname='PeopleIndexForm']/element[@controlname='apgIndex']/table[@accessiblename='Band 0']"
+				searchtimeout="30000ms">
+					/form[@controlname='MainForm']/?/?/form[@controlname='PeopleIndexForm']/?/?/table[@accessiblename='Band 0']
+				</item>
+				<item
+				addcaps="row,accessible"
+				capname="row"
+				id="8e8a7148-ff60-409f-a33d-a06cecac3fa6"
+				name="listFirstPeople"
+				refimgid="c9de528b-8ce5-4ab2-a667-7ea8523ec218"
+				refpath="/form[@controlname='MainForm']/element[@controltypename='MdiClient']/form[@controlname='PeopleIndexForm']/element[@controlname='apgIndex']/table[@accessiblename='Band 0']/row[@accessiblename='Band 0 row 1']"
+				searchtimeout="30000ms">
+					/form[@controlname='MainForm']/?/?/form[@controlname='PeopleIndexForm']/?/?/table[@accessiblename='Band 0']/row[@accessiblename='Band 0 row 1']
+				</item>
+				<basepath>
+					/form[@controlname='MainForm']/?/?/form[@controlname='PeopleIndexForm']
+				</basepath>
+			</folder>
 			<basepath>
 				/form[@controlname='MainForm']
 			</basepath>
@@ -185,7 +227,7 @@ D8zerL8gSEaw7+rFqJ//CkX5CWkHqyZHVzU6AAAAAElFTkSuQmCC
 			capname="button"
 			id="82178c3e-4313-4be2-9ce1-804dc5483c5e"
 			name="btnSaveClose"
-			refimgid="7a849ac8-659a-4301-97eb-10f9f107197b"
+			refimgid="c1501fa8-527f-4c05-9fbe-75e66f58cde9"
 			refpath="/form[@controlname='PeopleDetailForm']/picture[@controlname='picBackground']/container[@controlname='menubar_Fill_Panel']/element[@controlname='_BaseForm_Fill_Panel_Toolbars_Dock_Area_Top']/container[@accessiblename='DockTop']/toolbar[@accessiblename='Toolbar']/button[@accessiblename='Save &amp; Close']"
 			searchtimeout="30000ms">
 				/form[@controlname='PeopleDetailForm']/picture[@controlname='picBackground']//toolbar[@accessiblename='Toolbar']/button[@accessiblename='Save &amp; Close']
@@ -237,6 +279,36 @@ D8zerL8gSEaw7+rFqJ//CkX5CWkHqyZHVzU6AAAAAElFTkSuQmCC
 			refpath="/form[@controlname='PeopleDetailForm']/element[@controlname='_BaseForm_Toolbars_Dock_Area_Top']/container[@accessiblename='DockTop']/menubar[@accessiblename='Toolbar']/menuitem[@accessiblename='Actions']/menuitem[@accessiblename='Manage APX Payment Methods']"
 			searchtimeout="30000ms">
 				/form[@controlname='PeopleDetailForm']/element[@controlname='_BaseForm_Toolbars_Dock_Area_Top']//menuitem[@accessiblename='Actions']/menuitem[@accessiblename~'^Manage\ APX\ Payment\ Method']
+			</item>
+			<item
+			addcaps="treeitem,accessible"
+			capname="treeitem"
+			id="afe734f4-e131-4871-b4f2-d932ce6d33ae"
+			name="Communications"
+			refimgid="86823959-dea0-44da-9c22-6900c2097ebc"
+			refpath="/form[@controlname='PeopleDetailForm']/container[@controlname='panelLeftBase']/container[@controlname='panelLeft']/element[@controlname='utreePeopleDetails']/tree[@accessiblerole='Outline']/treeitem[@accessiblename='Communications']"
+			searchtimeout="30000ms">
+				/form[@controlname='PeopleDetailForm']/container[@controlname='panelLeftBase']/?/?/element[@controlname='utreePeopleDetails']/?/?/treeitem[@accessiblename='Communications']
+			</item>
+			<item
+			addcaps="treeitem,accessible"
+			capname="treeitem"
+			id="66ab64a0-1c33-4e62-9f54-1b5a168279b0"
+			name="MyEMails"
+			refimgid="b34d386a-6716-4569-91cb-8d8e42fe68f0"
+			refpath="/form[@controlname='PeopleDetailForm']/container[@controlname='panelLeftBase']/container[@controlname='panelLeft']/element[@controlname='utreePeopleDetails']/tree[@accessiblerole='Outline']/treeitem[@accessiblename='My E-mails']"
+			searchtimeout="30000ms">
+				/form[@controlname='PeopleDetailForm']/container[@controlname='panelLeftBase']/?/?/element[@controlname='utreePeopleDetails']/?/?/treeitem[@accessiblename='My E-mails']
+			</item>
+			<item
+			addcaps="table,accessible"
+			capname="table"
+			id="a1771a89-fa73-437f-980a-0b8cc00b614a"
+			name="tblPeople"
+			refimgid="378b9ecf-6546-40ed-8af8-6caab260be80"
+			refpath="/form[@controlname='PeopleDetailForm']/picture[@controlname='picBackground']/container[@controlname='panelBase']/container[@controlname='panelBottomBase']/container[@controlname='CommunicationPanel']/container[@controlname='panelCommunications']/element[@controlname='acgComm2People']/table[@accessiblename='Band 0']"
+			searchtimeout="30000ms">
+				/form[@controlname='PeopleDetailForm']/picture[@controlname='picBackground']/container[@controlname='panelBase']/container[@controlname='panelBottomBase']//table[@accessiblename='Band 0']
 			</item>
 			<basepath>
 				/form[@controlname='PeopleDetailForm']

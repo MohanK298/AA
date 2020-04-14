@@ -1358,12 +1358,6 @@ AKKKKAIrbo3++38zVtaqW3Rv99v5mra1q9yVsPFLSClpDP/Z
 					</dynamicattribute>
 					<dynamicattribute
 					description="No description available."
-					name="FailedAccessMaskState"
-					readonly="False"
-					type="AmicusAttorney.Providers.Interfaces.AmicusInsufficientPrivilegeState, AmicusAttorney.Providers, Version=20.0.0.0, Culture=neutral, PublicKeyToken=94e86ec8ac26252b">
-					</dynamicattribute>
-					<dynamicattribute
-					description="No description available."
 					name="FlatStyle"
 					readonly="False"
 					type="System.Windows.Forms.FlatStyle, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089">
@@ -1543,18 +1537,6 @@ AKKKKAIrbo3++38zVtaqW3Rv99v5mra1q9yVsPFLSClpDP/Z
 					name="Size"
 					readonly="False"
 					type="System.Drawing.Size, System.Drawing, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-					</dynamicattribute>
-					<dynamicattribute
-					description="No description available."
-					name="SupportedAmicusEdition"
-					readonly="False"
-					type="AmicusAttorney.Providers.Interfaces.AmicusEditions, AmicusAttorney.Providers, Version=20.0.0.0, Culture=neutral, PublicKeyToken=94e86ec8ac26252b">
-					</dynamicattribute>
-					<dynamicattribute
-					description="No description available."
-					name="SupportedAmicusProduct"
-					readonly="False"
-					type="AmicusAttorney.Providers.Interfaces.AmicusProducts, AmicusAttorney.Providers, Version=20.0.0.0, Culture=neutral, PublicKeyToken=94e86ec8ac26252b">
 					</dynamicattribute>
 					<dynamicattribute
 					description="No description available."

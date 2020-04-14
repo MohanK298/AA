@@ -511,13 +511,6 @@ OwBVHRBQaCqyCiQ2bgdggEGkFMgiiEBKiQUMDAA9AuxWqrzYPQAAAABJRU5ErkJggg==
 					</dynamicattribute>
 					<dynamicattribute
 					description="No description available."
-					name="FailedAccessMaskState"
-					readonly="False"
-					type="AmicusAttorney.Providers.Interfaces.AmicusInsufficientPrivilegeState, AmicusAttorney.Providers, Version=20.0.0.0, Culture=neutral, PublicKeyToken=94e86ec8ac26252b">
-						Invisible
-					</dynamicattribute>
-					<dynamicattribute
-					description="No description available."
 					name="Focused"
 					type="System.Boolean">
 						False
@@ -845,20 +838,6 @@ aXRlbXMFX3NpemUIX3ZlcnNpb24FAAAICAkCAAAAAAAAAAAAAAAQAgAAAAAAAAAL
 					readonly="False"
 					type="System.Windows.Forms.PictureBoxSizeMode, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089">
 						StretchImage
-					</dynamicattribute>
-					<dynamicattribute
-					description="No description available."
-					name="SupportedAmicusEdition"
-					readonly="False"
-					type="AmicusAttorney.Providers.Interfaces.AmicusEditions, AmicusAttorney.Providers, Version=20.0.0.0, Culture=neutral, PublicKeyToken=94e86ec8ac26252b">
-						All
-					</dynamicattribute>
-					<dynamicattribute
-					description="No description available."
-					name="SupportedAmicusProduct"
-					readonly="False"
-					type="AmicusAttorney.Providers.Interfaces.AmicusProducts, AmicusAttorney.Providers, Version=20.0.0.0, Culture=neutral, PublicKeyToken=94e86ec8ac26252b">
-						All
 					</dynamicattribute>
 					<dynamicattribute
 					description="No description available."
@@ -1564,13 +1543,6 @@ OwBVHRBQaCqyCiQ2bgdggEGkFMgiiEBKiQUMDAA9AuxWqrzYPQAAAABJRU5ErkJggg==
 					</dynamicattribute>
 					<dynamicattribute
 					description="No description available."
-					name="FailedAccessMaskState"
-					readonly="False"
-					type="AmicusAttorney.Providers.Interfaces.AmicusInsufficientPrivilegeState, AmicusAttorney.Providers, Version=20.0.0.0, Culture=neutral, PublicKeyToken=94e86ec8ac26252b">
-						Invisible
-					</dynamicattribute>
-					<dynamicattribute
-					description="No description available."
 					name="Focused"
 					type="System.Boolean">
 						False
@@ -1898,20 +1870,6 @@ aXRlbXMFX3NpemUIX3ZlcnNpb24FAAAICAkCAAAAAAAAAAAAAAAQAgAAAAAAAAAL
 					readonly="False"
 					type="System.Windows.Forms.PictureBoxSizeMode, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089">
 						StretchImage
-					</dynamicattribute>
-					<dynamicattribute
-					description="No description available."
-					name="SupportedAmicusEdition"
-					readonly="False"
-					type="AmicusAttorney.Providers.Interfaces.AmicusEditions, AmicusAttorney.Providers, Version=20.0.0.0, Culture=neutral, PublicKeyToken=94e86ec8ac26252b">
-						All
-					</dynamicattribute>
-					<dynamicattribute
-					description="No description available."
-					name="SupportedAmicusProduct"
-					readonly="False"
-					type="AmicusAttorney.Providers.Interfaces.AmicusProducts, AmicusAttorney.Providers, Version=20.0.0.0, Culture=neutral, PublicKeyToken=94e86ec8ac26252b">
-						All
 					</dynamicattribute>
 					<dynamicattribute
 					description="No description available."
@@ -4729,26 +4687,10 @@ iiigAooooAKKKKACiiigAooooAKKKKAP/9k=
 					</dynamicattribute>
 					<dynamicattribute
 					description="No description available."
-					name="AlphaBlendMode"
-					readonly="False"
-					type="Infragistics.Win.AlphaBlendMode, Infragistics.Win, Version=16.1.20161.1000, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb">
-						Optimized
-					</dynamicattribute>
-					<dynamicattribute
-					description="No description available."
 					name="Anchor"
 					readonly="False"
 					type="System.Windows.Forms.AnchorStyles, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089">
 						Top, Left
-					</dynamicattribute>
-					<dynamicattribute
-					description="No description available."
-					name="Appearances"
-					type="Infragistics.Win.AppearancesCollection, Infragistics.Win, Version=16.1.20161.1000, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb">
-						AAEAAAD/////AQAAAAAAAAAMAgAAAFtJbmZyYWdpc3RpY3MuV2luLCBWZXJzaW9uPTE2LjEuMjAx
-NjEuMTAwMCwgQ3VsdHVyZT1uZXV0cmFsLCBQdWJsaWNLZXlUb2tlbj03ZGQ1YzMxNjNmMmNkMGNi
-BQEAAAAmSW5mcmFnaXN0aWNzLldpbi5BcHBlYXJhbmNlc0NvbGxlY3Rpb24BAAAABUNvdW50AAgC
-AAAAAAAAAAs=
 					</dynamicattribute>
 					<dynamicattribute
 					description="No description available."
@@ -4802,32 +4744,6 @@ AAAAAAAAAAs=
 					description="No description available."
 					name="BaseCursor"
 					type="System.Windows.Forms.Cursor, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-					</dynamicattribute>
-					<dynamicattribute
-					description="No description available."
-					name="BorderStyleInner"
-					readonly="False"
-					type="Infragistics.Win.UIElementBorderStyle, Infragistics.Win, Version=16.1.20161.1000, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb">
-						Default
-					</dynamicattribute>
-					<dynamicattribute
-					description="No description available."
-					name="BorderStyleInnerResolved"
-					type="Infragistics.Win.UIElementBorderStyle, Infragistics.Win, Version=16.1.20161.1000, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb">
-						None
-					</dynamicattribute>
-					<dynamicattribute
-					description="No description available."
-					name="BorderStyleOuter"
-					readonly="False"
-					type="Infragistics.Win.UIElementBorderStyle, Infragistics.Win, Version=16.1.20161.1000, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb">
-						Default
-					</dynamicattribute>
-					<dynamicattribute
-					description="No description available."
-					name="BorderStyleOuterResolved"
-					type="Infragistics.Win.UIElementBorderStyle, Infragistics.Win, Version=16.1.20161.1000, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb">
-						None
 					</dynamicattribute>
 					<dynamicattribute
 					description="No description available."
@@ -4936,13 +4852,6 @@ AAAAAAAAAAs=
 					readonly="False"
 					type="System.Boolean">
 						True
-					</dynamicattribute>
-					<dynamicattribute
-					description="No description available."
-					name="FailedAccessMaskState"
-					readonly="False"
-					type="AmicusAttorney.Providers.Interfaces.AmicusInsufficientPrivilegeState, AmicusAttorney.Providers, Version=20.0.0.0, Culture=neutral, PublicKeyToken=94e86ec8ac26252b">
-						Invisible
 					</dynamicattribute>
 					<dynamicattribute
 					description="No description available."
@@ -5262,20 +5171,6 @@ aXRlbXMFX3NpemUIX3ZlcnNpb24FAAAICAkCAAAAAAAAAAAAAAAQAgAAAAAAAAAL
 					</dynamicattribute>
 					<dynamicattribute
 					description="No description available."
-					name="SupportedAmicusEdition"
-					readonly="False"
-					type="AmicusAttorney.Providers.Interfaces.AmicusEditions, AmicusAttorney.Providers, Version=20.0.0.0, Culture=neutral, PublicKeyToken=94e86ec8ac26252b">
-						All
-					</dynamicattribute>
-					<dynamicattribute
-					description="No description available."
-					name="SupportedAmicusProduct"
-					readonly="False"
-					type="AmicusAttorney.Providers.Interfaces.AmicusProducts, AmicusAttorney.Providers, Version=20.0.0.0, Culture=neutral, PublicKeyToken=94e86ec8ac26252b">
-						All
-					</dynamicattribute>
-					<dynamicattribute
-					description="No description available."
 					name="SupportThemes"
 					readonly="False"
 					type="System.Boolean">
@@ -5307,13 +5202,6 @@ aXRlbXMFX3NpemUIX3ZlcnNpb24FAAAICAkCAAAAAAAAAAAAAAAQAgAAAAAAAAAL
 					name="Text"
 					readonly="False"
 					type="System.String">
-					</dynamicattribute>
-					<dynamicattribute
-					description="No description available."
-					name="TextRenderingMode"
-					readonly="False"
-					type="Infragistics.Win.TextRenderingMode, Infragistics.Win, Version=16.1.20161.1000, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb">
-						Default
 					</dynamicattribute>
 					<dynamicattribute
 					description="No description available."
@@ -5364,23 +5252,9 @@ aXRlbXMFX3NpemUIX3ZlcnNpb24FAAAICAkCAAAAAAAAAAAAAAAQAgAAAAAAAAAL
 					</dynamicattribute>
 					<dynamicattribute
 					description="No description available."
-					name="UseFlatMode"
-					readonly="False"
-					type="Infragistics.Win.DefaultableBoolean, Infragistics.Win, Version=16.1.20161.1000, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb">
-						Default
-					</dynamicattribute>
-					<dynamicattribute
-					description="No description available."
 					name="UseFlatModeResolved"
 					type="System.Boolean">
 						False
-					</dynamicattribute>
-					<dynamicattribute
-					description="No description available."
-					name="UseHotTracking"
-					readonly="False"
-					type="Infragistics.Win.DefaultableBoolean, Infragistics.Win, Version=16.1.20161.1000, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb">
-						Default
 					</dynamicattribute>
 					<dynamicattribute
 					description="No description available."
@@ -5388,13 +5262,6 @@ aXRlbXMFX3NpemUIX3ZlcnNpb24FAAAICAkCAAAAAAAAAAAAAAAQAgAAAAAAAAAL
 					readonly="False"
 					type="System.Boolean">
 						True
-					</dynamicattribute>
-					<dynamicattribute
-					description="No description available."
-					name="UseOsThemes"
-					readonly="False"
-					type="Infragistics.Win.DefaultableBoolean, Infragistics.Win, Version=16.1.20161.1000, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb">
-						Default
 					</dynamicattribute>
 					<dynamicattribute
 					description="No description available."
@@ -6158,26 +6025,10 @@ AUUUUAFFFFAH/9k=
 					</dynamicattribute>
 					<dynamicattribute
 					description="No description available."
-					name="AlphaBlendMode"
-					readonly="False"
-					type="Infragistics.Win.AlphaBlendMode, Infragistics.Win, Version=16.1.20161.1000, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb">
-						Optimized
-					</dynamicattribute>
-					<dynamicattribute
-					description="No description available."
 					name="Anchor"
 					readonly="False"
 					type="System.Windows.Forms.AnchorStyles, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089">
 						Top, Left
-					</dynamicattribute>
-					<dynamicattribute
-					description="No description available."
-					name="Appearances"
-					type="Infragistics.Win.AppearancesCollection, Infragistics.Win, Version=16.1.20161.1000, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb">
-						AAEAAAD/////AQAAAAAAAAAMAgAAAFtJbmZyYWdpc3RpY3MuV2luLCBWZXJzaW9uPTE2LjEuMjAx
-NjEuMTAwMCwgQ3VsdHVyZT1uZXV0cmFsLCBQdWJsaWNLZXlUb2tlbj03ZGQ1YzMxNjNmMmNkMGNi
-BQEAAAAmSW5mcmFnaXN0aWNzLldpbi5BcHBlYXJhbmNlc0NvbGxlY3Rpb24BAAAABUNvdW50AAgC
-AAAAAAAAAAs=
 					</dynamicattribute>
 					<dynamicattribute
 					description="No description available."
@@ -6231,32 +6082,6 @@ AAAAAAAAAAs=
 					description="No description available."
 					name="BaseCursor"
 					type="System.Windows.Forms.Cursor, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-					</dynamicattribute>
-					<dynamicattribute
-					description="No description available."
-					name="BorderStyleInner"
-					readonly="False"
-					type="Infragistics.Win.UIElementBorderStyle, Infragistics.Win, Version=16.1.20161.1000, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb">
-						Default
-					</dynamicattribute>
-					<dynamicattribute
-					description="No description available."
-					name="BorderStyleInnerResolved"
-					type="Infragistics.Win.UIElementBorderStyle, Infragistics.Win, Version=16.1.20161.1000, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb">
-						None
-					</dynamicattribute>
-					<dynamicattribute
-					description="No description available."
-					name="BorderStyleOuter"
-					readonly="False"
-					type="Infragistics.Win.UIElementBorderStyle, Infragistics.Win, Version=16.1.20161.1000, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb">
-						Default
-					</dynamicattribute>
-					<dynamicattribute
-					description="No description available."
-					name="BorderStyleOuterResolved"
-					type="Infragistics.Win.UIElementBorderStyle, Infragistics.Win, Version=16.1.20161.1000, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb">
-						None
 					</dynamicattribute>
 					<dynamicattribute
 					description="No description available."
@@ -6365,13 +6190,6 @@ AAAAAAAAAAs=
 					readonly="False"
 					type="System.Boolean">
 						True
-					</dynamicattribute>
-					<dynamicattribute
-					description="No description available."
-					name="FailedAccessMaskState"
-					readonly="False"
-					type="AmicusAttorney.Providers.Interfaces.AmicusInsufficientPrivilegeState, AmicusAttorney.Providers, Version=20.0.0.0, Culture=neutral, PublicKeyToken=94e86ec8ac26252b">
-						Invisible
 					</dynamicattribute>
 					<dynamicattribute
 					description="No description available."
@@ -6691,20 +6509,6 @@ aXRlbXMFX3NpemUIX3ZlcnNpb24FAAAICAkCAAAAAAAAAAAAAAAQAgAAAAAAAAAL
 					</dynamicattribute>
 					<dynamicattribute
 					description="No description available."
-					name="SupportedAmicusEdition"
-					readonly="False"
-					type="AmicusAttorney.Providers.Interfaces.AmicusEditions, AmicusAttorney.Providers, Version=20.0.0.0, Culture=neutral, PublicKeyToken=94e86ec8ac26252b">
-						All
-					</dynamicattribute>
-					<dynamicattribute
-					description="No description available."
-					name="SupportedAmicusProduct"
-					readonly="False"
-					type="AmicusAttorney.Providers.Interfaces.AmicusProducts, AmicusAttorney.Providers, Version=20.0.0.0, Culture=neutral, PublicKeyToken=94e86ec8ac26252b">
-						All
-					</dynamicattribute>
-					<dynamicattribute
-					description="No description available."
 					name="SupportThemes"
 					readonly="False"
 					type="System.Boolean">
@@ -6736,13 +6540,6 @@ aXRlbXMFX3NpemUIX3ZlcnNpb24FAAAICAkCAAAAAAAAAAAAAAAQAgAAAAAAAAAL
 					name="Text"
 					readonly="False"
 					type="System.String">
-					</dynamicattribute>
-					<dynamicattribute
-					description="No description available."
-					name="TextRenderingMode"
-					readonly="False"
-					type="Infragistics.Win.TextRenderingMode, Infragistics.Win, Version=16.1.20161.1000, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb">
-						Default
 					</dynamicattribute>
 					<dynamicattribute
 					description="No description available."
@@ -6793,23 +6590,9 @@ aXRlbXMFX3NpemUIX3ZlcnNpb24FAAAICAkCAAAAAAAAAAAAAAAQAgAAAAAAAAAL
 					</dynamicattribute>
 					<dynamicattribute
 					description="No description available."
-					name="UseFlatMode"
-					readonly="False"
-					type="Infragistics.Win.DefaultableBoolean, Infragistics.Win, Version=16.1.20161.1000, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb">
-						Default
-					</dynamicattribute>
-					<dynamicattribute
-					description="No description available."
 					name="UseFlatModeResolved"
 					type="System.Boolean">
 						False
-					</dynamicattribute>
-					<dynamicattribute
-					description="No description available."
-					name="UseHotTracking"
-					readonly="False"
-					type="Infragistics.Win.DefaultableBoolean, Infragistics.Win, Version=16.1.20161.1000, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb">
-						Default
 					</dynamicattribute>
 					<dynamicattribute
 					description="No description available."
@@ -6817,13 +6600,6 @@ aXRlbXMFX3NpemUIX3ZlcnNpb24FAAAICAkCAAAAAAAAAAAAAAAQAgAAAAAAAAAL
 					readonly="False"
 					type="System.Boolean">
 						True
-					</dynamicattribute>
-					<dynamicattribute
-					description="No description available."
-					name="UseOsThemes"
-					readonly="False"
-					type="Infragistics.Win.DefaultableBoolean, Infragistics.Win, Version=16.1.20161.1000, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb">
-						Default
 					</dynamicattribute>
 					<dynamicattribute
 					description="No description available."
@@ -7341,26 +7117,10 @@ aXRlbXMFX3NpemUIX3ZlcnNpb24FAAAICAkCAAAAAAAAAAAAAAAQAgAAAAAAAAAL
 					</dynamicattribute>
 					<dynamicattribute
 					description="No description available."
-					name="AlphaBlendMode"
-					readonly="False"
-					type="Infragistics.Win.AlphaBlendMode, Infragistics.Win, Version=16.1.20161.1000, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb">
-						Optimized
-					</dynamicattribute>
-					<dynamicattribute
-					description="No description available."
 					name="Anchor"
 					readonly="False"
 					type="System.Windows.Forms.AnchorStyles, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089">
 						Top, Left
-					</dynamicattribute>
-					<dynamicattribute
-					description="No description available."
-					name="Appearances"
-					type="Infragistics.Win.AppearancesCollection, Infragistics.Win, Version=16.1.20161.1000, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb">
-						AAEAAAD/////AQAAAAAAAAAMAgAAAFtJbmZyYWdpc3RpY3MuV2luLCBWZXJzaW9uPTE2LjEuMjAx
-NjEuMTAwMCwgQ3VsdHVyZT1uZXV0cmFsLCBQdWJsaWNLZXlUb2tlbj03ZGQ1YzMxNjNmMmNkMGNi
-BQEAAAAmSW5mcmFnaXN0aWNzLldpbi5BcHBlYXJhbmNlc0NvbGxlY3Rpb24BAAAABUNvdW50AAgC
-AAAAAAAAAAs=
 					</dynamicattribute>
 					<dynamicattribute
 					description="No description available."
@@ -7414,32 +7174,6 @@ AAAAAAAAAAs=
 					description="No description available."
 					name="BaseCursor"
 					type="System.Windows.Forms.Cursor, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-					</dynamicattribute>
-					<dynamicattribute
-					description="No description available."
-					name="BorderStyleInner"
-					readonly="False"
-					type="Infragistics.Win.UIElementBorderStyle, Infragistics.Win, Version=16.1.20161.1000, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb">
-						Default
-					</dynamicattribute>
-					<dynamicattribute
-					description="No description available."
-					name="BorderStyleInnerResolved"
-					type="Infragistics.Win.UIElementBorderStyle, Infragistics.Win, Version=16.1.20161.1000, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb">
-						None
-					</dynamicattribute>
-					<dynamicattribute
-					description="No description available."
-					name="BorderStyleOuter"
-					readonly="False"
-					type="Infragistics.Win.UIElementBorderStyle, Infragistics.Win, Version=16.1.20161.1000, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb">
-						Default
-					</dynamicattribute>
-					<dynamicattribute
-					description="No description available."
-					name="BorderStyleOuterResolved"
-					type="Infragistics.Win.UIElementBorderStyle, Infragistics.Win, Version=16.1.20161.1000, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb">
-						None
 					</dynamicattribute>
 					<dynamicattribute
 					description="No description available."
@@ -7548,13 +7282,6 @@ AAAAAAAAAAs=
 					readonly="False"
 					type="System.Boolean">
 						True
-					</dynamicattribute>
-					<dynamicattribute
-					description="No description available."
-					name="FailedAccessMaskState"
-					readonly="False"
-					type="AmicusAttorney.Providers.Interfaces.AmicusInsufficientPrivilegeState, AmicusAttorney.Providers, Version=20.0.0.0, Culture=neutral, PublicKeyToken=94e86ec8ac26252b">
-						Invisible
 					</dynamicattribute>
 					<dynamicattribute
 					description="No description available."
@@ -7874,20 +7601,6 @@ aXRlbXMFX3NpemUIX3ZlcnNpb24FAAAICAkCAAAAAAAAAAAAAAAQAgAAAAAAAAAL
 					</dynamicattribute>
 					<dynamicattribute
 					description="No description available."
-					name="SupportedAmicusEdition"
-					readonly="False"
-					type="AmicusAttorney.Providers.Interfaces.AmicusEditions, AmicusAttorney.Providers, Version=20.0.0.0, Culture=neutral, PublicKeyToken=94e86ec8ac26252b">
-						All
-					</dynamicattribute>
-					<dynamicattribute
-					description="No description available."
-					name="SupportedAmicusProduct"
-					readonly="False"
-					type="AmicusAttorney.Providers.Interfaces.AmicusProducts, AmicusAttorney.Providers, Version=20.0.0.0, Culture=neutral, PublicKeyToken=94e86ec8ac26252b">
-						All
-					</dynamicattribute>
-					<dynamicattribute
-					description="No description available."
 					name="SupportThemes"
 					readonly="False"
 					type="System.Boolean">
@@ -7919,13 +7632,6 @@ aXRlbXMFX3NpemUIX3ZlcnNpb24FAAAICAkCAAAAAAAAAAAAAAAQAgAAAAAAAAAL
 					name="Text"
 					readonly="False"
 					type="System.String">
-					</dynamicattribute>
-					<dynamicattribute
-					description="No description available."
-					name="TextRenderingMode"
-					readonly="False"
-					type="Infragistics.Win.TextRenderingMode, Infragistics.Win, Version=16.1.20161.1000, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb">
-						Default
 					</dynamicattribute>
 					<dynamicattribute
 					description="No description available."
@@ -7976,23 +7682,9 @@ aXRlbXMFX3NpemUIX3ZlcnNpb24FAAAICAkCAAAAAAAAAAAAAAAQAgAAAAAAAAAL
 					</dynamicattribute>
 					<dynamicattribute
 					description="No description available."
-					name="UseFlatMode"
-					readonly="False"
-					type="Infragistics.Win.DefaultableBoolean, Infragistics.Win, Version=16.1.20161.1000, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb">
-						Default
-					</dynamicattribute>
-					<dynamicattribute
-					description="No description available."
 					name="UseFlatModeResolved"
 					type="System.Boolean">
 						False
-					</dynamicattribute>
-					<dynamicattribute
-					description="No description available."
-					name="UseHotTracking"
-					readonly="False"
-					type="Infragistics.Win.DefaultableBoolean, Infragistics.Win, Version=16.1.20161.1000, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb">
-						Default
 					</dynamicattribute>
 					<dynamicattribute
 					description="No description available."
@@ -8000,13 +7692,6 @@ aXRlbXMFX3NpemUIX3ZlcnNpb24FAAAICAkCAAAAAAAAAAAAAAAQAgAAAAAAAAAL
 					readonly="False"
 					type="System.Boolean">
 						True
-					</dynamicattribute>
-					<dynamicattribute
-					description="No description available."
-					name="UseOsThemes"
-					readonly="False"
-					type="Infragistics.Win.DefaultableBoolean, Infragistics.Win, Version=16.1.20161.1000, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb">
-						Default
 					</dynamicattribute>
 					<dynamicattribute
 					description="No description available."
@@ -8524,26 +8209,10 @@ aXRlbXMFX3NpemUIX3ZlcnNpb24FAAAICAkCAAAAAAAAAAAAAAAQAgAAAAAAAAAL
 					</dynamicattribute>
 					<dynamicattribute
 					description="No description available."
-					name="AlphaBlendMode"
-					readonly="False"
-					type="Infragistics.Win.AlphaBlendMode, Infragistics.Win, Version=16.1.20161.1000, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb">
-						Optimized
-					</dynamicattribute>
-					<dynamicattribute
-					description="No description available."
 					name="Anchor"
 					readonly="False"
 					type="System.Windows.Forms.AnchorStyles, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089">
 						Top, Left
-					</dynamicattribute>
-					<dynamicattribute
-					description="No description available."
-					name="Appearances"
-					type="Infragistics.Win.AppearancesCollection, Infragistics.Win, Version=16.1.20161.1000, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb">
-						AAEAAAD/////AQAAAAAAAAAMAgAAAFtJbmZyYWdpc3RpY3MuV2luLCBWZXJzaW9uPTE2LjEuMjAx
-NjEuMTAwMCwgQ3VsdHVyZT1uZXV0cmFsLCBQdWJsaWNLZXlUb2tlbj03ZGQ1YzMxNjNmMmNkMGNi
-BQEAAAAmSW5mcmFnaXN0aWNzLldpbi5BcHBlYXJhbmNlc0NvbGxlY3Rpb24BAAAABUNvdW50AAgC
-AAAAAAAAAAs=
 					</dynamicattribute>
 					<dynamicattribute
 					description="No description available."
@@ -8597,32 +8266,6 @@ AAAAAAAAAAs=
 					description="No description available."
 					name="BaseCursor"
 					type="System.Windows.Forms.Cursor, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-					</dynamicattribute>
-					<dynamicattribute
-					description="No description available."
-					name="BorderStyleInner"
-					readonly="False"
-					type="Infragistics.Win.UIElementBorderStyle, Infragistics.Win, Version=16.1.20161.1000, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb">
-						Default
-					</dynamicattribute>
-					<dynamicattribute
-					description="No description available."
-					name="BorderStyleInnerResolved"
-					type="Infragistics.Win.UIElementBorderStyle, Infragistics.Win, Version=16.1.20161.1000, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb">
-						None
-					</dynamicattribute>
-					<dynamicattribute
-					description="No description available."
-					name="BorderStyleOuter"
-					readonly="False"
-					type="Infragistics.Win.UIElementBorderStyle, Infragistics.Win, Version=16.1.20161.1000, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb">
-						Default
-					</dynamicattribute>
-					<dynamicattribute
-					description="No description available."
-					name="BorderStyleOuterResolved"
-					type="Infragistics.Win.UIElementBorderStyle, Infragistics.Win, Version=16.1.20161.1000, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb">
-						None
 					</dynamicattribute>
 					<dynamicattribute
 					description="No description available."
@@ -8731,13 +8374,6 @@ AAAAAAAAAAs=
 					readonly="False"
 					type="System.Boolean">
 						True
-					</dynamicattribute>
-					<dynamicattribute
-					description="No description available."
-					name="FailedAccessMaskState"
-					readonly="False"
-					type="AmicusAttorney.Providers.Interfaces.AmicusInsufficientPrivilegeState, AmicusAttorney.Providers, Version=20.0.0.0, Culture=neutral, PublicKeyToken=94e86ec8ac26252b">
-						Invisible
 					</dynamicattribute>
 					<dynamicattribute
 					description="No description available."
@@ -9057,20 +8693,6 @@ aXRlbXMFX3NpemUIX3ZlcnNpb24FAAAICAkCAAAAAAAAAAAAAAAQAgAAAAAAAAAL
 					</dynamicattribute>
 					<dynamicattribute
 					description="No description available."
-					name="SupportedAmicusEdition"
-					readonly="False"
-					type="AmicusAttorney.Providers.Interfaces.AmicusEditions, AmicusAttorney.Providers, Version=20.0.0.0, Culture=neutral, PublicKeyToken=94e86ec8ac26252b">
-						All
-					</dynamicattribute>
-					<dynamicattribute
-					description="No description available."
-					name="SupportedAmicusProduct"
-					readonly="False"
-					type="AmicusAttorney.Providers.Interfaces.AmicusProducts, AmicusAttorney.Providers, Version=20.0.0.0, Culture=neutral, PublicKeyToken=94e86ec8ac26252b">
-						All
-					</dynamicattribute>
-					<dynamicattribute
-					description="No description available."
 					name="SupportThemes"
 					readonly="False"
 					type="System.Boolean">
@@ -9102,13 +8724,6 @@ aXRlbXMFX3NpemUIX3ZlcnNpb24FAAAICAkCAAAAAAAAAAAAAAAQAgAAAAAAAAAL
 					name="Text"
 					readonly="False"
 					type="System.String">
-					</dynamicattribute>
-					<dynamicattribute
-					description="No description available."
-					name="TextRenderingMode"
-					readonly="False"
-					type="Infragistics.Win.TextRenderingMode, Infragistics.Win, Version=16.1.20161.1000, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb">
-						Default
 					</dynamicattribute>
 					<dynamicattribute
 					description="No description available."
@@ -9159,23 +8774,9 @@ aXRlbXMFX3NpemUIX3ZlcnNpb24FAAAICAkCAAAAAAAAAAAAAAAQAgAAAAAAAAAL
 					</dynamicattribute>
 					<dynamicattribute
 					description="No description available."
-					name="UseFlatMode"
-					readonly="False"
-					type="Infragistics.Win.DefaultableBoolean, Infragistics.Win, Version=16.1.20161.1000, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb">
-						Default
-					</dynamicattribute>
-					<dynamicattribute
-					description="No description available."
 					name="UseFlatModeResolved"
 					type="System.Boolean">
 						False
-					</dynamicattribute>
-					<dynamicattribute
-					description="No description available."
-					name="UseHotTracking"
-					readonly="False"
-					type="Infragistics.Win.DefaultableBoolean, Infragistics.Win, Version=16.1.20161.1000, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb">
-						Default
 					</dynamicattribute>
 					<dynamicattribute
 					description="No description available."
@@ -9183,13 +8784,6 @@ aXRlbXMFX3NpemUIX3ZlcnNpb24FAAAICAkCAAAAAAAAAAAAAAAQAgAAAAAAAAAL
 					readonly="False"
 					type="System.Boolean">
 						True
-					</dynamicattribute>
-					<dynamicattribute
-					description="No description available."
-					name="UseOsThemes"
-					readonly="False"
-					type="Infragistics.Win.DefaultableBoolean, Infragistics.Win, Version=16.1.20161.1000, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb">
-						Default
 					</dynamicattribute>
 					<dynamicattribute
 					description="No description available."

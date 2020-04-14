@@ -227,6 +227,9 @@
     <Compile Include="Modules\AddToPeople_Doc_Office_AddIn.cs">
       <id>1668f538-0d45-483e-b0ad-a5a19402f4a0</id>
     </Compile>
+    <Compile Include="Modules\advanceConflictCheck.cs">
+      <id>aedb76e5-9ea4-4335-815d-95b6eea0d024</id>
+    </Compile>
     <Compile Include="Modules\AfterFirstLogin.cs">
       <id>26a96e05-3c64-453a-bf15-82c0244ff190</id>
     </Compile>
@@ -286,6 +289,9 @@
     </Compile>
     <Compile Include="Modules\Attorney_FileDetails\VerifyDocuments.cs">
       <id>d37b351b-e53f-487d-96e7-1d2b37414a01</id>
+    </Compile>
+    <Compile Include="Modules\basicConflictCheckValidation.cs">
+      <id>df7cbd51-ca99-4de3-84b0-4e457cc98b77</id>
     </Compile>
     <Compile Include="Modules\basicValidation.cs">
       <id>71a2a73c-4c26-4618-abba-cbc63d596f5d</id>
@@ -470,6 +476,12 @@
     <Compile Include="Modules\EditTimeEntry.cs">
       <id>b95070d5-2bd9-4de4-8173-325343a6add4</id>
     </Compile>
+    <Compile Include="Modules\embeddedOutlookValidation.cs">
+      <id>0ce1c9e5-cc17-4022-96f2-19673201906e</id>
+    </Compile>
+    <Compile Include="Modules\emptySearchValidation.cs">
+      <id>e261bb9d-f99b-45af-93e7-790fc477f178</id>
+    </Compile>
     <Compile Include="Modules\FileVoidPayment.cs">
       <id>3c5327ca-3e05-481a-8812-3e2a730320e4</id>
     </Compile>
@@ -478,6 +490,9 @@
     </Compile>
     <Compile Include="Modules\Logout.cs">
       <id>0c16bd78-d14a-4c01-b5ce-ff14c41f11d4</id>
+    </Compile>
+    <Compile Include="Modules\multiselectAddMail_embedded_OL.cs">
+      <id>36bfc598-8295-4737-ac5c-546eb84e5e26</id>
     </Compile>
     <Compile Include="Modules\PaymentAPX.cs">
       <id>dcf89414-2b0e-4747-bd7d-34e26cecba28</id>
@@ -515,6 +530,9 @@
       <UserCode>true</UserCode>
       <id>27843a14-2f34-412f-bc03-6ef2ab511f92</id>
     </Compile>
+    <Compile Include="Modules\saveAssociateFile_EmbedOutlook.cs">
+      <id>6b2fb343-01c6-42c3-891c-db1d541f442c</id>
+    </Compile>
     <Compile Include="Modules\SearchFunctionality_Office_WordAddIn.cs">
       <id>761b4ac7-36f6-4b21-943e-ff9e2cf973d6</id>
     </Compile>
@@ -544,6 +562,9 @@
     </Compile>
     <Compile Include="Modules\testViewNavigation.cs">
       <id>d9857e46-dc36-4d57-a32e-6e9af474156d</id>
+    </Compile>
+    <Compile Include="Modules\TE_OnMail_OL_View.cs">
+      <id>650be28a-300f-436a-8e83-67825c70c009</id>
     </Compile>
     <Compile Include="Modules\timeAssistant_RightClickOptions.cs">
       <id>f9a5a236-7a6a-4bf1-9d8e-6e21155b9221</id>

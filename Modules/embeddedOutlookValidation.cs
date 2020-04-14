@@ -1,8 +1,8 @@
 ﻿/*
  * Created by Ranorex
  * User: kumar
- * Date: 3/23/2020
- * Time: 3:48 PM
+ * Date: 4/13/2020
+ * Time: 5:51 PM
  * 
  * To change this template use Tools > Options > Coding > Edit standard headers.
  */
@@ -14,7 +14,6 @@ using System.Drawing;
 using System.Threading;
 using WinForms = System.Windows.Forms;
 using SmokeTest.Repositories;
-using SmokeTest.Repositories.Premium;
 using SmokeTest.Modules.Utilities;
 using Ranorex;
 using Ranorex.Core;
@@ -23,36 +22,41 @@ using Ranorex.Core.Testing;
 namespace SmokeTest.Modules
 {
     /// <summary>
-    /// Description of VerifyOutlook_Enabled_AmicusToolbar.
+    /// Description of embeddedOutlookValidation.
     /// </summary>
-    [TestModule("0DF65B44-6467-42B1-915E-F9992BB6DC33", ModuleType.UserCode, 1)]
-    public class VerifyOutlook_Enabled_AmicusToolbar : ITestModule
+    [TestModule("4422519F-F937-4395-B060-7AB538012336", ModuleType.UserCode, 1)]
+    public class embeddedOutlookValidation : ITestModule
     {
         /// <summary>
         /// Constructs a new instance.
         /// </summary>
-        public VerifyOutlook_Enabled_AmicusToolbar()
+        public embeddedOutlookValidation()
         {
             // Do not delete - a parameterless constructor is required!
         }
-
-        string outlookPath="C:\\Program Files (x86)\\Microsoft Office\\root\\Office16\\OUTLOOK.EXE";
-        Common cmn=new Common();
-        FirmSettings frm=FirmSettings.Instance;
-        Preferences pref=Preferences.Instance;
-        Outlook_AddIn outlook=Outlook_AddIn.Instance;
+		
+        SmokeTest.Repositories.Premium.Preferences pref=SmokeTest.Repositories.Premium.Preferences.Instance;
+        Communications comm=Communications.Instance;
         Login login=Login.Instance;
         SmokeTestRepository str = SmokeTestRepository.Instance;
         
-        private void OpenApp()
-        {
-        	Host.Local.RunApplication(outlookPath);
-        	Delay.Seconds(5);
-        	outlook.OutlookSplash.SelfInfo.WaitForNotExists(60000);
-        	
-        }
         
-        
+        private void ValidateOutlookEmbedded()
+ 		{
+ 			
+ 			pref.MainForm.Self.Activate();
+ 			pref.MainForm.OfficeModule.Click();
+			pref.MainForm.View.Click();
+			Delay.Seconds(2);
+			pref.MainForm.Preferences1.Click();
+			Delay.Seconds(2);
+			pref.MainForm.Email.Click();
+			checkAmicusToolbarInstalled();
+			ValidateEmbeddedOutlook();
+			
+		
+ 		}
+		
         private void OpenAmicusApp()
         {
         	Host.Local.RunApplication("C:\\Amicus\\Amicus Attorney Workstation\\AmicusAttorney.XWin.exe");
@@ -65,30 +69,17 @@ namespace SmokeTest.Modules
         	login.LoginForm.UserId.TextValue=datasource.Rows[0].Values[1].ToString();//="admin user";
         	login.LoginForm.Pwd.TextValue=datasource.Rows[0].Values[2].ToString();//"password";
         	login.LoginForm.ServerName.TextValue=datasource.Rows[0].Values[3].ToString();//"J4-Mohanss";
+        	Delay.Seconds(5);
         	login.LoginForm.btnLogin.Click();
-        	if(pref.PromptForm.SelfInfo.Exists(3000))
+        	if(pref.PromptForm.SelfInfo.Exists(5000))
         	{
         		pref.PromptForm.btnNo.Click();
         	}
         	Delay.Seconds(10);
         }
-        
-        
-        private void setOutlookAddIn()
- 		{
- 			
- 			pref.MainForm.Self.Activate();
- 			pref.MainForm.OfficeModule.Click();
-			pref.MainForm.View.Click();
-			Delay.Seconds(2);
-			pref.MainForm.Preferences1.Click();
-			Delay.Seconds(2);
-			pref.MainForm.Email.Click();
-			checkAmicusToolbarInstalled();
-			CheckAmicusTasksInOutlook();
-		
- 		}
 
+        
+        
         private void checkAmicusToolbarInstalled()
 		{
         	pref.EmailPreferencesForm.rdoOutlook.Select();
@@ -125,33 +116,19 @@ namespace SmokeTest.Modules
         	
 		}
         
-        private void CheckAmicusTasksInOutlook()
+        private void ValidateEmbeddedOutlook()
         {
-        	OpenApp();
-        	if(outlook.Outlook.tabAmicusTasksInfo.Exists(3000))
-        	{
-        		Report.Success("Amicus Tasks Tab is opened successfully");
-        		outlook.Outlook.tabAmicusTasks.Click();
-        		if(outlook.Outlook.AmicusAttorneyTasks1.SelfInfo.Exists(3000))
-        		{
-        			if(outlook.Outlook.AmicusAttorneyTasks1.btnAddToFileInfo.Exists(3000))
-        			{Validate.Exists(outlook.Outlook.AmicusAttorneyTasks1.btnAddToFile,"Add to File Button are displayed successfully");}
-        			else
-        			{Validate.Exists(outlook.Outlook.AmicusAttorneyTasks1.btnViewAddToRelatedFileInfo,"View/Add Related to File Button are displayed successfully");}
-        				
-        			Validate.Exists(outlook.Outlook.AmicusAttorneyTasks1.btnAddToPeople,"Add to People Button are displayed successfully");
-        			Validate.Exists(outlook.Outlook.AmicusAttorneyTasks1.btnDetails,"Details Button are displayed successfully");
-        			Validate.Exists(outlook.Outlook.AmicusAttorneyTasks1.btnAbout,"About Button are displayed successfully");
-        			Validate.Exists(outlook.Outlook.AmicusAttorneyTasks1.btnSearchAmicus,"Search Amicus Button are displayed successfully");
-        		}
-        	}
-        	outlook.Outlook.Self.Close();
-        }
+        	comm.MainForm.Self.Activate();
+        	comm.MainForm.btnCommunications1.Click();
+        	comm.MainForm.txtOutlook.Click();
+        	Delay.Seconds(2);
+        	Validate.Exists(comm.MainForm.OutlookMailInfo,"Embedded Outlook is displayed as expected");
         	
-        private void verifyOutlook_Enabled_AmicusToolbar()
-        {
-        	
+        	                
         }
+        
+        
+        
         
         
         /// <summary>
@@ -165,8 +142,7 @@ namespace SmokeTest.Modules
             Mouse.DefaultMoveTime = 300;
             Keyboard.DefaultKeyPressTime = 100;
             Delay.SpeedFactor = 1.0;
-            
-            setOutlookAddIn();
+            ValidateOutlookEmbedded();
         }
     }
 }

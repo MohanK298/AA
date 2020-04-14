@@ -55,7 +55,7 @@ namespace SmokeTest.Modules
         {
         	string mailsub="";
         	OpenApp();
-        	mailsub=cmn.MultiSelectEmail(3,true);
+        	mailsub=cmn.MultiSelectEmail(outlook.Outlook.mailPanel,3,true);
         	outlook.Outlook.tabAmicusTasks.Click();
     		Report.Success("Amicus Tasks Tab is opened successfully");
     		Delay.Seconds(2);

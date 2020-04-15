@@ -530,6 +530,9 @@
       <UserCode>true</UserCode>
       <id>27843a14-2f34-412f-bc03-6ef2ab511f92</id>
     </Compile>
+    <Compile Include="Modules\ResetOutlookAddIn.cs">
+      <id>2e4a2d6f-640c-4c1f-b485-22c7842e3423</id>
+    </Compile>
     <Compile Include="Modules\saveAssociateFile_EmbedOutlook.cs">
       <id>6b2fb343-01c6-42c3-891c-db1d541f442c</id>
     </Compile>

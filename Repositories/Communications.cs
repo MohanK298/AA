@@ -255,6 +255,7 @@ namespace SmokeTest.Repositories
         {
             CommunicationsFolders.EmailOnTopOfTheListFolder _emailontopofthelist;
             CommunicationsFolders.Toolbar1Folder _toolbar1;
+            CommunicationsFolders.PnlRestrictionsFolder _pnlrestrictions;
             RepoItemInfo _btncommunicationsInfo;
             RepoItemInfo _btnnewmenuitemInfo;
             RepoItemInfo _listfirstfileInfo;
@@ -278,6 +279,7 @@ namespace SmokeTest.Repositories
             {
                 _emailontopofthelist = new CommunicationsFolders.EmailOnTopOfTheListFolder(this);
                 _toolbar1 = new CommunicationsFolders.Toolbar1Folder(this);
+                _pnlrestrictions = new CommunicationsFolders.PnlRestrictionsFolder(this);
                 _btncommunicationsInfo = new RepoItemInfo(this, "btnCommunications", "?//tree[@accessiblerole='Outline']/button[@accessiblename='Communications']", 30000, true, "ae01bbe5-4309-4641-b67e-27fc5439cf85");
                 _btnnewmenuitemInfo = new RepoItemInfo(this, "btnNewMenuItem", "?/?/form[@controlname='CommIndexForm']/container[@controlname='menubar_Fill_Panel']//toolbar[@accessiblename='Toolbar']/menuitem[@accessiblename='']", 30000, null, "897ca1c5-902b-4e0a-8506-7e8920a5dd78");
                 _listfirstfileInfo = new RepoItemInfo(this, "listFirstFile", "?/?/form[@controlname='CommIndexForm']/container[@controlname='splitContainer']//row[@accessiblename='Band 0 row 1']/cell[@accessiblename='File']", 30000, null, "8c766cd0-ba5e-4950-8eb2-7e60ad516829");
@@ -670,6 +672,15 @@ namespace SmokeTest.Repositories
             public virtual CommunicationsFolders.Toolbar1Folder Toolbar1
             {
                 get { return _toolbar1; }
+            }
+
+            /// <summary>
+            /// The PnlRestrictions folder.
+            /// </summary>
+            [RepositoryFolder("7b982876-fd80-46c6-96fa-e84f856696db")]
+            public virtual CommunicationsFolders.PnlRestrictionsFolder PnlRestrictions
+            {
+                get { return _pnlrestrictions; }
             }
         }
 
@@ -1087,6 +1098,124 @@ namespace SmokeTest.Repositories
                 get
                 {
                     return _btnviewInfo;
+                }
+            }
+        }
+
+        /// <summary>
+        /// The PnlRestrictionsFolder folder.
+        /// </summary>
+        [RepositoryFolder("7b982876-fd80-46c6-96fa-e84f856696db")]
+        public partial class PnlRestrictionsFolder : RepoGenBaseFolder
+        {
+            RepoItemInfo _checkboxcallsInfo;
+            RepoItemInfo _checkboxemailsInfo;
+            RepoItemInfo _checkboxmessagesInfo;
+
+            /// <summary>
+            /// Creates a new PnlRestrictions  folder.
+            /// </summary>
+            public PnlRestrictionsFolder(RepoGenBaseFolder parentFolder) :
+                    base("PnlRestrictions", "container[@controlname='pLeft']//container[@controltypename='UltraExplorerBarContainerControl' and @instance='0']/?/?/container[@controlname='CommIndexControlPanel']/?/?/container[@controlname='pnlRestrictions']", parentFolder, 30000, null, false, "7b982876-fd80-46c6-96fa-e84f856696db", "")
+            {
+                _checkboxcallsInfo = new RepoItemInfo(this, "CheckBoxCalls", "element[@controlname='uchkCalls']/?/?/checkbox[@accessiblename='       Calls']", 30000, null, "85be76fe-f1ed-4c4f-acdd-b9141d43442b");
+                _checkboxemailsInfo = new RepoItemInfo(this, "CheckBoxEMails", "element[@controlname='uchkEmails']/?/?/checkbox[@accessiblename='       E-mails']", 30000, null, "34265be4-35dd-4827-98d4-29844be43cda");
+                _checkboxmessagesInfo = new RepoItemInfo(this, "CheckBoxMessages", "element[@controlname='uchkMessages']/?/?/checkbox[@accessiblename='       Messages']", 30000, null, "ed5aefd7-0dd2-4aec-b30c-604a757a738d");
+            }
+
+            /// <summary>
+            /// The Self item.
+            /// </summary>
+            [RepositoryItem("7b982876-fd80-46c6-96fa-e84f856696db")]
+            public virtual Ranorex.Container Self
+            {
+                get
+                {
+                    return _selfInfo.CreateAdapter<Ranorex.Container>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Self item info.
+            /// </summary>
+            [RepositoryItemInfo("7b982876-fd80-46c6-96fa-e84f856696db")]
+            public virtual RepoItemInfo SelfInfo
+            {
+                get
+                {
+                    return _selfInfo;
+                }
+            }
+
+            /// <summary>
+            /// The CheckBoxCalls item.
+            /// </summary>
+            [RepositoryItem("85be76fe-f1ed-4c4f-acdd-b9141d43442b")]
+            public virtual Ranorex.CheckBox CheckBoxCalls
+            {
+                get
+                {
+                    return _checkboxcallsInfo.CreateAdapter<Ranorex.CheckBox>(true);
+                }
+            }
+
+            /// <summary>
+            /// The CheckBoxCalls item info.
+            /// </summary>
+            [RepositoryItemInfo("85be76fe-f1ed-4c4f-acdd-b9141d43442b")]
+            public virtual RepoItemInfo CheckBoxCallsInfo
+            {
+                get
+                {
+                    return _checkboxcallsInfo;
+                }
+            }
+
+            /// <summary>
+            /// The CheckBoxEMails item.
+            /// </summary>
+            [RepositoryItem("34265be4-35dd-4827-98d4-29844be43cda")]
+            public virtual Ranorex.CheckBox CheckBoxEMails
+            {
+                get
+                {
+                    return _checkboxemailsInfo.CreateAdapter<Ranorex.CheckBox>(true);
+                }
+            }
+
+            /// <summary>
+            /// The CheckBoxEMails item info.
+            /// </summary>
+            [RepositoryItemInfo("34265be4-35dd-4827-98d4-29844be43cda")]
+            public virtual RepoItemInfo CheckBoxEMailsInfo
+            {
+                get
+                {
+                    return _checkboxemailsInfo;
+                }
+            }
+
+            /// <summary>
+            /// The CheckBoxMessages item.
+            /// </summary>
+            [RepositoryItem("ed5aefd7-0dd2-4aec-b30c-604a757a738d")]
+            public virtual Ranorex.CheckBox CheckBoxMessages
+            {
+                get
+                {
+                    return _checkboxmessagesInfo.CreateAdapter<Ranorex.CheckBox>(true);
+                }
+            }
+
+            /// <summary>
+            /// The CheckBoxMessages item info.
+            /// </summary>
+            [RepositoryItemInfo("ed5aefd7-0dd2-4aec-b30c-604a757a738d")]
+            public virtual RepoItemInfo CheckBoxMessagesInfo
+            {
+                get
+                {
+                    return _checkboxmessagesInfo;
                 }
             }
         }

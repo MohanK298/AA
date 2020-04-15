@@ -5,12 +5,6 @@
   <Array name="bookmarks" />
   <Array name="files">
     <Element value="SmokeTest.rxtst" />
-    <Element value="Modules\basicConflictCheckValidation.cs" />
-    <Element value="Repositories\Files.cs" />
-    <Element value="Modules\Utilities\Common.cs" />
-    <Element value="Repositories\Files.rxrep" />
-    <Element value="Repositories\Communications.rxrep" />
-    <Element value="Modules\embeddedOutlookValidation.cs" />
   </Array>
   <Properties name="projectSavedData">
     <Properties name="customTool">

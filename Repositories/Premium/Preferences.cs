@@ -2141,6 +2141,7 @@ namespace SmokeTest.Repositories.Premium
             RepoItemInfo _rdooutlookInfo;
             RepoItemInfo _btnstep1Info;
             RepoItemInfo _txtemailInfo;
+            RepoItemInfo _rdononeInfo;
 
             /// <summary>
             /// Creates a new EmailPreferencesForm  folder.
@@ -2154,6 +2155,7 @@ namespace SmokeTest.Repositories.Premium
                 _rdooutlookInfo = new RepoItemInfo(this, "rdoOutlook", "container[@controlname='pnlControls']/?/?/radiobutton[@controlname='ardoOutlook']", 30000, null, "5d756fa7-50ee-453f-8bef-f712188028ee");
                 _btnstep1Info = new RepoItemInfo(this, "btnStep1", "container[@controlname='pnlControls']/?/?/container[@controlname='panel2']/?/?/button[@accessiblename='Step 1']", 30000, null, "664623d6-704a-4176-9ba8-24f3abe11e67");
                 _txtemailInfo = new RepoItemInfo(this, "txtEmail", "container[@controlname='pnlControls']/?/?/text[@accessiblename='Outlook / Exchange E-mail']", 30000, null, "edbad7ce-752d-4270-82d1-395e7c09b03a");
+                _rdononeInfo = new RepoItemInfo(this, "rdoNone", "container[@controlname='pnlControls']/?/?/radiobutton[@controlname='ardoNone']", 30000, null, "8895708f-c6af-4cb0-b9cb-03411d203d21");
             }
 
             /// <summary>
@@ -2297,6 +2299,30 @@ namespace SmokeTest.Repositories.Premium
                 get
                 {
                     return _txtemailInfo;
+                }
+            }
+
+            /// <summary>
+            /// The rdoNone item.
+            /// </summary>
+            [RepositoryItem("8895708f-c6af-4cb0-b9cb-03411d203d21")]
+            public virtual Ranorex.RadioButton rdoNone
+            {
+                get
+                {
+                    return _rdononeInfo.CreateAdapter<Ranorex.RadioButton>(true);
+                }
+            }
+
+            /// <summary>
+            /// The rdoNone item info.
+            /// </summary>
+            [RepositoryItemInfo("8895708f-c6af-4cb0-b9cb-03411d203d21")]
+            public virtual RepoItemInfo rdoNoneInfo
+            {
+                get
+                {
+                    return _rdononeInfo;
                 }
             }
 

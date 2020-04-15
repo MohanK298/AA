@@ -783,6 +783,16 @@ D8zerL8gSEaw7+rFqJ//CkX5CWkHqyZHVzU6AAAAAElFTkSuQmCC
 			searchtimeout="30000ms">
 				/form[@controlname='EmailPreferencesForm']/container[@controlname='pnlControls']/?/?/text[@accessiblename='Outlook / Exchange E-mail']
 			</item>
+			<item
+			addcaps="radiobutton,control,nativewindow"
+			capname="radiobutton"
+			id="8895708f-c6af-4cb0-b9cb-03411d203d21"
+			name="rdoNone"
+			refimgid="65c4010a-9952-42e7-990a-d4e24f307247"
+			refpath="/form[@controlname='EmailPreferencesForm']/container[@controlname='pnlControls']/container[@controlname='pnlBody']/radiobutton[@controlname='ardoNone']"
+			searchtimeout="30000ms">
+				/form[@controlname='EmailPreferencesForm']/container[@controlname='pnlControls']/?/?/radiobutton[@controlname='ardoNone']
+			</item>
 			<basepath>
 				/form[@controlname='EmailPreferencesForm']
 			</basepath>

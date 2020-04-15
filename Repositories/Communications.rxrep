@@ -290,6 +290,49 @@ rxversion="9.0">
 			searchtimeout="30000ms">
 				/form[@controlname='MainForm']/?/?/form[@controlname='CommIndexForm']/container[@controlname='splitContainer']//element[@controlid='4704']/container[$week]/element[$mailindex]
 			</item>
+			<folder
+			addcaps="container,control,nativewindow"
+			capname="container"
+			id="7b982876-fd80-46c6-96fa-e84f856696db"
+			isrooted="True"
+			name="PnlRestrictions"
+			refpath="/form[@controlname='MainForm']/container[@controlname='pLeft']/container[@caption='' and @controltypename='Panel' and @instance='1']/element[@controlname='_ultraExplorerBar']/container[@caption='' and @controltypename='UltraExplorerBarContainerControl' and @instance='0']/container[@controlname='controlPanelWrapper']/container[@controlname='CommIndexControlPanel']/container[@controlname='pnlBase']/container[@controlname='pnlRestrictions']"
+			searchtimeout="30000ms"
+			usecache="False">
+				<item
+				addcaps="checkbox,accessible"
+				capname="checkbox"
+				id="85be76fe-f1ed-4c4f-acdd-b9141d43442b"
+				name="CheckBoxCalls"
+				refimgid="b832f505-d923-46a6-a2b5-6946473c53cb"
+				refpath="/form[@controlname='MainForm']/container[@controlname='pLeft']/container[@caption='' and @controltypename='Panel' and @instance='1']/element[@controlname='_ultraExplorerBar']/container[@caption='' and @controltypename='UltraExplorerBarContainerControl' and @instance='0']/container[@controlname='controlPanelWrapper']/container[@controlname='CommIndexControlPanel']/container[@controlname='pnlBase']/container[@controlname='pnlRestrictions']/element[@controlname='uchkCalls']/checkbox[@accessiblename='       Calls']/checkbox[@accessiblename='       Calls']"
+				searchtimeout="30000ms">
+					/form[@controlname='MainForm']/container[@controlname='pLeft']//container[@controltypename='UltraExplorerBarContainerControl' and @instance='0']/?/?/container[@controlname='CommIndexControlPanel']/?/?/container[@controlname='pnlRestrictions']/element[@controlname='uchkCalls']/?/?/checkbox[@accessiblename='       Calls']
+				</item>
+				<item
+				addcaps="checkbox,accessible"
+				capname="checkbox"
+				id="34265be4-35dd-4827-98d4-29844be43cda"
+				name="CheckBoxEMails"
+				refimgid="d41f7d48-83a9-4cef-8ed0-ed3cad207157"
+				refpath="/form[@controlname='MainForm']/container[@controlname='pLeft']/container[@caption='' and @controltypename='Panel' and @instance='1']/element[@controlname='_ultraExplorerBar']/container[@caption='' and @controltypename='UltraExplorerBarContainerControl' and @instance='0']/container[@controlname='controlPanelWrapper']/container[@controlname='CommIndexControlPanel']/container[@controlname='pnlBase']/container[@controlname='pnlRestrictions']/element[@controlname='uchkEmails']/checkbox[@accessiblename='       E-mails']/checkbox[@accessiblename='       E-mails']"
+				searchtimeout="30000ms">
+					/form[@controlname='MainForm']/container[@controlname='pLeft']//container[@controltypename='UltraExplorerBarContainerControl' and @instance='0']/?/?/container[@controlname='CommIndexControlPanel']/?/?/container[@controlname='pnlRestrictions']/element[@controlname='uchkEmails']/?/?/checkbox[@accessiblename='       E-mails']
+				</item>
+				<item
+				addcaps="checkbox,accessible"
+				capname="checkbox"
+				id="ed5aefd7-0dd2-4aec-b30c-604a757a738d"
+				name="CheckBoxMessages"
+				refimgid="96d80f99-0b22-4eea-a1ef-619e3362469b"
+				refpath="/form[@controlname='MainForm']/container[@controlname='pLeft']/container[@caption='' and @controltypename='Panel' and @instance='1']/element[@controlname='_ultraExplorerBar']/container[@caption='' and @controltypename='UltraExplorerBarContainerControl' and @instance='0']/container[@controlname='controlPanelWrapper']/container[@controlname='CommIndexControlPanel']/container[@controlname='pnlBase']/container[@controlname='pnlRestrictions']/element[@controlname='uchkMessages']/checkbox[@accessiblename='       Messages']/checkbox[@accessiblename='       Messages']"
+				searchtimeout="30000ms">
+					/form[@controlname='MainForm']/container[@controlname='pLeft']//container[@controltypename='UltraExplorerBarContainerControl' and @instance='0']/?/?/container[@controlname='CommIndexControlPanel']/?/?/container[@controlname='pnlRestrictions']/element[@controlname='uchkMessages']/?/?/checkbox[@accessiblename='       Messages']
+				</item>
+				<basepath>
+					/form[@controlname='MainForm']/container[@controlname='pLeft']//container[@controltypename='UltraExplorerBarContainerControl' and @instance='0']/?/?/container[@controlname='CommIndexControlPanel']/?/?/container[@controlname='pnlRestrictions']
+				</basepath>
+			</folder>
 			<basepath>
 				/form[@controlname='MainForm']
 			</basepath>

@@ -968,6 +968,12 @@ Attorney side]]>
 			type="UserCode">
 			</testmodule>
 			<testmodule
+			id="504439a7-cd05-44b1-9449-e391dd0f2c41"
+			name="ResetOutlookAddIn"
+			ref="68378481-01b6-4ecb-bf2f-7203c44cc884"
+			type="UserCode">
+			</testmodule>
+			<testmodule
 			id="5070dacd-fce7-46a7-89f6-1d3a36a1f800"
 			name="PaymentAPX"
 			ref="be0c556a-a60e-4803-a426-dbde17c7e9b3"
@@ -3056,6 +3062,10 @@ bill]]>
 					<![CDATA[Add and Verify General Retainer to a File]]>
 				</description>
 			</smartfoldernode>
+			<smartfoldernode
+			id="f27ed267-40b7-4627-a3d5-80d5dea236f0"
+			name="TE_OnMail_OL_Embed_View">
+			</smartfoldernode>
 			<testmodule
 			enabled="False"
 			id="f2afbf18-e114-4413-8a5b-c3af171e5b4b"
@@ -4624,6 +4634,10 @@ bill]]>
 						id="34cd3154-baf5-43be-b487-7d53cc97d9e2"
 						name="VerifyAddtoFile_MultiSelectMails">
 						</testmodule>
+						<testmodule
+						id="504439a7-cd05-44b1-9449-e391dd0f2c41"
+						name="ResetOutlookAddIn">
+						</testmodule>
 						<teardown
 						id="9e8b1fbc-176e-45cc-9704-dcdb67572caf"
 						name="teardown">
@@ -4732,10 +4746,14 @@ bill]]>
 							name="multiselectAddMail_embedded_OL">
 							</testmodule>
 						</smartfoldernode>
-						<testmodule
-						id="c1e90df6-fa62-4d9c-8e02-c16c4874562b"
-						name="TE_OnMail_OL_View">
-						</testmodule>
+						<smartfoldernode
+						id="f27ed267-40b7-4627-a3d5-80d5dea236f0"
+						name="TE_OnMail_OL_Embed_View">
+							<testmodule
+							id="c1e90df6-fa62-4d9c-8e02-c16c4874562b"
+							name="TE_OnMail_OL_View">
+							</testmodule>
+						</smartfoldernode>
 					</testcase>
 					<testcase
 					id="f999b233-305c-4e9e-a5e8-bd5b49a34123"

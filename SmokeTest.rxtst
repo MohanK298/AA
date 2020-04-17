@@ -860,6 +860,12 @@ module]]>
 			type="UserCode">
 			</testmodule>
 			<testmodule
+			id="4ac1df0e-4de6-4388-8cf5-465a5f909118"
+			name="Filter_subject_contact_Email"
+			ref="62ffa607-9783-4b26-bd60-d053d63f69b8"
+			type="UserCode">
+			</testmodule>
+			<testmodule
 			id="4af792f6-7c4c-4e5b-a333-de611aa4eaa1"
 			name="verifySearchByFullTextDocInIndex"
 			ref="7795ca54-95e5-4bb4-9ef3-bc7c0f33d9c3"
@@ -1689,6 +1695,10 @@ event]]>
 			type="UserCode">
 			</testmodule>
 			<smartfoldernode
+			id="895badf3-6aaf-4734-9c20-63c98b993985"
+			name="Filter_Subject_Contact_Email">
+			</smartfoldernode>
+			<smartfoldernode
 			id="8b2c2e55-1965-4c10-ba2b-4417e7a86a84"
 			name="CreatePrecedent">
 			</smartfoldernode>
@@ -2188,6 +2198,12 @@ module]]>
 			id="aeb7dc97-d19f-4b3e-885e-afb028bb27b0"
 			name="Notes_Module">
 			</testcase>
+			<testmodule
+			id="aff5a6cd-6fe1-4b94-b523-419fad378666"
+			name="EmailWithMultipleAttachments"
+			ref="10923a70-a419-4622-a1f7-1bffe70091d8"
+			type="UserCode">
+			</testmodule>
 			<smartfoldernode
 			id="b049a834-9d04-4f9c-964c-51fefe3f15e9"
 			name="ChangePreferencesIncludeChronology">
@@ -2578,6 +2594,10 @@ directly and create a Bill]]>
 			id="cb109940-b0f5-469a-bedb-788c4505f4e6"
 			name="CreateManyContacts">
 			</smartfoldernode>
+			<smartfoldernode
+			id="cb52027a-09e2-4fc6-b116-d3a15bb93ad4"
+			name="TE_OnMail_Comm_View">
+			</smartfoldernode>
 			<testcase
 			id="cb709033-29e8-443c-8559-189007c654b2"
 			name="TimeEntries">
@@ -2761,6 +2781,10 @@ directly and create a Bill]]>
 			ref="39757aba-2474-4146-a459-bda32520c0da"
 			type="UserCode">
 			</testmodule>
+			<smartfoldernode
+			id="d9c75bd5-ecea-44aa-9940-b1440d6ec3e5"
+			name="EmailWithMultipleAttachments">
+			</smartfoldernode>
 			<testmodule
 			id="dbf16a2f-7653-4679-b483-b9d27a04bd13"
 			name="createAndDeleteToDo"
@@ -3071,6 +3095,12 @@ bill]]>
 			id="f2afbf18-e114-4413-8a5b-c3af171e5b4b"
 			name="PreferenceTestNew"
 			ref="b716090a-a578-469c-bc4e-af3fa3b4ad44"
+			type="UserCode">
+			</testmodule>
+			<testmodule
+			id="f2bde6f1-8d65-452c-9c37-ad83310c8927"
+			name="TE_OnMail_Comm_View"
+			ref="a25a5d8f-d2eb-4206-9dca-2b20b8645dab"
 			type="UserCode">
 			</testmodule>
 			<testmodule
@@ -4752,6 +4782,30 @@ bill]]>
 							<testmodule
 							id="c1e90df6-fa62-4d9c-8e02-c16c4874562b"
 							name="TE_OnMail_OL_View">
+							</testmodule>
+						</smartfoldernode>
+						<smartfoldernode
+						id="cb52027a-09e2-4fc6-b116-d3a15bb93ad4"
+						name="TE_OnMail_Comm_View">
+							<testmodule
+							id="f2bde6f1-8d65-452c-9c37-ad83310c8927"
+							name="TE_OnMail_Comm_View">
+							</testmodule>
+						</smartfoldernode>
+						<smartfoldernode
+						id="895badf3-6aaf-4734-9c20-63c98b993985"
+						name="Filter_Subject_Contact_Email">
+							<testmodule
+							id="4ac1df0e-4de6-4388-8cf5-465a5f909118"
+							name="Filter_subject_contact_Email">
+							</testmodule>
+						</smartfoldernode>
+						<smartfoldernode
+						id="d9c75bd5-ecea-44aa-9940-b1440d6ec3e5"
+						name="EmailWithMultipleAttachments">
+							<testmodule
+							id="aff5a6cd-6fe1-4b94-b523-419fad378666"
+							name="EmailWithMultipleAttachments">
 							</testmodule>
 						</smartfoldernode>
 					</testcase>

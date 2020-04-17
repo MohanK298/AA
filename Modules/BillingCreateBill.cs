@@ -39,10 +39,15 @@ namespace SmokeTest.Modules
         	Delay.Seconds(1);
         	bill.AmicusAttorneyXWin.optionBill.Click();
         	Delay.Seconds(2);
-        	bill.PromptForm.btnOk.Click();
         	if(bill.PromptForm.SelfInfo.Exists(3000))
         	{
-        		bill.PromptForm.btnYes.Click();
+        		//bill.PromptForm.btnYes.Click();
+        		bill.PromptForm.btnOk.Click();
+        	}
+        	
+        	if(bill.PromptForm.SelfInfo.Exists(3000))
+        	{
+        		//bill.PromptForm.btnYes.Click();
         	}
         	//bill.BillingDetailForm.btnClose.Click();
         	//bill.PromptForm.btnYes.Click();

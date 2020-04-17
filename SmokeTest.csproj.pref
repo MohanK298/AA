@@ -1,9 +1,11 @@
 ﻿<Properties>
   <Array name="active">
-    <Element value="SmokeTest.rxtst" />
+    <Element value="Modules\Utilities\Common.cs" />
   </Array>
   <Array name="bookmarks" />
   <Array name="files">
+    <Element value="Modules\Utilities\Common.cs" />
+    <Element value="Repositories\Communications.rxrep" />
     <Element value="SmokeTest.rxtst" />
   </Array>
   <Properties name="projectSavedData">

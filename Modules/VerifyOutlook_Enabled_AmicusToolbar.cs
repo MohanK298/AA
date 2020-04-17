@@ -68,7 +68,7 @@ namespace SmokeTest.Modules
         	login.LoginForm.btnLogin.Click();
         	if(pref.PromptForm.SelfInfo.Exists(3000))
         	{
-        		pref.PromptForm.btnNo.Click();
+        		pref.PromptForm.btnYes.Click();
         	}
         	Delay.Seconds(10);
         }

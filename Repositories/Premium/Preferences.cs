@@ -2462,6 +2462,7 @@ namespace SmokeTest.Repositories.Premium
         {
             RepoItemInfo _buttonokInfo;
             RepoItemInfo _btnnoInfo;
+            RepoItemInfo _btnyesInfo;
 
             /// <summary>
             /// Creates a new PromptForm  folder.
@@ -2471,6 +2472,7 @@ namespace SmokeTest.Repositories.Premium
             {
                 _buttonokInfo = new RepoItemInfo(this, "ButtonOK", ".//toolbar[@accessiblename='Toolbar']/button[@accessiblename='OK']", 5000, null, "89367da5-0a25-43d8-9f9a-812cf5a935e7");
                 _btnnoInfo = new RepoItemInfo(this, "btnNo", ".//toolbar[@accessiblename='Toolbar']/button[@accessiblename='No']", 30000, null, "5077ea57-9e2d-48c1-9dc0-6f6da844db51");
+                _btnyesInfo = new RepoItemInfo(this, "btnYes", ".//toolbar[@accessiblename='Toolbar']/button[@accessiblename='Yes']", 30000, null, "8c6fa30e-590d-400b-a983-25b408f450ff");
             }
 
             /// <summary>
@@ -2542,6 +2544,30 @@ namespace SmokeTest.Repositories.Premium
                 get
                 {
                     return _btnnoInfo;
+                }
+            }
+
+            /// <summary>
+            /// The btnYes item.
+            /// </summary>
+            [RepositoryItem("8c6fa30e-590d-400b-a983-25b408f450ff")]
+            public virtual Ranorex.Button btnYes
+            {
+                get
+                {
+                    return _btnyesInfo.CreateAdapter<Ranorex.Button>(true);
+                }
+            }
+
+            /// <summary>
+            /// The btnYes item info.
+            /// </summary>
+            [RepositoryItemInfo("8c6fa30e-590d-400b-a983-25b408f450ff")]
+            public virtual RepoItemInfo btnYesInfo
+            {
+                get
+                {
+                    return _btnyesInfo;
                 }
             }
         }

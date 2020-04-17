@@ -53,9 +53,10 @@ namespace SmokeTest.Modules
 
         public void EditNoteData(){
         	//Open note to edit
-        	Delay.Seconds(1);
+        	note.MainForm.Self.Activate();
+        	Delay.Seconds(3);
         	note.MainForm.listNoteOne.DoubleClick();
-        	Delay.Seconds(1);
+        	Delay.Seconds(3);
         	//Edit note
         	note.NoteDetail.MenubarFillPanel.txtNoteBoxEdit.Click();
         	Keyboard.Press(System.Windows.Forms.Keys.A | System.Windows.Forms.Keys.Control, 30, Keyboard.DefaultKeyPressTime, 1, true);

@@ -838,6 +838,13 @@ D8zerL8gSEaw7+rFqJ//CkX5CWkHqyZHVzU6AAAAAElFTkSuQmCC
 			searchtimeout="30000ms">
 				/form[@controlname='PromptForm']//toolbar[@accessiblename='Toolbar']/button[@accessiblename='No']
 			</item>
+			<item
+			capname="button"
+			id="8c6fa30e-590d-400b-a983-25b408f450ff"
+			name="btnYes"
+			searchtimeout="30000ms">
+				/form[@controlname='PromptForm']//toolbar[@accessiblename='Toolbar']/button[@accessiblename='Yes']
+			</item>
 			<basepath>
 				/form[@controlname='PromptForm']
 			</basepath>

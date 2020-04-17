@@ -20,6 +20,9 @@ using Ranorex;
 using Ranorex.Core;
 using Ranorex.Core.Testing;
 using System.Globalization;
+using System.Net;
+using System.Net.Mail;
+using System.Net.Mime;
 namespace SmokeTest.Modules.Utilities
 {
     /// <summary>
@@ -267,14 +270,30 @@ namespace SmokeTest.Modules.Utilities
         		
         			if(tadapter.Rows[i].Cells[j].As<Ranorex.Cell>().Text.Contains(data))
         			{
-        				tadapter.Rows[i].Cells[j+1].As<Ranorex.Cell>().Focus();
-        				tadapter.Rows[i].Cells[j+1].As<Ranorex.Cell>().MoveTo();
-        				tadapter.Rows[i].Cells[j+1].As<Ranorex.Cell>().DoubleClick();
-        				Report.Success(String.Format("Value \"{0}\" Selected as expected in \"{1}\"",data,tblName));
-        				k++;
-        				break;
+        				
+        				if(j+1<tadapter.Rows[i].Cells.Count)
+        				{
+        					tadapter.Rows[i].Cells[j+1].As<Ranorex.Cell>().Focus();
+        					//tadapter.Rows[i].Cells[j+1].As<Ranorex.Cell>().MoveTo();
+	        				tadapter.Rows[i].Cells[j+1].As<Ranorex.Cell>().DoubleClick();
+	        				Report.Success(String.Format("Value \"{0}\" Selected as expected in \"{1}\"",data,tblName));
+	        				k++;
+	        				break;
+        				}
+        				else
+        				{
+        					tadapter.Rows[i].Cells[j].As<Ranorex.Cell>().Focus();
+        					//tadapter.Rows[i].Cells[j].As<Ranorex.Cell>().MoveTo();
+	        				tadapter.Rows[i].Cells[j].As<Ranorex.Cell>().DoubleClick();
+	        				Report.Success(String.Format("Value \"{0}\" Selected as expected in \"{1}\"",data,tblName));
+	        				k++;
+	        				break;
+        				}
+        				
         			}
         		}
+        		if(k>0)
+        			break;
         	}
         	if(k==0)
         	{
@@ -663,6 +682,68 @@ namespace SmokeTest.Modules.Utilities
         		
         	
         }
+		
+		
+		public void SendEmail(string toMail,string data) 
+		{
+		    try {  
+		        MailMessage message = new MailMessage();  
+		        SmtpClient smtp = new SmtpClient();  
+		        message.From = new MailAddress("amicustestmk1@gmail.com");  
+		        message.To.Add(new MailAddress(toMail));  
+		        message.Subject = data;  
+		        message.IsBodyHtml = true; //to make message body as html  
+		        message.Body = data;  
+		        smtp.Port = 587;  
+		        smtp.Host = "smtp.gmail.com"; //for gmail host  
+		        smtp.EnableSsl = true;  
+		        smtp.UseDefaultCredentials = false;  
+		        smtp.Credentials = new NetworkCredential("amicustestmk1@gmail.com", "0nXTeam123$$");  
+		        smtp.DeliveryMethod = SmtpDeliveryMethod.Network;  
+		        smtp.Send(message);  
+		        Report.Info("Message Sent");
+		    } catch (Exception) {}  
+		}
+
+
+		public void SendEmailWithAttachments(string toMail,string data,int noofAttachments) 
+		{
+			string filename="";
+		    try 
+		    {
+				
+				
+		        MailMessage message = new MailMessage();  
+		        SmtpClient smtp = new SmtpClient();  
+		        message.From = new MailAddress("amicustestmk1@gmail.com");  
+		        message.To.Add(new MailAddress(toMail));  
+		        message.Subject = data;  
+		        message.IsBodyHtml = true; //to make message body as html  
+		        message.Body = data;  
+		        smtp.Port = 587;  
+		        smtp.Host = "smtp.gmail.com"; //for gmail host  
+		        
+		        for(int i=0;i<noofAttachments;i++)
+		        {
+		        	filename=createLocalFile();
+		        	Delay.Seconds(3);
+		        	message.Attachments.Add(new Attachment(filename.ToString()));
+		        	filename="";                
+		        }
+		        
+		        
+		        smtp.EnableSsl = true;
+		        smtp.UseDefaultCredentials = false;  
+		        smtp.Credentials = new NetworkCredential("amicustestmk1@gmail.com", "0nXTeam123$$");  
+		        smtp.DeliveryMethod = SmtpDeliveryMethod.Network;  
+		        smtp.Send(message);  
+		        Report.Info("Message Sent");
+		    } catch (Exception) {}  
+		}
+
+		
+		
+		
         public void switchUser(string user)
         {
         	string currentuser="Logged in as "+user;

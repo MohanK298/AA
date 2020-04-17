@@ -74,7 +74,9 @@ namespace SmokeTest.Modules
  				pref.GeneralPreferencesForm.btnInstallMergeToolbar.Click();
  				if(wapp.AmicusMergeToolbarInstallShieldWiz.SelfInfo.Exists(5000))
  				{
+ 					Delay.Seconds(1);
  					wapp.AmicusMergeToolbarInstallShieldWiz.btnNext.Click();
+ 					Delay.Seconds(1);
  					wapp.AmicusMergeToolbarInstallShieldWiz.btnInstall.Click();
  					Delay.Seconds(5);
  					wapp.AmicusMergeToolbarInstallShieldWiz.btnFinish.Click();

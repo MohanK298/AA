@@ -476,6 +476,9 @@
     <Compile Include="Modules\EditTimeEntry.cs">
       <id>b95070d5-2bd9-4de4-8173-325343a6add4</id>
     </Compile>
+    <Compile Include="Modules\EmailWithMultipleAttachments.cs">
+      <id>10e02ed6-21b1-42cf-90e7-892b22a5af7b</id>
+    </Compile>
     <Compile Include="Modules\embeddedOutlookValidation.cs">
       <id>0ce1c9e5-cc17-4022-96f2-19673201906e</id>
     </Compile>
@@ -484,6 +487,9 @@
     </Compile>
     <Compile Include="Modules\FileVoidPayment.cs">
       <id>3c5327ca-3e05-481a-8812-3e2a730320e4</id>
+    </Compile>
+    <Compile Include="Modules\Filter_subject_contact_Email.cs">
+      <id>a1b382f9-fdc4-4b7b-b78b-f9445c8ab055</id>
     </Compile>
     <Compile Include="Modules\LoginM.cs">
       <id>1d1e7d77-8a35-48f8-9ce0-4edf115525e3</id>
@@ -565,6 +571,9 @@
     </Compile>
     <Compile Include="Modules\testViewNavigation.cs">
       <id>d9857e46-dc36-4d57-a32e-6e9af474156d</id>
+    </Compile>
+    <Compile Include="Modules\TE_OnMail_Comm_View.cs">
+      <id>fec737f6-5c53-40bb-8013-9463b89f33dc</id>
     </Compile>
     <Compile Include="Modules\TE_OnMail_OL_View.cs">
       <id>650be28a-300f-436a-8e83-67825c70c009</id>

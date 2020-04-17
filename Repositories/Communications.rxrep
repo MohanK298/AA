@@ -21,7 +21,7 @@ rxversion="9.0">
 		name="MainForm"
 		refpath="/form[@controlname='MainForm']"
 		searchtimeout="30000ms"
-		usecache="True">
+		usecache="False">
 			<item
 			addcaps="button,accessible"
 			capname="button"
@@ -101,6 +101,7 @@ rxversion="9.0">
 			capname="button"
 			id="53e376b3-fa0b-425a-9ac1-47febc8a641a"
 			name="btnSyncNow"
+			refimgid="305d12e1-035a-4577-8826-c1a0c0c9bf33"
 			searchtimeout="30000ms">
 				/form[@controlname='MainForm']/?/?/form[@controlname='CommIndexForm']//?/button[@text='Synchronize now']
 			</item>
@@ -150,6 +151,7 @@ rxversion="9.0">
 			capname="table"
 			id="9f593331-1c6e-463a-91ec-a8c7956e014f"
 			name="tblCommunications"
+			refimgid="54af6d6c-902d-4b07-9de4-d3ed9b3fe0ed"
 			searchtimeout="30000ms">
 				/form[@controlname='MainForm']/?/?/form[@controlname='CommIndexForm']/container[@controlname='splitContainer']//table[@accessiblename='Band 0']
 			</item>
@@ -272,6 +274,16 @@ rxversion="9.0">
 				searchtimeout="30000ms">
 					/form[@controlname='MainForm']/?/?/form[@controlname='CommIndexForm']/container[@controlname='menubar_Fill_Panel']//toolbar[@accessiblename='Toolbar']/button[@accessiblename='View']
 				</item>
+				<item
+				addcaps="button,accessible"
+				capname="button"
+				id="e019c5ed-75f2-4121-abf3-44957caf71a0"
+				name="btnSearch_Cancel"
+				refimgid="4c83e197-ee80-4edc-80f6-dfc3be1ba2d9"
+				refpath="/form[@controlname='MainForm']/element[@controltypename='MdiClient']/form[@controlname='CommIndexForm']/container[@controlname='menubar_Fill_Panel']/element[@controlname='_BaseForm_Fill_Panel_Toolbars_Dock_Area_Top']/container[@accessiblename='DockTop']/toolbar[@accessiblename='Toolbar']/button[@accessiblename='Search']"
+				searchtimeout="30000ms">
+					/form[@controlname='MainForm']/?/?/form[@controlname='CommIndexForm']/container[@controlname='menubar_Fill_Panel']//toolbar[@accessiblename='Toolbar']/button[@accessiblename='Search']
+				</item>
 				<basepath>
 					/form[@controlname='MainForm']/?/?/form[@controlname='CommIndexForm']/container[@controlname='menubar_Fill_Panel']//toolbar[@accessiblename='Toolbar']
 				</basepath>
@@ -333,6 +345,25 @@ rxversion="9.0">
 					/form[@controlname='MainForm']/container[@controlname='pLeft']//container[@controltypename='UltraExplorerBarContainerControl' and @instance='0']/?/?/container[@controlname='CommIndexControlPanel']/?/?/container[@controlname='pnlRestrictions']
 				</basepath>
 			</folder>
+			<item
+			addcaps="text,accessible"
+			capname="text"
+			id="9425d8db-2e06-4204-b8f8-4167cfb18b5c"
+			name="txtOutstanding"
+			refimgid="9bb8db2c-9701-4ac7-ad37-a0357e130a51"
+			searchtimeout="30000ms">
+				/form[@controlname='MainForm']/container[@controlname='pLeft']//container[@controltypename='UltraExplorerBarContainerControl' and @instance='0']/?/?/container[@controlname='CommIndexControlPanel']/?/?/container[@controlname='atcOutstandingOrToday']/container/?/?/text[@accessiblename='Outstanding']
+			</item>
+			<item
+			addcaps="text,control,nativewindow"
+			capname="text"
+			id="cb49d9db-57d2-4c7e-910d-09fa8aede10b"
+			name="txtSearch"
+			refimgid="6ff88a7d-802a-49d7-9771-27c403970eeb"
+			refpath="/form[@controlname='MainForm']/element[@controltypename='MdiClient']/form[@controlname='CommIndexForm']/text[@controlname='atxtSearchText']"
+			searchtimeout="30000ms">
+				/form[@controlname='MainForm']/?/?/form[@controlname='CommIndexForm']/text[@controlname='atxtSearchText']
+			</item>
 			<basepath>
 				/form[@controlname='MainForm']
 			</basepath>
@@ -498,7 +529,7 @@ D8zerL8gSEaw7+rFqJ//CkX5CWkHqyZHVzU6AAAAAElFTkSuQmCC
 		name="FileSelectForm"
 		refpath="/form[@controlname='FileSelectForm']"
 		searchtimeout="30000ms"
-		usecache="True">
+		usecache="False">
 			<item
 			addcaps="button,accessible"
 			capname="button"
@@ -593,7 +624,7 @@ D8zerL8gSEaw7+rFqJ//CkX5CWkHqyZHVzU6AAAAAElFTkSuQmCC
 		name="PromptForm"
 		refpath="/form[@controlname='PromptForm']"
 		searchtimeout="30000ms"
-		usecache="True">
+		usecache="False">
 			<item
 			addcaps="button,accessible"
 			capname="button"
@@ -1104,7 +1135,7 @@ DAPIxVgFicf/GQCdrAkiuOdOjQAAAABJRU5ErkJggg==
 		refimgid="b3802af0-4084-482b-8555-ed08ac6b8377"
 		refpath="/form[@controlname='EmailDetailForm']"
 		searchtimeout="30000ms"
-		usecache="True">
+		usecache="False">
 			<folder
 			addcaps="toolbar,accessible"
 			capname="toolbar"
@@ -1374,6 +1405,43 @@ DAPIxVgFicf/GQCdrAkiuOdOjQAAAABJRU5ErkJggg==
 				searchtimeout="30000ms">
 					/form[@controlname='EmailDetailForm']/container[@controlname='menubar_Fill_Panel']/container[@controlname='pnlBase']//container[@controlname='moreOptions']/element[@controlname='uchkUrgent']/checkbox[@accessiblename='Urgent']/checkbox[@accessiblename='Urgent']
 				</item>
+				<item
+				addcaps="button,accessible"
+				capname="button"
+				id="5d74551c-f70e-4eb5-a3af-b5a55aac713c"
+				name="btnSavedDocuments"
+				refimgid="bd6df7e1-74af-4f13-8a89-4be67ae2d40a"
+				searchtimeout="30000ms">
+					/form[@controlname='EmailDetailForm']/container[@controlname='menubar_Fill_Panel']/container[@controlname='pnlBase']//container[@controlname='moreOptions']/container[@controlname='attachments']/element[@controlname='addbAttachments']/button[@accessiblename&gt;'Saved Documents']/button[@accessiblename&gt;'Saved Documents']
+				</item>
+				<item
+				addcaps="button,accessible"
+				capname="button"
+				id="c662a3c1-156e-4f1d-b773-c49f02b04bf2"
+				name="btnOriginalAttachments"
+				refimgid="ca04875d-c656-457f-9a76-811265dd3359"
+				searchtimeout="30000ms">
+					/form[@controlname='EmailDetailForm']/container[@controlname='menubar_Fill_Panel']/container[@controlname='pnlBase']//container[@controlname='moreOptions']/container[@controlname='attachments']/element[@controlname='addbOriginalAttachments']/button[@accessiblename&gt;'Original Attachments']/button[@accessiblename&gt;'Original Attachments']
+				</item>
+				<item
+				addcaps="button,accessible"
+				capname="button"
+				id="e8b9e069-d7a0-413a-80d1-73ad9b3c07d2"
+				name="btnDropDownOrigAttachments"
+				refimgid="8f0d05e0-fdd1-4b82-8087-935106a2343f"
+				searchtimeout="30000ms">
+					/form[@controlname='EmailDetailForm']/container[@controlname='menubar_Fill_Panel']/container[@controlname='pnlBase']//container[@controlname='moreOptions']/container[@controlname='attachments']/element[@controlname='addbOriginalAttachments']/button[@accessiblename&gt;'Original Attachments']/button[@accessiblename='Drop down']
+				</item>
+				<item
+				addcaps="button,accessible"
+				capname="button"
+				id="935ed767-67db-4204-8d25-4687730b557b"
+				name="btnDropDownSavedAttachments"
+				refimgid="b8b61807-eb0b-411b-ad66-fdebeb76249d"
+				refpath="/form[@controlname='EmailDetailForm']/container[@controlname='menubar_Fill_Panel']/container[@controlname='pnlBase']/container[@controlname='pnlControls']/container[@controlname='master']/container[@controlname='moreOptions']/container[@controlname='attachments']/element[@controlname='addbAttachments']/button[@accessiblename='Saved Documents: 3']/button[@accessiblename='Drop down']"
+				searchtimeout="30000ms">
+					/form[@controlname='EmailDetailForm']/container[@controlname='menubar_Fill_Panel']/container[@controlname='pnlBase']//container[@controlname='moreOptions']/container[@controlname='attachments']//button[@accessiblename='Drop down']
+				</item>
 				<basepath>
 					/form[@controlname='EmailDetailForm']/container[@controlname='menubar_Fill_Panel']/container[@controlname='pnlBase']
 				</basepath>
@@ -1402,7 +1470,7 @@ SUVORK5CYII=
 		refimgid="586fd0d0-6f18-4634-a078-54750cc17d18"
 		refpath="/form[@controlname='SelectFilePeopleForm']"
 		searchtimeout="30000ms"
-		usecache="True">
+		usecache="False">
 			<item
 			addcaps="button,accessible"
 			capname="button"
@@ -1495,7 +1563,7 @@ SUVORK5CYII=
 		name="TimeEntryDetailsForm"
 		refpath="/form[@controlname='TimeEntryDetailsForm']"
 		searchtimeout="30000ms"
-		usecache="True">
+		usecache="False">
 			<folder
 			addcaps="container,control,nativewindow"
 			capname="container"
@@ -1535,6 +1603,15 @@ SUVORK5CYII=
 				searchtimeout="30000ms">
 					/form[@controlname='TimeEntryDetailsForm']/container[@controlname='menubar_Fill_Panel']/container[@controlname='pnlBase']//container[@controlname='panel1']/?/?/element[@controlname='uteDescription']/?/?/text[@accessiblerole='Text']
 				</item>
+				<item
+				addcaps="text,accessible"
+				capname="text"
+				id="b080eec7-1a7e-44c9-8cba-06d4327cb546"
+				name="txtDate"
+				refimgid="e218cfb9-b88a-4c4a-94f6-2c78bdbccd6f"
+				searchtimeout="30000ms">
+					/form[@controlname='TimeEntryDetailsForm']/container[@controlname='menubar_Fill_Panel']/container[@controlname='pnlBase']//element[@controlname='ucalendarcbDate']/?/?/text
+				</item>
 				<basepath>
 					/form[@controlname='TimeEntryDetailsForm']/container[@controlname='menubar_Fill_Panel']
 				</basepath>
@@ -1546,6 +1623,60 @@ SUVORK5CYII=
 				iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACx
 jwv8YQUAAAAJcEhZcwAADsQAAA7EAZUrDhsAAAAwSURBVDhPYzCe+f8/JRhswLaXpOHNz/7/X32P
 mgbMPkceHnXBqAtAeDi5gHz8/z8Al8RZImtwgVkAAAAASUVORK5CYII=
+			</icon>
+		</appfolder>
+		<appfolder
+		addcaps="form,nativewindow"
+		capname="form"
+		id="3cb73459-6eb2-46f0-8a45-67bff53b05aa"
+		isrooted="True"
+		name="BrowseForFolder"
+		refimgid="f32ad02f-fb92-44e1-9472-babf5c6f2eff"
+		refpath="/form[@title='Browse For Folder']"
+		searchtimeout="30000ms"
+		usecache="True">
+			<item
+			addcaps="treeitem"
+			capname="treeitem"
+			id="e7e881c0-4450-4008-9459-fabc8ebce11a"
+			name="SavedLocation"
+			refimgid="fda1a8de-0762-444a-8251-a353a54b32e9"
+			refpath="/form[@title='Browse For Folder']/element[@class='SHBrowseForFolder ShellNameSpace Control']/tree[@controlid='100']/treeitem[@text='Desktop']/treeitem[@text='This PC']/treeitem[@text='Windows (C:)']/treeitem[@text='Qiao']"
+			searchtimeout="30000ms">
+				/form[@title='Browse For Folder']/element[@class='SHBrowseForFolder ShellNameSpace Control']/tree[@controlid='100']//treeitem[@text='Qiao']
+			</item>
+			<item
+			addcaps="button,nativewindow"
+			capname="button"
+			id="b0ad1ca3-2440-48bd-bc5e-0d89eebd4502"
+			name="btnOk"
+			refimgid="19a68df5-97a5-4d8b-aa49-6f89f7a1e7cb"
+			refpath="/form[@title='Browse For Folder']/button[@text='OK']"
+			searchtimeout="30000ms">
+				/form[@title='Browse For Folder']/button[@text='OK']
+			</item>
+			<item
+			addcaps="button,nativewindow"
+			capname="button"
+			id="df220920-32bd-48a0-8afe-df34ecefdbb5"
+			name="btnCancel"
+			refimgid="d8971898-57ad-4fea-9db4-1b1b095c0e46"
+			refpath="/form[@title='Browse For Folder']/button[@text='Cancel']"
+			searchtimeout="30000ms">
+				/form[@title='Browse For Folder']/button[@text='Cancel']
+			</item>
+			<basepath>
+				/form[@title='Browse For Folder']
+			</basepath>
+			<icon>
+				iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACx
+jwv8YQUAAAAJcEhZcwAADsQAAA7EAZUrDhsAAAEnSURBVDhPY8AFXmUEGz7xNjrxxM/s4rPUAHuo
+MGHwxMPwySMHtf9YsZvuV6gy7OCRl+FmrBqR8GN3/edQ5RDw0Fnj9t+P7/+Tgx+5aL9hABIP/pMJ
+HrtovwO74rG73v9/v379fxpk9f+hjdL/p/4W/992VPz/uHja/49LZvx/113z/2mILVBO8f9jD32w
+ZpB3wJpB4JG9KliAWABTD9UONAAaQGBJOxUIDeR/Wjn3/6vixP+PbJXBYiDXgQBMPVQ7mgH2yAbM
++/+qJOn/Q4IGIHmBPAMc1Skz4HmMqxipBnxYOk0Qqh0CHjmq/QJLEmOAowbCdmQAliTCAKBuRqgW
+TAAKUBDAZsAjWyXsNqODf//+8T72NPgNMQCYDoBOBorJQKWRAAMDAHoxMgiROIZSAAAAAElFTkSu
+QmCC
 			</icon>
 		</appfolder>
 		<basepath>

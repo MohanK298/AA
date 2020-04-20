@@ -84,6 +84,8 @@ namespace SmokeTest.Modules
         	
         	//files.MainForm.Self.Activate();
         	files.MainForm.btnFiles1.Click();
+        	Delay.Seconds(2);
+        	cmn.SelectItemDropdown(files.MainForm.cmbbxFileStatus,"All","File Status");
         	cmn.VerifyDataExistsInTable(files.MainForm.FilesIndexForm.tblFilesList,fileName,"File List Table");
         	
         	

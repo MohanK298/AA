@@ -122,7 +122,10 @@ namespace SmokeTest.Modules
 	        		}
         		
         		}
-				wapp.WordDocument.Self.Close();        		
+        		if(wapp.WordDocument.SelfInfo.Exists(5000))
+        		{wapp.WordDocument.Self.Close();}
+        		
+        		
         	}
         	
         /// <summary>

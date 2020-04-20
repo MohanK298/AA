@@ -112,7 +112,13 @@ namespace SmokeTest
         {
         	Host.Local.RunApplication("C:\\Amicus\\Amicus Attorney Workstation\\AmicusAttorney.XWin.exe");
         	
-        	if(login.Update.SelfInfo.Exists(10000))
+        	if(!login.Update.SelfInfo.Exists(30000))
+        	{
+        		Keyboard.Press(System.Windows.Forms.Keys.Enter, Keyboard.DefaultScanCode, Keyboard.DefaultKeyPressTime, 1, true);
+        		Host.Local.RunApplication("C:\\Amicus\\Amicus Attorney Workstation\\AmicusAttorney.XWin.exe");
+        	}
+        	
+        	if(login.Update.SelfInfo.Exists(30000))
         	{
         		if(login.Update.btnContinueInfo.Exists(3000))
         		{

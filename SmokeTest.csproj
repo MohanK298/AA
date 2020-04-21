@@ -290,6 +290,12 @@
     <Compile Include="Modules\Attorney_FileDetails\VerifyDocuments.cs">
       <id>d37b351b-e53f-487d-96e7-1d2b37414a01</id>
     </Compile>
+    <Compile Include="Modules\autoSave_notSet_Validation.cs">
+      <id>3d79cad6-8497-4c7a-8593-4538a92f6569</id>
+    </Compile>
+    <Compile Include="Modules\autoSave_set_Validation.cs">
+      <id>6b13ffce-ace6-4000-bd92-0613c13f36f1</id>
+    </Compile>
     <Compile Include="Modules\basicConflictCheckValidation.cs">
       <id>df7cbd51-ca99-4de3-84b0-4e457cc98b77</id>
     </Compile>
@@ -388,6 +394,9 @@
     </Compile>
     <Compile Include="Modules\CreateManyPhoneCalls.cs">
       <id>9117b927-96b0-458c-95be-8b190388c2d7</id>
+    </Compile>
+    <Compile Include="Modules\createManyTasks.cs">
+      <id>d8457027-421c-4d42-a6cc-cc2fa8efb7f5</id>
     </Compile>
     <Compile Include="Modules\CreateManyTimeEntries.cs">
       <id>1a29c988-ee97-4062-9df5-c3e73ca907ce</id>

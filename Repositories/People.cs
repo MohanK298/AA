@@ -946,6 +946,8 @@ namespace SmokeTest.Repositories
             RepoItemInfo _comboboxselectcontactlabelInfo;
             RepoItemInfo _btneditcommunicationokInfo;
             RepoItemInfo _txtlocalnumberInfo;
+            RepoItemInfo _radioemailInfo;
+            RepoItemInfo _txtemailaddressInfo;
 
             /// <summary>
             /// Creates a new EditCommunicationForm  folder.
@@ -958,6 +960,8 @@ namespace SmokeTest.Repositories
                 _comboboxselectcontactlabelInfo = new RepoItemInfo(this, "ComboBoxSelectContactLabel", "container[@controlname='panelBase']//combobox[@accessiblename='Home 2']/combobox[@accessiblerole='ComboBox']", 30000, null, "7c5ffdcc-091b-4188-9c3c-e56f34747229");
                 _btneditcommunicationokInfo = new RepoItemInfo(this, "btnEditCommunicationOK", ".//toolbar[@accessiblename='Toolbar']/button[@accessiblename='OK']", 30000, null, "b872b49b-a49e-4b83-b308-09abbe5a44ed");
                 _txtlocalnumberInfo = new RepoItemInfo(this, "txtLocalNumber", "container[@controlname='panelBase']/?/?/element[@controlname='uteLocalNumber']/text[@automationid='[Editor] Edit Area']", 30000, null, "d93ed547-b67f-4683-b3b9-5c51238184cb");
+                _radioemailInfo = new RepoItemInfo(this, "radioEmail", "container[@controlname='panelBase']/?/?/radiobutton[@controlname='radioEmail']", 30000, null, "edfab83d-f079-4d35-9313-f88e02666f4a");
+                _txtemailaddressInfo = new RepoItemInfo(this, "txtEmailAddress", "container[@controlname='panelBase']/?/?/element[@controlname='uteAddress']/text[@automationid='[Editor] Edit Area']", 30000, null, "eb260ec9-1ede-40a2-9ad3-8f95af9e5d8a");
             }
 
             /// <summary>
@@ -1101,6 +1105,54 @@ namespace SmokeTest.Repositories
                 get
                 {
                     return _txtlocalnumberInfo;
+                }
+            }
+
+            /// <summary>
+            /// The radioEmail item.
+            /// </summary>
+            [RepositoryItem("edfab83d-f079-4d35-9313-f88e02666f4a")]
+            public virtual Ranorex.RadioButton radioEmail
+            {
+                get
+                {
+                    return _radioemailInfo.CreateAdapter<Ranorex.RadioButton>(true);
+                }
+            }
+
+            /// <summary>
+            /// The radioEmail item info.
+            /// </summary>
+            [RepositoryItemInfo("edfab83d-f079-4d35-9313-f88e02666f4a")]
+            public virtual RepoItemInfo radioEmailInfo
+            {
+                get
+                {
+                    return _radioemailInfo;
+                }
+            }
+
+            /// <summary>
+            /// The txtEmailAddress item.
+            /// </summary>
+            [RepositoryItem("eb260ec9-1ede-40a2-9ad3-8f95af9e5d8a")]
+            public virtual Ranorex.Text txtEmailAddress
+            {
+                get
+                {
+                    return _txtemailaddressInfo.CreateAdapter<Ranorex.Text>(true);
+                }
+            }
+
+            /// <summary>
+            /// The txtEmailAddress item info.
+            /// </summary>
+            [RepositoryItemInfo("eb260ec9-1ede-40a2-9ad3-8f95af9e5d8a")]
+            public virtual RepoItemInfo txtEmailAddressInfo
+            {
+                get
+                {
+                    return _txtemailaddressInfo;
                 }
             }
         }

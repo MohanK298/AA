@@ -74,7 +74,7 @@ namespace SmokeTest.Recordings
         void ITestModule.Run()
         {
             Mouse.DefaultMoveTime = 300;
-            Keyboard.DefaultKeyPressTime = 100;
+            Keyboard.DefaultKeyPressTime = 20;
             Delay.SpeedFactor = 1.00;
 
             Init();
@@ -92,15 +92,15 @@ namespace SmokeTest.Recordings
             Delay.Milliseconds(200);
             
             Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '{LShiftKey down}j{LShiftKey up}Ames'.", new RecordItemIndex(3));
-            Keyboard.Press("{LShiftKey down}j{LShiftKey up}Ames");
+            Keyboard.Press("{LShiftKey down}j{LShiftKey up}Ames", 100);
             Delay.Milliseconds(0);
             
             Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '{Space}{LShiftKey down}k{LShiftKey up}Im'.", new RecordItemIndex(4));
-            Keyboard.Press("{Space}{LShiftKey down}k{LShiftKey up}Im");
+            Keyboard.Press("{Space}{LShiftKey down}k{LShiftKey up}Im", 100);
             Delay.Milliseconds(0);
             
             Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '{Return}'.", new RecordItemIndex(5));
-            Keyboard.Press("{Return}");
+            Keyboard.Press("{Return}", 100);
             Delay.Milliseconds(0);
             
             Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'MainForm.MenuItemToolbarToolbarToolsTool' at 42;23.", repo.MainForm.MenuItemToolbarToolbarToolsToolInfo, new RecordItemIndex(6));
@@ -112,11 +112,11 @@ namespace SmokeTest.Recordings
             Delay.Milliseconds(200);
             
             Report.Log(ReportLevel.Info, "Keyboard", "Key sequence 'jmaems'.", new RecordItemIndex(8));
-            Keyboard.Press("jmaems");
+            Keyboard.Press("jmaems", 100);
             Delay.Milliseconds(0);
             
             Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '{Return}'.", new RecordItemIndex(9));
-            Keyboard.Press("{Return}");
+            Keyboard.Press("{Return}", 100);
             Delay.Milliseconds(0);
             
             Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'MainForm.JmaemsP' at 82;11.", repo.MainForm.JmaemsPInfo, new RecordItemIndex(10));

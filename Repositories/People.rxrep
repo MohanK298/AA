@@ -387,6 +387,26 @@ D8zerL8gSEaw7+rFqJ//CkX5CWkHqyZHVzU6AAAAAElFTkSuQmCC
 			searchtimeout="30000ms">
 				/form[@controlname='EditCommunicationForm']/container[@controlname='panelBase']/?/?/element[@controlname='uteLocalNumber']/text[@automationid='[Editor] Edit Area']
 			</item>
+			<item
+			addcaps="radiobutton,control,nativewindow"
+			capname="radiobutton"
+			id="edfab83d-f079-4d35-9313-f88e02666f4a"
+			name="radioEmail"
+			refimgid="c2449b92-d24b-4367-9f91-8231df0eb37d"
+			refpath="/form[@controlname='EditCommunicationForm']/container[@controlname='panelBase']/container[@controlname='panelType']/radiobutton[@controlname='radioEmail']"
+			searchtimeout="30000ms">
+				/form[@controlname='EditCommunicationForm']/container[@controlname='panelBase']/?/?/radiobutton[@controlname='radioEmail']
+			</item>
+			<item
+			addcaps="text,uiautomation,uiautomationvalue"
+			capname="text"
+			id="eb260ec9-1ede-40a2-9ad3-8f95af9e5d8a"
+			name="txtEmailAddress"
+			refimgid="0ec7621c-3946-40cc-8915-8e31b9172770"
+			refpath="/form[@controlname='EditCommunicationForm']/container[@controlname='panelBase']/container[@controlname='panelWebDetails']/element[@controlname='uteAddress']/text[@automationid='[Editor] Edit Area']"
+			searchtimeout="30000ms">
+				/form[@controlname='EditCommunicationForm']/container[@controlname='panelBase']/?/?/element[@controlname='uteAddress']/text[@automationid='[Editor] Edit Area']
+			</item>
 			<basepath>
 				/form[@controlname='EditCommunicationForm']
 			</basepath>

@@ -364,6 +364,26 @@ rxversion="9.0">
 			searchtimeout="30000ms">
 				/form[@controlname='MainForm']/?/?/form[@controlname='CommIndexForm']/text[@controlname='atxtSearchText']
 			</item>
+			<item
+			addcaps="picture,control,nativewindow"
+			capname="picture"
+			id="0db5d715-8515-4993-b77a-c0658e57160c"
+			name="imgSavedMail"
+			refimgid="5ba504a4-437a-4654-b3f1-6beb4f1497b5"
+			refpath="/form[@controlname='MainForm']/element[@controltypename='MdiClient']/form[@controlname='CommIndexForm']/container[@controlname='splitContainer']/container[@controlname='panel2']/container[@controlname='pnlPreviewPaneContainer']/container[@controlname='agpPreviewHeader']/container[@controlname='tlpPreviewHeader']/container[@controlname='tlpPreviewHeaderUpper']/container[@controlname='tlpDate']/container[@controlname='flpAttachmentDateLabel']/picture[@controltypename='PictureBox']"
+			searchtimeout="30000ms">
+				/form[@controlname='MainForm']/?/?/form[@controlname='CommIndexForm']/container[@controlname='splitContainer']/container[@controlname='panel2']/?/?/container[@controlname='agpPreviewHeader']/?/?/container[@controlname='tlpPreviewHeaderUpper']/?/?/container[@controlname='flpAttachmentDateLabel']/picture[@controltypename='PictureBox']
+			</item>
+			<item
+			addcaps="text,accessible"
+			capname="text"
+			id="de50e6be-4cb8-47ab-982b-7dbbf73c834f"
+			name="SavedFileName"
+			refimgid="003c5c18-2238-4c24-8b67-2ba154f89239"
+			refpath="/form[@controlname='MainForm']/element[@controltypename='MdiClient']/form[@controlname='CommIndexForm']/container[@controlname='splitContainer']/container[@controlname='panel2']/container[@controlname='pnlPreviewPaneContainer']/container[@controlname='agpPreviewHeader']/container[@controlname='tlpPreviewHeader']/container[@controlname='tlpPreviewHeaderMiddle']/container[@controlname='flpFile']/element[@controlname='alblFile']/text[@accessiblename='HotDocs Demo File']"
+			searchtimeout="30000ms">
+				/form[@controlname='MainForm']/?/?/form[@controlname='CommIndexForm']/container[@controlname='splitContainer']/container[@controlname='panel2']/?/?/container[@controlname='agpPreviewHeader']/?/?/container[@controlname='tlpPreviewHeaderMiddle']//text[@accessiblename='HotDocs Demo File']
+			</item>
 			<basepath>
 				/form[@controlname='MainForm']
 			</basepath>

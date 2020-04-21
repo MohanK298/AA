@@ -58,6 +58,10 @@ namespace SmokeTest.Modules
         	comm.MainForm.FirstMail.Click();
 			Delay.Seconds(1);
 			comm.MainForm.Toolbar1.btnDoATimeEntry.Click();
+			if(comm.FileSelectForm.SelfInfo.Exists(3000))
+			{
+				comm.FileSelectForm.listFirstFoundFile.DoubleClick();
+			}
 			activitydesc=comm.TimeEntryDetailsForm.MenubarFillPanel.txtActivityDescription.GetAttributeValue<String>("Text");
 			comm.TimeEntryDetailsForm.MenubarFillPanel.btnOK.Click();
         	ValidatePromptExists();

@@ -684,13 +684,17 @@ namespace SmokeTest.Modules.Utilities
         }
 		
 		
-		public void SendEmail(string toMail,string data) 
+		public void SendEmail(string[] toMail,string data)
 		{
 		    try {  
 		        MailMessage message = new MailMessage();  
 		        SmtpClient smtp = new SmtpClient();  
 		        message.From = new MailAddress("amicustestmk1@gmail.com");  
-		        message.To.Add(new MailAddress(toMail));  
+		        
+		        foreach (var m in toMail) 
+		        { 
+		        	message.To.Add(new MailAddress(m)); 
+		        }
 		        message.Subject = data;  
 		        message.IsBodyHtml = true; //to make message body as html  
 		        message.Body = data;  
@@ -702,7 +706,10 @@ namespace SmokeTest.Modules.Utilities
 		        smtp.DeliveryMethod = SmtpDeliveryMethod.Network;  
 		        smtp.Send(message);  
 		        Report.Info("Message Sent");
-		    } catch (Exception) {}  
+		    } catch (Exception e) 
+			{
+				Report.Failure(String.Format("Mail not sent due to {0}",e.Message));
+			}
 		}
 
 

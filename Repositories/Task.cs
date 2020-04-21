@@ -369,7 +369,7 @@ namespace SmokeTest.Repositories
             /// Creates a new EventDetailForm  folder.
             /// </summary>
             public EventDetailFormAppFolder(RepoGenBaseFolder parentFolder) :
-                    base("EventDetailForm", "/form[@controlname='EventDetailForm']", parentFolder, 30000, null, true, "f12aa124-ae68-4c0d-b316-2cb1efb94099", "")
+                    base("EventDetailForm", "/form[@controlname='EventDetailForm']", parentFolder, 30000, null, false, "f12aa124-ae68-4c0d-b316-2cb1efb94099", "")
             {
                 _menubarfillpanel = new TaskFolders.MenubarFillPanelFolder(this);
             }
@@ -419,6 +419,8 @@ namespace SmokeTest.Repositories
             RepoItemInfo _txttasktitleInfo;
             RepoItemInfo _btndeleteInfo;
             RepoItemInfo _txtedittextInfo;
+            RepoItemInfo _txtstartdateInfo;
+            RepoItemInfo _txtdeadlineInfo;
 
             /// <summary>
             /// Creates a new MenubarFillPanel  folder.
@@ -428,9 +430,11 @@ namespace SmokeTest.Repositories
             {
                 _btnokInfo = new RepoItemInfo(this, "btnOK", ".//toolbar[@accessiblename='Toolbar']/button[@accessiblename='OK']", 30000, null, "be9d9956-cd6b-4e90-91c1-1ceacdafd4e9");
                 _btnaddfileInfo = new RepoItemInfo(this, "btnAddFile", "container[@controlname='pnlBase']/?/?/container[@controlname='pnlTabs']//container[@controlname='scFiles']/?/?/button[@accessiblerole='PushButton']", 30000, null, "be2b3995-838c-437c-8cbb-f3af42db9ba0");
-                _txttasktitleInfo = new RepoItemInfo(this, "txtTaskTitle", "container[@controlname='pnlBase']//text[@controlname='txtTitle_EmbeddableTextBox']", 30000, null, "b8f0d444-bfb3-4671-85ae-53fe8780f2e4");
+                _txttasktitleInfo = new RepoItemInfo(this, "txtTaskTitle", "container[@controlname='pnlBase']//element[@controlname='txtTitle']/text[@automationid='[Editor] Edit Area']", 30000, null, "b8f0d444-bfb3-4671-85ae-53fe8780f2e4");
                 _btndeleteInfo = new RepoItemInfo(this, "btnDelete", ".//toolbar[@accessiblename='Toolbar']/button[@accessiblename='Delete']", 30000, null, "a358deba-710f-468b-ab70-99199de9ddef");
                 _txtedittextInfo = new RepoItemInfo(this, "txtEditText", "container[@controlname='pnlBase']//text[@controlname='txtTitle_EmbeddableTextBox']", 30000, null, "85e58fd1-353f-45a0-8226-f3d3a8393977");
+                _txtstartdateInfo = new RepoItemInfo(this, "txtStartDate", "container[@controlname='pnlBase']//text[@automationid='[Editor] Edit Area']", 30000, null, "88537c8d-766c-4f20-82d0-72a85718db70");
+                _txtdeadlineInfo = new RepoItemInfo(this, "txtDeadline", "container[@controlname='pnlBase']//container[@controlname='pnlDeadline']/?/?/text[@automationid='[Editor] Edit Area']", 30000, null, "aae0f83f-6794-422d-8b09-445e5fdde483");
             }
 
             /// <summary>
@@ -574,6 +578,54 @@ namespace SmokeTest.Repositories
                 get
                 {
                     return _txtedittextInfo;
+                }
+            }
+
+            /// <summary>
+            /// The txtStartDate item.
+            /// </summary>
+            [RepositoryItem("88537c8d-766c-4f20-82d0-72a85718db70")]
+            public virtual Ranorex.Text txtStartDate
+            {
+                get
+                {
+                    return _txtstartdateInfo.CreateAdapter<Ranorex.Text>(true);
+                }
+            }
+
+            /// <summary>
+            /// The txtStartDate item info.
+            /// </summary>
+            [RepositoryItemInfo("88537c8d-766c-4f20-82d0-72a85718db70")]
+            public virtual RepoItemInfo txtStartDateInfo
+            {
+                get
+                {
+                    return _txtstartdateInfo;
+                }
+            }
+
+            /// <summary>
+            /// The txtDeadline item.
+            /// </summary>
+            [RepositoryItem("aae0f83f-6794-422d-8b09-445e5fdde483")]
+            public virtual Ranorex.Text txtDeadline
+            {
+                get
+                {
+                    return _txtdeadlineInfo.CreateAdapter<Ranorex.Text>(true);
+                }
+            }
+
+            /// <summary>
+            /// The txtDeadline item info.
+            /// </summary>
+            [RepositoryItemInfo("aae0f83f-6794-422d-8b09-445e5fdde483")]
+            public virtual RepoItemInfo txtDeadlineInfo
+            {
+                get
+                {
+                    return _txtdeadlineInfo;
                 }
             }
         }

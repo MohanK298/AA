@@ -114,7 +114,7 @@ D8zerL8gSEaw7+rFqJ//CkX5CWkHqyZHVzU6AAAAAElFTkSuQmCC
 		name="EventDetailForm"
 		refpath="/form[@controlname='EventDetailForm']"
 		searchtimeout="30000ms"
-		usecache="True">
+		usecache="False">
 			<folder
 			addcaps="container,control,nativewindow"
 			capname="container"
@@ -151,7 +151,7 @@ D8zerL8gSEaw7+rFqJ//CkX5CWkHqyZHVzU6AAAAAElFTkSuQmCC
 				name="txtTaskTitle"
 				refimgid="fd95cb34-0873-438f-9b7b-3d9d6507808d"
 				searchtimeout="30000ms">
-					/form[@controlname='EventDetailForm']/container[@controlname='menubar_Fill_Panel']/container[@controlname='pnlBase']//text[@controlname='txtTitle_EmbeddableTextBox']
+					/form[@controlname='EventDetailForm']/container[@controlname='menubar_Fill_Panel']/container[@controlname='pnlBase']//element[@controlname='txtTitle']/text[@automationid='[Editor] Edit Area']
 				</item>
 				<item
 				addcaps="button,accessible"
@@ -171,6 +171,26 @@ D8zerL8gSEaw7+rFqJ//CkX5CWkHqyZHVzU6AAAAAElFTkSuQmCC
 				refimgid="0ff92156-fd69-423a-9849-8e480569e863"
 				searchtimeout="30000ms">
 					/form[@controlname='EventDetailForm']/container[@controlname='menubar_Fill_Panel']/container[@controlname='pnlBase']//text[@controlname='txtTitle_EmbeddableTextBox']
+				</item>
+				<item
+				addcaps="text,uiautomation,uiautomationvalue"
+				capname="text"
+				id="88537c8d-766c-4f20-82d0-72a85718db70"
+				name="txtStartDate"
+				refimgid="78372f79-19b7-42a7-b0e5-77cb16d52d58"
+				refpath="/form[@controlname='EventDetailForm']/container[@controlname='menubar_Fill_Panel']/container[@controlname='pnlBase']/container[@controlname='pnlControls']/container[@controlname='pnlDateTimeCategory']/element[@controlname='adteStartDate']/text[@automationid='[Editor] Edit Area']"
+				searchtimeout="30000ms">
+					/form[@controlname='EventDetailForm']/container[@controlname='menubar_Fill_Panel']/container[@controlname='pnlBase']//text[@automationid='[Editor] Edit Area']
+				</item>
+				<item
+				addcaps="text,uiautomation,uiautomationvalue"
+				capname="text"
+				id="aae0f83f-6794-422d-8b09-445e5fdde483"
+				name="txtDeadline"
+				refimgid="da1d0b4c-84ab-4c0e-9299-273bf3f92a70"
+				refpath="/form[@controlname='EventDetailForm']/container[@controlname='menubar_Fill_Panel']/container[@controlname='pnlBase']/container[@controlname='pnlControls']/container[@controlname='pnlDateTimeCategory']/container[@controlname='pnlDeadline']/element[@controlname='adteEndDate']/text[@automationid='[Editor] Edit Area']"
+				searchtimeout="30000ms">
+					/form[@controlname='EventDetailForm']/container[@controlname='menubar_Fill_Panel']/container[@controlname='pnlBase']//container[@controlname='pnlDeadline']/?/?/text[@automationid='[Editor] Edit Area']
 				</item>
 				<basepath>
 					/form[@controlname='EventDetailForm']/container[@controlname='menubar_Fill_Panel']

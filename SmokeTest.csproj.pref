@@ -1,17 +1,8 @@
 ﻿<Properties>
-  <Array name="active">
-    <Element value="Modules\Utilities\Common.cs" />
-  </Array>
+  <Array name="active" />
   <Array name="bookmarks" />
   <Array name="files">
-    <Element value="Modules\Utilities\Common.cs" />
-    <Element value="Repositories\Files.cs" />
     <Element value="SmokeTest.rxtst" />
-    <Element value="Modules\Logout.cs" />
-    <Element value="Modules\basicConflictCheckValidation.cs" />
-    <Element value="Repositories\Communications.rxrep" />
-    <Element value="Repositories\Files.rxrep" />
-    <Element value="Modules\LoginM.cs" />
   </Array>
   <Properties name="projectSavedData">
     <Properties name="customTool">

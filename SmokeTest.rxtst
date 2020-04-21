@@ -131,6 +131,10 @@ will be used throughout the Smoke Test]]>
 			name="CreateManyNotes">
 			</smartfoldernode>
 			<smartfoldernode
+			id="0a196b0b-55e0-4bea-a067-0a0a0d4bdfcc"
+			name="AutoSave_set_Validation">
+			</smartfoldernode>
+			<smartfoldernode
 			id="0aacc30c-766d-44a5-a0c4-5b7d05b3954b"
 			name="AddOther">
 			</smartfoldernode>
@@ -897,6 +901,12 @@ module]]>
 			id="4e4e8982-4d47-461c-9638-77c600cd1af0"
 			name="CpBill">
 			</smartfoldernode>
+			<testmodule
+			id="4e749a81-6068-49e5-b103-d5ddf81ff78d"
+			name="autoSave_notSet_Validation"
+			ref="dbf35e5b-83b9-4a00-a992-256c7ca651ea"
+			type="UserCode">
+			</testmodule>
 			<smartfoldernode
 			id="4e9c0e21-4a9c-4ee6-8f89-4bd34b4f3b6e"
 			name="AddFolder">
@@ -1146,6 +1156,12 @@ which will be used throughout the Smoke Test]]>
 			id="61ef647d-d741-4b78-a075-714a6e661c88"
 			name="AddSummary"
 			ref="ea681289-5f56-4977-b7ad-826657b454eb"
+			type="UserCode">
+			</testmodule>
+			<testmodule
+			id="628d981c-1e01-4cee-8b05-12867a731e5b"
+			name="createManyTasks"
+			ref="74631ab9-6b1b-4ec6-80d1-106028f83737"
 			type="UserCode">
 			</testmodule>
 			<testmodule
@@ -1625,6 +1641,10 @@ event]]>
 			type="UserCode">
 			</testmodule>
 			<smartfoldernode
+			id="808d19bb-cc9a-4ac1-a0e5-a3b644467f98"
+			name="AutoSavenotSet_Validation">
+			</smartfoldernode>
+			<smartfoldernode
 			id="80e69ff0-f2fc-4a3a-bf73-8080a3ad77c7"
 			name="ValidateAutoComplete_Files_People">
 			</smartfoldernode>
@@ -1842,6 +1862,12 @@ event]]>
 					variablename="editActivityDescription">
 					</var>
 				</databinding>
+			</testmodule>
+			<testmodule
+			id="9baa1ecf-a2f4-4fa8-a053-7974aafa69e7"
+			name="autoSave_set_Validation"
+			ref="e3e756be-6272-4cf3-abd9-1a531aac1b5f"
+			type="UserCode">
 			</testmodule>
 			<smartfoldernode
 			id="9c9e0c7c-6641-4e4d-b439-4d25916c0fa2"
@@ -2207,6 +2233,10 @@ module]]>
 			<smartfoldernode
 			id="b049a834-9d04-4f9c-964c-51fefe3f15e9"
 			name="ChangePreferencesIncludeChronology">
+			</smartfoldernode>
+			<smartfoldernode
+			id="b146cc4b-1984-4297-a931-5973decc4a91"
+			name="CreateManyTasks">
 			</smartfoldernode>
 			<teardown
 			id="b14ad441-49d0-4040-9de7-76ffff5a60f4"
@@ -2777,7 +2807,7 @@ directly and create a Bill]]>
 			</testmodule>
 			<testmodule
 			id="d9b0da9b-e278-4d77-b272-e4bc298e1d08"
-			name="AddWebURL"
+			name="AddNotes"
 			ref="39757aba-2474-4146-a459-bda32520c0da"
 			type="UserCode">
 			</testmodule>
@@ -3885,7 +3915,7 @@ bill]]>
 						name="AddWebURL">
 							<testmodule
 							id="d9b0da9b-e278-4d77-b272-e4bc298e1d08"
-							name="AddWebURL">
+							name="AddNotes">
 							</testmodule>
 						</smartfoldernode>
 						<smartfoldernode
@@ -4010,6 +4040,14 @@ bill]]>
 							<testmodule
 							id="d53ec0b4-ad33-4a79-8890-b61f4a506f23"
 							name="CreateManyPhoneCalls">
+							</testmodule>
+						</smartfoldernode>
+						<smartfoldernode
+						id="b146cc4b-1984-4297-a931-5973decc4a91"
+						name="CreateManyTasks">
+							<testmodule
+							id="628d981c-1e01-4cee-8b05-12867a731e5b"
+							name="createManyTasks">
 							</testmodule>
 						</smartfoldernode>
 					</testcase>
@@ -4753,6 +4791,14 @@ bill]]>
 					id="fc4cd2bd-43ef-46e4-8029-91f79205f4d2"
 					name="OutlookClient">
 						<smartfoldernode
+						id="808d19bb-cc9a-4ac1-a0e5-a3b644467f98"
+						name="AutoSavenotSet_Validation">
+							<testmodule
+							id="4e749a81-6068-49e5-b103-d5ddf81ff78d"
+							name="autoSave_notSet_Validation">
+							</testmodule>
+						</smartfoldernode>
+						<smartfoldernode
 						id="4da2e095-698c-4ab1-804b-2b66d54d77ca"
 						name="EmbeddedOutlookValidation">
 							<testmodule
@@ -4806,6 +4852,14 @@ bill]]>
 							<testmodule
 							id="aff5a6cd-6fe1-4b94-b523-419fad378666"
 							name="EmailWithMultipleAttachments">
+							</testmodule>
+						</smartfoldernode>
+						<smartfoldernode
+						id="0a196b0b-55e0-4bea-a067-0a0a0d4bdfcc"
+						name="AutoSave_set_Validation">
+							<testmodule
+							id="9baa1ecf-a2f4-4fa8-a053-7974aafa69e7"
+							name="autoSave_set_Validation">
 							</testmodule>
 						</smartfoldernode>
 					</testcase>
@@ -5452,12 +5506,6 @@ bill]]>
 	default="TestRun">
 		<testconfiguration
 		name="TestRun">
-			<testcontainer
-			id="658e3020-1e20-4cb1-b196-89a6ef9ca8a2">
-			</testcontainer>
-			<testcontainer
-			id="6efb8f01-7398-4295-b52c-d8dcaaa9599a">
-			</testcontainer>
 		</testconfiguration>
 	</testconfigurations>
 	<references>

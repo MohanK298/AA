@@ -283,6 +283,8 @@ namespace SmokeTest.Repositories
             RepoItemInfo _mailInfo;
             RepoItemInfo _txtoutstandingInfo;
             RepoItemInfo _txtsearchInfo;
+            RepoItemInfo _imgsavedmailInfo;
+            RepoItemInfo _savedfilenameInfo;
 
             /// <summary>
             /// Creates a new MainForm  folder.
@@ -309,6 +311,8 @@ namespace SmokeTest.Repositories
                 _mailInfo = new RepoItemInfo(this, "mail", "?/?/form[@controlname='CommIndexForm']/container[@controlname='splitContainer']//element[@controlid='4704']/container[$week]/element[$mailindex]", 30000, null, "9fd9e2e3-e335-4189-899d-2e65c3150c83");
                 _txtoutstandingInfo = new RepoItemInfo(this, "txtOutstanding", "container[@controlname='pLeft']//container[@controltypename='UltraExplorerBarContainerControl' and @instance='0']/?/?/container[@controlname='CommIndexControlPanel']/?/?/container[@controlname='atcOutstandingOrToday']/container/?/?/text[@accessiblename='Outstanding']", 30000, null, "9425d8db-2e06-4204-b8f8-4167cfb18b5c");
                 _txtsearchInfo = new RepoItemInfo(this, "txtSearch", "?/?/form[@controlname='CommIndexForm']/text[@controlname='atxtSearchText']", 30000, null, "cb49d9db-57d2-4c7e-910d-09fa8aede10b");
+                _imgsavedmailInfo = new RepoItemInfo(this, "imgSavedMail", "?/?/form[@controlname='CommIndexForm']/container[@controlname='splitContainer']/container[@controlname='panel2']/?/?/container[@controlname='agpPreviewHeader']/?/?/container[@controlname='tlpPreviewHeaderUpper']/?/?/container[@controlname='flpAttachmentDateLabel']/picture[@controltypename='PictureBox']", 30000, null, "0db5d715-8515-4993-b77a-c0658e57160c");
+                _savedfilenameInfo = new RepoItemInfo(this, "SavedFileName", "?/?/form[@controlname='CommIndexForm']/container[@controlname='splitContainer']/container[@controlname='panel2']/?/?/container[@controlname='agpPreviewHeader']/?/?/container[@controlname='tlpPreviewHeaderMiddle']//text[@accessiblename='HotDocs Demo File']", 30000, null, "de50e6be-4cb8-47ab-982b-7dbbf73c834f");
             }
 
             /// <summary>
@@ -716,6 +720,54 @@ namespace SmokeTest.Repositories
                 get
                 {
                     return _txtsearchInfo;
+                }
+            }
+
+            /// <summary>
+            /// The imgSavedMail item.
+            /// </summary>
+            [RepositoryItem("0db5d715-8515-4993-b77a-c0658e57160c")]
+            public virtual Ranorex.Picture imgSavedMail
+            {
+                get
+                {
+                    return _imgsavedmailInfo.CreateAdapter<Ranorex.Picture>(true);
+                }
+            }
+
+            /// <summary>
+            /// The imgSavedMail item info.
+            /// </summary>
+            [RepositoryItemInfo("0db5d715-8515-4993-b77a-c0658e57160c")]
+            public virtual RepoItemInfo imgSavedMailInfo
+            {
+                get
+                {
+                    return _imgsavedmailInfo;
+                }
+            }
+
+            /// <summary>
+            /// The SavedFileName item.
+            /// </summary>
+            [RepositoryItem("de50e6be-4cb8-47ab-982b-7dbbf73c834f")]
+            public virtual Ranorex.Text SavedFileName
+            {
+                get
+                {
+                    return _savedfilenameInfo.CreateAdapter<Ranorex.Text>(true);
+                }
+            }
+
+            /// <summary>
+            /// The SavedFileName item info.
+            /// </summary>
+            [RepositoryItemInfo("de50e6be-4cb8-47ab-982b-7dbbf73c834f")]
+            public virtual RepoItemInfo SavedFileNameInfo
+            {
+                get
+                {
+                    return _savedfilenameInfo;
                 }
             }
 

@@ -1,8 +1,8 @@
 ﻿/*
  * Created by Ranorex
  * User: kumar
- * Date: 4/15/2020
- * Time: 5:12 PM
+ * Date: 4/21/2020
+ * Time: 11:47 AM
  * 
  * To change this template use Tools > Options > Coding > Edit standard headers.
  */
@@ -23,30 +23,31 @@ using Ranorex.Core.Testing;
 namespace SmokeTest.Modules
 {
     /// <summary>
-    /// Description of TE_OnMail_Comm_View.
+    /// Description of autoSave_notSet_Validation.
     /// </summary>
-    [TestModule("A25A5D8F-D2EB-4206-9DCA-2B20B8645DAB", ModuleType.UserCode, 1)]
-    public class TE_OnMail_Comm_View : ITestModule
+    [TestModule("DBF35E5B-83B9-4A00-A992-256C7CA651EA", ModuleType.UserCode, 1)]
+    public class autoSave_notSet_Validation : ITestModule
     {
         /// <summary>
         /// Constructs a new instance.
         /// </summary>
-        public TE_OnMail_Comm_View()
+        public autoSave_notSet_Validation()
         {
             // Do not delete - a parameterless constructor is required!
         }
-		
+
+        
         Communications comm=Communications.Instance;
         TimeSheets ts=TimeSheets.Instance;
         Common cmn=new Common();
         static string rndData=System.DateTime.Now.ToString();
 		string data=String.Format("Test Data Added {0}",rndData);
         
-        
-        private void TimeEntry_Perform_onMail()
+		
+		private void AutoSave_notSet_Validate()
         {
         	
-        	string activitydesc="";
+        	
         	string[] toMail={"amicustestmk1@gmail.com"};
         	System.DateTime day1;
 			day1=System.DateTime.Now;
@@ -67,55 +68,19 @@ namespace SmokeTest.Modules
         	Delay.Seconds(2);
         	comm.MainForm.btnSyncNow.Click();
         	Delay.Seconds(15);
-        	cmn.SelectItemFromTableDblClick(comm.MainForm.tblCommunications,data,"Email Communications Table");
-        	
-        	comm.EmailDetailForm.Toolbar1.btnDoTimeEntry.Click();
-        	
-        	comm.FileSelectForm.listFirstFoundFile.DoubleClick();
-        	if(comm.PromptForm.SelfInfo.Exists(3000))
+        	cmn.SelectItemFromTableSingleClick(comm.MainForm.tblCommunications,data,"Email Communications Table");
+        	if(comm.MainForm.imgSavedMailInfo.Exists(10000))
         	{
-        		comm.PromptForm.btnYes.Click();
+        		Report.Success("Mail is not saved and is the expected Result");
         	}
-        	
-        	activitydesc=comm.TimeEntryDetailsForm.MenubarFillPanel.txtActivityDescription.GetAttributeValue<String>("Text");
-        	comm.TimeEntryDetailsForm.MenubarFillPanel.txtDate.PressKeys(day1.ToShortDateString());
-			comm.TimeEntryDetailsForm.MenubarFillPanel.btnOK.Click();
-        	ValidatePromptExists();
-        	comm.EmailDetailForm.Toolbar1.btnOk.Click();
-        	if(comm.PromptForm.SelfInfo.Exists())
+        	else
         	{
-        		comm.PromptForm.btnYes.Click();
-        		
+        		Report.Failure("Mail is saved and is not the expected Result");
         	}
-        	if(comm.PromptForm.SelfInfo.Exists())
-        	{
-        		comm.PromptForm.btnOK.Click();
-        		
-        	}
-        	ValidateInTimeEntryModule(activitydesc);
-        	
         	
         }
-        
-        public void ValidatePromptExists()
-        {
-        	if(comm.PromptForm.SelfInfo.Exists())
-        	{
-        		comm.PromptForm.btnNo.Click();
-        		Report.Info("Time Entry Exists and not combined.");
-        	}
-        }
-        
-        
-         public void ValidateInTimeEntryModule(string desc)
-        {
-        	Delay.Seconds(3);
-        	ts.MainForm.Self.Activate();
-        	ts.MainForm.btnTimeSheets.Click();
-        	Delay.Seconds(3);
-        	cmn.VerifyDataExistsInTable(ts.MainForm.tblTimeSheet,desc,"Time Entry Table");
-        }
-        	
+		
+		
         
         /// <summary>
         /// Performs the playback of actions in this module.
@@ -128,8 +93,7 @@ namespace SmokeTest.Modules
             Mouse.DefaultMoveTime = 300;
             Keyboard.DefaultKeyPressTime = 100;
             Delay.SpeedFactor = 1.0;
-            TimeEntry_Perform_onMail();
-            
+            AutoSave_notSet_Validate();
         }
     }
 }

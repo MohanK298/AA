@@ -141,6 +141,8 @@ namespace SmokeTest.Modules
             //people.EditCommunicationForm.ComboBoxSelectContactLabel.SelectedItem.Select("Business 2");
             Delay.Seconds(5);
             people.EditCommunicationForm.txtLocalNumber.TextValue = localNumber;
+            people.EditCommunicationForm.radioEmail.Select();
+            people.EditCommunicationForm.txtEmailAddress.TextValue="amicustestmk1@gmail.com";
             people.EditCommunicationForm.btnEditCommunicationOK.Click();
             Delay.Seconds(5);
             

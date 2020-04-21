@@ -45,7 +45,7 @@ namespace SmokeTest.Modules
         {
         	
         	
-        	string toMail="amicustestmk1@gmail.com";
+        	string[] toMail={"amicustestmk1@gmail.com"};
         	int count=0;
         	System.DateTime day1;
 			day1=System.DateTime.Now;

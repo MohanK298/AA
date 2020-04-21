@@ -41,6 +41,8 @@ namespace SmokeTest.Repositories
         CommunicationsFolders.SelectFilePeopleFormAppFolder _selectfilepeopleform;
         CommunicationsFolders.TimeEntryDetailsFormAppFolder _timeentrydetailsform;
         CommunicationsFolders.BrowseForFolderAppFolder _browseforfolder;
+        CommunicationsFolders.DropDownFormAppFolder _dropdownform;
+        CommunicationsFolders.TblDpdwnListFolder _tbldpdwnlist;
 
         /// <summary>
         /// Gets the singleton class instance representing the Communications element repository.
@@ -71,6 +73,8 @@ namespace SmokeTest.Repositories
             _selectfilepeopleform = new CommunicationsFolders.SelectFilePeopleFormAppFolder(this);
             _timeentrydetailsform = new CommunicationsFolders.TimeEntryDetailsFormAppFolder(this);
             _browseforfolder = new CommunicationsFolders.BrowseForFolderAppFolder(this);
+            _dropdownform = new CommunicationsFolders.DropDownFormAppFolder(this);
+            _tbldpdwnlist = new CommunicationsFolders.TblDpdwnListFolder(this);
         }
 
 #region Variables
@@ -249,6 +253,24 @@ namespace SmokeTest.Repositories
         public virtual CommunicationsFolders.BrowseForFolderAppFolder BrowseForFolder
         {
             get { return _browseforfolder; }
+        }
+
+        /// <summary>
+        /// The DropDownForm folder.
+        /// </summary>
+        [RepositoryFolder("85d01cfc-c704-4417-8959-970a6f8c573a")]
+        public virtual CommunicationsFolders.DropDownFormAppFolder DropDownForm
+        {
+            get { return _dropdownform; }
+        }
+
+        /// <summary>
+        /// The tblDpdwnList folder.
+        /// </summary>
+        [RepositoryFolder("bfd0616b-dd76-47a3-b95b-f515f9c3419a")]
+        public virtual CommunicationsFolders.TblDpdwnListFolder tblDpdwnList
+        {
+            get { return _tbldpdwnlist; }
         }
     }
 
@@ -2204,6 +2226,7 @@ namespace SmokeTest.Repositories
         public partial class PeopleSelectFormAppFolder : RepoGenBaseFolder
         {
             RepoItemInfo _listcontactInfo;
+            RepoItemInfo _cmbxwhoareInfo;
 
             /// <summary>
             /// Creates a new PeopleSelectForm  folder.
@@ -2212,6 +2235,7 @@ namespace SmokeTest.Repositories
                     base("PeopleSelectForm", "/form[@controlname='PeopleSelectForm']", parentFolder, 30000, null, true, "d45a8cb3-f807-4139-98be-7730fb5878eb", "")
             {
                 _listcontactInfo = new RepoItemInfo(this, "listContact", "container[@controlname='panel1']//row[@accessiblename='Band 0 row 1']/cell[@accessiblename='Name']", 30000, null, "e332c515-231a-4f17-b41b-87ace848d8a0");
+                _cmbxwhoareInfo = new RepoItemInfo(this, "cmbxWhoAre", "container[@controlname='pnlBase']//element[@controlname='ucmbSecondaryFilter']/combobox[@accessiblename='Who Are...']", 30000, null, "3795ef27-26ac-4c61-b7b9-db3671276f75");
             }
 
             /// <summary>
@@ -2259,6 +2283,30 @@ namespace SmokeTest.Repositories
                 get
                 {
                     return _listcontactInfo;
+                }
+            }
+
+            /// <summary>
+            /// The cmbxWhoAre item.
+            /// </summary>
+            [RepositoryItem("3795ef27-26ac-4c61-b7b9-db3671276f75")]
+            public virtual Ranorex.ComboBox cmbxWhoAre
+            {
+                get
+                {
+                    return _cmbxwhoareInfo.CreateAdapter<Ranorex.ComboBox>(true);
+                }
+            }
+
+            /// <summary>
+            /// The cmbxWhoAre item info.
+            /// </summary>
+            [RepositoryItemInfo("3795ef27-26ac-4c61-b7b9-db3671276f75")]
+            public virtual RepoItemInfo cmbxWhoAreInfo
+            {
+                get
+                {
+                    return _cmbxwhoareInfo;
                 }
             }
         }
@@ -4496,6 +4544,86 @@ namespace SmokeTest.Repositories
                 get
                 {
                     return _btncancelInfo;
+                }
+            }
+        }
+
+        /// <summary>
+        /// The DropDownFormAppFolder folder.
+        /// </summary>
+        [RepositoryFolder("85d01cfc-c704-4417-8959-970a6f8c573a")]
+        public partial class DropDownFormAppFolder : RepoGenBaseFolder
+        {
+
+            /// <summary>
+            /// Creates a new DropDownForm  folder.
+            /// </summary>
+            public DropDownFormAppFolder(RepoGenBaseFolder parentFolder) :
+                    base("DropDownForm", "/form[@title='']", parentFolder, 30000, null, true, "85d01cfc-c704-4417-8959-970a6f8c573a", "")
+            {
+            }
+
+            /// <summary>
+            /// The Self item.
+            /// </summary>
+            [RepositoryItem("85d01cfc-c704-4417-8959-970a6f8c573a")]
+            public virtual Ranorex.Form Self
+            {
+                get
+                {
+                    return _selfInfo.CreateAdapter<Ranorex.Form>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Self item info.
+            /// </summary>
+            [RepositoryItemInfo("85d01cfc-c704-4417-8959-970a6f8c573a")]
+            public virtual RepoItemInfo SelfInfo
+            {
+                get
+                {
+                    return _selfInfo;
+                }
+            }
+        }
+
+        /// <summary>
+        /// The TblDpdwnListFolder folder.
+        /// </summary>
+        [RepositoryFolder("bfd0616b-dd76-47a3-b95b-f515f9c3419a")]
+        public partial class TblDpdwnListFolder : RepoGenBaseFolder
+        {
+
+            /// <summary>
+            /// Creates a new tblDpdwnList  folder.
+            /// </summary>
+            public TblDpdwnListFolder(RepoGenBaseFolder parentFolder) :
+                    base("tblDpdwnList", "/form[@title='']/?/?/table[@accessiblename='Band 0']", parentFolder, 60000, null, false, "bfd0616b-dd76-47a3-b95b-f515f9c3419a", "")
+            {
+            }
+
+            /// <summary>
+            /// The Self item.
+            /// </summary>
+            [RepositoryItem("bfd0616b-dd76-47a3-b95b-f515f9c3419a")]
+            public virtual Ranorex.Table Self
+            {
+                get
+                {
+                    return _selfInfo.CreateAdapter<Ranorex.Table>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Self item info.
+            /// </summary>
+            [RepositoryItemInfo("bfd0616b-dd76-47a3-b95b-f515f9c3419a")]
+            public virtual RepoItemInfo SelfInfo
+            {
+                get
+                {
+                    return _selfInfo;
                 }
             }
         }

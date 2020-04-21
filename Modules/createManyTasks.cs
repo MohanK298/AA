@@ -46,7 +46,7 @@ namespace SmokeTest.Modules
         	task.MainForm.Self.Activate();
         	task.MainForm.btnTasks.Click();
         	
-        	for (int value = 000; value < 15; value++)
+        	for (int value = 000; value < 20; value++)
         	{
         	
         		task.MainForm.Self.Activate();

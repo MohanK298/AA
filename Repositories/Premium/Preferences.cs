@@ -4217,6 +4217,7 @@ namespace SmokeTest.Repositories.Premium
         public partial class EmailAutoSaveFormAppFolder : RepoGenBaseFolder
         {
             RepoItemInfo _btnfinishInfo;
+            RepoItemInfo _cbautosaveInfo;
 
             /// <summary>
             /// Creates a new EmailAutoSaveForm  folder.
@@ -4225,6 +4226,7 @@ namespace SmokeTest.Repositories.Premium
                     base("EmailAutoSaveForm", "/form[@controlname='EmailAutosaveForm']", parentFolder, 30000, null, false, "96965b7c-4928-499b-88c2-72a9cfa78caf", "")
             {
                 _btnfinishInfo = new RepoItemInfo(this, "btnFinish", ".//toolbar[@accessiblename='Toolbar']/button[@accessiblename='Finish']", 30000, null, "5d886b85-fda9-4a73-8c6c-d1b897c3fb0c");
+                _cbautosaveInfo = new RepoItemInfo(this, "cbAutoSave", "container[@controlname='pnlControls']/container[@controlname='pnlBody']/element/checkbox[@accessiblename>'Auto-save E-mail sent/received']/checkbox[@accessiblename>'Auto-save E-mail sent/received']", 30000, null, "5287dcca-b824-4c3e-a848-f23e350da721");
             }
 
             /// <summary>
@@ -4272,6 +4274,30 @@ namespace SmokeTest.Repositories.Premium
                 get
                 {
                     return _btnfinishInfo;
+                }
+            }
+
+            /// <summary>
+            /// The cbAutoSave item.
+            /// </summary>
+            [RepositoryItem("5287dcca-b824-4c3e-a848-f23e350da721")]
+            public virtual Ranorex.CheckBox cbAutoSave
+            {
+                get
+                {
+                    return _cbautosaveInfo.CreateAdapter<Ranorex.CheckBox>(true);
+                }
+            }
+
+            /// <summary>
+            /// The cbAutoSave item info.
+            /// </summary>
+            [RepositoryItemInfo("5287dcca-b824-4c3e-a848-f23e350da721")]
+            public virtual RepoItemInfo cbAutoSaveInfo
+            {
+                get
+                {
+                    return _cbautosaveInfo;
                 }
             }
         }
@@ -4373,6 +4399,7 @@ namespace SmokeTest.Repositories.Premium
             RepoItemInfo _cbreadytobeginprocessInfo;
             RepoItemInfo _cbcurrentlyloggedinInfo;
             RepoItemInfo _cbreviewguideInfo;
+            RepoItemInfo _cbappyautosaveInfo;
 
             /// <summary>
             /// Creates a new PnlControls  folder.
@@ -4383,6 +4410,7 @@ namespace SmokeTest.Repositories.Premium
                 _cbreadytobeginprocessInfo = new RepoItemInfo(this, "cbReadytoBeginProcess", "?/?/container[@controlname='panelOutlook']/element[@controlname='achkReadyToProcess']/checkbox[@accessiblename>'I am ready to begin processing']/checkbox[@accessiblename>'I am ready to begin processing']", 30000, null, "02fad97f-f831-43de-901b-36b242a7d4bc");
                 _cbcurrentlyloggedinInfo = new RepoItemInfo(this, "cbCurrentlyLoggedIn", "?/?/container[@controlname='panelOutlook']/element[@controlname='uchkWorkstation']/checkbox[@accessiblename>'I am currently logged in to']/checkbox[@accessiblename>'I am currently logged in to']", 30000, null, "fc325317-2ff0-429b-9312-a6f9e4b0fd4f");
                 _cbreviewguideInfo = new RepoItemInfo(this, "cbReviewGuide", "container[@controlname='pnlBody']/element[@controlname='uchkReviewGuide']/checkbox[@accessiblename='Review the']/checkbox[@accessiblename='Review the']", 30000, null, "16424595-089a-4ed1-96da-e7b1865e26ae");
+                _cbappyautosaveInfo = new RepoItemInfo(this, "cbAppyAutoSave", "container[@controlname='pnlBody']/element[@controlname='uchkApplyAutoSave']/checkbox[@accessiblename>'Apply my auto-save settings']/checkbox[@accessiblename>'Apply my auto-save settings']", 30000, null, "ce1adea4-ed9e-43c7-8954-3ba84643ee0d");
             }
 
             /// <summary>
@@ -4478,6 +4506,30 @@ namespace SmokeTest.Repositories.Premium
                 get
                 {
                     return _cbreviewguideInfo;
+                }
+            }
+
+            /// <summary>
+            /// The cbAppyAutoSave item.
+            /// </summary>
+            [RepositoryItem("ce1adea4-ed9e-43c7-8954-3ba84643ee0d")]
+            public virtual Ranorex.CheckBox cbAppyAutoSave
+            {
+                get
+                {
+                    return _cbappyautosaveInfo.CreateAdapter<Ranorex.CheckBox>(true);
+                }
+            }
+
+            /// <summary>
+            /// The cbAppyAutoSave item info.
+            /// </summary>
+            [RepositoryItemInfo("ce1adea4-ed9e-43c7-8954-3ba84643ee0d")]
+            public virtual RepoItemInfo cbAppyAutoSaveInfo
+            {
+                get
+                {
+                    return _cbappyautosaveInfo;
                 }
             }
         }

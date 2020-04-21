@@ -47,7 +47,7 @@ namespace SmokeTest.Modules
         {
         	
         	string activitydesc="";
-        	string[] toMail={"amicustestmk1@gmail.com"};
+        	string[] toMail={"qaabacusnext@outlook.com"};
         	System.DateTime day1;
 			day1=System.DateTime.Now;
         	comm.MainForm.Self.Activate();
@@ -68,7 +68,7 @@ namespace SmokeTest.Modules
         	comm.MainForm.btnSyncNow.Click();
         	Delay.Seconds(15);
         	cmn.SelectItemFromTableDblClick(comm.MainForm.tblCommunications,data,"Email Communications Table");
-        	
+        	Delay.Seconds(2);
         	comm.EmailDetailForm.Toolbar1.btnDoTimeEntry.Click();
         	
         	comm.FileSelectForm.listFirstFoundFile.DoubleClick();

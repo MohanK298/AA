@@ -39,7 +39,7 @@ namespace SmokeTest.Modules
         Communications comm=Communications.Instance;
         Login login=Login.Instance;
         SmokeTestRepository str = SmokeTestRepository.Instance;
-        
+       
         
         private void ValidateOutlookEmbedded()
  		{
@@ -73,7 +73,7 @@ namespace SmokeTest.Modules
         	login.LoginForm.btnLogin.Click();
         	if(pref.PromptForm.SelfInfo.Exists(5000))
         	{
-        		pref.PromptForm.btnNo.Click();
+        		pref.PromptForm.btnYes.Click();
         	}
         	Delay.Seconds(10);
         }
@@ -96,16 +96,21 @@ namespace SmokeTest.Modules
         	pref.EmailAttachmentForm.btnFinish.Click();
         	
         	pref.EmailPreferencesForm.Panel2.btnStep3.Click();
+        	pref.EmailAutoSaveForm.cbAutoSave.Check();
         	pref.EmailAutoSaveForm.btnFinish.Click();
         	
         	pref.EmailPreferencesForm.Panel2.btnStep4.Click();
         	pref.EmailInitialization.PnlControls.cbReviewGuide.Check();
+        	if(pref.EmailInitialization.PnlControls.cbAppyAutoSaveInfo.Exists(3000))
+        	{
+        		pref.EmailInitialization.PnlControls.cbAppyAutoSave.Check();
+        	}
         	pref.EmailInitialization.PnlControls.cbCurrentlyLoggedIn.Check();
         	pref.EmailInitialization.PnlControls.cbReadytoBeginProcess.Check();
         	pref.EmailInitialization.Toolbar1.btnBeginProcess.Click();
         	
         	pref.PromptForm.ButtonOK.Click();
-        	if(pref.PromptForm.SelfInfo.Exists(3000))
+        	if(pref.PromptForm.Self.Enabled)
         	   {pref.PromptForm.ButtonOK.Click();}
         	pref.EmailInitialization.Toolbar1.btnFinish.Click();
         	
@@ -119,7 +124,11 @@ namespace SmokeTest.Modules
         private void ValidateEmbeddedOutlook()
         {
         	comm.MainForm.Self.Activate();
-        	comm.MainForm.btnCommunications1.Click();
+        	if(comm.MainForm.btnCommunications1Info.Exists(3000))
+        	{comm.MainForm.btnCommunications1.Click();}
+        	else{
+        		comm.MainForm.btnCommunications.Click();
+        	}
         	comm.MainForm.txtOutlook.Click();
         	Delay.Seconds(2);
         	Validate.Exists(comm.MainForm.OutlookMailInfo,"Embedded Outlook is displayed as expected");

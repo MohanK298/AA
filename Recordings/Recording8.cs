@@ -74,12 +74,12 @@ namespace SmokeTest.Recordings
         void ITestModule.Run()
         {
             Mouse.DefaultMoveTime = 300;
-            Keyboard.DefaultKeyPressTime = 20;
+            Keyboard.DefaultKeyPressTime = 100;
             Delay.SpeedFactor = 1.00;
 
             Init();
 
-            Report.Log(ReportLevel.Info, "Application", "Run application 'C:\\Amicus\\Amicus Attorney Workstation\\AmicusAttorney.XWin.exe' in normal mode.", new RecordItemIndex(0));
+            Report.Log(ReportLevel.Info, "Application", "Run application 'C:\\Amicus\\Amicus Attorney Workstation\\AmicusAttorney.XWin.exe' in normal mode. Return value bound to $.", new RecordItemIndex(0));
             Host.Local.RunApplication("C:\\Amicus\\Amicus Attorney Workstation\\AmicusAttorney.XWin.exe", "", "C:\\Amicus\\Amicus Attorney Workstation", false);
             Delay.Milliseconds(0);
             

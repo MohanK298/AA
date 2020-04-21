@@ -49,7 +49,7 @@ namespace SmokeTest.Modules
         {
         	
         	
-        	string toMail="amicustestmk1@gmail.com";
+        	string toMail="qaabacusnext@outlook.com";
         	int attach=3;
         	string savedattach="";
         	System.DateTime day1;

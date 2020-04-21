@@ -1467,6 +1467,16 @@ QmCC
 			searchtimeout="30000ms">
 				/form[@controlname='EmailAutosaveForm']//toolbar[@accessiblename='Toolbar']/button[@accessiblename='Finish']
 			</item>
+			<item
+			addcaps="checkbox,accessible"
+			capname="checkbox"
+			id="5287dcca-b824-4c3e-a848-f23e350da721"
+			name="cbAutoSave"
+			refimgid="edcc5b47-a330-4ac4-a28d-acc9a21d54b9"
+			refpath="/form[@controlname='EmailAutosaveForm']/container[@controlname='pnlControls']/container[@controlname='pnlBody']/element[@controlname='achkAutoSaveEmail']/checkbox[@accessiblename='Auto-save E-mail sent/received in my e-mail program where the Sender/Recipient matches one of my Amicus Contacts']/checkbox[@accessiblename='Auto-save E-mail sent/received in my e-mail program where the Sender/Recipient matches one of my Amicus Contacts']"
+			searchtimeout="30000ms">
+				/form[@controlname='EmailAutosaveForm']/container[@controlname='pnlControls']/container[@controlname='pnlBody']/element/checkbox[@accessiblename&gt;'Auto-save E-mail sent/received']/checkbox[@accessiblename&gt;'Auto-save E-mail sent/received']
+			</item>
 			<basepath>
 				/form[@controlname='EmailAutosaveForm']
 			</basepath>
@@ -1517,6 +1527,16 @@ QmCC
 				refpath="/form[@controlname='EmailInitialization']/container[@controlname='pnlControls']/container[@controlname='pnlBody']/element[@controlname='uchkReviewGuide']/checkbox[@accessiblename='Review the']/checkbox[@accessiblename='Review the']"
 				searchtimeout="30000ms">
 					/form[@controlname='EmailInitialization']/container[@controlname='pnlControls']/container[@controlname='pnlBody']/element[@controlname='uchkReviewGuide']/checkbox[@accessiblename='Review the']/checkbox[@accessiblename='Review the']
+				</item>
+				<item
+				addcaps="checkbox,accessible"
+				capname="checkbox"
+				id="ce1adea4-ed9e-43c7-8954-3ba84643ee0d"
+				name="cbAppyAutoSave"
+				refimgid="95631a25-9fd8-4cc2-9c76-62320e554a9a"
+				refpath="/form[@controlname='EmailInitialization']/container[@controlname='pnlControls']/container[@controlname='pnlBody']/element[@controlname='uchkApplyAutoSave']/checkbox[@accessiblename='Apply my auto-save settings to my emal sent/received:']/checkbox[@accessiblename='Apply my auto-save settings to my emal sent/received:']"
+				searchtimeout="30000ms">
+					/form[@controlname='EmailInitialization']/container[@controlname='pnlControls']/container[@controlname='pnlBody']/element[@controlname='uchkApplyAutoSave']/checkbox[@accessiblename&gt;'Apply my auto-save settings']/checkbox[@accessiblename&gt;'Apply my auto-save settings']
 				</item>
 				<basepath>
 					/form[@controlname='EmailInitialization']/container[@controlname='pnlControls']

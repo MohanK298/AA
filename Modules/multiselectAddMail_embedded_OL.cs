@@ -72,6 +72,11 @@ namespace SmokeTest.Modules
         		comm.FileSelectForm.listFirstFoundFile.DoubleClick();
         		Report.Success("File Added Successfully for the E-Mail");
         		comm.SelectFilePeopleForm.btnAddPeople.Click();
+        		//comm.PeopleSelectForm.cmbbxPeopleSelection.Click();
+        		comm.PeopleSelectForm.cmbxWhoAre.Click();
+        		cmn.SelectItemDropdown(comm.tblDpdwnList.Self,"All My Contacts");
+		     	
+        		//cmn.SelectItemDropdown(comm.PeopleSelectForm.
         		comm.PeopleSelectForm.listContact.DoubleClick();
         		Report.Success("People Added Successfully for the E-Mail");
         		peopleName=comm.SelectFilePeopleForm.txtPeople.GetAttributeValue<String>("Text");

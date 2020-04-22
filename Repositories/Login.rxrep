@@ -18,7 +18,7 @@ name="Login">
 		id="ca16897b-8561-4bec-91d5-5e4caa0d49c6"
 		isrooted="True"
 		name="LoginForm"
-		refimgid="3be427e7-6186-430e-a854-636704a412f9"
+		refimgid="3c91f987-cf92-42ff-97d1-9540b8bda152"
 		refpath="/form[@controlname='LoginForm']"
 		searchtimeout="30000ms"
 		usecache="True">

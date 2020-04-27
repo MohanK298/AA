@@ -102,9 +102,13 @@ namespace SmokeTest.Modules
         		if(comm.EmailDetailForm.SelfInfo.Exists(3000))
     			{
     				Report.Success("Email Details Form opened successfully");
-    			}
+    			if(comm.EmailDetailForm.PnlBase.lnkMoreInfo.Exists(3000))
+        				{
+        					comm.EmailDetailForm.PnlBase.lnkMore.Click();
+        				}
+        	
         		Validate.Exists(comm.EmailDetailForm.PnlBase.txtPeopleNameInfo,String.Format("People Added to the E-mail is - {0}",comm.EmailDetailForm.PnlBase.txtPeopleName.TextValue));
-        		                                                                             
+        		}
     			if(comm.PromptForm.SelfInfo.Exists(3000))
     			{
     				comm.PromptForm.btnNo.Click();

@@ -114,6 +114,7 @@ namespace SmokeTest
         	
         	if(!login.Update.SelfInfo.Exists(30000)&& !login.LoginForm.SelfInfo.Exists(30000))
         	{
+        		CloseProcess();
         		Keyboard.Press(System.Windows.Forms.Keys.Enter, Keyboard.DefaultScanCode, Keyboard.DefaultKeyPressTime, 1, true);
         		Host.Local.RunApplication("C:\\Amicus\\Amicus Attorney Workstation\\AmicusAttorney.XWin.exe");
         		Report.Info("Warning message was closed successfully and Amicus Attorney Exe File Opened");
@@ -133,13 +134,15 @@ namespace SmokeTest
         		}
         			
         	}
+        	else
+        	{
         	
 //        		Keyboard.Press(System.Windows.Forms.Keys.Enter, Keyboard.DefaultScanCode, Keyboard.DefaultKeyPressTime, 1, true);
 //        		Host.Local.RunApplication("C:\\Amicus\\Amicus Attorney Workstation\\AmicusAttorney.XWin.exe");
 //        		Report.Info("Warning message was closed successfully and Amicus Attorney Exe File Opened");
 //        	
         	Report.Success("Amicus Attorney opened Successfully");
-        	
+        	}
         }
         
         

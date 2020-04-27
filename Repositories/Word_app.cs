@@ -1083,7 +1083,7 @@ namespace SmokeTest.Repositories
             /// Creates a new Open  folder.
             /// </summary>
             public OpenAppFolder(RepoGenBaseFolder parentFolder) :
-                    base("Open", "/form[@title='Open']", parentFolder, 30000, null, true, "51eef256-da32-4f80-bddf-b71842b97b11", "")
+                    base("Open", "/form[@title='Open']", parentFolder, 30000, null, false, "51eef256-da32-4f80-bddf-b71842b97b11", "")
             {
                 _linkdocumentsInfo = new RepoItemInfo(this, "linkDocuments", "element[@class='DUIViewWndClassName']/container/element[1]/?/?/tree[@controlid='100']//treeitem[@text='Documents']", 30000, null, "9f7cf95a-a585-42e3-95c4-cee108f15eb0");
                 _listitemInfo = new RepoItemInfo(this, "listItem", "element[@class='DUIViewWndClassName']//container[@caption='ShellView']/?/?/listitem[@automationid='0']/text[@automationid='System.ItemNameDisplay']", 30000, null, "00aa1062-f87b-4faf-a344-d6fe15483eb3");
@@ -1225,7 +1225,7 @@ namespace SmokeTest.Repositories
             /// Creates a new Search  folder.
             /// </summary>
             public SearchAppFolder(RepoGenBaseFolder parentFolder) :
-                    base("Search", "/form[@controlname='Search']", parentFolder, 30000, null, true, "cd81e4d9-9c4b-4905-8901-2e9b72dd6cc4", "")
+                    base("Search", "/form[@controlname='Search']", parentFolder, 30000, null, false, "cd81e4d9-9c4b-4905-8901-2e9b72dd6cc4", "")
             {
                 _btnfindnowInfo = new RepoItemInfo(this, "btnFindNow", "container[@controlname='menubar_Fill_Panel']//toolbar[@accessiblename='Toolbar']/button[@accessiblename='Find Now']", 30000, null, "48026ab5-9d55-45ef-9692-8836fcc70121");
                 _btncancelInfo = new RepoItemInfo(this, "btnCancel", "container[@controlname='menubar_Fill_Panel']//toolbar[@accessiblename='Toolbar']/button[@accessiblename='Cancel']", 30000, null, "7ffb0f72-849e-40b4-b0a8-61a1def3786d");
@@ -1318,7 +1318,7 @@ namespace SmokeTest.Repositories
             /// Creates a new SearchResult  folder.
             /// </summary>
             public SearchResultAppFolder(RepoGenBaseFolder parentFolder) :
-                    base("SearchResult", "/form[@controlname='SearchResult']", parentFolder, 30000, null, true, "ca6c438b-50f8-4059-a587-395bd463c8da", "")
+                    base("SearchResult", "/form[@controlname='SearchResult']", parentFolder, 30000, null, false, "ca6c438b-50f8-4059-a587-395bd463c8da", "")
             {
                 _toolbar1 = new Word_appFolders.Toolbar1Folder(this);
                 _tblsearchresultsInfo = new RepoItemInfo(this, "tblSearchResults", "container[@controlname='menubar_Fill_Panel']/container[@controlname='pnlBase']//table[@accessiblename='Band 0']", 30000, null, "629398d1-bbfc-43d6-9706-e71216565d15");
@@ -1588,7 +1588,7 @@ namespace SmokeTest.Repositories
             /// Creates a new AboutForm  folder.
             /// </summary>
             public AboutFormAppFolder(RepoGenBaseFolder parentFolder) :
-                    base("AboutForm", "/form[@controlname='AboutForm']", parentFolder, 30000, null, true, "fec9f81f-d3b5-475d-b38e-76b23ac7d1d2", "")
+                    base("AboutForm", "/form[@controlname='AboutForm']", parentFolder, 30000, null, false, "fec9f81f-d3b5-475d-b38e-76b23ac7d1d2", "")
             {
             }
 

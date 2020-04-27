@@ -19,7 +19,7 @@ name="Outlook_AddIn">
 		isrooted="True"
 		name="Outlook"
 		searchtimeout="30000ms"
-		usecache="True">
+		usecache="False">
 			<item
 			addcaps="tabpage,uiautomation"
 			capname="tabpage"
@@ -286,7 +286,7 @@ TkSuQmCC
 		name="DetailedView"
 		refimgid="296284fb-e5bd-40b8-9a71-12aead0b8d97"
 		searchtimeout="30000ms"
-		usecache="True">
+		usecache="False">
 			<item
 			addcaps="tabpage,uiautomation"
 			capname="tabpage"
@@ -415,7 +415,7 @@ TkSuQmCC
 		refimgid="e4d045a2-21b1-4b74-9134-9c1de6f62282"
 		refpath="/form[@controlname='Search']"
 		searchtimeout="30000ms"
-		usecache="True">
+		usecache="False">
 			<item
 			addcaps="button,accessible"
 			capname="button"
@@ -460,7 +460,7 @@ SUVORK5CYII=
 		refimgid="e1c18b7a-8449-4336-9b7f-f62237e1d50d"
 		refpath="/form[@controlname='SearchResult']"
 		searchtimeout="30000ms"
-		usecache="True">
+		usecache="False">
 			<item
 			addcaps="table,accessible"
 			capname="table"
@@ -562,7 +562,7 @@ SUVORK5CYII=
 		refimgid="a62d93c3-6080-4248-b7a4-9d11fd067923"
 		refpath="/form[@controlname='AboutForm']"
 		searchtimeout="30000ms"
-		usecache="True">
+		usecache="False">
 			<basepath>
 				/form[@controlname='AboutForm']
 			</basepath>

@@ -385,7 +385,7 @@ Z8FsomMBZADN0wE2QJEB8KRMcWaCAVB21oqcbQbKzkCJaRoh0w9rBk/7ADMAqgwNMDAAAI/ecB2F
 		refimgid="481c3241-5e12-4210-bc1e-b33ee66557c0"
 		refpath="/form[@title='Open']"
 		searchtimeout="30000ms"
-		usecache="True">
+		usecache="False">
 			<item
 			addcaps="treeitem"
 			capname="treeitem"
@@ -454,7 +454,7 @@ v2De0j/JC7DW+mIgxG8156WhX9NdggAAAABJRU5ErkJggg==
 		refimgid="e4d045a2-21b1-4b74-9134-9c1de6f62282"
 		refpath="/form[@controlname='Search']"
 		searchtimeout="30000ms"
-		usecache="True">
+		usecache="False">
 			<item
 			addcaps="button,accessible"
 			capname="button"
@@ -499,7 +499,7 @@ SUVORK5CYII=
 		refimgid="e1c18b7a-8449-4336-9b7f-f62237e1d50d"
 		refpath="/form[@controlname='SearchResult']"
 		searchtimeout="30000ms"
-		usecache="True">
+		usecache="False">
 			<item
 			addcaps="table,accessible"
 			capname="table"
@@ -601,7 +601,7 @@ SUVORK5CYII=
 		refimgid="a62d93c3-6080-4248-b7a4-9d11fd067923"
 		refpath="/form[@controlname='AboutForm']"
 		searchtimeout="30000ms"
-		usecache="True">
+		usecache="False">
 			<basepath>
 				/form[@controlname='AboutForm']
 			</basepath>

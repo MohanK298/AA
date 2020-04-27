@@ -68,13 +68,14 @@ namespace SmokeTest.Modules
         	comm.MainForm.btnSyncNow.Click();
         	Delay.Seconds(15);
         	cmn.SelectItemFromTableSingleClick(comm.MainForm.tblCommunications,data,"Email Communications Table");
-        	if(!comm.MainForm.imgSavedMailInfo.Exists(10000))
+        	if(comm.MainForm.imgSavedMail.Visible)
         	{
-        		Report.Success("Mail is saved and is the expected Result");
+        		
+        		Report.Failure("Mail is not saved and is not the expected Result");
         	}
         	else
         	{
-        		Report.Failure("Mail is not saved and is not the expected Result");
+        		Report.Success("Mail is saved and is the expected Result");
         	}
         	
         }

@@ -39,7 +39,8 @@ namespace SmokeTest.Modules
         FirmSettings frm=FirmSettings.Instance;
         Communications comm=Communications.Instance;
         Outlook_AddIn outlook=Outlook_AddIn.Instance;
-        
+        static string rndData=System.DateTime.Now.ToString();
+		string data=String.Format("Test Data Added {0}",rndData);
            
         private void OpenApp()
         {
@@ -55,6 +56,13 @@ namespace SmokeTest.Modules
         	string txt="";
         	int indx1,indx2=0;
         	string txt2="";
+        	
+        	string[] toMail={"qaabacusnext@outlook.com"};
+        	System.DateTime day1;
+			day1=System.DateTime.Now;
+        	Delay.Seconds(2);
+			cmn.SendEmail(toMail,data);
+        	Delay.Seconds(10);
         	OpenApp();
         	if(outlook.Outlook.tabAmicusTasksInfo.Exists(3000))
         	{
@@ -85,7 +93,12 @@ namespace SmokeTest.Modules
         			if(comm.EmailDetailForm.SelfInfo.Exists(3000))
         			{
         				Report.Success("Email Details Form opened successfully");
-        				Validate.Exists(comm.EmailDetailForm.PnlBase.txtPeopleNameInfo,String.Format("File Added to the E-mail is - {0}",comm.EmailDetailForm.PnlBase.txtFileName.TextValue));
+        				if(comm.EmailDetailForm.PnlBase.lnkMoreInfo.Exists(3000))
+        				{
+        					comm.EmailDetailForm.PnlBase.lnkMore.Click();
+        				}
+        				
+        				Validate.Exists(comm.EmailDetailForm.PnlBase.txtFileNameInfo,String.Format("File Added to the E-mail is - {0}",comm.EmailDetailForm.PnlBase.txtFileName.TextValue));
         			}
         			comm.EmailDetailForm.Toolbar1.btnOk.Click();
         			if(comm.PromptForm.SelfInfo.Exists(3000))

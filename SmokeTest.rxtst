@@ -332,8 +332,16 @@ Module]]>
 			type="UserCode">
 			</testmodule>
 			<smartfoldernode
+			id="18ee7a14-43f3-4451-a453-9362b3ed2c92"
+			name="AddToLibrary_Doc_Office_WordAddin">
+			</smartfoldernode>
+			<smartfoldernode
 			id="18ff24f3-8679-4458-b3fe-e4bf51c16e55"
 			name="CreateTE_ValidateActivityCodes">
+			</smartfoldernode>
+			<smartfoldernode
+			id="19ab7b67-bde2-4d0c-86da-cbcaf37e3673"
+			name="Search_Functionality_Office_WordAddIn">
 			</smartfoldernode>
 			<testmodule
 			id="19c53a8d-d6ad-47f2-a637-712be9621deb"
@@ -352,8 +360,16 @@ Module]]>
 			name="CreateManyRecords">
 			</testcase>
 			<smartfoldernode
+			id="1a710b77-2674-413d-8a7d-a867cf04975e"
+			name="AddtoFile_MultiSelectMails">
+			</smartfoldernode>
+			<smartfoldernode
 			id="1aef484a-6601-4028-8faf-d2c7bee2a28a"
 			name="TimeAssistant_RightClickOptions">
+			</smartfoldernode>
+			<smartfoldernode
+			id="1b7e1df1-a2bf-451b-9d4c-e9ef9f091293"
+			name="SearchFunctionality">
 			</smartfoldernode>
 			<testmodule
 			id="1c649798-fa9c-4fb9-a7d7-1a04a3a43aa2"
@@ -983,7 +999,12 @@ Attorney side]]>
 			ref="4daf26a7-d293-4e3e-b3ba-c4efed986c71"
 			type="UserCode">
 			</testmodule>
+			<smartfoldernode
+			id="5004ee78-0c12-4f43-8a1f-3b4e3c17bf9e"
+			name="VerifyDocDetailOfficeAddInExistingDoc">
+			</smartfoldernode>
 			<testmodule
+			enabled="False"
 			id="504439a7-cd05-44b1-9449-e391dd0f2c41"
 			name="ResetOutlookAddIn"
 			ref="68378481-01b6-4ecb-bf2f-7203c44cc884"
@@ -1058,6 +1079,10 @@ module]]>
 			datasource="ContactAPXData"
 			id="52c8861c-4c6f-48a0-a0ee-282451147a3e"
 			name="AddContactAPX">
+			</smartfoldernode>
+			<smartfoldernode
+			id="530e9bd8-c35a-4fa1-bb74-d0145d5f3fcf"
+			name="Word_AddIn">
 			</smartfoldernode>
 			<smartfoldernode
 			datasource="BillingContactData"
@@ -1462,11 +1487,19 @@ event]]>
 				</description>
 			</smartfoldernode>
 			<smartfoldernode
+			id="6faa2812-f963-4c4a-96dc-ccc2e2a5d45b"
+			name="AddtoFile">
+			</smartfoldernode>
+			<smartfoldernode
 			id="701a4de7-911e-4959-bc20-c0e8423f48e1"
 			name="DeleteDocument">
 				<description>
 					<![CDATA[<P>Delete the edited Document</P>]]>
 				</description>
+			</smartfoldernode>
+			<smartfoldernode
+			id="701eb2d2-7e21-4e6f-a9c9-aaa777c692b9"
+			name="ResetOutlookAddIn">
 			</smartfoldernode>
 			<testmodule
 			id="708e53da-52b4-4dd0-b35b-bb251cee3806"
@@ -1551,6 +1584,10 @@ event]]>
 					</var>
 				</databinding>
 			</testmodule>
+			<smartfoldernode
+			id="7a9ea756-51f4-41de-a41d-757781604750"
+			name="OutlookDisabledToolbar">
+			</smartfoldernode>
 			<smartfoldernode
 			datasource="CalendarData"
 			id="7ab50160-7a97-40e2-ad44-b1bba3374998"
@@ -1915,6 +1952,10 @@ event]]>
 				</description>
 			</smartfoldernode>
 			<smartfoldernode
+			id="9feab462-deec-4a27-a8b9-f2e2f74b1f9f"
+			name="OutlookFolder_ValidateButtons">
+			</smartfoldernode>
+			<smartfoldernode
 			id="9ff27ad7-cc65-4a21-938a-7e2df4345bb7"
 			name="CpNote">
 			</smartfoldernode>
@@ -2159,6 +2200,10 @@ billing side that will be billed on a file]]>
 			ref="f34c5a6d-bbdf-49f9-9526-b2bd54f3160e"
 			type="UserCode">
 			</testmodule>
+			<smartfoldernode
+			id="adb4ca31-020c-47c1-9602-1c295de6a3bf"
+			name="AddtoFile_Doc_OfficeAddIn">
+			</smartfoldernode>
 			<smartfoldernode
 			datasource="NoteData"
 			id="ae08bef5-05bf-4753-9e12-cab4f965fd83"
@@ -2815,6 +2860,10 @@ directly and create a Bill]]>
 			id="d9c75bd5-ecea-44aa-9940-b1440d6ec3e5"
 			name="EmailWithMultipleAttachments">
 			</smartfoldernode>
+			<smartfoldernode
+			id="dbc0dc88-4b15-49b9-984e-a670aa4fea91"
+			name="AddtoPeople_Doc_Office_AddIn">
+			</smartfoldernode>
 			<testmodule
 			id="dbf16a2f-7653-4679-b483-b9d27a04bd13"
 			name="createAndDeleteToDo"
@@ -2910,6 +2959,10 @@ Page]]>
 			id="e11e54d2-7d19-41c3-92e6-4d791e0bfa37"
 			name="BasicConflictCheck">
 			</smartfoldernode>
+			<smartfoldernode
+			id="e1c9a453-772a-495a-938f-a49e9be0141c"
+			name="DetailsButtonDisabled_MultiSelectMails">
+			</smartfoldernode>
 			<testmodule
 			id="e24c31f6-e095-44f1-ae87-5c5da72d114a"
 			name="basicValidation"
@@ -2932,6 +2985,10 @@ Page]]>
 			ref="6ce50dd2-e5c1-4b32-985c-3e7701ff6b7e"
 			type="UserCode">
 			</testmodule>
+			<smartfoldernode
+			id="e4d8dadf-4f35-4b69-a2af-856c7bd3db7e"
+			name="AddtoPeople">
+			</smartfoldernode>
 			<testmodule
 			id="e5646aeb-02a1-424c-9b72-d58e17d43b6a"
 			name="VerifyOutlook_Enabled_AmicusToolbar"
@@ -3088,6 +3145,10 @@ bill]]>
 			ref="6af27867-6861-48c6-8db5-5ee255193e69"
 			type="UserCode">
 			</testmodule>
+			<smartfoldernode
+			id="ef48c456-9059-4ccb-b3d7-a1fbe095816e"
+			name="OutlookEnabledAmicusToolbar">
+			</smartfoldernode>
 			<testmodule
 			id="efbfe7fa-525b-4dd2-bdbe-fccfa695f964"
 			name="createnDeleteMasterAdjrnAppt_ThisOne"
@@ -4634,30 +4695,54 @@ bill]]>
 					<testcase
 					id="57309174-e9c7-40be-bd68-5649d6c71a38"
 					name="Word_Addin">
-						<testmodule
-						id="8827a87b-f9ba-4072-b02d-819b6e02ff6a"
+						<smartfoldernode
+						id="530e9bd8-c35a-4fa1-bb74-d0145d5f3fcf"
 						name="Word_AddIn">
-						</testmodule>
-						<testmodule
-						id="8647281d-d269-41ef-80f3-447d8fc42734"
+							<testmodule
+							id="8827a87b-f9ba-4072-b02d-819b6e02ff6a"
+							name="Word_AddIn">
+							</testmodule>
+						</smartfoldernode>
+						<smartfoldernode
+						id="5004ee78-0c12-4f43-8a1f-3b4e3c17bf9e"
 						name="VerifyDocDetailOfficeAddInExistingDoc">
-						</testmodule>
-						<testmodule
-						id="f6dabff4-4425-4006-a5cb-150f1673df0b"
-						name="AddToFile_Doc_OfficeAddIn">
-						</testmodule>
-						<testmodule
-						id="cf2e3d15-335b-46cd-ba50-e3e4e5a4be0c"
-						name="AddToPeople_Doc_Office_AddIn">
-						</testmodule>
-						<testmodule
-						id="f9215f1b-885e-42dc-ad1a-9cd990be82e2"
-						name="SearchFunctionality_Office_WordAddIn">
-						</testmodule>
-						<testmodule
-						id="00f16073-a758-4d91-94b1-03477c9e13a8"
-						name="AddToLibrary_Doc_OfficeAddIn">
-						</testmodule>
+							<testmodule
+							id="8647281d-d269-41ef-80f3-447d8fc42734"
+							name="VerifyDocDetailOfficeAddInExistingDoc">
+							</testmodule>
+						</smartfoldernode>
+						<smartfoldernode
+						id="adb4ca31-020c-47c1-9602-1c295de6a3bf"
+						name="AddtoFile_Doc_OfficeAddIn">
+							<testmodule
+							id="f6dabff4-4425-4006-a5cb-150f1673df0b"
+							name="AddToFile_Doc_OfficeAddIn">
+							</testmodule>
+						</smartfoldernode>
+						<smartfoldernode
+						id="dbc0dc88-4b15-49b9-984e-a670aa4fea91"
+						name="AddtoPeople_Doc_Office_AddIn">
+							<testmodule
+							id="cf2e3d15-335b-46cd-ba50-e3e4e5a4be0c"
+							name="AddToPeople_Doc_Office_AddIn">
+							</testmodule>
+						</smartfoldernode>
+						<smartfoldernode
+						id="19ab7b67-bde2-4d0c-86da-cbcaf37e3673"
+						name="Search_Functionality_Office_WordAddIn">
+							<testmodule
+							id="f9215f1b-885e-42dc-ad1a-9cd990be82e2"
+							name="SearchFunctionality_Office_WordAddIn">
+							</testmodule>
+						</smartfoldernode>
+						<smartfoldernode
+						id="18ee7a14-43f3-4451-a453-9362b3ed2c92"
+						name="AddToLibrary_Doc_Office_WordAddin">
+							<testmodule
+							id="00f16073-a758-4d91-94b1-03477c9e13a8"
+							name="AddToLibrary_Doc_OfficeAddIn">
+							</testmodule>
+						</smartfoldernode>
 						<teardown
 						id="f711277d-0f19-4427-95c8-3dc22bb57fab"
 						name="teardown">
@@ -4670,42 +4755,78 @@ bill]]>
 					<testcase
 					id="ddd4bae8-4a40-4286-aafa-a7331e00f10b"
 					name="Outlook_AddIn">
-						<testmodule
-						id="ccc3298e-0110-47a5-8d82-5ec0fe5be0bb"
-						name="verifyOutlookDisabledToolbar">
-						</testmodule>
-						<testmodule
-						id="e5646aeb-02a1-424c-9b72-d58e17d43b6a"
-						name="VerifyOutlook_Enabled_AmicusToolbar">
-						</testmodule>
-						<testmodule
-						id="bcbe1972-627f-4dee-9c6c-3b978927f08c"
-						name="VerifyAddtoFile_Outlook_AddIn">
-						</testmodule>
-						<testmodule
-						id="708e53da-52b4-4dd0-b35b-bb251cee3806"
-						name="verifyAddtoPeople_Outlook_AddIn">
-						</testmodule>
-						<testmodule
-						id="be840dff-c267-47e9-a8cd-eb9060806c8a"
-						name="searchFunctionlity_Outlook_In">
-						</testmodule>
-						<testmodule
-						id="6a55da77-38ad-4371-9c6e-819bda651b06"
-						name="verifyOutlookFolders_ValidateButtons">
-						</testmodule>
-						<testmodule
-						id="ad2ed350-95b7-4488-9b4f-539801e5fdb5"
-						name="VerifyDetailsButtonDisabled_MultiSelectMails">
-						</testmodule>
-						<testmodule
-						id="34cd3154-baf5-43be-b487-7d53cc97d9e2"
-						name="VerifyAddtoFile_MultiSelectMails">
-						</testmodule>
-						<testmodule
-						id="504439a7-cd05-44b1-9449-e391dd0f2c41"
+						<smartfoldernode
+						id="7a9ea756-51f4-41de-a41d-757781604750"
+						name="OutlookDisabledToolbar">
+							<testmodule
+							id="ccc3298e-0110-47a5-8d82-5ec0fe5be0bb"
+							name="verifyOutlookDisabledToolbar">
+							</testmodule>
+						</smartfoldernode>
+						<smartfoldernode
+						id="ef48c456-9059-4ccb-b3d7-a1fbe095816e"
+						name="OutlookEnabledAmicusToolbar">
+							<testmodule
+							id="e5646aeb-02a1-424c-9b72-d58e17d43b6a"
+							name="VerifyOutlook_Enabled_AmicusToolbar">
+							</testmodule>
+						</smartfoldernode>
+						<smartfoldernode
+						id="6faa2812-f963-4c4a-96dc-ccc2e2a5d45b"
+						name="AddtoFile">
+							<testmodule
+							id="bcbe1972-627f-4dee-9c6c-3b978927f08c"
+							name="VerifyAddtoFile_Outlook_AddIn">
+							</testmodule>
+						</smartfoldernode>
+						<smartfoldernode
+						id="e4d8dadf-4f35-4b69-a2af-856c7bd3db7e"
+						name="AddtoPeople">
+							<testmodule
+							id="708e53da-52b4-4dd0-b35b-bb251cee3806"
+							name="verifyAddtoPeople_Outlook_AddIn">
+							</testmodule>
+						</smartfoldernode>
+						<smartfoldernode
+						id="1b7e1df1-a2bf-451b-9d4c-e9ef9f091293"
+						name="SearchFunctionality">
+							<testmodule
+							id="be840dff-c267-47e9-a8cd-eb9060806c8a"
+							name="searchFunctionlity_Outlook_In">
+							</testmodule>
+						</smartfoldernode>
+						<smartfoldernode
+						id="9feab462-deec-4a27-a8b9-f2e2f74b1f9f"
+						name="OutlookFolder_ValidateButtons">
+							<testmodule
+							id="6a55da77-38ad-4371-9c6e-819bda651b06"
+							name="verifyOutlookFolders_ValidateButtons">
+							</testmodule>
+						</smartfoldernode>
+						<smartfoldernode
+						id="e1c9a453-772a-495a-938f-a49e9be0141c"
+						name="DetailsButtonDisabled_MultiSelectMails">
+							<testmodule
+							id="ad2ed350-95b7-4488-9b4f-539801e5fdb5"
+							name="VerifyDetailsButtonDisabled_MultiSelectMails">
+							</testmodule>
+						</smartfoldernode>
+						<smartfoldernode
+						id="1a710b77-2674-413d-8a7d-a867cf04975e"
+						name="AddtoFile_MultiSelectMails">
+							<testmodule
+							id="34cd3154-baf5-43be-b487-7d53cc97d9e2"
+							name="VerifyAddtoFile_MultiSelectMails">
+							</testmodule>
+						</smartfoldernode>
+						<smartfoldernode
+						id="701eb2d2-7e21-4e6f-a9c9-aaa777c692b9"
 						name="ResetOutlookAddIn">
-						</testmodule>
+							<testmodule
+							id="504439a7-cd05-44b1-9449-e391dd0f2c41"
+							name="ResetOutlookAddIn">
+							</testmodule>
+						</smartfoldernode>
 						<teardown
 						id="9e8b1fbc-176e-45cc-9704-dcdb67572caf"
 						name="teardown">
@@ -5561,10 +5682,22 @@ bill]]>
 			id="15d854c4-74db-4dcb-93c0-e6631cefe305">
 			</testcontainer>
 			<testcontainer
+			id="18ee7a14-43f3-4451-a453-9362b3ed2c92">
+			</testcontainer>
+			<testcontainer
 			id="18ff24f3-8679-4458-b3fe-e4bf51c16e55">
 			</testcontainer>
 			<testcontainer
+			id="19ab7b67-bde2-4d0c-86da-cbcaf37e3673">
+			</testcontainer>
+			<testcontainer
+			id="1a710b77-2674-413d-8a7d-a867cf04975e">
+			</testcontainer>
+			<testcontainer
 			id="1aef484a-6601-4028-8faf-d2c7bee2a28a">
+			</testcontainer>
+			<testcontainer
+			id="1b7e1df1-a2bf-451b-9d4c-e9ef9f091293">
 			</testcontainer>
 			<testcontainer
 			id="1cd0fa2d-1c92-4ebd-b085-28577af4f552">
@@ -5648,7 +5781,13 @@ bill]]>
 			id="4ef7b0b3-886c-423c-af84-cc33d562d95d">
 			</testcontainer>
 			<testcontainer
+			id="5004ee78-0c12-4f43-8a1f-3b4e3c17bf9e">
+			</testcontainer>
+			<testcontainer
 			id="51b7b830-ea6e-4cae-b412-b50997157a16">
+			</testcontainer>
+			<testcontainer
+			id="530e9bd8-c35a-4fa1-bb74-d0145d5f3fcf">
 			</testcontainer>
 			<testcontainer
 			id="5350ce73-fef1-45bb-8dc2-a694dac53f7c">
@@ -5708,10 +5847,19 @@ bill]]>
 			id="6f4fdecc-21a0-492c-98be-0db96735fa65">
 			</testcontainer>
 			<testcontainer
+			id="6faa2812-f963-4c4a-96dc-ccc2e2a5d45b">
+			</testcontainer>
+			<testcontainer
 			id="701a4de7-911e-4959-bc20-c0e8423f48e1">
 			</testcontainer>
 			<testcontainer
+			id="701eb2d2-7e21-4e6f-a9c9-aaa777c692b9">
+			</testcontainer>
+			<testcontainer
 			id="75bfd9cc-6eb9-42a6-bbaf-110143ffbd36">
+			</testcontainer>
+			<testcontainer
+			id="7a9ea756-51f4-41de-a41d-757781604750">
 			</testcontainer>
 			<testcontainer
 			id="7ab50160-7a97-40e2-ad44-b1bba3374998">
@@ -5759,6 +5907,9 @@ bill]]>
 			id="9fd8a977-6bc6-4f25-881a-45177c0ded94">
 			</testcontainer>
 			<testcontainer
+			id="9feab462-deec-4a27-a8b9-f2e2f74b1f9f">
+			</testcontainer>
+			<testcontainer
 			id="a11353b5-3294-4eaa-83d3-a0331ed7ef67">
 			</testcontainer>
 			<testcontainer
@@ -5784,6 +5935,9 @@ bill]]>
 			</testcontainer>
 			<testcontainer
 			id="accc6f36-0a6b-4488-8785-61ecc2dfdf49">
+			</testcontainer>
+			<testcontainer
+			id="adb4ca31-020c-47c1-9602-1c295de6a3bf">
 			</testcontainer>
 			<testcontainer
 			id="ae08bef5-05bf-4753-9e12-cab4f965fd83">
@@ -5846,6 +6000,9 @@ bill]]>
 			id="d9c75bd5-ecea-44aa-9940-b1440d6ec3e5">
 			</testcontainer>
 			<testcontainer
+			id="dbc0dc88-4b15-49b9-984e-a670aa4fea91">
+			</testcontainer>
+			<testcontainer
 			id="dd7e2cc8-a2ca-441e-a3f6-80016dba2aae">
 			</testcontainer>
 			<testcontainer
@@ -5858,7 +6015,13 @@ bill]]>
 			id="e11e54d2-7d19-41c3-92e6-4d791e0bfa37">
 			</testcontainer>
 			<testcontainer
+			id="e1c9a453-772a-495a-938f-a49e9be0141c">
+			</testcontainer>
+			<testcontainer
 			id="e41ee8eb-9dc9-46f3-ac26-ef9b039bcb3f">
+			</testcontainer>
+			<testcontainer
+			id="e4d8dadf-4f35-4b69-a2af-856c7bd3db7e">
 			</testcontainer>
 			<testcontainer
 			id="e56a65dc-1f93-4351-a226-b2e4d2b238f3">
@@ -5877,6 +6040,9 @@ bill]]>
 			</testcontainer>
 			<testcontainer
 			id="eba13b1a-cf04-406f-94a0-e41df0fcebcf">
+			</testcontainer>
+			<testcontainer
+			id="ef48c456-9059-4ccb-b3d7-a1fbe095816e">
 			</testcontainer>
 			<testcontainer
 			id="f009e389-eafb-4981-ab14-563dc83060a0">

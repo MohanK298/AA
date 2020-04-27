@@ -103,8 +103,8 @@ namespace SmokeTest.Modules
         	pref.EmailInitialization.PnlControls.cbCurrentlyLoggedIn.Check();
         	pref.EmailInitialization.PnlControls.cbReadytoBeginProcess.Check();
         	pref.EmailInitialization.Toolbar1.btnBeginProcess.Click();
-        	
-        	pref.PromptForm.ButtonOK.Click();
+        	if(pref.PromptForm.SelfInfo.Exists(15000))
+        	{pref.PromptForm.ButtonOK.Click();}
         	if(pref.PromptForm.SelfInfo.Exists(3000))
         	   {pref.PromptForm.ButtonOK.Click();}
         	pref.EmailInitialization.Toolbar1.btnFinish.Click();

@@ -192,7 +192,7 @@ namespace SmokeTest.Repositories
             /// Creates a new Outlook  folder.
             /// </summary>
             public OutlookAppFolder(RepoGenBaseFolder parentFolder) :
-                    base("Outlook", "/form[@title<' - Outlook']", parentFolder, 30000, null, true, "c0ccc582-3a65-46de-8e8a-f6698ad12cac", "")
+                    base("Outlook", "/form[@title<' - Outlook']", parentFolder, 30000, null, false, "c0ccc582-3a65-46de-8e8a-f6698ad12cac", "")
             {
                 _amicusattorneytasks1 = new Outlook_AddInFolders.AmicusAttorneyTasks1Folder(this);
                 _mailfolders = new Outlook_AddInFolders.MailFoldersFolder(this);
@@ -1002,7 +1002,7 @@ namespace SmokeTest.Repositories
             /// Creates a new DetailedView  folder.
             /// </summary>
             public DetailedViewAppFolder(RepoGenBaseFolder parentFolder) :
-                    base("DetailedView", "/form[@title>$mailSub]", parentFolder, 30000, null, true, "79ab75a9-4129-4095-9157-e15cc0703470", "")
+                    base("DetailedView", "/form[@title>$mailSub]", parentFolder, 30000, null, false, "79ab75a9-4129-4095-9157-e15cc0703470", "")
             {
                 _amicusattorneytasks1 = new Outlook_AddInFolders.AmicusAttorneyTasks1Folder1(this);
                 _tabamicustasksInfo = new RepoItemInfo(this, "tabAmicusTasks", "container[@caption='MsoDockTop']//container[@name='Ribbon']/tabpagelist[@name='Ribbon Tabs']/tabpage[@name='Amicus Tasks']", 30000, null, "86bee181-fed9-4e5e-a946-2befd29afc53");
@@ -1392,7 +1392,7 @@ namespace SmokeTest.Repositories
             /// Creates a new Search  folder.
             /// </summary>
             public SearchAppFolder(RepoGenBaseFolder parentFolder) :
-                    base("Search", "/form[@controlname='Search']", parentFolder, 30000, null, true, "cd81e4d9-9c4b-4905-8901-2e9b72dd6cc4", "")
+                    base("Search", "/form[@controlname='Search']", parentFolder, 30000, null, false, "cd81e4d9-9c4b-4905-8901-2e9b72dd6cc4", "")
             {
                 _btnfindnowInfo = new RepoItemInfo(this, "btnFindNow", "container[@controlname='menubar_Fill_Panel']//toolbar[@accessiblename='Toolbar']/button[@accessiblename='Find Now']", 30000, null, "48026ab5-9d55-45ef-9692-8836fcc70121");
                 _btncancelInfo = new RepoItemInfo(this, "btnCancel", "container[@controlname='menubar_Fill_Panel']//toolbar[@accessiblename='Toolbar']/button[@accessiblename='Cancel']", 30000, null, "7ffb0f72-849e-40b4-b0a8-61a1def3786d");
@@ -1485,7 +1485,7 @@ namespace SmokeTest.Repositories
             /// Creates a new SearchResult  folder.
             /// </summary>
             public SearchResultAppFolder(RepoGenBaseFolder parentFolder) :
-                    base("SearchResult", "/form[@controlname='SearchResult']", parentFolder, 30000, null, true, "ca6c438b-50f8-4059-a587-395bd463c8da", "")
+                    base("SearchResult", "/form[@controlname='SearchResult']", parentFolder, 30000, null, false, "ca6c438b-50f8-4059-a587-395bd463c8da", "")
             {
                 _toolbar1 = new Outlook_AddInFolders.Toolbar1Folder(this);
                 _tblsearchresultsInfo = new RepoItemInfo(this, "tblSearchResults", "container[@controlname='menubar_Fill_Panel']/container[@controlname='pnlBase']//table[@accessiblename='Band 0']", 30000, null, "629398d1-bbfc-43d6-9706-e71216565d15");
@@ -1755,7 +1755,7 @@ namespace SmokeTest.Repositories
             /// Creates a new AboutForm  folder.
             /// </summary>
             public AboutFormAppFolder(RepoGenBaseFolder parentFolder) :
-                    base("AboutForm", "/form[@controlname='AboutForm']", parentFolder, 30000, null, true, "fec9f81f-d3b5-475d-b38e-76b23ac7d1d2", "")
+                    base("AboutForm", "/form[@controlname='AboutForm']", parentFolder, 30000, null, false, "fec9f81f-d3b5-475d-b38e-76b23ac7d1d2", "")
             {
             }
 

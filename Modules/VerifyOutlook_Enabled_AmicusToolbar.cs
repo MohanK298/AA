@@ -66,7 +66,7 @@ namespace SmokeTest.Modules
         	login.LoginForm.Pwd.TextValue=datasource.Rows[0].Values[2].ToString();//"password";
         	login.LoginForm.ServerName.TextValue=datasource.Rows[0].Values[3].ToString();//"J4-Mohanss";
         	login.LoginForm.btnLogin.Click();
-        	if(pref.PromptForm.SelfInfo.Exists(3000))
+        	if(pref.PromptForm.SelfInfo.Exists(15000))
         	{
         		pref.PromptForm.btnYes.Click();
         	}
@@ -112,8 +112,11 @@ namespace SmokeTest.Modules
         	pref.EmailInitialization.PnlControls.cbCurrentlyLoggedIn.Check();
         	pref.EmailInitialization.PnlControls.cbReadytoBeginProcess.Check();
         	pref.EmailInitialization.Toolbar1.btnBeginProcess.Click();
+        	if(pref.PromptForm.SelfInfo.Exists(15000))
         	
-        	pref.PromptForm.ButtonOK.Click();
+        	{pref.PromptForm.ButtonOK.Click();}
+        	
+        	
         	if(pref.PromptForm.SelfInfo.Exists(3000))
         	   {pref.PromptForm.ButtonOK.Click();}
         	pref.EmailInitialization.Toolbar1.btnFinish.Click();

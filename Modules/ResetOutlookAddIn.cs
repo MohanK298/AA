@@ -77,9 +77,11 @@ namespace SmokeTest.Modules
         	pref.EmailBasicForm.PnlControls.cbShowEmbeddedView.Uncheck();
         	pref.EmailBasicForm.PnlControls.cbStartTimer.Uncheck();
         	pref.EmailBasicForm.Toolbar1.btnFinish.Click();
+        	if(pref.PromptForm.SelfInfo.Exists(10000))
+        	{pref.PromptForm.ButtonOK.Click();}
         	
-        	pref.EmailPreferencesForm.rdoNone.Select();
-        	if(pref.PromptForm.SelfInfo.Exists(3000))
+        	pref.EmailPreferencesForm.rdoNone.Click();
+        	if(pref.PromptForm.SelfInfo.Exists(10000))
         	{pref.PromptForm.ButtonOK.Click();}
         	
         	pref.EmailPreferencesForm.btnClose.Click();

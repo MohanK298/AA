@@ -73,23 +73,29 @@ namespace SmokeTest.Modules
         	Delay.Seconds(5);
         	
         	
-        	cmn.SelectItemFromTableSingleClick(comm.MainForm.tblCommunications,data,"Email Communications Table");
+        	cmn.SelectItemFromTableDblClick(comm.MainForm.tblCommunications,data,"Email Communications Table");
         	
-        	comm.MainForm.Toolbar1.btnSaveAssociate.Click();
-        	
-        	comm.FileSelectForm.listFirstFoundFile.DoubleClick();
-        	
-        	if(comm.BrowseForFolder.SelfInfo.Exists(3000))
-        	{
-        		comm.BrowseForFolder.SavedLocation.DoubleClick();
-        		comm.BrowseForFolder.btnOk.Click();
-        	}
+//        	comm.MainForm.Toolbar1.btnSaveAssociate.Click();
+//        	
+//        	comm.FileSelectForm.listFirstFoundFile.DoubleClick();
+//        	
+//        	if(comm.BrowseForFolder.SelfInfo.Exists(3000))
+//        	{
+//        		comm.BrowseForFolder.SavedLocation.DoubleClick();
+//        		comm.BrowseForFolder.btnOk.Click();
+//        	}
         	
         	if(comm.PromptForm.SelfInfo.Exists(3000))
         	{
         		comm.PromptForm.btnYes.Click();
         		Report.Success("Email Detail Prompt shown successfully");
         	}
+        	
+        	if(comm.EmailDetailForm.PnlBase.lnkMoreInfo.Exists(5000))
+        	{
+        		comm.EmailDetailForm.PnlBase.lnkMore.Click();
+        	}
+        	
         	savedattach=comm.EmailDetailForm.PnlBase.btnSavedDocuments.GetAttributeValue<String>("Text");
         	
         	if(savedattach.Contains(attach.ToString()))

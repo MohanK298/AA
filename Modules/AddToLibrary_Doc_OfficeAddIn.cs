@@ -109,8 +109,25 @@ namespace SmokeTest.Modules
     		}
     	
     		
-    	}
-
+    	CloseProcess();
+        		
+        	}
+        
+        
+        
+        private void CloseProcess()
+        {
+        	foreach(System.Diagnostics.Process myProc in System.Diagnostics.Process.GetProcesses())
+			{
+			if (myProc.ProcessName == "WINWORD")
+			{
+				myProc.Kill();
+				Report.Success("Word proccess is closed successfully");
+			}
+					
+			}
+        	Delay.Seconds(5);
+        }
        
         /// <summary>
         /// Performs the playback of actions in this module.

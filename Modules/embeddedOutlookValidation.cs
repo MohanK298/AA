@@ -71,7 +71,7 @@ namespace SmokeTest.Modules
         	login.LoginForm.ServerName.TextValue=datasource.Rows[0].Values[3].ToString();//"J4-Mohanss";
         	Delay.Seconds(5);
         	login.LoginForm.btnLogin.Click();
-        	if(pref.PromptForm.SelfInfo.Exists(5000))
+        	if(pref.PromptForm.SelfInfo.Exists(20000))
         	{
         		pref.PromptForm.btnYes.Click();
         	}

@@ -1,11 +1,14 @@
 ﻿<Properties>
   <Array name="active">
-    <Element value="SmokeTest.rxtst" />
+    <Element value="Modules\LoginM.cs" />
   </Array>
   <Array name="bookmarks" />
   <Array name="files">
     <Element value="SmokeTest.rxtst" />
+    <Element value="Modules\AddToLibrary_Doc_OfficeAddIn.cs" />
     <Element value="Modules\LoginM.cs" />
+    <Element value="Repositories\Login.cs" />
+    <Element value="Modules\EmailWithMultipleAttachments.cs" />
   </Array>
   <Properties name="projectSavedData">
     <Properties name="customTool">

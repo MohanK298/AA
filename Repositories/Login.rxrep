@@ -21,7 +21,7 @@ name="Login">
 		refimgid="3c91f987-cf92-42ff-97d1-9540b8bda152"
 		refpath="/form[@controlname='LoginForm']"
 		searchtimeout="30000ms"
-		usecache="True">
+		usecache="False">
 			<item
 			addcaps="text,accessible"
 			capname="text"
@@ -116,7 +116,7 @@ SUVORK5CYII=
 		refimgid="c3da3bc9-a32d-459d-868c-c41c92b620cb"
 		refpath="/form[@controlname='AnnouncementForm']"
 		searchtimeout="30000ms"
-		usecache="True">
+		usecache="False">
 			<folder
 			addcaps="toolbar,uiautomation"
 			capname="toolbar"
@@ -195,7 +195,7 @@ SUVORK5CYII=
 		refimgid="b4274d62-8568-41db-a7b8-0c4a9ea6e885"
 		refpath="/form[@controlname='CustomerExperienceProgramForm']"
 		searchtimeout="30000ms"
-		usecache="True">
+		usecache="False">
 			<item
 			addcaps="button,accessible"
 			capname="button"
@@ -237,7 +237,7 @@ SUVORK5CYII=
 		refimgid="fa8712df-d5fe-4601-9523-33dd5b3aa253"
 		refpath="/form[@controlname='Form1']"
 		searchtimeout="30000ms"
-		usecache="True">
+		usecache="False">
 			<item
 			addcaps="button,control,nativewindow"
 			capname="button"

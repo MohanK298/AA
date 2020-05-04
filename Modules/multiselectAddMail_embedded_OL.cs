@@ -78,6 +78,7 @@ namespace SmokeTest.Modules
 		     	
         		//cmn.SelectItemDropdown(comm.PeopleSelectForm.
         		comm.PeopleSelectForm.listContact.DoubleClick();
+        		comm.PeopleSelectForm.Toolbar1.ButtonOK.Click();
         		Report.Success("People Added Successfully for the E-Mail");
         		peopleName=comm.SelectFilePeopleForm.txtPeople.GetAttributeValue<String>("Text");
         		comm.SelectFilePeopleForm.Toolbar1.btnOK.Click();
@@ -93,7 +94,12 @@ namespace SmokeTest.Modules
         private void ValidateMailsInFile(string sub)
         {
         	file.MainForm.Self.Activate();
-        	file.MainForm.btnFiles1.Click();
+        	if(file.MainForm.btnFiles1Info.Exists(3000))
+        	{file.MainForm.btnFiles1.Click();}
+        	else
+        	{
+        		file.MainForm.btnFiles.Click();
+        	}
         	Delay.Seconds(3);
         	file.MainForm.FilesIndexForm.listFirstFile.DoubleClick();
         	Delay.Seconds(1);

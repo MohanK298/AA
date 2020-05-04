@@ -34,6 +34,7 @@ namespace SmokeTest.Modules
         }
 
         public void Perform(){
+        	Delay.Seconds(2);
         	bill.MainForm.optionPlus.Click("8;11");
         	
         	//bill.MainForm.Payment.Click(System.Windows.Forms.MouseButtons.Right);

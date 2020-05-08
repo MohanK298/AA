@@ -12,6 +12,6 @@
       <string>a7a60edb-d95d-47f6-95e0-e9e9b65ff68a</string>
     </ArrayOfString>
   </SerializedValue>
-  <ProjectBrowserState value="[Solution SmokeTest[SmokeTest[Repositories[]]]]&#xD;&#xA;Solution SmokeTest\SmokeTest\Modules&#xD;&#xA;Solution SmokeTest\SmokeTest\Modules" />
+  <ProjectBrowserState value="[Solution SmokeTest[SmokeTest[Repositories[]]]]&#xD;&#xA;Solution SmokeTest\SmokeTest\Repositories\BillingTE.rxrep&#xD;&#xA;Solution SmokeTest" />
   <StartupProject value="{C1935D58-308E-40C1-B5C3-1132400202E1}" />
 </Properties>

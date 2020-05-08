@@ -44,7 +44,7 @@ namespace SmokeTest.Modules
     	private void TrackChanges()
     	{
     		string actdes="Test Data Added- "+System.DateTime.Now.ToString();
-    		string billrate="150";
+    		string billrate="150.00";
         	te.MainForm.btnTimeFeesExpenses.Click();
         	//cmn.SelectItemDropdown(te.MainForm.btnMenuItem,"Time Entry","Time Entry Menu");
         	te.MainForm.btnMenuItem.Click();
@@ -64,18 +64,39 @@ namespace SmokeTest.Modules
         	Delay.Seconds(2);
         	cmn.SelectItemFromTableDblClick(te.MainForm.tblTimeEntry,actdes,"Time Entry Table");
         	te.TimeEntryDetailsForm.cmbbxBillingRate.Click();
-        	cmn.SelectItemDropdown(te.DropDownForm.tblDpdwn.Self,"Flat Rate");
+        	te.var="Flat Rate";
+        	Delay.Seconds(1);
+        	te.DropDownForm.TreeItem.Click();
+        	//cmn.SelectItemDropdown(te.DropDownForm.tbDropdown,"Flat Rate");
         	//cmn.SelectItemFromTableSingleClick(te.DropDownForm.tblDpdwn,"Flat Rate","Dropdown");
-        	te.TimeEntryDetailsForm.txtRate.TextValue=billrate;
+        	if(te.TimeEntryDetailsForm.txtRateInfo.Exists(3000))
+        	{
+        		te.TimeEntryDetailsForm.txtRate.PressKeys(billrate);
+        	}
+        	else
+        	{
+        		te.TimeEntryDetailsForm.txtRateNew.TextValue=billrate;
+        		
+        	}
+        	
         	te.TimeEntryDetailsForm.btnOK.Click();
         	
         	if(te.ChangeReasonForm.SelfInfo.Exists(3000))
         	{
         		Report.Success("Change Reason Form is displayed successfully");
         		te.ChangeReasonForm.cmbxSelectionReason.Click();
-        		cmn.VerifyDataExistsInTable(te.DropDownForm.tblDpdwn.Self,"Incorrect Billing Rate","Change Reason Form Table");
-        		cmn.VerifyDataExistsInTable(te.DropDownForm.tblDpdwn.Self,"Time was entered on wrong date","Change Reason Form Table");
-        		cmn.SelectItemDropdown(te.DropDownForm.tblDpdwn.Self,"Incorrect Billing Rate");
+        		te.var="Incorrect Billing Rate";
+        		Delay.Seconds(1);
+        		Validate.Exists(te.DropDownForm.TreeItemInfo,"Incorrect Billing Rate - Menu Item is present as expected");
+        		
+        		te.var="Time was entered on wrong date";
+        		Delay.Seconds(1);
+        		Validate.Exists(te.DropDownForm.TreeItemInfo,"Time was entered on wrong date - Menu Item is present as expected");
+        		te.DropDownForm.TreeItem.Click();
+        		
+//        		cmn.VerifyDataExistsInTable(te.DropDownForm.tblDpdwn.Self,"Incorrect Billing Rate","Change Reason Form Table");
+//        		cmn.VerifyDataExistsInTable(te.DropDownForm.tblDpdwn.Self,"Time was entered on wrong date","Change Reason Form Table");
+//        		cmn.SelectItemDropdown(te.DropDownForm.tblDpdwn.Self,"Incorrect Billing Rate");
         		te.ChangeReasonForm.Toolbar1.btnOK.Click();
         		Delay.Seconds(2);
         		cmn.VerifyCorrespondingDataExistsInTable(te.MainForm.tblTimeEntry,actdes,billrate,"Time Entry Table");

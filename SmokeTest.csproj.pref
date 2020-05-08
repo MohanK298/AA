@@ -1,14 +1,18 @@
 ﻿<Properties>
   <Array name="active">
-    <Element value="Modules\validateTrackChangesinTimeEntry.cs" />
-  </Array>
-  <Array name="bookmarks" />
-  <Array name="files">
-    <Element value="Repositories\FirmSettings.rxrep" />
-    <Element value="SmokeTest.rxtst" />
-    <Element value="Modules\trackChangesvalidation.cs" />
     <Element value="Repositories\BillingTE.rxrep" />
+  </Array>
+  <Array name="bookmarks">
+    <Element value="Breakpoint|C:\Users\kumar\Desktop\AA\Modules\Utilities\Common.cs|483|12|True|Break||" />
+  </Array>
+  <Array name="files">
     <Element value="Modules\validateTrackChangesinTimeEntry.cs" />
+    <Element value="Repositories\BillingTE.rxrep" />
+    <Element value="SmokeTest.rxtst" />
+    <Element value="Repositories\FirmSettings.rxrep" />
+    <Element value="Modules\changePref_Formatting_DefaultCode.cs" />
+    <Element value="Repositories\Premium\Preferences.rxrep" />
+    <Element value="Modules\Utilities\Common.cs" />
   </Array>
   <Properties name="projectSavedData">
     <Properties name="customTool">

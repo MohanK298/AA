@@ -40,6 +40,12 @@ of Billing side]]>
 			id="020fa6c1-b65e-43d8-adbf-e916aee0015e"
 			name="AddFile1">
 			</smartfoldernode>
+			<testmodule
+			id="02431d47-af9e-40fe-b16c-2c98b84e96ab"
+			name="dateCalculatorValidation"
+			ref="97993a77-0162-496a-be00-65012cdad2fb"
+			type="UserCode">
+			</testmodule>
 			<testcase
 			id="030c64ec-c0be-4e59-8022-32bf1eab9b6f"
 			name="Toolbars-Std-Adv-Floating">
@@ -159,6 +165,10 @@ Module]]>
 			datasource="ContactData"
 			id="0ca5fe10-df54-47f5-9b14-557f59785b43"
 			name="AddContact1">
+			</smartfoldernode>
+			<smartfoldernode
+			id="0dd99a17-f23d-4abf-af04-7a709b19b111"
+			name="DateCalculatorValidation">
 			</smartfoldernode>
 			<smartfoldernode
 			id="0ea1f9a7-31f0-4cd6-baf7-559e7a41c068"
@@ -440,6 +450,10 @@ module]]>
 			ref="10a89633-7144-4480-9f9e-1743b2c122c9"
 			type="UserCode">
 			</testmodule>
+			<smartfoldernode
+			id="1fe94253-1808-4543-bbd3-ce79e3902ab3"
+			name="Enable_TaxSettings">
+			</smartfoldernode>
 			<testmodule
 			id="2250839d-149f-4ba7-add4-93587d92a4eb"
 			name="forwardNotesValidation"
@@ -779,6 +793,10 @@ module]]>
 			name="AddSummary">
 			</smartfoldernode>
 			<smartfoldernode
+			id="3fc4a10b-597c-48e6-8b74-764e3f256565"
+			name="DateCalculateAddBusinessDays">
+			</smartfoldernode>
+			<smartfoldernode
 			id="4119df73-9255-4fcf-9cc2-d1a4b74659f9"
 			name="ValidateStandardToolbars">
 			</smartfoldernode>
@@ -897,6 +915,10 @@ module]]>
 			ref="edde5660-5c5a-4291-a286-d87fd79aec15"
 			type="UserCode">
 			</testmodule>
+			<testcase
+			id="4bc1f4ad-f12a-49d3-8130-6d0f677cc890"
+			name="DateCalculator">
+			</testcase>
 			<testmodule
 			id="4d4cb17a-5ed9-4753-af9f-f709e4bd01f9"
 			name="DeleteDocument"
@@ -1153,6 +1175,12 @@ which will be used throughout the Smoke Test]]>
 			ref="7831df50-10f4-434f-ba8d-ea6c90789454"
 			type="UserCode">
 			</testmodule>
+			<testmodule
+			id="5a327f2a-394e-47f6-bd70-f969d5ee92bd"
+			name="dateCalculateAddBusinessDays"
+			ref="54adcaa0-ed9e-48f1-abd2-79d32b4f46e6"
+			type="UserCode">
+			</testmodule>
 			<smartfoldernode
 			id="5b5aea69-6426-460b-b666-6ea8e58b7416"
 			name="VerifyEventsAddFromFiles">
@@ -1193,6 +1221,10 @@ which will be used throughout the Smoke Test]]>
 			ref="74631ab9-6b1b-4ec6-80d1-106028f83737"
 			type="UserCode">
 			</testmodule>
+			<testcase
+			id="62c52e32-156b-43ae-becd-fd9783824515"
+			name="Apply_Taxes_using_Activity_Codes_(Billing)">
+			</testcase>
 			<testmodule
 			id="63f2c82a-d2d5-4d86-b7ea-b18a5172bbdf"
 			name="createExceptionbyDragnDropInRepAppt"
@@ -1806,6 +1838,12 @@ event]]>
 			id="8db0154d-7953-4ec5-8e78-25b7335b140e"
 			name="NoteCreationFileBradValidationTimeEntryCreation">
 			</smartfoldernode>
+			<testmodule
+			id="8db74aaa-1945-4842-96da-7da77a05348e"
+			name="enableTaxSettingsInFirm"
+			ref="6c4c34bc-24cf-4dcc-a5aa-bd557decdfb1"
+			type="UserCode">
+			</testmodule>
 			<testmodule
 			id="8ef0e117-8d93-4bec-8725-9114d04482cb"
 			name="AddPrecedent"
@@ -3272,6 +3310,10 @@ bill]]>
 			ref="a50c2c9b-e677-4477-8c5e-570d20d59e2b"
 			type="UserCode">
 			</testmodule>
+			<smartfoldernode
+			id="f6a8cd9a-6c15-44ba-988d-66acba347f41"
+			name="Firm_Settings">
+			</smartfoldernode>
 			<testmodule
 			id="f6dabff4-4425-4006-a5cb-150f1673df0b"
 			name="AddToFile_Doc_OfficeAddIn"
@@ -5042,6 +5084,42 @@ bill]]>
 							id="8da3da3a-7a02-44b1-9989-92307c4dd96c"
 							name="validateTrackChangesinTimeEntry">
 							</testmodule>
+						</smartfoldernode>
+					</testcase>
+					<testcase
+					id="4bc1f4ad-f12a-49d3-8130-6d0f677cc890"
+					name="DateCalculator">
+						<smartfoldernode
+						id="0dd99a17-f23d-4abf-af04-7a709b19b111"
+						name="DateCalculatorValidation">
+							<testmodule
+							id="02431d47-af9e-40fe-b16c-2c98b84e96ab"
+							name="dateCalculatorValidation">
+							</testmodule>
+						</smartfoldernode>
+						<smartfoldernode
+						id="3fc4a10b-597c-48e6-8b74-764e3f256565"
+						name="DateCalculateAddBusinessDays">
+							<testmodule
+							id="5a327f2a-394e-47f6-bd70-f969d5ee92bd"
+							name="dateCalculateAddBusinessDays">
+							</testmodule>
+						</smartfoldernode>
+					</testcase>
+					<testcase
+					id="62c52e32-156b-43ae-becd-fd9783824515"
+					name="Apply_Taxes_using_Activity_Codes_(Billing)">
+						<smartfoldernode
+						id="f6a8cd9a-6c15-44ba-988d-66acba347f41"
+						name="Firm_Settings">
+							<smartfoldernode
+							id="1fe94253-1808-4543-bbd3-ce79e3902ab3"
+							name="Enable_TaxSettings">
+								<testmodule
+								id="8db74aaa-1945-4842-96da-7da77a05348e"
+								name="enableTaxSettingsInFirm">
+								</testmodule>
+							</smartfoldernode>
 						</smartfoldernode>
 					</testcase>
 				</testcase>

@@ -440,6 +440,12 @@
     <Compile Include="Modules\create_TE_ValidateDateRange_ExcludeOptions_TAssist.cs">
       <id>29124833-f249-4942-a046-9511989ddcbf</id>
     </Compile>
+    <Compile Include="Modules\dateCalculateAddBusinessDays.cs">
+      <id>4412e18b-3c7d-44ff-b630-d8d8fb23f437</id>
+    </Compile>
+    <Compile Include="Modules\dateCalculatorValidation.cs">
+      <id>10278b83-6228-4b3b-86e2-1eb898ec0267</id>
+    </Compile>
     <Compile Include="Modules\delete2TimeEntries.cs">
       <id>decca88b-b334-4add-83a4-8b7ec18aa8db</id>
     </Compile>
@@ -493,6 +499,9 @@
     </Compile>
     <Compile Include="Modules\emptySearchValidation.cs">
       <id>e261bb9d-f99b-45af-93e7-790fc477f178</id>
+    </Compile>
+    <Compile Include="Modules\enableTaxSettingsInFirm.cs">
+      <id>eb385921-0282-41e8-9563-4e392e8fff5c</id>
     </Compile>
     <Compile Include="Modules\FileVoidPayment.cs">
       <id>3c5327ca-3e05-481a-8812-3e2a730320e4</id>

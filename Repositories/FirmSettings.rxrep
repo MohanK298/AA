@@ -192,6 +192,177 @@ SUVORK5CYII=
 			searchtimeout="30000ms">
 				/form[@controlname='MainForm']/element[@controlname='_BaseModuleForm_Toolbars_Dock_Area_Top']//menuitem[@accessiblename='View']/menuitem[@accessiblename='Firm Settings']
 			</item>
+			<item
+			addcaps="menuitem,accessible"
+			capname="menuitem"
+			id="fbce4dca-2b17-4a7b-b022-bad6b4960ab8"
+			name="MenuItemAll"
+			refpath="/form[@controlname='MainForm']/element[@controlname='_BaseModuleForm_Toolbars_Dock_Area_Top']/container[@accessiblename='DockTop']/menubar[@accessiblename='Toolbar']/menuitem[@accessiblename='View']/menuitem[@accessiblename='Show']/menuitem[@accessiblename='All']"
+			searchtimeout="30000ms">
+				/form[@controlname='MainForm']/element[@controlname='_BaseModuleForm_Toolbars_Dock_Area_Top']//menuitem[@accessiblename='View']/?/?/menuitem[@accessiblename='All']
+			</item>
+			<item
+			addcaps="menuitem,accessible"
+			capname="menuitem"
+			id="bc65b628-4904-4edd-8c25-30ab969cb027"
+			name="Active"
+			refpath="/form[@controlname='MainForm']/element[@controlname='_BaseModuleForm_Toolbars_Dock_Area_Top']/container[@accessiblename='DockTop']/menubar[@accessiblename='Toolbar']/menuitem[@accessiblename='View']/menuitem[@accessiblename='Show']/menuitem[@accessiblename='Active']"
+			searchtimeout="30000ms">
+				/form[@controlname='MainForm']/element[@controlname='_BaseModuleForm_Toolbars_Dock_Area_Top']//menuitem[@accessiblename='View']/?/?/menuitem[@accessiblename='Active']
+			</item>
+			<item
+			addcaps="menuitem,accessible"
+			capname="menuitem"
+			id="7df17f55-eb71-41c4-bea6-3b67a5d30baf"
+			name="Closed"
+			refpath="/form[@controlname='MainForm']/element[@controlname='_BaseModuleForm_Toolbars_Dock_Area_Top']/container[@accessiblename='DockTop']/menubar[@accessiblename='Toolbar']/menuitem[@accessiblename='View']/menuitem[@accessiblename='Show']/menuitem[@accessiblename='Closed']"
+			searchtimeout="30000ms">
+				/form[@controlname='MainForm']/element[@controlname='_BaseModuleForm_Toolbars_Dock_Area_Top']//menuitem[@accessiblename='View']/?/?/menuitem[@accessiblename='Closed']
+			</item>
+			<item
+			addcaps="menuitem,accessible"
+			capname="menuitem"
+			id="dc8c0df3-7921-4793-8863-d04ca6fa52ff"
+			name="Show"
+			refpath="/form[@controlname='MainForm']/element[@controlname='_BaseModuleForm_Toolbars_Dock_Area_Top']/container[@accessiblename='DockTop']/menubar[@accessiblename='Toolbar']/menuitem[@accessiblename='View']/menuitem[@accessiblename='Show']"
+			searchtimeout="30000ms">
+				/form[@controlname='MainForm']/element[@controlname='_BaseModuleForm_Toolbars_Dock_Area_Top']//menuitem[@accessiblename='View']/menuitem[@accessiblename='Show']
+			</item>
+			<item
+			addcaps="menuitem,accessible"
+			capname="menuitem"
+			id="1fa682e1-6ae0-425e-bd77-82effdd8a048"
+			name="FileName"
+			refpath="/form[@controlname='MainForm']/element[@controlname='_BaseModuleForm_Toolbars_Dock_Area_Top']/container[@accessiblename='DockTop']/menubar[@accessiblename='Toolbar']/menuitem[@accessiblename='View']/menuitem[@accessiblename='Sort by']/menuitem[@accessiblename='File Name']"
+			searchtimeout="30000ms">
+				/form[@controlname='MainForm']/element[@controlname='_BaseModuleForm_Toolbars_Dock_Area_Top']//menuitem[@accessiblename='View']/?/?/menuitem[@accessiblename='File Name']
+			</item>
+			<item
+			addcaps="menuitem,accessible"
+			capname="menuitem"
+			id="b2124152-b2d1-4bf2-a6da-2554d68a031a"
+			name="ClientMatterID"
+			refpath="/form[@controlname='MainForm']/element[@controlname='_BaseModuleForm_Toolbars_Dock_Area_Top']/container[@accessiblename='DockTop']/menubar[@accessiblename='Toolbar']/menuitem[@accessiblename='View']/menuitem[@accessiblename='Sort by']/menuitem[@accessiblename='Client Matter ID']"
+			searchtimeout="30000ms">
+				/form[@controlname='MainForm']/element[@controlname='_BaseModuleForm_Toolbars_Dock_Area_Top']//menuitem[@accessiblename='View']/?/?/menuitem[@accessiblename='Client Matter ID']
+			</item>
+			<item
+			addcaps="menuitem,accessible"
+			capname="menuitem"
+			id="e8be7c9f-5d80-4579-8beb-979935fde65f"
+			name="SortBy"
+			refpath="/form[@controlname='MainForm']/element[@controlname='_BaseModuleForm_Toolbars_Dock_Area_Top']/container[@accessiblename='DockTop']/menubar[@accessiblename='Toolbar']/menuitem[@accessiblename='View']/menuitem[@accessiblename='Sort by']"
+			searchtimeout="30000ms">
+				/form[@controlname='MainForm']/element[@controlname='_BaseModuleForm_Toolbars_Dock_Area_Top']//menuitem[@accessiblename='View']/menuitem[@accessiblename='Sort by']
+			</item>
+			<item
+			addcaps="menuitem,accessible"
+			capname="menuitem"
+			id="efec984a-a12a-4e6c-af2f-ad41a2df2e61"
+			name="NavigationPane"
+			refpath="/form[@controlname='MainForm']/element[@controlname='_BaseModuleForm_Toolbars_Dock_Area_Top']/container[@accessiblename='DockTop']/menubar[@accessiblename='Toolbar']/menuitem[@accessiblename='View']/menuitem[@accessiblename='Navigation Pane']"
+			searchtimeout="30000ms">
+				/form[@controlname='MainForm']/element[@controlname='_BaseModuleForm_Toolbars_Dock_Area_Top']//menuitem[@accessiblename='View']/menuitem[@accessiblename='Navigation Pane']
+			</item>
+			<item
+			addcaps="menuitem,accessible"
+			capname="menuitem"
+			id="6c63ac76-4f93-48a8-af8c-04cfe7e0d9f1"
+			name="Floating"
+			refpath="/form[@controlname='MainForm']/element[@controlname='_BaseModuleForm_Toolbars_Dock_Area_Top']/container[@accessiblename='DockTop']/menubar[@accessiblename='Toolbar']/menuitem[@accessiblename='View']/menuitem[@accessiblename='Toolbars']/menuitem[1]"
+			searchtimeout="30000ms">
+				/form[@controlname='MainForm']/element[@controlname='_BaseModuleForm_Toolbars_Dock_Area_Top']//menuitem[@accessiblename='View']/menuitem[@accessiblename='Toolbars']/menuitem[1]
+			</item>
+			<item
+			addcaps="menuitem,accessible"
+			capname="menuitem"
+			id="42ccaf14-1c0d-4c3d-873c-8d125b05bbd9"
+			name="Toolbars"
+			refpath="/form[@controlname='MainForm']/element[@controlname='_BaseModuleForm_Toolbars_Dock_Area_Top']/container[@accessiblename='DockTop']/menubar[@accessiblename='Toolbar']/menuitem[@accessiblename='View']/menuitem[@accessiblename='Toolbars']"
+			searchtimeout="30000ms">
+				/form[@controlname='MainForm']/element[@controlname='_BaseModuleForm_Toolbars_Dock_Area_Top']//menuitem[@accessiblename='View']/menuitem[@accessiblename='Toolbars']
+			</item>
+			<item
+			addcaps="menuitem,accessible"
+			capname="menuitem"
+			id="2d1a4494-7526-4742-b8fe-2f02793721c9"
+			name="StatusBar"
+			refpath="/form[@controlname='MainForm']/element[@controlname='_BaseModuleForm_Toolbars_Dock_Area_Top']/container[@accessiblename='DockTop']/menubar[@accessiblename='Toolbar']/menuitem[@accessiblename='View']/menuitem[@accessiblename='Status Bar']"
+			searchtimeout="30000ms">
+				/form[@controlname='MainForm']/element[@controlname='_BaseModuleForm_Toolbars_Dock_Area_Top']//menuitem[@accessiblename='View']/menuitem[@accessiblename='Status Bar']
+			</item>
+			<item
+			addcaps="menuitem,accessible"
+			capname="menuitem"
+			id="46c59f25-9cf0-4ccc-a81d-f8551a6c1cb6"
+			name="QuickFind"
+			refpath="/form[@controlname='MainForm']/element[@controlname='_BaseModuleForm_Toolbars_Dock_Area_Top']/container[@accessiblename='DockTop']/menubar[@accessiblename='Toolbar']/menuitem[@accessiblename='Tools']/menuitem[@accessiblename='QuickFind']"
+			searchtimeout="30000ms">
+				/form[@controlname='MainForm']/element[@controlname='_BaseModuleForm_Toolbars_Dock_Area_Top']//menuitem[@accessiblename='Tools']/menuitem[@accessiblename='QuickFind']
+			</item>
+			<item
+			addcaps="menuitem,accessible"
+			capname="menuitem"
+			id="519bd02f-e585-4956-b8c1-4bed82b35658"
+			name="WhoseFile"
+			refpath="/form[@controlname='MainForm']/element[@controlname='_BaseModuleForm_Toolbars_Dock_Area_Top']/container[@accessiblename='DockTop']/menubar[@accessiblename='Toolbar']/menuitem[@accessiblename='Tools']/menuitem[@accessiblename='Whose File']"
+			searchtimeout="30000ms">
+				/form[@controlname='MainForm']/element[@controlname='_BaseModuleForm_Toolbars_Dock_Area_Top']//menuitem[@accessiblename='Tools']/menuitem[@accessiblename='Whose File']
+			</item>
+			<item
+			addcaps="menuitem,accessible"
+			capname="menuitem"
+			id="c5770edc-7c92-42bb-9d55-6cb6e7e645a6"
+			name="DateCalculator"
+			refpath="/form[@controlname='MainForm']/element[@controlname='_BaseModuleForm_Toolbars_Dock_Area_Top']/container[@accessiblename='DockTop']/menubar[@accessiblename='Toolbar']/menuitem[@accessiblename='Tools']/menuitem[@accessiblename='Date Calculator']"
+			searchtimeout="30000ms">
+				/form[@controlname='MainForm']/element[@controlname='_BaseModuleForm_Toolbars_Dock_Area_Top']//menuitem[@accessiblename='Tools']/menuitem[@accessiblename='Date Calculator']
+			</item>
+			<item
+			addcaps="menuitem,accessible"
+			capname="menuitem"
+			id="9be4859b-4229-45f1-a699-9a20054e23dc"
+			name="FirmMemberAvailability"
+			refpath="/form[@controlname='MainForm']/element[@controlname='_BaseModuleForm_Toolbars_Dock_Area_Top']/container[@accessiblename='DockTop']/menubar[@accessiblename='Toolbar']/menuitem[@accessiblename='Tools']/menuitem[@accessiblename='Firm Member Availability']"
+			searchtimeout="30000ms">
+				/form[@controlname='MainForm']/element[@controlname='_BaseModuleForm_Toolbars_Dock_Area_Top']//menuitem[@accessiblename='Tools']/menuitem[@accessiblename='Firm Member Availability']
+			</item>
+			<item
+			addcaps="menuitem,accessible"
+			capname="menuitem"
+			id="6a821b0b-80d9-43f1-a490-34ac1f9b00af"
+			name="TimeEntryAssistant"
+			refpath="/form[@controlname='MainForm']/element[@controlname='_BaseModuleForm_Toolbars_Dock_Area_Top']/container[@accessiblename='DockTop']/menubar[@accessiblename='Toolbar']/menuitem[@accessiblename='Tools']/menuitem[@accessiblename='Time Entry Assistant']"
+			searchtimeout="30000ms">
+				/form[@controlname='MainForm']/element[@controlname='_BaseModuleForm_Toolbars_Dock_Area_Top']//menuitem[@accessiblename='Tools']/menuitem[@accessiblename='Time Entry Assistant']
+			</item>
+			<item
+			addcaps="menuitem,accessible"
+			capname="menuitem"
+			id="f5e7e107-3ad9-4ff5-b3ba-ad22aeba0f8c"
+			name="BillingConsistencyChecker"
+			refpath="/form[@controlname='MainForm']/element[@controlname='_BaseModuleForm_Toolbars_Dock_Area_Top']/container[@accessiblename='DockTop']/menubar[@accessiblename='Toolbar']/menuitem[@accessiblename='Tools']/menuitem[@accessiblename='Billing Consistency Checker']"
+			searchtimeout="30000ms">
+				/form[@controlname='MainForm']/element[@controlname='_BaseModuleForm_Toolbars_Dock_Area_Top']//menuitem[@accessiblename='Tools']/menuitem[@accessiblename&gt;'Billing Consistency Check']
+			</item>
+			<item
+			addcaps="menuitem,accessible"
+			capname="menuitem"
+			id="a4c08192-1862-4ac1-8f8f-e2c3fed25bee"
+			name="Preferences"
+			refpath="/form[@controlname='MainForm']/element[@controlname='_BaseModuleForm_Toolbars_Dock_Area_Top']/container[@accessiblename='DockTop']/menubar[@accessiblename='Toolbar']/menuitem[@accessiblename='Tools']/menuitem[@accessiblename='Preferences...']"
+			searchtimeout="30000ms">
+				/form[@controlname='MainForm']/element[@controlname='_BaseModuleForm_Toolbars_Dock_Area_Top']//menuitem[@accessiblename='Tools']/menuitem[@accessiblename='Preferences...']
+			</item>
+			<item
+			addcaps="menuitem,accessible"
+			capname="menuitem"
+			id="b5989e2f-8c00-4b40-bf93-b0a57b7b04d4"
+			name="Tools"
+			refpath="/form[@controlname='MainForm']/element[@controlname='_BaseModuleForm_Toolbars_Dock_Area_Top']/container[@accessiblename='DockTop']/menubar[@accessiblename='Toolbar']/menuitem[@accessiblename='Tools']"
+			searchtimeout="30000ms">
+				/form[@controlname='MainForm']/element[@controlname='_BaseModuleForm_Toolbars_Dock_Area_Top']//menuitem[@accessiblename='Tools']
+			</item>
 			<basepath>
 				/form[@controlname='MainForm']
 			</basepath>
@@ -1098,6 +1269,7 @@ SUVORK5CYII=
 		id="643bb419-e4e1-42c6-8ee6-510c16f7a0dd"
 		isrooted="True"
 		name="DropDownForm"
+		refimgid="2d7c53d3-f809-456f-a3db-e70e959744d2"
 		refpath="/form"
 		searchtimeout="30000ms"
 		usecache="True">
@@ -1128,6 +1300,110 @@ T9Yo73q8rE8A7i0xEOVI4p+HYggATMyByxdnyKPRP6rxbVilw67wcVBOAtambRFvof4hufvzyTGa
 yBbJEskUycg1sS/HxN7sPPaI7M7KY1dmKjszUsnJL2LhTf7rGAy/AP7X5rYY5FLEAAAAAElFTkSu
 QmCC
 			</icon>
+		</appfolder>
+		<appfolder
+		capname="form"
+		id="7504c53a-a6a3-4482-864b-8b3e39897294"
+		isrooted="True"
+		name="DateCalculatorForm"
+		refimgid="c0981e2a-422d-4df0-ad59-9bae6d67057c"
+		searchtimeout="30000ms"
+		usecache="False">
+			<folder
+			addcaps="container,control,nativewindow"
+			capname="container"
+			id="6d306deb-030d-4b3d-bb26-4c82b028b787"
+			isrooted="True"
+			name="PnlBase"
+			refpath="/form[@controlname='DateCalculatorForm']/container[@controlname='pnlBase']"
+			searchtimeout="30000ms"
+			usecache="False">
+				<item
+				addcaps="button,accessible"
+				capname="button"
+				id="16342842-91e0-48d3-9bc0-46216897d015"
+				name="btnCalculate"
+				refimgid="1afce6ee-7f9b-49b9-832c-63ea373fad35"
+				refpath="/form[@controlname='DateCalculatorForm']/container[@controlname='pnlBase']/container[@controlname='pnlControls']/container[@controlname='pnlCalDate']/container[@controlname='pnlCalDateResult']/element[@controlname='abtnCalculate']/button[@accessiblename='Calculate']"
+				searchtimeout="30000ms">
+					/form[@controlname='DateCalculatorForm']/container[@controlname='pnlBase']//container[@controlname='pnlCalDateResult']/?/?/button[@accessiblename='Calculate']
+				</item>
+				<item
+				addcaps="text,uiautomation,uiautomationvalue"
+				capname="text"
+				id="35d32400-d5d7-425d-8887-004ddf582074"
+				name="txtDaysNew"
+				refpath="/form[@controlname='DateCalculatorForm']/container[@controlname='pnlBase']/container[@controlname='pnlControls']/container[@controlname='pnlCalDate']/element[@controlname='atxtDayInterval']/text[@automationid='[Editor] Edit Area']"
+				searchtimeout="30000ms">
+					/form[@controlname='DateCalculatorForm']/container[@controlname='pnlBase']//element[@controlname='atxtDayInterval']/text[@automationid='[Editor] Edit Area']
+				</item>
+				<item
+				addcaps="text,control,nativewindow"
+				capname="text"
+				id="743e94db-6fad-46a6-b1f5-19ba2f15086b"
+				name="txtDays"
+				refimgid="764c8bf1-7618-4925-82d4-473e5c6de618"
+				refpath="/form[@controlname='DateCalculatorForm']/container[@controlname='pnlBase']/container[@controlname='pnlControls']/container[@controlname='pnlCalDate']/element[@controlname='atxtDayInterval']/text[@controlname='atxtDayInterval_EmbeddableTextBox']"
+				searchtimeout="30000ms">
+					/form[@controlname='DateCalculatorForm']/container[@controlname='pnlBase']//element[@controlname='atxtDayInterval']/text[@controlname='atxtDayInterval_EmbeddableTextBox']
+				</item>
+				<item
+				addcaps="text,uiautomation,uiautomationvalue"
+				capname="text"
+				id="82068833-c95f-444c-bdf3-58052b67b461"
+				name="txtResult"
+				refimgid="fadd4598-1ecf-40ff-810d-f7631a4bf1b3"
+				refpath="/form[@controlname='DateCalculatorForm']/container[@controlname='pnlBase']/container[@controlname='pnlControls']/container[@controlname='pnlCalDate']/container[@controlname='pnlCalDateResult']/element[@controlname='atxtResult']/text[@automationid='[Editor] Edit Area']"
+				searchtimeout="30000ms">
+					/form[@controlname='DateCalculatorForm']/container[@controlname='pnlBase']//container[@controlname='pnlCalDateResult']/?/?/text[@automationid='[Editor] Edit Area']
+				</item>
+				<basepath>
+					/form[@controlname='DateCalculatorForm']/container[@controlname='pnlBase']
+				</basepath>
+			</folder>
+			<item
+			addcaps="toolbar,accessible"
+			capname="toolbar"
+			id="4ad7152f-2edf-435f-8597-0106f64cd052"
+			name="Toolbar"
+			refpath="/form[@controlname='DateCalculatorForm']/element[@controlname='_BaseForm_Toolbars_Dock_Area_Bottom']/container[@accessiblename='DockBottom']/toolbar[@accessiblename='Toolbar']"
+			searchtimeout="30000ms">
+				/form[@controlname='DateCalculatorForm']/element[@controlname='_BaseForm_Toolbars_Dock_Area_Bottom']/?/?/toolbar[@accessiblename='Toolbar']
+			</item>
+			<folder
+			addcaps="toolbar,accessible"
+			capname="toolbar"
+			id="6e73a0b7-50e8-4e6a-ae17-d24d59eb55de"
+			isrooted="True"
+			name="Toolbar1"
+			refpath="/form[@controlname='DateCalculatorForm']/element[@controlname='_BaseForm_Toolbars_Dock_Area_Bottom']/container[@accessiblename='DockBottom']/toolbar[@accessiblename='Toolbar']"
+			searchtimeout="30000ms"
+			usecache="False">
+				<item
+				addcaps="button,accessible"
+				capname="button"
+				id="4104dd8c-f241-4cd6-bfa6-7890fc5f1041"
+				name="btnCancel"
+				refpath="/form[@controlname='DateCalculatorForm']/element[@controlname='_BaseForm_Toolbars_Dock_Area_Bottom']/container[@accessiblename='DockBottom']/toolbar[@accessiblename='Toolbar']/button[@accessiblename='Cancel']"
+				searchtimeout="30000ms">
+					/form[@controlname='DateCalculatorForm']//toolbar[@accessiblename='Toolbar']/button[@accessiblename='Cancel']
+				</item>
+				<item
+				addcaps="button,accessible"
+				capname="button"
+				id="f394671c-43d1-4e8f-b21c-b565a17d8843"
+				name="btnOK"
+				refpath="/form[@controlname='DateCalculatorForm']/element[@controlname='_BaseForm_Toolbars_Dock_Area_Bottom']/container[@accessiblename='DockBottom']/toolbar[@accessiblename='Toolbar']/button[@accessiblename='OK']"
+				searchtimeout="30000ms">
+					/form[@controlname='DateCalculatorForm']//toolbar[@accessiblename='Toolbar']/button[@accessiblename='OK']
+				</item>
+				<basepath>
+					/form[@controlname='DateCalculatorForm']//toolbar[@accessiblename='Toolbar']
+				</basepath>
+			</folder>
+			<basepath>
+				/form[@controlname='DateCalculatorForm']
+			</basepath>
 		</appfolder>
 		<basepath>
 		</basepath>

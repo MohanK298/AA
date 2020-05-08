@@ -473,13 +473,50 @@ namespace SmokeTest.Modules.Utilities
         				Report.Failure(String.Format("Value \"{0}\" not present for selection in \"{1}\" dropdown",itemValue,dpdwnName));
         	}
         }
+        
+        
+        public void VerifyListItemDropdown(Ranorex.Adapter dpdwnData,string[] itemValues,string dpdwnName)
+        {
+        	int k=0;
+        	dpdwnData.Click();
+        	var cmbbxData = dpdwnData.As <Ranorex.ComboBox>();
+        	//cmbbxData.Click();
+        	IList<Ranorex.ListItem> listitems = cmbbxData.Items;
+        	foreach(string item in itemValues)
+        	{
+        		foreach(Ranorex.ListItem val in listitems)
+	        	{
+	        		if(val.Text.Equals(item))
+	        		{
+	        			//item.Click();
+	        			Report.Success(String.Format("Value \"{0}\" Present as expected in \"{1}\" dropdown",item,dpdwnName));
+	        			k++;
+	        			//break;
+	        		}
+	        	}
+        	}
+        	if(k==itemValues.Length)
+        	{
+        		Report.Success(String.Format("{0} Values present for selection in \"{1}\" dropdown as expected",itemValues.Length,dpdwnName));
+        	}
+        	else
+        	{
+        		Report.Failure(String.Format("{0} Values not present for selection in \"{1}\" dropdown as expected",itemValues.Length,dpdwnName));
+        	}
+        	
+        }
+        
+        
+        
+        
+        
          public void SelectItemDropdown(Ranorex.Adapter tbldata,string itemValue)
         {
         	int k=0;
         	var tadapter = tbldata.As <Ranorex.Table>();
         	for(int i=0;i<tadapter.Rows.Count;i++)
         	{
-       		
+        		//Report.Info(tadapter.Rows[i].Cells[0].As<Ranorex.Cell>().Text.ToString());
         			if(tadapter.Rows[i].Cells[0].As<Ranorex.Cell>().Text.Contains(itemValue))
         			{
         				tadapter.Rows[i].Cells[0].As<Ranorex.Cell>().Click();
@@ -782,6 +819,53 @@ namespace SmokeTest.Modules.Utilities
 		    } catch (Exception) {}  
 		}
 
+		public System.DateTime AddBusinessDays(System.DateTime date, int days)
+		{
+//			var sign = Math.Sign(days);
+//	        var unsignedDays = Math.Abs(days);
+//	        for (var i = 0; i < unsignedDays; i++)
+//	        {
+//	            do
+//	            {
+//	                current = current.AddDays(sign);
+//	            }
+//	            while (current.DayOfWeek == DayOfWeek.Saturday ||
+//	                current.DayOfWeek == DayOfWeek.Sunday);
+//	        }
+//	        return current;
+			
+			if (days < 0)
+		    {
+		        throw new ArgumentException("days cannot be negative", "days");
+		    }
+		
+		    if (days == 0) return date;
+		
+		    if (date.DayOfWeek == DayOfWeek.Saturday)
+		    {
+		        date = date.AddDays(2);
+		        days -= 1;
+		    }
+		    else if (date.DayOfWeek == DayOfWeek.Sunday)
+		    {
+		        date = date.AddDays(1);
+		        days -= 1;
+		    }
+		
+		    date = date.AddDays(days / 5 * 7);
+		    int extraDays = days % 5;
+		
+		    if ((int)date.DayOfWeek + extraDays > 5)
+		    {
+		        extraDays += 2;
+		    }
+		
+		    return date.AddDays(extraDays);
+			
+			
+		}
+		
+		
 		
 		
 		

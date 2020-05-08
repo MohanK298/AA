@@ -37,8 +37,8 @@ namespace SmokeTest.Repositories
         BillingTEFolders.AmicusAttorneyXWin1AppFolder _amicusattorneyxwin1;
         BillingTEFolders.PromptFormAppFolder _promptform;
         BillingTEFolders.ExplorerAppFolder _explorer;
-        BillingTEFolders.DropDownFormAppFolder _dropdownform;
         BillingTEFolders.ChangeReasonFormAppFolder _changereasonform;
+        BillingTEFolders.DropDownFormAppFolder _dropdownform;
 
         /// <summary>
         /// Gets the singleton class instance representing the BillingTE element repository.
@@ -65,11 +65,23 @@ namespace SmokeTest.Repositories
             _amicusattorneyxwin1 = new BillingTEFolders.AmicusAttorneyXWin1AppFolder(this);
             _promptform = new BillingTEFolders.PromptFormAppFolder(this);
             _explorer = new BillingTEFolders.ExplorerAppFolder(this);
-            _dropdownform = new BillingTEFolders.DropDownFormAppFolder(this);
             _changereasonform = new BillingTEFolders.ChangeReasonFormAppFolder(this);
+            _dropdownform = new BillingTEFolders.DropDownFormAppFolder(this);
         }
 
 #region Variables
+
+        string _var = "";
+
+        /// <summary>
+        /// Gets or sets the value of variable var.
+        /// </summary>
+        [TestVariable("e6677b5e-e740-4013-b052-cddc438192bc")]
+        public string var
+        {
+            get { return _var; }
+            set { _var = value; }
+        }
 
 #endregion
 
@@ -176,21 +188,21 @@ namespace SmokeTest.Repositories
         }
 
         /// <summary>
-        /// The DropDownForm folder.
-        /// </summary>
-        [RepositoryFolder("48a51978-40cd-402a-ae81-3b8f5d46e853")]
-        public virtual BillingTEFolders.DropDownFormAppFolder DropDownForm
-        {
-            get { return _dropdownform; }
-        }
-
-        /// <summary>
         /// The ChangeReasonForm folder.
         /// </summary>
         [RepositoryFolder("726486e2-5b6b-43e7-9421-af8cb8698e76")]
         public virtual BillingTEFolders.ChangeReasonFormAppFolder ChangeReasonForm
         {
             get { return _changereasonform; }
+        }
+
+        /// <summary>
+        /// The DropDownForm folder.
+        /// </summary>
+        [RepositoryFolder("0abde5c6-cda9-48ba-9275-e19f920c3654")]
+        public virtual BillingTEFolders.DropDownFormAppFolder DropDownForm
+        {
+            get { return _dropdownform; }
         }
     }
 
@@ -762,6 +774,7 @@ namespace SmokeTest.Repositories
             RepoItemInfo _btndeleteInfo;
             RepoItemInfo _cmbbxbillingrateInfo;
             RepoItemInfo _txtrateInfo;
+            RepoItemInfo _txtratenewInfo;
 
             /// <summary>
             /// Creates a new TimeEntryDetailsForm  folder.
@@ -775,6 +788,7 @@ namespace SmokeTest.Repositories
                 _btndeleteInfo = new RepoItemInfo(this, "btnDelete", "container[@controlname='menubar_Fill_Panel']//toolbar[@accessiblename='Toolbar']/button[@accessiblename='Delete']", 30000, null, "b1f0f8f0-f286-4f21-bc53-1deceacdbccc");
                 _cmbbxbillingrateInfo = new RepoItemInfo(this, "cmbbxBillingRate", "?/?/container[@controlname='pnlBase']//element[@controlname='ucmbBillingRate']/combobox/combobox[@accessiblerole='ComboBox']", 30000, null, "d40e8039-3a8b-4855-a811-b3a7daebcb3b");
                 _txtrateInfo = new RepoItemInfo(this, "txtRate", "?/?/container[@controlname='pnlBase']//element[@controlname='ateRateValue']/text[@controlname='ateRateValue_EmbeddableTextBox']", 30000, null, "40eb9835-73ea-411f-8340-ca7ebf46d43f");
+                _txtratenewInfo = new RepoItemInfo(this, "txtRateNew", "?/?/container[@controlname='pnlBase']//element[@controlname='ateRateValue']/text[@automationid='[Editor] Edit Area']", 30000, null, "256f3d3a-f133-4085-a92f-c92da107369a");
             }
 
             /// <summary>
@@ -942,6 +956,30 @@ namespace SmokeTest.Repositories
                 get
                 {
                     return _txtrateInfo;
+                }
+            }
+
+            /// <summary>
+            /// The txtRateNew item.
+            /// </summary>
+            [RepositoryItem("256f3d3a-f133-4085-a92f-c92da107369a")]
+            public virtual Ranorex.Text txtRateNew
+            {
+                get
+                {
+                    return _txtratenewInfo.CreateAdapter<Ranorex.Text>(true);
+                }
+            }
+
+            /// <summary>
+            /// The txtRateNew item info.
+            /// </summary>
+            [RepositoryItemInfo("256f3d3a-f133-4085-a92f-c92da107369a")]
+            public virtual RepoItemInfo txtRateNewInfo
+            {
+                get
+                {
+                    return _txtratenewInfo;
                 }
             }
         }
@@ -1510,97 +1548,6 @@ namespace SmokeTest.Repositories
         }
 
         /// <summary>
-        /// The DropDownFormAppFolder folder.
-        /// </summary>
-        [RepositoryFolder("48a51978-40cd-402a-ae81-3b8f5d46e853")]
-        public partial class DropDownFormAppFolder : RepoGenBaseFolder
-        {
-            BillingTEFolders.TblDpdwnFolder _tbldpdwn;
-
-            /// <summary>
-            /// Creates a new DropDownForm  folder.
-            /// </summary>
-            public DropDownFormAppFolder(RepoGenBaseFolder parentFolder) :
-                    base("DropDownForm", "/form", parentFolder, 30000, null, true, "48a51978-40cd-402a-ae81-3b8f5d46e853", "")
-            {
-                _tbldpdwn = new BillingTEFolders.TblDpdwnFolder(this);
-            }
-
-            /// <summary>
-            /// The Self item.
-            /// </summary>
-            [RepositoryItem("48a51978-40cd-402a-ae81-3b8f5d46e853")]
-            public virtual Ranorex.Form Self
-            {
-                get
-                {
-                    return _selfInfo.CreateAdapter<Ranorex.Form>(true);
-                }
-            }
-
-            /// <summary>
-            /// The Self item info.
-            /// </summary>
-            [RepositoryItemInfo("48a51978-40cd-402a-ae81-3b8f5d46e853")]
-            public virtual RepoItemInfo SelfInfo
-            {
-                get
-                {
-                    return _selfInfo;
-                }
-            }
-
-            /// <summary>
-            /// The tblDpdwn folder.
-            /// </summary>
-            [RepositoryFolder("8a4c46e5-d081-4120-89aa-90ed1b212496")]
-            public virtual BillingTEFolders.TblDpdwnFolder tblDpdwn
-            {
-                get { return _tbldpdwn; }
-            }
-        }
-
-        /// <summary>
-        /// The TblDpdwnFolder folder.
-        /// </summary>
-        [RepositoryFolder("8a4c46e5-d081-4120-89aa-90ed1b212496")]
-        public partial class TblDpdwnFolder : RepoGenBaseFolder
-        {
-
-            /// <summary>
-            /// Creates a new tblDpdwn  folder.
-            /// </summary>
-            public TblDpdwnFolder(RepoGenBaseFolder parentFolder) :
-                    base("tblDpdwn", "form[@title='']/?/?/table[@accessiblename='Band 0']", parentFolder, 30000, null, false, "8a4c46e5-d081-4120-89aa-90ed1b212496", "")
-            {
-            }
-
-            /// <summary>
-            /// The Self item.
-            /// </summary>
-            [RepositoryItem("8a4c46e5-d081-4120-89aa-90ed1b212496")]
-            public virtual Ranorex.Table Self
-            {
-                get
-                {
-                    return _selfInfo.CreateAdapter<Ranorex.Table>(true);
-                }
-            }
-
-            /// <summary>
-            /// The Self item info.
-            /// </summary>
-            [RepositoryItemInfo("8a4c46e5-d081-4120-89aa-90ed1b212496")]
-            public virtual RepoItemInfo SelfInfo
-            {
-                get
-                {
-                    return _selfInfo;
-                }
-            }
-        }
-
-        /// <summary>
         /// The ChangeReasonFormAppFolder folder.
         /// </summary>
         [RepositoryFolder("726486e2-5b6b-43e7-9421-af8cb8698e76")]
@@ -1791,6 +1738,98 @@ namespace SmokeTest.Repositories
                 get
                 {
                     return _btnokInfo;
+                }
+            }
+        }
+
+        /// <summary>
+        /// The DropDownFormAppFolder folder.
+        /// </summary>
+        [RepositoryFolder("0abde5c6-cda9-48ba-9275-e19f920c3654")]
+        public partial class DropDownFormAppFolder : RepoGenBaseFolder
+        {
+            RepoItemInfo _tbdropdownInfo;
+            RepoItemInfo _treeitemInfo;
+
+            /// <summary>
+            /// Creates a new DropDownForm  folder.
+            /// </summary>
+            public DropDownFormAppFolder(RepoGenBaseFolder parentFolder) :
+                    base("DropDownForm", "/form", parentFolder, 30000, null, false, "0abde5c6-cda9-48ba-9275-e19f920c3654", "")
+            {
+                _tbdropdownInfo = new RepoItemInfo(this, "tbDropdown", "?/?/table", 30000, null, "0bc4323e-c32f-47d1-88ed-80a618099183");
+                _treeitemInfo = new RepoItemInfo(this, "TreeItem", ".//tree/treeitem[@name=$var]", 30000, null, "aef2d5c1-6bd9-462c-ad6f-cae7e5fc81f9");
+            }
+
+            /// <summary>
+            /// The Self item.
+            /// </summary>
+            [RepositoryItem("0abde5c6-cda9-48ba-9275-e19f920c3654")]
+            public virtual Ranorex.Form Self
+            {
+                get
+                {
+                    return _selfInfo.CreateAdapter<Ranorex.Form>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Self item info.
+            /// </summary>
+            [RepositoryItemInfo("0abde5c6-cda9-48ba-9275-e19f920c3654")]
+            public virtual RepoItemInfo SelfInfo
+            {
+                get
+                {
+                    return _selfInfo;
+                }
+            }
+
+            /// <summary>
+            /// The tbDropdown item.
+            /// </summary>
+            [RepositoryItem("0bc4323e-c32f-47d1-88ed-80a618099183")]
+            public virtual Ranorex.Table tbDropdown
+            {
+                get
+                {
+                    return _tbdropdownInfo.CreateAdapter<Ranorex.Table>(true);
+                }
+            }
+
+            /// <summary>
+            /// The tbDropdown item info.
+            /// </summary>
+            [RepositoryItemInfo("0bc4323e-c32f-47d1-88ed-80a618099183")]
+            public virtual RepoItemInfo tbDropdownInfo
+            {
+                get
+                {
+                    return _tbdropdownInfo;
+                }
+            }
+
+            /// <summary>
+            /// The TreeItem item.
+            /// </summary>
+            [RepositoryItem("aef2d5c1-6bd9-462c-ad6f-cae7e5fc81f9")]
+            public virtual Ranorex.TreeItem TreeItem
+            {
+                get
+                {
+                    return _treeitemInfo.CreateAdapter<Ranorex.TreeItem>(true);
+                }
+            }
+
+            /// <summary>
+            /// The TreeItem item info.
+            /// </summary>
+            [RepositoryItemInfo("aef2d5c1-6bd9-462c-ad6f-cae7e5fc81f9")]
+            public virtual RepoItemInfo TreeItemInfo
+            {
+                get
+                {
+                    return _treeitemInfo;
                 }
             }
         }

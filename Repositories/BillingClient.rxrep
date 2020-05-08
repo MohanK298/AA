@@ -1,5 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
-<repository
+﻿<repository
 id="bcfebc60-3fb3-42b4-808d-297570cb5755"
 name="BillingClient"
 rxversion="9.0">
@@ -61,6 +60,16 @@ rxversion="9.0">
 			refimgid="b2146dd6-5761-424d-bb04-4938a8c3c62c"
 			searchtimeout="5000ms">
 				/form[@title='Amicus Attorney' and @processname='AmicusAttorney.XWin' and @controltypename='MainFormXtra' and @instance='0']/container[@controlname='pLeft']//tree[@accessiblerole='Outline']/button[@accessiblename='Clients']
+			</item>
+			<item
+			addcaps="text,accessible"
+			capname="text"
+			id="da97885c-df53-4138-a761-a1e16d0312e9"
+			name="lnkTaxSettings"
+			refimgid="e0241bc9-1858-4d33-9072-8eab643a72e6"
+			refpath="/form[@controlname='MainForm']/element[@controltypename='MdiClient']/form[@controlname='FirmSettingsForm']/container[@controlname='roundedPanelControl']/container[@controlname='panelScroll']/element[@controlname='amlblTax']/text[@accessiblerole='StaticText']"
+			searchtimeout="30000ms">
+				/form[@title='Amicus Attorney' and @processname='AmicusAttorney.XWin' and @controltypename='MainFormXtra' and @instance='0']/?/?/form[@controlname='FirmSettingsForm']//element[@controlname='amlblTax']/text[@accessiblerole='StaticText']
 			</item>
 			<basepath>
 				/form[@title='Amicus Attorney' and @processname='AmicusAttorney.XWin' and @controltypename='MainFormXtra' and @instance='0']
@@ -374,6 +383,398 @@ FG9SONJ8Tq79BTVnHV9LA2dpEoUtkby3kijxBzJC3brWB49HEQUGiJuxdMRHk/3HyN5s8nsRbarC
 9vAAOZ/NRMUcIEd1o7cxScrGV2kAMBMH5cQLVdoXTeOHTbPk6nbQsTOW3UvD2L0kiK6scIgCFcyc
 P97/7xjodJp4QKHIUzVcDQRuzCYr51Fcj4QoCQDOGzy0mCYV/8L7MVCWaGOyHNwJGRYZR2Sk+xMd
 D8zerL8gSEaw7+rFqJ//CkX5CWkHqyZHVzU6AAAAAElFTkSuQmCC
+			</icon>
+		</appfolder>
+		<appfolder
+		addcaps="form,control,nativewindow"
+		capname="form"
+		id="1159fd2d-c02a-4a37-9456-849f56de4558"
+		isrooted="True"
+		name="GeneralFirmSettingsXtraForm"
+		refimgid="61f0c487-95d4-40b6-9d0f-027e42812459"
+		refpath="/form[@controlname='GeneralFirmSettingsXtraForm']"
+		searchtimeout="30000ms"
+		usecache="True">
+			<folder
+			addcaps="container,control,nativewindow"
+			capname="container"
+			id="d6857aff-dfdb-4587-9537-6fe9621ba456"
+			isrooted="True"
+			name="PanelTax"
+			refpath="/form[@controlname='GeneralFirmSettingsXtraForm']/container[@controlname='pnlBase']/container[@controlname='pnlControls']/container[@controlname='panelTitleBase']/container[@controlname='panelBase']/container[@controlname='panelTax']"
+			searchtimeout="30000ms"
+			usecache="False">
+				<item
+				addcaps="text,control,nativewindow"
+				capname="text"
+				id="5adf787c-086a-463b-8bba-3e0043a33775"
+				name="txtRegisteredName"
+				refimgid="5d1e6f57-896a-4f6b-a73c-96c652365118"
+				refpath="/form[@controlname='GeneralFirmSettingsXtraForm']/container[@controlname='pnlBase']/container[@controlname='pnlControls']/container[@controlname='panelTitleBase']/container[@controlname='panelBase']/container[@controlname='panelTax']/element[@controlname='ateTaxIdName']/text[@controlname='ateTaxIdName_EmbeddableTextBox']"
+				searchtimeout="30000ms">
+					/form[@controlname='GeneralFirmSettingsXtraForm']/container[@controlname='pnlBase']//container[@controlname='panelBase']/container[@controlname='panelTax']/?/?/text[@controlname='ateTaxIdName_EmbeddableTextBox']
+				</item>
+				<item
+				addcaps="checkbox,accessible"
+				capname="checkbox"
+				id="83556c3a-97f0-4d6c-97f0-5b721e93f11a"
+				name="cbApplySalesTax1"
+				refimgid="40f3d0e0-20f9-4012-9963-45a3f2051edc"
+				refpath="/form[@controlname='GeneralFirmSettingsXtraForm']/container[@controlname='pnlBase']/container[@controlname='pnlControls']/container[@controlname='panelTitleBase']/container[@controlname='panelBase']/container[@controlname='panelTax']/container[@controlname='PanelTax1']/element[@controlname='aceEnableTax1']/checkbox[@accessiblename='Apply Sales Tax 1']/checkbox[@accessiblename='Apply Sales Tax 1']"
+				searchtimeout="30000ms">
+					/form[@controlname='GeneralFirmSettingsXtraForm']/container[@controlname='pnlBase']//container[@controlname='panelBase']/container[@controlname='panelTax']/container[@controlname='PanelTax1']/element[@controlname='aceEnableTax1']/checkbox[@accessiblename='Apply Sales Tax 1']/checkbox[@accessiblename='Apply Sales Tax 1']
+				</item>
+				<item
+				addcaps="checkbox,accessible"
+				capname="checkbox"
+				id="4133a168-4ac3-4caf-88ec-ffd90f46d4b5"
+				name="cbApplySalesTax2"
+				refimgid="1ff3cec8-6d41-4a60-98e1-f4d917c505bb"
+				refpath="/form[@controlname='GeneralFirmSettingsXtraForm']/container[@controlname='pnlBase']/container[@controlname='pnlControls']/container[@controlname='panelTitleBase']/container[@controlname='panelBase']/container[@controlname='panelTax']/container[@controlname='PanelTax2']/element[@controlname='aceEnableTax2']/checkbox[@accessiblename='Apply Sales Tax 2']/checkbox[@accessiblename='Apply Sales Tax 2']"
+				searchtimeout="30000ms">
+					/form[@controlname='GeneralFirmSettingsXtraForm']/container[@controlname='pnlBase']//container[@controlname='panelBase']/container[@controlname='panelTax']/container[@controlname='PanelTax2']/element[@controlname='aceEnableTax2']/checkbox[@accessiblename='Apply Sales Tax 2']/checkbox[@accessiblename='Apply Sales Tax 2']
+				</item>
+				<item
+				addcaps="text,uiautomation,uiautomationvalue"
+				capname="text"
+				id="2fc86e8e-2771-4429-a520-316eb5b095d9"
+				name="txtTax1"
+				refimgid="3339a227-ff7a-4b86-befb-0d4e301ffb93"
+				refpath="/form[@controlname='GeneralFirmSettingsXtraForm']/container[@controlname='pnlBase']/container[@controlname='pnlControls']/container[@controlname='panelTitleBase']/container[@controlname='panelBase']/container[@controlname='panelTax']/container[@controlname='PanelTax1']/element[@controlname='ateNameTax1']/text[@automationid='[Editor] Edit Area']"
+				searchtimeout="30000ms">
+					/form[@controlname='GeneralFirmSettingsXtraForm']/container[@controlname='pnlBase']//container[@controlname='panelBase']/container[@controlname='panelTax']/container[@controlname='PanelTax1']/element[@controlname='ateNameTax1']/text[@automationid='[Editor] Edit Area']
+				</item>
+				<item
+				addcaps="text,uiautomation,uiautomationvalue"
+				capname="text"
+				id="fb4ec65b-1b4d-4c85-a7c3-d52f885e02f3"
+				name="txtReg1"
+				refimgid="7c2d670f-d812-4ebf-87ee-c60b93069831"
+				refpath="/form[@controlname='GeneralFirmSettingsXtraForm']/container[@controlname='pnlBase']/container[@controlname='pnlControls']/container[@controlname='panelTitleBase']/container[@controlname='panelBase']/container[@controlname='panelTax']/container[@controlname='PanelTax1']/element[@controlname='ateRegIdTax1']/text[@automationid='[Editor] Edit Area']"
+				searchtimeout="30000ms">
+					/form[@controlname='GeneralFirmSettingsXtraForm']/container[@controlname='pnlBase']//container[@controlname='panelBase']/container[@controlname='panelTax']/container[@controlname='PanelTax1']/element[@controlname='ateRegIdTax1']/text[@automationid='[Editor] Edit Area']
+				</item>
+				<item
+				addcaps="button,accessible"
+				capname="button"
+				id="a2bb4f21-c62d-4dfc-ba78-6ff032a29e77"
+				name="btnEdit1"
+				refimgid="e944913d-9db1-441e-9569-ef918417543a"
+				refpath="/form[@controlname='GeneralFirmSettingsXtraForm']/container[@controlname='pnlBase']/container[@controlname='pnlControls']/container[@controlname='panelTitleBase']/container[@controlname='panelBase']/container[@controlname='panelTax']/container[@controlname='PanelTax1']/element[@controlname='abtnEditRate1']/button[@accessiblename='Edit']"
+				searchtimeout="30000ms">
+					/form[@controlname='GeneralFirmSettingsXtraForm']/container[@controlname='pnlBase']//container[@controlname='panelBase']/container[@controlname='panelTax']/container[@controlname='PanelTax1']/?/?/button[@accessiblename='Edit']
+				</item>
+				<item
+				addcaps="checkbox,accessible"
+				capname="checkbox"
+				id="30074ac5-20a0-427b-87f1-179c2c4b4703"
+				name="cbNewFilesAreTaxableByDefault"
+				refimgid="80ec92d4-b070-4eba-8613-00cc9627ace5"
+				refpath="/form[@controlname='GeneralFirmSettingsXtraForm']/container[@controlname='pnlBase']/container[@controlname='pnlControls']/container[@controlname='panelTitleBase']/container[@controlname='panelBase']/container[@controlname='panelTax']/element[@controlname='aceNewFileTaxes']/checkbox[@accessiblename='New Files are Taxable by default']/checkbox[@accessiblename='New Files are Taxable by default']"
+				searchtimeout="30000ms">
+					/form[@controlname='GeneralFirmSettingsXtraForm']/container[@controlname='pnlBase']//container[@controlname='panelBase']/container[@controlname='panelTax']/element[@controlname='aceNewFileTaxes']/checkbox[@accessiblename&gt;'New Files are Taxable by']/checkbox[@accessiblename&gt;'New Files are Taxable by']
+				</item>
+				<item
+				addcaps="checkbox,accessible"
+				capname="checkbox"
+				id="ebdf9a3d-1e35-4793-bdd7-384140e31407"
+				name="cbUseActivityCodeSettingsForTaxesOn"
+				refimgid="53f080d6-79dd-463d-93af-9b7b70d1b2dc"
+				refpath="/form[@controlname='GeneralFirmSettingsXtraForm']/container[@controlname='pnlBase']/container[@controlname='pnlControls']/container[@controlname='panelTitleBase']/container[@controlname='panelBase']/container[@controlname='panelTax']/element[@controlname='aceTimeEntryTaxActivitySettings']/checkbox[@accessiblename='Use Activity Code settings for Taxes on Fees']/checkbox[@accessiblename='Use Activity Code settings for Taxes on Fees']"
+				searchtimeout="30000ms">
+					/form[@controlname='GeneralFirmSettingsXtraForm']/container[@controlname='pnlBase']//container[@controlname='panelBase']/container[@controlname='panelTax']/element[@controlname='aceTimeEntryTaxActivitySettings']/checkbox[@accessiblename&gt;'Use Activity Code settings']/checkbox[@accessiblename&gt;'Use Activity Code settings']
+				</item>
+				<item
+				addcaps="combobox,control,nativewindow"
+				capname="combobox"
+				id="ca0892e4-4ded-406d-9b61-823759fbc9c5"
+				name="cmbxTax1Change"
+				refimgid="329f1344-f8de-4aa2-a329-12964776763b"
+				refpath="/form[@controlname='GeneralFirmSettingsXtraForm']/container[@controlname='pnlBase']/container[@controlname='pnlControls']/container[@controlname='panelTitleBase']/container[@controlname='panelBase']/container[@controlname='panelTax']/container[@controlname='PanelTax1']/combobox[@controlname='acmbTax1Change']"
+				searchtimeout="30000ms">
+					/form[@controlname='GeneralFirmSettingsXtraForm']/container[@controlname='pnlBase']//container[@controlname='panelBase']/container[@controlname='panelTax']/container[@controlname='PanelTax1']/combobox[@controlname='acmbTax1Change']
+				</item>
+				<item
+				addcaps="text,uiautomation,uiautomationvalue"
+				capname="text"
+				id="5d0b4eaf-7df4-41c7-bb48-6048a6810030"
+				name="txtTax2"
+				refimgid="2e7985c4-1d78-414f-a916-b5a19110f6a6"
+				refpath="/form[@controlname='GeneralFirmSettingsXtraForm']/container[@controlname='pnlBase']/container[@controlname='pnlControls']/container[@controlname='panelTitleBase']/container[@controlname='panelBase']/container[@controlname='panelTax']/container[@controlname='PanelTax2']/element[@controlname='ateNameTax2']/text[@automationid='[Editor] Edit Area']"
+				searchtimeout="30000ms">
+					/form[@controlname='GeneralFirmSettingsXtraForm']/container[@controlname='pnlBase']//container[@controlname='panelBase']/container[@controlname='panelTax']/container[@controlname='PanelTax2']/element[@controlname='ateNameTax2']/text[@automationid='[Editor] Edit Area']
+				</item>
+				<item
+				addcaps="text,uiautomation,uiautomationvalue"
+				capname="text"
+				id="9e9bb466-e6ae-48a0-9348-8e25b2cc813e"
+				name="txtReg2"
+				refimgid="8ac31ce1-580a-45d3-ad93-711cb45c8388"
+				refpath="/form[@controlname='GeneralFirmSettingsXtraForm']/container[@controlname='pnlBase']/container[@controlname='pnlControls']/container[@controlname='panelTitleBase']/container[@controlname='panelBase']/container[@controlname='panelTax']/container[@controlname='PanelTax2']/element[@controlname='ateRegIdTax2']/text[@automationid='[Editor] Edit Area']"
+				searchtimeout="30000ms">
+					/form[@controlname='GeneralFirmSettingsXtraForm']/container[@controlname='pnlBase']//container[@controlname='panelBase']/container[@controlname='panelTax']/container[@controlname='PanelTax2']/element[@controlname='ateRegIdTax2']/text[@automationid='[Editor] Edit Area']
+				</item>
+				<item
+				addcaps="button,accessible"
+				capname="button"
+				id="53196828-3551-4012-b747-6840295c5c0a"
+				name="btnEdit2"
+				refimgid="e2a2d8dc-b4eb-4ec1-8804-200efd3fc845"
+				refpath="/form[@controlname='GeneralFirmSettingsXtraForm']/container[@controlname='pnlBase']/container[@controlname='pnlControls']/container[@controlname='panelTitleBase']/container[@controlname='panelBase']/container[@controlname='panelTax']/container[@controlname='PanelTax2']/element[@controlname='abtnEditRate2']/button[@accessiblename='Edit']"
+				searchtimeout="30000ms">
+					/form[@controlname='GeneralFirmSettingsXtraForm']/container[@controlname='pnlBase']//container[@controlname='panelBase']/container[@controlname='panelTax']/container[@controlname='PanelTax2']/?/?/button[@accessiblename='Edit']
+				</item>
+				<item
+				addcaps="combobox,control,nativewindow"
+				capname="combobox"
+				id="ebb11d26-b4aa-4e1c-983d-b0afa70d29e9"
+				name="cmbxTax2Change"
+				refimgid="32a90baa-c0c1-45eb-8cb2-d7c626cd479f"
+				refpath="/form[@controlname='GeneralFirmSettingsXtraForm']/container[@controlname='pnlBase']/container[@controlname='pnlControls']/container[@controlname='panelTitleBase']/container[@controlname='panelBase']/container[@controlname='panelTax']/container[@controlname='PanelTax2']/combobox[@controlname='acmbTax2Change']"
+				searchtimeout="30000ms">
+					/form[@controlname='GeneralFirmSettingsXtraForm']/container[@controlname='pnlBase']//container[@controlname='panelBase']/container[@controlname='panelTax']/container[@controlname='PanelTax2']/combobox[@controlname='acmbTax2Change']
+				</item>
+				<basepath>
+					/form[@controlname='GeneralFirmSettingsXtraForm']/container[@controlname='pnlBase']//container[@controlname='panelBase']/container[@controlname='panelTax']
+				</basepath>
+			</folder>
+			<item
+			addcaps="toolbar,accessible"
+			capname="toolbar"
+			id="ded171d8-bc00-40b8-9d4b-2292123e180b"
+			name="Toolbar"
+			refpath="/form[@controlname='GeneralFirmSettingsXtraForm']/element[@controlname='_BaseForm_Toolbars_Dock_Area_Bottom']/container[@accessiblename='DockBottom']/toolbar[@accessiblename='Toolbar']"
+			searchtimeout="30000ms">
+				/form[@controlname='GeneralFirmSettingsXtraForm']/element[@controlname='_BaseForm_Toolbars_Dock_Area_Bottom']/?/?/toolbar[@accessiblename='Toolbar']
+			</item>
+			<folder
+			addcaps="toolbar,accessible"
+			capname="toolbar"
+			id="0f2b7512-93bb-4c75-afc2-d0500a122069"
+			isrooted="True"
+			name="Toolbar1"
+			refpath="/form[@controlname='GeneralFirmSettingsXtraForm']/element[@controlname='_BaseForm_Toolbars_Dock_Area_Bottom']/container[@accessiblename='DockBottom']/toolbar[@accessiblename='Toolbar']"
+			searchtimeout="30000ms"
+			usecache="False">
+				<item
+				addcaps="button,accessible"
+				capname="button"
+				id="9945b41a-410b-4b5f-9b26-d71503a291f9"
+				name="Apply"
+				refpath="/form[@controlname='GeneralFirmSettingsXtraForm']/element[@controlname='_BaseForm_Toolbars_Dock_Area_Bottom']/container[@accessiblename='DockBottom']/toolbar[@accessiblename='Toolbar']/button[@accessiblename='Apply']"
+				searchtimeout="30000ms">
+					/form[@controlname='GeneralFirmSettingsXtraForm']//toolbar[@accessiblename='Toolbar']/button[@accessiblename='Apply']
+				</item>
+				<item
+				addcaps="button,accessible"
+				capname="button"
+				id="332e5e6a-3c03-4225-9bfa-7f2e84190c8f"
+				name="Cancel"
+				refpath="/form[@controlname='GeneralFirmSettingsXtraForm']/element[@controlname='_BaseForm_Toolbars_Dock_Area_Bottom']/container[@accessiblename='DockBottom']/toolbar[@accessiblename='Toolbar']/button[@accessiblename='Cancel']"
+				searchtimeout="30000ms">
+					/form[@controlname='GeneralFirmSettingsXtraForm']//toolbar[@accessiblename='Toolbar']/button[@accessiblename='Cancel']
+				</item>
+				<item
+				addcaps="button,accessible"
+				capname="button"
+				id="032fd296-ada3-41ef-8983-19e808f012bc"
+				name="Next"
+				refpath="/form[@controlname='GeneralFirmSettingsXtraForm']/element[@controlname='_BaseForm_Toolbars_Dock_Area_Bottom']/container[@accessiblename='DockBottom']/toolbar[@accessiblename='Toolbar']/button[@accessiblename='Next']"
+				searchtimeout="30000ms">
+					/form[@controlname='GeneralFirmSettingsXtraForm']//toolbar[@accessiblename='Toolbar']/button[@accessiblename='Next']
+				</item>
+				<item
+				addcaps="button,accessible"
+				capname="button"
+				id="3569abb8-fe05-4c19-8298-3511383f6c9f"
+				name="ButtonOK"
+				refpath="/form[@controlname='GeneralFirmSettingsXtraForm']/element[@controlname='_BaseForm_Toolbars_Dock_Area_Bottom']/container[@accessiblename='DockBottom']/toolbar[@accessiblename='Toolbar']/button[@accessiblename='OK']"
+				searchtimeout="30000ms">
+					/form[@controlname='GeneralFirmSettingsXtraForm']//toolbar[@accessiblename='Toolbar']/button[@accessiblename='OK']
+				</item>
+				<item
+				addcaps="button,accessible"
+				capname="button"
+				id="9d46e12a-e0db-446e-845d-4d5a78589a74"
+				name="Prev"
+				refpath="/form[@controlname='GeneralFirmSettingsXtraForm']/element[@controlname='_BaseForm_Toolbars_Dock_Area_Bottom']/container[@accessiblename='DockBottom']/toolbar[@accessiblename='Toolbar']/button[@accessiblename='Prev']"
+				searchtimeout="30000ms">
+					/form[@controlname='GeneralFirmSettingsXtraForm']//toolbar[@accessiblename='Toolbar']/button[@accessiblename='Prev']
+				</item>
+				<item
+				addcaps="unknown,accessible"
+				capname="unknown"
+				id="b530286a-6980-405d-9a2a-6ee559ee18bc"
+				name="None"
+				refpath="/form[@controlname='GeneralFirmSettingsXtraForm']/element[@controlname='_BaseForm_Toolbars_Dock_Area_Bottom']/container[@accessiblename='DockBottom']/toolbar[@accessiblename='Toolbar']/element[@accessiblename='']"
+				searchtimeout="30000ms">
+					/form[@controlname='GeneralFirmSettingsXtraForm']//toolbar[@accessiblename='Toolbar']/element[@accessiblename='']
+				</item>
+				<basepath>
+					/form[@controlname='GeneralFirmSettingsXtraForm']//toolbar[@accessiblename='Toolbar']
+				</basepath>
+			</folder>
+			<basepath>
+				/form[@controlname='GeneralFirmSettingsXtraForm']
+			</basepath>
+			<icon>
+				iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACx
+jwv8YQUAAAAJcEhZcwAADsQAAA7EAZUrDhsAAAFlSURBVDhPY6AJeOJjOvORg9p/FOyo/v9xoKUT
+VAlugKERDT921nwLVQoBb3Kj+Z5FOf9/FuP2/1msO3EYpBaIH7vr/Qcb8Oft6//kgFclif/Brnjo
+qPYZKvb/z8tn/z+tWfD/bWspWMHLwrj/r8pT/7/rrfv/dffG//++fwOr+3Hu+P8nPsYTwAY8CbRM
+fGSvCnbev29fwQpwgd9PH/1/N6ERHB5gzSDwyFX3IkjgeZLv/0+rF/z/snPD/4fWCmAND60V/3+Y
+1fP//cxuYABqgcUe2SqBDXge5qoDMcBN9w3MgDdNhf/fTWr+/xCoCKb4XU/t/7fd1Shi4BgJtPSG
+GqBzjhwDnkbaa4ANAIZBBDkGgDXDAMkGAFMmVCsEPHLTO0uKAU+jnYygWhHgeZIPUQY8dFS/BdWC
+Cd405uM14N+/f+egSnGDjyvnxjyyVQYbANL0FmjAm/aKH4+9zVWhSqCAgQEAq9YXqsYCPO8AAAAA
+SUVORK5CYII=
+			</icon>
+		</appfolder>
+		<appfolder
+		addcaps="form,control,nativewindow"
+		capname="form"
+		id="e0a6d226-cba3-45e5-bea4-426bb60527ac"
+		isrooted="True"
+		name="TaxEditXtraForm"
+		refimgid="fd4dbdfd-f365-4cc5-b9c0-c0420cd70592"
+		refpath="/form[@controlname='TaxEditXtraForm']"
+		searchtimeout="30000ms"
+		usecache="True">
+			<folder
+			addcaps="container,control,nativewindow"
+			capname="container"
+			id="d3913e69-e252-45c2-bcdc-0fafe2e1591f"
+			isrooted="True"
+			name="PnlBase"
+			refpath="/form[@controlname='TaxEditXtraForm']/container[@controlname='pnlBase']"
+			searchtimeout="30000ms"
+			usecache="False">
+				<item
+				addcaps="button,accessible"
+				capname="button"
+				id="4f736a8e-1480-4abf-bb3e-39fcda96330c"
+				name="btnEdit"
+				refimgid="77507eb5-b112-47d0-b37c-4f10c7d6fcbd"
+				refpath="/form[@controlname='TaxEditXtraForm']/container[@controlname='pnlBase']/container[@controlname='pnlControls']/element[@controlname='btnEdit']/button[@accessiblename='Edit']"
+				searchtimeout="30000ms">
+					/form[@controlname='TaxEditXtraForm']/container[@controlname='pnlBase']//button[@accessiblename='Edit']
+				</item>
+				<item
+				addcaps="button,accessible"
+				capname="button"
+				id="c7cfab0c-7d83-404f-a03b-f5684c6979cf"
+				name="btnNew"
+				refimgid="de4bd2e5-b1ed-4a85-8ef5-cc1261afa91a"
+				refpath="/form[@controlname='TaxEditXtraForm']/container[@controlname='pnlBase']/container[@controlname='pnlControls']/element[@controlname='btnNew']/button[@accessiblename='New']"
+				searchtimeout="30000ms">
+					/form[@controlname='TaxEditXtraForm']/container[@controlname='pnlBase']//button[@accessiblename='New']
+				</item>
+				<item
+				addcaps="button,accessible"
+				capname="button"
+				id="f099593c-c1d9-4f66-93b7-64790e4356ee"
+				name="btnRemove"
+				refimgid="71235f7d-8b29-4d0d-bb88-ac41f3270a5d"
+				refpath="/form[@controlname='TaxEditXtraForm']/container[@controlname='pnlBase']/container[@controlname='pnlControls']/element[@controlname='btnRemove']/button[@accessiblename='Remove']"
+				searchtimeout="30000ms">
+					/form[@controlname='TaxEditXtraForm']/container[@controlname='pnlBase']//button[@accessiblename='Remove']
+				</item>
+				<item
+				addcaps="text,uiautomation,uiautomationvalue"
+				capname="text"
+				id="3f820507-5cca-44d0-929e-c366dc2f7e48"
+				name="txtDate"
+				refimgid="236c4243-f7c5-47fc-99ca-8261737415a6"
+				refpath="/form[@controlname='TaxEditXtraForm']/container[@controlname='pnlBase']/container[@controlname='pnlControls']/container[@controlname='panelEdit']/element[@controlname='adteStartDate']/text[@automationid='[Editor] Edit Area']"
+				searchtimeout="30000ms">
+					/form[@controlname='TaxEditXtraForm']/container[@controlname='pnlBase']/?/?/container[@controlname='panelEdit']/element[@controlname='adteStartDate']/text[@automationid='[Editor] Edit Area']
+				</item>
+				<item
+				addcaps="text,uiautomation,uiautomationvalue"
+				capname="text"
+				id="9c5015f1-2ff4-4082-b231-83e2ad6b4e8d"
+				name="txtRate"
+				refimgid="29718b1c-9edf-45f7-9133-bfaec64e9cf3"
+				refpath="/form[@controlname='TaxEditXtraForm']/container[@controlname='pnlBase']/container[@controlname='pnlControls']/container[@controlname='panelEdit']/element[@controlname='ateRateTax1']/text[@automationid='[Editor] Edit Area']"
+				searchtimeout="30000ms">
+					/form[@controlname='TaxEditXtraForm']/container[@controlname='pnlBase']/?/?/container[@controlname='panelEdit']/?/?/text[@automationid='[Editor] Edit Area']
+				</item>
+				<item
+				addcaps="button,accessible"
+				capname="button"
+				id="b8eb58dc-548c-493e-a989-7453828566a7"
+				name="btnApply"
+				refimgid="99847efa-a80b-4ac2-bf07-f9abe4c97f43"
+				refpath="/form[@controlname='TaxEditXtraForm']/container[@controlname='pnlBase']/container[@controlname='pnlControls']/element[@controlname='btnNew']/button[@accessiblename='Apply']"
+				searchtimeout="30000ms">
+					/form[@controlname='TaxEditXtraForm']/container[@controlname='pnlBase']//button[@accessiblename='Apply']
+				</item>
+				<item
+				addcaps="button,accessible"
+				capname="button"
+				id="a25f9bf1-0145-4e54-b262-36e95e08c167"
+				name="btnCancel"
+				refimgid="c01a8de0-eed4-49a0-a7e8-46e2010294c6"
+				refpath="/form[@controlname='TaxEditXtraForm']/container[@controlname='pnlBase']/container[@controlname='pnlControls']/element[@controlname='btnEdit']/button[@accessiblename='Cancel']"
+				searchtimeout="30000ms">
+					/form[@controlname='TaxEditXtraForm']/container[@controlname='pnlBase']//button[@accessiblename='Cancel']
+				</item>
+				<basepath>
+					/form[@controlname='TaxEditXtraForm']/container[@controlname='pnlBase']
+				</basepath>
+			</folder>
+			<item
+			addcaps="toolbar,accessible"
+			capname="toolbar"
+			id="b4ebf06c-013c-49a8-8fbb-d533b3595e29"
+			name="Toolbar"
+			refpath="/form[@controlname='TaxEditXtraForm']/element[@controlname='_BaseForm_Toolbars_Dock_Area_Bottom']/container[@accessiblename='DockBottom']/toolbar[@accessiblename='Toolbar']"
+			searchtimeout="30000ms">
+				/form[@controlname='TaxEditXtraForm']/element[@controlname='_BaseForm_Toolbars_Dock_Area_Bottom']/?/?/toolbar[@accessiblename='Toolbar']
+			</item>
+			<folder
+			addcaps="toolbar,accessible"
+			capname="toolbar"
+			id="46d93302-44c7-47b6-97a2-335dad6c03ac"
+			isrooted="True"
+			name="Toolbar1"
+			refpath="/form[@controlname='TaxEditXtraForm']/element[@controlname='_BaseForm_Toolbars_Dock_Area_Bottom']/container[@accessiblename='DockBottom']/toolbar[@accessiblename='Toolbar']"
+			searchtimeout="30000ms"
+			usecache="False">
+				<item
+				addcaps="button,accessible"
+				capname="button"
+				id="f8569931-2ff6-472a-8b31-86fb169aae9a"
+				name="btnCancel"
+				refpath="/form[@controlname='TaxEditXtraForm']/element[@controlname='_BaseForm_Toolbars_Dock_Area_Bottom']/container[@accessiblename='DockBottom']/toolbar[@accessiblename='Toolbar']/button[@accessiblename='Cancel']"
+				searchtimeout="30000ms">
+					/form[@controlname='TaxEditXtraForm']//toolbar[@accessiblename='Toolbar']/button[@accessiblename='Cancel']
+				</item>
+				<item
+				addcaps="button,accessible"
+				capname="button"
+				id="1815e96e-1bc1-45b3-878c-341f7cb3436a"
+				name="btnOK"
+				refpath="/form[@controlname='TaxEditXtraForm']/element[@controlname='_BaseForm_Toolbars_Dock_Area_Bottom']/container[@accessiblename='DockBottom']/toolbar[@accessiblename='Toolbar']/button[@accessiblename='OK']"
+				searchtimeout="30000ms">
+					/form[@controlname='TaxEditXtraForm']//toolbar[@accessiblename='Toolbar']/button[@accessiblename='OK']
+				</item>
+				<basepath>
+					/form[@controlname='TaxEditXtraForm']//toolbar[@accessiblename='Toolbar']
+				</basepath>
+			</folder>
+			<basepath>
+				/form[@controlname='TaxEditXtraForm']
+			</basepath>
+			<icon>
+				iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACx
+jwv8YQUAAAAJcEhZcwAADsQAAA7EAZUrDhsAAAFlSURBVDhPY6AJeOJjOvORg9p/FOyo/v9xoKUT
+VAlugKERDT921nwLVQoBb3Kj+Z5FOf9/FuP2/1msO3EYpBaIH7vr/Qcb8Oft6//kgFclif/Brnjo
+qPYZKvb/z8tn/z+tWfD/bWspWMHLwrj/r8pT/7/rrfv/dffG//++fwOr+3Hu+P8nPsYTwAY8CbRM
+fGSvCnbev29fwQpwgd9PH/1/N6ERHB5gzSDwyFX3IkjgeZLv/0+rF/z/snPD/4fWCmAND60V/3+Y
+1fP//cxuYABqgcUe2SqBDXge5qoDMcBN9w3MgDdNhf/fTWr+/xCoCKb4XU/t/7fd1Shi4BgJtPSG
+GqBzjhwDnkbaa4ANAIZBBDkGgDXDAMkGAFMmVCsEPHLTO0uKAU+jnYygWhHgeZIPUQY8dFS/BdWC
+Cd405uM14N+/f+egSnGDjyvnxjyyVQYbANL0FmjAm/aKH4+9zVWhSqCAgQEAq9YXqsYCPO8AAAAA
+SUVORK5CYII=
 			</icon>
 		</appfolder>
 		<basepath>

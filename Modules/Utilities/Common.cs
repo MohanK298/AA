@@ -135,6 +135,40 @@ namespace SmokeTest.Modules.Utilities
         
         
         
+        
+        public bool ValidateDatainTable(Ranorex.Adapter tbldata,string data,string tblName)
+        {
+        	int k=0;
+        	bool status=false;
+        	var tadapter = tbldata.As <Ranorex.Table>();
+        	foreach(var myrow in tadapter.Rows)
+        	{
+        		foreach(var cell in myrow.Cells)
+        		{
+        			if(cell.Text.Contains(data))
+        			{
+        				//Report.Success(String.Format("Value \"{0}\" Present as expected in \"{1}\"",data,tblName));
+        				k++;
+        				status=true;
+        				break;
+        				
+        			}
+        		}
+        		if(k>0)
+        			break;
+        	}
+        	if(k==0)
+        	{
+        				//Report.Failure(String.Format("Value \"{0}\" not present in \"{1}\"",data,tblName));
+        				status=false;
+        	}
+        	return status;
+        }
+        
+        
+        
+        
+        
         public void VerifyDataExistsInTable(Ranorex.Adapter tbldata,string[] data,string tblName)
         {
         	int k=0;

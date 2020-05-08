@@ -1,14 +1,14 @@
 ﻿<Properties>
   <Array name="active">
-    <Element value="Modules\LoginM.cs" />
+    <Element value="Modules\validateTrackChangesinTimeEntry.cs" />
   </Array>
   <Array name="bookmarks" />
   <Array name="files">
+    <Element value="Repositories\FirmSettings.rxrep" />
     <Element value="SmokeTest.rxtst" />
-    <Element value="Modules\AddToLibrary_Doc_OfficeAddIn.cs" />
-    <Element value="Modules\LoginM.cs" />
-    <Element value="Repositories\Login.cs" />
-    <Element value="Modules\EmailWithMultipleAttachments.cs" />
+    <Element value="Modules\trackChangesvalidation.cs" />
+    <Element value="Repositories\BillingTE.rxrep" />
+    <Element value="Modules\validateTrackChangesinTimeEntry.cs" />
   </Array>
   <Properties name="projectSavedData">
     <Properties name="customTool">

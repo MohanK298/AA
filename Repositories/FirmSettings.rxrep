@@ -150,6 +150,16 @@ SUVORK5CYII=
 				searchtimeout="30000ms">
 					/form[@controlname='MainForm']/?/?/form[@controlname='FirmSettingsForm']//element[@controlname='amlblActivityCodes']/text[@accessiblerole='StaticText']
 				</item>
+				<item
+				addcaps="text,accessible"
+				capname="text"
+				id="000580d0-70bc-458b-8b5f-55bd06c6768a"
+				name="lnkTrackChanges"
+				refimgid="55d32e15-38da-43a7-a6a4-6a4ba0cf7ef9"
+				refpath="/form[@controlname='MainForm']/element[@controltypename='MdiClient']/form[@controlname='FirmSettingsForm']/container[@controlname='roundedPanelControl']/container[@controlname='panelScroll']/element[@controlname='amlChangeReason']/text[@accessiblerole='StaticText']"
+				searchtimeout="30000ms">
+					/form[@controlname='MainForm']/?/?/form[@controlname='FirmSettingsForm']//element[@controlname='amlChangeReason']/text[@accessiblerole='StaticText']
+				</item>
 				<basepath>
 					/form[@controlname='MainForm']/?/?/form[@controlname='FirmSettingsForm']
 				</basepath>
@@ -944,6 +954,129 @@ SUVORK5CYII=
 					/form[@controlname='TimeFirmSettingsForm']//toolbar[@accessiblename='Toolbar']
 				</basepath>
 			</folder>
+			<folder
+			addcaps="container,control,nativewindow"
+			capname="container"
+			id="34b379d7-f4b7-4ee7-889e-951b34dac631"
+			isrooted="True"
+			name="PnlBase"
+			refpath="/form[@controlname='TimeFirmSettingsForm']/container[@controlname='pnlBase']"
+			searchtimeout="30000ms"
+			usecache="False">
+				<item
+				addcaps="button,accessible"
+				capname="button"
+				id="24b838d4-85e5-4391-ace0-3cc2143bacdb"
+				name="btnMoveUp"
+				refimgid="177b02e8-fbc9-41c2-94b6-5f4affc3051c"
+				refpath="/form[@controlname='TimeFirmSettingsForm']/container[@controlname='pnlBase']/container[@controlname='pnlControls']/container[@controlname='panelTitleBase']/container[@controlname='panelBase']/container[@controlname='panelChangeReason']/container[@controlname='fseChangeReason']/container[@controlname='panelBase']/container[@controlname='pnlButtonsAndList']/container[@controlname='pnlButtons']/element[@controlname='abtnMoveUp']/button[@accessiblename='Move Up']"
+				searchtimeout="30000ms">
+					/form[@controlname='TimeFirmSettingsForm']/container[@controlname='pnlBase']//container[@controlname='panelBase']/container[@controlname='panelChangeReason']/container[@controlname='fseChangeReason']//element[@controlname='abtnMoveUp']/button[@accessiblename='Move Up']
+				</item>
+				<item
+				addcaps="table,accessible"
+				capname="table"
+				id="453f17e0-cbde-44e1-894a-b010df4575b5"
+				name="tblReason"
+				refimgid="0e4e0842-edc9-4add-8472-05a5bb572da6"
+				refpath="/form[@controlname='TimeFirmSettingsForm']/container[@controlname='pnlBase']/container[@controlname='pnlControls']/container[@controlname='panelTitleBase']/container[@controlname='panelBase']/container[@controlname='panelChangeReason']/container[@controlname='fseChangeReason']/container[@controlname='panelBase']/container[@controlname='pnlButtonsAndList']/element[@controlname='afsGrid']/table[@accessiblename='Band 0']"
+				searchtimeout="30000ms">
+					/form[@controlname='TimeFirmSettingsForm']/container[@controlname='pnlBase']//container[@controlname='panelBase']/container[@controlname='panelChangeReason']/container[@controlname='fseChangeReason']//table[@accessiblename='Band 0']
+				</item>
+				<item
+				addcaps="checkbox,control,nativewindow"
+				capname="checkbox"
+				id="400d7491-564f-4296-9d9e-225da942b910"
+				name="cbTrckChanges"
+				refimgid="0178a37d-2540-43fa-8e93-4496b672aaae"
+				refpath="/form[@controlname='TimeFirmSettingsForm']/container[@controlname='pnlBase']/container[@controlname='pnlControls']/container[@controlname='panelTitleBase']/container[@controlname='panelBase']/container[@controlname='panelChangeReason']/checkbox[@controlname='chkPrompt']"
+				searchtimeout="30000ms">
+					/form[@controlname='TimeFirmSettingsForm']/container[@controlname='pnlBase']//container[@controlname='panelChangeReason']/checkbox[@controlname='chkPrompt']
+				</item>
+				<item
+				addcaps="button,accessible"
+				capname="button"
+				id="eb01f05a-7632-4c5d-83c5-28d0b226dea2"
+				name="btnNew"
+				refimgid="1cfa6006-1212-4567-8a9a-b28117db9317"
+				refpath="/form[@controlname='TimeFirmSettingsForm']/container[@controlname='pnlBase']/container[@controlname='pnlControls']/container[@controlname='panelTitleBase']/container[@controlname='panelBase']/container[@controlname='panelChangeReason']/container[@controlname='fseChangeReason']/container[@controlname='panelBase']/container[@controlname='pnlButtonsAndList']/container[@controlname='pnlButtons']/element[@controlname='abtnNew']/button[@accessiblename='New']"
+				searchtimeout="30000ms">
+					/form[@controlname='TimeFirmSettingsForm']/container[@controlname='pnlBase']//container[@controlname='panelBase']/container[@controlname='panelChangeReason']/container[@controlname='fseChangeReason']//element[@controlname='abtnNew']/button[@accessiblename='New']
+				</item>
+				<item
+				addcaps="button,accessible"
+				capname="button"
+				id="12eaae90-f2e3-4bda-bc2a-985273d165c9"
+				name="btnEdit"
+				refimgid="cb0fa847-0087-494a-b389-64870424d74c"
+				refpath="/form[@controlname='TimeFirmSettingsForm']/container[@controlname='pnlBase']/container[@controlname='pnlControls']/container[@controlname='panelTitleBase']/container[@controlname='panelBase']/container[@controlname='panelChangeReason']/container[@controlname='fseChangeReason']/container[@controlname='panelBase']/container[@controlname='pnlButtonsAndList']/container[@controlname='pnlButtons']/element[@controlname='abtnEdit']/button[@accessiblename='Edit']"
+				searchtimeout="30000ms">
+					/form[@controlname='TimeFirmSettingsForm']/container[@controlname='pnlBase']//container[@controlname='panelBase']/container[@controlname='panelChangeReason']/container[@controlname='fseChangeReason']//element[@controlname='abtnEdit']/button[@accessiblename='Edit']
+				</item>
+				<item
+				addcaps="button,accessible"
+				capname="button"
+				id="2e9785f8-bcf5-4701-b340-cd603a2f6e3c"
+				name="btnRemove"
+				refimgid="ae16a0ef-96e9-45ae-8e76-c67907f0d850"
+				refpath="/form[@controlname='TimeFirmSettingsForm']/container[@controlname='pnlBase']/container[@controlname='pnlControls']/container[@controlname='panelTitleBase']/container[@controlname='panelBase']/container[@controlname='panelChangeReason']/container[@controlname='fseChangeReason']/container[@controlname='panelBase']/container[@controlname='pnlButtonsAndList']/container[@controlname='pnlButtons']/element[@controlname='abtnRemove']/button[@accessiblename='Remove']"
+				searchtimeout="30000ms">
+					/form[@controlname='TimeFirmSettingsForm']/container[@controlname='pnlBase']//container[@controlname='panelBase']/container[@controlname='panelChangeReason']/container[@controlname='fseChangeReason']//element[@controlname='abtnRemove']/button[@accessiblename='Remove']
+				</item>
+				<item
+				addcaps="text,control,nativewindow"
+				capname="text"
+				id="df8ec6f4-a039-4599-84df-4ca511ce030f"
+				name="txtReasonDetail"
+				refimgid="dc1b6e3e-99df-4d9c-948a-546028dbb4bb"
+				refpath="/form[@controlname='TimeFirmSettingsForm']/container[@controlname='pnlBase']/container[@controlname='pnlControls']/container[@controlname='panelTitleBase']/container[@controlname='panelBase']/container[@controlname='panelChangeReason']/container[@controlname='fseChangeReason']/container[@controlname='panelBase']/container[@controlname='pnlButtonsAndList']/element[@controlname='atxtLabelEditor']/text[@controlname='atxtLabelEditor_EmbeddableTextBox']"
+				searchtimeout="30000ms">
+					/form[@controlname='TimeFirmSettingsForm']/container[@controlname='pnlBase']//container[@controlname='panelBase']/container[@controlname='panelChangeReason']/container[@controlname='fseChangeReason']//text[@controlname='atxtLabelEditor_EmbeddableTextBox']
+				</item>
+				<item
+				addcaps="checkbox,accessible"
+				capname="checkbox"
+				id="4db64f75-9bce-42b1-ac24-948029d3dafb"
+				name="cbIsInactive"
+				refimgid="fde38017-e2da-4bf9-bd4f-8f996a003447"
+				refpath="/form[@controlname='TimeFirmSettingsForm']/container[@controlname='pnlBase']/container[@controlname='pnlControls']/container[@controlname='panelTitleBase']/container[@controlname='panelBase']/container[@controlname='panelChangeReason']/container[@controlname='fseChangeReason']/container[@controlname='panelBase']/container[@controlname='pnlButtonsAndList']/container[@controlname='pnlButtons']/element[@controlname='achkBoolFlag']/checkbox[@accessiblename='Is Inactive']/checkbox[@accessiblename='Is Inactive']"
+				searchtimeout="30000ms">
+					/form[@controlname='TimeFirmSettingsForm']/container[@controlname='pnlBase']//container[@controlname='panelBase']/container[@controlname='panelChangeReason']//container[@controlname='pnlButtons']/element[@controlname='achkBoolFlag']/?/?/checkbox[@accessiblename='Is Inactive']
+				</item>
+				<item
+				addcaps="button,accessible"
+				capname="button"
+				id="bdcdab7b-9825-4df8-8e6f-a3a38367fa6a"
+				name="btnApply"
+				refimgid="76d29a53-50eb-43b1-b092-07f052edf2bc"
+				refpath="/form[@controlname='TimeFirmSettingsForm']/container[@controlname='pnlBase']/container[@controlname='pnlControls']/container[@controlname='panelTitleBase']/container[@controlname='panelBase']/container[@controlname='panelChangeReason']/container[@controlname='fseChangeReason']/container[@controlname='panelBase']/container[@controlname='pnlButtonsAndList']/container[@controlname='pnlButtons']/element[@controlname='abtnApply']/button[@accessiblename='Apply']"
+				searchtimeout="30000ms">
+					/form[@controlname='TimeFirmSettingsForm']/container[@controlname='pnlBase']//container[@controlname='panelBase']/container[@controlname='panelChangeReason']//container[@controlname='pnlButtons']/element[@controlname='abtnApply']/button[@accessiblename='Apply']
+				</item>
+				<item
+				addcaps="button,accessible"
+				capname="button"
+				id="630b7c8d-6b4e-4ac7-980d-3cf17a932d4b"
+				name="btnCancel"
+				refimgid="2566c59b-c8a9-4e51-ab78-0dac7fb93234"
+				refpath="/form[@controlname='TimeFirmSettingsForm']/container[@controlname='pnlBase']/container[@controlname='pnlControls']/container[@controlname='panelTitleBase']/container[@controlname='panelBase']/container[@controlname='panelChangeReason']/container[@controlname='fseChangeReason']/container[@controlname='panelBase']/container[@controlname='pnlButtonsAndList']/container[@controlname='pnlButtons']/element[@controlname='abtnCancel']/button[@accessiblename='Cancel']"
+				searchtimeout="30000ms">
+					/form[@controlname='TimeFirmSettingsForm']/container[@controlname='pnlBase']//container[@controlname='panelBase']/container[@controlname='panelChangeReason']//container[@controlname='pnlButtons']/element[@controlname='abtnCancel']/button[@accessiblename='Cancel']
+				</item>
+				<item
+				addcaps="text,accessible"
+				capname="text"
+				id="0c420edb-05c0-4eac-a6a7-ee6d674c36f9"
+				name="txtTitle"
+				refimgid="dcb0c7d8-a617-4508-9645-502f6803c651"
+				refpath="/form[@controlname='TimeFirmSettingsForm']/container[@controlname='pnlBase']/container[@controlname='pnlControls']/container[@controlname='panelTitleBase']/element[@controlname='alblTitle']/text[@accessiblename='Time - Track Changes']"
+				searchtimeout="30000ms">
+					/form[@controlname='TimeFirmSettingsForm']/container[@controlname='pnlBase']//element[@controlname='alblTitle']/text[@accessiblename='Time - Track Changes']
+				</item>
+				<basepath>
+					/form[@controlname='TimeFirmSettingsForm']/container[@controlname='pnlBase']
+				</basepath>
+			</folder>
 			<basepath>
 				/form[@controlname='TimeFirmSettingsForm']
 			</basepath>
@@ -957,6 +1090,43 @@ fGSvCnbev29fwQpwgd9PH/1/N6ERHB5gzSDwyFX3IkjgeZLv/0+rF/z/snPD/4fWCmAND60V/3+Y
 GqBzjhwDnkbaa4ANAIZBBDkGgDXDAMkGAFMmVCsEPHLTO0uKAU+jnYygWhHgeZIPUQY8dFS/BdWC
 Cd405uM14N+/f+egSnGDjyvnxjyyVQYbANL0FmjAm/aKH4+9zVWhSqCAgQEAq9YXqsYCPO8AAAAA
 SUVORK5CYII=
+			</icon>
+		</appfolder>
+		<appfolder
+		addcaps="form,control,nativewindow"
+		capname="form"
+		id="643bb419-e4e1-42c6-8ee6-510c16f7a0dd"
+		isrooted="True"
+		name="DropDownForm"
+		refpath="/form"
+		searchtimeout="30000ms"
+		usecache="True">
+			<item
+			addcaps="table,accessible"
+			capname="table"
+			id="41707544-63f8-492c-82ff-df3c5c5ae04b"
+			name="tblDpdwn"
+			refpath="/form/element/table"
+			searchtimeout="30000ms">
+				/form/?/?/table
+			</item>
+			<basepath>
+				/form
+			</basepath>
+			<icon>
+				iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAALGPC/xhBQAAAAlwSFlz
+AAAOxAAADsQBlSsOGwAAAlFJREFUOE+lk+tLk2EYh/eX9CGipCIyCKLo4HHlzA8SVoR9KogkkKDM
+CKRCCwQtKUjtIJSdrKggqQ+CFZmHHGlzzrU552HqNnWbO7zHXT3bBLXQoG74fXvv63c9z8tj+O9p
+aDFz55WDmuYBqpp+cLnRzJnqTk5UdlNc8YWic60Ulr6koOTJshw8/RjjkXIMdc9tNLVrNLZp3GqV
+qX4dofJZkIpHs5Q3+Tl710fJ7UlO1o5zvNrN0SoXh644yS8zsyZtB4baZjN1bwLcfBvm4oMpTt1w
+U3zdybFrDg5ftVNYYaPg0iCmcisHLgxgLLOQe95CRmk369KNGGoaXuAPxAhHNeZFQhGVYFghIDIb
+SsUbUPDMyLi9Mg6PhHVMosvqYePW7QJQ38JqE4+DokJEijMX0ZkKaoz6VSwuLxs2b8Nw/+n7hU//
+HE0HSYkzH9OZmdeYnNNw+xR+Tir0DP0FoItmWSwnm8M606J5TDQ7pxSs4zKd1tUACW1NLMtxglEd
+X0hjYlbD5VWwTSj0j8h8tgjAphUAi+pxZsRySl3FLtQtozK9wxLtfSsAkupqQl1PqQdS6o6kusJ3
+l0yXQ6LNnACkLwckb1yDqDh3YKn6dEq9zy3R45TosMX40PsbQOyiLqiHhLo/eesqIwl1z6L6V3uM
+T9Yo73q8rE8A7i0xEOVI4p+HYggATMyByxdnyKPRP6rxbVilw67wcVBOAtambRFvof4hufvzyTGa
+yBbJEskUycg1sS/HxN7sPPaI7M7KY1dmKjszUsnJL2LhTf7rGAy/AP7X5rYY5FLEAAAAAElFTkSu
+QmCC
 			</icon>
 		</appfolder>
 		<basepath>

@@ -602,6 +602,9 @@
     <Compile Include="Modules\timentries_monthlyview_navigatebtwdays.cs">
       <id>f689a032-238f-4481-869c-da11d12d2085</id>
     </Compile>
+    <Compile Include="Modules\trackChangesvalidation.cs">
+      <id>01d39d6e-76f7-473e-a39d-937fbb72b5dc</id>
+    </Compile>
     <Compile Include="Modules\UserCodeModule1.cs">
       <id>9d9a2824-7ea1-427f-a963-92f735984f61</id>
     </Compile>
@@ -640,6 +643,9 @@
     </Compile>
     <Compile Include="Modules\validateToolbarsRetain.cs">
       <id>c2c7710e-6766-48f3-80b0-28706a6c0e90</id>
+    </Compile>
+    <Compile Include="Modules\validateTrackChangesinTimeEntry.cs">
+      <id>4105bca2-888b-425c-afdf-3b4c6329175a</id>
     </Compile>
     <Compile Include="Modules\validate_Existing_Time_Entry_OnFile_Msg.cs">
       <id>775104d3-10a9-498e-aea9-307577fa4930</id>

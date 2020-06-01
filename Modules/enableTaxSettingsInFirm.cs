@@ -43,6 +43,7 @@ namespace SmokeTest.Modules
         {
         	bclient.MainForm.Self.Activate();
         	bclient.MainForm.sideBILLING.Click();
+        	frm.MainForm.btnOffice.Click();
         	frm.MainForm.View.Click();
         	frm.MainForm.FirmSettings1.Click();
         	
@@ -65,8 +66,10 @@ namespace SmokeTest.Modules
         			bclient.TaxEditXtraForm.PnlBase.btnApply.Click();
         			bclient.TaxEditXtraForm.Toolbar1.btnOK.Click();
         		}
+        		
         		cmn.VerifyListItemDropdown(bclient.GeneralFirmSettingsXtraForm.PanelTax.cmbxTax1Change,dpdwnItems,"Taxable Charges Dropdown 1");
         		//cmn.SelectItemDropdown(bclient.GeneralFirmSettingsXtraForm.PanelTax.cmbxTax1Change,"Expenses","Taxable Charges Dropdown 1");
+        		bclient.GeneralFirmSettingsXtraForm.PanelTax.cmbxTax1Change.Click();
         		
         		bclient.GeneralFirmSettingsXtraForm.PanelTax.cbApplySalesTax2.Check();
         		bclient.GeneralFirmSettingsXtraForm.PanelTax.txtTax2.PressKeys("Sales Tax2");

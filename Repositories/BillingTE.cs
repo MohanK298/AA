@@ -775,6 +775,7 @@ namespace SmokeTest.Repositories
             RepoItemInfo _cmbbxbillingrateInfo;
             RepoItemInfo _txtrateInfo;
             RepoItemInfo _txtratenewInfo;
+            RepoItemInfo _cmbbxactivitycodesInfo;
 
             /// <summary>
             /// Creates a new TimeEntryDetailsForm  folder.
@@ -789,6 +790,7 @@ namespace SmokeTest.Repositories
                 _cmbbxbillingrateInfo = new RepoItemInfo(this, "cmbbxBillingRate", "?/?/container[@controlname='pnlBase']//element[@controlname='ucmbBillingRate']/combobox/combobox[@accessiblerole='ComboBox']", 30000, null, "d40e8039-3a8b-4855-a811-b3a7daebcb3b");
                 _txtrateInfo = new RepoItemInfo(this, "txtRate", "?/?/container[@controlname='pnlBase']//element[@controlname='ateRateValue']/text[@controlname='ateRateValue_EmbeddableTextBox']", 30000, null, "40eb9835-73ea-411f-8340-ca7ebf46d43f");
                 _txtratenewInfo = new RepoItemInfo(this, "txtRateNew", "?/?/container[@controlname='pnlBase']//element[@controlname='ateRateValue']/text[@automationid='[Editor] Edit Area']", 30000, null, "256f3d3a-f133-4085-a92f-c92da107369a");
+                _cmbbxactivitycodesInfo = new RepoItemInfo(this, "cmbbxActivityCodes", "?/?/container[@controlname='pnlBase']//container[@controlname='panel1']/?/?/container[@controlname='pnlActivityCode']/?/?/combobox/combobox[@accessiblerole='ComboBox']", 30000, null, "795adeb2-db6a-445f-9007-9fbcc6f4df0b");
             }
 
             /// <summary>
@@ -980,6 +982,30 @@ namespace SmokeTest.Repositories
                 get
                 {
                     return _txtratenewInfo;
+                }
+            }
+
+            /// <summary>
+            /// The cmbbxActivityCodes item.
+            /// </summary>
+            [RepositoryItem("795adeb2-db6a-445f-9007-9fbcc6f4df0b")]
+            public virtual Ranorex.ComboBox cmbbxActivityCodes
+            {
+                get
+                {
+                    return _cmbbxactivitycodesInfo.CreateAdapter<Ranorex.ComboBox>(true);
+                }
+            }
+
+            /// <summary>
+            /// The cmbbxActivityCodes item info.
+            /// </summary>
+            [RepositoryItemInfo("795adeb2-db6a-445f-9007-9fbcc6f4df0b")]
+            public virtual RepoItemInfo cmbbxActivityCodesInfo
+            {
+                get
+                {
+                    return _cmbbxactivitycodesInfo;
                 }
             }
         }

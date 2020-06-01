@@ -972,6 +972,9 @@ namespace SmokeTest.Repositories
             RepoItemInfo _clientidInfo;
             RepoItemInfo _matteridInfo;
             RepoItemInfo _btnsavecloseInfo;
+            RepoItemInfo _billsettingsInfo;
+            RepoItemInfo _cbchargesalestax1Info;
+            RepoItemInfo _cbchargesalestax2Info;
 
             /// <summary>
             /// Creates a new FileDetailForm  folder.
@@ -985,6 +988,9 @@ namespace SmokeTest.Repositories
                 _clientidInfo = new RepoItemInfo(this, "clientID", "container[@controlname='panelPicBackground']/container[@controlname='evenSplitPanelModernModeOnly']//element[@controlname='uteClientID']/text", 30000, null, "977de897-de98-42a2-a515-f9b66aadd882");
                 _matteridInfo = new RepoItemInfo(this, "matterID", "container[@controlname='panelPicBackground']/container[@controlname='evenSplitPanelModernModeOnly']//element[@controlname='uteMatterID']/text", 30000, null, "4e75cc05-4c1e-4753-a0f0-dcf9b887a7cf");
                 _btnsavecloseInfo = new RepoItemInfo(this, "btnSaveClose", "container[@controlname='panelPicBackground']//toolbar[@accessiblename='Toolbar']/button[@accessiblename='Save & Close']", 30000, null, "bf572c08-ea61-4278-8abb-2bc060570844");
+                _billsettingsInfo = new RepoItemInfo(this, "BillSettings", "container[@controlname='panelLeftBase']/?/?/element[@controlname='utreeFacts']/?/?/treeitem[@accessiblename='Bill Settings']", 30000, null, "6c93f17d-1417-431e-b12d-976842328ee0");
+                _cbchargesalestax1Info = new RepoItemInfo(this, "cbChargeSalesTax1", "container[@controlname='panelPicBackground']/container[@controlname='panelRight']//container[@controlname='panelContent']/element[@controlname='ultraGroupTax']/element[@controlname='achkChargeTax1Fees']/checkbox[@accessiblename='Charge Sales Tax1']/checkbox[@accessiblename='Charge Sales Tax1']", 30000, null, "e45ef9ee-98b2-4b88-bec9-1cb786f9e73c");
+                _cbchargesalestax2Info = new RepoItemInfo(this, "cbChargeSalesTax2", "container[@controlname='panelPicBackground']/container[@controlname='panelRight']//container[@controlname='panelContent']/element[@controlname='ultraGroupTax']/element[@controlname='achkChargeTax2Fees']/checkbox[@accessiblename='Charge Sales Tax2']/checkbox[@accessiblename='Charge Sales Tax2']", 30000, null, "d9a60559-59e1-465e-b0d3-da1717f4aa44");
             }
 
             /// <summary>
@@ -1154,6 +1160,78 @@ namespace SmokeTest.Repositories
                     return _btnsavecloseInfo;
                 }
             }
+
+            /// <summary>
+            /// The BillSettings item.
+            /// </summary>
+            [RepositoryItem("6c93f17d-1417-431e-b12d-976842328ee0")]
+            public virtual Ranorex.TreeItem BillSettings
+            {
+                get
+                {
+                    return _billsettingsInfo.CreateAdapter<Ranorex.TreeItem>(true);
+                }
+            }
+
+            /// <summary>
+            /// The BillSettings item info.
+            /// </summary>
+            [RepositoryItemInfo("6c93f17d-1417-431e-b12d-976842328ee0")]
+            public virtual RepoItemInfo BillSettingsInfo
+            {
+                get
+                {
+                    return _billsettingsInfo;
+                }
+            }
+
+            /// <summary>
+            /// The cbChargeSalesTax1 item.
+            /// </summary>
+            [RepositoryItem("e45ef9ee-98b2-4b88-bec9-1cb786f9e73c")]
+            public virtual Ranorex.CheckBox cbChargeSalesTax1
+            {
+                get
+                {
+                    return _cbchargesalestax1Info.CreateAdapter<Ranorex.CheckBox>(true);
+                }
+            }
+
+            /// <summary>
+            /// The cbChargeSalesTax1 item info.
+            /// </summary>
+            [RepositoryItemInfo("e45ef9ee-98b2-4b88-bec9-1cb786f9e73c")]
+            public virtual RepoItemInfo cbChargeSalesTax1Info
+            {
+                get
+                {
+                    return _cbchargesalestax1Info;
+                }
+            }
+
+            /// <summary>
+            /// The cbChargeSalesTax2 item.
+            /// </summary>
+            [RepositoryItem("d9a60559-59e1-465e-b0d3-da1717f4aa44")]
+            public virtual Ranorex.CheckBox cbChargeSalesTax2
+            {
+                get
+                {
+                    return _cbchargesalestax2Info.CreateAdapter<Ranorex.CheckBox>(true);
+                }
+            }
+
+            /// <summary>
+            /// The cbChargeSalesTax2 item info.
+            /// </summary>
+            [RepositoryItemInfo("d9a60559-59e1-465e-b0d3-da1717f4aa44")]
+            public virtual RepoItemInfo cbChargeSalesTax2Info
+            {
+                get
+                {
+                    return _cbchargesalestax2Info;
+                }
+            }
         }
 
         /// <summary>
@@ -1254,9 +1332,11 @@ namespace SmokeTest.Repositories
         [RepositoryFolder("30438bc8-384c-4cea-afe9-0c559b182496")]
         public partial class BillingDetailFormAppFolder : RepoGenBaseFolder
         {
+            BillingFileFolders.PnlDraftSummaryFolder _pnldraftsummary;
             RepoItemInfo _txtfeesInfo;
             RepoItemInfo _txtexpensesInfo;
             RepoItemInfo _btnsendtodraftInfo;
+            RepoItemInfo _txtdraftfeesInfo;
 
             /// <summary>
             /// Creates a new BillingDetailForm  folder.
@@ -1264,9 +1344,11 @@ namespace SmokeTest.Repositories
             public BillingDetailFormAppFolder(RepoGenBaseFolder parentFolder) :
                     base("BillingDetailForm", "/form[@controlname='BillingDetailForm']", parentFolder, 30000, null, true, "30438bc8-384c-4cea-afe9-0c559b182496", "")
             {
+                _pnldraftsummary = new BillingFileFolders.PnlDraftSummaryFolder(this);
                 _txtfeesInfo = new RepoItemInfo(this, "txtFees", "container[@controlname='panelRightBase']/container[@controlname='panelRight']//container[@controlname='panelBottomBase']//element[@controlname='ultraPanel2']/?/?/element[@controlname='agrpCurrentCharges']/element[@controlname='atxtFees']/text[@automationid='[Editor] Edit Area']", 30000, null, "e3d2e510-e417-42d1-9a3d-18dfa74c49ac");
                 _txtexpensesInfo = new RepoItemInfo(this, "txtExpenses", "container[@controlname='panelRightBase']/container[@controlname='panelRight']//container[@controlname='panelBottomBase']//element[@controlname='ultraPanel2']/?/?/element[@controlname='agrpCurrentCharges']/element[@controlname='atxtExpenses']/text[@automationid='[Editor] Edit Area']", 30000, null, "663323be-1742-4311-bb17-1a4c6ca3937d");
                 _btnsendtodraftInfo = new RepoItemInfo(this, "btnSendToDraft", "container[@controlname='menubar_Fill_Panel']//toolbar[@accessiblename='Toolbar']/button[@accessiblename='Send to Draft']", 30000, null, "87a473e5-ae23-43f6-8088-3e6e9a41bb17");
+                _txtdraftfeesInfo = new RepoItemInfo(this, "txtDraftFees", "container[@controlname='panelRightBase']//container[@controlname='panelBottomBase']/container[@controlname='DraftBillPanel']//container[@controlname='pnlDraftSummary']/?/?/element[@controlname='alblFeesValue']/text", 30000, null, "27300593-8721-4e54-ba46-fd5541a359d8");
             }
 
             /// <summary>
@@ -1362,6 +1444,157 @@ namespace SmokeTest.Repositories
                 get
                 {
                     return _btnsendtodraftInfo;
+                }
+            }
+
+            /// <summary>
+            /// The txtDraftFees item.
+            /// </summary>
+            [RepositoryItem("27300593-8721-4e54-ba46-fd5541a359d8")]
+            public virtual Ranorex.Text txtDraftFees
+            {
+                get
+                {
+                    return _txtdraftfeesInfo.CreateAdapter<Ranorex.Text>(true);
+                }
+            }
+
+            /// <summary>
+            /// The txtDraftFees item info.
+            /// </summary>
+            [RepositoryItemInfo("27300593-8721-4e54-ba46-fd5541a359d8")]
+            public virtual RepoItemInfo txtDraftFeesInfo
+            {
+                get
+                {
+                    return _txtdraftfeesInfo;
+                }
+            }
+
+            /// <summary>
+            /// The PnlDraftSummary folder.
+            /// </summary>
+            [RepositoryFolder("bd3d675b-e2b5-48af-8105-72dd353c5131")]
+            public virtual BillingFileFolders.PnlDraftSummaryFolder PnlDraftSummary
+            {
+                get { return _pnldraftsummary; }
+            }
+        }
+
+        /// <summary>
+        /// The PnlDraftSummaryFolder folder.
+        /// </summary>
+        [RepositoryFolder("bd3d675b-e2b5-48af-8105-72dd353c5131")]
+        public partial class PnlDraftSummaryFolder : RepoGenBaseFolder
+        {
+            RepoItemInfo _txtdraftnewvaluesInfo;
+            RepoItemInfo _txtdrafttaxesInfo;
+            RepoItemInfo _txtdrafttotalamountInfo;
+
+            /// <summary>
+            /// Creates a new PnlDraftSummary  folder.
+            /// </summary>
+            public PnlDraftSummaryFolder(RepoGenBaseFolder parentFolder) :
+                    base("PnlDraftSummary", "container[@controlname='panelRightBase']//container[@controlname='panelBottomBase']/container[@controlname='DraftBillPanel']//container[@controlname='pnlDraftSummary']", parentFolder, 30000, null, false, "bd3d675b-e2b5-48af-8105-72dd353c5131", "")
+            {
+                _txtdraftnewvaluesInfo = new RepoItemInfo(this, "txtDraftNewValues", "?/?/element[@controlname='alblNewBalanceValue']/text", 30000, null, "096352a6-e22c-42e1-9fb2-823a087753cb");
+                _txtdrafttaxesInfo = new RepoItemInfo(this, "txtDraftTaxes", "?/?/element[@controlname='alblTaxesValue']/text", 30000, null, "04dcff5e-0235-4cc4-b532-9451384a3cbb");
+                _txtdrafttotalamountInfo = new RepoItemInfo(this, "txtDraftTotalAmount", "?/?/element[@controlname='alblTotalNewChargesValue']/text", 30000, null, "3afbf165-fd91-446e-94cf-951572385b09");
+            }
+
+            /// <summary>
+            /// The Self item.
+            /// </summary>
+            [RepositoryItem("bd3d675b-e2b5-48af-8105-72dd353c5131")]
+            public virtual Ranorex.Container Self
+            {
+                get
+                {
+                    return _selfInfo.CreateAdapter<Ranorex.Container>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Self item info.
+            /// </summary>
+            [RepositoryItemInfo("bd3d675b-e2b5-48af-8105-72dd353c5131")]
+            public virtual RepoItemInfo SelfInfo
+            {
+                get
+                {
+                    return _selfInfo;
+                }
+            }
+
+            /// <summary>
+            /// The txtDraftNewValues item.
+            /// </summary>
+            [RepositoryItem("096352a6-e22c-42e1-9fb2-823a087753cb")]
+            public virtual Ranorex.Text txtDraftNewValues
+            {
+                get
+                {
+                    return _txtdraftnewvaluesInfo.CreateAdapter<Ranorex.Text>(true);
+                }
+            }
+
+            /// <summary>
+            /// The txtDraftNewValues item info.
+            /// </summary>
+            [RepositoryItemInfo("096352a6-e22c-42e1-9fb2-823a087753cb")]
+            public virtual RepoItemInfo txtDraftNewValuesInfo
+            {
+                get
+                {
+                    return _txtdraftnewvaluesInfo;
+                }
+            }
+
+            /// <summary>
+            /// The txtDraftTaxes item.
+            /// </summary>
+            [RepositoryItem("04dcff5e-0235-4cc4-b532-9451384a3cbb")]
+            public virtual Ranorex.Text txtDraftTaxes
+            {
+                get
+                {
+                    return _txtdrafttaxesInfo.CreateAdapter<Ranorex.Text>(true);
+                }
+            }
+
+            /// <summary>
+            /// The txtDraftTaxes item info.
+            /// </summary>
+            [RepositoryItemInfo("04dcff5e-0235-4cc4-b532-9451384a3cbb")]
+            public virtual RepoItemInfo txtDraftTaxesInfo
+            {
+                get
+                {
+                    return _txtdrafttaxesInfo;
+                }
+            }
+
+            /// <summary>
+            /// The txtDraftTotalAmount item.
+            /// </summary>
+            [RepositoryItem("3afbf165-fd91-446e-94cf-951572385b09")]
+            public virtual Ranorex.Text txtDraftTotalAmount
+            {
+                get
+                {
+                    return _txtdrafttotalamountInfo.CreateAdapter<Ranorex.Text>(true);
+                }
+            }
+
+            /// <summary>
+            /// The txtDraftTotalAmount item info.
+            /// </summary>
+            [RepositoryItemInfo("3afbf165-fd91-446e-94cf-951572385b09")]
+            public virtual RepoItemInfo txtDraftTotalAmountInfo
+            {
+                get
+                {
+                    return _txtdrafttotalamountInfo;
                 }
             }
         }

@@ -42,7 +42,7 @@ namespace SmokeTest.Modules
         private void DateCalcAddBusinessDays()
         {
         	System.DateTime curdate,result;
-        	string txtresult;
+        	string txtresult,calcresults;
         	curdate=System.DateTime.Now;
         	frm.MainForm.Tools.Click();
         	Delay.Seconds(1);
@@ -55,15 +55,16 @@ namespace SmokeTest.Modules
         		frm.DateCalculatorForm.PnlBase.btnCalculate.Click();
         		
         		result=cmn.AddBusinessDays(curdate,10);
-        		txtresult=result.ToString("ddd MMMM dd,yyyy");
-        		
-        		if(frm.DateCalculatorForm.PnlBase.txtResult.GetAttributeValue<String>("Text")==txtresult)
+        		txtresult=result.ToString("ddd MMMM dd, yyyy");
+        		Delay.Seconds(2);
+        		calcresults=frm.DateCalculatorForm.PnlBase.txtResult.GetAttributeValue<String>("UIAutomationValueValue");
+        		if(txtresult.Contains(calcresults))
         		{
         			Report.Success(String.Format("Calculated days for 10 business days {0} is as expected",txtresult));
         		}
         		else
         		{
-        			Report.Failure(String.Format("Calculated days for 10 business days {0} is not as expected",txtresult));
+        			Report.Failure(String.Format("Calculated days for 10 business days {0} is not as expected and the result shown is {1}",txtresult,calcresults));
         		}
         		
         		frm.DateCalculatorForm.Toolbar1.btnOK.Click();

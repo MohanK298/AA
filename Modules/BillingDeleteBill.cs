@@ -39,14 +39,14 @@ namespace SmokeTest.Modules
         	
         	cmn.OpenContextMenuItemFromTable(bill.MainForm.tblHistoryList,"Payment","History List Table");
         	//bill.MainForm.Payment.Click(System.Windows.Forms.MouseButtons.Right);
-           	bill.AmicusAttorneyXWin.optionDelete.Click();
+           	bill.ContextMenu.optionDelete.Click();
             bill.PromptForm.btnYes.Click();
             
         	bill.MainForm.optionPlus.Click("8;11");
             try{
         	cmn.OpenContextMenuItemFromTable(bill.MainForm.tblHistoryList,"Bill","History List Table");
         		//bill.MainForm.listPayment.Click(System.Windows.Forms.MouseButtons.Right, "159;15");
-            bill.AmicusAttorneyXWin.optionDelete.Click();
+            bill.ContextMenu.optionDelete.Click();
             bill.PromptForm.btnYes.Click();	
         	} catch(Exception ex){
         		Report.Log(ReportLevel.Warn, "Module", "(Optional Action) " + ex.Message);

@@ -35,6 +35,7 @@ namespace SmokeTest.Repositories
         BillingClientFolders.MainForm1AppFolder _mainform1;
         BillingClientFolders.GeneralFirmSettingsXtraFormAppFolder _generalfirmsettingsxtraform;
         BillingClientFolders.TaxEditXtraFormAppFolder _taxeditxtraform;
+        BillingClientFolders.DropDownFormAppFolder _dropdownform;
 
         /// <summary>
         /// Gets the singleton class instance representing the BillingClient element repository.
@@ -59,9 +60,22 @@ namespace SmokeTest.Repositories
             _mainform1 = new BillingClientFolders.MainForm1AppFolder(this);
             _generalfirmsettingsxtraform = new BillingClientFolders.GeneralFirmSettingsXtraFormAppFolder(this);
             _taxeditxtraform = new BillingClientFolders.TaxEditXtraFormAppFolder(this);
+            _dropdownform = new BillingClientFolders.DropDownFormAppFolder(this);
         }
 
 #region Variables
+
+        string _var = "";
+
+        /// <summary>
+        /// Gets or sets the value of variable var.
+        /// </summary>
+        [TestVariable("46d457d2-ada1-4bac-8c64-b892ed9fd5db")]
+        public string var
+        {
+            get { return _var; }
+            set { _var = value; }
+        }
 
 #endregion
 
@@ -147,6 +161,15 @@ namespace SmokeTest.Repositories
         public virtual BillingClientFolders.TaxEditXtraFormAppFolder TaxEditXtraForm
         {
             get { return _taxeditxtraform; }
+        }
+
+        /// <summary>
+        /// The DropDownForm folder.
+        /// </summary>
+        [RepositoryFolder("0abde5c6-cda9-48ba-9275-e19f920c3654")]
+        public virtual BillingClientFolders.DropDownFormAppFolder DropDownForm
+        {
+            get { return _dropdownform; }
         }
     }
 
@@ -1074,6 +1097,8 @@ namespace SmokeTest.Repositories
             RepoItemInfo _txtreg2Info;
             RepoItemInfo _btnedit2Info;
             RepoItemInfo _cmbxtax2changeInfo;
+            RepoItemInfo _txtsalestax1Info;
+            RepoItemInfo _txtsalestax2Info;
 
             /// <summary>
             /// Creates a new PanelTax  folder.
@@ -1094,6 +1119,8 @@ namespace SmokeTest.Repositories
                 _txtreg2Info = new RepoItemInfo(this, "txtReg2", "container[@controlname='PanelTax2']/element[@controlname='ateRegIdTax2']/text[@automationid='[Editor] Edit Area']", 30000, null, "9e9bb466-e6ae-48a0-9348-8e25b2cc813e");
                 _btnedit2Info = new RepoItemInfo(this, "btnEdit2", "container[@controlname='PanelTax2']/?/?/button[@accessiblename='Edit']", 30000, null, "53196828-3551-4012-b747-6840295c5c0a");
                 _cmbxtax2changeInfo = new RepoItemInfo(this, "cmbxTax2Change", "container[@controlname='PanelTax2']/combobox[@controlname='acmbTax2Change']", 30000, null, "ebb11d26-b4aa-4e1c-983d-b0afa70d29e9");
+                _txtsalestax1Info = new RepoItemInfo(this, "txtSalesTax1", "container[@controlname='PanelTax1']/?/?/text[@automationid='[Editor] Edit Area']", 30000, null, "3be4994c-8fdd-4faa-b463-e6574cfae8da");
+                _txtsalestax2Info = new RepoItemInfo(this, "txtSalesTax2", "container[@controlname='PanelTax2']/?/?/text[@automationid='[Editor] Edit Area']", 30000, null, "f03c4d83-1238-48b4-a67c-dc07e33db9ec");
             }
 
             /// <summary>
@@ -1429,6 +1456,54 @@ namespace SmokeTest.Repositories
                 get
                 {
                     return _cmbxtax2changeInfo;
+                }
+            }
+
+            /// <summary>
+            /// The txtSalesTax1 item.
+            /// </summary>
+            [RepositoryItem("3be4994c-8fdd-4faa-b463-e6574cfae8da")]
+            public virtual Ranorex.Text txtSalesTax1
+            {
+                get
+                {
+                    return _txtsalestax1Info.CreateAdapter<Ranorex.Text>(true);
+                }
+            }
+
+            /// <summary>
+            /// The txtSalesTax1 item info.
+            /// </summary>
+            [RepositoryItemInfo("3be4994c-8fdd-4faa-b463-e6574cfae8da")]
+            public virtual RepoItemInfo txtSalesTax1Info
+            {
+                get
+                {
+                    return _txtsalestax1Info;
+                }
+            }
+
+            /// <summary>
+            /// The txtSalesTax2 item.
+            /// </summary>
+            [RepositoryItem("f03c4d83-1238-48b4-a67c-dc07e33db9ec")]
+            public virtual Ranorex.Text txtSalesTax2
+            {
+                get
+                {
+                    return _txtsalestax2Info.CreateAdapter<Ranorex.Text>(true);
+                }
+            }
+
+            /// <summary>
+            /// The txtSalesTax2 item info.
+            /// </summary>
+            [RepositoryItemInfo("f03c4d83-1238-48b4-a67c-dc07e33db9ec")]
+            public virtual RepoItemInfo txtSalesTax2Info
+            {
+                get
+                {
+                    return _txtsalestax2Info;
                 }
             }
         }
@@ -2027,6 +2102,98 @@ namespace SmokeTest.Repositories
                 get
                 {
                     return _btnokInfo;
+                }
+            }
+        }
+
+        /// <summary>
+        /// The DropDownFormAppFolder folder.
+        /// </summary>
+        [RepositoryFolder("0abde5c6-cda9-48ba-9275-e19f920c3654")]
+        public partial class DropDownFormAppFolder : RepoGenBaseFolder
+        {
+            RepoItemInfo _tbdropdownInfo;
+            RepoItemInfo _treeitemInfo;
+
+            /// <summary>
+            /// Creates a new DropDownForm  folder.
+            /// </summary>
+            public DropDownFormAppFolder(RepoGenBaseFolder parentFolder) :
+                    base("DropDownForm", "/form", parentFolder, 30000, null, false, "0abde5c6-cda9-48ba-9275-e19f920c3654", "")
+            {
+                _tbdropdownInfo = new RepoItemInfo(this, "tbDropdown", "?/?/table", 30000, null, "0bc4323e-c32f-47d1-88ed-80a618099183");
+                _treeitemInfo = new RepoItemInfo(this, "TreeItem", ".//tree/treeitem[@name=$var]", 30000, null, "aef2d5c1-6bd9-462c-ad6f-cae7e5fc81f9");
+            }
+
+            /// <summary>
+            /// The Self item.
+            /// </summary>
+            [RepositoryItem("0abde5c6-cda9-48ba-9275-e19f920c3654")]
+            public virtual Ranorex.Form Self
+            {
+                get
+                {
+                    return _selfInfo.CreateAdapter<Ranorex.Form>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Self item info.
+            /// </summary>
+            [RepositoryItemInfo("0abde5c6-cda9-48ba-9275-e19f920c3654")]
+            public virtual RepoItemInfo SelfInfo
+            {
+                get
+                {
+                    return _selfInfo;
+                }
+            }
+
+            /// <summary>
+            /// The tbDropdown item.
+            /// </summary>
+            [RepositoryItem("0bc4323e-c32f-47d1-88ed-80a618099183")]
+            public virtual Ranorex.Table tbDropdown
+            {
+                get
+                {
+                    return _tbdropdownInfo.CreateAdapter<Ranorex.Table>(true);
+                }
+            }
+
+            /// <summary>
+            /// The tbDropdown item info.
+            /// </summary>
+            [RepositoryItemInfo("0bc4323e-c32f-47d1-88ed-80a618099183")]
+            public virtual RepoItemInfo tbDropdownInfo
+            {
+                get
+                {
+                    return _tbdropdownInfo;
+                }
+            }
+
+            /// <summary>
+            /// The TreeItem item.
+            /// </summary>
+            [RepositoryItem("aef2d5c1-6bd9-462c-ad6f-cae7e5fc81f9")]
+            public virtual Ranorex.TreeItem TreeItem
+            {
+                get
+                {
+                    return _treeitemInfo.CreateAdapter<Ranorex.TreeItem>(true);
+                }
+            }
+
+            /// <summary>
+            /// The TreeItem item info.
+            /// </summary>
+            [RepositoryItemInfo("aef2d5c1-6bd9-462c-ad6f-cae7e5fc81f9")]
+            public virtual RepoItemInfo TreeItemInfo
+            {
+                get
+                {
+                    return _treeitemInfo;
                 }
             }
         }

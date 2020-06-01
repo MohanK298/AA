@@ -363,6 +363,69 @@ SUVORK5CYII=
 			searchtimeout="30000ms">
 				/form[@controlname='MainForm']/element[@controlname='_BaseModuleForm_Toolbars_Dock_Area_Top']//menuitem[@accessiblename='Tools']
 			</item>
+			<item
+			addcaps="button,accessible"
+			capname="button"
+			id="f4e35bab-3df9-4c3d-9984-457fe5e7e1a1"
+			name="btnOffice"
+			refimgid="7a388ce4-37c9-4a81-9ca2-62504c822f07"
+			refpath="/form[@controlname='MainForm']/container[@controlname='pLeft']/container[@caption='' and @controltypename='Panel' and @instance='1']/element[@controlname='_ultraExplorerBar']/tree[@accessiblerole='Outline']/button[@accessiblename='Office']"
+			searchtimeout="30000ms">
+				/form[@controlname='MainForm']/container[@controlname='pLeft']//tree[@accessiblerole='Outline']/button[@accessiblename='Office']
+			</item>
+			<folder
+			addcaps="container,control,nativewindow"
+			capname="container"
+			id="459dd16c-bd2f-42f9-8c2f-82d580959045"
+			isrooted="True"
+			name="RoundedPanelControl"
+			refpath="/form[@controlname='MainForm']/element[@controltypename='MdiClient']/form[@controlname='ReportForm']/container[@controlname='roundedPanelControl']"
+			searchtimeout="30000ms"
+			usecache="False">
+				<item
+				addcaps="treeitem,accessible"
+				capname="treeitem"
+				id="da802457-1b72-4e4f-8e63-c9350a5e3299"
+				name="treeBusinessPlanning"
+				refimgid="7dbf2bff-adc3-47d0-9353-16b9395e7c8f"
+				refpath="/form[@controlname='MainForm']/element[@controltypename='MdiClient']/form[@controlname='ReportForm']/container[@controlname='roundedPanelControl']/element[@controlname='atReportCategory']/tree[@accessiblerole='Outline']/treeitem[@accessiblename='BusinessPlanning']"
+				searchtimeout="30000ms">
+					/form[@controlname='MainForm']/?/?/form[@controlname='ReportForm']/container[@controlname='roundedPanelControl']//treeitem[@accessiblename='BusinessPlanning']
+				</item>
+				<item
+				addcaps="button,accessible"
+				capname="button"
+				id="866afba8-b5fe-47d6-b7d6-617c2b18928a"
+				name="btnRunReport"
+				refimgid="90e1d332-c8f5-4734-a75c-529255b2855e"
+				refpath="/form[@controlname='MainForm']/element[@controltypename='MdiClient']/form[@controlname='ReportForm']/container[@controlname='roundedPanelControl']/container[@controlname='reportsGridPanel']/container[@controlname='reportsSplitContainer']/container[@controlname='panel2']/container[@controlname='sqlReportsButtonPanel']/element[@controlname='abtnSQLRun']/button[@accessiblename='Run']"
+				searchtimeout="30000ms">
+					/form[@controlname='MainForm']/?/?/form[@controlname='ReportForm']/container[@controlname='roundedPanelControl']/container[@controlname='reportsGridPanel']//container[@controlname='sqlReportsButtonPanel']/?/?/button[@accessiblename='Run']
+				</item>
+				<item
+				addcaps="table,accessible"
+				capname="table"
+				id="4e8c380b-f4eb-4fc3-ab82-5f438aa61641"
+				name="tblAdvancedReports"
+				refimgid="558ecbfc-357e-4c09-b22d-b575ebf0b890"
+				refpath="/form[@controlname='MainForm']/element[@controltypename='MdiClient']/form[@controlname='ReportForm']/container[@controlname='roundedPanelControl']/container[@controlname='reportsGridPanel']/container[@controlname='reportsSplitContainer']/container[@controlname='panel2']/element[@controlname='abgSQLReports']/table[@accessiblename='Band 0']"
+				searchtimeout="30000ms">
+					/form[@controlname='MainForm']/?/?/form[@controlname='ReportForm']/container[@controlname='roundedPanelControl']/container[@controlname='reportsGridPanel']//element[@controlname='abgSQLReports']/table[@accessiblename='Band 0']
+				</item>
+				<item
+				addcaps="button,accessible"
+				capname="button"
+				id="c96e5275-e62f-40cb-a937-e51d3125ec5d"
+				name="btnEditReport"
+				refimgid="079b9cd3-41bd-474c-a975-52a280cde6be"
+				refpath="/form[@controlname='MainForm']/element[@controltypename='MdiClient']/form[@controlname='ReportForm']/container[@controlname='roundedPanelControl']/container[@controlname='reportsGridPanel']/container[@controlname='reportsSplitContainer']/container[@controlname='panel2']/container[@controlname='sqlReportsButtonPanel']/element[@controlname='abtnSQLEdit']/button[@accessiblename='Edit']"
+				searchtimeout="30000ms">
+					/form[@controlname='MainForm']/?/?/form[@controlname='ReportForm']/container[@controlname='roundedPanelControl']/container[@controlname='reportsGridPanel']//container[@controlname='sqlReportsButtonPanel']/?/?/button[@accessiblename='Edit']
+				</item>
+				<basepath>
+					/form[@controlname='MainForm']/?/?/form[@controlname='ReportForm']/container[@controlname='roundedPanelControl']
+				</basepath>
+			</folder>
 			<basepath>
 				/form[@controlname='MainForm']
 			</basepath>
@@ -1035,6 +1098,7 @@ SUVORK5CYII=
 		id="561b7d16-6f40-4eae-a0f5-8fad2729f8ea"
 		isrooted="True"
 		name="TimeFirmSettingsForm"
+		refimgid="fe9714fd-2295-41a4-8f4f-c4eab1f5fc4b"
 		refpath="/form[@controlname='TimeFirmSettingsForm']"
 		searchtimeout="30000ms"
 		usecache="True">
@@ -1244,6 +1308,115 @@ SUVORK5CYII=
 				searchtimeout="30000ms">
 					/form[@controlname='TimeFirmSettingsForm']/container[@controlname='pnlBase']//element[@controlname='alblTitle']/text[@accessiblename='Time - Track Changes']
 				</item>
+				<item
+				addcaps="tree,accessible"
+				capname="tree"
+				id="e866f532-ed7b-46b7-bddc-225ce0173355"
+				name="treeActivityList"
+				refimgid="792430eb-eb62-41e7-8cf7-bcb5a35f097c"
+				refpath="/form[@controlname='TimeFirmSettingsForm']/container[@controlname='pnlBase']/container[@controlname='pnlControls']/container[@controlname='panelTitleBase']/container[@controlname='panelBase']/container[@controlname='panelActivityCode']/container[@controlname='treeViewPanel']/element[@controlname='amicusTree']/tree[@accessiblerole='Outline']"
+				searchtimeout="30000ms">
+					/form[@controlname='TimeFirmSettingsForm']/container[@controlname='pnlBase']//container[@controlname='panelActivityCode']/container[@controlname='treeViewPanel']/?/?/tree[@accessiblerole='Outline']
+				</item>
+				<item
+				addcaps="treeitem,accessible"
+				capname="treeitem"
+				id="289d973b-9f89-4c86-9a91-f072ff87a4c9"
+				name="treeAttendDiscovery"
+				refimgid="cb5f9025-5542-46e7-99b8-4023a54d6547"
+				refpath="/form[@controlname='TimeFirmSettingsForm']/container[@controlname='pnlBase']/container[@controlname='pnlControls']/container[@controlname='panelTitleBase']/container[@controlname='panelBase']/container[@controlname='panelActivityCode']/container[@controlname='treeViewPanel']/element[@controlname='amicusTree']/tree[@accessiblerole='Outline']/treeitem[@accessiblename='Attend discovery']"
+				searchtimeout="30000ms">
+					/form[@controlname='TimeFirmSettingsForm']/container[@controlname='pnlBase']//container[@controlname='panelBase']/container[@controlname='panelActivityCode']/container[@controlname='treeViewPanel']//treeitem[@accessiblename='Attend discovery']
+				</item>
+				<item
+				addcaps="button,accessible"
+				capname="button"
+				id="8123b4bc-a1ce-4120-8b91-7366346a69c7"
+				name="btnEditActivityCode"
+				refimgid="d12af7a6-1979-4344-89f1-69c979eea154"
+				refpath="/form[@controlname='TimeFirmSettingsForm']/container[@controlname='pnlBase']/container[@controlname='pnlControls']/container[@controlname='panelTitleBase']/container[@controlname='panelBase']/container[@controlname='panelActivityCode']/element[@controlname='abtnEdit']/button[@accessiblename='Edit']"
+				searchtimeout="30000ms">
+					/form[@controlname='TimeFirmSettingsForm']/container[@controlname='pnlBase']//container[@controlname='panelActivityCode']/element[@controlname='abtnEdit']/button[@accessiblename='Edit']
+				</item>
+				<item
+				addcaps="combobox,accessible"
+				capname="combobox"
+				id="b53d8986-6542-40e1-b937-d6ccc71f8398"
+				name="cmbxActivityCodes"
+				refimgid="535049f2-f581-4dd7-9fcd-ef0a708f5fdc"
+				refpath="/form[@controlname='TimeFirmSettingsForm']/container[@controlname='pnlBase']/container[@controlname='pnlControls']/container[@controlname='panelTitleBase']/container[@controlname='panelBase']/container[@controlname='panelActivityCode']/element[@controlname='acmbDisplayOption']/combobox[@accessiblename='Activity Codes']"
+				searchtimeout="30000ms">
+					/form[@controlname='TimeFirmSettingsForm']/container[@controlname='pnlBase']//container[@controlname='panelActivityCode']/element[@controlname='acmbDisplayOption']/combobox[@accessiblename='Activity Codes']
+				</item>
+				<item
+				addcaps="radiobutton,control,nativewindow"
+				capname="radiobutton"
+				id="d29fb473-55bf-45df-a29d-abb2d22612dc"
+				name="rdoActivityCode"
+				refimgid="43bedefe-590a-489e-8273-66d97f990e69"
+				refpath="/form[@controlname='TimeFirmSettingsForm']/container[@controlname='pnlBase']/container[@controlname='pnlControls']/container[@controlname='panelTitleBase']/container[@controlname='panelBase']/container[@controlname='panelActivityCode']/radiobutton[@controlname='arbActivityCode']"
+				searchtimeout="30000ms">
+					/form[@controlname='TimeFirmSettingsForm']/container[@controlname='pnlBase']//container[@controlname='panelActivityCode']/radiobutton[@controlname='arbActivityCode']
+				</item>
+				<item
+				addcaps="radiobutton,control,nativewindow"
+				capname="radiobutton"
+				id="c91abb96-de32-4301-913d-29fe5384d747"
+				name="rdoTaskCode"
+				refimgid="ef3babe0-c895-4457-9f1e-85445d8ad5c1"
+				refpath="/form[@controlname='TimeFirmSettingsForm']/container[@controlname='pnlBase']/container[@controlname='pnlControls']/container[@controlname='panelTitleBase']/container[@controlname='panelBase']/container[@controlname='panelActivityCode']/radiobutton[@controlname='arbTaskCode']"
+				searchtimeout="30000ms">
+					/form[@controlname='TimeFirmSettingsForm']/container[@controlname='pnlBase']//container[@controlname='panelActivityCode']/radiobutton[@controlname='arbTaskCode']
+				</item>
+				<item
+				addcaps="treeitem,accessible"
+				capname="treeitem"
+				id="1e7c5d21-9b78-4c6c-8ca5-81a6de546018"
+				name="treeA101PlanAndPrepareFor"
+				refimgid="e499fa8b-5fc9-4aaa-b1a3-808641306181"
+				refpath="/form[@controlname='TimeFirmSettingsForm']/container[@controlname='pnlBase']/container[@controlname='pnlControls']/container[@controlname='panelTitleBase']/container[@controlname='panelBase']/container[@controlname='panelActivityCode']/container[@controlname='treeViewPanel']/element[@controlname='amicusTree']/tree[@accessiblerole='Outline']/treeitem[@accessiblename='A101 Plan and Prepare for']"
+				searchtimeout="30000ms">
+					/form[@controlname='TimeFirmSettingsForm']/container[@controlname='pnlBase']//container[@controlname='panelBase']/container[@controlname='panelActivityCode']/container[@controlname='treeViewPanel']//treeitem[@accessiblename='A101 Plan and Prepare for']
+				</item>
+				<item
+				addcaps="button,accessible"
+				capname="button"
+				id="a8693eca-a127-42fa-bec4-58a750704e63"
+				name="btnNewActivityCode"
+				refimgid="ebc9c3c0-5224-428c-afe3-07f0eac3a786"
+				refpath="/form[@controlname='TimeFirmSettingsForm']/container[@controlname='pnlBase']/container[@controlname='pnlControls']/container[@controlname='panelTitleBase']/container[@controlname='panelBase']/container[@controlname='panelActivityCode']/element[@controlname='abtnNew']/button[@accessiblename='New']"
+				searchtimeout="30000ms">
+					/form[@controlname='TimeFirmSettingsForm']/container[@controlname='pnlBase']//container[@controlname='panelActivityCode']/element[@controlname='abtnNew']/button[@accessiblename='New']
+				</item>
+				<item
+				addcaps="treeitem,accessible"
+				capname="treeitem"
+				id="c92849ef-6b4f-4c5c-aae5-7b52fdac4692"
+				name="treeTestActivityCodes"
+				refimgid="dc7653ed-8b2c-45e4-a92e-add2cb0d646c"
+				searchtimeout="30000ms">
+					/form[@controlname='TimeFirmSettingsForm']/container[@controlname='pnlBase']//container[@controlname='panelBase']/container[@controlname='panelActivityCode']/container[@controlname='treeViewPanel']//treeitem[@accessiblename='A001 Test Activity Codes']
+				</item>
+				<item
+				addcaps="button,accessible"
+				capname="button"
+				id="1b452da4-e565-4866-986b-0469c6f032ee"
+				name="btnRemoveActivityCode"
+				refimgid="306ed564-de7d-4486-b396-cbfe55a7bff5"
+				refpath="/form[@controlname='TimeFirmSettingsForm']/container[@controlname='pnlBase']/container[@controlname='pnlControls']/container[@controlname='panelTitleBase']/container[@controlname='panelBase']/container[@controlname='panelActivityCode']/element[@controlname='abtnRemove']/button[@accessiblename='Remove']"
+				searchtimeout="30000ms">
+					/form[@controlname='TimeFirmSettingsForm']/container[@controlname='pnlBase']//container[@controlname='panelActivityCode']/element[@controlname='abtnRemove']/button[@accessiblename='Remove']
+				</item>
+				<item
+				addcaps="treeitem,accessible"
+				capname="treeitem"
+				id="ffba837d-b715-47d9-8049-2a0f5e27338c"
+				name="treeAttendTrial"
+				refimgid="f35a1b64-8c15-41ff-af18-484a68cf192e"
+				refpath="/form[@controlname='TimeFirmSettingsForm']/container[@controlname='pnlBase']/container[@controlname='pnlControls']/container[@controlname='panelTitleBase']/container[@controlname='panelBase']/container[@controlname='panelActivityCode']/container[@controlname='treeViewPanel']/element[@controlname='amicusTree']/tree[@accessiblerole='Outline']/treeitem[@accessiblename='Attend trial']"
+				searchtimeout="30000ms">
+					/form[@controlname='TimeFirmSettingsForm']/container[@controlname='pnlBase']//container[@controlname='panelBase']/container[@controlname='panelActivityCode']/container[@controlname='treeViewPanel']//treeitem[@accessiblename='Attend trial']
+				</item>
 				<basepath>
 					/form[@controlname='TimeFirmSettingsForm']/container[@controlname='pnlBase']
 				</basepath>
@@ -1281,6 +1454,13 @@ SUVORK5CYII=
 			refpath="/form/element/table"
 			searchtimeout="30000ms">
 				/form/?/?/table
+			</item>
+			<item
+			capname="treeitem"
+			id="defc2f4a-d7f6-4b4f-b565-664832dd7607"
+			name="treeItem"
+			searchtimeout="30000ms">
+				/form//tree/treeitem[@name=$var]
 			</item>
 			<basepath>
 				/form
@@ -1405,9 +1585,298 @@ QmCC
 				/form[@controlname='DateCalculatorForm']
 			</basepath>
 		</appfolder>
+		<appfolder
+		capname="form"
+		id="de40e11f-fe72-4e7a-931e-688b5aabc946"
+		isrooted="True"
+		name="ActivityCodeDetailsForm"
+		searchtimeout="30000ms"
+		usecache="False">
+			<folder
+			addcaps="container,control,nativewindow"
+			capname="container"
+			id="80fa8462-2bf8-4a07-9054-0c00a6df9333"
+			isrooted="True"
+			name="PnlBase"
+			refpath="/form[@controlname='ActivityCodeDetailsForm']/container[@controlname='pnlBase']"
+			searchtimeout="30000ms"
+			usecache="False">
+				<item
+				addcaps="radiobutton,control,nativewindow"
+				capname="radiobutton"
+				id="ad9207de-3ecd-45bf-b8d2-5f45d1c85f06"
+				name="rdoBillable"
+				refpath="/form[@controlname='ActivityCodeDetailsForm']/container[@controlname='pnlBase']/container[@controlname='pnlControls']/container[@controlname='panel1']/radiobutton[@controlname='arbBillable']"
+				searchtimeout="30000ms">
+					/form[@controlname='ActivityCodeDetailsForm']/container[@controlname='pnlBase']//radiobutton[@controlname='arbBillable']
+				</item>
+				<item
+				addcaps="radiobutton,control,nativewindow"
+				capname="radiobutton"
+				id="53d28169-4ec7-4414-8773-9554b174ea0b"
+				name="rdoNonBillable"
+				refimgid="004638ff-0d1c-47a2-a7d9-8648cedac810"
+				refpath="/form[@controlname='ActivityCodeDetailsForm']/container[@controlname='pnlBase']/container[@controlname='pnlControls']/container[@controlname='panel1']/radiobutton[@controlname='arbNonBillable']"
+				searchtimeout="30000ms">
+					/form[@controlname='ActivityCodeDetailsForm']/container[@controlname='pnlBase']//radiobutton[@controlname='arbNonBillable']
+				</item>
+				<item
+				addcaps="text,control,nativewindow"
+				capname="text"
+				id="596a9e3f-8498-40a4-8c62-891ef4b215ab"
+				name="txtActivityName"
+				refimgid="8872e1ac-de26-43a7-a987-559b1a1480bb"
+				refpath="/form[@controlname='ActivityCodeDetailsForm']/container[@controlname='pnlBase']/container[@controlname='pnlControls']/container[@controlname='panel1']/element[@controlname='ateName']/text[@controlname='ateName_EmbeddableTextBox']"
+				searchtimeout="30000ms">
+					/form[@controlname='ActivityCodeDetailsForm']/container[@controlname='pnlBase']/?/?/container[@controlname='panel1']/?/?/text[@controlname='ateName_EmbeddableTextBox']
+				</item>
+				<item
+				addcaps="checkbox,accessible"
+				capname="checkbox"
+				id="d03c033d-e739-4295-95e6-a7545784c7a6"
+				name="cbSalesTax2"
+				refimgid="b2baf354-707f-4d81-b76d-879b075fb7a1"
+				refpath="/form[@controlname='ActivityCodeDetailsForm']/container[@controlname='pnlBase']/container[@controlname='pnlControls']/container[@controlname='panel3']/element[@controlname='achkTax2']/checkbox[@accessiblename='Sales Tax 2']/checkbox[@accessiblename='Sales Tax 2']"
+				searchtimeout="30000ms">
+					/form[@controlname='ActivityCodeDetailsForm']/container[@controlname='pnlBase']/?/?/container[@controlname='panel3']/element[@controlname='achkTax2']/checkbox[@accessiblename='Sales Tax 2']/checkbox[@accessiblename='Sales Tax 2']
+				</item>
+				<item
+				addcaps="checkbox,accessible"
+				capname="checkbox"
+				id="43c4b1bf-1e32-4ffe-ac74-f9300fe5a50a"
+				name="cbSalesTax1"
+				refimgid="4a9cc176-8dba-4a6c-8cfa-8468982359c5"
+				refpath="/form[@controlname='ActivityCodeDetailsForm']/container[@controlname='pnlBase']/container[@controlname='pnlControls']/container[@controlname='panel3']/element[@controlname='achkTax1']/checkbox[@accessiblename='Sales Tax 1']/checkbox[@accessiblename='Sales Tax 1']"
+				searchtimeout="30000ms">
+					/form[@controlname='ActivityCodeDetailsForm']/container[@controlname='pnlBase']/?/?/container[@controlname='panel3']/element[@controlname='achkTax1']/checkbox[@accessiblename='Sales Tax 1']/checkbox[@accessiblename='Sales Tax 1']
+				</item>
+				<basepath>
+					/form[@controlname='ActivityCodeDetailsForm']/container[@controlname='pnlBase']
+				</basepath>
+			</folder>
+			<item
+			addcaps="toolbar,accessible"
+			capname="toolbar"
+			id="17e249e2-c364-4596-9775-2719a63dadae"
+			name="Toolbar"
+			refpath="/form[@controlname='ActivityCodeDetailsForm']/element[@controlname='_BaseForm_Toolbars_Dock_Area_Bottom']/container[@accessiblename='DockBottom']/toolbar[@accessiblename='Toolbar']"
+			searchtimeout="30000ms">
+				/form[@controlname='ActivityCodeDetailsForm']/element[@controlname='_BaseForm_Toolbars_Dock_Area_Bottom']/?/?/toolbar[@accessiblename='Toolbar']
+			</item>
+			<folder
+			addcaps="toolbar,accessible"
+			capname="toolbar"
+			id="884aca4b-8c81-4e0e-9a7d-c9627f3c4418"
+			isrooted="True"
+			name="Toolbar1"
+			refpath="/form[@controlname='ActivityCodeDetailsForm']/element[@controlname='_BaseForm_Toolbars_Dock_Area_Bottom']/container[@accessiblename='DockBottom']/toolbar[@accessiblename='Toolbar']"
+			searchtimeout="30000ms"
+			usecache="False">
+				<item
+				addcaps="button,accessible"
+				capname="button"
+				id="cdadc502-0d59-4233-9b4d-5f5db8af6ffb"
+				name="btnCancel"
+				refpath="/form[@controlname='ActivityCodeDetailsForm']/element[@controlname='_BaseForm_Toolbars_Dock_Area_Bottom']/container[@accessiblename='DockBottom']/toolbar[@accessiblename='Toolbar']/button[@accessiblename='Cancel']"
+				searchtimeout="30000ms">
+					/form[@controlname='ActivityCodeDetailsForm']//toolbar[@accessiblename='Toolbar']/button[@accessiblename='Cancel']
+				</item>
+				<item
+				addcaps="button,accessible"
+				capname="button"
+				id="dae08bdc-99f3-4f2b-977b-491a4ee1427a"
+				name="btnDelete"
+				refpath="/form[@controlname='ActivityCodeDetailsForm']/element[@controlname='_BaseForm_Toolbars_Dock_Area_Bottom']/container[@accessiblename='DockBottom']/toolbar[@accessiblename='Toolbar']/button[@accessiblename='Delete']"
+				searchtimeout="30000ms">
+					/form[@controlname='ActivityCodeDetailsForm']//toolbar[@accessiblename='Toolbar']/button[@accessiblename='Delete']
+				</item>
+				<item
+				addcaps="button,accessible"
+				capname="button"
+				id="56fe3902-91d2-4cd2-aa56-86b816ac6931"
+				name="btnSave"
+				refpath="/form[@controlname='ActivityCodeDetailsForm']/element[@controlname='_BaseForm_Toolbars_Dock_Area_Bottom']/container[@accessiblename='DockBottom']/toolbar[@accessiblename='Toolbar']/button[@accessiblename='Save']"
+				searchtimeout="30000ms">
+					/form[@controlname='ActivityCodeDetailsForm']//toolbar[@accessiblename='Toolbar']/button[@accessiblename='Save']
+				</item>
+				<basepath>
+					/form[@controlname='ActivityCodeDetailsForm']//toolbar[@accessiblename='Toolbar']
+				</basepath>
+			</folder>
+			<basepath>
+				/form[@controlname='ActivityCodeDetailsForm']
+			</basepath>
+		</appfolder>
+		<appfolder
+		capname="form"
+		id="43a34217-389d-4504-aad3-89af30f81d78"
+		isrooted="True"
+		name="TaskBasedActivityCodeDetailsForm"
+		searchtimeout="30000ms"
+		usecache="False">
+			<folder
+			addcaps="container,control,nativewindow"
+			capname="container"
+			id="f0b729df-3e97-4191-9a64-15318568ddb9"
+			isrooted="True"
+			name="PnlBase"
+			refpath="/form[@controlname='TBBActivityCodeDetailsForm']/container[@controlname='pnlBase']"
+			searchtimeout="30000ms"
+			usecache="False">
+				<item
+				addcaps="text,uiautomation,uiautomationvalue"
+				capname="text"
+				id="ceda1a92-b34f-4b19-a84b-eae537a3596e"
+				name="txtActivityName"
+				refimgid="69946d37-f599-4d22-a6e3-ff9637d2df7d"
+				refpath="/form[@controlname='TBBActivityCodeDetailsForm']/container[@controlname='pnlBase']/container[@controlname='pnlControls']/element[@controlname='ateName']/text[@automationid='[Editor] Edit Area']"
+				searchtimeout="30000ms">
+					/form[@controlname='TBBActivityCodeDetailsForm']/container[@controlname='pnlBase']//text[@automationid='[Editor] Edit Area']
+				</item>
+				<item
+				addcaps="checkbox,accessible"
+				capname="checkbox"
+				id="a6415e3a-34f5-4dab-881d-69921cd843eb"
+				name="cbSalesTax1"
+				refimgid="f3c36adf-9b70-4063-ae07-f6a85440cdf4"
+				refpath="/form[@controlname='TBBActivityCodeDetailsForm']/container[@controlname='pnlBase']/container[@controlname='pnlControls']/element[@controlname='achkTax1']/checkbox[@accessiblename='Sales Tax 1']/checkbox[@accessiblename='Sales Tax 1']"
+				searchtimeout="30000ms">
+					/form[@controlname='TBBActivityCodeDetailsForm']/container[@controlname='pnlBase']/?/?/element[@controlname='achkTax1']/?/?/checkbox[@accessiblename='Sales Tax 1']
+				</item>
+				<item
+				addcaps="text,uiautomation,uiautomationvalue"
+				capname="text"
+				id="8894d52b-d062-4c29-b6fd-aa3ff3ee9cd1"
+				name="txtActivityCode"
+				refimgid="8554e215-e1dd-4b57-840e-454378129919"
+				refpath="/form[@controlname='TBBActivityCodeDetailsForm']/container[@controlname='pnlBase']/container[@controlname='pnlControls']/element[@controlname='ateCode']/text[@automationid='[Editor] Edit Area']"
+				searchtimeout="30000ms">
+					/form[@controlname='TBBActivityCodeDetailsForm']/container[@controlname='pnlBase']/?/?/element[@controlname='ateCode']/text[@automationid='[Editor] Edit Area']
+				</item>
+				<item
+				addcaps="checkbox,accessible"
+				capname="checkbox"
+				id="8f5ccbf5-6ef2-41f2-8911-692c8c78874f"
+				name="cbSalesTax2"
+				refimgid="6733dfe3-27c4-421f-aac8-9aaa9af20d3e"
+				refpath="/form[@controlname='TBBActivityCodeDetailsForm']/container[@controlname='pnlBase']/container[@controlname='pnlControls']/element[@controlname='achkTax2']/checkbox[@accessiblename='Sales Tax 2']/checkbox[@accessiblename='Sales Tax 2']"
+				searchtimeout="30000ms">
+					/form[@controlname='TBBActivityCodeDetailsForm']/container[@controlname='pnlBase']/?/?/element[@controlname='achkTax2']/?/?/checkbox[@accessiblename='Sales Tax 2']
+				</item>
+				<basepath>
+					/form[@controlname='TBBActivityCodeDetailsForm']/container[@controlname='pnlBase']
+				</basepath>
+			</folder>
+			<item
+			addcaps="toolbar,accessible"
+			capname="toolbar"
+			id="446dd10d-246e-4f74-9704-55090726ab79"
+			name="Toolbar"
+			refpath="/form[@controlname='TBBActivityCodeDetailsForm']/element[@controlname='_BaseForm_Toolbars_Dock_Area_Bottom']/container[@accessiblename='DockBottom']/toolbar[@accessiblename='Toolbar']"
+			searchtimeout="30000ms">
+				/form[@controlname='TBBActivityCodeDetailsForm']/element[@controlname='_BaseForm_Toolbars_Dock_Area_Bottom']/?/?/toolbar[@accessiblename='Toolbar']
+			</item>
+			<folder
+			capname="toolbar"
+			id="456a0457-1e9b-4da0-875c-022c743d83fc"
+			isrooted="True"
+			name="Toolbar1"
+			searchtimeout="30000ms"
+			usecache="False">
+				<item
+				addcaps="button,accessible"
+				capname="button"
+				id="a804b1c3-4d87-4f60-b1f2-0c0b351d8209"
+				name="btnCancel"
+				refpath="/form[@controlname='TBBActivityCodeDetailsForm']/element[@controlname='_BaseForm_Toolbars_Dock_Area_Bottom']/container[@accessiblename='DockBottom']/toolbar[@accessiblename='Toolbar']/button[@accessiblename='Cancel']"
+				searchtimeout="30000ms">
+					/form[@controlname='TBBActivityCodeDetailsForm']//toolbar[@accessiblename='Toolbar']/button[@accessiblename='Cancel']
+				</item>
+				<item
+				addcaps="button,accessible"
+				capname="button"
+				id="5b99f383-b3ab-42d5-b434-91146baad065"
+				name="btnDelete"
+				refpath="/form[@controlname='TBBActivityCodeDetailsForm']/element[@controlname='_BaseForm_Toolbars_Dock_Area_Bottom']/container[@accessiblename='DockBottom']/toolbar[@accessiblename='Toolbar']/button[@accessiblename='Delete']"
+				searchtimeout="30000ms">
+					/form[@controlname='TBBActivityCodeDetailsForm']//toolbar[@accessiblename='Toolbar']/button[@accessiblename='Delete']
+				</item>
+				<item
+				addcaps="button,accessible"
+				capname="button"
+				id="4707b2b3-5a2e-4721-b096-c4be852bb381"
+				name="btnSave"
+				refpath="/form[@controlname='TBBActivityCodeDetailsForm']/element[@controlname='_BaseForm_Toolbars_Dock_Area_Bottom']/container[@accessiblename='DockBottom']/toolbar[@accessiblename='Toolbar']/button[@accessiblename='Save']"
+				searchtimeout="30000ms">
+					/form[@controlname='TBBActivityCodeDetailsForm']//toolbar[@accessiblename='Toolbar']/button[@accessiblename='Save']
+				</item>
+				<basepath>
+					/form[@controlname='TBBActivityCodeDetailsForm']//toolbar[@accessiblename='Toolbar']
+				</basepath>
+			</folder>
+			<basepath>
+				/form[@controlname='TBBActivityCodeDetailsForm']
+			</basepath>
+		</appfolder>
+		<appfolder
+		capname="form"
+		id="4a550188-1ad1-4374-8157-6d67f656ed78"
+		isrooted="True"
+		name="SQLReportForm"
+		refimgid="c8439e8b-4496-4f32-bebe-77c675dbaf07"
+		searchtimeout="30000ms"
+		usecache="False">
+			<item
+			addcaps="toolbar,accessible"
+			capname="toolbar"
+			id="9adec407-f9ac-471a-a2fc-17c6721e2d2f"
+			name="Toolbar"
+			refpath="/form[@controlname='SQLReportGenerateForm']/element[@controlname='_BaseForm_Toolbars_Dock_Area_Bottom']/container[@accessiblename='Report Format:']/toolbar[@accessiblename='Toolbar']"
+			searchtimeout="30000ms">
+				/form[@controlname='SQLReportGenerateForm']/element[@controlname='_BaseForm_Toolbars_Dock_Area_Bottom']/?/?/toolbar[@accessiblename='Toolbar']
+			</item>
+			<folder
+			addcaps="toolbar,accessible"
+			capname="toolbar"
+			id="80d88a2a-737f-4eaf-896d-040d00b9ef41"
+			isrooted="True"
+			name="Toolbar1"
+			refpath="/form[@controlname='SQLReportGenerateForm']/element[@controlname='_BaseForm_Toolbars_Dock_Area_Bottom']/container[@accessiblename='Report Format:']/toolbar[@accessiblename='Toolbar']"
+			searchtimeout="30000ms"
+			usecache="False">
+				<item
+				addcaps="button,accessible"
+				capname="button"
+				id="fed97fa3-ecfc-4ccc-b375-0da4710c4081"
+				name="btnCancel"
+				refpath="/form[@controlname='SQLReportGenerateForm']/element[@controlname='_BaseForm_Toolbars_Dock_Area_Bottom']/container[@accessiblename='Report Format:']/toolbar[@accessiblename='Toolbar']/button[@accessiblename='Cancel']"
+				searchtimeout="30000ms">
+					/form[@controlname='SQLReportGenerateForm']//toolbar[@accessiblename='Toolbar']/button[@accessiblename='Cancel']
+				</item>
+				<item
+				addcaps="button,accessible"
+				capname="button"
+				id="b5ba6818-7b86-4e22-b058-9b83773ca644"
+				name="btnOK"
+				refpath="/form[@controlname='SQLReportGenerateForm']/element[@controlname='_BaseForm_Toolbars_Dock_Area_Bottom']/container[@accessiblename='Report Format:']/toolbar[@accessiblename='Toolbar']/button[@accessiblename='OK']"
+				searchtimeout="30000ms">
+					/form[@controlname='SQLReportGenerateForm']//toolbar[@accessiblename='Toolbar']/button[@accessiblename='OK']
+				</item>
+				<basepath>
+					/form[@controlname='SQLReportGenerateForm']//toolbar[@accessiblename='Toolbar']
+				</basepath>
+			</folder>
+			<basepath>
+				/form[@controlname='SQLReportGenerateForm']
+			</basepath>
+		</appfolder>
 		<basepath>
 		</basepath>
 	</rootfolder>
 	<variables>
+		<var
+		id="b5914a12-2d90-4afc-a64e-d53dcb8e7a97"
+		name="var">
+		</var>
 	</variables>
 </repository>

@@ -425,6 +425,36 @@ D8zerL8gSEaw7+rFqJ//CkX5CWkHqyZHVzU6AAAAAElFTkSuQmCC
 			searchtimeout="30000ms">
 				/form[@controlname='FileDetailForm']/container[@controlname='panelPicBackground']//toolbar[@accessiblename='Toolbar']/button[@accessiblename='Save &amp; Close']
 			</item>
+			<item
+			addcaps="treeitem,accessible"
+			capname="treeitem"
+			id="6c93f17d-1417-431e-b12d-976842328ee0"
+			name="BillSettings"
+			refimgid="db1e1a44-560b-4068-9eed-b6028e170ba9"
+			refpath="/form[@controlname='FileDetailForm']/container[@controlname='panelLeftBase']/container[@controlname='panelLeft']/element[@controlname='utreeFacts']/tree[@accessiblerole='Outline']/treeitem[@accessiblename='Bill Settings']"
+			searchtimeout="30000ms">
+				/form[@controlname='FileDetailForm']/container[@controlname='panelLeftBase']/?/?/element[@controlname='utreeFacts']/?/?/treeitem[@accessiblename='Bill Settings']
+			</item>
+			<item
+			addcaps="checkbox,accessible"
+			capname="checkbox"
+			id="e45ef9ee-98b2-4b88-bec9-1cb786f9e73c"
+			name="cbChargeSalesTax1"
+			refimgid="85e60c1f-f009-4494-8140-8a26288c4d30"
+			refpath="/form[@controlname='FileDetailForm']/container[@controlname='panelPicBackground']/container[@controlname='panelRight']/container[@controlname='AASAdminBillSettings']/container[@controlname='panelAdminBillingSettings']/container[@controlname='panelContent']/element[@controlname='ultraGroupTax']/element[@controlname='achkChargeTax1Fees']/checkbox[@accessiblename='Charge Sales Tax1']/checkbox[@accessiblename='Charge Sales Tax1']"
+			searchtimeout="30000ms">
+				/form[@controlname='FileDetailForm']/container[@controlname='panelPicBackground']/container[@controlname='panelRight']//container[@controlname='panelContent']/element[@controlname='ultraGroupTax']/element[@controlname='achkChargeTax1Fees']/checkbox[@accessiblename='Charge Sales Tax1']/checkbox[@accessiblename='Charge Sales Tax1']
+			</item>
+			<item
+			addcaps="checkbox,accessible"
+			capname="checkbox"
+			id="d9a60559-59e1-465e-b0d3-da1717f4aa44"
+			name="cbChargeSalesTax2"
+			refimgid="bd650b57-debc-4e9b-a3d1-0b71ab9d1ccc"
+			refpath="/form[@controlname='FileDetailForm']/container[@controlname='panelPicBackground']/container[@controlname='panelRight']/container[@controlname='AASAdminBillSettings']/container[@controlname='panelAdminBillingSettings']/container[@controlname='panelContent']/element[@controlname='ultraGroupTax']/element[@controlname='achkChargeTax2Fees']/checkbox[@accessiblename='Charge Sales Tax2']/checkbox[@accessiblename='Charge Sales Tax2']"
+			searchtimeout="30000ms">
+				/form[@controlname='FileDetailForm']/container[@controlname='panelPicBackground']/container[@controlname='panelRight']//container[@controlname='panelContent']/element[@controlname='ultraGroupTax']/element[@controlname='achkChargeTax2Fees']/checkbox[@accessiblename='Charge Sales Tax2']/checkbox[@accessiblename='Charge Sales Tax2']
+			</item>
 			<basepath>
 				/form[@controlname='FileDetailForm']
 			</basepath>
@@ -529,6 +559,55 @@ D8zerL8gSEaw7+rFqJ//CkX5CWkHqyZHVzU6AAAAAElFTkSuQmCC
 			searchtimeout="30000ms">
 				/form[@controlname='BillingDetailForm']/container[@controlname='menubar_Fill_Panel']//toolbar[@accessiblename='Toolbar']/button[@accessiblename='Send to Draft']
 			</item>
+			<item
+			addcaps="text,accessible"
+			capname="text"
+			id="27300593-8721-4e54-ba46-fd5541a359d8"
+			name="txtDraftFees"
+			refimgid="d999220e-6c28-4cd6-bda0-cfbcae3de876"
+			searchtimeout="30000ms">
+				/form[@controlname='BillingDetailForm']/container[@controlname='panelRightBase']//container[@controlname='panelBottomBase']/container[@controlname='DraftBillPanel']//container[@controlname='pnlDraftSummary']/?/?/element[@controlname='alblFeesValue']/text
+			</item>
+			<folder
+			addcaps="container,control,nativewindow"
+			capname="container"
+			id="bd3d675b-e2b5-48af-8105-72dd353c5131"
+			isrooted="True"
+			name="PnlDraftSummary"
+			refpath="/form[@controlname='BillingDetailForm']/container[@controlname='panelRightBase']/container[@controlname='panelRight']/picture[@controlname='picBackground']/container[@controlname='panelBase']/container[@controlname='panelBottomBase']/container[@controlname='DraftBillPanel']/container[@controlname='panelContactDetailsDetails']/container[@controlname='panelFrame']/container[@controlname='pnlDraftSummary']"
+			searchtimeout="30000ms"
+			usecache="False">
+				<item
+				addcaps="text,accessible"
+				capname="text"
+				id="096352a6-e22c-42e1-9fb2-823a087753cb"
+				name="txtDraftNewValues"
+				refimgid="71471624-e1fc-43b4-87c2-2e27e0ce6731"
+				searchtimeout="30000ms">
+					/form[@controlname='BillingDetailForm']/container[@controlname='panelRightBase']//container[@controlname='panelBottomBase']/container[@controlname='DraftBillPanel']//container[@controlname='pnlDraftSummary']/?/?/element[@controlname='alblNewBalanceValue']/text
+				</item>
+				<item
+				addcaps="text,accessible"
+				capname="text"
+				id="04dcff5e-0235-4cc4-b532-9451384a3cbb"
+				name="txtDraftTaxes"
+				refimgid="41c84ad5-ddbd-485e-8ad5-5dfce6b63c30"
+				searchtimeout="30000ms">
+					/form[@controlname='BillingDetailForm']/container[@controlname='panelRightBase']//container[@controlname='panelBottomBase']/container[@controlname='DraftBillPanel']//container[@controlname='pnlDraftSummary']/?/?/element[@controlname='alblTaxesValue']/text
+				</item>
+				<item
+				addcaps="text,accessible"
+				capname="text"
+				id="3afbf165-fd91-446e-94cf-951572385b09"
+				name="txtDraftTotalAmount"
+				refimgid="2e61bc64-ea01-42e7-b138-1abfb66056d2"
+				searchtimeout="30000ms">
+					/form[@controlname='BillingDetailForm']/container[@controlname='panelRightBase']//container[@controlname='panelBottomBase']/container[@controlname='DraftBillPanel']//container[@controlname='pnlDraftSummary']/?/?/element[@controlname='alblTotalNewChargesValue']/text
+				</item>
+				<basepath>
+					/form[@controlname='BillingDetailForm']/container[@controlname='panelRightBase']//container[@controlname='panelBottomBase']/container[@controlname='DraftBillPanel']//container[@controlname='pnlDraftSummary']
+				</basepath>
+			</folder>
 			<basepath>
 				/form[@controlname='BillingDetailForm']
 			</basepath>

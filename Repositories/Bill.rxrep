@@ -368,7 +368,7 @@ D8zerL8gSEaw7+rFqJ//CkX5CWkHqyZHVzU6AAAAAElFTkSuQmCC
 		capname="contextmenu"
 		id="626d823e-3a5e-4d4f-ac24-3c016fb5776a"
 		isrooted="True"
-		name="AmicusAttorneyXWin"
+		name="ContextMenu"
 		refpath="/contextmenu[@processname='AmicusAttorney.XWin']"
 		searchtimeout="30000ms"
 		usecache="True">
@@ -1020,7 +1020,7 @@ D8zerL8gSEaw7+rFqJ//CkX5CWkHqyZHVzU6AAAAAElFTkSuQmCC
 			capname="button"
 			id="54df6acb-4293-4072-a28a-ba44305ae65e"
 			name="btnSendToDraft"
-			refimgid="d0d38c59-7460-4d55-bb9f-4df9562f38fb"
+			refimgid="73742469-981c-4296-bacb-0c9fea66d57f"
 			refpath="/form[@controlname='BillingDetailForm']/container[@controlname='menubar_Fill_Panel']/element[@controlname='_BaseForm_Fill_Panel_Toolbars_Dock_Area_Top']/container[@accessiblename='DockTop']/toolbar[@accessiblename='Toolbar']/button[@accessiblename='Send to Draft']"
 			searchtimeout="30000ms">
 				/form[@controlname='BillingDetailForm']/container[@controlname='menubar_Fill_Panel']//toolbar[@accessiblename='Toolbar']/button[@accessiblename='Send to Draft']
@@ -1030,7 +1030,7 @@ D8zerL8gSEaw7+rFqJ//CkX5CWkHqyZHVzU6AAAAAElFTkSuQmCC
 			capname="button"
 			id="1a979161-4084-45af-9f1f-a7c96255b49f"
 			name="SelectFile"
-			refimgid="f3d85c57-100f-4dfa-b0ab-ec851537a020"
+			refimgid="eb13aaa2-8354-4d70-9d8b-fb239f9c5337"
 			searchtimeout="30000ms">
 				/form[@controlname='BillingDetailForm']/container[@controlname='panelRightBase']/container[@controlname='panelRight']/picture[@controlname='picBackground']/?/?/container[@controlname='panelBottomBase']//element[@controlname='ultraGroupBox1']/container[@controlname='scFile']/?/?/button[@accessiblerole='PushButton']
 			</item>
@@ -1041,7 +1041,7 @@ D8zerL8gSEaw7+rFqJ//CkX5CWkHqyZHVzU6AAAAAElFTkSuQmCC
 			name="btnPrintPost"
 			refimgid="aa622d3f-60ab-4492-b2e2-ecf1979e2045"
 			searchtimeout="30000ms">
-				/form[@controlname='BillingDetailForm']//toolbar[@automationid='Toolbar : toolbar']/button[@automationid='[Toolbar : toolbar Tools] Tool : KEY_PRINT_POST - Index : 21 ']
+				/form[@controlname='BillingDetailForm']/container[@controlname='menubar_Fill_Panel']//toolbar[@accessiblename='Toolbar']/button[@accessiblename='Print &amp; Post']
 			</item>
 			<item
 			addcaps="button,accessible"
@@ -1070,6 +1070,46 @@ D8zerL8gSEaw7+rFqJ//CkX5CWkHqyZHVzU6AAAAAElFTkSuQmCC
 			searchtimeout="30000ms">
 				/form[@controlname='BillingDetailForm']/container[@controlname='panelRightBase']/container[@controlname='panelRight']//container[@controlname='panelBottomBase']//element[@controlname='ultraPanel2']/?/?/element[@controlname='agrpCurrentCharges']/element[@controlname='atxtFees']/text
 			</item>
+			<folder
+			addcaps="toolbar,accessible"
+			capname="toolbar"
+			id="de585351-4603-475e-96bc-92d273dcf0d4"
+			isrooted="True"
+			name="Toolbar1"
+			refpath="/form[@controlname='BillingDetailForm']/container[@controlname='menubar_Fill_Panel']/element[@controlname='_BaseForm_Fill_Panel_Toolbars_Dock_Area_Top']/container[@accessiblename='DockTop']/toolbar[@accessiblename='Toolbar']"
+			searchtimeout="30000ms"
+			usecache="False">
+				<item
+				addcaps="toolbar,accessible"
+				capname="toolbar"
+				id="ff318873-1d06-4e7f-900f-ff212d46338f"
+				name="Toolbar"
+				refpath="/form[@controlname='BillingDetailForm']/container[@controlname='menubar_Fill_Panel']/element[@controlname='_BaseForm_Fill_Panel_Toolbars_Dock_Area_Top']/container[@accessiblename='DockTop']/toolbar[@accessiblename='Toolbar']"
+				searchtimeout="30000ms">
+					/form[@controlname='BillingDetailForm']/container[@controlname='menubar_Fill_Panel']//toolbar[@accessiblename='Toolbar']
+				</item>
+				<item
+				addcaps="button,accessible"
+				capname="button"
+				id="c70dfaae-e924-4e7f-958f-aafca2c55dfe"
+				name="ClearSelection"
+				refpath="/form[@controlname='BillingDetailForm']/container[@controlname='menubar_Fill_Panel']/element[@controlname='_BaseForm_Fill_Panel_Toolbars_Dock_Area_Top']/container[@accessiblename='DockTop']/toolbar[@accessiblename='Toolbar']/button[@accessiblename='Clear Selection']"
+				searchtimeout="30000ms">
+					/form[@controlname='BillingDetailForm']/container[@controlname='menubar_Fill_Panel']//toolbar[@accessiblename='Toolbar']/button[@accessiblename='Clear Selection']
+				</item>
+				<item
+				addcaps="unknown,accessible"
+				capname="unknown"
+				id="f67026d0-ee2d-4472-a721-112cdeb2e097"
+				name="None"
+				refpath="/form[@controlname='BillingDetailForm']/container[@controlname='menubar_Fill_Panel']/element[@controlname='_BaseForm_Fill_Panel_Toolbars_Dock_Area_Top']/container[@accessiblename='DockTop']/toolbar[@accessiblename='Toolbar']/element[@accessiblename='']"
+				searchtimeout="30000ms">
+					/form[@controlname='BillingDetailForm']/container[@controlname='menubar_Fill_Panel']//toolbar[@accessiblename='Toolbar']/element[@accessiblename='']
+				</item>
+				<basepath>
+					/form[@controlname='BillingDetailForm']/container[@controlname='menubar_Fill_Panel']//toolbar[@accessiblename='Toolbar']
+				</basepath>
+			</folder>
 			<basepath>
 				/form[@controlname='BillingDetailForm']
 			</basepath>
@@ -1095,6 +1135,7 @@ D8zerL8gSEaw7+rFqJ//CkX5CWkHqyZHVzU6AAAAAElFTkSuQmCC
 		id="cb322b72-71ea-4488-95f1-3358b49a00a1"
 		isrooted="True"
 		name="OutputPromptForm"
+		refimgid="574c5b85-72fc-4427-8776-e45c2662c63e"
 		searchtimeout="30000ms"
 		usecache="True">
 			<item
@@ -1111,7 +1152,7 @@ D8zerL8gSEaw7+rFqJ//CkX5CWkHqyZHVzU6AAAAAElFTkSuQmCC
 			capname="button"
 			id="8b7d5e5e-36b2-4954-bd9c-6ee48511dbfe"
 			name="btnOk1"
-			refimgid="7593f417-8539-4f9e-bba7-3d87ba030589"
+			refimgid="20be7de4-0e55-4624-ab62-80c7bdfe12ea"
 			searchtimeout="30000ms">
 				/form[@controlname='OutputForm']/?/?/toolbar[@automationid='Toolbar : toolbarBaseDesigner']/button[@automationid='[Toolbar : toolbarBaseDesigner Tools] Tool : TOOLBAR_BUTTON_OK - Index : 1 ']
 			</item>
@@ -1120,7 +1161,7 @@ D8zerL8gSEaw7+rFqJ//CkX5CWkHqyZHVzU6AAAAAElFTkSuQmCC
 			capname="button"
 			id="e1321e3c-6488-480a-8f9e-76db012d5c74"
 			name="btnOk"
-			refimgid="7b68ce59-d17e-4afa-8e59-d4e3b59238ec"
+			refimgid="8b3ef385-d216-4de6-8069-024dcfc60023"
 			searchtimeout="30000ms">
 				/form[@controlname='OutputForm']/?/?/toolbar[@automationid='Toolbar : toolbarBaseDesigner']/button[@automationid='[Toolbar : toolbarBaseDesigner Tools] Tool : TOOLBAR_BUTTON_OK - Index : 1 ']
 			</item>
@@ -1128,10 +1169,20 @@ D8zerL8gSEaw7+rFqJ//CkX5CWkHqyZHVzU6AAAAAElFTkSuQmCC
 			addcaps="button,accessible"
 			capname="checkbox"
 			id="1dd45ab8-55b9-4797-bc59-0a1da9791795"
-			name="OutputPrompt"
-			refimgid="11f5cd64-91c9-4942-b89b-fc663c6f31c7"
+			name="chkPrinter"
+			refimgid="bcf64fcf-9fe2-445d-b9b0-4675ddfd15ce"
 			searchtimeout="30000ms">
 				/form[@controlname='OutputForm']/container[@controlname='pnlBase']/?/?/element[@controlname='achkPrinter']/?/?/checkbox[@accessiblename='Printer']
+			</item>
+			<item
+			addcaps="checkbox,accessible"
+			capname="checkbox"
+			id="8038056a-ed2c-45e1-b203-c98eabfa5f5a"
+			name="chkScreen"
+			refimgid="069244d8-7bb2-471d-af65-d6e01a14d179"
+			refpath="/form[@controlname='OutputForm']/container[@controlname='pnlBase']/container[@controlname='pnlControls']/element[@controlname='achkScreen']/checkbox[@accessiblename='Screen']/checkbox[@accessiblename='Screen']"
+			searchtimeout="30000ms">
+				/form[@controlname='OutputForm']/container[@controlname='pnlBase']/?/?/element[@controlname='achkScreen']/?/?/checkbox[@accessiblename='Screen']
 			</item>
 			<basepath>
 				/form[@controlname='OutputForm']
@@ -1221,6 +1272,7 @@ D8zerL8gSEaw7+rFqJ//CkX5CWkHqyZHVzU6AAAAAElFTkSuQmCC
 		id="6e181381-ac6b-4909-a8c4-f81f024517ec"
 		isrooted="True"
 		name="ReportViewerForm"
+		refimgid="7d32c497-a2ca-4883-bbc3-bbf06b404733"
 		searchtimeout="30000ms"
 		usecache="True">
 			<item

@@ -534,6 +534,26 @@ D8zerL8gSEaw7+rFqJ//CkX5CWkHqyZHVzU6AAAAAElFTkSuQmCC
 				searchtimeout="30000ms">
 					/form[@controlname='GeneralFirmSettingsXtraForm']/container[@controlname='pnlBase']//container[@controlname='panelBase']/container[@controlname='panelTax']/container[@controlname='PanelTax2']/combobox[@controlname='acmbTax2Change']
 				</item>
+				<item
+				addcaps="text,uiautomation,uiautomationvalue"
+				capname="text"
+				id="3be4994c-8fdd-4faa-b463-e6574cfae8da"
+				name="txtSalesTax1"
+				refimgid="8ccc77b3-a9a7-49a3-8f08-16c3592c9358"
+				refpath="/form[@controlname='GeneralFirmSettingsXtraForm']/container[@controlname='pnlBase']/container[@controlname='pnlControls']/container[@controlname='panelTitleBase']/container[@controlname='panelBase']/container[@controlname='panelTax']/container[@controlname='PanelTax1']/element[@controlname='ateRateTax1']/text[@automationid='[Editor] Edit Area']"
+				searchtimeout="30000ms">
+					/form[@controlname='GeneralFirmSettingsXtraForm']/container[@controlname='pnlBase']//container[@controlname='panelBase']/container[@controlname='panelTax']/container[@controlname='PanelTax1']/?/?/text[@automationid='[Editor] Edit Area']
+				</item>
+				<item
+				addcaps="text,uiautomation,uiautomationvalue"
+				capname="text"
+				id="f03c4d83-1238-48b4-a67c-dc07e33db9ec"
+				name="txtSalesTax2"
+				refimgid="cfe30a48-1d09-4e76-8ddd-42f3a35a62b2"
+				refpath="/form[@controlname='GeneralFirmSettingsXtraForm']/container[@controlname='pnlBase']/container[@controlname='pnlControls']/container[@controlname='panelTitleBase']/container[@controlname='panelBase']/container[@controlname='panelTax']/container[@controlname='PanelTax2']/element[@controlname='ateRateTax2']/text[@automationid='[Editor] Edit Area']"
+				searchtimeout="30000ms">
+					/form[@controlname='GeneralFirmSettingsXtraForm']/container[@controlname='pnlBase']//container[@controlname='panelBase']/container[@controlname='panelTax']/container[@controlname='PanelTax2']/?/?/text[@automationid='[Editor] Edit Area']
+				</item>
 				<basepath>
 					/form[@controlname='GeneralFirmSettingsXtraForm']/container[@controlname='pnlBase']//container[@controlname='panelBase']/container[@controlname='panelTax']
 				</basepath>
@@ -777,9 +797,59 @@ Cd405uM14N+/f+egSnGDjyvnxjyyVQYbANL0FmjAm/aKH4+9zVWhSqCAgQEAq9YXqsYCPO8AAAAA
 SUVORK5CYII=
 			</icon>
 		</appfolder>
+		<appfolder
+		addcaps="form,control,nativewindow"
+		capname="form"
+		id="0abde5c6-cda9-48ba-9275-e19f920c3654"
+		isrooted="True"
+		name="DropDownForm"
+		refimgid="9b439083-c37b-4518-8373-1f06ef985dcf"
+		refpath="/form"
+		searchtimeout="30000ms"
+		usecache="False">
+			<item
+			addcaps="table,accessible"
+			capname="table"
+			id="0bc4323e-c32f-47d1-88ed-80a618099183"
+			name="tbDropdown"
+			refpath="/form/element/table"
+			searchtimeout="30000ms">
+				/form/?/?/table
+			</item>
+			<item
+			addcaps="treeitem,uiautomation"
+			capname="treeitem"
+			id="aef2d5c1-6bd9-462c-ad6f-cae7e5fc81f9"
+			name="TreeItem"
+			searchtimeout="30000ms">
+				/form//tree/treeitem[@name=$var]
+			</item>
+			<basepath>
+				/form
+			</basepath>
+			<icon>
+				iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAALGPC/xhBQAAAAlwSFlz
+AAAOxAAADsQBlSsOGwAAAlFJREFUOE+lk+tLk2EYh/eX9CGipCIyCKLo4HHlzA8SVoR9KogkkKDM
+CKRCCwQtKUjtIJSdrKggqQ+CFZmHHGlzzrU552HqNnWbO7zHXT3bBLXQoG74fXvv63c9z8tj+O9p
+aDFz55WDmuYBqpp+cLnRzJnqTk5UdlNc8YWic60Ulr6koOTJshw8/RjjkXIMdc9tNLVrNLZp3GqV
+qX4dofJZkIpHs5Q3+Tl710fJ7UlO1o5zvNrN0SoXh644yS8zsyZtB4baZjN1bwLcfBvm4oMpTt1w
+U3zdybFrDg5ftVNYYaPg0iCmcisHLgxgLLOQe95CRmk369KNGGoaXuAPxAhHNeZFQhGVYFghIDIb
+SsUbUPDMyLi9Mg6PhHVMosvqYePW7QJQ38JqE4+DokJEijMX0ZkKaoz6VSwuLxs2b8Nw/+n7hU//
+HE0HSYkzH9OZmdeYnNNw+xR+Tir0DP0FoItmWSwnm8M606J5TDQ7pxSs4zKd1tUACW1NLMtxglEd
+X0hjYlbD5VWwTSj0j8h8tgjAphUAi+pxZsRySl3FLtQtozK9wxLtfSsAkupqQl1PqQdS6o6kusJ3
+l0yXQ6LNnACkLwckb1yDqDh3YKn6dEq9zy3R45TosMX40PsbQOyiLqiHhLo/eesqIwl1z6L6V3uM
+T9Yo73q8rE8A7i0xEOVI4p+HYggATMyByxdnyKPRP6rxbVilw67wcVBOAtambRFvof4hufvzyTGa
+yBbJEskUycg1sS/HxN7sPPaI7M7KY1dmKjszUsnJL2LhTf7rGAy/AP7X5rYY5FLEAAAAAElFTkSu
+QmCC
+			</icon>
+		</appfolder>
 		<basepath>
 		</basepath>
 	</rootfolder>
 	<variables>
+		<var
+		id="46d457d2-ada1-4bac-8c64-b892ed9fd5db"
+		name="var">
+		</var>
 	</variables>
 </repository>

@@ -95,7 +95,13 @@ namespace SmokeTest.Modules.Attorney_FileDetails
 						activityname="Attend trial";
 						pf.activityname=activityname;
 						pf.ActivityCodeSelectForm.PnlBase.treeitemActivity.DoubleClick();
-						Report.Success("2 Activity Codes has been added to the list");
+						
+						activityname="Brief witness";
+						pf.activityname=activityname;
+						pf.ActivityCodeSelectForm.PnlBase.treeitemActivity.DoubleClick();
+						
+						
+						Report.Success("3 Activity Codes has been added to the list");
 						
 				}
 				if(rcount==1)

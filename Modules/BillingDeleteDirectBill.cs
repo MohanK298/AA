@@ -44,14 +44,14 @@ namespace SmokeTest.Modules
         	//bill.MainForm.optionPlus.Click("8;11");
             try{
         	bill.MainForm.listPayment.Click(System.Windows.Forms.MouseButtons.Right, "159;15");
-            bill.AmicusAttorneyXWin.optionDelete.Click();
+            bill.ContextMenu.optionDelete.Click();
             bill.PromptForm.btnYes.Click();	
         	} catch(Exception ex){
         		Report.Log(ReportLevel.Warn, "Module", "(Optional Action) " + ex.Message);
         	}
             
             bill.MainForm.optionPlus.Click(System.Windows.Forms.MouseButtons.Right);
-            bill.AmicusAttorneyXWin.optionDelete.Click();
+            bill.ContextMenu.optionDelete.Click();
             bill.PromptForm.btnYes.Click();
         }
         

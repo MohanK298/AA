@@ -346,6 +346,15 @@ D8zerL8gSEaw7+rFqJ//CkX5CWkHqyZHVzU6AAAAAElFTkSuQmCC
 			searchtimeout="30000ms">
 				/form[@controlname='TimeEntryDetailsForm']/?/?/container[@controlname='pnlBase']//element[@controlname='ateRateValue']/text[@automationid='[Editor] Edit Area']
 			</item>
+			<item
+			addcaps="combobox,accessible"
+			capname="combobox"
+			id="795adeb2-db6a-445f-9007-9fbcc6f4df0b"
+			name="cmbbxActivityCodes"
+			refimgid="6fe3e34f-03e0-44c1-a429-b6d178572f92"
+			searchtimeout="30000ms">
+				/form[@controlname='TimeEntryDetailsForm']/?/?/container[@controlname='pnlBase']//container[@controlname='panel1']/?/?/container[@controlname='pnlActivityCode']/?/?/combobox/combobox[@accessiblerole='ComboBox']
+			</item>
 			<basepath>
 				/form[@controlname='TimeEntryDetailsForm']
 			</basepath>

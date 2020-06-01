@@ -319,6 +319,10 @@ Module]]>
 					</var>
 				</databinding>
 			</testmodule>
+			<testcase
+			id="1597cab3-9506-4b4e-9af3-65b58c3fa965"
+			name="ActivityCodes">
+			</testcase>
 			<smartfoldernode
 			id="15d854c4-74db-4dcb-93c0-e6631cefe305"
 			name="AddDocumentAM">
@@ -706,6 +710,10 @@ module]]>
 			id="341fadd3-dddf-4ae8-ab25-7a805f3c16db"
 			name="AddStatusReport">
 			</smartfoldernode>
+			<smartfoldernode
+			id="34b9e085-67e6-47ea-89d1-cb53d2745280"
+			name="TaxField_Disabled_NonBillableActivityCodes">
+			</smartfoldernode>
 			<testmodule
 			id="34cd3154-baf5-43be-b487-7d53cc97d9e2"
 			name="VerifyAddtoFile_MultiSelectMails"
@@ -767,6 +775,12 @@ module]]>
 			id="3b2e6fab-e895-4cf3-bd0a-f93aef1425ae"
 			name="CreateAdjrnApptwithMilestone">
 			</smartfoldernode>
+			<testmodule
+			id="3b46a98c-4497-4bdc-8cc9-7e418d1c3565"
+			name="taxField_UTBMS_Validation"
+			ref="5f814254-880f-4e73-8669-65ec82e3eac2"
+			type="UserCode">
+			</testmodule>
 			<smartfoldernode
 			id="3b8cdc6f-aed2-476a-b641-c71793c8ac01"
 			name="SetupAccountingSystem_Add2ActivityCodes">
@@ -775,6 +789,12 @@ module]]>
 			id="3c631da3-c371-4f6d-90d4-06629be9c14c"
 			name="validateAutoComplete_Files_People"
 			ref="97362075-8551-4385-88ef-49dee508f35f"
+			type="UserCode">
+			</testmodule>
+			<testmodule
+			id="3c8113c4-5eb9-4019-a43b-052b695e7291"
+			name="tax_Calc_Tax_Not_tax_NotActivity_Codes"
+			ref="3e43f213-92c9-45a9-b6e6-eaed676972fe"
 			type="UserCode">
 			</testmodule>
 			<smartfoldernode
@@ -799,6 +819,10 @@ module]]>
 			<smartfoldernode
 			id="4119df73-9255-4fcf-9cc2-d1a4b74659f9"
 			name="ValidateStandardToolbars">
+			</smartfoldernode>
+			<smartfoldernode
+			id="41ea6dcb-a932-4781-96ed-251f3e30d4f4"
+			name="Tax_Calc_Tax_Not_tax_NotActivity_Codes">
 			</smartfoldernode>
 			<smartfoldernode
 			datasource="FileAPXData"
@@ -1387,6 +1411,10 @@ which will be used throughout the Smoke Test]]>
 			type="UserCode">
 			</testmodule>
 			<smartfoldernode
+			id="65f807e0-07a8-400a-81f8-a1a24fd616ab"
+			name="TaxField_PresentinActivityCodes">
+			</smartfoldernode>
+			<smartfoldernode
 			id="666db4da-8a00-402e-82a8-10fb9106bed8"
 			name="ValidateDocumentIndexViewer">
 			</smartfoldernode>
@@ -1565,6 +1593,10 @@ event]]>
 			ref="49b33d33-8e68-4bd7-ab32-81c58c96a0c0"
 			type="UserCode">
 			</testmodule>
+			<smartfoldernode
+			id="73c53d28-fd66-4c7e-b8d5-97ceca956daf"
+			name="TaxField_NewActivity_Code_Validation">
+			</smartfoldernode>
 			<teardown
 			id="75060f55-ed1d-4f19-b22a-9c9aa5a33a8f"
 			name="teardown">
@@ -1802,6 +1834,12 @@ event]]>
 			name="CreatePrecedent">
 			</smartfoldernode>
 			<testmodule
+			id="8beaf47f-a4c3-4cb1-86ca-6d95b8f38adc"
+			name="taxField_Disabled_NonBillable_ActivityCode"
+			ref="1f7c7050-608e-4b58-9240-37c5cb2d7253"
+			type="UserCode">
+			</testmodule>
+			<testmodule
 			enabled="False"
 			id="8c4e2209-97ce-4903-b9df-ac57fdae3f97"
 			name="SendDocViaEmail"
@@ -1842,6 +1880,12 @@ event]]>
 			id="8db74aaa-1945-4842-96da-7da77a05348e"
 			name="enableTaxSettingsInFirm"
 			ref="6c4c34bc-24cf-4dcc-a5aa-bd557decdfb1"
+			type="UserCode">
+			</testmodule>
+			<testmodule
+			id="8e740aef-d3e5-4fe0-81b0-7af27f5229b0"
+			name="tax_Calculation_Multiple_Activity"
+			ref="f3645a48-8382-4a12-bfd9-2c404c83beed"
 			type="UserCode">
 			</testmodule>
 			<testmodule
@@ -1942,6 +1986,10 @@ event]]>
 			ref="b1e7519a-f770-4367-9111-63130d97ff64"
 			type="UserCode">
 			</testmodule>
+			<smartfoldernode
+			id="9afca62b-518e-4366-8848-7c7d6bd20d5d"
+			name="TaxField_UTBMSActivityCode_Validation">
+			</smartfoldernode>
 			<testmodule
 			id="9b7753bc-133e-495c-844e-236ce94ccca2"
 			name="EditTimeEntry"
@@ -2021,6 +2069,12 @@ event]]>
 			id="9ff27ad7-cc65-4a21-938a-7e2df4345bb7"
 			name="CpNote">
 			</smartfoldernode>
+			<testmodule
+			id="a00880df-9595-4233-ae99-7d3343c4faac"
+			name="taxCalc_Single_Activity"
+			ref="25c305ab-5a63-4256-a22a-fce47ba07adb"
+			type="UserCode">
+			</testmodule>
 			<testmodule
 			id="a0153b89-03c4-4bf3-92b5-414dbdbe2c8d"
 			name="AddRelatedFiles"
@@ -2519,6 +2573,12 @@ directly and create a Bill]]>
 			name="ConvertNotes">
 			</smartfoldernode>
 			<testmodule
+			id="bb07b893-4977-4a12-aa40-c883d01a83b5"
+			name="taxField_NewActivityCodes_Validation"
+			ref="ccf1c2cf-1c4a-4b8d-9a1c-40626141a85f"
+			type="UserCode">
+			</testmodule>
+			<testmodule
 			id="bbf489e9-55ad-40bf-8c35-bbba191ce8f6"
 			name="AddFile"
 			ref="23f9d399-ea0a-4173-b826-d70b6404eaf0"
@@ -2719,6 +2779,12 @@ directly and create a Bill]]>
 			ref="1b4c0726-1b1d-4ac9-8051-42c59f28a19f"
 			type="UserCode">
 			</testmodule>
+			<testmodule
+			id="c9d376bf-379e-4383-bc6e-be4d90fdb77c"
+			name="tax_Calc_Activity_Codes"
+			ref="701a7880-4b5b-47bf-a299-4e792f1239df"
+			type="UserCode">
+			</testmodule>
 			<smartfoldernode
 			id="ca29637c-c17a-4632-ae73-5f94259f87e4"
 			name="DeletePhoneCall">
@@ -2883,6 +2949,10 @@ directly and create a Bill]]>
 					</var>
 				</databinding>
 			</testmodule>
+			<testcase
+			id="d570ba72-08ea-4906-bc05-473a81a71a6c"
+			name="Billing_Tax_Scenarios">
+			</testcase>
 			<smartfoldernode
 			datasource="FileAPXData"
 			id="d5b02be0-b086-4da3-b457-ad7b350addd1"
@@ -3021,6 +3091,12 @@ Page]]>
 			id="e11e54d2-7d19-41c3-92e6-4d791e0bfa37"
 			name="BasicConflictCheck">
 			</smartfoldernode>
+			<testmodule
+			id="e16367f4-ccab-47bf-9d0e-47bf51e86fc8"
+			name="activityCode_TaxValidation"
+			ref="ac4609e4-fff6-418e-937e-e9267ba56508"
+			type="UserCode">
+			</testmodule>
 			<smartfoldernode
 			id="e1c9a453-772a-495a-938f-a49e9be0141c"
 			name="DetailsButtonDisabled_MultiSelectMails">
@@ -3091,6 +3167,10 @@ Page]]>
 			name="VoidPaymentAPX">
 			</smartfoldernode>
 			<smartfoldernode
+			id="e7a981d7-9f42-47cc-b029-9b97f4b643e1"
+			name="Tax_Calculation_Multiple_Activity">
+			</smartfoldernode>
+			<smartfoldernode
 			id="e86fa298-7367-46c5-b8ee-1c655dd4c261"
 			name="VerifyAddFilePeopleFMtoDocDetail">
 			</smartfoldernode>
@@ -3104,6 +3184,10 @@ Page]]>
 			ref="1ecf0744-527b-410a-a31d-7eca4f2a3451"
 			type="UserCode">
 			</testmodule>
+			<smartfoldernode
+			id="e9319b32-becc-4f76-bd1d-cf044014f4b8"
+			name="Tax_Calculation_Tax_NotTax_Activity_Codes">
+			</smartfoldernode>
 			<smartfoldernode
 			id="e9a55d19-06cb-4062-b9bb-20e1e6ec25d0"
 			name="BillingDeleteBill">
@@ -3550,6 +3634,10 @@ bill]]>
 					</var>
 				</databinding>
 			</testmodule>
+			<smartfoldernode
+			id="feba135f-9fbd-4cb3-be99-7c9f8e556a35"
+			name="Tax_Calculation_Single_Activity">
+			</smartfoldernode>
 		</flatlistofchildren>
 		<childhierarchy>
 			<testsuite
@@ -5122,6 +5210,78 @@ bill]]>
 							</smartfoldernode>
 						</smartfoldernode>
 					</testcase>
+					<testcase
+					id="1597cab3-9506-4b4e-9af3-65b58c3fa965"
+					name="ActivityCodes">
+						<smartfoldernode
+						id="65f807e0-07a8-400a-81f8-a1a24fd616ab"
+						name="TaxField_PresentinActivityCodes">
+							<testmodule
+							id="e16367f4-ccab-47bf-9d0e-47bf51e86fc8"
+							name="activityCode_TaxValidation">
+							</testmodule>
+						</smartfoldernode>
+						<smartfoldernode
+						id="9afca62b-518e-4366-8848-7c7d6bd20d5d"
+						name="TaxField_UTBMSActivityCode_Validation">
+							<testmodule
+							id="3b46a98c-4497-4bdc-8cc9-7e418d1c3565"
+							name="taxField_UTBMS_Validation">
+							</testmodule>
+						</smartfoldernode>
+						<smartfoldernode
+						id="73c53d28-fd66-4c7e-b8d5-97ceca956daf"
+						name="TaxField_NewActivity_Code_Validation">
+							<testmodule
+							id="bb07b893-4977-4a12-aa40-c883d01a83b5"
+							name="taxField_NewActivityCodes_Validation">
+							</testmodule>
+						</smartfoldernode>
+						<smartfoldernode
+						id="34b9e085-67e6-47ea-89d1-cb53d2745280"
+						name="TaxField_Disabled_NonBillableActivityCodes">
+							<testmodule
+							id="8beaf47f-a4c3-4cb1-86ca-6d95b8f38adc"
+							name="taxField_Disabled_NonBillable_ActivityCode">
+							</testmodule>
+						</smartfoldernode>
+					</testcase>
+					<testcase
+					id="d570ba72-08ea-4906-bc05-473a81a71a6c"
+					name="Billing_Tax_Scenarios">
+						<smartfoldernode
+						id="feba135f-9fbd-4cb3-be99-7c9f8e556a35"
+						name="Tax_Calculation_Single_Activity">
+							<testmodule
+							id="a00880df-9595-4233-ae99-7d3343c4faac"
+							name="taxCalc_Single_Activity">
+							</testmodule>
+						</smartfoldernode>
+						<smartfoldernode
+						id="e7a981d7-9f42-47cc-b029-9b97f4b643e1"
+						name="Tax_Calculation_Multiple_Activity">
+							<testmodule
+							id="8e740aef-d3e5-4fe0-81b0-7af27f5229b0"
+							name="tax_Calculation_Multiple_Activity">
+							</testmodule>
+						</smartfoldernode>
+						<smartfoldernode
+						id="e9319b32-becc-4f76-bd1d-cf044014f4b8"
+						name="Tax_Calculation_Tax_NotTax_Activity_Codes">
+							<testmodule
+							id="c9d376bf-379e-4383-bc6e-be4d90fdb77c"
+							name="tax_Calc_Activity_Codes">
+							</testmodule>
+						</smartfoldernode>
+						<smartfoldernode
+						id="41ea6dcb-a932-4781-96ed-251f3e30d4f4"
+						name="Tax_Calc_Tax_Not_tax_NotActivity_Codes">
+							<testmodule
+							id="3c8113c4-5eb9-4019-a43b-052b695e7291"
+							name="tax_Calc_Tax_Not_tax_NotActivity_Codes">
+							</testmodule>
+						</smartfoldernode>
+					</testcase>
 				</testcase>
 			</testsuite>
 		</childhierarchy>
@@ -5749,6 +5909,24 @@ bill]]>
 	default="TestRun">
 		<testconfiguration
 		name="TestRun">
+			<testcontainer
+			id="41ea6dcb-a932-4781-96ed-251f3e30d4f4">
+			</testcontainer>
+			<testcontainer
+			id="658e3020-1e20-4cb1-b196-89a6ef9ca8a2">
+			</testcontainer>
+			<testcontainer
+			id="d570ba72-08ea-4906-bc05-473a81a71a6c">
+			</testcontainer>
+			<testcontainer
+			id="e7a981d7-9f42-47cc-b029-9b97f4b643e1">
+			</testcontainer>
+			<testcontainer
+			id="e9319b32-becc-4f76-bd1d-cf044014f4b8">
+			</testcontainer>
+			<testcontainer
+			id="feba135f-9fbd-4cb3-be99-7c9f8e556a35">
+			</testcontainer>
 		</testconfiguration>
 	</testconfigurations>
 	<references>

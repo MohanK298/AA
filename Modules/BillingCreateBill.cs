@@ -37,7 +37,7 @@ namespace SmokeTest.Modules
         public void Perform(){
         	bill.MainForm.FilesIndexForm.listFirstFound.Click(System.Windows.Forms.MouseButtons.Right);
         	Delay.Seconds(1);
-        	bill.AmicusAttorneyXWin.optionBill.Click();
+        	bill.ContextMenu.optionBill.Click();
         	Delay.Seconds(2);
         	if(bill.PromptForm.SelfInfo.Exists(3000))
         	{

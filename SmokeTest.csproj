@@ -188,6 +188,9 @@
     <Compile Include="makeAssociationValidation.cs">
       <id>e9981751-cb92-4d7e-89dc-631af32ec1ea</id>
     </Compile>
+    <Compile Include="Modules\activityCode_TaxValidation.cs">
+      <id>6f00311b-4a27-4476-bfe9-9aa96868cf68</id>
+    </Compile>
     <Compile Include="Modules\AddContact.cs">
       <id>592a0510-1ead-4814-ab98-e85f01e1f1e5</id>
     </Compile>
@@ -586,6 +589,27 @@
     </Compile>
     <Compile Include="Modules\startApp.cs">
       <id>933c19c6-cae7-4701-96a8-30f93cab68e2</id>
+    </Compile>
+    <Compile Include="Modules\taxCalc_Single_Activity.cs">
+      <id>d4b88775-b660-46ee-86ce-8e3371c2f65c</id>
+    </Compile>
+    <Compile Include="Modules\taxField_Disabled_NonBillable_ActivityCode.cs">
+      <id>74cb237e-ee25-4e33-9719-4d9d461c4eba</id>
+    </Compile>
+    <Compile Include="Modules\taxField_NewActivityCodes_Validation.cs">
+      <id>d74f86dd-c7ce-4f5c-ba5a-9fbf15800015</id>
+    </Compile>
+    <Compile Include="Modules\taxField_UTBMS_Validation.cs">
+      <id>fdabb94d-ae6e-42eb-affb-8cc53ebe5bbd</id>
+    </Compile>
+    <Compile Include="Modules\tax_Calculation_Multiple_Activity.cs">
+      <id>fb5c2c3b-07e4-4030-bdc1-73b4ec282e5a</id>
+    </Compile>
+    <Compile Include="Modules\tax_Calc_Activity_Codes.cs">
+      <id>872243a4-2da8-4cac-96c3-a893ccc14480</id>
+    </Compile>
+    <Compile Include="Modules\tax_Calc_Tax_Not_tax_NotActivity_Codes.cs">
+      <id>4414d7b2-8451-4d77-990f-78737bcef40d</id>
     </Compile>
     <Compile Include="Modules\testViewNavigation.cs">
       <id>d9857e46-dc36-4d57-a32e-6e9af474156d</id>

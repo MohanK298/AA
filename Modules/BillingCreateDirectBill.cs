@@ -126,7 +126,7 @@ namespace SmokeTest.Modules
         
     	public void PerformCreateBill(){
     		bill.MainForm.FilesIndexForm.listFirstFound.Click(System.Windows.Forms.MouseButtons.Right);
-        	bill.AmicusAttorneyXWin.optionBill.Click();	
+        	bill.ContextMenu.optionBill.Click();	
         	file.BillingDetailForm.txtFees.PressKeys(feesValue);
         	file.BillingDetailForm.txtExpenses.Click();
         	

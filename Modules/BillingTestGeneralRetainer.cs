@@ -70,7 +70,7 @@ namespace SmokeTest.Modules
         public void Perform(){
         	FindFile();
         	bill.MainForm.FilesIndexForm.listFirstFound.Click(System.Windows.Forms.MouseButtons.Right);
-        	bill.AmicusAttorneyXWin.optionReceivePayment.Click();
+        	bill.ContextMenu.optionReceivePayment.Click();
         	bill.ReceivePaymentForm.txtAmount.PressKeys(amountReceived);
         	bill.ReceivePaymentForm.btnSaveClose.Click();
         	//bill.OutputPromptForm.OutputPrompt.Click();

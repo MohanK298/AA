@@ -111,7 +111,7 @@ namespace SmokeTest.Modules
         
         public void PerformTrustCheck(){
         	bill.MainForm.FilesIndexForm.listFirstFound.Click(System.Windows.Forms.MouseButtons.Right);
-        	bill.AmicusAttorneyXWin.optionTrust.Click();
+        	bill.ContextMenu.optionTrust.Click();
         	bill.AmicusAttorneyXWin2.optionTrustCheck.Click();
         	bill.TrustDetailBaseForm.PnlBase.btnAddContact.Click();
         	bill.PeopleSelectForm.btnQuickFind.Click();

@@ -776,6 +776,7 @@ namespace SmokeTest.Repositories
             RepoItemInfo _txtrateInfo;
             RepoItemInfo _txtratenewInfo;
             RepoItemInfo _cmbbxactivitycodesInfo;
+            RepoItemInfo _cmbbxbillbehaviorInfo;
 
             /// <summary>
             /// Creates a new TimeEntryDetailsForm  folder.
@@ -791,6 +792,7 @@ namespace SmokeTest.Repositories
                 _txtrateInfo = new RepoItemInfo(this, "txtRate", "?/?/container[@controlname='pnlBase']//element[@controlname='ateRateValue']/text[@controlname='ateRateValue_EmbeddableTextBox']", 30000, null, "40eb9835-73ea-411f-8340-ca7ebf46d43f");
                 _txtratenewInfo = new RepoItemInfo(this, "txtRateNew", "?/?/container[@controlname='pnlBase']//element[@controlname='ateRateValue']/text[@automationid='[Editor] Edit Area']", 30000, null, "256f3d3a-f133-4085-a92f-c92da107369a");
                 _cmbbxactivitycodesInfo = new RepoItemInfo(this, "cmbbxActivityCodes", "?/?/container[@controlname='pnlBase']//container[@controlname='panel1']/?/?/container[@controlname='pnlActivityCode']/?/?/combobox/combobox[@accessiblerole='ComboBox']", 30000, null, "795adeb2-db6a-445f-9007-9fbcc6f4df0b");
+                _cmbbxbillbehaviorInfo = new RepoItemInfo(this, "cmbbxBillBehavior", "container[@controlname='menubar_Fill_Panel']/container[@controlname='pnlBase']//container[@controlname='panel1']//combobox", 30000, null, "dad97b53-c0bb-4448-a89b-b662056be18e");
             }
 
             /// <summary>
@@ -1006,6 +1008,30 @@ namespace SmokeTest.Repositories
                 get
                 {
                     return _cmbbxactivitycodesInfo;
+                }
+            }
+
+            /// <summary>
+            /// The cmbbxBillBehavior item.
+            /// </summary>
+            [RepositoryItem("dad97b53-c0bb-4448-a89b-b662056be18e")]
+            public virtual Ranorex.ComboBox cmbbxBillBehavior
+            {
+                get
+                {
+                    return _cmbbxbillbehaviorInfo.CreateAdapter<Ranorex.ComboBox>(true);
+                }
+            }
+
+            /// <summary>
+            /// The cmbbxBillBehavior item info.
+            /// </summary>
+            [RepositoryItemInfo("dad97b53-c0bb-4448-a89b-b662056be18e")]
+            public virtual RepoItemInfo cmbbxBillBehaviorInfo
+            {
+                get
+                {
+                    return _cmbbxbillbehaviorInfo;
                 }
             }
         }

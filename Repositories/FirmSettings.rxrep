@@ -1870,6 +1870,58 @@ QmCC
 				/form[@controlname='SQLReportGenerateForm']
 			</basepath>
 		</appfolder>
+		<appfolder
+		capname="form"
+		id="85335f29-abaf-4b88-95db-d7decb030c2f"
+		isrooted="True"
+		name="ReportViewerForm"
+		refimgid="46a48bc7-c2d6-42c7-8d0b-71fc6274f6d5"
+		searchtimeout="30000ms"
+		usecache="False">
+			<item
+			addcaps="text,accessible"
+			capname="text"
+			id="be6dc629-7155-47c2-a684-eea6a981bcb0"
+			name="txtHeader"
+			refimgid="1fdb96ec-1132-4b8b-83df-fe9640950106"
+			refpath="/form[@controlname='ReportViewerForm']/container[@controlname='panelViewer']/container[@controlname='reportViewer']/container[@controlname='paramsSplitContainer']/container[@controlname='tableLayoutPanel1']/container[@controlname='panel2']/container[@controlname='dmSplitContainer']/container[@controlname='tableLayoutPanel1']/container[@controlname='panel2']/container[@controlname='winRSviewer']/container[@controlname='m_reportPanel']/container[@accessiblename='Report']/container[@accessiblename='Header']/text[@accessiblename='Text Box']"
+			searchtimeout="30000ms">
+				/form[@controlname='ReportViewerForm']/container[@controlname='panelViewer']/container[@controlname='reportViewer']/container[@controlname='paramsSplitContainer']//container[@controlname='dmSplitContainer']//container[@accessiblename='Report']/container[@accessiblename='Header']/text[@accessiblename='Text Box']
+			</item>
+			<item
+			addcaps="text,accessible"
+			capname="text"
+			id="a0880458-d1b8-4969-b7b7-a05ce0c84dc4"
+			name="txtFileData"
+			refimgid="24e4cf61-3f59-4c2f-b31f-f3af4e634ffa"
+			searchtimeout="30000ms">
+				/form[@controlname='ReportViewerForm']/container[@controlname='panelViewer']/container[@controlname='reportViewer']/container[@controlname='paramsSplitContainer']//container[@controlname='dmSplitContainer']//container[@accessiblename='Report']/container[@accessiblename='Body']/?/?/container[@accessiblename='Rectangle']/container[1]/text[@text&gt;$filedetailsdata]
+			</item>
+			<item
+			capname="text"
+			id="a9c7bea0-5e11-4a50-baa4-6114762615dd"
+			name="txtReferenceSummaryData"
+			searchtimeout="30000ms">
+				/form[@controlname='ReportViewerForm']/container[@controlname='panelViewer']/container[@controlname='reportViewer']/container[@controlname='paramsSplitContainer']//container[@controlname='dmSplitContainer']//container[@accessiblename='Report']/container[@accessiblename='Body']/?/?/container[@accessiblename='Rectangle']/container[4]/text[@text&gt;$refsummarydata]
+			</item>
+			<item
+			capname="text"
+			id="e8a1770b-3e14-4204-bded-b78e44306be5"
+			name="txtFileTypeSummary"
+			searchtimeout="30000ms">
+				/form[@controlname='ReportViewerForm']/container[@controlname='panelViewer']/container[@controlname='reportViewer']/container[@controlname='paramsSplitContainer']//container[@controlname='dmSplitContainer']//container[@accessiblename='Report']/container[@accessiblename='Body']/?/?/container[@accessiblename='Rectangle']/container[3]/text[@text&gt;$filetypesummarydata]
+			</item>
+			<item
+			capname="text"
+			id="af380e40-4e93-49c3-bf42-b251a963a3d5"
+			name="txtresplawyer"
+			searchtimeout="30000ms">
+				/form[@controlname='ReportViewerForm']/container[@controlname='panelViewer']/container[@controlname='reportViewer']/container[@controlname='paramsSplitContainer']//container[@controlname='dmSplitContainer']//container[@accessiblename='Report']/container[@accessiblename='Body']/?/?/container[@accessiblename='Rectangle']/container[3]/text[@text&gt;$lawyersummarydata]
+			</item>
+			<basepath>
+				/form[@controlname='ReportViewerForm']
+			</basepath>
+		</appfolder>
 		<basepath>
 		</basepath>
 	</rootfolder>
@@ -1877,6 +1929,26 @@ QmCC
 		<var
 		id="b5914a12-2d90-4afc-a64e-d53dcb8e7a97"
 		name="var">
+		</var>
+		<var
+		id="1a8993f9-e910-4b86-ba2b-970e7763de40"
+		name="curdata">
+		</var>
+		<var
+		id="cf9c1f6f-445e-4c03-917b-2ac87dfd97d1"
+		name="refsummarydata">
+		</var>
+		<var
+		id="62d6eb55-76c0-45e9-8ff0-30fe57470d8b"
+		name="filetypesummarydata">
+		</var>
+		<var
+		id="6166dd2e-5454-417c-8585-cd02ac0429ce"
+		name="lawyersummarydata">
+		</var>
+		<var
+		id="8e37f727-c0b2-4ac8-8f8d-5a47cd379a6a"
+		name="filedetailsdata">
 		</var>
 	</variables>
 </repository>

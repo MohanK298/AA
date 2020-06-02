@@ -355,6 +355,15 @@ D8zerL8gSEaw7+rFqJ//CkX5CWkHqyZHVzU6AAAAAElFTkSuQmCC
 			searchtimeout="30000ms">
 				/form[@controlname='TimeEntryDetailsForm']/?/?/container[@controlname='pnlBase']//container[@controlname='panel1']/?/?/container[@controlname='pnlActivityCode']/?/?/combobox/combobox[@accessiblerole='ComboBox']
 			</item>
+			<item
+			addcaps="combobox,accessible"
+			capname="combobox"
+			id="dad97b53-c0bb-4448-a89b-b662056be18e"
+			name="cmbbxBillBehavior"
+			refimgid="005eda97-c74a-4e9e-a427-c14373dc1d4c"
+			searchtimeout="30000ms">
+				/form[@controlname='TimeEntryDetailsForm']/container[@controlname='menubar_Fill_Panel']/container[@controlname='pnlBase']//container[@controlname='panel1']//combobox
+			</item>
 			<basepath>
 				/form[@controlname='TimeEntryDetailsForm']
 			</basepath>

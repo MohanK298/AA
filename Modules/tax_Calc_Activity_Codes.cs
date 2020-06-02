@@ -103,6 +103,15 @@ namespace SmokeTest.Modules
         	file.FileDetailForm.BillSettings.Click();
         	file.FileDetailForm.cbChargeSalesTax1.Check();
         	file.FileDetailForm.cbChargeSalesTax2.Check();
+        	
+        	file.var="Answered ad";
+        	file.FileDetailForm.Accounting.Click();
+        	file.FileDetailForm.cmbbxMatterCameToUs.Click();
+        	file.DropDownForm.TreeItem.Click();
+        	
+        	
+        	
+        	
         	file.FileDetailForm.btnSaveClose.Click();
         	Report.Success("File Created successfully with Sales Tax 1 and Tax 2 enabled");
     	}
@@ -122,6 +131,18 @@ namespace SmokeTest.Modules
         	te.TimeEntryDetailsForm.cmbbxActivityCodes.Click();
         	te.DropDownForm.TreeItem.Click();
         	
+        	te.var="Normal";
+        	te.TimeEntryDetailsForm.cmbbxBillingRate.Click();
+        	te.DropDownForm.TreeItem.Click();
+        	
+        	
+        	
+        	te.var="Bill";
+        	te.TimeEntryDetailsForm.cmbbxBillBehavior.Click();
+        	te.DropDownForm.TreeItem.Click();
+        	
+        	
+        	
         	te.TimeEntryDetailsForm.btnPost.Click();
         	Report.Success("Time Entry 1 successfully created and posted .");
         	
@@ -138,12 +159,22 @@ namespace SmokeTest.Modules
         	te.TimeEntryDetailsForm.cmbbxActivityCodes.Click();
         	te.DropDownForm.TreeItem.Click();
         	
+        	te.var="Normal";
+        	te.TimeEntryDetailsForm.cmbbxBillingRate.Click();
+        	te.DropDownForm.TreeItem.Click();
+        	
+        	te.var="Bill";
+        	te.TimeEntryDetailsForm.cmbbxBillBehavior.Click();
+        	te.DropDownForm.TreeItem.Click();
+        	
+        	
+        	
         	te.TimeEntryDetailsForm.btnPost.Click();
         	Report.Success("Time Entry 2 successfully created and posted .");
         	
         	
         	
-        		te.MainForm.btnMenuItem.Click();
+        	te.MainForm.btnMenuItem.Click();
         	te.AmicusAttorneyXWin.MenuPopup.Click("58;21");
         	te.FileSelectForm.btnQuickFind.Click();
         	te.FindFilesForm.txtFindContact.TextValue = fileName;
@@ -153,6 +184,15 @@ namespace SmokeTest.Modules
         	
         	te.TimeEntryDetailsForm.cmbbxActivityCodes.Click();
         	te.DropDownForm.TreeItem.Click();
+        	
+        	te.var="Normal";
+        	te.TimeEntryDetailsForm.cmbbxBillingRate.Click();
+        	te.DropDownForm.TreeItem.Click();
+        	
+        	te.var="Bill";
+        	te.TimeEntryDetailsForm.cmbbxBillBehavior.Click();
+        	te.DropDownForm.TreeItem.Click();
+        	
         	
         	te.TimeEntryDetailsForm.btnPost.Click();
         	Report.Success("Time Entry 3 successfully created and posted .");
@@ -192,7 +232,7 @@ namespace SmokeTest.Modules
      		
      		if(bill.InvoiceEmailForm.SelfInfo.Exists(3000))
      		{
-     			bill.InvoiceEmailForm.Checkbox.Check();
+     			bill.InvoiceEmailForm.cbSelectAll.Click();
      			bill.InvoiceEmailForm.btnProceed.Click();
      			Report.Success("Email Bills is displayed successfully");
      			if(bill.PromptForm.SelfInfo.Exists(5000))

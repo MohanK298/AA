@@ -1247,6 +1247,16 @@ D8zerL8gSEaw7+rFqJ//CkX5CWkHqyZHVzU6AAAAAElFTkSuQmCC
 			searchtimeout="30000ms">
 				/form[@controlname='InvoiceEmailForm']//button[@name='Proceed']
 			</item>
+			<item
+			addcaps="cell,accessible"
+			capname="cell"
+			id="7db860b8-ee6a-4ba1-9e83-1d073b2277fc"
+			name="cbSelectAll"
+			refimgid="53d610bf-a45e-4546-ba2f-761871e73b0b"
+			refpath="/form[@controlname='InvoiceEmailForm']/container[@controlname='pnlBase']/container[@controlname='pnlControls']/element[@controlname='agrdInvoiceEmail']/table[@accessiblename='Band 0']/row[@accessiblename='Band 0 row 1']/cell[1]"
+			searchtimeout="30000ms">
+				/form[@controlname='InvoiceEmailForm']/container[@controlname='pnlBase']//table[@accessiblename='Band 0']/row/cell[1]
+			</item>
 			<basepath>
 				/form[@controlname='InvoiceEmailForm']
 			</basepath>

@@ -42,6 +42,7 @@ namespace SmokeTest.Repositories
         FirmSettingsFolders.ActivityCodeDetailsFormAppFolder _activitycodedetailsform;
         FirmSettingsFolders.TaskBasedActivityCodeDetailsFormAppFolder _taskbasedactivitycodedetailsform;
         FirmSettingsFolders.SQLReportFormAppFolder _sqlreportform;
+        FirmSettingsFolders.ReportViewerFormAppFolder _reportviewerform;
 
         /// <summary>
         /// Gets the singleton class instance representing the FirmSettings element repository.
@@ -73,6 +74,7 @@ namespace SmokeTest.Repositories
             _activitycodedetailsform = new FirmSettingsFolders.ActivityCodeDetailsFormAppFolder(this);
             _taskbasedactivitycodedetailsform = new FirmSettingsFolders.TaskBasedActivityCodeDetailsFormAppFolder(this);
             _sqlreportform = new FirmSettingsFolders.SQLReportFormAppFolder(this);
+            _reportviewerform = new FirmSettingsFolders.ReportViewerFormAppFolder(this);
         }
 
 #region Variables
@@ -87,6 +89,66 @@ namespace SmokeTest.Repositories
         {
             get { return _var; }
             set { _var = value; }
+        }
+
+        string _curdata = "";
+
+        /// <summary>
+        /// Gets or sets the value of variable curdata.
+        /// </summary>
+        [TestVariable("1a8993f9-e910-4b86-ba2b-970e7763de40")]
+        public string curdata
+        {
+            get { return _curdata; }
+            set { _curdata = value; }
+        }
+
+        string _refsummarydata = "";
+
+        /// <summary>
+        /// Gets or sets the value of variable refsummarydata.
+        /// </summary>
+        [TestVariable("cf9c1f6f-445e-4c03-917b-2ac87dfd97d1")]
+        public string refsummarydata
+        {
+            get { return _refsummarydata; }
+            set { _refsummarydata = value; }
+        }
+
+        string _filetypesummarydata = "";
+
+        /// <summary>
+        /// Gets or sets the value of variable filetypesummarydata.
+        /// </summary>
+        [TestVariable("62d6eb55-76c0-45e9-8ff0-30fe57470d8b")]
+        public string filetypesummarydata
+        {
+            get { return _filetypesummarydata; }
+            set { _filetypesummarydata = value; }
+        }
+
+        string _lawyersummarydata = "";
+
+        /// <summary>
+        /// Gets or sets the value of variable lawyersummarydata.
+        /// </summary>
+        [TestVariable("6166dd2e-5454-417c-8585-cd02ac0429ce")]
+        public string lawyersummarydata
+        {
+            get { return _lawyersummarydata; }
+            set { _lawyersummarydata = value; }
+        }
+
+        string _filedetailsdata = "";
+
+        /// <summary>
+        /// Gets or sets the value of variable filedetailsdata.
+        /// </summary>
+        [TestVariable("8e37f727-c0b2-4ac8-8f8d-5a47cd379a6a")]
+        public string filedetailsdata
+        {
+            get { return _filedetailsdata; }
+            set { _filedetailsdata = value; }
         }
 
 #endregion
@@ -236,6 +298,15 @@ namespace SmokeTest.Repositories
         public virtual FirmSettingsFolders.SQLReportFormAppFolder SQLReportForm
         {
             get { return _sqlreportform; }
+        }
+
+        /// <summary>
+        /// The ReportViewerForm folder.
+        /// </summary>
+        [RepositoryFolder("85335f29-abaf-4b88-95db-d7decb030c2f")]
+        public virtual FirmSettingsFolders.ReportViewerFormAppFolder ReportViewerForm
+        {
+            get { return _reportviewerform; }
         }
     }
 
@@ -5298,6 +5369,176 @@ namespace SmokeTest.Repositories
                 get
                 {
                     return _btnokInfo;
+                }
+            }
+        }
+
+        /// <summary>
+        /// The ReportViewerFormAppFolder folder.
+        /// </summary>
+        [RepositoryFolder("85335f29-abaf-4b88-95db-d7decb030c2f")]
+        public partial class ReportViewerFormAppFolder : RepoGenBaseFolder
+        {
+            RepoItemInfo _txtheaderInfo;
+            RepoItemInfo _txtfiledataInfo;
+            RepoItemInfo _txtreferencesummarydataInfo;
+            RepoItemInfo _txtfiletypesummaryInfo;
+            RepoItemInfo _txtresplawyerInfo;
+
+            /// <summary>
+            /// Creates a new ReportViewerForm  folder.
+            /// </summary>
+            public ReportViewerFormAppFolder(RepoGenBaseFolder parentFolder) :
+                    base("ReportViewerForm", "/form[@controlname='ReportViewerForm']", parentFolder, 30000, null, false, "85335f29-abaf-4b88-95db-d7decb030c2f", "")
+            {
+                _txtheaderInfo = new RepoItemInfo(this, "txtHeader", "container[@controlname='panelViewer']/container[@controlname='reportViewer']/container[@controlname='paramsSplitContainer']//container[@controlname='dmSplitContainer']//container[@accessiblename='Report']/container[@accessiblename='Header']/text[@accessiblename='Text Box']", 30000, null, "be6dc629-7155-47c2-a684-eea6a981bcb0");
+                _txtfiledataInfo = new RepoItemInfo(this, "txtFileData", "container[@controlname='panelViewer']/container[@controlname='reportViewer']/container[@controlname='paramsSplitContainer']//container[@controlname='dmSplitContainer']//container[@accessiblename='Report']/container[@accessiblename='Body']/?/?/container[@accessiblename='Rectangle']/container[1]/text[@text>$filedetailsdata]", 30000, null, "a0880458-d1b8-4969-b7b7-a05ce0c84dc4");
+                _txtreferencesummarydataInfo = new RepoItemInfo(this, "txtReferenceSummaryData", "container[@controlname='panelViewer']/container[@controlname='reportViewer']/container[@controlname='paramsSplitContainer']//container[@controlname='dmSplitContainer']//container[@accessiblename='Report']/container[@accessiblename='Body']/?/?/container[@accessiblename='Rectangle']/container[4]/text[@text>$refsummarydata]", 30000, null, "a9c7bea0-5e11-4a50-baa4-6114762615dd");
+                _txtfiletypesummaryInfo = new RepoItemInfo(this, "txtFileTypeSummary", "container[@controlname='panelViewer']/container[@controlname='reportViewer']/container[@controlname='paramsSplitContainer']//container[@controlname='dmSplitContainer']//container[@accessiblename='Report']/container[@accessiblename='Body']/?/?/container[@accessiblename='Rectangle']/container[3]/text[@text>$filetypesummarydata]", 30000, null, "e8a1770b-3e14-4204-bded-b78e44306be5");
+                _txtresplawyerInfo = new RepoItemInfo(this, "txtresplawyer", "container[@controlname='panelViewer']/container[@controlname='reportViewer']/container[@controlname='paramsSplitContainer']//container[@controlname='dmSplitContainer']//container[@accessiblename='Report']/container[@accessiblename='Body']/?/?/container[@accessiblename='Rectangle']/container[3]/text[@text>$lawyersummarydata]", 30000, null, "af380e40-4e93-49c3-bf42-b251a963a3d5");
+            }
+
+            /// <summary>
+            /// The Self item.
+            /// </summary>
+            [RepositoryItem("85335f29-abaf-4b88-95db-d7decb030c2f")]
+            public virtual Ranorex.Form Self
+            {
+                get
+                {
+                    return _selfInfo.CreateAdapter<Ranorex.Form>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Self item info.
+            /// </summary>
+            [RepositoryItemInfo("85335f29-abaf-4b88-95db-d7decb030c2f")]
+            public virtual RepoItemInfo SelfInfo
+            {
+                get
+                {
+                    return _selfInfo;
+                }
+            }
+
+            /// <summary>
+            /// The txtHeader item.
+            /// </summary>
+            [RepositoryItem("be6dc629-7155-47c2-a684-eea6a981bcb0")]
+            public virtual Ranorex.Text txtHeader
+            {
+                get
+                {
+                    return _txtheaderInfo.CreateAdapter<Ranorex.Text>(true);
+                }
+            }
+
+            /// <summary>
+            /// The txtHeader item info.
+            /// </summary>
+            [RepositoryItemInfo("be6dc629-7155-47c2-a684-eea6a981bcb0")]
+            public virtual RepoItemInfo txtHeaderInfo
+            {
+                get
+                {
+                    return _txtheaderInfo;
+                }
+            }
+
+            /// <summary>
+            /// The txtFileData item.
+            /// </summary>
+            [RepositoryItem("a0880458-d1b8-4969-b7b7-a05ce0c84dc4")]
+            public virtual Ranorex.Text txtFileData
+            {
+                get
+                {
+                    return _txtfiledataInfo.CreateAdapter<Ranorex.Text>(true);
+                }
+            }
+
+            /// <summary>
+            /// The txtFileData item info.
+            /// </summary>
+            [RepositoryItemInfo("a0880458-d1b8-4969-b7b7-a05ce0c84dc4")]
+            public virtual RepoItemInfo txtFileDataInfo
+            {
+                get
+                {
+                    return _txtfiledataInfo;
+                }
+            }
+
+            /// <summary>
+            /// The txtReferenceSummaryData item.
+            /// </summary>
+            [RepositoryItem("a9c7bea0-5e11-4a50-baa4-6114762615dd")]
+            public virtual Ranorex.Text txtReferenceSummaryData
+            {
+                get
+                {
+                    return _txtreferencesummarydataInfo.CreateAdapter<Ranorex.Text>(true);
+                }
+            }
+
+            /// <summary>
+            /// The txtReferenceSummaryData item info.
+            /// </summary>
+            [RepositoryItemInfo("a9c7bea0-5e11-4a50-baa4-6114762615dd")]
+            public virtual RepoItemInfo txtReferenceSummaryDataInfo
+            {
+                get
+                {
+                    return _txtreferencesummarydataInfo;
+                }
+            }
+
+            /// <summary>
+            /// The txtFileTypeSummary item.
+            /// </summary>
+            [RepositoryItem("e8a1770b-3e14-4204-bded-b78e44306be5")]
+            public virtual Ranorex.Text txtFileTypeSummary
+            {
+                get
+                {
+                    return _txtfiletypesummaryInfo.CreateAdapter<Ranorex.Text>(true);
+                }
+            }
+
+            /// <summary>
+            /// The txtFileTypeSummary item info.
+            /// </summary>
+            [RepositoryItemInfo("e8a1770b-3e14-4204-bded-b78e44306be5")]
+            public virtual RepoItemInfo txtFileTypeSummaryInfo
+            {
+                get
+                {
+                    return _txtfiletypesummaryInfo;
+                }
+            }
+
+            /// <summary>
+            /// The txtresplawyer item.
+            /// </summary>
+            [RepositoryItem("af380e40-4e93-49c3-bf42-b251a963a3d5")]
+            public virtual Ranorex.Text txtresplawyer
+            {
+                get
+                {
+                    return _txtresplawyerInfo.CreateAdapter<Ranorex.Text>(true);
+                }
+            }
+
+            /// <summary>
+            /// The txtresplawyer item info.
+            /// </summary>
+            [RepositoryItemInfo("af380e40-4e93-49c3-bf42-b251a963a3d5")]
+            public virtual RepoItemInfo txtresplawyerInfo
+            {
+                get
+                {
+                    return _txtresplawyerInfo;
                 }
             }
         }

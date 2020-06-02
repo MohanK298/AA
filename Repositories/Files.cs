@@ -135,6 +135,18 @@ namespace SmokeTest.Repositories
             set { _fileName = value; }
         }
 
+        string _var = "";
+
+        /// <summary>
+        /// Gets or sets the value of variable var.
+        /// </summary>
+        [TestVariable("aa00f152-4636-49bc-92c4-7a4912cd6adf")]
+        public string var
+        {
+            get { return _var; }
+            set { _var = value; }
+        }
+
 #endregion
 
         /// <summary>
@@ -2369,6 +2381,7 @@ namespace SmokeTest.Repositories
             RepoItemInfo _tblselectedpeopleInfo;
             RepoItemInfo _communicationsInfo;
             RepoItemInfo _myemailsInfo;
+            RepoItemInfo _cmbxmattercametousInfo;
 
             /// <summary>
             /// Creates a new FileDetailForm  folder.
@@ -2435,6 +2448,7 @@ namespace SmokeTest.Repositories
                 _tblselectedpeopleInfo = new RepoItemInfo(this, "tblSelectedPeople", "container[@controlname='panelPicBackground']/container[@controlname='evenSplitPanelModernModeOnly']//table[@accessiblename='Band 0']", 30000, null, "2ef4cde6-878f-474d-a1b1-5a3efb734db8");
                 _communicationsInfo = new RepoItemInfo(this, "Communications", "container[@controlname='panelLeftBase']/?/?/element[@controlname='utreeFacts']/?/?/treeitem[@accessiblename='Communications']", 30000, null, "6a70ba52-813a-4983-8a64-d3782432bbc9");
                 _myemailsInfo = new RepoItemInfo(this, "MyEMails", "container[@controlname='panelLeftBase']/?/?/element[@controlname='utreeFacts']/?/?/treeitem[@accessiblename='My E-mails']", 30000, null, "0c592710-6f3a-4842-a904-a3db89c38490");
+                _cmbxmattercametousInfo = new RepoItemInfo(this, "cmbxMatterCameToUs", "container[@controlname='panelPicBackground']/container[@controlname='evenSplitPanelModernModeOnly']//element[@controlname='ucmbMatterCameToUs']/combobox[@accessiblerole='ComboBox']/combobox[@accessiblerole='ComboBox']", 30000, null, "f6256fb8-df70-4a03-a541-92fecaa9ecb6");
             }
 
             /// <summary>
@@ -3874,6 +3888,30 @@ namespace SmokeTest.Repositories
                 get
                 {
                     return _myemailsInfo;
+                }
+            }
+
+            /// <summary>
+            /// The cmbxMatterCameToUs item.
+            /// </summary>
+            [RepositoryItem("f6256fb8-df70-4a03-a541-92fecaa9ecb6")]
+            public virtual Ranorex.ComboBox cmbxMatterCameToUs
+            {
+                get
+                {
+                    return _cmbxmattercametousInfo.CreateAdapter<Ranorex.ComboBox>(true);
+                }
+            }
+
+            /// <summary>
+            /// The cmbxMatterCameToUs item info.
+            /// </summary>
+            [RepositoryItemInfo("f6256fb8-df70-4a03-a541-92fecaa9ecb6")]
+            public virtual RepoItemInfo cmbxMatterCameToUsInfo
+            {
+                get
+                {
+                    return _cmbxmattercametousInfo;
                 }
             }
         }
@@ -7722,6 +7760,7 @@ namespace SmokeTest.Repositories
         [RepositoryFolder("85d01cfc-c704-4417-8959-970a6f8c573a")]
         public partial class DropDownFormAppFolder : RepoGenBaseFolder
         {
+            RepoItemInfo _treeitemInfo;
 
             /// <summary>
             /// Creates a new DropDownForm  folder.
@@ -7729,6 +7768,7 @@ namespace SmokeTest.Repositories
             public DropDownFormAppFolder(RepoGenBaseFolder parentFolder) :
                     base("DropDownForm", "/form[@title='']", parentFolder, 30000, null, true, "85d01cfc-c704-4417-8959-970a6f8c573a", "")
             {
+                _treeitemInfo = new RepoItemInfo(this, "TreeItem", ".//tree/treeitem[@name=$var]", 30000, null, "aef2d5c1-6bd9-462c-ad6f-cae7e5fc81f9");
             }
 
             /// <summary>
@@ -7752,6 +7792,30 @@ namespace SmokeTest.Repositories
                 get
                 {
                     return _selfInfo;
+                }
+            }
+
+            /// <summary>
+            /// The TreeItem item.
+            /// </summary>
+            [RepositoryItem("aef2d5c1-6bd9-462c-ad6f-cae7e5fc81f9")]
+            public virtual Ranorex.TreeItem TreeItem
+            {
+                get
+                {
+                    return _treeitemInfo.CreateAdapter<Ranorex.TreeItem>(true);
+                }
+            }
+
+            /// <summary>
+            /// The TreeItem item info.
+            /// </summary>
+            [RepositoryItemInfo("aef2d5c1-6bd9-462c-ad6f-cae7e5fc81f9")]
+            public virtual RepoItemInfo TreeItemInfo
+            {
+                get
+                {
+                    return _treeitemInfo;
                 }
             }
         }

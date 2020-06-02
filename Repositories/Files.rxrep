@@ -722,7 +722,7 @@ D8zerL8gSEaw7+rFqJ//CkX5CWkHqyZHVzU6AAAAAElFTkSuQmCC
 			capname="button"
 			id="0fe03e7d-ae57-4851-a259-bd019e0e02f2"
 			name="btnOK"
-			refimgid="57f28ae1-7000-4b33-94b4-9e126391e29d"
+			refimgid="b5aeebd2-548e-4b54-83b2-7eb1842c0339"
 			refpath="/form[@controlname='FindFilesForm']/element[@controlname='_BaseForm_Toolbars_Dock_Area_Bottom']/container[@accessiblename='DockBottom']/toolbar[@accessiblename='Toolbar']/button[@accessiblename='OK']"
 			searchtimeout="30000ms">
 				/form[@controlname='FindFilesForm']//toolbar[@accessiblename='Toolbar']/button[@accessiblename='OK']
@@ -732,7 +732,7 @@ D8zerL8gSEaw7+rFqJ//CkX5CWkHqyZHVzU6AAAAAElFTkSuQmCC
 			capname="text"
 			id="7382a59b-4b4f-4b5f-b2bf-f9527b070666"
 			name="txtSearch"
-			refimgid="61583f7e-7848-4dd4-8eb2-3fb500ae455d"
+			refimgid="13d1d38a-546b-46b2-8437-25263105d20f"
 			refpath="/form[@controlname='FindFilesForm']/container[@controlname='pnlBase']/container[@controlname='pnlControls']/element[@controlname='atxtSearch']/text[@controltypename='EmbeddableTextBoxWithUIPermissions']"
 			searchtimeout="30000ms">
 				/form[@controlname='FindFilesForm']/container[@controlname='pnlBase']//text[@controltypename='EmbeddableTextBoxWithUIPermissions']
@@ -1305,6 +1305,16 @@ D8zerL8gSEaw7+rFqJ//CkX5CWkHqyZHVzU6AAAAAElFTkSuQmCC
 			refpath="/form[@controlname='FileDetailForm']/container[@controlname='panelLeftBase']/container[@controlname='panelLeft']/element[@controlname='utreeFacts']/tree[@accessiblerole='Outline']/treeitem[@accessiblename='My E-mails']"
 			searchtimeout="30000ms">
 				/form[@controlname='FileDetailForm']/container[@controlname='panelLeftBase']/?/?/element[@controlname='utreeFacts']/?/?/treeitem[@accessiblename='My E-mails']
+			</item>
+			<item
+			addcaps="combobox,accessible"
+			capname="combobox"
+			id="f6256fb8-df70-4a03-a541-92fecaa9ecb6"
+			name="cmbxMatterCameToUs"
+			refimgid="3fce9ab3-9bbe-46f6-8ca4-fe20542f2924"
+			refpath="/form[@controlname='FileDetailForm']/container[@controlname='panelPicBackground']/container[@controlname='evenSplitPanelModernModeOnly']/container[@controlname='panelRight']/container[@controlname='panelFactsBase']/container[@controlname='AdminAccounting']/container[@controlname='panelAdminAccounting']/element[@controlname='ucmbMatterCameToUs']/combobox[@accessiblerole='ComboBox']/combobox[@accessiblerole='ComboBox']"
+			searchtimeout="30000ms">
+				/form[@controlname='FileDetailForm']/container[@controlname='panelPicBackground']/container[@controlname='evenSplitPanelModernModeOnly']//element[@controlname='ucmbMatterCameToUs']/combobox[@accessiblerole='ComboBox']/combobox[@accessiblerole='ComboBox']
 			</item>
 			<basepath>
 				/form[@controlname='FileDetailForm']
@@ -2785,6 +2795,14 @@ SUVORK5CYII=
 		refimgid="7658a80e-cfae-4495-b4a1-4eacb5eca94b"
 		searchtimeout="30000ms"
 		usecache="True">
+			<item
+			addcaps="treeitem,uiautomation"
+			capname="treeitem"
+			id="aef2d5c1-6bd9-462c-ad6f-cae7e5fc81f9"
+			name="TreeItem"
+			searchtimeout="30000ms">
+				/form[@title='']//tree/treeitem[@name=$var]
+			</item>
 			<basepath>
 				/form[@title='']
 			</basepath>
@@ -3662,6 +3680,10 @@ SUVORK5CYII=
 		<var
 		id="6c149e81-aae8-40cd-857f-b6400c6c411a"
 		name="fileName">
+		</var>
+		<var
+		id="aa00f152-4636-49bc-92c4-7a4912cd6adf"
+		name="var">
 		</var>
 	</variables>
 </repository>

@@ -3014,6 +3014,7 @@ namespace SmokeTest.Repositories
             RepoItemInfo _btnok1Info;
             RepoItemInfo _checkboxInfo;
             RepoItemInfo _newproceedbtnInfo;
+            RepoItemInfo _cbselectallInfo;
 
             /// <summary>
             /// Creates a new InvoiceEmailForm  folder.
@@ -3025,6 +3026,7 @@ namespace SmokeTest.Repositories
                 _btnok1Info = new RepoItemInfo(this, "btnOk1", "?/?/toolbar[@automationid='Toolbar : toolbarBaseDesigner']/button[@automationid='[Toolbar : toolbarBaseDesigner Tools] Tool : TOOLBAR_BUTTON_OK - Index : 1 ']", 30000, null, "35d23f59-868e-4d33-bbb4-72667189a161");
                 _checkboxInfo = new RepoItemInfo(this, "Checkbox", "container[@controlname='pnlBase']//tree[@automationid='ColScrollRegion: 0, RowScrollRegion: 0']/treeitem[@automationid='0']/checkbox[@automationid='5']", 30000, null, "78d93d34-3d11-48dd-9947-7a0f8fb42732");
                 _newproceedbtnInfo = new RepoItemInfo(this, "NewProceedBtn", ".//button[@name='Proceed']", 30000, null, "59eeada5-104e-4c90-964f-ac20559b3611");
+                _cbselectallInfo = new RepoItemInfo(this, "cbSelectAll", "container[@controlname='pnlBase']//table[@accessiblename='Band 0']/row/cell[1]", 30000, null, "7db860b8-ee6a-4ba1-9e83-1d073b2277fc");
             }
 
             /// <summary>
@@ -3144,6 +3146,30 @@ namespace SmokeTest.Repositories
                 get
                 {
                     return _newproceedbtnInfo;
+                }
+            }
+
+            /// <summary>
+            /// The cbSelectAll item.
+            /// </summary>
+            [RepositoryItem("7db860b8-ee6a-4ba1-9e83-1d073b2277fc")]
+            public virtual Ranorex.Cell cbSelectAll
+            {
+                get
+                {
+                    return _cbselectallInfo.CreateAdapter<Ranorex.Cell>(true);
+                }
+            }
+
+            /// <summary>
+            /// The cbSelectAll item info.
+            /// </summary>
+            [RepositoryItemInfo("7db860b8-ee6a-4ba1-9e83-1d073b2277fc")]
+            public virtual RepoItemInfo cbSelectAllInfo
+            {
+                get
+                {
+                    return _cbselectallInfo;
                 }
             }
         }

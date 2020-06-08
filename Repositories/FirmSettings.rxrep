@@ -179,6 +179,7 @@ SUVORK5CYII=
 			capname="menuitem"
 			id="659fa57b-9823-4117-99ed-0b10775385c1"
 			name="View"
+			refimgid="f52b70a1-bf6b-4e0a-a0d1-c1872b949b22"
 			refpath="/form[@controlname='MainForm']/element[@controlname='_BaseModuleForm_Toolbars_Dock_Area_Top']/container[@accessiblename='DockTop']/menubar[@accessiblename='Toolbar']/menuitem[@accessiblename='View']"
 			searchtimeout="30000ms">
 				/form[@controlname='MainForm']/element[@controlname='_BaseModuleForm_Toolbars_Dock_Area_Top']//menuitem[@accessiblename='View']
@@ -426,6 +427,34 @@ SUVORK5CYII=
 					/form[@controlname='MainForm']/?/?/form[@controlname='ReportForm']/container[@controlname='roundedPanelControl']
 				</basepath>
 			</folder>
+			<item
+			addcaps="text,accessible"
+			capname="text"
+			id="06e17eda-4a40-408c-a2ea-0fb9a6806c0c"
+			name="FirmReports"
+			refimgid="f4049cdf-a847-4cb5-8fe7-4b095917be92"
+			refpath="/form[@controlname='MainForm']/container[@controlname='pLeft']/container[@caption='' and @controltypename='Panel' and @instance='1']/element[@controlname='_ultraExplorerBar']/container[@caption='' and @controltypename='UltraExplorerBarContainerControl' and @instance='0']/container[@controlname='controlPanelWrapper']/container[@controlname='OfficeControlPanel']/container[@controlname='sSCMenu']/container[@controlname='panelParent']/container[@caption='' and @controltypename='Panel' and @instance='15']/element[@controltypename='AmicusLabel']/text[@accessiblename='Firm Reports']"
+			searchtimeout="30000ms">
+				/form[@controlname='MainForm']/container[@controlname='pLeft']//container[@controltypename='UltraExplorerBarContainerControl' and @instance='0']/container[@controlname='controlPanelWrapper']/container[@controlname='OfficeControlPanel']//container[@controltypename='Panel' and @instance='15']/?/?/text[@accessiblename='Firm Reports']
+			</item>
+			<item
+			addcaps="text,accessible"
+			capname="text"
+			id="e50a6e18-63e5-479b-8b39-1ceecac0dccb"
+			name="txtAttorney"
+			refimgid="fa207855-e765-4ca3-abb7-f54882d88b3a"
+			searchtimeout="30000ms">
+				/form[@controlname='MainForm']/container[@controlname='pLeft']/?/?/container[@controlname='atcAttorneyOrAccounting']//text[@accessiblename='ATTORNEY']
+			</item>
+			<item
+			addcaps="menuitem,accessible"
+			capname="menuitem"
+			id="b852e97a-9b53-4b23-be53-8a93f870db88"
+			name="lnkMenuFirmReports"
+			refpath="/form[@controlname='MainForm']/element[@controlname='_BaseModuleForm_Toolbars_Dock_Area_Top']/container[@accessiblename='DockTop']/menubar[@accessiblename='Toolbar']/menuitem[@accessiblename='View']/menuitem[@accessiblename='Firm Reports']"
+			searchtimeout="30000ms">
+				/form[@controlname='MainForm']/element[@controlname='_BaseModuleForm_Toolbars_Dock_Area_Top']//menuitem[@accessiblename='View']/menuitem[@accessiblename='Firm Reports']
+			</item>
 			<basepath>
 				/form[@controlname='MainForm']
 			</basepath>
@@ -1864,6 +1893,109 @@ QmCC
 				</item>
 				<basepath>
 					/form[@controlname='SQLReportGenerateForm']//toolbar[@accessiblename='Toolbar']
+				</basepath>
+			</folder>
+			<folder
+			addcaps="container,control,nativewindow"
+			capname="container"
+			id="2f0583bf-cae3-4a50-a4bc-f44ebf18f3b6"
+			isrooted="True"
+			name="PnlBase"
+			refpath="/form[@controlname='SQLReportGenerateForm']/container[@controlname='pnlBase']"
+			searchtimeout="30000ms"
+			usecache="False">
+				<item
+				addcaps="text,uiautomation,uiautomationvalue"
+				capname="text"
+				id="6ef95b2a-c751-431f-824a-8ebc390ac333"
+				name="txtEndDate"
+				refimgid="e149d8bc-58cc-45ce-9573-253c975d1302"
+				refpath="/form[@controlname='SQLReportGenerateForm']/container[@controlname='pnlBase']/container[@controlname='pnlControls']/element[@controlname='EndDateTime']/text[@automationid='[Editor] Edit Area']"
+				searchtimeout="30000ms">
+					/form[@controlname='SQLReportGenerateForm']/container[@controlname='pnlBase']//text[@automationid='[Editor] Edit Area']
+				</item>
+				<item
+				addcaps="combobox,control,nativewindow"
+				capname="combobox"
+				id="bae6bf57-e5bc-4d1a-bf30-04a7f82e9f4d"
+				name="cmbbxFileType"
+				refimgid="3cc58fc2-be54-4b5c-b253-fc69a3e5859f"
+				refpath="/form[@controlname='SQLReportGenerateForm']/container[@controlname='pnlBase']/container[@controlname='pnlControls']/container[@controlname='pnlDynamic']/container[@controlname='pnlFileTypeDropDown_FileType']/combobox[@controlname='FileTypeDropDown_FileType']"
+				searchtimeout="30000ms">
+					/form[@controlname='SQLReportGenerateForm']/container[@controlname='pnlBase']/?/?/container[@controlname='pnlDynamic']/?/?/combobox[@controlname='FileTypeDropDown_FileType']
+				</item>
+				<item
+				addcaps="text,uiautomation,uiautomationvalue"
+				capname="text"
+				id="f84ac27b-2306-4fd3-9a21-d293981a2ad1"
+				name="txtStartDate"
+				refimgid="5c32ee9a-d221-4acb-9421-f6f2f987049a"
+				refpath="/form[@controlname='SQLReportGenerateForm']/container[@controlname='pnlBase']/container[@controlname='pnlControls']/element[@controlname='StartDateTime']/text[@automationid='[Editor] Edit Area']"
+				searchtimeout="30000ms">
+					/form[@controlname='SQLReportGenerateForm']/container[@controlname='pnlBase']/?/?/element[@controlname='StartDateTime']/text[@automationid='[Editor] Edit Area']
+				</item>
+				<item
+				addcaps="combobox,control,nativewindow"
+				capname="combobox"
+				id="7790bc06-2746-4fd4-bfdb-452e8f0e9505"
+				name="cmbbxCameToUs"
+				refimgid="affe4406-f9f1-4a0b-ba5b-362e9362b779"
+				refpath="/form[@controlname='SQLReportGenerateForm']/container[@controlname='pnlBase']/container[@controlname='pnlControls']/container[@controlname='pnlDynamic']/container[@controlname='pnlCameToUsBecauseDropDown_CameToUsBecause']/combobox[@controlname='CameToUsBecauseDropDown_CameToUsBecause']"
+				searchtimeout="30000ms">
+					/form[@controlname='SQLReportGenerateForm']/container[@controlname='pnlBase']/?/?/container[@controlname='pnlDynamic']/?/?/combobox[@controlname='CameToUsBecauseDropDown_CameToUsBecause']
+				</item>
+				<item
+				addcaps="button,accessible"
+				capname="button"
+				id="611ee0cb-3e16-4a3a-9020-7939625ea935"
+				name="imgContactSelector"
+				refimgid="02b51155-ae44-4b47-bca1-d8df7900330d"
+				refpath="/form[@controlname='SQLReportGenerateForm']/container[@controlname='pnlBase']/container[@controlname='pnlControls']/container[@controlname='pnlDynamic']/container[@controlname='pnlFirmMemberSelectorSingle_ResponsibleLawyerPeopleId']/container[@controlname='FirmMemberSelectorSingle_ResponsibleLawyerPeopleId']/element[@controlname='ubtnIcon']/button[@accessiblerole='PushButton']"
+				searchtimeout="30000ms">
+					/form[@controlname='SQLReportGenerateForm']/container[@controlname='pnlBase']/?/?/container[@controlname='pnlDynamic']/container[@controlname='pnlFirmMemberSelectorSingle_ResponsibleLawyerPeopleId']//button[@accessiblerole='PushButton']
+				</item>
+				<item
+				addcaps="radiobutton,control,nativewindow"
+				capname="radiobutton"
+				id="d7ab5fb3-ac0c-4714-850b-2fdbef42767c"
+				name="rdoIncludeClosedFilesYes"
+				refimgid="0336795c-1e20-4f5f-9ed7-848b3b610f03"
+				refpath="/form[@controlname='SQLReportGenerateForm']/container[@controlname='pnlBase']/container[@controlname='pnlControls']/container[@controlname='pnlDynamic']/container[@controlname='pnlIncludeClosedFiles']/radiobutton[@controlname='IncludeClosedFiles' and @text='Yes']"
+				searchtimeout="30000ms">
+					/form[@controlname='SQLReportGenerateForm']/container[@controlname='pnlBase']/?/?/container[@controlname='pnlDynamic']/?/?/radiobutton[@text='Yes']
+				</item>
+				<item
+				addcaps="radiobutton,control,nativewindow"
+				capname="radiobutton"
+				id="f7383e79-d801-4e75-b906-1bfbe517f94a"
+				name="rdoIncludeClosedFilesNo"
+				refimgid="6d26302a-b82c-4e9d-9d8f-b7ab0def3116"
+				refpath="/form[@controlname='SQLReportGenerateForm']/container[@controlname='pnlBase']/container[@controlname='pnlControls']/container[@controlname='pnlDynamic']/container[@controlname='pnlIncludeClosedFiles']/radiobutton[@controlname='IncludeClosedFiles' and @text='No']"
+				searchtimeout="30000ms">
+					/form[@controlname='SQLReportGenerateForm']/container[@controlname='pnlBase']/?/?/container[@controlname='pnlDynamic']/?/?/radiobutton[@text='No']
+				</item>
+				<item
+				addcaps="radiobutton,control,nativewindow"
+				capname="radiobutton"
+				id="7d2c307a-001e-4cef-90f3-d2acd1565fa2"
+				name="rdoIncludeSummaryNo"
+				refimgid="f48d9aa8-544d-46ba-a2d4-c6717ff96ef4"
+				refpath="/form[@controlname='SQLReportGenerateForm']/container[@controlname='pnlBase']/container[@controlname='pnlControls']/container[@controlname='pnlDynamic']/container[@controlname='pnlSummary']/radiobutton[@controlname='Summary' and @text='No']"
+				searchtimeout="30000ms">
+					/form[@controlname='SQLReportGenerateForm']/container[@controlname='pnlBase']/?/?/container[@controlname='pnlDynamic']/?/?/radiobutton[@controlname='Summary' and @text='No']
+				</item>
+				<item
+				addcaps="radiobutton,control,nativewindow"
+				capname="radiobutton"
+				id="e4146a75-dd61-4380-ad1a-034f4311adae"
+				name="rdoIncludeSummaryYes"
+				refimgid="216299e4-3916-43fb-a0eb-d0c6e33efab4"
+				refpath="/form[@controlname='SQLReportGenerateForm']/container[@controlname='pnlBase']/container[@controlname='pnlControls']/container[@controlname='pnlDynamic']/container[@controlname='pnlSummary']/radiobutton[@controlname='Summary' and @text='Yes']"
+				searchtimeout="30000ms">
+					/form[@controlname='SQLReportGenerateForm']/container[@controlname='pnlBase']/?/?/container[@controlname='pnlDynamic']/?/?/radiobutton[@controlname='Summary' and @text='Yes']
+				</item>
+				<basepath>
+					/form[@controlname='SQLReportGenerateForm']/container[@controlname='pnlBase']
 				</basepath>
 			</folder>
 			<basepath>

@@ -733,6 +733,61 @@ namespace SmokeTest.Modules.Utilities
         	}
         	return data;
         }
+        
+ 		public string RetrieveCurrentSelectionFromTable(Ranorex.Adapter tbldata,string colname,string tblName)
+        {
+        	int m=0;
+        	string details="";
+        	var tadapter = tbldata.As <Ranorex.Table>();
+        	for(int i=0;i<tadapter.Rows.Count;i++)
+        	{
+        		
+        		for(int j=0;j<tadapter.Rows[i].Cells.Count;j++)
+        		{
+        		
+        			if(tadapter.Rows[i].Cells[j].As<Ranorex.Cell>().Text.Equals(colname))
+        			{
+        				for(int k=i+1;k<tadapter.Rows.Count;k++)
+        				{
+        					details+=tadapter.Rows[k].Cells[j].As<Ranorex.Cell>().Text;
+        					m++;
+        				}
+
+        			}
+        		}
+        		if(m>0)
+        			break;
+        	}
+        	if(m==0)
+        	{
+        				Report.Failure(String.Format("Data \"{0}\" not present for retrieval in \"{1}\"",colname,tblName));
+        	}
+        	return details;
+        } 
+ 		
+ 		
+ 			public string RetrieveCurrentSelectionFromTable(Ranorex.Adapter tbldata,int colnumber,string tblName)
+        {
+        	int m=0;
+        	string details="";
+        	var tadapter = tbldata.As <Ranorex.Table>();
+        	for(int i=0;i<tadapter.Rows.Count-1;i++)
+        	{
+        	
+				details+=tadapter.Rows[i].Cells[colnumber].As<Ranorex.Cell>().Text+"~"; 
+				m++;		
+        	}
+        		details+=tadapter.Rows[tadapter.Rows.Count-1].Cells[colnumber].As<Ranorex.Cell>().Text; 
+        	if(m==0)
+        	{
+        				Report.Failure(String.Format("Column index \"{0}\" values not present for retrieval in \"{1}\"",colnumber,tblName));
+        	}
+        	return details;
+        } 
+        
+        
+        
+        
 		private void CloseAnnoncementForm()
         {
 			str.MainForm.Self.Activate();

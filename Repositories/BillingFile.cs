@@ -221,6 +221,7 @@ namespace SmokeTest.Repositories
             BillingFileFolders.FilesIndexFormFolder _filesindexform;
             RepoItemInfo _btnfilesInfo;
             RepoItemInfo _switchbillingInfo;
+            RepoItemInfo _cmbbxfilestatusInfo;
 
             /// <summary>
             /// Creates a new MainForm  folder.
@@ -231,6 +232,7 @@ namespace SmokeTest.Repositories
                 _filesindexform = new BillingFileFolders.FilesIndexFormFolder(this);
                 _btnfilesInfo = new RepoItemInfo(this, "btnFiles", "container[@controlname='pLeft']//tree[@accessiblerole='Outline']/button[@accessiblename='Files']", 30000, null, "a059dd0c-eefd-4172-8a43-291a6a123540");
                 _switchbillingInfo = new RepoItemInfo(this, "switchBILLING", "container[@controlname='pLeft']/?/?/container[@controlname='atcAttorneyOrAccounting']//text[@accessiblename='BILLING']", 30000, null, "9269038c-ee0e-4c45-b43f-f1c09acab521");
+                _cmbbxfilestatusInfo = new RepoItemInfo(this, "cmbbxFileStatus", "container[@controlname='pLeft']//container[@controltypename='UltraExplorerBarContainerControl' and @instance='0']/?/?/container[@controlname='FileIndexControlPanelControl']/?/?/container[@controlname='panel1']/combobox[@controlname='acmbAASFileStatus']", 30000, null, "eea97b66-30ca-4966-b4b0-612c57e7bc45");
             }
 
             /// <summary>
@@ -302,6 +304,30 @@ namespace SmokeTest.Repositories
                 get
                 {
                     return _switchbillingInfo;
+                }
+            }
+
+            /// <summary>
+            /// The cmbbxFileStatus item.
+            /// </summary>
+            [RepositoryItem("eea97b66-30ca-4966-b4b0-612c57e7bc45")]
+            public virtual Ranorex.ComboBox cmbbxFileStatus
+            {
+                get
+                {
+                    return _cmbbxfilestatusInfo.CreateAdapter<Ranorex.ComboBox>(true);
+                }
+            }
+
+            /// <summary>
+            /// The cmbbxFileStatus item info.
+            /// </summary>
+            [RepositoryItemInfo("eea97b66-30ca-4966-b4b0-612c57e7bc45")]
+            public virtual RepoItemInfo cmbbxFileStatusInfo
+            {
+                get
+                {
+                    return _cmbbxfilestatusInfo;
                 }
             }
 

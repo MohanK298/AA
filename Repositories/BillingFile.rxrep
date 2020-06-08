@@ -104,6 +104,16 @@ rxversion="9.0">
 			searchtimeout="30000ms">
 				/form[@controlname='MainForm']/container[@controlname='pLeft']/?/?/container[@controlname='atcAttorneyOrAccounting']//text[@accessiblename='BILLING']
 			</item>
+			<item
+			addcaps="combobox,control,nativewindow"
+			capname="combobox"
+			id="eea97b66-30ca-4966-b4b0-612c57e7bc45"
+			name="cmbbxFileStatus"
+			refimgid="a0ce0793-9b39-44e1-a91e-981d37b0dc81"
+			refpath="/form[@controlname='MainForm']/container[@controlname='pLeft']/container[@caption='' and @controltypename='Panel' and @instance='1']/element[@controlname='_ultraExplorerBar']/container[@caption='' and @controltypename='UltraExplorerBarContainerControl' and @instance='0']/container[@controlname='controlPanelWrapper']/container[@controlname='FileIndexControlPanelControl']/container[@controlname='panel3']/container[@controlname='panel1']/combobox[@controlname='acmbAASFileStatus']"
+			searchtimeout="30000ms">
+				/form[@controlname='MainForm']/container[@controlname='pLeft']//container[@controltypename='UltraExplorerBarContainerControl' and @instance='0']/?/?/container[@controlname='FileIndexControlPanelControl']/?/?/container[@controlname='panel1']/combobox[@controlname='acmbAASFileStatus']
+			</item>
 			<basepath>
 				/form[@controlname='MainForm']
 			</basepath>

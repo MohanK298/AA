@@ -416,6 +416,9 @@ namespace SmokeTest.Repositories
             RepoItemInfo _preferencesInfo;
             RepoItemInfo _toolsInfo;
             RepoItemInfo _btnofficeInfo;
+            RepoItemInfo _firmreportsInfo;
+            RepoItemInfo _txtattorneyInfo;
+            RepoItemInfo _lnkmenufirmreportsInfo;
 
             /// <summary>
             /// Creates a new MainForm  folder.
@@ -451,6 +454,9 @@ namespace SmokeTest.Repositories
                 _preferencesInfo = new RepoItemInfo(this, "Preferences", "element[@controlname='_BaseModuleForm_Toolbars_Dock_Area_Top']//menuitem[@accessiblename='Tools']/menuitem[@accessiblename='Preferences...']", 30000, null, "a4c08192-1862-4ac1-8f8f-e2c3fed25bee");
                 _toolsInfo = new RepoItemInfo(this, "Tools", "element[@controlname='_BaseModuleForm_Toolbars_Dock_Area_Top']//menuitem[@accessiblename='Tools']", 30000, null, "b5989e2f-8c00-4b40-bf93-b0a57b7b04d4");
                 _btnofficeInfo = new RepoItemInfo(this, "btnOffice", "container[@controlname='pLeft']//tree[@accessiblerole='Outline']/button[@accessiblename='Office']", 30000, null, "f4e35bab-3df9-4c3d-9984-457fe5e7e1a1");
+                _firmreportsInfo = new RepoItemInfo(this, "FirmReports", "container[@controlname='pLeft']//container[@controltypename='UltraExplorerBarContainerControl' and @instance='0']/container[@controlname='controlPanelWrapper']/container[@controlname='OfficeControlPanel']//container[@controltypename='Panel' and @instance='15']/?/?/text[@accessiblename='Firm Reports']", 30000, null, "06e17eda-4a40-408c-a2ea-0fb9a6806c0c");
+                _txtattorneyInfo = new RepoItemInfo(this, "txtAttorney", "container[@controlname='pLeft']/?/?/container[@controlname='atcAttorneyOrAccounting']//text[@accessiblename='ATTORNEY']", 30000, null, "e50a6e18-63e5-479b-8b39-1ceecac0dccb");
+                _lnkmenufirmreportsInfo = new RepoItemInfo(this, "lnkMenuFirmReports", "element[@controlname='_BaseModuleForm_Toolbars_Dock_Area_Top']//menuitem[@accessiblename='View']/menuitem[@accessiblename='Firm Reports']", 30000, null, "b852e97a-9b53-4b23-be53-8a93f870db88");
             }
 
             /// <summary>
@@ -1098,6 +1104,78 @@ namespace SmokeTest.Repositories
                 get
                 {
                     return _btnofficeInfo;
+                }
+            }
+
+            /// <summary>
+            /// The FirmReports item.
+            /// </summary>
+            [RepositoryItem("06e17eda-4a40-408c-a2ea-0fb9a6806c0c")]
+            public virtual Ranorex.Text FirmReports
+            {
+                get
+                {
+                    return _firmreportsInfo.CreateAdapter<Ranorex.Text>(true);
+                }
+            }
+
+            /// <summary>
+            /// The FirmReports item info.
+            /// </summary>
+            [RepositoryItemInfo("06e17eda-4a40-408c-a2ea-0fb9a6806c0c")]
+            public virtual RepoItemInfo FirmReportsInfo
+            {
+                get
+                {
+                    return _firmreportsInfo;
+                }
+            }
+
+            /// <summary>
+            /// The txtAttorney item.
+            /// </summary>
+            [RepositoryItem("e50a6e18-63e5-479b-8b39-1ceecac0dccb")]
+            public virtual Ranorex.Text txtAttorney
+            {
+                get
+                {
+                    return _txtattorneyInfo.CreateAdapter<Ranorex.Text>(true);
+                }
+            }
+
+            /// <summary>
+            /// The txtAttorney item info.
+            /// </summary>
+            [RepositoryItemInfo("e50a6e18-63e5-479b-8b39-1ceecac0dccb")]
+            public virtual RepoItemInfo txtAttorneyInfo
+            {
+                get
+                {
+                    return _txtattorneyInfo;
+                }
+            }
+
+            /// <summary>
+            /// The lnkMenuFirmReports item.
+            /// </summary>
+            [RepositoryItem("b852e97a-9b53-4b23-be53-8a93f870db88")]
+            public virtual Ranorex.MenuItem lnkMenuFirmReports
+            {
+                get
+                {
+                    return _lnkmenufirmreportsInfo.CreateAdapter<Ranorex.MenuItem>(true);
+                }
+            }
+
+            /// <summary>
+            /// The lnkMenuFirmReports item info.
+            /// </summary>
+            [RepositoryItemInfo("b852e97a-9b53-4b23-be53-8a93f870db88")]
+            public virtual RepoItemInfo lnkMenuFirmReportsInfo
+            {
+                get
+                {
+                    return _lnkmenufirmreportsInfo;
                 }
             }
 
@@ -5211,6 +5289,7 @@ namespace SmokeTest.Repositories
         public partial class SQLReportFormAppFolder : RepoGenBaseFolder
         {
             FirmSettingsFolders.Toolbar1Folder7 _toolbar1;
+            FirmSettingsFolders.PnlBaseFolder4 _pnlbase;
             RepoItemInfo _toolbarInfo;
 
             /// <summary>
@@ -5220,6 +5299,7 @@ namespace SmokeTest.Repositories
                     base("SQLReportForm", "/form[@controlname='SQLReportGenerateForm']", parentFolder, 30000, null, false, "4a550188-1ad1-4374-8157-6d67f656ed78", "")
             {
                 _toolbar1 = new FirmSettingsFolders.Toolbar1Folder7(this);
+                _pnlbase = new FirmSettingsFolders.PnlBaseFolder4(this);
                 _toolbarInfo = new RepoItemInfo(this, "Toolbar", "element[@controlname='_BaseForm_Toolbars_Dock_Area_Bottom']/?/?/toolbar[@accessiblename='Toolbar']", 30000, null, "9adec407-f9ac-471a-a2fc-17c6721e2d2f");
             }
 
@@ -5278,6 +5358,15 @@ namespace SmokeTest.Repositories
             public virtual FirmSettingsFolders.Toolbar1Folder7 Toolbar1
             {
                 get { return _toolbar1; }
+            }
+
+            /// <summary>
+            /// The PnlBase folder.
+            /// </summary>
+            [RepositoryFolder("2f0583bf-cae3-4a50-a4bc-f44ebf18f3b6")]
+            public virtual FirmSettingsFolders.PnlBaseFolder4 PnlBase
+            {
+                get { return _pnlbase; }
             }
         }
 
@@ -5369,6 +5458,280 @@ namespace SmokeTest.Repositories
                 get
                 {
                     return _btnokInfo;
+                }
+            }
+        }
+
+        /// <summary>
+        /// The PnlBaseFolder4 folder.
+        /// </summary>
+        [RepositoryFolder("2f0583bf-cae3-4a50-a4bc-f44ebf18f3b6")]
+        public partial class PnlBaseFolder4 : RepoGenBaseFolder
+        {
+            RepoItemInfo _txtenddateInfo;
+            RepoItemInfo _cmbbxfiletypeInfo;
+            RepoItemInfo _txtstartdateInfo;
+            RepoItemInfo _cmbbxcametousInfo;
+            RepoItemInfo _imgcontactselectorInfo;
+            RepoItemInfo _rdoincludeclosedfilesyesInfo;
+            RepoItemInfo _rdoincludeclosedfilesnoInfo;
+            RepoItemInfo _rdoincludesummarynoInfo;
+            RepoItemInfo _rdoincludesummaryyesInfo;
+
+            /// <summary>
+            /// Creates a new PnlBase  folder.
+            /// </summary>
+            public PnlBaseFolder4(RepoGenBaseFolder parentFolder) :
+                    base("PnlBase", "container[@controlname='pnlBase']", parentFolder, 30000, null, false, "2f0583bf-cae3-4a50-a4bc-f44ebf18f3b6", "")
+            {
+                _txtenddateInfo = new RepoItemInfo(this, "txtEndDate", ".//text[@automationid='[Editor] Edit Area']", 30000, null, "6ef95b2a-c751-431f-824a-8ebc390ac333");
+                _cmbbxfiletypeInfo = new RepoItemInfo(this, "cmbbxFileType", "?/?/container[@controlname='pnlDynamic']/?/?/combobox[@controlname='FileTypeDropDown_FileType']", 30000, null, "bae6bf57-e5bc-4d1a-bf30-04a7f82e9f4d");
+                _txtstartdateInfo = new RepoItemInfo(this, "txtStartDate", "?/?/element[@controlname='StartDateTime']/text[@automationid='[Editor] Edit Area']", 30000, null, "f84ac27b-2306-4fd3-9a21-d293981a2ad1");
+                _cmbbxcametousInfo = new RepoItemInfo(this, "cmbbxCameToUs", "?/?/container[@controlname='pnlDynamic']/?/?/combobox[@controlname='CameToUsBecauseDropDown_CameToUsBecause']", 30000, null, "7790bc06-2746-4fd4-bfdb-452e8f0e9505");
+                _imgcontactselectorInfo = new RepoItemInfo(this, "imgContactSelector", "?/?/container[@controlname='pnlDynamic']/container[@controlname='pnlFirmMemberSelectorSingle_ResponsibleLawyerPeopleId']//button[@accessiblerole='PushButton']", 30000, null, "611ee0cb-3e16-4a3a-9020-7939625ea935");
+                _rdoincludeclosedfilesyesInfo = new RepoItemInfo(this, "rdoIncludeClosedFilesYes", "?/?/container[@controlname='pnlDynamic']/?/?/radiobutton[@text='Yes']", 30000, null, "d7ab5fb3-ac0c-4714-850b-2fdbef42767c");
+                _rdoincludeclosedfilesnoInfo = new RepoItemInfo(this, "rdoIncludeClosedFilesNo", "?/?/container[@controlname='pnlDynamic']/?/?/radiobutton[@text='No']", 30000, null, "f7383e79-d801-4e75-b906-1bfbe517f94a");
+                _rdoincludesummarynoInfo = new RepoItemInfo(this, "rdoIncludeSummaryNo", "?/?/container[@controlname='pnlDynamic']/?/?/radiobutton[@controlname='Summary' and @text='No']", 30000, null, "7d2c307a-001e-4cef-90f3-d2acd1565fa2");
+                _rdoincludesummaryyesInfo = new RepoItemInfo(this, "rdoIncludeSummaryYes", "?/?/container[@controlname='pnlDynamic']/?/?/radiobutton[@controlname='Summary' and @text='Yes']", 30000, null, "e4146a75-dd61-4380-ad1a-034f4311adae");
+            }
+
+            /// <summary>
+            /// The Self item.
+            /// </summary>
+            [RepositoryItem("2f0583bf-cae3-4a50-a4bc-f44ebf18f3b6")]
+            public virtual Ranorex.Container Self
+            {
+                get
+                {
+                    return _selfInfo.CreateAdapter<Ranorex.Container>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Self item info.
+            /// </summary>
+            [RepositoryItemInfo("2f0583bf-cae3-4a50-a4bc-f44ebf18f3b6")]
+            public virtual RepoItemInfo SelfInfo
+            {
+                get
+                {
+                    return _selfInfo;
+                }
+            }
+
+            /// <summary>
+            /// The txtEndDate item.
+            /// </summary>
+            [RepositoryItem("6ef95b2a-c751-431f-824a-8ebc390ac333")]
+            public virtual Ranorex.Text txtEndDate
+            {
+                get
+                {
+                    return _txtenddateInfo.CreateAdapter<Ranorex.Text>(true);
+                }
+            }
+
+            /// <summary>
+            /// The txtEndDate item info.
+            /// </summary>
+            [RepositoryItemInfo("6ef95b2a-c751-431f-824a-8ebc390ac333")]
+            public virtual RepoItemInfo txtEndDateInfo
+            {
+                get
+                {
+                    return _txtenddateInfo;
+                }
+            }
+
+            /// <summary>
+            /// The cmbbxFileType item.
+            /// </summary>
+            [RepositoryItem("bae6bf57-e5bc-4d1a-bf30-04a7f82e9f4d")]
+            public virtual Ranorex.ComboBox cmbbxFileType
+            {
+                get
+                {
+                    return _cmbbxfiletypeInfo.CreateAdapter<Ranorex.ComboBox>(true);
+                }
+            }
+
+            /// <summary>
+            /// The cmbbxFileType item info.
+            /// </summary>
+            [RepositoryItemInfo("bae6bf57-e5bc-4d1a-bf30-04a7f82e9f4d")]
+            public virtual RepoItemInfo cmbbxFileTypeInfo
+            {
+                get
+                {
+                    return _cmbbxfiletypeInfo;
+                }
+            }
+
+            /// <summary>
+            /// The txtStartDate item.
+            /// </summary>
+            [RepositoryItem("f84ac27b-2306-4fd3-9a21-d293981a2ad1")]
+            public virtual Ranorex.Text txtStartDate
+            {
+                get
+                {
+                    return _txtstartdateInfo.CreateAdapter<Ranorex.Text>(true);
+                }
+            }
+
+            /// <summary>
+            /// The txtStartDate item info.
+            /// </summary>
+            [RepositoryItemInfo("f84ac27b-2306-4fd3-9a21-d293981a2ad1")]
+            public virtual RepoItemInfo txtStartDateInfo
+            {
+                get
+                {
+                    return _txtstartdateInfo;
+                }
+            }
+
+            /// <summary>
+            /// The cmbbxCameToUs item.
+            /// </summary>
+            [RepositoryItem("7790bc06-2746-4fd4-bfdb-452e8f0e9505")]
+            public virtual Ranorex.ComboBox cmbbxCameToUs
+            {
+                get
+                {
+                    return _cmbbxcametousInfo.CreateAdapter<Ranorex.ComboBox>(true);
+                }
+            }
+
+            /// <summary>
+            /// The cmbbxCameToUs item info.
+            /// </summary>
+            [RepositoryItemInfo("7790bc06-2746-4fd4-bfdb-452e8f0e9505")]
+            public virtual RepoItemInfo cmbbxCameToUsInfo
+            {
+                get
+                {
+                    return _cmbbxcametousInfo;
+                }
+            }
+
+            /// <summary>
+            /// The imgContactSelector item.
+            /// </summary>
+            [RepositoryItem("611ee0cb-3e16-4a3a-9020-7939625ea935")]
+            public virtual Ranorex.Button imgContactSelector
+            {
+                get
+                {
+                    return _imgcontactselectorInfo.CreateAdapter<Ranorex.Button>(true);
+                }
+            }
+
+            /// <summary>
+            /// The imgContactSelector item info.
+            /// </summary>
+            [RepositoryItemInfo("611ee0cb-3e16-4a3a-9020-7939625ea935")]
+            public virtual RepoItemInfo imgContactSelectorInfo
+            {
+                get
+                {
+                    return _imgcontactselectorInfo;
+                }
+            }
+
+            /// <summary>
+            /// The rdoIncludeClosedFilesYes item.
+            /// </summary>
+            [RepositoryItem("d7ab5fb3-ac0c-4714-850b-2fdbef42767c")]
+            public virtual Ranorex.RadioButton rdoIncludeClosedFilesYes
+            {
+                get
+                {
+                    return _rdoincludeclosedfilesyesInfo.CreateAdapter<Ranorex.RadioButton>(true);
+                }
+            }
+
+            /// <summary>
+            /// The rdoIncludeClosedFilesYes item info.
+            /// </summary>
+            [RepositoryItemInfo("d7ab5fb3-ac0c-4714-850b-2fdbef42767c")]
+            public virtual RepoItemInfo rdoIncludeClosedFilesYesInfo
+            {
+                get
+                {
+                    return _rdoincludeclosedfilesyesInfo;
+                }
+            }
+
+            /// <summary>
+            /// The rdoIncludeClosedFilesNo item.
+            /// </summary>
+            [RepositoryItem("f7383e79-d801-4e75-b906-1bfbe517f94a")]
+            public virtual Ranorex.RadioButton rdoIncludeClosedFilesNo
+            {
+                get
+                {
+                    return _rdoincludeclosedfilesnoInfo.CreateAdapter<Ranorex.RadioButton>(true);
+                }
+            }
+
+            /// <summary>
+            /// The rdoIncludeClosedFilesNo item info.
+            /// </summary>
+            [RepositoryItemInfo("f7383e79-d801-4e75-b906-1bfbe517f94a")]
+            public virtual RepoItemInfo rdoIncludeClosedFilesNoInfo
+            {
+                get
+                {
+                    return _rdoincludeclosedfilesnoInfo;
+                }
+            }
+
+            /// <summary>
+            /// The rdoIncludeSummaryNo item.
+            /// </summary>
+            [RepositoryItem("7d2c307a-001e-4cef-90f3-d2acd1565fa2")]
+            public virtual Ranorex.RadioButton rdoIncludeSummaryNo
+            {
+                get
+                {
+                    return _rdoincludesummarynoInfo.CreateAdapter<Ranorex.RadioButton>(true);
+                }
+            }
+
+            /// <summary>
+            /// The rdoIncludeSummaryNo item info.
+            /// </summary>
+            [RepositoryItemInfo("7d2c307a-001e-4cef-90f3-d2acd1565fa2")]
+            public virtual RepoItemInfo rdoIncludeSummaryNoInfo
+            {
+                get
+                {
+                    return _rdoincludesummarynoInfo;
+                }
+            }
+
+            /// <summary>
+            /// The rdoIncludeSummaryYes item.
+            /// </summary>
+            [RepositoryItem("e4146a75-dd61-4380-ad1a-034f4311adae")]
+            public virtual Ranorex.RadioButton rdoIncludeSummaryYes
+            {
+                get
+                {
+                    return _rdoincludesummaryyesInfo.CreateAdapter<Ranorex.RadioButton>(true);
+                }
+            }
+
+            /// <summary>
+            /// The rdoIncludeSummaryYes item info.
+            /// </summary>
+            [RepositoryItemInfo("e4146a75-dd61-4380-ad1a-034f4311adae")]
+            public virtual RepoItemInfo rdoIncludeSummaryYesInfo
+            {
+                get
+                {
+                    return _rdoincludesummaryyesInfo;
                 }
             }
         }

@@ -2048,7 +2048,7 @@ QmCC
 			id="af380e40-4e93-49c3-bf42-b251a963a3d5"
 			name="txtresplawyer"
 			searchtimeout="30000ms">
-				/form[@controlname='ReportViewerForm']/container[@controlname='panelViewer']/container[@controlname='reportViewer']/container[@controlname='paramsSplitContainer']//container[@controlname='dmSplitContainer']//container[@accessiblename='Report']/container[@accessiblename='Body']/?/?/container[@accessiblename='Rectangle']/container[3]/text[@text&gt;$lawyersummarydata]
+				/form[@controlname='ReportViewerForm']/container[@controlname='panelViewer']/container[@controlname='reportViewer']/container[@controlname='paramsSplitContainer']//container[@controlname='dmSplitContainer']//container[@accessiblename='Report']/container[@accessiblename='Body']/?/?/container[@accessiblename='Rectangle']/container[2]/text[@text&gt;$lawyersummarydata]
 			</item>
 			<basepath>
 				/form[@controlname='ReportViewerForm']

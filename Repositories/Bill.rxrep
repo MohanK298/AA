@@ -279,6 +279,93 @@ rxversion="9.0">
 			searchtimeout="30000ms">
 				/form[@controlname='MainForm']/?/?/form[@controlname='BaseIndexForm']/?/?/table[@accessiblename='Band 0']/?/?/table[@accessiblename='HistoryList']
 			</item>
+			<item
+			addcaps="button,accessible"
+			capname="button"
+			id="363b9162-6028-449e-a3fe-6e11d2bfd3af"
+			name="btnReprintBills"
+			refimgid="6d3ce87e-e11d-4697-b7c1-1c61c8cdbd98"
+			refpath="/form[@controlname='MainForm']/element[@controltypename='MdiClient']/form[@controlname='BaseIndexForm']/container[@controlname='menubar_Fill_Panel']/element[@controlname='_BaseForm_Fill_Panel_Toolbars_Dock_Area_Top']/container[@accessiblename='DockTop']/toolbar[@accessiblename='Toolbar']/button[@accessiblename='Reprint Bills']"
+			searchtimeout="30000ms">
+				/form[@controlname='MainForm']/?/?/form[@controlname='BaseIndexForm']/container[@controlname='menubar_Fill_Panel']//toolbar[@accessiblename='Toolbar']/button[@accessiblename='Reprint Bills']
+			</item>
+			<item
+			addcaps="menuitem,accessible"
+			capname="menuitem"
+			id="1961a9ce-a29d-4c2e-8a12-324dc5c4dfa7"
+			name="MenuItem"
+			refpath="/form[@controlname='MainForm']/element[@controltypename='MdiClient']/form[@controlname='BaseIndexForm']/container[@controlname='menubar_Fill_Panel']/element[@controlname='_BaseForm_Fill_Panel_Toolbars_Dock_Area_Top']/container[@accessiblename='DockTop']/toolbar[@accessiblename='Toolbar']/menuitem[@accessiblename='']"
+			searchtimeout="30000ms">
+				/form[@controlname='MainForm']/?/?/form[@controlname='BaseIndexForm']/container[@controlname='menubar_Fill_Panel']//toolbar[@accessiblename='Toolbar']/menuitem[@accessiblename='']
+			</item>
+			<folder
+			addcaps="toolbar,accessible"
+			capname="toolbar"
+			id="cd7f4ee6-c558-4141-b804-8b4c61163f67"
+			isrooted="True"
+			name="Toolbar"
+			refpath="/form[@controlname='MainForm']/element[@controltypename='MdiClient']/form[@controlname='BaseIndexForm']/container[@controlname='menubar_Fill_Panel']/element[@controlname='_BaseForm_Fill_Panel_Toolbars_Dock_Area_Top']/container[@accessiblename='DockTop']/toolbar[@accessiblename='Toolbar']"
+			searchtimeout="30000ms"
+			usecache="False">
+				<item
+				addcaps="menuitem,accessible"
+				capname="menuitem"
+				id="5579dc36-4329-4a6b-a0a1-fa4e0a016dd9"
+				name="ReminderStatement"
+				refpath="/form[@controlname='MainForm']/element[@controltypename='MdiClient']/form[@controlname='BaseIndexForm']/container[@controlname='menubar_Fill_Panel']/element[@controlname='_BaseForm_Fill_Panel_Toolbars_Dock_Area_Top']/container[@accessiblename='DockTop']/toolbar[@accessiblename='Toolbar']/menuitem[@accessiblename='']/menuitem[@accessiblename='Reminder Statement']"
+				searchtimeout="30000ms">
+					/form[@controlname='MainForm']/?/?/form[@controlname='BaseIndexForm']/container[@controlname='menubar_Fill_Panel']//toolbar[@accessiblename='Toolbar']/?/?/menuitem[@accessiblename='Reminder Statement']
+				</item>
+				<item
+				addcaps="menuitem,accessible"
+				capname="menuitem"
+				id="25867f84-b410-4684-9764-f72b2c54e2fc"
+				name="TrustTransferToAR"
+				refpath="/form[@controlname='MainForm']/element[@controltypename='MdiClient']/form[@controlname='BaseIndexForm']/container[@controlname='menubar_Fill_Panel']/element[@controlname='_BaseForm_Fill_Panel_Toolbars_Dock_Area_Top']/container[@accessiblename='DockTop']/toolbar[@accessiblename='Toolbar']/menuitem[@accessiblename='']/menuitem[@accessiblename='Trust Transfer to AR']"
+				searchtimeout="30000ms">
+					/form[@controlname='MainForm']/?/?/form[@controlname='BaseIndexForm']/container[@controlname='menubar_Fill_Panel']//toolbar[@accessiblename='Toolbar']/?/?/menuitem[@accessiblename='Trust Transfer to AR']
+				</item>
+				<item
+				addcaps="menuitem,accessible"
+				capname="menuitem"
+				id="cd82a3d5-bcd4-42cb-93fa-a7b1c850cd0c"
+				name="WriteUpDown"
+				refpath="/form[@controlname='MainForm']/element[@controltypename='MdiClient']/form[@controlname='BaseIndexForm']/container[@controlname='menubar_Fill_Panel']/element[@controlname='_BaseForm_Fill_Panel_Toolbars_Dock_Area_Top']/container[@accessiblename='DockTop']/toolbar[@accessiblename='Toolbar']/menuitem[@accessiblename='']/menuitem[@accessiblename='Write Up/Down']"
+				searchtimeout="30000ms">
+					/form[@controlname='MainForm']/?/?/form[@controlname='BaseIndexForm']/container[@controlname='menubar_Fill_Panel']//toolbar[@accessiblename='Toolbar']/?/?/menuitem[@accessiblename='Write Up/Down']
+				</item>
+				<basepath>
+					/form[@controlname='MainForm']/?/?/form[@controlname='BaseIndexForm']/container[@controlname='menubar_Fill_Panel']//toolbar[@accessiblename='Toolbar']
+				</basepath>
+			</folder>
+			<item
+			addcaps="checkbox,uiautomation,uiautomationinvoke,uiautomationtoggle,uiautomationvalue"
+			capname="checkbox"
+			id="4f39501f-a0f3-4aeb-8de9-daca7869e51d"
+			name="cbFirstRow"
+			refimgid="2bcbdfbb-051e-4d4e-8d68-c65baecb6c6a"
+			searchtimeout="30000ms">
+				/form[@controlname='MainForm']/?/?/form[@controlname='BaseIndexForm']//tree[@automationid='ColScrollRegion: 0, RowScrollRegion: 0']/treeitem[@automationid='0']/checkbox
+			</item>
+			<item
+			addcaps="cell,accessible"
+			capname="cell"
+			id="9dc4a3c9-25ad-4813-b4e3-ebe1aabd4f87"
+			name="txtAllCheckbox"
+			refimgid="beb2bec9-9f51-47f4-8087-c5c0b790b9fa"
+			refpath="/form[@controlname='MainForm']/element[@controltypename='MdiClient']/form[@controlname='BaseIndexForm']/element[@controlname='agrdBillList']/table[@accessiblename='Band 0']/container[@accessiblename='Column Headers']/cell[@accessiblename='']"
+			searchtimeout="30000ms">
+				/form[@controlname='MainForm']/?/?/form[@controlname='BaseIndexForm']/?/?/table[@accessiblename='Band 0']/?/?/cell[@accessiblename='']
+			</item>
+			<item
+			addcaps="checkbox,uiautomation,uiautomationinvoke,uiautomationtoggle,uiautomationvalue"
+			capname="checkbox"
+			id="53307abd-6865-4fa6-973e-ecbe1dec708c"
+			name="cbGeneralRow"
+			refimgid="2bcbdfbb-051e-4d4e-8d68-c65baecb6c6a"
+			searchtimeout="30000ms">
+				/form[@controlname='MainForm']/?/?/form[@controlname='BaseIndexForm']//tree[@automationid='ColScrollRegion: 0, RowScrollRegion: 0']/treeitem[@automationid=$index]/checkbox
+			</item>
 			<basepath>
 				/form[@controlname='MainForm']
 			</basepath>
@@ -987,6 +1074,15 @@ DAPIxVgFicf/GQCdrAkiuOdOjQAAAABJRU5ErkJggg==
 			searchtimeout="30000ms">
 				/form[@controlname='PromptForm']/container[@controlname='pnlBase']//element[@controlname='alblMessage']
 			</item>
+			<item
+			addcaps="text,accessible"
+			capname="text"
+			id="4147d37c-6014-4c06-98f8-e51a2db891d1"
+			name="txtMsgPrompt"
+			refimgid="f6a24530-c9e5-4b90-921b-a5b7b0f78113"
+			searchtimeout="30000ms">
+				/form[@controlname='PromptForm']/container[@controlname='pnlBase']/?/?/container[@controlname='pnlMessage']/?/?/text
+			</item>
 			<basepath>
 				/form[@controlname='PromptForm']
 			</basepath>
@@ -1184,6 +1280,26 @@ D8zerL8gSEaw7+rFqJ//CkX5CWkHqyZHVzU6AAAAAElFTkSuQmCC
 			searchtimeout="30000ms">
 				/form[@controlname='OutputForm']/container[@controlname='pnlBase']/?/?/element[@controlname='achkScreen']/?/?/checkbox[@accessiblename='Screen']
 			</item>
+			<item
+			addcaps="checkbox,accessible"
+			capname="checkbox"
+			id="58fb1ef4-37dd-4c43-b2a2-b32b99bb4dd9"
+			name="chkQuickPrintDefaultPrinter"
+			refimgid="4d4289a6-8e15-4dd0-abbc-af23d3f4fc86"
+			refpath="/form[@controlname='OutputForm']/container[@controlname='pnlBase']/container[@controlname='pnlControls']/element[@controlname='achkQuickPrint']/checkbox[@accessiblename='Quick Print (Default Printer)']/checkbox[@accessiblename='Quick Print (Default Printer)']"
+			searchtimeout="30000ms">
+				/form[@controlname='OutputForm']/container[@controlname='pnlBase']/container[@controlname='pnlControls']/element[@controlname='achkQuickPrint']/checkbox[@accessiblename&gt;'Quick Print (Default Prin']/checkbox[@accessiblename&gt;'Quick Print (Default Prin']
+			</item>
+			<item
+			addcaps="button,accessible"
+			capname="button"
+			id="2667c9fb-6b49-4c13-91b2-70d95e9a1c5d"
+			name="btnCancel"
+			refimgid="598ea878-08d9-4ea0-8a90-a0e1ddbad6dd"
+			refpath="/form[@controlname='OutputForm']/element[@controlname='_BaseForm_Toolbars_Dock_Area_Bottom']/container[@accessiblename='DockBottom']/toolbar[@accessiblename='Toolbar']/button[@accessiblename='Cancel']"
+			searchtimeout="30000ms">
+				/form[@controlname='OutputForm']//toolbar[@accessiblename='Toolbar']/button[@accessiblename='Cancel']
+			</item>
 			<basepath>
 				/form[@controlname='OutputForm']
 			</basepath>
@@ -1293,6 +1409,26 @@ D8zerL8gSEaw7+rFqJ//CkX5CWkHqyZHVzU6AAAAAElFTkSuQmCC
 			refimgid="d52815eb-c0dd-41f7-a8db-336cef88187b"
 			searchtimeout="30000ms">
 				/form[@controlname='ReportViewerForm']/?/?/button[@accessiblename='Close']
+			</item>
+			<item
+			addcaps="text,accessible"
+			capname="text"
+			id="930d5d66-4537-45bc-8bd9-b9316b17101e"
+			name="txtFileName"
+			refimgid="95eef4f8-d87c-4eb0-84e1-124f818f85e0"
+			refpath="/form[@controlname='ReportViewerForm']/container[@controlname='panelViewer']/container[@controlname='reportViewer']/container[@controlname='paramsSplitContainer']/container[@controlname='tableLayoutPanel1']/container[@controlname='panel2']/container[@controlname='dmSplitContainer']/container[@controlname='tableLayoutPanel1']/container[@controlname='panel2']/container[@controlname='winRSviewer']/container[@controlname='m_reportPanel']/container[@accessiblename='Report']/container[@accessiblename='Body']/container[@accessiblename='Rectangle']/container[@accessiblename='Rectangle']/container[1]/text[4]"
+			searchtimeout="30000ms">
+				/form[@controlname='ReportViewerForm']/container[@controlname='panelViewer']/container[@controlname='reportViewer']/container[@controlname='paramsSplitContainer']//container[@controlname='dmSplitContainer']//container[@controlname='winRSviewer']/?/?/container[@accessiblename='Report']/container/container[@accessiblename='Rectangle']/container[@accessiblename='Rectangle']/container[1]/text[4]
+			</item>
+			<item
+			addcaps="text,accessible"
+			capname="text"
+			id="ced464fc-1cea-4721-8218-dc0e59d59391"
+			name="txtInvoice"
+			refimgid="58803f09-39bd-4f67-bf7d-fe9f4c3a795c"
+			refpath="/form[@controlname='ReportViewerForm']/container[@controlname='panelViewer']/container[@controlname='reportViewer']/container[@controlname='paramsSplitContainer']/container[@controlname='tableLayoutPanel1']/container[@controlname='panel2']/container[@controlname='dmSplitContainer']/container[@controlname='tableLayoutPanel1']/container[@controlname='panel2']/container[@controlname='winRSviewer']/container[@controlname='m_reportPanel']/container[@accessiblename='Report']/container[@accessiblename='Body']/container[@accessiblename='Rectangle']/container[@accessiblename='Rectangle']/text[3]"
+			searchtimeout="30000ms">
+				/form[@controlname='ReportViewerForm']/container[@controlname='panelViewer']/container[@controlname='reportViewer']/container[@controlname='paramsSplitContainer']/container[@controlname='tableLayoutPanel1']/container[@controlname='panel2']/container[@controlname='dmSplitContainer']//container[@accessiblename='Report']/container/container[@accessiblename='Rectangle']/container[@accessiblename='Rectangle']/text[3]
 			</item>
 			<basepath>
 				/form[@controlname='ReportViewerForm']
@@ -1657,9 +1793,70 @@ Cd405uM14N+/f+egSnGDjyvnxjyyVQYbANL0FmjAm/aKH4+9zVWhSqCAgQEAq9YXqsYCPO8AAAAA
 SUVORK5CYII=
 			</icon>
 		</appfolder>
+		<appfolder
+		addcaps="form,nativewindow"
+		capname="form"
+		id="fab20d50-2b5c-4234-91c2-c095eadf6825"
+		isrooted="True"
+		name="Print"
+		refimgid="f94ee650-ca95-436e-9bcf-12fb20dd059b"
+		refpath="/form[@title='Print']"
+		searchtimeout="30000ms"
+		usecache="True">
+			<item
+			addcaps="button,nativewindow"
+			capname="button"
+			id="710bb873-6455-49e5-9085-0555a01abc40"
+			name="btnCancel"
+			refimgid="2df80427-acfd-4264-85d2-169c33b7502c"
+			refpath="/form[@title='Print']/button[@text='Cancel']"
+			searchtimeout="30000ms">
+				/form[@title='Print']/button[@text='Cancel']
+			</item>
+			<basepath>
+				/form[@title='Print']
+			</basepath>
+			<icon>
+				iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACx
+jwv8YQUAAAAJcEhZcwAADsQAAA7EAZUrDhsAAAEtSURBVDhPY0AGEydO9Fi9evX/WbNm/Z8xYwYY
+g9ggPHPmzP8gOZAaqHJMADPg2/cfWPGqVasoM4AoF4BswQWIcsGaNWugyjEBTgPKysq2lJeX/+/o
+6CAKg9QC9eyGab4JEjhy+vL/qqoqojBILdSQuwwgxoFjZ8A4PT2dKAxTD9ILNmDn3kNgHBwcTBSG
+qYcbsGnrDjDGphgbBqnd8n86wgBYqrt86xFRGKYebsCXz1/B2N7BFRxVPd1d//1zu/6XNHb8d4oK
++u8Unvy/GygGimKQGph6sAEw00BYWdkEbAAI+Cz7/f/mu7f//TsK/mtn94LFQHIgNch6wFGJDEDJ
+FQRABkzZt+K/crzFf4nIFrAYSA6qDDeAuQAbIMoAkCJQ1oVlY5hTQWxMAxgYAIn1NqKTwNeGAAAA
+AElFTkSuQmCC
+			</icon>
+		</appfolder>
+		<appfolder
+		addcaps="form,nativewindow"
+		capname="form"
+		id="e24e0f39-c023-4370-9cb5-45072900f94e"
+		isrooted="True"
+		name="PdfBillImage"
+		refimgid="32f9d248-0e0c-4831-bb06-7a402c9f5653"
+		refpath="/form[@title='BillImage1.pdf - Adobe Acrobat Reader DC']"
+		searchtimeout="30000ms"
+		usecache="True">
+			<basepath>
+				/form[@title&gt;'BillImage1.pdf - Adobe Acrobat']
+			</basepath>
+			<icon>
+				iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACx
+jwv8YQUAAAAJcEhZcwAADsQAAA7EAZUrDhsAAAD/SURBVDhPY4CB//KiBv8VxD78VxT7jxWD5IBq
+oMoxwT9FsQs/Z0/f9/Xr1//Y8M8JPe/+KUl+xmkIyBZsGpHxj4Vzv+E0hBgDQBjsEkXRB1BtCIBu
+wPezp///9bAH08ji3148B4cJVBsCoBvwT1f5/7dbN8GGIIuDMFEG/Opu/f/P2vD/74JMFHEQJsqA
+H5vW//+THA02CFkchIkyAGQzyL8gr/wN9QVjkKEEDfi5dCFYMcj5IM0gcVg4gMQIGgALPJhiEAbZ
+DDLk54zJhA0ARRtIM0wxNozXAGIwdgOAmQXkf2wakDFIDXYDgOn7n5rUN5AkQSwvmgDVRilgYAAA
+ZqQtL10mB5EAAAAASUVORK5CYII=
+			</icon>
+		</appfolder>
 		<basepath>
 		</basepath>
 	</rootfolder>
 	<variables>
+		<var
+		id="f14f4200-1721-482d-ae50-b6de7ac6da1c"
+		name="index">
+		</var>
 	</variables>
 </repository>

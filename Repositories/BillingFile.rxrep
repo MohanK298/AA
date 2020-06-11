@@ -485,6 +485,25 @@ D8zerL8gSEaw7+rFqJ//CkX5CWkHqyZHVzU6AAAAAElFTkSuQmCC
 			searchtimeout="30000ms">
 				/form[@controlname='FileDetailForm']/container[@controlname='panelPicBackground']/container[@controlname='evenSplitPanelModernModeOnly']//container[@controlname='AdminAccounting']/?/?/picture[@controlname='picListBackgroundPanel']//button[@accessiblerole='PushButton']
 			</item>
+			<item
+			addcaps="treeitem,accessible"
+			capname="treeitem"
+			id="fc7e479b-8f2c-4edb-a8db-f9444a3c43fb"
+			name="BillImages"
+			refimgid="c6b5d583-ad42-47a7-8ca8-26296cb599bd"
+			refpath="/form[@controlname='FileDetailForm']/container[@controlname='panelLeftBase']/container[@controlname='panelLeft']/element[@controlname='utreeFacts']/tree[@accessiblerole='Outline']/treeitem[@accessiblename='Bill Images']"
+			searchtimeout="30000ms">
+				/form[@controlname='FileDetailForm']/container[@controlname='panelLeftBase']/?/?/element[@controlname='utreeFacts']/?/?/treeitem[@accessiblename='Bill Images']
+			</item>
+			<item
+			addcaps="table,accessible"
+			capname="table"
+			id="17f1d680-d977-43b9-8dbe-f0cdf31fbd04"
+			name="tblFileDetail"
+			refimgid="ff664e20-72cb-4ff8-9e42-5973738d2221"
+			searchtimeout="30000ms">
+				/form[@controlname='FileDetailForm']/container[@controlname='panelPicBackground']/container[@controlname='evenSplitPanelModernModeOnly']/container[@controlname='panelRight']//element[@controlname='abigFileDetail']/table
+			</item>
 			<basepath>
 				/form[@controlname='FileDetailForm']
 			</basepath>

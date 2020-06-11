@@ -1026,6 +1026,8 @@ namespace SmokeTest.Repositories
             RepoItemInfo _cbchargesalestax2Info;
             RepoItemInfo _cmbbxmattercametousInfo;
             RepoItemInfo _imgcontactInfo;
+            RepoItemInfo _billimagesInfo;
+            RepoItemInfo _tblfiledetailInfo;
 
             /// <summary>
             /// Creates a new FileDetailForm  folder.
@@ -1044,6 +1046,8 @@ namespace SmokeTest.Repositories
                 _cbchargesalestax2Info = new RepoItemInfo(this, "cbChargeSalesTax2", "container[@controlname='panelPicBackground']/container[@controlname='panelRight']//container[@controlname='panelContent']/element[@controlname='ultraGroupTax']/element[@controlname='achkChargeTax2Fees']/checkbox[@accessiblename='Charge Sales Tax2']/checkbox[@accessiblename='Charge Sales Tax2']", 30000, null, "d9a60559-59e1-465e-b0d3-da1717f4aa44");
                 _cmbbxmattercametousInfo = new RepoItemInfo(this, "cmbbxMatterCameToUs", "container[@controlname='panelPicBackground']/container[@controlname='evenSplitPanelModernModeOnly']//element[@controlname='ucmbMatterCameToUs']/combobox[@accessiblerole='ComboBox']", 30000, null, "cf58d82c-8cd4-4996-9ab2-16022cd124bd");
                 _imgcontactInfo = new RepoItemInfo(this, "imgContact", "container[@controlname='panelPicBackground']/container[@controlname='evenSplitPanelModernModeOnly']//container[@controlname='AdminAccounting']/?/?/picture[@controlname='picListBackgroundPanel']//button[@accessiblerole='PushButton']", 30000, null, "f7c3f9e4-6965-4623-9d39-893b7f0b8c6d");
+                _billimagesInfo = new RepoItemInfo(this, "BillImages", "container[@controlname='panelLeftBase']/?/?/element[@controlname='utreeFacts']/?/?/treeitem[@accessiblename='Bill Images']", 30000, null, "fc7e479b-8f2c-4edb-a8db-f9444a3c43fb");
+                _tblfiledetailInfo = new RepoItemInfo(this, "tblFileDetail", "container[@controlname='panelPicBackground']/container[@controlname='evenSplitPanelModernModeOnly']/container[@controlname='panelRight']//element[@controlname='abigFileDetail']/table", 30000, null, "17f1d680-d977-43b9-8dbe-f0cdf31fbd04");
             }
 
             /// <summary>
@@ -1331,6 +1335,54 @@ namespace SmokeTest.Repositories
                 get
                 {
                     return _imgcontactInfo;
+                }
+            }
+
+            /// <summary>
+            /// The BillImages item.
+            /// </summary>
+            [RepositoryItem("fc7e479b-8f2c-4edb-a8db-f9444a3c43fb")]
+            public virtual Ranorex.TreeItem BillImages
+            {
+                get
+                {
+                    return _billimagesInfo.CreateAdapter<Ranorex.TreeItem>(true);
+                }
+            }
+
+            /// <summary>
+            /// The BillImages item info.
+            /// </summary>
+            [RepositoryItemInfo("fc7e479b-8f2c-4edb-a8db-f9444a3c43fb")]
+            public virtual RepoItemInfo BillImagesInfo
+            {
+                get
+                {
+                    return _billimagesInfo;
+                }
+            }
+
+            /// <summary>
+            /// The tblFileDetail item.
+            /// </summary>
+            [RepositoryItem("17f1d680-d977-43b9-8dbe-f0cdf31fbd04")]
+            public virtual Ranorex.Table tblFileDetail
+            {
+                get
+                {
+                    return _tblfiledetailInfo.CreateAdapter<Ranorex.Table>(true);
+                }
+            }
+
+            /// <summary>
+            /// The tblFileDetail item info.
+            /// </summary>
+            [RepositoryItemInfo("17f1d680-d977-43b9-8dbe-f0cdf31fbd04")]
+            public virtual RepoItemInfo tblFileDetailInfo
+            {
+                get
+                {
+                    return _tblfiledetailInfo;
                 }
             }
         }

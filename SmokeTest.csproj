@@ -230,11 +230,17 @@
     <Compile Include="Modules\AddToPeople_Doc_Office_AddIn.cs">
       <id>1668f538-0d45-483e-b0ad-a5a19402f4a0</id>
     </Compile>
+    <Compile Include="Modules\add_checkbox_validate.cs">
+      <id>e0e1792c-4f55-4676-81f5-7efc3d507fd3</id>
+    </Compile>
     <Compile Include="Modules\advanceConflictCheck.cs">
       <id>aedb76e5-9ea4-4335-815d-95b6eea0d024</id>
     </Compile>
     <Compile Include="Modules\AfterFirstLogin.cs">
       <id>26a96e05-3c64-453a-bf15-82c0244ff190</id>
+    </Compile>
+    <Compile Include="Modules\all_Bills_checkbox_Validate.cs">
+      <id>68ab4b2b-ebb2-44b7-9f78-887a833f6ac4</id>
     </Compile>
     <Compile Include="Modules\Attorney_FileDetails\AddDocument.cs">
       <id>fb2a845f-5b70-40ef-a846-f75854da2faf</id>
@@ -349,6 +355,9 @@
     </Compile>
     <Compile Include="Modules\BillingTestTrust.cs">
       <id>cdbe35d0-9cc4-4c9e-a895-fd0f7e31c1f2</id>
+    </Compile>
+    <Compile Include="Modules\bill_format_Validate.cs">
+      <id>603973d5-8478-4aa1-9b0b-08a9e0922878</id>
     </Compile>
     <Compile Include="Modules\changePref_Formatting_DefaultCode.cs">
       <id>9f2e2544-3a69-4889-b0d7-fd938f31944a</id>
@@ -506,6 +515,9 @@
     <Compile Include="Modules\enableTaxSettingsInFirm.cs">
       <id>eb385921-0282-41e8-9563-4e392e8fff5c</id>
     </Compile>
+    <Compile Include="Modules\expand_Bill_Validate.cs">
+      <id>afac4ab8-a300-4761-99a9-e763d0c5a8ce</id>
+    </Compile>
     <Compile Include="Modules\FileVoidPayment.cs">
       <id>3c5327ca-3e05-481a-8812-3e2a730320e4</id>
     </Compile>
@@ -538,6 +550,9 @@
     </Compile>
     <Compile Include="Modules\Premium\SendDocViaEmail.cs">
       <id>65f9c183-df11-4d4d-9016-93742bc2a78b</id>
+    </Compile>
+    <Compile Include="Modules\print_icon_Validate.cs">
+      <id>d6b5e231-5d20-43a9-ab0d-9bd1c28aa409</id>
     </Compile>
     <Compile Include="Modules\quickFind_TE_Past_Current_Dates.cs">
       <id>edb26355-dbc8-47d2-9e66-7de6e06f247a</id>
@@ -668,6 +683,9 @@
     <Compile Include="Modules\validateMergeTemplates.cs">
       <id>da63731b-f953-499c-b795-ac567273eb63</id>
     </Compile>
+    <Compile Include="Modules\validateNoBillPrint.cs">
+      <id>7ecb1661-716e-422f-88f1-82d6cfb618b2</id>
+    </Compile>
     <Compile Include="Modules\validatePreferenceLinks.cs">
       <id>e3dc1d93-0255-41ae-bc6b-02d9461b6718</id>
     </Compile>
@@ -688,6 +706,12 @@
     </Compile>
     <Compile Include="Modules\validate_NoFileOn_Time_Entry_Msg.cs">
       <id>03c1ad4e-1da8-4c5a-906a-49faf3d31d7e</id>
+    </Compile>
+    <Compile Include="Modules\validate_output_form_PrintbtnValidate.cs">
+      <id>b9b3672f-4c40-46aa-b59f-f07550d061a8</id>
+    </Compile>
+    <Compile Include="Modules\validate_Quick_Print.cs">
+      <id>7acaf97e-a22b-464f-9cbd-e49a2bb65428</id>
     </Compile>
     <Compile Include="Modules\VerifyAddtoFile_MultiSelectMails.cs">
       <id>b24759a4-724a-4499-bc89-945c62a8e6c7</id>

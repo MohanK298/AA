@@ -173,17 +173,19 @@ namespace SmokeTest.Modules.Utilities
         {
         	int k=0;
         	var tadapter = tbldata.As <Ranorex.Table>();
+        	string d="";
         	foreach(var myrow in tadapter.Rows)
         	{
         		foreach(var cell in myrow.Cells)
         		{
         			foreach(string txt in data)
         			{
-        				Report.Info(txt+"1");
-        			if(cell.Text.StartsWith(txt))
+        				
+        			if(cell.Text.Contains(txt))
         			{
         				Report.Success(String.Format("Value \"{0}\" Present as expected in \"{1}\"",txt,tblName));
         				k++;
+        				d=txt;
         				break;
         			}
         			}
@@ -191,7 +193,7 @@ namespace SmokeTest.Modules.Utilities
         	}
         	if(k==0)
         	{
-        				Report.Failure(String.Format("Value \"{0}\" not present in \"{1}\"",data,tblName));
+        				Report.Failure(String.Format("Value \"{0}\" not present in \"{1}\"",d,tblName));
         	}
         }
         
@@ -435,16 +437,26 @@ namespace SmokeTest.Modules.Utilities
         		for(int j=0;j<tadapter.Rows[i].Cells.Count;j++)
         		{
         		
-        			if(tadapter.Rows[i].Cells[j].As<Ranorex.Cell>().Text.Equals(data))
+        			if(tadapter.Rows[i].Cells[j].As<Ranorex.Cell>().Text.Contains(data))
         			{
+        				
         				if(j<tadapter.Columns.Count)
-        				{Mouse.Click(tadapter.Rows[i].Cells[j+1].As<Ranorex.Cell>(),WinForms.MouseButtons.Right);}
-        				else{Mouse.Click(tadapter.Rows[i].Cells[j].As<Ranorex.Cell>(),WinForms.MouseButtons.Right);}
+        				{
+        					tadapter.Rows[i].Cells[j+1].As<Ranorex.Cell>().Focus();
+        					Mouse.Click(tadapter.Rows[i].Cells[j+1].As<Ranorex.Cell>(),WinForms.MouseButtons.Right);
+        				}
+        				else
+        				{
+        					tadapter.Rows[i].Cells[j].As<Ranorex.Cell>().Focus();
+        					Mouse.Click(tadapter.Rows[i].Cells[j].As<Ranorex.Cell>(),WinForms.MouseButtons.Right);
+        				}
         				Report.Success(String.Format("Value \"{0}\" Context Clicked as expected in \"{1}\"",data,tblName));
         				k++;
         				break;
         			}
         		}
+        		if(k>0)
+        			break;
         	}
         	if(k==0)
         	{
@@ -484,9 +496,11 @@ namespace SmokeTest.Modules.Utilities
         	IList<Ranorex.ListItem> listitems = cmbbxData.Items;
         	foreach(string item in itemValues)
         	{
+        		
         		foreach(Ranorex.ListItem val in listitems)
 	        	{
-	        		if(val.Text.Equals(item))
+        			Report.Info(val.Text.ToString());
+	        		if(val.Text.Contains(item))
 	        		{
 	        			//item.Click();
 	        			Report.Success(String.Format("Value \"{0}\" Present as expected in \"{1}\" dropdown",item,dpdwnName));
@@ -503,6 +517,7 @@ namespace SmokeTest.Modules.Utilities
         	{
         		Report.Failure(String.Format("{0} Values not present for selection in \"{1}\" dropdown as expected",itemValues.Length,dpdwnName));
         	}
+        	dpdwnData.Click();
         	
         }
         
@@ -766,7 +781,7 @@ namespace SmokeTest.Modules.Utilities
         } 
  		
  		
- 			public string RetrieveCurrentSelectionFromTable(Ranorex.Adapter tbldata,int colnumber,string tblName)
+ 		public string RetrieveCurrentSelectionFromTable(Ranorex.Adapter tbldata,int colnumber,string tblName)
         {
         	int m=0;
         	string details="";
@@ -784,6 +799,24 @@ namespace SmokeTest.Modules.Utilities
         	}
         	return details;
         } 
+ 		
+ 		public void PrintTableData(Ranorex.Adapter tbldata,string tblName)
+ 		{
+        	string rowData="";
+        	var tadapter = tbldata.As <Ranorex.Table>();
+        	for(int i=0;i<tadapter.Rows.Count;i++)
+        	{
+        		rowData="";
+        		for(int j=0;j<tadapter.Rows[i].Cells.Count;j++)
+        		{
+        		
+        			rowData+=tadapter.Rows[i].Cells[j].As<Ranorex.Cell>().Text+"--";
+        			
+        		}
+        		Report.Success(String.Format("Row {0} Data is {1}: ",i+1,rowData));
+        		
+        	}
+ 		}
         
         
         
@@ -919,6 +952,74 @@ namespace SmokeTest.Modules.Utilities
 			
 			
 		}
+		
+		
+		
+		
+	public static String[] units = { "Zero", "One", "Two", "Three",  
+    "Four", "Five", "Six", "Seven", "Eight", "Nine", "Ten", "Eleven",  
+    "Twelve", "Thirteen", "Fourteen", "Fifteen", "Sixteen",  
+    "Seventeen", "Eighteen", "Nineteen" };  
+    public static String[] tens = { "", "", "Twenty", "Thirty", "Forty",  
+    "Fifty", "Sixty", "Seventy", "Eighty", "Ninety" };  
+  
+    public String ConvertAmount(double amount)  
+    {  
+        try  
+        {  
+            Int64 amount_int = (Int64)amount;  
+            Int64 amount_dec = (Int64)Math.Round((amount - (double)(amount_int)) * 100);  
+            if (amount_dec == 0)  
+            {  
+                return Convert(amount_int) + " Dollars";  
+            }  
+            else  
+            {  
+                return Convert(amount_int) + " Point " + Convert(amount_dec) + " Only.";  
+            }  
+        }  
+        catch (Exception e)  
+        {  
+            // TODO: handle exception  
+        }  
+        return "";  
+    }  
+  
+    public String Convert(Int64 i)  
+    {  
+        if (i < 20)  
+        {  
+            return units[i];  
+        }  
+        if (i < 100)  
+        {  
+            return tens[i / 10] + ((i % 10 > 0) ? "-" + Convert(i % 10) : "");  
+        }  
+        if (i < 1000)  
+        {  
+            return units[i / 100] + " Hundred"  
+                    + ((i % 100 > 0) ? " And " + Convert(i % 100) : "");  
+        }  
+        if (i < 100000)  
+        {           return Convert(i / 1000) + " Thousand "  
+                    + ((i % 1000 > 0) ? " " + Convert(i % 1000) : "");  
+        }  
+        if (i < 10000000)  
+        {  
+            return Convert(i / 100000) + " Lakh "  
+                    + ((i % 100000 > 0) ? " " + Convert(i % 100000) : "");  
+        }  
+        if (i < 1000000000)  
+        {  
+            return Convert(i / 10000000) + " Crore "  
+                    + ((i % 10000000 > 0) ? " " + Convert(i % 10000000) : "");  
+        }  
+        return Convert(i / 1000000000) + " Arab "  
+                + ((i % 1000000000 > 0) ? " " + Convert(i % 1000000000) : "");  
+    } 
+		
+		
+		
 		
 		
 		

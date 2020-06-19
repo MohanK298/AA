@@ -89,7 +89,7 @@ namespace SmokeTest.Modules
         	te.MainForm.btnMenuItem.Click();
         	te.AmicusAttorneyXWin.MenuPopup.Click("58;21");
         	te.FileSelectForm.btnQuickFind.Click();
-        	te.FindFilesForm.txtFindContact.TextValue = fileName + time;
+        	te.FindFilesForm.txtFind.TextValue = fileName + time;
         	te.FindFilesForm.btnOK.Click();
         	
         	te.FileSelectForm.listFirstFound.DoubleClick();
@@ -111,7 +111,7 @@ namespace SmokeTest.Modules
         	te.MainForm.btnMenuItem.Click();
         	te.AmicusAttorneyXWin.MenuPopup.Click("67;38");
         	te.FileSelectForm.btnQuickFind.Click();
-        	te.FindFilesForm.txtFindContact.TextValue = fileName + time;
+        	te.FindFilesForm.txtFind.TextValue = fileName + time;
         	te.FindFilesForm.btnOK.Click();
         	
         	te.FileSelectForm.listFirstFound.DoubleClick();

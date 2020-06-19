@@ -117,7 +117,7 @@ namespace SmokeTest.Modules
         	te.MainForm.btnMenuItem.Click();
         	te.AmicusAttorneyXWin.MenuPopup.Click("58;21");
         	te.FileSelectForm.btnQuickFind.Click();
-        	te.FindFilesForm.txtFindContact.TextValue = fileName;
+        	te.FindFilesForm.txtFind.TextValue = fileName;
         	te.FindFilesForm.btnOK.Click();
         	te.var=activityName;
         	te.FileSelectForm.listFirstFound.DoubleClick();

@@ -70,8 +70,13 @@ namespace SmokeTest.Modules
      			txt_finalInvoice=txtInvoice.Substring(txtInvoice.Length-4);
      			Report.Success(String.Format("Bill is displayed for the following file name {0}.",final_filename));
      			Report.Success(String.Format("Invoice is displayed for the following Bill {0}.",txt_finalInvoice));
+     			Delay.Seconds(3);
      			bill.ReportViewerForm.btnClose.Click();
      		}
+        	if(bill.PromptForm.SelfInfo.Exists(3000))
+        	{
+        		bill.PromptForm.Self.Close();
+        	}
         	
         	bfile.MainForm.btnFiles.Click();
         	cmn.SelectItemFromTableDblClick(bfile.MainForm.FilesIndexForm.tblFiles,final_filename,"Files Table");
@@ -80,6 +85,7 @@ namespace SmokeTest.Modules
         	cmn.VerifyDataExistsInTable(bfile.FileDetailForm.tblFileDetail,txt_finalInvoice,"File Details Table");
         	bfile.FileDetailForm.btnSaveClose.Click();
         	
+        
         	
         	
         }

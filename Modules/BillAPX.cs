@@ -65,7 +65,7 @@ namespace SmokeTest.Modules
         	bill.MainForm.SelectBill.Click();
         	bill.BillingDetailForm.SelectFile.Click();        	
         	te.FileSelectForm.btnQuickFind.Click();
-        	te.FindFilesForm.txtFindContact.TextValue = fileName + time;
+        	te.FindFilesForm.txtFind.TextValue = fileName + time;
         	te.FindFilesForm.btnOK.Click();
         	te.FileSelectForm.listFirstFound.DoubleClick();
         	Validate.Exists(bill.BillingDetailForm.BillValueInfo);

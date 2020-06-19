@@ -13,12 +13,14 @@ using System.Text.RegularExpressions;
 using System.Drawing;
 using System.Threading;
 using WinForms = System.Windows.Forms;
+
+using SmokeTest.Repositories;
 using SmokeTest.Modules.Utilities;
 using Ranorex;
 using Ranorex.Core;
 using Ranorex.Core.Testing;
 
-using SmokeTest.Repositories;
+
 
 namespace SmokeTest.Modules
 {

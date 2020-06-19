@@ -350,6 +350,9 @@
     <Compile Include="Modules\BillingEditTimeEntryExpense.cs">
       <id>7fbe1cb5-ff60-421c-b8bf-6a844d42e038</id>
     </Compile>
+    <Compile Include="Modules\billingStatusSelectionValidation.cs">
+      <id>5c2b6ca9-5151-4674-9562-a4d5d53c1ae8</id>
+    </Compile>
     <Compile Include="Modules\BillingTestGeneralRetainer.cs">
       <id>27de871a-1f90-4867-98fe-9f71d61297bd</id>
     </Compile>
@@ -367,6 +370,9 @@
     </Compile>
     <Compile Include="Modules\closeExistingPrompts.cs">
       <id>b7aed1f0-b1c8-4141-b332-2dd058c6976d</id>
+    </Compile>
+    <Compile Include="Modules\ContextClick_Validations.cs">
+      <id>2399df28-52dc-4ed3-9e3b-0bd193c9dcb9</id>
     </Compile>
     <Compile Include="Modules\CpNote.cs">
       <id>44dae08b-eaae-42ae-8474-342b0b27d061</id>
@@ -518,8 +524,17 @@
     <Compile Include="Modules\expand_Bill_Validate.cs">
       <id>afac4ab8-a300-4761-99a9-e763d0c5a8ce</id>
     </Compile>
+    <Compile Include="Modules\filer_Trust_Validation.cs">
+      <id>8f352c0a-bae8-4182-abdb-6a6e07650698</id>
+    </Compile>
     <Compile Include="Modules\FileVoidPayment.cs">
       <id>3c5327ca-3e05-481a-8812-3e2a730320e4</id>
+    </Compile>
+    <Compile Include="Modules\file_type_filter_content_Validation.cs">
+      <id>60ebfdc2-14d6-415a-9d6d-0f23388a27ef</id>
+    </Compile>
+    <Compile Include="Modules\filterValidationInTimeEntries.cs">
+      <id>d71549eb-62ad-445c-836c-0d26dffb15d9</id>
     </Compile>
     <Compile Include="Modules\Filter_subject_contact_Email.cs">
       <id>a1b382f9-fdc4-4b7b-b78b-f9445c8ab055</id>
@@ -656,6 +671,21 @@
     <Compile Include="Modules\trackChangesvalidation.cs">
       <id>01d39d6e-76f7-473e-a39d-937fbb72b5dc</id>
     </Compile>
+    <Compile Include="Modules\trustFileToFileTransfer.cs">
+      <id>88317ba5-3829-44dc-a262-0cb5582e4275</id>
+    </Compile>
+    <Compile Include="Modules\trust_Check_Validation.cs">
+      <id>51d821b4-fb34-437f-8f2d-e9c4ecc099a8</id>
+    </Compile>
+    <Compile Include="Modules\trust_receipt.cs">
+      <id>c356ac46-e053-496e-96ff-5fd040b9057c</id>
+    </Compile>
+    <Compile Include="Modules\trust_transfer_Validation.cs">
+      <id>6e3f12dd-377b-4fd1-9c80-606095682da3</id>
+    </Compile>
+    <Compile Include="Modules\typeSelectionValidation.cs">
+      <id>d217997c-f27e-46b3-90e0-7a09cb607250</id>
+    </Compile>
     <Compile Include="Modules\UserCodeModule1.cs">
       <id>9d9a2824-7ea1-427f-a963-92f735984f61</id>
     </Compile>
@@ -701,6 +731,9 @@
     <Compile Include="Modules\validateTrackChangesinTimeEntry.cs">
       <id>4105bca2-888b-425c-afdf-3b4c6329175a</id>
     </Compile>
+    <Compile Include="Modules\validateTrustMenuItems.cs">
+      <id>79edb36d-6a46-4456-9428-89b676f0e4ff</id>
+    </Compile>
     <Compile Include="Modules\validate_Existing_Time_Entry_OnFile_Msg.cs">
       <id>775104d3-10a9-498e-aea9-307577fa4930</id>
     </Compile>
@@ -722,11 +755,17 @@
     <Compile Include="Modules\verifyAddtoPeople_Outlook_AddIn.cs">
       <id>73211779-a250-49be-9d5c-5a8460eb34ce</id>
     </Compile>
+    <Compile Include="Modules\verifyDateValidate.cs">
+      <id>d11bf204-006a-4163-9b07-9a244dfa90f3</id>
+    </Compile>
     <Compile Include="Modules\VerifyDetailsButtonDisabled_MultiSelectMails.cs">
       <id>77b1f84f-9a6b-416a-8d64-3ef2e369f87a</id>
     </Compile>
     <Compile Include="Modules\VerifyDocDetailOfficeAddInExistingDoc.cs">
       <id>4b968662-445c-4cb3-9f17-5b5768fc79cf</id>
+    </Compile>
+    <Compile Include="Modules\verifyHeaders.cs">
+      <id>b33c10df-e8b1-4f00-82cb-61f8604bf78c</id>
     </Compile>
     <Compile Include="Modules\verifyOutlookDisabledToolbar.cs">
       <id>a557bac7-b668-4be7-a231-38f4c7862a7c</id>
@@ -736,6 +775,12 @@
     </Compile>
     <Compile Include="Modules\VerifyOutlook_Enabled_AmicusToolbar.cs">
       <id>54d1ac5d-2fa8-433b-8e72-d5c271148cfc</id>
+    </Compile>
+    <Compile Include="Modules\verifyTimeKeeperValidation.cs">
+      <id>13a0303c-1242-419b-bf43-bda1f54ae28b</id>
+    </Compile>
+    <Compile Include="Modules\verify_File_type_Filter_Validation.cs">
+      <id>7849e3a0-d564-491a-b5ed-11a026ca2e71</id>
     </Compile>
     <Compile Include="Modules\VoidPayment.cs">
       <id>7f4d4c36-2214-4bbc-ac4d-faea2f7b708e</id>
@@ -1102,6 +1147,12 @@
       <DependentUpon>TimeSheets.rxrep</DependentUpon>
       <RepositoryCode>true</RepositoryCode>
       <id>a66d8957-28ea-4e54-b078-5da1441b8730</id>
+    </Compile>
+    <Compile Include="Repositories\Trust.cs">
+      <BoundTo>c29d1742-69b7-40ad-8a8f-b8ad42761940</BoundTo>
+      <DependentUpon>Trust.rxrep</DependentUpon>
+      <RepositoryCode>true</RepositoryCode>
+      <id>ba3760e4-609f-4d46-a53a-fc72af8b1284</id>
     </Compile>
     <Compile Include="Repositories\Word_app.cs">
       <BoundTo>9a6b545d-b692-488c-a599-f0311276a9eb</BoundTo>
@@ -1557,6 +1608,17 @@
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
       <id>1e4e1c3c-508d-4294-99d4-cc8119ef76fe</id>
     </Content>
+    <None Include="Repositories\Trust.rximg">
+      <BoundTo>c29d1742-69b7-40ad-8a8f-b8ad42761940</BoundTo>
+      <DependentUpon>Trust.rxrep</DependentUpon>
+      <imageblob>true</imageblob>
+      <id>2e9ce03d-ada4-449e-ad4d-17b783b14e19</id>
+    </None>
+    <None Include="Repositories\Trust.rxrep">
+      <id>c29d1742-69b7-40ad-8a8f-b8ad42761940</id>
+      <repoid>54b27e7e-0038-4bc3-beb3-2eb608c18ec8</repoid>
+      <reporootid>38de9049-1414-44be-96f3-f4a840cd53f7</reporootid>
+    </None>
     <None Include="Repositories\Word_app.rximg">
       <BoundTo>9a6b545d-b692-488c-a599-f0311276a9eb</BoundTo>
       <DependentUpon>Word_app.rxrep</DependentUpon>

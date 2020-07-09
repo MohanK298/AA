@@ -39,7 +39,7 @@ namespace SmokeTest.Modules
         
         Trust trst=Trust.Instance;
     	Common cmn=new Common();
-    	string[] methodItems={"Check","Cash","Credit Card (Manual)","Electronic","Other"};
+    	string[] methodItems={"Check","Cash","Credit Card Payment (APX)","ACH Payment (APX)","Credit Card (Manual)","Electronic","Other"};
     	string data="Retainer: "+System.DateTime.Now.ToString();
     	private void trustReceipt_Validation()
     	{
@@ -56,7 +56,8 @@ namespace SmokeTest.Modules
         		//cmn.SelectItemDropdown(trst.TrustDetailBaseForm.PnlBase.cmbbxReceiptTo,"1 - Trust","Receipt to Dropdown");
         		Delay.Milliseconds(500);
         		Validate.AttributeContains(trst.TrustDetailBaseForm.PnlBase.cmbbxReceiptToInfo,"Text","1 - Trust","Receipt To Dropdown has the value 1 - Trust Selected");
-        		Validate.AttributeContains(trst.TrustDetailBaseForm.PnlBase.txtDateInfo,"UIAutomationValueValue",System.DateTime.Now.ToString("M/dd/yyyy"),"Today's Date is set to Default");
+        		Validate.AttributeContains(trst.TrustDetailBaseForm.PnlBase.txtDateInfo,"UIAutomationValueValue",System.DateTime.Now.ToString("M/d/yyyy"));
+        		//,"Today's Date is set to Default");
         		Report.Success(String.Format("Receipt Id seen for the current Trust Receipt Form is: {0}",trst.TrustDetailBaseForm.PnlBase.txtReceiptId.GetAttributeValue<String>("UIAutomationValueValue")));
         		Validate.AttributeContains(trst.TrustDetailBaseForm.PnlBase.txtDescriptionInfo,"UIAutomationValueValue","Retainer",String.Format("Description for Trust Receipts is: {0}",trst.TrustDetailBaseForm.PnlBase.txtDescription.GetAttributeValue<String>("UIAutomationValueValue")));
         		trst.TrustDetailBaseForm.PnlBase.txtDescription.PressKeys(data);

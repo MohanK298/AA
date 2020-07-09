@@ -59,7 +59,7 @@ namespace SmokeTest.Modules
         	bill.MainForm.btnBilling.Click();
         	bill.MainForm.ToolbarBill.Click();
         	bill.MainForm.ReceivePayment.Click();
-        	bill.ReceivePaymentForm.SelectFile.Click();
+        	bill.ReceivePaymentForm.btnSelectFile.Click();
         	//te.FileSelectForm.listFirstFound.DoubleClick();
         	timeEntry.FileSelectForm.btnQuickFind.Click();
         	timeEntry.FindFilesForm.txtFindFile.TextValue = fileName + time;
@@ -67,10 +67,10 @@ namespace SmokeTest.Modules
         	te.FileSelectForm.listFirstFound.DoubleClick();
         	//Validate.Exists(bill.ReceivePaymentForm.ccNumberInfo);
         	//Report.Success("CC added from Contact is Validated");
-        	bill.ReceivePaymentForm.DropdownSelection.Click();
+        	bill.ReceivePaymentForm.cmbbxType.Click();
         	bill.ListItem.selectCCapx.Click();
         	bill.ReceivePaymentForm.enterAmount.PressKeys("2.30");
-        	bill.ReceivePaymentForm.PayNow.Click();
+        	bill.ReceivePaymentForm.btnPayNow.Click();
         	Validate.Exists(bill.PromptForm.AmountTxtInfo);
         	bill.PromptForm.btnYes1.Click();
         	Delay.Seconds(3);

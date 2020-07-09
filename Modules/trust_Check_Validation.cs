@@ -59,7 +59,7 @@ namespace SmokeTest.Modules
         		//cmn.SelectItemDropdown(trst.TrustDetailBaseForm.PnlBase.cmbbxReceiptTo,"1 - Trust","Receipt to Dropdown");
         		Delay.Milliseconds(500);
         		Validate.AttributeContains(trst.TrustDetailBaseForm.PnlBase.cmbbxReceiptToInfo,"Text","1 - Trust","From Dropdown has the value 1 - Trust Selected");
-        		Validate.AttributeContains(trst.TrustDetailBaseForm.PnlBase.txtDateInfo,"UIAutomationValueValue",System.DateTime.Now.ToString("M/dd/yyyy"),"Today's Date is set to Default");
+        		Validate.AttributeContains(trst.TrustDetailBaseForm.PnlBase.txtDateInfo,"UIAutomationValueValue",System.DateTime.Now.ToString("M/d/yyyy"),"Today's Date is set to Default");
         		Report.Success(String.Format("Check # seen for the current Trust Check Form is: {0}",trst.TrustDetailBaseForm.PnlBase.txtCheckNumber.GetAttributeValue<String>("UIAutomationValueValue")));
         		Validate.AttributeContains(trst.TrustDetailBaseForm.PnlBase.txtDescriptionInfo,"UIAutomationValueValue","",String.Format("Description for Trust Check is: '{0}' - empty",trst.TrustDetailBaseForm.PnlBase.txtDescription.GetAttributeValue<String>("UIAutomationValueValue")));
         		trst.TrustDetailBaseForm.PnlBase.txtDescription.PressKeys(data);

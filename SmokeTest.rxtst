@@ -3,6 +3,12 @@
 rxversion="9.0">
 	<testsuiteentryhierarchy>
 		<flatlistofchildren>
+			<testmodule
+			id="004097dc-47cc-480a-924a-51847a215194"
+			name="validateButtonsInAPXForm"
+			ref="8a53705e-62b3-489e-aa94-259043ef912d"
+			type="UserCode">
+			</testmodule>
 			<testcase
 			id="00d3555b-385f-4931-bdd5-da26a7bedc9f"
 			name="Attorney_Email">
@@ -35,6 +41,12 @@ side]]>
 of Billing side]]>
 				</description>
 			</smartfoldernode>
+			<testmodule
+			id="01d215f6-95ba-4958-8c7c-bc2366578d47"
+			name="closeExistingPrompts"
+			ref="fdd2e606-d9d7-4eee-a27d-dc862a5293a3"
+			type="UserCode">
+			</testmodule>
 			<smartfoldernode
 			datasource="FileData"
 			id="020fa6c1-b65e-43d8-adbf-e916aee0015e"
@@ -95,6 +107,10 @@ will be used throughout the Smoke Test]]>
 			id="050bea6e-2129-44ce-8a76-eef174d86edd"
 			name="CreateRepeatingApptWithExceptions">
 			</smartfoldernode>
+			<smartfoldernode
+			id="052d7120-8a41-4460-a78b-0b2f8b3f769f"
+			name="ValidateGeneralRetainerOnPayment">
+			</smartfoldernode>
 			<testmodule
 			id="05761224-4d1e-489b-9c6c-f9cf7041822f"
 			name="BillingTestGeneralRetainer"
@@ -124,6 +140,10 @@ will be used throughout the Smoke Test]]>
 			<testcase
 			id="057c5807-a16a-44b4-b075-2ddb98bcd1e0"
 			name="ConflictCheck">
+			</testcase>
+			<testcase
+			id="05d66913-55d2-4aca-9970-eac5df57833f"
+			name="PayNow-Billing">
 			</testcase>
 			<testmodule
 			id="06afd20a-eb97-4b63-9178-961037e3c874"
@@ -328,6 +348,18 @@ Module]]>
 			name="AddDocumentAM">
 			</smartfoldernode>
 			<testmodule
+			id="16203ded-3ed8-4944-8e19-0c203b9c6177"
+			name="pay_cc_on_file"
+			ref="f5cb1b5c-b389-4ee8-a48f-d3e9db454264"
+			type="UserCode">
+			</testmodule>
+			<testmodule
+			id="16929959-bb7a-4cde-b07f-097a14c81dd7"
+			name="validatePaymentWindowForm"
+			ref="4b673afa-66c9-42ab-aafe-0da757c41c92"
+			type="UserCode">
+			</testmodule>
+			<testmodule
 			id="17598a2f-bed9-4319-9be8-747e5a87fdbc"
 			name="CpNote"
 			ref="7e9b3968-9695-4b83-b574-929d264f1a61"
@@ -392,6 +424,12 @@ Module]]>
 			name="SearchFunctionality">
 			</smartfoldernode>
 			<testmodule
+			id="1bebf92b-b278-454e-a560-acd8b5c882f3"
+			name="validateAddressDetailsinAPX"
+			ref="bd1f2bbd-3b69-44e8-b721-a180d592f78f"
+			type="UserCode">
+			</testmodule>
+			<testmodule
 			id="1c649798-fa9c-4fb9-a7d7-1a04a3a43aa2"
 			name="FileVoidPayment"
 			ref="9e7a85c9-75fe-4f92-a6d7-e860b491133a"
@@ -443,6 +481,12 @@ module]]>
 			type="UserCode">
 			</testmodule>
 			<testmodule
+			id="1dcf3c1c-89c1-4b0b-897d-b8435ca4fc4a"
+			name="closeExistingPrompts"
+			ref="fdd2e606-d9d7-4eee-a27d-dc862a5293a3"
+			type="UserCode">
+			</testmodule>
+			<testmodule
 			id="1de7d58f-9a78-4b42-a4fe-6c7aaaa19b2c"
 			name="convertToToDo"
 			ref="834f172e-1d9e-473a-ba47-3a25ea1a4cb5"
@@ -469,6 +513,10 @@ module]]>
 			<smartfoldernode
 			id="1fe94253-1808-4543-bbd3-ce79e3902ab3"
 			name="Enable_TaxSettings">
+			</smartfoldernode>
+			<smartfoldernode
+			id="20ef8ac9-7588-4931-ace9-f54c0d4fb974"
+			name="FirmSettings-APX">
 			</smartfoldernode>
 			<smartfoldernode
 			id="219891fb-f650-43e8-b7af-7906644fdace"
@@ -609,6 +657,12 @@ module]]>
 			id="2e905b59-d108-4c49-8113-5c3651b570d4"
 			name="AdvanceConflictCheck">
 			</smartfoldernode>
+			<testmodule
+			id="2ed4dee7-1c68-496a-8d09-80207a4eb83d"
+			name="firmSettingsEmailBills"
+			ref="f6d64c75-d47e-4531-b763-7b11843137bd"
+			type="UserCode">
+			</testmodule>
 			<testmodule
 			id="2fe46f71-0c95-4143-b2f2-8b617f8c70af"
 			name="BillingAddContact"
@@ -785,6 +839,10 @@ module]]>
 			id="3603e041-f535-4d9c-ad69-c45e53b082d1"
 			name="CreateNewApptOverlapExistAdjrnAppt">
 			</smartfoldernode>
+			<smartfoldernode
+			id="3649eec2-7d1a-4091-b66e-e9c44b43c407"
+			name="File-BillSettings">
+			</smartfoldernode>
 			<testmodule
 			id="3652c65c-e210-4b5e-a247-e4914eeb529c"
 			name="AddToDo"
@@ -806,6 +864,10 @@ module]]>
 			id="37c9e3f8-34e3-46ea-8a5c-2a0fca4079c3"
 			name="AddPrecedent">
 			</smartfoldernode>
+			<teardown
+			id="384ee0b2-bb3f-4301-8c63-f61c5458dea9"
+			name="teardown">
+			</teardown>
 			<testmodule
 			id="38d4a748-07eb-4ebc-9d34-3ce81efe840d"
 			name="trustFileToFileTransfer"
@@ -853,6 +915,16 @@ module]]>
 			id="3d966af6-4ec6-4fef-9955-70cc17ffa944"
 			name="Validate_Output_Form_Print">
 			</smartfoldernode>
+			<smartfoldernode
+			id="3e313b2b-7774-4c26-bd32-d4ea0ade3e8e"
+			name="ValidateAddressDetailsinAPX">
+			</smartfoldernode>
+			<testmodule
+			id="3e59304e-8fa8-4f8d-822d-4bbd1bc9c75b"
+			name="apx_chargeback_Report"
+			ref="2f03971d-6e7c-4e8a-bfba-e0fa67cc75dc"
+			type="UserCode">
+			</testmodule>
 			<testmodule
 			id="3eee55f6-c5a3-4a89-b053-62c81fe35e86"
 			name="validate_NoFileOn_Time_Entry_Msg"
@@ -898,16 +970,10 @@ module]]>
 			type="UserCode">
 				<databinding>
 					<var
-					dataname="FirstName"
-					datasourceid="2b580966-7b33-4156-bff2-f448647382bd"
-					variableid="eab5ae1d-ea6c-476a-9c0d-9a83926a1a9e"
-					variablename="firstName">
-					</var>
-					<var
-					dataname="FileName"
-					datasourceid="2b580966-7b33-4156-bff2-f448647382bd"
-					variableid="dde10115-729e-4144-aac6-425eaf372517"
-					variablename="fileName">
+					dataname="Time"
+					datasourceid="658e3020-1e20-4cb1-b196-89a6ef9ca8a2"
+					variableid="6193b8f1-1eea-4693-866c-25439b548aa0"
+					variablename="time">
 					</var>
 					<var
 					dataname="LastName"
@@ -916,10 +982,16 @@ module]]>
 					variablename="lastName">
 					</var>
 					<var
-					dataname="Time"
-					datasourceid="658e3020-1e20-4cb1-b196-89a6ef9ca8a2"
-					variableid="6193b8f1-1eea-4693-866c-25439b548aa0"
-					variablename="time">
+					dataname="FileName"
+					datasourceid="2b580966-7b33-4156-bff2-f448647382bd"
+					variableid="dde10115-729e-4144-aac6-425eaf372517"
+					variablename="fileName">
+					</var>
+					<var
+					dataname="FirstName"
+					datasourceid="2b580966-7b33-4156-bff2-f448647382bd"
+					variableid="eab5ae1d-ea6c-476a-9c0d-9a83926a1a9e"
+					variablename="firstName">
 					</var>
 				</databinding>
 			</testmodule>
@@ -946,6 +1018,10 @@ module]]>
 			id="475e4825-f7a5-4c0a-bf76-06b9021492eb"
 			name="Reprint_Bills">
 			</testcase>
+			<teardown
+			id="4763f351-6d26-49a7-bc9d-c915178cf24b"
+			name="teardown">
+			</teardown>
 			<smartfoldernode
 			id="48127973-c9a3-4064-8264-46bbf0e6f7d0"
 			name="AddNote">
@@ -1117,6 +1193,10 @@ Attorney side]]>
 					</var>
 				</databinding>
 			</testmodule>
+			<smartfoldernode
+			id="4f0716c0-df79-45c7-a94b-bd8c978ac758"
+			name="FirmSettings-EmailingBills">
+			</smartfoldernode>
 			<testmodule
 			id="4f4fdf1a-7437-40c4-8883-35692e7ec56c"
 			name="verifyAddNotes"
@@ -1200,6 +1280,14 @@ module]]>
 				</description>
 			</smartfoldernode>
 			<smartfoldernode
+			id="529044e8-2d8a-43ea-8b93-240b052cb1fd"
+			name="Validate_No_CC_APX_AddedInFile">
+			</smartfoldernode>
+			<testcase
+			id="52b47774-b3af-4420-be54-c260506660ad"
+			name="APX_Transactions">
+			</testcase>
+			<smartfoldernode
 			datasource="ContactAPXData"
 			id="52c8861c-4c6f-48a0-a0ee-282451147a3e"
 			name="AddContactAPX">
@@ -1226,6 +1314,12 @@ Billing File]]>
 			id="535449a3-8460-444f-8dcf-d422000010e3"
 			name="Trust_Check">
 			</smartfoldernode>
+			<testmodule
+			id="53c58651-8f4a-4066-b714-78c92f079744"
+			name="closeExistingPrompts"
+			ref="fdd2e606-d9d7-4eee-a27d-dc862a5293a3"
+			type="UserCode">
+			</testmodule>
 			<smartfoldernode
 			id="54304e09-72c5-4b17-b210-d874c68f9569"
 			name="QuickFind_TE_Past_Current_Dates">
@@ -1264,6 +1358,12 @@ module]]>
 			id="578c8c98-c4b3-4e32-bd1d-8a5620c35086"
 			name="CreateManyFiles">
 			</smartfoldernode>
+			<testmodule
+			id="579f19dc-abd1-4a61-b39b-1a9bd720d8c0"
+			name="closeExistingPrompts"
+			ref="fdd2e606-d9d7-4eee-a27d-dc862a5293a3"
+			type="UserCode">
+			</testmodule>
 			<smartfoldernode
 			datasource="FileData"
 			id="58213b65-da44-4b6b-8a1d-dd85c0118017"
@@ -1286,15 +1386,41 @@ which will be used throughout the Smoke Test]]>
 			type="UserCode">
 			</testmodule>
 			<testmodule
+			id="5a165af6-9792-47e2-aec6-4e26f54b3a4e"
+			name="addPaymentCreditCard"
+			ref="b5f7beaa-8e2d-4618-86ca-1d5ce4de0cb6"
+			type="UserCode">
+			</testmodule>
+			<testmodule
 			id="5a327f2a-394e-47f6-bd70-f969d5ee92bd"
 			name="dateCalculateAddBusinessDays"
 			ref="54adcaa0-ed9e-48f1-abd2-79d32b4f46e6"
+			type="UserCode">
+			</testmodule>
+			<testmodule
+			id="5a933563-a410-46c9-a06a-541809d2130d"
+			name="validateAPXPaymentMethodWindow"
+			ref="48aa8199-da27-4e38-92e8-7195258f053b"
 			type="UserCode">
 			</testmodule>
 			<smartfoldernode
 			id="5b5aea69-6426-460b-b666-6ea8e58b7416"
 			name="VerifyEventsAddFromFiles">
 			</smartfoldernode>
+			<smartfoldernode
+			id="5bc120ba-5a47-4bda-9736-cf9e4e16713b"
+			name="Pay_CC_On_File">
+			</smartfoldernode>
+			<testmodule
+			id="5be10f26-dfbb-4d28-81db-b0ec31bc523d"
+			name="addPayment_EcheckACH"
+			ref="f81c6e0f-0995-465e-827d-587278ef12c6"
+			type="UserCode">
+			</testmodule>
+			<teardown
+			id="5d2c92c4-74c6-4fbf-9b25-8cedf95fcd04"
+			name="teardown">
+			</teardown>
 			<testcase
 			id="5d6025df-7164-42d8-874c-7e2bef4c1f4c"
 			name="Referral_Report">
@@ -1629,10 +1755,20 @@ which will be used throughout the Smoke Test]]>
 					<![CDATA[Delete the edited Section and Page]]>
 				</description>
 			</smartfoldernode>
+			<smartfoldernode
+			id="6cfa0c71-9d60-47ae-a167-d9cb8c1c65e9"
+			name="APX_Transaction_Report">
+			</smartfoldernode>
 			<testmodule
 			id="6d203d21-086a-49a3-b22f-749a2c1175bb"
 			name="convertToTimeEntry"
 			ref="365c594c-9e3f-4817-97a7-415289fb464e"
+			type="UserCode">
+			</testmodule>
+			<testmodule
+			id="6d8c769e-f465-4192-9853-9fea27977bc9"
+			name="closeExistingPrompts"
+			ref="fdd2e606-d9d7-4eee-a27d-dc862a5293a3"
 			type="UserCode">
 			</testmodule>
 			<testmodule
@@ -1717,6 +1853,10 @@ event]]>
 			id="75060f55-ed1d-4f19-b22a-9c9aa5a33a8f"
 			name="teardown">
 			</teardown>
+			<teardown
+			id="75202ace-53b8-48da-adab-60e54b5769c3"
+			name="teardown">
+			</teardown>
 			<testmodule
 			id="7533e7c2-479f-4ed4-b5cc-c67bfaa7b37d"
 			name="changePrefIncludeChronology"
@@ -1786,6 +1926,12 @@ event]]>
 			minrange="2"
 			name="Time_Fees&amp;Expenses">
 			</testcase>
+			<testmodule
+			id="79e1c67c-bf79-4c6f-899e-b2ad558166ac"
+			name="validateReceivePayment"
+			ref="7c668657-1f31-46b6-b704-730c4dc1e09c"
+			type="UserCode">
+			</testmodule>
 			<smartfoldernode
 			id="7a9ea756-51f4-41de-a41d-757781604750"
 			name="OutlookDisabledToolbar">
@@ -1799,6 +1945,12 @@ event]]>
 			id="7add8c38-47e6-4e42-96b9-efbb1727e5b8"
 			name="filer_Trust_Validation"
 			ref="be515f56-95fc-41a4-8c8d-909781476378"
+			type="UserCode">
+			</testmodule>
+			<testmodule
+			id="7b5f632d-c8e5-40f8-8e31-1d7fe7ff3688"
+			name="validateTrust_Receipt_Window_APX"
+			ref="dd3ba305-e2ad-4580-b2cf-f085aaf1e48b"
 			type="UserCode">
 			</testmodule>
 			<testmodule
@@ -1886,6 +2038,12 @@ event]]>
 			name="Document_Detail_Module">
 			</testcase>
 			<testmodule
+			id="7e27b217-0a99-4141-9499-c848af1a1802"
+			name="filebillSettings"
+			ref="335e1a90-e355-4d9e-97e4-e1f75d7cfc68"
+			type="UserCode">
+			</testmodule>
+			<testmodule
 			id="7ee23165-3e67-4d25-b823-d4a037b12c01"
 			name="closeExistingPrompts"
 			ref="fdd2e606-d9d7-4eee-a27d-dc862a5293a3"
@@ -1901,6 +2059,12 @@ event]]>
 			id="7fadc9d5-ebde-4692-a2f2-69fc16fa43e2"
 			name="Verify_Timekeeper_Validation">
 			</smartfoldernode>
+			<testmodule
+			id="7fde5c57-5de4-4dcd-bc4f-371e33847c67"
+			name="closeExistingPrompts"
+			ref="fdd2e606-d9d7-4eee-a27d-dc862a5293a3"
+			type="UserCode">
+			</testmodule>
 			<smartfoldernode
 			id="808d19bb-cc9a-4ac1-a0e5-a3b644467f98"
 			name="AutoSavenotSet_Validation">
@@ -1909,6 +2073,16 @@ event]]>
 			id="80e69ff0-f2fc-4a3a-bf73-8080a3ad77c7"
 			name="ValidateAutoComplete_Files_People">
 			</smartfoldernode>
+			<teardown
+			id="830206a1-f7ad-472b-9e49-30bf43bf763e"
+			name="teardown">
+			</teardown>
+			<testmodule
+			id="83b81c17-2dc9-4eef-9edd-f399778dc5c4"
+			name="closeExistingPrompts"
+			ref="fdd2e606-d9d7-4eee-a27d-dc862a5293a3"
+			type="UserCode">
+			</testmodule>
 			<smartfoldernode
 			id="8415e0b4-3c9d-48b5-9028-1adabd0000b2"
 			name="CreateRedLetterDayWithDragNDropWeekly">
@@ -1989,6 +2163,10 @@ event]]>
 			id="895badf3-6aaf-4734-9c20-63c98b993985"
 			name="Filter_Subject_Contact_Email">
 			</smartfoldernode>
+			<teardown
+			id="8a64aa05-b336-4633-8cd2-046fe6c030f2"
+			name="teardown">
+			</teardown>
 			<smartfoldernode
 			id="8b2c2e55-1965-4c10-ba2b-4417e7a86a84"
 			name="CreatePrecedent">
@@ -2072,6 +2250,12 @@ event]]>
 					</var>
 				</databinding>
 			</testmodule>
+			<testmodule
+			id="8f5f2752-aff1-49c0-9111-c2cd9b8e3365"
+			name="closeExistingPrompts"
+			ref="fdd2e606-d9d7-4eee-a27d-dc862a5293a3"
+			type="UserCode">
+			</testmodule>
 			<smartfoldernode
 			datasource="FileAPXData"
 			id="93dcb4a3-afd8-41d6-bcee-5d17d2a657a4"
@@ -2088,6 +2272,10 @@ event]]>
 			<smartfoldernode
 			id="95346147-e6f3-4763-a5ee-9156f4af2cd9"
 			name="EmptySearchValidation">
+			</smartfoldernode>
+			<smartfoldernode
+			id="955cb2da-fbf9-45dc-8172-eece79d344af"
+			name="ValidateTrustReceipt_Window_APX">
 			</smartfoldernode>
 			<smartfoldernode
 			id="95ab7eb5-2b1a-47dc-9667-b0e86e945f00"
@@ -2151,6 +2339,12 @@ event]]>
 			name="VerifyAddDocToDocGroup">
 			</smartfoldernode>
 			<testmodule
+			id="97f40054-96d5-47aa-a969-34a115df7975"
+			name="closeExistingPrompts"
+			ref="fdd2e606-d9d7-4eee-a27d-dc862a5293a3"
+			type="UserCode">
+			</testmodule>
+			<testmodule
 			id="9892e0ca-f2ac-4fff-8db0-5506ae16c726"
 			name="AddFolder2"
 			ref="b1e7519a-f770-4367-9111-63130d97ff64"
@@ -2196,6 +2390,10 @@ event]]>
 			ref="0bc6fb57-e6e7-4338-ba34-58dd339890ba"
 			type="UserCode">
 			</testmodule>
+			<teardown
+			id="9d12bd7b-a0ca-44cc-94ed-46b6a7dc9449"
+			name="teardown">
+			</teardown>
 			<testmodule
 			id="9d178e00-073b-48e2-b090-c16b4101e089"
 			name="closeExistingPrompts"
@@ -2220,6 +2418,12 @@ event]]>
 			id="9ec87489-e267-4573-8632-e52e9d23aa6b"
 			name="VerifyDocuments"
 			ref="604e6d1b-7e56-47aa-85cc-e4b69673c65e"
+			type="UserCode">
+			</testmodule>
+			<testmodule
+			id="9ef52318-0948-4477-8c1e-7fea23dfed24"
+			name="validateGeneralRetainerOnPayment"
+			ref="2709653e-6432-40a0-a20a-d32c8bf87027"
 			type="UserCode">
 			</testmodule>
 			<smartfoldernode
@@ -2291,10 +2495,24 @@ Validation)]]>
 			id="a149301f-7ca0-4457-bfaf-965f3c22a182"
 			name="ValidateAdvancedToolbars">
 			</smartfoldernode>
+			<testmodule
+			id="a1836ff0-d6b4-4280-a76f-7b4b4e4fd289"
+			name="closeExistingPrompts"
+			ref="fdd2e606-d9d7-4eee-a27d-dc862a5293a3"
+			type="UserCode">
+			</testmodule>
+			<teardown
+			id="a21572ce-00c1-4054-ba31-6f733d5be59a"
+			name="teardown">
+			</teardown>
 			<smartfoldernode
 			id="a280aae5-a91a-465e-b327-e032603dd5d9"
 			name="MultiSelect_AddMail_OL_Embedded">
 			</smartfoldernode>
+			<teardown
+			id="a2ac35a8-5329-446f-8165-9dca31a2d254"
+			name="teardown">
+			</teardown>
 			<testmodule
 			id="a2c3271d-cb81-46d7-b146-8ffe1d6f85ca"
 			name="BillContactAPX"
@@ -2400,6 +2618,10 @@ Validation)]]>
 			ref="fdd2e606-d9d7-4eee-a27d-dc862a5293a3"
 			type="UserCode">
 			</testmodule>
+			<smartfoldernode
+			id="a7d2e28c-22f9-4bc5-b49b-3f977de8569c"
+			name="ValidateAddAPXPaymentWindow">
+			</smartfoldernode>
 			<testmodule
 			id="a8819962-babc-4b99-9c67-132f208fe7f3"
 			name="validateStandardToolbars"
@@ -2409,6 +2631,10 @@ Validation)]]>
 			<smartfoldernode
 			id="a8bdc1ce-01af-4c76-8bd9-13848fac5071"
 			name="VerifyAddNotes">
+			</smartfoldernode>
+			<smartfoldernode
+			id="a8f9611a-3260-4115-b604-3a2293b842b9"
+			name="ValidateAPXPaymentMethodwindowForm">
 			</smartfoldernode>
 			<testmodule
 			id="a930b892-0266-42fd-aec6-4d6925d4b8f0"
@@ -2488,6 +2714,10 @@ billing side that will be billed on a file]]>
 					</var>
 				</databinding>
 			</testmodule>
+			<teardown
+			id="abbad0ca-e243-4427-998c-ddc8963e8206"
+			name="teardown">
+			</teardown>
 			<smartfoldernode
 			id="accc6f36-0a6b-4488-8785-61ecc2dfdf49"
 			name="Appointment2018">
@@ -2573,6 +2803,10 @@ module]]>
 			ref="10923a70-a419-4622-a1f7-1bffe70091d8"
 			type="UserCode">
 			</testmodule>
+			<smartfoldernode
+			id="b0054bea-4abf-4772-b3e7-f1210d974f88"
+			name="ValidateButtonsInAPXWindow">
+			</smartfoldernode>
 			<smartfoldernode
 			id="b049a834-9d04-4f9c-964c-51fefe3f15e9"
 			name="ChangePreferencesIncludeChronology">
@@ -2755,6 +2989,12 @@ directly and create a Bill]]>
 			type="UserCode">
 			</testmodule>
 			<testmodule
+			id="b9881b30-20b9-4824-ae81-ea6e4012ec20"
+			name="validateNoCCAPXInFile"
+			ref="17d21928-3854-4b3d-9688-157ba02fa70f"
+			type="UserCode">
+			</testmodule>
+			<testmodule
 			id="b9cca751-d68e-42ad-a841-8e906bae4954"
 			name="CreatePrecedent"
 			ref="840ac78a-7185-42c0-a164-634cc87945c6"
@@ -2783,16 +3023,10 @@ directly and create a Bill]]>
 			type="UserCode">
 				<databinding>
 					<var
-					dataname="FirstName"
-					datasourceid="2b580966-7b33-4156-bff2-f448647382bd"
-					variableid="eab5ae1d-ea6c-476a-9c0d-9a83926a1a9e"
-					variablename="firstName">
-					</var>
-					<var
-					dataname="FileName"
-					datasourceid="2b580966-7b33-4156-bff2-f448647382bd"
-					variableid="dde10115-729e-4144-aac6-425eaf372517"
-					variablename="fileName">
+					dataname="Time"
+					datasourceid="658e3020-1e20-4cb1-b196-89a6ef9ca8a2"
+					variableid="6193b8f1-1eea-4693-866c-25439b548aa0"
+					variablename="time">
 					</var>
 					<var
 					dataname="LastName"
@@ -2801,12 +3035,24 @@ directly and create a Bill]]>
 					variablename="lastName">
 					</var>
 					<var
-					dataname="Time"
-					datasourceid="658e3020-1e20-4cb1-b196-89a6ef9ca8a2"
-					variableid="6193b8f1-1eea-4693-866c-25439b548aa0"
-					variablename="time">
+					dataname="FileName"
+					datasourceid="2b580966-7b33-4156-bff2-f448647382bd"
+					variableid="dde10115-729e-4144-aac6-425eaf372517"
+					variablename="fileName">
+					</var>
+					<var
+					dataname="FirstName"
+					datasourceid="2b580966-7b33-4156-bff2-f448647382bd"
+					variableid="eab5ae1d-ea6c-476a-9c0d-9a83926a1a9e"
+					variablename="firstName">
 					</var>
 				</databinding>
+			</testmodule>
+			<testmodule
+			id="bc830491-14cc-43c0-85c6-bce5783f8077"
+			name="closeExistingPrompts"
+			ref="fdd2e606-d9d7-4eee-a27d-dc862a5293a3"
+			type="UserCode">
 			</testmodule>
 			<testmodule
 			id="bcbe1972-627f-4dee-9c6c-3b978927f08c"
@@ -2885,6 +3131,12 @@ directly and create a Bill]]>
 			id="c2a6cc13-1ce9-473a-814d-5b1ef95ae297"
 			name="teardown">
 			</teardown>
+			<testmodule
+			id="c2ce29b0-da1d-4947-88a1-66b4e2165706"
+			name="closeExistingPrompts"
+			ref="fdd2e606-d9d7-4eee-a27d-dc862a5293a3"
+			type="UserCode">
+			</testmodule>
 			<testmodule
 			id="c2eef881-b3b0-4d8f-9b2b-a11ad0c7882b"
 			name="EditDocument"
@@ -2969,6 +3221,10 @@ directly and create a Bill]]>
 			id="c84f33f8-e65f-4822-a4c5-9431efefaae6"
 			name="Trust_Transfer">
 			</smartfoldernode>
+			<teardown
+			id="c90dd524-46db-4b58-92bf-52435e12c665"
+			name="teardown">
+			</teardown>
 			<testmodule
 			id="c92b428f-9a7a-41cf-9b30-588719bd9743"
 			name="DeleteTimeEntry"
@@ -3018,6 +3274,10 @@ directly and create a Bill]]>
 					<![CDATA[Login to the Amicus Attorney Premium]]>
 				</description>
 			</testcase>
+			<teardown
+			id="cba091b2-3504-4152-b8bd-fefeb785dd73"
+			name="teardown">
+			</teardown>
 			<smartfoldernode
 			id="cc5bf42a-9412-47cc-b34a-1818dfc0ae75"
 			name="ChangePref_Formatting_DefaultCode">
@@ -3102,6 +3362,12 @@ directly and create a Bill]]>
 				</databinding>
 			</testmodule>
 			<testmodule
+			id="d1e39fa3-4b92-4e07-bce3-bf30aed2477b"
+			name="validate_Startup_Balance_General_Retainer"
+			ref="fc13ace5-e24a-4034-b2d4-1ef9dab2a0cc"
+			type="UserCode">
+			</testmodule>
+			<testmodule
 			id="d2bc8a7f-e5d3-424d-a3af-355bce9c65e7"
 			name="createMultiplePhoneCalls_TimeSaverRightClick"
 			ref="0aefc2ac-8cf5-47a2-a514-e294a3522b82"
@@ -3127,6 +3393,10 @@ directly and create a Bill]]>
 					</var>
 				</databinding>
 			</testmodule>
+			<smartfoldernode
+			id="d435f42b-4cbb-4bcc-9c49-5abc4bdd9fd0"
+			name="AddPayment_ECheck-ACH">
+			</smartfoldernode>
 			<testmodule
 			id="d4d80eb2-38e8-47a0-b276-5e69ff070b7f"
 			name="validateMergeTemplates"
@@ -3169,6 +3439,12 @@ directly and create a Bill]]>
 			name="AddFileAPX">
 			</smartfoldernode>
 			<testmodule
+			id="d6123b98-3577-4d33-bd31-3cebd885b317"
+			name="validateMsgsBlankSubmitInAPX"
+			ref="14571251-3ee8-4b5d-94be-551ce0b9f10d"
+			type="UserCode">
+			</testmodule>
+			<testmodule
 			id="d67a24e3-d0bb-4e52-9846-b16a16c3e962"
 			name="all_Bills_checkbox_Validate"
 			ref="c008c736-37b1-47c9-8a70-619b2fffb4b4"
@@ -3206,13 +3482,17 @@ directly and create a Bill]]>
 			</testmodule>
 			<testmodule
 			id="d9b0da9b-e278-4d77-b272-e4bc298e1d08"
-			name="AddNotes"
+			name="AddWebURL"
 			ref="39757aba-2474-4146-a459-bda32520c0da"
 			type="UserCode">
 			</testmodule>
 			<smartfoldernode
 			id="d9c75bd5-ecea-44aa-9940-b1440d6ec3e5"
 			name="EmailWithMultipleAttachments">
+			</smartfoldernode>
+			<smartfoldernode
+			id="db0c2c1b-bd33-434a-9292-6e405b517999"
+			name="AddPayment_CreditCard">
 			</smartfoldernode>
 			<smartfoldernode
 			id="dbc0dc88-4b15-49b9-984e-a670aa4fea91"
@@ -3265,6 +3545,12 @@ directly and create a Bill]]>
 Page]]>
 				</description>
 			</smartfoldernode>
+			<testmodule
+			id="ded9b9ae-6f25-4ea3-ac4b-4ae409076cd2"
+			name="apx_Transaction_Report"
+			ref="377adc4f-c7ce-472b-b802-e17ef9a15b0b"
+			type="UserCode">
+			</testmodule>
 			<testmodule
 			id="dfd66efb-c3e6-44c6-8976-072324413027"
 			name="billingStatusSelectionValidation"
@@ -3362,6 +3648,10 @@ Page]]>
 			type="UserCode">
 			</testmodule>
 			<smartfoldernode
+			id="e4c94d74-cc17-477c-9fd4-12319a175e10"
+			name="ValidateReceivePayment_Window">
+			</smartfoldernode>
+			<smartfoldernode
 			id="e4d8dadf-4f35-4b69-a2af-856c7bd3db7e"
 			name="AddtoPeople">
 			</smartfoldernode>
@@ -3448,6 +3738,12 @@ bill]]>
 			id="e9b0697d-7f86-41ea-b6c7-05e376931c39"
 			name="Validate_QuickPrint">
 			</smartfoldernode>
+			<testmodule
+			id="e9deabf4-5fc3-4cb1-8e20-ac8151e62c4b"
+			name="closeExistingPrompts"
+			ref="fdd2e606-d9d7-4eee-a27d-dc862a5293a3"
+			type="UserCode">
+			</testmodule>
 			<smartfoldernode
 			datasource="FileAPXData"
 			id="ea76f4ba-7237-4d88-b156-6fb7b3040839"
@@ -3527,10 +3823,20 @@ bill]]>
 			ref="fdd2e606-d9d7-4eee-a27d-dc862a5293a3"
 			type="UserCode">
 			</testmodule>
+			<teardown
+			id="ecefa17f-400c-4859-8bcb-457722442895"
+			name="teardown">
+			</teardown>
 			<testmodule
 			id="ed710369-385c-439c-8959-11950ee06a33"
 			name="validate_Quick_Print"
 			ref="2fc9e4a1-87cd-454e-b1b2-37f586651ac1"
+			type="UserCode">
+			</testmodule>
+			<testmodule
+			id="edcbe16f-7b3b-4193-9223-b726a2608110"
+			name="firmSettingsAPX"
+			ref="6b5bf349-b34a-46e2-9648-cac354bd94c3"
 			type="UserCode">
 			</testmodule>
 			<testmodule
@@ -3575,6 +3881,12 @@ bill]]>
 			id="f12fbbbf-777a-42ad-a910-e4e7e4709a8f"
 			name="CreatenDeleteMasterAdjrnAppt_ThisOne">
 			</smartfoldernode>
+			<testmodule
+			id="f250b1b7-f497-4480-8798-c84b32c64a13"
+			name="closeExistingPrompts"
+			ref="fdd2e606-d9d7-4eee-a27d-dc862a5293a3"
+			type="UserCode">
+			</testmodule>
 			<smartfoldernode
 			datasource="BillData"
 			id="f2676856-71ec-4e3b-8ece-85f89f181184"
@@ -3600,6 +3912,10 @@ bill]]>
 			ref="a25a5d8f-d2eb-4206-9dca-2b20b8645dab"
 			type="UserCode">
 			</testmodule>
+			<smartfoldernode
+			id="f2d7bb7f-38f0-4125-ab5c-9fef15dc87d1"
+			name="Validate_Startup_Balance_General_Retainer">
+			</smartfoldernode>
 			<testmodule
 			id="f3bf904a-0aa5-4ba4-bb99-2956f21f29f5"
 			name="timentries_monthlyview_navigatebtwdays"
@@ -3842,6 +4158,10 @@ bill]]>
 					</var>
 				</databinding>
 			</testmodule>
+			<teardown
+			id="fc48c2f2-4221-4525-8e5d-c93d6e8ed695"
+			name="teardown">
+			</teardown>
 			<testcase
 			id="fc4cd2bd-43ef-46e4-8029-91f79205f4d2"
 			name="OutlookClient">
@@ -3895,8 +4215,16 @@ bill]]>
 				</databinding>
 			</testmodule>
 			<smartfoldernode
+			id="fe6e3083-18a6-4cef-81f8-59631a72f4ca"
+			name="APX_Chargeback_Report">
+			</smartfoldernode>
+			<smartfoldernode
 			id="feba135f-9fbd-4cb3-be99-7c9f8e556a35"
 			name="Tax_Calculation_Single_Activity">
+			</smartfoldernode>
+			<smartfoldernode
+			id="feda2997-536a-4665-86e6-ff43360c6ff2"
+			name="ValidateMsgsBlankSubmitInAPX">
 			</smartfoldernode>
 		</flatlistofchildren>
 		<childhierarchy>
@@ -4390,7 +4718,7 @@ bill]]>
 						name="AddWebURL">
 							<testmodule
 							id="d9b0da9b-e278-4d77-b272-e4bc298e1d08"
-							name="AddNotes">
+							name="AddWebURL">
 							</testmodule>
 						</smartfoldernode>
 						<smartfoldernode
@@ -5293,6 +5621,14 @@ bill]]>
 							name="validateToolbarsRetain">
 							</testmodule>
 						</smartfoldernode>
+						<teardown
+						id="75202ace-53b8-48da-adab-60e54b5769c3"
+						name="teardown">
+							<testmodule
+							id="83b81c17-2dc9-4eef-9edd-f399778dc5c4"
+							name="closeExistingPrompts">
+							</testmodule>
+						</teardown>
 					</testcase>
 					<testcase
 					id="057c5807-a16a-44b4-b075-2ddb98bcd1e0"
@@ -5321,6 +5657,14 @@ bill]]>
 							name="emptySearchValidation">
 							</testmodule>
 						</smartfoldernode>
+						<teardown
+						id="830206a1-f7ad-472b-9e49-30bf43bf763e"
+						name="teardown">
+							<testmodule
+							id="6d8c769e-f465-4192-9853-9fea27977bc9"
+							name="closeExistingPrompts">
+							</testmodule>
+						</teardown>
 					</testcase>
 					<testcase
 					id="fc4cd2bd-43ef-46e4-8029-91f79205f4d2"
@@ -5397,6 +5741,14 @@ bill]]>
 							name="EmailWithMultipleAttachments">
 							</testmodule>
 						</smartfoldernode>
+						<teardown
+						id="fc48c2f2-4221-4525-8e5d-c93d6e8ed695"
+						name="teardown">
+							<testmodule
+							id="01d215f6-95ba-4958-8c7c-bc2366578d47"
+							name="closeExistingPrompts">
+							</testmodule>
+						</teardown>
 					</testcase>
 					<testcase
 					id="5343204e-002c-4b61-8b1a-bff8cfdaeb05"
@@ -5417,6 +5769,14 @@ bill]]>
 							name="validateTrackChangesinTimeEntry">
 							</testmodule>
 						</smartfoldernode>
+						<teardown
+						id="9d12bd7b-a0ca-44cc-94ed-46b6a7dc9449"
+						name="teardown">
+							<testmodule
+							id="e9deabf4-5fc3-4cb1-8e20-ac8151e62c4b"
+							name="closeExistingPrompts">
+							</testmodule>
+						</teardown>
 					</testcase>
 					<testcase
 					id="4bc1f4ad-f12a-49d3-8130-6d0f677cc890"
@@ -5437,6 +5797,14 @@ bill]]>
 							name="dateCalculateAddBusinessDays">
 							</testmodule>
 						</smartfoldernode>
+						<teardown
+						id="a21572ce-00c1-4054-ba31-6f733d5be59a"
+						name="teardown">
+							<testmodule
+							id="579f19dc-abd1-4a61-b39b-1a9bd720d8c0"
+							name="closeExistingPrompts">
+							</testmodule>
+						</teardown>
 					</testcase>
 					<testcase
 					id="62c52e32-156b-43ae-becd-fd9783824515"
@@ -5453,6 +5821,14 @@ bill]]>
 								</testmodule>
 							</smartfoldernode>
 						</smartfoldernode>
+						<teardown
+						id="cba091b2-3504-4152-b8bd-fefeb785dd73"
+						name="teardown">
+							<testmodule
+							id="f250b1b7-f497-4480-8798-c84b32c64a13"
+							name="closeExistingPrompts">
+							</testmodule>
+						</teardown>
 					</testcase>
 					<testcase
 					id="1597cab3-9506-4b4e-9af3-65b58c3fa965"
@@ -5489,6 +5865,14 @@ bill]]>
 							name="taxField_Disabled_NonBillable_ActivityCode">
 							</testmodule>
 						</smartfoldernode>
+						<teardown
+						id="a2ac35a8-5329-446f-8165-9dca31a2d254"
+						name="teardown">
+							<testmodule
+							id="a1836ff0-d6b4-4280-a76f-7b4b4e4fd289"
+							name="closeExistingPrompts">
+							</testmodule>
+						</teardown>
 					</testcase>
 					<testcase
 					id="d570ba72-08ea-4906-bc05-473a81a71a6c"
@@ -5525,6 +5909,14 @@ bill]]>
 							name="tax_Calc_Tax_Not_tax_NotActivity_Codes">
 							</testmodule>
 						</smartfoldernode>
+						<teardown
+						id="384ee0b2-bb3f-4301-8c63-f61c5458dea9"
+						name="teardown">
+							<testmodule
+							id="53c58651-8f4a-4066-b714-78c92f079744"
+							name="closeExistingPrompts">
+							</testmodule>
+						</teardown>
 					</testcase>
 					<testcase
 					id="5d6025df-7164-42d8-874c-7e2bef4c1f4c"
@@ -5537,6 +5929,14 @@ bill]]>
 							name="referralReport_Validate">
 							</testmodule>
 						</smartfoldernode>
+						<teardown
+						id="5d2c92c4-74c6-4fbf-9b25-8cedf95fcd04"
+						name="teardown">
+							<testmodule
+							id="8f5f2752-aff1-49c0-9111-c2cd9b8e3365"
+							name="closeExistingPrompts">
+							</testmodule>
+						</teardown>
 					</testcase>
 					<testcase
 					id="475e4825-f7a5-4c0a-bf76-06b9021492eb"
@@ -5605,6 +6005,14 @@ bill]]>
 							name="bill_format_Validate">
 							</testmodule>
 						</smartfoldernode>
+						<teardown
+						id="8a64aa05-b336-4633-8cd2-046fe6c030f2"
+						name="teardown">
+							<testmodule
+							id="c2ce29b0-da1d-4947-88a1-66b4e2165706"
+							name="closeExistingPrompts">
+							</testmodule>
+						</teardown>
 					</testcase>
 					<testcase
 					id="375c57d6-cbde-487a-b815-0cfdf7ae1f7f"
@@ -5657,6 +6065,14 @@ bill]]>
 							name="filer_Trust_Validation">
 							</testmodule>
 						</smartfoldernode>
+						<teardown
+						id="abbad0ca-e243-4427-998c-ddc8963e8206"
+						name="teardown">
+							<testmodule
+							id="97f40054-96d5-47aa-a969-34a115df7975"
+							name="closeExistingPrompts">
+							</testmodule>
+						</teardown>
 					</testcase>
 					<testcase
 					id="7904d649-ce61-470a-b2cd-797ca6f8e95b"
@@ -5733,6 +6149,182 @@ bill]]>
 							name="ContextClick_Validations">
 							</testmodule>
 						</smartfoldernode>
+						<teardown
+						id="c90dd524-46db-4b58-92bf-52435e12c665"
+						name="teardown">
+							<testmodule
+							id="1dcf3c1c-89c1-4b0b-897d-b8435ca4fc4a"
+							name="closeExistingPrompts">
+							</testmodule>
+						</teardown>
+					</testcase>
+					<testcase
+					id="05d66913-55d2-4aca-9970-eac5df57833f"
+					name="PayNow-Billing">
+						<smartfoldernode
+						id="20ef8ac9-7588-4931-ace9-f54c0d4fb974"
+						name="FirmSettings-APX">
+							<testmodule
+							id="edcbe16f-7b3b-4193-9223-b726a2608110"
+							name="firmSettingsAPX">
+							</testmodule>
+						</smartfoldernode>
+						<smartfoldernode
+						id="4f0716c0-df79-45c7-a94b-bd8c978ac758"
+						name="FirmSettings-EmailingBills">
+							<testmodule
+							id="2ed4dee7-1c68-496a-8d09-80207a4eb83d"
+							name="firmSettingsEmailBills">
+							</testmodule>
+						</smartfoldernode>
+						<smartfoldernode
+						id="3649eec2-7d1a-4091-b66e-e9c44b43c407"
+						name="File-BillSettings">
+							<testmodule
+							id="7e27b217-0a99-4141-9499-c848af1a1802"
+							name="filebillSettings">
+							</testmodule>
+						</smartfoldernode>
+						<teardown
+						id="4763f351-6d26-49a7-bc9d-c915178cf24b"
+						name="teardown">
+							<testmodule
+							id="7fde5c57-5de4-4dcd-bc4f-371e33847c67"
+							name="closeExistingPrompts">
+							</testmodule>
+						</teardown>
+					</testcase>
+					<testcase
+					id="52b47774-b3af-4420-be54-c260506660ad"
+					name="APX_Transactions">
+						<smartfoldernode
+						id="a8f9611a-3260-4115-b604-3a2293b842b9"
+						name="ValidateAPXPaymentMethodwindowForm">
+							<testmodule
+							id="5a933563-a410-46c9-a06a-541809d2130d"
+							name="validateAPXPaymentMethodWindow">
+							</testmodule>
+						</smartfoldernode>
+						<smartfoldernode
+						id="a7d2e28c-22f9-4bc5-b49b-3f977de8569c"
+						name="ValidateAddAPXPaymentWindow">
+							<testmodule
+							id="16929959-bb7a-4cde-b07f-097a14c81dd7"
+							name="validatePaymentWindowForm">
+							</testmodule>
+						</smartfoldernode>
+						<smartfoldernode
+						id="3e313b2b-7774-4c26-bd32-d4ea0ade3e8e"
+						name="ValidateAddressDetailsinAPX">
+							<testmodule
+							id="1bebf92b-b278-454e-a560-acd8b5c882f3"
+							name="validateAddressDetailsinAPX">
+							</testmodule>
+						</smartfoldernode>
+						<smartfoldernode
+						id="b0054bea-4abf-4772-b3e7-f1210d974f88"
+						name="ValidateButtonsInAPXWindow">
+							<testmodule
+							id="004097dc-47cc-480a-924a-51847a215194"
+							name="validateButtonsInAPXForm">
+							</testmodule>
+						</smartfoldernode>
+						<smartfoldernode
+						id="feda2997-536a-4665-86e6-ff43360c6ff2"
+						name="ValidateMsgsBlankSubmitInAPX">
+							<testmodule
+							id="d6123b98-3577-4d33-bd31-3cebd885b317"
+							name="validateMsgsBlankSubmitInAPX">
+							</testmodule>
+						</smartfoldernode>
+						<smartfoldernode
+						id="db0c2c1b-bd33-434a-9292-6e405b517999"
+						name="AddPayment_CreditCard">
+							<testmodule
+							id="5a165af6-9792-47e2-aec6-4e26f54b3a4e"
+							name="addPaymentCreditCard">
+							</testmodule>
+						</smartfoldernode>
+						<smartfoldernode
+						id="d435f42b-4cbb-4bcc-9c49-5abc4bdd9fd0"
+						name="AddPayment_ECheck-ACH">
+							<testmodule
+							id="5be10f26-dfbb-4d28-81db-b0ec31bc523d"
+							name="addPayment_EcheckACH">
+							</testmodule>
+						</smartfoldernode>
+						<smartfoldernode
+						id="e4c94d74-cc17-477c-9fd4-12319a175e10"
+						name="ValidateReceivePayment_Window">
+							<testmodule
+							id="79e1c67c-bf79-4c6f-899e-b2ad558166ac"
+							name="validateReceivePayment">
+							</testmodule>
+						</smartfoldernode>
+						<smartfoldernode
+						id="529044e8-2d8a-43ea-8b93-240b052cb1fd"
+						name="Validate_No_CC_APX_AddedInFile">
+							<testmodule
+							id="b9881b30-20b9-4824-ae81-ea6e4012ec20"
+							name="validateNoCCAPXInFile">
+							</testmodule>
+						</smartfoldernode>
+						<smartfoldernode
+						id="5bc120ba-5a47-4bda-9736-cf9e4e16713b"
+						name="Pay_CC_On_File">
+							<testmodule
+							id="16203ded-3ed8-4944-8e19-0c203b9c6177"
+							name="pay_cc_on_file">
+							</testmodule>
+						</smartfoldernode>
+						<smartfoldernode
+						id="052d7120-8a41-4460-a78b-0b2f8b3f769f"
+						name="ValidateGeneralRetainerOnPayment">
+							<testmodule
+							id="9ef52318-0948-4477-8c1e-7fea23dfed24"
+							name="validateGeneralRetainerOnPayment">
+							</testmodule>
+						</smartfoldernode>
+						<smartfoldernode
+						id="955cb2da-fbf9-45dc-8172-eece79d344af"
+						name="ValidateTrustReceipt_Window_APX">
+							<testmodule
+							id="7b5f632d-c8e5-40f8-8e31-1d7fe7ff3688"
+							name="validateTrust_Receipt_Window_APX">
+							</testmodule>
+						</smartfoldernode>
+						<smartfoldernode
+						id="f2d7bb7f-38f0-4125-ab5c-9fef15dc87d1"
+						name="Validate_Startup_Balance_General_Retainer">
+							<testmodule
+							id="d1e39fa3-4b92-4e07-bce3-bf30aed2477b"
+							name="validate_Startup_Balance_General_Retainer">
+							</testmodule>
+						</smartfoldernode>
+						<smartfoldernode
+						id="6cfa0c71-9d60-47ae-a167-d9cb8c1c65e9"
+						name="APX_Transaction_Report">
+							<testmodule
+							id="ded9b9ae-6f25-4ea3-ac4b-4ae409076cd2"
+							name="apx_Transaction_Report">
+							</testmodule>
+						</smartfoldernode>
+						<smartfoldernode
+						id="fe6e3083-18a6-4cef-81f8-59631a72f4ca"
+						name="APX_Chargeback_Report">
+							<testmodule
+							id="3e59304e-8fa8-4f8d-822d-4bbd1bc9c75b"
+							name="apx_chargeback_Report">
+							</testmodule>
+						</smartfoldernode>
+						<teardown
+						id="ecefa17f-400c-4859-8bcb-457722442895"
+						name="teardown">
+							<testmodule
+							id="bc830491-14cc-43c0-85c6-bce5783f8077"
+							name="closeExistingPrompts">
+							</testmodule>
+						</teardown>
 					</testcase>
 					<testcase
 					id="f999b233-305c-4e9e-a5e8-bd5b49a34123"
@@ -6399,10 +6991,13 @@ bill]]>
 			id="050bea6e-2129-44ce-8a76-eef174d86edd">
 			</testcontainer>
 			<testcontainer
+			id="052d7120-8a41-4460-a78b-0b2f8b3f769f">
+			</testcontainer>
+			<testcontainer
 			id="057c5807-a16a-44b4-b075-2ddb98bcd1e0">
 			</testcontainer>
 			<testcontainer
-			id="0a196b0b-55e0-4bea-a067-0a0a0d4bdfcc">
+			id="05d66913-55d2-4aca-9970-eac5df57833f">
 			</testcontainer>
 			<testcontainer
 			id="0aacc30c-766d-44a5-a0c4-5b7d05b3954b">
@@ -6438,22 +7033,10 @@ bill]]>
 			id="15d854c4-74db-4dcb-93c0-e6631cefe305">
 			</testcontainer>
 			<testcontainer
-			id="18ee7a14-43f3-4451-a453-9362b3ed2c92">
-			</testcontainer>
-			<testcontainer
 			id="18ff24f3-8679-4458-b3fe-e4bf51c16e55">
 			</testcontainer>
 			<testcontainer
-			id="19ab7b67-bde2-4d0c-86da-cbcaf37e3673">
-			</testcontainer>
-			<testcontainer
-			id="1a710b77-2674-413d-8a7d-a867cf04975e">
-			</testcontainer>
-			<testcontainer
 			id="1aef484a-6601-4028-8faf-d2c7bee2a28a">
-			</testcontainer>
-			<testcontainer
-			id="1b7e1df1-a2bf-451b-9d4c-e9ef9f091293">
 			</testcontainer>
 			<testcontainer
 			id="1cd0fa2d-1c92-4ebd-b085-28577af4f552">
@@ -6463,6 +7046,9 @@ bill]]>
 			</testcontainer>
 			<testcontainer
 			id="1fe94253-1808-4543-bbd3-ce79e3902ab3">
+			</testcontainer>
+			<testcontainer
+			id="20ef8ac9-7588-4931-ace9-f54c0d4fb974">
 			</testcontainer>
 			<testcontainer
 			id="219891fb-f650-43e8-b7af-7906644fdace">
@@ -6513,6 +7099,9 @@ bill]]>
 			id="3603e041-f535-4d9c-ad69-c45e53b082d1">
 			</testcontainer>
 			<testcontainer
+			id="3649eec2-7d1a-4091-b66e-e9c44b43c407">
+			</testcontainer>
+			<testcontainer
 			id="375c57d6-cbde-487a-b815-0cfdf7ae1f7f">
 			</testcontainer>
 			<testcontainer
@@ -6529,6 +7118,9 @@ bill]]>
 			</testcontainer>
 			<testcontainer
 			id="3d966af6-4ec6-4fef-9955-70cc17ffa944">
+			</testcontainer>
+			<testcontainer
+			id="3e313b2b-7774-4c26-bd32-d4ea0ade3e8e">
 			</testcontainer>
 			<testcontainer
 			id="3f34bed2-67f2-4bf5-b987-540db593be2b">
@@ -6567,9 +7159,6 @@ bill]]>
 			id="4bc1f4ad-f12a-49d3-8130-6d0f677cc890">
 			</testcontainer>
 			<testcontainer
-			id="4da2e095-698c-4ab1-804b-2b66d54d77ca">
-			</testcontainer>
-			<testcontainer
 			id="4dc476d8-111c-4cbd-8120-487684a46a39">
 			</testcontainer>
 			<testcontainer
@@ -6579,13 +7168,16 @@ bill]]>
 			id="4ef7b0b3-886c-423c-af84-cc33d562d95d">
 			</testcontainer>
 			<testcontainer
-			id="5004ee78-0c12-4f43-8a1f-3b4e3c17bf9e">
+			id="4f0716c0-df79-45c7-a94b-bd8c978ac758">
 			</testcontainer>
 			<testcontainer
 			id="51b7b830-ea6e-4cae-b412-b50997157a16">
 			</testcontainer>
 			<testcontainer
-			id="530e9bd8-c35a-4fa1-bb74-d0145d5f3fcf">
+			id="529044e8-2d8a-43ea-8b93-240b052cb1fd">
+			</testcontainer>
+			<testcontainer
+			id="52b47774-b3af-4420-be54-c260506660ad">
 			</testcontainer>
 			<testcontainer
 			id="5343204e-002c-4b61-8b1a-bff8cfdaeb05">
@@ -6603,9 +7195,6 @@ bill]]>
 			id="565753a1-f5bc-48f2-a9a2-16bf7b4ccf87">
 			</testcontainer>
 			<testcontainer
-			id="57309174-e9c7-40be-bd68-5649d6c71a38">
-			</testcontainer>
-			<testcontainer
 			id="5786023f-3837-492f-8470-b4bdc9a63a31">
 			</testcontainer>
 			<testcontainer
@@ -6615,10 +7204,10 @@ bill]]>
 			id="5b5aea69-6426-460b-b666-6ea8e58b7416">
 			</testcontainer>
 			<testcontainer
-			id="5d6025df-7164-42d8-874c-7e2bef4c1f4c">
+			id="5bc120ba-5a47-4bda-9736-cf9e4e16713b">
 			</testcontainer>
 			<testcontainer
-			id="6138f0c1-2da4-403f-878d-693bf3ca95b7">
+			id="5d6025df-7164-42d8-874c-7e2bef4c1f4c">
 			</testcontainer>
 			<testcontainer
 			id="617d1b07-0685-449a-a510-b2038d125def">
@@ -6669,19 +7258,16 @@ bill]]>
 			id="6cdc4fb3-8ead-4a22-84ce-7eff8cca1ab2">
 			</testcontainer>
 			<testcontainer
+			id="6cfa0c71-9d60-47ae-a167-d9cb8c1c65e9">
+			</testcontainer>
+			<testcontainer
 			id="6efb8f01-7398-4295-b52c-d8dcaaa9599a">
 			</testcontainer>
 			<testcontainer
 			id="6f4fdecc-21a0-492c-98be-0db96735fa65">
 			</testcontainer>
 			<testcontainer
-			id="6faa2812-f963-4c4a-96dc-ccc2e2a5d45b">
-			</testcontainer>
-			<testcontainer
 			id="701a4de7-911e-4959-bc20-c0e8423f48e1">
-			</testcontainer>
-			<testcontainer
-			id="701eb2d2-7e21-4e6f-a9c9-aaa777c692b9">
 			</testcontainer>
 			<testcontainer
 			id="73c53d28-fd66-4c7e-b8d5-97ceca956daf">
@@ -6699,9 +7285,6 @@ bill]]>
 			id="7904d649-ce61-470a-b2cd-797ca6f8e95b">
 			</testcontainer>
 			<testcontainer
-			id="7a9ea756-51f4-41de-a41d-757781604750">
-			</testcontainer>
-			<testcontainer
 			id="7ab50160-7a97-40e2-ad44-b1bba3374998">
 			</testcontainer>
 			<testcontainer
@@ -6711,9 +7294,6 @@ bill]]>
 			id="7fadc9d5-ebde-4692-a2f2-69fc16fa43e2">
 			</testcontainer>
 			<testcontainer
-			id="808d19bb-cc9a-4ac1-a0e5-a3b644467f98">
-			</testcontainer>
-			<testcontainer
 			id="80e69ff0-f2fc-4a3a-bf73-8080a3ad77c7">
 			</testcontainer>
 			<testcontainer
@@ -6721,9 +7301,6 @@ bill]]>
 			</testcontainer>
 			<testcontainer
 			id="84db4e63-35f9-4b17-9b6a-1b01b591b1c8">
-			</testcontainer>
-			<testcontainer
-			id="895badf3-6aaf-4734-9c20-63c98b993985">
 			</testcontainer>
 			<testcontainer
 			id="8b2c2e55-1965-4c10-ba2b-4417e7a86a84">
@@ -6742,6 +7319,9 @@ bill]]>
 			</testcontainer>
 			<testcontainer
 			id="95346147-e6f3-4763-a5ee-9156f4af2cd9">
+			</testcontainer>
+			<testcontainer
+			id="955cb2da-fbf9-45dc-8172-eece79d344af">
 			</testcontainer>
 			<testcontainer
 			id="95ab7eb5-2b1a-47dc-9667-b0e86e945f00">
@@ -6765,9 +7345,6 @@ bill]]>
 			id="9fd8a977-6bc6-4f25-881a-45177c0ded94">
 			</testcontainer>
 			<testcontainer
-			id="9feab462-deec-4a27-a8b9-f2e2f74b1f9f">
-			</testcontainer>
-			<testcontainer
 			id="a11353b5-3294-4eaa-83d3-a0331ed7ef67">
 			</testcontainer>
 			<testcontainer
@@ -6777,16 +7354,19 @@ bill]]>
 			id="a149301f-7ca0-4457-bfaf-965f3c22a182">
 			</testcontainer>
 			<testcontainer
-			id="a280aae5-a91a-465e-b327-e032603dd5d9">
-			</testcontainer>
-			<testcontainer
 			id="a6609dd3-5550-4d0e-8d9f-9279a09d9a32">
 			</testcontainer>
 			<testcontainer
 			id="a70e92f8-63bd-4ea9-83fc-7350852f3736">
 			</testcontainer>
 			<testcontainer
+			id="a7d2e28c-22f9-4bc5-b49b-3f977de8569c">
+			</testcontainer>
+			<testcontainer
 			id="a8bdc1ce-01af-4c76-8bd9-13848fac5071">
+			</testcontainer>
+			<testcontainer
+			id="a8f9611a-3260-4115-b604-3a2293b842b9">
 			</testcontainer>
 			<testcontainer
 			id="ab5c5578-5063-4334-b382-bc86ad2db9d3">
@@ -6795,13 +7375,13 @@ bill]]>
 			id="accc6f36-0a6b-4488-8785-61ecc2dfdf49">
 			</testcontainer>
 			<testcontainer
-			id="adb4ca31-020c-47c1-9602-1c295de6a3bf">
-			</testcontainer>
-			<testcontainer
 			id="ae08bef5-05bf-4753-9e12-cab4f965fd83">
 			</testcontainer>
 			<testcontainer
 			id="aeb7dc97-d19f-4b3e-885e-afb028bb27b0">
+			</testcontainer>
+			<testcontainer
+			id="b0054bea-4abf-4772-b3e7-f1210d974f88">
 			</testcontainer>
 			<testcontainer
 			id="b049a834-9d04-4f9c-964c-51fefe3f15e9">
@@ -6846,9 +7426,6 @@ bill]]>
 			id="ca29637c-c17a-4632-ae73-5f94259f87e4">
 			</testcontainer>
 			<testcontainer
-			id="cb52027a-09e2-4fc6-b116-d3a15bb93ad4">
-			</testcontainer>
-			<testcontainer
 			id="cb709033-29e8-443c-8559-189007c654b2">
 			</testcontainer>
 			<testcontainer
@@ -6867,19 +7444,16 @@ bill]]>
 			id="cef60493-9e3d-4998-9bf4-596fde0078bc">
 			</testcontainer>
 			<testcontainer
+			id="d435f42b-4cbb-4bcc-9c49-5abc4bdd9fd0">
+			</testcontainer>
+			<testcontainer
 			id="d570ba72-08ea-4906-bc05-473a81a71a6c">
 			</testcontainer>
 			<testcontainer
-			id="d9c75bd5-ecea-44aa-9940-b1440d6ec3e5">
-			</testcontainer>
-			<testcontainer
-			id="dbc0dc88-4b15-49b9-984e-a670aa4fea91">
+			id="db0c2c1b-bd33-434a-9292-6e405b517999">
 			</testcontainer>
 			<testcontainer
 			id="dd7e2cc8-a2ca-441e-a3f6-80016dba2aae">
-			</testcontainer>
-			<testcontainer
-			id="ddd4bae8-4a40-4286-aafa-a7331e00f10b">
 			</testcontainer>
 			<testcontainer
 			id="dec6b1c6-534b-41f0-bdcb-c728a5bd2ab4">
@@ -6888,16 +7462,13 @@ bill]]>
 			id="e11e54d2-7d19-41c3-92e6-4d791e0bfa37">
 			</testcontainer>
 			<testcontainer
-			id="e1c9a453-772a-495a-938f-a49e9be0141c">
-			</testcontainer>
-			<testcontainer
 			id="e2f2902a-bd5d-41d2-86eb-fb3590dcebdd">
 			</testcontainer>
 			<testcontainer
 			id="e41ee8eb-9dc9-46f3-ac26-ef9b039bcb3f">
 			</testcontainer>
 			<testcontainer
-			id="e4d8dadf-4f35-4b69-a2af-856c7bd3db7e">
+			id="e4c94d74-cc17-477c-9fd4-12319a175e10">
 			</testcontainer>
 			<testcontainer
 			id="e56a65dc-1f93-4351-a226-b2e4d2b238f3">
@@ -6927,9 +7498,6 @@ bill]]>
 			id="eba13b1a-cf04-406f-94a0-e41df0fcebcf">
 			</testcontainer>
 			<testcontainer
-			id="ef48c456-9059-4ccb-b3d7-a1fbe095816e">
-			</testcontainer>
-			<testcontainer
 			id="f009e389-eafb-4981-ab14-563dc83060a0">
 			</testcontainer>
 			<testcontainer
@@ -6939,7 +7507,7 @@ bill]]>
 			id="f2676856-71ec-4e3b-8ece-85f89f181184">
 			</testcontainer>
 			<testcontainer
-			id="f27ed267-40b7-4627-a3d5-80d5dea236f0">
+			id="f2d7bb7f-38f0-4125-ab5c-9fef15dc87d1">
 			</testcontainer>
 			<testcontainer
 			id="f5471580-a9ae-455b-9165-4b433a71c3de">
@@ -6960,10 +7528,13 @@ bill]]>
 			id="fbd357b7-088e-4cef-a8d2-7d18c364b71c">
 			</testcontainer>
 			<testcontainer
-			id="fc4cd2bd-43ef-46e4-8029-91f79205f4d2">
+			id="fe6e3083-18a6-4cef-81f8-59631a72f4ca">
 			</testcontainer>
 			<testcontainer
 			id="feba135f-9fbd-4cb3-be99-7c9f8e556a35">
+			</testcontainer>
+			<testcontainer
+			id="feda2997-536a-4665-86e6-ff43360c6ff2">
 			</testcontainer>
 		</testconfiguration>
 	</testconfigurations>

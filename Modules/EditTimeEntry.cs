@@ -58,10 +58,13 @@ namespace SmokeTest.Modules
         	timeEntry.TimeEntryDetailsForm.MenubarFillPanel.txtActivityDescription.PressKeys(editActivityDescription);
         	timeEntry.TimeEntryDetailsForm.MenubarFillPanel.btnOK.Click();
         	
+        	Delay.Seconds(1);
         	//Verify
         	timeEntry.MainForm.listFirstPostedItem.DoubleClick();
+        	Delay.Seconds(1);
         	Report.Success("Edit Time Entry passed");
-        	timeEntry.TimeEntryDetailsForm.MenubarFillPanel.btnOK.Click();
+        	if(timeEntry.TimeEntryDetailsForm.SelfInfo.Exists(3000))
+        	{timeEntry.TimeEntryDetailsForm.MenubarFillPanel.btnOK.Click();}
         }
         
         void ITestModule.Run()

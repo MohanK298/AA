@@ -605,7 +605,7 @@ DAPIxVgFicf/GQCdrAkiuOdOjQAAAABJRU5ErkJggg==
 			capname="text"
 			id="f33a3f1e-2594-4e05-9514-ec54745b42fa"
 			name="txtAmount"
-			refimgid="7e51fbef-cd84-40d8-a957-4111531db013"
+			refimgid="614cadfd-778e-44c3-8cf2-f4ccc03649b6"
 			refpath="/form[@controlname='ReceivePaymentForm']/container[@controlname='pnlBase']/container[@controlname='pnlControls']/element[@controlname='ultraGroupBox3']/text[@controlname='atxtAmount']"
 			searchtimeout="30000ms">
 				/form[@controlname='ReceivePaymentForm']/container[@controlname='pnlBase']//text[@controlname='atxtAmount']
@@ -615,7 +615,7 @@ DAPIxVgFicf/GQCdrAkiuOdOjQAAAABJRU5ErkJggg==
 			capname="text"
 			id="66226acd-413d-4e51-9ec9-98fa2cc114af"
 			name="PayAmount"
-			refimgid="0ff496dd-3fb6-4b3c-a6df-f09d0f2d899f"
+			refimgid="2629c787-b121-4991-9358-0541b1f70e1f"
 			searchtimeout="30000ms">
 				/form[@controlname='ReceivePaymentForm']/container[@controlname='pnlBase']/?/?/element[@controlname='ultraGroupBox3']/?/text[@name='atxtAmount']/text[@accessiblerole='Text']
 			</item>
@@ -624,7 +624,7 @@ DAPIxVgFicf/GQCdrAkiuOdOjQAAAABJRU5ErkJggg==
 			capname="text"
 			id="2bb92bc1-b953-4eff-bcdf-a8c3215c718e"
 			name="enterAmount"
-			refimgid="688d57e2-85ff-44bb-82c9-a0eca1ac0264"
+			refimgid="04b9b244-0f78-405d-b68e-6a3ef8b11ae8"
 			searchtimeout="30000ms">
 				/form[@controlname='ReceivePaymentForm']/container[@controlname='pnlBase']/?/?/element[@controlname='ultraGroupBox3']/?/?/text[@accessiblerole='Text']
 			</item>
@@ -633,7 +633,7 @@ DAPIxVgFicf/GQCdrAkiuOdOjQAAAABJRU5ErkJggg==
 			capname="link"
 			id="872ed68c-5d89-4953-a575-aa3a5bce8f1d"
 			name="linkAdd"
-			refimgid="5c7887fe-e6f1-457c-a4d2-e3c8c2c9f09c"
+			refimgid="eaa14b76-aab9-4bde-9cbb-e158ee47104b"
 			searchtimeout="30000ms">
 				/form[@controlname='ReceivePaymentForm']/container[@controlname='pnlBase']/?/?/element[@controlname='ultraGroupBox3']/container[@controlname='apxPaymentMethodSelectorControl']//link[@accessiblename='Add']
 			</item>
@@ -641,8 +641,8 @@ DAPIxVgFicf/GQCdrAkiuOdOjQAAAABJRU5ErkJggg==
 			addcaps="text,control,nativewindow"
 			capname="combobox"
 			id="cc793b85-6d21-422b-b929-d34977617219"
-			name="DropdownSelection"
-			refimgid="2ae876bf-037e-4be1-9f7c-ae6802aba519"
+			name="cmbbxType"
+			refimgid="bf71f630-0c78-4687-97a9-20999e7dc76b"
 			searchtimeout="30000ms">
 				/form[@controlname='ReceivePaymentForm']/container[@controlname='pnlBase']//combobox[@controlname='acmbType']
 			</item>
@@ -660,7 +660,7 @@ DAPIxVgFicf/GQCdrAkiuOdOjQAAAABJRU5ErkJggg==
 			capname="combobox"
 			id="d88795c0-774f-4045-821a-ef949ec94b84"
 			name="ccNumber"
-			refimgid="9dd16386-6b3c-4c3f-a890-4d679efbe9fb"
+			refimgid="49d6b095-07bb-44dd-8c77-acdd9b44b163"
 			searchtimeout="30000ms">
 				/form[@controlname='ReceivePaymentForm']/container[@controlname='pnlBase']//container[@controlname='apxPaymentMethodSelectorControl']/combobox[@controlname='acmbPaymentMethod']
 			</item>
@@ -678,7 +678,7 @@ DAPIxVgFicf/GQCdrAkiuOdOjQAAAABJRU5ErkJggg==
 			capname="button"
 			id="a865dade-dc7e-4e73-a065-b158f03755a7"
 			name="btnSaveClose"
-			refimgid="1b4aadf5-54f5-4d81-a269-7b9b9e80630d"
+			refimgid="1eb899fb-31d8-46f0-b98b-5e92e9228a13"
 			refpath="/form[@controlname='ReceivePaymentForm']/element[@controlname='_BaseForm_Toolbars_Dock_Area_Bottom']/container[@accessiblename='DockBottom']/toolbar[@accessiblename='Toolbar']/button[@accessiblename='Save &amp; Close']"
 			searchtimeout="30000ms">
 				/form[@controlname='ReceivePaymentForm']//toolbar[@accessiblename='Toolbar']/button[@accessiblename='Save &amp; Close']
@@ -687,8 +687,8 @@ DAPIxVgFicf/GQCdrAkiuOdOjQAAAABJRU5ErkJggg==
 			addcaps="button,accessible"
 			capname="button"
 			id="75d61301-7584-4f36-9086-663d67a68694"
-			name="SelectFile"
-			refimgid="11bfc755-f645-48b8-94a0-3952915446ae"
+			name="btnSelectFile"
+			refimgid="d761079b-d977-4ac6-86ff-2236036867c4"
 			searchtimeout="30000ms">
 				/form[@controlname='ReceivePaymentForm']/container[@controlname='pnlBase']/?/?/container[@controlname='ascFile']/?/?/button[@accessiblerole='PushButton']
 			</item>
@@ -696,8 +696,8 @@ DAPIxVgFicf/GQCdrAkiuOdOjQAAAABJRU5ErkJggg==
 			addcaps="button,accessible"
 			capname="button"
 			id="0f265ee7-1645-4f35-bd0a-1d7409048fc2"
-			name="PayNow"
-			refimgid="0e0b99fd-8ba5-4d91-ab25-48f10a34b686"
+			name="btnPayNow"
+			refimgid="f6913528-a775-4cbe-8d4c-918a0b8988c7"
 			searchtimeout="30000ms">
 				/form[@controlname='ReceivePaymentForm']/?/?/toolbar[@automationid='Toolbar : toolbarBaseDesigner']/button[@automationid='[Toolbar : toolbarBaseDesigner Tools] Tool : KEY_SAVE_CLOSE - Index : 4 ']
 			</item>
@@ -708,8 +708,168 @@ DAPIxVgFicf/GQCdrAkiuOdOjQAAAABJRU5ErkJggg==
 			name="btnVoid"
 			refimgid="fe1c546f-69ed-4550-b1c5-377cb656e7f0"
 			searchtimeout="30000ms">
-				/form[@controlname='ReceivePaymentForm']/?/?/toolbar[@automationid='Toolbar : toolbarBaseDesigner']/button[@automationid='[Toolbar : toolbarBaseDesigner Tools] Tool : KEY_DELETE - Index : 2 ']
+				/form[@controlname='ReceivePaymentForm']//toolbar[@accessiblename='Toolbar']/button[@accessiblename='Void/Refund']
 			</item>
+			<item
+			addcaps="toolbar,accessible"
+			capname="toolbar"
+			id="d764cb58-1320-4bde-84f6-c37e50d03c13"
+			name="Toolbar"
+			refpath="/form[@controlname='ReceivePaymentForm']/element[@controlname='_BaseForm_Toolbars_Dock_Area_Bottom']/container[@accessiblename='DockBottom']/toolbar[@accessiblename='Toolbar']"
+			searchtimeout="30000ms">
+				/form[@controlname='ReceivePaymentForm']/element[@controlname='_BaseForm_Toolbars_Dock_Area_Bottom']/?/?/toolbar[@accessiblename='Toolbar']
+			</item>
+			<folder
+			addcaps="toolbar,accessible"
+			capname="toolbar"
+			id="5d52aa49-c0f6-4b7a-bd43-eb9142c0fa4e"
+			isrooted="True"
+			name="Toolbar1"
+			refpath="/form[@controlname='ReceivePaymentForm']/element[@controlname='_BaseForm_Toolbars_Dock_Area_Bottom']/container[@accessiblename='DockBottom']/toolbar[@accessiblename='Toolbar']"
+			searchtimeout="30000ms"
+			usecache="False">
+				<item
+				addcaps="button,accessible"
+				capname="button"
+				id="0c93e4bd-fd53-4fa7-af24-4227c254f4a9"
+				name="btnCancel"
+				refpath="/form[@controlname='ReceivePaymentForm']/element[@controlname='_BaseForm_Toolbars_Dock_Area_Bottom']/container[@accessiblename='DockBottom']/toolbar[@accessiblename='Toolbar']/button[@accessiblename='Cancel']"
+				searchtimeout="30000ms">
+					/form[@controlname='ReceivePaymentForm']//toolbar[@accessiblename='Toolbar']/button[@accessiblename='Cancel']
+				</item>
+				<item
+				addcaps="button,accessible"
+				capname="button"
+				id="4cdefa1b-215b-4b94-99a0-95c9a2b80abd"
+				name="SaveNew"
+				refpath="/form[@controlname='ReceivePaymentForm']/element[@controlname='_BaseForm_Toolbars_Dock_Area_Bottom']/container[@accessiblename='DockBottom']/toolbar[@accessiblename='Toolbar']/button[@accessiblename='Save &amp; New']"
+				searchtimeout="30000ms">
+					/form[@controlname='ReceivePaymentForm']//toolbar[@accessiblename='Toolbar']/button[@accessiblename='Save &amp; New']
+				</item>
+				<item
+				addcaps="unknown,accessible"
+				capname="unknown"
+				id="f5317873-fbbb-45e2-aa92-eee5b492caad"
+				name="None"
+				refpath="/form[@controlname='ReceivePaymentForm']/element[@controlname='_BaseForm_Toolbars_Dock_Area_Bottom']/container[@accessiblename='DockBottom']/toolbar[@accessiblename='Toolbar']/element[@accessiblename='']"
+				searchtimeout="30000ms">
+					/form[@controlname='ReceivePaymentForm']//toolbar[@accessiblename='Toolbar']/element[@accessiblename='']
+				</item>
+				<item
+				addcaps="button,accessible"
+				capname="button"
+				id="eea7d2b5-1ed4-460a-8515-adb38188a85b"
+				name="btnClose"
+				refimgid="c2d76323-8030-463c-becf-e94e417d6419"
+				refpath="/form[@controlname='ReceivePaymentForm']/element[@controlname='_BaseForm_Toolbars_Dock_Area_Bottom']/container[@accessiblename='DockBottom']/toolbar[@accessiblename='Toolbar']/button[@accessiblename='Close']"
+				searchtimeout="30000ms">
+					/form[@controlname='ReceivePaymentForm']//toolbar[@accessiblename='Toolbar']/button[@accessiblename='Close']
+				</item>
+				<basepath>
+					/form[@controlname='ReceivePaymentForm']//toolbar[@accessiblename='Toolbar']
+				</basepath>
+			</folder>
+			<item
+			addcaps="text,uiautomation,uiautomationvalue"
+			capname="text"
+			id="9e69ab90-5227-4f7a-9b4e-0ab28ed3bfa7"
+			name="txtDate"
+			refimgid="acd3529a-f4a8-4711-81ad-d687b7533c63"
+			refpath="/form[@controlname='ReceivePaymentForm']/container[@controlname='pnlBase']/container[@controlname='pnlControls']/element[@controlname='acldDate']/text[@automationid='[Editor] Edit Area']"
+			searchtimeout="30000ms">
+				/form[@controlname='ReceivePaymentForm']/container[@controlname='pnlBase']//text[@automationid='[Editor] Edit Area']
+			</item>
+			<folder
+			addcaps="container,control,nativewindow"
+			capname="container"
+			id="b75e2235-1206-4e5e-aa37-fa886525a257"
+			isrooted="True"
+			name="PnlBase"
+			refpath="/form[@controlname='ReceivePaymentForm']/container[@controlname='pnlBase']"
+			searchtimeout="30000ms"
+			usecache="False">
+				<item
+				addcaps="radiobutton,control,nativewindow"
+				capname="radiobutton"
+				id="a401f59e-3d76-4ab8-8e3d-bcf044620a5a"
+				name="rdoClient"
+				refimgid="af6da269-0ceb-4de7-9eda-cdac2430d0ea"
+				refpath="/form[@controlname='ReceivePaymentForm']/container[@controlname='pnlBase']/container[@controlname='pnlControls']/radiobutton[@controlname='ardbClient']"
+				searchtimeout="30000ms">
+					/form[@controlname='ReceivePaymentForm']/container[@controlname='pnlBase']/?/?/radiobutton[@controlname='ardbClient']
+				</item>
+				<item
+				addcaps="radiobutton,control,nativewindow"
+				capname="radiobutton"
+				id="0ceed7d7-4aeb-4084-866c-3f2462538db5"
+				name="rdoFile"
+				refimgid="3095e167-7c25-4681-ab6d-c1937ec30673"
+				refpath="/form[@controlname='ReceivePaymentForm']/container[@controlname='pnlBase']/container[@controlname='pnlControls']/radiobutton[@controlname='ardbFile']"
+				searchtimeout="30000ms">
+					/form[@controlname='ReceivePaymentForm']/container[@controlname='pnlBase']/?/?/radiobutton[@controlname='ardbFile']
+				</item>
+				<item
+				addcaps="radiobutton,control,nativewindow"
+				capname="radiobutton"
+				id="fd185f11-6216-48b5-ab5e-e129f7ff8770"
+				name="rdoInvoice"
+				refimgid="e0d2087c-91fb-4702-a79f-747cb693756b"
+				refpath="/form[@controlname='ReceivePaymentForm']/container[@controlname='pnlBase']/container[@controlname='pnlControls']/radiobutton[@controlname='ardbInvoice']"
+				searchtimeout="30000ms">
+					/form[@controlname='ReceivePaymentForm']/container[@controlname='pnlBase']/?/?/radiobutton[@controlname='ardbInvoice']
+				</item>
+				<item
+				addcaps="table,accessible"
+				capname="table"
+				id="792702dc-a9be-447d-a272-5cd7c7ec3dff"
+				name="tblRecvPayment"
+				refimgid="74d88253-786d-4970-837f-ab399f959441"
+				refpath="/form[@controlname='ReceivePaymentForm']/container[@controlname='pnlBase']/container[@controlname='pnlControls']/container[@controlname='pnlGridPanel']/element[@controlname='agrdBillGrid']/table[@accessiblename='Band 0']"
+				searchtimeout="30000ms">
+					/form[@controlname='ReceivePaymentForm']/container[@controlname='pnlBase']/?/?/container[@controlname='pnlGridPanel']/?/?/table[@accessiblename='Band 0']
+				</item>
+				<item
+				addcaps="text,control,nativewindow"
+				capname="text"
+				id="cc2caab7-8ff0-40c4-be14-888b05c6003a"
+				name="txtDescription"
+				refimgid="3fd86000-ed65-446c-bd80-65eacbba56b6"
+				refpath="/form[@controlname='ReceivePaymentForm']/container[@controlname='pnlBase']/container[@controlname='pnlControls']/element[@controlname='ultraGroupBox3']/element[@controlname='atxtDescription']/text[@controlname='_EmbeddableTextBox']"
+				searchtimeout="30000ms">
+					/form[@controlname='ReceivePaymentForm']/container[@controlname='pnlBase']/?/?/element[@controlname='ultraGroupBox3']/?/?/text[@controlname='_EmbeddableTextBox']
+				</item>
+				<item
+				addcaps="combobox,control,nativewindow"
+				capname="combobox"
+				id="be09808e-ca0b-4b0a-8d77-d5983b7b1523"
+				name="cmbxReceiptTo"
+				refimgid="4d7b1213-10eb-49bb-a3c1-774d846055ba"
+				refpath="/form[@controlname='ReceivePaymentForm']/container[@controlname='pnlBase']/container[@controlname='pnlControls']/combobox[@controlname='acmbReceiptTo']"
+				searchtimeout="30000ms">
+					/form[@controlname='ReceivePaymentForm']/container[@controlname='pnlBase']/?/?/combobox[@controlname='acmbReceiptTo']
+				</item>
+				<item
+				addcaps="unknown,control,nativewindow"
+				capname="text"
+				id="b11cf791-6876-4965-a6d7-63a41bc155f2"
+				name="txtNoPaymentMethod"
+				refimgid="17177033-5811-4f90-9aa1-2796d0d3f507"
+				searchtimeout="30000ms">
+					/form[@controlname='ReceivePaymentForm']/container[@controlname='pnlBase']//container[@controlname='apxPaymentMethodSelectorControl']/element[@controlname='alblNoPaymentMethod']/text
+				</item>
+				<item
+				addcaps="text,accessible"
+				capname="text"
+				id="c349e81e-9fa7-418a-836c-9e8fe0aae6af"
+				name="txtConfirmationNo"
+				refimgid="87815190-6101-4987-8777-eb4bc3e9be11"
+				searchtimeout="30000ms">
+					/form[@controlname='ReceivePaymentForm']/container[@controlname='pnlBase']//text[@accessiblename&gt;'Confirmation #']
+				</item>
+				<basepath>
+					/form[@controlname='ReceivePaymentForm']/container[@controlname='pnlBase']
+				</basepath>
+			</folder>
 			<basepath>
 				/form[@controlname='ReceivePaymentForm']
 			</basepath>
@@ -1045,7 +1205,7 @@ DAPIxVgFicf/GQCdrAkiuOdOjQAAAABJRU5ErkJggg==
 			name="btnOk"
 			refimgid="3db1c80b-db57-4f3e-a32e-cf04b99b91d6"
 			searchtimeout="30000ms">
-				/form[@controlname='PromptForm']/?/?/toolbar[@automationid='Toolbar : toolbarBaseDesigner']/button[@automationid='[Toolbar : toolbarBaseDesigner Tools] Tool : TOOLBAR_BUTTON_OK - Index : 1 ']
+				/form[@controlname='PromptForm']//toolbar[@accessiblename='Toolbar']/button[@accessiblename='OK']
 			</item>
 			<item
 			addcaps="button,accessible"
@@ -1372,6 +1532,16 @@ D8zerL8gSEaw7+rFqJ//CkX5CWkHqyZHVzU6AAAAAElFTkSuQmCC
 			refpath="/form[@controlname='InvoiceEmailForm']/container[@controlname='pnlBase']/container[@controlname='pnlControls']/element[@controlname='agrdInvoiceEmail']/table[@accessiblename='Band 0']/row[@accessiblename='Band 0 row 1']/cell[1]"
 			searchtimeout="30000ms">
 				/form[@controlname='InvoiceEmailForm']/container[@controlname='pnlBase']//table[@accessiblename='Band 0']/row/cell[1]
+			</item>
+			<item
+			addcaps="table,accessible"
+			capname="table"
+			id="238c0327-88d3-494c-9164-e200dbf68635"
+			name="tblInvoiceForm"
+			refimgid="de960d83-7b32-4c89-a3be-2983a027c517"
+			refpath="/form[@controlname='InvoiceEmailForm']/container[@controlname='pnlBase']/container[@controlname='pnlControls']/element[@controlname='agrdInvoiceEmail']/table[@accessiblename='Band 0']"
+			searchtimeout="30000ms">
+				/form[@controlname='InvoiceEmailForm']/container[@controlname='pnlBase']//table[@accessiblename='Band 0']
 			</item>
 			<basepath>
 				/form[@controlname='InvoiceEmailForm']
@@ -1850,6 +2020,75 @@ DDLk54zJhA0ARRtIM0wxNozXAGIwdgOAmQXkf2wakDFIDXYDgOn7n5rUN5AkQSwvmgDVRilgYAAA
 ZqQtL10mB5EAAAAASUVORK5CYII=
 			</icon>
 		</appfolder>
+		<appfolder
+		capname="listitem"
+		ensurevisible="True"
+		id="906cb080-1626-468a-bf9b-5c17d146aa34"
+		isrooted="True"
+		name="listDropdwn"
+		searchtimeout="30000ms"
+		usecache="False">
+			<basepath>
+				/list/listitem[@text=$lstdpdwnType]
+			</basepath>
+		</appfolder>
+		<appfolder
+		capname="form"
+		id="ad178acb-d167-45c0-bd74-96aa4f136e00"
+		isrooted="True"
+		name="TrustARBillDistributionForm"
+		refimgid="c94e5efe-0e6f-4adb-8371-def0be90cda1"
+		searchtimeout="30000ms"
+		usecache="False">
+			<item
+			addcaps="table,accessible"
+			capname="table"
+			id="248aa122-00d1-4da4-ae74-0b494a82885e"
+			name="tblBillDistribution"
+			refimgid="409e48ab-d4d1-4e38-a69e-5e74a17d9a59"
+			searchtimeout="30000ms">
+				/form[@controlname='PaymentDistributionForm']/container[@controlname='pnlBase']//table[@accessiblename='Band 0']
+			</item>
+			<item
+			addcaps="toolbar,accessible"
+			capname="toolbar"
+			id="65657d3a-6c67-421d-b200-5c472c8599b3"
+			name="Toolbar"
+			searchtimeout="30000ms">
+				/form[@controlname='PaymentDistributionForm']/element[@controlname='_BaseForm_Toolbars_Dock_Area_Bottom']/?/?/toolbar[@accessiblename='Toolbar']
+			</item>
+			<folder
+			addcaps="toolbar,accessible"
+			capname="toolbar"
+			id="6fc9e7c8-5510-41c5-bf8a-fc01d0d7e1db"
+			isrooted="True"
+			name="Toolbar1"
+			searchtimeout="30000ms"
+			usecache="False">
+				<item
+				addcaps="button,accessible"
+				capname="button"
+				id="218f8b80-4789-4110-9b7e-714ec0cc8685"
+				name="btnCancel"
+				searchtimeout="30000ms">
+					/form[@controlname='PaymentDistributionForm']//toolbar[@accessiblename='Toolbar']/button[@accessiblename='Cancel']
+				</item>
+				<item
+				addcaps="button,accessible"
+				capname="button"
+				id="ec957e73-5808-43b8-838e-48c0f8b72176"
+				name="btnOK"
+				searchtimeout="30000ms">
+					/form[@controlname='PaymentDistributionForm']//toolbar[@accessiblename='Toolbar']/button[@accessiblename='OK']
+				</item>
+				<basepath>
+					/form[@controlname='PaymentDistributionForm']//toolbar[@accessiblename='Toolbar']
+				</basepath>
+			</folder>
+			<basepath>
+				/form[@controlname='PaymentDistributionForm']
+			</basepath>
+		</appfolder>
 		<basepath>
 		</basepath>
 	</rootfolder>
@@ -1857,6 +2096,10 @@ ZqQtL10mB5EAAAAASUVORK5CYII=
 		<var
 		id="f14f4200-1721-482d-ae50-b6de7ac6da1c"
 		name="index">
+		</var>
+		<var
+		id="6be4d18a-d736-4636-8815-76fd7930c27d"
+		name="lstdpdwnType">
 		</var>
 	</variables>
 </repository>

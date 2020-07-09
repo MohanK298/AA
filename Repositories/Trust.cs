@@ -763,6 +763,9 @@ namespace SmokeTest.Repositories
         {
             TrustFolders.PnlBaseFolder _pnlbase;
             RepoItemInfo _btnsavecloseInfo;
+            RepoItemInfo _btnpaynowInfo;
+            RepoItemInfo _btnvoidInfo;
+            RepoItemInfo _btncloseInfo;
 
             /// <summary>
             /// Creates a new TrustDetailBaseForm  folder.
@@ -772,6 +775,9 @@ namespace SmokeTest.Repositories
             {
                 _pnlbase = new TrustFolders.PnlBaseFolder(this);
                 _btnsavecloseInfo = new RepoItemInfo(this, "btnSaveClose", "container[@controlname='menubar_Fill_Panel']//toolbar[@accessiblename='Toolbar']/button[@accessiblename='Save & Close']", 30000, null, "c390baee-5d04-4c92-9235-fe1ba58db9e1");
+                _btnpaynowInfo = new RepoItemInfo(this, "btnPayNow", "container[@controlname='menubar_Fill_Panel']//toolbar[@accessiblename='Toolbar']/button[@accessiblename='Pay Now']", 30000, null, "79325ce7-1a53-4427-964d-347a71c6cc6f");
+                _btnvoidInfo = new RepoItemInfo(this, "btnVoid", "container[@controlname='menubar_Fill_Panel']//toolbar[@accessiblename='Toolbar']/button[@accessiblename='Void/Refund']", 30000, null, "3252bec5-77f1-4351-8c2a-857255c924ea");
+                _btncloseInfo = new RepoItemInfo(this, "btnClose", "container[@controlname='menubar_Fill_Panel']//toolbar[@accessiblename='Toolbar']/button[@accessiblename='Close']", 30000, null, "753f1a4a-5ffc-4c7a-a3e5-d3083546c891");
             }
 
             /// <summary>
@@ -823,6 +829,78 @@ namespace SmokeTest.Repositories
             }
 
             /// <summary>
+            /// The btnPayNow item.
+            /// </summary>
+            [RepositoryItem("79325ce7-1a53-4427-964d-347a71c6cc6f")]
+            public virtual Ranorex.Button btnPayNow
+            {
+                get
+                {
+                    return _btnpaynowInfo.CreateAdapter<Ranorex.Button>(true);
+                }
+            }
+
+            /// <summary>
+            /// The btnPayNow item info.
+            /// </summary>
+            [RepositoryItemInfo("79325ce7-1a53-4427-964d-347a71c6cc6f")]
+            public virtual RepoItemInfo btnPayNowInfo
+            {
+                get
+                {
+                    return _btnpaynowInfo;
+                }
+            }
+
+            /// <summary>
+            /// The btnVoid item.
+            /// </summary>
+            [RepositoryItem("3252bec5-77f1-4351-8c2a-857255c924ea")]
+            public virtual Ranorex.Button btnVoid
+            {
+                get
+                {
+                    return _btnvoidInfo.CreateAdapter<Ranorex.Button>(true);
+                }
+            }
+
+            /// <summary>
+            /// The btnVoid item info.
+            /// </summary>
+            [RepositoryItemInfo("3252bec5-77f1-4351-8c2a-857255c924ea")]
+            public virtual RepoItemInfo btnVoidInfo
+            {
+                get
+                {
+                    return _btnvoidInfo;
+                }
+            }
+
+            /// <summary>
+            /// The btnClose item.
+            /// </summary>
+            [RepositoryItem("753f1a4a-5ffc-4c7a-a3e5-d3083546c891")]
+            public virtual Ranorex.Button btnClose
+            {
+                get
+                {
+                    return _btncloseInfo.CreateAdapter<Ranorex.Button>(true);
+                }
+            }
+
+            /// <summary>
+            /// The btnClose item info.
+            /// </summary>
+            [RepositoryItemInfo("753f1a4a-5ffc-4c7a-a3e5-d3083546c891")]
+            public virtual RepoItemInfo btnCloseInfo
+            {
+                get
+                {
+                    return _btncloseInfo;
+                }
+            }
+
+            /// <summary>
             /// The PnlBase folder.
             /// </summary>
             [RepositoryFolder("e7b34e89-1bde-440f-ac25-32457926163b")]
@@ -853,6 +931,11 @@ namespace SmokeTest.Repositories
             RepoItemInfo _txtchecknumberInfo;
             RepoItemInfo _txtamountenteredInfo;
             RepoItemInfo _txtnewbalanceInfo;
+            RepoItemInfo _txtnopaymentmethodInfo;
+            RepoItemInfo _linkaddInfo;
+            RepoItemInfo _ccnumberInfo;
+            RepoItemInfo _txtinputamtInfo;
+            RepoItemInfo _txtconfirmationnoInfo;
 
             /// <summary>
             /// Creates a new PnlBase  folder.
@@ -864,9 +947,9 @@ namespace SmokeTest.Repositories
                 _txtamountInfo = new RepoItemInfo(this, "txtAmount", "?/?/element[@controlname='atxtAmount']/text[@automationid='[Editor] Edit Area']", 30000, null, "617a3bc0-1599-4782-9fe9-f64ad9474f22");
                 _txtdescriptionInfo = new RepoItemInfo(this, "txtDescription", "?/?/element[@controlname='atxtDescription']/text[@automationid='[Editor] Edit Area']", 30000, null, "bca79400-ca77-4ce1-a48d-e7279c7121d7");
                 _printInfo = new RepoItemInfo(this, "Print", "?/?/element[@controlname='acePrintAfterSave']/?/?/checkbox[@accessiblename='Print']", 5000, null, "407c7ddd-3e75-43d6-b4e2-ab9b14dc63d4");
-                _cmbbxreceipttoInfo = new RepoItemInfo(this, "cmbbxReceiptTo", ".//combobox[@accessiblename='1 - Trust']/combobox[@accessiblerole='ComboBox']", 30000, null, "4d5dd0c6-05a5-433b-8c00-bd1ec0d23785");
+                _cmbbxreceipttoInfo = new RepoItemInfo(this, "cmbbxReceiptTo", ".//combobox[@accessiblename>'1 - Trust']/combobox[@accessiblerole='ComboBox']", 30000, null, "4d5dd0c6-05a5-433b-8c00-bd1ec0d23785");
                 _txtreceiptidInfo = new RepoItemInfo(this, "txtReceiptId", "?/?/element[@controlname='atxtIdNumber']/text[@automationid='[Editor] Edit Area']", 30000, null, "a027fa9b-102d-4835-888c-5923023c273a");
-                _cmbbxmethodInfo = new RepoItemInfo(this, "cmbbxMethod", ".//combobox[@accessiblename='Check']/combobox[@accessiblerole='ComboBox']", 30000, null, "9af8b002-25ad-4d0a-854f-00ebfd138acb");
+                _cmbbxmethodInfo = new RepoItemInfo(this, "cmbbxMethod", ".//combobox[@accessiblename>'Check']/combobox[@accessiblerole='ComboBox']", 30000, null, "9af8b002-25ad-4d0a-854f-00ebfd138acb");
                 _imgaddfileInfo = new RepoItemInfo(this, "imgAddFile", "?/?/container[@controlname='pnlAllocation']/?/?/table[@accessiblename='Band 0']/?/?/cell[@text='System.Drawing.Bitmap']", 30000, null, "0aa58a27-66d1-43fe-b670-bcea842aa139");
                 _txtdateInfo = new RepoItemInfo(this, "txtDate", "?/?/element[@controlname='adteTrustDate']/text[@automationid='[Editor] Edit Area']", 30000, null, "6eac977b-ef33-46db-a05d-2f589f816286");
                 _txtallocationInfo = new RepoItemInfo(this, "txtAllocation", "?/?/container[@controlname='pnlAllocation']/?/?/element[@controlname='alblAllocatedValue']", 30000, null, "b8278848-31bd-43dd-82d8-ff1de965cddb");
@@ -875,6 +958,11 @@ namespace SmokeTest.Repositories
                 _txtchecknumberInfo = new RepoItemInfo(this, "txtCheckNumber", "?/?/element[@controlname='atxtCheckNumber']/text[@automationid='[Editor] Edit Area']", 30000, null, "f60c4c53-9f9d-492c-9095-6fcd30a5804e");
                 _txtamountenteredInfo = new RepoItemInfo(this, "txtAmountEntered", ".//text[@automationid='atxtAmount_EmbeddableTextBox']", 30000, null, "508f8dff-8499-4ebb-aed4-44c36a26223f");
                 _txtnewbalanceInfo = new RepoItemInfo(this, "txtNewBalance", "?/?/container[@controlname='pnlAllocation']/?/?/table[@accessiblename='Band 0']/row[@accessiblename='Band 0 row 1']/?/?/cell[@accessiblename='New Balance']", 30000, null, "6d760179-7dcc-4a0f-beee-4fbfd513d4b9");
+                _txtnopaymentmethodInfo = new RepoItemInfo(this, "txtNoPaymentMethod", "?/?/container[@controlname='apxPaymentMethodSelectorControl']/?/?/text", 30000, null, "49ff5370-d2ad-4631-9c3a-874544dd985b");
+                _linkaddInfo = new RepoItemInfo(this, "linkAdd", "?/?/container[@controlname='apxPaymentMethodSelectorControl']//link[@accessiblename='Add']", 30000, null, "9a5d44ec-f4e1-43f1-a965-2e52f1cf3c4e");
+                _ccnumberInfo = new RepoItemInfo(this, "ccNumber", "?/?/container[@controlname='apxPaymentMethodSelectorControl']/combobox[@controlname='acmbPaymentMethod']", 30000, null, "64bc5cc8-a04f-4538-bf8d-5e824a44c753");
+                _txtinputamtInfo = new RepoItemInfo(this, "txtInputAmt", "?/?/element[@controlname='atxtAmount']/text[@controlname='atxtAmount_EmbeddableTextBox']", 30000, null, "4eb1e993-927d-48c6-bc5e-4528fadee552");
+                _txtconfirmationnoInfo = new RepoItemInfo(this, "txtConfirmationNo", "?/?/element[@controlname='alblAPXConfirmation']/text[@accessiblename>'Confirmation #']", 30000, null, "93c0ede8-5a67-47a8-8dfd-a61794325fde");
             }
 
             /// <summary>
@@ -1258,6 +1346,126 @@ namespace SmokeTest.Repositories
                 get
                 {
                     return _txtnewbalanceInfo;
+                }
+            }
+
+            /// <summary>
+            /// The txtNoPaymentMethod item.
+            /// </summary>
+            [RepositoryItem("49ff5370-d2ad-4631-9c3a-874544dd985b")]
+            public virtual Ranorex.Text txtNoPaymentMethod
+            {
+                get
+                {
+                    return _txtnopaymentmethodInfo.CreateAdapter<Ranorex.Text>(true);
+                }
+            }
+
+            /// <summary>
+            /// The txtNoPaymentMethod item info.
+            /// </summary>
+            [RepositoryItemInfo("49ff5370-d2ad-4631-9c3a-874544dd985b")]
+            public virtual RepoItemInfo txtNoPaymentMethodInfo
+            {
+                get
+                {
+                    return _txtnopaymentmethodInfo;
+                }
+            }
+
+            /// <summary>
+            /// The linkAdd item.
+            /// </summary>
+            [RepositoryItem("9a5d44ec-f4e1-43f1-a965-2e52f1cf3c4e")]
+            public virtual Ranorex.Link linkAdd
+            {
+                get
+                {
+                    return _linkaddInfo.CreateAdapter<Ranorex.Link>(true);
+                }
+            }
+
+            /// <summary>
+            /// The linkAdd item info.
+            /// </summary>
+            [RepositoryItemInfo("9a5d44ec-f4e1-43f1-a965-2e52f1cf3c4e")]
+            public virtual RepoItemInfo linkAddInfo
+            {
+                get
+                {
+                    return _linkaddInfo;
+                }
+            }
+
+            /// <summary>
+            /// The ccNumber item.
+            /// </summary>
+            [RepositoryItem("64bc5cc8-a04f-4538-bf8d-5e824a44c753")]
+            public virtual Ranorex.ComboBox ccNumber
+            {
+                get
+                {
+                    return _ccnumberInfo.CreateAdapter<Ranorex.ComboBox>(true);
+                }
+            }
+
+            /// <summary>
+            /// The ccNumber item info.
+            /// </summary>
+            [RepositoryItemInfo("64bc5cc8-a04f-4538-bf8d-5e824a44c753")]
+            public virtual RepoItemInfo ccNumberInfo
+            {
+                get
+                {
+                    return _ccnumberInfo;
+                }
+            }
+
+            /// <summary>
+            /// The txtInputAmt item.
+            /// </summary>
+            [RepositoryItem("4eb1e993-927d-48c6-bc5e-4528fadee552")]
+            public virtual Ranorex.Text txtInputAmt
+            {
+                get
+                {
+                    return _txtinputamtInfo.CreateAdapter<Ranorex.Text>(true);
+                }
+            }
+
+            /// <summary>
+            /// The txtInputAmt item info.
+            /// </summary>
+            [RepositoryItemInfo("4eb1e993-927d-48c6-bc5e-4528fadee552")]
+            public virtual RepoItemInfo txtInputAmtInfo
+            {
+                get
+                {
+                    return _txtinputamtInfo;
+                }
+            }
+
+            /// <summary>
+            /// The txtConfirmationNo item.
+            /// </summary>
+            [RepositoryItem("93c0ede8-5a67-47a8-8dfd-a61794325fde")]
+            public virtual Ranorex.Text txtConfirmationNo
+            {
+                get
+                {
+                    return _txtconfirmationnoInfo.CreateAdapter<Ranorex.Text>(true);
+                }
+            }
+
+            /// <summary>
+            /// The txtConfirmationNo item info.
+            /// </summary>
+            [RepositoryItemInfo("93c0ede8-5a67-47a8-8dfd-a61794325fde")]
+            public virtual RepoItemInfo txtConfirmationNoInfo
+            {
+                get
+                {
+                    return _txtconfirmationnoInfo;
                 }
             }
         }
@@ -2323,7 +2531,7 @@ namespace SmokeTest.Repositories
                     base("DropDownForm", "/form", parentFolder, 30000, null, true, "bdf4e047-7421-404b-be5b-f9e5a5e97afa", "")
             {
                 _tbldropdownInfo = new RepoItemInfo(this, "tblDropdown", "?/?/table", 30000, null, "de26ed4c-9a57-4443-aabc-140798daec80");
-                _treeitemInfo = new RepoItemInfo(this, "treeItem", ".//tree/treeitem[@name=$var]", 30000, null, "273d0ac1-f110-489a-b568-11069cdd6ead");
+                _treeitemInfo = new RepoItemInfo(this, "treeItem", ".//tree/treeitem[@name>$var]", 30000, null, "273d0ac1-f110-489a-b568-11069cdd6ead");
             }
 
             /// <summary>
@@ -2510,16 +2718,16 @@ namespace SmokeTest.Repositories
                 _btnaddcontactInfo = new RepoItemInfo(this, "btnAddContact", "?/?/container[@controlname='scPeople']/?/?/button[@accessiblerole='PushButton']", 30000, null, "2f227010-fec3-4285-99a8-25b6e8bfb187");
                 _txtamountInfo = new RepoItemInfo(this, "txtAmount", "?/?/element[@controlname='atxtAmount']/text[@automationid='[Editor] Edit Area']", 30000, null, "6f20c362-6ca1-4ada-a33f-ce30a6a0a4d3");
                 _printInfo = new RepoItemInfo(this, "Print", "?/?/element[@controlname='acePrintAfterSave']/?/?/checkbox[@accessiblename='Print']", 5000, null, "e61a42f9-678e-4061-876b-adca1a425055");
-                _cmbbxreceipttoInfo = new RepoItemInfo(this, "cmbbxReceiptTo", ".//combobox[@accessiblename='1 - Trust']/combobox[@accessiblerole='ComboBox']", 30000, null, "1139f82f-a239-44d8-b4d9-fa5b9cb3de3a");
+                _cmbbxreceipttoInfo = new RepoItemInfo(this, "cmbbxReceiptTo", ".//combobox[@accessiblename>'1 - Trust']/combobox[@accessiblerole='ComboBox']", 30000, null, "1139f82f-a239-44d8-b4d9-fa5b9cb3de3a");
                 _txtreceiptidInfo = new RepoItemInfo(this, "txtReceiptId", "?/?/element[@controlname='atxtIdNumber']/text[@automationid='[Editor] Edit Area']", 30000, null, "fa3cb7a1-1366-49df-a35c-d05b3c3dd2b1");
-                _cmbbxmethodInfo = new RepoItemInfo(this, "cmbbxMethod", ".//combobox[@accessiblename='Check']/combobox[@accessiblerole='ComboBox']", 30000, null, "fc637a43-6485-4585-bf1e-89d87cf63b25");
+                _cmbbxmethodInfo = new RepoItemInfo(this, "cmbbxMethod", ".//combobox[@accessiblename>'Check']/combobox[@accessiblerole='ComboBox']", 30000, null, "fc637a43-6485-4585-bf1e-89d87cf63b25");
                 _imgaddfileInfo = new RepoItemInfo(this, "imgAddFile", "?/?/container[@controlname='pnlAllocation']/?/?/table[@accessiblename='Band 0']/?/?/cell[@text='System.Drawing.Bitmap']", 30000, null, "169f2cd8-c98b-4add-b4f3-b0e89163e7d0");
                 _txtdateInfo = new RepoItemInfo(this, "txtDate", "?/?/element[@controlname='adteTrustDate']/text[@automationid='[Editor] Edit Area']", 30000, null, "60b75dd2-2d83-44e9-8359-41ce723df08e");
                 _txtallocationInfo = new RepoItemInfo(this, "txtAllocation", "?/?/container[@controlname='pnlAllocation']/?/?/element[@controlname='alblAllocatedValue']", 30000, null, "470a5b91-b510-49e2-a34d-ff949ec1f3e0");
                 _txtcheckamountInfo = new RepoItemInfo(this, "txtCheckAmount", ".//text[@accessiblename~'\\*\\*\\*0/']", 30000, null, "d5042fba-e751-4cf7-a5a9-db82f1651d8b");
                 _txtwipfeesInfo = new RepoItemInfo(this, "txtWIPFees", "?/?/container[@controlname='trustFileSummary']/container[@controlname='panel1']/element[@controlname='lblWIPFeesValue']/text", 30000, null, "1d087257-0778-4b92-9521-05ed52671a1f");
                 _txttransferamountInfo = new RepoItemInfo(this, "txtTransferAmount", "?/?/container[@controlname='pnlAllocation']/?/?/text[@automationid='allocationGrid_EmbeddableTextBox']", 30000, null, "58373f82-fe46-412e-a14c-d85448f3fc85");
-                _cmbbxgeneralInfo = new RepoItemInfo(this, "cmbbxGeneral", ".//combobox[@accessiblename='1 - General']/combobox[@accessiblerole='ComboBox']", 30000, null, "46c4480c-c238-4cf7-a775-7cf57a0c9719");
+                _cmbbxgeneralInfo = new RepoItemInfo(this, "cmbbxGeneral", ".//combobox[@accessiblename>'1 - General']/combobox[@accessiblerole='ComboBox']", 30000, null, "46c4480c-c238-4cf7-a775-7cf57a0c9719");
                 _txtchecknumberInfo = new RepoItemInfo(this, "txtCheckNumber", "?/?/element[@controlname='atxtCheckNumber']/text[@automationid='[Editor] Edit Area']", 30000, null, "425d8973-d346-443d-9244-7ef4b54774a3");
                 _txtdescriptionInfo = new RepoItemInfo(this, "txtDescription", "?/?/element[@controlname='atxtDescription']/text[@automationid='[Editor] Edit Area']", 30000, null, "7ac46d98-1bac-4b01-bf01-f71661a2c8b7");
                 _txttrustbalanceInfo = new RepoItemInfo(this, "txtTrustBalance", "?/?/container[@controlname='trustFileSummary']/element[@controlname='lblTrustBalanceValue']/text", 30000, null, "1f5cca51-ddb7-4c56-94df-464c6689ef9c");
@@ -3087,7 +3295,7 @@ namespace SmokeTest.Repositories
             {
                 _btnaddfileInfo = new RepoItemInfo(this, "btnAddFile", "?/?/container[@controlname='scPeople']/?/?/button[@accessiblerole='PushButton']", 30000, null, "65d7281d-3567-4afa-b999-457e6c012d1b");
                 _txtdescriptionInfo = new RepoItemInfo(this, "txtDescription", "?/?/element[@controlname='atxtDescription']/text[@automationid='[Editor] Edit Area']", 30000, null, "880bf973-ab03-44c1-984e-9708ba51fac2");
-                _cmbbxreceipttoInfo = new RepoItemInfo(this, "cmbbxReceiptTo", ".//combobox[@accessiblename='1 - Trust']/combobox[@accessiblerole='ComboBox']", 30000, null, "40fdc32f-1a30-48cd-911e-d91c6a3b88c0");
+                _cmbbxreceipttoInfo = new RepoItemInfo(this, "cmbbxReceiptTo", ".//combobox[@accessiblename>'1 - Trust']/combobox[@accessiblerole='ComboBox']", 30000, null, "40fdc32f-1a30-48cd-911e-d91c6a3b88c0");
                 _imgaddfileInfo = new RepoItemInfo(this, "imgAddFile", "?/?/container[@controlname='pnlAllocation']/?/?/table[@accessiblename='Band 0']/?/?/cell[@text='System.Drawing.Bitmap']", 30000, null, "23d801f6-78f1-4c16-97cf-ee74bb08b816");
                 _txtdateInfo = new RepoItemInfo(this, "txtDate", "?/?/element[@controlname='adteTrustDate']/text[@automationid='[Editor] Edit Area']", 30000, null, "83420e1b-27c1-4831-9600-7a96ac321d1d");
                 _txtwipfeesInfo = new RepoItemInfo(this, "txtWIPFees", "?/?/container[@controlname='trustFileSummary']/container[@controlname='panel1']/element[@controlname='lblWIPFeesValue']/text", 30000, null, "b1c1e110-d856-4f2a-9dd2-a8da96141fe3");

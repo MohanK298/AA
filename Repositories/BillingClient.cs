@@ -1099,6 +1099,7 @@ namespace SmokeTest.Repositories
             RepoItemInfo _cmbxtax2changeInfo;
             RepoItemInfo _txtsalestax1Info;
             RepoItemInfo _txtsalestax2Info;
+            RepoItemInfo _cbtax2ischargedontax1Info;
 
             /// <summary>
             /// Creates a new PanelTax  folder.
@@ -1121,6 +1122,7 @@ namespace SmokeTest.Repositories
                 _cmbxtax2changeInfo = new RepoItemInfo(this, "cmbxTax2Change", "container[@controlname='PanelTax2']/combobox[@controlname='acmbTax2Change']", 30000, null, "ebb11d26-b4aa-4e1c-983d-b0afa70d29e9");
                 _txtsalestax1Info = new RepoItemInfo(this, "txtSalesTax1", "container[@controlname='PanelTax1']/?/?/text[@automationid='[Editor] Edit Area']", 30000, null, "3be4994c-8fdd-4faa-b463-e6574cfae8da");
                 _txtsalestax2Info = new RepoItemInfo(this, "txtSalesTax2", "container[@controlname='PanelTax2']/?/?/text[@automationid='[Editor] Edit Area']", 30000, null, "f03c4d83-1238-48b4-a67c-dc07e33db9ec");
+                _cbtax2ischargedontax1Info = new RepoItemInfo(this, "cbTax2IsChargedOnTax1", "container[@controlname='PanelTax2']/element[@controlname='aceTaxOnTax']/checkbox/checkbox", 30000, null, "35dee487-2fc8-4ca4-a874-d5833452d978");
             }
 
             /// <summary>
@@ -1504,6 +1506,30 @@ namespace SmokeTest.Repositories
                 get
                 {
                     return _txtsalestax2Info;
+                }
+            }
+
+            /// <summary>
+            /// The cbTax2IsChargedOnTax1 item.
+            /// </summary>
+            [RepositoryItem("35dee487-2fc8-4ca4-a874-d5833452d978")]
+            public virtual Ranorex.CheckBox cbTax2IsChargedOnTax1
+            {
+                get
+                {
+                    return _cbtax2ischargedontax1Info.CreateAdapter<Ranorex.CheckBox>(true);
+                }
+            }
+
+            /// <summary>
+            /// The cbTax2IsChargedOnTax1 item info.
+            /// </summary>
+            [RepositoryItemInfo("35dee487-2fc8-4ca4-a874-d5833452d978")]
+            public virtual RepoItemInfo cbTax2IsChargedOnTax1Info
+            {
+                get
+                {
+                    return _cbtax2ischargedontax1Info;
                 }
             }
         }

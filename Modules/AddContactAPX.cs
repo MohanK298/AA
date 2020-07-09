@@ -178,8 +178,8 @@ namespace SmokeTest.Modules
             Report.Log(ReportLevel.Info, "After select the Manage APX, APX form focused? " + people.APXPaymentMethodForm.Self.HasFocus);
             people.APXPaymentMethodForm.Self.Activate();
             Report.Log(ReportLevel.Info, "After select the Manage APX, APX form shows? " + people.APXPaymentMethodForm.SelfInfo.Exists());
-            Report.Log(ReportLevel.Info, "Add payment method button exists? " + people.APXPaymentMethodForm.btnAddInfo.Exists());
-            people.APXPaymentMethodForm.btnAdd.Click();
+            Report.Log(ReportLevel.Info, "Add payment method button exists? " + people.APXPaymentMethodForm.Toolbar1.btnAddInfo.Exists());
+            people.APXPaymentMethodForm.Toolbar1.btnAdd.Click();
             people.apxtestabacusnext.ccNumber.PressKeys("375987654321004");
         	people.apxtestabacusnext.selectMonth.Click();
         	people.apxtestabacusnext.MonthValue.Click();
@@ -198,7 +198,7 @@ namespace SmokeTest.Modules
 //        	bill.PromptForm.btnYes1.Click();
 			people.PromptForm.btnYes.Click();
             Validate.Exists(people.APXPaymentMethodForm.ccTypeInfo);
-            people.APXPaymentMethodForm.btnOk.Click();
+            people.APXPaymentMethodForm.Toolbar1.btnOK.Click();
             
             //Validation
             Validate.Exists(people.PeopleDetailForm.AddressDetails);

@@ -20,7 +20,7 @@ using Ranorex.Core.Testing;
 
 using SmokeTest.Repositories;
 using SmokeTest.Modules;
-
+using SmokeTest.Modules.Utilities;
 namespace SmokeTest.Modules
 {
     [TestModule("23F9D399-EA0A-4173-B826-D70B6404EAF0", ModuleType.UserCode, 1)]
@@ -29,7 +29,7 @@ namespace SmokeTest.Modules
     	
     	//Repository Variable
     	Files file = Files.Instance;
-    	
+    	Common cmn=new Common();
     	//Variables
     	string _time = "";
     	[TestVariable("6193B8F1-1EEA-4693-866C-25439B548AA0")]
@@ -140,7 +140,10 @@ namespace SmokeTest.Modules
         		file.FileDetailForm.btnSaveClose.Click();	
         	}
         	Delay.Seconds(1);
-        	file.PromptForm.ButtonYes.Click();
+        	if(file.PromptForm.ButtonYesInfo.Exists())
+        	{
+        		file.PromptForm.ButtonYes.Click();
+        	}
         	Delay.Seconds(1);
         	if(file.PromptForm.ButtonYesInfo.Exists())
         	{
@@ -155,7 +158,9 @@ namespace SmokeTest.Modules
             Delay.SpeedFactor = 1.0;
             
             CreateFile();
+            cmn.ClosePrompt();
           //  Utilities.Common.ClosePrompt();
+          
         }
     }
 }

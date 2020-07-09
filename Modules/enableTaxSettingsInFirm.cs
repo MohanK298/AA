@@ -67,11 +67,13 @@ namespace SmokeTest.Modules
         			bclient.TaxEditXtraForm.Toolbar1.btnOK.Click();
         		}
         		
+        		
         		cmn.VerifyListItemDropdown(bclient.GeneralFirmSettingsXtraForm.PanelTax.cmbxTax1Change,dpdwnItems,"Taxable Charges Dropdown 1");
         		//cmn.SelectItemDropdown(bclient.GeneralFirmSettingsXtraForm.PanelTax.cmbxTax1Change,"Expenses","Taxable Charges Dropdown 1");
-        		bclient.GeneralFirmSettingsXtraForm.PanelTax.cmbxTax1Change.Click();
-        		
-        		
+        	//	bclient.GeneralFirmSettingsXtraForm.PanelTax.cmbxTax1Change.Click();
+//        		bclient.var="Fees & Expenses";
+//        		Delay.Milliseconds(500);
+//        		bclient.DropDownForm.TreeItem.Click();
         		cmn.SelectItemDropdown(bclient.GeneralFirmSettingsXtraForm.PanelTax.cmbxTax1Change,"Fees & Expenses","Taxable Charges Dropdown 1");
 //        		bclient.GeneralFirmSettingsXtraForm.PanelTax.cmbxTax1Change.Click();
 //        		bclient.var="Fees & Expenses";
@@ -95,13 +97,17 @@ namespace SmokeTest.Modules
         		cmn.VerifyListItemDropdown(bclient.GeneralFirmSettingsXtraForm.PanelTax.cmbxTax2Change,dpdwnItems,"Taxable Charges Dropdown 2");
         		//cmn.SelectItemDropdown(bclient.GeneralFirmSettingsXtraForm.PanelTax.cmbxTax2Change,"Expenses","Taxable Charges Dropdown 2");
         		
-        		bclient.GeneralFirmSettingsXtraForm.PanelTax.cmbxTax2Change.Click();
+//        		bclient.GeneralFirmSettingsXtraForm.PanelTax.cmbxTax2Change.Click();
 //        		bclient.GeneralFirmSettingsXtraForm.PanelTax.cmbxTax2Change.Click();
 //        		bclient.var="Fees & Expenses";
 //        		bclient.DropDownForm.TreeItem.Click();
         		cmn.SelectItemDropdown(bclient.GeneralFirmSettingsXtraForm.PanelTax.cmbxTax2Change,"Fees & Expenses","Taxable Charges Dropdown 2");
-        		
+        	
+		    	
         		bclient.GeneralFirmSettingsXtraForm.PanelTax.cbUseActivityCodeSettingsForTaxesOn.Check();
+        		bclient.GeneralFirmSettingsXtraForm.PanelTax.cbNewFilesAreTaxableByDefault.Check();
+        		bclient.GeneralFirmSettingsXtraForm.PanelTax.cbUseActivityCodeSettingsForTaxesOn.Check();
+        		bclient.GeneralFirmSettingsXtraForm.PanelTax.cbTax2IsChargedOnTax1.Check();
         		bclient.GeneralFirmSettingsXtraForm.Toolbar1.ButtonOK.Click();
         		if(bclient.GeneralFirmSettingsXtraForm.Toolbar1.SelfInfo.Exists(3000))
         		{bclient.GeneralFirmSettingsXtraForm.Toolbar1.ButtonOK.Click();}

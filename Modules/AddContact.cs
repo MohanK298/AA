@@ -124,6 +124,7 @@ namespace SmokeTest.Modules
         	//people.MainForm.btnPeople.Click();
         	people.MainForm.btnPeople1.Click();
             people.MainForm.btnNew.Click();
+            people.NewPersonForm.PanelBase.rdoNew.Select();
             people.NewPersonForm.PanelBase.txtFirstName.PressKeys(firstName);
             people.NewPersonForm.PanelBase.txtLastName.PressKeys(lastName + time);
             

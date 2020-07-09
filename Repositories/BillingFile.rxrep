@@ -504,6 +504,108 @@ D8zerL8gSEaw7+rFqJ//CkX5CWkHqyZHVzU6AAAAAElFTkSuQmCC
 			searchtimeout="30000ms">
 				/form[@controlname='FileDetailForm']/container[@controlname='panelPicBackground']/container[@controlname='evenSplitPanelModernModeOnly']/container[@controlname='panelRight']//element[@controlname='abigFileDetail']/table
 			</item>
+			<folder
+			addcaps="container,control,nativewindow"
+			capname="container"
+			id="c0f81176-0273-4ab2-a460-148450350c3d"
+			isrooted="True"
+			name="PanelRight"
+			refpath="/form[@controlname='FileDetailForm']/container[@controlname='panelPicBackground']/container[@controlname='panelRight']"
+			searchtimeout="30000ms"
+			usecache="False">
+				<item
+				addcaps="checkbox,accessible"
+				capname="checkbox"
+				id="599232e2-f671-4cc0-96ab-2dd5f86f4595"
+				name="cbEmailBillsTo"
+				refimgid="c8c2c148-5946-4ee6-981c-78139f191f49"
+				refpath="/form[@controlname='FileDetailForm']/container[@controlname='panelPicBackground']/container[@controlname='panelRight']/container[@controlname='AASAdminBillSettings']/container[@controlname='panelAdminBillingSettings']/container[@controlname='panelContent']/element[@controlname='ultraGroupTemplates']/element[@controlname='achkIncludeAPXRequestForPaymentWithEmail']/checkbox[@accessiblename='Email Bills to:']/checkbox[@accessiblename='Email Bills to:']"
+				searchtimeout="30000ms">
+					/form[@controlname='FileDetailForm']/container[@controlname='panelPicBackground']/container[@controlname='panelRight']//element[@controlname='ultraGroupTemplates']/element[@controlname='achkIncludeAPXRequestForPaymentWithEmail']/?/?/checkbox[@accessiblename='Email Bills to:']
+				</item>
+				<item
+				addcaps="radiobutton,control,nativewindow"
+				capname="radiobutton"
+				id="a760671e-9811-4a0a-a70b-7bce593666a8"
+				name="rdoEmailBillsAlternateAddress"
+				refimgid="e9ba3e4d-8cbc-4fc5-a5cd-7d65515ecc2c"
+				refpath="/form[@controlname='FileDetailForm']/container[@controlname='panelPicBackground']/container[@controlname='panelRight']/container[@controlname='AASAdminBillSettings']/container[@controlname='panelAdminBillingSettings']/container[@controlname='panelContent']/element[@controlname='ultraGroupTemplates']/radiobutton[@controlname='arbEmailBillsAlternateAddress']"
+				searchtimeout="30000ms">
+					/form[@controlname='FileDetailForm']/container[@controlname='panelPicBackground']/container[@controlname='panelRight']//element[@controlname='ultraGroupTemplates']/radiobutton[@controlname='arbEmailBillsAlternateAddress']
+				</item>
+				<item
+				addcaps="radiobutton,control,nativewindow"
+				capname="radiobutton"
+				id="1c552c54-31a8-404c-a93d-f733eab772a3"
+				name="rdoEmailBillsPrimaryClient"
+				refimgid="258aa7b4-192a-44fa-b0b2-8dbae00e413b"
+				refpath="/form[@controlname='FileDetailForm']/container[@controlname='panelPicBackground']/container[@controlname='panelRight']/container[@controlname='AASAdminBillSettings']/container[@controlname='panelAdminBillingSettings']/container[@controlname='panelContent']/element[@controlname='ultraGroupTemplates']/radiobutton[@controlname='arbEmailBillsPrimaryClient']"
+				searchtimeout="30000ms">
+					/form[@controlname='FileDetailForm']/container[@controlname='panelPicBackground']/container[@controlname='panelRight']//element[@controlname='ultraGroupTemplates']/radiobutton[@controlname='arbEmailBillsPrimaryClient']
+				</item>
+				<item
+				addcaps="text,accessible"
+				capname="text"
+				id="8e218f51-3ce1-4cdd-96e1-98d4aa71024a"
+				name="txtAlternateAddress"
+				refimgid="efe1b91b-0fc0-449f-8c8e-642ae47008e2"
+				refpath="/form[@controlname='FileDetailForm']/container[@controlname='panelPicBackground']/container[@controlname='panelRight']/container[@controlname='AASAdminBillSettings']/container[@controlname='panelAdminBillingSettings']/container[@controlname='panelContent']/element[@controlname='ultraGroupTemplates']/element[@controlname='atxtEmailBillsAlternateAddresses']/text[@controlname='_EmbeddableTextBox']/text[@accessiblerole='Text']"
+				searchtimeout="30000ms">
+					/form[@controlname='FileDetailForm']/container[@controlname='panelPicBackground']/container[@controlname='panelRight']//element[@controlname='ultraGroupTemplates']/element[@controlname='atxtEmailBillsAlternateAddresses']/?/?/text[@accessiblerole='Text']
+				</item>
+				<item
+				addcaps="checkbox,accessible"
+				capname="checkbox"
+				id="bf6f197e-a74a-4e0b-a91c-4abc2ed5f406"
+				name="cbIncludeAPXRequestForPaymentWithEM"
+				refimgid="f6a4136d-354f-4ad8-aad2-3b7d3f977790"
+				refpath="/form[@controlname='FileDetailForm']/container[@controlname='panelPicBackground']/container[@controlname='panelRight']/container[@controlname='AASAdminBillSettings']/container[@controlname='panelAdminBillingSettings']/container[@controlname='panelContent']/element[@controlname='ultraGroupTemplates']/element[@controltypename='AmicusCheckEditor' and @instance='5']/checkbox[@accessiblename='Include APX Request for Payment with E-mail']/checkbox[@accessiblename='Include APX Request for Payment with E-mail']"
+				searchtimeout="30000ms">
+					/form[@controlname='FileDetailForm']/container[@controlname='panelPicBackground']/container[@controlname='panelRight']//container[@controlname='panelContent']/element[@controlname='ultraGroupTemplates']/element[@instance='5']/checkbox[@accessiblename&gt;'Include APX Request for Payment']/checkbox[@accessiblename&gt;'Include APX Request for Payment']
+				</item>
+				<item
+				addcaps="text,accessible"
+				capname="text"
+				id="d9c938bd-1330-4d47-845a-0c0ece5055aa"
+				name="txtPrimaryEmailIdBilling"
+				refimgid="d36b4522-8390-4f56-9e50-99c39e8ce0dc"
+				searchtimeout="30000ms">
+					/form[@controlname='FileDetailForm']/container[@controlname='panelPicBackground']/container[@controlname='panelRight']//element[@controlname='alblEmailBillsPrimaryClientEmailAddress']/text
+				</item>
+				<item
+				addcaps="table,accessible"
+				capname="table"
+				id="5b8aedc0-ca20-4cef-9a96-638e6e0ad046"
+				name="tblFileDetails"
+				refimgid="964af6eb-7b98-4be0-973c-4873b31abc76"
+				refpath="/form[@controlname='FileDetailForm']/container[@controlname='panelPicBackground']/container[@controlname='panelRight']/container[@controlname='AASAccounting']/container[@controlname='panelAccounting']/container[@caption='' and @controltypename='Panel' and @instance='2']/element[@controltypename='AmicusGRFGrid']/table[@accessiblename='Band 0']"
+				searchtimeout="30000ms">
+					/form[@controlname='FileDetailForm']/container[@controlname='panelPicBackground']/container[@controlname='panelRight']/container[@controlname='AASAccounting']//table[@accessiblename='Band 0']
+				</item>
+				<basepath>
+					/form[@controlname='FileDetailForm']/container[@controlname='panelPicBackground']/container[@controlname='panelRight']
+				</basepath>
+			</folder>
+			<item
+			addcaps="treeitem,accessible"
+			capname="treeitem"
+			id="7021a54a-e35f-4170-a8f1-d94fa8ff9320"
+			name="GeneralRetainers"
+			refimgid="14bf2c94-a4ab-4ddf-b9dc-0f9c54d881d6"
+			refpath="/form[@controlname='FileDetailForm']/container[@controlname='panelLeftBase']/container[@controlname='panelLeft']/element[@controlname='utreeFacts']/tree[@accessiblerole='Outline']/treeitem[@accessiblename='General Retainers']"
+			searchtimeout="30000ms">
+				/form[@controlname='FileDetailForm']/container[@controlname='panelLeftBase']/?/?/element[@controlname='utreeFacts']/?/?/treeitem[@accessiblename='General Retainers']
+			</item>
+			<item
+			addcaps="treeitem,accessible"
+			capname="treeitem"
+			id="e7e646df-daf7-44da-8419-0d13bb3178bc"
+			name="Trust"
+			refimgid="d7831e0c-6416-4212-a614-542b01adb309"
+			refpath="/form[@controlname='FileDetailForm']/container[@controlname='panelLeftBase']/container[@controlname='panelLeft']/element[@controlname='utreeFacts']/tree[@accessiblerole='Outline']/treeitem[@accessiblename='Trust']"
+			searchtimeout="30000ms">
+				/form[@controlname='FileDetailForm']/container[@controlname='panelLeftBase']/?/?/element[@controlname='utreeFacts']/?/?/treeitem[@accessiblename='Trust']
+			</item>
 			<basepath>
 				/form[@controlname='FileDetailForm']
 			</basepath>
@@ -551,6 +653,15 @@ D8zerL8gSEaw7+rFqJ//CkX5CWkHqyZHVzU6AAAAAElFTkSuQmCC
 			refpath="/form[@controlname='PromptForm']/element[@controlname='_BaseForm_Toolbars_Dock_Area_Bottom']/container[@accessiblename='DockBottom']/toolbar[@accessiblename='Toolbar']/button[@accessiblename='Yes']"
 			searchtimeout="30000ms">
 				/form[@controlname='PromptForm']//toolbar[@accessiblename='Toolbar']/button[@accessiblename='Yes']
+			</item>
+			<item
+			addcaps="unknown,control,nativewindow"
+			capname="text"
+			id="c5c06c2c-112b-4ed5-99d3-6deb6cb9988e"
+			name="txtMessage"
+			refimgid="adc0deb1-64c5-4c91-ae34-14d4e7158534"
+			searchtimeout="30000ms">
+				/form[@controlname='PromptForm']/container[@controlname='pnlBase']//element[@controlname='alblMessage']/text
 			</item>
 			<basepath>
 				/form[@controlname='PromptForm']

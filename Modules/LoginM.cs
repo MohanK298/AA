@@ -110,8 +110,8 @@ namespace SmokeTest
 
         public void update()
         {
-        	Host.Local.RunApplication("C:\\Amicus\\Amicus Attorney Workstation\\AmicusAttorney.XWin.exe");
-        	
+//        	Host.Local.RunApplication("C:\\Amicus\\Amicus Attorney Workstation\\AmicusAttorney.XWin.exe","–remote-debugging-port=8081");
+			Host.Local.RunApplication("C:\\Amicus\\Amicus Attorney Workstation\\AmicusAttorney.XWin.exe");
 //        	if(!login.Update.SelfInfo.Exists(30000)&& !login.LoginForm.SelfInfo.Exists(30000))
 //        	{
 //        		CloseProcess();

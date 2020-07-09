@@ -280,7 +280,7 @@ SUVORK5CYII=
 				name="cmbbxReceiptTo"
 				refimgid="7e4563c5-c59f-432e-92a8-417303a162f7"
 				searchtimeout="30000ms">
-					/form[@controlname='TrustDetailBaseForm']/?/?/container[@controlname='pnlBase']//combobox[@accessiblename='1 - Trust']/combobox[@accessiblerole='ComboBox']
+					/form[@controlname='TrustDetailBaseForm']/?/?/container[@controlname='pnlBase']//combobox[@accessiblename&gt;'1 - Trust']/combobox[@accessiblerole='ComboBox']
 				</item>
 				<item
 				addcaps="text,uiautomation,uiautomationvalue"
@@ -298,9 +298,8 @@ SUVORK5CYII=
 				id="9af8b002-25ad-4d0a-854f-00ebfd138acb"
 				name="cmbbxMethod"
 				refimgid="48abf396-b7b0-4fa1-b90a-8c37d0c91b80"
-				refpath="/form[@controlname='TrustDetailBaseForm']/container[@controlname='menubar_Fill_Panel']/container[@controlname='pnlBase']/container[@controlname='pnlControls']/element[@controlname='acmbType']/combobox[@accessiblename='Check']/combobox[@accessiblerole='ComboBox']"
 				searchtimeout="30000ms">
-					/form[@controlname='TrustDetailBaseForm']/?/?/container[@controlname='pnlBase']//combobox[@accessiblename='Check']/combobox[@accessiblerole='ComboBox']
+					/form[@controlname='TrustDetailBaseForm']/?/?/container[@controlname='pnlBase']//combobox[@accessiblename&gt;'Check']/combobox[@accessiblerole='ComboBox']
 				</item>
 				<item
 				addcaps="cell,accessible"
@@ -378,10 +377,85 @@ SUVORK5CYII=
 				searchtimeout="30000ms">
 					/form[@controlname='TrustDetailBaseForm']/?/?/container[@controlname='pnlBase']/?/?/container[@controlname='pnlAllocation']/?/?/table[@accessiblename='Band 0']/row[@accessiblename='Band 0 row 1']/?/?/cell[@accessiblename='New Balance']
 				</item>
+				<item
+				addcaps="text,accessible"
+				capname="text"
+				id="49ff5370-d2ad-4631-9c3a-874544dd985b"
+				name="txtNoPaymentMethod"
+				refimgid="1f3acd4f-fe00-4522-8813-e2e61df167e9"
+				searchtimeout="30000ms">
+					/form[@controlname='TrustDetailBaseForm']/?/?/container[@controlname='pnlBase']/?/?/container[@controlname='apxPaymentMethodSelectorControl']/?/?/text
+				</item>
+				<item
+				addcaps="link,accessible"
+				capname="link"
+				id="9a5d44ec-f4e1-43f1-a965-2e52f1cf3c4e"
+				name="linkAdd"
+				refimgid="5ce6baf1-4d1e-4ee9-b9d6-67424b27d580"
+				refpath="/form[@controlname='TrustDetailBaseForm']/container[@controlname='menubar_Fill_Panel']/container[@controlname='pnlBase']/container[@controlname='pnlControls']/container[@controlname='apxPaymentMethodSelectorControl']/link[@controlname='alnkAdd']/text[@accessiblename='Add']/link[@accessiblename='Add']"
+				searchtimeout="30000ms">
+					/form[@controlname='TrustDetailBaseForm']/?/?/container[@controlname='pnlBase']/?/?/container[@controlname='apxPaymentMethodSelectorControl']//link[@accessiblename='Add']
+				</item>
+				<item
+				capname="combobox"
+				id="64bc5cc8-a04f-4538-bf8d-5e824a44c753"
+				name="ccNumber"
+				searchtimeout="30000ms">
+					/form[@controlname='TrustDetailBaseForm']/?/?/container[@controlname='pnlBase']/?/?/container[@controlname='apxPaymentMethodSelectorControl']/combobox[@controlname='acmbPaymentMethod']
+				</item>
+				<item
+				addcaps="text,control,nativewindow"
+				capname="text"
+				id="4eb1e993-927d-48c6-bc5e-4528fadee552"
+				name="txtInputAmt"
+				refimgid="ef82345e-d0be-43c8-b9bb-89dbdea9ac6e"
+				refpath="/form[@controlname='TrustDetailBaseForm']/container[@controlname='menubar_Fill_Panel']/container[@controlname='pnlBase']/container[@controlname='pnlControls']/element[@controlname='atxtAmount']/text[@controlname='atxtAmount_EmbeddableTextBox']"
+				searchtimeout="30000ms">
+					/form[@controlname='TrustDetailBaseForm']/?/?/container[@controlname='pnlBase']/?/?/element[@controlname='atxtAmount']/text[@controlname='atxtAmount_EmbeddableTextBox']
+				</item>
+				<item
+				addcaps="text,accessible"
+				capname="text"
+				id="93c0ede8-5a67-47a8-8dfd-a61794325fde"
+				name="txtConfirmationNo"
+				refimgid="0e2f9c23-4599-483b-856c-b6c26878d234"
+				searchtimeout="30000ms">
+					/form[@controlname='TrustDetailBaseForm']/?/?/container[@controlname='pnlBase']/?/?/element[@controlname='alblAPXConfirmation']/text[@accessiblename&gt;'Confirmation #']
+				</item>
 				<basepath>
 					/form[@controlname='TrustDetailBaseForm']/?/?/container[@controlname='pnlBase']
 				</basepath>
 			</folder>
+			<item
+			addcaps="button,accessible"
+			capname="button"
+			id="79325ce7-1a53-4427-964d-347a71c6cc6f"
+			name="btnPayNow"
+			refimgid="f5e63d6a-fec1-4c35-9300-7bdc6245e352"
+			refpath="/form[@controlname='TrustDetailBaseForm']/container[@controlname='menubar_Fill_Panel']/element[@controlname='_menubar_Fill_Panel_Toolbars_Dock_Area_Bottom']/container[@accessiblename='DockBottom']/toolbar[@accessiblename='Toolbar']/button[@accessiblename='Pay Now']"
+			searchtimeout="30000ms">
+				/form[@controlname='TrustDetailBaseForm']/container[@controlname='menubar_Fill_Panel']//toolbar[@accessiblename='Toolbar']/button[@accessiblename='Pay Now']
+			</item>
+			<item
+			addcaps="button,accessible"
+			capname="button"
+			id="3252bec5-77f1-4351-8c2a-857255c924ea"
+			name="btnVoid"
+			refimgid="af0d4e0c-fab1-410e-94f7-23bed961bc49"
+			refpath="/form[@controlname='TrustDetailBaseForm']/container[@controlname='menubar_Fill_Panel']/element[@controlname='_menubar_Fill_Panel_Toolbars_Dock_Area_Bottom']/container[@accessiblename='DockBottom']/toolbar[@accessiblename='Toolbar']/button[@accessiblename='Void/Refund']"
+			searchtimeout="30000ms">
+				/form[@controlname='TrustDetailBaseForm']/container[@controlname='menubar_Fill_Panel']//toolbar[@accessiblename='Toolbar']/button[@accessiblename='Void/Refund']
+			</item>
+			<item
+			addcaps="button,accessible"
+			capname="button"
+			id="753f1a4a-5ffc-4c7a-a3e5-d3083546c891"
+			name="btnClose"
+			refimgid="982a7f39-ef22-4fbd-ab97-3fab0d742cd7"
+			refpath="/form[@controlname='TrustDetailBaseForm']/container[@controlname='menubar_Fill_Panel']/element[@controlname='_menubar_Fill_Panel_Toolbars_Dock_Area_Bottom']/container[@accessiblename='DockBottom']/toolbar[@accessiblename='Toolbar']/button[@accessiblename='Close']"
+			searchtimeout="30000ms">
+				/form[@controlname='TrustDetailBaseForm']/container[@controlname='menubar_Fill_Panel']//toolbar[@accessiblename='Toolbar']/button[@accessiblename='Close']
+			</item>
 			<basepath>
 				/form[@controlname='TrustDetailBaseForm']
 			</basepath>
@@ -870,7 +944,7 @@ SUVORK5CYII=
 			name="treeItem"
 			refimgid="9cff17d9-fbc2-4d19-9798-0d409724d515"
 			searchtimeout="30000ms">
-				/form//tree/treeitem[@name=$var]
+				/form//tree/treeitem[@name&gt;$var]
 			</item>
 			<basepath>
 				/form
@@ -951,7 +1025,7 @@ QmCC
 				name="cmbbxReceiptTo"
 				refimgid="7e4563c5-c59f-432e-92a8-417303a162f7"
 				searchtimeout="30000ms">
-					/form[@controlname='TrustARTransferDetailForm']/?/?/container[@controlname='pnlBase']//combobox[@accessiblename='1 - Trust']/combobox[@accessiblerole='ComboBox']
+					/form[@controlname='TrustARTransferDetailForm']/?/?/container[@controlname='pnlBase']//combobox[@accessiblename&gt;'1 - Trust']/combobox[@accessiblerole='ComboBox']
 				</item>
 				<item
 				addcaps="text,uiautomation,uiautomationvalue"
@@ -969,7 +1043,7 @@ QmCC
 				name="cmbbxMethod"
 				refimgid="48abf396-b7b0-4fa1-b90a-8c37d0c91b80"
 				searchtimeout="30000ms">
-					/form[@controlname='TrustARTransferDetailForm']/?/?/container[@controlname='pnlBase']//combobox[@accessiblename='Check']/combobox[@accessiblerole='ComboBox']
+					/form[@controlname='TrustARTransferDetailForm']/?/?/container[@controlname='pnlBase']//combobox[@accessiblename&gt;'Check']/combobox[@accessiblerole='ComboBox']
 				</item>
 				<item
 				addcaps="cell,accessible"
@@ -1031,9 +1105,8 @@ QmCC
 				id="46c4480c-c238-4cf7-a775-7cf57a0c9719"
 				name="cmbbxGeneral"
 				refimgid="e5f645cc-cf21-47e1-bd1e-2aed1ad085b8"
-				refpath="/form[@controlname='TrustARTransferDetailForm']/container[@controlname='menubar_Fill_Panel']/container[@controlname='pnlBase']/container[@controlname='pnlControls']/element[@controlname='acmbTransferTo']/combobox[@accessiblename='1 - General']/combobox[@accessiblerole='ComboBox']"
 				searchtimeout="30000ms">
-					/form[@controlname='TrustARTransferDetailForm']/?/?/container[@controlname='pnlBase']//combobox[@accessiblename='1 - General']/combobox[@accessiblerole='ComboBox']
+					/form[@controlname='TrustARTransferDetailForm']/?/?/container[@controlname='pnlBase']//combobox[@accessiblename&gt;'1 - General']/combobox[@accessiblerole='ComboBox']
 				</item>
 				<item
 				addcaps="text,uiautomation,uiautomationvalue"
@@ -1140,7 +1213,7 @@ QmCC
 				name="cmbbxReceiptTo"
 				refimgid="9b40e966-ec51-467f-a309-dc1a6d16ca62"
 				searchtimeout="30000ms">
-					/form[@controlname='TrustFileToFileForm']/?/?/container[@controlname='pnlBase']//combobox[@accessiblename='1 - Trust']/combobox[@accessiblerole='ComboBox']
+					/form[@controlname='TrustFileToFileForm']/?/?/container[@controlname='pnlBase']//combobox[@accessiblename&gt;'1 - Trust']/combobox[@accessiblerole='ComboBox']
 				</item>
 				<item
 				addcaps="cell,accessible"

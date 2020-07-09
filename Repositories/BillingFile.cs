@@ -1015,6 +1015,7 @@ namespace SmokeTest.Repositories
         [RepositoryFolder("88807849-1a1c-41fd-a13a-f11500a4d1c2")]
         public partial class FileDetailFormAppFolder : RepoGenBaseFolder
         {
+            BillingFileFolders.PanelRightFolder _panelright;
             RepoItemInfo _titlebarfiledetailInfo;
             RepoItemInfo _adminInfo;
             RepoItemInfo _accountingInfo;
@@ -1028,6 +1029,8 @@ namespace SmokeTest.Repositories
             RepoItemInfo _imgcontactInfo;
             RepoItemInfo _billimagesInfo;
             RepoItemInfo _tblfiledetailInfo;
+            RepoItemInfo _generalretainersInfo;
+            RepoItemInfo _trustInfo;
 
             /// <summary>
             /// Creates a new FileDetailForm  folder.
@@ -1035,6 +1038,7 @@ namespace SmokeTest.Repositories
             public FileDetailFormAppFolder(RepoGenBaseFolder parentFolder) :
                     base("FileDetailForm", "/form[@controlname='FileDetailForm']", parentFolder, 30000, null, true, "88807849-1a1c-41fd-a13a-f11500a4d1c2", "")
             {
+                _panelright = new BillingFileFolders.PanelRightFolder(this);
                 _titlebarfiledetailInfo = new RepoItemInfo(this, "titlebarFileDetail", "titlebar[@accessiblerole='TitleBar']", 30000, null, "064ab492-a5de-4679-93fd-93eafca41839");
                 _adminInfo = new RepoItemInfo(this, "Admin", "container[@controlname='panelLeftBase']/?/?/element[@controlname='utreeFacts']/?/?/treeitem[@accessiblename='Admin']", 30000, null, "c939e005-b0ab-41a8-b215-cec4c6372f38");
                 _accountingInfo = new RepoItemInfo(this, "Accounting", "container[@controlname='panelLeftBase']/?/?/element[@controlname='utreeFacts']/?/?/treeitem[@accessiblename='Accounting']", 30000, null, "c0981626-6830-423f-86ad-2bbc22911df4");
@@ -1048,6 +1052,8 @@ namespace SmokeTest.Repositories
                 _imgcontactInfo = new RepoItemInfo(this, "imgContact", "container[@controlname='panelPicBackground']/container[@controlname='evenSplitPanelModernModeOnly']//container[@controlname='AdminAccounting']/?/?/picture[@controlname='picListBackgroundPanel']//button[@accessiblerole='PushButton']", 30000, null, "f7c3f9e4-6965-4623-9d39-893b7f0b8c6d");
                 _billimagesInfo = new RepoItemInfo(this, "BillImages", "container[@controlname='panelLeftBase']/?/?/element[@controlname='utreeFacts']/?/?/treeitem[@accessiblename='Bill Images']", 30000, null, "fc7e479b-8f2c-4edb-a8db-f9444a3c43fb");
                 _tblfiledetailInfo = new RepoItemInfo(this, "tblFileDetail", "container[@controlname='panelPicBackground']/container[@controlname='evenSplitPanelModernModeOnly']/container[@controlname='panelRight']//element[@controlname='abigFileDetail']/table", 30000, null, "17f1d680-d977-43b9-8dbe-f0cdf31fbd04");
+                _generalretainersInfo = new RepoItemInfo(this, "GeneralRetainers", "container[@controlname='panelLeftBase']/?/?/element[@controlname='utreeFacts']/?/?/treeitem[@accessiblename='General Retainers']", 30000, null, "7021a54a-e35f-4170-a8f1-d94fa8ff9320");
+                _trustInfo = new RepoItemInfo(this, "Trust", "container[@controlname='panelLeftBase']/?/?/element[@controlname='utreeFacts']/?/?/treeitem[@accessiblename='Trust']", 30000, null, "e7e646df-daf7-44da-8419-0d13bb3178bc");
             }
 
             /// <summary>
@@ -1385,6 +1391,285 @@ namespace SmokeTest.Repositories
                     return _tblfiledetailInfo;
                 }
             }
+
+            /// <summary>
+            /// The GeneralRetainers item.
+            /// </summary>
+            [RepositoryItem("7021a54a-e35f-4170-a8f1-d94fa8ff9320")]
+            public virtual Ranorex.TreeItem GeneralRetainers
+            {
+                get
+                {
+                    return _generalretainersInfo.CreateAdapter<Ranorex.TreeItem>(true);
+                }
+            }
+
+            /// <summary>
+            /// The GeneralRetainers item info.
+            /// </summary>
+            [RepositoryItemInfo("7021a54a-e35f-4170-a8f1-d94fa8ff9320")]
+            public virtual RepoItemInfo GeneralRetainersInfo
+            {
+                get
+                {
+                    return _generalretainersInfo;
+                }
+            }
+
+            /// <summary>
+            /// The Trust item.
+            /// </summary>
+            [RepositoryItem("e7e646df-daf7-44da-8419-0d13bb3178bc")]
+            public virtual Ranorex.TreeItem Trust
+            {
+                get
+                {
+                    return _trustInfo.CreateAdapter<Ranorex.TreeItem>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Trust item info.
+            /// </summary>
+            [RepositoryItemInfo("e7e646df-daf7-44da-8419-0d13bb3178bc")]
+            public virtual RepoItemInfo TrustInfo
+            {
+                get
+                {
+                    return _trustInfo;
+                }
+            }
+
+            /// <summary>
+            /// The PanelRight folder.
+            /// </summary>
+            [RepositoryFolder("c0f81176-0273-4ab2-a460-148450350c3d")]
+            public virtual BillingFileFolders.PanelRightFolder PanelRight
+            {
+                get { return _panelright; }
+            }
+        }
+
+        /// <summary>
+        /// The PanelRightFolder folder.
+        /// </summary>
+        [RepositoryFolder("c0f81176-0273-4ab2-a460-148450350c3d")]
+        public partial class PanelRightFolder : RepoGenBaseFolder
+        {
+            RepoItemInfo _cbemailbillstoInfo;
+            RepoItemInfo _rdoemailbillsalternateaddressInfo;
+            RepoItemInfo _rdoemailbillsprimaryclientInfo;
+            RepoItemInfo _txtalternateaddressInfo;
+            RepoItemInfo _cbincludeapxrequestforpaymentwithemInfo;
+            RepoItemInfo _txtprimaryemailidbillingInfo;
+            RepoItemInfo _tblfiledetailsInfo;
+
+            /// <summary>
+            /// Creates a new PanelRight  folder.
+            /// </summary>
+            public PanelRightFolder(RepoGenBaseFolder parentFolder) :
+                    base("PanelRight", "container[@controlname='panelPicBackground']/container[@controlname='panelRight']", parentFolder, 30000, null, false, "c0f81176-0273-4ab2-a460-148450350c3d", "")
+            {
+                _cbemailbillstoInfo = new RepoItemInfo(this, "cbEmailBillsTo", ".//element[@controlname='ultraGroupTemplates']/element[@controlname='achkIncludeAPXRequestForPaymentWithEmail']/?/?/checkbox[@accessiblename='Email Bills to:']", 30000, null, "599232e2-f671-4cc0-96ab-2dd5f86f4595");
+                _rdoemailbillsalternateaddressInfo = new RepoItemInfo(this, "rdoEmailBillsAlternateAddress", ".//element[@controlname='ultraGroupTemplates']/radiobutton[@controlname='arbEmailBillsAlternateAddress']", 30000, null, "a760671e-9811-4a0a-a70b-7bce593666a8");
+                _rdoemailbillsprimaryclientInfo = new RepoItemInfo(this, "rdoEmailBillsPrimaryClient", ".//element[@controlname='ultraGroupTemplates']/radiobutton[@controlname='arbEmailBillsPrimaryClient']", 30000, null, "1c552c54-31a8-404c-a93d-f733eab772a3");
+                _txtalternateaddressInfo = new RepoItemInfo(this, "txtAlternateAddress", ".//element[@controlname='ultraGroupTemplates']/element[@controlname='atxtEmailBillsAlternateAddresses']/?/?/text[@accessiblerole='Text']", 30000, null, "8e218f51-3ce1-4cdd-96e1-98d4aa71024a");
+                _cbincludeapxrequestforpaymentwithemInfo = new RepoItemInfo(this, "cbIncludeAPXRequestForPaymentWithEM", ".//container[@controlname='panelContent']/element[@controlname='ultraGroupTemplates']/element[@instance='5']/checkbox[@accessiblename>'Include APX Request for Payment']/checkbox[@accessiblename>'Include APX Request for Payment']", 30000, null, "bf6f197e-a74a-4e0b-a91c-4abc2ed5f406");
+                _txtprimaryemailidbillingInfo = new RepoItemInfo(this, "txtPrimaryEmailIdBilling", ".//element[@controlname='alblEmailBillsPrimaryClientEmailAddress']/text", 30000, null, "d9c938bd-1330-4d47-845a-0c0ece5055aa");
+                _tblfiledetailsInfo = new RepoItemInfo(this, "tblFileDetails", "container[@controlname='AASAccounting']//table[@accessiblename='Band 0']", 30000, null, "5b8aedc0-ca20-4cef-9a96-638e6e0ad046");
+            }
+
+            /// <summary>
+            /// The Self item.
+            /// </summary>
+            [RepositoryItem("c0f81176-0273-4ab2-a460-148450350c3d")]
+            public virtual Ranorex.Container Self
+            {
+                get
+                {
+                    return _selfInfo.CreateAdapter<Ranorex.Container>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Self item info.
+            /// </summary>
+            [RepositoryItemInfo("c0f81176-0273-4ab2-a460-148450350c3d")]
+            public virtual RepoItemInfo SelfInfo
+            {
+                get
+                {
+                    return _selfInfo;
+                }
+            }
+
+            /// <summary>
+            /// The cbEmailBillsTo item.
+            /// </summary>
+            [RepositoryItem("599232e2-f671-4cc0-96ab-2dd5f86f4595")]
+            public virtual Ranorex.CheckBox cbEmailBillsTo
+            {
+                get
+                {
+                    return _cbemailbillstoInfo.CreateAdapter<Ranorex.CheckBox>(true);
+                }
+            }
+
+            /// <summary>
+            /// The cbEmailBillsTo item info.
+            /// </summary>
+            [RepositoryItemInfo("599232e2-f671-4cc0-96ab-2dd5f86f4595")]
+            public virtual RepoItemInfo cbEmailBillsToInfo
+            {
+                get
+                {
+                    return _cbemailbillstoInfo;
+                }
+            }
+
+            /// <summary>
+            /// The rdoEmailBillsAlternateAddress item.
+            /// </summary>
+            [RepositoryItem("a760671e-9811-4a0a-a70b-7bce593666a8")]
+            public virtual Ranorex.RadioButton rdoEmailBillsAlternateAddress
+            {
+                get
+                {
+                    return _rdoemailbillsalternateaddressInfo.CreateAdapter<Ranorex.RadioButton>(true);
+                }
+            }
+
+            /// <summary>
+            /// The rdoEmailBillsAlternateAddress item info.
+            /// </summary>
+            [RepositoryItemInfo("a760671e-9811-4a0a-a70b-7bce593666a8")]
+            public virtual RepoItemInfo rdoEmailBillsAlternateAddressInfo
+            {
+                get
+                {
+                    return _rdoemailbillsalternateaddressInfo;
+                }
+            }
+
+            /// <summary>
+            /// The rdoEmailBillsPrimaryClient item.
+            /// </summary>
+            [RepositoryItem("1c552c54-31a8-404c-a93d-f733eab772a3")]
+            public virtual Ranorex.RadioButton rdoEmailBillsPrimaryClient
+            {
+                get
+                {
+                    return _rdoemailbillsprimaryclientInfo.CreateAdapter<Ranorex.RadioButton>(true);
+                }
+            }
+
+            /// <summary>
+            /// The rdoEmailBillsPrimaryClient item info.
+            /// </summary>
+            [RepositoryItemInfo("1c552c54-31a8-404c-a93d-f733eab772a3")]
+            public virtual RepoItemInfo rdoEmailBillsPrimaryClientInfo
+            {
+                get
+                {
+                    return _rdoemailbillsprimaryclientInfo;
+                }
+            }
+
+            /// <summary>
+            /// The txtAlternateAddress item.
+            /// </summary>
+            [RepositoryItem("8e218f51-3ce1-4cdd-96e1-98d4aa71024a")]
+            public virtual Ranorex.Text txtAlternateAddress
+            {
+                get
+                {
+                    return _txtalternateaddressInfo.CreateAdapter<Ranorex.Text>(true);
+                }
+            }
+
+            /// <summary>
+            /// The txtAlternateAddress item info.
+            /// </summary>
+            [RepositoryItemInfo("8e218f51-3ce1-4cdd-96e1-98d4aa71024a")]
+            public virtual RepoItemInfo txtAlternateAddressInfo
+            {
+                get
+                {
+                    return _txtalternateaddressInfo;
+                }
+            }
+
+            /// <summary>
+            /// The cbIncludeAPXRequestForPaymentWithEM item.
+            /// </summary>
+            [RepositoryItem("bf6f197e-a74a-4e0b-a91c-4abc2ed5f406")]
+            public virtual Ranorex.CheckBox cbIncludeAPXRequestForPaymentWithEM
+            {
+                get
+                {
+                    return _cbincludeapxrequestforpaymentwithemInfo.CreateAdapter<Ranorex.CheckBox>(true);
+                }
+            }
+
+            /// <summary>
+            /// The cbIncludeAPXRequestForPaymentWithEM item info.
+            /// </summary>
+            [RepositoryItemInfo("bf6f197e-a74a-4e0b-a91c-4abc2ed5f406")]
+            public virtual RepoItemInfo cbIncludeAPXRequestForPaymentWithEMInfo
+            {
+                get
+                {
+                    return _cbincludeapxrequestforpaymentwithemInfo;
+                }
+            }
+
+            /// <summary>
+            /// The txtPrimaryEmailIdBilling item.
+            /// </summary>
+            [RepositoryItem("d9c938bd-1330-4d47-845a-0c0ece5055aa")]
+            public virtual Ranorex.Text txtPrimaryEmailIdBilling
+            {
+                get
+                {
+                    return _txtprimaryemailidbillingInfo.CreateAdapter<Ranorex.Text>(true);
+                }
+            }
+
+            /// <summary>
+            /// The txtPrimaryEmailIdBilling item info.
+            /// </summary>
+            [RepositoryItemInfo("d9c938bd-1330-4d47-845a-0c0ece5055aa")]
+            public virtual RepoItemInfo txtPrimaryEmailIdBillingInfo
+            {
+                get
+                {
+                    return _txtprimaryemailidbillingInfo;
+                }
+            }
+
+            /// <summary>
+            /// The tblFileDetails item.
+            /// </summary>
+            [RepositoryItem("5b8aedc0-ca20-4cef-9a96-638e6e0ad046")]
+            public virtual Ranorex.Table tblFileDetails
+            {
+                get
+                {
+                    return _tblfiledetailsInfo.CreateAdapter<Ranorex.Table>(true);
+                }
+            }
+
+            /// <summary>
+            /// The tblFileDetails item info.
+            /// </summary>
+            [RepositoryItemInfo("5b8aedc0-ca20-4cef-9a96-638e6e0ad046")]
+            public virtual RepoItemInfo tblFileDetailsInfo
+            {
+                get
+                {
+                    return _tblfiledetailsInfo;
+                }
+            }
         }
 
         /// <summary>
@@ -1395,6 +1680,7 @@ namespace SmokeTest.Repositories
         {
             RepoItemInfo _btnnoInfo;
             RepoItemInfo _buttonyesInfo;
+            RepoItemInfo _txtmessageInfo;
 
             /// <summary>
             /// Creates a new PromptForm  folder.
@@ -1404,6 +1690,7 @@ namespace SmokeTest.Repositories
             {
                 _btnnoInfo = new RepoItemInfo(this, "btnNo", ".//toolbar[@accessiblename='Toolbar']/button[@accessiblename='No']", 30000, null, "8a1545c1-7c0c-4f29-b479-d8e1fd289b7a");
                 _buttonyesInfo = new RepoItemInfo(this, "ButtonYes", ".//toolbar[@accessiblename='Toolbar']/button[@accessiblename='Yes']", 30000, null, "e9741ef6-4cf9-4a9d-9955-d1c61b41b251");
+                _txtmessageInfo = new RepoItemInfo(this, "txtMessage", "container[@controlname='pnlBase']//element[@controlname='alblMessage']/text", 30000, null, "c5c06c2c-112b-4ed5-99d3-6deb6cb9988e");
             }
 
             /// <summary>
@@ -1475,6 +1762,30 @@ namespace SmokeTest.Repositories
                 get
                 {
                     return _buttonyesInfo;
+                }
+            }
+
+            /// <summary>
+            /// The txtMessage item.
+            /// </summary>
+            [RepositoryItem("c5c06c2c-112b-4ed5-99d3-6deb6cb9988e")]
+            public virtual Ranorex.Text txtMessage
+            {
+                get
+                {
+                    return _txtmessageInfo.CreateAdapter<Ranorex.Text>(true);
+                }
+            }
+
+            /// <summary>
+            /// The txtMessage item info.
+            /// </summary>
+            [RepositoryItemInfo("c5c06c2c-112b-4ed5-99d3-6deb6cb9988e")]
+            public virtual RepoItemInfo txtMessageInfo
+            {
+                get
+                {
+                    return _txtmessageInfo;
                 }
             }
         }

@@ -63,7 +63,7 @@ namespace SmokeTest.Modules
         		Delay.Milliseconds(500);
         		Validate.AttributeContains(trst.TrustARTransferDetailForm.PnlBase.cmbbxReceiptToInfo,"Text","1 - Trust","From Dropdown has the value 1 - Trust Selected");
         		Validate.AttributeContains(trst.TrustARTransferDetailForm.PnlBase.cmbbxGeneralInfo,"Text","1 - General","Transfer to Dropdown has the value 1 - General Selected");
-        		Validate.AttributeContains(trst.TrustARTransferDetailForm.PnlBase.txtDateInfo,"UIAutomationValueValue",System.DateTime.Now.ToString("M/dd/yyyy"),"Today's Date is set to Default");
+        		Validate.AttributeContains(trst.TrustARTransferDetailForm.PnlBase.txtDateInfo,"UIAutomationValueValue",System.DateTime.Now.ToString("M/d/yyyy"),"Today's Date is set to Default");
         		Report.Success(String.Format("Check # seen for the current Trust Check Form is: {0}",trst.TrustARTransferDetailForm.PnlBase.txtCheckNumber.GetAttributeValue<String>("UIAutomationValueValue")));
         		Validate.AttributeContains(trst.TrustARTransferDetailForm.PnlBase.txtDescriptionInfo,"UIAutomationValueValue","Trust Transfer to AR",String.Format("Description for Trust Check is: '{0}'",trst.TrustARTransferDetailForm.PnlBase.txtDescription.GetAttributeValue<String>("UIAutomationValueValue")));
         		trst.TrustARTransferDetailForm.PnlBase.txtDescription.PressKeys(data);

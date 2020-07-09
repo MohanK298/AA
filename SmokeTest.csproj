@@ -209,6 +209,12 @@
     <Compile Include="Modules\AddLibrary.cs">
       <id>df69b60a-748c-4de1-b6bd-cf186cb6a1d6</id>
     </Compile>
+    <Compile Include="Modules\addPaymentCreditCard.cs">
+      <id>cc36aa44-7ef6-4466-bc29-175e91809b32</id>
+    </Compile>
+    <Compile Include="Modules\addPayment_EcheckACH.cs">
+      <id>4d93ab15-675c-4f82-8858-3f9a9b2e15f8</id>
+    </Compile>
     <Compile Include="Modules\AddPrecedent.cs">
       <id>f6ae5635-de41-4a19-8763-4eb337cae43e</id>
     </Compile>
@@ -241,6 +247,12 @@
     </Compile>
     <Compile Include="Modules\all_Bills_checkbox_Validate.cs">
       <id>68ab4b2b-ebb2-44b7-9f78-887a833f6ac4</id>
+    </Compile>
+    <Compile Include="Modules\apx_chargeback_Report.cs">
+      <id>910ad9fc-a40a-4ea5-a6f8-380897dbd9e7</id>
+    </Compile>
+    <Compile Include="Modules\apx_Transaction_Report.cs">
+      <id>f084272c-9e1f-4c98-a99a-84a609d44759</id>
     </Compile>
     <Compile Include="Modules\Attorney_FileDetails\AddDocument.cs">
       <id>fb2a845f-5b70-40ef-a846-f75854da2faf</id>
@@ -524,6 +536,9 @@
     <Compile Include="Modules\expand_Bill_Validate.cs">
       <id>afac4ab8-a300-4761-99a9-e763d0c5a8ce</id>
     </Compile>
+    <Compile Include="Modules\filebillSettings.cs">
+      <id>d3ae7795-1619-461d-9074-341f6f4202da</id>
+    </Compile>
     <Compile Include="Modules\filer_Trust_Validation.cs">
       <id>8f352c0a-bae8-4182-abdb-6a6e07650698</id>
     </Compile>
@@ -539,6 +554,12 @@
     <Compile Include="Modules\Filter_subject_contact_Email.cs">
       <id>a1b382f9-fdc4-4b7b-b78b-f9445c8ab055</id>
     </Compile>
+    <Compile Include="Modules\firmSettingsAPX.cs">
+      <id>91167fbf-8c0f-4d38-953a-cbd51f3e3211</id>
+    </Compile>
+    <Compile Include="Modules\firmSettingsEmailBills.cs">
+      <id>7f772c74-d2c7-4332-bfe8-934811b79f50</id>
+    </Compile>
     <Compile Include="Modules\LoginM.cs">
       <id>1d1e7d77-8a35-48f8-9ce0-4edf115525e3</id>
     </Compile>
@@ -550,6 +571,9 @@
     </Compile>
     <Compile Include="Modules\PaymentAPX.cs">
       <id>dcf89414-2b0e-4747-bd7d-34e26cecba28</id>
+    </Compile>
+    <Compile Include="Modules\pay_cc_on_file.cs">
+      <id>19821cd2-f9cd-40e5-bbd0-22a3db6d5c41</id>
     </Compile>
     <Compile Include="Modules\PreferenceTestII.cs">
       <id>81abd97e-5c5a-45b1-af92-201bd561458a</id>
@@ -698,11 +722,20 @@
     <Compile Include="Modules\Utilities\SendMail.cs">
       <id>ee8dc323-7f62-4bce-91af-c03ec43558dd</id>
     </Compile>
+    <Compile Include="Modules\validateAddressDetailsinAPX.cs">
+      <id>ea279c93-2423-4c4d-9efe-1c1758e0b35a</id>
+    </Compile>
     <Compile Include="Modules\validateAdvancedToolbars.cs">
       <id>a87e04eb-4161-45f3-83df-32da8a145940</id>
     </Compile>
+    <Compile Include="Modules\validateAPXPaymentMethodWindow.cs">
+      <id>d3bb3286-0b7a-489d-8762-5fe014dccbcd</id>
+    </Compile>
     <Compile Include="Modules\validateAutoComplete_Files_People.cs">
       <id>bcf04439-084e-4685-bde3-3887d6379ee5</id>
+    </Compile>
+    <Compile Include="Modules\validateButtonsInAPXForm.cs">
+      <id>5364a521-974b-444c-80a2-5fd8050085c8</id>
     </Compile>
     <Compile Include="Modules\validateDocumentIndexViewer.cs">
       <id>6ca04291-0553-4754-817d-376c41638b4d</id>
@@ -710,14 +743,29 @@
     <Compile Include="Modules\validateFloatingToolbar.cs">
       <id>6c90254c-6c39-4c63-a9fe-e4ffee4348a4</id>
     </Compile>
+    <Compile Include="Modules\validateGeneralRetainerOnPayment.cs">
+      <id>02d24ed4-87c2-49c5-b9a0-71958dde3bc7</id>
+    </Compile>
     <Compile Include="Modules\validateMergeTemplates.cs">
       <id>da63731b-f953-499c-b795-ac567273eb63</id>
+    </Compile>
+    <Compile Include="Modules\validateMsgsBlankSubmitInAPX.cs">
+      <id>8f11c423-4668-482f-aa05-963f00842fd9</id>
     </Compile>
     <Compile Include="Modules\validateNoBillPrint.cs">
       <id>7ecb1661-716e-422f-88f1-82d6cfb618b2</id>
     </Compile>
+    <Compile Include="Modules\validateNoCCAPXInFile.cs">
+      <id>3dc8986e-4b27-46ac-a07a-ea7720820f67</id>
+    </Compile>
+    <Compile Include="Modules\validatePaymentWindowForm.cs">
+      <id>107bcdc3-5c6a-4eab-9499-ce032fd0308f</id>
+    </Compile>
     <Compile Include="Modules\validatePreferenceLinks.cs">
       <id>e3dc1d93-0255-41ae-bc6b-02d9461b6718</id>
+    </Compile>
+    <Compile Include="Modules\validateReceivePayment.cs">
+      <id>b5c31a72-1470-4429-8460-e05f6c170cb8</id>
     </Compile>
     <Compile Include="Modules\validateStandardToolbars.cs">
       <id>11e6554d-5c10-4525-8071-08e5f165d9bf</id>
@@ -734,6 +782,9 @@
     <Compile Include="Modules\validateTrustMenuItems.cs">
       <id>79edb36d-6a46-4456-9428-89b676f0e4ff</id>
     </Compile>
+    <Compile Include="Modules\validateTrust_Receipt_Window_APX.cs">
+      <id>8d6db60f-f48d-43c1-ab4d-2075635484eb</id>
+    </Compile>
     <Compile Include="Modules\validate_Existing_Time_Entry_OnFile_Msg.cs">
       <id>775104d3-10a9-498e-aea9-307577fa4930</id>
     </Compile>
@@ -745,6 +796,9 @@
     </Compile>
     <Compile Include="Modules\validate_Quick_Print.cs">
       <id>7acaf97e-a22b-464f-9cbd-e49a2bb65428</id>
+    </Compile>
+    <Compile Include="Modules\validate_Startup_Balance_General_Retainer.cs">
+      <id>9c2308a0-9c76-411c-a8ad-99318a653b9a</id>
     </Compile>
     <Compile Include="Modules\VerifyAddtoFile_MultiSelectMails.cs">
       <id>b24759a4-724a-4499-bc89-945c62a8e6c7</id>

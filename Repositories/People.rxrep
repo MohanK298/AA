@@ -170,6 +170,16 @@ D8zerL8gSEaw7+rFqJ//CkX5CWkHqyZHVzU6AAAAAElFTkSuQmCC
 				searchtimeout="30000ms">
 					/form[@controlname='NewPersonForm']/container[@controlname='panelBase']//element[@controlname='uteLast']/text[@automationid='[Editor] Edit Area']
 				</item>
+				<item
+				addcaps="radiobutton,control,nativewindow"
+				capname="radiobutton"
+				id="507aadee-05e5-455b-acdd-3b963f49a8c7"
+				name="rdoNew"
+				refimgid="72c5abde-e41d-4619-a35d-e5c746a5c327"
+				refpath="/form[@controlname='NewPersonForm']/container[@controlname='panelBase']/container[@controlname='panelDetails']/container[@controlname='panelNewOrBasedOn']/radiobutton[@controlname='radioNew']"
+				searchtimeout="30000ms">
+					/form[@controlname='NewPersonForm']/container[@controlname='panelBase']//radiobutton[@controlname='radioNew']
+				</item>
 				<basepath>
 					/form[@controlname='NewPersonForm']/container[@controlname='panelBase']
 				</basepath>
@@ -262,17 +272,9 @@ D8zerL8gSEaw7+rFqJ//CkX5CWkHqyZHVzU6AAAAAElFTkSuQmCC
 				/form[@controlname='PeopleDetailForm']/?/?/toolbar[@automationid='MainMenu : menubar']/menuitem[@automationid='[MainMenu : menubar Tools] Tool : MAIN_MENU_ACTIONS - Index : 4 ']
 			</item>
 			<item
-			addcaps="cell,accessible"
-			capname="menuitem"
-			id="18acdeb4-bb64-4251-afe6-78a2b4e8f7c1"
-			name="ManageAPX"
-			refimgid="15d26fe5-73cf-4e88-8374-9fcbeaa875de"
-			searchtimeout="30000ms">
-				/form[@controlname='PeopleDetailForm']/element[@controlname='_BaseForm_Toolbars_Dock_Area_Top']//menuitem[@accessiblename='Actions']/menuitem[@accessiblename='Manage APX Payment Method']
-			</item>
-			<item
 			addcaps="menuitem,accessible"
 			capname="menuitem"
+			ensurevisible="True"
 			id="44971364-45c6-41a8-b8bd-3edf5dbb11e9"
 			name="ManageAPXPaymentMethods"
 			refimgid="1dc1ab95-f89e-4a3c-bd15-3ec199a60578"
@@ -309,6 +311,80 @@ D8zerL8gSEaw7+rFqJ//CkX5CWkHqyZHVzU6AAAAAElFTkSuQmCC
 			refpath="/form[@controlname='PeopleDetailForm']/picture[@controlname='picBackground']/container[@controlname='panelBase']/container[@controlname='panelBottomBase']/container[@controlname='CommunicationPanel']/container[@controlname='panelCommunications']/element[@controlname='acgComm2People']/table[@accessiblename='Band 0']"
 			searchtimeout="30000ms">
 				/form[@controlname='PeopleDetailForm']/picture[@controlname='picBackground']/container[@controlname='panelBase']/container[@controlname='panelBottomBase']//table[@accessiblename='Band 0']
+			</item>
+			<item
+			addcaps="menuitem,accessible"
+			capname="menuitem"
+			id="94694544-8da4-4974-9876-d6a26d66e6ec"
+			name="NewContact"
+			refpath="/form[@controlname='PeopleDetailForm']/element[@controlname='_BaseForm_Toolbars_Dock_Area_Top']/container[@accessiblename='DockTop']/menubar[@accessiblename='Toolbar']/menuitem[@accessiblename='Actions']/menuitem[@accessiblename='New Contact']"
+			searchtimeout="30000ms">
+				/form[@controlname='PeopleDetailForm']/element[@controlname='_BaseForm_Toolbars_Dock_Area_Top']//menuitem[@accessiblename='Actions']/menuitem[@accessiblename='New Contact']
+			</item>
+			<item
+			addcaps="menuitem,accessible"
+			capname="menuitem"
+			id="0fd70804-dd57-4d8e-aca1-9432fda0120e"
+			name="MarkContact"
+			refpath="/form[@controlname='PeopleDetailForm']/element[@controlname='_BaseForm_Toolbars_Dock_Area_Top']/container[@accessiblename='DockTop']/menubar[@accessiblename='Toolbar']/menuitem[@accessiblename='Actions']/menuitem[@accessiblename='Mark Contact']"
+			searchtimeout="30000ms">
+				/form[@controlname='PeopleDetailForm']/element[@controlname='_BaseForm_Toolbars_Dock_Area_Top']//menuitem[@accessiblename='Actions']/menuitem[@accessiblename='Mark Contact']
+			</item>
+			<item
+			addcaps="menuitem,accessible"
+			capname="menuitem"
+			id="620cdacf-de01-4f4c-a162-b5174314764d"
+			name="UnMarkContact"
+			refpath="/form[@controlname='PeopleDetailForm']/element[@controlname='_BaseForm_Toolbars_Dock_Area_Top']/container[@accessiblename='DockTop']/menubar[@accessiblename='Toolbar']/menuitem[@accessiblename='Actions']/menuitem[@accessiblename='UnMark Contact']"
+			searchtimeout="30000ms">
+				/form[@controlname='PeopleDetailForm']/element[@controlname='_BaseForm_Toolbars_Dock_Area_Top']//menuitem[@accessiblename='Actions']/menuitem[@accessiblename='UnMark Contact']
+			</item>
+			<item
+			addcaps="menuitem,accessible"
+			capname="menuitem"
+			id="bf49a842-f89a-40ff-9953-e3c21f6e3167"
+			name="GenerateADocument"
+			refpath="/form[@controlname='PeopleDetailForm']/element[@controlname='_BaseForm_Toolbars_Dock_Area_Top']/container[@accessiblename='DockTop']/menubar[@accessiblename='Toolbar']/menuitem[@accessiblename='Actions']/menuitem[@accessiblename='Generate a Document']"
+			searchtimeout="30000ms">
+				/form[@controlname='PeopleDetailForm']/element[@controlname='_BaseForm_Toolbars_Dock_Area_Top']//menuitem[@accessiblename='Actions']/menuitem[@accessiblename='Generate a Document']
+			</item>
+			<item
+			addcaps="menuitem,accessible"
+			capname="menuitem"
+			id="8f91ad6c-a09e-4b07-9da4-7459e53f2853"
+			name="DeleteContact"
+			refpath="/form[@controlname='PeopleDetailForm']/element[@controlname='_BaseForm_Toolbars_Dock_Area_Top']/container[@accessiblename='DockTop']/menubar[@accessiblename='Toolbar']/menuitem[@accessiblename='Actions']/menuitem[@accessiblename='Delete Contact']"
+			searchtimeout="30000ms">
+				/form[@controlname='PeopleDetailForm']/element[@controlname='_BaseForm_Toolbars_Dock_Area_Top']//menuitem[@accessiblename='Actions']/menuitem[@accessiblename='Delete Contact']
+			</item>
+			<item
+			addcaps="menuitem,accessible"
+			capname="menuitem"
+			id="ab12704a-2091-4fe2-b86d-a48c6f7c0df1"
+			name="Actions"
+			refpath="/form[@controlname='PeopleDetailForm']/element[@controlname='_BaseForm_Toolbars_Dock_Area_Top']/container[@accessiblename='DockTop']/menubar[@accessiblename='Toolbar']/menuitem[@accessiblename='Actions']"
+			searchtimeout="30000ms">
+				/form[@controlname='PeopleDetailForm']/element[@controlname='_BaseForm_Toolbars_Dock_Area_Top']//menuitem[@accessiblename='Actions']
+			</item>
+			<item
+			addcaps="titlebar,accessible"
+			capname="titlebar"
+			id="a0418b17-c219-4819-8bdb-34f1157d610b"
+			name="title"
+			refimgid="1182b186-a699-4222-a44a-44ff46ef0460"
+			refpath="/form[@controlname='PeopleDetailForm']/titlebar[@accessiblerole='TitleBar']"
+			searchtimeout="30000ms">
+				/form[@controlname='PeopleDetailForm']/titlebar[@accessiblerole='TitleBar']
+			</item>
+			<item
+			addcaps="text,accessible"
+			capname="text"
+			id="c361e974-3861-4f6c-944d-7247e045e199"
+			name="lnkEdit"
+			refimgid="45e20c8b-1fab-4c9a-aa15-bf72e56a808f"
+			refpath="/form[@controlname='PeopleDetailForm']/picture[@controlname='picBackground']/container[@controlname='panelBase']/container[@caption='' and @controltypename='TableLayoutPanel']/container[@controlname='businessCard']/element[@controlname='ulblEdit']/text[@accessiblename='Edit']"
+			searchtimeout="30000ms">
+				/form[@controlname='PeopleDetailForm']/picture[@controlname='picBackground']/container[@controlname='panelBase']//text[@accessiblename='Edit']
 			</item>
 			<basepath>
 				/form[@controlname='PeopleDetailForm']
@@ -459,7 +535,7 @@ D8zerL8gSEaw7+rFqJ//CkX5CWkHqyZHVzU6AAAAAElFTkSuQmCC
 				capname="text"
 				id="188d6514-6b18-42ee-8014-bc663906b5e1"
 				name="txtCity"
-				refimgid="f66eba8b-beb8-41a9-a654-cbd04fbef272"
+				refimgid="ab42ec79-4808-47ea-8380-2b2dfe8611d0"
 				searchtimeout="30000ms">
 					/form[@controlname='EditAddressForm']/container[@controlname='panelBase']/?/?/element[@controlname='uteCity']/text[@automationid='[Editor] Edit Area']
 				</item>
@@ -477,7 +553,7 @@ D8zerL8gSEaw7+rFqJ//CkX5CWkHqyZHVzU6AAAAAElFTkSuQmCC
 				capname="text"
 				id="a1490199-ecb9-48b8-a942-02be485ca00f"
 				name="txtState"
-				refimgid="772fdc75-3cc9-4bd8-90c1-ae4fc488cba3"
+				refimgid="a6b0faba-1877-4bd2-bb21-41311f059120"
 				searchtimeout="30000ms">
 					/form[@controlname='EditAddressForm']/container[@controlname='panelBase']/?/?/element[@controlname='uteProvince']/text[@automationid='[Editor] Edit Area']
 				</item>
@@ -486,7 +562,7 @@ D8zerL8gSEaw7+rFqJ//CkX5CWkHqyZHVzU6AAAAAElFTkSuQmCC
 				capname="text"
 				id="8923818c-bc1b-4d4e-ab45-143ddf053ca3"
 				name="txtPostalCode"
-				refimgid="de92a87a-9ec5-429d-a073-62cc517d4d7a"
+				refimgid="7003a587-1bd0-43c8-98a3-4e5a88b072f6"
 				searchtimeout="30000ms">
 					/form[@controlname='EditAddressForm']/container[@controlname='panelBase']/?/?/element[@controlname='utePostalCode']/text[@automationid='[Editor] Edit Area']
 				</item>
@@ -495,9 +571,19 @@ D8zerL8gSEaw7+rFqJ//CkX5CWkHqyZHVzU6AAAAAElFTkSuQmCC
 				capname="text"
 				id="04f42a1c-fb07-4fb9-b3bc-887cbfbcf3fb"
 				name="txtCountry"
-				refimgid="b1da56ed-6953-4252-8817-a9397d3603c3"
+				refimgid="eb8293c7-125b-4be3-8008-67bdd0c5ac90"
 				searchtimeout="30000ms">
 					/form[@controlname='EditAddressForm']/container[@controlname='panelBase']/?/?/element[@controlname='uteCountry']/text[@automationid='[Editor] Edit Area']
+				</item>
+				<item
+				addcaps="text,accessible"
+				capname="text"
+				id="8d09d01e-e8a9-4204-84b3-8cbe12aecd3a"
+				name="txtStreetRead"
+				refimgid="131c38cd-4774-47fe-b9b2-fc89b43d14bb"
+				refpath="/form[@controlname='EditAddressForm']/container[@controlname='panelBase']/container[@controlname='panel2']/element[@controlname='uteStreet']/text[@controlname='_EmbeddableTextBox']/text[@accessiblerole='Text']"
+				searchtimeout="30000ms">
+					/form[@controlname='EditAddressForm']/container[@controlname='panelBase']/?/?/element[@controlname='uteStreet']/?/?/text[@accessiblerole='Text']
 				</item>
 				<basepath>
 					/form[@controlname='EditAddressForm']/container[@controlname='panelBase']
@@ -562,24 +648,6 @@ g2g5OIhIbugRZMPMhqYsiHECrRWw4wS7rPP4V2tKsIIZ6vsLAN7KFwD0vRdUwI4JTmKCG34LSCYc
 		searchtimeout="30000ms"
 		usecache="True">
 			<item
-			addcaps="button,accessible"
-			capname="button"
-			id="679c477e-4c69-465b-8030-a87ff9acbb9d"
-			name="btnAdd"
-			refimgid="c0e9d334-ed23-43c6-988d-fd220aa971bb"
-			searchtimeout="30000ms">
-				/form[@controlname='APXPaymentMethodForm']/?/?/toolbar[@automationid='Toolbar : toolbarBaseDesigner']/button[@name='Add']
-			</item>
-			<item
-			addcaps="button,accessible"
-			capname="button"
-			id="8a3e2f57-ef2e-4fe5-908b-07f280d07515"
-			name="btnOk"
-			refimgid="f33e0d89-7255-4e8b-98c0-e4527671bb5c"
-			searchtimeout="30000ms">
-				/form[@controlname='APXPaymentMethodForm']/?/?/toolbar[@automationid='Toolbar : toolbarBaseDesigner']/button[@automationid='[Toolbar : toolbarBaseDesigner Tools] Tool : TOOLBAR_BUTTON_OK - Index : 4 ']
-			</item>
-			<item
 			addcaps="cell,accessible"
 			capname="text"
 			id="c883b308-713b-42cc-b997-0c471a500ee0"
@@ -596,6 +664,102 @@ g2g5OIhIbugRZMPMhqYsiHECrRWw4wS7rPP4V2tKsIIZ6vsLAN7KFwD0vRdUwI4JTmKCG34LSCYc
 			refimgid="d52ea17e-3212-4f41-9078-ed828d62992f"
 			searchtimeout="30000ms">
 				/form[@controlname='APXPaymentMethodForm']/?/?/toolbar[@automationid='MainMenu : menubar']/menuitem[@automationid='[MainMenu : menubar Tools] Tool : MAIN_MENU_ACTIONS - Index : 4 ']
+			</item>
+			<item
+			addcaps="titlebar,accessible"
+			capname="titlebar"
+			id="d0f86785-3cf7-458c-a4fe-e1a598aeaf28"
+			name="titleBar"
+			refimgid="ca5c90ff-6875-4039-81b7-4796ee9ab6cf"
+			refpath="/form[@controlname='APXPaymentMethodForm']/titlebar[@accessiblerole='TitleBar']"
+			searchtimeout="30000ms">
+				/form[@controlname='APXPaymentMethodForm']/titlebar[@accessiblerole='TitleBar']
+			</item>
+			<item
+			addcaps="container,accessible"
+			capname="cell"
+			id="4304d5d7-6872-4745-a9b2-ad7a48199ff7"
+			name="rowHeaders"
+			refimgid="07275908-acbc-4669-a97d-48fc41c5ef5e"
+			searchtimeout="30000ms">
+				/form[@controlname='APXPaymentMethodForm']/container[@controlname='pnlBase']//table[@accessiblename='Band 0']/container[@accessiblename='Column Headers']/cell[@accessiblename=$colName]
+			</item>
+			<item
+			addcaps="toolbar,accessible"
+			capname="toolbar"
+			id="053919c4-31ed-433f-86e2-59e975a03491"
+			name="Toolbar"
+			refpath="/form[@controlname='APXPaymentMethodForm']/element[@controlname='_BaseForm_Toolbars_Dock_Area_Bottom']/container[@accessiblename='DockBottom']/toolbar[@accessiblename='Toolbar']"
+			searchtimeout="30000ms">
+				/form[@controlname='APXPaymentMethodForm']/element[@controlname='_BaseForm_Toolbars_Dock_Area_Bottom']/?/?/toolbar[@accessiblename='Toolbar']
+			</item>
+			<folder
+			addcaps="toolbar,accessible"
+			capname="toolbar"
+			id="d99b3d5b-2949-41fd-8131-9a9108bb77c3"
+			isrooted="True"
+			name="Toolbar1"
+			refpath="/form[@controlname='APXPaymentMethodForm']/element[@controlname='_BaseForm_Toolbars_Dock_Area_Bottom']/container[@accessiblename='DockBottom']/toolbar[@accessiblename='Toolbar']"
+			searchtimeout="30000ms"
+			usecache="False">
+				<item
+				addcaps="button,accessible"
+				capname="button"
+				id="e29f932a-dfc2-460f-b855-f81fb0ef78d1"
+				name="btnAdd"
+				refpath="/form[@controlname='APXPaymentMethodForm']/element[@controlname='_BaseForm_Toolbars_Dock_Area_Bottom']/container[@accessiblename='DockBottom']/toolbar[@accessiblename='Toolbar']/button[@accessiblename='Add']"
+				searchtimeout="30000ms">
+					/form[@controlname='APXPaymentMethodForm']//toolbar[@accessiblename='Toolbar']/button[@accessiblename='Add']
+				</item>
+				<item
+				addcaps="button,accessible"
+				capname="button"
+				id="25cb6371-e014-46fd-ad2a-08e3e2d9f026"
+				name="btnDelete"
+				refpath="/form[@controlname='APXPaymentMethodForm']/element[@controlname='_BaseForm_Toolbars_Dock_Area_Bottom']/container[@accessiblename='DockBottom']/toolbar[@accessiblename='Toolbar']/button[@accessiblename='Delete']"
+				searchtimeout="30000ms">
+					/form[@controlname='APXPaymentMethodForm']//toolbar[@accessiblename='Toolbar']/button[@accessiblename='Delete']
+				</item>
+				<item
+				addcaps="button,accessible"
+				capname="button"
+				id="a0a072b7-4271-4b8d-a06d-e65fecea08d5"
+				name="btnOK"
+				refpath="/form[@controlname='APXPaymentMethodForm']/element[@controlname='_BaseForm_Toolbars_Dock_Area_Bottom']/container[@accessiblename='DockBottom']/toolbar[@accessiblename='Toolbar']/button[@accessiblename='OK']"
+				searchtimeout="30000ms">
+					/form[@controlname='APXPaymentMethodForm']//toolbar[@accessiblename='Toolbar']/button[@accessiblename='OK']
+				</item>
+				<item
+				addcaps="button,accessible"
+				capname="button"
+				id="92e0c6c8-0e1e-44ef-a418-e5ef47e13536"
+				name="btnSetDefault"
+				refpath="/form[@controlname='APXPaymentMethodForm']/element[@controlname='_BaseForm_Toolbars_Dock_Area_Bottom']/container[@accessiblename='DockBottom']/toolbar[@accessiblename='Toolbar']/button[@accessiblename='Set Default']"
+				searchtimeout="30000ms">
+					/form[@controlname='APXPaymentMethodForm']//toolbar[@accessiblename='Toolbar']/button[@accessiblename='Set Default']
+				</item>
+				<basepath>
+					/form[@controlname='APXPaymentMethodForm']//toolbar[@accessiblename='Toolbar']
+				</basepath>
+			</folder>
+			<item
+			addcaps="table,accessible"
+			capname="table"
+			id="f2465613-aaf6-473d-af73-789524eca888"
+			name="tblAPXDetails"
+			refimgid="4a1cf3d8-abcb-4a8a-8c2b-63aae6beb033"
+			refpath="/form[@controlname='APXPaymentMethodForm']/container[@controlname='pnlBase']/container[@controlname='pnlControls']/element[@controlname='agrdPaymentMethods']/table[@accessiblename='Band 0']"
+			searchtimeout="30000ms">
+				/form[@controlname='APXPaymentMethodForm']/container[@controlname='pnlBase']//table[@accessiblename='Band 0']
+			</item>
+			<item
+			addcaps="treeitem,uiautomation"
+			capname="checkbox"
+			id="726dc9ed-984e-4d01-8031-2e952eb0a590"
+			name="cbDefaultRow"
+			refimgid="486fe5c3-b734-456a-89b2-672bdfc9f1ee"
+			searchtimeout="30000ms">
+				/form[@controlname='APXPaymentMethodForm']/container[@controlname='pnlBase']//tree[@automationid='ColScrollRegion: 0, RowScrollRegion: 0']/treeitem[@automationid=$rowNo]/checkbox
 			</item>
 			<basepath>
 				/form[@controlname='APXPaymentMethodForm']
@@ -837,6 +1001,15 @@ D8zerL8gSEaw7+rFqJ//CkX5CWkHqyZHVzU6AAAAAElFTkSuQmCC
 			searchtimeout="30000ms">
 				/form[@controlname='PromptForm']/?/?/toolbar[@automationid='MainMenu : menubar']/menuitem[@automationid='[MainMenu : menubar Tools] Tool : MAIN_MENU_ACTIONS - Index : 4 ']
 			</item>
+			<item
+			addcaps="text,accessible"
+			capname="text"
+			id="8fab4ce9-9241-4be4-a55d-0bdf51da286b"
+			name="lblMsg"
+			refimgid="cd0126aa-11f4-4e1e-9496-1b763553a143"
+			searchtimeout="30000ms">
+				/form[@controlname='PromptForm']/container[@controlname='pnlBase']/?/?/container[@controlname='pnlMessage']/?/?/text
+			</item>
 			<basepath>
 				/form[@controlname='PromptForm']
 			</basepath>
@@ -856,9 +1029,354 @@ P97/7xjodJp4QKHIUzVcDQRuzCYr51Fcj4QoCQDOGzy0mCYV/8L7MVCWaGOyHNwJGRYZR2Sk+xMd
 D8zerL8gSEaw7+rFqJ//CkX5CWkHqyZHVzU6AAAAAElFTkSuQmCC
 			</icon>
 		</appfolder>
+		<appfolder
+		addcaps="form,control,nativewindow"
+		capname="form"
+		id="d587cc40-fea2-4310-a20d-c112cfd4b472"
+		isrooted="True"
+		name="APXEditPaymentMethodForm"
+		refimgid="a97839ff-e6c8-4b31-acf2-d54a94f98309"
+		refpath="/form[@controlname='APXEditPaymentMethodForm']"
+		searchtimeout="30000ms"
+		usecache="True">
+			<item
+			addcaps="titlebar,accessible"
+			capname="titlebar"
+			id="04c3325c-ab2a-4785-9e97-8b7025dff79f"
+			name="titleBar"
+			refimgid="a5124a4f-1dee-4b1f-801f-8c7b9413fd77"
+			refpath="/form[@controlname='APXEditPaymentMethodForm']/titlebar[@accessiblerole='TitleBar']"
+			searchtimeout="30000ms">
+				/form[@controlname='APXEditPaymentMethodForm']/titlebar[@accessiblerole='TitleBar']
+			</item>
+			<item
+			addcaps="unknown,webelement,cefwebelement,inputtag"
+			capname="inputtag"
+			id="1d386cfb-efff-49a3-804d-1790181c4f24"
+			name="rdoACH"
+			refimgid="5929bfea-5c87-44dd-8063-fe72228e4a48"
+			searchtimeout="30000ms">
+				/form[@controlname='APXEditPaymentMethodForm']/?/?/dom[@domain&lt;'.abacusnext.com']//input[#'radio_ACH']
+			</item>
+			<folder
+			addcaps="unknown,webelement,cefwebelement,divtag"
+			capname="divtag"
+			id="2fe4aceb-7d50-451c-ada1-5b8fb0c20e00"
+			isrooted="True"
+			name="SomeDivTag"
+			searchtimeout="30000ms"
+			usecache="False">
+				<item
+				addcaps="unknown,webelement,cefwebelement,inputtag"
+				capname="inputtag"
+				id="6f846f15-55c3-4cbe-a819-3d8d5966cd96"
+				name="txtNameOnCard"
+				refimgid="5334224d-7de2-4dd9-b65a-1e70ddf642f4"
+				searchtimeout="30000ms">
+					/form[@controlname='APXEditPaymentMethodForm']/element[@controlname='webBrowser1']/dom[@domain&lt;'.abacusnext.com']//div[#'root']/div/div/div[3]/div/div[2]//input[@id='name']
+				</item>
+				<item
+				addcaps="unknown,webelement,cefwebelement,inputtag"
+				capname="inputtag"
+				id="72a947ec-3f4f-4441-a512-c2bff081e960"
+				name="txtAccountOrCardNumber"
+				refimgid="a1c4dcc5-f7d7-4826-9573-627a67d66ec5"
+				searchtimeout="30000ms">
+					/form[@controlname='APXEditPaymentMethodForm']/element[@controlname='webBrowser1']/dom[@domain&lt;'.abacusnext.com']//div[#'root']/div/div/div[3]/div/div[3]//input[@id='name']
+				</item>
+				<item
+				addcaps="unknown,webelement,cefwebelement,divtag"
+				capname="divtag"
+				id="c1f9e7fa-3c8e-4225-a424-67c2dfcde17c"
+				name="dpdwnExpiryMonthSelect"
+				refimgid="6652cf0d-73e2-4e77-b44b-df426138c900"
+				searchtimeout="30000ms">
+					/form[@controlname='APXEditPaymentMethodForm']/element[@controlname='webBrowser1']/dom[@domain&lt;'.abacusnext.com']//div[#'root']/div/div/div[3]/div/div[4]/div/div/div/div
+				</item>
+				<item
+				addcaps="unknown,webelement,cefwebelement,divtag"
+				capname="divtag"
+				id="131090b0-2d5c-4fbd-a662-f4e7da0a2155"
+				name="dpdwnExpiryYearSelectOrAccountType"
+				refimgid="1a9b0038-1b72-46c9-9429-225d3822e751"
+				searchtimeout="30000ms">
+					/form[@controlname='APXEditPaymentMethodForm']/element[@controlname='webBrowser1']/dom[@domain&lt;'.abacusnext.com']//div[#'root']/div/div/div[3]/div/div[5]/div/div/div/div
+				</item>
+				<item
+				addcaps="unknown,webelement,cefwebelement,inputtag"
+				capname="inputtag"
+				id="20bbeff7-76ed-4892-8da6-ab55e2e712af"
+				name="txtBillingaddress"
+				refimgid="53a2ee31-9679-4a13-a88d-ed196fe611fe"
+				searchtimeout="30000ms">
+					/form[@controlname='APXEditPaymentMethodForm']/element[@controlname='webBrowser1']/dom[@domain&lt;'.abacusnext.com']//div[#'root']/div/div/div[4]/div/div[1]//input[@id='name']
+				</item>
+				<item
+				addcaps="unknown,webelement,cefwebelement,inputtag"
+				capname="inputtag"
+				id="1896b2b3-4230-4781-b5bc-d62a2b470654"
+				name="txtCity"
+				refimgid="2cf19e8d-aa4c-4ce8-a1d8-ac5c82f9f797"
+				searchtimeout="30000ms">
+					/form[@controlname='APXEditPaymentMethodForm']/element[@controlname='webBrowser1']/dom[@domain&lt;'.abacusnext.com']//div[#'root']/div/div/div[4]/div/div[2]//input[@id='name']
+				</item>
+				<item
+				addcaps="unknown,webelement,cefwebelement,divtag"
+				capname="divtag"
+				id="d519d2a3-1250-48ea-bbc6-bc9ea187ef86"
+				name="dpdwnCountrySelect"
+				refimgid="27ac4554-d8ec-4589-9c9c-e560574c4d95"
+				searchtimeout="30000ms">
+					/form[@controlname='APXEditPaymentMethodForm']/element[@controlname='webBrowser1']/dom[@domain&lt;'.abacusnext.com']//div[#'root']/div/div/div[4]/div/div[3]//div/div/div/div/div
+				</item>
+				<item
+				addcaps="unknown,webelement,cefwebelement,divtag"
+				capname="divtag"
+				id="d72618b1-7aba-487b-bc20-5bb53d5afd22"
+				name="dpdwnStateSelect"
+				refimgid="2cc23aaa-0ff4-4022-9e8f-aef8b94b6de4"
+				searchtimeout="30000ms">
+					/form[@controlname='APXEditPaymentMethodForm']/element[@controlname='webBrowser1']/dom[@domain&lt;'.abacusnext.com']//div[#'root']/div/div/div[4]/div/div[4]/div/div/div/div
+				</item>
+				<item
+				addcaps="unknown,webelement,cefwebelement,inputtag"
+				capname="inputtag"
+				id="1c3e2ec1-12ee-4f22-b125-f95accb6917e"
+				name="txtZipCode"
+				refimgid="a5eec9c5-cc0f-458f-898b-9f2096ee4645"
+				searchtimeout="30000ms">
+					/form[@controlname='APXEditPaymentMethodForm']/element[@controlname='webBrowser1']/dom[@domain&lt;'.abacusnext.com']//div[#'root']/div/div/div[4]/div/div[5]//input[@id='name']
+				</item>
+				<item
+				addcaps="unknown,webelement,cefwebelement,inputtag"
+				capname="inputtag"
+				id="a722784b-8d40-4ccd-927f-adf144130173"
+				name="txtEmailId"
+				refimgid="eeb4246f-2eb2-4f3b-ab0a-9f05bcd85084"
+				searchtimeout="30000ms">
+					/form[@controlname='APXEditPaymentMethodForm']/element[@controlname='webBrowser1']/dom[@domain&lt;'.abacusnext.com']//div[#'root']/div/div/div[4]/div/div[6]/div/div/div/div/input[@id='name']
+				</item>
+				<item
+				addcaps="unknown,webelement,cefwebelement,buttontag"
+				capname="buttontag"
+				id="4fbb709f-7b9c-47d0-8b03-3ab0efb4a37b"
+				name="btnSubmit"
+				refimgid="c7b31efe-5920-4819-aac1-27f3464fc871"
+				searchtimeout="30000ms">
+					/form[@controlname='APXEditPaymentMethodForm']/element[@controlname='webBrowser1']/dom[@domain&lt;'.abacusnext.com']//div[#'root']/div/div/div[4]/div/div[7]/?/?/button
+				</item>
+				<item
+				addcaps="unknown,webelement,cefwebelement,ptag"
+				capname="ptag"
+				id="4e222793-0b4d-4626-984d-702841516722"
+				name="txtCardNumberOrAccountNumberBlankMsg"
+				refimgid="03329ee8-33c6-4813-a6bd-6c72e2032701"
+				searchtimeout="30000ms">
+					/form[@controlname='APXEditPaymentMethodForm']/element[@controlname='webBrowser1']/dom[@domain&lt;'.abacusnext.com']//div[#'root']/div/div/div[3]/div/div[3]/?/?/p[@id='name-helper-text']
+				</item>
+				<item
+				addcaps="unknown,webelement,cefwebelement,ptag"
+				capname="ptag"
+				ensurevisible="True"
+				id="9d9ebaeb-4dc2-4823-bb9e-5a086bac07ee"
+				name="txtExpiryYearOrAccountTypeBlankMsg"
+				refimgid="01692366-dd2b-42cc-9671-203f38b488d8"
+				searchtimeout="30000ms">
+					/form[@controlname='APXEditPaymentMethodForm']/element[@controlname='webBrowser1']/dom[@domain&lt;'.abacusnext.com']//div[#'root']/div/div/div[3]/div/div[5]/?/?/p
+				</item>
+				<item
+				capname="ptag"
+				id="e21075ed-6c7b-4baf-b463-a5d7b062d616"
+				name="txtExpiryMonthOrRoutingNumberBlankMsg"
+				searchtimeout="30000ms">
+					/form[@controlname='APXEditPaymentMethodForm']/element[@controlname='webBrowser1']/dom[@domain&lt;'.abacusnext.com']//div[#'root']/div/div/div[3]/div/div[4]/?/?/p
+				</item>
+				<item
+				capname="inputtag"
+				id="87dce0f8-9603-4e8b-819b-d1373d9a75a0"
+				name="txtRoutingNumber"
+				refimgid="62ad5646-8317-4815-90b8-2d2d3830c4f3"
+				searchtimeout="30000ms">
+					/form[@controlname='APXEditPaymentMethodForm']/element[@controlname='webBrowser1']/dom[@domain&lt;'.abacusnext.com']//div[#'root']/div/div/div[3]/div/div[4]//input[@id='name']
+				</item>
+				<basepath>
+					/form[@controlname='APXEditPaymentMethodForm']/element[@controlname='webBrowser1']/dom[@domain&lt;'.abacusnext.com']//div[#'root']/div/div
+				</basepath>
+			</folder>
+			<folder
+			addcaps="unknown,webelement,cefwebelement,divtag"
+			capname="divtag"
+			id="30380968-7a5f-4fc9-8f3d-38d0c320c83a"
+			isrooted="True"
+			name="MenuName"
+			searchtimeout="30000ms"
+			usecache="False">
+				<item
+				addcaps="unknown,webelement,cefwebelement,litag"
+				capname="litag"
+				id="01ac084f-f595-43fe-b8e8-07f8b860f150"
+				name="dpdwnSelectValue"
+				searchtimeout="30000ms">
+					/form[@controlname='APXEditPaymentMethodForm']/?/?/dom[@domain&lt;'.abacusnext.com']//div[#'menu-name']//li[@innertext=$dpdwnValue]
+				</item>
+				<basepath>
+					/form[@controlname='APXEditPaymentMethodForm']/?/?/dom[@domain&lt;'.abacusnext.com']//div[#'menu-name']
+				</basepath>
+			</folder>
+			<item
+			addcaps="button,accessible"
+			capname="button"
+			id="b48d14fd-b0f6-416e-8558-ba4196211dfb"
+			name="btnCancel"
+			refimgid="3432b27e-72b0-4944-bcd2-e897df187c21"
+			refpath="/form[@controlname='APXEditPaymentMethodForm']/element[@controlname='abtnCancel']/button[@accessiblename='Cancel']"
+			searchtimeout="30000ms">
+				/form[@controlname='APXEditPaymentMethodForm']/?/?/button[@accessiblename='Cancel']
+			</item>
+			<item
+			addcaps="unknown,webelement,cefwebelement,inputtag"
+			capname="inputtag"
+			id="63f8c948-d9d4-49ce-b41c-e45d65217ddc"
+			name="rdoCreditCard"
+			refimgid="e09f96a2-241a-4311-9561-e0b9fe63f1a7"
+			searchtimeout="30000ms">
+				/form[@controlname='APXEditPaymentMethodForm']/?/?/dom[@domain&lt;'.abacusnext.com']//input[#'radio_CC']
+			</item>
+			<basepath>
+				/form[@controlname='APXEditPaymentMethodForm']
+			</basepath>
+			<icon>
+				iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACx
+jwv8YQUAAAAJcEhZcwAADsQAAA7EAZUrDhsAAAFlSURBVDhPY6AJeOJjOvORg9p/FOyo/v9xoKUT
+VAlugKERDT921nwLVQoBb3Kj+Z5FOf9/FuP2/1msO3EYpBaIH7vr/Qcb8Oft6//kgFclif/Brnjo
+qPYZKvb/z8tn/z+tWfD/bWspWMHLwrj/r8pT/7/rrfv/dffG//++fwOr+3Hu+P8nPsYTwAY8CbRM
+fGSvCnbev29fwQpwgd9PH/1/N6ERHB5gzSDwyFX3IkjgeZLv/0+rF/z/snPD/4fWCmAND60V/3+Y
+1fP//cxuYABqgcUe2SqBDXge5qoDMcBN9w3MgDdNhf/fTWr+/xCoCKb4XU/t/7fd1Shi4BgJtPSG
+GqBzjhwDnkbaa4ANAIZBBDkGgDXDAMkGAFMmVCsEPHLTO0uKAU+jnYygWhHgeZIPUQY8dFS/BdWC
+Cd405uM14N+/f+egSnGDjyvnxjyyVQYbANL0FmjAm/aKH4+9zVWhSqCAgQEAq9YXqsYCPO8AAAAA
+SUVORK5CYII=
+			</icon>
+		</appfolder>
+		<appfolder
+		addcaps="form,control,nativewindow"
+		capname="form"
+		id="668b9eb4-f614-4f8c-bafa-8a8ff4307810"
+		isrooted="True"
+		name="EditPeopleForm"
+		refpath="/form[@controlname='EditPeopleForm']"
+		searchtimeout="30000ms"
+		usecache="True">
+			<item
+			addcaps="row,accessible"
+			capname="cell"
+			id="7f8308f2-d4c5-489c-a6ca-170ee15c7e32"
+			name="firstRowAddress"
+			refimgid="7eb21e10-6aa9-4d60-88a1-17384219f25f"
+			searchtimeout="30000ms">
+				/form[@controlname='EditPeopleForm']/container[@controlname='pnlBase']//table[@accessiblename='Band 0']/row[@accessiblename='Band 0 row 1']/cell[@accessiblename='Address Details']
+			</item>
+			<item
+			addcaps="toolbar,accessible"
+			capname="toolbar"
+			id="db20b469-a8e8-432c-a9c3-44a900661160"
+			name="Toolbar"
+			refpath="/form[@controlname='EditPeopleForm']/element[@controlname='_BaseForm_Toolbars_Dock_Area_Bottom']/container[@accessiblename='DockBottom']/toolbar[@accessiblename='Toolbar']"
+			searchtimeout="30000ms">
+				/form[@controlname='EditPeopleForm']/element[@controlname='_BaseForm_Toolbars_Dock_Area_Bottom']/?/?/toolbar[@accessiblename='Toolbar']
+			</item>
+			<folder
+			addcaps="toolbar,accessible"
+			capname="toolbar"
+			id="39586610-3b39-4c2d-a0c0-8bf09eff9ae7"
+			isrooted="True"
+			name="Toolbar1"
+			refpath="/form[@controlname='EditPeopleForm']/element[@controlname='_BaseForm_Toolbars_Dock_Area_Bottom']/container[@accessiblename='DockBottom']/toolbar[@accessiblename='Toolbar']"
+			searchtimeout="30000ms"
+			usecache="False">
+				<item
+				addcaps="button,accessible"
+				capname="button"
+				id="dda6e26d-a9b8-4d05-9e3c-2a4b0a927833"
+				name="btnCancel"
+				refpath="/form[@controlname='EditPeopleForm']/element[@controlname='_BaseForm_Toolbars_Dock_Area_Bottom']/container[@accessiblename='DockBottom']/toolbar[@accessiblename='Toolbar']/button[@accessiblename='Cancel']"
+				searchtimeout="30000ms">
+					/form[@controlname='EditPeopleForm']//toolbar[@accessiblename='Toolbar']/button[@accessiblename='Cancel']
+				</item>
+				<item
+				addcaps="button,accessible"
+				capname="button"
+				id="17010f20-e017-4a89-aee6-f4353deb8e1b"
+				name="btnPrint"
+				refpath="/form[@controlname='EditPeopleForm']/element[@controlname='_BaseForm_Toolbars_Dock_Area_Bottom']/container[@accessiblename='DockBottom']/toolbar[@accessiblename='Toolbar']/button[@accessiblename='Print']"
+				searchtimeout="30000ms">
+					/form[@controlname='EditPeopleForm']//toolbar[@accessiblename='Toolbar']/button[@accessiblename='Print']
+				</item>
+				<item
+				addcaps="button,accessible"
+				capname="button"
+				id="b9b4fe15-2983-459b-819c-601726941941"
+				name="btnRestrict"
+				refpath="/form[@controlname='EditPeopleForm']/element[@controlname='_BaseForm_Toolbars_Dock_Area_Bottom']/container[@accessiblename='DockBottom']/toolbar[@accessiblename='Toolbar']/button[@accessiblename='Restrict']"
+				searchtimeout="30000ms">
+					/form[@controlname='EditPeopleForm']//toolbar[@accessiblename='Toolbar']/button[@accessiblename='Restrict']
+				</item>
+				<item
+				addcaps="button,accessible"
+				capname="button"
+				id="fe9d9867-0b36-4885-9d40-08c76492dec4"
+				name="btnSave"
+				refpath="/form[@controlname='EditPeopleForm']/element[@controlname='_BaseForm_Toolbars_Dock_Area_Bottom']/container[@accessiblename='DockBottom']/toolbar[@accessiblename='Toolbar']/button[@accessiblename='Save']"
+				searchtimeout="30000ms">
+					/form[@controlname='EditPeopleForm']//toolbar[@accessiblename='Toolbar']/button[@accessiblename='Save']
+				</item>
+				<basepath>
+					/form[@controlname='EditPeopleForm']//toolbar[@accessiblename='Toolbar']
+				</basepath>
+			</folder>
+			<item
+			addcaps="button,accessible"
+			capname="button"
+			id="79610b46-b9a6-493f-85c0-7fa1a11a63f2"
+			name="btnNewAddress"
+			refimgid="ddfa3160-7de7-401e-a361-5d04464cde69"
+			refpath="/form[@controlname='EditPeopleForm']/container[@controlname='pnlBase']/container[@controlname='pnlControls']/element[@controlname='ubtnNewAddress']/button[@accessiblename='New']"
+			searchtimeout="30000ms">
+				/form[@controlname='EditPeopleForm']/container[@controlname='pnlBase']//button[@accessiblename='New']
+			</item>
+			<basepath>
+				/form[@controlname='EditPeopleForm']
+			</basepath>
+			<icon>
+				iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACx
+jwv8YQUAAAAJcEhZcwAADsQAAA7EAZUrDhsAAAFlSURBVDhPY6AJeOJjOvORg9p/FOyo/v9xoKUT
+VAlugKERDT921nwLVQoBb3Kj+Z5FOf9/FuP2/1msO3EYpBaIH7vr/Qcb8Oft6//kgFclif/Brnjo
+qPYZKvb/z8tn/z+tWfD/bWspWMHLwrj/r8pT/7/rrfv/dffG//++fwOr+3Hu+P8nPsYTwAY8CbRM
+fGSvCnbev29fwQpwgd9PH/1/N6ERHB5gzSDwyFX3IkjgeZLv/0+rF/z/snPD/4fWCmAND60V/3+Y
+1fP//cxuYABqgcUe2SqBDXge5qoDMcBN9w3MgDdNhf/fTWr+/xCoCKb4XU/t/7fd1Shi4BgJtPSG
+GqBzjhwDnkbaa4ANAIZBBDkGgDXDAMkGAFMmVCsEPHLTO0uKAU+jnYygWhHgeZIPUQY8dFS/BdWC
+Cd405uM14N+/f+egSnGDjyvnxjyyVQYbANL0FmjAm/aKH4+9zVWhSqCAgQEAq9YXqsYCPO8AAAAA
+SUVORK5CYII=
+			</icon>
+		</appfolder>
 		<basepath>
 		</basepath>
 	</rootfolder>
 	<variables>
+		<var
+		id="741c5903-aaa7-419c-b220-1cbf7729fd7c"
+		name="var">
+		</var>
+		<var
+		id="34598da4-9072-4233-bd05-5a9e4e82c29d"
+		name="colName">
+		</var>
+		<var
+		id="beff8a7f-195c-425d-9d5f-2a8bb688af00"
+		name="dpdwnValue">
+		</var>
+		<var
+		id="00354974-aa74-4efd-b6a5-be61d016e1df"
+		name="rowNo">
+		</var>
 	</variables>
 </repository>

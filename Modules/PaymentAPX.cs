@@ -44,9 +44,9 @@ namespace SmokeTest.Modules
         	bill.MainForm.btnBilling.Click();
         	bill.MainForm.ToolbarBill.Click();
         	bill.MainForm.ReceivePayment.Click();
-        	bill.ReceivePaymentForm.SelectFile.Click();
+        	bill.ReceivePaymentForm.btnSelectFile.Click();
         	te.FileSelectForm.listFirstFound.DoubleClick();
-        	bill.ReceivePaymentForm.DropdownSelection.Click();
+        	bill.ReceivePaymentForm.cmbbxType.Click();
         	bill.ListItem.selectCCapx.Click();
         	bill.ReceivePaymentForm.linkAdd.Click();
         	bill.PromptForm.btnYes1.Click();
@@ -63,7 +63,7 @@ namespace SmokeTest.Modules
             people.apxtestabacusnext.btnSubmit.Click();
             Validate.Exists(bill.ReceivePaymentForm.ccAMEXInfo);
             bill.ReceivePaymentForm.enterAmount.PressKeys("2.30");
-        	bill.ReceivePaymentForm.PayNow.Click();
+        	bill.ReceivePaymentForm.btnPayNow.Click();
         	Validate.Exists(bill.PromptForm.AmountTxtInfo);
         	bill.PromptForm.btnYes1.Click();
         	Delay.Seconds(3);

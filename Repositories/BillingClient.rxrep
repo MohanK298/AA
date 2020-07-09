@@ -554,6 +554,15 @@ D8zerL8gSEaw7+rFqJ//CkX5CWkHqyZHVzU6AAAAAElFTkSuQmCC
 				searchtimeout="30000ms">
 					/form[@controlname='GeneralFirmSettingsXtraForm']/container[@controlname='pnlBase']//container[@controlname='panelBase']/container[@controlname='panelTax']/container[@controlname='PanelTax2']/?/?/text[@automationid='[Editor] Edit Area']
 				</item>
+				<item
+				addcaps="checkbox,accessible"
+				capname="checkbox"
+				id="35dee487-2fc8-4ca4-a874-d5833452d978"
+				name="cbTax2IsChargedOnTax1"
+				refimgid="c4871912-5c4a-4125-afc7-a88b274bc07d"
+				searchtimeout="30000ms">
+					/form[@controlname='GeneralFirmSettingsXtraForm']/container[@controlname='pnlBase']//container[@controlname='panelBase']/container[@controlname='panelTax']/container[@controlname='PanelTax2']/element[@controlname='aceTaxOnTax']/checkbox/checkbox
+				</item>
 				<basepath>
 					/form[@controlname='GeneralFirmSettingsXtraForm']/container[@controlname='pnlBase']//container[@controlname='panelBase']/container[@controlname='panelTax']
 				</basepath>

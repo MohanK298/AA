@@ -263,6 +263,16 @@ name="Outlook_AddIn">
 			searchtimeout="30000ms">
 				/form[@title&lt;' - Outlook']/element[@controlid='4704']
 			</item>
+			<item
+			addcaps="unknown,uiautomation,uiautomationinvoke,uiautomationvalue"
+			capname="unknown"
+			id="5e00b596-8f8a-4147-8fea-4ff3baf1af80"
+			name="DraftsFirstMail"
+			refimgid="963a027c-3cc8-4c14-af9f-ee5edf8b9835"
+			refpath="/form[@title='Drafts - qaabacusnext@outlook.com - Outlook']/element[@controlid='4704']/element[@name='With Attachments, To qaabacusnext@gmail.com, Subject Your  Invoice Number 1007 from QA Toronto 10, Sent None, Size 52 KB, ']"
+			searchtimeout="30000ms">
+				/form[@title&lt;' - Outlook']/element[@controlid='4704']/element[1]
+			</item>
 			<basepath>
 				/form[@title&lt;' - Outlook']
 			</basepath>

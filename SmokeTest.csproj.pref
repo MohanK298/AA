@@ -1,16 +1,18 @@
 ﻿<Properties>
   <Array name="active">
-    <Element value="Modules\billingStatusSelectionValidation.cs" />
+    <Element value="Modules\pay_cc_on_file.cs" />
   </Array>
-  <Array name="bookmarks">
-    <Element value="Breakpoint|C:\Users\kumar\Downloads\AA\Modules\Utilities\Common.cs|495|10|True|Break||" />
-  </Array>
+  <Array name="bookmarks" />
   <Array name="files">
-    <Element value="Modules\verify_File_type_Filter_Validation.cs" />
-    <Element value="Repositories\BillingTE.rxrep" />
     <Element value="SmokeTest.rxtst" />
-    <Element value="Modules\typeSelectionValidation.cs" />
-    <Element value="Modules\billingStatusSelectionValidation.cs" />
+    <Element value="Repositories\Bill.cs" />
+    <Element value="Repositories\FirmSettings.rxrep" />
+    <Element value="Repositories\Bill.rxrep" />
+    <Element value="Modules\AddFile.cs" />
+    <Element value="Modules\pay_cc_on_file.cs" />
+    <Element value="Repositories\Login.cs" />
+    <Element value="Repositories\Trust.cs" />
+    <Element value="Repositories\Trust.rxrep" />
   </Array>
   <Properties name="projectSavedData">
     <Properties name="customTool">

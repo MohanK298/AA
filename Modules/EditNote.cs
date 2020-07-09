@@ -63,12 +63,13 @@ namespace SmokeTest.Modules
             note.NoteDetail.MenubarFillPanel.txtNoteBoxEdit.PressKeys("{Back}");
             note.NoteDetail.MenubarFillPanel.txtNoteBoxEdit.PressKeys(editSticky);
             note.NoteDetail.MenubarFillPanel.btnOK.Click();
-            
+            Delay.Seconds(1);
             //Verify if note has been edited
             note.MainForm.listNoteOne.DoubleClick();
             Report.Success("Edit Note passed");
-            Delay.Seconds(2);
-            note.NoteDetail.MenubarFillPanel.btnOK.Click();
+            Delay.Seconds(1);
+            if(note.NoteDetail.SelfInfo.Exists(3000))
+            {note.NoteDetail.MenubarFillPanel.btnOK.Click();}
         }
         
         void ITestModule.Run()

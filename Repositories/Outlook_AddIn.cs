@@ -187,6 +187,7 @@ namespace SmokeTest.Repositories
             RepoItemInfo _mailInfo;
             RepoItemInfo _treeitemgmailInfo;
             RepoItemInfo _mailpanelInfo;
+            RepoItemInfo _draftsfirstmailInfo;
 
             /// <summary>
             /// Creates a new Outlook  folder.
@@ -205,6 +206,7 @@ namespace SmokeTest.Repositories
                 _mailInfo = new RepoItemInfo(this, "Mail", "element[@controlid='4704']/container[$week]/element[$mailindex]", 30000, true, "ec8f72c7-558a-4fd1-8412-0bcda82a97da");
                 _treeitemgmailInfo = new RepoItemInfo(this, "TreeItemGmail", "container[@controlid='103']//tree[@name='Mail Folders']/treeitem/treeitem[@name='[Gmail]']", 30000, null, "e514fa8a-3e23-4687-aaa5-7683dc5646b4");
                 _mailpanelInfo = new RepoItemInfo(this, "mailPanel", "element[@controlid='4704']", 30000, null, "e88d9c01-7b8b-454e-b03f-171a0da5375b");
+                _draftsfirstmailInfo = new RepoItemInfo(this, "DraftsFirstMail", "element[@controlid='4704']/element[1]", 30000, null, "5e00b596-8f8a-4147-8fea-4ff3baf1af80");
             }
 
             /// <summary>
@@ -444,6 +446,30 @@ namespace SmokeTest.Repositories
                 get
                 {
                     return _mailpanelInfo;
+                }
+            }
+
+            /// <summary>
+            /// The DraftsFirstMail item.
+            /// </summary>
+            [RepositoryItem("5e00b596-8f8a-4147-8fea-4ff3baf1af80")]
+            public virtual Ranorex.Unknown DraftsFirstMail
+            {
+                get
+                {
+                    return _draftsfirstmailInfo.CreateAdapter<Ranorex.Unknown>(true);
+                }
+            }
+
+            /// <summary>
+            /// The DraftsFirstMail item info.
+            /// </summary>
+            [RepositoryItemInfo("5e00b596-8f8a-4147-8fea-4ff3baf1af80")]
+            public virtual RepoItemInfo DraftsFirstMailInfo
+            {
+                get
+                {
+                    return _draftsfirstmailInfo;
                 }
             }
 

@@ -200,6 +200,41 @@ namespace SmokeTest.Modules.Utilities
         
         
         
+        public int GetRowNumberFromTable(Ranorex.Adapter tbldata,string data,string tblName)
+        {
+        	int i,j,k=0;
+        	int rowNumber=0;
+        	var tadapter = tbldata.As <Ranorex.Table>();
+        	for(i=0;i<tadapter.Rows.Count;i++)
+        	{
+        		
+        		for(j=0;j<tadapter.Rows[i].Cells.Count;j++)
+        		{
+        		
+        			if(tadapter.Rows[i].Cells[j].As<Ranorex.Cell>().Text.Contains(data))
+        			{
+        				
+	        				Report.Success(String.Format("Value \"{0}\" Found in Row {1} as expected in \"{2}\"",data,j,tblName));
+	        				rowNumber=j;
+	        				return rowNumber;
+        				
+        			}
+        		}
+
+        	}
+        	if(k==0)
+        	{
+        				Report.Failure(String.Format("Value \"{0}\" not found  expected in \"{2}\"",data,tblName));
+        	}
+        	return rowNumber;
+        }
+        
+        
+        
+        
+        
+        
+        
         public int GetTableRowCount(Ranorex.Adapter tbldata,string tblName)
         {
         	var tadapter = tbldata.As <Ranorex.Table>();
@@ -470,8 +505,10 @@ namespace SmokeTest.Modules.Utilities
         	var cmbbxData = dpdwnData.As <Ranorex.ComboBox>();
         	//cmbbxData.Click();
         	IList<Ranorex.ListItem> listitems = cmbbxData.Items;
+        	Delay.Milliseconds(500);
         	foreach(Ranorex.ListItem item in listitems)
         	{
+        		
         		if(item.Text.Equals(itemValue))
         		{
         			item.Click();
@@ -499,8 +536,8 @@ namespace SmokeTest.Modules.Utilities
         		
         		foreach(Ranorex.ListItem val in listitems)
 	        	{
-        			Report.Info(val.Text.ToString());
-	        		if(val.Text.Contains(item))
+//        			Report.Info(val.Text.ToString());
+	        		if(val.Text.Equals(item))
 	        		{
 	        			//item.Click();
 	        			Report.Success(String.Format("Value \"{0}\" Present as expected in \"{1}\" dropdown",item,dpdwnName));
@@ -509,6 +546,8 @@ namespace SmokeTest.Modules.Utilities
 	        		}
 	        	}
         	}
+//        	Report.Info(k.ToString());
+//        	Report.Info(itemValues.Length.ToString());
         	if(k==itemValues.Length)
         	{
         		Report.Success(String.Format("{0} Values present for selection in \"{1}\" dropdown as expected",itemValues.Length,dpdwnName));
@@ -978,7 +1017,7 @@ namespace SmokeTest.Modules.Utilities
                 return Convert(amount_int) + " Point " + Convert(amount_dec) + " Only.";  
             }  
         }  
-        catch (Exception e)  
+        catch (Exception)  
         {  
             // TODO: handle exception  
         }  

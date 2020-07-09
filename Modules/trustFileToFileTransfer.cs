@@ -60,7 +60,7 @@ namespace SmokeTest.Modules
         		Delay.Milliseconds(500);
         		Validate.AttributeContains(trst.TrustFileToTrustFileForm.PnlBase.cmbbxReceiptToInfo,"Text","1 - Trust","From Dropdown has the value 1 - Trust Selected");
         		
-        		Validate.AttributeContains(trst.TrustFileToTrustFileForm.PnlBase.txtDateInfo,"UIAutomationValueValue",System.DateTime.Now.ToString("M/dd/yyyy"),"Today's Date is set to Default");
+        		Validate.AttributeContains(trst.TrustFileToTrustFileForm.PnlBase.txtDateInfo,"UIAutomationValueValue",System.DateTime.Now.ToString("M/d/yyyy"),"Today's Date is set to Default");
         		Validate.AttributeContains(trst.TrustFileToTrustFileForm.PnlBase.txtDescriptionInfo,"UIAutomationValueValue","",String.Format("Description for Trust File to File Transfer is: '{0}' - empty",trst.TrustFileToTrustFileForm.PnlBase.txtDescription.GetAttributeValue<String>("UIAutomationValueValue")));
         		trst.TrustFileToTrustFileForm.PnlBase.txtDescription.PressKeys(data);
         		

@@ -59,7 +59,9 @@ namespace SmokeTest.Modules
 			pref.MainForm.PreferencesForm.ActivityCodes.Click();
 			pref.TimePreferencesForm.cmbbxDefaultCodes.Click();
 			Delay.Seconds(2);
-			cmn.SelectItemDropdown(pref.DropDownForm.tbDropdown,"Attend trial");
+			//cmn.SelectItemDropdown(pref.DropDownForm.tbDropdown,"Attend trial");
+			pref.var="Attend trial";
+			pref.DropDownForm.TreeItem.Click();
 			pref.TimePreferencesForm.Toolbar1.btnOK.Click();
 			Delay.Seconds(2);
 			//Select the Formatting as Minutes
@@ -109,7 +111,9 @@ namespace SmokeTest.Modules
 			pref.MainForm.PreferencesForm.ActivityCodes.Click();
 			pref.TimePreferencesForm.cmbbxDefaultCodes.Click();
 			Delay.Seconds(2);
-			cmn.SelectItemDropdown(pref.DropDownForm.tbDropdown,"None");
+			//cmn.SelectItemDropdown(pref.DropDownForm.tbDropdown,"None");
+			pref.var="None";
+			pref.DropDownForm.TreeItem.Click();
 			pref.TimePreferencesForm.Toolbar1.btnOK.Click();
 			Delay.Seconds(2);
 			//Select the Formatting as Tenths

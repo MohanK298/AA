@@ -73,6 +73,7 @@ namespace SmokeTest.Modules.Attorney_FileDetails
         
         public void NavigateToNotesModule()
         {
+        	note.MainForm.Self.Activate();
        		note.MainForm.btnNotes.Click();
         }
         

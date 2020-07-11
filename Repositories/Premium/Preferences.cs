@@ -117,6 +117,18 @@ namespace SmokeTest.Repositories.Premium
             set { _loginuser = value; }
         }
 
+        string _var = "";
+
+        /// <summary>
+        /// Gets or sets the value of variable var.
+        /// </summary>
+        [TestVariable("75161d5e-e2b5-4256-abd6-3c21fa18dc7d")]
+        public string var
+        {
+            get { return _var; }
+            set { _var = value; }
+        }
+
 #endregion
 
         /// <summary>
@@ -3333,6 +3345,7 @@ namespace SmokeTest.Repositories.Premium
         {
             RepoItemInfo _tbdropdownInfo;
             RepoItemInfo _groupbyexpandeddatetodayInfo;
+            RepoItemInfo _treeitemInfo;
 
             /// <summary>
             /// Creates a new DropDownForm  folder.
@@ -3342,6 +3355,7 @@ namespace SmokeTest.Repositories.Premium
             {
                 _tbdropdownInfo = new RepoItemInfo(this, "tbDropdown", "?/?/table", 30000, null, "0bc4323e-c32f-47d1-88ed-80a618099183");
                 _groupbyexpandeddatetodayInfo = new RepoItemInfo(this, "GroupByExpandedDateToday", "element[@controlid='4704']/container[2]", 30000, null, "c6aee353-b694-44a8-a21e-447b0e955142");
+                _treeitemInfo = new RepoItemInfo(this, "TreeItem", ".//tree/treeitem[@name=$var]", 30000, null, "aef2d5c1-6bd9-462c-ad6f-cae7e5fc81f9");
             }
 
             /// <summary>
@@ -3413,6 +3427,30 @@ namespace SmokeTest.Repositories.Premium
                 get
                 {
                     return _groupbyexpandeddatetodayInfo;
+                }
+            }
+
+            /// <summary>
+            /// The TreeItem item.
+            /// </summary>
+            [RepositoryItem("aef2d5c1-6bd9-462c-ad6f-cae7e5fc81f9")]
+            public virtual Ranorex.TreeItem TreeItem
+            {
+                get
+                {
+                    return _treeitemInfo.CreateAdapter<Ranorex.TreeItem>(true);
+                }
+            }
+
+            /// <summary>
+            /// The TreeItem item info.
+            /// </summary>
+            [RepositoryItemInfo("aef2d5c1-6bd9-462c-ad6f-cae7e5fc81f9")]
+            public virtual RepoItemInfo TreeItemInfo
+            {
+                get
+                {
+                    return _treeitemInfo;
                 }
             }
         }

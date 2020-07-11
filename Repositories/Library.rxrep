@@ -65,7 +65,7 @@ rxversion="9.0">
 				capname="treeitem"
 				id="e7ed954b-39e3-4970-86a1-0aea703580e6"
 				name="listPersonal"
-				refimgid="914f8553-178d-4578-86a9-fac7d70a1b11"
+				refimgid="40ebc63d-efa9-44d6-8978-7d9de47116ec"
 				searchtimeout="30000ms">
 					/form[@controlname='MainForm']/?/?/form[@controlname='LibraryIndexForm']/container[@controlname='LibraryIndexForm_Contents']//tree[@accessiblerole='Outline']/treeitem[@accessiblename~'^Personal\ Unshelved\ Materi']
 				</item>
@@ -74,7 +74,7 @@ rxversion="9.0">
 				capname="treeitem"
 				id="46fee8f3-f0ef-47ae-abf7-bd4692ffccb9"
 				name="listSection"
-				refimgid="b811fadd-0d2d-4ab8-a0ac-8bd1e500ecc1"
+				refimgid="97195f4d-51b7-4908-9b5c-ffbfad4b3df6"
 				searchtimeout="30000ms">
 					/form[@controlname='MainForm']/?/?/form[@controlname='LibraryIndexForm']/container[@controlname='LibraryIndexForm_Contents']//tree[@accessiblerole='Outline']/treeitem[@accessiblename='New Section']
 				</item>

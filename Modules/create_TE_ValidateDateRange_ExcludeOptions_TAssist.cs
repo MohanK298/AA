@@ -107,7 +107,11 @@ namespace SmokeTest.Modules
         	for(int i=1;i<date_since.Length;i++)
         	{
         		ts.TimeEntryAssistantForm.PnlBase.cmbbxDay.Click();
-        		cmn.SelectItemDropdown(ts.DropDownForm.tblDropdown,date_since[i]+" days");
+        		Delay.Milliseconds(500);
+        		ts.var=date_since[i]+" days";
+        		Delay.Milliseconds(500);
+        		ts.DropDownForm.TreeItem.Click();
+        		//cmn.SelectItemDropdown(ts.DropDownForm.tblDropdown,date_since[i]+" days");
         		Delay.Seconds(2);
         		ts.TimeEntryAssistantForm.PnlBase.tbTimeEntryAssistantInfo.WaitForExists(3000);
         		if(cmn.GetTableRowCount(ts.TimeEntryAssistantForm.PnlBase.tbTimeEntryAssistant,"Time Entry Assistant Table")>initial_count)
@@ -118,7 +122,11 @@ namespace SmokeTest.Modules
         	}
         	
         		ts.TimeEntryAssistantForm.PnlBase.cmbbxDay.Click();
-        		cmn.SelectItemDropdown(ts.DropDownForm.tblDropdown,"All");
+        		//cmn.SelectItemDropdown(ts.DropDownForm.tblDropdown,"All");
+        		Delay.Milliseconds(500);
+        		ts.var="All";
+        		Delay.Milliseconds(500);
+        		ts.DropDownForm.TreeItem.Click();
         		Delay.Seconds(2);
         		initial_count=cmn.GetTableRowCount(ts.TimeEntryAssistantForm.PnlBase.tbTimeEntryAssistant,"Time Entry Assistant Table");
         		Report.Success(String.Format("Time Entry Assistant has {0} records for All day entries",initial_count));

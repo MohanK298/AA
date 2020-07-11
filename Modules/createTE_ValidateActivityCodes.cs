@@ -61,8 +61,17 @@ namespace SmokeTest.Modules
         	ts.TimeEntryDetailsForm.MenubarFillPanel.txtActivityDescription.TextValue="Test";
         	ts.TimeEntryDetailsForm.cmbbxActivityCodes.Click();
         	Delay.Seconds(2);
-        	cmn.VerifyDataExistsInTable(ts.DropDownForm.tblDropdown,"Attend trial","Activity Code Dropdown");
-        	cmn.VerifyDataExistsInTable(ts.DropDownForm.tblDropdown,"Attend discovery","Activity Code Dropdown");
+        	
+        	
+        	ts.var="Attend discovery";
+        	Validate.Exists(ts.DropDownForm.TreeItemInfo,String.Format("Activity Code - {0} is present in the dropdown","Attend discovery"));
+        	Delay.Milliseconds(500);
+        	ts.var="Attend trial";
+        	Validate.Exists(ts.DropDownForm.TreeItemInfo,String.Format("Activity Code - {0} is present in the dropdown","Attend trial"));
+        	
+//        	cmn.VerifyDataExistsInTable(ts.DropDownForm.tblDropdown,"Attend trial","Activity Code Dropdown");
+//        	cmn.VerifyDataExistsInTable(ts.DropDownForm.tblDropdown,"Attend discovery","Activity Code Dropdown");
+        	
         	ts.TimeEntryDetailsForm.MenubarFillPanel.Self.Click();
         	ts.TimeEntryDetailsForm.MenubarFillPanel.Cancel.Click();
         	if(ts.PromptForm.txtPromptInfo.Exists(3000))

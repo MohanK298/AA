@@ -52,12 +52,15 @@ namespace SmokeTest.Modules
         public void EditTimeEntryWithData()
         {
         	timeEntry.MainForm.listFirstPostedItem.DoubleClick();
-        	timeEntry.TimeEntryDetailsForm.MenubarFillPanel.txtActivityDescription.Click();
+        	if(timeEntry.TimeEntryDetailsForm.SelfInfo.Exists(3000))
+        	{
+        		timeEntry.TimeEntryDetailsForm.MenubarFillPanel.txtActivityDescription.Click();
+        	
         	Keyboard.Press(System.Windows.Forms.Keys.A | System.Windows.Forms.Keys.Control, 30, Keyboard.DefaultKeyPressTime, 1, true);
             timeEntry.TimeEntryDetailsForm.MenubarFillPanel.txtActivityDescription.PressKeys("{Back}");
         	timeEntry.TimeEntryDetailsForm.MenubarFillPanel.txtActivityDescription.PressKeys(editActivityDescription);
         	timeEntry.TimeEntryDetailsForm.MenubarFillPanel.btnOK.Click();
-        	
+        	}
         	Delay.Seconds(1);
         	//Verify
         	timeEntry.MainForm.listFirstPostedItem.DoubleClick();

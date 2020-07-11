@@ -90,10 +90,11 @@ namespace SmokeTest.Modules.Attorney_FileDetails
         	Delay.Seconds(2);
         	file.MainForm.FilesIndexForm.listFirstFile.DoubleClick();
         	Delay.Seconds(2);
-        	file.FileDetailForm.Events.Click();
+        	if(file.FileDetailForm.SelfInfo.Exists(3000))
+        	{	file.FileDetailForm.Events.Click();
         	file.FileDetailForm.AllMyEvents.Click();
         	Validate.Attribute(file.FileDetailForm.TitleInfo, "Text", "Test for Precedents App");
-        	file.FileDetailForm.btnSaveClose.Click();
+        	file.FileDetailForm.btnSaveClose.Click();}
         	//eventReminderPrompt.Stop();
         	ValidateEventRemainderPopup();
            	

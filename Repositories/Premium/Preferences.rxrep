@@ -1169,6 +1169,14 @@ SUVORK5CYII=
 			searchtimeout="30000ms">
 				/form/element[@controlid='4704']/container[2]
 			</item>
+			<item
+			addcaps="treeitem,uiautomation"
+			capname="treeitem"
+			id="aef2d5c1-6bd9-462c-ad6f-cae7e5fc81f9"
+			name="TreeItem"
+			searchtimeout="30000ms">
+				/form//tree/treeitem[@name=$var]
+			</item>
 			<basepath>
 				/form
 			</basepath>
@@ -2551,6 +2559,10 @@ QmCC
 		<var
 		id="52f1fc1c-e481-4595-b82d-587703fa07aa"
 		name="loginuser">
+		</var>
+		<var
+		id="75161d5e-e2b5-4256-abd6-3c21fa18dc7d"
+		name="var">
 		</var>
 	</variables>
 </repository>

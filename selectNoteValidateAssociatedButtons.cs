@@ -92,6 +92,7 @@ namespace SmokeTest
 		}
 		public void NavigateToNotesModule()
         {
+			note.MainForm.Self.Activate();
        		note.MainForm.btnNotes.Click();
         }
         void ITestModule.Run()

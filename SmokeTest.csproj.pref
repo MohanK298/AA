@@ -1,18 +1,17 @@
 ﻿<Properties>
   <Array name="active">
-    <Element value="Modules\pay_cc_on_file.cs" />
+    <Element value="Repositories\TimeSheets.rxrep" />
   </Array>
   <Array name="bookmarks" />
   <Array name="files">
+    <Element value="Repositories\TimeSheets.rxrep" />
     <Element value="SmokeTest.rxtst" />
-    <Element value="Repositories\Bill.cs" />
     <Element value="Repositories\FirmSettings.rxrep" />
-    <Element value="Repositories\Bill.rxrep" />
-    <Element value="Modules\AddFile.cs" />
-    <Element value="Modules\pay_cc_on_file.cs" />
-    <Element value="Repositories\Login.cs" />
-    <Element value="Repositories\Trust.cs" />
-    <Element value="Repositories\Trust.rxrep" />
+    <Element value="Repositories\Files.rxrep" />
+    <Element value="Repositories\Note.cs" />
+    <Element value="Repositories\Note.rxrep" />
+    <Element value="Modules\Create_TE_Past_Current_Future.cs" />
+    <Element value="Repositories\TimeSheets.cs" />
   </Array>
   <Properties name="projectSavedData">
     <Properties name="customTool">

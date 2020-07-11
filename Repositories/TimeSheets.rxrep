@@ -962,6 +962,14 @@ SUVORK5CYII=
 			searchtimeout="30000ms">
 				/form/?/?/table
 			</item>
+			<item
+			addcaps="treeitem,uiautomation"
+			capname="treeitem"
+			id="aef2d5c1-6bd9-462c-ad6f-cae7e5fc81f9"
+			name="TreeItem"
+			searchtimeout="30000ms">
+				/form//tree/treeitem[@name=$var]
+			</item>
 			<basepath>
 				/form
 			</basepath>
@@ -1177,6 +1185,10 @@ DAPIxVgFicf/GQCdrAkiuOdOjQAAAABJRU5ErkJggg==
 		<var
 		id="d9eb6908-9db7-46af-9fa7-9e85c3327ac3"
 		name="curwkday1">
+		</var>
+		<var
+		id="b2f295e8-6ce0-4f69-87b9-6403bc40c24a"
+		name="var">
 		</var>
 	</variables>
 </repository>

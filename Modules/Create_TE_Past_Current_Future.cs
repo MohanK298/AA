@@ -97,13 +97,23 @@ namespace SmokeTest.Modules
         private void CheckTimeEntries()
         {
         	ts.MainForm.TimeIndexControlPanelControl.lnkUnposted.Click();
-        	Delay.Seconds(10);
-        	Report.Info("Waiting for 10 seconds");
+        	Delay.Seconds(5);
+        	Report.Info("Waiting for 5 seconds");
         	ts.MainForm.cmbbxUnpostedDates.Click();
         	Delay.Seconds(1);
-        	cmn.VerifyDataExistsInTable(ts.DropDownForm.tblDropdown,"Today","Unposted Dropdown");
-        	cmn.VerifyDataExistsInTable(ts.DropDownForm.tblDropdown,System.DateTime.Now.AddDays(-1).ToString("ddd MMMM dd, yyyy"),"Unposted Dropdown");
-        	cmn.VerifyDataExistsInTable(ts.DropDownForm.tblDropdown,System.DateTime.Now.AddDays(1).ToString("ddd MMMM dd, yyyy"),"Unposted Dropdown");
+        	
+        	ts.var="Today";
+        	Validate.Exists(ts.DropDownForm.TreeItemInfo,String.Format("Unposted Dropdown has the value of {0}","Today"));
+        	Delay.Milliseconds(500);
+        	ts.var=System.DateTime.Now.AddDays(-1).ToString("ddd MMMM dd, yyyy");
+        	Validate.Exists(ts.DropDownForm.TreeItemInfo,String.Format("Unposted Dropdown has the value of {0}",System.DateTime.Now.AddDays(-1).ToString("ddd MMMM dd, yyyy")));
+        	Delay.Milliseconds(500);
+        	ts.var=System.DateTime.Now.AddDays(1).ToString("ddd MMMM dd, yyyy");
+        	Validate.Exists(ts.DropDownForm.TreeItemInfo,String.Format("Unposted Dropdown has the value of {0}",System.DateTime.Now.AddDays(1).ToString("ddd MMMM dd, yyyy")));
+        	
+        	//cmn.VerifyDataExistsInTable(ts.DropDownForm.tblDropdown,"Today","Unposted Dropdown");
+//        	cmn.VerifyDataExistsInTable(ts.DropDownForm.tblDropdown,System.DateTime.Now.AddDays(-1).ToString("ddd MMMM dd, yyyy"),"Unposted Dropdown");
+  //      	cmn.VerifyDataExistsInTable(ts.DropDownForm.tblDropdown,System.DateTime.Now.AddDays(1).ToString("ddd MMMM dd, yyyy"),"Unposted Dropdown");
         }
         
         /// <summary>

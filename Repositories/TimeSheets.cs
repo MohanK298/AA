@@ -101,6 +101,18 @@ namespace SmokeTest.Repositories
             set { _curwkday1 = value; }
         }
 
+        string _var = "";
+
+        /// <summary>
+        /// Gets or sets the value of variable var.
+        /// </summary>
+        [TestVariable("b2f295e8-6ce0-4f69-87b9-6403bc40c24a")]
+        public string var
+        {
+            get { return _var; }
+            set { _var = value; }
+        }
+
 #endregion
 
         /// <summary>
@@ -2705,6 +2717,7 @@ namespace SmokeTest.Repositories
         public partial class DropDownFormAppFolder : RepoGenBaseFolder
         {
             RepoItemInfo _tbldropdownInfo;
+            RepoItemInfo _treeitemInfo;
 
             /// <summary>
             /// Creates a new DropDownForm  folder.
@@ -2713,6 +2726,7 @@ namespace SmokeTest.Repositories
                     base("DropDownForm", "/form", parentFolder, 30000, null, true, "be23cad4-fd5f-4315-a16c-f9cf9cfb15a1", "")
             {
                 _tbldropdownInfo = new RepoItemInfo(this, "tblDropdown", "?/?/table", 30000, null, "c830f074-668c-45b4-ba1b-5b87d1d2365b");
+                _treeitemInfo = new RepoItemInfo(this, "TreeItem", ".//tree/treeitem[@name=$var]", 30000, null, "aef2d5c1-6bd9-462c-ad6f-cae7e5fc81f9");
             }
 
             /// <summary>
@@ -2760,6 +2774,30 @@ namespace SmokeTest.Repositories
                 get
                 {
                     return _tbldropdownInfo;
+                }
+            }
+
+            /// <summary>
+            /// The TreeItem item.
+            /// </summary>
+            [RepositoryItem("aef2d5c1-6bd9-462c-ad6f-cae7e5fc81f9")]
+            public virtual Ranorex.TreeItem TreeItem
+            {
+                get
+                {
+                    return _treeitemInfo.CreateAdapter<Ranorex.TreeItem>(true);
+                }
+            }
+
+            /// <summary>
+            /// The TreeItem item info.
+            /// </summary>
+            [RepositoryItemInfo("aef2d5c1-6bd9-462c-ad6f-cae7e5fc81f9")]
+            public virtual RepoItemInfo TreeItemInfo
+            {
+                get
+                {
+                    return _treeitemInfo;
                 }
             }
         }

@@ -44,7 +44,7 @@ namespace SmokeTest.Modules
         {
         	Host.Local.RunApplication(wordPath);
         	//Delay.Seconds(5);
-        	wapp.SplashWordInfo.WaitForNotExists(5000);
+        	wapp.SplashWordInfo.WaitForNotExists(15000);
         	wapp.Word.BlankDocument.Click();
         	
         	Delay.Seconds(2);

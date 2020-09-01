@@ -86,7 +86,7 @@ namespace SmokeTest.Modules
         	{
         		Report.Success("Add to File Button is clicked successfully");
         		outlook.DetailedView.AmicusAttorneyTasks1.btnAddToFile.Click();
-        		if(comm.FileSelectForm.SelfInfo.Exists(3000))
+        		if(comm.FileSelectForm.SelfInfo.Exists(10000))
         		{
         			comm.FileSelectForm.listFirstFoundFile.DoubleClick();
         			Report.Success("File Added Successfully for the E-Mail");
@@ -100,10 +100,21 @@ namespace SmokeTest.Modules
         				
         				Validate.Exists(comm.EmailDetailForm.PnlBase.txtFileNameInfo,String.Format("File Added to the E-mail is - {0}",comm.EmailDetailForm.PnlBase.txtFileName.TextValue));
         			}
-        			comm.EmailDetailForm.Toolbar1.btnOk.Click();
+        			if(comm.EmailDetailForm.Toolbar1.btnOkInfo.Exists(3000))
+        			{
+        				comm.EmailDetailForm.Toolbar1.btnOk.Click();
+        				Report.Success("Ok Button is clicked successfully");
+        			}
+        			
+        			if(comm.PromptForm.SelfInfo.Exists(5000))
+        			{
+        				if(comm.PromptForm.btnOKInfo.Exists(2000))
+        				{comm.PromptForm.btnOK.Click();}
+        			}
         			if(comm.PromptForm.SelfInfo.Exists(3000))
         			{
-        				comm.PromptForm.btnNo.Click();
+        				if(comm.PromptForm.btnNoInfo.Exists(2000))
+        				{comm.PromptForm.btnNo.Click();}
         			}
         			outlook.DetailedView.Self.Close();
         			Report.Success("Detailed Email is closed successfully");
@@ -124,7 +135,8 @@ namespace SmokeTest.Modules
     			comm.EmailDetailForm.Toolbar1.btnOk.Click();
     			if(comm.PromptForm.SelfInfo.Exists(3000))
     			{
-    				comm.PromptForm.btnNo.Click();
+    				if(comm.PromptForm.btnNoInfo.Exists(2000))
+    				{comm.PromptForm.btnNo.Click();}
     			}
     			outlook.DetailedView.Self.Close();
     			Report.Success("Detailed Email is closed successfully");

@@ -65,8 +65,8 @@ rxversion="9.0">
 				addcaps="cell,accessible"
 				capname="cell"
 				id="a0fed64a-dbb5-4196-a4b4-3ca44d0350a9"
-				name="FileSort"
-				refimgid="8d5c7273-189e-4afc-ab33-221bec6701c2"
+				name="colFileName"
+				refimgid="ccb67c2c-a97f-45f0-ae5d-03830c7708b2"
 				searchtimeout="30000ms">
 					/form[@controlname='MainForm']/?/?/form[@controlname='FilesIndexForm']//tree[@automationid='ColScrollRegion: 0, RowScrollRegion: 0']/row[@automationid='Band Headers']/cell[@automationid='[Column Header] ShortFileName']
 				</item>
@@ -282,6 +282,7 @@ D8zerL8gSEaw7+rFqJ//CkX5CWkHqyZHVzU6AAAAAElFTkSuQmCC
 		id="86e6e96c-2638-42e5-ada1-7dba8e869353"
 		isrooted="True"
 		name="FindContactsForm"
+		refimgid="63fedd6e-5f4b-4c24-928e-90d00a5c7796"
 		refpath="/form[@controlname='FindContactsForm']"
 		searchtimeout="30000ms"
 		usecache="True">
@@ -605,6 +606,15 @@ D8zerL8gSEaw7+rFqJ//CkX5CWkHqyZHVzU6AAAAAElFTkSuQmCC
 			refpath="/form[@controlname='FileDetailForm']/container[@controlname='panelLeftBase']/container[@controlname='panelLeft']/element[@controlname='utreeFacts']/tree[@accessiblerole='Outline']/treeitem[@accessiblename='Trust']"
 			searchtimeout="30000ms">
 				/form[@controlname='FileDetailForm']/container[@controlname='panelLeftBase']/?/?/element[@controlname='utreeFacts']/?/?/treeitem[@accessiblename='Trust']
+			</item>
+			<item
+			addcaps="link,accessible"
+			capname="link"
+			id="3999e912-dd16-41e0-bdcf-c813387ff832"
+			name="lnkClientName"
+			refimgid="32f70b48-3518-436d-a7f8-a621ab4ddfe0"
+			searchtimeout="30000ms">
+				/form[@controlname='FileDetailForm']/container[@controlname='panelPicBackground']/container[@controlname='evenSplitPanelModernModeOnly']//link[@controlname='lnkName']/?/?/link
 			</item>
 			<basepath>
 				/form[@controlname='FileDetailForm']

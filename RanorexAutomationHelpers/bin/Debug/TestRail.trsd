@@ -45,11 +45,7 @@
   ],
   "Sections": [
     {
-      "Rx": {
-        "Id": "0f6a181f-a02a-3694-90ce-3eda17594221/96c98d30-371a-418c-b011-50bbeca9dbe8",
-        "Pid": "c1935d58-308e-40c1-b5c3-1132400202e1/0f6a181f-a02a-3694-90ce-3eda17594221",
-        "Name": "Document Management"
-      },
+      "Rx": null,
       "Tr": {
         "Id": "G295",
         "Pid": "S18",
@@ -57,11 +53,7 @@
       }
     },
     {
-      "Rx": {
-        "Id": "0f6a181f-a02a-3694-90ce-3eda17594221/03b095d2-4f11-404f-ab62-f365a6276d2d",
-        "Pid": "c1935d58-308e-40c1-b5c3-1132400202e1/0f6a181f-a02a-3694-90ce-3eda17594221",
-        "Name": "Import Fees & Expenses"
-      },
+      "Rx": null,
       "Tr": {
         "Id": "G300",
         "Pid": "S18",
@@ -72,6 +64,62 @@
       "Rx": null,
       "Tr": {
         "Id": "G444",
+        "Pid": "S18",
+        "Name": "Master"
+      }
+    },
+    {
+      "Rx": {
+        "Id": "0f6a181f-a02a-3694-90ce-3eda17594221/9e4d23a2-7af7-4127-9289-75fdf98935ae",
+        "Pid": "c1935d58-308e-40c1-b5c3-1132400202e1/0f6a181f-a02a-3694-90ce-3eda17594221",
+        "Name": "Single Sign On Feature"
+      },
+      "Tr": {
+        "Id": "G445",
+        "Pid": "S18",
+        "Name": "Single Sign On Feature"
+      }
+    },
+    {
+      "Rx": {
+        "Id": "0f6a181f-a02a-3694-90ce-3eda17594221/3267bdb6-681a-499f-9f92-6721d18d9d13",
+        "Pid": "c1935d58-308e-40c1-b5c3-1132400202e1/0f6a181f-a02a-3694-90ce-3eda17594221",
+        "Name": "Contact Reference"
+      },
+      "Tr": {
+        "Id": "G459",
+        "Pid": "S18",
+        "Name": "Contact Reference"
+      }
+    },
+    {
+      "Rx": {
+        "Id": "0f6a181f-a02a-3694-90ce-3eda17594221/98dd42dd-abea-4b53-a325-8e6dec2d8784",
+        "Pid": "c1935d58-308e-40c1-b5c3-1132400202e1/0f6a181f-a02a-3694-90ce-3eda17594221",
+        "Name": "CEIP Document Upload"
+      },
+      "Tr": {
+        "Id": "G483",
+        "Pid": "S18",
+        "Name": "CEIP Document Upload"
+      }
+    },
+    {
+      "Rx": {
+        "Id": "0f6a181f-a02a-3694-90ce-3eda17594221/f4380a0c-f426-481e-af75-97881f8f3333",
+        "Pid": "0f6a181f-a02a-3694-90ce-3eda17594221/98dd42dd-abea-4b53-a325-8e6dec2d8784",
+        "Name": "Shall Not Upload"
+      },
+      "Tr": {
+        "Id": "G484",
+        "Pid": "G483",
+        "Name": "Shall Not Upload"
+      }
+    },
+    {
+      "Rx": null,
+      "Tr": {
+        "Id": "G866",
         "Pid": "S18",
         "Name": "Master"
       }
@@ -208,6 +256,318 @@
         "Id": "C3228",
         "Pid": "G444",
         "Name": "Attorney_Email"
+      }
+    },
+    {
+      "Rx": {
+        "Id": "0f6a181f-a02a-3694-90ce-3eda17594221/aeb7dc97-d19f-4b3e-885e-afb028bb27b0",
+        "Pid": "c1935d58-308e-40c1-b5c3-1132400202e1/0f6a181f-a02a-3694-90ce-3eda17594221",
+        "Name": "Notes_Module"
+      },
+      "Tr": {
+        "Id": "C6089",
+        "Pid": "G866",
+        "Name": "Notes_Module"
+      }
+    },
+    {
+      "Rx": {
+        "Id": "0f6a181f-a02a-3694-90ce-3eda17594221/67e9bae2-280b-4ca4-8e22-d3573671ec71",
+        "Pid": "c1935d58-308e-40c1-b5c3-1132400202e1/0f6a181f-a02a-3694-90ce-3eda17594221",
+        "Name": "Calendar"
+      },
+      "Tr": {
+        "Id": "C6090",
+        "Pid": "G866",
+        "Name": "Calendar"
+      }
+    },
+    {
+      "Rx": {
+        "Id": "0f6a181f-a02a-3694-90ce-3eda17594221/cb709033-29e8-443c-8559-189007c654b2",
+        "Pid": "c1935d58-308e-40c1-b5c3-1132400202e1/0f6a181f-a02a-3694-90ce-3eda17594221",
+        "Name": "TimeEntries"
+      },
+      "Tr": {
+        "Id": "C6091",
+        "Pid": "G866",
+        "Name": "TimeEntries"
+      }
+    },
+    {
+      "Rx": {
+        "Id": "0f6a181f-a02a-3694-90ce-3eda17594221/0eb91bf1-6a6d-403e-a327-77532be52941",
+        "Pid": "c1935d58-308e-40c1-b5c3-1132400202e1/0f6a181f-a02a-3694-90ce-3eda17594221",
+        "Name": "Document_Indexing"
+      },
+      "Tr": {
+        "Id": "C6092",
+        "Pid": "G866",
+        "Name": "Document_Indexing"
+      }
+    },
+    {
+      "Rx": {
+        "Id": "0f6a181f-a02a-3694-90ce-3eda17594221/7dd06647-a62c-4aba-b0f2-4ff956b0705a",
+        "Pid": "c1935d58-308e-40c1-b5c3-1132400202e1/0f6a181f-a02a-3694-90ce-3eda17594221",
+        "Name": "Document_Detail_Module"
+      },
+      "Tr": {
+        "Id": "C6093",
+        "Pid": "G866",
+        "Name": "Document_Detail_Module"
+      }
+    },
+    {
+      "Rx": {
+        "Id": "0f6a181f-a02a-3694-90ce-3eda17594221/6efb8f01-7398-4295-b52c-d8dcaaa9599a",
+        "Pid": "c1935d58-308e-40c1-b5c3-1132400202e1/0f6a181f-a02a-3694-90ce-3eda17594221",
+        "Name": "2_Firm_Members_Test"
+      },
+      "Tr": {
+        "Id": "C6094",
+        "Pid": "G866",
+        "Name": "2_Firm_Members_Test"
+      }
+    },
+    {
+      "Rx": {
+        "Id": "0f6a181f-a02a-3694-90ce-3eda17594221/dd7e2cc8-a2ca-441e-a3f6-80016dba2aae",
+        "Pid": "c1935d58-308e-40c1-b5c3-1132400202e1/0f6a181f-a02a-3694-90ce-3eda17594221",
+        "Name": "ValidatePreferenceLinks"
+      },
+      "Tr": {
+        "Id": "C6095",
+        "Pid": "G866",
+        "Name": "ValidatePreferenceLinks"
+      }
+    },
+    {
+      "Rx": {
+        "Id": "0f6a181f-a02a-3694-90ce-3eda17594221/c76fc965-21c0-47ea-907e-a9b6653a5a70",
+        "Pid": "c1935d58-308e-40c1-b5c3-1132400202e1/0f6a181f-a02a-3694-90ce-3eda17594221",
+        "Name": "ValidateMergeTemplates"
+      },
+      "Tr": {
+        "Id": "C6096",
+        "Pid": "G866",
+        "Name": "ValidateMergeTemplates"
+      }
+    },
+    {
+      "Rx": {
+        "Id": "0f6a181f-a02a-3694-90ce-3eda17594221/57309174-e9c7-40be-bd68-5649d6c71a38",
+        "Pid": "c1935d58-308e-40c1-b5c3-1132400202e1/0f6a181f-a02a-3694-90ce-3eda17594221",
+        "Name": "Word_Addin"
+      },
+      "Tr": {
+        "Id": "C6097",
+        "Pid": "G866",
+        "Name": "Word_Addin"
+      }
+    },
+    {
+      "Rx": {
+        "Id": "0f6a181f-a02a-3694-90ce-3eda17594221/ddd4bae8-4a40-4286-aafa-a7331e00f10b",
+        "Pid": "c1935d58-308e-40c1-b5c3-1132400202e1/0f6a181f-a02a-3694-90ce-3eda17594221",
+        "Name": "Outlook_AddIn"
+      },
+      "Tr": {
+        "Id": "C6098",
+        "Pid": "G866",
+        "Name": "Outlook_AddIn"
+      }
+    },
+    {
+      "Rx": {
+        "Id": "0f6a181f-a02a-3694-90ce-3eda17594221/030c64ec-c0be-4e59-8022-32bf1eab9b6f",
+        "Pid": "c1935d58-308e-40c1-b5c3-1132400202e1/0f6a181f-a02a-3694-90ce-3eda17594221",
+        "Name": "Toolbars-Std-Adv-Floating"
+      },
+      "Tr": {
+        "Id": "C6099",
+        "Pid": "G866",
+        "Name": "Toolbars-Std-Adv-Floating"
+      }
+    },
+    {
+      "Rx": {
+        "Id": "0f6a181f-a02a-3694-90ce-3eda17594221/057c5807-a16a-44b4-b075-2ddb98bcd1e0",
+        "Pid": "c1935d58-308e-40c1-b5c3-1132400202e1/0f6a181f-a02a-3694-90ce-3eda17594221",
+        "Name": "ConflictCheck"
+      },
+      "Tr": {
+        "Id": "C6100",
+        "Pid": "G866",
+        "Name": "ConflictCheck"
+      }
+    },
+    {
+      "Rx": {
+        "Id": "0f6a181f-a02a-3694-90ce-3eda17594221/fc4cd2bd-43ef-46e4-8029-91f79205f4d2",
+        "Pid": "c1935d58-308e-40c1-b5c3-1132400202e1/0f6a181f-a02a-3694-90ce-3eda17594221",
+        "Name": "OutlookClient"
+      },
+      "Tr": {
+        "Id": "C6101",
+        "Pid": "G866",
+        "Name": "OutlookClient"
+      }
+    },
+    {
+      "Rx": {
+        "Id": "0f6a181f-a02a-3694-90ce-3eda17594221/5343204e-002c-4b61-8b1a-bff8cfdaeb05",
+        "Pid": "c1935d58-308e-40c1-b5c3-1132400202e1/0f6a181f-a02a-3694-90ce-3eda17594221",
+        "Name": "TrackChangesValidation"
+      },
+      "Tr": {
+        "Id": "C6102",
+        "Pid": "G866",
+        "Name": "TrackChangesValidation"
+      }
+    },
+    {
+      "Rx": {
+        "Id": "0f6a181f-a02a-3694-90ce-3eda17594221/4bc1f4ad-f12a-49d3-8130-6d0f677cc890",
+        "Pid": "c1935d58-308e-40c1-b5c3-1132400202e1/0f6a181f-a02a-3694-90ce-3eda17594221",
+        "Name": "DateCalculator"
+      },
+      "Tr": {
+        "Id": "C6103",
+        "Pid": "G866",
+        "Name": "DateCalculator"
+      }
+    },
+    {
+      "Rx": {
+        "Id": "0f6a181f-a02a-3694-90ce-3eda17594221/62c52e32-156b-43ae-becd-fd9783824515",
+        "Pid": "c1935d58-308e-40c1-b5c3-1132400202e1/0f6a181f-a02a-3694-90ce-3eda17594221",
+        "Name": "Apply_Taxes_using_Activity_Codes_(Billing)"
+      },
+      "Tr": {
+        "Id": "C6104",
+        "Pid": "G866",
+        "Name": "Apply_Taxes_using_Activity_Codes_(Billing)"
+      }
+    },
+    {
+      "Rx": {
+        "Id": "0f6a181f-a02a-3694-90ce-3eda17594221/1597cab3-9506-4b4e-9af3-65b58c3fa965",
+        "Pid": "c1935d58-308e-40c1-b5c3-1132400202e1/0f6a181f-a02a-3694-90ce-3eda17594221",
+        "Name": "ActivityCodes"
+      },
+      "Tr": {
+        "Id": "C6105",
+        "Pid": "G866",
+        "Name": "ActivityCodes"
+      }
+    },
+    {
+      "Rx": {
+        "Id": "0f6a181f-a02a-3694-90ce-3eda17594221/d570ba72-08ea-4906-bc05-473a81a71a6c",
+        "Pid": "c1935d58-308e-40c1-b5c3-1132400202e1/0f6a181f-a02a-3694-90ce-3eda17594221",
+        "Name": "Billing_Tax_Scenarios"
+      },
+      "Tr": {
+        "Id": "C6106",
+        "Pid": "G866",
+        "Name": "Billing_Tax_Scenarios"
+      }
+    },
+    {
+      "Rx": {
+        "Id": "0f6a181f-a02a-3694-90ce-3eda17594221/5d6025df-7164-42d8-874c-7e2bef4c1f4c",
+        "Pid": "c1935d58-308e-40c1-b5c3-1132400202e1/0f6a181f-a02a-3694-90ce-3eda17594221",
+        "Name": "Referral_Report"
+      },
+      "Tr": {
+        "Id": "C6107",
+        "Pid": "G866",
+        "Name": "Referral_Report"
+      }
+    },
+    {
+      "Rx": {
+        "Id": "0f6a181f-a02a-3694-90ce-3eda17594221/475e4825-f7a5-4c0a-bf76-06b9021492eb",
+        "Pid": "c1935d58-308e-40c1-b5c3-1132400202e1/0f6a181f-a02a-3694-90ce-3eda17594221",
+        "Name": "Reprint_Bills"
+      },
+      "Tr": {
+        "Id": "C6108",
+        "Pid": "G866",
+        "Name": "Reprint_Bills"
+      }
+    },
+    {
+      "Rx": {
+        "Id": "0f6a181f-a02a-3694-90ce-3eda17594221/375c57d6-cbde-487a-b815-0cfdf7ae1f7f",
+        "Pid": "c1935d58-308e-40c1-b5c3-1132400202e1/0f6a181f-a02a-3694-90ce-3eda17594221",
+        "Name": "Billing_Trust"
+      },
+      "Tr": {
+        "Id": "C6109",
+        "Pid": "G866",
+        "Name": "Billing_Trust"
+      }
+    },
+    {
+      "Rx": {
+        "Id": "0f6a181f-a02a-3694-90ce-3eda17594221/7904d649-ce61-470a-b2cd-797ca6f8e95b",
+        "Pid": "c1935d58-308e-40c1-b5c3-1132400202e1/0f6a181f-a02a-3694-90ce-3eda17594221",
+        "Name": "Time_Fees&Expenses"
+      },
+      "Tr": {
+        "Id": "C6110",
+        "Pid": "G866",
+        "Name": "Time_Fees&Expenses"
+      }
+    },
+    {
+      "Rx": {
+        "Id": "0f6a181f-a02a-3694-90ce-3eda17594221/05d66913-55d2-4aca-9970-eac5df57833f",
+        "Pid": "c1935d58-308e-40c1-b5c3-1132400202e1/0f6a181f-a02a-3694-90ce-3eda17594221",
+        "Name": "PayNow-Billing"
+      },
+      "Tr": {
+        "Id": "C6111",
+        "Pid": "G866",
+        "Name": "PayNow-Billing"
+      }
+    },
+    {
+      "Rx": {
+        "Id": "0f6a181f-a02a-3694-90ce-3eda17594221/52b47774-b3af-4420-be54-c260506660ad",
+        "Pid": "c1935d58-308e-40c1-b5c3-1132400202e1/0f6a181f-a02a-3694-90ce-3eda17594221",
+        "Name": "APX_Transactions"
+      },
+      "Tr": {
+        "Id": "C6112",
+        "Pid": "G866",
+        "Name": "APX_Transactions"
+      }
+    },
+    {
+      "Rx": {
+        "Id": "0f6a181f-a02a-3694-90ce-3eda17594221/1a8757c0-0a35-45e5-909f-f34be9d1188b",
+        "Pid": "c1935d58-308e-40c1-b5c3-1132400202e1/0f6a181f-a02a-3694-90ce-3eda17594221",
+        "Name": "Firm_Settings_ReportingServices"
+      },
+      "Tr": {
+        "Id": "C6113",
+        "Pid": "G866",
+        "Name": "Firm_Settings_ReportingServices"
+      }
+    },
+    {
+      "Rx": {
+        "Id": "0f6a181f-a02a-3694-90ce-3eda17594221/0b5dcc5e-a8f6-43ac-8b8b-e0b065360f20",
+        "Pid": "c1935d58-308e-40c1-b5c3-1132400202e1/0f6a181f-a02a-3694-90ce-3eda17594221",
+        "Name": "Reports"
+      },
+      "Tr": {
+        "Id": "C6114",
+        "Pid": "G866",
+        "Name": "Reports"
       }
     }
   ]

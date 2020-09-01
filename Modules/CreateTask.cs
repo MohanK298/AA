@@ -63,6 +63,7 @@ namespace SmokeTest.Modules
 
         public void CreateTaskData(){
         	//Open Task module and create a task
+        	task.MainForm.Self.Activate();
         	task.MainForm.btnTasks.Click();
         	task.MainForm.btnNewTask.Click();
         	

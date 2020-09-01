@@ -39,9 +39,14 @@ namespace SmokeTest.Modules.Attorney_FileDetails
 
         public void Action()
         {
+        	file.MainForm.Self.Activate();
+        	Delay.Seconds(1);
         	file.MainForm.FilesIndexForm.listFirstFile.DoubleClick();
         	Delay.Seconds(2);
-        	file.FileDetailForm.Documents.Click();
+        	if(file.FileDetailForm.SelfInfo.Exists(3000))
+        	{
+        		file.FileDetailForm.Documents.Click();
+        	
         	Delay.Seconds(1);
         	file.FileDetailForm.AllDocuments.Click();
         	Delay.Seconds(1);
@@ -84,6 +89,11 @@ namespace SmokeTest.Modules.Attorney_FileDetails
         	document.DocumentDetail.MenubarFillPanel.btnOK.Click();
         	Validate.Exists(file.FileDetailForm.RanorexTestDoc);
         	file.FileDetailForm.btnSaveClose.Click();
+        	}
+        	else
+        	{
+        		Report.Info("File Details form not opened hence document could not be added");
+        	}
         	
         }
         
@@ -95,6 +105,7 @@ namespace SmokeTest.Modules.Attorney_FileDetails
             
         Action();
         cmn.ClosePrompt();
+        cmn.closeDialog();
         }
         
         

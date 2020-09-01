@@ -82,6 +82,7 @@ namespace SmokeTest.Modules.Attorney_FileDetails
             Mouse.DefaultMoveTime = 300;
             Keyboard.DefaultKeyPressTime = 100;
             Delay.SpeedFactor = 1.0;
+            cmn.ClosePrompt();
             NavigateToNotesModule();
             saveButtonValidation();
             DetailsButtonValidation();

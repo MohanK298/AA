@@ -131,7 +131,7 @@ namespace SmokeTest.Modules
             people.NewPersonForm.btnNext.Click();
             Delay.Seconds(3);
             //Add Communication Details
-            if(people.PeopleDetailForm.txtCommunicationDetailsInfo.Exists(5000))
+            if(people.PeopleDetailForm.txtCommunicationDetailsInfo.Exists(15000))
                {
                	people.PeopleDetailForm.txtCommunicationDetails.DoubleClick();
                }

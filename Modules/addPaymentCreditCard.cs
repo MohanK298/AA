@@ -86,7 +86,7 @@ namespace SmokeTest.Modules
         	
                 Report.Success("APX Add Payment Window Form is displayed as expected");
         		Validate.AttributeContains(people.APXEditPaymentMethodForm.titleBarInfo,"Text",fullName,String.Format("APX Add Payment Window has the expected title of the Contact selected - {0}",fullName));
-        		
+        		people.APXEditPaymentMethodForm.Self.Maximize();
         		people.APXEditPaymentMethodForm.rdoCreditCard.Click();
         		Report.Success("Credit Card Radio Button is selected as expected");
         		people.APXEditPaymentMethodForm.SomeDivTag.txtAccountOrCardNumber.PressKeys("4747474747474747");

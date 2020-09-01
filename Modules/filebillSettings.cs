@@ -70,9 +70,17 @@ namespace SmokeTest.Modules
         	file.NewFileForm.txtFileName.TextValue = fileName;
         	file.NewFileForm.btnAddContact.Click();
 
-        	file.PeopleSelectForm.listFirstValue.Click();
-        	file.PeopleSelectForm.btnAddToRight.Click();
-        	file.PeopleSelectForm.btnOK.Click();
+        	if(file.PeopleSelectForm.SelfInfo.Exists(3000))
+        	{
+        		file.PeopleSelectForm.btnQuickFind.Click();
+        		
+        		file.FindContactsForm.txtFindContact.PressKeys("PortalUser");
+        		file.FindContactsForm.btnOK.Click();
+        		file.PeopleSelectForm.listFirstValue.Click();
+        		file.PeopleSelectForm.btnAddToRight.Click();
+        		file.PeopleSelectForm.btnOK.Click();
+        	
+        	}
         	
         	
         	file.NewFileForm.btnSaveOpen.Click();
@@ -80,8 +88,23 @@ namespace SmokeTest.Modules
         	file.FileDetailForm.Admin.Click();
         	file.FileDetailForm.BillSettings.Click();
         	Validate.Exists(file.FileDetailForm.PanelRight.cbEmailBillsToInfo," Email bills to checkbox is displayed as expected");
-        	Validate.AttributeContains(file.FileDetailForm.PanelRight.cbEmailBillsToInfo,"Checked","True","Email bills to checkbox is checked by default");
-        	Validate.AttributeContains(file.FileDetailForm.PanelRight.cbIncludeAPXRequestForPaymentWithEMInfo,"Checked","True","Include APX Request for Payment checkbox is checked by default");
+        	if(file.FileDetailForm.PanelRight.cbEmailBillsTo.Checked)
+        	{Validate.AttributeContains(file.FileDetailForm.PanelRight.cbEmailBillsToInfo,"Checked","True","Email bills to checkbox is checked by default");}
+        	else
+        	{
+        		file.FileDetailForm.PanelRight.cbEmailBillsTo.Check();
+        		Delay.Seconds(1);
+        		Validate.AttributeContains(file.FileDetailForm.PanelRight.cbEmailBillsToInfo,"Checked","True","Email bills to checkbox is checked by Automation");
+        	}
+        	if(file.FileDetailForm.PanelRight.cbIncludeAPXRequestForPaymentWithEM.Checked)
+        	{Validate.AttributeContains(file.FileDetailForm.PanelRight.cbIncludeAPXRequestForPaymentWithEMInfo,"Checked","True","Include APX Request for Payment checkbox is checked by default");}
+        	else
+        	{
+        		file.FileDetailForm.PanelRight.cbIncludeAPXRequestForPaymentWithEM.Check();
+        		Delay.Seconds(1);
+        		Validate.AttributeContains(file.FileDetailForm.PanelRight.cbIncludeAPXRequestForPaymentWithEMInfo,"Checked","True","Include APX Request for Payment checkbox is checked by Automation");
+        		
+        	}
         	
         	emailId=file.FileDetailForm.PanelRight.txtPrimaryEmailIdBilling.GetAttributeValue<String>("Text");
         	Validate.AttributeContains(file.FileDetailForm.PanelRight.rdoEmailBillsPrimaryClientInfo,"Checked","True","Email Bills Primary Radio Button is selected by default");

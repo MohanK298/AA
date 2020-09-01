@@ -51,6 +51,7 @@ namespace SmokeTest.Modules
         public void EditTaskData(){
         	//Open the task
         	//task.MainForm.listFirstTask.DoubleClick();
+        	task.MainForm.Self.Activate();
         	task.MainForm.listSecondTask.DoubleClick();
         	
         	//Edit the task
@@ -62,12 +63,13 @@ namespace SmokeTest.Modules
         	
         	//Save the task
         	task.EventDetailForm.MenubarFillPanel.btnOK.Click();
-        	
+        	Delay.Seconds(2);
         	//Verify if the task is edited
         	//task.MainForm.listFirstTask.DoubleClick();
         	task.MainForm.listSecondTask.DoubleClick();
         	Report.Success("Edit Task passed" + "Task Title: " + editTaskTitle + time);
-        	task.EventDetailForm.MenubarFillPanel.btnOK.Click();
+        	if(task.EventDetailForm.SelfInfo.Exists(3000))
+        	{task.EventDetailForm.MenubarFillPanel.btnOK.Click();}
         }
         
         void ITestModule.Run()

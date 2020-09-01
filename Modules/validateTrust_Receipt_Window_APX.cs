@@ -218,9 +218,9 @@ namespace SmokeTest.Modules
         	if(trst.TrustDetailBaseForm.btnVoidInfo.Exists(5000))
         	{
         	Validate.Exists(trst.TrustDetailBaseForm.btnVoidInfo,"Void Button exists as expected");
-        	Delay.Seconds(2);
+        	Delay.Seconds(5);
         	trst.TrustDetailBaseForm.btnVoid.Click();
-        	
+        	Report.Success("Void Button is clicked");
         	if(bill.PromptForm.SelfInfo.Exists(10000))
                {
                    	
@@ -241,7 +241,21 @@ namespace SmokeTest.Modules
         }
         	cmn.SelectItemFromTableDblClick(file.FileDetailForm.PanelRight.tblFileDetails,System.DateTime.Now.ToString("MMM dd/yy"),"File Details Table");
         	Report.Success(String.Format("Confirmation message of APX Trust Payment Voided  -  {0} ",trst.TrustDetailBaseForm.PnlBase.txtConfirmationNo.GetAttributeValue<String>("Text")));
-        	trst.TrustDetailBaseForm.btnClose.Click();
+        	if(trst.TrustDetailBaseForm.SelfInfo.Exists(3000))
+        	{
+        		if(trst.TrustDetailBaseForm.btnCloseInfo.Exists(3000))
+        		{
+        			trst.TrustDetailBaseForm.btnClose.Click();
+        			Report.Success("APX Payment is voided as expected");
+        		}
+        		else
+        		{
+        			trst.TrustDetailBaseForm.btnSaveClose.Click();
+        			Report.Info("APX Payment is not voided as expected");
+        			
+        		}
+        		
+        	}
         	bill.FileDetailForm.saveClose.Click();
         	
         	
@@ -298,6 +312,7 @@ namespace SmokeTest.Modules
         	{
         	
                 Report.Success("APX Add Payment Window Form is displayed as expected");
+                people.APXEditPaymentMethodForm.Self.Maximize();
         		Validate.AttributeContains(people.APXEditPaymentMethodForm.titleBarInfo,"Text",fullName,String.Format("APX Add Payment Window has the expected title of the Contact selected - {0}",fullName));
         		
         		people.APXEditPaymentMethodForm.rdoCreditCard.Click();

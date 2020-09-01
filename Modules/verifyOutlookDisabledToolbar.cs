@@ -146,6 +146,7 @@ namespace SmokeTest.Modules
             Mouse.DefaultMoveTime = 300;
             Keyboard.DefaultKeyPressTime = 100;
             Delay.SpeedFactor = 1.0;
+            CloseProcess();
             UnsetOutlookAddIn();
         }
     }

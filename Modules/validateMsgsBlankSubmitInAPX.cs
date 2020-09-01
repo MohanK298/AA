@@ -67,8 +67,8 @@ namespace SmokeTest.Modules
         	
                 Report.Success("APX Add Payment Window Form is displayed as expected");
         		Validate.AttributeContains(people.APXEditPaymentMethodForm.titleBarInfo,"Text",fullName,String.Format("APX Add Payment Window has the expected title of the Contact selected - {0}",fullName));
-        		
-        		
+        		people.APXEditPaymentMethodForm.Self.Maximize();
+        		Delay.Seconds(3);
                 people.APXEditPaymentMethodForm.SomeDivTag.btnSubmit.Click();
                 Report.Success("Submit Button is clicked in APX Window");
                 
@@ -87,7 +87,11 @@ namespace SmokeTest.Modules
                 Validate.AttributeContains(people.APXEditPaymentMethodForm.SomeDivTag.txtExpiryYearOrAccountTypeBlankMsgInfo,"InnerText","Field cannot be blank.",String.Format("Field cannot be blank and is displayed as expected"));
                 
                 people.APXEditPaymentMethodForm.btnCancel.Click();
-                Report.Success("Cancel Link is clicked in APX Window");	
+                Report.Success("Cancel Link is clicked in APX Window");
+                if(people.APXEditPaymentMethodForm.SelfInfo.Exists(3000))
+                {
+                	people.APXEditPaymentMethodForm.Self.Close();
+                }
         		
         	}
         	if(people.APXPaymentMethodForm.SelfInfo.Exists(3000))
@@ -116,6 +120,7 @@ namespace SmokeTest.Modules
             Delay.SpeedFactor = 1.0;
             ValidateMsgsBlankSubmitInAPX();
             cmn.ClosePrompt();
+            cmn.closeAPXPaymentForm();
         }
     }
 }

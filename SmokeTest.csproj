@@ -188,6 +188,18 @@
     <Compile Include="makeAssociationValidation.cs">
       <id>e9981751-cb92-4d7e-89dc-631af32ec1ea</id>
     </Compile>
+    <Compile Include="Modules\account_receivables_Default_Values.cs">
+      <id>a0601b3b-0da7-45c5-9405-46912d8d58de</id>
+    </Compile>
+    <Compile Include="Modules\account_receivable_field_Validation.cs">
+      <id>244c9379-8f48-46a2-b6e1-35cd8da2303d</id>
+    </Compile>
+    <Compile Include="Modules\account_receivable_report_save.cs">
+      <id>ebeb205a-d883-47c1-8961-3266e024b9cc</id>
+    </Compile>
+    <Compile Include="Modules\account_receivable_report_validation.cs">
+      <id>7ebf67a9-d775-4d3e-93c2-9b303c1fb0bb</id>
+    </Compile>
     <Compile Include="Modules\activityCode_TaxValidation.cs">
       <id>6f00311b-4a27-4476-bfe9-9aa96868cf68</id>
     </Compile>
@@ -196,6 +208,9 @@
     </Compile>
     <Compile Include="Modules\AddContactAPX.cs">
       <id>d5bf44d1-6010-443a-ab0f-dd5fa4bcce23</id>
+    </Compile>
+    <Compile Include="Modules\AddContact_File.cs">
+      <id>af026baa-78a4-4b75-b3c6-ebf63e8c7329</id>
     </Compile>
     <Compile Include="Modules\AddDocumentAM.cs">
       <id>7fe3777b-6171-4554-8762-d845b8802ef5</id>
@@ -371,14 +386,89 @@
     <Compile Include="Modules\BillingTestTrust.cs">
       <id>cdbe35d0-9cc4-4c9e-a895-fd0f7e31c1f2</id>
     </Compile>
+    <Compile Include="Modules\bill_Creation_no_primary_email.cs">
+      <id>3bf94412-066b-4d62-a8ea-1c8356c63d4a</id>
+    </Compile>
     <Compile Include="Modules\bill_format_Validate.cs">
       <id>603973d5-8478-4aa1-9b0b-08a9e0922878</id>
+    </Compile>
+    <Compile Include="Modules\bill_journal_Field_Default_Values_Validate.cs">
+      <id>26dbb0cb-cfc0-4911-a759-774261ac19c1</id>
+    </Compile>
+    <Compile Include="Modules\bill_journal_field_validation.cs">
+      <id>8c371b2f-483a-4821-b027-c7ecafcec638</id>
+    </Compile>
+    <Compile Include="Modules\bill_journal_report_save.cs">
+      <id>fbedd9d5-366f-4334-ab6e-79c0c540cbd9</id>
+    </Compile>
+    <Compile Include="Modules\bill_journal_report_validation.cs">
+      <id>6bcfe50c-8d40-45b7-8689-aa8d8726b632</id>
     </Compile>
     <Compile Include="Modules\changePref_Formatting_DefaultCode.cs">
       <id>9f2e2544-3a69-4889-b0d7-fd938f31944a</id>
     </Compile>
     <Compile Include="Modules\CheckEmailFromClient.cs">
       <id>f3be0698-2946-408a-809e-efa7c1d29d38</id>
+    </Compile>
+    <Compile Include="Modules\clientExpensesReportSave.cs">
+      <id>cff7c4b4-a711-4cff-a42c-7ea1d023fe9a</id>
+    </Compile>
+    <Compile Include="Modules\clientTransactionFields.cs">
+      <id>cb2cf42a-4487-455b-af01-4f5d73d3433c</id>
+    </Compile>
+    <Compile Include="Modules\clientTransactions_Report_Save.cs">
+      <id>975dc8ac-0616-4caa-b095-200c83af6b57</id>
+    </Compile>
+    <Compile Include="Modules\clientTransaction_report_Validation.cs">
+      <id>ac5633a5-ee83-470f-8631-a53dde2d96ce</id>
+    </Compile>
+    <Compile Include="Modules\clientTransaction_verifyDropdownValues.cs">
+      <id>f676138a-219b-4718-ad9d-d51d90ff891f</id>
+    </Compile>
+    <Compile Include="Modules\client_accounting_ledger_default_Values.cs">
+      <id>d0a6cba4-c176-4215-b915-a083384a121d</id>
+    </Compile>
+    <Compile Include="Modules\client_accounting_ledger_fields_validation.cs">
+      <id>35e27215-a7eb-4bd7-98a3-82702cc474eb</id>
+    </Compile>
+    <Compile Include="Modules\client_accounting_ledger_report_save.cs">
+      <id>702ca174-687d-43f5-8252-68a1e2c2516b</id>
+    </Compile>
+    <Compile Include="Modules\client_accounting_ledger_report_validation.cs">
+      <id>dc6c51d0-96bb-4da0-877f-32e03bbc10b7</id>
+    </Compile>
+    <Compile Include="Modules\client_expenses_field_validation.cs">
+      <id>0f82d24b-ecb9-4b24-8241-34d5f138c08e</id>
+    </Compile>
+    <Compile Include="Modules\client_expense_report_validation.cs">
+      <id>322f9fb2-a505-4735-8890-0147fbb0de6a</id>
+    </Compile>
+    <Compile Include="Modules\client_payment_distirbution_default_values_validation.cs">
+      <id>7a61bf79-9e49-43af-8937-7ccbcaf0d3ce</id>
+    </Compile>
+    <Compile Include="Modules\client_payment_distribution_field_validation.cs">
+      <id>29d63157-0371-414e-927e-3f07c9b87b35</id>
+    </Compile>
+    <Compile Include="Modules\client_payment_distribution_report_save.cs">
+      <id>7e68979f-e971-4f7a-b7ee-2ada8bdd3c48</id>
+    </Compile>
+    <Compile Include="Modules\client_payment_distribution_report_validation.cs">
+      <id>33f84fd8-144d-47c2-a920-e305aaf00167</id>
+    </Compile>
+    <Compile Include="Modules\client_Transaction_defaults.cs">
+      <id>14f87ef6-015a-4497-8a45-db9d7eb2a6f6</id>
+    </Compile>
+    <Compile Include="Modules\client_trust_listing_default_values.cs">
+      <id>3d877e03-7b4f-4272-92d4-33efdf7b27b1</id>
+    </Compile>
+    <Compile Include="Modules\client_trust_listing_field_validation.cs">
+      <id>6451200c-582e-4307-bcae-28f85da6c9cf</id>
+    </Compile>
+    <Compile Include="Modules\client_trust_listing_report_save.cs">
+      <id>471b6e04-fff2-48ef-b2ef-feaa5fe35519</id>
+    </Compile>
+    <Compile Include="Modules\client_trust_listing_report_validation.cs">
+      <id>6689f922-1f36-460c-af86-27c9bf9b66f4</id>
     </Compile>
     <Compile Include="Modules\closeExistingPrompts.cs">
       <id>b7aed1f0-b1c8-4141-b332-2dd058c6976d</id>
@@ -464,6 +554,12 @@
     <Compile Include="Modules\CalendarAppointmentCRUD.cs">
       <id>eaa2aeb6-8106-4b4a-9dc2-2c30b0dabbff</id>
     </Compile>
+    <Compile Include="Modules\create_NewProfile.cs">
+      <id>a788f961-63db-4d41-ba58-82632e0a3133</id>
+    </Compile>
+    <Compile Include="Modules\create_payment_request.cs">
+      <id>f73ad461-01c7-44b9-a139-21b3908a21f5</id>
+    </Compile>
     <Compile Include="Modules\Create_TE_Past_Current_Future.cs">
       <id>b5fef54f-25e1-4c93-ad9b-45ad2629bfba</id>
     </Compile>
@@ -500,6 +596,9 @@
     <Compile Include="Modules\DeleteTimeEntry.cs">
       <id>2de69296-75a5-450f-ae25-9a7bf2c1309b</id>
     </Compile>
+    <Compile Include="Modules\delete_payment_request.cs">
+      <id>d2c7b537-019f-4549-aae5-bb7e1fded399</id>
+    </Compile>
     <Compile Include="Modules\EditAppointment.cs">
       <id>8fd8846a-ca2e-41b9-93cd-a20cf7d339a3</id>
     </Compile>
@@ -521,8 +620,14 @@
     <Compile Include="Modules\EditTimeEntry.cs">
       <id>b95070d5-2bd9-4de4-8173-325343a6add4</id>
     </Compile>
+    <Compile Include="Modules\emaill_bill_no_pay_lnk.cs">
+      <id>ee0b260c-05fa-4c70-820f-feb4dea0bd08</id>
+    </Compile>
     <Compile Include="Modules\EmailWithMultipleAttachments.cs">
       <id>10e02ed6-21b1-42cf-90e7-892b22a5af7b</id>
+    </Compile>
+    <Compile Include="Modules\email_bill_screen_validation.cs">
+      <id>473e5f43-1fe6-47ab-9cce-59bea2a70cbf</id>
     </Compile>
     <Compile Include="Modules\embeddedOutlookValidation.cs">
       <id>0ce1c9e5-cc17-4022-96f2-19673201906e</id>
@@ -560,6 +665,15 @@
     <Compile Include="Modules\firmSettingsEmailBills.cs">
       <id>7f772c74-d2c7-4332-bfe8-934811b79f50</id>
     </Compile>
+    <Compile Include="Modules\gl_transaction_field_validation.cs">
+      <id>f01fff45-4cda-4de1-ac87-c0d6dbfec13e</id>
+    </Compile>
+    <Compile Include="Modules\gl_transaction_report_save.cs">
+      <id>d1e3f24d-8c64-4af2-9390-bde759edb3c5</id>
+    </Compile>
+    <Compile Include="Modules\gl_transaction_report_validation.cs">
+      <id>d703c4fb-ce4e-4a69-a6c9-aecccf1715d3</id>
+    </Compile>
     <Compile Include="Modules\LoginM.cs">
       <id>1d1e7d77-8a35-48f8-9ce0-4edf115525e3</id>
     </Compile>
@@ -569,8 +683,26 @@
     <Compile Include="Modules\multiselectAddMail_embedded_OL.cs">
       <id>36bfc598-8295-4737-ac5c-546eb84e5e26</id>
     </Compile>
+    <Compile Include="Modules\multiselect_Create_Payment.cs">
+      <id>c582fef5-2677-4d85-96f3-87c23a090375</id>
+    </Compile>
+    <Compile Include="Modules\multiselect_remove_payment.cs">
+      <id>cb24813d-43bf-4e69-9ace-64bfef99596a</id>
+    </Compile>
+    <Compile Include="Modules\multiselect_ResendPayment.cs">
+      <id>4b85e732-3719-4e03-b0eb-0b6fc6b6d942</id>
+    </Compile>
+    <Compile Include="Modules\new_button_validation.cs">
+      <id>70223182-00d1-4093-9277-05c0a658ee6c</id>
+    </Compile>
     <Compile Include="Modules\PaymentAPX.cs">
       <id>dcf89414-2b0e-4747-bd7d-34e26cecba28</id>
+    </Compile>
+    <Compile Include="Modules\paymentOnBill_PaymentURL.cs">
+      <id>78c60d7e-69c8-45d6-859c-b6799081ad4a</id>
+    </Compile>
+    <Compile Include="Modules\paymentURL.cs">
+      <id>0c3ddc3f-740f-4e41-98c3-8e8f684c75d3</id>
     </Compile>
     <Compile Include="Modules\pay_cc_on_file.cs">
       <id>19821cd2-f9cd-40e5-bbd0-22a3db6d5c41</id>
@@ -689,14 +821,32 @@
     <Compile Include="Modules\TimeEntryAPX.cs">
       <id>821adb03-f2c8-47f5-8bb4-17b61d9d35e0</id>
     </Compile>
+    <Compile Include="Modules\timefee_report_journal_save.cs">
+      <id>db3ac43f-0aed-4fd4-bf89-dce9e3941de9</id>
+    </Compile>
     <Compile Include="Modules\timentries_monthlyview_navigatebtwdays.cs">
       <id>f689a032-238f-4481-869c-da11d12d2085</id>
+    </Compile>
+    <Compile Include="Modules\time_fee_journal_report_Validation.cs">
+      <id>717596e8-0de9-465c-894b-783a13b5a3f0</id>
     </Compile>
     <Compile Include="Modules\trackChangesvalidation.cs">
       <id>01d39d6e-76f7-473e-a39d-937fbb72b5dc</id>
     </Compile>
     <Compile Include="Modules\trustFileToFileTransfer.cs">
       <id>88317ba5-3829-44dc-a262-0cb5582e4275</id>
+    </Compile>
+    <Compile Include="Modules\trust_bank_journal_default_Values_Validation.cs">
+      <id>50ab328c-1f1b-4930-aa66-d753c3d3b1ad</id>
+    </Compile>
+    <Compile Include="Modules\trust_bank_journal_fields.cs">
+      <id>858e63ee-80c4-4025-8ef8-b241640b04f4</id>
+    </Compile>
+    <Compile Include="Modules\trust_bank_journal_report_save.cs">
+      <id>9c8cd6e8-0cd9-4a1a-930c-e81ee47476f0</id>
+    </Compile>
+    <Compile Include="Modules\trust_bank_journal_report_validation.cs">
+      <id>1a925ee8-44e4-4a44-814e-77282550587f</id>
     </Compile>
     <Compile Include="Modules\trust_Check_Validation.cs">
       <id>51d821b4-fb34-437f-8f2d-e9c4ecc099a8</id>
@@ -767,8 +917,17 @@
     <Compile Include="Modules\validateReceivePayment.cs">
       <id>b5c31a72-1470-4429-8460-e05f6c170cb8</id>
     </Compile>
+    <Compile Include="Modules\validateReportingServices_FirmSettings.cs">
+      <id>2722b4a4-dc1a-4771-bbad-7360c5f527ce</id>
+    </Compile>
     <Compile Include="Modules\validateStandardToolbars.cs">
       <id>11e6554d-5c10-4525-8071-08e5f165d9bf</id>
+    </Compile>
+    <Compile Include="Modules\validateTimeFeeJorunalButtons.cs">
+      <id>7e21e3d9-ac33-47dc-a742-4c002c1b30d9</id>
+    </Compile>
+    <Compile Include="Modules\validateTimeFeeJorunalFieldValues.cs">
+      <id>5f4adf65-5e65-4496-b34a-82808e045d14</id>
     </Compile>
     <Compile Include="Modules\validateTimerToolbar.cs">
       <id>cdcbd23e-b8d9-4b92-924d-df7bb51d26b6</id>
@@ -785,8 +944,35 @@
     <Compile Include="Modules\validateTrust_Receipt_Window_APX.cs">
       <id>8d6db60f-f48d-43c1-ab4d-2075635484eb</id>
     </Compile>
+    <Compile Include="Modules\validate_ActionMenu.cs">
+      <id>1223792c-e3f2-44ee-8920-eb9a64a87de9</id>
+    </Compile>
+    <Compile Include="Modules\validate_billing_default.cs">
+      <id>b890156f-b3e3-4e99-9561-68ffbc61379f</id>
+    </Compile>
+    <Compile Include="Modules\validate_billing_office.cs">
+      <id>80e06b2f-1d52-45ff-b45c-5526060b9a56</id>
+    </Compile>
+    <Compile Include="Modules\validate_billing_time_fee_expenses_default.cs">
+      <id>b4716eae-7077-43fb-a564-958bef61b37d</id>
+    </Compile>
+    <Compile Include="Modules\validate_billing_trust_default.cs">
+      <id>6cd01b3b-4fb6-4b12-b9f7-f2af4294d518</id>
+    </Compile>
+    <Compile Include="Modules\validate_Bill_creation_No.cs">
+      <id>09701046-99de-4073-a195-4167a12a3cb6</id>
+    </Compile>
+    <Compile Include="Modules\Validate_bill_Creation_Yes.cs">
+      <id>825e5059-1f37-4bd3-ad04-41f12317e93e</id>
+    </Compile>
+    <Compile Include="Modules\validate_buttons_in_screen.cs">
+      <id>a5fbbc04-ca94-4c2d-8bbf-1978733cfc18</id>
+    </Compile>
     <Compile Include="Modules\validate_Existing_Time_Entry_OnFile_Msg.cs">
       <id>775104d3-10a9-498e-aea9-307577fa4930</id>
+    </Compile>
+    <Compile Include="Modules\validate_manual_Entry_uncheck.cs">
+      <id>6afcabc8-d973-42ff-9ade-ef83bb246afd</id>
     </Compile>
     <Compile Include="Modules\validate_NoFileOn_Time_Entry_Msg.cs">
       <id>03c1ad4e-1da8-4c5a-906a-49faf3d31d7e</id>
@@ -796,6 +982,9 @@
     </Compile>
     <Compile Include="Modules\validate_Quick_Print.cs">
       <id>7acaf97e-a22b-464f-9cbd-e49a2bb65428</id>
+    </Compile>
+    <Compile Include="Modules\validate_Reports_Form.cs">
+      <id>e0fb343b-f6eb-4e0d-bba6-0d5cbf5a0b1d</id>
     </Compile>
     <Compile Include="Modules\validate_Startup_Balance_General_Retainer.cs">
       <id>9c2308a0-9c76-411c-a8ad-99318a653b9a</id>
@@ -821,6 +1010,9 @@
     <Compile Include="Modules\verifyHeaders.cs">
       <id>b33c10df-e8b1-4f00-82cb-61f8604bf78c</id>
     </Compile>
+    <Compile Include="Modules\verifyModule_list.cs">
+      <id>579510f3-4599-4d22-84c8-d8266498ee90</id>
+    </Compile>
     <Compile Include="Modules\verifyOutlookDisabledToolbar.cs">
       <id>a557bac7-b668-4be7-a231-38f4c7862a7c</id>
     </Compile>
@@ -841,6 +1033,18 @@
     </Compile>
     <Compile Include="Modules\VoidPaymentAPX.cs">
       <id>f06bea47-ac9c-4145-a550-392759f98b54</id>
+    </Compile>
+    <Compile Include="Modules\wip_report_default_value_validation.cs">
+      <id>1d1c9de2-bcd6-46f7-a50b-5c542e985a74</id>
+    </Compile>
+    <Compile Include="Modules\wip_report_field_validation.cs">
+      <id>af23b8e1-77e1-41ad-8167-ce5cec93487f</id>
+    </Compile>
+    <Compile Include="Modules\wip_report_report_save.cs">
+      <id>27fdef67-b823-4d6b-a78f-13b6e80e32b5</id>
+    </Compile>
+    <Compile Include="Modules\wip_report_Report_Validation.cs">
+      <id>be8476c7-c0f2-4281-9d6a-57e5d9d07d81</id>
     </Compile>
     <Compile Include="Modules\Word_AddIn.cs">
       <id>a7f5b1dc-5d0d-4ac1-b258-bd9a234b82a5</id>
@@ -1183,6 +1387,18 @@
       <DependentUpon>PreferencesNew.rxrep</DependentUpon>
       <RepositoryCode>true</RepositoryCode>
       <id>96499af0-c953-459a-bf35-d8aeba7f6252</id>
+    </Compile>
+    <Compile Include="Repositories\Reports.cs">
+      <BoundTo>d62bbed2-437d-436d-bf5e-4b53db5e3eed</BoundTo>
+      <DependentUpon>Reports.rxrep</DependentUpon>
+      <RepositoryCode>true</RepositoryCode>
+      <id>eb209560-9a9a-4030-ade7-7207284f660e</id>
+    </Compile>
+    <Compile Include="Repositories\SecurityProfile.cs">
+      <BoundTo>e0c434e4-c26e-4f78-833d-2bf484866a26</BoundTo>
+      <DependentUpon>SecurityProfile.rxrep</DependentUpon>
+      <RepositoryCode>true</RepositoryCode>
+      <id>23b87189-cc61-4002-a731-a589cff8be1b</id>
     </Compile>
     <Compile Include="Repositories\SmokeTestRepository.cs">
       <RepositoryCode>true</RepositoryCode>
@@ -1606,6 +1822,28 @@
       <id>72856602-017d-4500-91cc-4a5454d50ac4</id>
       <repoid>5e2934cb-61a2-416d-b843-faa7dbe73932</repoid>
       <reporootid>ca2f1d51-6796-4aa8-8d12-93049a1a7337</reporootid>
+    </None>
+    <None Include="Repositories\Reports.rximg">
+      <BoundTo>d62bbed2-437d-436d-bf5e-4b53db5e3eed</BoundTo>
+      <DependentUpon>Reports.rxrep</DependentUpon>
+      <imageblob>true</imageblob>
+      <id>8155f84a-03d9-42c2-a932-3f77ee4da98b</id>
+    </None>
+    <None Include="Repositories\Reports.rxrep">
+      <id>d62bbed2-437d-436d-bf5e-4b53db5e3eed</id>
+      <repoid>9b883c7a-5902-40b7-a5d2-4a4c90be4c41</repoid>
+      <reporootid>7ea51f42-9590-45da-9884-0cb8dc132ab2</reporootid>
+    </None>
+    <None Include="Repositories\SecurityProfile.rximg">
+      <BoundTo>e0c434e4-c26e-4f78-833d-2bf484866a26</BoundTo>
+      <DependentUpon>SecurityProfile.rxrep</DependentUpon>
+      <imageblob>true</imageblob>
+      <id>843d1fc2-557a-4cdc-80eb-8d2cd34ebcfe</id>
+    </None>
+    <None Include="Repositories\SecurityProfile.rxrep">
+      <id>e0c434e4-c26e-4f78-833d-2bf484866a26</id>
+      <repoid>a2c46a51-ff4a-4184-8367-7751424eb162</repoid>
+      <reporootid>a8529698-fe78-4e2a-b840-2a4c62347b8a</reporootid>
     </None>
     <None Include="Repositories\SmokeTestRepository.rximg">
       <id>2920af40-86a4-4dd8-877d-0528f4a7478a</id>

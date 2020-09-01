@@ -55,6 +55,12 @@ namespace SmokeTest.Modules
         	te.TimeEntryDetailsForm.txtActivityDescription.PressKeys(actdes);
         	te.TimeEntryDetailsForm.btnOK.Click();
         	
+        	if(te.PromptForm.SelfInfo.Exists(3000))
+        	{
+        		te.PromptForm.btnNo.Click();
+        		Report.Success("Time Entries not combined");
+        	}
+        	
         	//Verify
         	//te.MainForm.listFirstTimeEntryFile.DoubleClick();
         	te.MainForm.rdbtnTimeFees.Click();
@@ -119,6 +125,8 @@ namespace SmokeTest.Modules
             Keyboard.DefaultKeyPressTime = 100;
             Delay.SpeedFactor = 1.0;
             TrackChanges();
+            cmn.closeDialog();
+            cmn.ClosePrompt();
         }
     }
 }

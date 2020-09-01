@@ -4147,7 +4147,7 @@ namespace SmokeTest.Repositories.Premium
                     base("EmailAttachmentForm", "/form[@controlname='EmailAttachmentsForm']", parentFolder, 30000, null, false, "1ecd7445-4792-4ebd-a292-efe8f2ac1993", "")
             {
                 _btnfinishInfo = new RepoItemInfo(this, "btnFinish", ".//toolbar[@accessiblename='Toolbar']/button[@accessiblename='Finish']", 30000, null, "214c150f-1b1f-48f0-87b8-45eab5530b3a");
-                _txtattachmentsavelocationInfo = new RepoItemInfo(this, "txtAttachmentSaveLocation", "container[@controlname='pnlControls']//text[@controlname='ateAttachmentLocation_EmbeddableTextBox']", 30000, null, "9cdd19a3-fc76-4c29-b8f7-b7632dd312b1");
+                _txtattachmentsavelocationInfo = new RepoItemInfo(this, "txtAttachmentSaveLocation", "container[@controlname='pnlControls']//text[@automationid='[Editor] Edit Area']", 30000, null, "9cdd19a3-fc76-4c29-b8f7-b7632dd312b1");
                 _btnbrowseInfo = new RepoItemInfo(this, "btnBrowse", "container[@controlname='pnlControls']//button[@accessiblename='Browse']", 30000, null, "f597cc10-ccd4-4e84-8218-fd782bd8124b");
             }
 

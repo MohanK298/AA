@@ -91,101 +91,104 @@ namespace SmokeTest.Recordings
             //Validate.CompareImage(repo.BillingDetailForm.UltraPanel1ClientAreaInfo, UltraPanel1ClientArea_Screenshot3, UltraPanel1ClientArea_Screenshot3_Options);
             //Delay.Milliseconds(100);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'BillingDetailForm.Toolbar.SendToDraft' at 60;8.", repo.BillingDetailForm.Toolbar.SendToDraftInfo, new RecordItemIndex(3));
+            Report.Log(ReportLevel.Info, "Delay", "Waiting for 2s.", new RecordItemIndex(3));
+            Delay.Duration(2000, false);
+            
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'BillingDetailForm.Toolbar.SendToDraft' at 60;8.", repo.BillingDetailForm.Toolbar.SendToDraftInfo, new RecordItemIndex(4));
             repo.BillingDetailForm.Toolbar.SendToDraft.Click("60;8");
             Delay.Milliseconds(200);
             
-            Report.Log(ReportLevel.Info, "Delay", "Waiting for 3s.", new RecordItemIndex(4));
+            Report.Log(ReportLevel.Info, "Delay", "Waiting for 3s.", new RecordItemIndex(5));
             Delay.Duration(3000, false);
             
-            //Report.Log(ReportLevel.Info, "Validation", "Validating CompareImage (Screenshot: 'Screenshot1' with region {X=0,Y=0,Width=206,Height=207}) on item 'BillingDetailForm.DraftBillPanel.Panel1'.", repo.BillingDetailForm.DraftBillPanel.Panel1Info, new RecordItemIndex(5));
+            //Report.Log(ReportLevel.Info, "Validation", "Validating CompareImage (Screenshot: 'Screenshot1' with region {X=0,Y=0,Width=206,Height=207}) on item 'BillingDetailForm.DraftBillPanel.Panel1'.", repo.BillingDetailForm.DraftBillPanel.Panel1Info, new RecordItemIndex(6));
             //Validate.CompareImage(repo.BillingDetailForm.DraftBillPanel.Panel1Info, Panel1_Screenshot1, Panel1_Screenshot1_Options);
             //Delay.Milliseconds(100);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'BillingDetailForm.DraftBillPanel.Transfers' at 45;13.", repo.BillingDetailForm.DraftBillPanel.TransfersInfo, new RecordItemIndex(6));
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'BillingDetailForm.DraftBillPanel.Transfers' at 45;13.", repo.BillingDetailForm.DraftBillPanel.TransfersInfo, new RecordItemIndex(7));
             repo.BillingDetailForm.DraftBillPanel.Transfers.Click("45;13");
             Delay.Milliseconds(200);
             
-            //Report.Log(ReportLevel.Info, "Validation", "Validating CompareImage (Screenshot: 'Screenshot1' with region {X=0,Y=0,Width=469,Height=211}) on item 'BillingDetailForm.DraftBillPanel.PnlPaymants'.", repo.BillingDetailForm.DraftBillPanel.PnlPaymantsInfo, new RecordItemIndex(7));
+            //Report.Log(ReportLevel.Info, "Validation", "Validating CompareImage (Screenshot: 'Screenshot1' with region {X=0,Y=0,Width=469,Height=211}) on item 'BillingDetailForm.DraftBillPanel.PnlPaymants'.", repo.BillingDetailForm.DraftBillPanel.PnlPaymantsInfo, new RecordItemIndex(8));
             //Validate.CompareImage(repo.BillingDetailForm.DraftBillPanel.PnlPaymantsInfo, PnlPaymants_Screenshot1, PnlPaymants_Screenshot1_Options);
             //Delay.Milliseconds(100);
             
-            //Report.Log(ReportLevel.Info, "Validation", "Validating CompareImage (Screenshot: 'Screenshot2' with region {X=0,Y=0,Width=469,Height=211}) on item 'BillingDetailForm.DraftBillPanel.PnlPaymants'.", repo.BillingDetailForm.DraftBillPanel.PnlPaymantsInfo, new RecordItemIndex(8));
+            //Report.Log(ReportLevel.Info, "Validation", "Validating CompareImage (Screenshot: 'Screenshot2' with region {X=0,Y=0,Width=469,Height=211}) on item 'BillingDetailForm.DraftBillPanel.PnlPaymants'.", repo.BillingDetailForm.DraftBillPanel.PnlPaymantsInfo, new RecordItemIndex(9));
             //Validate.CompareImage(repo.BillingDetailForm.DraftBillPanel.PnlPaymantsInfo, PnlPaymants_Screenshot2, PnlPaymants_Screenshot2_Options);
             //Delay.Milliseconds(100);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'BillingDetailForm.Toolbar.SendToFinal' at 39;19.", repo.BillingDetailForm.Toolbar.SendToFinalInfo, new RecordItemIndex(9));
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'BillingDetailForm.Toolbar.SendToFinal' at 39;19.", repo.BillingDetailForm.Toolbar.SendToFinalInfo, new RecordItemIndex(10));
             repo.BillingDetailForm.Toolbar.SendToFinal.Click("39;19");
             Delay.Milliseconds(200);
             
-            Report.Log(ReportLevel.Info, "Delay", "Waiting for 3s.", new RecordItemIndex(10));
+            Report.Log(ReportLevel.Info, "Delay", "Waiting for 3s.", new RecordItemIndex(11));
             Delay.Duration(3000, false);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'BillingDetailForm.Toolbar.PrintPost' at 34;19.", repo.BillingDetailForm.Toolbar.PrintPostInfo, new RecordItemIndex(11));
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'BillingDetailForm.Toolbar.PrintPost' at 34;19.", repo.BillingDetailForm.Toolbar.PrintPostInfo, new RecordItemIndex(12));
             repo.BillingDetailForm.Toolbar.PrintPost.Click("34;19");
             Delay.Milliseconds(200);
             
-            //Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'InvoiceEmailForm.False' at 12;10.", repo.InvoiceEmailForm.FalseInfo, new RecordItemIndex(12));
+            //Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'InvoiceEmailForm.False' at 12;10.", repo.InvoiceEmailForm.FalseInfo, new RecordItemIndex(13));
             //repo.InvoiceEmailForm.False.Click("12;10");
             //Delay.Milliseconds(200);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'InvoiceEmailForm.Proceed' at 41;11.", repo.InvoiceEmailForm.ProceedInfo, new RecordItemIndex(13));
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'InvoiceEmailForm.Proceed' at 41;11.", repo.InvoiceEmailForm.ProceedInfo, new RecordItemIndex(14));
             repo.InvoiceEmailForm.Proceed.Click("41;11");
             Delay.Milliseconds(200);
             
-            Report.Log(ReportLevel.Info, "Delay", "Waiting for 3s.", new RecordItemIndex(14));
+            Report.Log(ReportLevel.Info, "Delay", "Waiting for 3s.", new RecordItemIndex(15));
             Delay.Duration(3000, false);
             
             try {
-                //Report.Log(ReportLevel.Info, "Mouse", "(Optional Action)\r\nMouse Left Click item 'PromptForm.ButtonYes' at 22;11.", repo.PromptForm.ButtonYesInfo, new RecordItemIndex(15));
+                //Report.Log(ReportLevel.Info, "Mouse", "(Optional Action)\r\nMouse Left Click item 'PromptForm.ButtonYes' at 22;11.", repo.PromptForm.ButtonYesInfo, new RecordItemIndex(16));
                 //repo.PromptForm.ButtonYes.Click("22;11");
                 //Delay.Milliseconds(200);
-            } catch(Exception ex) { Report.Log(ReportLevel.Warn, "Module", "(Optional Action) " + ex.Message, new RecordItemIndex(15)); }
+            } catch(Exception ex) { Report.Log(ReportLevel.Warn, "Module", "(Optional Action) " + ex.Message, new RecordItemIndex(16)); }
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'OutputForm.ButtonOK' at 24;15.", repo.OutputForm.ButtonOKInfo, new RecordItemIndex(16));
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'OutputForm.ButtonOK' at 24;15.", repo.OutputForm.ButtonOKInfo, new RecordItemIndex(17));
             repo.OutputForm.ButtonOK.Click("24;15");
             Delay.Milliseconds(200);
             
             try {
-                //Report.Log(ReportLevel.Info, "Mouse", "(Optional Action)\r\nMouse Left Up item 'PromptForm.ButtonOK' at 21;18.", repo.PromptForm.ButtonOKInfo, new RecordItemIndex(17));
+                //Report.Log(ReportLevel.Info, "Mouse", "(Optional Action)\r\nMouse Left Up item 'PromptForm.ButtonOK' at 21;18.", repo.PromptForm.ButtonOKInfo, new RecordItemIndex(18));
                 //repo.PromptForm.ButtonOK.MoveTo("21;18");
                 //Mouse.ButtonUp(System.Windows.Forms.MouseButtons.Left);
                 //Delay.Milliseconds(0);
-            } catch(Exception ex) { Report.Log(ReportLevel.Warn, "Module", "(Optional Action) " + ex.Message, new RecordItemIndex(17)); }
+            } catch(Exception ex) { Report.Log(ReportLevel.Warn, "Module", "(Optional Action) " + ex.Message, new RecordItemIndex(18)); }
             
-            //Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='$65.00') on item 'ReportViewerForm.MReportPanel.TextBox1'.", repo.ReportViewerForm.MReportPanel.TextBox1Info, new RecordItemIndex(18));
+            //Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='$65.00') on item 'ReportViewerForm.MReportPanel.TextBox1'.", repo.ReportViewerForm.MReportPanel.TextBox1Info, new RecordItemIndex(19));
             //Validate.AttributeEqual(repo.ReportViewerForm.MReportPanel.TextBox1Info, "Text", "$65.00");
             //Delay.Milliseconds(100);
             
-            //Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='-35.00') on item 'ReportViewerForm.MReportPanel.TextBox2'.", repo.ReportViewerForm.MReportPanel.TextBox2Info, new RecordItemIndex(19));
+            //Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='-35.00') on item 'ReportViewerForm.MReportPanel.TextBox2'.", repo.ReportViewerForm.MReportPanel.TextBox2Info, new RecordItemIndex(20));
             //Validate.AttributeEqual(repo.ReportViewerForm.MReportPanel.TextBox2Info, "Text", "-35.00");
             //Delay.Milliseconds(100);
             
-            //Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='100.00') on item 'ReportViewerForm.MReportPanel.TextBox3'.", repo.ReportViewerForm.MReportPanel.TextBox3Info, new RecordItemIndex(20));
+            //Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='100.00') on item 'ReportViewerForm.MReportPanel.TextBox3'.", repo.ReportViewerForm.MReportPanel.TextBox3Info, new RecordItemIndex(21));
             //Validate.AttributeEqual(repo.ReportViewerForm.MReportPanel.TextBox3Info, "Text", "100.00");
             //Delay.Milliseconds(100);
             
-            //Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ReportViewerForm.NextPage' at 7;11.", repo.ReportViewerForm.NextPageInfo, new RecordItemIndex(21));
+            //Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ReportViewerForm.NextPage' at 7;11.", repo.ReportViewerForm.NextPageInfo, new RecordItemIndex(22));
             //repo.ReportViewerForm.NextPage.Click("7;11");
             //Delay.Milliseconds(0);
             
-            //Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='$20.00') on item 'ReportViewerForm.TextBox'.", repo.ReportViewerForm.TextBoxInfo, new RecordItemIndex(22));
+            //Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='$20.00') on item 'ReportViewerForm.TextBox'.", repo.ReportViewerForm.TextBoxInfo, new RecordItemIndex(23));
             //Validate.AttributeEqual(repo.ReportViewerForm.TextBoxInfo, "Text", "$20.00");
             //Delay.Milliseconds(100);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ReportViewerForm.Close' at 24;14.", repo.ReportViewerForm.CloseInfo, new RecordItemIndex(23));
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ReportViewerForm.Close' at 24;14.", repo.ReportViewerForm.CloseInfo, new RecordItemIndex(24));
             repo.ReportViewerForm.Close.Click("24;14");
             Delay.Milliseconds(200);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'BillingDetailForm.Toolbar.Close' at 19;12.", repo.BillingDetailForm.Toolbar.CloseInfo, new RecordItemIndex(24));
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'BillingDetailForm.Toolbar.Close' at 19;12.", repo.BillingDetailForm.Toolbar.CloseInfo, new RecordItemIndex(25));
             repo.BillingDetailForm.Toolbar.Close.Click("19;12");
             Delay.Milliseconds(200);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'MainForm.Billing' at 62;16.", repo.MainForm.BillingInfo, new RecordItemIndex(25));
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'MainForm.Billing' at 62;16.", repo.MainForm.BillingInfo, new RecordItemIndex(26));
             repo.MainForm.Billing.Click("62;16");
             Delay.Milliseconds(200);
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating Exists on item 'MainForm.Band0Row1'.", repo.MainForm.Band0Row1Info, new RecordItemIndex(26));
+            Report.Log(ReportLevel.Info, "Validation", "Validating Exists on item 'MainForm.Band0Row1'.", repo.MainForm.Band0Row1Info, new RecordItemIndex(27));
             Validate.Exists(repo.MainForm.Band0Row1Info);
             Delay.Milliseconds(100);
             

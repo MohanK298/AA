@@ -120,19 +120,23 @@ namespace SmokeTest
 //        		Report.Info("Warning message was closed successfully and Amicus Attorney Exe File Opened");
 //        	}
         	
-        	if(login.Update.SelfInfo.Exists(30000))
+        	if(login.Update.SelfInfo.Exists(180000))
         	{
+        		Report.Success("Amicus Attorney Update is currently open");
         		if(login.Update.btnContinueInfo.Exists(3000))
         		{
         			login.Update.btnContinue.Click();
+        			Report.Success("Amicus Attorney Update Continue Button is clicked");
         		}
-        		login.Update.btnFinishInfo.WaitForExists(240000);
-        		if(login.Update.btnFinishInfo.Exists(3000))
+//        		login.Update.btnFinishInfo.WaitForExists(240000);
+        		if(login.Update.btnFinishInfo.Exists(210000))
         		{
         			login.Update.btnFinish.Click();
-        			Report.Success("Amicus Attorney Updated Successfully");
+        			Report.Success("Amicus Attorney Updated Successfully by clicking Finish Button");
         		}
-        			
+        		else{
+        			Report.Success("Amicus Attorney Updated Successfully without showing Finish Button");
+        		}
         	}
         	else
         	{
@@ -141,7 +145,7 @@ namespace SmokeTest
 //        		Host.Local.RunApplication("C:\\Amicus\\Amicus Attorney Workstation\\AmicusAttorney.XWin.exe");
 //        		Report.Info("Warning message was closed successfully and Amicus Attorney Exe File Opened");
 //        	
-        	Report.Success("Amicus Attorney opened Successfully");
+        	Report.Success("Amicus Attorney opened Successfully without any updates");
         	}
         }
         

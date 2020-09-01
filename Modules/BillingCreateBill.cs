@@ -42,12 +42,14 @@ namespace SmokeTest.Modules
         	if(bill.PromptForm.SelfInfo.Exists(3000))
         	{
         		//bill.PromptForm.btnYes.Click();
-        		bill.PromptForm.btnOk.Click();
+        		if(bill.PromptForm.btnOkInfo.Exists(3000))
+        		{bill.PromptForm.btnOk.Click();}
         	}
         	
         	if(bill.PromptForm.SelfInfo.Exists(3000))
         	{
-        		//bill.PromptForm.btnYes.Click();
+        		if(bill.PromptForm.btnYesInfo.Exists(3000))
+        		{bill.PromptForm.btnYes.Click();}
         	}
         	//bill.BillingDetailForm.btnClose.Click();
         	//bill.PromptForm.btnYes.Click();

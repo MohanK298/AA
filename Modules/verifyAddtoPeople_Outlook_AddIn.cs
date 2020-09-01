@@ -78,7 +78,7 @@ namespace SmokeTest.Modules
         	{
         		Report.Success("Add to People Button is clicked successfully");
         		outlook.DetailedView.AmicusAttorneyTasks1.btnAddToPeople.Click();
-        		if(comm.PeopleSelectForm.SelfInfo.Exists(3000))
+        		if(comm.PeopleSelectForm.SelfInfo.Exists(10000))
         		{
         			comm.PeopleSelectForm.listContact.DoubleClick();
         			Report.Success("People Added Successfully for the E-Mail");
@@ -87,9 +87,16 @@ namespace SmokeTest.Modules
         				Report.Success("Email Details Form opened successfully");
         			}
         			comm.EmailDetailForm.Toolbar1.btnOk.Click();
+        			Report.Success("Ok Button is clicked successfully");
+        			if(comm.PromptForm.SelfInfo.Exists(5000))
+        			{
+        				if(comm.PromptForm.btnOKInfo.Exists(2000))
+        				{comm.PromptForm.btnOK.Click();}
+        			}
         			if(comm.PromptForm.SelfInfo.Exists(3000))
         			{
-        				comm.PromptForm.btnNo.Click();
+        				if(comm.PromptForm.btnNoInfo.Exists(2000))
+        				{comm.PromptForm.btnNo.Click();}
         			}
         			outlook.DetailedView.Self.Close();
         			Report.Success("Detailed Email is closed successfully");
@@ -111,7 +118,8 @@ namespace SmokeTest.Modules
         		}
     			if(comm.PromptForm.SelfInfo.Exists(3000))
     			{
-    				comm.PromptForm.btnNo.Click();
+    				if(comm.PromptForm.btnNoInfo.Exists(2000))
+        				{comm.PromptForm.btnNo.Click();}
     			}
     			outlook.DetailedView.Self.Close();
     			Report.Success("Detailed Email is closed successfully");

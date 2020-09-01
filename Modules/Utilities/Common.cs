@@ -43,6 +43,7 @@ namespace SmokeTest.Modules.Utilities
         Preferences pref=Preferences.Instance;
         FirmSettings fm=new FirmSettings();
         SmokeTestRepository str = SmokeTestRepository.Instance;
+        People people=People.Instance;
         Outlook_AddIn outlook=Outlook_AddIn.Instance;
         [UserCodeMethod]
         public static string CreateLocalTextFile(string fileName)
@@ -106,6 +107,23 @@ namespace SmokeTest.Modules.Utilities
 			}
         	
         }
+        
+        public void closeDialog()
+        {
+        	if(fm.PromptForm.SelfInfo.Exists(5000))
+        	{
+        		fm.PromptForm.btnYes.Click();
+        	}
+        }
+        
+        public void closeAPXPaymentForm()
+        	{
+        		if(people.APXEditPaymentMethodForm.SelfInfo.Exists(3000))
+        		{
+        			people.APXEditPaymentMethodForm.Self.Close();
+        		}
+        	}
+        	
         
         
         [UserCodeMethod]
@@ -215,7 +233,7 @@ namespace SmokeTest.Modules.Utilities
         			{
         				
 	        				Report.Success(String.Format("Value \"{0}\" Found in Row {1} as expected in \"{2}\"",data,j,tblName));
-	        				rowNumber=j;
+	        				rowNumber=i;
 	        				return rowNumber;
         				
         			}
@@ -462,6 +480,50 @@ namespace SmokeTest.Modules.Utilities
         				Report.Failure(String.Format("Value \"{0}\" not present for selection in \"{1}\"",data,tblName));
         	}
         }        
+        
+        public string getWebTableDetails(Ranorex.Adapter table)
+        {
+        	var tadapter = table.As <Ranorex.TableTag>();
+        	string result="";
+        	IList<Ranorex.TrTag> myRows = tadapter.FindDescendants<Ranorex.TrTag>();  
+			// print out count of rows stored in a list   
+//			Report.Log(ReportLevel.Info,"Row Count: ", myRows.Count.ToString());  
+			for(int i=0;i<myRows.Count;i++)
+			// get all columns in specified row and store them in a list   
+			{
+				
+				IList<Ranorex.TdTag> myCols = myRows[i].FindDescendants<Ranorex.TdTag>();
+//				Report.Log(ReportLevel.Info,"Column Count: ", myCols.Count.ToString());  
+				for(int j=0;j<myCols.Count;j++)
+				{
+					result+=myCols[j].InnerText+"~";
+				}
+				result+="|";
+			}
+			// print out count of columns stored in the list   
+			return result;
+        		
+        	
+        }
+        
+        public void PrintWebTableDetails(string tbldata)
+        {
+        	string[] rows=tbldata.Split('|');
+        	string[] col;
+        	string output="";
+        	for(int i=0;i<rows.Length;i++)
+        	{
+        		col=rows[i].Split('~');
+        		for(int j=0;j<col.Length;j++)
+        		{
+        			output+=col[j]+"------";
+        		}
+        		output+=Environment.NewLine;
+        	}
+        	Report.Success(output);
+        	    
+        }
+        
         public void OpenContextMenuItemFromTable(Ranorex.Adapter tbldata,string data,string tblName)
         {
         	int k=0;
@@ -521,6 +583,71 @@ namespace SmokeTest.Modules.Utilities
         	{
         				Report.Failure(String.Format("Value \"{0}\" not present for selection in \"{1}\" dropdown",itemValue,dpdwnName));
         	}
+        }
+        
+        public int GetIndex(Ranorex.Adapter listItems,string data)
+        {
+        	
+        	
+        	var lstData=listItems.As <Ranorex.List>();
+        	for(int i=0;i<lstData.Items.Count;i++)
+        	{
+        		if(lstData.Items[i].Text.Contains(data))
+        		{
+        			Report.Success(String.Format("Item found for the text - {0}",data));
+        			return i;
+        		}
+        	}
+        	Report.Failure(String.Format("Item not found for the text - {0}",data));
+        	return 0;
+        }
+        
+        public void VerifyListItemsInDropdown(Ranorex.Adapter listItems,string data,string dpdwnName)
+        {
+        	int k=0;
+        	var lstData=listItems.As <Ranorex.List>();
+        	foreach(Ranorex.ListItem item in lstData.Items)
+        	{
+        		if(item.Text.Contains(data))
+        		   {
+        		   		Report.Success(String.Format("ListItem \"{0}\" is present in \"{1}\" dropdown as expected",data,dpdwnName));
+        		   		k++;
+        		   }
+        	}
+        	if(k==0)
+        	{
+        				Report.Failure(String.Format("ListItem \"{0}\" not present for in \"{1}\" dropdown",data,dpdwnName));
+        	}
+        		
+        	
+        }
+        
+        
+        public void VerifyListItemsInDropdown(Ranorex.Adapter listItems,string[] data,string dpdwnName)
+        {
+        	var lstData=listItems.As <Ranorex.List>();
+        	foreach(string dat in data)
+        	{
+        		foreach(Ranorex.ListItem item in lstData.Items)
+        	    {
+        			if(item.Text.Contains(dat))
+	        		   {
+	        		   		Report.Success(String.Format("ListItem \"{0}\" is present in \"{1}\" dropdown as expected",dat,dpdwnName));
+	        		   		
+	        		   }
+	        	}
+        	}
+   	
+        }
+        
+        
+        
+        public int GetListCount(Ranorex.Adapter listItems)
+        {
+        	
+        	var lstData=listItems.As <Ranorex.List>();
+        	Report.Success("Count of List is returned");
+        	return lstData.Items.Count;
         }
         
         
@@ -770,6 +897,18 @@ namespace SmokeTest.Modules.Utilities
         	
         }
         
+        public int getEmailCountFromSelectedFolder(Ranorex.Adapter item)
+        {
+        	
+        	
+        	//IList<Ranorex.Unknown> elements=item.Find<Ranorex.Unknown>("/element[@classname='LeafRow']");
+        	IList<Ranorex.Unknown> elements=item.FindChildren<Ranorex.Unknown>();
+        	Report.Info(elements.Count.ToString());
+        			
+        	return elements.Count;
+        	
+        }
+        
         
         
         public string RetrieveCurrentSelectionFromTable(Ranorex.Adapter item)
@@ -824,19 +963,21 @@ namespace SmokeTest.Modules.Utilities
         {
         	int m=0;
         	string details="";
+        	string result="";
         	var tadapter = tbldata.As <Ranorex.Table>();
-        	for(int i=0;i<tadapter.Rows.Count-1;i++)
+        	for(int i=0;i<tadapter.Rows.Count;i++)
         	{
         	
 				details+=tadapter.Rows[i].Cells[colnumber].As<Ranorex.Cell>().Text+"~"; 
 				m++;		
         	}
-        		details+=tadapter.Rows[tadapter.Rows.Count-1].Cells[colnumber].As<Ranorex.Cell>().Text; 
+        	
+        	result=details.Substring(0,details.Length-1);
         	if(m==0)
         	{
         				Report.Failure(String.Format("Column index \"{0}\" values not present for retrieval in \"{1}\"",colnumber,tblName));
         	}
-        	return details;
+        	return result;
         } 
  		
  		public void PrintTableData(Ranorex.Adapter tbldata,string tblName)

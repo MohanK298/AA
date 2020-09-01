@@ -90,6 +90,7 @@ namespace SmokeTest.Modules
         	if(people.APXEditPaymentMethodForm.SelfInfo.Exists(5000))
         	{
         	
+        		people.APXEditPaymentMethodForm.Self.Maximize();
                 Report.Success("APX Add Payment Window Form is displayed as expected");
         		Validate.AttributeContains(people.APXEditPaymentMethodForm.titleBarInfo,"Text",fullName,String.Format("APX Add Payment Window has the expected title of the Contact selected - {0}",fullName));
                 Validate.AttributeContains(people.APXEditPaymentMethodForm.SomeDivTag.txtNameOnCardInfo,"Value",fullName,String.Format("Name on Card for APX is auto populated as  - {0}",fullName));        		
@@ -100,8 +101,7 @@ namespace SmokeTest.Modules
                 Validate.AttributeContains(people.APXEditPaymentMethodForm.SomeDivTag.dpdwnCountrySelectInfo,"InnerText",country,String.Format("Country is populated as expected from the People Details Form   - {0}",country));
                 
       
-                people.APXEditPaymentMethodForm.btnCancel.Click();
-        		
+                people.APXEditPaymentMethodForm.Self.Close();       		
         	}
         	if(people.APXPaymentMethodForm.SelfInfo.Exists(3000))
         	{
@@ -157,6 +157,7 @@ namespace SmokeTest.Modules
         	if(people.APXEditPaymentMethodForm.SelfInfo.Exists(5000))
         	{
         	
+        		people.APXEditPaymentMethodForm.Self.Maximize();
                 Report.Success("APX Add Payment Window Form is displayed as expected");
         		Validate.AttributeContains(people.APXEditPaymentMethodForm.titleBarInfo,"Text",fullName,String.Format("APX Add Payment Window has the expected title of the Contact selected - {0}",fullName));
                 Validate.AttributeContains(people.APXEditPaymentMethodForm.SomeDivTag.txtNameOnCardInfo,"Value",fullName,String.Format("Name on Card for APX is auto populated as  - {0}",fullName));        		

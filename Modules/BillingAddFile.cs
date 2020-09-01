@@ -123,7 +123,8 @@ namespace SmokeTest.Modules
         	file.FileDetailForm.matterID.TextValue = (time.Equals("")) ? System.DateTime.Now.ToString() : time.TrimStart('2');
         	file.FileDetailForm.btnSaveClose.Click();
         	Delay.Seconds(1);
-        	file.PromptForm.ButtonYes.Click();
+        	if(file.PromptForm.SelfInfo.Exists(3000))
+        	{file.PromptForm.ButtonYes.Click();}
 //        	file.FileDetailForm.btnSaveClose.Click();
         }
         

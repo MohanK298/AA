@@ -187,6 +187,16 @@ SUVORK5CYII=
 				searchtimeout="30000ms">
 					/form[@controlname='MainForm']/?/?/form[@controlname='FirmSettingsForm']/container[@controlname='roundedPanelControl']/?/?/element[@controlname='amlblBillingEmailingBills']/text
 				</item>
+				<item
+				addcaps="text,accessible"
+				capname="text"
+				id="38c4519a-026d-48f1-ab74-6ed5584dbb1e"
+				name="txtReportingServices"
+				refimgid="eeec8c2c-bff1-4c54-bf39-a2527b7ebfab"
+				refpath="/form[@controlname='MainForm']/element[@controltypename='MdiClient']/form[@controlname='FirmSettingsForm']/container[@controlname='roundedPanelControl']/container[@controlname='panelScroll']/element[@controlname='amlblReport']/text[@accessiblerole='StaticText']"
+				searchtimeout="30000ms">
+					/form[@controlname='MainForm']/?/?/form[@controlname='FirmSettingsForm']//element[@controlname='amlblReport']/text[@accessiblerole='StaticText']
+				</item>
 				<basepath>
 					/form[@controlname='MainForm']/?/?/form[@controlname='FirmSettingsForm']
 				</basepath>
@@ -512,6 +522,16 @@ SUVORK5CYII=
 			searchtimeout="30000ms">
 				/form[@controlname='MainForm']/?/?/form[@controlname='NavigatorForm']/container[@controlname='roundedPanelControl']/container[@controlname='amicusGradientPanel1']//combobox[@controlname='acmbStartup']/button[@accessiblename='Open']
 			</item>
+			<item
+			addcaps="text,accessible"
+			capname="text"
+			id="d6aeb4c4-148a-43e2-8d53-ebb6bb644f00"
+			name="txtBilling"
+			refimgid="1c814eb4-090f-4cef-8f25-cace883f7278"
+			refpath="/form[@controlname='MainForm']/container[@controlname='pLeft']/container[@caption='' and @controltypename='Panel' and @instance='0']/container[@controlname='atcAttorneyOrAccounting']/container[@caption='' and @controltypename='AmicusTab' and @instance='1']/element[@controltypename='AmicusLabel']/text[@accessiblename='BILLING']"
+			searchtimeout="30000ms">
+				/form[@controlname='MainForm']/container[@controlname='pLeft']/?/?/container[@controlname='atcAttorneyOrAccounting']//text[@accessiblename='BILLING']
+			</item>
 			<basepath>
 				/form[@controlname='MainForm']
 			</basepath>
@@ -760,7 +780,7 @@ R9TKJFpJ8l5fzCcE+Q6ozFZt5OrldwAAAABJRU5ErkJggg==
 			addcaps="button,uiautomation,uiautomationinvoke"
 			capname="button"
 			id="c9ea5325-0467-446e-9e47-09c9c58a26cf"
-			name="Yes"
+			name="btnYes"
 			refimgid="039d6c51-02fa-42ff-809b-4315e748d77f"
 			refpath="/form[@controlname='PromptForm']/element[@controlname='_BaseForm_Toolbars_Dock_Area_Bottom']/toolbar/button[@automationid='[Toolbar : toolbarBaseDesigner Tools] Tool : TOOLBAR_BUTTON_OK - Index : 1 ']"
 			searchtimeout="30000ms">
@@ -795,6 +815,15 @@ R9TKJFpJ8l5fzCcE+Q6ozFZt5OrldwAAAABJRU5ErkJggg==
 			refpath="/form[@controlname='PromptForm']/container[@controlname='pnlBase']/container[@controlname='pnlControls']/container[@controlname='pnlDetails']/element[@controlname='ateDetails']/text[@controlname='_EmbeddableTextBox']/text[@accessiblerole='Text']"
 			searchtimeout="30000ms">
 				/form[@controlname='PromptForm']/container[@controlname='pnlBase']/?/?/container[@controlname='pnlDetails']//text[@accessiblerole='Text']
+			</item>
+			<item
+			addcaps="unknown,control,nativewindow"
+			capname="text"
+			id="929e8a14-07a7-4fdc-9dba-06fdb37606c1"
+			name="txtMessage"
+			refimgid="cc179c74-d65f-4cf0-9735-63e6872cf4f8"
+			searchtimeout="30000ms">
+				/form[@controlname='PromptForm']/container[@controlname='pnlBase']//element[@controlname='alblMessage']/text
 			</item>
 			<basepath>
 				/form[@controlname='PromptForm']
@@ -2535,6 +2564,157 @@ OsYqSDz+zwAAaK/nDj2T/r4AAAAASUVORK5CYII=
 			</item>
 			<basepath>
 				/form[@title~'Adobe Acrobat']
+			</basepath>
+		</appfolder>
+		<appfolder
+		capname="form"
+		id="d9d1684e-ce42-45c5-ac25-d51b6d7903b5"
+		isrooted="True"
+		name="ReportingServicesForm"
+		refimgid="e217f055-f82c-4cbc-8fc8-60a7683e2eb8"
+		searchtimeout="30000ms"
+		usecache="False">
+			<folder
+			addcaps="container,control,nativewindow"
+			capname="container"
+			id="7a999fee-3d6a-4e74-8b3d-9a3fb7a2200b"
+			isrooted="True"
+			name="PnlBase"
+			refpath="/form[@controlname='GeneralFirmSettingsXtraForm']/container[@controlname='pnlBase']"
+			searchtimeout="30000ms"
+			usecache="False">
+				<item
+				addcaps="button,accessible"
+				capname="button"
+				id="be7cb583-c77d-4c20-8be2-6754bc73da86"
+				name="btnEdit"
+				refimgid="cd7bb7a2-f1c8-4cd5-8d33-1d0973bd4e50"
+				refpath="/form[@controlname='GeneralFirmSettingsXtraForm']/container[@controlname='pnlBase']/container[@controlname='pnlControls']/container[@controlname='panelTitleBase']/container[@controlname='panelBase']/container[@controlname='panelReport']/element[@controlname='abtnChange']/button[@accessiblename='Edit']"
+				searchtimeout="30000ms">
+					/form[@controlname='GeneralFirmSettingsXtraForm']/container[@controlname='pnlBase']//container[@controlname='panelReport']/element[@controlname='abtnChange']/button[@accessiblename='Edit']
+				</item>
+				<item
+				addcaps="text,uiautomation,uiautomationvalue"
+				capname="text"
+				id="c53e55ff-5fd7-4e76-97bb-f91dd3f17bd8"
+				name="txtURL"
+				refimgid="9c8df76d-04d0-4828-a242-4fa505945b05"
+				refpath="/form[@controlname='GeneralFirmSettingsXtraForm']/container[@controlname='pnlBase']/container[@controlname='pnlControls']/container[@controlname='panelTitleBase']/container[@controlname='panelBase']/container[@controlname='panelReport']/element[@controlname='atxtRepURL']/text[@automationid='[Editor] Edit Area']"
+				searchtimeout="30000ms">
+					/form[@controlname='GeneralFirmSettingsXtraForm']/container[@controlname='pnlBase']//container[@controlname='panelReport']/element[@controlname='atxtRepURL']/text[@automationid='[Editor] Edit Area']
+				</item>
+				<item
+				addcaps="text,accessible"
+				capname="text"
+				id="8949d209-dc77-4ae0-96c5-5b1acb98fb24"
+				name="txtTitle"
+				refimgid="1ea5e314-a2a6-4c8d-8916-97ee1b3b9c98"
+				searchtimeout="30000ms">
+					/form[@controlname='GeneralFirmSettingsXtraForm']/container[@controlname='pnlBase']//element[@controlname='alblTitle']/text
+				</item>
+				<item
+				addcaps="button,accessible"
+				capname="button"
+				id="741a38bd-f857-44e0-a347-765dc07fff7e"
+				name="btnTest"
+				refimgid="240ba090-eac7-42b0-83cb-f94395050cab"
+				refpath="/form[@controlname='GeneralFirmSettingsXtraForm']/container[@controlname='pnlBase']/container[@controlname='pnlControls']/container[@controlname='panelTitleBase']/container[@controlname='panelBase']/container[@controlname='panelReport']/element[@controlname='abtnRepTestURL']/button[@accessiblename='Test']"
+				searchtimeout="30000ms">
+					/form[@controlname='GeneralFirmSettingsXtraForm']/container[@controlname='pnlBase']//container[@controlname='panelReport']/element[@controlname='abtnRepTestURL']/button[@accessiblename='Test']
+				</item>
+				<item
+				addcaps="button,accessible"
+				capname="button"
+				id="39ce7a9c-2464-460a-8e4e-ceb79dcd7b39"
+				name="btnConfigure"
+				refimgid="381d4087-abc1-4b5e-95d5-03cfa1adaf51"
+				refpath="/form[@controlname='GeneralFirmSettingsXtraForm']/container[@controlname='pnlBase']/container[@controlname='pnlControls']/container[@controlname='panelTitleBase']/container[@controlname='panelBase']/container[@controlname='panelReport']/element[@controlname='abtnConfigureSSRS']/button[@accessiblename='Configure']"
+				searchtimeout="30000ms">
+					/form[@controlname='GeneralFirmSettingsXtraForm']/container[@controlname='pnlBase']//container[@controlname='panelReport']/element[@controlname='abtnConfigureSSRS']/button[@accessiblename='Configure']
+				</item>
+				<item
+				addcaps="button,accessible"
+				capname="button"
+				id="91e55167-e8cd-490d-9dbb-8e291de35c97"
+				name="btnPublish"
+				refimgid="c4199b1c-e6bc-4f24-aa54-cfb0d5230ac7"
+				refpath="/form[@controlname='GeneralFirmSettingsXtraForm']/container[@controlname='pnlBase']/container[@controlname='pnlControls']/container[@controlname='panelTitleBase']/container[@controlname='panelBase']/container[@controlname='panelReport']/element[@controlname='abtnRepDeploy']/button[@accessiblename='Publish']"
+				searchtimeout="30000ms">
+					/form[@controlname='GeneralFirmSettingsXtraForm']/container[@controlname='pnlBase']//container[@controlname='panelReport']/element[@controlname='abtnRepDeploy']/button[@accessiblename='Publish']
+				</item>
+				<basepath>
+					/form[@controlname='GeneralFirmSettingsXtraForm']/container[@controlname='pnlBase']
+				</basepath>
+			</folder>
+			<item
+			addcaps="toolbar,accessible"
+			capname="toolbar"
+			id="0aadaf80-ed3d-4127-8de0-a982b7c2d054"
+			name="Toolbar"
+			refpath="/form[@controlname='GeneralFirmSettingsXtraForm']/element[@controlname='_BaseForm_Toolbars_Dock_Area_Bottom']/container[@accessiblename='DockBottom']/toolbar[@accessiblename='Toolbar']"
+			searchtimeout="30000ms">
+				/form[@controlname='GeneralFirmSettingsXtraForm']/element[@controlname='_BaseForm_Toolbars_Dock_Area_Bottom']/?/?/toolbar[@accessiblename='Toolbar']
+			</item>
+			<folder
+			addcaps="toolbar,accessible"
+			capname="toolbar"
+			id="379cf96d-4617-4263-8d72-3ca65be7e14a"
+			isrooted="True"
+			name="Toolbar1"
+			refpath="/form[@controlname='GeneralFirmSettingsXtraForm']/element[@controlname='_BaseForm_Toolbars_Dock_Area_Bottom']/container[@accessiblename='DockBottom']/toolbar[@accessiblename='Toolbar']"
+			searchtimeout="30000ms"
+			usecache="False">
+				<item
+				addcaps="button,accessible"
+				capname="button"
+				id="c6125d68-989d-4575-a191-b7c411bb1b27"
+				name="btnApply"
+				refpath="/form[@controlname='GeneralFirmSettingsXtraForm']/element[@controlname='_BaseForm_Toolbars_Dock_Area_Bottom']/container[@accessiblename='DockBottom']/toolbar[@accessiblename='Toolbar']/button[@accessiblename='Apply']"
+				searchtimeout="30000ms">
+					/form[@controlname='GeneralFirmSettingsXtraForm']//toolbar[@accessiblename='Toolbar']/button[@accessiblename='Apply']
+				</item>
+				<item
+				addcaps="button,accessible"
+				capname="button"
+				id="95e18fb0-1c87-4b95-91c5-d32ac4767667"
+				name="btnCancel"
+				refpath="/form[@controlname='GeneralFirmSettingsXtraForm']/element[@controlname='_BaseForm_Toolbars_Dock_Area_Bottom']/container[@accessiblename='DockBottom']/toolbar[@accessiblename='Toolbar']/button[@accessiblename='Cancel']"
+				searchtimeout="30000ms">
+					/form[@controlname='GeneralFirmSettingsXtraForm']//toolbar[@accessiblename='Toolbar']/button[@accessiblename='Cancel']
+				</item>
+				<item
+				addcaps="button,accessible"
+				capname="button"
+				id="17b3a6b6-3f84-4803-beb7-efc8d0a321c1"
+				name="btnNext"
+				refpath="/form[@controlname='GeneralFirmSettingsXtraForm']/element[@controlname='_BaseForm_Toolbars_Dock_Area_Bottom']/container[@accessiblename='DockBottom']/toolbar[@accessiblename='Toolbar']/button[@accessiblename='Next']"
+				searchtimeout="30000ms">
+					/form[@controlname='GeneralFirmSettingsXtraForm']//toolbar[@accessiblename='Toolbar']/button[@accessiblename='Next']
+				</item>
+				<item
+				addcaps="button,accessible"
+				capname="button"
+				id="d89e7f6e-6655-4a95-95d0-9411fcf118ac"
+				name="btnOk"
+				refpath="/form[@controlname='GeneralFirmSettingsXtraForm']/element[@controlname='_BaseForm_Toolbars_Dock_Area_Bottom']/container[@accessiblename='DockBottom']/toolbar[@accessiblename='Toolbar']/button[@accessiblename='OK']"
+				searchtimeout="30000ms">
+					/form[@controlname='GeneralFirmSettingsXtraForm']//toolbar[@accessiblename='Toolbar']/button[@accessiblename='OK']
+				</item>
+				<item
+				addcaps="button,accessible"
+				capname="button"
+				id="32371014-3e6d-4190-9635-43681869c776"
+				name="btnPrev"
+				refpath="/form[@controlname='GeneralFirmSettingsXtraForm']/element[@controlname='_BaseForm_Toolbars_Dock_Area_Bottom']/container[@accessiblename='DockBottom']/toolbar[@accessiblename='Toolbar']/button[@accessiblename='Prev']"
+				searchtimeout="30000ms">
+					/form[@controlname='GeneralFirmSettingsXtraForm']//toolbar[@accessiblename='Toolbar']/button[@accessiblename='Prev']
+				</item>
+				<basepath>
+					/form[@controlname='GeneralFirmSettingsXtraForm']//toolbar[@accessiblename='Toolbar']
+				</basepath>
+			</folder>
+			<basepath>
+				/form[@controlname='GeneralFirmSettingsXtraForm']
 			</basepath>
 		</appfolder>
 		<basepath>

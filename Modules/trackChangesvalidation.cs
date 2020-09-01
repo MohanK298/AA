@@ -46,9 +46,10 @@ namespace SmokeTest.Modules
         {
         	
         	
+        	client.MainForm.Self.Activate();
         	client.MainForm.sideBILLING.Click();
         	
-        	frm.MainForm.Self.Activate();
+        	frm.MainForm.btnOffice.Click();
         	frm.MainForm.View.Click();
         	frm.MainForm.FirmSettings1.Click();
         	frm.MainForm.FirmSettingsForm.lnkTrackChanges.Click();
@@ -99,6 +100,8 @@ namespace SmokeTest.Modules
             Keyboard.DefaultKeyPressTime = 100;
             Delay.SpeedFactor = 1.0;
             TrackChangesValidate();
+            cmn.closeDialog();
+            cmn.ClosePrompt();
         }
     }
 }

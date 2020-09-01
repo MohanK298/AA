@@ -16,6 +16,7 @@ using WinForms = System.Windows.Forms;
 using SmokeTest.Repositories;
 using SmokeTest.Repositories.Premium;
 using SmokeTest.Modules.Utilities;
+
 using Ranorex;
 using Ranorex.Core;
 using Ranorex.Core.Testing;
@@ -37,11 +38,17 @@ namespace SmokeTest.Modules
         }
         
         MergeTemplates mtemp=MergeTemplates.Instance; 
+        Preferences pref=Preferences.Instance;
+        FirmSettings fm=FirmSettings.Instance;
 		Common cmn=new Common();
         
         private void ValidateMergeTemplates()
         {
         	int count=0;
+        	fm.MainForm.Self.Activate();
+        	fm.MainForm.txtAttorney.Click();
+        	fm.MainForm.btnOffice.Click();
+        	Delay.Seconds(3);
         	mtemp.MainForm.MergeTemplates.Click();
         	
         	if(mtemp.DocumentTemplateManagementForm.SelfInfo.Exists(3000))

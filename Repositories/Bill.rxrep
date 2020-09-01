@@ -334,6 +334,26 @@ rxversion="9.0">
 				searchtimeout="30000ms">
 					/form[@controlname='MainForm']/?/?/form[@controlname='BaseIndexForm']/container[@controlname='menubar_Fill_Panel']//toolbar[@accessiblename='Toolbar']/?/?/menuitem[@accessiblename='Write Up/Down']
 				</item>
+				<item
+				addcaps="button,accessible"
+				capname="button"
+				id="30f0fb6a-4066-4d7a-85f0-bde7523bbe05"
+				name="btnRemovePaymentRequest"
+				refimgid="517f403c-37b5-4f7c-baa3-41de57fbe361"
+				refpath="/form[@controlname='MainForm']/element[@controltypename='MdiClient']/form[@controlname='BaseIndexForm']/container[@controlname='menubar_Fill_Panel']/element[@controlname='_BaseForm_Fill_Panel_Toolbars_Dock_Area_Top']/container[@accessiblename='DockTop']/toolbar[@accessiblename='Toolbar']/button[@accessiblename='Remove Payment Request']"
+				searchtimeout="30000ms">
+					/form[@controlname='MainForm']/?/?/form[@controlname='BaseIndexForm']/container[@controlname='menubar_Fill_Panel']//toolbar[@accessiblename='Toolbar']/button[@accessiblename='Remove Payment Request']
+				</item>
+				<item
+				addcaps="button,accessible"
+				capname="button"
+				id="d546b6d8-423d-4e7b-8df8-aeb05c2e055c"
+				name="btnAddPaymentRequest"
+				refimgid="4b1250c6-804c-4332-9e5b-98b7a455d680"
+				refpath="/form[@controlname='MainForm']/element[@controltypename='MdiClient']/form[@controlname='BaseIndexForm']/container[@controlname='menubar_Fill_Panel']/element[@controlname='_BaseForm_Fill_Panel_Toolbars_Dock_Area_Top']/container[@accessiblename='DockTop']/toolbar[@accessiblename='Toolbar']/button[@accessiblename='Add Payment Request']"
+				searchtimeout="30000ms">
+					/form[@controlname='MainForm']/?/?/form[@controlname='BaseIndexForm']/container[@controlname='menubar_Fill_Panel']//toolbar[@accessiblename='Toolbar']/button[@accessiblename='Add Payment Request']
+				</item>
 				<basepath>
 					/form[@controlname='MainForm']/?/?/form[@controlname='BaseIndexForm']/container[@controlname='menubar_Fill_Panel']//toolbar[@accessiblename='Toolbar']
 				</basepath>
@@ -365,6 +385,97 @@ rxversion="9.0">
 			refimgid="2bcbdfbb-051e-4d4e-8d68-c65baecb6c6a"
 			searchtimeout="30000ms">
 				/form[@controlname='MainForm']/?/?/form[@controlname='BaseIndexForm']//tree[@automationid='ColScrollRegion: 0, RowScrollRegion: 0']/treeitem[@automationid=$index]/checkbox
+			</item>
+			<item
+			addcaps="menuitem,accessible"
+			capname="menuitem"
+			id="19e7b0ed-d08b-4adf-b3f0-b319416ad71e"
+			name="NewBill"
+			refpath="/form[@controlname='MainForm']/element[@controlname='_BaseModuleForm_Toolbars_Dock_Area_Top']/container[@accessiblename='DockTop']/menubar[@accessiblename='Toolbar']/menuitem[@accessiblename='Actions']/menuitem[@accessiblename='New Bill']"
+			searchtimeout="30000ms">
+				/form[@controlname='MainForm']/element[@controlname='_BaseModuleForm_Toolbars_Dock_Area_Top']//menuitem[@accessiblename='Actions']/menuitem[@accessiblename='New Bill']
+			</item>
+			<item
+			addcaps="menuitem,accessible"
+			capname="menuitem"
+			id="4d9c172c-6426-4da4-89fa-6e6564f59bc2"
+			name="ReceivePayment1"
+			refpath="/form[@controlname='MainForm']/element[@controlname='_BaseModuleForm_Toolbars_Dock_Area_Top']/container[@accessiblename='DockTop']/menubar[@accessiblename='Toolbar']/menuitem[@accessiblename='Actions']/menuitem[@accessiblename='Receive Payment']"
+			searchtimeout="30000ms">
+				/form[@controlname='MainForm']/element[@controlname='_BaseModuleForm_Toolbars_Dock_Area_Top']//menuitem[@accessiblename='Actions']/menuitem[@accessiblename='Receive Payment']
+			</item>
+			<item
+			addcaps="menuitem,accessible"
+			capname="menuitem"
+			id="991f9e4a-ba11-49dc-950c-a5e74e551589"
+			name="TrustTransferToAR"
+			refpath="/form[@controlname='MainForm']/element[@controlname='_BaseModuleForm_Toolbars_Dock_Area_Top']/container[@accessiblename='DockTop']/menubar[@accessiblename='Toolbar']/menuitem[@accessiblename='Actions']/menuitem[@accessiblename='Trust Transfer to AR']"
+			searchtimeout="30000ms">
+				/form[@controlname='MainForm']/element[@controlname='_BaseModuleForm_Toolbars_Dock_Area_Top']//menuitem[@accessiblename='Actions']/menuitem[@accessiblename='Trust Transfer to AR']
+			</item>
+			<item
+			addcaps="menuitem,accessible"
+			capname="menuitem"
+			id="03c8e1ec-9695-44a6-b4af-fee6f61484d6"
+			name="ReminderStatement"
+			refpath="/form[@controlname='MainForm']/element[@controlname='_BaseModuleForm_Toolbars_Dock_Area_Top']/container[@accessiblename='DockTop']/menubar[@accessiblename='Toolbar']/menuitem[@accessiblename='Actions']/menuitem[@accessiblename='Reminder Statement']"
+			searchtimeout="30000ms">
+				/form[@controlname='MainForm']/element[@controlname='_BaseModuleForm_Toolbars_Dock_Area_Top']//menuitem[@accessiblename='Actions']/menuitem[@accessiblename='Reminder Statement']
+			</item>
+			<item
+			addcaps="menuitem,accessible"
+			capname="menuitem"
+			id="bb6e7325-9283-4e59-98e9-74e42d28f09b"
+			name="WriteUpDown"
+			refpath="/form[@controlname='MainForm']/element[@controlname='_BaseModuleForm_Toolbars_Dock_Area_Top']/container[@accessiblename='DockTop']/menubar[@accessiblename='Toolbar']/menuitem[@accessiblename='Actions']/menuitem[@accessiblename='Write Up/Down']"
+			searchtimeout="30000ms">
+				/form[@controlname='MainForm']/element[@controlname='_BaseModuleForm_Toolbars_Dock_Area_Top']//menuitem[@accessiblename='Actions']/menuitem[@accessiblename='Write Up/Down']
+			</item>
+			<item
+			addcaps="menuitem,accessible"
+			capname="menuitem"
+			id="f8f50255-2292-48b7-9072-4ae3c487c0e4"
+			name="DeleteBillPayment"
+			refpath="/form[@controlname='MainForm']/element[@controlname='_BaseModuleForm_Toolbars_Dock_Area_Top']/container[@accessiblename='DockTop']/menubar[@accessiblename='Toolbar']/menuitem[@accessiblename='Actions']/menuitem[@accessiblename='Delete Bill/Payment']"
+			searchtimeout="30000ms">
+				/form[@controlname='MainForm']/element[@controlname='_BaseModuleForm_Toolbars_Dock_Area_Top']//menuitem[@accessiblename='Actions']/menuitem[@accessiblename='Delete Bill/Payment']
+			</item>
+			<item
+			addcaps="menuitem,accessible"
+			capname="menuitem"
+			id="f8f55bfe-eea9-45e8-a41e-a55a3ba18f24"
+			name="ResendPaymentRequest"
+			refpath="/form[@controlname='MainForm']/element[@controlname='_BaseModuleForm_Toolbars_Dock_Area_Top']/container[@accessiblename='DockTop']/menubar[@accessiblename='Toolbar']/menuitem[@accessiblename='Actions']/menuitem[@accessiblename='Resend Payment Request']"
+			searchtimeout="30000ms">
+				/form[@controlname='MainForm']/element[@controlname='_BaseModuleForm_Toolbars_Dock_Area_Top']//menuitem[@accessiblename='Actions']/menuitem[@accessiblename='Resend Payment Request']
+			</item>
+			<item
+			addcaps="menuitem,accessible"
+			capname="menuitem"
+			id="1a998aff-5bfa-4929-930d-aa385958e575"
+			name="Actions1"
+			refpath="/form[@controlname='MainForm']/element[@controlname='_BaseModuleForm_Toolbars_Dock_Area_Top']/container[@accessiblename='DockTop']/menubar[@accessiblename='Toolbar']/menuitem[@accessiblename='Actions']"
+			searchtimeout="30000ms">
+				/form[@controlname='MainForm']/element[@controlname='_BaseModuleForm_Toolbars_Dock_Area_Top']//menuitem[@accessiblename='Actions']
+			</item>
+			<item
+			addcaps="table,accessible"
+			capname="table"
+			id="0ba013a3-becb-43df-9ab8-98f9ccead5e5"
+			name="tblBilling"
+			refimgid="2d476347-8217-4668-9758-e70d40911e3a"
+			refpath="/form[@controlname='MainForm']/element[@controltypename='MdiClient']/form[@controlname='BaseIndexForm']/element[@controlname='agrdBillList']/table[@accessiblename='Band 0']"
+			searchtimeout="30000ms">
+				/form[@controlname='MainForm']/?/?/form[@controlname='BaseIndexForm']/?/?/table[@accessiblename='Band 0']
+			</item>
+			<item
+			addcaps="checkbox,uiautomation,uiautomationinvoke,uiautomationtoggle,uiautomationvalue"
+			capname="checkbox"
+			id="83cf2a7c-f661-4df1-8bc0-54794c88a1c6"
+			name="cbRowSelect"
+			refimgid="43b462bf-5c9a-4ca1-bec0-4ee28238a9d9"
+			searchtimeout="30000ms">
+				/form[@controlname='MainForm']/?/?/form[@controlname='BaseIndexForm']//tree/treeitem[@automationid=$rowNo]/checkbox
 			</item>
 			<basepath>
 				/form[@controlname='MainForm']
@@ -1539,9 +1650,17 @@ D8zerL8gSEaw7+rFqJ//CkX5CWkHqyZHVzU6AAAAAElFTkSuQmCC
 			id="238c0327-88d3-494c-9164-e200dbf68635"
 			name="tblInvoiceForm"
 			refimgid="de960d83-7b32-4c89-a3be-2983a027c517"
-			refpath="/form[@controlname='InvoiceEmailForm']/container[@controlname='pnlBase']/container[@controlname='pnlControls']/element[@controlname='agrdInvoiceEmail']/table[@accessiblename='Band 0']"
 			searchtimeout="30000ms">
 				/form[@controlname='InvoiceEmailForm']/container[@controlname='pnlBase']//table[@accessiblename='Band 0']
+			</item>
+			<item
+			addcaps="cell,accessible"
+			capname="cell"
+			id="c553600b-b233-4990-a13d-64606527a355"
+			name="cbAPXPayment"
+			refimgid="8845e3da-fe08-4418-8bf2-f5b18bc93e4e"
+			searchtimeout="30000ms">
+				/form[@controlname='InvoiceEmailForm']/container[@controlname='pnlBase']//table[@accessiblename='Band 0']/row/cell[2]
 			</item>
 			<basepath>
 				/form[@controlname='InvoiceEmailForm']
@@ -1586,9 +1705,8 @@ D8zerL8gSEaw7+rFqJ//CkX5CWkHqyZHVzU6AAAAAElFTkSuQmCC
 			id="930d5d66-4537-45bc-8bd9-b9316b17101e"
 			name="txtFileName"
 			refimgid="95eef4f8-d87c-4eb0-84e1-124f818f85e0"
-			refpath="/form[@controlname='ReportViewerForm']/container[@controlname='panelViewer']/container[@controlname='reportViewer']/container[@controlname='paramsSplitContainer']/container[@controlname='tableLayoutPanel1']/container[@controlname='panel2']/container[@controlname='dmSplitContainer']/container[@controlname='tableLayoutPanel1']/container[@controlname='panel2']/container[@controlname='winRSviewer']/container[@controlname='m_reportPanel']/container[@accessiblename='Report']/container[@accessiblename='Body']/container[@accessiblename='Rectangle']/container[@accessiblename='Rectangle']/container[1]/text[4]"
 			searchtimeout="30000ms">
-				/form[@controlname='ReportViewerForm']/container[@controlname='panelViewer']/container[@controlname='reportViewer']/container[@controlname='paramsSplitContainer']//container[@controlname='dmSplitContainer']//container[@controlname='winRSviewer']/?/?/container[@accessiblename='Report']/container/container[@accessiblename='Rectangle']/container[@accessiblename='Rectangle']/container[1]/text[4]
+				/form[@controlname='ReportViewerForm']/container[@controlname='panelViewer']/container[@controlname='reportViewer']/container[@controlname='paramsSplitContainer']//container[@controlname='dmSplitContainer']//container[@controlname='winRSviewer']/?/?/container[@accessiblename='Report']/container/container[@accessiblename='Rectangle']/container[@accessiblename='Rectangle']/container[1]/text[7]
 			</item>
 			<item
 			addcaps="text,accessible"
@@ -1797,6 +1915,26 @@ DAPIxVgFicf/GQCdrAkiuOdOjQAAAABJRU5ErkJggg==
 			searchtimeout="30000ms">
 				/form[@controlname='FileSelectForm']//button[@automationid='[Editor] dropdown button']
 			</item>
+			<item
+			addcaps="row,accessible"
+			capname="row"
+			id="001a3068-c312-4000-a852-aca7b9308d71"
+			name="firstRowSelected"
+			refimgid="efca3b6b-e489-49bb-92a6-697278c396f2"
+			refpath="/form[@controlname='FileSelectForm']/container[@controlname='panel1']/element[@controlname='udgSelection']/table[@accessiblename='ArrayList']/row[@accessiblename='ArrayList row 1']"
+			searchtimeout="30000ms">
+				/form[@controlname='FileSelectForm']//table[@accessiblename='ArrayList']/row[@accessiblename='ArrayList row 1']
+			</item>
+			<item
+			addcaps="button,accessible"
+			capname="button"
+			id="53e88a61-aaa9-483d-81bc-498658a55f59"
+			name="btnRemoveFile"
+			refimgid="14e95c99-430b-4d6a-8fa4-e0c6a8af31d8"
+			refpath="/form[@controlname='FileSelectForm']/container[@controlname='panel1']/element[@controlname='ubtnRemove']/button[@accessiblename='&lt;']"
+			searchtimeout="30000ms">
+				/form[@controlname='FileSelectForm']/container[@controlname='panel1']/?/?/button[@accessiblename='&lt;']
+			</item>
 			<basepath>
 				/form[@controlname='FileSelectForm']
 			</basepath>
@@ -1948,6 +2086,16 @@ SUVORK5CYII=
 			searchtimeout="30000ms">
 				/form[@controlname='FileDetailForm']/container[@controlname='panelPicBackground']//toolbar[@automationid='Toolbar : toolbar']/button[@name='Save &amp; Close']
 			</item>
+			<item
+			addcaps="treeitem,accessible"
+			capname="treeitem"
+			id="c52bc543-0d3f-4c81-be51-9f2d59a2c0bd"
+			name="Accounting"
+			refimgid="d4573980-2216-4549-99d6-03534068f2a9"
+			refpath="/form[@controlname='FileDetailForm']/container[@controlname='panelLeftBase']/container[@controlname='panelLeft']/element[@controlname='utreeFacts']/tree[@accessiblerole='Outline']/treeitem[@accessiblename='Accounting']"
+			searchtimeout="30000ms">
+				/form[@controlname='FileDetailForm']/container[@controlname='panelLeftBase']/?/?/element[@controlname='utreeFacts']/?/?/treeitem[@accessiblename='Accounting']
+			</item>
 			<basepath>
 				/form[@controlname='FileDetailForm']
 			</basepath>
@@ -2004,11 +2152,10 @@ AElFTkSuQmCC
 		isrooted="True"
 		name="PdfBillImage"
 		refimgid="32f9d248-0e0c-4831-bb06-7a402c9f5653"
-		refpath="/form[@title='BillImage1.pdf - Adobe Acrobat Reader DC']"
 		searchtimeout="30000ms"
 		usecache="True">
 			<basepath>
-				/form[@title&gt;'BillImage1.pdf - Adobe Acrobat']
+				/form[@title~'BillImage']
 			</basepath>
 			<icon>
 				iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACx
@@ -2089,6 +2236,251 @@ ZqQtL10mB5EAAAAASUVORK5CYII=
 				/form[@controlname='PaymentDistributionForm']
 			</basepath>
 		</appfolder>
+		<appfolder
+		addcaps="container,webdocument"
+		capname="webdocument"
+		id="63431a7c-08b8-4012-b601-d440d3de83c5"
+		isrooted="True"
+		name="APXPayment"
+		refimgid="76d665c0-76c2-40a9-8d09-57f96ae5be02"
+		refpath="/dom[@domain='apxtest.abacusnext.com']"
+		searchtimeout="30000ms"
+		usecache="False">
+			<folder
+			addcaps="unknown,webelement,divtag"
+			capname="divtag"
+			id="13ceffac-1b49-4e66-9d22-845ba291da7a"
+			isrooted="True"
+			name="Jss107Jss128"
+			refpath="/dom[@domain='apxtest.abacusnext.com']//div[#'root']/div/div/div/div"
+			searchtimeout="30000ms"
+			usecache="False">
+				<item
+				addcaps="unknown,webelement,spantag"
+				capname="spantag"
+				id="366eda3c-5f25-4a0e-8878-c18addc11a42"
+				name="ViewBill"
+				refimgid="349cbd84-07a8-441f-822d-096d83751c6c"
+				refpath="/dom[@domain='apxtest.abacusnext.com']//div[#'root']/div/div/div/div/div[2]/div/div[1]/button/span[@innertext='View Bill']"
+				searchtimeout="30000ms">
+					/dom[@domain='apxtest.abacusnext.com']//div[#'root']/div/div/div/div/div[2]/div/div[1]/?/?/span[@innertext='View Bill']
+				</item>
+				<item
+				addcaps="unknown,webelement,labeltag"
+				capname="labeltag"
+				id="db6c8749-9d73-40fa-8743-132445be8a22"
+				name="lblDueAmt"
+				refimgid="4c90ac62-8bb6-4bf7-9531-1dac30bd809e"
+				searchtimeout="30000ms">
+					/dom[@domain='apxtest.abacusnext.com']//div[#'root']/div/div/div/div/div[2]/div/div[2]/label[@class='pf_due_text']
+				</item>
+				<item
+				addcaps="unknown,webelement,inputtag"
+				capname="inputtag"
+				id="12807655-c0e6-4875-99aa-7fa6654e943e"
+				name="txtNameoncard"
+				refimgid="d538bfa3-c86c-4212-a47f-46efece351f9"
+				refpath="/dom[@domain='apxtest.abacusnext.com']//div[#'root']/div/div/div/div/div[4]/div/div/input[@name='nameoncard']"
+				searchtimeout="30000ms">
+					/dom[@domain='apxtest.abacusnext.com']//div[#'root']/div/div/div/div/div[4]/?/?/div/input[@name='nameoncard']
+				</item>
+				<item
+				addcaps="unknown,webelement,inputtag"
+				capname="inputtag"
+				id="21ebbc90-e563-4eff-b606-7bc6cd5b8839"
+				name="txtCcnumber"
+				refimgid="84ef6a5c-ed1f-4a1a-8ef5-1ab4fa8e15ff"
+				refpath="/dom[@domain='apxtest.abacusnext.com']//div[#'root']/div/div/div/div/div[5]/div/div/input[@name='ccnumber']"
+				searchtimeout="30000ms">
+					/dom[@domain='apxtest.abacusnext.com']//div[#'root']/div/div/div/div/div[5]/?/?/div/input[@name='ccnumber']
+				</item>
+				<item
+				addcaps="unknown,webelement,divtag"
+				capname="divtag"
+				id="11efe860-fc08-48d0-b782-64c264e968d3"
+				name="dpdwnExpiryMonth"
+				refimgid="60420972-b49a-4ec9-bb97-dd21e2dfe16d"
+				refpath="/dom[@domain='apxtest.abacusnext.com']//div[#'root']/div/div/div/div/div[6]/div/div/div/div"
+				searchtimeout="30000ms">
+					/dom[@domain='apxtest.abacusnext.com']//div[#'root']/div/div/div/div/div[6]/div/div/?/?/div
+				</item>
+				<item
+				addcaps="unknown,webelement,divtag"
+				capname="divtag"
+				id="8ee25338-02bb-40eb-b327-45762825ad22"
+				name="dpdwnYear"
+				refimgid="7766b21e-5f74-4a0f-bd7d-77509de1ae71"
+				refpath="/dom[@domain='apxtest.abacusnext.com']//div[#'root']/div/div/div/div/div[7]/div/div/div/div"
+				searchtimeout="30000ms">
+					/dom[@domain='apxtest.abacusnext.com']//div[#'root']/div/div/div/div/div[7]/div/div/?/?/div
+				</item>
+				<item
+				addcaps="unknown,webelement,inputtag"
+				capname="inputtag"
+				id="ba57021f-88ca-41bc-b3e3-8013331a90ad"
+				name="txtBillingAddress"
+				refimgid="71c59d2f-e547-44b8-a4b9-831b12ba1e96"
+				refpath="/dom[@domain='apxtest.abacusnext.com']//div[#'root']/div/div/div/div/div[8]/div/div/input[@name='']"
+				searchtimeout="30000ms">
+					/dom[@domain='apxtest.abacusnext.com']//div[#'root']/div/div/div/div/div[8]/?/?/div/input[@name='']
+				</item>
+				<item
+				addcaps="unknown,webelement,inputtag"
+				capname="inputtag"
+				id="f7721c67-8235-4c63-8b72-89bd800d4ec5"
+				name="txtCity"
+				refimgid="f430e02a-b9db-48be-96aa-95a5198f60a0"
+				refpath="/dom[@domain='apxtest.abacusnext.com']//div[#'root']/div/div/div/div/div[9]/div/div/input[@name='']"
+				searchtimeout="30000ms">
+					/dom[@domain='apxtest.abacusnext.com']//div[#'root']/div/div/div/div/div[9]/?/?/div/input[@name='']
+				</item>
+				<item
+				addcaps="unknown,webelement,divtag"
+				capname="divtag"
+				id="524ea64e-857f-4cff-8704-9e9543f9ae61"
+				name="dpdwnCountry"
+				refimgid="d6cadbd6-bd81-456f-8ff9-34f98e6c6865"
+				refpath="/dom[@domain='apxtest.abacusnext.com']//div[#'root']/div/div/div/div/div[10]/div/div/div/div"
+				searchtimeout="30000ms">
+					/dom[@domain='apxtest.abacusnext.com']//div[#'root']/div/div/div/div/div[10]/div/div/?/?/div
+				</item>
+				<item
+				addcaps="unknown,webelement,divtag"
+				capname="divtag"
+				id="1ae7cdeb-5aca-44f6-97ab-b49b25582fa7"
+				name="dpdwnState"
+				refimgid="7a821f54-228b-4435-9950-9a859ced5d43"
+				refpath="/dom[@domain='apxtest.abacusnext.com']//div[#'root']/div/div/div/div/div[11]/div/div/div/div"
+				searchtimeout="30000ms">
+					/dom[@domain='apxtest.abacusnext.com']//div[#'root']/div/div/div/div/div[11]/div/div/?/?/div
+				</item>
+				<item
+				addcaps="unknown,webelement,inputtag"
+				capname="inputtag"
+				id="ed54f45c-2789-4ae0-875e-a36a329d05ad"
+				name="txtZipCode"
+				refimgid="a153b75f-91b5-4322-a5eb-57e3b56b0f70"
+				refpath="/dom[@domain='apxtest.abacusnext.com']//div[#'root']/div/div/div/div/div[12]/div/div/input[@name='']"
+				searchtimeout="30000ms">
+					/dom[@domain='apxtest.abacusnext.com']//div[#'root']/div/div/div/div/div[12]/?/?/div/input[@name='']
+				</item>
+				<item
+				addcaps="unknown,webelement,inputtag"
+				capname="inputtag"
+				id="284e1e84-b65a-44ee-9485-1840105096d2"
+				name="txtEmailAddress"
+				refimgid="12c94f5e-7367-4f4b-98b0-0fb2e1b2f335"
+				refpath="/dom[@domain='apxtest.abacusnext.com']//div[#'root']/div/div/div/div/div[13]/div/div/div/div/input[@name='']"
+				searchtimeout="30000ms">
+					/dom[@domain='apxtest.abacusnext.com']//div[#'root']/div/div/div/div/div[13]/div/div/div/div/input[@name='']
+				</item>
+				<item
+				addcaps="unknown,webelement,spantag"
+				capname="spantag"
+				id="f433aead-58a9-4b1c-8350-9296f6bc0c8d"
+				name="btnPayNow"
+				refimgid="da98cdfa-faca-4ae4-9d5c-007846899d21"
+				refpath="/dom[@domain='apxtest.abacusnext.com']//div[#'root']/div/div/div/div/div[14]/div/button/span[@innertext='Pay Now']"
+				searchtimeout="30000ms">
+					/dom[@domain='apxtest.abacusnext.com']//div[#'root']/div/div/div/div/div[14]//span[@innertext='Pay Now']
+				</item>
+				<item
+				addcaps="unknown,webelement,divtag"
+				capname="divtag"
+				id="da87004b-8b70-4bf1-84c3-28f727546c3c"
+				name="lblPaymentSuccessful"
+				refimgid="100a904b-76ed-484d-9969-1492b1c227a8"
+				refpath="/dom[@domain='apxtest.abacusnext.com']//div[#'root']/div/div/div/div[2]/div[@innertext='Payment Successful']"
+				searchtimeout="30000ms">
+					/dom[@domain='apxtest.abacusnext.com']//div[#'root']/div/div/div/div/div[@innertext='Payment Successful']
+				</item>
+				<item
+				addcaps="unknown,webelement,divtag"
+				capname="divtag"
+				id="510b491d-9366-4906-87de-7d7400eba9ee"
+				name="lblInfoTable"
+				refimgid="43829b79-aa81-408c-b3dc-0a3a8fdca0d0"
+				searchtimeout="30000ms">
+					/dom[@domain='apxtest.abacusnext.com']//div[#'root']/div/div/div/div/div[@class&gt;'cpf_info_table']
+				</item>
+				<item
+				addcaps="unknown,webelement,spantag"
+				capname="spantag"
+				id="26d9a2a3-70c3-4b74-8291-9dedf6d978d1"
+				name="lnkViewReceipt"
+				refimgid="655bf806-334e-410c-8426-e6adccc0a3ff"
+				refpath="/dom[@domain='apxtest.abacusnext.com']//div[#'root']/div/div/div/div[4]/button/span[@innertext='View Receipt']"
+				searchtimeout="30000ms">
+					/dom[@domain='apxtest.abacusnext.com']//div[#'root']/div/div/div/div/?/?/span[@innertext='View Receipt']
+				</item>
+				<basepath>
+					/dom[@domain='apxtest.abacusnext.com']//div[#'root']/div/div/div/div
+				</basepath>
+			</folder>
+			<item
+			addcaps="unknown,webelement,litag"
+			capname="litag"
+			id="65580a98-a754-418c-9b88-a2eef97bdadb"
+			name="dpdwnListItem"
+			refimgid="9402e5ab-9604-4ef9-8238-362b19318bf1"
+			searchtimeout="30000ms">
+				/dom[@domain='apxtest.abacusnext.com']/body//ul/li[@innertext~$dpValue]
+			</item>
+			<item
+			addcaps="unknown,webelement,divtag"
+			capname="divtag"
+			id="b9427831-7c7f-4c31-9578-6f7943ab90a3"
+			name="lblInvalidLink"
+			refimgid="d5ef6d1e-bf67-4aed-b1a1-48aa13501ea1"
+			refpath="/dom[@domain='apxtest.abacusnext.com']/body/div/div[1]/div/div[@innertext='                    Invalid Link                ']"
+			searchtimeout="30000ms">
+				/dom[@domain='apxtest.abacusnext.com']/body/div/div[1]/?/?/div[@innertext&gt;'                    Invalid']
+			</item>
+			<item
+			addcaps="unknown,webelement,divtag"
+			capname="divtag"
+			id="3596ece2-73d6-4d81-80b1-011afe520d4c"
+			name="lblInvalidLnkMsg"
+			refimgid="51b4b686-1f66-4f0b-b145-24e1b0d54889"
+			searchtimeout="30000ms">
+				/dom[@domain='apxtest.abacusnext.com']/body/div/div[2]/div[@class&gt;'cpf_info_table']
+			</item>
+			<item
+			capname="divtag"
+			id="3ebd6959-29ad-428c-801e-1cf9917a1a8c"
+			name="lblThnkyouMsgInvalid"
+			searchtimeout="30000ms">
+				/dom[@domain='apxtest.abacusnext.com']/body/div/div[2]/div[@class&gt;'cpf_info_table_thank']
+			</item>
+			<item
+			addcaps="unknown,webelement,tabletag"
+			capname="tabletag"
+			id="be8acc92-9ab9-4d20-9223-5f410d2fff47"
+			name="tbPaymentSummary"
+			refimgid="a74bf66e-d493-4308-bfca-51f1d43e5775"
+			refpath="/dom[@domain='apxtest.abacusnext.com']//div[#'print_div']/table[2]"
+			searchtimeout="30000ms">
+				/dom[@domain='apxtest.abacusnext.com']//div[#'print_div']/table[2]
+			</item>
+			<basepath>
+				/dom[@domain='apxtest.abacusnext.com']
+			</basepath>
+			<icon>
+				iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAALGPC/xhBQAAACBjSFJN
+AAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAGHRFWHRTb2Z0d2FyZQBQYWlu
+dC5ORVQgdjMuMzE3g3eGAAACKklEQVQ4T43R20vTcRjHcS/6G4Kgyy6KKKjwJogIDBJjIBUt2YVD
+yoGVmWUWzozMC92YaWqeSE1s0dThOtjBWUlKkMxDudXU1lCU6XSepzu82+/nvNrX6APP1e95Xt/f
+9/vEbaWh7TO1xi4qmjspfWKhuLqN++VGtLqn5BTVk1lQRbRVHGn4X8nTNclYtD020smBYDjaHhsJ
+cIxPbY8YIr+9viEGgqGwDBxLvixXfGJaLCLdedUfCwRDyPDKWoiF5SAuT0AMSA+2BXhXZqmydFBu
+bkfbmkFpayPOyQW8CwHs7jUxIN1NOkEa1llLGA7bsYX7KbTd4GiuiUuVbxhyzTMwuiwGpFX5lkLU
+dFjJ+55Mw5yGGpsRtX6Kk2Ue9jWewtBRx9eRJTEg7XnWF+TBo25SzUmo3inINLjIKoPD1QXsbNvN
+6fxr9Az5xIDm9kOm5gLce+xEW/aF1BYlCmshSr2PMxm32HV3B8ez0/jQPycG1NklTMxsUGUaQaMD
+lc7EIcse4vXJJF18xX7FVUpq6njd5xUDKVeKcE2v4xib52bxIAdza9mbf4CE9OscUZo5q3nO295p
+zD0zYuBcegHOCb+8KpvDi6G5hRMX8klIKaei6b083PdjCdNHjxhQqO/gcPsj77CB27PO2OQa9j+r
+8tq+/VyODC/yaXBxeyBRlUPv8Dzt3eO86PrNs85Rml7+ot7soLrVTqVpsypMTjGQcD5L/vC/tTkV
+F/cXNG0rDkAnVtkAAAAASUVORK5CYII=
+			</icon>
+		</appfolder>
 		<basepath>
 		</basepath>
 	</rootfolder>
@@ -2100,6 +2492,14 @@ ZqQtL10mB5EAAAAASUVORK5CYII=
 		<var
 		id="6be4d18a-d736-4636-8815-76fd7930c27d"
 		name="lstdpdwnType">
+		</var>
+		<var
+		id="326663fe-5f02-4565-9c05-f9afcd4f3e63"
+		name="dpValue">
+		</var>
+		<var
+		id="1ef9318f-adc5-40ae-a9e8-b8d479f660b0"
+		name="rowNo">
 		</var>
 	</variables>
 </repository>

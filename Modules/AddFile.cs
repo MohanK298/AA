@@ -122,6 +122,7 @@ namespace SmokeTest.Modules
         	Validate.Equals(file.FileDetailForm.titlebarFileDetail.Text, fileName + time);
         	Delay.Seconds(3);
         	
+        	file.FileDetailForm.Self.Maximize();
         	
         	file.FileDetailForm.Admin.Click();
         	Delay.Seconds(1);
@@ -134,7 +135,11 @@ namespace SmokeTest.Modules
         	file.FileDetailForm.matterID.TextValue = (time.Equals("")) ? System.DateTime.Now.ToString() : time.TrimStart('2');
         	
         	Delay.Seconds(1);
-        	file.FileDetailForm.btnSaveClose.Click();
+        	if(file.FileDetailForm.btnSaveCloseInfo.Exists(3000))
+        	{
+        		file.FileDetailForm.btnSaveClose.Focus();
+        		file.FileDetailForm.btnSaveClose.Click();
+        	}
         	if(file.FileDetailForm.btnSaveCloseInfo.Exists())
         	{
         		file.FileDetailForm.btnSaveClose.Click();	

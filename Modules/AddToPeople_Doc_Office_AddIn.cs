@@ -64,7 +64,7 @@ namespace SmokeTest.Modules
  					Report.Success("Amicus Tasks Toolbar successfully seen in the Word Document");
         			wapp.WordDocument.tabAmicusTasks.Click();
         		
-        		if(wapp.WordDocument.AmicusAttorneyTasks1.btnAddToPeopleInfo.Exists(3000))
+        		if(wapp.WordDocument.AmicusAttorneyTasks1.btnAddToPeople.Enabled)
         		{
         			
         			Report.Success("Add To People Button button enabled for Existing Document associated to a File");
@@ -142,6 +142,7 @@ namespace SmokeTest.Modules
             Keyboard.DefaultKeyPressTime = 100;
             Delay.SpeedFactor = 1.0;
             AddtoPeopleDoc();
+            CloseProcess();
         }
     }
 }

@@ -40,7 +40,7 @@ namespace SmokeTest.Modules
         Common cmn=new Common();
         FirmSettings frm=FirmSettings.Instance;
         
-        private void FirmSettingsEmailBills()
+        public void FirmSettingsEmailBills()
         {
         	bclient.MainForm.Self.Activate();
         	bclient.MainForm.sideBILLING.Click();
@@ -51,21 +51,29 @@ namespace SmokeTest.Modules
         	
         	frm.MainForm.FirmSettingsForm.txtBillingEmailingBills.Click();
         	
-        	if(frm.BillingFirmSettingsForm.SelfInfo.Exists(3000))
+        	if(frm.BillingFirmSettingsForm.SelfInfo.Exists(5000))
         	{
+        		frm.BillingFirmSettingsForm.Self.Maximize();
         		Report.Success("Billing Abacus Payment Exchange form is displayed successfully.");
         		Validate.AttributeContains(frm.BillingFirmSettingsForm.PnlBase.cmbbxEmailBehaviourInfo,"Text","Send Bill E-mails to Draft Folder","Email Behaviour Dropdown has the value Send Bill E-mails to Draft Folder");
         		
         		Validate.Exists(frm.BillingFirmSettingsForm.PnlBase.cbAPXRequestTurnedOnForNewFilesInfo," APX Request turned ON for new files is displayed as expected");
-        		Validate.Exists(frm.BillingFirmSettingsForm.PnlBase.cbEMailBillsTurnedOnForNewFiles,"Email Bills turned ON for new files is displayed as expected");
-        		frm.BillingFirmSettingsForm.PnlBase.cbEMailBillsTurnedOnForNewFiles.Check();
-        		frm.BillingFirmSettingsForm.PnlBase.cbAPXRequestTurnedOnForNewFiles.Check();
+        		Validate.Exists(frm.BillingFirmSettingsForm.PnlBase.cbEMailBillsTurnedOnForNewFilesInfo,"Email Bills turned ON for new files is displayed as expected");
+        		if(!frm.BillingFirmSettingsForm.PnlBase.cbEMailBillsTurnedOnForNewFiles.Checked)
+        		{
+        			frm.BillingFirmSettingsForm.PnlBase.cbEMailBillsTurnedOnForNewFiles.Click();
+        		}
+        		if(!frm.BillingFirmSettingsForm.PnlBase.cbAPXRequestTurnedOnForNewFiles.Checked)
+        		{
+        		frm.BillingFirmSettingsForm.PnlBase.cbAPXRequestTurnedOnForNewFiles.Click();
+        		}
+        		Report.Screenshot();
         		frm.BillingFirmSettingsForm.PnlBase.tabAPXURLFormat.Click();
-        		
+        		Delay.Seconds(1);
         		Validate.AttributeContains(frm.BillingFirmSettingsForm.PnlBase.txtBodyEmailInfo,"Text","<<Billed Amount>>","APX Email Template Text Body has the value <<Billed Amount>>");
         		Validate.AttributeContains(frm.BillingFirmSettingsForm.PnlBase.txtBodyEmailInfo,"Text","<<PayNow URL>>","APX Email Template Text Body has the value <<PayNow URL>>");
         		
-        		
+        		Delay.Seconds(1);
         		frm.BillingFirmSettingsForm.Toolbar1.btnOK.Click();
         	}
         	
@@ -91,6 +99,7 @@ namespace SmokeTest.Modules
             Keyboard.DefaultKeyPressTime = 100;
             Delay.SpeedFactor = 1.0;
             FirmSettingsEmailBills();
+            cmn.ClosePrompt();
         }
     }
 }

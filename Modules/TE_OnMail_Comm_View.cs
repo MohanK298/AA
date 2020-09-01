@@ -87,9 +87,20 @@ namespace SmokeTest.Modules
         		comm.PromptForm.btnYes.Click();
         		
         	}
-        	if(comm.PromptForm.SelfInfo.Exists())
+        	if(comm.PromptForm.SelfInfo.Exists(3000))
         	{
-        		comm.PromptForm.btnOK.Click();
+        		if(comm.PromptForm.btnOKInfo.Exists(3000))
+        		{comm.PromptForm.btnOK.Click();Report.Info("Ok Button is clicked");}
+        		if(comm.PromptForm.btnNoInfo.Exists(3000))
+        		{comm.PromptForm.btnNo.Click();Report.Info("No Button is clicked");}
+        		
+        	}
+        	if(comm.PromptForm.SelfInfo.Exists(3000))
+        	{
+        		if(comm.PromptForm.btnOKInfo.Exists(3000))
+        		{comm.PromptForm.btnOK.Click();Report.Info("Ok Button is clicked");}
+        		if(comm.PromptForm.btnNoInfo.Exists(3000))
+        		{comm.PromptForm.btnNo.Click();Report.Info("No Button is clicked");}
         		
         	}
         	ValidateInTimeEntryModule(activitydesc);
@@ -99,7 +110,7 @@ namespace SmokeTest.Modules
         
         public void ValidatePromptExists()
         {
-        	if(comm.PromptForm.SelfInfo.Exists())
+        	if(comm.PromptForm.SelfInfo.Exists(3000))
         	{
         		comm.PromptForm.btnNo.Click();
         		Report.Info("Time Entry Exists and not combined.");

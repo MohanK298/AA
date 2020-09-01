@@ -73,6 +73,18 @@ namespace SmokeTest.Modules
    			
         }
         
+        private void CloseProcess()
+    	{
+        	foreach(System.Diagnostics.Process myProc in System.Diagnostics.Process.GetProcesses())
+			{
+				if (myProc.ProcessName == "OUTLOOK")
+				{
+					myProc.Kill();
+					Report.Success("Outlook proccess is closed successfully");
+				}
+    		}
+        }
+        
         private void ValidateMailsInFile(string sub)
         {
         	file.MainForm.Self.Activate();
@@ -104,6 +116,7 @@ namespace SmokeTest.Modules
             Keyboard.DefaultKeyPressTime = 100;
             Delay.SpeedFactor = 1.0;
             ValidateAddtoFileButton_MultiSelectMails();
+            CloseProcess();
         }
     }
 }

@@ -350,7 +350,7 @@ namespace SmokeTest.Repositories
             RepoItemInfo _listfirstfileInfo;
             RepoItemInfo _btnnewfileInfo;
             RepoItemInfo _btnquickfindInfo;
-            RepoItemInfo _filesortInfo;
+            RepoItemInfo _colfilenameInfo;
             RepoItemInfo _tblfilesInfo;
 
             /// <summary>
@@ -362,7 +362,7 @@ namespace SmokeTest.Repositories
                 _listfirstfileInfo = new RepoItemInfo(this, "listFirstFile", ".//row[@accessiblename='Band 0 row 1']/cell[@accessiblename='File']", 30000, null, "f9a8db13-b9ce-4a92-a704-a8de7ea23484");
                 _btnnewfileInfo = new RepoItemInfo(this, "btnNewFile", "container[@controlname='menubar_Fill_Panel']//toolbar[@accessiblename='Toolbar']/button[@accessiblename='New']", 30000, null, "67c64f03-ce8c-4697-9f87-12e510451c1f");
                 _btnquickfindInfo = new RepoItemInfo(this, "btnQuickFind", "container[@controlname='menubar_Fill_Panel']//toolbar[@accessiblename='Toolbar']/button[@accessiblename='QuickFind']", 30000, null, "bf14625f-916d-4379-a342-b908bc512592");
-                _filesortInfo = new RepoItemInfo(this, "FileSort", ".//tree[@automationid='ColScrollRegion: 0, RowScrollRegion: 0']/row[@automationid='Band Headers']/cell[@automationid='[Column Header] ShortFileName']", 30000, null, "a0fed64a-dbb5-4196-a4b4-3ca44d0350a9");
+                _colfilenameInfo = new RepoItemInfo(this, "colFileName", ".//tree[@automationid='ColScrollRegion: 0, RowScrollRegion: 0']/row[@automationid='Band Headers']/cell[@automationid='[Column Header] ShortFileName']", 30000, null, "a0fed64a-dbb5-4196-a4b4-3ca44d0350a9");
                 _tblfilesInfo = new RepoItemInfo(this, "tblFiles", "?/?/table[@accessiblename='Band 0']", 30000, null, "a14b0ce0-68ad-43ef-b0df-ad81cc4b2826");
             }
 
@@ -463,26 +463,26 @@ namespace SmokeTest.Repositories
             }
 
             /// <summary>
-            /// The FileSort item.
+            /// The colFileName item.
             /// </summary>
             [RepositoryItem("a0fed64a-dbb5-4196-a4b4-3ca44d0350a9")]
-            public virtual Ranorex.Cell FileSort
+            public virtual Ranorex.Cell colFileName
             {
                 get
                 {
-                    return _filesortInfo.CreateAdapter<Ranorex.Cell>(true);
+                    return _colfilenameInfo.CreateAdapter<Ranorex.Cell>(true);
                 }
             }
 
             /// <summary>
-            /// The FileSort item info.
+            /// The colFileName item info.
             /// </summary>
             [RepositoryItemInfo("a0fed64a-dbb5-4196-a4b4-3ca44d0350a9")]
-            public virtual RepoItemInfo FileSortInfo
+            public virtual RepoItemInfo colFileNameInfo
             {
                 get
                 {
-                    return _filesortInfo;
+                    return _colfilenameInfo;
                 }
             }
 
@@ -1031,6 +1031,7 @@ namespace SmokeTest.Repositories
             RepoItemInfo _tblfiledetailInfo;
             RepoItemInfo _generalretainersInfo;
             RepoItemInfo _trustInfo;
+            RepoItemInfo _lnkclientnameInfo;
 
             /// <summary>
             /// Creates a new FileDetailForm  folder.
@@ -1054,6 +1055,7 @@ namespace SmokeTest.Repositories
                 _tblfiledetailInfo = new RepoItemInfo(this, "tblFileDetail", "container[@controlname='panelPicBackground']/container[@controlname='evenSplitPanelModernModeOnly']/container[@controlname='panelRight']//element[@controlname='abigFileDetail']/table", 30000, null, "17f1d680-d977-43b9-8dbe-f0cdf31fbd04");
                 _generalretainersInfo = new RepoItemInfo(this, "GeneralRetainers", "container[@controlname='panelLeftBase']/?/?/element[@controlname='utreeFacts']/?/?/treeitem[@accessiblename='General Retainers']", 30000, null, "7021a54a-e35f-4170-a8f1-d94fa8ff9320");
                 _trustInfo = new RepoItemInfo(this, "Trust", "container[@controlname='panelLeftBase']/?/?/element[@controlname='utreeFacts']/?/?/treeitem[@accessiblename='Trust']", 30000, null, "e7e646df-daf7-44da-8419-0d13bb3178bc");
+                _lnkclientnameInfo = new RepoItemInfo(this, "lnkClientName", "container[@controlname='panelPicBackground']/container[@controlname='evenSplitPanelModernModeOnly']//link[@controlname='lnkName']/?/?/link", 30000, null, "3999e912-dd16-41e0-bdcf-c813387ff832");
             }
 
             /// <summary>
@@ -1437,6 +1439,30 @@ namespace SmokeTest.Repositories
                 get
                 {
                     return _trustInfo;
+                }
+            }
+
+            /// <summary>
+            /// The lnkClientName item.
+            /// </summary>
+            [RepositoryItem("3999e912-dd16-41e0-bdcf-c813387ff832")]
+            public virtual Ranorex.Link lnkClientName
+            {
+                get
+                {
+                    return _lnkclientnameInfo.CreateAdapter<Ranorex.Link>(true);
+                }
+            }
+
+            /// <summary>
+            /// The lnkClientName item info.
+            /// </summary>
+            [RepositoryItemInfo("3999e912-dd16-41e0-bdcf-c813387ff832")]
+            public virtual RepoItemInfo lnkClientNameInfo
+            {
+                get
+                {
+                    return _lnkclientnameInfo;
                 }
             }
 

@@ -42,9 +42,11 @@ namespace SmokeTest.Modules
         	bill.MainForm.Self.Activate();
         	bill.MainForm.BILLING.Click();
         	bill.MainForm.btnBilling.Click();
-        	Delay.Seconds(1);
+        	Delay.Seconds(5);
         	bill.MainForm.txtAllCheckbox.Click();
         	Report.Success("All Bill Checkbox is Checked");
+        	
+        	Delay.Seconds(4);
         	for(int i=0;i<3;i++)
         	{
         		bill.index=i.ToString();
@@ -53,6 +55,7 @@ namespace SmokeTest.Modules
         	}
         	
         	bill.MainForm.txtAllCheckbox.Click();
+        	Delay.Seconds(1);
         	Report.Success("All Bill Checkbox is unchecked");
         	for(int i=0;i<3;i++)
         	{

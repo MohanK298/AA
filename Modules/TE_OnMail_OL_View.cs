@@ -65,6 +65,12 @@ namespace SmokeTest.Modules
 			activitydesc=comm.TimeEntryDetailsForm.MenubarFillPanel.txtActivityDescription.GetAttributeValue<String>("Text");
 			comm.TimeEntryDetailsForm.MenubarFillPanel.btnOK.Click();
         	ValidatePromptExists();
+        	if(comm.PromptForm.SelfInfo.Exists(3000))
+        	{
+        		Report.Info(comm.PromptForm.txtPrompt.GetAttributeValue<String>("Text"));
+        		comm.PromptForm.btnNo.Click();
+        		
+        	}
         	ValidateInTimeEntryModule(activitydesc);
 						
         	
@@ -72,7 +78,7 @@ namespace SmokeTest.Modules
         
         public void ValidatePromptExists()
         {
-        	if(comm.PromptForm.SelfInfo.Exists())
+        	if(comm.PromptForm.SelfInfo.Exists(3000))
         	{
         		comm.PromptForm.btnNo.Click();
         		Report.Info("Time Entry Exists and not combined.");

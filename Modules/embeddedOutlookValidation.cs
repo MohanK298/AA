@@ -97,6 +97,7 @@ namespace SmokeTest.Modules
         	
         	pref.EmailPreferencesForm.Panel2.btnStep3.Click();
         	pref.EmailAutoSaveForm.cbAutoSave.Check();
+        	Report.Screenshot();
         	pref.EmailAutoSaveForm.btnFinish.Click();
         	
         	pref.EmailPreferencesForm.Panel2.btnStep4.Click();

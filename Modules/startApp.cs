@@ -86,7 +86,7 @@ public string firmid
         
         private void CloseAnnoncementForm()
         {
-        	if(str.AnnouncementForm.SelfInfo.Exists(3000))
+        	if(str.AnnouncementForm.SelfInfo.Exists(10000))
         	{
         		str.AnnouncementForm.Self.Activate();
         		str.AnnouncementForm.SelfInfo.WaitForExists(3000);
@@ -114,7 +114,7 @@ public string firmid
         	login.LoginForm.Pwd.TextValue=datasource.Rows[1].Values[2].ToString();//"password";
         	login.LoginForm.ServerName.TextValue=datasource.Rows[1].Values[3].ToString();//"J4-Mohanss";
         	login.LoginForm.btnLogin.Click();
-        	str.MainForm.SelfInfo.WaitForExists(10000);
+        	str.MainForm.SelfInfo.WaitForExists(20000);
         	CloseAnnoncementForm();
         	if(pref.MainForm.SbMainform.Visible.Equals(false))
         	{pref.MainForm.OfficeModule.Click();
@@ -134,7 +134,7 @@ public string firmid
             Delay.SpeedFactor = 1.0;
             OpenApp();
             EnterCredentials();
-            
+            cmn.ClosePrompt();
 
         }
     }

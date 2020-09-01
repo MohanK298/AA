@@ -65,7 +65,7 @@ namespace SmokeTest.Modules.Attorney_FileDetails
         	//firmsetting.DocumentManagementWizForm.Dropdown.Click();
         	//firmsetting.DocumentManagementWizForm.SelectCopy.Click();
         	firmsetting.DocumentManagementWizForm.Finish.Click();
-        	firmsetting.PromptForm.Yes.Click();
+        	firmsetting.PromptForm.btnYes.Click();
         	Delay.Seconds(30);
         	
     /*    	bool found = true;
@@ -81,9 +81,15 @@ namespace SmokeTest.Modules.Attorney_FileDetails
     	   	//Validate.NotExists("/form[@controlname='ProgressForm']");
         	//Report.Info("Switch Complete");
      */   	Delay.Seconds(20);
-        	firmsetting.DocumentUnconverted.UnconvertedClose.Click();
-        	       	
-        	firmsetting.DocumentFirmSettingsForm.OK.Click();
+   	 	if(firmsetting.DocumentUnconverted.UnconvertedCloseInfo.Exists(10000))
+   		 {firmsetting.DocumentUnconverted.UnconvertedClose.Click();
+   	 		Report.Info("Unconverted Close button is closed");
+   	 			
+   	 	}
+   	 	if(     firmsetting.DocumentFirmSettingsForm.OKInfo.Exists(3000))
+   	 	{firmsetting.DocumentFirmSettingsForm.OK.Click();
+   	 		Report.Info("Ok button is clicked");
+   	 	}
         
         }
         void ITestModule.Run()

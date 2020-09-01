@@ -77,6 +77,7 @@ namespace SmokeTest.Modules.Attorney_FileDetails
             
         Action();
         cmn.ClosePrompt();
+        cmn.closeDialog();
         }
     }
 }

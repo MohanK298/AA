@@ -105,7 +105,7 @@ namespace SmokeTest.Modules
         	file.FileDetailForm.Accounting.Click();
         	file.FileDetailForm.cmbbxMatterCameToUs.Click();
         	file.DropDownForm.TreeItem.Click();
-        	
+        	file.FileDetailForm.Self.Maximize();
         	
         	
         	
@@ -178,7 +178,9 @@ namespace SmokeTest.Modules
         	bclient.MainForm.sideBILLING.Click();
         	
         	file.MainForm.btnFiles.Click();
-        	
+        	Delay.Seconds(2);
+//        	cmn.SelectItemDropdown(file.MainForm.cmbbxFileStatus,"All","File Status");
+//        	Delay.Seconds(1);
         	cmn.OpenContextMenuItemFromTable(file.MainForm.FilesIndexForm.tblFiles,fileName,"Files Table");
         	
         	bill.ContextMenu.optionBill.Click();

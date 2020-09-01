@@ -47,7 +47,10 @@ namespace SmokeTest.Modules.Attorney_FileDetails
         
         private void SetupAccountingSystem_Verify()
         {
+        	
         	firm.MainForm.Self.Activate();
+        	firm.MainForm.txtAttorney.Click();
+        	Delay.Seconds(1);
         	firm.MainForm.Office.Click();
         	Delay.Seconds(2);
 			firm.MainForm.View.Click();

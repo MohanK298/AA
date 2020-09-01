@@ -91,6 +91,7 @@ namespace SmokeTest.Modules
 
         private void checkAmicusToolbarInstalled()
 		{
+        	string pathLocation="";
         	pref.EmailPreferencesForm.rdoOutlook.Select();
         	
         	pref.EmailPreferencesForm.btnStep1.Click();
@@ -102,16 +103,30 @@ namespace SmokeTest.Modules
         	pref.EmailBasicForm.Toolbar1.btnFinish.Click();
         	
         	pref.EmailPreferencesForm.Panel2.btnStep2.Click();
+        	Delay.Seconds(1);
+        	pathLocation=pref.EmailAttachmentForm.txtAttachmentSaveLocation.GetAttributeValue<String>("UIAutomationValueValue");
+        	Report.Info("Path location is ---"+pathLocation);
+        	if(pathLocation.Contains(""))
+        	{
+        		if(pref.EmailAttachmentForm.btnBrowse.Enabled)
+        		{
+        			pref.EmailAttachmentForm.btnBrowse.Click();
+	        		Report.Info("Browse Button is clicked");
+	        		pref.BrowseFolder.btnOK.Click();
+	        		Report.Info("Ok Button is clicked in Browse Folder");
+        		}
+        	}
         	pref.EmailAttachmentForm.btnFinish.Click();
-        	
+        	Report.Info("Finish Button is clicked in Step 2");
         	pref.EmailPreferencesForm.Panel2.btnStep3.Click();
         	pref.EmailAutoSaveForm.btnFinish.Click();
-        	
+        	Report.Info("Finish Button is clicked in Step 3");
         	pref.EmailPreferencesForm.Panel2.btnStep4.Click();
         	pref.EmailInitialization.PnlControls.cbReviewGuide.Check();
         	pref.EmailInitialization.PnlControls.cbCurrentlyLoggedIn.Check();
         	pref.EmailInitialization.PnlControls.cbReadytoBeginProcess.Check();
         	pref.EmailInitialization.Toolbar1.btnBeginProcess.Click();
+        	Report.Info("Begin Process is clicked in Step 4");
         	if(pref.PromptForm.SelfInfo.Exists(15000))
         	
         	{pref.PromptForm.ButtonOK.Click();}
@@ -120,7 +135,7 @@ namespace SmokeTest.Modules
         	if(pref.PromptForm.SelfInfo.Exists(3000))
         	   {pref.PromptForm.ButtonOK.Click();}
         	pref.EmailInitialization.Toolbar1.btnFinish.Click();
-        	
+        	Report.Info("Finish Button is clicked in Step 4");
         	pref.EmailPreferencesForm.btnClose.Click();
         	
         	pref.MainForm.Self.Close();
@@ -133,11 +148,12 @@ namespace SmokeTest.Modules
         	OpenApp();
         	if(outlook.Outlook.tabAmicusTasksInfo.Exists(3000))
         	{
-        		Report.Success("Amicus Tasks Tab is opened successfully");
+        		
         		outlook.Outlook.tabAmicusTasks.Click();
-        		if(outlook.Outlook.AmicusAttorneyTasks1.SelfInfo.Exists(3000))
+        		Report.Success("Amicus Tasks Tab is opened successfully");
+        		if(outlook.Outlook.AmicusAttorneyTasks1.SelfInfo.Exists(10000))
         		{
-        			if(outlook.Outlook.AmicusAttorneyTasks1.btnAddToFileInfo.Exists(3000))
+        			if(outlook.Outlook.AmicusAttorneyTasks1.btnAddToFileInfo.Exists(10000))
         			{Validate.Exists(outlook.Outlook.AmicusAttorneyTasks1.btnAddToFile,"Add to File Button are displayed successfully");}
         			else
         			{Validate.Exists(outlook.Outlook.AmicusAttorneyTasks1.btnViewAddToRelatedFileInfo,"View/Add Related to File Button are displayed successfully");}
@@ -156,6 +172,18 @@ namespace SmokeTest.Modules
         	
         }
         
+        private void CloseProcess()
+    	{
+        	foreach(System.Diagnostics.Process myProc in System.Diagnostics.Process.GetProcesses())
+			{
+				if (myProc.ProcessName == "OUTLOOK")
+				{
+					myProc.Kill();
+					Report.Success("Outlook proccess is closed successfully");
+				}
+    		}
+        }
+        
         
         /// <summary>
         /// Performs the playback of actions in this module.
@@ -168,7 +196,7 @@ namespace SmokeTest.Modules
             Mouse.DefaultMoveTime = 300;
             Keyboard.DefaultKeyPressTime = 100;
             Delay.SpeedFactor = 1.0;
-            
+            CloseProcess();
             setOutlookAddIn();
         }
     }

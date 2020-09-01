@@ -112,7 +112,9 @@ namespace SmokeTest.Modules
         		
         		bill.ReceivePaymentForm.txtAmount.PressKeys("1.00");
         		Report.Success("$1.00 added to the Amount Field");
+        		Delay.Seconds(2);
  				bill.ReceivePaymentForm.btnPayNow.Click();
+ 				Report.Success("Pay Now Button is clicked");
 				if(bill.PromptForm.SelfInfo.Exists(3000))
                {
                    	
@@ -150,12 +152,18 @@ namespace SmokeTest.Modules
         	
         	//Type the file name and other variables
         	file.NewFileForm.txtFileName.TextValue = fileName;
-        	file.NewFileForm.btnAddContact.Click();
-
-        	file.PeopleSelectForm.listFirstValue.Click();
-        	file.PeopleSelectForm.btnAddToRight.Click();
-        	file.PeopleSelectForm.btnOK.Click();
+        	file.NewFileForm.btnAddContact.Click();	
+			if(file.PeopleSelectForm.SelfInfo.Exists(3000))
+        	{
+        		file.PeopleSelectForm.btnQuickFind.Click();
+        		
+        		file.FindContactsForm.txtFindContact.PressKeys("PortalUser");
+        		file.FindContactsForm.btnOK.Click();
+        		file.PeopleSelectForm.listFirstValue.Click();
+        		file.PeopleSelectForm.btnAddToRight.Click();
+        		file.PeopleSelectForm.btnOK.Click();
         	
+        	}
         	
         	file.NewFileForm.btnSaveOpen.Click();
         	
@@ -181,6 +189,8 @@ namespace SmokeTest.Modules
             Delay.SpeedFactor = 1.0;
             AddFile();
             payCC();
+            cmn.closeAPXPaymentForm();
+            cmn.ClosePrompt();
         }
     }
 }

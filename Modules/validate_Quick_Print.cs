@@ -42,7 +42,18 @@ namespace SmokeTest.Modules
         	bill.MainForm.Self.Activate();
         	bill.MainForm.BILLING.Click();
         	bill.MainForm.btnBilling.Click();
-        	bill.MainForm.cbFirstRow.Check();
+        	if(!bill.MainForm.cbFirstRow.Checked)
+        	{
+        		bill.MainForm.cbFirstRow.Click();
+        	}
+        	else
+        	{
+        		bill.MainForm.cbFirstRow.Click();
+        		Delay.Seconds(1);
+        		bill.MainForm.cbFirstRow.Click();
+        	}
+        	
+        	
         	Delay.Seconds(2);
         	bill.MainForm.btnReprintBills.Click();
         	if(bill.OutputPromptForm.SelfInfo.Exists(3000))
@@ -59,7 +70,16 @@ namespace SmokeTest.Modules
         			bill.Print.btnCancel.Click();
         		}
         		
-        		bill.MainForm.cbFirstRow.Uncheck();
+        	if(bill.MainForm.cbFirstRow.Checked)
+        	{
+        		bill.MainForm.cbFirstRow.Click();
+        	}
+        	else
+        	{
+        		bill.MainForm.cbFirstRow.Click();
+        		Delay.Seconds(1);
+        		bill.MainForm.cbFirstRow.Click();
+        	}
         	
         	
            }

@@ -45,8 +45,17 @@ namespace SmokeTest.Modules
         	bill.MainForm.Self.Activate();
         	bill.MainForm.BILLING.Click();
         	bill.MainForm.btnBilling.Click();
-        	
-        	bill.MainForm.cbFirstRow.Check();
+        	Delay.Seconds(3);
+        	if(!bill.MainForm.cbFirstRow.Checked)
+        	{
+        		bill.MainForm.cbFirstRow.Click();
+        	}
+        	else
+        	{
+        		bill.MainForm.cbFirstRow.Click();
+        		Delay.Seconds(1);
+        		bill.MainForm.cbFirstRow.Click();
+        	}
         	Delay.Seconds(2);
         	bill.MainForm.btnReprintBills.Click();
         	
@@ -65,6 +74,7 @@ namespace SmokeTest.Modules
      		{
      			Report.Success("Report Viewer is displayed successfully");
      			retrievefileName=bill.ReportViewerForm.txtFileName.GetAttributeValue<String>("Text");
+     			Report.Info(retrievefileName);
      			txtInvoice=bill.ReportViewerForm.txtInvoice.GetAttributeValue<String>("Text");
      			final_filename=retrievefileName.Substring(5);
      			txt_finalInvoice=txtInvoice.Substring(txtInvoice.Length-4);
@@ -75,10 +85,12 @@ namespace SmokeTest.Modules
      		}
         	if(bill.PromptForm.SelfInfo.Exists(3000))
         	{
-        		bill.PromptForm.Self.Close();
+        		bill.PromptForm.btnOk.Click();
         	}
-        	
+        	Delay.Seconds(1);
         	bfile.MainForm.btnFiles.Click();
+        	Delay.Seconds(3);
+        	Report.Info(final_filename);
         	cmn.SelectItemFromTableDblClick(bfile.MainForm.FilesIndexForm.tblFiles,final_filename,"Files Table");
         	bfile.FileDetailForm.BillImages.Click();
         	Delay.Seconds(1);
@@ -86,6 +98,12 @@ namespace SmokeTest.Modules
         	bfile.FileDetailForm.btnSaveClose.Click();
         	
         
+        	bill.MainForm.btnBilling.Click();
+        	Delay.Seconds(3);
+        	if(bill.MainForm.cbFirstRow.Checked)
+        	{
+        		bill.MainForm.cbFirstRow.Click();
+        	}
         	
         	
         }

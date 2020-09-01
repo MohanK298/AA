@@ -1439,9 +1439,8 @@ QmCC
 			id="9cdd19a3-fc76-4c29-b8f7-b7632dd312b1"
 			name="txtAttachmentSaveLocation"
 			refimgid="cd7b4e99-b9bb-4b98-9bd1-4384fccb43a2"
-			refpath="/form[@controlname='EmailAttachmentsForm']/container[@controlname='pnlControls']/container[@controlname='pnlBody']/element[@controlname='ateAttachmentLocation']/text[@controlname='ateAttachmentLocation_EmbeddableTextBox']"
 			searchtimeout="30000ms">
-				/form[@controlname='EmailAttachmentsForm']/container[@controlname='pnlControls']//text[@controlname='ateAttachmentLocation_EmbeddableTextBox']
+				/form[@controlname='EmailAttachmentsForm']/container[@controlname='pnlControls']//text[@automationid='[Editor] Edit Area']
 			</item>
 			<item
 			addcaps="button,accessible"

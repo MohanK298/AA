@@ -55,6 +55,7 @@ namespace SmokeTest.Modules
         	
         	
         	file.MainForm.btnFiles.Click();
+        	file.MainForm.FilesIndexForm.colFileName.Click();
         	cmn.SelectItemFromTableDblClick(file.MainForm.FilesIndexForm.tblFiles,"Ranorex_General_Retainment_"+System.DateTime.Now.ToShortDateString(),"File Details Table");
         	
         	file.FileDetailForm.GeneralRetainers.Click();
@@ -87,9 +88,13 @@ namespace SmokeTest.Modules
         }
         	cmn.SelectItemFromTableDblClick(file.FileDetailForm.PanelRight.tblFileDetails,System.DateTime.Now.ToString("MMM dd/yy"),"File Details Table");
         	Report.Success(String.Format("Confirmation message of APX Payment Voided  -  {0} ",bill.ReceivePaymentForm.PnlBase.txtConfirmationNo.GetAttributeValue<String>("Text")));
-        	bill.ReceivePaymentForm.Toolbar1.btnClose.Click();
+        	if(bill.ReceivePaymentForm.Toolbar1.btnCloseInfo.Exists(3000))
+        	{bill.ReceivePaymentForm.Toolbar1.btnClose.Click();}
+        	else{
+        		bill.ReceivePaymentForm.Self.Close();
+        	}
         	bill.FileDetailForm.saveClose.Click();
-        	
+        	file.MainForm.FilesIndexForm.colFileName.Click();
         	
         	
         		
@@ -108,6 +113,8 @@ namespace SmokeTest.Modules
             Keyboard.DefaultKeyPressTime = 100;
             Delay.SpeedFactor = 1.0;
             validateGeneralRetainer();
+            cmn.closeDialog();
+            cmn.ClosePrompt();
         }
     }
 }

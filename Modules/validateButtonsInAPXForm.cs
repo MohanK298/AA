@@ -63,6 +63,7 @@ namespace SmokeTest.Modules
         	
         	if(people.APXEditPaymentMethodForm.SelfInfo.Exists(5000))
         	{
+        		people.APXEditPaymentMethodForm.Self.Maximize();
         	
                 Report.Success("APX Add Payment Window Form is displayed as expected");
         		Validate.AttributeContains(people.APXEditPaymentMethodForm.titleBarInfo,"Text",fullName,String.Format("APX Add Payment Window has the expected title of the Contact selected - {0}",fullName));
@@ -102,6 +103,8 @@ namespace SmokeTest.Modules
             Keyboard.DefaultKeyPressTime = 100;
             Delay.SpeedFactor = 1.0;
             ValidateButtonsinAPX();
+            cmn.closeAPXPaymentForm();
+            
         }
     }
 }

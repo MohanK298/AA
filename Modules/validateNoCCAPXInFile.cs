@@ -121,6 +121,13 @@ namespace SmokeTest.Modules
         				
         				bill.FindFilesForm.btnOK.Click();
         			}
+        			if(bill.FileSelectForm.firstRowSelectedInfo.Exists(3000))
+        			{
+        				bill.FileSelectForm.firstRowSelected.Click();
+        				bill.FileSelectForm.btnRemoveFile.Click();
+        				Report.Info("Already existing file allocation is removed in File Select Form.");
+        				Delay.Seconds(1);
+        			}
         			bill.FileSelectForm.listFirstFound.DoubleClick();
         		}
         		
@@ -149,8 +156,9 @@ namespace SmokeTest.Modules
         	{
         	
                 Report.Success("APX Add Payment Window Form is displayed as expected");
+                people.APXEditPaymentMethodForm.Self.Maximize();
         		Validate.AttributeContains(people.APXEditPaymentMethodForm.titleBarInfo,"Text",fullName,String.Format("APX Add Payment Window has the expected title of the Contact selected - {0}",fullName));
-        		
+        		Delay.Seconds(1);
         		people.APXEditPaymentMethodForm.rdoCreditCard.Click();
         		Report.Success("Credit Card Radio Button is selected as expected");
         		people.APXEditPaymentMethodForm.SomeDivTag.txtAccountOrCardNumber.PressKeys("4900000000000086");
@@ -224,6 +232,7 @@ namespace SmokeTest.Modules
 	        }
         	
         	
+        	
         /// <summary>
         /// Performs the playback of actions in this module.
         /// </summary>
@@ -237,6 +246,7 @@ namespace SmokeTest.Modules
             Delay.SpeedFactor = 1.0;
             SelectPayment();
             cmn.ClosePrompt();
+            cmn.closeAPXPaymentForm();
         }
     }
 }

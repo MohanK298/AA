@@ -38,7 +38,7 @@ namespace SmokeTest.Modules
         Common cmn=new Common();
         Word_app wapp=Word_app.Instance;
         Documents doc=new Documents();
- 		
+        FirmSettings frm=FirmSettings.Instance;
         string localFileName;
 		static string rndData=System.DateTime.Now.ToString();
 		string data=String.Format("Test Data Added {0}",rndData);
@@ -60,7 +60,9 @@ namespace SmokeTest.Modules
 
         	doc.DocumentDetail.Self.Activate();
         	Delay.Seconds(1);
+        	doc.DocumentDetail.PnlBase.txtDocumentTitleInfo.WaitForExists(10000);
         	doc.DocumentDetail.PnlBase.txtDocumentTitle.PressKeys(fileName);
+        	Report.Info(fileName);
         	//doc.DocumentDetail.PnlBase.fileLocationPathText.Element.SetAttributeValue("Text", localFileName);
         	doc.DocumentDetail.PnlBase.btnLocation.Click();
         	doc.Open.txtFilePath.Element.SetAttributeValue("Text", localFileName);
@@ -70,7 +72,13 @@ namespace SmokeTest.Modules
         	doc.DocumentDetail.PnlBase.btnAddFile.Click();
         	doc.FileSelectForm.listFirstFoundFile.DoubleClick();
         	doc.DocumentDetail.MenubarFillPanel.btnOK.Click();
-        	
+        	Report.Info("Document Created Successfully");
+        	Delay.Seconds(5);
+        	//doc.MainForm.Self.Activate();
+        	frm.MainForm.btnOffice.Click();
+        	Delay.Seconds(2);
+        	doc.MainForm.btnDocuments.Click();
+        	Delay.Seconds(2);
         	cmn.SelectItemFromTableDblClick(doc.MainForm.DocumentsIndexForm.tblDocuments,fileName,"Documents Table");
         	Delay.Seconds(2);
         	if(doc.DocumentDetail.PnlBase.lnkVirtualPathInfo.Exists(3000))

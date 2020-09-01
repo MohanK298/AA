@@ -41,11 +41,29 @@ namespace SmokeTest.Modules
         	bill.MainForm.Self.Activate();
         	bill.MainForm.BILLING.Click();
         	bill.MainForm.btnBilling.Click();
-        	bill.MainForm.cbFirstRow.Check();
+        	if(!bill.MainForm.cbFirstRow.Checked)
+        	{
+        		bill.MainForm.cbFirstRow.Click();
+        	}
+        	else
+        	{
+        		bill.MainForm.cbFirstRow.Click();
+        		Delay.Seconds(1);
+        		bill.MainForm.cbFirstRow.Click();
+        	}
         	Delay.Seconds(2);
         	bill.MainForm.optionPlus.Click("8;11");
         	Validate.AttributeEqual(bill.MainForm.cbFirstRowInfo,"Checked","True","First Row is checked as expected");
-        	bill.MainForm.cbFirstRow.Uncheck();
+        	if(bill.MainForm.cbFirstRow.Checked)
+        	{
+        		bill.MainForm.cbFirstRow.Click();
+        	}
+        	else
+        	{
+        		bill.MainForm.cbFirstRow.Click();
+        		Delay.Seconds(1);
+        		bill.MainForm.cbFirstRow.Click();
+        	}
         	bill.MainForm.optionPlus.Click("8;11");
         }
         

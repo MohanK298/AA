@@ -35,7 +35,10 @@ namespace SmokeTest.Modules
 
         public void Perform(){
         	Delay.Seconds(2);
-        	bill.MainForm.optionPlus.Click("8;11");
+        	if(bill.MainForm.optionPlusInfo.Exists(3000))
+        	{
+        		bill.MainForm.optionPlus.Click("8;11");
+        	
         	
         	//bill.MainForm.Payment.Click(System.Windows.Forms.MouseButtons.Right);
            	//bill.AmicusAttorneyXWin.optionDelete.Click();
@@ -53,6 +56,10 @@ namespace SmokeTest.Modules
             bill.MainForm.optionPlus.Click(System.Windows.Forms.MouseButtons.Right);
             bill.ContextMenu.optionDelete.Click();
             bill.PromptForm.btnYes.Click();
+        	}
+        	else{
+        		Report.Info("Option Plus is not present as expected for clicking");
+        	}
         }
         
         void ITestModule.Run()

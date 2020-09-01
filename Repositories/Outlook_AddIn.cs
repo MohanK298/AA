@@ -33,6 +33,7 @@ namespace SmokeTest.Repositories
         Outlook_AddInFolders.SearchAppFolder _search;
         Outlook_AddInFolders.SearchResultAppFolder _searchresult;
         Outlook_AddInFolders.AboutFormAppFolder _aboutform;
+        Outlook_AddInFolders.YourInvoiceNo1014FromQAToronto10AppFolder _yourinvoiceno1014fromqatoronto10;
 
         /// <summary>
         /// Gets the singleton class instance representing the Outlook_AddIn element repository.
@@ -55,6 +56,7 @@ namespace SmokeTest.Repositories
             _search = new Outlook_AddInFolders.SearchAppFolder(this);
             _searchresult = new Outlook_AddInFolders.SearchResultAppFolder(this);
             _aboutform = new Outlook_AddInFolders.AboutFormAppFolder(this);
+            _yourinvoiceno1014fromqatoronto10 = new Outlook_AddInFolders.YourInvoiceNo1014FromQAToronto10AppFolder(this);
         }
 
 #region Variables
@@ -161,6 +163,15 @@ namespace SmokeTest.Repositories
         public virtual Outlook_AddInFolders.AboutFormAppFolder AboutForm
         {
             get { return _aboutform; }
+        }
+
+        /// <summary>
+        /// The YourInvoiceNo1014FromQAToronto10 folder.
+        /// </summary>
+        [RepositoryFolder("3f392cb0-ff45-4b95-9769-8456499da647")]
+        public virtual Outlook_AddInFolders.YourInvoiceNo1014FromQAToronto10AppFolder YourInvoiceNo1014FromQAToronto10
+        {
+            get { return _yourinvoiceno1014fromqatoronto10; }
         }
     }
 
@@ -1023,6 +1034,10 @@ namespace SmokeTest.Repositories
             Outlook_AddInFolders.AmicusAttorneyTasks1Folder1 _amicusattorneytasks1;
             RepoItemInfo _tabamicustasksInfo;
             RepoItemInfo _amicusattorneytasksInfo;
+            RepoItemInfo _lnkpaynowInfo;
+            RepoItemInfo _txtbodyInfo;
+            RepoItemInfo _txttoInfo;
+            RepoItemInfo _txtsubjectInfo;
 
             /// <summary>
             /// Creates a new DetailedView  folder.
@@ -1033,6 +1048,10 @@ namespace SmokeTest.Repositories
                 _amicusattorneytasks1 = new Outlook_AddInFolders.AmicusAttorneyTasks1Folder1(this);
                 _tabamicustasksInfo = new RepoItemInfo(this, "tabAmicusTasks", "container[@caption='MsoDockTop']//container[@name='Ribbon']/tabpagelist[@name='Ribbon Tabs']/tabpage[@name='Amicus Tasks']", 30000, null, "86bee181-fed9-4e5e-a946-2befd29afc53");
                 _amicusattorneytasksInfo = new RepoItemInfo(this, "AmicusAttorneyTasks", "container[@caption='MsoDockTop']//container[@name='Ribbon']/container[@name='Lower Ribbon']/container[@name='Amicus Tasks']/container[@name='Amicus Attorney Tasks']", 30000, null, "b3a0a0c9-ff77-48aa-8702-a6ca319e6b12");
+                _lnkpaynowInfo = new RepoItemInfo(this, "lnkPayNow", "element[@controlid='103']//element[@controlid='4159']//element[@automationid~'UIA_AutomationId_Word_Page']/text[@automationid='Body']/link[@name>'https://apxtest.abacusnex']", 30000, null, "8fb7d3c7-9b22-463a-a17f-79b6a2cec82a");
+                _txtbodyInfo = new RepoItemInfo(this, "txtBody", "element[@controlid='103']//element[@controlid='4159']//element[@automationid~'UIA_AutomationId_Word_Page']/text[@automationid='Body']", 30000, null, "5c876e3f-b18b-4c91-a8be-df0598912a0f");
+                _txttoInfo = new RepoItemInfo(this, "txtTo", "element[@controlid='103']/?/?/container[@class='#32770']/element[2]/text[@accessiblename='To']", 30000, null, "ad61dfbb-2557-405d-9069-9990fdd58c42");
+                _txtsubjectInfo = new RepoItemInfo(this, "txtSubject", "element[@controlid='103']//element[@controlid='4101']/text[@accessiblename='Subject']", 30000, null, "d2a3c903-2e91-4c2c-8a91-16e551d36274");
             }
 
             /// <summary>
@@ -1104,6 +1123,102 @@ namespace SmokeTest.Repositories
                 get
                 {
                     return _amicusattorneytasksInfo;
+                }
+            }
+
+            /// <summary>
+            /// The lnkPayNow item.
+            /// </summary>
+            [RepositoryItem("8fb7d3c7-9b22-463a-a17f-79b6a2cec82a")]
+            public virtual Ranorex.Link lnkPayNow
+            {
+                get
+                {
+                    return _lnkpaynowInfo.CreateAdapter<Ranorex.Link>(true);
+                }
+            }
+
+            /// <summary>
+            /// The lnkPayNow item info.
+            /// </summary>
+            [RepositoryItemInfo("8fb7d3c7-9b22-463a-a17f-79b6a2cec82a")]
+            public virtual RepoItemInfo lnkPayNowInfo
+            {
+                get
+                {
+                    return _lnkpaynowInfo;
+                }
+            }
+
+            /// <summary>
+            /// The txtBody item.
+            /// </summary>
+            [RepositoryItem("5c876e3f-b18b-4c91-a8be-df0598912a0f")]
+            public virtual Ranorex.Text txtBody
+            {
+                get
+                {
+                    return _txtbodyInfo.CreateAdapter<Ranorex.Text>(true);
+                }
+            }
+
+            /// <summary>
+            /// The txtBody item info.
+            /// </summary>
+            [RepositoryItemInfo("5c876e3f-b18b-4c91-a8be-df0598912a0f")]
+            public virtual RepoItemInfo txtBodyInfo
+            {
+                get
+                {
+                    return _txtbodyInfo;
+                }
+            }
+
+            /// <summary>
+            /// The txtTo item.
+            /// </summary>
+            [RepositoryItem("ad61dfbb-2557-405d-9069-9990fdd58c42")]
+            public virtual Ranorex.Text txtTo
+            {
+                get
+                {
+                    return _txttoInfo.CreateAdapter<Ranorex.Text>(true);
+                }
+            }
+
+            /// <summary>
+            /// The txtTo item info.
+            /// </summary>
+            [RepositoryItemInfo("ad61dfbb-2557-405d-9069-9990fdd58c42")]
+            public virtual RepoItemInfo txtToInfo
+            {
+                get
+                {
+                    return _txttoInfo;
+                }
+            }
+
+            /// <summary>
+            /// The txtSubject item.
+            /// </summary>
+            [RepositoryItem("d2a3c903-2e91-4c2c-8a91-16e551d36274")]
+            public virtual Ranorex.Text txtSubject
+            {
+                get
+                {
+                    return _txtsubjectInfo.CreateAdapter<Ranorex.Text>(true);
+                }
+            }
+
+            /// <summary>
+            /// The txtSubject item info.
+            /// </summary>
+            [RepositoryItemInfo("d2a3c903-2e91-4c2c-8a91-16e551d36274")]
+            public virtual RepoItemInfo txtSubjectInfo
+            {
+                get
+                {
+                    return _txtsubjectInfo;
                 }
             }
 
@@ -1801,6 +1916,46 @@ namespace SmokeTest.Repositories
             /// The Self item info.
             /// </summary>
             [RepositoryItemInfo("fec9f81f-d3b5-475d-b38e-76b23ac7d1d2")]
+            public virtual RepoItemInfo SelfInfo
+            {
+                get
+                {
+                    return _selfInfo;
+                }
+            }
+        }
+
+        /// <summary>
+        /// The YourInvoiceNo1014FromQAToronto10AppFolder folder.
+        /// </summary>
+        [RepositoryFolder("3f392cb0-ff45-4b95-9769-8456499da647")]
+        public partial class YourInvoiceNo1014FromQAToronto10AppFolder : RepoGenBaseFolder
+        {
+
+            /// <summary>
+            /// Creates a new YourInvoiceNo1014FromQAToronto10  folder.
+            /// </summary>
+            public YourInvoiceNo1014FromQAToronto10AppFolder(RepoGenBaseFolder parentFolder) :
+                    base("YourInvoiceNo1014FromQAToronto10", "/form[@title>'Your Invoice No. 1014 from']", parentFolder, 30000, null, true, "3f392cb0-ff45-4b95-9769-8456499da647", "")
+            {
+            }
+
+            /// <summary>
+            /// The Self item.
+            /// </summary>
+            [RepositoryItem("3f392cb0-ff45-4b95-9769-8456499da647")]
+            public virtual Ranorex.Form Self
+            {
+                get
+                {
+                    return _selfInfo.CreateAdapter<Ranorex.Form>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Self item info.
+            /// </summary>
+            [RepositoryItemInfo("3f392cb0-ff45-4b95-9769-8456499da647")]
             public virtual RepoItemInfo SelfInfo
             {
                 get

@@ -71,7 +71,13 @@ namespace SmokeTest.Modules
  			}
  			else
  			{
- 				pref.GeneralPreferencesForm.btnInstallMergeToolbar.Click();
+ 				if(pref.GeneralPreferencesForm.btnInstallMergeToolbarInfo.Exists(3000))
+ 				{
+ 					pref.GeneralPreferencesForm.btnInstallMergeToolbar.Click();
+ 				}
+ 				
+ 				
+ 				
  				if(wapp.AmicusMergeToolbarInstallShieldWiz.SelfInfo.Exists(10000))
  				{
  					Delay.Seconds(1);
@@ -86,7 +92,7 @@ namespace SmokeTest.Modules
 		}
  		private void checkWordTaskToolbarInstalled()
  		{
- 			if(pref.GeneralPreferencesForm.btnWordRemoveInfo.Exists(3000))
+ 			if(pref.GeneralPreferencesForm.btnWordRemoveInfo.Exists(10000))
  			{
  					Report.Success("Word is already Configured and Installed successfully");
  			}

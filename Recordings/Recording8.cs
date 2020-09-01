@@ -115,8 +115,8 @@ namespace SmokeTest.Recordings
             repo.DocumentManagementWizForm.Finish.Click("36;9");
             Delay.Milliseconds(200);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'PromptForm.Yes' at 30;12.", repo.PromptForm.YesInfo, new RecordItemIndex(9));
-            repo.PromptForm.Yes.Click("30;12");
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'PromptForm.btnYes' at 30;12.", repo.PromptForm.btnYesInfo, new RecordItemIndex(9));
+            repo.PromptForm.btnYes.Click("30;12");
             Delay.Milliseconds(200);
             
             Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ProgressForm.ButtonToolbarToolbarBaseDesignerToo' at 13;11.", repo.ProgressForm.ButtonToolbarToolbarBaseDesignerTooInfo, new RecordItemIndex(10));

@@ -47,6 +47,7 @@ namespace SmokeTest.Modules
         		Report.Success("PDF Document is opened for the Bill and is the expected Result");
         		bill.PdfBillImage.Self.Close();
         	}
+      
         }
         
         /// <summary>

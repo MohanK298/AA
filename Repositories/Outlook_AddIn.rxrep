@@ -390,6 +390,40 @@ TkSuQmCC
 					/form[@title&gt;$mailSub]//container[@name='Ribbon']/container[@name='Lower Ribbon']/container[@name='Amicus Tasks']/container[@name='Amicus Attorney Tasks']
 				</basepath>
 			</folder>
+			<item
+			addcaps="link,uiautomation,uiautomationinvoke,uiautomationvalue"
+			capname="link"
+			id="8fb7d3c7-9b22-463a-a17f-79b6a2cec82a"
+			name="lnkPayNow"
+			refimgid="e9266ab7-0a91-4fdd-9632-795e489fac42"
+			searchtimeout="30000ms">
+				/form[@title&gt;$mailSub]/element[@controlid='103']//element[@controlid='4159']//element[@automationid~'UIA_AutomationId_Word_Page']/text[@automationid='Body']/link[@name&gt;'https://apxtest.abacusnex']
+			</item>
+			<item
+			capname="text"
+			id="5c876e3f-b18b-4c91-a8be-df0598912a0f"
+			name="txtBody"
+			searchtimeout="30000ms">
+				/form[@title&gt;$mailSub]/element[@controlid='103']//element[@controlid='4159']//element[@automationid~'UIA_AutomationId_Word_Page']/text[@automationid='Body']
+			</item>
+			<item
+			addcaps="text,accessible"
+			capname="text"
+			id="ad61dfbb-2557-405d-9069-9990fdd58c42"
+			name="txtTo"
+			refimgid="ae8362b5-066f-4976-a11b-9e466e895246"
+			searchtimeout="30000ms">
+				/form[@title&gt;$mailSub]/element[@controlid='103']/?/?/container[@class='#32770']/element[2]/text[@accessiblename='To']
+			</item>
+			<item
+			addcaps="text,accessible"
+			capname="text"
+			id="d2a3c903-2e91-4c2c-8a91-16e551d36274"
+			name="txtSubject"
+			refimgid="71b8a8ff-1c31-4796-9557-a167b484412c"
+			searchtimeout="30000ms">
+				/form[@title&gt;$mailSub]/element[@controlid='103']//element[@controlid='4101']/text[@accessiblename='Subject']
+			</item>
 			<basepath>
 				/form[@title&gt;$mailSub]
 			</basepath>
@@ -586,6 +620,30 @@ fGSvCnbev29fwQpwgd9PH/1/N6ERHB5gzSDwyFX3IkjgeZLv/0+rF/z/snPD/4fWCmAND60V/3+Y
 GqBzjhwDnkbaa4ANAIZBBDkGgDXDAMkGAFMmVCsEPHLTO0uKAU+jnYygWhHgeZIPUQY8dFS/BdWC
 Cd405uM14N+/f+egSnGDjyvnxjyyVQYbANL0FmjAm/aKH4+9zVWhSqCAgQEAq9YXqsYCPO8AAAAA
 SUVORK5CYII=
+			</icon>
+		</appfolder>
+		<appfolder
+		addcaps="form,nativewindow"
+		capname="form"
+		id="3f392cb0-ff45-4b95-9769-8456499da647"
+		isrooted="True"
+		name="YourInvoiceNo1014FromQAToronto10"
+		refpath="/form[@title='Your Invoice No. 1014 from QA Toronto 10 - Message (HTML) ']"
+		searchtimeout="30000ms"
+		usecache="True">
+			<basepath>
+				/form[@title&gt;'Your Invoice No. 1014 from']
+			</basepath>
+			<icon>
+				iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACx
+jwv8YQUAAAAJcEhZcwAADsQAAA7EAZUrDhsAAAFjSURBVDhPtZNNSwJRFIYPBIHQvwn6NUEQFC3K
+Zmoco23QrlUQrlwFRqCLojZBhDo6ljQQRAvNjzIaLEmcNJOp07mT9+KVoaCPF15mOHPvw5wvEFIz
+AVg2x8mzoBibsJg+gYVUg4wwn8T+KR/pZgJCuQKETAQti7BEVg0EJY0QJH8LCOcQdPK/A1hs0Eq6
+Q6luSABtv4r3rR46XRfXj2o4otDBPmBYx4XmJ4QDJmNF70PMesTDqyfvXU2UfQHJUgvHVuge+xMO
+MCoObp8/iBQu7TZatWcBiF80pMvaXkUGNF9cnNopCkDEsPHVfReAUarP6kEVA7qJYUqVSQJ0em84
+vXstAViMAyJZ24szCJcEsO7aGD2rC0D+1sH8jSPVoNToek8uCTAXL3vB6GldFHGGpeRTRC4JwNq4
+Rq1jtWBmbRycg2F56Q228U8G6Wej/Otl4mLrrGcm+uu8RYAUBFPNrwEAH3LqO1ghUDB3AAAAAElF
+TkSuQmCC
 			</icon>
 		</appfolder>
 		<basepath>

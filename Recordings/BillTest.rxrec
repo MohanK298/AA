@@ -3446,6 +3446,15 @@ RQBo6P8A6yT6CtxOlFFAD6KKKAP/2Q==
 			<matchvalue>
 			</matchvalue>
 		</validationitem>
+		<explicitdelayitem
+		duration="2000ms"
+		enabled="True"
+		optional="False">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+		</explicitdelayitem>
 		<mouseitem
 		action="Click"
 		button="Left"

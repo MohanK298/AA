@@ -49,7 +49,7 @@ namespace SmokeTest.Modules
         	
         	var datasource=Ranorex.DataSources.Get("LoginData");
         	datasource.Load();
-        	curuser=datasource.Rows[2].Values[1].ToString();
+        	curuser=datasource.Rows[0].Values[1].ToString();
         	
         	
         	
@@ -66,6 +66,8 @@ namespace SmokeTest.Modules
         		Report.Success("People Select Form is selected");
         		
         		string currentuser="Logged in as "+curuser;
+        		
+        		Report.Info(curuser);
         		pref.loginuser=currentuser;
         		
         		
@@ -99,6 +101,8 @@ namespace SmokeTest.Modules
             Keyboard.DefaultKeyPressTime = 100;
             Delay.SpeedFactor = 1.0;
             TimeKeeperValidation();
+            cmn.ClosePrompt();
+            
         }
     }
 }

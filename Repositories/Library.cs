@@ -245,7 +245,7 @@ namespace SmokeTest.Repositories
                 _lbleditlabelInfo = new RepoItemInfo(this, "lblEditLabel", "container[@controlname='LibraryIndexForm_Contents']//tree[@accessiblerole='Outline']/treeitem[@accessiblename='']", 30000, null, "e629ebe9-0fc8-44fe-8056-943f4c929327");
                 _btnmenuitemInfo = new RepoItemInfo(this, "btnMenuItem", "container[@controlname='menubar_Fill_Panel']//toolbar[@accessiblename='Toolbar']/menuitem[@accessiblename='']", 30000, null, "103b3087-cdf6-40ca-8f31-c0659e5ab3dc");
                 _listpersonalInfo = new RepoItemInfo(this, "listPersonal", "container[@controlname='LibraryIndexForm_Contents']//tree[@accessiblerole='Outline']/treeitem[@accessiblename~'^Personal\\ Unshelved\\ Materi']", 30000, null, "e7ed954b-39e3-4970-86a1-0aea703580e6");
-                _listsectionInfo = new RepoItemInfo(this, "listSection", "container[@controlname='LibraryIndexForm_Contents']//tree[@accessiblerole='Outline']/treeitem[@accessiblename='New Section']", 30000, null, "46fee8f3-f0ef-47ae-abf7-bd4692ffccb9");
+                _listsectionInfo = new RepoItemInfo(this, "listSection", "container[@controlname='LibraryIndexForm_Contents']//tree[@accessiblerole='Outline']/treeitem[@accessiblename~'New Section']", 30000, null, "46fee8f3-f0ef-47ae-abf7-bd4692ffccb9");
                 _listsection2Info = new RepoItemInfo(this, "listSection2", "container[@controlname='LibraryIndexForm_Contents']/container[@controlname='panel1']//treeitem[@accessiblename='Section (P)']", 30000, null, "d0257d1c-9ce1-4244-99ae-ed862855c309");
                 _newsectionpInfo = new RepoItemInfo(this, "NewSectionP", "container[@controlname='LibraryIndexForm_Contents']//tree[@accessiblerole='Outline']/treeitem[@accessiblename='New Section (P)']", 30000, null, "0de26d4b-2dca-4338-9fdf-5247217360f2");
                 _newsectionInfo = new RepoItemInfo(this, "NewSection", "container[@controlname='LibraryIndexForm_Contents']//tree[@accessiblerole='Outline']/treeitem[@accessiblename='New Section']", 30000, null, "092bf9df-604d-415c-b40e-ec9231d05d9f");
@@ -462,7 +462,7 @@ namespace SmokeTest.Repositories
             public Panel1Folder(RepoGenBaseFolder parentFolder) :
                     base("Panel1", "?/?/form[@controlname='LibraryIndexForm']/container[@controlname='LibraryIndexForm_Contents']/container[@controlname='panel1']", parentFolder, 30000, null, false, "a710ba15-b01f-4c95-bdf0-ad3849cc7bab", "")
             {
-                _listpageInfo = new RepoItemInfo(this, "listPage", ".//treeitem[@accessiblename>'Page']", 30000, null, "b035969f-d1e8-49a3-8eb3-08a4fc3351bf");
+                _listpageInfo = new RepoItemInfo(this, "listPage", ".//treeitem[@accessiblename~'Page']", 30000, null, "b035969f-d1e8-49a3-8eb3-08a4fc3351bf");
                 _listpage2Info = new RepoItemInfo(this, "listPage2", ".//treeitem[@accessiblename='Page (P)']", 30000, null, "2cb73e59-075b-4991-a39b-2dd1527ceb65");
                 _listsectionInfo = new RepoItemInfo(this, "listSection", ".//treeitem[@accessiblename>'Section']", 30000, null, "4e44769f-7a54-4265-821b-f828be1e7fcc");
                 _listsection2Info = new RepoItemInfo(this, "listSection2", ".//treeitem[@accessiblename='Section (P)']", 30000, null, "ed1236ad-7168-4f10-aae8-3a83f84a5a59");

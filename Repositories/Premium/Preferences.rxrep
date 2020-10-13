@@ -845,6 +845,15 @@ D8zerL8gSEaw7+rFqJ//CkX5CWkHqyZHVzU6AAAAAElFTkSuQmCC
 			searchtimeout="30000ms">
 				/form[@controlname='PromptForm']//toolbar[@accessiblename='Toolbar']/button[@accessiblename='Yes']
 			</item>
+			<item
+			addcaps="text,accessible"
+			capname="text"
+			id="1a3b15f7-42fa-46ea-be4c-08bacd299cc9"
+			name="txtMsg"
+			refimgid="a986a8a2-8141-449b-95d5-9d1296deb8aa"
+			searchtimeout="30000ms">
+				/form[@controlname='PromptForm']/container[@controlname='pnlBase']/?/?/container[@controlname='pnlMessage']/?/?/text
+			</item>
 			<basepath>
 				/form[@controlname='PromptForm']
 			</basepath>
@@ -1287,6 +1296,61 @@ QmCC
 				</item>
 				<basepath>
 					/form[@controlname='OutlookPreferencesForm']//toolbar[@accessiblename='Toolbar']
+				</basepath>
+			</folder>
+			<folder
+			addcaps="container,control,nativewindow"
+			capname="container"
+			id="749dabe0-cbaf-4407-9376-f68e7888b212"
+			isrooted="True"
+			name="PanelBase"
+			refpath="/form[@controlname='OutlookPreferencesForm']/container[@controlname='pnlBase']/container[@controlname='pnlControls']/container[@controlname='panelTitleBase']/container[@controlname='panelBase']"
+			searchtimeout="30000ms"
+			usecache="False">
+				<item
+				addcaps="container,accessible"
+				capname="container"
+				id="815460a9-9be1-41ed-b494-7eedbec4f80c"
+				name="Grouping"
+				searchtimeout="30000ms">
+					/form[@controlname='OutlookPreferencesForm']/container[@controlname='pnlBase']//container[@controlname='panelBase']//list/container[@accessiblerole='Grouping']
+				</item>
+				<item
+				addcaps="radiobutton,accessible"
+				capname="radiobutton"
+				id="63ca7208-6799-48d2-afb6-1e6ca4fcaabf"
+				name="rdoGoogle"
+				searchtimeout="30000ms">
+					/form[@controlname='OutlookPreferencesForm']/container[@controlname='pnlBase']//container[@controlname='panelBase']/?/?/element[@controlname='aoptOutlookGoogle']/list/?/?/radiobutton[@accessiblename='Google']
+				</item>
+				<item
+				addcaps="radiobutton,accessible"
+				capname="radiobutton"
+				id="13add542-6b80-434d-b7ff-0e5ae3f485b5"
+				name="rdoNone"
+				searchtimeout="30000ms">
+					/form[@controlname='OutlookPreferencesForm']/container[@controlname='pnlBase']//container[@controlname='panelBase']/?/?/element[@controlname='aoptOutlookGoogle']/list/?/?/radiobutton[@accessiblename='None']
+				</item>
+				<item
+				addcaps="radiobutton,accessible"
+				capname="radiobutton"
+				id="5f5dcc2e-9698-4ff1-9956-38b5ec6f2fce"
+				name="rdoOutlook"
+				searchtimeout="30000ms">
+					/form[@controlname='OutlookPreferencesForm']/container[@controlname='pnlBase']//container[@controlname='panelBase']/?/?/element[@controlname='aoptOutlookGoogle']/list/?/?/radiobutton[@accessiblename='Outlook']
+				</item>
+				<item
+				addcaps="button,accessible"
+				capname="button"
+				id="2b9140e3-f615-4cde-9685-4700b4c9396f"
+				name="btnConfigure"
+				refimgid="137ac12c-4779-4eea-916b-a1cf616e3738"
+				refpath="/form[@controlname='OutlookPreferencesForm']/container[@controlname='pnlBase']/container[@controlname='pnlControls']/container[@controlname='panelTitleBase']/container[@controlname='panelBase']/container[@controlname='panelGeneral']/element[@controlname='abtnConfigure']/button[@accessiblename='Configure ...']"
+				searchtimeout="30000ms">
+					/form[@controlname='OutlookPreferencesForm']/container[@controlname='pnlBase']//container[@controlname='panelBase']/?/?/element[@controlname='abtnConfigure']/button[@accessiblename='Configure ...']
+				</item>
+				<basepath>
+					/form[@controlname='OutlookPreferencesForm']/container[@controlname='pnlBase']//container[@controlname='panelBase']
 				</basepath>
 			</folder>
 			<basepath>
@@ -2546,6 +2610,353 @@ QmCC
 			<basepath>
 				/form[@title='Browse For Folder']
 			</basepath>
+		</appfolder>
+		<appfolder
+		capname="form"
+		id="cb4857d6-d124-4008-b5a1-8ab3cbd9a97d"
+		isrooted="True"
+		name="Google_Config_Wizard"
+		refimgid="bb314773-5209-4faf-afc3-ac4a9cde3918"
+		searchtimeout="30000ms"
+		usecache="False">
+			<folder
+			addcaps="container,control,nativewindow"
+			capname="container"
+			id="1253d3ab-f550-4446-8554-4bae596c4a84"
+			isrooted="True"
+			name="Panel2"
+			refpath="/form[@controlname='UserWelcome']/container[@controlname='pnlControls']/container[@controlname='pnlBody']/container[@controlname='panel2']"
+			searchtimeout="30000ms"
+			usecache="False">
+				<item
+				addcaps="button,accessible"
+				capname="button"
+				id="7156f06c-2d6d-4596-8b94-007eb5b142cf"
+				name="btnStep2"
+				refimgid="e2d2363c-0d7e-4242-be18-7d1c6c6480ff"
+				refpath="/form[@controlname='UserWelcome']/container[@controlname='pnlControls']/container[@controlname='pnlBody']/container[@controlname='panel2']/element[@controlname='abtnStep2']/button[@accessiblename='Step 2']"
+				searchtimeout="30000ms">
+					/form[@controlname='UserWelcome']/container[@controlname='pnlControls']/?/?/container[@controlname='panel2']/?/?/button[@accessiblename='Step 2']
+				</item>
+				<item
+				addcaps="button,accessible"
+				capname="button"
+				id="a4560365-53df-48ef-9b76-589f80e86b19"
+				name="btnStep3"
+				refimgid="7761aeef-6c2e-43c6-be38-821629bc4c1d"
+				refpath="/form[@controlname='UserWelcome']/container[@controlname='pnlControls']/container[@controlname='pnlBody']/container[@controlname='panel2']/element[@controlname='abtnStep3']/button[@accessiblename='Step 3']"
+				searchtimeout="30000ms">
+					/form[@controlname='UserWelcome']/container[@controlname='pnlControls']/?/?/container[@controlname='panel2']/?/?/button[@accessiblename='Step 3']
+				</item>
+				<item
+				addcaps="button,accessible"
+				capname="button"
+				id="20aed110-2c03-4168-93d9-a6a6e3d70f73"
+				name="btnStep4"
+				refimgid="f2911c34-2242-418f-bf14-3c308b507a28"
+				refpath="/form[@controlname='UserWelcome']/container[@controlname='pnlControls']/container[@controlname='pnlBody']/container[@controlname='panel2']/element[@controlname='abtnStep4']/button[@accessiblename='Step 4']"
+				searchtimeout="30000ms">
+					/form[@controlname='UserWelcome']/container[@controlname='pnlControls']/?/?/container[@controlname='panel2']/?/?/button[@accessiblename='Step 4']
+				</item>
+				<item
+				addcaps="button,accessible"
+				capname="button"
+				id="ded91389-1066-4748-a1fc-328aacf06b7d"
+				name="btnReset"
+				refimgid="ea4deeea-c26a-40e1-b4ad-c9ee832b4dbd"
+				refpath="/form[@controlname='UserWelcome']/container[@controlname='pnlControls']/container[@controlname='pnlBody']/container[@controlname='panel2']/element[@controlname='abtnStep5']/button[@accessiblename='Reset']"
+				searchtimeout="30000ms">
+					/form[@controlname='UserWelcome']/container[@controlname='pnlControls']/?/?/container[@controlname='panel2']/?/?/button[@accessiblename='Reset']
+				</item>
+				<item
+				addcaps="button,accessible"
+				capname="button"
+				id="b300b5f3-157a-4037-b9e8-73c8204761cd"
+				name="btnStep1"
+				refimgid="edd8acfe-cd97-4f30-8427-b4ab0fcf9c09"
+				refpath="/form[@controlname='UserWelcome']/container[@controlname='pnlControls']/container[@controlname='pnlBody']/container[@controlname='panel2']/element[@controlname='abtnStep1']/button[@accessiblename='Step 1']"
+				searchtimeout="30000ms">
+					/form[@controlname='UserWelcome']/container[@controlname='pnlControls']/?/?/container[@controlname='panel2']/?/?/button[@accessiblename='Step 1']
+				</item>
+				<item
+				addcaps="text,accessible"
+				capname="text"
+				id="902410c0-e166-4fa7-a564-a682300c3641"
+				name="txtSynchronizationSettings"
+				refimgid="caf07757-527a-4e1f-abad-bab85ad040a1"
+				searchtimeout="30000ms">
+					/form[@controlname='UserWelcome']/container[@controlname='pnlControls']/?/?/container[@controlname='panel2']/?/?/text[@accessiblename~'Synchronization Settings']
+				</item>
+				<item
+				addcaps="text,accessible"
+				capname="text"
+				id="2340da5b-2be5-4ea3-9f20-e73736327a29"
+				name="txtLinkPreferences"
+				refimgid="e25e4212-7970-46b7-8aac-dd8408d26c7e"
+				searchtimeout="30000ms">
+					/form[@controlname='UserWelcome']/container[@controlname='pnlControls']/?/?/container[@controlname='panel2']/?/?/text[@accessiblename~'Link Preferences']
+				</item>
+				<item
+				addcaps="text,accessible"
+				capname="text"
+				id="071dacdd-1ef7-4e85-aacb-792dcb7ce686"
+				name="txtFieldMappingAndMatchingCriteria"
+				refimgid="4823b533-2309-4880-97ec-4943cd0cd0cc"
+				searchtimeout="30000ms">
+					/form[@controlname='UserWelcome']/container[@controlname='pnlControls']/?/?/container[@controlname='panel2']/?/?/text[@accessiblename~'Field Mapping and Matching']
+				</item>
+				<item
+				addcaps="text,accessible"
+				capname="text"
+				id="45e88b56-beda-4635-b7b1-5e241d2d3b3c"
+				name="txtInitialization"
+				refimgid="cd79dca1-8959-44fe-9567-357bab1c4814"
+				searchtimeout="30000ms">
+					/form[@controlname='UserWelcome']/container[@controlname='pnlControls']/?/?/container[@controlname='panel2']/?/?/text[@accessiblename~'Initialization']
+				</item>
+				<item
+				addcaps="text,accessible"
+				capname="text"
+				id="dbaa2737-37cd-4575-bf44-480a7290f37b"
+				name="txtToResetLinkAndReinitialize"
+				refimgid="fd44f31d-c169-456e-bb9c-0e692b4a126c"
+				searchtimeout="30000ms">
+					/form[@controlname='UserWelcome']/container[@controlname='pnlControls']/?/?/container[@controlname='panel2']/?/?/text[@accessiblename~'To reset Link and reiniti']
+				</item>
+				<basepath>
+					/form[@controlname='UserWelcome']/container[@controlname='pnlControls']/?/?/container[@controlname='panel2']
+				</basepath>
+			</folder>
+			<folder
+			addcaps="container,control,nativewindow"
+			capname="container"
+			id="3589e19b-4497-4398-bdf4-1f220b870554"
+			isrooted="True"
+			name="Panel3"
+			refpath="/form[@controlname='UserWelcome']/container[@controlname='pnlControls']/container[@controlname='pnlBody']/container[@controlname='panel3']"
+			searchtimeout="30000ms"
+			usecache="False">
+				<item
+				addcaps="text,accessible"
+				capname="text"
+				id="4ba6643b-aca8-42a3-a778-79771adae1fd"
+				name="txtStatusStep1"
+				refimgid="c7409a5e-7c52-473a-8d84-91f64d2158ac"
+				searchtimeout="30000ms">
+					/form[@controlname='UserWelcome']/container[@controlname='pnlControls']/?/?/container[@controlname='panel3']/element[@controlname='alblStep1Status']/text
+				</item>
+				<item
+				addcaps="text,accessible"
+				capname="text"
+				id="4e84ce48-c3df-4cbe-9d8a-6706db56b354"
+				name="txtStatusStep2"
+				refimgid="1b2f469a-5530-45e7-b117-6f1fd952a8ee"
+				searchtimeout="30000ms">
+					/form[@controlname='UserWelcome']/container[@controlname='pnlControls']/?/?/container[@controlname='panel3']/element[@controlname='alblStep2Status']/text
+				</item>
+				<item
+				addcaps="text,accessible"
+				capname="text"
+				id="dfe1c438-7bfc-494a-8b69-a17eba1b46bb"
+				name="txtStatusStep3"
+				refimgid="b22107fd-3e66-43ef-862d-fbf99f754729"
+				searchtimeout="30000ms">
+					/form[@controlname='UserWelcome']/container[@controlname='pnlControls']/?/?/container[@controlname='panel3']/element[@controlname='alblStep3Status']/text
+				</item>
+				<item
+				addcaps="text,accessible"
+				capname="text"
+				id="2055361b-ff22-46c4-928f-c50eb29c1ed7"
+				name="txtStatusStep4"
+				refimgid="acfcae68-df4c-4961-9f16-497a17f967bc"
+				refpath="/form[@controlname='UserWelcome']/container[@controlname='pnlControls']/container[@controlname='pnlBody']/container[@controlname='panel3']/element[@controlname='alblStep4Status']/text[@accessiblename='Incomplete']"
+				searchtimeout="30000ms">
+					/form[@controlname='UserWelcome']/container[@controlname='pnlControls']/?/?/container[@controlname='panel3']/?/?/text[@accessiblename='Incomplete']
+				</item>
+				<basepath>
+					/form[@controlname='UserWelcome']/container[@controlname='pnlControls']/?/?/container[@controlname='panel3']
+				</basepath>
+			</folder>
+			<item
+			addcaps="button,accessible"
+			capname="button"
+			id="de605356-c22f-4c0c-b877-4cf55d5641b4"
+			name="btnClose"
+			refimgid="0dac65ba-6b1c-4f11-94c9-4ce9233aa878"
+			refpath="/form[@controlname='UserWelcome']/element[@controlname='_BaseDialogForm_Toolbars_Dock_Area_Bottom']/container[@accessiblename='DockBottom']/toolbar[@accessiblename='Toolbar']/button[@accessiblename='Close ']"
+			searchtimeout="30000ms">
+				/form[@controlname='UserWelcome']//toolbar[@accessiblename='Toolbar']/button[@accessiblename='Close ']
+			</item>
+			<basepath>
+				/form[@controlname='UserWelcome']
+			</basepath>
+		</appfolder>
+		<appfolder
+		capname="form"
+		id="58486224-1951-4efa-a873-83ee73f7ecf9"
+		isrooted="True"
+		name="GoogleExchangeSettings"
+		refimgid="188ee180-29f3-4040-8074-4fa0ef4dc74d"
+		searchtimeout="30000ms"
+		usecache="False">
+			<item
+			addcaps="button,accessible"
+			capname="button"
+			id="0bed4373-269b-469c-8faa-d35f215361a5"
+			name="btnConnectWithGoogle"
+			refimgid="19baf3dd-909e-4822-977b-658adfacf5b3"
+			refpath="/form[@controlname='GoogleExchangeSettings']/container[@controlname='pnlControls']/container[@controlname='pnlBody']/element[@controlname='abtnTest']/button[@accessiblename='Connect with Google']"
+			searchtimeout="30000ms">
+				/form[@controlname='GoogleExchangeSettings']/container[@controlname='pnlControls']//button[@accessiblename='Connect with Google']
+			</item>
+			<item
+			addcaps="button,accessible"
+			capname="button"
+			id="462a8dbb-42bc-4fb3-9319-ef8f58474691"
+			name="btnFinish"
+			refimgid="9af61987-90bf-4814-86b0-ceea572042dc"
+			refpath="/form[@controlname='GoogleExchangeSettings']/element[@controlname='_BaseDialogForm_Toolbars_Dock_Area_Bottom']/container[@accessiblename='DockBottom']/toolbar[@accessiblename='Toolbar']/button[@accessiblename='Finish']"
+			searchtimeout="30000ms">
+				/form[@controlname='GoogleExchangeSettings']//toolbar[@accessiblename='Toolbar']/button[@accessiblename='Finish']
+			</item>
+			<basepath>
+				/form[@controlname='GoogleExchangeSettings']
+			</basepath>
+		</appfolder>
+		<appfolder
+		addcaps="container,webdocument"
+		capname="webdocument"
+		id="26f96df6-793d-4a40-9b4d-529583fdaf8e"
+		isrooted="True"
+		name="SignInGoogleAccounts"
+		refpath="/dom[@domain='accounts.google.com']"
+		searchtimeout="30000ms"
+		usecache="False">
+			<folder
+			addcaps="unknown,webelement,divtag"
+			capname="divtag"
+			id="bfd0ba74-9f7a-4277-a347-5812ffac7329"
+			isrooted="True"
+			name="BCAAsb"
+			refpath="/dom[@domain='accounts.google.com']//div[#'view_container']/div/div/div[2]/div/div[1]/div"
+			searchtimeout="30000ms"
+			usecache="False">
+				<item
+				addcaps="unknown,webelement,divtag"
+				capname="divtag"
+				id="6527504a-625f-44e2-83db-169c653e6f11"
+				name="lnkgmailAccount"
+				refimgid="ff3c5e20-5353-443a-9320-7d6af377f0a8"
+				searchtimeout="30000ms">
+					/dom[@domain='accounts.google.com']//div[#'view_container']/div/div/div[2]/div/div[1]/div/form[@action~'https://accounts.google.com/o/oauth2/v2/auth/oauthchooseaccount?']/?/?/section/div//ul/li[3]/div/div[1]//div[@id='profileIdentifier']
+				</item>
+				<item
+				addcaps="unknown,webelement,divtag"
+				capname="divtag"
+				id="a5f21c26-e48f-4f58-87ab-a4b045e82732"
+				name="SeeEditDownloadAndPermanentlyDele"
+				refimgid="53183c13-d1cf-4bd7-8748-ffbe08e23052"
+				searchtimeout="30000ms">
+					/dom[@domain='accounts.google.com']//div[#'view_container']/div/div/div[2]/div/div[1]/div/form/?/?/section//ul/li[1]/?/?/div[@innertext&gt;'See, edit, download and permanently']
+				</item>
+				<item
+				addcaps="unknown,webelement,divtag"
+				capname="divtag"
+				id="04e89d2e-c5b5-40f0-836a-7bdd91034605"
+				name="SeeEditShareAndPermanentlyDelete"
+				refimgid="0ae1b74c-0b76-4246-b342-ef3265fd662f"
+				searchtimeout="30000ms">
+					/dom[@domain='accounts.google.com']//div[#'view_container']/div/div/div[2]/div/div[1]/div/form/?/?/section//ul/li[2]/?/?/div[@innertext&gt;'See, edit, share and permanently']
+				</item>
+				<item
+				addcaps="unknown,webelement,spantag"
+				capname="spantag"
+				id="4a28e8ab-fd30-4e07-b977-5ec138d86a35"
+				name="Allow"
+				refimgid="a88d106a-fede-41f3-a88e-1e58c2792438"
+				refpath="/dom[@domain='accounts.google.com']//div[#'submit_approve_access']/div/button/span[@innertext='Allow']"
+				searchtimeout="30000ms">
+					/dom[@domain='accounts.google.com']//div[#'view_container']/div/div/div[2]/div/div[1]/div//span[@innertext='Allow']
+				</item>
+				<item
+				addcaps="unknown,webelement,divtag"
+				capname="divtag"
+				id="981550fe-9cfd-4b99-ae30-bdba04f17657"
+				name="SeeEditDownloadAndPermanentlyDele1"
+				refimgid="db5e20ea-4634-4bbe-8789-8b7b68da2d69"
+				refpath="/dom[@domain='accounts.google.com']//div[#'view_container']/div/div/div[2]/div/div[1]/div/form[@action>'https://accounts.google.com/signin/oauth/consent?authuser=2&amp;part=AJi8hAPnWYKSb2kthuE6MRCoEuLY1liBJRlAZzXOdqmSuX6cC2OzE6BvRiTq-s6krvlcEFaugTtxvLg3hS4xCRSydaTt2qOZF5MCayUsI3R5rLkFtINoOEsBTggViXmlKRUyOpCKQCv1S0q4W1mzmevEfKiPEp6-OFp9mgBxYTQONx1l5Dg59F_09x_XD7_FCT6']/span/section/div/div/div/div/ul/li[1]/div/div[@innertext='See, edit, download and permanently delete your contacts']"
+				searchtimeout="30000ms">
+					/dom[@domain='accounts.google.com']//div[#'view_container']/div/div/div[2]/div/div[1]/div/form[@action='https://accounts.google.com/signin/oauth/consent?authuser=2&amp;part=AJi8hAPnWYKSb2kthuE6MRCoEuLY1liBJRlAZzXOdqmSuX6cC2OzE6BvRiTq-s6krvlcEFaugTtxvLg3hS4xCRSydaTt2qOZF5MCayUsI3R5rLkFtINoOEsBTggViXmlKRUyOpCKQCv1S0q4W1mzmevEfKiPEp6-OFp9mgBxYTQONx1l5Dg59F_09x_XD7_FCT6PPfgq7QpyA0Q7V4MdhHRGmYju634Q7LNq32dh3qRDjZxnc0jISuGE5G9kmkbI9TAoS0aBWyNVLfeksVcsqb4BCwLdFxx9Yax43IS_jLNsFJK97TqcJFyIPbphZEqQyY46r4dadS1BX6bkk22i38mQYMnM3KcTHuTPXR8K2vdE6zwbfq3dQyDE15nSnOSe9MC0IHQcDFeXHH6uXwoSniV-kTs5bXJczO2tuvlYgTyf23HIuSawXfrzCvOfgsjJv-50qIkCBAXE&amp;as=S1880076885%3A1600727536402953&amp;pli=1&amp;rapt=AEjHL4NAxTZw1lWVAV2k3dnrbLi2_JA5d9saN23GqhgKCFzqbtemkHwIg3pEtLOSY-9Z1et_v_QnqB9EoNa53zcN3O0vAIYRWA#']/?/?/section//ul/li[1]/?/?/div[@innertext&gt;'See, edit, download and permanently']
+				</item>
+				<basepath>
+					/dom[@domain='accounts.google.com']//div[#'view_container']/div/div/div[2]/div/div[1]/div
+				</basepath>
+			</folder>
+			<item
+			addcaps="unknown,webelement,buttontag"
+			capname="buttontag"
+			id="f9cd86d8-7201-46aa-8ed3-b595e810e26e"
+			name="btnAllow"
+			refimgid="6ede2de4-ef26-49d2-a5a2-ad0d78583d23"
+			refpath="/dom[@domain='accounts.google.com']//div[#'submit_approve_access']/div/button"
+			searchtimeout="30000ms">
+				/dom[@domain='accounts.google.com']//div[#'submit_approve_access']/?/?/button
+			</item>
+			<basepath>
+				/dom[@domain='accounts.google.com']
+			</basepath>
+			<icon>
+				iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAALGPC/xhBQAAACBjSFJN
+AAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAGHRFWHRTb2Z0d2FyZQBQYWlu
+dC5ORVQgdjMuMzE3g3eGAAACKklEQVQ4T43R20vTcRjHcS/6G4Kgyy6KKKjwJogIDBJjIBUt2YVD
+yoGVmWUWzozMC92YaWqeSE1s0dThOtjBWUlKkMxDudXU1lCU6XSepzu82+/nvNrX6APP1e95Xt/f
+9/vEbaWh7TO1xi4qmjspfWKhuLqN++VGtLqn5BTVk1lQRbRVHGn4X8nTNclYtD020smBYDjaHhsJ
+cIxPbY8YIr+9viEGgqGwDBxLvixXfGJaLCLdedUfCwRDyPDKWoiF5SAuT0AMSA+2BXhXZqmydFBu
+bkfbmkFpayPOyQW8CwHs7jUxIN1NOkEa1llLGA7bsYX7KbTd4GiuiUuVbxhyzTMwuiwGpFX5lkLU
+dFjJ+55Mw5yGGpsRtX6Kk2Ue9jWewtBRx9eRJTEg7XnWF+TBo25SzUmo3inINLjIKoPD1QXsbNvN
+6fxr9Az5xIDm9kOm5gLce+xEW/aF1BYlCmshSr2PMxm32HV3B8ez0/jQPycG1NklTMxsUGUaQaMD
+lc7EIcse4vXJJF18xX7FVUpq6njd5xUDKVeKcE2v4xib52bxIAdza9mbf4CE9OscUZo5q3nO295p
+zD0zYuBcegHOCb+8KpvDi6G5hRMX8klIKaei6b083PdjCdNHjxhQqO/gcPsj77CB27PO2OQa9j+r
+8tq+/VyODC/yaXBxeyBRlUPv8Dzt3eO86PrNs85Rml7+ot7soLrVTqVpsypMTjGQcD5L/vC/tTkV
+F/cXNG0rDkAnVtkAAAAASUVORK5CYII=
+			</icon>
+		</appfolder>
+		<appfolder
+		addcaps="container,webdocument"
+		capname="webdocument"
+		id="108fa0b3-5fc9-4597-aa7a-2830ebfe9d05"
+		isrooted="True"
+		name="Google"
+		refpath="/dom[@domain='www.google.com']"
+		searchtimeout="30000ms"
+		usecache="False">
+			<item
+			addcaps="unknown,webelement,imgtag"
+			capname="imgtag"
+			id="03237795-0fe2-4dcf-87c7-c80d9a05d6c3"
+			name="SomeImgTag"
+			refpath="/dom[@domain='www.google.com']/body/span/img"
+			searchtimeout="30000ms">
+				/dom[@domain='www.google.com']/body/?/?/img
+			</item>
+			<basepath>
+				/dom[@domain='www.google.com']
+			</basepath>
+			<icon>
+				iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAALGPC/xhBQAAACBjSFJN
+AAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAGHRFWHRTb2Z0d2FyZQBQYWlu
+dC5ORVQgdjMuMzE3g3eGAAACKklEQVQ4T43R20vTcRjHcS/6G4Kgyy6KKKjwJogIDBJjIBUt2YVD
+yoGVmWUWzozMC92YaWqeSE1s0dThOtjBWUlKkMxDudXU1lCU6XSepzu82+/nvNrX6APP1e95Xt/f
+9/vEbaWh7TO1xi4qmjspfWKhuLqN++VGtLqn5BTVk1lQRbRVHGn4X8nTNclYtD020smBYDjaHhsJ
+cIxPbY8YIr+9viEGgqGwDBxLvixXfGJaLCLdedUfCwRDyPDKWoiF5SAuT0AMSA+2BXhXZqmydFBu
+bkfbmkFpayPOyQW8CwHs7jUxIN1NOkEa1llLGA7bsYX7KbTd4GiuiUuVbxhyzTMwuiwGpFX5lkLU
+dFjJ+55Mw5yGGpsRtX6Kk2Ue9jWewtBRx9eRJTEg7XnWF+TBo25SzUmo3inINLjIKoPD1QXsbNvN
+6fxr9Az5xIDm9kOm5gLce+xEW/aF1BYlCmshSr2PMxm32HV3B8ez0/jQPycG1NklTMxsUGUaQaMD
+lc7EIcse4vXJJF18xX7FVUpq6njd5xUDKVeKcE2v4xib52bxIAdza9mbf4CE9OscUZo5q3nO295p
+zD0zYuBcegHOCb+8KpvDi6G5hRMX8klIKaei6b083PdjCdNHjxhQqO/gcPsj77CB27PO2OQa9j+r
+8tq+/VyODC/yaXBxeyBRlUPv8Dzt3eO86PrNs85Rml7+ot7soLrVTqVpsypMTjGQcD5L/vC/tTkV
+F/cXNG0rDkAnVtkAAAAASUVORK5CYII=
+			</icon>
 		</appfolder>
 		<basepath>
 		</basepath>

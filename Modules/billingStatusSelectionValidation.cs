@@ -46,6 +46,8 @@ namespace SmokeTest.Modules
          private void billing_Select_Validate()
          {
          	
+         	te.MainForm.Self.Activate();
+         	
         	te.MainForm.btnTimeFeesExpenses.Click();
         	
         	te.MainForm.rdbtnTimeFees.Select();
@@ -56,6 +58,7 @@ namespace SmokeTest.Modules
         	
 			
 			te.MainForm.LeftPanel.rdoStatusAll.Select();
+			te.MainForm.LeftPanel.rdoTypeAll.Select();
 			Delay.Milliseconds(500);
 			rowCount=cmn.GetTableRowCount(te.MainForm.tblTimeEntry,"Time Entry Table");
         	Report.Success(String.Format("Row Count for the current Status All Dropdown Selected is {0}",rowCount.ToString()));
@@ -67,6 +70,7 @@ namespace SmokeTest.Modules
 			rowCount=cmn.GetTableRowCount(te.MainForm.tblTimeEntry,"Time Entry Table");
         	Report.Success(String.Format("Row Count for the current Status Unbilled Dropdown Selected is {0}",rowCount.ToString()));
         	cmn.VerifyCorrespondingDataExistsInTable(te.MainForm.tblTimeEntry,activityDescription,"Unposted","Time entry Table");
+        	
         	cmn.VerifyCorrespondingDataExistsInTable(te.MainForm.tblTimeEntry,activityDescription2,"Unposted","Time entry Table");
 			
         	

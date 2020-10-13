@@ -96,22 +96,40 @@ namespace SmokeTest
 //        	
 //        	str.LoginForm.btnLogin.Click();
         	
-        	
+			login.LoginForm.Self.Activate();
+			if(login.LoginForm.SelfInfo.Exists(10000))
+			{
+				Delay.Seconds(2);
+			
         	login.LoginForm.FirmId.TextValue=datasource.Rows[0].Values[0].ToString();//"QA Toronto 10";
         	login.LoginForm.UserId.TextValue=datasource.Rows[0].Values[1].ToString();//="admin user";
         	login.LoginForm.Pwd.TextValue=datasource.Rows[0].Values[2].ToString();//"password";
         	login.LoginForm.ServerName.TextValue=datasource.Rows[0].Values[3].ToString();//"J4-Mohanss";
         	login.LoginForm.btnLogin.Click();
         	Delay.Seconds(10);
-        
-        	
+        	Report.Success("Credentials entered successfully");
+			}
+			
+			else
+			{
+				Report.Info("Login Window is not seen as expected");
+				Host.Local.RunApplication("C:\\Amicus\\Amicus Attorney Workstation\\AmicusAttorney.XWin.exe", "", "C:\\Amicus\\Amicus Attorney Workstation", true, RunAppFlags.NoElevation);
+				login.LoginForm.FirmId.TextValue=datasource.Rows[0].Values[0].ToString();//"QA Toronto 10";
+        	login.LoginForm.UserId.TextValue=datasource.Rows[0].Values[1].ToString();//="admin user";
+        	login.LoginForm.Pwd.TextValue=datasource.Rows[0].Values[2].ToString();//"password";
+        	login.LoginForm.ServerName.TextValue=datasource.Rows[0].Values[3].ToString();//"J4-Mohanss";
+        	login.LoginForm.btnLogin.Click();
+        	Delay.Seconds(10);
+        	Report.Success("Credentials entered successfully after the second Login Form opened");
+			}
         	
         }
 
         public void update()
         {
 //        	Host.Local.RunApplication("C:\\Amicus\\Amicus Attorney Workstation\\AmicusAttorney.XWin.exe","–remote-debugging-port=8081");
-			Host.Local.RunApplication("C:\\Amicus\\Amicus Attorney Workstation\\AmicusAttorney.XWin.exe");
+			//Host.Local.RunApplication("C:\\Amicus\\Amicus Attorney Workstation\\AmicusAttorney.XWin.exe");
+			Host.Local.RunApplication("C:\\Amicus\\Amicus Attorney Workstation\\AmicusAttorney.XWin.exe", "", "C:\\Amicus\\Amicus Attorney Workstation", true, RunAppFlags.NoElevation);
 //        	if(!login.Update.SelfInfo.Exists(30000)&& !login.LoginForm.SelfInfo.Exists(30000))
 //        	{
 //        		CloseProcess();
@@ -119,9 +137,10 @@ namespace SmokeTest
 //        		Host.Local.RunApplication("C:\\Amicus\\Amicus Attorney Workstation\\AmicusAttorney.XWin.exe");
 //        		Report.Info("Warning message was closed successfully and Amicus Attorney Exe File Opened");
 //        	}
-        	
-        	if(login.Update.SelfInfo.Exists(180000))
+			Delay.Seconds(5);
+        	if(login.Update.SelfInfo.Exists(240000))
         	{
+        		login.Update.Self.Activate();
         		Report.Success("Amicus Attorney Update is currently open");
         		if(login.Update.btnContinueInfo.Exists(3000))
         		{

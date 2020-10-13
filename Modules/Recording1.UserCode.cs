@@ -22,30 +22,30 @@ using Ranorex.Core.Testing;
 
 namespace SmokeTest.Modules
 {
-    public partial class Recording1
-    {
-        /// <summary>
-        /// This method gets called right after the recording has been started.
-        /// It can be used to execute recording specific initialization code.
-        /// </summary>
-        private void Init()
-        {
-            // Your recording specific initialization code goes here.
-        }
+	public partial class Recording1
+	{
+		/// <summary>
+		/// This method gets called right after the recording has been started.
+		/// It can be used to execute recording specific initialization code.
+		/// </summary>
+		private void Init()
+		{
+			// Your recording specific initialization code goes here.
+		}
 
-        public void Key_sequence_FileSelectForm1(RepoItemInfo formInfo)
-        {
-            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '{Down}{Down}{LShiftKey up}' with focus on 'formInfo'.", formInfo);
-            formInfo.FindAdapter<Form>().EnsureVisible();
-            Keyboard.Press("{Down}{Down}{LShiftKey up}");
-        }
+		public void Key_sequence_FileSelectForm1(RepoItemInfo formInfo)
+		{
+			Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '{Down}{Down}{LShiftKey up}' with focus on 'formInfo'.", formInfo);
+			formInfo.FindAdapter<Form>().EnsureVisible();
+			Keyboard.Press("{Down}{Down}{LShiftKey up}");
+		}
 
-        public void Key_sequence_FileSelectForm(RepoItemInfo formInfo)
-        {
-            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '{LShiftKey down}{Down down}' with focus on 'formInfo'.", formInfo);
-            formInfo.FindAdapter<Form>().EnsureVisible();
-            Keyboard.Press("{LShiftKey down}{Down down}");
-        }
+		public void Key_sequence_FileSelectForm(RepoItemInfo formInfo)
+		{
+			Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '{LShiftKey down}{Down down}' with focus on 'formInfo'.", formInfo);
+			formInfo.FindAdapter<Form>().EnsureVisible();
+			Keyboard.Press("{LShiftKey down}{Down down}");
+		}
 
-    }
+	}
 }

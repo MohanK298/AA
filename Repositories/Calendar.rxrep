@@ -544,6 +544,69 @@ AAAAADmCBQAAAJAjWAAAAAA5ggUAAAAQMwz/B/Pa+j2m8Yn1AAAAAElFTkSuQmCC
 			searchtimeout="30000ms">
 				/form[@controlname='MainForm']/?/?/form[@controlname='CalendarIndexForm']/container[@controlname='menubar_Fill_Panel']/?/?/container[@controlname='dnWeekView']/?/?/picture[@controlname='picNext']
 			</item>
+			<item
+			addcaps="menuitem,accessible"
+			capname="menuitem"
+			id="2e93e218-3ee6-4493-a1f2-f2c801ee02da"
+			name="Search"
+			refpath="/form[@controlname='MainForm']/element[@controlname='_BaseModuleForm_Toolbars_Dock_Area_Top']/container[@accessiblename='DockTop']/menubar[@accessiblename='Toolbar']/menuitem[@accessiblename='Tools']/menuitem[@accessiblename='Search']"
+			searchtimeout="30000ms">
+				/form[@controlname='MainForm']/element[@controlname='_BaseModuleForm_Toolbars_Dock_Area_Top']//menuitem[@accessiblename='Tools']/menuitem[@accessiblename='Search']
+			</item>
+			<item
+			addcaps="menuitem,accessible"
+			capname="menuitem"
+			id="600c4f1b-64e9-48b0-8a55-82a3cbdcd668"
+			name="DateCalculator"
+			refpath="/form[@controlname='MainForm']/element[@controlname='_BaseModuleForm_Toolbars_Dock_Area_Top']/container[@accessiblename='DockTop']/menubar[@accessiblename='Toolbar']/menuitem[@accessiblename='Tools']/menuitem[@accessiblename='Date Calculator']"
+			searchtimeout="30000ms">
+				/form[@controlname='MainForm']/element[@controlname='_BaseModuleForm_Toolbars_Dock_Area_Top']//menuitem[@accessiblename='Tools']/menuitem[@accessiblename='Date Calculator']
+			</item>
+			<item
+			addcaps="menuitem,accessible"
+			capname="menuitem"
+			id="4471a101-bf4e-49a9-af29-6801d29ec405"
+			name="FirmMemberAvailability"
+			refpath="/form[@controlname='MainForm']/element[@controlname='_BaseModuleForm_Toolbars_Dock_Area_Top']/container[@accessiblename='DockTop']/menubar[@accessiblename='Toolbar']/menuitem[@accessiblename='Tools']/menuitem[@accessiblename='Firm Member Availability']"
+			searchtimeout="30000ms">
+				/form[@controlname='MainForm']/element[@controlname='_BaseModuleForm_Toolbars_Dock_Area_Top']//menuitem[@accessiblename='Tools']/menuitem[@accessiblename='Firm Member Availability']
+			</item>
+			<item
+			addcaps="menuitem,accessible"
+			capname="menuitem"
+			id="4ba8d1e5-7388-4eea-b874-ddff313af573"
+			name="TimeEntryAssistant"
+			refpath="/form[@controlname='MainForm']/element[@controlname='_BaseModuleForm_Toolbars_Dock_Area_Top']/container[@accessiblename='DockTop']/menubar[@accessiblename='Toolbar']/menuitem[@accessiblename='Tools']/menuitem[@accessiblename='Time Entry Assistant']"
+			searchtimeout="30000ms">
+				/form[@controlname='MainForm']/element[@controlname='_BaseModuleForm_Toolbars_Dock_Area_Top']//menuitem[@accessiblename='Tools']/menuitem[@accessiblename='Time Entry Assistant']
+			</item>
+			<item
+			addcaps="menuitem,accessible"
+			capname="menuitem"
+			id="8fc8c076-99a4-403b-bec6-52da8bddf788"
+			name="BillingConsistencyChecker"
+			refpath="/form[@controlname='MainForm']/element[@controlname='_BaseModuleForm_Toolbars_Dock_Area_Top']/container[@accessiblename='DockTop']/menubar[@accessiblename='Toolbar']/menuitem[@accessiblename='Tools']/menuitem[@accessiblename='Billing Consistency Checker']"
+			searchtimeout="30000ms">
+				/form[@controlname='MainForm']/element[@controlname='_BaseModuleForm_Toolbars_Dock_Area_Top']//menuitem[@accessiblename='Tools']/menuitem[@accessiblename&gt;'Billing Consistency Check']
+			</item>
+			<item
+			addcaps="menuitem,accessible"
+			capname="menuitem"
+			id="3f613fe6-ecae-4ca2-9bad-c0f8a94a5e32"
+			name="Preferences"
+			refpath="/form[@controlname='MainForm']/element[@controlname='_BaseModuleForm_Toolbars_Dock_Area_Top']/container[@accessiblename='DockTop']/menubar[@accessiblename='Toolbar']/menuitem[@accessiblename='Tools']/menuitem[@accessiblename='Preferences...']"
+			searchtimeout="30000ms">
+				/form[@controlname='MainForm']/element[@controlname='_BaseModuleForm_Toolbars_Dock_Area_Top']//menuitem[@accessiblename='Tools']/menuitem[@accessiblename='Preferences...']
+			</item>
+			<item
+			addcaps="menuitem,accessible"
+			capname="menuitem"
+			id="21a7b7c0-70e3-4311-8779-b44e8c792e90"
+			name="Tools"
+			refpath="/form[@controlname='MainForm']/element[@controlname='_BaseModuleForm_Toolbars_Dock_Area_Top']/container[@accessiblename='DockTop']/menubar[@accessiblename='Toolbar']/menuitem[@accessiblename='Tools']"
+			searchtimeout="30000ms">
+				/form[@controlname='MainForm']/element[@controlname='_BaseModuleForm_Toolbars_Dock_Area_Top']//menuitem[@accessiblename='Tools']
+			</item>
 			<basepath>
 				/form[@controlname='MainForm']
 			</basepath>
@@ -2141,6 +2204,605 @@ D8zerL8gSEaw7+rFqJ//CkX5CWkHqyZHVzU6AAAAAElFTkSuQmCC
 				/form[@title='']/?/?/table[@accessiblename='Band 0']
 			</basepath>
 		</folder>
+		<appfolder
+		addcaps="form,control,nativewindow"
+		capname="form"
+		id="a2a018f2-341d-4f10-b770-2e61340f26f5"
+		isrooted="True"
+		name="Search"
+		refimgid="6f826368-f467-4c87-95be-786357327765"
+		refpath="/form[@controlname='Search']"
+		searchtimeout="30000ms"
+		usecache="True">
+			<item
+			addcaps="container,accessible"
+			capname="container"
+			id="853c9824-dd4a-4cdf-a40d-54aa573f41b2"
+			name="Grouping"
+			refpath="/form[@controlname='Search']/container[@controlname='menubar_Fill_Panel']/container[@controlname='pnlBase']/container[@controlname='pnlControls']/element[@controlname='aoptSearch']/list[@accessiblename='Basic']/container[@accessiblerole='Grouping']"
+			searchtimeout="30000ms">
+				/form[@controlname='Search']/?/?/container[@controlname='pnlBase']//list[@accessiblename='Basic']/container[@accessiblerole='Grouping']
+			</item>
+			<folder
+			addcaps="container,control,nativewindow"
+			capname="container"
+			id="10ef44f0-09ef-43dc-b496-ca32bd1b28af"
+			isrooted="True"
+			name="PnlBase"
+			refpath="/form[@controlname='Search']/container[@controlname='menubar_Fill_Panel']/container[@controlname='pnlBase']"
+			searchtimeout="30000ms"
+			usecache="False">
+				<item
+				addcaps="radiobutton,accessible"
+				capname="radiobutton"
+				id="1c439424-7dae-415c-a6b6-0f63375555f1"
+				name="rdoAdvanced"
+				refpath="/form[@controlname='Search']/container[@controlname='menubar_Fill_Panel']/container[@controlname='pnlBase']/container[@controlname='pnlControls']/element[@controlname='aoptSearch']/list[@accessiblename='Basic']/container[@accessiblerole='Grouping']/radiobutton[@accessiblename='Advanced']"
+				searchtimeout="30000ms">
+					/form[@controlname='Search']/container[@controlname='menubar_Fill_Panel']/container[@controlname='pnlBase']//list[@accessiblename='Basic']/?/?/radiobutton[@accessiblename='Advanced']
+				</item>
+				<item
+				addcaps="radiobutton,accessible"
+				capname="radiobutton"
+				id="0d4a1fab-f93c-46b6-9b79-c0843c8ded20"
+				name="rdoBasic"
+				refpath="/form[@controlname='Search']/container[@controlname='menubar_Fill_Panel']/container[@controlname='pnlBase']/container[@controlname='pnlControls']/element[@controlname='aoptSearch']/list[@accessiblename='Basic']/container[@accessiblerole='Grouping']/radiobutton[@accessiblename='Basic']"
+				searchtimeout="30000ms">
+					/form[@controlname='Search']/container[@controlname='menubar_Fill_Panel']/container[@controlname='pnlBase']//list[@accessiblename='Basic']/?/?/radiobutton[@accessiblename='Basic']
+				</item>
+				<item
+				addcaps="button,uiautomation,uiautomationinvoke"
+				capname="button"
+				id="0021a679-daa1-4134-9c6a-8580b649f9e3"
+				name="btnType"
+				refimgid="4e84efa7-3215-4b36-809b-843e14549208"
+				refpath="/form[@controlname='Search']/container[@controlname='menubar_Fill_Panel']/container[@controlname='pnlBase']/container[@controlname='pnlControls']/element[@controlname='acmbTable']/button[@automationid='[Editor] dropdown button']"
+				searchtimeout="30000ms">
+					/form[@controlname='Search']/container[@controlname='menubar_Fill_Panel']/container[@controlname='pnlBase']/?/?/element[@controlname='acmbTable']/button[@automationid='[Editor] dropdown button']
+				</item>
+				<item
+				addcaps="text,uiautomation,uiautomationvalue"
+				capname="text"
+				id="a922f4b5-16f7-495a-a908-23db8369b3b6"
+				name="txtSearch"
+				refimgid="9f75a182-0ba5-4a80-b4ca-ba0559835196"
+				refpath="/form[@controlname='Search']/container[@controlname='menubar_Fill_Panel']/container[@controlname='pnlBase']/container[@controlname='pnlControls']/container[@controlname='panel1']/element[@controlname='atxtText']/text[@automationid='[Editor] Edit Area']"
+				searchtimeout="30000ms">
+					/form[@controlname='Search']/container[@controlname='menubar_Fill_Panel']/container[@controlname='pnlBase']/?/?/container[@controlname='panel1']/element[@controlname='atxtText']/text[@automationid='[Editor] Edit Area']
+				</item>
+				<item
+				addcaps="button,uiautomation,uiautomationinvoke"
+				capname="button"
+				id="d8f54df3-7676-400d-8fb3-94f7bbccece9"
+				name="btnIn"
+				refimgid="8c47d24c-db88-4c29-8aa2-fbb568eea85a"
+				refpath="/form[@controlname='Search']/container[@controlname='menubar_Fill_Panel']/container[@controlname='pnlBase']/container[@controlname='pnlControls']/container[@controlname='panel1']/element[@controlname='acmbIn']/button[@automationid='[Editor] dropdown button']"
+				searchtimeout="30000ms">
+					/form[@controlname='Search']/container[@controlname='menubar_Fill_Panel']/container[@controlname='pnlBase']/?/?/container[@controlname='panel1']/?/?/button[@automationid='[Editor] dropdown button']
+				</item>
+				<item
+				addcaps="button,accessible"
+				capname="button"
+				id="e5fbf8c3-99a7-4331-825f-53bb54349bee"
+				name="btnAdvancedType"
+				refimgid="93cc9e0d-944c-439b-b22a-9abdabced809"
+				refpath="/form[@controlname='Search']/container[@controlname='menubar_Fill_Panel']/container[@controlname='pnlBase']/container[@controlname='pnlControls']/container[@controlname='scTables']/element[@controlname='ubtnIcon']/button[@accessiblerole='PushButton']"
+				searchtimeout="30000ms">
+					/form[@controlname='Search']/container[@controlname='menubar_Fill_Panel']/container[@controlname='pnlBase']/?/?/container[@controlname='scTables']/?/?/button[@accessiblerole='PushButton']
+				</item>
+				<item
+				addcaps="button,accessible"
+				capname="button"
+				id="5d558d82-c2bb-4397-996a-ad2272f7a440"
+				name="btnAddSearchCondition"
+				refimgid="4b69b81c-ca42-4bff-bc12-eea717e6a564"
+				refpath="/form[@controlname='Search']/container[@controlname='menubar_Fill_Panel']/container[@controlname='pnlBase']/container[@controlname='pnlControls']/container[@controlname='panel2']/element[@controlname='abtnSearch']/button[@accessiblename='Add Search Condition']"
+				searchtimeout="30000ms">
+					/form[@controlname='Search']/container[@controlname='menubar_Fill_Panel']/container[@controlname='pnlBase']/?/?/container[@controlname='panel2']/?/?/button[@accessiblename='Add Search Condition']
+				</item>
+				<item
+				addcaps="table,accessible"
+				capname="table"
+				id="eb49610d-2486-4b8d-86c4-7a3f86780e30"
+				name="tbSearchCondition"
+				refimgid="9219991a-17ee-4763-a605-6e0cd5062871"
+				refpath="/form[@controlname='Search']/container[@controlname='menubar_Fill_Panel']/container[@controlname='pnlBase']/container[@controlname='pnlControls']/container[@controlname='panel2']/element[@controlname='abgWhere']/table[@accessiblename='Band 0']"
+				searchtimeout="30000ms">
+					/form[@controlname='Search']/container[@controlname='menubar_Fill_Panel']/container[@controlname='pnlBase']/?/?/container[@controlname='panel2']/element[@controlname='abgWhere']/table[@accessiblename='Band 0']
+				</item>
+				<basepath>
+					/form[@controlname='Search']/container[@controlname='menubar_Fill_Panel']/container[@controlname='pnlBase']
+				</basepath>
+			</folder>
+			<folder
+			addcaps="toolbar,accessible"
+			capname="toolbar"
+			id="dc00c8ef-4bf1-4009-80e2-0a509036af7c"
+			isrooted="True"
+			name="Toolbar1"
+			refpath="/form[@controlname='Search']/container[@controlname='menubar_Fill_Panel']/element[@controlname='_menubar_Fill_Panel_Toolbars_Dock_Area_Bottom']/container[@accessiblename='DockBottom']/toolbar[@accessiblename='Toolbar']"
+			searchtimeout="30000ms"
+			usecache="False">
+				<item
+				addcaps="toolbar,accessible"
+				capname="toolbar"
+				id="83fff539-445e-4c12-9b62-2ef60412775d"
+				name="Toolbar"
+				refimgid="1674e917-810b-403a-8981-940a5c7d1030"
+				refpath="/form[@controlname='Search']/container[@controlname='menubar_Fill_Panel']/element[@controlname='_menubar_Fill_Panel_Toolbars_Dock_Area_Bottom']/container[@accessiblename='DockBottom']/toolbar[@accessiblename='Toolbar']"
+				searchtimeout="30000ms">
+					/form[@controlname='Search']/container[@controlname='menubar_Fill_Panel']//toolbar[@accessiblename='Toolbar']
+				</item>
+				<item
+				addcaps="button,accessible"
+				capname="button"
+				id="07dcbb6d-c505-4721-b833-5d43a9b51199"
+				name="btnCancel"
+				refpath="/form[@controlname='Search']/container[@controlname='menubar_Fill_Panel']/element[@controlname='_menubar_Fill_Panel_Toolbars_Dock_Area_Bottom']/container[@accessiblename='DockBottom']/toolbar[@accessiblename='Toolbar']/button[@accessiblename='Cancel']"
+				searchtimeout="30000ms">
+					/form[@controlname='Search']/container[@controlname='menubar_Fill_Panel']//toolbar[@accessiblename='Toolbar']/button[@accessiblename='Cancel']
+				</item>
+				<item
+				addcaps="button,accessible"
+				capname="button"
+				id="996c0788-6fbe-41d0-84cf-684a3fa82e51"
+				name="btnFindNow"
+				refpath="/form[@controlname='Search']/container[@controlname='menubar_Fill_Panel']/element[@controlname='_menubar_Fill_Panel_Toolbars_Dock_Area_Bottom']/container[@accessiblename='DockBottom']/toolbar[@accessiblename='Toolbar']/button[@accessiblename='Find Now']"
+				searchtimeout="30000ms">
+					/form[@controlname='Search']/container[@controlname='menubar_Fill_Panel']//toolbar[@accessiblename='Toolbar']/button[@accessiblename='Find Now']
+				</item>
+				<basepath>
+					/form[@controlname='Search']/container[@controlname='menubar_Fill_Panel']//toolbar[@accessiblename='Toolbar']
+				</basepath>
+			</folder>
+			<basepath>
+				/form[@controlname='Search']
+			</basepath>
+			<icon>
+				iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACx
+jwv8YQUAAAAJcEhZcwAADsQAAA7EAZUrDhsAAAFlSURBVDhPY6AJeOJjOvORg9p/FOyo/v9xoKUT
+VAlugKERDT921nwLVQoBb3Kj+Z5FOf9/FuP2/1msO3EYpBaIH7vr/Qcb8Oft6//kgFclif/Brnjo
+qPYZKvb/z8tn/z+tWfD/bWspWMHLwrj/r8pT/7/rrfv/dffG//++fwOr+3Hu+P8nPsYTwAY8CbRM
+fGSvCnbev29fwQpwgd9PH/1/N6ERHB5gzSDwyFX3IkjgeZLv/0+rF/z/snPD/4fWCmAND60V/3+Y
+1fP//cxuYABqgcUe2SqBDXge5qoDMcBN9w3MgDdNhf/fTWr+/xCoCKb4XU/t/7fd1Shi4BgJtPSG
+GqBzjhwDnkbaa4ANAIZBBDkGgDXDAMkGAFMmVCsEPHLTO0uKAU+jnYygWhHgeZIPUQY8dFS/BdWC
+Cd405uM14N+/f+egSnGDjyvnxjyyVQYbANL0FmjAm/aKH4+9zVWhSqCAgQEAq9YXqsYCPO8AAAAA
+SUVORK5CYII=
+			</icon>
+		</appfolder>
+		<appfolder
+		capname="form"
+		id="36a194e1-8ca2-40bc-8bd3-6b6fdba8805e"
+		isrooted="True"
+		name="SearchResult"
+		refimgid="bc092884-b167-438f-acd7-1f3f1c4b385f"
+		searchtimeout="30000ms"
+		usecache="False">
+			<folder
+			addcaps="container,control,nativewindow"
+			capname="container"
+			id="f172e666-ed34-466a-a5b0-b033a977eb16"
+			isrooted="True"
+			name="PnlBase"
+			refpath="/form[@controlname='SearchResult']/container[@controlname='menubar_Fill_Panel']/container[@controlname='pnlBase']"
+			searchtimeout="30000ms"
+			usecache="False">
+				<item
+				addcaps="text,control,nativewindow"
+				capname="text"
+				id="86f3c2ec-3a89-494d-8951-f7284feaf71f"
+				name="txtRestrictedTo"
+				refimgid="850e5d00-475f-4c1d-86b9-627fc2ca3185"
+				refpath="/form[@controlname='SearchResult']/container[@controlname='menubar_Fill_Panel']/container[@controlname='pnlBase']/container[@controlname='pnlControls']/container[@controlname='panel1']/element[@controlname='amicusLabel1']/text[@controlname='_EmbeddableTextBox']"
+				searchtimeout="30000ms">
+					/form[@controlname='SearchResult']/?/?/container[@controlname='pnlBase']/?/?/container[@controlname='panel1']/?/?/text[@controlname='_EmbeddableTextBox']
+				</item>
+				<item
+				addcaps="text,control,nativewindow"
+				capname="text"
+				id="b61dfa5f-1fe4-4e60-9023-bc802ceafbf4"
+				name="txtWhereTerms"
+				refimgid="814b2ba6-ffa6-4beb-9774-c3116d3829d7"
+				refpath="/form[@controlname='SearchResult']/container[@controlname='menubar_Fill_Panel']/container[@controlname='pnlBase']/container[@controlname='pnlControls']/container[@controlname='panel2']/element[@controlname='alblWhere']/text[@controlname='_EmbeddableTextBox']"
+				searchtimeout="30000ms">
+					/form[@controlname='SearchResult']/?/?/container[@controlname='pnlBase']/?/?/container[@controlname='panel2']/?/?/text[@controlname='_EmbeddableTextBox']
+				</item>
+				<item
+				addcaps="text,control,nativewindow"
+				capname="text"
+				id="1e969bf7-af1f-4aae-a1ea-47f0c0437d71"
+				name="txtShowingField"
+				refimgid="06957f16-9b79-443a-aa31-14f304068717"
+				refpath="/form[@controlname='SearchResult']/container[@controlname='menubar_Fill_Panel']/container[@controlname='pnlBase']/container[@controlname='pnlControls']/container[@controlname='pnlDetails']/element[@controlname='lblText']/text[@controlname='_EmbeddableTextBox']"
+				searchtimeout="30000ms">
+					/form[@controlname='SearchResult']/?/?/container[@controlname='pnlBase']/?/?/container[@controlname='pnlDetails']/?/?/text[@controlname='_EmbeddableTextBox']
+				</item>
+				<item
+				addcaps="table,accessible"
+				capname="table"
+				id="5eb3af8c-40a4-41da-a3bf-a8a0d3fbd189"
+				name="tblSearchResult"
+				refimgid="b24e7d98-3a9a-492b-91c5-c55fdb0a9f65"
+				refpath="/form[@controlname='SearchResult']/container[@controlname='menubar_Fill_Panel']/container[@controlname='pnlBase']/container[@controlname='pnlControls']/element[@controlname='abgSearchResults']/table[@accessiblename='Band 0']"
+				searchtimeout="30000ms">
+					/form[@controlname='SearchResult']/?/?/container[@controlname='pnlBase']//table[@accessiblename='Band 0']
+				</item>
+				<basepath>
+					/form[@controlname='SearchResult']/?/?/container[@controlname='pnlBase']
+				</basepath>
+			</folder>
+			<folder
+			addcaps="toolbar,accessible"
+			capname="toolbar"
+			id="ff8e7bc6-0022-41f9-985b-ad8cc6d6c9b8"
+			isrooted="True"
+			name="Toolbar1"
+			refpath="/form[@controlname='SearchResult']/container[@controlname='menubar_Fill_Panel']/element[@controlname='_menubar_Fill_Panel_Toolbars_Dock_Area_Bottom']/container[@accessiblename='DockBottom']/toolbar[@accessiblename='Toolbar']"
+			searchtimeout="30000ms"
+			usecache="False">
+				<item
+				addcaps="toolbar,accessible"
+				capname="toolbar"
+				id="d1ab2ff5-4f76-46ce-8c02-9deed29f75d8"
+				name="Toolbar"
+				refpath="/form[@controlname='SearchResult']/container[@controlname='menubar_Fill_Panel']/element[@controlname='_menubar_Fill_Panel_Toolbars_Dock_Area_Bottom']/container[@accessiblename='DockBottom']/toolbar[@accessiblename='Toolbar']"
+				searchtimeout="30000ms">
+					/form[@controlname='SearchResult']/container[@controlname='menubar_Fill_Panel']//toolbar[@accessiblename='Toolbar']
+				</item>
+				<item
+				addcaps="button,accessible"
+				capname="button"
+				id="376a0d1c-7ec4-412a-9ec5-417b0481e64a"
+				name="btnClose"
+				refpath="/form[@controlname='SearchResult']/container[@controlname='menubar_Fill_Panel']/element[@controlname='_menubar_Fill_Panel_Toolbars_Dock_Area_Bottom']/container[@accessiblename='DockBottom']/toolbar[@accessiblename='Toolbar']/button[@accessiblename='Close']"
+				searchtimeout="30000ms">
+					/form[@controlname='SearchResult']/container[@controlname='menubar_Fill_Panel']//toolbar[@accessiblename='Toolbar']/button[@accessiblename='Close']
+				</item>
+				<item
+				addcaps="button,accessible"
+				capname="button"
+				id="fbbb4d6c-77a9-47e1-9f17-5cff33cc7386"
+				name="btnGenerateDocument"
+				refpath="/form[@controlname='SearchResult']/container[@controlname='menubar_Fill_Panel']/element[@controlname='_menubar_Fill_Panel_Toolbars_Dock_Area_Bottom']/container[@accessiblename='DockBottom']/toolbar[@accessiblename='Toolbar']/button[@accessiblename='Generate Document']"
+				searchtimeout="30000ms">
+					/form[@controlname='SearchResult']/container[@controlname='menubar_Fill_Panel']//toolbar[@accessiblename='Toolbar']/button[@accessiblename='Generate Document']
+				</item>
+				<item
+				addcaps="button,accessible"
+				capname="button"
+				id="649528f3-d4a1-47d4-bb78-8cdfbed7039a"
+				name="btnHideFromResults"
+				refpath="/form[@controlname='SearchResult']/container[@controlname='menubar_Fill_Panel']/element[@controlname='_menubar_Fill_Panel_Toolbars_Dock_Area_Bottom']/container[@accessiblename='DockBottom']/toolbar[@accessiblename='Toolbar']/button[@accessiblename='Hide from Results']"
+				searchtimeout="30000ms">
+					/form[@controlname='SearchResult']/container[@controlname='menubar_Fill_Panel']//toolbar[@accessiblename='Toolbar']/button[@accessiblename='Hide from Results']
+				</item>
+				<item
+				addcaps="button,accessible"
+				capname="button"
+				id="d23f612a-1675-49cc-995f-f77370327a6e"
+				name="btnPrint"
+				refpath="/form[@controlname='SearchResult']/container[@controlname='menubar_Fill_Panel']/element[@controlname='_menubar_Fill_Panel_Toolbars_Dock_Area_Bottom']/container[@accessiblename='DockBottom']/toolbar[@accessiblename='Toolbar']/button[@accessiblename='Print']"
+				searchtimeout="30000ms">
+					/form[@controlname='SearchResult']/container[@controlname='menubar_Fill_Panel']//toolbar[@accessiblename='Toolbar']/button[@accessiblename='Print']
+				</item>
+				<basepath>
+					/form[@controlname='SearchResult']/container[@controlname='menubar_Fill_Panel']//toolbar[@accessiblename='Toolbar']
+				</basepath>
+			</folder>
+			<basepath>
+				/form[@controlname='SearchResult']
+			</basepath>
+		</appfolder>
+		<appfolder
+		addcaps="form,control,nativewindow"
+		capname="form"
+		id="85d01cfc-c704-4417-8959-970a6f8c573a"
+		isrooted="True"
+		name="DropDownForm"
+		refimgid="7658a80e-cfae-4495-b4a1-4eacb5eca94b"
+		searchtimeout="30000ms"
+		usecache="True">
+			<item
+			addcaps="treeitem,uiautomation"
+			capname="treeitem"
+			id="aef2d5c1-6bd9-462c-ad6f-cae7e5fc81f9"
+			name="TreeItem"
+			searchtimeout="30000ms">
+				/form[@title='']//tree/treeitem[@name~$var]
+			</item>
+			<basepath>
+				/form[@title='']
+			</basepath>
+			<icon>
+				iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAALGPC/xhBQAAAAlwSFlz
+AAAOxAAADsQBlSsOGwAAAlFJREFUOE+lk+tLk2EYh/eX9CGipCIyCKLo4HHlzA8SVoR9KogkkKDM
+CKRCCwQtKUjtIJSdrKggqQ+CFZmHHGlzzrU552HqNnWbO7zHXT3bBLXQoG74fXvv63c9z8tj+O9p
+aDFz55WDmuYBqpp+cLnRzJnqTk5UdlNc8YWic60Ulr6koOTJshw8/RjjkXIMdc9tNLVrNLZp3GqV
+qX4dofJZkIpHs5Q3+Tl710fJ7UlO1o5zvNrN0SoXh644yS8zsyZtB4baZjN1bwLcfBvm4oMpTt1w
+U3zdybFrDg5ftVNYYaPg0iCmcisHLgxgLLOQe95CRmk369KNGGoaXuAPxAhHNeZFQhGVYFghIDIb
+SsUbUPDMyLi9Mg6PhHVMosvqYePW7QJQ38JqE4+DokJEijMX0ZkKaoz6VSwuLxs2b8Nw/+n7hU//
+HE0HSYkzH9OZmdeYnNNw+xR+Tir0DP0FoItmWSwnm8M606J5TDQ7pxSs4zKd1tUACW1NLMtxglEd
+X0hjYlbD5VWwTSj0j8h8tgjAphUAi+pxZsRySl3FLtQtozK9wxLtfSsAkupqQl1PqQdS6o6kusJ3
+l0yXQ6LNnACkLwckb1yDqDh3YKn6dEq9zy3R45TosMX40PsbQOyiLqiHhLo/eesqIwl1z6L6V3uM
+T9Yo73q8rE8A7i0xEOVI4p+HYggATMyByxdnyKPRP6rxbVilw67wcVBOAtambRFvof4hufvzyTGa
+yBbJEskUycg1sS/HxN7sPPaI7M7KY1dmKjszUsnJL2LhTf7rGAy/AP7X5rYY5FLEAAAAAElFTkSu
+QmCC
+			</icon>
+		</appfolder>
+		<appfolder
+		addcaps="form,control,nativewindow"
+		capname="form"
+		id="24f8f1a5-3545-464f-a9f9-0119f9d7b48b"
+		isrooted="True"
+		name="SearchCriteria"
+		refimgid="4699910c-2cf3-4297-9d63-3b259613d01a"
+		refpath="/form[@controlname='SearchCriteria']"
+		searchtimeout="30000ms"
+		usecache="True">
+			<folder
+			addcaps="container,control,nativewindow"
+			capname="container"
+			id="7e4766f3-02da-4d8d-bdde-cda00561160e"
+			isrooted="True"
+			name="PnlBase"
+			refpath="/form[@controlname='SearchCriteria']/container[@controlname='pnlBase']"
+			searchtimeout="30000ms"
+			usecache="False">
+				<item
+				addcaps="button,uiautomation,uiautomationinvoke"
+				capname="button"
+				id="ac0f516c-60a4-4bdb-a730-29adc6d2f00c"
+				name="btnCondition"
+				refimgid="2042e327-6e90-4883-87e1-bca293c0d487"
+				refpath="/form[@controlname='SearchCriteria']/container[@controlname='pnlBase']/container[@controlname='pnlControls']/element[@controlname='acmbCondition']/button[@automationid='[Editor] dropdown button']"
+				searchtimeout="30000ms">
+					/form[@controlname='SearchCriteria']/container[@controlname='pnlBase']//button[@automationid='[Editor] dropdown button']
+				</item>
+				<item
+				addcaps="text,control,nativewindow"
+				capname="text"
+				id="a981f694-3bea-48c7-8a82-08a80c811a57"
+				name="txtValue"
+				refimgid="ee6e364f-ddb6-4b99-b0fa-60e0e6d5b7e1"
+				searchtimeout="30000ms">
+					/form[@controlname='SearchCriteria']/container[@controlname='pnlBase']/?/?/element[@controlname='adteValue']/text[@automationid='[Editor] Edit Area']
+				</item>
+				<item
+				addcaps="button,uiautomation,uiautomationinvoke"
+				capname="button"
+				id="64141909-3dcd-4c06-be65-fb52046757cf"
+				name="btnType"
+				refimgid="4eb3ddc0-e9a9-461e-ae3b-45a13d407d0e"
+				refpath="/form[@controlname='SearchCriteria']/container[@controlname='pnlBase']/container[@controlname='pnlControls']/element[@controlname='acmbFieldType']/button[@automationid='[Editor] dropdown button']"
+				searchtimeout="30000ms">
+					/form[@controlname='SearchCriteria']/container[@controlname='pnlBase']/?/?/element[@controlname='acmbFieldType']/button[@automationid='[Editor] dropdown button']
+				</item>
+				<item
+				addcaps="button,accessible"
+				capname="button"
+				id="51f08973-6b7c-415c-bf19-70f693c034f9"
+				name="btnAddRemoveFields"
+				refimgid="047b9c6e-f5ae-4736-817f-761c749b4fa7"
+				refpath="/form[@controlname='SearchCriteria']/container[@controlname='pnlBase']/container[@controlname='pnlControls']/element[@controlname='abtnAddRemoveFields']/button[@accessiblename='Add/Remove Fields']"
+				searchtimeout="30000ms">
+					/form[@controlname='SearchCriteria']/container[@controlname='pnlBase']//button[@accessiblename='Add/Remove Fields']
+				</item>
+				<item
+				addcaps="listitem,accessible"
+				capname="listitem"
+				id="66b4fa9e-a11c-49ad-b926-46eabe6b283b"
+				name="lstValue"
+				refimgid="f434167d-e633-4a95-b1a4-bbcf9dc1b362"
+				searchtimeout="30000ms">
+					/form[@controlname='SearchCriteria']/container[@controlname='pnlBase']/?/?/list[@controlname='alstFields']/?/?/listitem[@accessiblename=$selectedFieldValue]
+				</item>
+				<item
+				addcaps="text,uiautomation,uiautomationvalue"
+				capname="text"
+				id="30a34859-906a-4a92-8a2c-2019b9605313"
+				name="txtValueOutside"
+				refimgid="bb1f7fbc-cd11-4d49-a9ac-43582859549e"
+				refpath="/form[@controlname='SearchCriteria']/container[@controlname='pnlBase']/container[@controlname='pnlControls']/element[@controlname='adteValue']/text[@automationid='[Editor] Edit Area']"
+				searchtimeout="30000ms">
+					/form[@controlname='SearchCriteria']/container[@controlname='pnlBase']/?/?/element[@controlname='adteValue']/text[@automationid='[Editor] Edit Area']
+				</item>
+				<item
+				addcaps="button,uiautomation,uiautomationinvoke"
+				capname="button"
+				id="b3e5e212-8a96-42d7-99be-5edd5dab4dd8"
+				name="btnLogicalOperator"
+				refimgid="0d4c7188-ea71-4b24-a9dc-2a0efc15260c"
+				refpath="/form[@controlname='SearchCriteria']/container[@controlname='pnlBase']/container[@controlname='pnlControls']/element[@controlname='acmbLogicalOperator']/button[@automationid='[Editor] dropdown button']"
+				searchtimeout="30000ms">
+					/form[@controlname='SearchCriteria']/container[@controlname='pnlBase']/?/?/element[@controlname='acmbLogicalOperator']/button[@automationid='[Editor] dropdown button']
+				</item>
+				<basepath>
+					/form[@controlname='SearchCriteria']/container[@controlname='pnlBase']
+				</basepath>
+			</folder>
+			<item
+			addcaps="list,accessible"
+			capname="list"
+			id="a39aa9bd-a176-4b4a-8968-2ba97dcbd8ef"
+			name="list"
+			refimgid="eaf60cb9-8591-440e-a749-a6cd6e9d7b6e"
+			refpath="/form[@controlname='SearchCriteria']/container[@controlname='pnlBase']/container[@controlname='pnlControls']/list[@controlname='alstFields']/list[@accessiblerole='List']"
+			searchtimeout="30000ms">
+				/form[@controlname='SearchCriteria']//list[@controlname='alstFields']/list[@accessiblerole='List']
+			</item>
+			<item
+			addcaps="toolbar,accessible"
+			capname="toolbar"
+			id="3c266725-e4f5-4289-ad4d-88a62e1480a1"
+			name="Toolbar"
+			refpath="/form[@controlname='SearchCriteria']/element[@controlname='_BaseForm_Toolbars_Dock_Area_Bottom']/container[@accessiblename='DockBottom']/toolbar[@accessiblename='Toolbar']"
+			searchtimeout="30000ms">
+				/form[@controlname='SearchCriteria']/element[@controlname='_BaseForm_Toolbars_Dock_Area_Bottom']/?/?/toolbar[@accessiblename='Toolbar']
+			</item>
+			<folder
+			addcaps="toolbar,accessible"
+			capname="toolbar"
+			id="53acac02-4c7b-4196-b32f-8b2091dfb7b1"
+			isrooted="True"
+			name="Toolbar1"
+			refpath="/form[@controlname='SearchCriteria']/element[@controlname='_BaseForm_Toolbars_Dock_Area_Bottom']/container[@accessiblename='DockBottom']/toolbar[@accessiblename='Toolbar']"
+			searchtimeout="30000ms"
+			usecache="False">
+				<item
+				addcaps="button,accessible"
+				capname="button"
+				id="11a9d60d-8d5f-461c-92d4-856fb9316234"
+				name="btnCancel"
+				refpath="/form[@controlname='SearchCriteria']/element[@controlname='_BaseForm_Toolbars_Dock_Area_Bottom']/container[@accessiblename='DockBottom']/toolbar[@accessiblename='Toolbar']/button[@accessiblename='Cancel']"
+				searchtimeout="30000ms">
+					/form[@controlname='SearchCriteria']//toolbar[@accessiblename='Toolbar']/button[@accessiblename='Cancel']
+				</item>
+				<item
+				addcaps="button,accessible"
+				capname="button"
+				id="8fd89091-0119-4b45-9075-fdd8d77a31e2"
+				name="btnOK"
+				refpath="/form[@controlname='SearchCriteria']/element[@controlname='_BaseForm_Toolbars_Dock_Area_Bottom']/container[@accessiblename='DockBottom']/toolbar[@accessiblename='Toolbar']/button[@accessiblename='OK']"
+				searchtimeout="30000ms">
+					/form[@controlname='SearchCriteria']//toolbar[@accessiblename='Toolbar']/button[@accessiblename='OK']
+				</item>
+				<basepath>
+					/form[@controlname='SearchCriteria']//toolbar[@accessiblename='Toolbar']
+				</basepath>
+			</folder>
+			<basepath>
+				/form[@controlname='SearchCriteria']
+			</basepath>
+			<icon>
+				iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACx
+jwv8YQUAAAAJcEhZcwAADsQAAA7EAZUrDhsAAAFlSURBVDhPY6AJeOJjOvORg9p/FOyo/v9xoKUT
+VAlugKERDT921nwLVQoBb3Kj+Z5FOf9/FuP2/1msO3EYpBaIH7vr/Qcb8Oft6//kgFclif/Brnjo
+qPYZKvb/z8tn/z+tWfD/bWspWMHLwrj/r8pT/7/rrfv/dffG//++fwOr+3Hu+P8nPsYTwAY8CbRM
+fGSvCnbev29fwQpwgd9PH/1/N6ERHB5gzSDwyFX3IkjgeZLv/0+rF/z/snPD/4fWCmAND60V/3+Y
+1fP//cxuYABqgcUe2SqBDXge5qoDMcBN9w3MgDdNhf/fTWr+/xCoCKb4XU/t/7fd1Shi4BgJtPSG
+GqBzjhwDnkbaa4ANAIZBBDkGgDXDAMkGAFMmVCsEPHLTO0uKAU+jnYygWhHgeZIPUQY8dFS/BdWC
+Cd405uM14N+/f+egSnGDjyvnxjyyVQYbANL0FmjAm/aKH4+9zVWhSqCAgQEAq9YXqsYCPO8AAAAA
+SUVORK5CYII=
+			</icon>
+		</appfolder>
+		<appfolder
+		addcaps="form,control,nativewindow"
+		capname="form"
+		id="ead2f620-8ce9-423d-9e27-26c5210a922c"
+		isrooted="True"
+		name="SearchItemSelectForm"
+		refimgid="7a980a14-bc09-4194-8b36-bf50d7fee96c"
+		refpath="/form[@controlname='SearchItemSelectForm']"
+		searchtimeout="30000ms"
+		usecache="True">
+			<folder
+			addcaps="container,control,nativewindow"
+			capname="container"
+			id="b79578f8-f5c8-48a5-969e-05628bc29974"
+			isrooted="True"
+			name="Panel1"
+			refpath="/form[@controlname='SearchItemSelectForm']/container[@controlname='panel1']"
+			searchtimeout="30000ms"
+			usecache="False">
+				<item
+				addcaps="button,accessible"
+				capname="button"
+				id="869ad986-fc77-47f3-861f-f6e90707a431"
+				name="tbAdd"
+				refimgid="9b87924c-c9f9-479c-afdb-0de68e5d6f09"
+				refpath="/form[@controlname='SearchItemSelectForm']/container[@controlname='panel1']/element[@controlname='ubtnAdd']/button[@accessiblename='>']"
+				searchtimeout="30000ms">
+					/form[@controlname='SearchItemSelectForm']/container[@controlname='panel1']/?/?/button[@accessiblename='&gt;']
+				</item>
+				<item
+				addcaps="table,accessible"
+				capname="table"
+				id="a042fd53-88e3-4fc1-b07f-ff534c25b587"
+				name="tbSelected"
+				refimgid="0e5bf633-d09b-4fbc-b8c9-ade08febe70e"
+				refpath="/form[@controlname='SearchItemSelectForm']/container[@controlname='panel1']/element[@controlname='abgSelection']/table[@accessiblename='ArrayList']"
+				searchtimeout="30000ms">
+					/form[@controlname='SearchItemSelectForm']/container[@controlname='panel1']/?/?/table[@accessiblename='ArrayList']
+				</item>
+				<item
+				addcaps="table,accessible"
+				capname="table"
+				id="694354de-2aa4-40d3-951b-95f29922b903"
+				name="tbSelection"
+				refimgid="3d67ac2a-142d-4ac7-b10a-b94a8501dac0"
+				refpath="/form[@controlname='SearchItemSelectForm']/container[@controlname='panel1']/element[@controlname='searchGrid']/table[@accessiblename='Band 0']"
+				searchtimeout="30000ms">
+					/form[@controlname='SearchItemSelectForm']/container[@controlname='panel1']/?/?/table[@accessiblename='Band 0']
+				</item>
+				<item
+				addcaps="button,accessible"
+				capname="button"
+				id="35011cdc-c019-42e5-bcde-08a0c8dbae88"
+				name="tbRemove"
+				refimgid="83e1ae2e-006a-4e6d-99a7-ed17b8681275"
+				refpath="/form[@controlname='SearchItemSelectForm']/container[@controlname='panel1']/element[@controlname='ubtnRemove']/button[@accessiblename='&lt;']"
+				searchtimeout="30000ms">
+					/form[@controlname='SearchItemSelectForm']/container[@controlname='panel1']/?/?/button[@accessiblename='&lt;']
+				</item>
+				<basepath>
+					/form[@controlname='SearchItemSelectForm']/container[@controlname='panel1']
+				</basepath>
+			</folder>
+			<item
+			addcaps="toolbar,accessible"
+			capname="toolbar"
+			id="b1509ef7-c58f-4130-94c1-defe4c90a924"
+			name="Toolbar"
+			refpath="/form[@controlname='SearchItemSelectForm']/element[@controlname='_BaseForm_Toolbars_Dock_Area_Bottom']/container[@accessiblename='DockBottom']/toolbar[@accessiblename='Toolbar']"
+			searchtimeout="30000ms">
+				/form[@controlname='SearchItemSelectForm']/element[@controlname='_BaseForm_Toolbars_Dock_Area_Bottom']/?/?/toolbar[@accessiblename='Toolbar']
+			</item>
+			<folder
+			addcaps="toolbar,accessible"
+			capname="toolbar"
+			id="b94b1b6f-505f-493e-ae2a-6859f05a98cb"
+			isrooted="True"
+			name="Toolbar1"
+			refpath="/form[@controlname='SearchItemSelectForm']/element[@controlname='_BaseForm_Toolbars_Dock_Area_Bottom']/container[@accessiblename='DockBottom']/toolbar[@accessiblename='Toolbar']"
+			searchtimeout="30000ms"
+			usecache="False">
+				<item
+				addcaps="button,accessible"
+				capname="button"
+				id="34f9d795-1ae4-45e0-8e24-0cd3bd451d2c"
+				name="btnCancel"
+				refpath="/form[@controlname='SearchItemSelectForm']/element[@controlname='_BaseForm_Toolbars_Dock_Area_Bottom']/container[@accessiblename='DockBottom']/toolbar[@accessiblename='Toolbar']/button[@accessiblename='Cancel']"
+				searchtimeout="30000ms">
+					/form[@controlname='SearchItemSelectForm']//toolbar[@accessiblename='Toolbar']/button[@accessiblename='Cancel']
+				</item>
+				<item
+				addcaps="button,accessible"
+				capname="button"
+				id="85e018a5-b8ac-4334-b41b-fcc1421023d9"
+				name="btnOk"
+				refpath="/form[@controlname='SearchItemSelectForm']/element[@controlname='_BaseForm_Toolbars_Dock_Area_Bottom']/container[@accessiblename='DockBottom']/toolbar[@accessiblename='Toolbar']/button[@accessiblename='OK']"
+				searchtimeout="30000ms">
+					/form[@controlname='SearchItemSelectForm']//toolbar[@accessiblename='Toolbar']/button[@accessiblename='OK']
+				</item>
+				<basepath>
+					/form[@controlname='SearchItemSelectForm']//toolbar[@accessiblename='Toolbar']
+				</basepath>
+			</folder>
+			<basepath>
+				/form[@controlname='SearchItemSelectForm']
+			</basepath>
+			<icon>
+				iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACx
+jwv8YQUAAAAJcEhZcwAADsQAAA7EAZUrDhsAAAFlSURBVDhPY6AJeOJjOvORg9p/FOyo/v9xoKUT
+VAlugKERDT921nwLVQoBb3Kj+Z5FOf9/FuP2/1msO3EYpBaIH7vr/Qcb8Oft6//kgFclif/Brnjo
+qPYZKvb/z8tn/z+tWfD/bWspWMHLwrj/r8pT/7/rrfv/dffG//++fwOr+3Hu+P8nPsYTwAY8CbRM
+fGSvCnbev29fwQpwgd9PH/1/N6ERHB5gzSDwyFX3IkjgeZLv/0+rF/z/snPD/4fWCmAND60V/3+Y
+1fP//cxuYABqgcUe2SqBDXge5qoDMcBN9w3MgDdNhf/fTWr+/xCoCKb4XU/t/7fd1Shi4BgJtPSG
+GqBzjhwDnkbaa4ANAIZBBDkGgDXDAMkGAFMmVCsEPHLTO0uKAU+jnYygWhHgeZIPUQY8dFS/BdWC
+Cd405uM14N+/f+egSnGDjyvnxjyyVQYbANL0FmjAm/aKH4+9zVWhSqCAgQEAq9YXqsYCPO8AAAAA
+SUVORK5CYII=
+			</icon>
+		</appfolder>
 		<basepath>
 		</basepath>
 	</rootfolder>
@@ -2168,6 +2830,14 @@ D8zerL8gSEaw7+rFqJ//CkX5CWkHqyZHVzU6AAAAAElFTkSuQmCC
 		<var
 		id="a304888a-99f7-4a56-88f3-9e201fa0f345"
 		name="appmtData1">
+		</var>
+		<var
+		id="11620995-f66e-4632-9631-bbffdadcaedd"
+		name="var">
+		</var>
+		<var
+		id="f3a4a772-6bf6-4dae-bc2d-4ef3b5e506d3"
+		name="selectedFieldValue">
 		</var>
 	</variables>
 </repository>

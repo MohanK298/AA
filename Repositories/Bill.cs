@@ -4458,7 +4458,7 @@ namespace SmokeTest.Repositories
             /// Creates a new ReportViewerForm  folder.
             /// </summary>
             public ReportViewerFormAppFolder(RepoGenBaseFolder parentFolder) :
-                    base("ReportViewerForm", "/form[@controlname='ReportViewerForm']", parentFolder, 30000, null, true, "6e181381-ac6b-4909-a8c4-f81f024517ec", "")
+                    base("ReportViewerForm", "/form[@controlname='ReportViewerForm']", parentFolder, 30000, null, false, "6e181381-ac6b-4909-a8c4-f81f024517ec", "")
             {
                 _btncloseInfo = new RepoItemInfo(this, "btnClose", "?/?/button[@accessiblename='Close']", 30000, null, "724741ba-4258-46fe-b8d0-20a94317824c");
                 _txtfilenameInfo = new RepoItemInfo(this, "txtFileName", "container[@controlname='panelViewer']/container[@controlname='reportViewer']/container[@controlname='paramsSplitContainer']//container[@controlname='dmSplitContainer']//container[@controlname='winRSviewer']/?/?/container[@accessiblename='Report']/container/container[@accessiblename='Rectangle']/container[@accessiblename='Rectangle']/container[1]/text[7]", 30000, null, "930d5d66-4537-45bc-8bd9-b9316b17101e");

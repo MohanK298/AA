@@ -124,6 +124,16 @@
     <Reference Include="System" />
     <Reference Include="System.Data" />
     <Reference Include="System.Drawing" />
+    <Reference Include="System.IO.Compression.FileSystem" />
+    <Reference Include="System.IO.Compression.ZipFile, Version=4.0.3.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+      <HintPath>packages\System.IO.Compression.ZipFile.4.3.0\lib\net46\System.IO.Compression.ZipFile.dll</HintPath>
+    </Reference>
+    <Reference Include="System.IO.FileSystem, Version=4.0.3.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+      <HintPath>packages\System.IO.FileSystem.4.3.0\lib\net46\System.IO.FileSystem.dll</HintPath>
+    </Reference>
+    <Reference Include="System.IO.FileSystem.Primitives, Version=4.0.3.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+      <HintPath>packages\System.IO.FileSystem.Primitives.4.3.0\lib\net46\System.IO.FileSystem.Primitives.dll</HintPath>
+    </Reference>
     <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xml" />
   </ItemGroup>
@@ -404,6 +414,9 @@
     <Compile Include="Modules\bill_journal_report_validation.cs">
       <id>6bcfe50c-8d40-45b7-8689-aa8d8726b632</id>
     </Compile>
+    <Compile Include="Modules\calendar_search_advanced.cs">
+      <id>760524c7-d6b8-4879-aea0-6cc6a1721925</id>
+    </Compile>
     <Compile Include="Modules\changePref_Formatting_DefaultCode.cs">
       <id>9f2e2544-3a69-4889-b0d7-fd938f31944a</id>
     </Compile>
@@ -472,6 +485,12 @@
     </Compile>
     <Compile Include="Modules\closeExistingPrompts.cs">
       <id>b7aed1f0-b1c8-4141-b332-2dd058c6976d</id>
+    </Compile>
+    <Compile Include="Modules\communication_search.cs">
+      <id>024d9d98-129a-4e41-a8ca-bce2ba0ab9cb</id>
+    </Compile>
+    <Compile Include="Modules\comm_search_Advanced.cs">
+      <id>800dd1e7-60ef-4184-8cdf-febbb5b812ed</id>
     </Compile>
     <Compile Include="Modules\ContextClick_Validations.cs">
       <id>2399df28-52dc-4ed3-9e3b-0bd193c9dcb9</id>
@@ -629,6 +648,9 @@
     <Compile Include="Modules\email_bill_screen_validation.cs">
       <id>473e5f43-1fe6-47ab-9cce-59bea2a70cbf</id>
     </Compile>
+    <Compile Include="Modules\email_search_global.cs">
+      <id>bdd37bcc-a7a8-46b6-8e78-14a58021c9a3</id>
+    </Compile>
     <Compile Include="Modules\embeddedOutlookValidation.cs">
       <id>0ce1c9e5-cc17-4022-96f2-19673201906e</id>
     </Compile>
@@ -637,6 +659,9 @@
     </Compile>
     <Compile Include="Modules\enableTaxSettingsInFirm.cs">
       <id>eb385921-0282-41e8-9563-4e392e8fff5c</id>
+    </Compile>
+    <Compile Include="Modules\event_search_global.cs">
+      <id>0b758b61-6836-4b78-becb-7ba810e49e95</id>
     </Compile>
     <Compile Include="Modules\expand_Bill_Validate.cs">
       <id>afac4ab8-a300-4761-99a9-e763d0c5a8ce</id>
@@ -649,6 +674,12 @@
     </Compile>
     <Compile Include="Modules\FileVoidPayment.cs">
       <id>3c5327ca-3e05-481a-8812-3e2a730320e4</id>
+    </Compile>
+    <Compile Include="Modules\file_search_advanced.cs">
+      <id>4a3ae5d0-c636-4711-8324-bbfe1b74e536</id>
+    </Compile>
+    <Compile Include="Modules\file_Search_global.cs">
+      <id>8f6c3b5c-6f70-44b2-8916-734cd2425a34</id>
     </Compile>
     <Compile Include="Modules\file_type_filter_content_Validation.cs">
       <id>60ebfdc2-14d6-415a-9d6d-0f23388a27ef</id>
@@ -680,6 +711,9 @@
     <Compile Include="Modules\Logout.cs">
       <id>0c16bd78-d14a-4c01-b5ce-ff14c41f11d4</id>
     </Compile>
+    <Compile Include="Modules\modify_port_Settings.cs">
+      <id>bcfb5601-2475-4ff8-b411-b4989926a258</id>
+    </Compile>
     <Compile Include="Modules\multiselectAddMail_embedded_OL.cs">
       <id>36bfc598-8295-4737-ac5c-546eb84e5e26</id>
     </Compile>
@@ -695,6 +729,15 @@
     <Compile Include="Modules\new_button_validation.cs">
       <id>70223182-00d1-4093-9277-05c0a658ee6c</id>
     </Compile>
+    <Compile Include="Modules\notes_Search_Advanced.cs">
+      <id>1b618048-6ac1-413e-866c-da770c7195fa</id>
+    </Compile>
+    <Compile Include="Modules\notes_search_global.cs">
+      <id>a0643e8b-eca7-4284-9416-e33c51b959e1</id>
+    </Compile>
+    <Compile Include="Modules\package_documents_save.cs">
+      <id>721fda2e-f23d-42ae-96d3-6fad35f790fb</id>
+    </Compile>
     <Compile Include="Modules\PaymentAPX.cs">
       <id>dcf89414-2b0e-4747-bd7d-34e26cecba28</id>
     </Compile>
@@ -706,6 +749,12 @@
     </Compile>
     <Compile Include="Modules\pay_cc_on_file.cs">
       <id>19821cd2-f9cd-40e5-bbd0-22a3db6d5c41</id>
+    </Compile>
+    <Compile Include="Modules\people_search_global.cs">
+      <id>d250fad8-af4c-4480-b291-5273075c38dc</id>
+    </Compile>
+    <Compile Include="Modules\phone_msg_search_global.cs">
+      <id>91b5f5e6-0a17-46d0-8af6-20c6d193587d</id>
     </Compile>
     <Compile Include="Modules\PreferenceTestII.cs">
       <id>81abd97e-5c5a-45b1-af92-201bd561458a</id>
@@ -808,6 +857,9 @@
     </Compile>
     <Compile Include="Modules\TE_OnMail_OL_View.cs">
       <id>650be28a-300f-436a-8e83-67825c70c009</id>
+    </Compile>
+    <Compile Include="Modules\te_search_advanced.cs">
+      <id>44806039-b359-4208-b006-26d38e3240d6</id>
     </Compile>
     <Compile Include="Modules\timeAssistant_RightClickOptions.cs">
       <id>f9a5a236-7a6a-4bf1-9d8e-6e21155b9221</id>
@@ -971,6 +1023,12 @@
     <Compile Include="Modules\validate_Existing_Time_Entry_OnFile_Msg.cs">
       <id>775104d3-10a9-498e-aea9-307577fa4930</id>
     </Compile>
+    <Compile Include="Modules\validate_Google_Radio_Button.cs">
+      <id>d498fef9-3c9d-4046-b006-73bfc1822ff1</id>
+    </Compile>
+    <Compile Include="Modules\validate_Google_synchronization.cs">
+      <id>905ccd8e-8ec7-44eb-b92b-171a753f0c8e</id>
+    </Compile>
     <Compile Include="Modules\validate_manual_Entry_uncheck.cs">
       <id>6afcabc8-d973-42ff-9ade-ef83bb246afd</id>
     </Compile>
@@ -979,6 +1037,12 @@
     </Compile>
     <Compile Include="Modules\validate_output_form_PrintbtnValidate.cs">
       <id>b9b3672f-4c40-46aa-b59f-f07550d061a8</id>
+    </Compile>
+    <Compile Include="Modules\validate_package_documents_menu.cs">
+      <id>59fee239-fcac-4d77-a15c-d821af1c0a2b</id>
+    </Compile>
+    <Compile Include="Modules\validate_Port_Settings_Exists.cs">
+      <id>17dad183-b304-4777-9bbc-31c27da310bb</id>
     </Compile>
     <Compile Include="Modules\validate_Quick_Print.cs">
       <id>7acaf97e-a22b-464f-9cbd-e49a2bb65428</id>

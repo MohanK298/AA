@@ -186,19 +186,31 @@ namespace SmokeTest.Modules
      			bill.OutputPromptForm.btnOk.Click();
      			Report.Success("Output Form is displayed successfully");
      		}
-     		if(bill.PromptForm.SelfInfo.Exists(10000))
+     		if(bill.PromptForm.SelfInfo.Exists(15000))
      			{
+     				bill.PromptForm.Self.Focus();
      				Report.Success(String.Format("Prompt form displayed is: {0}",file.PromptForm.txtMessage.GetAttributeValue<String>("Text")));
      				bill.PromptForm.btnOk.Click();
      			}
+//     		if(bill.PromptForm.SelfInfo.Exists(10000))
+//     			{
+//     				Report.Success(String.Format("Prompt form displayed is: {0}",file.PromptForm.txtMessage.GetAttributeValue<String>("Text")));
+//     				bill.PromptForm.btnOk.Click();
+//     			}
      		if(bill.ReportViewerForm.SelfInfo.Exists(30000))
      		{
      			Report.Success("Report Viewer is displayed successfully");
      			bill.ReportViewerForm.btnClose.Click();
      		}
+//     		if(bill.PromptForm.SelfInfo.Exists(10000))
+//     			{
+//     				Report.Success(String.Format("Prompt form displayed is: {0}",file.PromptForm.txtMessage.GetAttributeValue<String>("Text")));
+//     				bill.PromptForm.btnOk.Click();
+//     			}
      		
      		if(bill.BillingDetailForm.SelfInfo.Exists(3000))
      		{
+     			bill.BillingDetailForm.Self.Focus();
      			bill.BillingDetailForm.btnClose.Click();
      			Report.Success("Billing Details Form is closed successfully");
      		}

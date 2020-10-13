@@ -67,6 +67,8 @@ namespace SmokeTest.Modules
 
         public void Perform(){
         	
+        	lib.MainForm.Self.Activate();
+        	Delay.Seconds(2);
         	lib.MainForm.btnLibrary.Click();
         	lib.MainForm.LibraryIndexForm.btnMenuItem.Click();
         	

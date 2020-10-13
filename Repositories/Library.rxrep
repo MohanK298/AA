@@ -76,7 +76,7 @@ rxversion="9.0">
 				name="listSection"
 				refimgid="97195f4d-51b7-4908-9b5c-ffbfad4b3df6"
 				searchtimeout="30000ms">
-					/form[@controlname='MainForm']/?/?/form[@controlname='LibraryIndexForm']/container[@controlname='LibraryIndexForm_Contents']//tree[@accessiblerole='Outline']/treeitem[@accessiblename='New Section']
+					/form[@controlname='MainForm']/?/?/form[@controlname='LibraryIndexForm']/container[@controlname='LibraryIndexForm_Contents']//tree[@accessiblerole='Outline']/treeitem[@accessiblename~'New Section']
 				</item>
 				<item
 				addcaps="treeitem,accessible"
@@ -127,7 +127,7 @@ rxversion="9.0">
 				name="listPage"
 				refimgid="468b12fa-9059-4c58-8f2d-ec7e4b1da7bf"
 				searchtimeout="30000ms">
-					/form[@controlname='MainForm']/?/?/form[@controlname='LibraryIndexForm']/container[@controlname='LibraryIndexForm_Contents']/container[@controlname='panel1']//treeitem[@accessiblename&gt;'Page']
+					/form[@controlname='MainForm']/?/?/form[@controlname='LibraryIndexForm']/container[@controlname='LibraryIndexForm_Contents']/container[@controlname='panel1']//treeitem[@accessiblename~'Page']
 				</item>
 				<item
 				addcaps="treeitem,accessible"

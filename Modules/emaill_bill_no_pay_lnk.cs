@@ -63,7 +63,12 @@ namespace SmokeTest.Modules
         	
         	if(file.PromptForm.SelfInfo.Exists(3000))
         	   {
-        	   	file.PromptForm.btnNo.Click();
+        		if(file.PromptForm.btnNoInfo.Exists(3000))
+        		{file.PromptForm.btnNo.Click();}
+        		if(bill.PromptForm.btnOkInfo.Exists(3000))
+        		{
+        			bill.PromptForm.btnOk.Click();
+        		}
         	   }
         	
         	//Type the file name and other variables

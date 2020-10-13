@@ -316,6 +316,16 @@ Module]]>
 			ref="fdd2e606-d9d7-4eee-a27d-dc862a5293a3"
 			type="UserCode">
 			</testmodule>
+			<smartfoldernode
+			id="11ed210e-76aa-45bf-b5e5-ae25d2a47a88"
+			name="People_Search">
+			</smartfoldernode>
+			<testmodule
+			id="1263e33c-c499-408a-91bd-368c63b77ed8"
+			name="te_search_advanced"
+			ref="b9e2e2a4-e6c5-498f-80d3-dfffd984be46"
+			type="UserCode">
+			</testmodule>
 			<teardown
 			id="12a77593-55ec-4667-8b57-152f7e4d5509"
 			name="teardown">
@@ -324,6 +334,12 @@ Module]]>
 			id="12fdb4cf-af88-4da5-a4b2-f4653555c69e"
 			name="DeleteTask"
 			ref="d46adf6e-82f2-4abb-aa65-df691675a923"
+			type="UserCode">
+			</testmodule>
+			<testmodule
+			id="137cbf4e-f905-461f-b480-f75456a7630a"
+			name="comm_search_Advanced"
+			ref="1c87368d-8924-413e-b1af-61f57db7d2d7"
 			type="UserCode">
 			</testmodule>
 			<testmodule
@@ -615,6 +631,16 @@ module]]>
 			ref="7101fc44-9129-46c5-b911-664b02244978"
 			type="UserCode">
 			</testmodule>
+			<testmodule
+			id="256fa6f2-fae0-4df4-8f89-0a34b1862d53"
+			name="file_search_advanced"
+			ref="d64a5952-89d2-43c6-96fb-f5ce13bb45be"
+			type="UserCode">
+			</testmodule>
+			<testcase
+			id="25efd4db-2da5-4a61-bb61-5958e1cded7d"
+			name="Global_Search">
+			</testcase>
 			<smartfoldernode
 			id="25fff493-96c7-4fa1-87bc-096455a8f900"
 			name="DeleteNotes">
@@ -649,6 +675,12 @@ module]]>
 			id="2864e1f5-c2ca-4778-b3cf-d286a9d014e4"
 			name="advanceConflictCheck"
 			ref="5296f725-ca15-46a2-91c7-436affd94eb5"
+			type="UserCode">
+			</testmodule>
+			<testmodule
+			id="28991e2d-f811-4d42-9982-8ac8ca7e5d54"
+			name="validate_package_documents_menu"
+			ref="198b56ca-0c91-4018-b1e4-4b4ddc62c4a9"
 			type="UserCode">
 			</testmodule>
 			<smartfoldernode
@@ -1009,13 +1041,29 @@ module]]>
 			id="3f7e9bda-619a-435d-89e3-2bc090023364"
 			name="AddSummary">
 			</smartfoldernode>
+			<testmodule
+			id="3f878382-45d7-476b-bdb4-5ba3a02bff83"
+			name="validate_Google_Radio_Button"
+			ref="567565ce-966c-4e81-9200-990dd906b815"
+			type="UserCode">
+			</testmodule>
 			<smartfoldernode
 			id="3fc4a10b-597c-48e6-8b74-764e3f256565"
 			name="DateCalculateAddBusinessDays">
 			</smartfoldernode>
+			<testmodule
+			id="40327f5b-bfb4-4e2e-8348-684e3b788eac"
+			name="modify_port_Settings"
+			ref="cd1dae8d-aaa0-4952-8bbc-25f0dc65f71d"
+			type="UserCode">
+			</testmodule>
 			<smartfoldernode
 			id="4119df73-9255-4fcf-9cc2-d1a4b74659f9"
 			name="ValidateStandardToolbars">
+			</smartfoldernode>
+			<smartfoldernode
+			id="41d55660-6718-4691-9ee7-12d6c5663794"
+			name="Event_Search">
 			</smartfoldernode>
 			<smartfoldernode
 			id="41ea6dcb-a932-4781-96ed-251f3e30d4f4"
@@ -1124,6 +1172,10 @@ module]]>
 			id="485c861d-ca01-4afa-94cd-bac577b0d45b"
 			name="teardown">
 			</teardown>
+			<testcase
+			id="48b3b6fa-3b87-49f9-9653-f74eb26f9eee"
+			name="Package_Documents">
+			</testcase>
 			<smartfoldernode
 			id="495e404e-fa44-4909-8d9e-9a432b7de9b0"
 			name="GL_Transaction_Report_Validation">
@@ -1193,10 +1245,20 @@ module]]>
 			ref="edde5660-5c5a-4291-a286-d87fd79aec15"
 			type="UserCode">
 			</testmodule>
+			<smartfoldernode
+			id="4b8c47e7-1b23-4688-a5ec-b768ac126d92"
+			name="Communications_Search_Advanced">
+			</smartfoldernode>
 			<testcase
 			id="4bc1f4ad-f12a-49d3-8130-6d0f677cc890"
 			name="DateCalculator">
 			</testcase>
+			<testmodule
+			id="4c5385ea-058f-4b1a-b2ea-d151996cf191"
+			name="people_search_global"
+			ref="a8abc4e1-ae4f-4fb9-8943-ec066373d892"
+			type="UserCode">
+			</testmodule>
 			<testmodule
 			id="4d4cb17a-5ed9-4753-af9f-f709e4bd01f9"
 			name="DeleteDocument"
@@ -1447,7 +1509,6 @@ Billing File]]>
 			type="UserCode">
 			</testmodule>
 			<testmodule
-			enabled="False"
 			id="5647dca0-0b0a-4a09-831a-4c75724796a6"
 			name="embeddedOutlookValidation"
 			ref="4422519f-f937-4395-b060-7ab538012336"
@@ -1528,6 +1589,12 @@ which will be used throughout the Smoke Test]]>
 			ref="48aa8199-da27-4e38-92e8-7195258f053b"
 			type="UserCode">
 			</testmodule>
+			<testmodule
+			id="5b4c59e8-5fbb-42fb-afa9-bbb9bd41f457"
+			name="calendar_search_advanced"
+			ref="5db9dc99-4fba-48bd-8d5a-1a96b2643fbf"
+			type="UserCode">
+			</testmodule>
 			<smartfoldernode
 			id="5b5aea69-6426-460b-b666-6ea8e58b7416"
 			name="VerifyEventsAddFromFiles">
@@ -1551,6 +1618,10 @@ which will be used throughout the Smoke Test]]>
 			<smartfoldernode
 			id="5c594db7-866f-47df-abd0-918ae3a2dbb5"
 			name="Client_Trust_Listing_Field_Validation">
+			</smartfoldernode>
+			<smartfoldernode
+			id="5d2162fd-e35c-4503-a893-7b8c1493b181"
+			name="TE_Search_Advanced">
 			</smartfoldernode>
 			<teardown
 			id="5d2c92c4-74c6-4fbf-9b25-8cedf95fcd04"
@@ -1627,11 +1698,27 @@ which will be used throughout the Smoke Test]]>
 			name="Apply_Taxes_using_Activity_Codes_(Billing)">
 			</testcase>
 			<testmodule
+			id="62ee888f-8789-4b81-8e0a-b53467ceac64"
+			name="communication_search"
+			ref="fa76341f-d27b-49e1-8edc-ab097f3101a2"
+			type="UserCode">
+			</testmodule>
+			<testmodule
+			id="63344dce-612d-4cda-bc22-668b33cb6dde"
+			name="event_search_global"
+			ref="269f982c-19d1-4f1b-8330-35f837487215"
+			type="UserCode">
+			</testmodule>
+			<testmodule
 			id="63c37608-df47-49cc-b8cd-dfa190c49377"
 			name="client_Transaction_defaults"
 			ref="f479ae09-6cfa-4e1b-89d9-b4235fcca0e0"
 			type="UserCode">
 			</testmodule>
+			<smartfoldernode
+			id="63ca8c37-6ff6-4f7c-b6ef-2fc98949e4f9"
+			name="Notes_search">
+			</smartfoldernode>
 			<testmodule
 			id="63f2c82a-d2d5-4d86-b7ea-b18a5172bbdf"
 			name="createExceptionbyDragnDropInRepAppt"
@@ -1908,6 +1995,12 @@ which will be used throughout the Smoke Test]]>
 					<![CDATA[Delete the edited Section and Page]]>
 				</description>
 			</smartfoldernode>
+			<testmodule
+			id="6ced6148-a53c-419d-8b51-fe055cb24e0a"
+			name="package_documents_save"
+			ref="450fee2e-52ab-4157-a598-f72116c0f52a"
+			type="UserCode">
+			</testmodule>
 			<smartfoldernode
 			id="6cfa0c71-9d60-47ae-a167-d9cb8c1c65e9"
 			name="APX_Transaction_Report">
@@ -2143,6 +2236,10 @@ event]]>
 			ref="df711b65-3039-4378-8c63-cc8d1cdb9ee6"
 			type="UserCode">
 			</testmodule>
+			<testcase
+			id="7cb8d893-5dc8-414b-bd34-20659fa79f23"
+			name="TCP_Settings">
+			</testcase>
 			<testmodule
 			id="7d50d6b7-87e8-4115-b49d-e44fa2f87b94"
 			name="verifyHeaders"
@@ -2300,6 +2397,10 @@ event]]>
 			id="895badf3-6aaf-4734-9c20-63c98b993985"
 			name="Filter_Subject_Contact_Email">
 			</smartfoldernode>
+			<smartfoldernode
+			id="8a48eee4-35e7-447b-90c2-3d3ed9c5a6f9"
+			name="Communication_Search">
+			</smartfoldernode>
 			<teardown
 			id="8a64aa05-b336-4633-8cd2-046fe6c030f2"
 			name="teardown">
@@ -2414,6 +2515,10 @@ event]]>
 			name="Client_Accounting_Ledger_Report_Save">
 			</smartfoldernode>
 			<smartfoldernode
+			id="93dc6184-b71e-43a3-8519-875ae0a49d57"
+			name="Validate_Google_Radio_Button_Exists">
+			</smartfoldernode>
+			<smartfoldernode
 			id="93fd686b-5620-456b-8e3d-73b0096ebf3d"
 			name="ValidateTrackChangesinTE">
 			</smartfoldernode>
@@ -2457,6 +2562,12 @@ event]]>
 			type="UserCode">
 			</testmodule>
 			<testmodule
+			id="96026593-747d-4294-8a57-9504ef5d5e3b"
+			name="file_Search_global"
+			ref="3c514c9c-9907-418a-af42-f73b5cbbf6ff"
+			type="UserCode">
+			</testmodule>
+			<testmodule
 			id="97ac3cc9-eb78-4a7e-89e0-c3e7a580f711"
 			name="delete_payment_request"
 			ref="f2b6b4d7-c5ae-4a53-bd8c-61d0992d6053"
@@ -2481,6 +2592,10 @@ event]]>
 			<smartfoldernode
 			id="98ffe636-7dbf-4c77-9c8c-925895e5fc1d"
 			name="Validate_Billing_Office_Default">
+			</smartfoldernode>
+			<smartfoldernode
+			id="99156e12-b9e1-4fd4-a21f-29636e1f983c"
+			name="File_Search_Advanced">
 			</smartfoldernode>
 			<smartfoldernode
 			id="9afca62b-518e-4366-8848-7c7d6bd20d5d"
@@ -2539,6 +2654,10 @@ event]]>
 			ref="ef5bed40-ba5c-4ae1-ad8b-0e526f0f1bce"
 			type="UserCode">
 			</testmodule>
+			<smartfoldernode
+			id="9db1ba44-dd74-40d0-b110-b7c4c1e202a4"
+			name="Calendar_Search_Advanced">
+			</smartfoldernode>
 			<teardown
 			id="9e8b1fbc-176e-45cc-9704-dcdb67572caf"
 			name="teardown">
@@ -2656,6 +2775,10 @@ Validation)]]>
 			<smartfoldernode
 			id="a4c09550-4b9a-4f26-b67b-396fc1bab45f"
 			name="Bill_Journal_Field_Default_Values_Validation">
+			</smartfoldernode>
+			<smartfoldernode
+			id="a4d62185-b7e5-431c-85f5-4848e0e21ed4"
+			name="Validate_Package_Documents_Menu_Exists">
 			</smartfoldernode>
 			<testmodule
 			id="a57c8bd8-704b-4e16-8318-ba21409b8d28"
@@ -2921,6 +3044,12 @@ module]]>
 			id="b049a834-9d04-4f9c-964c-51fefe3f15e9"
 			name="ChangePreferencesIncludeChronology">
 			</smartfoldernode>
+			<testmodule
+			id="b0acb421-c003-4f24-9b78-54da3919ed20"
+			name="validate_Port_Settings_Exists"
+			ref="e2482148-bebb-4d4d-b01d-4bb3c00860b4"
+			type="UserCode">
+			</testmodule>
 			<smartfoldernode
 			id="b146cc4b-1984-4297-a931-5973decc4a91"
 			name="CreateManyTasks">
@@ -2929,6 +3058,12 @@ module]]>
 			id="b14ad441-49d0-4040-9de7-76ffff5a60f4"
 			name="teardown">
 			</teardown>
+			<testmodule
+			id="b22ec56f-1db0-4d14-8214-086aee032a5a"
+			name="validate_Google_synchronization"
+			ref="1801e90a-f39a-4cb7-8a16-8f0c89bdb1a5"
+			type="UserCode">
+			</testmodule>
 			<smartfoldernode
 			datasource="BillData"
 			id="b2d51e4d-a3b3-459c-b358-6e3ed196c14d"
@@ -3050,6 +3185,12 @@ directly and create a Bill]]>
 			id="b7038c0b-120a-411f-bba3-aa71863b30d5"
 			name="Validate_FirmSettings_ReportingServices">
 			</smartfoldernode>
+			<testmodule
+			id="b70b7817-eaf8-42c8-838b-487ad42e9a9a"
+			name="notes_search_global"
+			ref="fc82d37e-ba8d-417b-9e9e-cc39a52d8963"
+			type="UserCode">
+			</testmodule>
 			<smartfoldernode
 			id="b73a540d-0d4a-444f-9289-bcbca7b1e7c4"
 			name="DeleteTimeEntry">
@@ -3225,6 +3366,10 @@ directly and create a Bill]]>
 			name="MakeAssociationValidation">
 			</smartfoldernode>
 			<testcase
+			id="c0163ada-3983-4d67-bfe0-1af46d619e0d"
+			name="Refactored_Google_Contact_&amp;_Calendar_Authentication">
+			</testcase>
+			<testcase
 			id="c17d1760-b40c-4269-8e90-8174535e86d7"
 			name="Bill_Creation">
 			</testcase>
@@ -3278,6 +3423,10 @@ directly and create a Bill]]>
 			id="c2a6cc13-1ce9-473a-814d-5b1ef95ae297"
 			name="teardown">
 			</teardown>
+			<smartfoldernode
+			id="c2c5c970-481d-4d0f-b1f2-f2273ce04fa0"
+			name="File_search">
+			</smartfoldernode>
 			<testmodule
 			id="c2ce29b0-da1d-4947-88a1-66b4e2165706"
 			name="closeExistingPrompts"
@@ -3344,6 +3493,10 @@ directly and create a Bill]]>
 			ref="f4f4c184-c710-475c-8aaf-8c8d30269bf5"
 			type="UserCode">
 			</testmodule>
+			<smartfoldernode
+			id="c75543d7-31ac-4a34-90e7-299ac067b2c1"
+			name="Google_Synchronize">
+			</smartfoldernode>
 			<testcase
 			id="c76fc965-21c0-47ea-907e-a9b6653a5a70"
 			name="ValidateMergeTemplates">
@@ -3388,6 +3541,10 @@ directly and create a Bill]]>
 				<description>
 					<![CDATA[Delete the edited Phone Call]]>
 				</description>
+			</smartfoldernode>
+			<smartfoldernode
+			id="ca3a87be-1918-48dd-ad53-777566e081e8"
+			name="Validate_Port_Settings_Exists">
 			</smartfoldernode>
 			<smartfoldernode
 			id="ca929f96-4b79-4210-93a8-6264e74690c6"
@@ -3465,6 +3622,14 @@ directly and create a Bill]]>
 			name="Print_Icon_Validation">
 			</smartfoldernode>
 			<smartfoldernode
+			id="ce5917d9-d826-4664-90eb-384be57dd4e2"
+			name="Notes_Search_Advanced">
+			</smartfoldernode>
+			<smartfoldernode
+			id="cea72352-9896-4b32-af8a-05d86692376e"
+			name="Modify_Port_Settings">
+			</smartfoldernode>
+			<smartfoldernode
 			datasource="TasksData"
 			id="cef60493-9e3d-4998-9bf4-596fde0078bc"
 			name="EditTask">
@@ -3490,6 +3655,10 @@ directly and create a Bill]]>
 			ref="8e6e0815-a71c-43a4-a8b6-6e74523cc129"
 			type="UserCode">
 			</testmodule>
+			<smartfoldernode
+			id="d17f3a46-d2ce-4a4f-8dcd-e32e9301a1c3"
+			name="Package_Documents_Save">
+			</smartfoldernode>
 			<testmodule
 			enabled="False"
 			id="d19c8d17-2437-4c8f-8f06-9e8a3eb14985"
@@ -3732,6 +3901,12 @@ Page]]>
 			id="df642b65-113c-4e4e-aebd-4933781276ab"
 			name="Email_Bill_Screen_WithPayNow_Link">
 			</smartfoldernode>
+			<testmodule
+			id="dfd3d652-5d93-455a-9434-2c9b38f0ee80"
+			name="notes_Search_Advanced"
+			ref="dd76bd39-1c71-4cbc-95d0-2e84ee3bfb8e"
+			type="UserCode">
+			</testmodule>
 			<testmodule
 			id="dfd66efb-c3e6-44c6-8976-072324413027"
 			name="billingStatusSelectionValidation"
@@ -4203,6 +4378,12 @@ bill]]>
 			ref="a50c2c9b-e677-4477-8c5e-570d20d59e2b"
 			type="UserCode">
 			</testmodule>
+			<testmodule
+			id="f5b85177-0347-4c58-9e5d-9c10ab49aaa3"
+			name="email_search_global"
+			ref="6f39af70-17b8-4d06-bb10-13f7385f5277"
+			type="UserCode">
+			</testmodule>
 			<smartfoldernode
 			id="f6a8cd9a-6c15-44ba-988d-66acba347f41"
 			name="Firm_Settings">
@@ -4345,6 +4526,12 @@ bill]]>
 			id="fb43df9e-22d0-4349-a9e7-74e52d978f49"
 			name="AddStatusReport"
 			ref="92f81089-3096-48f5-9097-207b8e24471c"
+			type="UserCode">
+			</testmodule>
+			<testmodule
+			id="fbb3d61a-0dcd-49e7-9c71-87241efc3846"
+			name="phone_msg_search_global"
+			ref="bd1ffa01-23be-4d3d-a44c-7d00c1e92d1a"
 			type="UserCode">
 			</testmodule>
 			<smartfoldernode
@@ -7012,6 +7199,158 @@ bill]]>
 						</smartfoldernode>
 					</testcase>
 					<testcase
+					id="7cb8d893-5dc8-414b-bd34-20659fa79f23"
+					name="TCP_Settings">
+						<smartfoldernode
+						id="ca3a87be-1918-48dd-ad53-777566e081e8"
+						name="Validate_Port_Settings_Exists">
+							<testmodule
+							id="b0acb421-c003-4f24-9b78-54da3919ed20"
+							name="validate_Port_Settings_Exists">
+							</testmodule>
+						</smartfoldernode>
+						<smartfoldernode
+						id="cea72352-9896-4b32-af8a-05d86692376e"
+						name="Modify_Port_Settings">
+							<testmodule
+							id="40327f5b-bfb4-4e2e-8348-684e3b788eac"
+							name="modify_port_Settings">
+							</testmodule>
+						</smartfoldernode>
+					</testcase>
+					<testcase
+					id="48b3b6fa-3b87-49f9-9653-f74eb26f9eee"
+					name="Package_Documents">
+						<smartfoldernode
+						id="a4d62185-b7e5-431c-85f5-4848e0e21ed4"
+						name="Validate_Package_Documents_Menu_Exists">
+							<testmodule
+							id="28991e2d-f811-4d42-9982-8ac8ca7e5d54"
+							name="validate_package_documents_menu">
+							</testmodule>
+						</smartfoldernode>
+						<smartfoldernode
+						id="d17f3a46-d2ce-4a4f-8dcd-e32e9301a1c3"
+						name="Package_Documents_Save">
+							<testmodule
+							id="6ced6148-a53c-419d-8b51-fe055cb24e0a"
+							name="package_documents_save">
+							</testmodule>
+						</smartfoldernode>
+					</testcase>
+					<testcase
+					id="c0163ada-3983-4d67-bfe0-1af46d619e0d"
+					name="Refactored_Google_Contact_&amp;_Calendar_Authentication">
+						<smartfoldernode
+						id="93dc6184-b71e-43a3-8519-875ae0a49d57"
+						name="Validate_Google_Radio_Button_Exists">
+							<testmodule
+							id="3f878382-45d7-476b-bdb4-5ba3a02bff83"
+							name="validate_Google_Radio_Button">
+							</testmodule>
+						</smartfoldernode>
+						<smartfoldernode
+						id="c75543d7-31ac-4a34-90e7-299ac067b2c1"
+						name="Google_Synchronize">
+							<testmodule
+							id="b22ec56f-1db0-4d14-8214-086aee032a5a"
+							name="validate_Google_synchronization">
+							</testmodule>
+						</smartfoldernode>
+					</testcase>
+					<testcase
+					id="25efd4db-2da5-4a61-bb61-5958e1cded7d"
+					name="Global_Search">
+						<smartfoldernode
+						id="11ed210e-76aa-45bf-b5e5-ae25d2a47a88"
+						name="People_Search">
+							<testmodule
+							id="4c5385ea-058f-4b1a-b2ea-d151996cf191"
+							name="people_search_global">
+							</testmodule>
+						</smartfoldernode>
+						<smartfoldernode
+						id="c2c5c970-481d-4d0f-b1f2-f2273ce04fa0"
+						name="File_search">
+							<testmodule
+							id="96026593-747d-4294-8a57-9504ef5d5e3b"
+							name="file_Search_global">
+							</testmodule>
+						</smartfoldernode>
+						<smartfoldernode
+						id="41d55660-6718-4691-9ee7-12d6c5663794"
+						name="Event_Search">
+							<testmodule
+							id="63344dce-612d-4cda-bc22-668b33cb6dde"
+							name="event_search_global">
+							</testmodule>
+						</smartfoldernode>
+						<smartfoldernode
+						id="63ca8c37-6ff6-4f7c-b6ef-2fc98949e4f9"
+						name="Notes_search">
+							<testmodule
+							id="b70b7817-eaf8-42c8-838b-487ad42e9a9a"
+							name="notes_search_global">
+							</testmodule>
+						</smartfoldernode>
+						<smartfoldernode
+						id="8a48eee4-35e7-447b-90c2-3d3ed9c5a6f9"
+						name="Communication_Search">
+							<testmodule
+							id="62ee888f-8789-4b81-8e0a-b53467ceac64"
+							name="communication_search">
+							</testmodule>
+							<testmodule
+							id="fbb3d61a-0dcd-49e7-9c71-87241efc3846"
+							name="phone_msg_search_global">
+							</testmodule>
+							<testmodule
+							id="f5b85177-0347-4c58-9e5d-9c10ab49aaa3"
+							name="email_search_global">
+							</testmodule>
+						</smartfoldernode>
+						<smartfoldernode
+						id="99156e12-b9e1-4fd4-a21f-29636e1f983c"
+						name="File_Search_Advanced">
+							<testmodule
+							id="256fa6f2-fae0-4df4-8f89-0a34b1862d53"
+							name="file_search_advanced">
+							</testmodule>
+						</smartfoldernode>
+						<smartfoldernode
+						id="9db1ba44-dd74-40d0-b110-b7c4c1e202a4"
+						name="Calendar_Search_Advanced">
+							<testmodule
+							id="5b4c59e8-5fbb-42fb-afa9-bbb9bd41f457"
+							name="calendar_search_advanced">
+							</testmodule>
+						</smartfoldernode>
+						<smartfoldernode
+						id="5d2162fd-e35c-4503-a893-7b8c1493b181"
+						name="TE_Search_Advanced">
+							<testmodule
+							id="1263e33c-c499-408a-91bd-368c63b77ed8"
+							name="te_search_advanced">
+							</testmodule>
+						</smartfoldernode>
+						<smartfoldernode
+						id="4b8c47e7-1b23-4688-a5ec-b768ac126d92"
+						name="Communications_Search_Advanced">
+							<testmodule
+							id="137cbf4e-f905-461f-b480-f75456a7630a"
+							name="comm_search_Advanced">
+							</testmodule>
+						</smartfoldernode>
+						<smartfoldernode
+						id="ce5917d9-d826-4664-90eb-384be57dd4e2"
+						name="Notes_Search_Advanced">
+							<testmodule
+							id="dfd3d652-5d93-455a-9434-2c9b38f0ee80"
+							name="notes_Search_Advanced">
+							</testmodule>
+						</smartfoldernode>
+					</testcase>
+					<testcase
 					id="f999b233-305c-4e9e-a5e8-bd5b49a34123"
 					name="Logout">
 						<testmodule
@@ -7727,6 +8066,9 @@ bill]]>
 			id="0fc09e0e-23a5-4203-9f7b-cac59cdc96bc">
 			</testcontainer>
 			<testcontainer
+			id="11ed210e-76aa-45bf-b5e5-ae25d2a47a88">
+			</testcontainer>
+			<testcontainer
 			id="1597cab3-9506-4b4e-9af3-65b58c3fa965">
 			</testcontainer>
 			<testcontainer
@@ -7785,6 +8127,9 @@ bill]]>
 			</testcontainer>
 			<testcontainer
 			id="23c4ec27-bed2-4800-8ef0-92477a43b9b3">
+			</testcontainer>
+			<testcontainer
+			id="25efd4db-2da5-4a61-bb61-5958e1cded7d">
 			</testcontainer>
 			<testcontainer
 			id="25fff493-96c7-4fa1-87bc-096455a8f900">
@@ -7883,6 +8228,9 @@ bill]]>
 			id="4119df73-9255-4fcf-9cc2-d1a4b74659f9">
 			</testcontainer>
 			<testcontainer
+			id="41d55660-6718-4691-9ee7-12d6c5663794">
+			</testcontainer>
+			<testcontainer
 			id="41ea6dcb-a932-4781-96ed-251f3e30d4f4">
 			</testcontainer>
 			<testcontainer
@@ -7916,6 +8264,9 @@ bill]]>
 			id="48127973-c9a3-4064-8264-46bbf0e6f7d0">
 			</testcontainer>
 			<testcontainer
+			id="48b3b6fa-3b87-49f9-9653-f74eb26f9eee">
+			</testcontainer>
+			<testcontainer
 			id="495e404e-fa44-4909-8d9e-9a432b7de9b0">
 			</testcontainer>
 			<testcontainer
@@ -7923,6 +8274,9 @@ bill]]>
 			</testcontainer>
 			<testcontainer
 			id="4a9e74f1-7841-4a23-a1ac-cb9a91a15da2">
+			</testcontainer>
+			<testcontainer
+			id="4b8c47e7-1b23-4688-a5ec-b768ac126d92">
 			</testcontainer>
 			<testcontainer
 			id="4bc1f4ad-f12a-49d3-8130-6d0f677cc890">
@@ -8003,6 +8357,9 @@ bill]]>
 			id="5c594db7-866f-47df-abd0-918ae3a2dbb5">
 			</testcontainer>
 			<testcontainer
+			id="5d2162fd-e35c-4503-a893-7b8c1493b181">
+			</testcontainer>
+			<testcontainer
 			id="5d6025df-7164-42d8-874c-7e2bef4c1f4c">
 			</testcontainer>
 			<testcontainer
@@ -8019,6 +8376,9 @@ bill]]>
 			</testcontainer>
 			<testcontainer
 			id="62c52e32-156b-43ae-becd-fd9783824515">
+			</testcontainer>
+			<testcontainer
+			id="63ca8c37-6ff6-4f7c-b6ef-2fc98949e4f9">
 			</testcontainer>
 			<testcontainer
 			id="643b2aa8-461d-4247-bfdd-f26ed620f1fb">
@@ -8126,6 +8486,9 @@ bill]]>
 			id="7ab50160-7a97-40e2-ad44-b1bba3374998">
 			</testcontainer>
 			<testcontainer
+			id="7cb8d893-5dc8-414b-bd34-20659fa79f23">
+			</testcontainer>
+			<testcontainer
 			id="7dd06647-a62c-4aba-b0f2-4ff956b0705a">
 			</testcontainer>
 			<testcontainer
@@ -8153,6 +8516,9 @@ bill]]>
 			id="895badf3-6aaf-4734-9c20-63c98b993985">
 			</testcontainer>
 			<testcontainer
+			id="8a48eee4-35e7-447b-90c2-3d3ed9c5a6f9">
+			</testcontainer>
+			<testcontainer
 			id="8b2c2e55-1965-4c10-ba2b-4417e7a86a84">
 			</testcontainer>
 			<testcontainer
@@ -8166,6 +8532,9 @@ bill]]>
 			</testcontainer>
 			<testcontainer
 			id="917f52cf-f016-435e-9917-0a4f8748cbe2">
+			</testcontainer>
+			<testcontainer
+			id="93dc6184-b71e-43a3-8519-875ae0a49d57">
 			</testcontainer>
 			<testcontainer
 			id="93fd686b-5620-456b-8e3d-73b0096ebf3d">
@@ -8195,10 +8564,16 @@ bill]]>
 			id="98ffe636-7dbf-4c77-9c8c-925895e5fc1d">
 			</testcontainer>
 			<testcontainer
+			id="99156e12-b9e1-4fd4-a21f-29636e1f983c">
+			</testcontainer>
+			<testcontainer
 			id="9afca62b-518e-4366-8848-7c7d6bd20d5d">
 			</testcontainer>
 			<testcontainer
 			id="9c9e0c7c-6641-4e4d-b439-4d25916c0fa2">
+			</testcontainer>
+			<testcontainer
+			id="9db1ba44-dd74-40d0-b110-b7c4c1e202a4">
 			</testcontainer>
 			<testcontainer
 			id="9eb94e5b-0d1d-4b65-b0ec-298802c6bafa">
@@ -8238,6 +8613,9 @@ bill]]>
 			</testcontainer>
 			<testcontainer
 			id="a4c09550-4b9a-4f26-b67b-396fc1bab45f">
+			</testcontainer>
+			<testcontainer
+			id="a4d62185-b7e5-431c-85f5-4848e0e21ed4">
 			</testcontainer>
 			<testcontainer
 			id="a5d5e65f-ecfd-45ff-b29d-b38dbfca41ec">
@@ -8330,6 +8708,9 @@ bill]]>
 			id="c0088c70-07b5-48d1-91f5-d418467d6306">
 			</testcontainer>
 			<testcontainer
+			id="c0163ada-3983-4d67-bfe0-1af46d619e0d">
+			</testcontainer>
+			<testcontainer
 			id="c17d1760-b40c-4269-8e90-8174535e86d7">
 			</testcontainer>
 			<testcontainer
@@ -8337,6 +8718,12 @@ bill]]>
 			</testcontainer>
 			<testcontainer
 			id="c27e383a-a2fe-4d90-91c8-0f27567a5e3a">
+			</testcontainer>
+			<testcontainer
+			id="c2c5c970-481d-4d0f-b1f2-f2273ce04fa0">
+			</testcontainer>
+			<testcontainer
+			id="c75543d7-31ac-4a34-90e7-299ac067b2c1">
 			</testcontainer>
 			<testcontainer
 			id="c76fc965-21c0-47ea-907e-a9b6653a5a70">
@@ -8349,6 +8736,9 @@ bill]]>
 			</testcontainer>
 			<testcontainer
 			id="ca29637c-c17a-4632-ae73-5f94259f87e4">
+			</testcontainer>
+			<testcontainer
+			id="ca3a87be-1918-48dd-ad53-777566e081e8">
 			</testcontainer>
 			<testcontainer
 			id="ca929f96-4b79-4210-93a8-6264e74690c6">
@@ -8375,7 +8765,16 @@ bill]]>
 			id="cddeae0a-0e0c-4eb1-bdf6-d3e05aa4aa91">
 			</testcontainer>
 			<testcontainer
+			id="ce5917d9-d826-4664-90eb-384be57dd4e2">
+			</testcontainer>
+			<testcontainer
+			id="cea72352-9896-4b32-af8a-05d86692376e">
+			</testcontainer>
+			<testcontainer
 			id="cef60493-9e3d-4998-9bf4-596fde0078bc">
+			</testcontainer>
+			<testcontainer
+			id="d17f3a46-d2ce-4a4f-8dcd-e32e9301a1c3">
 			</testcontainer>
 			<testcontainer
 			id="d212ddb5-363c-4883-af2a-b9af07158e53">

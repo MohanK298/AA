@@ -1386,6 +1386,7 @@ namespace SmokeTest.Repositories
             RepoItemInfo _txtbillingapxInfo;
             RepoItemInfo _txtbillingemailingbillsInfo;
             RepoItemInfo _txtreportingservicesInfo;
+            RepoItemInfo _txtfirmbasicsInfo;
 
             /// <summary>
             /// Creates a new FirmSettingsForm  folder.
@@ -1404,6 +1405,7 @@ namespace SmokeTest.Repositories
                 _txtbillingapxInfo = new RepoItemInfo(this, "txtBillingAPX", "container[@controlname='roundedPanelControl']/?/?/element[@controlname='amlblBillingAPX']/text", 30000, null, "9c577a84-3426-4940-ad93-24e652616084");
                 _txtbillingemailingbillsInfo = new RepoItemInfo(this, "txtBillingEmailingBills", "container[@controlname='roundedPanelControl']/?/?/element[@controlname='amlblBillingEmailingBills']/text", 30000, null, "6a57d4a8-9d95-47d9-a77c-29d7e9a91eae");
                 _txtreportingservicesInfo = new RepoItemInfo(this, "txtReportingServices", ".//element[@controlname='amlblReport']/text[@accessiblerole='StaticText']", 30000, null, "38c4519a-026d-48f1-ab74-6ed5584dbb1e");
+                _txtfirmbasicsInfo = new RepoItemInfo(this, "txtFirmBasics", ".//element[@controlname='amlblFirmBasics']/text[@accessiblerole='StaticText']", 30000, null, "bf0b031f-9940-4028-8b0d-67671767337a");
             }
 
             /// <summary>
@@ -1691,6 +1693,30 @@ namespace SmokeTest.Repositories
                 get
                 {
                     return _txtreportingservicesInfo;
+                }
+            }
+
+            /// <summary>
+            /// The txtFirmBasics item.
+            /// </summary>
+            [RepositoryItem("bf0b031f-9940-4028-8b0d-67671767337a")]
+            public virtual Ranorex.Text txtFirmBasics
+            {
+                get
+                {
+                    return _txtfirmbasicsInfo.CreateAdapter<Ranorex.Text>(true);
+                }
+            }
+
+            /// <summary>
+            /// The txtFirmBasics item info.
+            /// </summary>
+            [RepositoryItemInfo("bf0b031f-9940-4028-8b0d-67671767337a")]
+            public virtual RepoItemInfo txtFirmBasicsInfo
+            {
+                get
+                {
+                    return _txtfirmbasicsInfo;
                 }
             }
         }
@@ -7426,6 +7452,8 @@ namespace SmokeTest.Repositories
             RepoItemInfo _btntestInfo;
             RepoItemInfo _btnconfigureInfo;
             RepoItemInfo _btnpublishInfo;
+            RepoItemInfo _txt_preferred_tcp_portInfo;
+            RepoItemInfo _txt_current_tcp_portInfo;
 
             /// <summary>
             /// Creates a new PnlBase  folder.
@@ -7439,6 +7467,8 @@ namespace SmokeTest.Repositories
                 _btntestInfo = new RepoItemInfo(this, "btnTest", ".//container[@controlname='panelReport']/element[@controlname='abtnRepTestURL']/button[@accessiblename='Test']", 30000, null, "741a38bd-f857-44e0-a347-765dc07fff7e");
                 _btnconfigureInfo = new RepoItemInfo(this, "btnConfigure", ".//container[@controlname='panelReport']/element[@controlname='abtnConfigureSSRS']/button[@accessiblename='Configure']", 30000, null, "39ce7a9c-2464-460a-8e4e-ceb79dcd7b39");
                 _btnpublishInfo = new RepoItemInfo(this, "btnPublish", ".//container[@controlname='panelReport']/element[@controlname='abtnRepDeploy']/button[@accessiblename='Publish']", 30000, null, "91e55167-e8cd-490d-9dbb-8e291de35c97");
+                _txt_preferred_tcp_portInfo = new RepoItemInfo(this, "txt_Preferred_TCP_Port", ".//container[@controlname='panelFirmBasics']/element[@controlname='atxtTCPPort']/text[@automationid='[Editor] Edit Area']", 30000, null, "6380a85a-e078-463d-aca5-8a45c03cd590");
+                _txt_current_tcp_portInfo = new RepoItemInfo(this, "txt_Current_TCP_Port", ".//container[@controlname='panelFirmBasics']/element[@controlname='atxtCurrentPort']/text[@automationid='[Editor] Edit Area']", 30000, null, "a490a1d9-3fcb-4d52-a716-aecc321a1484");
             }
 
             /// <summary>
@@ -7606,6 +7636,54 @@ namespace SmokeTest.Repositories
                 get
                 {
                     return _btnpublishInfo;
+                }
+            }
+
+            /// <summary>
+            /// The txt_Preferred_TCP_Port item.
+            /// </summary>
+            [RepositoryItem("6380a85a-e078-463d-aca5-8a45c03cd590")]
+            public virtual Ranorex.Text txt_Preferred_TCP_Port
+            {
+                get
+                {
+                    return _txt_preferred_tcp_portInfo.CreateAdapter<Ranorex.Text>(true);
+                }
+            }
+
+            /// <summary>
+            /// The txt_Preferred_TCP_Port item info.
+            /// </summary>
+            [RepositoryItemInfo("6380a85a-e078-463d-aca5-8a45c03cd590")]
+            public virtual RepoItemInfo txt_Preferred_TCP_PortInfo
+            {
+                get
+                {
+                    return _txt_preferred_tcp_portInfo;
+                }
+            }
+
+            /// <summary>
+            /// The txt_Current_TCP_Port item.
+            /// </summary>
+            [RepositoryItem("a490a1d9-3fcb-4d52-a716-aecc321a1484")]
+            public virtual Ranorex.Text txt_Current_TCP_Port
+            {
+                get
+                {
+                    return _txt_current_tcp_portInfo.CreateAdapter<Ranorex.Text>(true);
+                }
+            }
+
+            /// <summary>
+            /// The txt_Current_TCP_Port item info.
+            /// </summary>
+            [RepositoryItemInfo("a490a1d9-3fcb-4d52-a716-aecc321a1484")]
+            public virtual RepoItemInfo txt_Current_TCP_PortInfo
+            {
+                get
+                {
+                    return _txt_current_tcp_portInfo;
                 }
             }
         }

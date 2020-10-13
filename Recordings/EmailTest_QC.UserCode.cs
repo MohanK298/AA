@@ -22,22 +22,22 @@ using Ranorex.Core.Testing;
 
 namespace SmokeTest.Recordings
 {
-    public partial class EmailTest_QC
-    {
-        /// <summary>
-        /// This method gets called right after the recording has been started.
-        /// It can be used to execute recording specific initialization code.
-        /// </summary>
-        private void Init()
-        {
-            // Your recording specific initialization code goes here.
-        }
+	public partial class EmailTest_QC
+	{
+		/// <summary>
+		/// This method gets called right after the recording has been started.
+		/// It can be used to execute recording specific initialization code.
+		/// </summary>
+		private void Init()
+		{
+			// Your recording specific initialization code goes here.
+		}
 
-        public void Mouse_Click_ContainerGroup9(RepoItemInfo containerInfo)
-        {
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'containerInfo' at 52;8.", containerInfo);
-            containerInfo.FindAdapter<Container>().Click("52;8");
-        }
+		public void Mouse_Click_ContainerGroup9(RepoItemInfo containerInfo)
+		{
+			Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'containerInfo' at 52;8.", containerInfo);
+			containerInfo.FindAdapter<Container>().Click("52;8");
+		}
 
-    }
+	}
 }

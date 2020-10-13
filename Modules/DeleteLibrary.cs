@@ -48,10 +48,18 @@ namespace SmokeTest.Modules
         	lib.AmicusAttorneyXWin1.listDelete.Click();
         	lib.PromptForm.btnOK.Click();
         	*/
+        	lib.MainForm.Self.Activate();
+        	lib.MainForm.btnLibrary.Click();
+        	Delay.Seconds(2);
         	
         	lib.MainForm.LibraryIndexForm.listSection.DoubleClick();
         	Delay.Seconds(2);
         	
+        	if(!lib.MainForm.Panel1.listPageInfo.Exists(3000))
+        	{
+        		lib.MainForm.LibraryIndexForm.listSection.DoubleClick();
+        	}
+//        	lib.MainForm.Panel1.listPage.Focus();
         	lib.MainForm.Panel1.listPage.Click();
         	Delay.Seconds(2);
         	

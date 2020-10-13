@@ -48,6 +48,8 @@ namespace SmokeTest.Modules
         private void context_Click_Validate()
         {
         	
+        	te.MainForm.Self.Activate();
+        	Delay.Milliseconds(500);
         	te.MainForm.btnTimeFeesExpenses.Click();
         	
         	te.MainForm.rdbtnTimeFees.Select();
@@ -80,6 +82,10 @@ namespace SmokeTest.Modules
         	te.ContextMenu.MenuItemNew.Click();
         	te.ContextMenu.NewTimeEntry.Click();
         	createTimeEntry();
+        	te.MainForm.rdbtnTimeFees.Select();
+        	Report.Success("Time Entries Radio button is selected");
+        	te.MainForm.LeftPanel.cbUnpostedEntries.Check();
+        	Delay.Milliseconds(500);
         	cmn.VerifyDataExistsInTable(te.MainForm.tblTimeEntry,activityDescription,"Time Entry Table");
         	
         	cmn.OpenContextMenuItemFromTable(te.MainForm.tblTimeEntry,data,"Time Entry Table");

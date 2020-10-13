@@ -197,6 +197,16 @@ SUVORK5CYII=
 				searchtimeout="30000ms">
 					/form[@controlname='MainForm']/?/?/form[@controlname='FirmSettingsForm']//element[@controlname='amlblReport']/text[@accessiblerole='StaticText']
 				</item>
+				<item
+				addcaps="text,accessible"
+				capname="text"
+				id="bf0b031f-9940-4028-8b0d-67671767337a"
+				name="txtFirmBasics"
+				refimgid="cea9180e-a37c-4b80-bf5a-bccd9c098f56"
+				refpath="/form[@controlname='MainForm']/element[@controltypename='MdiClient']/form[@controlname='FirmSettingsForm']/container[@controlname='roundedPanelControl']/container[@controlname='panelScroll']/element[@controlname='amlblFirmBasics']/text[@accessiblerole='StaticText']"
+				searchtimeout="30000ms">
+					/form[@controlname='MainForm']/?/?/form[@controlname='FirmSettingsForm']//element[@controlname='amlblFirmBasics']/text[@accessiblerole='StaticText']
+				</item>
 				<basepath>
 					/form[@controlname='MainForm']/?/?/form[@controlname='FirmSettingsForm']
 				</basepath>
@@ -2641,6 +2651,26 @@ OsYqSDz+zwAAaK/nDj2T/r4AAAAASUVORK5CYII=
 				refpath="/form[@controlname='GeneralFirmSettingsXtraForm']/container[@controlname='pnlBase']/container[@controlname='pnlControls']/container[@controlname='panelTitleBase']/container[@controlname='panelBase']/container[@controlname='panelReport']/element[@controlname='abtnRepDeploy']/button[@accessiblename='Publish']"
 				searchtimeout="30000ms">
 					/form[@controlname='GeneralFirmSettingsXtraForm']/container[@controlname='pnlBase']//container[@controlname='panelReport']/element[@controlname='abtnRepDeploy']/button[@accessiblename='Publish']
+				</item>
+				<item
+				addcaps="text,uiautomation,uiautomationvalue"
+				capname="text"
+				id="6380a85a-e078-463d-aca5-8a45c03cd590"
+				name="txt_Preferred_TCP_Port"
+				refimgid="bd4d6aff-ba7c-433b-97cb-b83e5072a891"
+				refpath="/form[@controlname='GeneralFirmSettingsXtraForm']/container[@controlname='pnlBase']/container[@controlname='pnlControls']/container[@controlname='panelTitleBase']/container[@controlname='panelBase']/container[@controlname='panelFirmBasics']/element[@controlname='atxtTCPPort']/text[@automationid='[Editor] Edit Area']"
+				searchtimeout="30000ms">
+					/form[@controlname='GeneralFirmSettingsXtraForm']/container[@controlname='pnlBase']//container[@controlname='panelFirmBasics']/element[@controlname='atxtTCPPort']/text[@automationid='[Editor] Edit Area']
+				</item>
+				<item
+				addcaps="text,uiautomation,uiautomationvalue"
+				capname="text"
+				id="a490a1d9-3fcb-4d52-a716-aecc321a1484"
+				name="txt_Current_TCP_Port"
+				refimgid="3ebb3ac6-708f-4ad6-898e-b50d7836117f"
+				refpath="/form[@controlname='GeneralFirmSettingsXtraForm']/container[@controlname='pnlBase']/container[@controlname='pnlControls']/container[@controlname='panelTitleBase']/container[@controlname='panelBase']/container[@controlname='panelFirmBasics']/element[@controlname='atxtCurrentPort']/text[@automationid='[Editor] Edit Area']"
+				searchtimeout="30000ms">
+					/form[@controlname='GeneralFirmSettingsXtraForm']/container[@controlname='pnlBase']//container[@controlname='panelFirmBasics']/element[@controlname='atxtCurrentPort']/text[@automationid='[Editor] Edit Area']
 				</item>
 				<basepath>
 					/form[@controlname='GeneralFirmSettingsXtraForm']/container[@controlname='pnlBase']

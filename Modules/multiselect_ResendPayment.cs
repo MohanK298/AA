@@ -159,7 +159,8 @@ namespace SmokeTest.Modules
         	Keyboard.Press("{Delete}");
         	Report.Success("All Draft Mails deleted.");
     		outlook.Outlook.Self.Close();
-    		
+    		Report.Info(mailcount2.ToString());
+    		Report.Info(mailcount1.ToString());
     		if(mailcount2>mailcount1)
     		{
     			Report.Success("Multi Select of Resend Payment Request is successfull for "+(mailcount2-mailcount1).ToString()+" bills");

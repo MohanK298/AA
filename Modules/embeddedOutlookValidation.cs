@@ -102,7 +102,7 @@ namespace SmokeTest.Modules
         	
         	pref.EmailPreferencesForm.Panel2.btnStep4.Click();
         	pref.EmailInitialization.PnlControls.cbReviewGuide.Check();
-        	if(pref.EmailInitialization.PnlControls.cbAppyAutoSaveInfo.Exists(3000))
+        	if(pref.EmailInitialization.PnlControls.cbAppyAutoSave.Visible)
         	{
         		pref.EmailInitialization.PnlControls.cbAppyAutoSave.Check();
         	}

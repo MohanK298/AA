@@ -125,6 +125,12 @@ namespace SmokeTest.Modules
         	pref.EmailInitialization.PnlControls.cbReviewGuide.Check();
         	pref.EmailInitialization.PnlControls.cbCurrentlyLoggedIn.Check();
         	pref.EmailInitialization.PnlControls.cbReadytoBeginProcess.Check();
+        	if(pref.EmailInitialization.PnlControls.cbAppyAutoSave.Enabled)
+        	{
+        		
+        		pref.EmailInitialization.PnlControls.cbAppyAutoSave.Check();
+        		Report.Info("Auto Save Checkbox is checked when it is enabled");
+        	}
         	pref.EmailInitialization.Toolbar1.btnBeginProcess.Click();
         	Report.Info("Begin Process is clicked in Step 4");
         	if(pref.PromptForm.SelfInfo.Exists(15000))

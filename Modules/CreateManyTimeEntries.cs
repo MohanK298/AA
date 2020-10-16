@@ -69,9 +69,9 @@ namespace SmokeTest.Modules
 	        	timeEntry.MainForm.btnAddTimeEntry.Click();
 	        	
 	        	//Add file
-	        	timeEntry.FileSelectForm.btnQuickFind.Click();
-	        	timeEntry.FindFilesForm.txtFindFile.PressKeys("Ranorex File " + String.Format("{0:000}", value));
-	        	timeEntry.FindFilesForm.btnOK.Click();
+//	        	timeEntry.FileSelectForm.btnQuickFind.Click();
+//	        	timeEntry.FindFilesForm.txtFindFile.PressKeys("Ranorex File " + String.Format("{0:000}", value));
+//	        	timeEntry.FindFilesForm.btnOK.Click();
 	        	timeEntry.FileSelectForm.listFirstFoundFile.DoubleClick();
 	        	timeEntry.TimeEntryDetailsForm.MenubarFillPanel.txtActivityDescription.PressKeys("Ranorex File Time Entry " + String.Format("{0:000}", value));
 	        	timeEntry.TimeEntryDetailsForm.MenubarFillPanel.btnOK.Click();

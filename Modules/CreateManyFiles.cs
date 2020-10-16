@@ -20,7 +20,7 @@ using Ranorex.Core.Testing;
 
 using SmokeTest.Repositories;
 using SmokeTest.Modules;
-
+using SmokeTest.Modules.Utilities;
 namespace SmokeTest.Modules
 {
     /// <summary>
@@ -32,7 +32,7 @@ namespace SmokeTest.Modules
         //Repository Variable
     	Files file = Files.Instance;
     	People people = People.Instance;
-    	
+    	Common cmn=new Common();
     	  	//Variables
     	string _time = "";
     	[TestVariable("6193B8F1-1EEA-4693-866C-25439B548AA0")]
@@ -118,10 +118,10 @@ namespace SmokeTest.Modules
 	        	Delay.Seconds(5);
 	        	
 	        	file.NewFileForm.btnAddContact.Click();
-	        	file.PeopleSelectForm.btnQuickFind.Click();
-	        	//file.FindContactsForm.txtFindContact.TextValue = lastName + time;
-	        	file.FindContactsForm.txtFindContact.PressKeys("Contact Ranorex " + String.Format("{0:000}", value));
-	        	file.FindContactsForm.btnOK.Click();
+//	        	file.PeopleSelectForm.btnQuickFind.Click();
+//	        	//file.FindContactsForm.txtFindContact.TextValue = lastName + time;
+//	        	file.FindContactsForm.txtFindContact.PressKeys("Contact Ranorex " + String.Format("{0:000}", value));
+//	        	file.FindContactsForm.btnOK.Click();
 	        	file.PeopleSelectForm.listFirstValue.Click();
 	        	file.PeopleSelectForm.btnAddToRight.Click();
 	        	file.PeopleSelectForm.btnOK.Click();
@@ -131,12 +131,13 @@ namespace SmokeTest.Modules
 	        	Delay.Seconds(5);
 	        	file.NewFileForm.btnSaveOpen.Click();
 	        	
-	        	FindFile();
+//	        	FindFile();
 	        	
 	        	//Verify File
-	        	file.MainForm.FilesIndexForm.listFirstFile.DoubleClick();
+//	        	file.MainForm.FilesIndexForm.listFirstFile.DoubleClick();
+	        	cmn.SelectItemFromTableDblClick(file.MainForm.FilesIndexForm.tblFilesList,"Ranorex File " + String.Format("{0:000}", value),"Table");
 	        	//Validate.Equals(file.FileDetailForm.titlebarFileDetail.Text, fileName + time + "2");
-	        	Validate.Equals(file.FileDetailForm.titlebarFileDetail.Text, fileName + time);
+//	        	Validate.Equals(file.FileDetailForm.titlebarFileDetail.Text, fileName + time);
 	        	Delay.Seconds(3);
 	        	
 	        	

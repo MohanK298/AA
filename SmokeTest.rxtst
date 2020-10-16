@@ -4171,16 +4171,10 @@ bill]]>
 			type="UserCode">
 				<databinding>
 					<var
-					dataname="FileName"
-					datasourceid="2b580966-7b33-4156-bff2-f448647382bd"
-					variableid="dde10115-729e-4144-aac6-425eaf372517"
-					variablename="fileName">
-					</var>
-					<var
-					dataname="FirstName"
-					datasourceid="2b580966-7b33-4156-bff2-f448647382bd"
-					variableid="eab5ae1d-ea6c-476a-9c0d-9a83926a1a9e"
-					variablename="firstName">
+					dataname="Time"
+					datasourceid="658e3020-1e20-4cb1-b196-89a6ef9ca8a2"
+					variableid="6193b8f1-1eea-4693-866c-25439b548aa0"
+					variablename="time">
 					</var>
 					<var
 					dataname="LastName"
@@ -4189,10 +4183,16 @@ bill]]>
 					variablename="lastName">
 					</var>
 					<var
-					dataname="Time"
-					datasourceid="658e3020-1e20-4cb1-b196-89a6ef9ca8a2"
-					variableid="6193b8f1-1eea-4693-866c-25439b548aa0"
-					variablename="time">
+					dataname="FirstName"
+					datasourceid="2b580966-7b33-4156-bff2-f448647382bd"
+					variableid="eab5ae1d-ea6c-476a-9c0d-9a83926a1a9e"
+					variablename="firstName">
+					</var>
+					<var
+					dataname="FileName"
+					datasourceid="2b580966-7b33-4156-bff2-f448647382bd"
+					variableid="dde10115-729e-4144-aac6-425eaf372517"
+					variablename="fileName">
 					</var>
 				</databinding>
 			</testmodule>

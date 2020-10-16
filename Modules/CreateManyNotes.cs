@@ -65,7 +65,7 @@ namespace SmokeTest.Modules
          public void CreateStickyNote()
          {
         	//Create Many Notes
-        	for (int value = 001; value <= 2; value++)
+        	for (int value = 001; value <= 100; value++)
         	{
 	         	//Open notes section and window
 	        	note.MainForm.btnNotes.Click();
@@ -74,9 +74,9 @@ namespace SmokeTest.Modules
 	        	//Fill data in notes
 	        	note.PeopleSelectForm.listNameOne.DoubleClick();
 	        	note.StickyDetails.btnAddFile.Click();
-	        	note.FileSelectForm.btnQuickFind.Click();
-	        	note.FindFilesForm.txtFindFile.PressKeys("Ranorex File " + String.Format("{0:000}", value));        	
-	        	note.FindFilesForm.btnOK.Click();
+//	        	note.FileSelectForm.btnQuickFind.Click();
+//	        	note.FindFilesForm.txtFindFile.PressKeys("Ranorex File " + String.Format("{0:000}", value));        	
+//	        	note.FindFilesForm.btnOK.Click();
 	        	note.FileSelectForm.fileListItemOne.DoubleClick();
 	        	Delay.Seconds(2);
 	        	note.StickyDetails.txtNoteBox.PressKeys(text);
